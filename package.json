@@ -1,0 +1,67 @@
+{
+  "name": "smartweb_themes",
+  "description": "iA.Smartweb base theme for Plone",
+  "private": true,
+  "maintainers": [
+    {
+      "name": "Thomas Lambert (iMio)",
+      "email": "thomas.lambert@imio.be",
+      "url": "https://imio.be"
+    },
+    {
+      "name": "Antoine Duchêne (iMio)",
+      "email": "adu@imio.be",
+      "url": "https://imio.be"
+    }
+  ],
+  "homepage": "https://imio.be",
+  "keywords": [
+    "imio",
+    "plone",
+    "smartweb"
+  ],
+  "version": "0.0.2",
+  "license": "GPL version 2",
+  "scripts": {
+    "stylelint": "npx stylelint './**/*.{css,less}' 'src/**/*.{css,less}",
+    "stylelint:fix": "npx stylelint './**/*.{css,less}' --fix",
+    "prettier": "npx prettier --check './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+    "prettier:fix": "npx prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it",
+    "build": "webpack --mode=production --progress --stats --env theme=$npm_config_theme",
+    "build:dev": "webpack --mode=production --progress --stats --env theme=$npm_config_theme",
+    "zip": "npm:build -- --zip=true --env theme=$npm_config_theme",
+    "watch": "webpack serve --mode=development --env theme=$npm_config_theme --progress",
+    "start": "concurrently --names \"PLONE,WEBPACK\" -c \"bgBlue.bold,bgMagenta.bold\" \"../../../bin/instance fg\" \"npm:watch\""
+  },
+  "devDependencies": {
+    "@plone/plonetheme-barceloneta-base": "^3.0.0-alpha9",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "favicons": "^7.0.0-beta.3",
+    "favicons-webpack-plugin": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss": "^8.4.7",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.5.1",
+    "release-it": "^14.12.5",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "zip-webpack-plugin": "^4.0.1"
+  }
+}
