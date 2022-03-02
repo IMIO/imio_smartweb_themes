@@ -18,14 +18,14 @@ module.exports = (env, argv) => {
         mode: mode,
         entry: [path.resolve(THEME_PATH, "./src/index.js")],
         output: {
-            path: path.resolve(THEME_PATH, "./dist"),
-            filename: "js/theme.js"
+            path:THEME_PATH,
+            filename: "dist/js/theme.js"
         },
         plugins: [
             new FileManagerPlugin({
                 events: {
                     onStart: {
-                      delete: [`${THEME_PATH}/dist`]
+                        delete: [`${THEME_PATH}/dist`]
                     },
                     onEnd: {
                         archive: [
@@ -47,7 +47,7 @@ module.exports = (env, argv) => {
                 }
             }),
             new MiniCssExtractPlugin({
-                filename: "css/theme.css",
+                filename: "dist/css/theme.css",
             }),
         ].filter(Boolean),
         module: {
@@ -82,9 +82,12 @@ module.exports = (env, argv) => {
                             },
                         },
                         {
+                            loader: 'resolve-url-loader',
+                        },
+                        {
                             loader: "sass-loader",
                             options: {
-                                sourceMap: mode === "development",
+                                sourceMap: true,
                             },
                         },
                     ],
@@ -121,7 +124,7 @@ module.exports = (env, argv) => {
                     loader: "file-loader",
                     options: {
                         name: "[name].[hash].[ext]",
-                        outputPath: "assets",
+                        outputPath: "dist/assets/assets",
                     },
                 },
                 {
@@ -129,7 +132,7 @@ module.exports = (env, argv) => {
                     loader: "file-loader",
                     options: {
                         name: "[name].[ext]",
-                        outputPath: "assets/fonts",
+                        outputPath: "dist/assets/fonts",
                     },
                 },
             ],
@@ -157,16 +160,16 @@ module.exports = (env, argv) => {
                     target: "http://localhost:8080",
                     bypass: function (req, res, proxyOptions) {
                         let path = req.url
-                        if (!path.includes(BUNDLE_NAME)) {
-                            return // bypass to backend
+                        if (path.includes(BUNDLE_NAME)) {
+                            if (path.includes("++unique++")) {
+                                // Strip ++unique++ part
+                                const reg = /\/\+\+unique\+\+[^/]+/;
+                                path = path.replace(reg, "");
+                            }
+                            path = path.split(BUNDLE_NAME)[1]; // Keep only the path after our bundle name
+                            return path;
                         }
-                        if (path.includes("++unique++")) {
-                            // Strip ++unique++ part
-                            const reg = /\/\+\+unique\+\+[^/]+/;
-                            path = path.replace(reg, "");
-                        }
-                        path = path.split(BUNDLE_NAME)[1]; // Keep only the path after our bundle name
-                        return path;
+                        return null;
                     },
                 }
             ],
