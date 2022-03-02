@@ -18,8 +18,13 @@ module.exports = (env, argv) => {
         mode: mode,
         entry: [path.resolve(THEME_PATH, "./src/index.js")],
         output: {
-            path:THEME_PATH,
+            path: THEME_PATH,
             filename: "dist/js/theme.js"
+        },
+        resolve: {
+            alias: {
+                "@theme": THEME_PATH,
+            },
         },
         plugins: [
             new FileManagerPlugin({
@@ -82,12 +87,9 @@ module.exports = (env, argv) => {
                             },
                         },
                         {
-                            loader: 'resolve-url-loader',
-                        },
-                        {
                             loader: "sass-loader",
                             options: {
-                                sourceMap: true,
+                                sourceMap: mode === "development",
                             },
                         },
                     ],
@@ -119,21 +121,18 @@ module.exports = (env, argv) => {
                     loader: "@svgr/webpack",
                 },
                 {
-                    // Use file-loader to import img files in other files
                     test: /\.(png|jpg|gif|jpeg|svg)$/i,
-                    loader: "file-loader",
-                    options: {
-                        name: "[name].[hash].[ext]",
-                        outputPath: "dist/assets/assets",
-                    },
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'dist/images/[name][hash:8].[ext]'
+                    }
                 },
                 {
                     test: /\.(eot|woff|woff2|ttf)([?]?.*)$/,
-                    loader: "file-loader",
-                    options: {
-                        name: "[name].[ext]",
-                        outputPath: "dist/assets/fonts",
-                    },
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'dist/fonts/[name].[ext]'
+                    }
                 },
             ],
         },

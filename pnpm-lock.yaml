@@ -19,6 +19,7 @@ importers:
       postcss-loader: ^6.2.1
       prettier: ^2.5.1
       release-it: ^14.12.5
+      resolve-url-loader: ^5.0.0
       sass: ^1.49.9
       sass-loader: ^12.6.0
       style-loader: ^3.3.1
@@ -45,6 +46,7 @@ importers:
       postcss-loader: 6.2.1_postcss@8.4.7+webpack@5.69.1
       prettier: 2.5.1
       release-it: 14.12.5
+      resolve-url-loader: 5.0.0
       sass: 1.49.9
       sass-loader: 12.6.0_sass@1.49.9+webpack@5.69.1
       style-loader: 3.3.1_webpack@5.69.1
@@ -828,6 +830,14 @@ packages:
     resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
+
+  /adjust-sourcemap-loader/4.0.0:
+    resolution: {integrity: sha512-OXwN5b9pCUXNQHJpwwD2qP40byEmSgzj8B4ydSN0uMNYWiFmJ6x6KwUllMmfk8Rwu/HJDFR7U8ubsWBoN0Xp0A==}
+    engines: {node: '>=8.9'}
+    dependencies:
+      loader-utils: 2.0.2
+      regex-parser: 2.2.11
     dev: true
 
   /aggregate-error/3.1.0:
@@ -5240,6 +5250,10 @@ packages:
       safe-regex: 1.1.0
     dev: true
 
+  /regex-parser/2.2.11:
+    resolution: {integrity: sha512-jbD/FT0+9MBU2XAZluI7w2OBs1RBi6p9M83nkoZayQXXU9e8Robt69FcZc7wU4eJD/YFTjn1JdCk3rbMJajz8Q==}
+    dev: true
+
   /regexp.prototype.flags/1.4.1:
     resolution: {integrity: sha512-pMR7hBVUUGI7PMA37m2ofIdQCsomVnas+Jn5UPGAHQ+/LlwKm/aTLJHdasmHRzlfeZwHiAOaRSo2rbBDm3nNUQ==}
     engines: {node: '>= 0.4'}
@@ -5360,6 +5374,17 @@ packages:
   /resolve-from/5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
+    dev: true
+
+  /resolve-url-loader/5.0.0:
+    resolution: {integrity: sha512-uZtduh8/8srhBoMx//5bwqjQ+rfYOUq8zC9NrMUGtjBiGTtFJM42s58/36+hTqeqINcnYe08Nj3LkK9lW4N8Xg==}
+    engines: {node: '>=12'}
+    dependencies:
+      adjust-sourcemap-loader: 4.0.0
+      convert-source-map: 1.8.0
+      loader-utils: 2.0.2
+      postcss: 8.4.7
+      source-map: 0.6.1
     dev: true
 
   /resolve-url/0.2.1:

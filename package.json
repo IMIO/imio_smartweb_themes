@@ -31,7 +31,7 @@
     "release": "release-it",
     "build": "webpack --mode=production --progress --stats --env theme=$npm_config_theme",
     "build:dev": "webpack --mode=development --progress --stats --env theme=$npm_config_theme",
-    "zip": "npm run build -- --env zip --env theme=$npm_config_theme",
+    "zip": "npm run build -- --env zip --env theme=$npm_config_theme --env zip_to=$npm_config_to",
     "watch": "webpack serve --mode=development --env theme=$npm_config_theme --progress",
     "start": "concurrently --names \"PLONE,WEBPACK\" -c \"bgBlue.bold,bgMagenta.bold\" \"../../../bin/instance fg\" \"npm:watch\""
   },
@@ -51,6 +51,7 @@
     "postcss-loader": "^6.2.1",
     "prettier": "^2.5.1",
     "release-it": "^14.12.5",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
