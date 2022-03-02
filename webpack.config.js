@@ -4,9 +4,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const ZipPlugin = require("zip-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const BASE_PATH = path.resolve(__dirname, ".")
 
@@ -21,29 +19,43 @@ module.exports = (env, argv) => {
         entry: [path.resolve(THEME_PATH, "./src/index.js")],
         output: {
             path: path.resolve(THEME_PATH, "./dist"),
-            filename: "js/main.js"
+            filename: "js/theme.js"
         },
         plugins: [
-            mode === "production" && new CleanWebpackPlugin(),
-            mode === "production" && new CopyPlugin({
-                patterns: [
-                    {from: `${THEME_FOLDER}/*.png`, to: "."},
-                    {from: `${THEME_FOLDER}/*.cfg`, to: "."},
-                    {from: `${THEME_FOLDER}/*.html`, to: "."},
-                    {from: `${THEME_FOLDER}/*.ico`, to: "."},
-                ],
-            }),
-            mode === "productionss" && new ZipPlugin({
-                path: '.',
-                filename: 'smartweb.zip',
-                exclude: [/node_modules/],
+            new FileManagerPlugin({
+                events: {
+                    onStart: {
+                      delete: [`${THEME_PATH}/dist`]
+                    },
+                    onEnd: {
+                        archive: [
+                            env.zip && {
+                                source: `${THEME_PATH}`,
+                                destination: `${THEME_PATH}/theme.zip`,
+                                options: {
+                                    globOptions: {
+                                        ignore: [
+                                            'node_modules/**',
+                                            'src/**',
+                                            'package.json'
+                                        ]
+                                    }
+                                }
+                            }
+                        ].filter(Boolean)
+                    }
+                }
             }),
             new MiniCssExtractPlugin({
-                filename: "scss/main.min.css",
+                filename: "css/theme.css",
             }),
         ].filter(Boolean),
         module: {
             rules: [
+                {
+                    test: /\.(js|jsx)$/i,
+                    loader: 'babel-loader'
+                },
                 {
                     test: /\.s[ac]ss$/i,
                     use: [
@@ -145,7 +157,7 @@ module.exports = (env, argv) => {
                     target: "http://localhost:8080",
                     bypass: function (req, res, proxyOptions) {
                         let path = req.url
-                        if (!path.includes(BUNDLE_NAME)){
+                        if (!path.includes(BUNDLE_NAME)) {
                             return // bypass to backend
                         }
                         if (path.includes("++unique++")) {

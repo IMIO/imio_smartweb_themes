@@ -31,13 +31,10 @@
     "prettier": "npx prettier --single-quote --check 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
     "prettier:fix": "npx prettier --single-quote --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
     "dry-release": "release-it --dry-run",
-    "release": "release-it",
-    "build": "webpack --mode=production --progress --stats",
-    "build:dev": "webpack --mode=production --progress --stats",
-    "webpack-serve": "webpack serve --mode=development --progress",
-    "watch": "concurrently --names \"PLONE,WEBPACK\" -c \"bgBlue.bold,bgMagenta.bold\" \"../../../bin/instance fg\" \"npm:webpack-serve\""
+    "release": "release-it"
   },
   "devDependencies": {
-    "@plone/plonetheme-barceloneta-base": "^3.0.0-alpha9"
+    "@plone/plonetheme-barceloneta-base": "^3.0.0-alpha9",
+    "@popperjs/core": "^2.10.2"
   }
 }
