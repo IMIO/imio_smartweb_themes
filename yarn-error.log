@@ -1,0 +1,94 @@
+Arguments: 
+  /home/thomas/.nvm/versions/node/v14.17.6/bin/node /usr/bin/yarn add image-minimizer-webpack-plugin imagemin -D -W
+
+PATH: 
+  /home/thomas/.local/bin:/home/thomas/.nvm/versions/node/v14.17.6/bin:/home/thomas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.6
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/home/thomas/.cache/yarn/v6/npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009-integrity/node_modules/ms/index.js' -> '/home/thomas/Desktop/imio_smartweb_themes/node_modules/@babel/core/node_modules/ms/index.js'
+
+npm manifest: 
+  {
+    "name": "smartweb_themes",
+    "description": "iA.Smartweb base theme for Plone",
+    "private": true,
+    "maintainers": [
+      {
+        "name": "Thomas Lambert (iMio)",
+        "email": "thomas.lambert@imio.be",
+        "url": "https://imio.be"
+      },
+      {
+        "name": "Antoine Duchêne (iMio)",
+        "email": "adu@imio.be",
+        "url": "https://imio.be"
+      }
+    ],
+    "homepage": "https://imio.be",
+    "keywords": [
+      "imio",
+      "plone",
+      "smartweb"
+    ],
+    "version": "0.0.2",
+    "license": "GPL version 2",
+    "scripts": {
+      "stylelint": "npx stylelint './**/*.{css,scss,sass}'",
+      "stylelint:fix": "npx stylelint './**/*.{css,scss,sass}' --fix",
+      "prettier": "npx prettier --check './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+      "prettier:fix": "npx prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+      "dry-release": "release-it --dry-run",
+      "release": "release-it",
+      "build": "webpack --mode=production --progress --stats --env theme=$npm_config_theme",
+      "build:dev": "webpack --mode=development --progress --stats --env theme=$npm_config_theme",
+      "zip": "npm run build -- --env zip --env theme=$npm_config_theme --env zip_to=$npm_config_to",
+      "watch": "webpack serve --mode=development --env theme=$npm_config_theme --progress",
+      "start": "concurrently --names \"PLONE,WEBPACK\" -c \"bgBlue.bold,bgMagenta.bold\" \"../../../bin/instance fg\" \"npm:watch\""
+    },
+    "devDependencies": {
+      "@babel/core": "^7.17.5",
+      "autoprefixer": "^10.4.2",
+      "babel-loader": "^8.2.3",
+      "concurrently": "^7.0.0",
+      "css-loader": "^6.6.0",
+      "css-minimizer-webpack-plugin": "^3.4.1",
+      "favicons": "^7.0.0-beta.3",
+      "favicons-webpack-plugin": "^5.0.2",
+      "file-loader": "^6.2.0",
+      "filemanager-webpack-plugin": "^6.1.7",
+      "mini-css-extract-plugin": "^2.5.3",
+      "postcss": "^8.4.7",
+      "postcss-loader": "^6.2.1",
+      "prettier": "^2.5.1",
+      "release-it": "^14.12.5",
+      "sass": "^1.49.9",
+      "sass-loader": "^12.6.0",
+      "style-loader": "^3.3.1",
+      "stylelint": "^14.5.3",
+      "stylelint-config-idiomatic-order": "^8.1.0",
+      "stylelint-config-prettier-scss": "^0.0.1",
+      "stylelint-config-standard-scss": "^3.0.0",
+      "webpack": "^5.69.1",
+      "webpack-cli": "^4.9.2",
+      "webpack-dev-server": "^4.7.4"
+    },
+    "engines": {
+      "node": ">=14",
+      "pnpm": "6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
