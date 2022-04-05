@@ -1,8 +1,63 @@
 //// VARIABLES
 $roboto-base-path: "@theme/assets/fonts/";
+@import "./variables";
 
-@import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// Plone Barceloneta Styling & components
+
+// Plone colors
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
+
+// Plone specific default variables & properties
+@import "@plone/plonetheme-barceloneta-base/scss/variables.properties";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.barceloneta";
+
+@import "@plone/plonetheme-barceloneta-base/scss/base";
+
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone";
 
 
-//// STYLES
+// Plone components
+@import "@plone/plonetheme-barceloneta-base/scss/cards";
+@import "@plone/plonetheme-barceloneta-base/scss/scaffolding";
+
+
+// // style.scss
+@import "@plone/plonetheme-barceloneta-base/scss/icons";
+@import "@plone/plonetheme-barceloneta-base/scss/header";
+// @import "@plone/plonetheme-barceloneta-base/scss/sitenav";
+@import "@plone/plonetheme-barceloneta-base/scss/breadcrumbs";
+@import "@plone/plonetheme-barceloneta-base/scss/content";
+@import "@plone/plonetheme-barceloneta-base/scss/comments";
+@import "@plone/plonetheme-barceloneta-base/scss/portlets";
+@import "@plone/plonetheme-barceloneta-base/scss/footer";
+@import "@plone/plonetheme-barceloneta-base/scss/event";
+
+@import "@plone/plonetheme-barceloneta-base/scss/print";
+
+@import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
+
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
+
+///// Base
+@import "./fonts";
+@import "./sitenav";
+@import "./header";
+@import "./edition";
+@import "./swiper";
+@import "./print";
+@import "./swiper";
+
+//// Sections
+@import "./sections/textes";
+
+// Home page
+@import "./homepage/banner";
+@import "./homepage/quick-access";
+@import "./homepage/a-la-une";
+@import "./homepage/actualites"
+
+
+
 

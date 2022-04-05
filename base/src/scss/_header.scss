@@ -1,0 +1,71 @@
+#portal-globalnav-wrapper{
+    background: transparent;
+}
+.portaltype-imio-smartweb-portalpage #portal-breadcrumbs{
+    display: none;
+}
+#portal-header{
+    display: block;
+    z-index: 2;
+    margin-top: 0;
+    #portal-header-top{
+        // display: grid;
+        // grid-template-columns: 115px 1fr auto !important;
+        // grid-template-areas: "logo menu link";
+        display: flex;
+        padding: $header-top-padding;
+        z-index: 2;
+        @if $header-center-nav {
+            justify-content: space-between;
+            #portal-globalnav-wrapper{
+                margin-right: 0!important;
+            }
+        }
+        #portal-logo{
+            max-width: $main-logo-max-width;
+            margin-top: 0;
+            img{
+                max-width: 100%;
+            }
+        }
+        #portal-globalnav-wrapper{
+            margin:$header-nav-margin;
+        }
+        #header-links{
+            margin-left: auto;
+            #search-link {
+                cursor: pointer;
+            }
+        }
+    }
+}
+header#content-header{
+    position: relative;
+    z-index: 9;
+}
+// .subsite-container{   ---------------------- POURQUOI clip ???
+//     grid-area: sub;
+//     overflow-x: clip;
+//   }
+
+
+// MASK
+
+.mask-menu{
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity .05s,visibility 0s linear .25s;
+    background-color: $nav-mask-background;
+    &.in {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .2s ease,visibility 0s;
+    }
+}
