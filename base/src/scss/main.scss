@@ -16,15 +16,14 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone";
 @import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone";
 
-
 // Plone components
 @import "@plone/plonetheme-barceloneta-base/scss/cards";
 @import "@plone/plonetheme-barceloneta-base/scss/scaffolding";
 
-
 // // style.scss
 @import "@plone/plonetheme-barceloneta-base/scss/icons";
 @import "@plone/plonetheme-barceloneta-base/scss/header";
+
 // @import "@plone/plonetheme-barceloneta-base/scss/sitenav";
 @import "@plone/plonetheme-barceloneta-base/scss/breadcrumbs";
 @import "@plone/plonetheme-barceloneta-base/scss/content";
@@ -38,7 +37,6 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
-
 
 ///// Base
 @import "./fonts";
@@ -56,8 +54,9 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/banner";
 @import "./homepage/quick-access";
 @import "./homepage/a-la-une";
-@import "./homepage/actualites"
+@import "./homepage/actualites";
 
 
-
-
+// body{
+//     background: blue;
+// }

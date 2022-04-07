@@ -8,8 +8,7 @@ import "./scss/main.scss";
 // // // example: wrapping an anchor with class "wrap_me" into a new div element
 // // wrap(document.getElementById('portal-logo'), document.createElement('div'));
 // // var element = document.createElement("div");
-// // document.getElementById('portal-logo').appendChild(element);  
-
+// // document.getElementById('portal-logo').appendChild(element);
 
 // $( document ).ready(function() {
 //     function wrap(el,el2,el3, wrapper) {
@@ -24,11 +23,10 @@ import "./scss/main.scss";
 //     }
 //     wrap(document.getElementById('portal-logo'), document.getElementById('portal-globalnav-wrapper'), document.getElementById('header-links'), document.createElement('div'));
 
-    
 //     function insertAfter(referenceNode, newNode) {
 //         referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 //       }
-      
+
 //       var el = document.createElement("div");
 //       el.id = "banner-homepage";
 //       var div = document.getElementById("portal-header-top");

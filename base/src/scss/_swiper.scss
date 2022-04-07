@@ -1,29 +1,34 @@
-.swiper-button-next, .swiper-button-prev {
-	top: $swiper-button-top;
-	width: $swiper-button-width;
-	height: $swiper-button-height;
-    background-color:$swiper-background-color;
-	border-radius: $swiper-raduis;
-    &.swiper-button-disabled{
-        pointer-events: visible;
-    }
-}
-.swiper-button-next{
-    background-image: $swiper-next-icon;
-	background-repeat: no-repeat;
-	background-size: $swiper-background-size;
-	background-position: center;
-    &:after{
-        display: none;
-    }
+.swiper-button-next,
+.swiper-button-prev {
+  top: $swiper-button-top;
+  width: $swiper-button-width;
+  height: $swiper-button-height;
+  background-color: $swiper-background-color;
+  border-radius: $swiper-raduis;
+
+  &.swiper-button-disabled {
+    pointer-events: visible;
+  }
 }
 
-.swiper-button-prev{
-    background-image: $swiper-prev-icon;
-	background-repeat: no-repeat;
-	background-size: $swiper-background-size;
-	background-position: center;
-    &:after{
-        display: none;
-    }
+.swiper-button-next {
+  background-image: $swiper-next-icon;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $swiper-background-size;
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  background-image: $swiper-prev-icon;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $swiper-background-size;
+
+  &::after {
+    display: none;
+  }
 }
