@@ -24,7 +24,13 @@
       }
 
       .table_title {
-        margin-top: 1rem;
+        span{
+          margin-top: $quick-access-title-margin;
+          font-size: $quick-access-title-font-size;
+          color: $quick-access-title-color;
+          text-transform: $quick-access-title-text-transform;
+
+        }
       }
     }
   }
