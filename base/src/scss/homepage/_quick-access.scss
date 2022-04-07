@@ -1,10 +1,11 @@
 #body-section-quick-access {
+  padding: $quick-access-container-padding;
   li {
     list-style: none;
-
     a {
       display: block;
       text-align: center;
+      text-decoration:none;
       .image.d-block {
         display: flex;
         width: $quick-access-width;
@@ -20,6 +21,7 @@
         svg {
           width: $quick-access-svg-width;
           height: auto;
+          fill: $quick-access-svg-color;
         }
       }
 
@@ -29,9 +31,20 @@
           font-size: $quick-access-title-font-size;
           color: $quick-access-title-color;
           text-transform: $quick-access-title-text-transform;
-
+          font-weight: $quick-access-title-weight;
         }
       }
     }
+  }
+}
+
+#container-section-quick-access{
+  @if $quick-access-enable-full-bg {
+    background:$quick-access-full-bg-color;
+    border:$quick-access-full-bg-border;
+    box-shadow:$quick-access-full-bg-shadow;
+  }
+  .row{
+    margin-bottom: 0;
   }
 }
