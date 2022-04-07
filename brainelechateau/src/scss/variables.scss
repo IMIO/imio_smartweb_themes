@@ -1,5 +1,5 @@
 //*// COLORS
-$primary: #d5f6!default;
+$primary: #1B365D!default;
 
 //*// TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
@@ -85,6 +85,24 @@ $see-all-align-actu: left !default;
 $see-all-align-center-actu: true !default;
 $see-all-align-event: right !default;
 $see-all-align-center-event: true !default;
+
+
+// Quick access
+$quick-access-width: 100px;
+$quick-access-height: 100px;
+$quick-access-background:#fff;
+$quick-access-border: solid 1px $primary;
+$quick-access-border-radius:10px;
+$quick-access-shadow: none;
+$quick-access-svg-width:40px;
+$quick-access-svg-width:40px;
+$quick-access-title-margin: 1rem 0 0 0;
+$quick-access-title-font-size: 18px;
+$quick-access-title-color: $primary;
+$quick-access-title-text-transform: initial;
+
+
+
 
 // Actu
 $actu-title-margin: 0 0 2rem 0!default;

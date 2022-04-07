@@ -86,6 +86,24 @@ $see-all-align-center-actu: true !default;
 $see-all-align-event: right !default;
 $see-all-align-center-event: true !default;
 
+
+// Quick access
+$quick-access-width: 100px!default;
+$quick-access-height: 100px!default;
+$quick-access-background:#fff!default;
+$quick-access-border: solid 1px $primary;
+$quick-access-border-radius:100px!default;
+$quick-access-shadow: 0 0 2.2px rgb(0 0 0 / 2%), 0 0 5.3px rgb(0 0 0 / 2.8%),
+0 0 10px rgb(0 0 0 / 3.5%), 0 0 17.9px rgb(0 0 0 / 4.2%),
+0 0 33.4px rgb(0 0 0 / 5%), 0 0 80px rgb(0 0 0 / 7%)!default;
+$quick-access-svg-width:40px!default;
+$quick-access-title-margin: 1rem 0 0 0!default;
+$quick-access-title-font-size: 18px!default;
+$quick-access-title-color: $primary!default;
+$quick-access-title-text-transform: initial!default;
+
+
+
 // Actu
 $actu-title-margin: 0 0 2rem 0!default;
 $actu-image-margin-bottom: 0.7rem!default;
