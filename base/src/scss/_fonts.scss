@@ -5,6 +5,8 @@ h4,
 h5,
 h6 {
   font-family: $font-family-title;
+  color: $font-title-color;
+  font-weight:$font-title-weight;
 }
 
 @if $enable-title-uppercase {

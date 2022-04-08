@@ -3,29 +3,19 @@
   @include media-breakpoint-down(lg) {
     padding-bottom: 0;
   }
-
-  &::after {
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    bottom: 65%;
-    left: 50%;
-    width: 100vw;
-    background: #f3f3f3;
-    content: "";
-    transform: translateX(-50%);
-  }
-
   .container {
     padding-right: 0;
     padding-left: 0;
   }
-
+  .section-title{
+    color:$a-la-une-title-color;
+    margin: $a-la-une-title-margin;
+    padding: $a-la-une-title-padding;
+  }
   .swiper-slide {
     a {
       text-decoration: none;
     }
-
     & > a {
       @include media-breakpoint-up(lg) {
         display: grid;
@@ -34,7 +24,6 @@
         grid-template-rows: auto 1fr;
       }
     }
-
     .swiper-image {
       @include media-breakpoint-up(lg) {
         padding-bottom: 60%;
@@ -42,45 +31,42 @@
         grid-row-start: 1;
       }
     }
-
     .swiper_title {
+      font-size:$a-la-une-item-title-font-size;
       @include media-breakpoint-up(lg) {
         align-self: start;
-        padding: 36px 36px 0;
-        margin-top: 0;
-        margin-left: -10%;
-        background: #fff;
+        padding: $a-la-une-item-title-padding;
+        margin:$a-la-une-item-title-margin;
+        background: $a-la-une-text-bg;
         grid-column: 2;
         grid-row: 1;
       }
-
       margin-top: 0;
-
       h3 {
         color: $primary;
       }
     }
-
     .swiper_description {
+      color:$a-la-une-item-title-color;
+      font-size:$a-la-une-item-description-font-size;
       @include media-breakpoint-up(lg) {
-        padding: 0 36px 36px;
-        margin-left: -10%;
-        background: #fff;
+        padding:$a-la-une-item-description-padding;
+        margin:$a-la-une-item-description-margin;
+        background: $a-la-une-text-bg;
         grid-column: 2;
         grid-row: 2;
-
-        // &::after{
-        //     content: "";
-        //     position: absolute;
-        //     top: 3rem;
-        //     width: calc(40% + 1.7rem);
-        //     bottom: 0;
-        //     right: 25px;
-        //     opacity: .5;
-        //     z-index: -1;
-        // }
       }
-
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 3rem;
+      //   width: calc(40% + 1.7rem);
+      //   bottom: 0;
+      //   right: 25px;
+      //   opacity: .5;
+      //   z-index: -1;
+      //   box-shadow: rgba(0,0,0,.16) -10px 10px 36px 0,rgba(0,0,0,.06) 0 0 0 1px;
+      // }
       p {
         color: #676767;
       }
