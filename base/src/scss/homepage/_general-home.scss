@@ -1,0 +1,29 @@
+@mixin see-all-style {
+    margin: $see-all-margin;
+    display: flex;
+    a {
+        display: block;
+        width: max-content;
+        padding: $see-all-padding;
+        background: $see-all-bg;
+        color: $see-all-color;
+        border-radius: $see-all-radius;
+        border: $see-all-border;
+        text-decoration: none;
+        text-transform: $see-all-text-transform;
+        font-size: $see-all-font-size;
+        transition: $see-all-transition;
+        &:hover,
+        &:focus {
+            background: $see-all-hover-bg;
+            color: $see-all-hover-color;
+            border-radius: $see-all-hover-radius;
+            border: $see-all-hover-border;
+        }
+    }
+}
+
+#content-core,
+#main-container {
+    margin-bottom: 0;
+}

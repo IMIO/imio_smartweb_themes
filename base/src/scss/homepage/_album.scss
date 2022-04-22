@@ -1,0 +1,87 @@
+.albumhome {
+    position: relative;
+    padding-top: $album-section-padding-top;
+    padding-bottom: $album-section-padding-bottom;
+    margin: $album-section-margin;
+    background: $album-section-bg;
+    @if $album-section-full-width {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100vw;
+    }
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+        @if $album-section-full-width {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+    }
+    .section-title {
+        color: $album-title-color;
+        margin: $album-title-margin;
+        padding: $album-title-padding;
+        text-align: $album-title-align;
+        @include media-breakpoint-up(lg) {}
+        @include media-breakpoint-up(xxl) {}
+    }
+    .swiper-slide {
+        height: auto;
+        a {
+            text-decoration: none;
+        }
+        &>a {
+            display: grid;
+            height: 100%;
+            place-items: start;
+            grid-auto-rows: min-content;
+            background: $album-item-bg-color;
+            border-radius: $album-item-bg-radius;
+        }
+        .swiper-image {
+            margin-bottom: $album-image-margin-bottom;
+            border-radius: $album-image-border-radius;
+            width: 100%;
+        }
+        .swiper_category {
+            margin: $album-category-margin;
+            span {
+                display: block;
+                padding: $album-category-padding;
+                color: $album-category-color;
+                background: $album-category-bg-color;
+                font-size: $album-category-font-size;
+                font-weight: $album-category-font-weight;
+                text-transform: $album-category-text-transform;
+                border-radius: $album-category-radius;
+            }
+        }
+        .swiper_date {
+            padding: $album-date-padding;
+            margin: $album-date-margin;
+            color: $album-date-color;
+            font-size: $album-date-font-size;
+        }
+        .swiper_title {
+            padding: $album-item-title-padding;
+            margin: $album-item-title-margin;
+            h3 {
+                color: $album-item-title-color;
+                font-size: $album-item-title-font-size;
+                font-weight: $album-item-title-font-weight;
+                text-transform: $album-item-title-text-transform;
+            }
+        }
+    }
+}
+.swiper-pagination-bullet-active {
+    background: $primary !important;
+}
+// see all
+.sectionnews {
+    .see_all {
+        justify-content: $album-see-all-justify-content;
+        @include see-all-style;
+    }
+}

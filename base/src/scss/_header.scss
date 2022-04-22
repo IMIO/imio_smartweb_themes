@@ -1,48 +1,95 @@
 #portal-globalnav-wrapper {
   background: transparent;
 }
-
 .portaltype-imio-smartweb-portalpage #portal-breadcrumbs {
   display: none;
 }
-
 #portal-header {
   z-index: 2;
   display: block;
   margin-top: 0;
   #portal-header-top {
+    position: relative;
     z-index: 2;
     // display: grid;
     // grid-template-columns: 115px 1fr auto !important;
     // grid-template-areas: "logo menu link";
     display: flex;
+    align-items: center;
     padding: $header-top-padding;
     @if $header-center-nav {
       justify-content: space-between;
-
       #portal-globalnav-wrapper {
         margin-right: 0 !important;
       }
     }
-
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50vw);
+      z-index: -1;
+      background: $header-top-background;
+    }
     #portal-logo {
       max-width: $main-logo-max-width;
       margin-top: 0;
-
       img {
         max-width: 100%;
       }
     }
-
     #portal-globalnav-wrapper {
       margin: $header-nav-margin;
     }
 
     #header-links {
       margin-left: auto;
-
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      #header-actions {
+        @include media-breakpoint-down(lg) {
+          display: none !important;
+        }
+      }
+      a,
+      span {
+        color: $header-links-color;
+      }
+      .account {
+        margin: $header-links-account-margin;
+        padding: $header-links-account-padding;
+        border: $header-links-account-border;
+        background: $header-links-account-bg;
+        &:hover,
+        &:focus {
+          border: $header-links-account-hover-border;
+          background: $header-links-account-hover-bg;
+          color: $header-links-account-hover-color !important;
+        }
+      }
       #search-link {
         cursor: pointer;
+        a {
+          width: 46px;
+          height: 46px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #c1c1c1;
+          border-radius: 50px;
+          &:before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: $header-search-icon no-repeat;
+            background-size: 14px;
+            display: block;
+          }
+        }
       }
     }
   }

@@ -12,3 +12,8 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 // ... add your styles here
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/en-image";
+@import "./home/les-sites";

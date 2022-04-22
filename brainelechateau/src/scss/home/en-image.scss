@@ -1,0 +1,13 @@
+.albumhome {
+    &::after {
+        content: "";
+        width: 103px;
+        height: 206px;
+        background: url("../../assets/svg/moulin-green.svg");
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(50%) rotate(180deg);
+    }
+}

@@ -39,6 +39,8 @@ $roboto-base-path: "@theme/assets/fonts/";
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
 ///// Base
+@import "./mixin";
+@import "./general";
 @import "./fonts";
 @import "./sitenav";
 @import "./header";
@@ -48,13 +50,24 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./swiper";
 
 //// Sections
-@import "./sections/textes";
+@import "./sections/se-textes";
+@import "./sections/se-contact";
+@import "./sections/se-file";
+@import "./sections/se-gallery";
+@import "./sections/se-link";
+@import "./sections/se-linked-content";
+@import "./sections/se-plan";
 
 // Home page
+@import "./homepage/general-home";
 @import "./homepage/banner";
 @import "./homepage/quick-access";
 @import "./homepage/a-la-une";
 @import "./homepage/actualites";
+@import "./homepage/events";
+@import "./homepage/album";
+
+
 
 
 // body{
