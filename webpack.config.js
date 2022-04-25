@@ -40,8 +40,13 @@ module.exports = (env, argv) => {
             {
               copy: [
                 {
-                  source: `${THEME_PATH}/*`,
+                  source: `${THEME_PATH}/**`,
                   destination: `${THEME_PATH}/tmp/${THEME_FOLDER}`,
+                  options: {
+                    flat: false,
+                    preserveTimestamps: true,
+                    overwite: true,
+                  },
                   globOptions: {
                     ignore: [
                       "node_modules/**",
