@@ -44,12 +44,15 @@ module.exports = (env, argv) => {
                   destination: `${THEME_PATH}/tmp/${THEME_FOLDER}`,
                   globOptions: {
                     ignore: [
-                      "node_modules/**",
-                      "src/**",
-                      "package.json",
+                      "**/package.json",
                       "**/*.zip",
                     ],
                   },
+
+                },      
+                {
+                  source: `${THEME_PATH}/dist`,
+                  destination: `${THEME_PATH}/tmp/${THEME_FOLDER}/dist`,
                 },
               ],
             },
@@ -61,7 +64,7 @@ module.exports = (env, argv) => {
                 },
               ],
             },
-            { delete: [`${THEME_PATH}/tmp`] },
+           { delete: [`${THEME_PATH}/tmp`] },
           ],
         },
       }),
