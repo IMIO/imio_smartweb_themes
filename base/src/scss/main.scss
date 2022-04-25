@@ -38,16 +38,30 @@ $roboto-base-path: "@theme/assets/fonts/";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
+///// Common
+@import "./common/com-cookies";
+@import "./common/com-edition";
+@import "./common/com-faceted";
+@import "./common/com-list-image";
+@import "./common/messviewlet";
+
+///// List
+@import "./list/list-block";
+@import "./list/list-block-img";
+@import "./list/list-img";
+@import "./list/list";
 ///// Base
 @import "./mixin";
 @import "./general";
 @import "./fonts";
 @import "./sitenav";
+@import "./sub-sitenav";
 @import "./header";
 @import "./edition";
 @import "./swiper";
 @import "./print";
 @import "./swiper";
+@import "./trucaverif";
 
 //// Sections
 @import "./sections/se-textes";

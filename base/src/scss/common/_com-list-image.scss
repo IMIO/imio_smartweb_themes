@@ -1,0 +1,16 @@
+.template-summary_view_with_images{
+    .list-menu-element{
+        a{
+            text-decoration: none;
+            margin: 0.5rem 0rem;
+            flex-wrap: nowrap;
+            .newsImage{
+                width: 50px;
+                height: 50px;
+            }
+            .list-card-body{
+                width: auto;
+            }
+        }
+    }
+}

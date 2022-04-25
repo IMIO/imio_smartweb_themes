@@ -1,0 +1,184 @@
+// /* vues facettes */
+.widget-fieldset legend {
+    font-weight: bold;
+    font-size: 14px;
+}
+legend {}
+.template-facetednavigation_view .faceted-top-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.template-facetednavigation_view .faceted-top-widgets {
+    .faceted-widget {
+        width: 100%;
+        fieldset {
+            padding: 0 !important;
+            form {
+                position: relative;
+            }
+            .searchButton {
+                // background: url(../svg/search.svg) no-repeat;
+                background-position: center;
+                background-size: contain;
+                border: none;
+                position: absolute;
+                width: 15px;
+                right: 10px;
+                top: 0;
+                bottom: 0;
+                font-size: 0px;
+
+            }
+        }
+    }
+    .faceted_select,
+    input {
+        width: 100%;
+        border-radius: 0;
+        height: 2.5rem;
+        border: 1px solid #ccc;
+        background: transparent;
+        padding: 0 .5rem;
+    }
+}
+#faceted-form fieldset {
+    border: 0px solid white;
+}
+
+// /* filtres actifs */
+
+.faceted-criteria-widget {
+    width: 100%;
+    .faceted-criteria-reset {
+        a {
+            color: #000 !important;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                // background: url(../svg/close.svg) no-repeat;
+                background-position: center;
+                position: relative;
+                vertical-align: middle;
+                margin: 0 1px;
+                background-size: contain;
+            }
+        }
+    }
+    .widget-fieldset.faceted-criteria {
+        &>legend {
+            display: block;
+            font-size: 1em;
+            color: #292929;
+            font-weight: normal;
+        }
+        .widget-body {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            dl {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-bottom: .2rem;
+                dd {
+                    display: inline-block;
+                    background: #efefef;
+                    border-radius: 3px;
+                    padding: 0.4em 0;
+                    &:hover {
+                        span span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.faceted-criteria dt {
+    display: none;
+}
+.faceted-criteria .widget-body dl dd {
+    margin: 0;
+}
+.faceted-criteria dd span {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    a {
+        inset: 0px;
+        position: absolute;
+        z-index: 1;
+    }
+    span {
+        color: #000;
+        opacity: .55;
+        &:before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            // background: url(../svg/close.svg) no-repeat;
+            background-position: center;
+            position: relative;
+            top: 1px;
+            margin: 0 1px;
+            background-size: contain;
+        }
+    }
+}
+.faceted-criteria .faceted-remove::before {
+    display: none;
+}
+
+@include media-breakpoint-up(md) {
+    .template-facetednavigation_view {
+        .faceted-top-widgets .faceted-widget {
+            max-width: 250px;
+            &.faceted-criteria-widget {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+// MINISIES
+
+.to-portal {
+    position: relative;
+    text-align: center;
+    padding: 0.25em 0;
+}
+.to-portal a {
+    color: #fff;
+    text-decoration: none;
+}
+.to-portal a:hover {
+    text-decoration: underline;
+}
+
+
+
+///// correctifs 
+
+.ui-widget-header>div.ui-icon {
+    background-size: auto;
+    margin-right: 0.5rem;
+}
+
+
+// @media screen and (min-width: 992px){
+//     .has_subtree.dropdown>ul {
+//         overflow-y: auto;
+//     }
+// }

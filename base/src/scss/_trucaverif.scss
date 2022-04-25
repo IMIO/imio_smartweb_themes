@@ -1,0 +1,967 @@
+// Pour modifier la section utilisée pour le formulaire de contact
+#body-section-formulaires-de-contact .table_image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .plone-icon {
+        height: 2em;
+    }
+}
+//---//
+.sectionlinks {
+    .swiper_title {
+        margin-top: 1rem;
+    }
+}
+// Pour custom l'overlay vidéo
+.section-home-page-bla .plone-modal-header {
+    padding: 0px 10px;
+    border-bottom: 0px solid #e5e5e5;
+    position: relative;
+    z-index: 3;
+}
+.section-home-page-bla .plone-modal-footer {
+    border-top: 0px solid #e5e5e5;
+    padding: 0;
+}
+.vid a.pat-plone-modal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+//---//
+
+//affichage des vidéos sur vue facettes
+.faceted-block-view-with-images .block-menu-element {
+    position: relative;
+}
+.faceted-block-view-with-images .block-menu-element a.faceted_video {
+    inset: 0 !important;
+    position: absolute !important;
+}
+//---//
+
+// Custom de la vue pour afficher les images en portrait
+/* https://bla.preprod.imio.be/zone-de-police/presentation/agents-de-quartier/votre-inspecteur-de-proximite#b_start=0 */
+.subsection-agents-de-quartier .card-img-top {
+    padding-top: 120%;
+}
+//---//
+
+//  je sais pas quoi (privacy)
+.view-name-consent {
+    display: flex;
+    flex-direction: column;
+}
+.view-name-consent>div>label.form-label {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+div#formfield-form-widgets-basic_cookies {
+    order: 0;
+}
+div#formfield-form-widgets-basic_analytics {
+    order: 1;
+}
+//---//
+// Pour react
+
+.no-search-item-img {
+    background: black;
+    background-size: cover !important;
+    background-color: #c9c9c9 !important;
+    background-position: center !important;
+}
+.r-search-img {
+    background-color: #c9c9c9 !important;
+}
+//---//
+
+
+
+// ------- A remonter dans core ------ //
+
+// style icônes vue contenu
+.template-folder_contents #content-core .table .itemRow.state-private,
+.template-folder_contents #content-core .table .itemRow.state-private .state-private {
+    color: #dc3545 !important;
+}
+a.manage.contenttype-imio-smartweb-page:before {
+    content: '\e80e';
+    font-family: 'fontello';
+}
+a.manage.contenttype-imio-smartweb-folder:before {
+    content: '\e801';
+    font-family: 'fontello';
+}
+a.manage.contenttype-imio-smartweb-newsview:before {
+    content: '\e80f';
+    font-family: 'fontello';
+}
+a.manage.contenttype-imio-smartweb-eventsview:before {
+    content: '\e809';
+    font-family: 'fontello';
+}
+a.manage.contenttype-imio-smartweb-directoryview:before {
+    content: '\e842';
+    font-family: 'fontello';
+}
+a.manage.contenttype-collection:before {
+    content: '\e808';
+    font-family: 'fontello';
+}
+a.manage.contenttype-link:before {
+    content: '\e806';
+    font-family: 'fontello';
+}
+//---//
+
+// navigation de la vue contenu
+#content-core .pat-structure .navbar.ui-offset-parent {
+    z-index: 1;
+}
+//---//
+
+// Affiche les commandes du plan devant le menu
+.leaflet-top.leaflet-left {
+    z-index: 1;
+}
+//---//
+
+// Pour supprimer le margin en fin de page ( si non le footer ne colle pas au sections)
+#main-container,
+#content-core {
+    margin-bottom: 0;
+}
+//---//
+
+/* slider sinon un click sur la flèches inactive amène sur l'élément derrière */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    pointer-events: visible;
+}
+
+.section-en-un-clic.subsection-contact .sectioncontact {
+    .section-title {
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            &:after {
+                content: "";
+                width: 9px;
+                height: 6px;
+                display: block;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-left: .4rem;
+            }
+        }
+    }
+}
+
+
+
+/////// CUSTOM BLA ////////////////
+
+@media screen and (min-width: 992px) {
+    .template-manage-viewlets .managedViewlets .viewletmanager #portal-header {
+        display: block !important;
+    }
+}
+.portaltype-link.userrole-authenticated img.figure-img {
+    max-width: 10rem;
+}
+// #body-section-en-un-clic .cls-1 {
+//     fill: #fff;
+//     stroke: #000;
+// }
+
+// #portal-logo .cls-1 {
+//     stroke: none;
+//     fill: #0090d2;
+// }
+/* select 2 */
+.faceted-multiselect-widget .select2-container .select2-choice {
+    border-radius: 0;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-color: #ccc;
+}
+.select2-container .select2-choice .select2-arrow b {
+    background-position: 0 0.4rem !important;
+}
+.faceted-multiselect-widget .select2-container .select2-choice abbr {
+    top: 0.8rem;
+}
+
+/* map */
+span.r-map-popup-title {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.leaflet-popup-content p {
+    margin: 0 !important;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: #1c1c1c;
+}
+
+.sectionfiles li:first-child {
+    margin-top: 1.25rem;
+}
+
+div#top-area.faceted-area .widget-fieldset legend {
+    display: none;
+}
+.kssattr-fieldset-icons .plone-icon {
+    height: auto;
+    width: 3rem;
+    margin: 0.5rem;
+}
+.kssattr-fieldset-icons span.option {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.kssattr-fieldset-icons span.option:hover {
+    background: #f9f9f9;
+}
+.kssattr-fieldset-icons .form-check-input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    border-radius: 0 !important;
+    margin: 0;
+    height: 100%;
+    background: transparent;
+    background-image: none !important;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.kssattr-fieldset-icons .form-check-input:hover {
+    border: 1px solid #333;
+}
+.kssattr-fieldset-icons .form-check-input:checked:hover {
+    border: 1px solid $primary;
+}
+
+@media screen and (min-width:576px) {
+    .sectioncontact.col-sm-3 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+}
+@media screen and (min-width:993px) {
+    .sectioncontact.col-sm-3 {
+        flex: 0 0 auto;
+        width: 25% !important;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .sectioncontact.col-sm-4 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+}
+@media screen and (min-width:993px) {
+    .sectioncontact.col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.333333% !important;
+    }
+}
+
+.block-menu-element .newsImage.no-image {
+    display: none;
+}
+
+
+textarea {
+    width: 100%;
+}
+
+/* nouveautés */
+.userrole-anonymous.portaltype-imio-smartweb-procedure .category,
+.userrole-anonymous.portaltype-imio-smartweb-page .category {
+    display: none;
+}
+#portal-header #portal-logo.minisite_logo {
+    padding: 0.5rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+    font-size: 1.5rem;
+}
+.block-menu-element .card-body .card-text {
+    max-height: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+.block-menu-element .card-body .card-text:after {
+    content: "";
+    background: linear-gradient(275deg, white, transparent);
+    top: 1.5rem;
+    position: absolute;
+    height: 1.5rem;
+    right: 0;
+    width: 50%;
+}
+.faceted-block-view-with-images .block-menu-element a .card-body {
+    border-radius: 0px 0px 15px 0;
+}
+.userrole-anonymous .pat-sortable .sortable-section {
+    border: 0px solid transparent !important;
+}
+.faceted-form {
+    padding: 0;
+}
+.sortable-section.sectionvideo {
+    padding-bottom: 1.5rem;
+}
+.sortable-section.sectionvideo #container-section-video {
+    padding: 0;
+}
+#portal-footer-wrapper {
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#content header .lead.rich_description {
+    max-width: 1024px;
+}
+.procedure a {
+    background: $primary;
+    padding: 0.75rem;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+.procedure a::after {
+    content: '\e803';
+    font-family: fontello;
+    margin-left: 0.5rem;
+}
+div#viewlet-below-content-body .procedure {
+    margin-bottom: 1rem;
+}
+#content-core .citoyennete-1 {
+    z-index: 0;
+    position: relative;
+}
+.citoyennete-1 div#container-section-citoyennete:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#portal-footer-wrapper li.facebook,
+#portal-footer-wrapper li.twitter {
+    width: 2.5rem;
+    display: inline-block;
+}
+#portal-footer-wrapper .twitter a {
+    display: block;
+    width: 29px;
+    height: 29px;
+    font-size: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 50 50" enable-background="new 0 0 34.56 34.35" xml:space="preserve"><path d="M44.8812 14.2068C44.9116 14.6517 44.9116 15.0965 44.9116 15.5454C44.9116 29.2242 34.5927 45 15.7242 45V44.9918C10.1503 45 4.69226 43.3888 0 40.3509C0.810481 40.4493 1.62503 40.4985 2.4416 40.5005C7.06074 40.5046 11.5478 38.9406 15.1818 36.0605C10.7922 35.9765 6.94292 33.0882 5.59821 28.8716C7.13589 29.1709 8.72029 29.1094 10.2295 28.6933C5.44384 27.7175 2.00081 23.4743 2.00081 18.5464C2.00081 18.5013 2.00081 18.4583 2.00081 18.4152C3.42677 19.2167 5.02336 19.6615 6.65651 19.7107C2.1491 16.6708 0.759699 10.6196 3.48162 5.88847C8.68982 12.3558 16.3742 16.2875 24.6232 16.7036C23.7965 13.1081 24.9259 9.34045 27.5909 6.81296C31.7225 2.89361 38.2206 3.0945 42.1044 7.26188C44.4018 6.80476 46.6037 5.95406 48.6187 4.74874C47.8529 7.14504 46.2503 9.18056 44.1093 10.474C46.1426 10.2321 48.1292 9.68278 50 8.84438C48.6228 10.9271 46.8881 12.7412 44.8812 14.2068Z" fill="white"></path><title></title></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1rem;
+}
+#portal-footer-wrapper .twitter a:hover {
+    opacity: .7;
+}
+
+.sectionsendinblue input#form-widgets-email {
+    max-width: 24rem;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.sectioncollection.kiosque .swiper-wrapper {
+    padding-top: 1rem;
+}
+.sectioncollection.kiosque a .swiper-image {
+    transition: all 0.25s ease;
+}
+.sectioncollection.kiosque a:hover .swiper-image {
+    transform: rotate(-1deg) translateY(-10px);
+}
+
+@media screen and (max-width: 443px) {
+    .r-result-filter .r-filter {
+        max-width: 100%;
+    }
+    .portaltype-imio-smartweb-portalpage #content-core .reseaux-sociaux .section-container .body-section ul {
+        justify-content: space-between;
+    }
+    .reseaux-sociaux .section-container .body-section ul li {
+        padding: 0;
+    }
+}
+
+.a-la-une .swiper-slide .swiper_description p {
+    color: #676767;
+    font-size: 1.25rem;
+    max-width: 90%;
+    padding-top: 1rem;
+}
+.template-block_view_with_images #content-core,
+.template-block_view #content-core,
+.template-summary_view #content-core,
+.template-summary_view_with_images #content-core {
+    padding-bottom: 3rem;
+}
+body.template-block_view_with_images .block-menu-element a .card-body {
+    border-radius: 0px 0px 15px 0;
+}
+.block-menu-element a .card-body,
+body.template-block_view_with_images .block-menu-element a .card-body {
+    width: auto;
+}
+div#faceted-results {
+    padding-bottom: 1.5rem;
+}
+.list-menu-element {
+    margin-bottom: 1rem;
+}
+.list-menu-element a.row {
+    text-decoration: none;
+}
+.newsletterhomepage .body-section {
+    margin-top: 0;
+}
+.reseaux-sociaux {
+    padding-top: 1rem;
+}
+.reseaux-sociaux .section-container .rich_description {
+    margin: 0 0 1rem 0;
+}
+.faceted-block-view-with-images h2.card-title {
+    font-size: 1rem;
+}
+/* vue actus */
+.portaltype-imio-smartweb-eventsview li,
+.portaltype-imio-smartweb-newsview li {
+    list-style-position: inside;
+}
+
+
+#portal-footer-wrapper #body-section-administration-communale li.website {
+    display: none;
+}
+#container-section-les-sites-de-la-ville .nb-items-batch-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-news .r-search-img,
+.search-events .r-search-img {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+/* https://bla.preprod.imio.be/ma-commune/services-communaux/citoyennete/demarches/carte-d-identite-electronique-12-ans#section-prix-et-delai-de-livraison */
+.text table {
+    border: 0px;
+}
+.text table tr:nth-child(even) {
+    background: #f7f7f7;
+}
+.plone-modal-close {
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 1.75rem;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+}
+/* couleur texte accessibité */
+// #body-section-en-un-clic li>div>a .table_title span {
+//     color: #0073a9;
+// }
+body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure .category {
+    display: none;
+}
+
+#portal-footer-wrapper {
+    padding: 0 !important;
+}
+#portal-footer-wrapper li {
+    margin-bottom: 0.25rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+#portal-footer-wrapper .contact_address span {
+    display: block;
+}
+#portal-footer-wrapper #portal-footer.container {
+    max-width: 100% !important;
+    background: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+div#smartweb-footer {
+    background: rgba(0, 0, 0, 0.9);
+}
+// div#smartweb-subsite-footer {
+//     background: #007db8;
+// }
+#smartweb-subsite-footer .section-contact .body-section .h2,
+#smartweb-subsite-footer .section-contact .body-section .h3,
+#smartweb-subsite-footer .section-contact .body-section a,
+#smartweb-subsite-footer .section-contact .body-section h2,
+#smartweb-subsite-footer .section-contact .body-section h3,
+#smartweb-subsite-footer .sectiontext {
+    color: #fff;
+}
+/* section fichier */
+.portaltype-imio-smartweb-page #content .sectionfiles ul.row,
+.portaltype-imio-smartweb-procedure #content .sectionfiles ul.row {
+    margin-left: 0;
+}
+.portaltype-imio-smartweb-procedure .sectionfiles:after,
+.portaltype-imio-smartweb-page .sectionfiles:after {
+    width: 100%;
+    transform: translateX(0vw);
+    left: 0;
+}
+.portaltype-imio-smartweb-procedure .sectionfiles .table_display,
+.portaltype-imio-smartweb-procedure .sectionfiles li.col-md-12,
+.portaltype-imio-smartweb-page .sectionfiles .table_display,
+.portaltype-imio-smartweb-page .sectionfiles li.col-md-12 {
+    max-width: 760px;
+    margin: 0.5rem auto;
+    padding-left: 0;
+}
+.portaltype-imio-smartweb-procedure .sectionfiles .table_image,
+.portaltype-imio-smartweb-page .sectionfiles .table_image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.portaltype-imio-smartweb-procedure .sectionlinks .table_title,
+.portaltype-imio-smartweb-page .sectionlinks .table_title,
+.portaltype-imio-smartweb-procedure .sectionfiles .table_title,
+.portaltype-imio-smartweb-page .sectionfiles .table_title {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+.portaltype-imio-smartweb-procedure .sectionfiles a.table_image .table_title span::before,
+.portaltype-imio-smartweb-page .sectionfiles a.table_image .table_title span::before {
+    content: "\e80e";
+    font-family: fontello;
+    margin-right: 0.5rem;
+}
+.portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image .table_title span::before,
+.portaltype-imio-smartweb-page #content .sectionlinks a.table_image .table_title span::before {
+    content: "\e806";
+    font-family: 'fontello';
+    margin-right: 0.5rem;
+}
+/* section links */
+.portaltype-imio-smartweb-page #content .sectionlinks ul.row,
+.portaltype-imio-smartweb-procedure #content .sectionlinks ul.row {
+    margin-left: 0;
+}
+.portaltype-imio-smartweb-page #content .sectionlinks:after,
+.portaltype-imio-smartweb-procedure #content .sectionlinks:after {
+    content: "";
+    background: #f3f3f3;
+    left: 0.75rem;
+    right: 0.75rem;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.portaltype-imio-smartweb-procedure #content .sectionlinks .table_display,
+.portaltype-imio-smartweb-procedure #content .sectionlinks li.col-md-12,
+.portaltype-imio-smartweb-page #content .sectionlinks .table_display,
+.portaltype-imio-smartweb-page #content .sectionlinks li.col-md-12 {
+    max-width: 760px;
+    margin: 0.5rem auto;
+}
+.portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+.portaltype-imio-smartweb-page #content .sectionlinks a.table_image {
+    color: $primary;
+}
+
+.subsection-demarches-infos-pratiques .list-menu-element .newsImage.card-img-left {
+    margin-left: 1rem;
+}
+.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
+    position: relative;
+    text-decoration: none;
+}
+.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"]:after {
+    content: "";
+    background: #f3f3f3;
+    position: absolute;
+    left: -0.5rem;
+    right: -0.5rem;
+    bottom: 0;
+    top: 0.25rem;
+    z-index: -1;
+    border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 768px) {
+    .sortable-section.sectioncontact .body-section.show {
+        display: flex !important;
+    }
+    .portaltype-imio-smartweb-procedure .sectionlinks,
+    .portaltype-imio-smartweb-page .sectionlinks,
+    .portaltype-imio-smartweb-procedure .sectionfiles,
+    .portaltype-imio-smartweb-page .sectionfiles {
+        background: transparent;
+    }
+    .portaltype-imio-smartweb-procedure .sectionlinks:after,
+    .portaltype-imio-smartweb-page .sectionlinks:after,
+    .portaltype-imio-smartweb-procedure .sectionfiles:after,
+    .portaltype-imio-smartweb-page .sectionfiles:after {
+        width: auto;
+        left: 0.75rem;
+        right: 0.75rem;
+    }
+    /* supprimer #container-section-bla-en-images > div */
+    #container-section-bla-en-images>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #banner {
+        height: 150px;
+    }
+    .sortable-section.sectioncontact .body-section.show {
+        display: flex !important;
+    }
+    #portal-column-content .sortable-section.sectioncontact .body-section {
+        flex-wrap: nowrap !important;
+    }
+    .gdpr-actions {
+        display: flex;
+        flex-direction: column;
+    }
+    #gdpr-consent-banner .gdpr-actions>a {
+        margin-left: 0;
+        text-align: center;
+    }
+    #gdpr-consent-banner .gdpr-actions input[name=refuse] {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+.subsection-demarches-infos-pratiques .list-menu-element .list-card-title.h2,
+.subsection-demarches-infos-pratiques .list-menu-element h2.list-card-title {
+    font-size: 1.25rem;
+}
+/* attention de ne cibler que les type page pour le bg des sections links */
+/*.portaltype-imio-smartweb-portalpage .sectionlinks {
+    background: transparent;
+}*/
+#content .sortable-section.sectionlinks.un-clic:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50vw);
+}
+@media screen and (max-width: 575px) {
+    #content .sortable-section.sectionlinks.un-clic:after {
+        left: 50% !important;
+    }
+}
+div#body-section-en-un-clic {
+    background: #f3f3f3;
+}
+
+#content .sortable-section.sectionlinks.reseaux-sociaux:after {
+    background: $primary;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+}
+.sectionlinks.section-link-bla-en-images {
+    background: #fff;
+}
+.sectionlinks.albumhome {
+    background: #fff;
+}
+.portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+    background: #f8f8f8;
+}
+/* newsletter */
+#body-section-newsletter label.form-label,
+.newsletterhomepage .form-text {
+    visibility: hidden;
+    height: 0;
+}
+#body-section-newsletter form#form {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+}
+#formfield-form-widgets-email {
+    width: 100%;
+}
+#body-section-newsletter form#form .formControls {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
+
+.sectiontext .section-text .body-section figure img {
+    max-width: 100%;
+}
+.smartweb-footer div#body-section-administration-communale {
+    max-width: 100%;
+}
+.smartweb-footer .sectionlinks {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#portal-footer-wrapper .smartweb-footer #body-section-liens-utiles a .image {
+    width: 0rem !important;
+}
+#portal-footer-wrapper .smartweb-footer .sectionlinks .section-container {
+    gap: 0;
+    padding-bottom: 0 !important;
+}
+#portal-footer-wrapper .sectionlinks h2.section-title {
+    color: white;
+}
+
+#portal-footer-wrapper .smartweb-footer .sectiontext.feder {
+    padding-top: 0 !important;
+}
+
+/*@media screen and (max-width: 767.98px){
+    #portal-footer-wrapper .smartweb-footer .container .row .container {
+        padding: 1rem;
+    }
+}*/
+.colophonWrapper {
+    padding: 0.5rem 1rem 0;
+}
+.colophonWrapper ul {
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+.colophonWrapper li {
+    margin-right: 0;
+}
+
+.template-sitemap ul {
+    padding-left: 2rem;
+}
+.contact_subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.img-portrait .contact_logo {
+    padding-top: 120%;
+    width: 100%;
+    background-position: top;
+}
+.section-container.section-text mark {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 1215px) {
+    div#container-section-temps-dattente-aux-guichets {
+        margin-top: -12rem !important;
+
+    }
+}
+@media screen and (min-width: 768px) {
+    div#container-section-temps-dattente-aux-guichets {
+        width: 40%;
+        flex-direction: row !important;
+    }
+}
+div#container-section-temps-dattente-aux-guichets {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* z-index: -1; */
+    position: relative;
+    flex-direction: column;
+}
+
+#content-core .sortable-section .collapse:not(.show) {
+    display: none;
+}
+/* la hauter du banner est encore à définir */
+#body-section-formulaires-de-contact .table_image .image,
+#body-section-formulaires-de-contact .table_image .table_title {
+    width: auto !important;
+    display: inline-block !important;
+}
+#body-section-formulaires-de-contact .table_image .image .plone-icon {
+    height: 2em;
+}
+
+/* fin nouveautés */
+
+
+/* retour sur mobile */
+a.prev-nav:before {
+    margin-right: 0.5rem;
+    top: 0px;
+    position: relative;
+    content: "〈";
+    font-size: 0.9rem;
+    margin-left: -0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    #subsite-navigation>ul>li.show-nav>.has_subtree.dropdown {
+        margin-top: 1rem;
+        display: table;
+        width: 100% !important;
+        left: 0 !important;
+    }
+    #subsite-navigation>ul li>.has_subtree.dropdown .has_subtree.dropdown {
+        top: 0;
+        width: 100% !important;
+    }
+    .subsite-container #subsite-logo {
+        width: 100%;
+    }
+    .subsite-container #subsite-logo a {
+        padding-left: 0.6rem;
+        box-sizing: border-box;
+    }
+    #subsite-navigation>ul>li:first-child {
+        margin-left: 0.5rem;
+    }
+    #subsite-navigation>ul>li {
+        margin-right: 0.75rem;
+    }
+    #portal-globalnav-collapse>ul>li>a,
+    #subsite-navigation>ul>li>a {
+        padding: 1rem 0;
+    }
+
+    /* page d'accueil */
+    #content-core .sortable-section.citoyennete-1,
+    #content-core .sortable-section.citoyennete-2,
+    .sortable-section.sectionlinks.section-annuaire.col-sm-6,
+    .sortable-section.sectiontext.annuaire-plan,
+    .sectionlinks.sites-de-la-ville .section-container .section-title,
+    .sectionlinks.sites-de-la-ville .section-container #body-section-les-sites-de-la-ville {
+        width: 100%;
+    }
+    #content-core .citoyennete-2 {
+        margin-top: 0;
+    }
+    .citoyennete-2 div#body-section-texte-citoyennete {
+        left: 0;
+        position: relative;
+        height: auto;
+        padding: 2rem;
+    }
+    .sortable-section.sectionlinks.section-liens-citoyennete .body-section {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .portaltype-imio-smartweb-portalpage #content-core .row {
+        justify-content: center;
+    }
+    .sectionlinks.sites-de-la-ville .section-container {
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+    }
+    .sectionnews.actu .section-container .see_all {
+        position: initial;
+        float: right;
+        margin-bottom: 1.5rem;
+    }
+    .en-un-clic-titre svg {
+        display: none;
+    }
+    #content .sortable-section.sectionlinks.un-clic::after {
+        width: 100vw !important;
+    }
+    #body-section-en-un-clic li {
+        width: 50% !important;
+    }
+    .en-un-clic-titre::after {
+        background: #f3f3f3;
+        content: "";
+        width: 100vw;
+        z-index: -2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: -50vw;
+        margin-left: 50%;
+    }
+    .annuaire-plan .body-section figure {
+        margin-top: 0 !important;
+    }
+    .a-la-une .swiper_description {
+        padding: 0 1rem;
+    }
+    .pat-sortable .sortable-section .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .swiper-slide a {
+        text-decoration: none;
+    }
+    .sites-de-la-ville .section-title.h2,
+    .sites-de-la-ville h2.section-title {
+        font-size: 2.5rem;
+    }
+}

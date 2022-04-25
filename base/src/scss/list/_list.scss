@@ -1,0 +1,61 @@
+.list-group {
+    .list-group-item {
+        border-bottom: $border-width solid $gray;
+        position: relative;
+        .tileHeadline {
+            a::after {
+                content: "";
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+                z-index: 1;
+            }
+            &:hover,
+            &:focus {
+                .summary {
+                    border-bottom: $link-hover-decoration;
+                }
+                &::after {
+                    // content: url(../svg/arrow-right-white.svg);
+                    background: $yellow;
+                    position: absolute;
+                    right: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+            &::after {
+                // content: url(../svg/arrow-right-yellow.svg);
+                background: #fff;
+                position: absolute;
+                right: 0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+        .summary {
+            &:hover,
+            &:focus {
+                border-bottom: $link-hover-decoration;
+            }
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+    }
+}
+//HTML
+body .list-group {
+    .list-group-item {
+        border: none !important;
+    }
+}
