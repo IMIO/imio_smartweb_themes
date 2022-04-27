@@ -2,8 +2,8 @@
   mark {
     display: block;
     padding: 20px 45px 20px 26px;
-    border: solid 4px #0079b1;
-    background-color: #008fd2;
+    border: solid 4px $primary;
+    background-color: $primary;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     color: #fff;
@@ -161,7 +161,7 @@
 }
 
 div:not(.sectiontext) {
-  & + .sectiontext {
+  &+.sectiontext {
     // @include section-padding-top;
     h2 {
       margin-top: 10px !important;

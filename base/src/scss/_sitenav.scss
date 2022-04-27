@@ -1,7 +1,9 @@
 #portal-globalnav-wrapper {
   position: initial !important;
   padding: 0 !important;
-  flex: 1;
+  @include media-breakpoint-up(lg) {
+    flex: 1;
+  }
   span {
     padding: 1rem 0;
   }
@@ -115,7 +117,7 @@
               height: 2px;
               position: absolute;
               left: 0;
-              background-color: #f9b300;
+              background-color: #FCE181;
               bottom: 0;
               transition: all .3s ease;
               right: 0;
@@ -258,6 +260,17 @@
 #subsite-navigation #portal-globalnav>li>.has_subtree {
   @include media-breakpoint-up(lg) {
     margin-top: 2.25rem;
+  }
+}
+@include media-breakpoint-down(lg) {
+  #portal-globalnav-collapse #portal-globalnav>li>.nav-link {
+    border-bottom: 1px solid #ddd;
+  }
+  #portal-globalnav-collapse #portal-globalnav>li>.nav-link {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 ////// A SUPPRIMER PLUSTARD
@@ -558,12 +571,21 @@
 }
 
 @media screen and (max-width: 992px) {
+  .open-nav-overflow {
+    overflow: hidden;
+    .navbar-dark .navbar-toggler {
+      color: #000;
+      border-color: #000;
+    }
+    .navbar-dark .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+    }
+  }
   .collapse:not(.show) {
     display: block;
     opacity: 0;
     visibility: hidden;
   }
-
   .navbar-toggler {
     z-index: 99;
   }
@@ -578,7 +600,12 @@
     padding: 6em 2em 0;
     background: #fff;
     transition: all 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64);
-
+    #portal-globalnav {
+      &>li>a {
+        color: #000 !important;
+        padding: 1rem 0 !important;
+      }
+    }
     .has_subtree.dropdown {
       top: 0;
       width: 100vw !important;
@@ -586,7 +613,6 @@
         0 0 33.8px rgb(0 0 0 / 8.3%), 0 0 64.5px rgb(0 0 0 / 10.3%),
         0 0 139px rgb(0 0 0 / 15%);
     }
-
     #portal-globalnav>li>.nav-link {
       display: flex;
       align-items: center;
@@ -675,6 +701,8 @@
 #subsite-navigation .dropdown .nav-link.state-private {
   color: #c4183c;
 }
+
+
 
 // mobile
 

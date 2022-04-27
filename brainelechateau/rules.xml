@@ -55,7 +55,10 @@
   <after css:theme-children="#portal-column-two" css:content-children="#portal-column-two"></after>
   <drop css:theme="#portal-column-two" css:if-not-content="#portal-column-two" />
 
-
+  <before
+        css:theme-children="#portal-footer"
+        css:content=".smartweb_footer"
+  />
   <!-- Footer -->
   <xsl:variable name="footer_portlets" select="//footer[@id='portal-footer-wrapper']//div[@class='portletWrapper']/*[not(contains(@id,'portal-colophon')) and not(contains(@id,'portal-footer-signature')) and not(contains(@class,'portletActions'))]"></xsl:variable>
   <xsl:variable name="footer_portlets_count" select="count($footer_portlets)"></xsl:variable>

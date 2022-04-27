@@ -267,7 +267,7 @@ $event-see-all-justify-content: $see-all-justify-content !default;
 
 // Album
 $album-section-full-width: true !default;
-$album-section-bg:transparent !default;
+$album-section-bg:#EDEAE5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
@@ -348,7 +348,7 @@ $section-contact-p-margin:1rem 0;
 $section-contact-width: 260px;
 
 // section-files
-$section-file-background-color: #008fd2;
+$section-file-background-color: $primary;
 $enable-full-width-section-files: true;
 $enable-light-color-section-files: true;
 

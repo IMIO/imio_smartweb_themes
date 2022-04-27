@@ -379,7 +379,6 @@ div#viewlet-below-content-body .procedure {
 
 #portal-footer-wrapper li.facebook,
 #portal-footer-wrapper li.twitter {
-    width: 2.5rem;
     display: inline-block;
 }
 #portal-footer-wrapper .twitter a {
@@ -464,10 +463,10 @@ div#faceted-results {
     font-size: 1rem;
 }
 /* vue actus */
-.portaltype-imio-smartweb-eventsview li,
-.portaltype-imio-smartweb-newsview li {
-    list-style-position: inside;
-}
+// .portaltype-imio-smartweb-eventsview li,
+// .portaltype-imio-smartweb-newsview li {
+//     list-style-position: inside;
+// }
 
 
 #portal-footer-wrapper #body-section-administration-communale li.website {
@@ -523,9 +522,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     background: white;
     padding-left: 0;
     padding-right: 0;
-}
-div#smartweb-footer {
-    background: rgba(0, 0, 0, 0.9);
 }
 // div#smartweb-subsite-footer {
 //     background: #007db8;
@@ -696,9 +692,6 @@ div#smartweb-footer {
         left: 50% !important;
     }
 }
-div#body-section-en-un-clic {
-    background: #f3f3f3;
-}
 
 #content .sortable-section.sectionlinks.reseaux-sociaux:after {
     background: $primary;
@@ -710,12 +703,6 @@ div#body-section-en-un-clic {
     left: 50%;
     transform: translateX(-50vw);
     z-index: -1;
-}
-.sectionlinks.section-link-bla-en-images {
-    background: #fff;
-}
-.sectionlinks.albumhome {
-    background: #fff;
 }
 .portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville:after {
     content: "";

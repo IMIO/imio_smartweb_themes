@@ -9,6 +9,9 @@
   display: block;
   margin-top: 0;
   #portal-header-top {
+    @include media-breakpoint-down(lg) {
+      justify-content: space-between;
+    }
     position: relative;
     z-index: 2;
     // display: grid;
@@ -46,10 +49,15 @@
     }
 
     #header-links {
-      margin-left: auto;
       display: flex;
       align-items: center;
       gap: 26px;
+      @include media-breakpoint-up(lg) {
+        margin-left: auto;
+      }
+      @include media-breakpoint-down(lg) {
+        order: -2;
+      }
       #header-actions {
         @include media-breakpoint-down(lg) {
           display: none !important;
@@ -98,6 +106,12 @@
 header#content-header {
   position: relative;
   z-index: 9;
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar-expand-md .navbar-toggler {
+    display: block !important;
+  }
 }
 
 // .subsite-container{   ---------------------- POURQUOI clip ???
