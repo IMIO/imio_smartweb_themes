@@ -134,7 +134,7 @@ $banner-content-description-color: black !default;
 
 // see_all
 $see-all-padding:1rem !default;
-$see-all-margin:0 !default;
+$see-all-margin:2rem 0 0 0;
 $see-all-bg:$primary !default;
 $see-all-color:#000 !default;
 $see-all-radius:$global-radius !default;
@@ -186,6 +186,7 @@ $a-la-une-title-align:$home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
 $a-la-une-text-bg: #c1c1c1 !default;
+$a-la-une-item-image-margin:0 !default;
 $a-la-une-item-title-color:$primary !default;
 $a-la-une-item-title-font-size:$h3-font-size !default;
 $a-la-une-item-title-margin:0 !default;
@@ -235,7 +236,7 @@ $actu-see-all-justify-content: $see-all-justify-content !default;
 $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
-$event-section-margin: 0;
+$event-section-margin: 0 !default;
 $event-title-color:$primary !default;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;

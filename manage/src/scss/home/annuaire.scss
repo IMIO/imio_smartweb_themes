@@ -1,0 +1,32 @@
+.les-sites {
+    padding: 5rem 0;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
+        grid-gap: 40px;
+        grid-auto-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+        li {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            background: #FFC93C;
+            border: solid 1px #D2D2D2;
+            border-radius: 20px;
+            height: 155px;
+            .table_title {
+                span {
+                    font-size: 14px !important;
+                    color: rgba(59, 59, 59, 1) !important;
+                    font-weight: 700 !important;
+                }
+            }
+            a .image.d-block svg {
+                fill: #fff !important;
+            }
+        }
+    }
+}

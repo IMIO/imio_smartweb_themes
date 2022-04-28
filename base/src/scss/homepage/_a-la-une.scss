@@ -7,17 +7,17 @@
     padding-right: 0;
     padding-left: 0;
   }
-  .section-title{
-    color:$a-la-une-title-color;
+  .section-title {
+    color: $a-la-une-title-color;
     margin: $a-la-une-title-margin;
     padding: $a-la-une-title-padding;
-    text-align:$a-la-une-title-align;
+    text-align: $a-la-une-title-align;
   }
   .swiper-slide {
     a {
       text-decoration: none;
     }
-    & > a {
+    &>a {
       @include media-breakpoint-up(lg) {
         display: grid;
         padding-right: 25px;
@@ -26,21 +26,22 @@
       }
     }
     .swiper-image {
-      border-radius:$a-la-une-item-image-radius;
+      border-radius: $a-la-une-item-image-radius;
       @include media-breakpoint-up(lg) {
+        margin: $a-la-une-item-image-margin;
         padding-bottom: 60%;
         grid-row-end: 3;
         grid-row-start: 1;
       }
     }
     .swiper_title {
-      font-size:$a-la-une-item-title-font-size;
-      border-radius:$a-la-une-item-title-radius;
+      font-size: $a-la-une-item-title-font-size;
+      border-radius: $a-la-une-item-title-radius;
       margin: 1rem 0 0 0;
       @include media-breakpoint-up(lg) {
         align-self: start;
         padding: $a-la-une-item-title-padding;
-        margin:$a-la-une-item-title-margin;
+        margin: $a-la-une-item-title-margin;
         background: $a-la-une-text-bg;
         grid-column: 2;
         grid-row: 1;
@@ -50,12 +51,12 @@
       }
     }
     .swiper_description {
-      color:$a-la-une-item-description-color;
-      font-size:$a-la-une-item-description-font-size;
-      border-radius:$a-la-une-item-description-radius;
+      color: $a-la-une-item-description-color;
+      font-size: $a-la-une-item-description-font-size;
+      border-radius: $a-la-une-item-description-radius;
       @include media-breakpoint-up(lg) {
-        padding:$a-la-une-item-description-padding;
-        margin:$a-la-une-item-description-margin;
+        padding: $a-la-une-item-description-padding;
+        margin: $a-la-une-item-description-margin;
         background: $a-la-une-text-bg;
         grid-column: 2;
         grid-row: 2;
@@ -72,7 +73,7 @@
       //   box-shadow: rgba(0,0,0,.16) -10px 10px 36px 0,rgba(0,0,0,.06) 0 0 0 1px;
       // }
       p {
-        color:$a-la-une-item-description-color;
+        color: $a-la-une-item-description-color;
       }
     }
   }
