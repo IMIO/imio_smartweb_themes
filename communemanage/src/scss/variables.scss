@@ -5,11 +5,9 @@ $secondary:#FFC93C;
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-$font-family-base: 'Montserrat',
-sans-serif,
-system-ui,
--apple-system,
-"Segoe UI";
+@import url("https://use.typekit.net/unl5gas.css");
+$font-family-base: gill-sans-nova,
+sans-serif;
 $font-family-title: 'Baloo 2',
 cursive,
 system-ui,
@@ -58,7 +56,7 @@ $main-logo-max-width: 206px;
 $header-top-padding: 1rem 0;
 $header-top-background: $primary;
 $header-center-nav: false;
-$header-nav-margin: 0 1rem 0 2rem;
+$header-nav-margin: 0 2.5rem 0 7rem;
 $header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
@@ -78,11 +76,11 @@ $navbar-padding-x: 2.5rem;
 $nav-mask-background: rgb(15 11 11 / 76%);
 $nav-link-color: #fff;
 $nav-link-open-color: #fff;
-$nav-link-font-size: initial;
+$nav-link-font-size: 20px;
 $nav-link-font-weight: 500;
 $nav-link-drop-color:#fff;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
-$nav-first-level-gap: 30px;
+$nav-first-level-gap: 40px;
 $nav-first-level-uppercase: true;
 $nav-sub-link-font-size: $nav-link-font-size;
 $nav-sub-link-font-weight: $nav-link-font-weight;
@@ -126,7 +124,7 @@ $banner-content-description-color: black;
 
 // see_all
 $see-all-padding:0.6rem 2rem;
-$see-all-margin:0;
+$see-all-margin:5rem 0 0 0;
 $see-all-bg:$secondary;
 $see-all-color:$primary;
 $see-all-radius:$global-radius;
@@ -147,7 +145,7 @@ $quick-access-title-color:$primary;
 $quick-access-title-margin:$home-section-title-margin;
 $quick-access-title-padding:$home-section-title-padding;
 $quick-access-title-align:$home-section-title-align;
-$quick-access-container-padding: 1rem 0;
+$quick-access-container-padding: 2rem 0;
 $quick-access-width: auto;
 $quick-access-height: auto;
 $quick-access-background:transparent;
@@ -160,10 +158,10 @@ $quick-access-item-title-margin: 1rem 0 0 0;
 $quick-access-title-font-size: 18px;
 $quick-access-title-color: $primary;
 $quick-access-title-text-transform: initial;
-$quick-access-title-weight: 400;
+$quick-access-title-weight: bold;
 
 $quick-access-enable-full-bg: true;
-$quick-access-full-bg-color:rgba(255, 255, 255, 0.95);
+$quick-access-full-bg-color:rgba(255, 255, 255, 1);
 $quick-access-full-bg-border:solid 0px green;
 $quick-access-full-bg-shadow: 0px 11px 10px rgba(0, 0, 0, 0.05);
 
@@ -177,17 +175,14 @@ $a-la-une-item-image-margin:2rem 0 0 0;
 $a-la-une-item-title-color:$primary;
 $a-la-une-item-title-font-size:$h3-font-size;
 $a-la-une-item-title-margin:0 0 0 -35px;
-$a-la-une-item-title-padding:36px 36px 0;
-$a-la-une-item-title-radius:10px 0 0 0;
+$a-la-une-item-title-padding:50px 50px 0;
+$a-la-une-item-title-radius:5px 5px 0 0;
 $a-la-une-item-description-font-size: $font-size-lg;
 $a-la-une-item-description-color:rgba(59, 59, 59, 1);
 $a-la-une-item-description-margin:0 0 2rem -35px;
-$a-la-une-item-description-padding:0 36px 36px;
-$a-la-une-item-description-radius:0 0 0 10px;
+$a-la-une-item-description-padding:0 50px 50px;
+$a-la-une-item-description-radius:0 0 5px 5px;
 $a-la-une-item-image-radius: $global-radius;
-
-
-
 
 // Actu
 $actu-section-full-width: true;
@@ -195,7 +190,7 @@ $actu-section-padding-top: 5rem;
 $actu-section-padding-bottom: 5rem;
 $actu-title-color:$primary;
 $actu-title-align:$home-section-title-align;
-$actu-title-margin: $home-section-title-margin;
+$actu-title-margin: 0 auto 7rem auto;
 $actu-title-padding: $home-section-title-padding;
 $actu-image-margin-bottom: 0.7rem;
 $actu-image-border-radius: $global-radius;
