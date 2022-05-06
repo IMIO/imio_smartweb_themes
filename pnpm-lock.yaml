@@ -76,19 +76,9 @@ importers:
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
-  boussu:
-    specifiers:
-      '@imiobe/plonetheme-smartweb-base': 0.0.3
-      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
-      '@popperjs/core': ^2.10.2
-    devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
-      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
-      '@popperjs/core': 2.11.2
-
   brainelechateau:
     specifiers:
-      '@imiobe/plonetheme-smartweb-base': 0.0.3
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
@@ -98,7 +88,7 @@ importers:
 
   communemanage:
     specifiers:
-      '@imiobe/plonetheme-smartweb-base': 0.0.3
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
