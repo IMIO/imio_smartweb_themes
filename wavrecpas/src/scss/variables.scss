@@ -1,5 +1,5 @@
 //*// COLORS
-$primary: #4d0000 !default;
+$primary: #343F4D;
 
 //*// TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
@@ -65,10 +65,10 @@ $swiper-raduis: 50px !default;
 //*// HEADER
 $main-logo-max-width: 115px !default;
 $header-top-padding: 1rem 0 !default;
-$header-top-background: transparent !default;
+$header-top-background: $primary;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
-$header-links-color:#000 !default;
+$header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
 $header-links-account-border:solid 0px #000 !default;
@@ -159,14 +159,9 @@ $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 100px !default;
 $quick-access-height: 100px !default;
 $quick-access-background:#fff !default;
-$quick-access-border: solid 1px $primary !default;
-$quick-access-border-radius:100px !default;
-$quick-access-shadow: 0 0 2.2px rgb(0 0 0 / 2%),
-0 0 5.3px rgb(0 0 0 / 2.8%),
-0 0 10px rgb(0 0 0 / 3.5%),
-0 0 17.9px rgb(0 0 0 / 4.2%),
-0 0 33.4px rgb(0 0 0 / 5%),
-0 0 80px rgb(0 0 0 / 7%) !default;
+$quick-access-border: none;
+$quick-access-border-radius:none;
+$quick-access-shadow: none;
 $quick-access-svg-width:40px !default;
 $quick-access-svg-color:$primary !default;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
