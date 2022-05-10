@@ -51,6 +51,8 @@ module.exports = (env, argv) => {
                     ignore: [
                       "**/package.json",
                       "**/*.zip",
+                      "**/src",
+                      "**/node_modules",
                     ],
                   },
 
