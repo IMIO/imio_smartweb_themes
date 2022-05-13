@@ -1,0 +1,21 @@
+.swiper.bannerSwiper {
+    overflow: initial;
+    .swiper-banner-content-wrapper {
+        width: 520px;
+        transform: translatey(10vw) translateX(15vw);
+        .swiper-banner-content {
+            
+            .swiper-banner-title {
+                font-family: $font-family-title;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .swiper.bannerSwiper {
+        .swiper-banner-content-wrapper {
+            width: 100%;
+            transform: translatey(10vw) translateX(0vw);
+        }
+    }
+  }

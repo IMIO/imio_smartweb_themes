@@ -1,5 +1,6 @@
 .sectionlinks.quick-access {
   position: relative;
+  background: transparent;
   @if $quick-access-section-full-width {
     width: 100vw;
     left: 50%;
@@ -56,6 +57,7 @@
             color: $quick-access-title-color;
             text-transform: $quick-access-title-text-transform;
             font-weight: $quick-access-title-weight;
+            font-family: $quick-access-title-font-family;
           }
         }
       }

@@ -13,6 +13,7 @@
         text-transform: $see-all-text-transform;
         font-size: $see-all-font-size;
         transition: $see-all-transition;
+        font-family: $see-all-font-family;
         &:hover,
         &:focus {
             background: $see-all-hover-bg;

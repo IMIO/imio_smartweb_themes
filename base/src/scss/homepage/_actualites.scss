@@ -61,6 +61,7 @@
       margin: $actu-date-margin;
       color: $actu-date-color;
       font-size: $actu-date-font-size;
+      text-align: $actu-date-align;
     }
     .swiper_title {
       padding: $actu-item-title-padding;
@@ -70,7 +71,12 @@
         font-size: $actu-item-title-font-size;
         font-weight: $actu-item-title-font-weight;
         text-transform: $actu-item-title-text-transform;
+        text-align: $actu-item-title-align;
       }
+    }
+    .swiper_description {
+      text-align: $actu-description-align;
+      font-family: $actu-description-font-family;
     }
   }
   .swiper-button-prev {

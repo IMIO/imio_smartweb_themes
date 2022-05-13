@@ -1,0 +1,126 @@
+.sortable-section.sectionselections.services {
+    position: relative;
+    padding-top: $actu-section-padding-top;
+    padding-bottom: $actu-section-padding-bottom;
+    margin: $actu-section-margin;
+    @if $actu-section-full-width {
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100vw;
+    }
+    &:before {
+      position: absolute;
+      top: 50%;
+      bottom: -50%;
+      transform: translateX(-50vw);
+      left: 50% !important;
+      background: #F6F6F6;
+      content: "";
+      width: 100vw!important;
+      z-index: -2;
+  }
+  &:after {
+    background: url(../../assets/svg/demi-logo-wavre-cpas.svg);
+    content: "";
+    display: block;
+    height: 700px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 320px;
+  }
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+      @if $actu-section-full-width {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+      }
+    }
+    .section-title {
+      color: $actu-title-color;
+      margin: $actu-title-margin;
+      padding: $actu-title-padding;
+      text-align: $actu-title-align;
+      @include media-breakpoint-up(lg) {}
+      @include media-breakpoint-up(xxl) {}
+    }
+    .swiper-slide {
+      height: auto;
+      a {
+        text-decoration: none;
+      }
+      &>a {
+        display: grid;
+        height: 100%;
+        place-items: start;
+        grid-auto-rows: min-content;
+        background: $actu-item-bg-color;
+        border-radius: $actu-item-bg-radius;
+      }
+      .swiper-image {
+        margin-bottom: $actu-image-margin-bottom;
+        border-radius: $actu-image-border-radius;
+        width: 100%;
+      }
+      .swiper_category {
+        margin: $actu-category-margin;
+        span {
+          display: block;
+          padding: $actu-category-padding;
+          color: $actu-category-color;
+          background: $actu-category-bg-color;
+          font-size: $actu-category-font-size;
+          font-weight: $actu-category-font-weight;
+          text-transform: $actu-category-text-transform;
+          border-radius: $actu-category-radius;
+        }
+      }
+      .swiper_date {
+        padding: $actu-date-padding;
+        margin: $actu-date-margin;
+        color: $actu-date-color;
+        font-size: $actu-date-font-size;
+        text-align: $actu-date-align;
+      }
+      .swiper_title {
+        padding: $actu-item-title-padding;
+        margin: $actu-item-title-margin;
+        width: 100%;
+        h3 {
+          color: $actu-item-title-color;
+          font-size: $actu-item-title-font-size;
+          font-weight: $actu-item-title-font-weight;
+          text-transform: $actu-item-title-text-transform;
+          text-align: $actu-item-title-align;
+        }
+      }
+      .swiper_description {
+        text-align: $actu-description-align;
+        font-family: $actu-description-font-family;
+      }
+    }
+    .swiper-button-prev {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23FFC93C\"/></svg>");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+    .swiper-button-next {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23FFC93C\"/></svg>");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: $primary !important;
+  }
+  // see all
+  .sectionnews {
+    .see_all {
+      justify-content: $actu-see-all-justify-content;
+      @include see-all-style;
+    }
+  }

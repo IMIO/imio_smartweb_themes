@@ -12,11 +12,16 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 // ... add your styles here
-@import "./home/quick.scss";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/en-image";
 @import "./home/annuaire";
 @import "./home/les-sites";
-@import "./home/newsletter.scss";
+@import "./home/newsletter";
+@import "./home/services";
+@import "./home/banner";
+@import "./home/menu";
+@import "./home/divers";
+

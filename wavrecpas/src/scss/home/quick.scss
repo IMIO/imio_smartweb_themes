@@ -1,0 +1,27 @@
+#container-section-acces-directs {
+    .table_image {
+        .table_title {
+            span {
+                position: relative;
+                display: inline-block;
+            }
+        }
+        &:hover,
+        &:focus {
+            .table_title {
+                span {
+                    &:after {
+                        content: "";
+                        bottom: -5px;
+                        height: 2px;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        transition: all .3s ease;
+                        background-color: $secondary !important;
+                    }
+                }
+            }
+        }
+    }
+}
