@@ -2,12 +2,12 @@
 //PLACEHOLDER
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
-        background-image: url("../../assets/svg/placeholder-wavre-cpas.png") !important;
+        background-image: url("../../assets/svg/placeholder-lens.png") !important;
     }
 }
 
 //BREADCRUMB
-#portal-breadcrumbs {
+portal-breadcrumbs {
     margin-top: 2rem;
 }
 
@@ -25,6 +25,7 @@ div.swiper-image::before {
     top: 0;
     transition: all .2s ease;
     z-index: 99;
+    border-radius: 10px 10px 0px 0px;
 }
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;

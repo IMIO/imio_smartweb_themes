@@ -1,0 +1,17 @@
+#portal-header #portal-header-top #header-links #search-link a {
+    background: $secondary;
+    border: none;
+}
+@media screen and (min-width: 992px) {
+    .je-suis.nav-item {
+    margin-left: auto;
+    }
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.je-suis > a, 
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.en-un-clic > a {
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+    margin: 0 4rem;
+}

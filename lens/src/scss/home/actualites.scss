@@ -1,0 +1,30 @@
+.sectionnews .swiper-slide {
+    .swiper_date, .swiper_title {
+    width: 100%;
+    }
+}
+.sortable-section.sectionevents .section-title, .sortable-section.sectionnews .section-title {
+    font-size: 3.5rem;
+}
+.sortable-section.sectionevents .section-title, .sortable-section.sectionnews .section-title {
+    color: $primary;
+    margin: 0 0 6rem;
+    padding: 0;
+    position: relative;
+}
+.sortable-section.sectionnews {
+    position: relative;
+    &:after {
+    background: url(../../assets/svg/logo-back.svg);
+    content: "";
+    display: block;
+    height: 2000px;
+    left: 0;
+    position: absolute;
+    top: -200px;
+    width: 100vw;
+    background-size: cover;
+    background-position: right top;
+    z-index: -1;
+    }
+}

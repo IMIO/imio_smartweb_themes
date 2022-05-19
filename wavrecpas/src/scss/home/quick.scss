@@ -1,3 +1,6 @@
+.sectionlinks.quick-access {
+    padding-top: 1rem;
+}
 #container-section-acces-directs {
     .table_image {
         .table_title {
@@ -23,5 +26,10 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 992px) {
+    .sectionlinks.quick-access .body-section li {
+    width: 50%;
     }
 }
