@@ -29,6 +29,10 @@
 
 #portal-header #portal-header-top #portal-logo {
     height: 80px;
+    svg {
+        width: 100%;
+        height: auto;
+    }
 }
 @media (min-width: 992px) {
     #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {

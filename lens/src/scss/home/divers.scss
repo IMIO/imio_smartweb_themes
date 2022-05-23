@@ -31,3 +31,38 @@ div.swiper-image::before {
     background: $primary;
     opacity: 0.5;
 }
+.sectionfiles {
+    &:after {
+        background: #f3f3f3;
+    }   
+    .section-title, div ul li a, div ul li a span, div ul li a span::before {
+        color: $primary;
+    }
+}
+.subsite-container {
+    margin: 1rem 0;
+}
+#subsite-navigation>ul>li>a:focus:before, #subsite-navigation>ul>li>a:hover:before {
+    background-color: $primary;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
+    color: $secondary;
+}
+body.template-block_view_with_images .block-menu-element a .card-title.h2, body.template-block_view_with_images .block-menu-element a h2.card-title {
+    font-size: $h2-font-size;
+}
+.r-actu-wrapper::after {
+    display: none !important;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background: $primary;
+}
+.r-content button {
+    background: $primary;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border: solid 1px $primary;
+    margin-bottom: 1rem;
+}

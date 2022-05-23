@@ -349,14 +349,14 @@ $section-contact-p-margin:1rem 0;
 $section-contact-width: 260px;
 
 // section-files
-$section-file-background-color: $primary;
+$section-file-background-color: #f8f8f8;
 $enable-full-width-section-files: true;
-$enable-light-color-section-files: true;
+$enable-light-color-section-files: false;
 
 // section-link
 $section-link-background-color: #F8F8F8;
 $enable-full-width-section-link: true;
-$enable-light-color-section-link: false;
+$enable-light-color-section-link: true;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.25rem;
