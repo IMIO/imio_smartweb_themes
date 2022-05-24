@@ -1,11 +1,15 @@
 //*// COLORS
-$primary: #109165 !default;
+$primary: #343F4D;
+$secondary: #99CC33;
+
 
 //*// TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-$font-family-base: "Raleway",
+$font-family-base: "Montserrat",
 system-ui,
 -apple-system,
 "Segoe UI",
@@ -18,20 +22,20 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
-$font-family-title: "Playfair Display",
+$font-family-title: "Josefin Sans",
 system-ui,
 -apple-system,
 "Segoe UI" !default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
-$font-title-weight: 400 !default;
+$font-title-weight: 600;
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.85 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
@@ -44,11 +48,11 @@ $h6-font-size: $font-size-base !default;
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
-$global-radius: 10px !default;
-$enable-title-uppercase: false !default;
-$home-section-title-margin:0 0 2rem 0 !default;
+$global-radius: 0px;
+$enable-title-uppercase: true;
+$home-section-title-margin:0 0 6rem;
 $home-section-title-padding:0 !default;
-$home-section-title-align:left !default;
+$home-section-title-align: center;
 
 $section-padding-top:0 !default;
 //swiper
@@ -65,10 +69,10 @@ $swiper-raduis: 50px !default;
 //*// HEADER
 $main-logo-max-width: 115px !default;
 $header-top-padding: 1rem 0 !default;
-$header-top-background: transparent !default;
+$header-top-background: $primary;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
-$header-links-color:#000 !default;
+$header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
 $header-links-account-border:solid 0px #000 !default;
@@ -76,27 +80,27 @@ $header-links-account-bg:transparent !default;
 $header-links-account-hover-border:solid 0px #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
-$header-search-icon-color:#000 !default;
+$header-search-icon-color:#fff;
 $header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
-//bredcrumb
-$breadcrumb-bg: #d6d6d6 !default;
+//breadcrumb
+$breadcrumb-bg: transparent;
 $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
 $nav-mask-background: rgb(15 11 11 / 76%) !default;
-$nav-link-color: #000 !default;
+$nav-link-color: #fff;
 $nav-link-open-color: #fff !default;
 $nav-link-font-size: initial !default;
 $nav-link-font-weight: 500 !default;
 $nav-link-drop-color:#000 !default;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
-$nav-first-level-gap: 30px !default;
+$nav-first-level-gap: 65px;
 $nav-first-level-uppercase: true !default;
 $nav-sub-link-font-size: $nav-link-font-size !default;
 $nav-sub-link-font-weight: $nav-link-font-weight !default;
 $nav-overlay-radius:$global-radius !default;
-$nav-overlay-title-color:$primary !default;
+$nav-overlay-title-color:$primary;
 $nav-overlay-title-font-size:24px !default;
 $nav-overlay-title-font-weight:bold !default;
 $nav-overlay-next-icon-color:#000;
@@ -120,32 +124,32 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 // banner
 $banner-enable-full-width: true !default;
 $banner-heigh: 500px !default;
-$banner-content-width: max-content !default;
+$banner-content-width: fit-content;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
-$banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
-$banner-content-is-vertical-center: true !default;
-$banner-content-title-font-size: 50px !default;
-$banner-content-title-color: black !default;
+$banner-content-padding: 3rem;
+$banner-content-background: #F6F6F6;
+$banner-content-is-vertical-center: false;
+$banner-content-title-font-size: 30px;
+$banner-content-title-color: $primary;
 $banner-content-title-text-transform: initial !default;
-$banner-content-description-font-size: 18px !default;
+$banner-content-description-font-size: 30px;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding:1rem !default;
+$see-all-padding:1rem 2rem;
 $see-all-margin:2rem 0 0 0 !default;
 $see-all-bg:$primary !default;
-$see-all-color:#000 !default;
+$see-all-color:#fff;
 $see-all-radius:$global-radius !default;
 $see-all-border:solid 1px $primary !default;
 $see-all-text-transform:none !default;
 $see-all-font-size:16px !default;
 $see-all-transition:all .2s ease !default;
-$see-all-hover-bg:#000 !default;
-$see-all-hover-color:#fff !default;
+$see-all-hover-bg:#fff;
+$see-all-hover-color: $primary;
 $see-all-hover-radius:$global-radius !default;
-$see-all-hover-border:solid 1px $primary !default;
+$see-all-hover-border:solid 1px $primary;
 $see-all-justify-content: center !default;
 
 
@@ -155,29 +159,24 @@ $quick-access-title-color:$primary !default;
 $quick-access-title-margin:$home-section-title-margin !default;
 $quick-access-title-padding:$home-section-title-padding !default;
 $quick-access-title-align:$home-section-title-align !default;
-$quick-access-container-padding: 1rem 0 !default;
+$quick-access-container-padding: 0.5rem;
 $quick-access-width: 100px !default;
 $quick-access-height: 100px !default;
-$quick-access-background:#fff !default;
-$quick-access-border: solid 1px $primary !default;
-$quick-access-border-radius:100px !default;
-$quick-access-shadow: 0 0 2.2px rgb(0 0 0 / 2%),
-0 0 5.3px rgb(0 0 0 / 2.8%),
-0 0 10px rgb(0 0 0 / 3.5%),
-0 0 17.9px rgb(0 0 0 / 4.2%),
-0 0 33.4px rgb(0 0 0 / 5%),
-0 0 80px rgb(0 0 0 / 7%) !default;
-$quick-access-svg-width:40px !default;
-$quick-access-svg-color:$primary !default;
+$quick-access-background: transparent;
+$quick-access-border: none;
+$quick-access-border-radius:none;
+$quick-access-shadow: none;
+$quick-access-svg-width: 60px;
+$quick-access-svg-color:$primary;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
 $quick-access-title-font-size: 18px !default;
 $quick-access-title-color: $primary !default;
 $quick-access-title-text-transform: initial !default;
 $quick-access-title-weight: 400 !default;
 
-$quick-access-enable-full-bg: false !default;
+$quick-access-enable-full-bg: false;
 $quick-access-full-bg-color:$primary !default;
-$quick-access-full-bg-border:solid 1px green !default;
+$quick-access-full-bg-border: none;
 $quick-access-full-bg-shadow: none !default;
 
 // A la une
@@ -201,66 +200,67 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 4rem;
+$actu-section-padding-bottom: 4rem;
 $actu-section-margin: 0 !default;
-$actu-title-color:$primary !default;
+$actu-title-color:$primary;
 $actu-title-align:$home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
-$actu-image-margin-bottom: 0.7rem !default;
-$actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color:red !default;
-$actu-item-bg-radius:$global-radius+2 !default;
-$actu-category-margin: 0 0 0.3rem 0 !default;
-$actu-category-padding: 0 !default;
-$actu-category-color: $primary !default;
-$actu-category-bg-color: #000 !default;
-$actu-category-text-transform: uppurcase !default;
+$actu-image-margin-bottom: 0;
+$actu-image-border-radius: none;
+$actu-item-bg-color: none;
+$actu-item-bg-radius: none;
+$actu-category-margin: 0 0 0.5rem;
+$actu-category-padding: 0.5rem 2rem 0.5rem 2rem;
+$actu-category-color: $primary;
+$actu-category-bg-color: $secondary;
+$actu-category-text-transform: uppercase;
 $actu-category-font-size: 14px !default;
-$actu-category-font-weight: initial !default;
+$actu-category-font-weight: 900;
 $actu-category-radius: $global-radius !default;
 $actu-item-title-margin: 1rem 0 !default;
 $actu-item-title-padding: 0 !default;
 $actu-item-title-color: initial !default;
 $actu-item-title-text-transform: initial !default;
-$actu-item-title-font-size: $h3-font-size !default;
-$actu-item-title-font-weight: initial !default;
+$actu-item-title-font-size: 22px;
+$actu-item-title-font-weight: bold;
 $actu-date-margin: 0 !default;
 $actu-date-padding: 0 !default;
 $actu-date-color: $primary !default;
 $actu-date-font-size: 14px !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
+$actu-item-title-align: center;
 
 // Event
 $event-section-full-width: true !default;
-$event-section-padding-top: 2rem !default;
-$event-section-padding-bottom: 2rem !default;
+$event-section-padding-top: 4rem;
+$event-section-padding-bottom: 4rem;
 $event-section-margin: 0 !default;
-$event-title-color:$primary !default;
+$event-title-color:$primary;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0.7rem !default;
+$event-image-margin-bottom: 0;
 $event-image-border-radius: $global-radius !default;
-$event-item-bg-color:red !default;
-$event-item-bg-radius:$global-radius+2 !default;
-$event-category-margin: 0 0 0.3rem 0 !default;
-$event-category-padding: 0 !default;
+$event-item-bg-color: transparent;
+$event-item-bg-radius:$global-radius;
+$event-category-margin: 0 0 0.5rem 0;
+$event-category-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-category-color: $primary !default;
-$event-category-bg-color: #000 !default;
-$event-category-text-transform: uppurcase !default;
+$event-category-bg-color: $secondary;
+$event-category-text-transform: uppercase;
 $event-category-font-size: 14px !default;
-$event-category-font-weight: initial !default;
+$event-category-font-weight: 900;
 $event-category-radius: $global-radius !default;
-$event-item-title-margin: 1rem 0 !default;
-$event-item-title-padding: 0 !default;
+$event-item-title-margin: 0rem;
+$event-item-title-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
-$event-item-title-font-size: $h3-font-size !default;
-$event-item-title-font-weight: initial !default;
-$event-date-margin: 0 !default;
-$event-date-padding: 0 !default;
+$event-item-title-font-size: 22px;
+$event-item-title-font-weight: bold;
+$event-date-margin: 0rem;
+$event-date-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
@@ -349,14 +349,14 @@ $section-contact-p-margin:1rem 0;
 $section-contact-width: 260px;
 
 // section-files
-$section-file-background-color: $primary !default;
-$enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$section-file-background-color: #f8f8f8;
+$enable-full-width-section-files: true;
+$enable-light-color-section-files: false;
 
 // section-link
 $section-link-background-color: #F8F8F8;
 $enable-full-width-section-link: true;
-$enable-light-color-section-link: false;
+$enable-light-color-section-link: true;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.25rem;
@@ -371,19 +371,19 @@ $list-group-item-padding-x : 0px;
 
 // Message Viewlets
 
-$message-info:#27789c;
+$message-info: $primary;
 $message-warning:#c06d01;
 $message-error:#ae2609;
 
 //NEW VARIABLES MANU 
 //ACTU
-$actu-item-title-align: left !default;
-$actu-date-align: left !default;
-$actu-description-align: left !default;
-$actu-description-font-family: $font-family-base !default;
+$actu-item-title-align: center;
+$actu-date-align: center;
+$actu-description-align: center;
+$actu-description-font-family: $font-family-base;
 
 //QUICK ACCESS
-$quick-access-title-font-family: $font-family-title !default;
+$quick-access-title-font-family: $font-family-title;
 
 //SEE ALL
-$see-all-font-family: $font-family-title !default;
+$see-all-font-family: $font-family-title;

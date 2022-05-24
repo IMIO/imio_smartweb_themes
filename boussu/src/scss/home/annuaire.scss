@@ -1,0 +1,91 @@
+.quick-annuaire {
+  padding: 5rem 0;
+  @include media-breakpoint-up(lg) {
+    margin-top: 5rem;
+    padding: 5rem 0 10rem 0;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
+    grid-gap: 40px;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      background: #ffc93c;
+      border: solid 1px #d2d2d2;
+      border-radius: 20px;
+      height: 155px;
+      &:hover,
+      &:focus {
+        background: #fff;
+        border: solid 1px #ffc93c;
+        .image.d-block {
+          svg {
+            fill: #ffc93c !important;
+          }
+        }
+      }
+      .table_title {
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+        span {
+          font-size: 18px !important;
+          color: rgba(59, 59, 59, 1) !important;
+          font-weight: 700 !important;
+        }
+      }
+      a .image.d-block svg {
+        fill: #fff !important;
+      }
+    }
+  }
+}
+
+.sortable-section.sectionlinks.quick-access.quick-annuaire {
+  &:after {
+    content: '';
+    background-image: url('../../assets/svg/manage-annuaire.svg') !important;
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: 0;
+  }
+}
+
+.voit-tout-annuaire {
+  background: transparent !important;
+  a.table_image {
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 0.6rem 2rem;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    border: 1px solid $secondary;
+    background: $secondary;
+    border-radius: 5px;
+    &:hover,
+    &:focus {
+      border: 1px solid $secondary;
+      background: transparent;
+    }
+  }
+}
