@@ -12,7 +12,7 @@
     &:before {
       position: absolute;
       top: 50%;
-      bottom: -50%;
+      bottom: -65%;
       transform: translateX(-50vw);
       left: 50% !important;
       background: #F6F6F6;
@@ -126,6 +126,7 @@
   }
   .sortable-section.sectionlinks.see_all {
     background: transparent;
+    padding-top: 0rem;
     #container-section-tous-nos-services  {
       display: flex;
       justify-content: center;

@@ -38,14 +38,15 @@
     #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
     margin-top: 2.8rem;
     }
+    #portal-header #portal-header-top #portal-globalnav-wrapper {
+        margin: 0 3rem;
+    }
 }
-#portal-header #portal-header-top #portal-globalnav-wrapper {
-    margin: 0 3rem;
-}
+
 button.navbar-toggler.collapsed {
-    background: transparent;
+    background: transparent !important;
 }
 .open-nav-overflow .navbar-dark .navbar-toggler {
-    border-color: $primary;
-    color: $primary;
+    border-color: #fff !important;
+    color: #fff !important;
 }

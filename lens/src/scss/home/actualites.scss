@@ -1,6 +1,9 @@
-.sectionnews .swiper-slide {
+.sectionnews {
+    z-index: 1;
+    .swiper-slide {
     .swiper_date, .swiper_title {
-    width: 100%;
+        width: 100%;
+        }
     }
 }
 .sortable-section.sectionevents .section-title, .sortable-section.sectionnews .section-title {
@@ -12,19 +15,4 @@
     padding: 0;
     position: relative;
 }
-.sortable-section.sectionnews {
-    position: relative;
-    &:after {
-    background: url(../../assets/svg/logo-back.svg);
-    content: "";
-    display: block;
-    height: 2000px;
-    left: 0;
-    position: absolute;
-    top: -200px;
-    width: 100vw;
-    background-size: cover;
-    background-position: right top;
-    z-index: -1;
-    }
-}
+

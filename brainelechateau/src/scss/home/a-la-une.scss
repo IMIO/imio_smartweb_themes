@@ -2,6 +2,9 @@
 	grid-template-columns: 50% 50%;
     grid-auto-flow: dense;
     direction: rtl;
+    .swiper_description, .swiper_title {
+        direction: initial !important;
+    }
 }
 .swiper_title{
     text-align: left;

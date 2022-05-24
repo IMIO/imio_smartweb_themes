@@ -24,3 +24,18 @@
     right: 5px;
     margin: 0 auto;
 }
+
+.sortable-section.sectionnews {
+    position: relative;
+  &:after {
+    background: url(../../assets/svg/demi-logo-wavre-cpas-gris.svg);
+    content: "";
+    display: block;
+    height: 750px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: -1;
+  }
+}

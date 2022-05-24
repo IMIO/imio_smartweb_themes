@@ -14,17 +14,26 @@ footer div#smartweb-footer {
 footer .image.d-block {
     display: none;
 }
-footer .smartweb-footer {
-    .sectiontext .section-text .body-section.figure-top figure {
-        margin-top: 0rem;
+footer#portal-footer-wrapper {
+    margin-top: 2rem;
+        .smartweb-footer {
+        .sectiontext .section-text .body-section.figure-top figure {
+            margin-top: 0rem;
+        }
+        .container > .row {
+        padding: 5rem 0;
+        }
     }
-    .container > .row {
-    padding: 5rem 0;
+    div#portal-colophon {
+        background-color: $primary;
+        ul li a {
+            color: #fff;
+        }
+        ul li::marker{
+            display: none;
+        }
     }
-}
-div#portal-colophon {
-    background-color: $primary;
-}
-.colophon.row {
-    background: $primary;
+    .colophon.row {
+        background: $primary;
+    }
 }

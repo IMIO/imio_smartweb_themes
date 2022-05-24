@@ -5,6 +5,9 @@
 	grid-template-columns: 50% 50%;
     grid-auto-flow: dense;
     direction: rtl;
+    .swiper_description, .swiper_title {
+        direction: initial !important;
+    }
 }
 .swiper_description{
     text-align: left;
@@ -44,10 +47,14 @@
     .swiper-slide .swiper_title .h3,
     .swiper-slide .swiper_title h3 {
         color: #fff !important;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-family: $font-family-base;
     }
     .swiper-slide .swiper_description p {
         color: #fff !important;
         max-width: 100%;
+        font-size: 25px;
     }
     .swiper-slide .swiper_title {
         align-self: start;
@@ -62,5 +69,10 @@
         @media screen and (max-width:992px) {
             display: none;
         }
+    }
+}
+@media (min-width: 992px) {
+.sectionselections {
+    padding-bottom: 6.3rem;
     }
 }
