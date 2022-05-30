@@ -13,6 +13,9 @@
     padding: $a-la-une-title-padding;
     text-align: $a-la-une-title-align;
   }
+  .swiper{
+    z-index: 0;
+  }
   .swiper-slide {
     a {
       text-decoration: none;
