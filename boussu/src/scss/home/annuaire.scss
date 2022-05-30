@@ -17,17 +17,17 @@
       justify-content: center;
       align-items: center;
       width: auto;
-      background: #ffc93c;
+      background: $secondary;
       border: solid 1px #d2d2d2;
       border-radius: 20px;
       height: 155px;
       &:hover,
       &:focus {
         background: #fff;
-        border: solid 1px #ffc93c;
+        border: solid 1px $secondary;
         .image.d-block {
           svg {
-            fill: #ffc93c !important;
+            fill: $secondary !important;
           }
         }
       }

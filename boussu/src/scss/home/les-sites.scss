@@ -19,7 +19,7 @@
       height: 155px;
       &:hover,
       &:focus {
-        border: solid 1px #ffc93c;
+        border: solid 1px $secondary;
       }
       .table_title {
         &:after {

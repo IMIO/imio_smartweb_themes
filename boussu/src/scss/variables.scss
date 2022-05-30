@@ -1,31 +1,13 @@
 //*// COLORS
-$primary: #343F4D;
-$secondary: #99CC33;
+$primary: #000;
+$secondary: #E9212D;
 
 
 //*// TYPOGRAPHY
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-$font-family-base: "Montserrat",
-system-ui,
--apple-system,
-"Segoe UI",
-"Helvetica Neue",
-"Noto Sans",
-"Liberation Sans",
-arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji" !default;
-$font-family-title: "Josefin Sans",
-system-ui,
--apple-system,
-"Segoe UI" !default;
+$font-family-base: "Montserrat",sans-serif,system-ui;
+$font-family-title: 'Montserrat', sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -48,15 +30,15 @@ $h6-font-size: $font-size-base !default;
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
-$global-radius: 0px;
+$global-radius: 5px;
 $enable-title-uppercase: true;
-$home-section-title-margin:0 0 6rem;
+$home-section-title-margin:0 0 4rem;
 $home-section-title-padding:0 !default;
-$home-section-title-align: center;
+$home-section-title-align: left;
 
 $section-padding-top:0 !default;
 //swiper
-$swiper-icon-color: #000 !default;
+$swiper-icon-color: #000;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
@@ -67,7 +49,7 @@ $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
 
 //*// HEADER
-$main-logo-max-width: 115px !default;
+$main-logo-max-width: 65px;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: $primary;
 $header-center-nav: false !default;
@@ -124,24 +106,25 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 // banner
 $banner-enable-full-width: true !default;
 $banner-heigh: 500px !default;
-$banner-content-width: fit-content;
+$banner-content-width:auto;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 3rem;
-$banner-content-background: #F6F6F6;
-$banner-content-is-vertical-center: false;
-$banner-content-title-font-size: 30px;
-$banner-content-title-color: $primary;
-$banner-content-title-text-transform: initial !default;
+$banner-content-background: transparent;
+$banner-content-is-vertical-center: true;
+$banner-content-title-font-size: 65px;
+$banner-content-title-color: #fff;
+$banner-content-title-text-transform: uppercase !default;
+$banner-content-text-align:center;
 $banner-content-description-font-size: 30px;
-$banner-content-description-color: black !default;
+$banner-content-description-color: #fff;
 
 // see_all
 $see-all-padding:1rem 2rem;
 $see-all-margin:2rem 0 0 0 !default;
-$see-all-bg:$primary !default;
+$see-all-bg:#323031;
 $see-all-color:#fff;
-$see-all-radius:$global-radius !default;
+$see-all-radius:50px;
 $see-all-border:solid 1px $primary !default;
 $see-all-text-transform:none !default;
 $see-all-font-size:16px !default;
@@ -160,19 +143,25 @@ $quick-access-title-margin:$home-section-title-margin !default;
 $quick-access-title-padding:$home-section-title-padding !default;
 $quick-access-title-align:$home-section-title-align !default;
 $quick-access-container-padding: 0.5rem;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
-$quick-access-background: transparent;
+$quick-access-width: 130px;
+$quick-access-height: 130px;
+$quick-access-background: #fff;
 $quick-access-border: none;
-$quick-access-border-radius:none;
-$quick-access-shadow: none;
+$quick-access-border-radius:100%;
+$quick-access-shadow: 0px 0.4px 2.2px rgba(0, 0, 0, 0.02),
+0px 0.9px 5.3px rgba(0, 0, 0, 0.028),
+0px 1.6px 10px rgba(0, 0, 0, 0.035),
+0px 2.9px 17.9px rgba(0, 0, 0, 0.042),
+0px 5.4px 33.4px rgba(0, 0, 0, 0.05),
+0px 13px 80px rgba(0, 0, 0, 0.07)
+;
 $quick-access-svg-width: 60px;
-$quick-access-svg-color:$primary;
+$quick-access-svg-color:$secondary;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
-$quick-access-title-font-size: 18px !default;
-$quick-access-title-color: $primary !default;
+$quick-access-title-font-size: 18px;
+$quick-access-title-color: $primary;
 $quick-access-title-text-transform: initial !default;
-$quick-access-title-weight: 400 !default;
+$quick-access-title-weight: 700;
 
 $quick-access-enable-full-bg: false;
 $quick-access-full-bg-color:$primary !default;
@@ -184,9 +173,9 @@ $a-la-une-title-color: $font-title-color !default;
 $a-la-une-title-align:$home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
-$a-la-une-text-bg: #c1c1c1 !default;
+$a-la-une-text-bg: #fff;
 $a-la-une-item-image-margin:0 !default;
-$a-la-une-item-title-color:$primary !default;
+$a-la-une-item-title-color:#2354A5;
 $a-la-une-item-title-font-size:$h3-font-size !default;
 $a-la-une-item-title-margin:0 !default;
 $a-la-une-item-title-padding:36px 36px 0 !default;
@@ -207,8 +196,8 @@ $actu-title-color:$primary;
 $actu-title-align:$home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
-$actu-image-margin-bottom: 0;
-$actu-image-border-radius: none;
+$actu-image-margin-bottom: .7rem;
+$actu-image-border-radius: 5px;
 $actu-item-bg-color: none;
 $actu-item-bg-radius: none;
 $actu-category-margin: 0 0 0.5rem;
@@ -223,32 +212,32 @@ $actu-item-title-margin: 1rem 0 !default;
 $actu-item-title-padding: 0 !default;
 $actu-item-title-color: initial !default;
 $actu-item-title-text-transform: initial !default;
-$actu-item-title-font-size: 22px;
+$actu-item-title-font-size: 20px;
 $actu-item-title-font-weight: bold;
 $actu-date-margin: 0 !default;
 $actu-date-padding: 0 !default;
 $actu-date-color: $primary !default;
 $actu-date-font-size: 14px !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
-$actu-item-title-align: center;
+$actu-item-title-align: left;
 
 // Event
 $event-section-full-width: true !default;
 $event-section-padding-top: 4rem;
 $event-section-padding-bottom: 4rem;
 $event-section-margin: 0 !default;
-$event-title-color:$primary;
+$event-title-color:#fff;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color: transparent;
-$event-item-bg-radius:$global-radius;
+$event-image-margin-bottom: .7rem;
+$event-image-border-radius: 5px 5px 0 0;
+$event-item-bg-color: #fff;
+$event-item-bg-radius:0 20px;
 $event-category-margin: 0 0 0.5rem 0;
 $event-category-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-category-color: $primary !default;
-$event-category-bg-color: $secondary;
+$event-category-bg-color: transparent;
 $event-category-text-transform: uppercase;
 $event-category-font-size: 14px !default;
 $event-category-font-weight: 900;
@@ -377,7 +366,7 @@ $message-error:#ae2609;
 
 //NEW VARIABLES MANU 
 //ACTU
-$actu-item-title-align: center;
+$actu-item-title-align: left;
 $actu-date-align: center;
 $actu-description-align: center;
 $actu-description-font-family: $font-family-base;

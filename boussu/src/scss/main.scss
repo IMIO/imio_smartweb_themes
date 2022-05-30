@@ -21,6 +21,14 @@ $enable-roboto-webfont: false;
 @import './home/les-sites';
 @import './home/newsletter.scss';
 
+
+// logo
+#portal-logo{
+  svg{
+    max-width: 100%;
+    max-height: 60px;
+  }
+}
 .see_all {
   font-weight: bold;
 }
@@ -31,7 +39,6 @@ $enable-roboto-webfont: false;
 .sectionlinks.quick-access {
   background: transparent !important;
   span {
-    font-family: 'Baloo 2', cursive;
   }
   .row {
     justify-content: space-between;
@@ -164,7 +171,6 @@ li:marker {
 
 .sectionsendinblue .form-text {
   color: #fff !important;
-  font-family: 'Baloo 2', cursive;
 }
 
 .is-in-minisite .smartweb-footer .sectiontext {
@@ -206,7 +212,7 @@ li:marker {
 
 .sortable-section.sectionlinks.quick-access:first-child {
   position: absolute;
-  transform: translateY(-74%);
+  transform: translateY(-60%);
   z-index: 0;
   left: 0;
 }
@@ -233,7 +239,6 @@ li:marker {
   #portal-globalnav
   > li
   > a {
-  font-family: 'Baloo 2', cursive;
 }
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav {
@@ -251,7 +256,6 @@ li:marker {
 .has_subtree {
   li,
   a {
-    font-family: 'Baloo 2', cursive;
   }
 }
 
@@ -260,16 +264,13 @@ li:marker {
 }
 .a-la-une .swiper-slide .swiper_description {
   p {
-    font-family: 'Baloo 2', cursive;
   }
 }
 
 .see_all a {
-  font-family: 'Baloo 2', cursive;
   font-weight: bold;
 }
 .minisite_logo .minisite_title {
-  font-family: 'Baloo 2', cursive;
   font-weight: bold;
 }
 @media screen and (min-width: 1200px) {
@@ -296,7 +297,6 @@ li:marker {
 #body-section-voir-tout-lannuaire {
   .table_title {
     span {
-      font-family: 'Baloo 2', cursive !important;
     }
   }
 }
