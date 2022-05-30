@@ -28,3 +28,26 @@ ul {
     background-repeat: no-repeat;
     margin-left: .4rem;
 }
+
+//Cacher le bouton téléverser et l’afficher là ou il est utile
+#content .navbar a#btn-upload {
+    visibility: hidden;
+ }
+ 
+.portaltype-imio-smartweb-sectionfiles #content .navbar a#btn-upload,
+.portaltype-imio-smartweb-sectiongallery #content .navbar a#btn-upload,
+.portaltype-imio-smartweb-sectionhtml #content .navbar a#btn-upload{
+   visibility: visible;
+}
+
+// Aligner le logo et le titre sur les sous-sites
+.subsite-container #subsite-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.select2-results .select2-highlighted {
+    background: #f9f9f9;
+ }
+ 
+

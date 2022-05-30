@@ -38,8 +38,6 @@ $enable-roboto-webfont: false;
 }
 .sectionlinks.quick-access {
   background: transparent !important;
-  span {
-  }
   .row {
     justify-content: space-between;
   }
@@ -234,13 +232,6 @@ li:marker {
   }
 }
 
-#portal-globalnav-wrapper
-  #portal-globalnav-collapse
-  #portal-globalnav
-  > li
-  > a {
-}
-
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav {
   & > li {
     &.je-suis,
@@ -253,18 +244,8 @@ li:marker {
   }
 }
 
-.has_subtree {
-  li,
-  a {
-  }
-}
-
 .sectionlinks.quick-access .body-section li a .image.d-block svg {
   height: 40px;
-}
-.a-la-une .swiper-slide .swiper_description {
-  p {
-  }
 }
 
 .see_all a {
@@ -291,13 +272,6 @@ li:marker {
   .sectionevents {
     padding-bottom: 5rem !important;
     padding-top: 5rem !important;
-  }
-}
-
-#body-section-voir-tout-lannuaire {
-  .table_title {
-    span {
-    }
   }
 }
 

@@ -105,6 +105,9 @@
             height: 6px;
             display: block;
             background-image: $nav-link-drop;
+            @include media-breakpoint-down(lg){
+              background-image: $nav-link-drop-mobile;
+            }
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
