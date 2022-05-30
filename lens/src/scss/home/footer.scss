@@ -21,7 +21,22 @@ footer .smartweb-footer {
     .container > .row {
     padding: 5rem 0;
     }
+    .sectiontext, .sectioncontact, .sectionlinks {
+        text-align: left;
+    }
 }
-footer div.colophon {
+footer {
+    #portal-colophon, div.colophon {
     background-color: $primary;
+    }
+    div#body-section-liens-utiles li a {
+        text-decoration: none;
+    }
+    
+    div#body-section-liens-utiles li a:hover {
+        text-decoration: underline;
+    }
+}
+.colophonWrapper ul li {
+    display: inline-block;
 }
