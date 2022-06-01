@@ -1,5 +1,17 @@
 .les-sites {
   padding: 5rem 0;
+  position: relative;
+  &:after{
+    content: "";
+    background: #F1F1F1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+  }
   .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
@@ -13,9 +25,9 @@
       justify-content: center;
       align-items: center;
       width: auto;
-      background: #f3f3f3;
-      border: solid 1px #d2d2d2;
-      border-radius: 100%;
+      background: #ffff;
+      border: 1px solid #D3D3D3;
+      border-radius: 20px;
       height: 155px;
       &:hover,
       &:focus {
@@ -38,4 +50,15 @@
       }
     }
   }
+}
+
+
+.sectionlinks.quick-access.les-sites .body-section li a .image.d-block {
+	box-shadow: none!important;
+	display: block!important;
+	flex-direction: column;
+	height: auto!important;
+	justify-content: center;
+	margin: 0 auto;
+	width: auto!important;
 }
