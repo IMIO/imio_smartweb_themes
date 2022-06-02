@@ -25,3 +25,8 @@
     font-size: 1.25rem;
     padding-bottom: 0.5rem;
 }
+@media screen and (max-width: 992px) {
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+    margin: 0 0rem;
+}
+}

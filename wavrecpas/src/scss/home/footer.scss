@@ -37,3 +37,39 @@ footer#portal-footer-wrapper {
         background: $primary;
     }
 }
+footer {
+    .sectiontext, .sectioncontact, .sectionlinks {
+        padding-bottom: 2rem;
+    }
+    #portal-colophon, div.colophon {
+    background-color: $primary;
+    }
+    div#body-section-liens-utiles li a {
+        text-decoration: none;
+    }
+    
+    div#body-section-liens-utiles li a:hover {
+        text-decoration: underline;
+    }
+    .sectiontext #body-section-logo {
+        text-align: center;
+    }
+    div#body-section-liens-utiles ul {
+        margin-left: 0;
+    }
+}
+.colophonWrapper ul li {
+    display: inline-block;
+}
+//SUBSITE Footer
+div#smartweb-subsite-footer {
+    background: #4f5864;
+}
+@media screen and (min-width: 992px) {
+    footer {
+        .sectiontext, .sectioncontact, .sectionlinks {
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+    }
+}

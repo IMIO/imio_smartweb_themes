@@ -1,3 +1,9 @@
-#section-agenda .end_date {
-    display: inline-block;
-  }
+.sectionevents .swiper_date {
+    width: 100%;
+        div {
+            display: inline-block;
+        }
+}
+.sectionevents .swiper_description {
+  padding: 0 2rem;;
+}

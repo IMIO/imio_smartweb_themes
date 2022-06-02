@@ -1,5 +1,7 @@
 .sortable-section.sectionlinks.quick-access {
     padding-top: 1rem;
+    z-index: 1;
+    position: relative;
 }
 #container-section-acces-directs {
     padding: 1rem 0;
@@ -7,6 +9,16 @@
         justify-content: space-between;
     }
     .table_image {
+            &::after {
+                content: "";
+                position: absolute;
+                background: transparent;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                }
         .table_title {
             span {
                 position: relative;

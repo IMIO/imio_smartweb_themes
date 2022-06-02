@@ -10,6 +10,11 @@
             width: 550px;
             .swiper-banner-title {
                 font-family: $font-family-title;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+            }
+            .swiper-banner-description p {
+                font-size: 1.5rem;
             }
         }
     }

@@ -1,4 +1,5 @@
 .sectionnews {
+    z-index: 1;
     .swiper-slide {
     .swiper_date, .swiper_title {
         width: 100%;
@@ -15,3 +16,11 @@
     position: relative;
 }
 
+@media (max-width: 992px) {
+    .sortable-section.sectionnews {
+    padding-top: 0.5rem;
+    }
+    .sortable-section.sectionevents .section-title, .sortable-section.sectionnews .section-title {
+        margin: 0 0 2rem;
+    }
+}
