@@ -1,6 +1,9 @@
 #portal-globalnav-wrapper {
   position: initial !important;
   padding: 0 !important;
+  li{
+    list-style: none!important;
+  }
   @include media-breakpoint-up(lg) {
     flex: 1;
   }
@@ -106,7 +109,12 @@
             display: block;
             background-image: $nav-link-drop;
             @include media-breakpoint-down(lg){
-              background-image: $nav-link-drop-mobile;
+              content: $nav-link-drop-mobile;
+              display: block;
+              height: auto;
+              margin-left: 0;
+              width: auto;
+              background: none;
             }
             background-size: contain;
             background-position: center;
