@@ -12,6 +12,7 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 // ... add your styles here
+@import './home/banner.scss';
 @import './home/quick.scss';
 @import './home/a-la-une';
 @import './home/actualites';
@@ -200,7 +201,11 @@ li:marker {
     }
   }
 }
-
+.smartweb_footer{
+  h3{
+    color: #fff!important;
+  }
+}
 .colophonWrapper {
   ul {
     margin: 0 !important;
@@ -228,18 +233,6 @@ li:marker {
     max-width: 144px;
     svg {
       width: 100%;
-    }
-  }
-}
-
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav {
-  & > li {
-    &.je-suis,
-    &.je-trouve {
-      & > a {
-        text-transform: initial !important;
-        font-weight: 400 !important;
-      }
     }
   }
 }

@@ -1,0 +1,17 @@
+.swiper-banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .swiper-banner-title{
+        text-shadow: #262626 3px 5px 2px;
+    }
+    .swiper-banner-description{
+        margin-left: .25em;
+        font-size: 65px;
+        p{
+            font-size: 65px!important;
+            text-transform: uppercase;
+            text-shadow: #262626 3px 5px 2px;
+        }
+    }
+}

@@ -38,12 +38,12 @@ $home-section-title-align: left;
 
 $section-padding-top:0 !default;
 //swiper
-$swiper-icon-color: #000;
+$swiper-icon-color: #2354a5;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
-$swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
-$swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>');
+$swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>');
 $swiper-background-size: 50% !default;
 $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;

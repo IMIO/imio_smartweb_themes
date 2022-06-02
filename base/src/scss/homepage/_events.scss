@@ -78,7 +78,36 @@
 .swiper-pagination-bullet-active {
   background: $primary !important;
 }
-
+.sectionevents .swiper-slide .swiper_date .day_date .day::after,
+.sectionevents .swiper-slide .swiper_date .end_date .day::after,
+.sectionevents .swiper-slide .swiper_date .start_date .day::after {
+	content: "/";
+}
+.sectionevents .swiper-slide .swiper_date div {
+	display: flex;
+}
+.sectionevents{
+  .swiper_date{
+    display: flex;
+    .day_date{
+      .from_on{
+        margin-right: .25em;
+      }
+    }
+    .start_date{
+      display: flex;
+      margin-right: .25em;
+      .from_on{
+        margin-right: .25em;
+      }
+    }
+    .end_date{
+      .to{
+        margin-right: .25em;
+      }
+    }
+  }
+}
 // see all
 .sectionevents {
   .see_all {
