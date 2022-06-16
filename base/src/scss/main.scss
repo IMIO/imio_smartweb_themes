@@ -44,6 +44,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./common/com-faceted";
 @import "./common/com-list-image";
 @import "./common/messviewlet";
+@import "./common/com-react";
 
 ///// List
 @import "./list/list-block";
@@ -80,10 +81,3 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/actualites";
 @import "./homepage/events";
 @import "./homepage/album";
-
-
-
-
-// body{
-//     background: blue;
-// }

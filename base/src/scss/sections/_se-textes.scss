@@ -194,6 +194,7 @@ blockquote::before {
   font-size: 32px;
   font-weight: 600;
   line-height: 0;
+  margin-right: .75rem;
 }
 
 blockquote::after {
@@ -204,6 +205,7 @@ blockquote::after {
   font-size: 32px;
   font-weight: 600;
   line-height: 0;
+  margin-left: 0.5rem;
 }
 
 strong {

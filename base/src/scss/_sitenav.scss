@@ -95,13 +95,17 @@
 
       &>li {
         &>a {
-          display: flex;
-          align-items: center;
           padding: 0;
           color: $nav-link-color;
           @if $nav-first-level-uppercase {
             text-transform: uppercase;
           }
+        }
+        &.has_subtree > a {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          color: $nav-link-color;
           &:after {
             content: "";
             width: 9px;
@@ -231,6 +235,13 @@
       }
 
       .quick-access {
+        padding-top: 1.5rem;
+        .quick-access-title{
+          color: $nav-quick-link-color;
+          font-size: $nav-quick-link-size;
+          font-weight: $nav-quick-link-weight;
+          padding:$nav-quick-link-padding;
+        }
         ul {
           position: relative !important;
           width: auto !important;
@@ -729,6 +740,15 @@
 }
 
 
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+  border: 0px;
+  outline: 0px !important;
+  background: transparent;
+  box-shadow: none !important;
+}
 
 // mobile
 

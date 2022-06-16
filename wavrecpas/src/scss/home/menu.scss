@@ -11,9 +11,6 @@
     right: 0;
     transition: all .3s ease;
   }
-  #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a::after {
-      display: none;
-  }
   #portal-header #portal-header-top #header-links #search-link a {
     background: $secondary;
     border: none;

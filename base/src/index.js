@@ -9,4 +9,9 @@ $( document ).ready(function() {
         document.body.classList.remove('open-nav-overflow');
         document.documentElement.classList.remove('open-nav-overflow');
     })
+
+    // For custom slider
+    // var newsSwiper = $('.sectionnews .swiper')[0].swiper
+    // newsSwiper.params.spaceBetween=30;
+    // newsSwiper.update();
 });
