@@ -526,16 +526,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     color: #fff;
 }
 /* section fichier */
-.portaltype-imio-smartweb-page #content .sectionfiles ul.row,
-.portaltype-imio-smartweb-procedure #content .sectionfiles ul.row {
-    margin-left: 0;
-}
-.portaltype-imio-smartweb-procedure .sectionfiles:after,
-.portaltype-imio-smartweb-page .sectionfiles:after {
-    width: 100%;
-    transform: translateX(0vw);
-    left: 0;
-}
+
 .portaltype-imio-smartweb-procedure .sectionfiles .table_display,
 .portaltype-imio-smartweb-procedure .sectionfiles li.col-md-12,
 .portaltype-imio-smartweb-page .sectionfiles .table_display,
@@ -557,12 +548,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     margin-right: 1rem;
     font-size: 1.25rem;
 }
-.portaltype-imio-smartweb-procedure .sectionfiles a.table_image .table_title span::before,
-.portaltype-imio-smartweb-page .sectionfiles a.table_image .table_title span::before {
-    content: "\e80e";
-    font-family: fontello;
-    margin-right: 0.5rem;
-}
+
 .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image .table_title span::before,
 .portaltype-imio-smartweb-page #content .sectionlinks a.table_image .table_title span::before {
     content: "\e806";

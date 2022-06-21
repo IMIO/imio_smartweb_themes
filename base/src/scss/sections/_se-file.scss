@@ -87,8 +87,6 @@
     }
     li {
         margin: 1.25rem 0;
-        @include last-item-no-margin-bottom;
-        @include first-item-no-margin-top;
     }
     .section_files_link {
         border: solid 1px rgba(255, 255, 255, 0.25);
@@ -173,3 +171,22 @@
 .header-section {
     flex: 100%;
 }
+
+
+.portaltype-imio-smartweb-page #content .sectionfiles ul.row,
+.portaltype-imio-smartweb-procedure #content .sectionfiles ul.row {
+    margin-left: 0;
+}
+.portaltype-imio-smartweb-procedure .sectionfiles:after,
+.portaltype-imio-smartweb-page .sectionfiles:after {
+    transform: translateX(0vw);
+}
+
+
+
+// .portaltype-imio-smartweb-procedure .sectionfiles a.table_image .table_title span::before,
+// .portaltype-imio-smartweb-page .sectionfiles a.table_image .table_title span::before {
+//     content: "\e80e";
+//     font-family: fontello;
+//     margin-right: 0.5rem;
+// }
