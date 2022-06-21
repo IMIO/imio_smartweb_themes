@@ -1,0 +1,17 @@
+.sortable-section.sectionlinks.quick-access:first-child {
+    left: 0;
+    position: absolute;
+    transform: translateY(-97%);
+    z-index: 99;
+}
+// .sortable-section.sectionlinks.quick-access::after {
+//     position: absolute;
+//     background: rgba(242, 242, 242, 0.95);
+//     left: 0;
+//     right: 0;
+//     bottom: 69px;
+//     content: "";
+//     top: 69px;
+//     z-index: -1;
+//     padding: -5rem;
+// }
