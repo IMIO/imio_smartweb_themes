@@ -1,0 +1,52 @@
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav li a {
+    position: relative;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:focus::before, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:hover::before {
+    background-color: $secondary;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: all .3s ease;
+  }
+  #portal-header #portal-header-top #header-links #search-link a {
+    background: $secondary;
+    border: none;
+    &:before {
+
+    }
+  }
+@media (min-width: 992px) {
+      li.contact.has_subtree.nav-item {
+    margin-left: auto;
+    }
+}
+
+#portal-header #portal-header-top #portal-logo {
+    height: 80px;
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+    margin: 0 0rem;
+}
+@media (min-width: 992px) {
+    #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
+    margin-top: 2.8rem;
+    }
+    #portal-header #portal-header-top #portal-globalnav-wrapper {
+        margin: 0 3rem;
+    }
+}
+
+button.navbar-toggler.collapsed {
+    background: transparent !important;
+}
+.open-nav-overflow .navbar-dark .navbar-toggler {
+    border-color: #fff !important;
+    color: #fff !important;
+}

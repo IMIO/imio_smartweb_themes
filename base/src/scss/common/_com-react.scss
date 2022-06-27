@@ -62,7 +62,8 @@
     text-decoration: none;
  }
  
-smartweb-annuaire, smartweb-events{
-    position: relative;
-    z-index: -1;
+.portaltype-imio-smartweb-eventsview, .portaltype-imio-smartweb-directoryview{
+    header#content-header {
+        z-index: 9;
+    }
 }

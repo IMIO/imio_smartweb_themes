@@ -1,0 +1,55 @@
+//MEDIAS
+//PLACEHOLDER
+.portaltype-imio-smartweb-directoryview .r-annuaire-result {
+    .r-item-img {
+        
+    }
+}
+
+//BREADCRUMB
+#portal-breadcrumbs {
+    margin-top: 2rem;
+}
+
+//
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 99;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: 0.5;
+}
+// .sectionfiles {
+//     .section-title, div ul li a, div ul li a span, div ul li a span::before {
+//         color: $primary;
+//     }
+// }
+.r-actu-wrapper::after {
+    display: none !important;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $secondary !important;
+}
+.r-content button {
+    background: $primary;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border: solid 1px $primary;
+    margin-bottom: 1rem;
+}
+.sectiontext .mark, .sectiontext mark {
+    border: 2px solid $secondary;
+}

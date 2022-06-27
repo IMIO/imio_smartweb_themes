@@ -16,3 +16,23 @@ div.swiper-image::before {
     background: $primary;
     opacity: 0.5;
 }
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $primary !important;
+}
+.sectionfiles:after {
+    background: #f3f3f3;
+}
+.sectionfiles {
+h2 {
+    color: $secondary !important;
+}
+a {
+    color: $secondary !important;
+}
+span {
+    color: $secondary !important;
+}
+}
+#portal-breadcrumbs {
+    background-color: #fff;
+}

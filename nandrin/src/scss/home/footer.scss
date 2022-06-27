@@ -1,10 +1,13 @@
 footer {
-    background: $primary;
+    background: $secondary;
 }
 footer div#smartweb-footer {
-    background: $primary;
+    background: $secondary;
         h2, div a, ul li a, span {
         color: #fff !important;
+        }
+        h2 {
+            font-size: $h3-font-size;
         }
         .table_tittle span {
             font-size: 1rem;
@@ -27,7 +30,7 @@ footer .smartweb-footer {
 }
 footer {
     #portal-colophon, div.colophon {
-    background-color: $primary;
+    background-color: $secondary;
     }
     div#body-section-liens-utiles li a {
         text-decoration: none;
@@ -47,4 +50,47 @@ footer {
 }
 footer ul.row {
     margin-left: 0;
+}
+
+//
+footer {
+#portal-colophon, div.colophon {
+background-color: $primary;
+}
+div#body-section-liens-utiles li a {
+    text-decoration: none;
+}
+
+div#body-section-liens-utiles li a:hover {
+    text-decoration: underline;
+}
+}
+.colophonWrapper ul li {
+    display: inline-block;
+}
+@media (max-width: 992px) {
+    .sectiontext .section-text .body-section.figure-left figure img {
+    width: 50%;
+    }
+}
+footer ul.row {
+    margin-left: 0;
+}
+
+#portal-footer-wrapper #portal-footer.container {
+    background: #1e1e1e!important;
+}
+
+#portal-footer-wrapper{
+    position: relative;
+    background:transparent;
+    &:before{
+        content:url('../../assets/svg/nandrin-curve.svg');
+        display: block;
+        top: 7px;
+        position: relative;
+    }
+}
+.smartweb_footer .smartweb-footer li a {
+    color: #fff;
 }
