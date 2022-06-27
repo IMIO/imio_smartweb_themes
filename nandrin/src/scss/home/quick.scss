@@ -75,7 +75,8 @@ div#body-section-nos-partenaires ul li {
     padding-bottom: 1rem;
     }
     div.table_title {
-        font-weight: bold;
+        font-weight: 500;
+        color: $secondary!important;
     }
 }
 div#body-section-nos-partenaires ul li:hover {
