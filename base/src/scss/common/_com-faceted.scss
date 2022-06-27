@@ -123,16 +123,16 @@ legend {}
         color: #000;
         opacity: .55;
         &:before {
-            content: "";
+            content: "x";
             width: 16px;
             height: 16px;
             display: inline-block;
-            // background: url(../svg/close.svg) no-repeat;
             background-position: center;
             position: relative;
-            top: 1px;
+            top: -2px;
             margin: 0 1px;
             background-size: contain;
+            font-size: small;
         }
     }
 }
