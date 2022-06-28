@@ -1,0 +1,12 @@
+.sectionnews {
+    position: relative;
+    .swiper_description {
+        display: none;
+    }
+}
+
+.sectionnews .swiper-slide .swiper_category span {
+    background: #ffc93c !important;
+    color: #000 !important;
+    padding: 2.3px 0.7rem !important;
+}
