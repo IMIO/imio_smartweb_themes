@@ -82,13 +82,33 @@ importers:
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
   brainelechateau:
     specifiers:
       '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
+      '@popperjs/core': 2.11.2
+
+  cancap:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
+      '@popperjs/core': 2.11.2
+
+  comineswarneton:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.5
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
@@ -102,7 +122,7 @@ importers:
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
@@ -112,7 +132,7 @@ importers:
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
@@ -122,7 +142,7 @@ importers:
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
@@ -132,7 +152,7 @@ importers:
       '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.2
       '@popperjs/core': 2.11.2
 
@@ -341,6 +361,10 @@ packages:
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
+  /@imiobe/plonetheme-smartweb-base/0.0.4:
+    resolution: {integrity: sha512-KGwVwVYFdH1dSHwnlenCENq5MnSF3u4/n2woWndnnL+YW2T2IugLBKLuSiu5gqfQpjj40zFLw4UuNWDecxcPBg==}
     dev: true
 
   /@jridgewell/resolve-uri/3.0.6:
