@@ -1,12 +1,11 @@
 //*// COLORS
-$primary: #343F4D;
-$secondary: #99CC33;
+$primary: #0e4194;
+$secondary: #fdc608;
 
 
 //*// TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 $font-family-base: "Montserrat",
@@ -22,7 +21,7 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
-$font-family-title: "Josefin Sans",
+$font-family-title: $font-family-base,
 system-ui,
 -apple-system,
 "Segoe UI" !default;
