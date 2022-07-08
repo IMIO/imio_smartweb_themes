@@ -208,6 +208,7 @@ module.exports = (env, argv) => {
     devServer: {
       port: 3000,
       hot: true,
+      liveReload: false,
       static: {
         directory: THEME_PATH,
       },

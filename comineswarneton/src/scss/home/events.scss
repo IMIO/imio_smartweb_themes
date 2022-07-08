@@ -1,9 +1,113 @@
 .sectionevents {
-    .swiper-pagination-bullet {
-        background: #A1A1A1;
-        opacity: 1;
+    .swiper-wrapper{
+        padding: 2rem 0 5rem 0;
     }
-    .swiper-pagination-bullet-active {
-        background: #fff !important;
+    .swiper-slide {
+        box-shadow: 0 6px 10px rgba(0,0,0,.08); 
+        transition: all .3s ease-out;
+        transform-origin: center center;
+        -webkit-font-smoothing: antialiased;
+        backface-visibility: hidden;
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        animation: anim-mouse-leave forwards 0.4s ease-out;
+        &:hover{
+            animation: anim-mouse-enter forwards 0.4s ease-out;
+            transition: all .4s ease-out; 
+        }
+        .swiper_date{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%,50%);
+            background: $secondary;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            font-weight: bold;
+            border: solid 4px #fff;
+        }
     }
 }
+@keyframes anim-mouse-down {
+    0% {
+          transform: scale(1);
+      }
+      33%{
+          transform: scale(0.93);
+      }
+      66% {
+          transform: scale(0.97);
+      }
+      100% {
+          transform: scale(0.95);
+      }
+  }
+  
+  @keyframes anim-mouse-enter {
+        0% {
+          transform: scale(1);
+      }
+      33% {
+          transform: scale(1.07);
+      }
+      66% {
+          transform: scale(1.03);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+  
+  @keyframes anim-mouse-leave {
+        0% {
+          transform: scale(1.02);
+      }
+      33% {
+          transform: scale(0.98);
+      }
+      66% {
+          transform: scale(1.02);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  
+  
+  @keyframes anim-out {
+    0% {
+      opacity: 0%;
+      border-radius: 0;
+      width: 300px;
+      height: 300px;
+    }
+    100% {
+      width: 0px;
+      height: 0px;
+      border-radius: 100%;
+      opacity: 20%;
+    }
+  }
+  
+  
+  @keyframes anim-in {
+    100% {
+      opacity: 0%;
+      border-radius: 0;
+      width: 300px;
+      height: 300px;
+    }
+    0% {
+      width: 0px;
+      height: 0px;
+      border-radius: 100%;
+      opacity: 20%;
+    }
+  }

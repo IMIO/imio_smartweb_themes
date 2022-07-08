@@ -1,12 +1,129 @@
 .sectionnews {
-    position: relative;
-    .swiper_description {
-        display: none;
+    .swiper-wrapper{
+        padding: 2rem 0;
+    }
+    .swiper-slide {
+        box-shadow: 0 6px 10px rgba(0,0,0,.08); 
+        transition: all .3s ease-out;
+        transform-origin: center center;
+        -webkit-font-smoothing: antialiased;
+        backface-visibility: hidden;
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        animation: anim-mouse-leave forwards 0.4s ease-out;
+        &:hover{
+            animation: anim-mouse-enter forwards 0.4s ease-out;
+            transition: all .4s ease-out; 
+        }
     }
 }
 
-.sectionnews .swiper-slide .swiper_category span {
-    background: #ffc93c !important;
-    color: #000 !important;
-    padding: 2.3px 0.7rem !important;
-}
+  #btn-wrapper {
+    
+    // &:before {
+    //   content: "";
+    // position: absolute;
+    // width: 0px;
+    // height: 0px;
+    // opacity: 20%;
+    // background: white;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // margin: auto;
+    // z-index: -3;
+    // }
+  }
+    
+//   button.active #btn-wrapper {
+//     animation: anim-mouse-down forwards 0.4s ease-out;
+//   }
+  
+//   button:hover #btn-wrapper:before {
+//       animation: anim-in 0.4s forwards ease-out;
+    
+//   }
+  
+//   button.active #btn-wrapper:before {
+//       animation: anim-out 0.2s forwards ease-out;
+    
+//   }
+  
+  @keyframes anim-mouse-down {
+    0% {
+          transform: scale(1);
+      }
+      33%{
+          transform: scale(0.93);
+      }
+      66% {
+          transform: scale(0.97);
+      }
+      100% {
+          transform: scale(0.95);
+      }
+  }
+  
+  @keyframes anim-mouse-enter {
+        0% {
+          transform: scale(1);
+      }
+      33% {
+          transform: scale(1.07);
+      }
+      66% {
+          transform: scale(1.03);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+  
+  @keyframes anim-mouse-leave {
+        0% {
+          transform: scale(1.02);
+      }
+      33% {
+          transform: scale(0.98);
+      }
+      66% {
+          transform: scale(1.02);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  
+  
+  @keyframes anim-out {
+    0% {
+      opacity: 0%;
+      border-radius: 0;
+      width: 300px;
+      height: 300px;
+    }
+    100% {
+      width: 0px;
+      height: 0px;
+      border-radius: 100%;
+      opacity: 20%;
+    }
+  }
+  
+  
+  @keyframes anim-in {
+    100% {
+      opacity: 0%;
+      border-radius: 0;
+      width: 300px;
+      height: 300px;
+    }
+    0% {
+      width: 0px;
+      height: 0px;
+      border-radius: 100%;
+      opacity: 20%;
+    }
+  }

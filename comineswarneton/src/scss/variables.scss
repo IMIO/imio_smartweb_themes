@@ -1,27 +1,12 @@
 //*// COLORS
-$primary: #109165 !default;
+$primary: #093951;
+$secondary: #6ccbad;
 
 //*// TYPOGRAPHY
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Passion+One&display=swap');
 
-$font-family-base: "Raleway",
-system-ui,
--apple-system,
-"Segoe UI",
-"Helvetica Neue",
-"Noto Sans",
-"Liberation Sans",
-arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji" !default;
-$font-family-title: "Playfair Display",
-system-ui,
--apple-system,
-"Segoe UI" !default;
+$font-family-base:'Lato', sans-serif;
+$font-family-title: 'Passion One', cursive;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -32,9 +17,9 @@ $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
+$h4-font-size: $font-size-base * 1.15 !default;
+$h5-font-size: $font-size-base * 1 !default;
 $h6-font-size: $font-size-base !default;
 
 // Include Roboto as webfont
@@ -61,7 +46,7 @@ $swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/20
 $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-background-size: 50% !default;
 $swiper-background-color: #fff !default;
-$swiper-raduis: 50px !default;
+$swiper-raduis: 0;
 
 //*// HEADER
 $main-logo-max-width: 115px !default;
@@ -141,20 +126,20 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding:1rem !default;
-$see-all-margin:2rem 0 0 0 !default;
-$see-all-bg:$primary !default;
-$see-all-color:#000 !default;
-$see-all-radius:$global-radius !default;
-$see-all-border:solid 1px $primary !default;
-$see-all-text-transform:none !default;
+$see-all-padding:1rem;
+$see-all-margin:0;
+$see-all-bg:transparent;
+$see-all-color:$primary;
+$see-all-radius:0;
+$see-all-border:0px;
+$see-all-text-transform:none;
 $see-all-font-size:16px !default;
 $see-all-transition:all .2s ease !default;
-$see-all-hover-bg:#000 !default;
-$see-all-hover-color:#fff !default;
-$see-all-hover-radius:$global-radius !default;
-$see-all-hover-border:solid 1px $primary !default;
-$see-all-justify-content: center !default;
+$see-all-hover-bg:transparent;
+$see-all-hover-color:$primary !default;
+$see-all-hover-radius:0;
+$see-all-hover-border:0px;
+$see-all-justify-content: right !default;
 
 
 // Quick access
@@ -217,9 +202,9 @@ $actu-title-align:$home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0.7rem !default;
-$actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color:rgb(244, 244, 244) !default;
-$actu-item-bg-radius:$global-radius+2 !default;
+$actu-image-border-radius:0;
+$actu-item-bg-color:transparent;
+$actu-item-bg-radius:0;
 $actu-category-margin: 0 0 0.3rem 0 !default;
 $actu-category-padding: 0 1rem !default;
 $actu-category-color: $primary !default;
@@ -245,14 +230,14 @@ $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;
-$event-title-color:$primary !default;
+$event-title-color:#fff;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0.7rem !default;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color:rgb(244, 244, 244) !default;
-$event-item-bg-radius:$global-radius+2 !default;
+$event-image-border-radius:0;
+$event-item-bg-color:#fff;
+$event-item-bg-radius:0;
 $event-category-margin: 0 0 0.3rem 0 !default;
 $event-category-padding: 0 1rem !default;
 $event-category-color: $primary !default;
@@ -268,9 +253,9 @@ $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size !default;
 $event-item-title-font-weight: initial !default;
 $event-date-margin: 0 !default;
-$event-date-padding: 0 1rem !default;
+$event-date-padding: 0;
 $event-date-color: $primary !default;
-$event-date-font-size: 14px !default;
+$event-date-font-size: 16px;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
 

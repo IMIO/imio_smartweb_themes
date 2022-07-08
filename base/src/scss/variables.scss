@@ -328,7 +328,6 @@ $section-text-link-color: $primary !default;
 $section-text-link-hover-decoration: solid 1px $primary !default;
 $section-text-max-width: 760px !default;
 
-
 // Section
 $section-padding-y: 5.31rem;
 $section-padding: (sm: 3rem,
@@ -340,7 +339,7 @@ $section-contact-title-size:$h2-font-size;
 $section-contact-sub-title-size:$font-size-lg;
 $section-contact-title-color:$primary;
 $section-contact-p-margin:1rem 0;
-$section-contact-portrait-ration:4/5;
+$section-contact-portrait-ration:calc(4 / 5);
 
 // section-files
 $section-file-background-color: $primary !default;
