@@ -43,7 +43,13 @@ $h6-font-size: $font-size-base !default;
 @function url-encoded-color($color) {
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
-
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
 $global-radius: 10px !default;
 $enable-title-uppercase: false !default;
 $home-section-title-margin:0 0 2rem 0 !default;

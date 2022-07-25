@@ -1,5 +1,4 @@
 import "./scss/main.scss";
-
 $( document ).ready(function() {
     $('#portal-globalnav-collapse').on('show.bs.collapse', function () {
         document.body.classList.add('open-nav-overflow');
