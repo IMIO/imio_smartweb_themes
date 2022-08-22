@@ -1,34 +1,5 @@
-.mce-content-body {
-  mark {
-    display: block;
-    padding: 20px 45px 20px 26px;
-    border: solid 4px $primary;
-    background-color: $primary;
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-    color: #fff;
-    font-weight: 500;
-  }
-
-  li {
-    position: relative;
-    display: table;
-    padding-left: 1rem;
-    margin: 0.25rem 0;
-    list-style: none;
-
-    // &::before{
-    //     content: $list-style-custom;
-    //     top: -2px;
-    //     left: 0;
-    //     position: absolute;
-    // }
-  }
-}
-
 .sectiontext {
   font-size: $font-size-texte;
-
   mark {
     display: inline-block;
     padding: $mark-padding;
@@ -52,10 +23,26 @@
   h3 {
     margin-top: $section-text-h3-margin-top;
     margin-bottom: $section-text-h3-margin-bottom;
-    font-weight: 500;
   }
-
-  li {
+  ol {
+    list-style-type:none;        
+    counter-reset: sectioncounter;
+    li{
+      display: table;
+      padding-left: 1rem;
+      &:before{
+        content: counter(sectioncounter) ":";
+        counter-increment: sectioncounter;
+        display:inline-block; 
+        width:2em; 
+        text-align:right;
+        position:relative; 
+        left:-2.5em; 
+        margin-right:-2em;
+      }
+    }
+  } 
+  ul li {
     position: relative;
     display: table;
     padding-left: 1rem;

@@ -103,20 +103,11 @@
   }
 }
 
-header#content-header {
-
-}
-
 @include media-breakpoint-down(lg) {
   .navbar-expand-md .navbar-toggler {
     display: block !important;
   }
 }
-
-// .subsite-container{   ---------------------- POURQUOI clip ???
-//     grid-area: sub;
-//     overflow-x: clip;
-//   }
 
 // MASK
 

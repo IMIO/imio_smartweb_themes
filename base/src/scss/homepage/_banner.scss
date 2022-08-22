@@ -8,10 +8,7 @@
 
   .bannerSwiper {
     height: $banner-heigh;
-
-    .sectionslide {
-      width: 100%;
-
+    
       .swiper-slide {
         position: relative;
 
@@ -62,7 +59,6 @@
           }
         }
       }
-    }
   }
 
   .swiper-button-next,

@@ -25,6 +25,9 @@
   }
   .body-section {
     padding: $quick-access-container-padding;
+    ul{
+      justify-content: center;
+    }
     li {
       list-style: none;
       a {
