@@ -1,0 +1,86 @@
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 99;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $primary !important;
+}
+.sectionfiles:after {
+    background: #f3f3f3;
+}
+.sectionfiles {
+h2 {
+    color: $secondary !important;
+}
+a {
+    color: $secondary !important;
+}
+span {
+    color: $secondary !important;
+}
+}
+#portal-breadcrumbs {
+    background-color: #fff;
+}
+body.section-home-page .container #main-container {
+    position: relative;
+    &:after {
+    background: url(../../assets/svg/bb.svg);
+    content: "";
+    display: block;
+    height: 105%;
+    left: -50%;
+    position: absolute;
+    top: -40px;
+    width: 100vw;
+    background-size: cover;
+    background-position: right top;
+    z-index: -99;
+    }
+}
+
+//custom
+#subsite-navigation>ul>li>a {
+    color: #000;
+}
+.offcanvas.offcanvas-start{
+    width:95%;
+}
+#offcanvasSearch .offcanvas-body{
+    overflow:visible;
+}
+.colophonWrapper ul {
+    gap: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.colophonWrapper li:last-child {
+    width: 100%;
+}
+@media screen and (min-width: 1200px) {
+.subsite-container {
+    margin-top: 1rem;
+    }
+}
+#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
+    margin-top: 2rem;
+}
+//MENU config
+body.userrole-authenticated ul.nav li a.nav-link {
+    color: $secondary;
+}
+//Bloc
+.block-menu-element h2.card-title {
+    padding: 2rem;
+    color: $secondary;
+}

@@ -1,0 +1,15 @@
+.swiper_description {
+    color: $primary;
+    padding: 0 1rem;
+}
+
+.sectionevents .swiper-slide > a {
+    transition: all .2s ease;
+}
+.sectionevents .swiper-slide > a:hover {
+    background: $primary;
+    div h3, div span, div p 
+        {
+            color: #fff;
+        }
+}

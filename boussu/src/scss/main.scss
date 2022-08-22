@@ -20,6 +20,7 @@ $enable-roboto-webfont: false;
 @import './home/en-image';
 @import './home/annuaire';
 @import './home/les-sites';
+@import './home/footer';
 @import './home/newsletter.scss';
 
 
@@ -107,7 +108,7 @@ $enable-roboto-webfont: false;
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
   .r-item-img {
-    background-image: url('../../assets/svg/placeholder-manage.png') !important;
+    background-image: url('../../assets/svg/placeholder-boussu.png') !important;
   }
 }
 

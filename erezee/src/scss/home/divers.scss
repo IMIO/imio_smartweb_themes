@@ -1,0 +1,34 @@
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 99;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $primary !important;
+}
+.sectionfiles:after {
+    background: #f3f3f3;
+}
+.sectionfiles {
+h2 {
+    color: $secondary !important;
+}
+a {
+    color: $secondary !important;
+}
+span {
+    color: $secondary !important;
+}
+}
+#portal-breadcrumbs {
+    background-color: #fff;
+}
