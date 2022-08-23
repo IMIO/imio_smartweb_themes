@@ -150,9 +150,9 @@ $see-all-hover-color:$primary-svg !default;
 $see-all-hover-radius:$global-radius !default;
 $see-all-hover-border:solid 0px $primary !default;
 $see-all-justify-content: right !default;
-$see-all-underline-color: $primary-svg;
-$see-all-underline-width: 25%;
-$see-all-hover-underline-width:50%;
+$see-all-underline-color: $primary-svg!default;
+$see-all-underline-width: 25%!default;
+$see-all-hover-underline-width:50%!default;
 
 
 // Quick access
