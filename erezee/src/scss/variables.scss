@@ -1,13 +1,15 @@
 //*// COLORS
 $primary: #19647e;
 $secondary: #E9F7F7;
+$primary-svg:#19647e;
 $greybg: #F8F8F8;
 
 //*// TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-$font-family-base: "Oswald",
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+$font-family-base: "Lato",
 system-ui,
 -apple-system,
 "Segoe UI",
@@ -20,7 +22,7 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
-$font-family-title: $font-family-base,
+$font-family-title: "Oswald",
 system-ui,
 -apple-system,
 "Segoe UI" !default;
@@ -70,7 +72,7 @@ $main-logo-max-width: 115px !default;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: #fff;
 $header-center-nav: false !default;
-$header-nav-margin: 0 1rem 0 1rem !default;
+$header-nav-margin: 0 4rem 0 4rem;
 $header-links-color: $primary;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
@@ -96,7 +98,7 @@ $nav-link-drop-color:#000 !default;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
 $nav-link-drop-color-mobile:#000 !default;
 $nav-link-drop-mobile:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
-$nav-first-level-gap: 30px !default;
+$nav-first-level-gap: 60px;
 $nav-first-level-uppercase: true !default;
 $nav-quick-link-color:$primary;
 $nav-quick-link-size:18px!default;
@@ -133,7 +135,7 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
+$banner-content-background: rgb(256 256 256 / 70%);
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
@@ -145,8 +147,8 @@ $banner-content-description-color: black !default;
 // see_all
 $see-all-padding:1rem 3rem;
 $see-all-margin:2rem 0 0 0 !default;
-$see-all-bg: $primary;
-$see-all-color: $secondary;
+$see-all-bg: $secondary;
+$see-all-color: $primary;
 $see-all-radius:$global-radius;
 $see-all-border:solid 1px $primary;
 $see-all-text-transform:none !default;
@@ -157,6 +159,9 @@ $see-all-hover-color:#fff;
 $see-all-hover-radius:$global-radius;
 $see-all-hover-border:solid 1px $secondary;
 $see-all-justify-content: center;
+$see-all-underline-color: transparent;
+$see-all-underline-width: 0%;
+$see-all-hover-underline-width:0%;
 
 // Quick access
 $quick-access-section-full-width: true;
@@ -167,7 +172,7 @@ $quick-access-title-align:$home-section-title-align !default;
 $quick-access-container-padding: 0.5rem 0;
 $quick-access-width: 80px;
 $quick-access-height: 80px;
-$quick-access-background:transparent;
+$quick-access-background: transparent;
 $quick-access-border: none;
 $quick-access-border-radius: 0px;
 $quick-access-shadow: none;
@@ -178,7 +183,7 @@ $quick-access-title-font-size: 16px;
 $quick-access-title-text-transform: initial !default;
 $quick-access-title-weight: 500;
 $quick-access-enable-full-bg: true;
-$quick-access-full-bg-color: transparent;
+$quick-access-full-bg-color: $greybg;
 $quick-access-full-bg-border:none;
 $quick-access-full-bg-shadow: none;
 
@@ -220,17 +225,17 @@ $actu-category-color: #fff;
 $actu-category-bg-color: $primary;
 $actu-category-text-transform: uppercase;
 $actu-category-font-size: 14px;
-$actu-category-font-weight: bold;
+$actu-category-font-weight: normal;
 $actu-category-radius: 0px 0px 10px 0px;
 $actu-item-title-margin: 1rem 0 !default;
 $actu-item-title-padding: 1rem;
-$actu-item-title-color: $primary;
+$actu-item-title-color: #000;
 $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size;
 $actu-item-title-font-weight: 400;
 $actu-date-margin: 0 !default;
 $actu-date-padding: 1rem 0 0 1rem;
-$actu-date-color: $primary;
+$actu-date-color: #000;
 $actu-date-font-size: 14px !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
@@ -253,17 +258,17 @@ $event-category-color: #fff;
 $event-category-bg-color: $primary;
 $event-category-text-transform: uppercase;
 $event-category-font-size: 14px;
-$event-category-font-weight: bold;
+$event-category-font-weight: normal;
 $event-category-radius: 0px 0px 10px 0px;
 $event-item-title-margin: 1rem 0 !default;
 $event-item-title-padding: 0 1rem !default;
-$event-item-title-color: $primary;
+$event-item-title-color: #000;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size;
 $event-item-title-font-weight: 400;
 $event-date-margin: 0 !default;
 $event-date-padding: 1rem 0 0 1rem;
-$event-date-color: $primary;
+$event-date-color: #000;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
