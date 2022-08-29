@@ -20,15 +20,24 @@ div.swiper-image::before {
 }
 .sectionfiles {
 h2 {
-    color: $secondary !important;
+    color: $primary !important;
 }
 a {
-    color: $secondary !important;
+    color: #000 !important;
 }
 span {
-    color: $secondary !important;
+    color: #000 !important;
 }
 }
 #portal-breadcrumbs {
     background-color: #fff;
+}
+div#smartweb-minisite-footer {
+    h2 {
+        color: #fff;
+    }
+    background: $primary;
+}
+.list-card-body h2.list-card-title {
+    font-size: 1.5rem;
 }

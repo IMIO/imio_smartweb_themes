@@ -13,3 +13,14 @@
             color: #fff;
         }
 }
+.sectionevents:before {
+    background: #f8f8f8;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0%;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -1;
+}

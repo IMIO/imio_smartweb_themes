@@ -5,3 +5,13 @@ header#content-header {
 .smartweb_herobanner .bannerSwiper .swiper-wrapper {
     padding-bottom: 0px;
 }
+@media screen and (max-width: 992px) {
+    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        .swiper-banner-title {
+        font-size: 2rem;
+        }
+    }
+}
