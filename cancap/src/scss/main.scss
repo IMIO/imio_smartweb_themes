@@ -27,3 +27,103 @@ $enable-roboto-webfont: false;
 @import "./home/footer";
 
 
+
+#container-section-intro{
+    padding-top: 1rem;
+    padding-bottom: 1.8rem;
+    h2{
+        margin: 0 0 0.9rem 0 !important;
+    }
+}
+
+.sectiontext:first-child .section-text .body-section.figure-top figure {
+	margin-top: 0;
+}
+.sectiontext .mark, .sectiontext mark {
+	padding: 0!important;
+    margin: 1rem 0;
+    text-align: center;
+    a{
+        padding: 20px 45px 20px 26px;
+    }
+}
+
+.section-gallery{
+    max-width: 760px;
+}
+.portaltype-imio-smartweb-portalpage{
+    #portal-header{
+        margin-bottom: 0;
+    }
+    footer#portal-footer-wrapper {
+        margin-top: 0!important;
+    }
+}
+
+.navbar-toggler{
+    background: #0e4194!important;
+    span{
+        background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important ;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .swiper.bannerSwiper .swiper-banner-content-wrapper {
+        top: 50%!important;
+        transform: translateY(-50%)!important;
+        .swiper-banner-title{
+            font-size: 1.3rem!important;
+        }
+        .swiper-banner-description{
+            p{
+                font-size: 18px!important;
+                margin-top: 1rem!important;
+            }
+        }
+    }
+}
+.sectionlinks.services{
+    .swiper-wrapper{
+        padding-bottom: 0;
+    }
+}
+.portaltype-imio-smartweb-page .sectiontext:nth-child(5) {
+	margin-top: 0.8rem;
+	border-top: solid 1px #cbcbcb;
+	padding-top: 2rem;
+}
+.txt-center{
+    text-align: center;
+}
+.sectiontext .mark, .sectiontext mark {
+	border: 2px solid $primary!important;
+    border-radius: 6px;
+}
+.subsite-container{
+    margin-top: 1.5rem;
+}
+.portaltype-imio-smartweb-portalpage .subsite-container{
+    margin-top: 0!important;
+}
+
+#portal-footer{
+   #body-section-logo{
+    figure{
+        @media screen and (min-width:575px) {
+            margin-right: auto; 
+        }
+    }
+        img{
+            width: 250px  
+        }
+   } 
+}
+/* 
+personnalisation de la section lien pour les objectifs du développement durable : titre du lien n'apparaît qu'aun survol
+effets de bord quand image est mise à une section, cf. alignement du texte et largeur du paragrpahe
+adapter style du sous-menu de navigation pour les sous-sites
+
+si temps après sortie du site car ne l'utilisent pas actuellement : vérifier l'affichage message mais après sortie du site
+
+
+*/

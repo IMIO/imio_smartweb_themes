@@ -33,10 +33,10 @@ $font-title-weight: 600;
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 1.85 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.85;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
@@ -46,7 +46,7 @@ $h6-font-size: $font-size-base !default;
 @function url-encoded-color($color) {
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
-
+$home-section-title-size:1.85rem;
 $global-radius: 0px;
 $enable-title-uppercase: true;
 $home-section-title-margin:0 0 6rem;
@@ -66,7 +66,7 @@ $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
 
 //*// HEADER
-$main-logo-max-width: 115px !default;
+$main-logo-max-width: 150px ;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: $primary;
 $header-center-nav: false !default;
@@ -122,12 +122,12 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
+$banner-heigh: 400px;
 $banner-content-width: 520px;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 3rem;
-$banner-content-background: #F6F6F6;
+$banner-content-background: #f6f6f6bb;
 $banner-content-is-vertical-center: false;
 $banner-content-title-font-size: 1.8rem;
 $banner-content-title-color: $primary;
@@ -150,7 +150,9 @@ $see-all-hover-color: $primary;
 $see-all-hover-radius:$global-radius !default;
 $see-all-hover-border:solid 1px $primary;
 $see-all-justify-content: center !default;
-
+$see-all-underline-color: transparent;
+$see-all-underline-width: 25%!default;
+$see-all-hover-underline-width:50%!default;
 
 // Quick access
 $quick-access-section-full-width:false !default;
@@ -317,7 +319,7 @@ $album-see-all-justify-content: $see-all-justify-content !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
+$mark-background-color: #fff;
 $mark-color: #5c5c5c !default;
 $mark-padding: 20px 45px 20px 26px !default;
 $mark-border: solid 2px $primary !default;

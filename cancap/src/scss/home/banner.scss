@@ -3,8 +3,6 @@
     .swiper-banner-content-wrapper {
         position: relative;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
         .swiper-banner-content {
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
             width: 550px;
@@ -29,3 +27,6 @@
         }
     }
   }
+  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+	backdrop-filter: blur(3px);
+}
