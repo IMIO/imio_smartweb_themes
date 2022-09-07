@@ -1,4 +1,17 @@
 .sectionnews {
+  background: #F6F6F6;
+  .section-title{
+    display: flex;
+    align-items: center;
+    &::before{
+      content: "";
+      width: 10px;
+      background: $primary;
+      display: block;
+      height: 34px;
+      margin-right: 1rem;
+    }
+  }
     .swiper-wrapper{
         padding: 2rem 0;
     }
@@ -18,38 +31,9 @@
     }
 }
 
-  #btn-wrapper {
+
     
-    // &:before {
-    //   content: "";
-    // position: absolute;
-    // width: 0px;
-    // height: 0px;
-    // opacity: 20%;
-    // background: white;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
-    // margin: auto;
-    // z-index: -3;
-    // }
-  }
-    
-//   button.active #btn-wrapper {
-//     animation: anim-mouse-down forwards 0.4s ease-out;
-//   }
-  
-//   button:hover #btn-wrapper:before {
-//       animation: anim-in 0.4s forwards ease-out;
-    
-//   }
-  
-//   button.active #btn-wrapper:before {
-//       animation: anim-out 0.2s forwards ease-out;
-    
-//   }
-  
+ 
   @keyframes anim-mouse-down {
     0% {
           transform: scale(1);

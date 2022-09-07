@@ -12,6 +12,8 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 // ... add your styles here
+@import "./nav.scss";
+@import "./home/banner.scss";
 @import "./home/quick.scss";
 @import "./home/a-la-une";
 @import "./home/actualites";
@@ -36,64 +38,134 @@ $enable-roboto-webfont: false;
 .swiper_title h3{
     font-family: $font-family-base!important;
 }
-// see-all
+// // see-all
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+    transition: $property $duration $ease;
+  }
 
 .see_all{
-    a{
+    display: block!important;
+    width: 280px;
+    height: auto;
+    margin: 0 0 0 auto!important;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    .circle {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: relative;
-        display: flex!important;
-        flex-direction: row-reverse;
-        align-items: center;
-        &:before{
-            content: "";
-            position: relative;
-            width: 30px;
-            height: 30px;
-            background:url("../../assets/svg/seeall-arrow.svg"),#fff;
-            display: block;
-            border-radius: 50px;
-            margin-left: 2rem;
-            z-index: 1;
-        }
-        &:after{
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background:$secondary;
-            opacity: 60%;
-            display: block;
-            border-radius: 50px;
-            z-index: -1;
-        }
-        &:hover{
-            text-decoration: underline;
-            &:after{
-                animation: anim-in 0.4s forwards ease-out;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: $primary;
+        border-radius: 1.625rem;
+        .icon {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: $white;
+          &.arrow {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            &::before {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg);
             }
+          }
         }
+    }
+    a {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute!important;
+        width: max-content!important;
+        top: 0;
+        left: 2rem;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0!important;
+        margin: 0 0 0 1.85rem;
+        color: $black;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $josefin!important;
+      }
+    &:hover {
+        .circle {
+          width: 100%;
+          .icon {
+            &.arrow {
+            background: $white;
+            transform: translate(1rem, 0);
+            }
+          }
+        }
+        .button-text {
+          color: $white;
+        }
+      }
+    &:hover {
+      a{        
+          color: $white;
+      }
     }
 }
 
-@keyframes anim-out {
-    0% {
-        opacity: 0%;
-        transform: scale(1.5);
+// slider 
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -6px!important;
+}
+.smartweb_herobanner .bannerSwiper .section-slide {
+	height: 100%;
+}
+
+// video home 
+
+.home-video{
+  padding: 2rem 0!important;
+  .section-video{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-up(lg){
+      display: flex;
     }
-    100% {
-        transform: scale(1);
-        opacity: 60%;
+    & > p{
+      font-family: $josefin;
+      font-size: 28px;
+      text-align: center;
+      @include media-breakpoint-up(lg){
+        font-size: 45px;
+      }
+    }
+    #body-section-video-daccueil{
+      max-width: 600px;
+      iframe{
+        border-radius: 10px;
+      }
     }
   }
-  
-  
-  @keyframes anim-in {
-    100% {
-        opacity: 0%;
-        transform: scale(1.5);
-    }
-    0% {
-        transform: scale(1);
-        opacity: 60%;
-    }
-  }
+}

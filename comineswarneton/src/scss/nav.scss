@@ -1,0 +1,112 @@
+@include media-breakpoint-up(lg){
+    .nav_je-suis{
+        margin-left: auto;
+    }
+}
+.nav_je-trouve,.nav_je-suis{
+    text-transform: initial;
+    font-family: $josefin;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a{
+    &::before {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: relative;
+        left: 0;
+        background: url("../../assets/svg/je-suis.svg");
+        bottom: inherit;
+        top: inherit;
+        transition: all 0.15s ease;
+        right: inherit;
+        opacity: 1;
+        background-size: contain;
+        margin-right: 0.6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block!important;
+    }
+    &:after{
+        background:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"ht.tp://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23000\"/></svg>");
+        background-repeat: no-repeat;
+    }
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a {
+    &::before{
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: relative;
+        left: 0;
+        background: url("../../assets/svg/je-trouve.svg");
+        bottom: inherit;
+        top: inherit;
+        transition: all 0.15s ease;
+        right: inherit;
+        opacity: 1;
+        background-size: contain;
+        margin-right: 0.6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block!important;
+    }
+    &:after{
+        background:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"ht.tp://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23000\"/></svg>");
+        background-repeat: no-repeat;
+    }
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
+	display: none;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
+    @include media-breakpoint-down(lg){
+        margin-left: auto;
+    }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+	width: 46px;
+	height: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0px solid #c1c1c1;
+	border-radius: 50px;
+	background: $secondary;
+    &::before{
+        content: "";
+        background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M11.08%206.77a4.31%204.31%200%201%200-4.31%204.31%204.32%204.32%200%200%200%204.31-4.31Zm4.92%208A1.24%201.24%200%200%201%2014.77%2016a1.17%201.17%200%200%201-.86-.37l-3.3-3.28a6.77%206.77%200%201%201%201.74-1.74l3.3%203.3a1.25%201.25%200%200%201%20.35.86Z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+        background-size: 14px;
+        display: block;
+        height: 14px;
+        width: 14px;
+    }
+}
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
+    @include media-breakpoint-up(lg){
+        position: relative;
+        top: 1px;
+    }
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a::before,
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a::before{
+    top: 0;
+}
+
+.portaltype-imio-smartweb-portalpage #portal-header #portal-header-top {
+    @include media-breakpoint-up(lg){
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+@include media-breakpoint-up(lg){
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
+        color: #fff!important;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a, 
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a {
+        color: $primary!important;
+    }
+}

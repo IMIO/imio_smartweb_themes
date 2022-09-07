@@ -1,9 +1,9 @@
 .les-sites {
     padding: 5rem 0;
+    background: transparent!important;
     .row {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
-        grid-gap: 40px;
         grid-auto-rows: 1fr;
         align-items: center;
         justify-content: center;
@@ -13,13 +13,18 @@
             justify-content: center;
             align-items: center;
             width: auto;
-            background: #F3F3F3;
-            border: solid 1px #D2D2D2;
+            border: solid 0px #D2D2D2;
             border-radius: 100%;
             height: 155px;
+            border-right: 1px solid #d2d2d2;
+            border-radius: inherit;
+            text-align: center;
+            a{
+                text-decoration: none;
+            }
             &:hover,
             &:focus {
-                border: solid 1px #FFC93C;
+                background: $primary;
             }
             .table_title {
                 &:after {
