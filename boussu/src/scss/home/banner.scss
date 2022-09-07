@@ -2,6 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+        .swiper-banner-title{
+            font-size: 40px!important;
+        }
+    }
     .swiper-banner-title{
         text-shadow: #262626 3px 5px 2px;
     }
@@ -15,8 +21,18 @@
         }
     }
 }
-@media sreen and (max-width: 915px) {
+@media screen and (max-width: 915px) {
     .swiper-banner-content {
         display: block;
+    }
+    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
+        font-size: 30px!important;
+    }
+    .sortable-section.sectionlinks.quick-access:first-child {
+        position: relative!important;
+        transform: inherit!important;
+    }
+    .smartweb_herobanner .bannerSwiper {
+        height: 236px!important;
     }
 }

@@ -260,7 +260,9 @@ li:marker {
     }
   }
   .a-la-une {
-    margin-top: 8rem;
+    @media screen and (min-width:900px){
+      margin-top: 8rem;
+    }
   }
   .sectionnews,
   .sectionevents {
@@ -324,4 +326,61 @@ li:marker {
 
 .sectionselections.a-la-une {
   margin-top: 8rem !important;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a::after,
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree:hover > a::after
+  {
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23e9212d\"/></svg>");
+  background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.sectionfiles .section-title{
+  color: #323031!important;
+}
+#portal-colophon{
+	background: #323031!important;
+}
+.smartweb-footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#body-section-acces-directs li:nth-child(2) path {
+	fill: #e9212d;
+}
+
+.navbar-toggler{
+  background: #000!important;
+  span{
+      background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important ;
+  }
+}
+
+.r-list-item-group:hover .r-item-arrow-more {
+  background-color: #eb524e!important;
+}
+
+#smartweb-footer h2 {
+	font-size: 1.85rem !important;
+}
+
+.r-add-contact,.r-add-event,.r-add-news{
+  a{
+    &:hover{
+      color: #fff!important;
+      background: #3d3d3d!important;
+    }
+  }
+}
+
+.site-bibliotheque{
+  #portal-logo{
+    max-width: 111px!important;
+  }
+}
+.site-centre-culturel{
+  #portal-logo{
+    max-width: 70px!important;
+  }
 }
