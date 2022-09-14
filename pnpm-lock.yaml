@@ -68,6 +68,16 @@ importers:
       webpack-cli: 4.10.0_6rc575xxn4hngez2jk2zkyfdoi
       webpack-dev-server: 4.9.3_77l47gmqkrqiei5z7sbwz5iaj4
 
+  Nassogne:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.5
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.5
+      '@popperjs/core': 2.11.5
+
   base:
     specifiers:
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9

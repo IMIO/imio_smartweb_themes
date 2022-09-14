@@ -53,3 +53,10 @@ div.swiper-image::before {
 .sectiontext .mark, .sectiontext mark {
     border: 2px solid $secondary;
 }
+.sectionlinks.suivez-nous {
+    background-color: $lineargradient;
+    .section-title {
+    font-size: 2rem;
+    color: #fff;
+    }
+}
