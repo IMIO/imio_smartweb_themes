@@ -1,6 +1,10 @@
 .les-sites {
     padding: 5rem 0;
     background: transparent!important;
+    .section-title{
+        margin-bottom: 4rem;
+        text-align: center;
+    }
     .row {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
@@ -9,38 +13,57 @@
         justify-content: center;
         li {
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: auto;
             border: solid 0px #D2D2D2;
             border-radius: 100%;
-            height: 155px;
+            align-self: start;
             border-right: 1px solid #d2d2d2;
             border-radius: inherit;
             text-align: center;
+            width: auto;
+            height: 100%;
+            align-self: start;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            &:last-child{
+                border-right: 0px;
+            }
+            .table_display{
+                width: 100%;
+                height: 100%;  
+            }
             a{
                 text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                gap: 15px;
+                svg{
+                    fill: $secondary!important;
+                    height: 2.5rem;
+                }
             }
             &:hover,
             &:focus {
                 background: $primary;
-            }
-            .table_title {
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                }
-                span {
-                    font-size: 18px !important;
-                    color: rgba(59, 59, 59, 1) !important;
-                    font-weight: 700 !important;
+                a{
+                    color: #fff;
+                    span{
+                        color: #fff!important;
+                    }
+                    svg{
+                        fill: #fff!important;
+                    }
+                
                 }
             }
+            span {
+                font-size: 18px !important;
+                color: #000!important;
+                font-weight: 700 !important;
+                font-family: $josefin;
+            
+            }   
         }
     }
 

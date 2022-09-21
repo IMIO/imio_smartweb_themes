@@ -325,7 +325,7 @@ $section-contact-title-size:$h2-font-size;
 $section-contact-sub-title-size:$font-size-lg;
 $section-contact-title-color:$primary;
 $section-contact-p-margin:1rem 0;
-$section-contact-portrait-ration:4/5;
+$section-contact-portrait-ration:calc(4 / 5);
 
 // section-files
 $section-file-background-color: $primary !default;

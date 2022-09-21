@@ -1,0 +1,214 @@
+body:not(.portaltype-imio-smartweb-portalpage).site-centre-culturel #portal-header #portal-header-top::after {
+	background: #946D3D !important;
+}
+
+.site-centre-culturel{
+    .smartweb_herobanner .bannerSwiper .section-slide {
+        background: rgba(148, 109, 61, 0.7);
+    }
+    #portal-header #portal-header-top #header-links #search-link a {
+        background: #946D3D;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        background: #946D3D;
+    }
+    .home-annuaire #body-section-annuaires .row li .table_display a.table_image .table_title {
+        background: #946D3D;
+    }
+    .section-title{
+        color: #946D3D;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        color: #fff;
+    }
+    .see_all .circle {
+        background: #946d3d;
+    }
+    .sectionnews .section-title::before {
+        background: #946d3d;
+    }
+    .sectionevents .swiper-slide .swiper_category span {
+        color: #946d3d;
+    }
+    .smartweb_herobanner .bannerSwiper::before {
+        content: url("../../assets/svg/comines-cc.svg");
+        position: absolute;
+        right: 330px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 400px;
+        z-index: 2;
+        display: block!important;
+    }
+    #portal-footer-wrapper #portal-footer.container {
+        background: #946d3d;
+    }
+    .sectionlinks.quick-access .section-container .row li:hover .image::after {
+        border-color: #946d3d #946d3d #946d3d transparent;
+    }
+    .sectionlinks.quick-access .body-section li a .image.d-block svg {
+        fill: #946d3d;
+    }
+    .sectionlinks.quick-access .body-section li a .table_title span {
+        color: #946d3d;
+    }
+    .sectionevents .see_all a {
+        color: #946d3d !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+    .sectionnews .see_all a {
+        color: #946d3d !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+}
+
+.site-bibliolys{
+    .smartweb_herobanner .bannerSwiper .section-slide {
+        background: rgba(0, 34, 73, 0.63);
+    }
+    #portal-header #portal-header-top #header-links #search-link a {
+        background: #002249;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        background: #002249;
+    }
+    .home-annuaire #body-section-annuaires .row li .table_display a.table_image .table_title {
+        background: #002249;
+    }
+    .section-title{
+        color: #002249;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        color: #fff;
+    }
+    .see_all .circle {
+        background: #002249;
+    }
+    .sectionnews .section-title::before {
+        background: #002249;
+    }
+    .sectionevents .swiper-slide .swiper_category span {
+        color: #002249;
+    }
+    .smartweb_herobanner .bannerSwiper::before {
+        // content: url("../../assets/svg/comines-cc.svg");
+        position: absolute;
+        right: 330px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 400px;
+        z-index: 2;
+        display: block!important;
+    }
+    #portal-footer-wrapper #portal-footer.container {
+        background: #002249;
+    }
+    .sectionlinks.quick-access .section-container .row li:hover .image::after {
+        border-color: #002249 #002249 #002249 transparent;
+    }
+    .sectionlinks.quick-access .body-section li a .image.d-block svg {
+        fill: #002249;
+    }
+    .sectionlinks.quick-access .body-section li a .table_title span {
+        color: #002249;
+    }
+    .sectionevents .see_all a {
+        color: #002249 !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+    .sectionnews .see_all a {
+        color: #002249 !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+}
+
+.site-maison-des-jeunes-carpe-diem{
+    .smartweb_herobanner .bannerSwiper .section-slide {
+        background: rgba(0, 34, 73, 0.63);
+    }
+    #portal-header #portal-header-top #header-links #search-link a {
+        background: #0b017e;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        background: #0b017e;
+    }
+    .home-annuaire #body-section-annuaires .row li .table_display a.table_image .table_title {
+        background: #0b017e;
+    }
+    .section-title{
+        color: #0b017e;
+    }
+    .sectionevents .swiper-slide .swiper_date {
+        color: #fff;
+    }
+    .see_all .circle {
+        background: #0b017e;
+    }
+    .sectionnews .section-title::before {
+        background: #0b017e;
+    }
+    .sectionevents .swiper-slide .swiper_category span {
+        color: #0b017e;
+    }
+    .smartweb_herobanner .bannerSwiper::before {
+        // content: url("../../assets/svg/comines-cc.svg");
+        position: absolute;
+        right: 330px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 400px;
+        z-index: 2;
+        display: block!important;
+    }
+    #portal-footer-wrapper #portal-footer.container {
+        background: #0b017e;
+    }
+    .sectionlinks.quick-access .section-container .row li:hover .image::after {
+        border-color: #0b017e #0b017e #0b017e transparent;
+    }
+    .sectionlinks.quick-access .body-section li a .image.d-block svg {
+        fill: #0b017e;
+    }
+    .sectionlinks.quick-access .body-section li a .table_title span {
+        color: #0b017e;
+    }
+    .sectionevents .see_all a {
+        color: #0b017e !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+    .sectionnews .see_all a {
+        color: #0b017e !important;
+        &:hover{
+            color: #fff!important;
+        }
+    }
+}
+
+// GLOBAL 
+
+.is-in-minisite{
+    .smartweb_herobanner .bannerSwiper::before {
+        display: none;
+    }
+    #portal-footer-wrapper{
+      &:before {
+        display: none;
+      }
+    }
+    .smartweb_footer{
+      padding-top: 2rem;
+    }
+    #portal-footer-wrapper{
+        margin-top: 3rem;
+    }
+  }

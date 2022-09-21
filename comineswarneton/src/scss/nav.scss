@@ -2,6 +2,10 @@
     .nav_je-suis{
         margin-left: auto;
     }
+    #portal-globalnav-wrapper #portal-globalnav-collapse.activated #portal-globalnav > li.nav_je-suis > a, 
+    #portal-globalnav-wrapper #portal-globalnav-collapse.activated #portal-globalnav > li.nav_je-trouve > a {
+        color: #fff!important;
+    }
 }
 .nav_je-trouve,.nav_je-suis{
     text-transform: initial;
@@ -108,5 +112,22 @@
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a, 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a {
         color: $primary!important;
+    }
+}
+
+body:not(.portaltype-imio-smartweb-portalpage) #portal-header #portal-header-top::after {
+	background: $primary!important;
+}
+body:not(.portaltype-imio-smartweb-portalpage){
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a {
+        color: #fff !important;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis > a::after {
+        background: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"ht.tp://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23fff\"/></svg>");
+        background-repeat: no-repeat;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-trouve > a::after {
+        background: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"ht.tp://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23fff\"/></svg>");
+        background-repeat: no-repeat;
     }
 }

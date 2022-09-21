@@ -22,6 +22,7 @@ $enable-roboto-webfont: false;
 @import "./home/annuaire";
 @import "./home/les-sites";
 @import "./home/newsletter.scss";
+@import "./mini.scss";
 
 @media screen and (min-width:1200px) {
     .a-la-une,
@@ -109,8 +110,8 @@ $enable-roboto-webfont: false;
         font-weight: 700;
         line-height: 1.6;
         text-align: center;
-        text-transform: uppercase;
         font-family: $josefin!important;
+        text-decoration: none!important;
       }
     &:hover {
         .circle {
@@ -167,5 +168,192 @@ $enable-roboto-webfont: false;
         border-radius: 10px;
       }
     }
+  }
+}
+.home-en-image li {
+  list-style: none;
+  padding: 1px;
+}
+.home-en-image .image{
+  padding-bottom: 100%;
+}
+.home-en-image .see_all {
+	margin: 0 auto 0 0 !important;
+}
+.home-en-image{
+  .table_image{
+    position: relative;
+    display: block;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(9,57,81,.61);
+      opacity: 0;
+      transition: all .1s ease;
+    }
+    .table_title{
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      span{
+        color: #fff;
+        transition: all .1s ease;
+        opacity: 0;
+      }
+    }
+    &:hover{
+      &:before{
+        opacity: 1;
+      }
+      .table_title{
+        span{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.en-images-titre .html {
+	display: none;
+}
+.en-images-titre {
+	margin-bottom: 5rem;
+}
+.home-publication {
+	padding: 5rem 0;
+	position: relative;
+}
+.home-publication::after {
+	content: "";
+	position: absolute;
+	top: 0;
+  bottom: 23%;
+	left: 0;
+	right: 0;
+	background: #F5F5F5;
+	z-index: -1;
+	width: 100vw;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.home-publication .section-title {
+	margin-bottom: 4rem;
+	text-align: right;
+}
+.home-publication .swiper-image {
+	padding-bottom: 141%;
+}
+.home-en-image .image{
+  padding-bottom: 100%;
+}
+
+.home-publication a {
+	text-decoration: none;
+  font-family: $josefin;
+}
+
+.home-publication{
+  .swiper_title{
+    background: #fff;
+    padding: 10px 20px;
+    z-index: 1;
+    position: relative;
+    &:before{
+      content: url("../../assets/svg/eyes.svg");
+      margin-top: -33px;
+      display: block;
+    }
+  }
+  .swiper-image{
+    position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: hsl(200, 80%, 18%,.7);
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    &:before{
+        content: url("../../assets/svg/plus.svg");
+        display: block;
+        line-height: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease;
+        opacity: 0;
+        z-index: 1;
+    }
+    &:hover{
+      &:after{
+        opacity: 1;
+      }
+      &:before{
+          opacity: 1;
+      }
+    }
+  }
+}
+#portal-footer-wrapper{
+  @include media-breakpoint-up(lg){
+    text-align: left!important;
+  }
+  &:before{
+    content: url("../../assets/svg/footer-comines.svg");
+    background: #fff;
+    display: block;
+    line-height: 0;
+  }
+}
+
+.block-menu-element a h2.card-title, .block-menu-element a .card-title.h2 {
+	font-weight: 400!important;
+}
+.r-search-header-title{
+  font-family: inherit!important;
+}
+
+#portal-footer-wrapper #portal-footer.container {
+	background: $primary;
+}
+.smartweb_footer h2, .smartweb_footer h3, .smartweb_footer a {
+	color: #fff !important;
+}
+
+
+.sectionsendinblue::after {
+	background: #fff;
+}
+
+.sectionsendinblue .form-text, .sectionsendinblue .h2, .sectionsendinblue .lead, .sectionsendinblue h2, .sectionsendinblue label {
+	color: #383838;
+}
+
+.sectionsendinblue{
+  #form-buttons-subscribe{
+    background: $primary;
+    color: #fff;
+    border: 0px;
+    &:focus,&:hover{
+      background: #073044;
+    }
+  }
+}
+
+
+.home-video-en-image{
+  .table_display{
+      display: none;
   }
 }
