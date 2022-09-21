@@ -1,0 +1,61 @@
+.sectionevents .see_all a {
+    font-family: $font-family-base;
+}
+.sectionnews .see_all a {
+    font-family: $font-family-base;
+}
+
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: 0.5;
+}
+//
+.enquetes div.swiper-slide {
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+}
+
+.sectionfiles .item_infos {
+    color: #fff;
+  }
+  .swiper-banner-link a {
+    color: #000;
+    font-weight: bold;
+  }
+  .swiper-banner-link {
+    display: block;
+    text-align: center;
+}
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+    background: hsla(0, 0%, 100%, 0.83);
+}
+.sortable-section.sectionlinks.quick-access.partenaires {
+    padding: 4rem 0;
+}
+.sortable-section.sectionlinks h2 {
+    color: $secondary;
+}
+.subsite-container {
+    margin-top: 1rem;
+}
+#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
+    margin-top: 1rem;
+}
+body {
+    background: $primary-svg;
+}
