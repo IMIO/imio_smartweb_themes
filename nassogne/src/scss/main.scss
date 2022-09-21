@@ -16,6 +16,7 @@ $enable-roboto-webfont: false;
 @import 'home/divers';
 @import 'home/footer';
 @import 'home/menu';
+@import 'home/newsletter.scss';
 
 //// STYLES
 // ... add your styles here
@@ -28,5 +29,209 @@ $enable-roboto-webfont: false;
 .phones{
     span{
         display: block;
+    }
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+}
+
+.a-la-une .swiper-slide .swiper_title,
+.a-la-une .swiper-slide .swiper_description {
+    z-index: 1;
+}
+
+@include media-breakpoint-up(lg){
+    .a-la-une{
+        .swiper-slide{
+            & > a{
+                padding-top: 2rem;
+                &:after{
+                    content: "";
+                    background: transparent;
+                    z-index: 0;
+                    position: absolute;
+                    width: calc(40% + 2rem);
+                    right: 0;
+                    display: block;
+                    height: calc(100% - 3rem);
+                    top: 1rem;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.sites-partenaires{
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important;  
+}
+.flash-infos{
+    .swiper-slide .swiper-image {
+        padding-bottom: 134%!important;
+    }
+    .swiper_title{
+        margin-top: 2rem!important;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 40%!important;
+    }
+}
+
+.enquetes{
+    div.swiper-slide {
+        border: solid 2px #fff;
+        &:hover{
+            border: solid 2px $primary;
+        }
+    }
+}
+
+footer{
+    span{
+        word-wrap: normal; 
+    }
+}
+
+.nav_je-suis.has_subtree.nav-item{
+    margin-left: auto;
+}
+#portal-globalnav{
+    @include media-breakpoint-up(lg){
+        margin-left: 2rem;
+        align-items: center;
+        .nav_abonnement.nav-item{
+            margin-left: auto;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+.nav_billetterie{
+        a{
+            background: #fff!important;
+            color: $primary !important;
+            padding: 0.3rem 0.8rem!important;
+            margin-left: auto!important;
+            border-radius: 5px!important;
+            border: solid 1px #fff!important;
+            &:hover{
+                background: transparent!important;
+                color: #fff!important;
+            }
+        }
+    }
+}
+
+.swiper-banner-link{
+    a{
+        background: #52796f;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: #fff!important;
+        text-decoration: none;
+        border: solid 1px #52796f;
+        margin-top: 0.6rem;
+        display: inline-block;
+        &:hover{
+            background: transparent;
+            color: $primary!important;
+        }
+    }
+}
+
+.section-home-page .sectionnews {
+	background: #f4f6f3;
+}
+.portaltype-imio-smartweb-eventsview{
+    .r-map.annuaire-map{
+        display: none;
+    }
+}
+
+
+// minisite
+
+.site-centre-culturel{
+    #portal-header #portal-header-top::after {
+        background: #137C8B;
+    }
+    .swiper-banner-link a {
+        background: #137C8B;
+        border: 1px solid #137C8B;
+    }
+    .swiper-banner-link a:hover {
+        color: #137c8b !important;
+        background: transparent!important;
+    }
+    .sectionlinks.quick-access .body-section li a .image.d-block svg {
+        fill: #137C8B;
+    }
+    .sectionevents .swiper-slide .swiper_category span {
+        background: #c8e7ec!important;
+    }
+    .swiper-slide:hover a div.swiper-image::before {
+        background: #137C8B;
+    }
+    #portal-footer-wrapper #portal-footer.container {
+        background: #137C8B !important;
+    }
+    footer #portal-colophon, footer div.colophon {
+        background-color: #137C8B;
+    }
+    .sectionevents .see_all a:focus, .sectionevents .see_all a:hover {
+        background: #137C8B;
+        border: 1px solid #137C8B;
+    }
+    .sectionnews .see_all a:focus, .sectionnews .see_all a:hover {
+        background: #137C8B;
+        border: 1px solid #137C8B;
+    }
+
+    ///// minisite footer
+    #smartweb-minisite-footer{
+        #body-section-contact{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 31px;
+            text-align: center;
+            .contact_titles{
+                flex: 0 0 100%;
+            }
+            h2,h3{
+                color: #fff!important;
+            }
+        }
+        .sectionlinks{
+            justify-content: center;
+            .row{
+                li{
+                    max-width: max-content;
+                }
+            }
+            .table_image{
+               .image{
+                height: 100px;
+                width: 100px;
+                background-size: contain;
+                display: block;
+                background-repeat: no-repeat;
+               } 
+            }
+            .table_title{
+                margin-top: 0.4rem;
+            }
+        }
+        .sectiontext{
+            figure{
+                max-width: 190px;
+                margin: 0 auto;
+                display: block;
+                float: none;
+                margin-bottom: 2rem;
+            }
+        }
     }
 }

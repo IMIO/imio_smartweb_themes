@@ -25,7 +25,7 @@
     &:before {
       position: absolute;
       top: 300px;
-      bottom: -840px;
+      bottom: 0;
       transform: translateX(-50vw);
       left: 50% !important;
       background: #F4F6F3;
@@ -60,7 +60,7 @@ div.swiper-image::before {
     bottom: 0;
     top: 0;
     transition: all .2s ease;
-    z-index: 99;
+    z-index: 0;
 }
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
