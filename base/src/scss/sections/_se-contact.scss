@@ -53,6 +53,16 @@
                     }
                 }
             }
+            .contact_logo,.contact_leadimage {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            .contact_leadimage {
+                aspect-ratio: 16/9;
+            }
+            .portrait{
+                aspect-ratio: $section-contact-portrait-ration;
+            }
         }
         .contact-type-mission{
             padding: 2rem 0;
@@ -91,6 +101,16 @@
                     }
                 }
             }
+            .contact_logo,.contact_leadimage {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            .contact_leadimage {
+                aspect-ratio: 16/9;
+            }
+            .portrait{
+                aspect-ratio: $section-contact-portrait-ration;
+            }
         }
         .contact-type-position{
             padding: 2rem 0;
@@ -110,7 +130,6 @@
                 }
             }
             .contact_logo,.contact_leadimage {
-                border-radius: 8px;
                 width: 100%;
                 margin-bottom: 1em;
             }
