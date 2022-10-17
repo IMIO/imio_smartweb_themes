@@ -1,0 +1,116 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import '@plone/plonetheme-barceloneta-base/scss/barceloneta';
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+@import 'home/quick';
+@import './section-actu';
+@import './newsletter';
+
+//// STYLES
+// ... add your styles here
+
+h2{
+    text-transform: uppercase;
+}
+
+footer{
+    z-index: 0;
+    position: relative;
+}
+#portal-colophon{
+    z-index: 0;
+    position: relative;
+    background: #000;
+    p,a,div,span,h2,h3{
+        color: #fff!important;
+    }
+}
+
+#portal-footer-wrapper #portal-footer.container {
+	background: #000;
+	max-width: 100% !important;
+	padding-left: 0;
+	padding-right: 0;
+}
+#portal-footer-wrapper #portal-footer.container{
+    p,a,div,span,h2,h3{
+        color: #fff!important;
+    }
+}
+.subsite-container #subsite-logo {
+	background: #FD3C88;
+	display: inline-block;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.r-add-contact a, .r-add-event a, .r-add-news a {
+	background: #25beae;
+	color: #000;
+	padding: 0.9rem;
+    &:hover{
+        background: #2bdbc9;
+    }
+}
+
+.see_all a::after {
+	display: none;
+}
+
+#portal-colophon{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+.swiper-slide .swiper-image {
+	padding-bottom: 80%;
+}
+
+#portal-footer-wrapper{
+    h2 {
+        font-size: 22px !important;
+    }
+    text-align: left!important;
+} 
+
+#smartweb-footer{
+    padding: 4rem 0;
+}
+
+#smartweb_footer{
+    #container-section-logo{
+        #body-section-logo{
+            align-items: flex-start;
+            figure{
+                margin-top: 0!important;
+                img{
+                    max-width: 170px 
+                }
+            }
+        }
+    }
+}
+
+// se  files
+body:not(.portaltype-imio-smartweb-portalpage){
+    .sectionfiles::after {
+        background: #d6d6d6;
+        .section-title{
+            color: #000!important;
+        }
+    }
+    .sectionfiles .body-section .h2, .sectionfiles .body-section h2, .sectionfiles .body-section p, .sectionfiles .body-section span, .sectionfiles .section-title .h2, .sectionfiles .section-title h2, .sectionfiles .section-title p, .sectionfiles .section-title span {
+        color: #000;
+    }
+}
