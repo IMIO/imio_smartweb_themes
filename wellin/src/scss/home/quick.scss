@@ -1,0 +1,19 @@
+.portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
+	margin-top: -50px;
+	padding: 0;
+    .body-section{
+        padding: 0;
+    }
+}
+.quick-access{
+    .table_image{
+        &:hover,&:focus{
+            .image.d-block{
+                background: $primary!important;
+                svg{
+                    fill: #fff!important;
+                }
+            }
+        }
+    }
+}

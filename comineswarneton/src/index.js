@@ -18,7 +18,6 @@ $( document ).ready(function() {
       }
 
     var elements = document.getElementsByClassName('see_all')
-    console.log(elements);
     for (var i = 0; i < elements.length; i++) {
         elements[i].insertAdjacentHTML('afterbegin', '<span class="circle" aria-hidden="true"><span class="icon arrow"></span></span>');
     }
