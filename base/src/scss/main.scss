@@ -30,7 +30,6 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "@plone/plonetheme-barceloneta-base/scss/comments";
 @import "@plone/plonetheme-barceloneta-base/scss/portlets";
 @import "@plone/plonetheme-barceloneta-base/scss/footer";
-@import "@plone/plonetheme-barceloneta-base/scss/event";
 
 @import "@plone/plonetheme-barceloneta-base/scss/print";
 
@@ -85,3 +84,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/events";
 @import "./homepage/album";
 @import "./homepage/newsletter";
+
+body{
+    background-color: blue;
+}

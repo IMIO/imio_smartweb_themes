@@ -6,6 +6,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
+const { cp } = require("fs");
 
 const BASE_PATH = path.resolve(__dirname, ".");
 
@@ -208,6 +209,7 @@ module.exports = (env, argv) => {
     devServer: {
       port: 3000,
       hot: true,
+      allowedHosts: 'all',
       liveReload: false,
       static: {
         directory: THEME_PATH,
@@ -227,6 +229,7 @@ module.exports = (env, argv) => {
                 path = path.replace(reg, "");
               }
               path = path.split(BUNDLE_NAME)[1]; // Keep only the path after our bundle name
+              console.log(path);
               return path;
             }
             return null;
