@@ -217,7 +217,10 @@ module.exports = (env, argv) => {
       devMiddleware: {
         // This is necessary as Plone use `<script integrity=` and if we don't store the file on disk,
         // Plone has no way to recompute the hash and thus the file is not executed in the browser.
-        writeToDisk: true,
+        // We filter out 'hot-update' files as we don't need them to be written on disk.
+        writeToDisk: (filePath) => {
+          return !/hot-update/.test(filePath);
+        },
       },
       // Proxy everything to the Plone Backend EXCEPT our bundle as
       // Webpack Dev Server will serve it.
