@@ -210,9 +210,14 @@ module.exports = (env, argv) => {
       port: 3000,
       hot: true,
       allowedHosts: 'all',
-      liveReload: false,
+      liveReload: false, // Mandatory as we use hot module replacements (see `hot` above)
       static: {
         directory: THEME_PATH,
+      },
+      devMiddleware: {
+        // This is necessary as Plone use `<script integrity=` and if we don't store the file on disk,
+        // Plone has no way to recompute the hash and thus the file is not executed in the browser.
+        writeToDisk: true,
       },
       // Proxy everything to the Plone Backend EXCEPT our bundle as
       // Webpack Dev Server will serve it.
@@ -223,13 +228,7 @@ module.exports = (env, argv) => {
           bypass: function (req, res, proxyOptions) {
             let path = req.url;
             if (path.includes(BUNDLE_NAME)) {
-              if (path.includes("++unique++")) {
-                // Strip ++unique++ part
-                const reg = /\/\+\+unique\+\+[^/]+/;
-                path = path.replace(reg, "");
-              }
               path = path.split(BUNDLE_NAME)[1]; // Keep only the path after our bundle name
-              console.log(path);
               return path;
             }
             return null;
