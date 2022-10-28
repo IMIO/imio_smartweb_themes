@@ -1,12 +1,4 @@
-#portal-globalnav-wrapper {
-  position: initial !important;
-  padding: 0 !important;
-  li{
-    list-style: none!important;
-  }
-  @include media-breakpoint-up(lg) {
-    flex: 1;
-  }
+#portal-globalnav {
   span {
     padding: 1rem 0;
   }
@@ -15,8 +7,6 @@
     padding-left: 0;
   }
 
-  #portal-globalnav-collapse {
-    #portal-globalnav {
       width: 100%;
       @include media-breakpoint-up(md) {
         flex-direction: column;
@@ -254,7 +244,6 @@
           padding: 0 !important;
         }
       }
-    }
 
     &.activated {
       &>ul>li>a {
@@ -263,7 +252,6 @@
         }
       }
     }
-  }
 
   label[role="button"] {
     position: absolute;
