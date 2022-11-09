@@ -1,0 +1,107 @@
+#container-section-bulletins-communaux{
+	position: relative;
+	.section-title{
+		margin-bottom: 2rem!important;
+	}
+}
+#container-section-bulletins-communaux::after {
+	content: "";
+	background: $primary-svg;
+	width: 100vw;
+	position: absolute;
+	top: 130px;
+	bottom: 0;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+.section-bulletins {
+    position: relative;
+    .swiper-slide {
+        & > a {
+            place-items: unset;
+            &:after{
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, 0.55);
+                bottom: 0;
+                height: 0%;
+                width: 100%;
+                transition: all .2s ease;
+            }
+        }
+        .swiper_items_wrapper{
+            display: flex;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.55);
+            transition: all .2s ease;
+            position: absolute;
+            top: 100%;
+            transform: translateY(-100%);
+            width: 100%;
+            z-index: 1;
+        }
+        .swiper-image {
+            padding-bottom: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .swiper_title {
+            order: -1;
+			padding: 1rem;
+            h3{
+                margin-bottom: 0;
+				color: #fff!important;
+				font-size: 16px;
+            }
+        }
+        .swiper_category{
+            display: none;
+            order: -2;
+            span{
+                width: max-content;
+            }
+        }
+        .swiper_date{
+            display: none;
+        }
+        .swiper_description {
+            display: none;
+        }
+        & > a:hover {
+            .swiper_items_wrapper{
+                top: 0%;
+                border-radius: 15px 15px 0 0;
+                transform: translateY(0);
+                background: transparent;
+            }   
+            &:after{
+                height: 100%;
+                border-radius: 15px 15px 0 0;
+            }
+            .swiper_category{
+                display: block;
+            }
+            .swiper_date{
+                display: block;
+            }
+        }
+    }
+    .see_all{
+        a{
+           color: #fff; 
+           &::before{
+                color: #fff;
+                border-color: #fff;
+           }
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: #fff!important;
+        &.swiper-pagination-bullet-active{
+            background-color: #fff!important;
+            &:after{
+                border: solid 1px #fff
+            }
+        }
+    }
+}
