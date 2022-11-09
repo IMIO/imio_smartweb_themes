@@ -1,0 +1,39 @@
+.a-la-une .swiper-slide>a {
+    grid-template-columns: 50% 50%;
+}
+
+.a-la-une .swiper-image {
+    position: relative;
+}
+.a-la-une .swiper-image::after {
+    content: "";
+    width: 1295px;
+    height: 389px;
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    top: 0;
+    left: 0px;
+    right: 0;
+    border-radius: 500px;
+    z-index: -1;
+}
+.a-la-une .swiper-slide .swiper_description p {
+    font-weight: lighter;
+  }
+.a-la-une, .sectionnews, .sectionevents {
+  .section-title::before {
+    content: "";
+    right: 50%;
+    bottom: 0;
+    background:  #E1F1F5;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-50%);
+  }
+}

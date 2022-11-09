@@ -1,0 +1,84 @@
+.colophonWrapper li:last-child {
+    width: 100%;
+}
+.smartweb-footer .sectiontext {
+    max-width: 100%;
+}
+.smartweb-footer .sectionlinks ul.row {
+    margin-left: 0;
+}
+
+.contact_description {
+    margin-top: 1rem;
+}
+.contact_description strong {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#portal-footer {
+	background: #000!important;
+}
+
+.colophonWrapper ul {
+	display: flex;
+    flex-wrap: wrap;
+}
+#portal-colophon, #portal-footer-wrapper {
+	background: #000;
+}
+footer h3 {
+   color: #fff;
+}
+div#subsite-logo img {
+	height: 3rem;
+	margin: -.5em .25em -.5em -1.25rem;
+	margin: 0 auto 0.5rem auto;
+	display: block;
+}
+#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
+    max-width: 50%;
+}
+
+.sectionevents .swiper-slide .swiper_category span {
+	background: #c93434;
+	border-radius: 0;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 8px 11px 8px 8px;
+	text-transform: uppercase;
+}
+.nav-link{
+ font-size:17px
+}
+.sectionevents .section-title {
+	color: #191e2f;
+	margin: 0 auto 5rem;
+	padding: 0;
+	text-align: left;
+}
+.sectionevents {
+	background: #F9EEED;
+}
+.sectionevents .see_all a::after {
+  display:none;
+}
+.subsite-container #subsite-logo {
+    background: $secondary;
+}
+#portal-breadcrumbs {
+    background-color: transparent;
+}
+#portal-footer-wrapper .h2, #portal-footer-wrapper h2 {
+    font-size: 2rem;
+}
+footer .h3, footer h3 {
+    font-size: 1.5rem;
+}
+#portal-breadcrumbs {
+    margin-top: 2rem;
+}
+.block-menu-element a .card-body {
+    padding: 2rem;
+}

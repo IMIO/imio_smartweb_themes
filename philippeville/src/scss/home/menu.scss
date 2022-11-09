@@ -1,0 +1,11 @@
+@media screen and (max-width: 992px) {
+#portal-header .container ul#portal-globalnav {
+    margin-left: 4rem !important;
+    }
+}
+#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
+    max-width: 120%;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access .quick-access-title {
+    color: $primary;
+}

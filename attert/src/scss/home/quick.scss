@@ -1,0 +1,15 @@
+.sortable-section.sectionlinks.quick-access {
+    background: $primary-svg;
+}
+.sectionlinks.quick-access .body-section li {
+align-self: start;
+border: solid #fff;
+border-radius: inherit;
+border-width: 0 1px 0 0;
+height: 100%;
+padding-bottom: 1rem;
+padding-top: 1rem;
+position: relative;
+text-align: center;
+width: 250px;
+}

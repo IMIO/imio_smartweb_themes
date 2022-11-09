@@ -360,9 +360,9 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: #F8F8F8;
-$enable-full-width-section-link: true;
-$enable-light-color-section-link: false;
+$section-link-background-color: #F8F8F8 !default;
+$enable-full-width-section-link: true !default;
+$enable-light-color-section-link: false !default;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.25rem;
@@ -377,9 +377,9 @@ $list-group-item-padding-x : 0px;
 
 // Message Viewlets
 
-$message-info:#27789c;
-$message-warning:#c06d01;
-$message-error:#ae2609;
+$message-info:#27789c !default;
+$message-warning:#c06d01 !default;
+$message-error:#ae2609 !default;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;

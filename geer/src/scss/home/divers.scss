@@ -1,0 +1,108 @@
+.contact_description {
+    margin-top: 1rem;
+}
+.contact_description strong {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+div#subsite-logo img {
+	height: 3rem;
+	margin: -.5em .25em -.5em -1.25rem;
+	margin: 0 auto 0.5rem auto;
+	display: block;
+}
+#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
+    max-width: 100%;
+}
+
+.nav-link{
+ font-size:17px
+}
+
+.subsite-container #subsite-logo {
+    background: $secondary;
+}
+#portal-breadcrumbs {
+    background-color: transparent;
+    margin-top: 2rem;
+}
+.block-menu-element a .card-body {
+    padding: 2rem;
+}
+.sortable-section.sectionfiles {
+    margin-bottom: 1rem;
+    &:after {
+        border-radius: 50px;
+    }
+}
+#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
+    margin-top: 2rem;
+}
+.subsite-container {
+    background: transparent;
+    padding: 1rem 0;
+}
+.subsite-container #subsite-logo {
+    border-radius: 50px;
+}
+//SEE ALL
+body .see_all a:after {
+    background-color: $primary-svg;
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all .2s ease;
+    width: 25%;
+}
+body .see_all a:focus:after, body .see_all a:hover:after {
+    width: 50%;
+}
+body #portal-header #portal-header-top #portal-logo {
+    max-width: 100px;
+}
+body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access .quick-access-title {
+    color: $primary;
+}
+body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.show-nav.has_subtree>a {
+    color: $primary !important;
+}
+//RESPONSIVE HEADER
+@media screen and (max-width:600px) {
+    .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
+    border-radius: 50%;
+    left: 0;
+    position: relative;
+    transform: translate(0%,-50%);
+    width: 100%;
+    }
+    .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
+        height: 300px;
+    }
+    .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
+        height: 100px;;
+   }
+}
+.text p:not(.section-home-page) a {
+    position: relative;
+}
+.text p:not(.section-home-page) a:after {
+    content: "";
+    background: $primary-svg;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.5s;
+}
+.text p:not(.section-home-page) a:hover {
+    text-decoration: none !important;
+ &::after {
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    }
+}

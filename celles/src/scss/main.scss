@@ -19,6 +19,7 @@ $enable-roboto-webfont: false;
 @import "./home/annuaire";
 @import "./home/les-sites";
 @import "./home/newsletter.scss";
+@import "./home/divers";
 
 .see_all {
     font-weight: bold;
@@ -58,7 +59,7 @@ $enable-roboto-webfont: false;
 
 #portal-footer-wrapper,
 #portal-colophon {
-    background: #D13A3A;
+    //background: #D13A3A;
     li,
     a {
         color: #fff;
@@ -66,7 +67,7 @@ $enable-roboto-webfont: false;
 }
 
 #portal-footer {
-    background: #D13A3A !important;
+    //background: #D13A3A !important;
 }
 
 
@@ -202,7 +203,7 @@ li:marker {
 
 .sortable-section.sectionlinks.quick-access:first-child {
     position: absolute;
-    transform: translateY(-74%);
+    transform: translateY(-56%);
     z-index: 0;
     left: 0;
 }
