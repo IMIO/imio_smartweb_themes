@@ -69,22 +69,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .qui
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.show-nav.has_subtree>a {
     color: $primary !important;
 }
-//RESPONSIVE HEADER
-@media screen and (max-width:600px) {
-    .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
-    border-radius: 50%;
-    left: 0;
-    position: relative;
-    transform: translate(0%,-50%);
-    width: 100%;
-    }
-    .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
-        height: 300px;
-    }
-    .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
-        height: 100px;;
-   }
-}
+
 .text p:not(.section-home-page) a {
     position: relative;
 }

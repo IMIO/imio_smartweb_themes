@@ -253,7 +253,35 @@ li:marker {
     height: 1000px;
     border-radius: 500px;
     width: 1000px;
+    @include media-breakpoint-down(lg){
+        height: 100vw;
+        width: 100vw;
+        
+    }
   }
+    .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
+        @include media-breakpoint-up(lg){
+            height: 700px;;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
+            transform: translate(-40%,0);
+            margin-top: -35%;
+        }
+        .sectionlinks.quick-access .body-section {
+            padding: 0 0!important;
+        }
+        #body-section-quick-access ul{
+            grid-gap: 20px;
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+        }
+        .quick-access{
+            margin-top: -50px;
+        }
+    }
   //    
   .portaltype-imio-smartweb-portalpage.section-home-page h2.section-title {
     position: relative;
@@ -288,9 +316,7 @@ li:marker {
 }
 
 //
-.portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
-     height: 700px;;
-}
+
 h2:not(.section-home-page) {
     font-size: 2rem;
 }
