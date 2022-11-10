@@ -22,17 +22,59 @@ $enable-roboto-webfont: false;
 @import "./minisite.scss";
 
 
+
+
+footer#portal-footer-wrapper{
+
+    div:not(.sectiontext) + .sectiontext h2 {
+        margin-top: 0 !important;
+    }
+    li {
+        padding-left: 0.85rem!important;
+    }
+    @media screen and (min-width:1200px){
+        .h2, h2 {
+            font-size: 2rem!important;
+        }
+        .h3, h3 {
+            font-size: 1.2rem!important;
+        }
+    }
+    @media screen and (max-width:600px){
+        .sectiontext{
+            #container-section-logo{
+                max-width: 50%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+
 .portaltype-imio-smartweb-portalpage{
     #portal-header{
         margin-bottom: 0;
     }
+}
+#localmessagesviewlet .portalMessage.info, #messagesviewlet .portalMessage.info {
+	background-color: #53616e!important;
+}
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+	background-color: $primary!important;
+}
+#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
+	background-color: #2f9c5b!important;
 }
 @media screen and (min-width:992px){
     .nav_je-suis.has_subtree{
         margin-left: auto;
     }
 }
-
+@include media-breakpoint-down(lg){
+    .swiper-pagination{
+        display: none;
+    }
+}
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis.has_subtree,
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_en-un-clic.has_subtree {
     & > a:focus, & > a:hover{
@@ -67,7 +109,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 .smartweb_herobanner::after {
 	content: "";
 	background: $primary-svg;
-	height: 5px;
+	height: 10px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -271,16 +313,17 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 }
 
 .is-in-minisite .smartweb-footer .sectiontext {
-    max-width: 150px;
 }
 .smartweb-footer {
     padding-top: 5rem;
+    a.table_image {
+        align-items: flex-start!important;
+    }
     .row {
         justify-content: space-between;
         text-align: left;
     }
     .sectiontext {
-        max-width: 140px;
         figure {
             margin: 0 !important;
             max-width: 100% !important;

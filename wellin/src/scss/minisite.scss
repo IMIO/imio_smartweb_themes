@@ -7,13 +7,18 @@
         color: #fff;
     }
 }
-
+.is-in-minisite .smartweb_herobanner .bannerSwiper {
+	height: 400px!important;
+}
 
 
 // tourisme
-$primary-tourisme: #4b2b26;
-$primary-tourisme-svg: #66c644;
+$primary-tourisme: #24626c;
+$primary-tourisme-svg: #24626c;
 .site-tourisme{
+    .sectionevents {
+        background-color: #24626c!important;
+    }
     .smartweb_herobanner::after {
         background: $primary-tourisme-svg;
     }
@@ -35,7 +40,7 @@ $primary-tourisme-svg: #66c644;
         }
     }
     #portal-colophon, #portal-footer-wrapper {
-        background: #4b2b26!important;
+        background: $primary-tourisme!important;
     }
     #portal-footer {
         background: $primary-tourisme !important;
@@ -85,6 +90,9 @@ $primary-tourisme-svg: #66c644;
     $primary-sport: #004f8c;
     $primary-sport-svg: #ffd145;
 .site-sports{
+    .sectionevents{
+        background:$primary-sport!important;
+    }
     .smartweb_herobanner::after {
         background: $primary-sport-svg;
     }
