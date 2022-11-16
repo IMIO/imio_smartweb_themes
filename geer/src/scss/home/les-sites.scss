@@ -9,12 +9,15 @@
     fill: $secondary;
         }
     }
+    li {
+        padding: 1rem 0;
+    }
 }
 .sortable-section.sectionlinks.partenaires a {
     text-align: center;
   }
   .partenaires h2.section-title {
-    color: #584b43;
+    color: $primary;
     font-size: 3rem;
     margin: 0 auto 5rem;
     padding: 0;

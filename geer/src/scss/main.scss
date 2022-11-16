@@ -84,7 +84,7 @@ body#visual-portal-wrapper {
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
-        background-image: url("../../assets/svg/placeholder-manage.png") !important;
+        background-image: url("../../assets/svg/placeholder-geer.png") !important;
     }
 }
 
@@ -104,7 +104,7 @@ li:marker {
     }
 }
 
-@media sreen and (max-width:989px) {
+@media screen and (max-width:989px) {
     #portal-header #portal-header-top #portal-logo {
         max-width: 144px;
         svg {
@@ -202,36 +202,36 @@ li:marker {
 
 
 
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li {
-    &.has_subtree  {
-        & > a:hover{
-            &:after {
-                content: "";
-                width: 9px;
-                height: 6px;
-                display: block;
-                background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                margin-left: 0.4rem;
-            }
-        }
-    }
-    &.has_subtree.show-nav {
-        & > a:after {
-                content: "";
-                width: 9px;
-                height: 6px;
-                display: block;
-                background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                margin-left: 0.4rem;
-        }
-    }
-} 
+// #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li {
+//     &.has_subtree  {
+//         & > a:hover{
+//             &:after {
+//                 content: "";
+//                 width: 9px;
+//                 height: 6px;
+//                 display: block;
+//                 background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
+//                 background-size: contain;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//                 margin-left: 0.4rem;
+//             }
+//         }
+//     }
+//     &.has_subtree.show-nav {
+//         & > a:after {
+//                 content: "";
+//                 width: 9px;
+//                 height: 6px;
+//                 display: block;
+//                 background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
+//                 background-size: contain;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//                 margin-left: 0.4rem;
+//         }
+//     }
+// } 
 
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:hover, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:focus {
@@ -261,7 +261,15 @@ li:marker {
   }
     .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
         @include media-breakpoint-up(lg){
-            height: 700px;;
+            height: 700px;
+        }
+    }
+    body .sectionlinks.quick-access .section-container .row {
+        @include media-breakpoint-up(lg){
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
         }
     }
     @include media-breakpoint-down(lg){
@@ -273,7 +281,7 @@ li:marker {
             padding: 0 0!important;
         }
         #body-section-quick-access ul{
-            grid-gap: 20px;
+            grid-gap: 10px;
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));

@@ -53,20 +53,6 @@
     }
 }
 
-.sortable-section.sectionlinks.quick-access.quick-annuaire {
-    &:after {
-        content: "";
-        background-image: url("../../assets/svg/manage-annuaire.svg") !important;
-        position: absolute;
-        width: 50vw;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        bottom: 0;
-    }
-}
-
 .voit-tout-annuaire {
     background: transparent !important;
     a.table_image {

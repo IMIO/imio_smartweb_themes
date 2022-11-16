@@ -67,6 +67,11 @@
         margin-left: auto;
     }
 }
+body.section-accueil div#portal-header-top a svg g {
+@include media-breakpoint-down(lg) {
+    fill: $primary;
+    }
+}
 
 #portal-header #portal-header-top #header-links #search-link a {
 	width: 46px;
