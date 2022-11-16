@@ -29,12 +29,12 @@ footer#portal-footer-wrapper{
     div:not(.sectiontext) + .sectiontext h2 {
         margin-top: 0 !important;
     }
-    li {
+    .sectionlinks li {
         padding-left: 0.85rem!important;
     }
     @media screen and (min-width:1200px){
         .h2, h2 {
-            font-size: 2rem!important;
+            font-size: 1.5rem!important;
         }
         .h3, h3 {
             font-size: 1.2rem!important;
