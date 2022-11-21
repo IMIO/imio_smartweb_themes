@@ -4,27 +4,16 @@ margin: 0rem auto;
 body.section-home-page .smartweb_herobanner .bannerSwiper {
     height: 900px;
   }
-body.section-home-page #portal-header #portal-header-top {
+body:not(.userrole-authenticated).section-home-page #portal-header #portal-header-top {
     position: absolute;
     width: 100%;
   }
 body.section-home-page #portal-header #portal-header-top::after {
     background: transparent;
   }
-body.section-home-page #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a {
+body:not(.userrole-authenticated).section-home-page #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a {
     color: #fff;
   }
-
-.sortable-section.sectionlinks.quick-access::after {
-    content: "";
-    background: $primary-svg;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: -300px;
-    z-index: -1;
-    position: absolute;
-}
 body.section-home-page .swiper-banner-image::after {
   content: "";
   top: 0;
@@ -34,9 +23,4 @@ body.section-home-page .swiper-banner-image::after {
   position: absolute;
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7903536414565826) 9%, rgba(0,0,0,0) 40%);
-}
-.swiper-slide {
-  height: auto;
-  border: 1px solid #f1f1f1;
-  box-shadow: 0 10px 10px -2px #dbdbdb;
 }

@@ -1,0 +1,44 @@
+.sectionevents .swiper-slide .swiper-image {
+    display: none;
+}
+.sectionevents .swiper-slide {
+    .swiper-image{
+        order: 1;
+    }
+    .swiper_date {
+        order: 2;
+        background: $primary-svg;
+        border-radius: 50px;
+    }
+    .swiper_category {
+        order: 3;
+    }
+    .swiper_title {
+        order: 4;
+    }
+
+}
+.sectionevents .swiper-wrapper {
+    position: relative;
+}
+.sectionevents .swiper-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 177px;
+    background: $primary-svg;
+    bottom: 47px;
+  }
+.sectionevents .swiper-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background: $primary-svg;
+    bottom: 224px;
+  }
+  .sectionevents .swiper-wrapper {
+    padding-top: 50px;
+  }
