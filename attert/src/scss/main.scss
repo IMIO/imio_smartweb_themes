@@ -22,3 +22,16 @@ $enable-roboto-webfont: false;
 @import "./home/newsletter.scss";
 @import "./home/divers";
 
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover, 
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus {
+	color: $primary-svg;
+}
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
+    font-weight: 700!important;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link{ 
+	font-size: 16px!important;
+    font-weight: 500;
+}

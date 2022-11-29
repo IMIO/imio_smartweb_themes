@@ -1,5 +1,13 @@
 .sortable-section.sectionlinks.quick-access {
     background: $primary-svg;
+    .row{
+        li{
+            border-right: 1px solid #dbdbdb;
+            &:last-child{
+                border-right: transparent;
+            }               
+        }
+    }
 }
 .sectionlinks.quick-access h2.section-title {
     padding: 0.5rem 2rem;

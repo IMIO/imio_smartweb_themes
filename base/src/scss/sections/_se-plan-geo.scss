@@ -34,12 +34,13 @@ body.faceted-map{
         }  
     }
     #faceted-results-items{
-        @include media-breakpoint-down(md) {
-            display: grid;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        @media (min-width: 425px) {
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
         }
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-up(md) {
             grid-template-columns: 1fr;
         }
     }
@@ -59,9 +60,17 @@ body.faceted-map{
                 align-items: center;
             }
             .geo-item-image{
-                max-width: 250px;
+                max-height: 230px;
+                @include media-breakpoint-up(md) {
+                    max-height: 180px;
+                    max-width: 250px;
+                    flex: 0 0 42%;   
+                }
+                
                 img{
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
             .geo-item-text{
@@ -81,3 +90,41 @@ body.faceted-map{
         }
     }
 }
+
+
+// for arris
+
+// body.faceted-map{
+//     #main-container{
+//         #content{
+//             #center-content-area{
+//                 &.no-map{
+//                     grid-template-columns: 1fr;
+//                     #faceted-map-container{
+//                         display: none;
+//                     }
+//                     #faceted-results-items{
+//                         @include media-breakpoint-up(md) {
+//                             grid-template-columns: 1fr 1fr;
+//                         }
+//                     }
+//                     // end no map
+//                 }
+
+//                 /*----------------*/
+
+//                 //with map
+//                 // &.with-map{
+//                     @include media-breakpoint-up(lg) {
+//                         width: calc(50% + 50vw);
+//                         grid-template-columns: auto 50vw;
+//                     }
+//                     #faceted-map-container{
+//                         height: 30vw!important;
+//                     }
+//                 // }
+//                 // end with map
+//             }
+//         }  
+//     }
+// }

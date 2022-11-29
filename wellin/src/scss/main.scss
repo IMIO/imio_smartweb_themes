@@ -509,3 +509,8 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 .contactText .phones span {
 	display: block;
 }
+@media (min-width: 992px){
+    #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
+        margin-top: 2.25rem;
+    }
+}

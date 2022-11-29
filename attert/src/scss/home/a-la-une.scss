@@ -4,7 +4,6 @@ body .a-la-une #container-section-a-la-une div {
 .a-la-une, .sectionnews {
     .swiper-slide {
     height: auto;
-    border: 1px solid #f1f1f1;
     box-shadow: 0 10px 10px -2px #dbdbdb;
   }
 }
@@ -57,4 +56,8 @@ body .a-la-une #container-section-a-la-une div {
 }
 .sortable-section.sectionselections.a-la-une {
     z-index: 1;
+}
+.sortable-section.sectionselections.a-la-une {
+	z-index: 1;
+	padding-top: 0;
 }
