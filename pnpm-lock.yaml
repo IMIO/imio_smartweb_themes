@@ -71,8 +71,10 @@ importers:
   base:
     specifiers:
       '@plone/plonetheme-barceloneta-base': 3.0.0-beta6
+      '@popperjs/core': ^2.10.2
     devDependencies:
-      '@plone/plonetheme-barceloneta-base': 3.0.0-beta6
+      '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
+      '@popperjs/core': 2.11.6
 
   boussu:
     specifiers:
@@ -126,11 +128,11 @@ importers:
 
   communemanage:
     specifiers:
-      '@imiobe/plonetheme-smartweb-base': 0.0.4
-      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
+      '@imiobe/plonetheme-smartweb-base': 0.0.5
+      '@plone/plonetheme-barceloneta-base': 3.0.0-beta6
       '@popperjs/core': ^2.10.2
     devDependencies:
-      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@imiobe/plonetheme-smartweb-base': link:../base
       '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
       '@popperjs/core': 2.11.6
 
@@ -670,14 +672,6 @@ packages:
     resolution: {integrity: sha512-V2MkRwx/NYrGMnYho2X+xhVOTeJn9v5HYa8MaAyc05rXDDO9bHK3OvH29mhmSAN6tCK+Y9UyzERxfovlkvsnig==}
     dependencies:
       bootstrap: 5.2.2_@popperjs+core@2.11.6
-    transitivePeerDependencies:
-      - '@popperjs/core'
-    dev: true
-
-  /@plone/plonetheme-barceloneta-base/3.0.0-beta6:
-    resolution: {integrity: sha512-DQFk4O8llr+gOE1m2WmeeN+Kw9UHfwVTOITIfVg4AREc5UZOmqXHCdQS4lEzESFGvl2DLo72qFgQj3cXGT2JzQ==}
-    dependencies:
-      bootstrap: 5.2.2
     transitivePeerDependencies:
       - '@popperjs/core'
     dev: true
@@ -1514,12 +1508,6 @@ packages:
 
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
-    dev: true
-
-  /bootstrap/5.2.2:
-    resolution: {integrity: sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ==}
-    peerDependencies:
-      '@popperjs/core': ^2.11.6
     dev: true
 
   /bootstrap/5.2.2_@popperjs+core@2.11.6:
