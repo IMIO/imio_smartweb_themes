@@ -1,0 +1,88 @@
+body #container-section-flemalle-en-images {
+    .image {
+    padding-bottom: 60%;
+    position: relative;
+    }
+    li a.table_image {
+        position: relative;
+    }
+    li:first-child a.table_image:before {
+        content: url(../../assets/svg/camera.svg);
+        display: block;
+        left: 50%;
+        line-height: 0;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease;
+        z-index: 1;
+    }
+    li:nth-child(2) a.table_image:before {
+        content: url(../../assets/svg/play-button.svg);
+        display: block;
+        left: 50%;
+        line-height: 0;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease;
+        z-index: 1;
+    }
+    h2.section-title {
+        text-align: center;
+    }
+    li:first-child {
+        padding: 0;
+    }
+    li:nth-child(2) {
+        padding: 0;
+    }
+    .table_title {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        left: 50%;
+        line-height: 0;
+        font-weight: bold;
+        opacity: 1;
+        position: absolute;
+        top: 70%;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease;
+        z-index: 1;
+    }
+}
+#container-section-flemalle-en-images .table_display:hover a::before {
+    top: 45% !important;
+}
+body #container-section-flemalle-en-images {
+    position: relative;
+    display: block;
+}
+// body .images-videos::after {
+//     content: url(../../assets/svg/courbe-footer.svg);
+//     display: block;
+//     margin: 0 auto;
+//     max-width: 1200px;
+//     overflow: hidden;
+//     transform: translateY(15px);
+//     width: 90vw;
+// }
+
+.images-videos.sectionlinks {
+    background: transparent;
+}
+.sortable-section.sectionlinks.a-la-une.images-videos::after {
+    content: "";
+    background: #f2f2f2;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: -50%;
+    bottom: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+    width: 100vw;
+}

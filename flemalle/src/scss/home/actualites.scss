@@ -1,0 +1,14 @@
+.sortable-section.sectionnews {
+    position: relative;
+}
+.sortable-section.sectionnews:after {
+    right: -40%;
+    content: "";
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -130px;
+    bottom: 0;
+    z-index: -99;
+    background: #f0f0f0;
+}
