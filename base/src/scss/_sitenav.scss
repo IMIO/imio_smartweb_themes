@@ -1,3 +1,16 @@
+#portal-globalnav-wrapper {
+  position: initial !important;
+  padding: 0 !important;
+  li{
+    list-style: none!important;
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 1;
+  }
+  @include media-breakpoint-down(lg) {
+    margin: 0!important;
+  }
+}
 #portal-globalnav {
   span {
     padding: 1rem 0;
@@ -257,8 +270,15 @@
     position: absolute;
   }
 }
-
-.close-nav,
+@include media-breakpoint-up(lg) {
+  #portal-globalnav-wrapper {
+   flex:1;
+   .container{
+    padding: 0;
+   }
+  }
+ }
+ .close-nav,
 .prev-nav {
   cursor: pointer;
 }

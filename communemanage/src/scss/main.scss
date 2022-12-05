@@ -314,3 +314,21 @@ li:marker {
 .sectionselections.a-la-une {
     margin-top: 8rem !important;
 }
+
+.sectionnews .see_all a::after,
+.sectionevents .see_all a::after {
+    display: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+@include media-breakpoint-down(lg){
+    #portal-globalnav > li > a {
+        text-transform: initial;
+    }
+}
+
+.sectionevents .see_all a:hover {
+    background: #fff;
+  }
