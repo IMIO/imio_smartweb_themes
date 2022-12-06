@@ -34,7 +34,7 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@plone/plonetheme-barceloneta-base": "3.0.0-beta6",
-    "@popperjs/core": "^2.10.2"
+    "@plone/plonetheme-barceloneta-base": "3.0.0",
+    "@popperjs/core": "^2.11.6"
   }
 }
