@@ -43,3 +43,8 @@ $enable-roboto-webfont: false;
         0.5s visibility ease;
     }
   }
+
+  .sectionnews .see_all a::after,
+.sectionevents .see_all a::after {
+    display: none;
+}
