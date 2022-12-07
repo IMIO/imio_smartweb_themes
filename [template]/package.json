@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "@imiobe/plonetheme-smartweb-base": "0.0.2",
-    "@popperjs/core": "^2.10.2"
+    "@popperjs/core": "^2.11.6"
   }
 }
