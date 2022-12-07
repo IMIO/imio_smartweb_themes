@@ -1,6 +1,3 @@
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav li a {
-    position: relative;
-}
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:focus::before, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:hover::before {
     background-color: $secondary;
     bottom: 0;
