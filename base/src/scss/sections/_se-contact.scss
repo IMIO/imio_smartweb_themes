@@ -3,6 +3,7 @@
         position: relative;
         padding: 0;
         margin-bottom: 1.5rem;
+        & + .sectioncontact
         .section-container{
             height: 100%;
             .body-section{
@@ -11,6 +12,7 @@
         }
     }
     .section-contact{
+        padding: 0;
         ul{
             li{
                 list-style: none;
@@ -19,7 +21,7 @@
         .contact-type-organization{
             display: flex;
             flex-wrap: wrap;
-            padding: .75rem;
+            padding: 1.5rem;
             flex-direction: column;
             align-content: flex-start;
             background: $section-contact-background;
@@ -65,7 +67,7 @@
             }
         }
         .contact-type-mission{
-            padding: 2rem 0;
+            padding: 1.5rem;
             &:after {
                 content: "";
                 position: absolute;
@@ -113,7 +115,7 @@
             }
         }
         .contact-type-position{
-            padding: 2rem 0;
+            padding: 1.5rem;
             .contact_titles{
                 flex: 1 0 100%;
             }
