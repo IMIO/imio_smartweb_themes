@@ -259,7 +259,7 @@
       }
 
     &.activated {
-      &>ul>li>a {
+      &>li>a {
         @include media-breakpoint-up(md) {
           color: $nav-link-open-color !important;
         }

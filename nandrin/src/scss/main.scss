@@ -21,3 +21,7 @@ $enable-roboto-webfont: false;
 
 
 
+.sectionnews .see_all a::after,
+.sectionevents .see_all a::after {
+    display: none;
+}

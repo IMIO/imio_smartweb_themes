@@ -112,10 +112,6 @@ a.manage.contenttype-collection:before {
     content: '\e808';
     font-family: 'fontello';
 }
-a.manage.contenttype-link:before {
-    content: '\e806';
-    font-family: 'fontello';
-}
 //---//
 
 // navigation de la vue contenu
@@ -538,12 +534,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     font-size: 1.25rem;
 }
 
-.portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image .table_title span::before,
-.portaltype-imio-smartweb-page #content .sectionlinks a.table_image .table_title span::before {
-    content: "\e806";
-    font-family: 'fontello';
-    margin-right: 0.5rem;
-}
 /* section links */
 .portaltype-imio-smartweb-page #content .sectionlinks ul.row,
 .portaltype-imio-smartweb-procedure #content .sectionlinks ul.row {
