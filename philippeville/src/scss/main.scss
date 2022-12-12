@@ -140,3 +140,11 @@ footer{
         }
     }
 }
+#portal-globalnav .quick-access .quick-access-title {
+    color: $primary;
+}
+@media (min-width: 992px) {
+#portal-globalnav {
+    margin-right: 2rem;
+    }
+}
