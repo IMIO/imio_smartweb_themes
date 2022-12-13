@@ -2,8 +2,8 @@
     .nav_je-suis{
         margin-left: auto;
     }
-    #portal-globalnav-wrapper #portal-globalnav-collapse.activated #portal-globalnav > li.nav_je-suis > a, 
-    #portal-globalnav-wrapper #portal-globalnav-collapse.activated #portal-globalnav > li.nav_je-trouve > a {
+    body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav.activated > li.nav_je-suis > a,
+    body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav.activated > li.nav_je-trouve > a {
         color: #fff!important;
     }
 }

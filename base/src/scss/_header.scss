@@ -8,6 +8,9 @@
   display: block;
   margin-top: 0;
   margin-bottom: 1.25rem;
+  @include media-breakpoint-up(md){
+    position: relative;
+  }
   #portal-header-top {
     @include media-breakpoint-down(lg) {
       justify-content: space-between;
