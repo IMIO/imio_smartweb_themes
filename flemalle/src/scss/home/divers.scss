@@ -94,3 +94,41 @@ a[aria-expanded*="false"]:after {
 #portal-footer-wrapper .sectiontext .section-text .body-section figure img {
   max-width: 85%;
 }
+.nav_tous-les-services-communaux .state-published.nav-link {
+  font-weight: 900;
+}
+.card-body {
+  padding: 1rem;
+  h2, .card-text {
+  color: $primary;
+  }
+}
+.sortable-section.sectionfiles {
+  margin: 1rem 0 !important;
+}
+div#center-and-left-area h2 {
+  color: $primary;
+}
+a h2.list-card-title:hover {
+  text-decoration: underline;
+}
+.portaltype-imio-smartweb-portalpage #content-core > .row{
+  z-index: 0;
+  position: relative;
+}
+//BANNER
+@include media-breakpoint-down(lg){
+  #portal-header div#banner {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  }
+}
+.subsite-container .has_subtree.dropdown {
+  margin-top: 1rem;
+}
+.sectionfiles .item_infos {
+  color: #fff;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
+  color: $primary-svg;
+}

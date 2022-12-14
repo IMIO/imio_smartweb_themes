@@ -28,3 +28,30 @@ div#body-section-acces-directs:first-child ul {
 .sectionlinks.quick-access li:hover .image {
   padding-bottom: 1.5rem;
 }
+@include media-breakpoint-down(lg) {
+.sectionlinks.quick-access:first-child {
+  position: initial;
+  transform: initial;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.smartweb_herobanner .bannerSwiper {
+  height: 340px;
+}
+body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
+  transform: translateY(-120%);
+  }
+  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title,
+  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
+    font-size: 3rem;
+  }
+  .smartweb_herobanner .swiper-wrapper p.lead.rich_description:after {
+    scale: 0.6;
+  }
+  body .smartweb_herobanner:before {
+  height: 100px !important;
+  }
+}
+.sectionlinks.quick-access .body-section li a .table_title {
+  height: 45px;
+}

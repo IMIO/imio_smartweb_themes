@@ -1,0 +1,87 @@
+.sectionevents .see_all a {
+    font-family: $font-family-base;
+}
+.sectionnews .see_all a {
+    font-family: $font-family-base;
+}
+.sortable-section.sectionevents h2.section-title::after, .sortable-section.sectionnews h2.section-title::after {
+    content: "";
+    background: $secondary;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    padding-bottom: 5px;
+    top: 69px;
+    width: 12%;
+}
+.sortable-section.sectionevents h2.section-title, .sortable-section.sectionnews h2.section-title {
+    position: relative;
+}
+.sortable-section.a-la-une {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 300px;
+      bottom: 0;
+      transform: translateX(-50vw);
+      left: 50% !important;
+      background: $primary-svg;
+      content: "";
+      width: 100vw!important;
+      z-index: -2;
+    }
+}
+.sortable-section.enquetes {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      transform: translateX(-50vw);
+      left: 50% !important;
+      background: $primary-svg;
+      content: "";
+      width: 100vw!important;
+      z-index: -2;
+    }
+}
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: 0.5;
+}
+//
+.enquetes div.swiper-slide {
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+}
+.block-menu-element a .card-body, body.template-block_view_with_images .block-menu-element a .card-body {
+    width: auto;
+    padding: 1rem;
+}
+.block-menu-element a .card-body, body.template-block_view_with_images .block-menu-element a .card-body {
+    padding: 1rem;
+}
+.item_infos {
+    color: #fff;
+}
+.sortable-section.sectionfiles h2 {
+    font-size: 1.5rem;
+}

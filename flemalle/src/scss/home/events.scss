@@ -26,3 +26,30 @@
         color: #000;
     }
 }
+#container-section-agenda li div span, #container-section-agenda li div p {
+    color: $primary;
+  }
+.sectionevents .body-section ul li {
+    margin-bottom: 1.5rem;
+    .table_date {
+        padding: 0.5rem 0;
+    }
+}
+.sectionevents li .table_image div.image {
+    position: relative;
+}
+.sectionevents li .table_image div.image::after {
+    content: "";
+    background: transparent;
+    transition: all .2s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    top: 0;
+}
+.sectionevents li .table_image:hover div.image::after {
+    background: $primary-svg;
+    opacity: 0.5;
+}

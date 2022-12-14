@@ -31,5 +31,14 @@ body .projets .swiper-pagination.swiper-pagination-clickable.swiper-pagination-b
     position: absolute;
     text-align: left;
     bottom: 30%;
-    z-index: -1;
+    z-index: 1;
+}
+body .projets .swiper-slide .swiper_description {
+    padding: 0 0 0 0 !important;
+    p {
+    direction: ltr;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0 0 0 !important;
+    }
 }
