@@ -156,6 +156,16 @@ importers:
       '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
       '@popperjs/core': 2.11.6
 
+  couvin:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.5
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.6
+      '@popperjs/core': 2.11.6
+
   erezee:
     specifiers:
       '@imiobe/plonetheme-smartweb-base': 0.0.5

@@ -1,0 +1,54 @@
+body .sectionlinks.annuaire {
+    background: transparent;
+  }
+body .sectionlinks.annuaire ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(136px,1fr));
+    grid-gap: 20px 15px;
+    grid-auto-rows: 1fr;
+}
+body .sectionlinks.annuaire ul::before {
+    content: "";
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+body .sectionlinks.annuaire ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    border: solid 1px #d3d3d3;
+    border-radius: 15px;
+}
+body .sectionlinks.annuaire ul>:first-child {
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+// body .sectionlinks.annuaire ul li::before {
+//     position: absolute;
+//     content: "";
+//     box-sizing: content-box;
+//     left: -2px;
+//     top: -1px;
+//     bottom: -1px;
+//     display: block;
+//     border: solid 1px transparent;
+//     border-radius: 15px;
+//     width: 100%;
+//     border-right-color: transparent;
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+//     -webkit-animation: .3s ease forwards border-initial-yellow;
+//     animation: .3s ease forwards border-initial-yellow;
+// }
+.sortable-section.sectiontext.couvin-carte {
+    background-size: contain !important;;
+    background-repeat: no-repeat;
+}
+body .sectionlinks.annuaire a.table_image {
+    text-align: center;
+}

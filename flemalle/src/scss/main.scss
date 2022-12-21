@@ -83,7 +83,7 @@ footer#portal-footer-wrapper{
 }
 @include media-breakpoint-down(lg){
     .swiper-pagination{
-        display: none;
+        display: initial;
     }
 }
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis.has_subtree,
@@ -232,7 +232,7 @@ body .smartweb_herobanner::before {
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
-        background-image: url("../../assets/svg/plachld-wellin.png") !important;
+        background-image: url("../../assets/svg/plachld-flemalle.png") !important;
     }
 }
 

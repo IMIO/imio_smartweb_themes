@@ -12,6 +12,19 @@
     z-index: -99;
     background: #f0f0f0;
 }
+@include media-breakpoint-down(lg) {
+    .sortable-section.sectionnews:after {
+    background: #f0f0f0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: initial;
+    width: 100vw;
+    z-index: -99;
+    }
+}
 div.swiper-image {
     position: relative;
 }
@@ -30,4 +43,14 @@ div.swiper-image:before {
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary-svg;
     opacity: 0.5;
+}
+.sectionnews .see_all a:after {
+    background-color: $primary-svg;
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all .2s ease;
+    width: 25%;
 }

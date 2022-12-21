@@ -1,0 +1,120 @@
+.sectionevents .see_all a {
+    font-family: $font-family-base;
+}
+.sectionnews .see_all a {
+    font-family: $font-family-base;
+}
+.sectionnews .see_all a:focus, .sectionnews .see_all a:hover {
+    background: transparent;
+    border: 0 solid #014769;
+    border-radius: 0;
+    color: $black;
+}
+.sortable-section.sectionevents h2.section-title::after, .sortable-section.sectionnews h2.section-title::after {
+    content: "";
+    background: $secondary;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    padding-bottom: 5px;
+    top: 69px;
+    width: 12%;
+}
+.sortable-section.sectionevents h2.section-title, .sortable-section.sectionnews h2.section-title {
+    position: relative;
+}
+
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: 0.5;
+}
+//
+.enquetes div.swiper-slide {
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+}
+.block-menu-element a .card-body, body.template-block_view_with_images .block-menu-element a .card-body {
+    width: auto;
+    padding: 1rem;
+}
+.block-menu-element a .card-body, body.template-block_view_with_images .block-menu-element a .card-body {
+    padding: 1rem;
+}
+.item_infos {
+    color: #fff;
+}
+.sortable-section.sectionfiles h2 {
+    font-size: 1.5rem;
+}
+// //FROM CUSTOM
+// .items.popover-content {
+//     max-height: 80vh;
+//     overflow-y: scroll;
+// }
+
+// .section-slide {
+//     display: block;
+//     height: 100%;
+// }
+// .swiper-banner-image {
+//     width: 100%;
+//     height: 100%;
+// }
+// .swiper-banner-content-wrapper.container {
+//     top: 2rem;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     color: white;
+// }
+// .smartweb_herobanner .swiper-button-next{
+//     right:5%;
+// }
+// .smartweb_herobanner .swiper-button-prev{
+//     left:5%;
+// }
+// .subsite-container #subsite-logo a {
+//     display: flex;
+// }
+
+
+// .section-text #body-section-logo.figure-top figure {
+//     margin-top: 0;
+//     width: 90%;
+// }
+// #portal-footer-wrapper,
+// #portal-footer-wrapper .sectionlinks .section-title.h2, #portal-footer-wrapper .sectionlinks h2.section-title {
+//     color: #222831;
+// }
+// #portal-footer-wrapper {
+//     text-align: left;
+// }
+// .portaltype-imio-smartweb-portalpage #portal-footer-wrapper .section-title {
+//     font-size: 2rem;
+// }
+
+// .contact_description {
+//     margin-top: 0.75rem;
+// }
+// #portal-column-content .section-contact .contact-type-position .contact_placeholder.portrait {
+//     background-image: url(/contact-placeholder.jpg);
+//     background-position: center;
+// }

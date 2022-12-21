@@ -1,6 +1,6 @@
 {
-  "name": "@imiobe/plonetheme-smartweb-blegny",
-  "description": "iA.Smartweb base theme for blegny",
+  "name": "@imiobe/plonetheme-smartweb-couvin",
+  "description": "iA.Smartweb base theme for couvin",
   "private": false,
   "publishConfig": {
     "access": "public"

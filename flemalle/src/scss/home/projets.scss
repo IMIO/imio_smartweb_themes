@@ -27,11 +27,13 @@ body .projets {
         }
     } 
 } 
-body .projets .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+@include media-breakpoint-up(lg){
+    body .projets .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
     text-align: left;
     bottom: 30%;
     z-index: 1;
+    }
 }
 body .projets .swiper-slide .swiper_description {
     padding: 0 0 0 0 !important;
