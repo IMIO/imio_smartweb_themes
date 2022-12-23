@@ -108,3 +108,8 @@
 .mb-ign-mode-liste-carte{
     z-index:0;
 }
+
+.fax a::after {
+	content: "(fax)";
+	margin-left: 0.25rem;
+}
