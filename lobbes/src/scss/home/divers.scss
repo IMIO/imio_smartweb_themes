@@ -132,3 +132,24 @@ body.userrole-authenticated ul.nav li a.nav-link {
 #smartweb-footer h3 {
 	color: #fff !important;
 }
+.annuaire-result-list .phones span {
+    display: block;
+}
+//SEACRH
+
+@include media-breakpoint-up(md) { 
+        #portal-header #portal-header-top #header-links #search-link a {
+            width: 180px;
+         }
+        .crud-form .header-select, .hiddenStructure, .sr-only {
+            background: initial;
+            height: auto;
+            font-weight: 500 !important;
+            width: 80%;
+            padding: 0 1rem;
+            position: initial;
+        }
+        #portal-header #portal-header-top #header-links #search-link a::before {
+            margin: 0 auto 0 15px;
+        }
+}

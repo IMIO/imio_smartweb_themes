@@ -206,6 +206,16 @@ importers:
       '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
       '@popperjs/core': 2.11.6
 
+  limbourg:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
+      '@popperjs/core': 2.11.6
+
   lobbes:
     specifiers:
       '@imiobe/plonetheme-smartweb-base': 0.0.5
@@ -264,6 +274,26 @@ importers:
     devDependencies:
       '@imiobe/plonetheme-smartweb-base': link:../base
       '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.6
+      '@popperjs/core': 2.11.6
+
+  saintnicolas:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.5
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': link:../base
+      '@plone/plonetheme-barceloneta-base': 3.0.0-alpha9_@popperjs+core@2.11.6
+      '@popperjs/core': 2.11.6
+
+  wasseiges:
+    specifiers:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': ^3.0.0-alpha9
+      '@popperjs/core': ^2.10.2
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base': 0.0.4
+      '@plone/plonetheme-barceloneta-base': 3.0.0-beta6_@popperjs+core@2.11.6
       '@popperjs/core': 2.11.6
 
   wavrecpas:
