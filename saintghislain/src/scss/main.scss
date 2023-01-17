@@ -13,22 +13,10 @@ $enable-roboto-webfont: false;
 // ... add your styles here
 @import "./home/quick.scss";
 @import "./home/a-la-une";
-@import "./home/projets";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/en-image";
 @import "./home/annuaire";
 @import "./home/les-sites";
 @import "./home/footer";
-@import "./home/bulletin.scss";
-@import "./home/divers.scss";
-@import "./minisite.scss";
-
-
-#portal-colophon{
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0!important;
-    }
-}
+@import "./home/divers";

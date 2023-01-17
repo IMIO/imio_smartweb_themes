@@ -1,0 +1,46 @@
+.sectionnews .swiper-slide .swiper_date {
+	margin-top: 0.7rem;
+}
+
+.sectionnews{
+    @include media-breakpoint-up(lg){
+        &:after{
+            content:"";
+            background:url("../../assets/svg/aigle-jn.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            width: 900px;
+            height: 1050px;
+            top: -15%;
+            left: -15%;
+            z-index: -1;
+            opacity: .2;
+        }
+    }
+    .swiper-slide {        
+        & > a {
+            .swiper-image{
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #0F4C81;
+                    opacity: 0;
+                }
+            }
+            &:hover{
+                .swiper-image{
+                    &:after{
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}

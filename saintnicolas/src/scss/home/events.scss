@@ -1,0 +1,12 @@
+.sectionevents{
+    .swiper-slide {        
+        & > a {
+            &:hover{
+                .swiper-image{
+                    background-color: #0f4c81;
+                    background-blend-mode: soft-light;
+                }
+            }
+        }
+    }
+}
