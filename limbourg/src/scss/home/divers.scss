@@ -61,3 +61,19 @@ body .sectionevents .see_all a::after, body .sectionnews .see_all a::after {
 .card-body {
     padding: 1.5rem;
 }
+footer h2 {
+	font-size: 24px !important;
+}
+
+.navbar-toggler{
+   background: #032539;
+}
+button.navbar-toggler.collapsed {
+	background: #032539 !important;
+}
+html body .navbar-toggler {
+    background: #032539 !important;
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e")!important;
+}

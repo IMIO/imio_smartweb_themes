@@ -1,16 +1,3 @@
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav li a {
-    position: relative;
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:focus::before, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a:hover::before {
-    background-color: $secondary;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transition: all .3s ease;
-  }
   #portal-header #portal-header-top #header-links #search-link a {
     background: $secondary;
     border: none;
@@ -46,11 +33,8 @@
 button.navbar-toggler.collapsed {
     background: transparent !important;
 }
-.open-nav-overflow .navbar-dark .navbar-toggler {
-    border-color: #fff !important;
-    color: #fff !important;
-}
 
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:hover {
-    color: #fff !important;
-  }
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
+	background-color: $secondary;
+}
