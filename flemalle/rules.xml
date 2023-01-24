@@ -44,6 +44,10 @@
   <!-- Central column -->
   <replace css:theme-children="#portal-column-content" css:content-children="#portal-column-content"></replace>
 
+  <replace css:content="#fg_billeterie">
+      <xsl:apply-templates select="document('@@theme-fragment/billeterie', $diazo-base-document)" mode="raw"/>
+  </replace>
+
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 

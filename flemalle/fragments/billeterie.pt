@@ -1,0 +1,9 @@
+<div id="fg_billeterie">
+    <div id="ConstellationWidgetContainer917c4c52-c997-4077-9135-873a0b2e0c85" style="width:100%" title="Office du Tourisme de Flémalle" data-id-projet='917c4c52c99740779135873a0b2e0c85'>Chargement en cours...</div>
+  <span>
+    <script type="text/javascript" src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+  </span>
+  <span>
+    <script type="text/javascript">var constellationWidgetUrl917c4c52c99740779135873a0b2e0c85, constellationTypeModule917c4c52c99740779135873a0b2e0c85; constellationWidgetUrl917c4c52c99740779135873a0b2e0c85 = 'https://reservation.elloha.com/Widget/BookingEngine/917c4c52-c997-4077-9135-873a0b2e0c85?idoi=195ea849-1732-4a69-a051-e7911001cd09&culture=fr-FR'; constellationTypeModule917c4c52c99740779135873a0b2e0c85=1; constellationWidgetLoad('ConstellationWidgetContainer917c4c52-c997-4077-9135-873a0b2e0c85'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationWidgetContainer917c4c52-c997-4077-9135-873a0b2e0c85'); });</script>
+  </span>
+</div>
