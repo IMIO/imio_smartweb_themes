@@ -246,7 +246,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
-        background-image: url("../../assets/svg/plachld-wellin.png") !important;
+        background-image: url("../../assets/svg/plachld-wellin.jpg") !important;
     }
 }
 
@@ -290,8 +290,29 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
         flex-wrap: wrap;
     }
 }
-
-
+#portal-footer-wrapper{
+    margin-top: 50px;
+}
+body:not(.is-in-minisite){
+    #portal-footer-wrapper{
+        position: relative;
+        overflow: visible;
+        margin-top: 100px;
+        &:before{
+            content: "";
+            width: 100px;
+            background-image: url("../../assets/svg/footer-icon.svg") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 120px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 7%;
+            transform: translateY(-98%);
+        }
+    }
+}
 
 .sectionsendinblue {
     left: 50%;
@@ -312,8 +333,6 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
     color: #fff !important;
 }
 
-.is-in-minisite .smartweb-footer .sectiontext {
-}
 .smartweb-footer {
     padding-top: 5rem;
     a.table_image {
@@ -512,5 +531,42 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 @media (min-width: 992px){
     #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
         margin-top: 2.25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree {
+      margin-top: 4.25rem!important;
+    }
+}
+
+// se file 
+
+.sectionfiles {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+    @include media-breakpoint-up(md) {
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+    .section-title {
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+}
+
+.compe-hi2{
+    .swiper-image{
+        border-radius: 10px;
+    }
+    .swiper-wrapper{
+        padding-bottom: 0!important;
+    }
+    .swiper_title{
+        margin-top: 1rem;
     }
 }

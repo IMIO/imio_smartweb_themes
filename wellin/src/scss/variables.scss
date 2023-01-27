@@ -354,9 +354,9 @@ $section-contact-p-margin:1rem 0;
 $section-contact-portrait-ration:calc(4 / 5);
 
 // section-files
-$section-file-background-color: $primary !default;
+$section-file-background-color: #f3f3f3;
 $enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$enable-light-color-section-files: false;
 
 // section-link
 $section-link-background-color: #F8F8F8;

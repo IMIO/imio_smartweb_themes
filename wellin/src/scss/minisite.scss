@@ -16,6 +16,51 @@
 $primary-tourisme: #24626c;
 $primary-tourisme-svg: #24626c;
 .site-tourisme{
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+    .sectiontext .section-text .body-section a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .sectionfiles .section-title,.sectionlinks a, .sectionfiles a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    #portal-column-content .section-contact .contact-type-mission .address .h2,
+    #portal-column-content .section-contact .contact-type-mission .address .h3,
+    #portal-column-content .section-contact .contact-type-mission .address h2,
+    #portal-column-content .section-contact .contact-type-mission .address h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule h3,
+    #portal-column-content .section-contact .contact-type-position .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-position .address h3,
+    .sectioncontact a,
+    .breadcrumb a {
+        color: $primary-tourisme;
+    }
+    .sectionnews{
+        .section-title{
+            color:$primary-tourisme;
+        }
+    }
+    .swiper-pagination-bullet, .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $primary-tourisme !important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+        border: 1px solid $primary-tourisme!important;
+    }
+    .sectionnews .see_all a {
+        border: 0 solid $primary-tourisme;
+        color: $primary-tourisme;
+    }
+    .see_all a::before {
+        border: 1px solid $primary-tourisme;
+    }
+    .sectionhtml{
+        margin-top: 3rem;
+    }
     .sectionevents {
         background-color: #24626c!important;
     }
@@ -90,8 +135,37 @@ $primary-tourisme-svg: #24626c;
     $primary-sport: #004f8c;
     $primary-sport-svg: #ffd145;
 .site-sports{
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+    .sectiontext .section-text .body-section a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .sectionfiles .section-title,.sectionlinks a, .sectionfiles a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    #portal-column-content .section-contact .contact-type-mission .address .h2,
+    #portal-column-content .section-contact .contact-type-mission .address .h3,
+    #portal-column-content .section-contact .contact-type-mission .address h2,
+    #portal-column-content .section-contact .contact-type-mission .address h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule h3,
+    #portal-column-content .section-contact .contact-type-position .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-position .address h3,
+    .sectioncontact a,
+    .breadcrumb a {
+        color: $primary-sport;
+    }
     .sectionevents{
         background:$primary-sport!important;
+    }
+    .sectionnews{
+        .section-title{
+            color:$primary-sport;
+        }
     }
     .smartweb_herobanner::after {
         background: $primary-sport-svg;
@@ -157,6 +231,11 @@ $primary-tourisme-svg: #24626c;
         }
     }
     }
+    @media (min-width: 992px) {
+        #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree {
+          margin-top: 5.15rem!important;
+        }
+    }
 }
 
 
@@ -166,70 +245,116 @@ $primary-tourisme-svg: #24626c;
 $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 .site-cpas{
-.smartweb_herobanner::after {
-    background: $primary-cpas-svg;
-}
-.quick-access{
-    .section-title{
-        color: $primary-cpas!important;
-    }
-    .body-section li a .image.d-block {
-        border: 1px solid $primary-cpas;
-    }
-    .body-section li a .table_title span {
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+    .sectiontext .section-text .body-section a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .sectionfiles .section-title,.sectionlinks a, .sectionfiles a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    #portal-column-content .section-contact .contact-type-mission .address .h2,
+    #portal-column-content .section-contact .contact-type-mission .address .h3,
+    #portal-column-content .section-contact .contact-type-mission .address h2,
+    #portal-column-content .section-contact .contact-type-mission .address h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule h3,
+    #portal-column-content .section-contact .contact-type-position .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-position .address h3,
+    .sectioncontact a,
+    .breadcrumb a {
         color: $primary-cpas;
     }
-    .body-section li a .image.d-block svg {
-        fill: $primary-cpas;
-    }
-    .table_image:focus .image.d-block, .table_image:hover .image.d-block {
-        background: $primary-cpas !important;
-    }
-}
-#portal-colophon, #portal-footer-wrapper {
-    background: $primary-cpas!important;
-}
-#portal-footer {
-    background: $primary-cpas !important;
-}
-.to-portal{
-    a{
-        background: $primary-cpas;
-    }
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
-    color:$primary-cpas;
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
-& > a:focus, & > a:hover{
-    color: $primary-cpas !important;
-}
-&.show-nav{
-    & > a{
-        color:$primary-cpas!important;
-    }
-}
-& > .nav-link {
-    color: $primary-cpas !important;
-    &:before{
-        background-color: $primary-cpas-svg!important;
-    }
-    @media screen and (min-width:992px){
-        &:after{
-            background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>')!important;
+    .sectionnews{
+        .section-title{
+            color:$primary-cpas;
         }
     }
-}
-.dropdown .nav-link:focus, .dropdown .nav-link:hover {
-    color: $primary-cpas;
-}
-.nav-title{
-    a{
-        color: $primary-cpas!important;
+    .swiper-pagination-bullet, .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $primary-cpas !important;
     }
-}
-}
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+        border: 1px solid $primary-cpas!important;
+    }
+    .sectionnews .see_all a {
+        border: 0 solid $primary-cpas;
+        color: $primary-cpas;
+    }
+    .see_all a::before {
+        border: 1px solid $primary-cpas;
+    }
+    .smartweb_herobanner::after {
+        background: $primary-cpas-svg;
+    }
+    .see_all a:hover::before {
+        border: 1px solid $primary-cpas-svg;
+        color: $primary-cpas-svg;
+    }
+    .quick-access{
+        .section-title{
+            color: $primary-cpas!important;
+        }
+        .body-section li a .image.d-block {
+            border: 1px solid $primary-cpas;
+        }
+        .body-section li a .table_title span {
+            color: $primary-cpas;
+        }
+        .body-section li a .image.d-block svg {
+            fill: $primary-cpas;
+        }
+        .table_image:focus .image.d-block, .table_image:hover .image.d-block {
+            background: $primary-cpas !important;
+        }
+    }
+    #portal-colophon, #portal-footer-wrapper {
+        background: $primary-cpas!important;
+    }
+    #portal-footer {
+        background: $primary-cpas !important;
+    }
+    .to-portal{
+        a{
+            background: $primary-cpas;
+        }
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
+        color:$primary-cpas;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
+    & > a:focus, & > a:hover{
+        color: $primary-cpas !important;
+    }
+    &.show-nav{
+        & > a{
+            color:$primary-cpas!important;
+        }
+    }
+    & > .nav-link {
+        color: $primary-cpas !important;
+        &:before{
+            background-color: $primary-cpas-svg!important;
+        }
+        @media screen and (min-width:992px){
+            &:after{
+                background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>')!important;
+            }
+        }
+    }
+    .dropdown .nav-link:focus, .dropdown .nav-link:hover {
+        color: $primary-cpas;
+    }
+    .nav-title{
+        a{
+            color: $primary-cpas!important;
+        }
+    }
+    }
 }
 
 
@@ -249,6 +374,30 @@ $primary-cpas-svg: #fab4b6;
 $primary-competences: #3893a0;
 $primary-competences-svg: #f58214;
 .site-wellin-competences{
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+    .sectiontext .section-text .body-section a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    .sectionfiles .section-title,.sectionlinks a, .sectionfiles a,
+    .portaltype-imio-smartweb-page #content .sectionlinks a.table_image, .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+    #portal-column-content .section-contact .contact-type-mission .address .h2,
+    #portal-column-content .section-contact .contact-type-mission .address .h3,
+    #portal-column-content .section-contact .contact-type-mission .address h2,
+    #portal-column-content .section-contact .contact-type-mission .address h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+    #portal-column-content .section-contact .contact-type-mission .schedule h2,
+    #portal-column-content .section-contact .contact-type-mission .schedule h3,
+    #portal-column-content .section-contact .contact-type-position .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-position .address h3,
+    .sectioncontact a,
+    .breadcrumb a {
+        color: $primary-competences;
+    }
 .smartweb_herobanner::after {
     background: $primary-competences-svg;
 }
