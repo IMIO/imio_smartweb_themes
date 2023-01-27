@@ -8,7 +8,7 @@ $primary-svg: #fff;
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 $font-family-base: "Montserrat",
 system-ui,
 -apple-system,
@@ -360,7 +360,7 @@ $enable-light-color-section-files: false;
 // section-link
 $section-link-background-color: #F8F8F8;
 $enable-full-width-section-link: true;
-$enable-light-color-section-link: true;
+$enable-light-color-section-link: false;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.25rem;

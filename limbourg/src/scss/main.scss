@@ -26,4 +26,8 @@ $enable-roboto-webfont: false;
 @import "./home/divers";
 @import "./home/footer";
 
-
+.swiper-banner-title{
+    text-transform: inherit!important;
+    font-family: 'Pacifico', cursive!important;
+    font-size: 34px !important;
+}
