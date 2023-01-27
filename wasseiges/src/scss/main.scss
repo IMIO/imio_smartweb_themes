@@ -27,3 +27,26 @@ $enable-roboto-webfont: false;
 @import "./home/footer";
 
 
+#portal-footer-wrapper {
+    margin-top: 5rem;
+    h2 {
+        color: #fff !important;
+    }
+} 
+.sectiontext .mark, .sectiontext mark {
+	background-color: #183f6e;
+	color: #fff!important;
+    a{
+        color: #fff!important;  
+    }
+}
+
+.sectionfiles .table_display{
+    a, div{
+        color: #fff !important;
+    }
+}
+
+.sectionevents .swiper-slide .swiper_category span {
+	color: #fff!important;
+}
