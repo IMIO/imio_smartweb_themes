@@ -1,0 +1,91 @@
+.sectionnews.actu{
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section-title{
+        font-size: calc(1.325rem + 2.5vw);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(lg) { 
+            margin-bottom: 2.5rem;
+        }
+        @include media-breakpoint-up(xxl) { 
+            font-size: 3.7rem;
+        }
+    }
+    .swiper-slide{
+        a{
+            text-decoration: none;
+        }
+        & > a{
+            display: flex;
+            flex-direction: column;
+        }
+        .swiper-image{
+            border-radius: 15px 15px 15px 0px;
+            margin-bottom: 0.7rem;
+        }
+        .swiper_category{
+            margin-bottom: 0.3rem;
+            span{
+                color: #747474;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .swiper_date{
+            order: 1;
+            font-size: 13px;
+        }
+        .swiper_title{
+
+        }
+    }
+    .see_all{
+        float: right;
+        margin: 2rem 0;
+        a{
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            border: solid 1px #000;
+            background: #000;
+            border-bottom-left-radius: 0px;
+            &:after{
+                content: "";
+                background: #fff;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 0;
+                z-index: -1;
+                left: 0;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                transition: all .4s ease;
+                z-index: 0;
+                mix-blend-mode: difference;
+            }
+            &:hover,&:focus{
+                &:after{
+                    width: 103%;
+                }
+            }
+        }
+    }
+}
+
+// hover
+.swiper-button-next, .swiper-button-prev {
+    transition: all .1s linear;
+    &:hover,&:focus{
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff !important;
+}

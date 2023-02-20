@@ -1,0 +1,126 @@
+#portal-footer-wrapper .smartweb-footer .container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    .row{
+        .container{
+            padding: 3rem 0 0 0;
+        }
+    }
+}
+
+#portal-footer-wrapper {
+    background-color: #000;
+    text-align: left;
+}
+
+#smartweb-footer .section-contact:after{
+    display:none;
+}
+#smartweb-footer .section-contact {
+    background:transparent;
+    color:white;
+}
+#smartweb-footer .section-contact .body-section h2,
+#smartweb-footer .section-contact .body-section h3,
+#smartweb-footer .section-contact .body-section a {
+    color:white;
+}
+#smartweb-footer .section-contact table.table_schedule {
+    color: black;
+}
+
+.colophonWrapper ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.colophonWrapper li {
+    margin-right: 1rem;
+}
+.colophonWrapper a {
+    text-decoration: none;
+    border-bottom: 1px dotted #a7a7a7;
+}
+
+#portal-footer-wrapper {
+    box-sizing: content-box;
+}
+/* sections du footer */
+div#body-section-administration-communale {
+    max-width: 21rem;
+}
+
+
+/* footer feder */
+.smartweb-footer .container .row:last-child {
+    width: 100%;
+    padding-bottom: 0;
+}
+#body-section-feder {
+    width: 100%;
+    text-align: center;
+    background: white;
+    justify-content: center;
+    position: relative;
+    z-index:0;
+    padding:1rem 0 0 0;
+}
+#body-section-feder:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 0;
+    bottom: -2rem;
+    width: 100vw;
+    z-index: -1;
+    transform: translateX(-50%);
+    left:50%
+}
+div#body-section-feder figure{
+    margin:0;
+}
+div#body-section-feder img {
+    max-width: 500px;
+    width:100%;
+}
+div#portal-colophon {
+    z-index: 0;
+    position: relative;
+}
+#portal-footer-wrapper{
+    .sectionlinks {
+        li{
+            list-style-type:none;
+        }
+        a{
+            color:#fff; 
+        }
+    }
+    .facebook{
+        a{
+            display: block;
+            width: 29px;
+            height: 29px;
+            font-size: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 34.56 34.35" enable-background="new 0 0 34.56 34.35" xml:space="preserve"><path fill="white" d="M34.56,17.28a17.28,17.28,0,1,0-20,17.07V22.27H10.19v-5h4.39v-3.8c0-4.33,2.58-6.72,6.53-6.72A27.81,27.81,0,0,1,25,7.08v4.26H22.8A2.53,2.53,0,0,0,20,14v3.24h4.8l-.77,5H20V34.35A17.28,17.28,0,0,0,34.56,17.28Z"></path></svg>');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 1rem;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+}
+#portal-footer-wrapper .colophon {
+	margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.smartweb-footer .container .row:last-child {
+	margin-left: auto;
+	margin-right: auto;
+}

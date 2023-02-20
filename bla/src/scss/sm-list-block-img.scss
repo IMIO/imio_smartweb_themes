@@ -1,0 +1,55 @@
+body.template-block_view_with_images .block-menu-element{
+    a {
+        text-decoration: none;
+        .card-body{
+        background: #fff;
+        height: 180px;
+        border-radius: 15px 15px 15px 0px;
+        box-shadow: $block-small-shadow;
+        position: relative;
+            &:hover,
+            &:focus {
+                    
+                    box-shadow: $block-full-shadow;
+                    h2.card-title {
+                    }
+            &::after {
+                    content: url(../../assets/svg/arrow-right-white.svg);
+                    background: $yellow;
+                    left: 0;
+                    bottom: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: absolute;
+                    margin: 1rem 1rem;
+                    
+                }
+            }
+            &::after {
+                content: url(../../assets/svg/arrow-right-yellow.svg);
+                background: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 1rem 1rem;
+            }
+        }
+        h2.card-title {
+            &:hover,
+            &:focus {
+                //border-bottom: $link-hover-decoration;
+                text-decoration-color: $yellow;
+            }
+            font-size: $section-list-block-img-card-title;
+            text-transform: initial;
+            font-weight: bold;
+        }   
+    }
+}
+//HTML

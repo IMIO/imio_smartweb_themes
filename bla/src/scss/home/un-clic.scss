@@ -1,0 +1,23 @@
+.en-un-clic-titre{
+    padding-top: 1rem;
+    @include media-breakpoint-up(md) {
+        padding-top: 4rem;
+    }
+    .body-section{
+        h2{
+            font-size: calc(1.325rem + 2.5vw);
+            text-transform: uppercase;
+            @include media-breakpoint-up(lg) { 
+            }
+            @include media-breakpoint-up(xxl) { 
+                font-size: 3.7rem;
+            }
+        }
+    }
+}
+.un-clic{
+    padding-top: 1rem;
+    @include media-breakpoint-up(md) {
+        padding-top:3rem;
+    }
+}

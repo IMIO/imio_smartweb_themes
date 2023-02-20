@@ -1,0 +1,42 @@
+
+#header-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#search-link{
+    a{
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #C1C1C1;
+        border-radius: 50px;
+        &:before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            background:url(../../assets/svg/search.svg) no-repeat;
+            background-size: 14px;
+            display: block;
+        }
+    }
+}
+
+.offcanvas-backdrop.show {
+	opacity: .5;
+}
+.offcanvas-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+// banner
+#banner {
+    height:$banner-height;
+}

@@ -1,0 +1,110 @@
+// colors
+$primary: #008FD2;
+$primary-accessibility: #007DB8;
+$bg-primary: red;
+$gray: #d8d8d8;
+$yellow: #f9b300;
+$color-content-text:#505050;
+// $secondary: #f9b300;
+
+// images
+$image-raduis: 20px 20px 20px 0;
+// header
+$main-logo-max-width: 115px;
+$main-search-max-width: auto;
+$logo-margin-y: 1.5rem;
+// nav
+$nav-link-font-size:                null !default;
+$nav-link-font-weight:              500 !default;
+$nav-first-level-uppercase: true;
+$nav-first-level-gap: 30px;
+
+$navbar-padding-x:                  2.5rem !default;
+// banner
+$banner-height: 250px;
+// liste group variables
+$list-group-border-width : 0px;
+$list-group-item-padding-x : 0px;
+$list-style-custom: url(../../assets/svg/list-style-yellow.svg);
+
+//link
+$link-color: #000;
+$link-hover-decoration :  solid 3px $yellow;
+//Liste Block
+$block-full-shadow: 0px 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+// font
+$font-family-base:            ff-tisa-sans-web-pro,sans-serif;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px` (don't change)
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.125;
+$font-size-xl:                $font-size-base * 1.1875;
+
+
+$h1-font-size:                $font-size-base * 3.75; /*--64--*/
+$h2-font-size:                $font-size-base * 2; /*--34--*/
+$h3-font-size:                $font-size-base * 1.5; /*--25--*/
+$h4-font-size:                $font-size-base * 1.125; /*--18--*/
+$h5-font-size:                $font-size-base; /*--16--*/
+
+$headings-font-weight: 700;
+$headings-color: #000;
+
+// breadcumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-padding-y: 1rem;
+$breadcrumb-padding-x: 0;
+$breadcrumb-font-size: $font-size-sm;
+$enable-full-width-breacrumb: false;
+
+
+// Section
+$section-padding-y: 5.31rem;
+$section-padding: (
+  sm: 3rem,
+  md: 4rem,
+  lg: 4.3rem,
+);
+    // section-contact
+$section-contact-title-size:$font-size-xl;
+$section-contact-sub-title-size:$font-size-lg;
+$section-contact-title-color:$primary;
+$section-contact-p-margin:1rem 0;
+$section-contact-width: 260px;
+
+    // section-files
+$section-file-background-color: #008fd2;
+$enable-full-width-section-files: true;
+$enable-light-color-section-files: true;
+
+    // section-link
+$section-link-background-color: #F8F8F8;
+$enable-full-width-section-link: true;
+$enable-light-color-section-link: false;
+
+    // section-text
+$section-text-h2-margin-top: 2rem;
+$section-text-h2-margin-bottom: 1.5rem;
+$section-text-h3-margin-top: 0;
+$section-text-h3-margin-bottom: .5rem;
+$section-text-link-color:$primary-accessibility;
+$section-text-link-hover-decoration :  solid 1px $yellow;
+
+    // section-list-block-img
+$section-list-block-img-card-title: 1.25rem;
+
+// subsite
+$subsite-logo-background: #FFB81C;
+$subsite-logo-color: #fff;
+
+
+// Message Viewlets
+
+$message-info:#27789c;
+$message-warning:#c06d01;
+$message-error:#ae2609;
+
+// Search
+$offcanvas-horizontal-width:95%;

@@ -1,0 +1,168 @@
+// common
+$headings-color: #000;
+$primary: #008FD2;
+$bg-primary: red;
+$roboto-base-path: "@theme/assets/fonts/";
+
+@import "./sm-variables.scss";
+
+
+//  test
+
+// Plone Barceloneta Styling & components
+
+// Plone colors
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
+
+// Plone specific default variables & properties
+@import "@plone/plonetheme-barceloneta-base/scss/variables.properties";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.barceloneta";
+
+@import "@plone/plonetheme-barceloneta-base/scss/base";
+
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone";
+
+// Plone components
+@import "@plone/plonetheme-barceloneta-base/scss/cards";
+@import "@plone/plonetheme-barceloneta-base/scss/scaffolding";
+
+// // style.scss
+@import "@plone/plonetheme-barceloneta-base/scss/icons";
+@import "@plone/plonetheme-barceloneta-base/scss/header";
+
+// @import "@plone/plonetheme-barceloneta-base/scss/sitenav";
+@import "@plone/plonetheme-barceloneta-base/scss/breadcrumbs";
+@import "@plone/plonetheme-barceloneta-base/scss/content";
+@import "@plone/plonetheme-barceloneta-base/scss/comments";
+@import "@plone/plonetheme-barceloneta-base/scss/portlets";
+@import "@plone/plonetheme-barceloneta-base/scss/footer";
+
+@import "@plone/plonetheme-barceloneta-base/scss/print";
+
+@import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
+
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  fin test 
+
+
+
+
+
+
+
+
+
+
+// @import "../../../plonetheme.barceloneta/scss/barceloneta.scss";
+// @import "../../../barcelonetabeta3/plonetheme.barceloneta/scss/barceloneta.scss";
+// @import "../../../plonetheme.common/scss/base.scss";
+@import "./for-nav-maj.scss";
+@import "./common/com-faceted.scss";
+@import "./common/com-list-image.scss";
+@import "./sm-messviewlet.scss";
+@import "./common/com-edition.scss";
+@import "./common/com-header.scss";
+@import "./common/com-cookies.scss";
+@import "./sm-mixin.scss";
+@import "./sm-list.scss";
+@import "././sections/sm-se-text.scss";
+@import "././sections/sm-se-link.scss";
+@import "././sections/sm-se-linked-content.scss";
+@import "././sections/sm-se-file.scss";
+@import "././sections/sm-se-contact.scss";
+@import "././sections/sm-se-plan.scss";
+@import "././sections/sm-se-gallery.scss";
+@import "./sm-header.scss";
+@import "./sm-footer.scss";
+@import "./sm-sitenav.scss";
+@import "./sm-breadcrumbs.scss";
+@import "./sm-list-block.scss";
+@import "./sm-list-block-img.scss";
+@import "./sm-list-img.scss";
+@import "./sm-subsite.scss";
+// @import "./sm-carousel.scss";
+@import "./sm-homepage.scss";
+@import "./sm-animation.scss";
+@import "./sm-print.scss";
+@import "./trucaverif.scss";
+@import "./home/a-la-une.scss";
+@import "./home/actu.scss";
+@import "./home/event.scss";
+@import "./home/un-clic.scss";
+
+.r-item-img-placeholder {
+  background: url("../../assets/svg/img-placeholder-bla.png");
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  padding-left: 0;
+}
+// à voir dans html
+.bg-primary {
+  background-color: transparent !important;
+}
+
+
+// GLOBAL 
+html,
+body {
+  max-width: 100%;
+  padding-right: 0 !important;
+}
+.r-content button {
+  background: transparent;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: url("../../assets/svg/arrow-right.svg");
+    position: relative;
+    transition: all 0.2s ease;
+    display: block;
+    transform: rotate(180deg);
+    left: -6px;
+    top: 2px;
+    position: relative;
+  }
+}
+.to-portal::before {
+  content: "";
+  background: $primary;
+  margin-left: 50%;
+  left: -50vw;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+
+#portal-globalnav-wrapper li label,
+#subsite-navigation li label {
+  top: -100vh !important;
+}
+//// Notes
+
+// j'ai ajouté une div mask-menu dans le index.html du theme: bon ou pas ?
+
+// navbar-expand-md changer navbar-expand-lg

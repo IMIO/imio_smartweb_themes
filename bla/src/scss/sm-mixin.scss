@@ -1,0 +1,50 @@
+@mixin full-width {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+}
+
+@mixin last-item-no-margin-bottom{
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+@mixin first-item-no-margin-top{
+  &:first-child{
+    margin-top: 0;
+  }
+}
+@mixin ul-rm-padding{
+  padding-left: 0;
+}
+@mixin section-padding-top{
+  padding-top:map-get($section-padding, sm);
+  @include media-breakpoint-up(md){
+    padding-top: map-get($section-padding, md);
+  }
+  @include media-breakpoint-up(lg){
+    padding-top: map-get($section-padding, lg);
+  }
+}
+@mixin section-padding-bottom{
+  padding-bottom: map-get($section-padding, sm);
+  @include media-breakpoint-up(md){
+    padding-bottom: map-get($section-padding, md);
+  }
+  @include media-breakpoint-up(lg){
+    padding-bottom: map-get($section-padding, lg);
+  }
+}
+
+@mixin fit-cover{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
