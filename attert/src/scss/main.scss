@@ -1,0 +1,37 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/en-image";
+@import "./home/annuaire";
+@import "./home/les-sites";
+@import "./home/footer";
+@import "./home/newsletter.scss";
+@import "./home/divers";
+
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover, 
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus {
+	color: $primary-svg;
+}
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
+    font-weight: 700!important;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link{ 
+	font-size: 16px!important;
+    font-weight: 500;
+}

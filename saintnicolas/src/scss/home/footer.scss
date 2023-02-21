@@ -1,0 +1,46 @@
+footer {
+    background: $primary;
+    div#portal-footer,
+    .smartweb_footer,
+    .colophon.row
+     {
+        background: $primary;
+    }
+    a, h1, h2, h3, span, li {
+        color: #fff;
+    }
+    .sectionlinks h2.section-title {
+        font-size: 2rem;
+    }
+}
+footer .smartweb_footer {
+    padding: 2rem 0 0;
+    h2 {
+        
+    }
+}
+div#portal-colophon {
+    background: $primary;
+    a, h1, h2, h3, span, li {
+        color: #fff;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+footer .sectiontext .section-text .body-section figure img {
+    max-width: 125px;
+}
+#portal-footer-wrapper {
+  text-align: left;
+  .contact_titles h2, div#portal-colophon h2, h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-weight: 400;
+  }
+}
+footer .sectiontext .section-text .body-section.figure-top figure {
+    margin-top: 0rem;
+  }

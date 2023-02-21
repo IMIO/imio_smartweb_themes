@@ -1,0 +1,105 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+
+
+
+.messagesviewlet-type{
+    display: block;
+    margin-bottom: 5px!important;
+}
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+	background-color: #DB291D;
+}
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+	background-color: #505050 !important;
+}
+#messagesviewlet .portalMessage.warning, 
+#localmessagesviewlet .portalMessage.warning {
+	background-color: #F7C71F;
+	color: #000;
+    .messagesviewlet-type{
+	    color: #000;
+    }
+}
+#portal-globalnav > li > a {
+	font-weight: 800 !important;
+}
+
+header#content-header {
+    position: relative;
+   // z-index: 0;
+}
+.smartweb_herobanner .bannerSwiper .swiper-wrapper {
+    padding-bottom: 0px;
+}
+@media screen and (max-width: 992px) {
+    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        .swiper-banner-title {
+        font-size: 2rem;
+        }
+    }
+}
+.swiper-banner-content {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 3rem;
+	height: 100%;
+	justify-content: center;
+}
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
+	height: 100%;
+}
+.section-home-page #messagesviewlet{
+	position: absolute;
+	top: 100px;
+}
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
+	color: #161616;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.swiper-banner-description{
+	p{
+		font-weight: 500;
+	}
+}
+
+#portal-header #portal-header-top #header-links #search-link a::before {
+	background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M11.08%206.77a4.31%204.31%200%201%200-4.31%204.31%204.32%204.32%200%200%200%204.31-4.31Zm4.92%208A1.24%201.24%200%200%201%2014.77%2016a1.17%201.17%200%200%201-.86-.37l-3.3-3.28a6.77%206.77%200%201%201%201.74-1.74l3.3%203.3a1.25%201.25%200%200%201%20.35.86Z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+	background-size: 14px;
+	content: "";
+	display: block;
+	height: 14px;
+	width: 14px;
+}
+.nav_en-un-clic.has_subtree.nav-item{
+	margin-left: auto;
+}
+
+.portaltype-imio-smartweb-directoryview .r-annuaire-result {
+    .r-item-img {
+        background-image: url("../../assets/svg/placeholder-chatelet.png") !important;
+    }
+}

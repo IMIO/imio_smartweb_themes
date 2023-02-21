@@ -5,10 +5,10 @@ $enable-roboto-webfont: false;
 
 //// IMPORTS
 // Import barceloneta files from node_modules --load-path=node_modules
-@import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./variables";
-// @import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 // ... add your styles here
@@ -18,7 +18,7 @@ $enable-roboto-webfont: false;
 @import "./home/en-image";
 @import "./home/les-sites";
 
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 .section-home-page-bla,
 .section-homepage {

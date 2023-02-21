@@ -1,0 +1,26 @@
+.sortable-section.a-la-une {
+    position: relative;
+    &:before {
+        bottom: 50px;
+        content: "";
+        left: -5%!important;
+        position: absolute;
+        top: 150px;
+        width: 35vw!important;
+        z-index: -2;
+        background: $primary-svg;
+    }
+}
+
+.a-la-une .swiper-slide .swiper_title,
+.a-la-une .swiper-slide .swiper_description {
+    z-index: 1;
+}
+@include media-breakpoint-up(lg){
+    .a-la-une .swiper-slide>a {
+        grid-template-columns: 50% 50%;
+        }
+    }
+.sortable-section.sectionselections.a-la-une {
+        margin-top: 3rem;
+}

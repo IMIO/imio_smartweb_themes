@@ -1,0 +1,360 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/en-image";
+@import "./home/annuaire";
+@import "./home/les-sites";
+@import "./home/footer";
+@import "./home/rs";
+@import "./home/divers";
+
+body {
+    letter-spacing: 0.5px;
+  }
+
+body#visual-portal-wrapper {
+    background: #F7F6F5;
+}
+
+.swiper-pagination-bullet-active {
+    background: $secondary !important;
+}
+
+
+@media (min-width: 992px) {
+    .sectionselections {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+
+.r-actu-wrapper::after {
+    display: none !important;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $secondary;
+}
+
+.minisite_logo {
+    .minisite_title {
+        color: #fff;
+    }
+}
+
+
+
+#portal-column-content .section-contact .contact-type-position .contact_leadimage,
+#portal-column-content .section-contact .contact-type-position .contact_logo {
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+@media screen and (max-width:992px) {
+    #portal-globalnav-wrapper .navbar-nav li.show-nav>.has_subtree.dropdown {
+        right: 0;
+        left: inherit !important;
+        transition: right .5s cubic-bezier(.54, .01, .68, .64) !important;
+    }
+    #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
+        position: fixed !important;
+        z-index: 1;
+        right: -100vw;
+        left: inherit !important;
+        height: 100vh;
+        transition: right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64), opacity 5s ease, 0.5s visibility ease;
+    }
+}
+
+.portaltype-imio-smartweb-directoryview .r-annuaire-result {
+    .r-item-img {
+        background-image: url("../../assets/svg/placeholder-geer.png") !important;
+    }
+}
+
+li:marker {
+    display: none;
+    color: transparent;
+}
+
+
+
+.section-home-page {
+    header#content-header {
+        z-index: inherit !important;
+        #portal-header {
+            z-index: inherit !important;
+        }
+    }
+}
+
+@media screen and (max-width:989px) {
+    #portal-header #portal-header-top #portal-logo {
+        max-width: 144px;
+        svg {
+            width: 100%;
+        }
+    }
+}
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav {
+    &>li {
+        &.je-suis,
+        &.je-trouve {
+            &>a {
+                text-transform: initial !important;
+                font-weight: 400 !important;
+            }
+        }
+    }
+}
+
+
+.see_all a {
+    font-weight: bold;
+}
+.minisite_logo .minisite_title {
+    font-weight: bold;
+}
+@media screen and (min-width:1200px) {
+    .a-la-une,
+    .sectionnews,
+    .sectionevents,
+    .albumhome,
+    .quick-access.les-sites,
+    .quick-annuaire {
+        .section-title {
+            font-size: 3rem !important;
+        }
+    }
+    .a-la-une {
+        margin-top: 8rem;
+    }
+    .sectionnews,
+    .sectionevents {
+        padding-bottom: 5rem !important;
+        padding-top: 5rem !important;
+    }
+}
+
+.sectionnews .see_all a::after {
+    display: none;
+}
+.sectionevent .see_all a::after {
+    display: none;
+}
+//// respo
+@include media-breakpoint-up(lg) {
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        font-weight: bold !important;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #portal-header #portal-header-top #portal-globalnav-wrapper {
+        margin: 0 !important;
+    }
+    #portal-header #portal-header-top #portal-logo {
+        max-width: 130px;
+        svg {
+            width: 100%;
+        }
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        &::after {
+            content: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>");
+            width: auto;
+            height: auto;
+            display: block;
+            background: transparent;
+            margin-left: 0;
+        }
+        &:hover {
+            &:after {
+                content: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23fff\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>");
+            }
+        }
+    }
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        text-transform: initial !important;
+        &:hover {
+            color: $secondary !important;
+        }
+    }
+}
+
+
+
+// #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li {
+//     &.has_subtree  {
+//         & > a:hover{
+//             &:after {
+//                 content: "";
+//                 width: 9px;
+//                 height: 6px;
+//                 display: block;
+//                 background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
+//                 background-size: contain;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//                 margin-left: 0.4rem;
+//             }
+//         }
+//     }
+//     &.has_subtree.show-nav {
+//         & > a:after {
+//                 content: "";
+//                 width: 9px;
+//                 height: 6px;
+//                 display: block;
+//                 background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23C93434\"/></svg>");
+//                 background-size: contain;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//                 margin-left: 0.4rem;
+//         }
+//     }
+// } 
+
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:hover, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:focus {
+	color: $secondary !important;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
+    color: $secondary !important;
+}
+//BANNER
+.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
+    left: 0;
+    position: relative;
+    transform: translateX(-50%);
+    width: 50vw;
+    border-radius: 50%;
+    transform: translate(-35%, -40%);
+  }
+  .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
+    height: 1000px;
+    border-radius: 500px;
+    width: 1000px;
+    @include media-breakpoint-down(lg){
+        height: 100vw;
+        width: 100vw;
+        
+    }
+  }
+    .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
+        @include media-breakpoint-up(lg){
+            height: 700px;
+        }
+    }
+    body .sectionlinks.quick-access .section-container .row {
+        @include media-breakpoint-up(lg){
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
+            transform: translate(-40%,0);
+            margin-top: -35%;
+        }
+        .sectionlinks.quick-access .body-section {
+            padding: 0 0!important;
+        }
+        #body-section-quick-access ul{
+            grid-gap: 10px;
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+        }
+        .quick-access{
+            margin-top: -50px;
+        }
+    }
+  //    
+  .portaltype-imio-smartweb-portalpage.section-home-page h2.section-title {
+    position: relative;
+  }
+  .portaltype-imio-smartweb-portalpage.section-home-page {
+    .partenaires h2.section-title::after,
+    .sectionnews h2.section-title::after,
+    .sectionevents h2.section-title::after,
+    .a-la-une h2.section-title::after {
+    content: "";
+    background: no-repeat url("../../assets/svg/circles-title.svg");
+    height: 10px;
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    width: 55px;
+    }
+  }
+@media screen and (max-width:1200px) {
+    .portaltype-imio-smartweb-portalpage.section-home-page {
+        .partenaires h2.section-title::after,
+        .sectionnews h2.section-title::after,
+        .sectionevents h2.section-title::after,
+        .a-la-une h2.section-title::after {
+        position: initial;
+        display: inline-block;
+        width: 55px;
+        vertical-align: middle;
+        margin-left: 1rem;
+        }
+    }
+}
+
+//
+
+h2:not(.section-home-page) {
+    font-size: 2rem;
+}
+//
+.r-search-container .r-search-header-title {
+    font-size: 20px;
+}
+.r-search-container .r-search-list .r-search-item {
+    font-size: 18px;
+}
+.r-content>button {
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: 1s;
+}
+button.focus:hover {
+    padding: 1rem 3rem;
+}
+
+#gdpr-consent-banner .gdpr-actions>a {
+    border-radius: 50px;
+    border: 2px solid $primary;
+    color: $primary;
+}
+#gdpr-consent-banner .gdpr-actions input[name=consent] {
+    border-radius: 50px;
+    background-color: $primary;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background: url(../../assets/svg/next-white.svg),$primary-svg;
+}

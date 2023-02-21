@@ -84,3 +84,10 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/events";
 @import "./homepage/album";
 @import "./homepage/newsletter";
+
+#faceted-map-container{
+    z-index: 0;
+}
+.leaflet-top.leaflet-left {
+    z-index: inherit !important;
+  }

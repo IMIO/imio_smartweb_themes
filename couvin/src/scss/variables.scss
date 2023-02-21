@@ -1,0 +1,390 @@
+//*// COLORS
+$primary: #014769;
+$secondary: #00B3EF;
+$primary-svg: #CCD400;
+$black: #000;
+//$lineargradient: linear-gradient(to left, #52796f, #2f3e46, #52796f);
+
+//*// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-family-base:'Oswald', sans-serif;
+$font-family-title: 'Oswald', sans-serif;
+$font-title-color: $black;
+$font-title-color-light: #fff !default;
+$font-title-color-dark: #282828;
+$font-title-weight: 700 !default;
+// $font-size-base affects the font size of the body text
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Include Roboto as webfont
+
+//*// GLOBAL
+@function url-encoded-color($color) {
+  @return "%23"+str-slice("#{$color}", 2, -1);
+}
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+$global-radius: 0 !default;
+$enable-title-uppercase: false;
+$home-section-title-size:3.25rem!default;
+$home-section-title-margin:0 0 3rem 0;
+$home-section-title-padding:0 !default;
+$home-section-title-align:center;
+$section-padding-top:0 !default;
+$to-portal-link-color:#282828!default;
+$img-placeholder:#F2F2F2!default;
+//swiper
+$swiper-icon-color: $primary;
+$swiper-button-height: 45px !default;
+$swiper-button-width: 45px !default;
+$swiper-button-top: 26% !default;
+$swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-background-size: 50% !default;
+$swiper-background-color: #fff !default;
+$swiper-raduis: 50px !default;
+$swipper-bullet-color:$primary;
+//*// HEADER
+$main-logo-max-width: 100px;
+$header-top-padding: 1rem 0 !default;
+$header-top-background: #fff;
+$header-center-nav: true;
+$header-nav-margin: 0 3rem 0rem 0.5rem;
+$header-links-color: $black;
+$header-links-account-margin:0 !default;
+$header-links-account-padding:0 !default;
+$header-links-account-border:solid 0px #000 !default;
+$header-links-account-bg:transparent !default;
+$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-bg:transparent !default;
+$header-links-account-hover-color:#000 !default;
+$header-search-icon-color: $primary;
+$header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
+//bredcrumb
+$breadcrumb-bg: transparent;
+$enable-full-width-breacrumb: false !default;
+
+// sitenav
+$navbar-padding-x: 2.5rem !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-link-color: $black;
+$nav-link-open-color: $black;
+$nav-link-active-color: $primary;
+$nav-link-font-size: initial !default;
+$nav-link-font-weight: 500 !default;
+$nav-link-drop-color: $primary;
+$nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
+$nav-link-drop-color-mobile: $primary;
+$nav-link-drop-mobile:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
+$nav-first-level-gap: 30px;
+$nav-first-level-uppercase: false !default;
+$nav-quick-link-color:$primary;
+$nav-quick-link-size:18px!default;
+$nav-quick-link-weight: bold!default;
+$nav-quick-link-padding:0!default;
+$nav-sub-link-font-size: $nav-link-font-size !default;
+$nav-sub-link-font-weight: $nav-link-font-weight !default;
+$nav-overlay-radius:$global-radius !default;
+$nav-overlay-title-color:$primary !default;
+$nav-overlay-title-font-size:24px !default;
+$nav-overlay-title-font-weight:bold !default;
+$nav-overlay-next-icon-color:#000;
+$nav-overlay-next-icon-hover-color:$primary;
+$nav-overlay-next-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+
+//sub-header
+$subsite-logo-background:$primary !default;
+$subsite-logo-color:#fff !default;
+$subsite-navbar-bg:#fff !default;
+//sub-sitenav
+$sub-navbar-padding: 1rem 0 !default;
+$sub-nav-link-color:#000 !default;
+$sub-nav-link-open-color:#000 !default;
+$sub-nav-link-drop-color:#000 !default;
+$sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
+
+//*// SECTION HOMEPAGE
+
+// banner
+$banner-enable-full-width: true !default;
+$banner-heigh: 500px !default;
+$banner-content-width: max-content !default;
+$banner-content-max-width: 100% !default;
+$banner-content-margin: 0 !default;
+$banner-content-padding: 1rem !default;
+$banner-content-background: transparent;
+$banner-content-is-vertical-center: true !default;
+$banner-content-title-font-size: 100px;
+$banner-content-title-color: #fff;
+$banner-content-title-text-transform: initial !default;
+$banner-content-text-align: center;
+$banner-content-description-font-size: 18px !default;
+$banner-content-description-color: black !default;
+
+// see_all
+$see-all-padding: 1rem;
+$see-all-margin: 2rem 0 0 0 !default;
+$see-all-bg: transparent;
+$see-all-color:$black;
+$see-all-radius:$global-radius !default;
+$see-all-border:solid 0px $primary;
+$see-all-text-transform:none !default;
+$see-all-font-size:16px !default;
+$see-all-font-weight:700!default;
+$see-all-transition:all .5s ease;
+$see-all-hover-bg: transparent;
+$see-all-hover-color:$black;
+$see-all-hover-radius:$global-radius !default;
+$see-all-hover-border:solid 0px $primary;
+$see-all-justify-content: right;
+$see-all-underline-color: $primary;
+$see-all-underline-width: 15%;
+$see-all-hover-underline-width:100%;
+
+// Quick access
+$quick-access-section-full-width: true;
+$quick-access-title-color:$black;
+$quick-access-title-margin:$home-section-title-margin !default;
+$quick-access-title-padding:$home-section-title-padding !default;
+$quick-access-title-align:$home-section-title-align !default;
+$quick-access-container-padding: 1rem 0 !default;
+$quick-access-width: 35px;
+$quick-access-height: 35px;
+$quick-access-background: transparent;
+$quick-access-border: solid 0px $primary;
+$quick-access-border-radius:0;
+$quick-access-shadow: none;
+$quick-access-svg-width: 35px;
+$quick-access-svg-color:$primary;
+$quick-access-item-title-margin: 1rem 0 0 0 !default;
+$quick-access-title-font-size: 16px;
+$quick-access-title-color: $black;
+$quick-access-title-text-transform: initial !default;
+$quick-access-title-weight: 400 !default;
+$quick-access-enable-full-bg: false !default;
+$quick-access-full-bg-color: none;
+$quick-access-full-bg-border: none;
+$quick-access-full-bg-shadow: none;
+
+// A la une
+$a-la-une-title-color: $font-title-color !default;
+$a-la-une-title-align:$home-section-title-align !default;
+$a-la-une-title-margin: $home-section-title-margin !default;
+$a-la-une-title-padding: $home-section-title-padding !default;
+$a-la-une-text-bg: #fff;
+$a-la-une-item-image-margin:0 !default;
+$a-la-une-item-title-color:$black;
+$a-la-une-item-title-font-size:$h3-font-size !default;
+$a-la-une-item-title-margin: 0rem 0 0 -0rem;
+$a-la-une-item-title-padding:36px 36px 0 !default;
+$a-la-une-item-title-radius:0 !default;
+$a-la-une-item-description-font-size: $font-size-lg !default;
+$a-la-une-item-description-color:initial !default;
+$a-la-une-item-description-margin:0 0 0rem 0rem;;
+$a-la-une-item-description-padding:0 36px 36px !default;
+$a-la-une-item-description-radius:0 !default;
+$a-la-une-item-image-radius: 0 !default;
+
+// Actu
+$actu-section-full-width: true !default;
+$actu-section-padding-top: 2rem !default;
+$actu-section-padding-bottom: 2rem !default;
+$actu-section-margin: 0 !default;
+$actu-title-color:$black;
+$actu-title-align:$home-section-title-align !default;
+$actu-title-margin: $home-section-title-margin !default;
+$actu-title-padding: $home-section-title-padding !default;
+$actu-image-margin-bottom: 0 !default;
+$actu-image-border-radius: $global-radius !default;
+$actu-item-bg-color: transparent;
+$actu-item-bg-radius:$global-radius;
+$actu-category-margin: 0 0 .5rem 0 !default;
+$actu-category-padding: .5rem 1rem !default;
+$actu-category-color: #fff;
+$actu-category-bg-color: $primary;
+$actu-category-text-transform: uppercase;
+$actu-category-font-size: 14px !default;
+$actu-category-font-weight: bold;
+$actu-category-radius: $global-radius !default;
+$actu-item-title-margin: 0 0 0 0 !default;
+$actu-item-title-padding: 0 1rem !default;
+$actu-item-title-color: initial !default;
+$actu-item-title-text-transform: initial !default;
+$actu-item-title-font-size: $h3-font-size !default;
+$actu-item-title-font-weight: initial !default;
+$actu-item-title-align: left !default;
+$actu-item-description-margin: 0 0 .5rem 0 !default;
+$actu-item-description-padding: 0 1rem !default;
+$actu-item-description-color: initial !default;
+$actu-item-description-align: left !default;
+$actu-item-description-font-family: $font-family-base !default;
+$actu-date-margin: 0 0 .5rem 0!default;
+$actu-date-padding: 1rem 1rem 0;
+$actu-date-color: $black;
+$actu-date-font-size: 14px !default;
+$actu-date-align: left !default;
+$actu-see-all-justify-content: $see-all-justify-content !default;
+
+
+// Event
+$event-section-full-width: true !default;
+$event-section-padding-top: 4rem;
+$event-section-padding-bottom: 4rem;
+$event-section-margin: 0 !default;
+$event-title-color:$black;
+$event-title-align:$home-section-title-align !default;
+$event-title-margin: $home-section-title-margin !default;
+$event-title-padding: $home-section-title-padding !default;
+$event-image-margin-bottom: 0rem !default;
+$event-image-border-radius: $global-radius !default;
+$event-item-bg-color: transparent;
+$event-item-bg-radius:$global-radius;
+$event-category-margin: 0 0 0.5rem 0 !default;
+$event-category-padding: .5rem 1rem !default;
+$event-category-color: #fff;
+$event-category-bg-color: $primary;
+$event-category-text-transform: uppercase;
+$event-category-font-size: 14px !default;
+$event-category-font-weight: bold;
+$event-category-radius: $global-radius !default;
+$event-item-title-margin: 0 !default;
+$event-item-title-padding: 0 1rem !default;
+$event-item-title-color: initial !default;
+$event-item-title-text-transform: initial !default;
+$event-item-title-font-size: $h3-font-size !default;
+$event-item-title-font-weight: initial !default;
+$event-item-description-margin: 0 0 .5rem 0 !default;
+$event-item-description-padding: 0 1rem !default;
+$event-item-description-color: initial !default;
+$event-item-description-align: left !default;
+$event-item-description-font-family: $font-family-base !default;
+$event-date-margin: 0 0 .5rem 0 !default;
+$event-date-padding: 1rem 1rem 0;
+$event-date-color: $black;
+$event-date-font-size: 14px !default;
+$event-see-all-justify-content: $see-all-justify-content !default;
+
+
+// Album
+$album-section-full-width: true !default;
+$album-section-bg:#EDEAE5 !default;
+$album-section-padding-top: 2rem !default;
+$album-section-padding-bottom: 2rem !default;
+$album-section-margin: 0 !default;
+$album-title-color:$primary !default;
+$album-title-align:$home-section-title-align !default;
+$album-title-margin: $home-section-title-margin !default;
+$album-title-padding: $home-section-title-padding !default;
+$album-image-margin-bottom: 0.7rem !default;
+$album-image-border-radius: $global-radius !default;
+$album-item-bg-color:rgb(244, 244, 244) !default;
+$album-item-bg-radius:$global-radius+2 !default;
+$album-category-margin: 0 0 0.3rem 0 !default;
+$album-category-padding: 0 !default;
+$album-category-color: $primary !default;
+$album-category-bg-color: #000 !default;
+$album-category-text-transform: uppurcase !default;
+$album-category-font-size: 14px !default;
+$album-category-font-weight: initial !default;
+$album-category-radius: $global-radius !default;
+$album-item-title-margin: 1rem 0 !default;
+$album-item-title-padding: 0 !default;
+$album-item-title-color: initial !default;
+$album-item-title-text-transform: initial !default;
+$album-item-title-font-size: $h3-font-size !default;
+$album-item-title-font-weight: initial !default;
+$album-date-margin: 0 !default;
+$album-date-padding: 0 !default;
+$album-date-color: $primary !default;
+$album-date-font-size: 14px !default;
+$album-see-all-justify-content: $see-all-justify-content !default;
+
+// Newsletter
+$newsletter-bg-color: none;
+$newsletter-align: center!default;
+$newsletter-padding-top:2rem!default;
+$newsletter-padding-bottom:2rem!default;
+$newsletter-margin:3rem 0!default;
+$newsletter-text-color:#fff!default;
+/////////////// interne ///////////////
+
+//*// SECTION TEXTE
+$font-size-texte: $font-size-base !default;
+$mark-background-color: #f3f3f3 !default;
+$mark-color: #5c5c5c !default;
+$mark-padding: 20px 45px 20px 26px !default;
+$mark-border: solid 2px $primary !default;
+$mark-radius: $global-radius !default;
+$mark-weight: 500 !default;
+$list-style-color: $primary !default;
+$list-style-custom: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($list-style-color)}"/></svg>') !default;
+$section-text-h2-margin-top: 2rem !default;
+$section-text-h2-margin-bottom: 1.5rem !default;
+$section-text-h3-margin-top: 0 !default;
+$section-text-h3-margin-bottom: 0.5rem !default;
+$section-text-link-color: $primary !default;
+$section-text-link-hover-decoration: solid 1px $primary !default;
+$section-text-max-width: 760px !default;
+
+// Section
+$section-padding-y: 5.31rem;
+$section-padding: (sm: 3rem,
+  md: 4rem,
+  lg: 4.3rem,
+);
+// section-contact
+$section-contact-title-size:$h2-font-size;
+$section-contact-sub-title-size:$font-size-lg;
+$section-contact-title-color:$black;
+$section-contact-p-margin:1rem 0;
+$section-contact-portrait-ration:calc(4 / 5);
+
+// section-files
+$section-file-background-color: $primary !default;
+$enable-full-width-section-files: true !default;
+$enable-light-color-section-files: true !default;
+
+// section-link
+$section-link-background-color: #F8F8F8;
+$enable-full-width-section-link: true;
+$enable-light-color-section-link: false;
+
+// section-list-block-img
+$section-list-block-img-card-title: 1.25rem;
+
+//*// LIST
+
+//Liste Block
+$block-full-shadow: 0px 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$list-group-border-width : 0px;
+$list-group-item-padding-x : 0px;
+
+// Message Viewlets
+
+$message-info:#27789c;
+$message-warning:#c06d01;
+$message-error:#ae2609;
+
+//QUICK ACCESS
+$quick-access-title-font-family: $font-family-title !default;
+
+//SEE ALL
+$see-all-font-family: $font-family-title !default;

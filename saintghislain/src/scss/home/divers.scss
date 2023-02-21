@@ -1,0 +1,107 @@
+.sectionnews,.sectionevents,.section-partenaires,.section-annuaire{
+    .section-title{
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        gap: 25px;
+        &:before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            display: block;
+            background-color: $primary-svg;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.sectionlinks.quick-access.section-nous-suivre{
+    position: relative;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    margin-top: 5rem;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        background: $primary-svg;
+    }
+    .section-title{
+        width: max-content;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        &:before{
+            background-color: $primary;
+        }
+    }
+}
+
+
+
+#portal-header #portal-header-top #header-links #search-link a {
+	border: 1px solid $primary-svg;
+}
+
+@media screen and (min-width:1200px){
+    .a-la-une .swiper-slide .swiper_title h3, .a-la-une .swiper-slide .swiper_title .h3 {
+        margin-left: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .subsite-container {
+      margin-top: 1rem;
+    }
+}
+
+#portal-breadcrumbs{
+    background-color: transparent!important;
+}
+
+#subsite-navigation > ul > li > a:focus::before, #subsite-navigation > ul > li > a:hover::before {
+	background-color: $primary-svg;
+}
+
+.sectionfiles{
+    max-width: 782px;
+    margin: 0 auto;
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+    .item_infos{
+        color: #fff;
+    }
+    .table_display{
+        border: solid 1px #fff;
+        border-radius: 5px;
+        padding: 1rem!important;
+    }
+    .row{
+        margin-bottom: 0!important;
+    }
+}
+
+.card-body {
+	padding: 1rem 1rem!important;
+}
+body.template-block_view_with_images .block-menu-element a .card-title.h2, body.template-block_view_with_images .block-menu-element a h2.card-title {
+	font-size: 1.45rem!important;
+}
+
+#messagesviewlet {
+    .portalMessage.info {
+        background-color: #0a1f31!important;
+      }
+} 
+
+.section-accueil #messagesviewlet {
+    @media screen and (min-width:839px){
+        position: absolute;
+        width: 100%;
+    }
+} 

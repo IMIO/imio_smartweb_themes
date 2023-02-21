@@ -1,0 +1,133 @@
+body.section-home-page #portal-header {
+margin: 0rem auto;
+}
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
+	bottom: -7px!important;
+}
+body.section-home-page .smartweb_herobanner .bannerSwiper {
+    height: 900px;
+  }
+body:not(.userrole-authenticated).section-home-page #portal-header #portal-header-top {
+    position: absolute;
+    width: 100%;
+  }
+body.section-home-page #portal-header #portal-header-top::after {
+    background: transparent;
+  }
+
+#portal-logo{
+  path{
+    fill: #000!important;
+  }
+}
+body:not(.userrole-authenticated).section-home-page {
+  .sectionlinks {
+    background: transparent!important;
+  }
+  #portal-logo{
+    path{
+      fill: #fff!important;
+    }
+  }
+  #portal-header #portal-header-top #header-links span {
+    color: #fff;
+  }
+  #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a {
+      color: #fff;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse.activated > ul > li > a {
+      color: #fff !important;
+    }
+    // Pour changer la couleur de navlink en active
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a{
+      color: #fff !important;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
+      background-color: #fff;
+    }
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23fff\"/></svg>");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+} 
+body.section-home-page .swiper-banner-image::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7903536414565826) 9%, rgba(0,0,0,0) 40%);
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+	width: 46px;
+	height: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $primary-svg;
+	border-radius: 50px;
+	background: $primary-svg;
+}
+#portal-header #portal-header-top #header-links #search-link a::before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	background: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"16\" height=\"16\"><path fill=\"%23fff\" d=\"M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z\"/></svg>") no-repeat;
+	background-size: 14px;
+	display: block;
+}
+
+#portal-header-top{
+  font-family: $font-family-title!important;
+}
+
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+  div,span{
+	  font-weight: bold!important;
+  }
+}
+
+.footer-logo{
+  img{
+    height: 100px;
+  }
+  figure{
+    margin-right: auto !important;
+  }
+}
+.footer-social{
+  .table_title{
+    display: none;
+  }
+  .row{
+    justify-content: flex-start!important;
+    li{
+      width: auto!important;
+      svg{
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+}
+footer h2 {
+	font-size: 20px !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.galerie-photos{
+  .section-title{
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(lg){
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+//MEDIAS
+//PLACEHOLDER
+.portaltype-imio-smartweb-directoryview .r-annuaire-result {
+    .r-item-img {
+        background-image: url("../../assets/svg/pcl.png");
+    }
+}
+
+//BREADCRUMB
+#portal-breadcrumbs {
+    margin-top: 2rem;
+}
+
+//
+div.swiper-image {
+    position: relative;
+}
+div.swiper-image::before {
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 99;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: 0.5;
+}
+.r-actu-wrapper::after {
+    display: none !important;
+}
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $secondary !important;
+}
+.r-content button {
+    background: $primary;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border: solid 1px $primary;
+    margin-bottom: 1rem;
+}
+.sectiontext .mark, .sectiontext mark {
+    border: 2px solid $secondary;
+}
+.sectionlinks.suivez-nous {
+    background-color: $primary;
+    .section-title {
+    font-size: 2rem;
+    color: #fff;
+    }
+}
+body .sectionevents .see_all a::after, body .sectionnews .see_all a::after {
+    content: initial;
+}
+.card-body {
+    padding: 1.5rem;
+}
+footer h2 {
+	font-size: 24px !important;
+}
+
+.navbar-toggler{
+   background: #032539;
+}
+button.navbar-toggler.collapsed {
+	background: #032539 !important;
+}
+html body .navbar-toggler {
+    background: #032539 !important;
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e")!important;
+}

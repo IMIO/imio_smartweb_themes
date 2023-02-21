@@ -1,0 +1,37 @@
+#portal-footer-wrapper,
+#portal-colophon {
+    background: $secondary;
+    li,
+    a {
+        color: #fff;
+    }
+}
+
+#portal-footer {
+    background: $secondary !important;
+}
+.smartweb-footer .sectionlinks ul.row {
+    margin-left: 0;
+}
+.colophonWrapper ul {
+	display: flex;
+    flex-wrap: wrap;
+}
+#portal-colophon, #portal-footer-wrapper {
+	background: $secondary;
+}
+footer h3 {
+   color: #fff;
+}
+.colophonWrapper li:last-child {
+    width: 100%;
+}
+.smartweb-footer .sectiontext {
+    max-width: 100%;
+}
+#portal-footer-wrapper .h2, #portal-footer-wrapper h2 {
+    font-size: 2rem;
+}
+footer .h3, footer h3 {
+    font-size: 1.5rem;
+}

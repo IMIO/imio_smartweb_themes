@@ -1,0 +1,28 @@
+.sectionnews .swiper-slide .swiper_description {
+    padding: 0 36px;
+}
+.sectionnews, .sectionevents {
+    .swiper-image {
+    position: relative;
+    }
+}
+.sectionnews, .sectionevents {
+    .swiper-image:after {
+    content: "";
+    background: $primary-svg;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 50px 50px 0 0;
+    }
+}
+.sectionnews, .sectionevents {
+.swiper-slide a:hover .swiper-image:after {
+    opacity: 0.5;
+    }
+}

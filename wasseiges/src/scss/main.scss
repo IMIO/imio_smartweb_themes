@@ -1,0 +1,64 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
+
+//// STYLES
+// ... add your styles here
+@import "./home/quick";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/en-image";
+@import "./home/annuaire";
+@import "./home/les-sites";
+@import "./home/newsletter";
+@import "./home/services";
+@import "./home/banner";
+@import "./home/menu";
+@import "./home/divers";
+@import "./home/footer";
+
+.portaltype-imio-smartweb-portalpage{
+    .outer-wrapper{
+        padding-bottom: 5rem;
+    }
+}
+body:not(.section-accueil){
+    #portal-footer-wrapper {
+        margin-top: 5rem;
+    } 
+}
+#portal-footer-wrapper {
+    h2 {
+        color: #fff !important;
+    }
+} 
+.sectiontext .mark, .sectiontext mark {
+	background-color: #183f6e;
+	color: #fff!important;
+    a{
+        color: #fff!important;  
+    }
+}
+
+.sectionfiles .table_display{
+    a, div{
+        color: #fff !important;
+    }
+}
+
+.sectionevents .swiper-slide .swiper_category span {
+	color: #fff!important;
+}
+
+#container-section-acces-directs .table_image:focus .table_title span::after, #container-section-acces-directs .table_image:hover .table_title span::after {
+	background-color: #fff!important;
+}

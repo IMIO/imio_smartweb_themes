@@ -1,0 +1,25 @@
+.partenaires {
+    background: transparent;
+    a.table_image {
+        text-align: center;
+    .plone-icon {
+    height: 2em;
+    width: auto;
+    margin-bottom: 1rem;
+    fill: $secondary;
+        }
+    }
+    li {
+        padding: 1rem 0;
+    }
+}
+.sortable-section.sectionlinks.partenaires a {
+    text-align: center;
+  }
+  .partenaires h2.section-title {
+    color: $primary;
+    font-size: 3rem;
+    margin: 0 auto 5rem;
+    padding: 0;
+    text-align: center;
+}
