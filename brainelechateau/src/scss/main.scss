@@ -197,3 +197,7 @@ li:marker {
         list-style: none;
     }
 }
+
+.see_all a::after {
+    display: none;
+}
