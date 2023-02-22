@@ -13,5 +13,4 @@ $( document ).ready(function() {
     // var newsSwiper = $('.sectionnews .swiper')[0].swiper
     // newsSwiper.params.spaceBetween=30;
     // newsSwiper.update();
-    console.log("beta6");
 });
