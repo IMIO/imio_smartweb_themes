@@ -1,0 +1,12 @@
+<tal:def tal:define="msg view/message">
+  <tal:if tal:condition="python:not msg == 'closed'">
+    <div class="fragment_esirius">
+      <p tal:replace="structure msg" />
+    </div>
+  </tal:if>
+  <tal:else tal:condition="python:msg == 'closed'">
+    <div class="fragment_esirius closed">
+      <span class="closed">Fermé</span>
+    </div>
+  </tal:else>
+</tal:def>
