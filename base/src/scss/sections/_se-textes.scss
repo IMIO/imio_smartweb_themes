@@ -222,3 +222,8 @@ strong {
     }
   }
 }
+
+.sectiontext table tr td ul li::before {
+	position: initial !important;
+	margin-right: 0.5rem;
+}
