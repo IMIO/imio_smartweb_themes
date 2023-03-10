@@ -1,27 +1,8 @@
-
-.a-la-une .swiper-slide .swiper_title,
-.a-la-une .swiper-slide .swiper_description {
-    z-index: 1;
+.a-la-une.focus .swiper-slide>a {
+    direction: rtl;
+    grid-auto-flow: dense;
+    grid-template-columns: 50% 50%;
 }
-
-@include media-breakpoint-up(lg){
-    .a-la-une{
-        .swiper-slide{
-            & > a{
-                padding-top: 2rem;
-                &:after{
-                    content: "";
-                    background: transparent;
-                    z-index: 0;
-                    position: absolute;
-                    width: calc(40% + 2rem);
-                    right: 0;
-                    display: block;
-                    height: calc(100% - 3rem);
-                    top: 1rem;
-                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-                }
-            }
-        }
-    }
+.a-la-une.focus .swiper-slide>a .swiper_description, .a-la-une.focus .swiper-slide>a .swiper_title {
+    direction: ltr!important;
 }
