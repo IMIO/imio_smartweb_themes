@@ -165,3 +165,17 @@
         display: block;
     }
 }
+
+.userrole-authenticated{
+    #portal-column-content{
+        .sectioncontact{
+            & + .sectioncontact
+            .section-container{
+                height: auto;
+                .body-section{
+                    height:  auto;
+                }
+            }
+        }
+    }
+}
