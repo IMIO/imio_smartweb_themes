@@ -16,3 +16,15 @@ $enable-roboto-webfont: false;
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
+
+
+.portaltype-imio-smartweb-portalpage{
+    overflow-x: hidden;
+}
+#portal-header #portal-header-top #header-links #search-link a {
+    background: #fff;
+}
+.navbar-toggler{
+    border: 1px solid #c1c1c1; 
+    background: #fff;
+}

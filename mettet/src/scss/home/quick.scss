@@ -1,0 +1,133 @@
+.banner-quick {
+    padding: 0;
+    .swiper-wrapper {
+        padding: 0;
+        .swiper-slide {
+            &>a {
+                max-width: 450px;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                @include media-breakpoint-up(lg) {
+                    padding: 60px 0;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    left: -50px;
+                    top: 0;
+                    bottom: 0;
+                    background: url("../../assets/svg/bg-icon.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: -1;
+                    @include media-breakpoint-up(lg) {
+                        background-size: cover;
+                    }
+                }
+            }
+
+            .swiper-image {
+                padding-bottom: 100%;
+                mask: url("../../assets/svg/m-logo.svg");
+                mask-size: contain;
+            }
+
+            .swiper_title {
+                display: none;
+            }
+        }
+    }
+    .swiper{
+        z-index: 0;
+    }
+}
+
+.quick-access{
+    position: relative;
+    .body-section{
+        .row{
+            justify-content: flex-start!important;
+            gap: 10px 3%;
+            margin: 0;
+            max-width: max-content;
+            @media (min-width:438px){
+
+            }
+            li{
+                padding: 0;
+                max-width: 200px;
+            }
+        }
+    }
+    .section-title{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    &:after{
+        content: "";
+        width: 203vw;
+        top: -579px;
+        bottom: -235px;
+        background: #0ac189;
+        position: absolute;
+        transform: skew(-26deg, 0deg) translateX(2%);
+        z-index: -1;
+        @include media-breakpoint-up(lg){
+            content: "";
+            width: 90vw;
+            top: -159px;
+            bottom: -235px;
+            background: $light-green;
+            position: absolute;
+            transform: skew(-25.1deg, 0deg) translateX(-16%);
+            z-index: -1;
+        }
+    }
+    .table_display{
+        height: 100%;
+        .table_image{
+            background-color: #fff;
+            border-radius: 100px;
+            padding: 2.5rem 0;
+            height: 100%;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+            transition: all .2s ease;
+            &:hover,&:focus{
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+                svg{
+                    fill: $brun!important;
+                }
+            }
+        }
+    }
+    .table_title{
+        padding: 0 .5rem;
+        span{
+            font-family: $font-family-base!important;
+            font-size: 14px!important;
+            font-weight: 700!important;
+        }
+    }
+}
+
+.sectionlinks.quick-access .body-section li a .image.d-block {
+	margin: 0;
+    width: auto;
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 992px){
+    #body-section-en-un-clic li {
+    width: 31.3% !important;
+    }
+}
+
+.banner-quick,.quick-access{
+    @media (max-width: 992px) {
+        &.col-sm-6 {
+            width: 100%!important;
+        }
+    }
+}
