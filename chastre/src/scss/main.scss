@@ -29,3 +29,93 @@ $enable-roboto-webfont: false;
         background-image: url("../../assets/svg/plachld-chastre.png") !important;
     }
 }
+
+body{
+    background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 10%, rgba(209,220,231,0.6) 100%);
+}
+.contact_description{
+    margin-top: 1rem;
+}
+.see_all a::after {
+	left: 50%!important;
+	transform: translateX(-50%)!important;
+}
+
+@media screen and (min-width:1000px){
+    .portaltype-imio-smartweb-portalpage {
+        .bien-vivre-a-chastre,.sectionevents,.sectionnews,.a-la-une{
+            .section-title{
+                    width: max-content!important;
+                    margin-left: auto!important;
+                    margin-right: auto!important;
+                    position: relative!important;
+                    padding: 0 3rem!important;
+                    &:after{
+                        content: "";
+                        width: 50px;
+                        height: 1px;
+                        background: $dark;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(50%,50%);  
+                    }
+                    &:before{
+                        content: "";
+                        width: 50px;
+                        height: 1px;
+                        background: $dark;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(-50%,50%);
+                    }
+            }
+        }
+
+    }
+}
+
+// footer
+#portal-footer-wrapper{
+    text-align: left!important;
+    background: transparent!important;
+    &:before {
+        content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='#222831'/%3E%3C/svg%3E%0A");
+        line-height: 0;
+        display: block;
+        transform: translateY(1px);
+    }
+    #portal-footer{
+        background: $dark!important;
+        #smartweb-footer{
+            a,span,p,div,h2{
+                color: #fff!important;
+            }
+            h2{
+                font-size: 22px!important;
+                &.section-title{
+                    margin-bottom: 1.5rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+#portal-colophon{
+    background: $dark!important;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        li{
+            color: #fff!important;
+            a,span,p,div{
+                color: #fff!important;
+            }
+        }
+    }
+}
