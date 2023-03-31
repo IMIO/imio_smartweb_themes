@@ -28,3 +28,13 @@ $enable-roboto-webfont: false;
         }
     }
 }
+footer a,#portal-colophon a{
+    text-decoration: none !important;
+    &:hover,&:focus{
+        text-decoration: underline!important;
+    }
+  }
+
+#portal-colophon{
+    padding-bottom: 2rem;
+}

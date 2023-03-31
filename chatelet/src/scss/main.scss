@@ -98,11 +98,11 @@ header#content-header {
 	margin-left: auto;
 }
 
-.portaltype-imio-smartweb-directoryview .r-annuaire-result {
-    .r-item-img {
-        background-image: url("../../assets/svg/placeholder-chatelet.png") !important;
-    }
-}
+.r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder-chatelet.png");
+	background-size: cover;
+	background-position: center;
+  }
 .contact-type-position .contact_description {
 	margin-top: 1.5rem;
 }
