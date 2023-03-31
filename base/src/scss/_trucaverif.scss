@@ -811,10 +811,10 @@ a.prev-nav:before {
     }
     .subsite-container #subsite-logo {
         width: 100%;
-    }
-    .subsite-container #subsite-logo a {
-        padding-left: 0.6rem;
-        box-sizing: border-box;
+        a{
+            padding-left: 0.6rem;
+            box-sizing: border-box;
+        }
     }
     #subsite-navigation>ul>li:first-child {
         margin-left: 0.5rem;

@@ -62,6 +62,9 @@ $header-top-padding: 1rem 0 !default;
 $header-top-background: #fff !default;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
+$header-nav-link-color:$primary!default;
+$header-nav-link-font-size:16px!default;
+$header-nav-link-font-family:$font-family-base!default;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
@@ -81,6 +84,7 @@ $enable-full-width-breacrumb: false !default;
 // sitenav
 $navbar-padding-x: 2.5rem !default;
 $nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-title-font-family:$font-family-base!default;
 $nav-link-color: $primary!default;
 $nav-link-open-color: $primary !default;
 $nav-link-active-color: $primary-svg !default;

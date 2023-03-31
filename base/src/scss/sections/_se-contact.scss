@@ -179,3 +179,9 @@
         }
     }
 }
+
+@media screen and (max-width:1000px) {
+    #portal-column-content .sectioncontact + .sectioncontact .section-container, #portal-column-content .sectioncontact + .sectioncontact .section-container .body-section {
+        height: auto!important;
+    }
+}

@@ -21,19 +21,17 @@
       font-weight: 500;
       padding: 1rem 2rem 1rem 2rem;
       position: relative;
-      display: block;
       align-items: center;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      svg,img{
+        max-width: 80px;
+        max-height: 80px;
+      }
     }
   }
-}
-
-
-div#subsite-logo img {
-  margin-right: 0.25em;
-  margin-left: -1.25rem;
-  height: 3rem;
-  margin-top: -0.5em;
-  margin-bottom: -0.5em;
 }
 
 
