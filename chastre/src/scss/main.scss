@@ -25,7 +25,7 @@ $enable-roboto-webfont: false;
 
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
-    .r-item-img {
+    .r-item-img.r-item-img-placeholder {
         background-image: url("../../assets/svg/plachld-chastre.png") !important;
     }
 }
@@ -118,4 +118,46 @@ body{
             }
         }
     }
+}
+body:not(.portaltype-imio-smartweb-portalpage){
+    #portal-footer-wrapper{
+        margin-top: 3rem;
+    }
+}
+
+.sectionlinks.quick-access .body-section ul {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+footer #body-section-liens-utiles li:first-child {
+	.image{
+        display: none;
+    }
+}
+
+body.template-block_view #content-core::after {
+    display: none!important;
+}
+
+footer{
+    .sectiontext .section-text .body-section.figure-left figure img {
+        padding-top: 2px;
+    }
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer .row{
+    max-width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer .row .sectiontext:first-child{
+    margin-top: 32px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }

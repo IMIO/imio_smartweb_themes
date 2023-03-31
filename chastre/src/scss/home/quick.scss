@@ -7,12 +7,16 @@
 }
 .quick-access{
     .table_image{
+        .image.d-block{
+            transition: all .15s ease;
+        }
+    }
+}
+.quick-access{
+    .table_image{
         &:hover,&:focus{
             .image.d-block{
-                background: $primary!important;
-                svg{
-                    fill: #fff!important;
-                }
+                transform: translateY(-15px);
             }
         }
     }

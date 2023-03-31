@@ -40,6 +40,41 @@
             text-transform: none;
             transition: all .2s ease;
             width: max-content;
+            &:after{
+                background-color: #235789;
+                bottom: -5px;
+                content: "";
+                height: 2px;
+                position: absolute;
+                transition: all .2s ease;
+                width: 25%;
+            }
+            &:hover{
+                &:after{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// delete after fix 
+
+
+.sectioncollection.bien-vivre-a-chastre .swiper-slide {
+    &:nth-child(1){
+        .swiper-image{
+            background-image:url("../../assets/svg/94.png")!important;
+        }
+    }
+    &:nth-child(3){
+        .swiper-image{
+            background-image:url("../../assets/svg/92.png")!important;
+        }
+    }
+    &:nth-child(4){
+        .swiper-image{
+            background-image:url("../../assets/svg/91.png")!important;
         }
     }
 }
