@@ -17,3 +17,19 @@
         }
     }
 }
+.quick-access.sites-de-la-commune svg {
+	width: 60px !important;
+	height: 60px !important;
+}
+
+@media screen and (max-width:767px){
+    .quick-access{
+        .row{
+            flex-wrap: wrap;
+            gap: 10px;
+            li{
+                max-width: 120px;
+            }
+        }
+    }
+}

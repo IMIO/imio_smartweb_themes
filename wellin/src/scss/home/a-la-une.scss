@@ -10,7 +10,9 @@
 .a-la-une{
 	.swiper_items_wrapper{
 		background: #fff;
-		margin: 5rem 1rem 0 -11rem;
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		@media screen and (min-width:992px){
+			margin: 5rem 1rem 0 -11rem;
+		}
 	}
 }
