@@ -12,7 +12,8 @@
                     .swiper-image{
                         mask: url("../../assets/svg/square-mask.svg");
                         mask-repeat: no-repeat;
-                        mask-size: contain;
+                        mask-size: 95%;
+                        mask-position: center center;
                     }
                 }
             }
@@ -23,6 +24,8 @@
                         mask: url("../../assets/svg/triangle-mask.svg");
                         mask-repeat: no-repeat;
                         mask-size: contain;
+                        mask-size: 95%;
+                        mask-position: center center;
                     }
                 }
             }
@@ -34,6 +37,8 @@
                         mask: url("../../assets/svg/round-mask.svg");
                         mask-repeat: no-repeat;
                         mask-size: contain;
+                        mask-size: 95%;
+                        mask-position: center center;
                     }
                 }
             }
@@ -42,11 +47,12 @@
                 padding: 1.5rem;
                 align-items: center;
                 .swiper-image{
-                    width: 50%;
-                    padding-bottom: 50%;
+                    width: 55%;
+                    padding-bottom: 55%;
                     margin: 3rem 0 1rem 2rem;
                     grid-column-end: 3;
                     grid-column-start: 1;
+                    transition: all .25s ease;
                 }
                 .swiper_category{
                     margin-left: auto;
@@ -62,7 +68,12 @@
                     h3{
     
                     }
-                } 
+                }
+                &:hover{
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                }
             }
         }
     }

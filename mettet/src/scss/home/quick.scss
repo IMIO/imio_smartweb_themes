@@ -44,7 +44,7 @@
     }
 }
 
-.quick-access{
+.sectionlinks.quick-access{
     position: relative;
     .body-section{
         .row{
@@ -57,7 +57,10 @@
             }
             li{
                 padding: 0;
-                max-width: 200px;
+                max-width: 131px;
+                // svg{
+                //     fill: ;
+                // }
             }
         }
     }
@@ -67,7 +70,7 @@
     }
     &:after{
         content: "";
-        width: 203vw;
+        width: 100vw;
         top: -579px;
         bottom: -235px;
         background: #0ac189;
@@ -97,7 +100,7 @@
             &:hover,&:focus{
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
                 svg{
-                    fill: $brun!important;
+                    fill: $jaune!important;
                 }
             }
         }

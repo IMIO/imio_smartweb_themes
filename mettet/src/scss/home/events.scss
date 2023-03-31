@@ -1,16 +1,19 @@
 .sectionevents{
     .section-title{
         font-weight: 200;
+        margin-bottom: 0;
     }
     .swiper-wrapper{
+        padding-top: 4rem;
         .swiper-slide {
             & > a{
                 padding: 1rem;
                 border: 1px solid #e3e3e3;
                 grid-template-rows: min-content min-content 1fr;
                 .swiper-image{
-                }
-                .swiper_category{
+                    background-size: 100%;
+                    background-position: center center;
+                    transition: all .25s ease;
                 }
                 .swiper_date{
                     text-transform: uppercase;
@@ -18,20 +21,21 @@
                     align-self: end;
                     order: 1;
                 }
-                .swiper_title{
-                    h3{
-    
-                    }
-                } 
+                &:hover,&:focus{
+                    .swiper-image{
+                        background-size: 105%;
+                     }
+                }
             }
         }
     }
     .swiper-button-next, .swiper-button-prev {
-        top: 54px;
+        top: 30px;
         width: 45px;
         height: 45px;
         background-color: #fff;
         border-radius: 50px;
+        background-color: $primary;
     }
     .swiper-button-prev{
         left: inherit;
