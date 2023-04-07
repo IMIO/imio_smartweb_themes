@@ -27,7 +27,7 @@
   ol {
     list-style-type:none;        
     counter-reset: sectioncounter;
-    li{
+    & > li{
       display: table;
       padding-left: 1rem;
       &:before{
