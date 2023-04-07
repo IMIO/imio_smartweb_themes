@@ -67,7 +67,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 .smartweb_herobanner::after {
 	content: "";
 	background: $primary-svg;
-	height: 5px;
+	height: 15px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -485,6 +485,8 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 // footer
 
 #smartweb-subsite-footer{
+    background: #293133;
+    padding-bottom: 5rem;
     .container{
         & > .row{
             @media screen and (max-width:575px){
@@ -497,6 +499,9 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
         }
     }
 }
+footer .contact_address {
+    margin-bottom: 1rem;
+  }
 
 footer#portal-footer-wrapper{
     #smartweb-footer{
@@ -533,4 +538,17 @@ footer#portal-footer-wrapper{
             }
         }
     }
+}
+
+.sectionfiles{
+    .table_image{
+        &:hover{
+            .item_infos{
+                color: #fff!important;
+            }
+        }
+    }
+}
+.sectionselections a {
+	text-decoration: none;
 }

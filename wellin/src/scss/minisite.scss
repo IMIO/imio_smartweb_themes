@@ -1,5 +1,5 @@
-.to-portal{
-    a{
+.to-portal {
+    a {
         padding: 0.5rem 1.5rem !important;
         background: #4b2b26;
         display: inline-block;
@@ -13,141 +13,215 @@
 // tourisme
 $primary-tourisme: #4b2b26;
 $primary-tourisme-svg: #66c644;
-.site-tourisme{
+
+.site-tourisme {
     .smartweb_herobanner::after {
         background: $primary-tourisme-svg;
     }
-    .quick-access{
-        .section-title{
-            color: $primary-tourisme!important;
+
+    .quick-access {
+        .section-title {
+            color: $primary-tourisme !important;
         }
+
         .body-section li a .image.d-block {
             border: 1px solid $primary-tourisme;
         }
+
         .body-section li a .table_title span {
             color: $primary-tourisme;
         }
+
         .body-section li a .image.d-block svg {
             fill: $primary-tourisme;
         }
-        .table_image:focus .image.d-block, .table_image:hover .image.d-block {
+
+        .table_image:focus .image.d-block,
+        .table_image:hover .image.d-block {
             background: $primary-tourisme !important;
         }
     }
-    #portal-colophon, #portal-footer-wrapper {
-        background: #4b2b26!important;
+
+    #portal-colophon,
+    #portal-footer-wrapper {
+        background: #4b2b26 !important;
     }
+
     #portal-footer {
         background: $primary-tourisme !important;
     }
-    .to-portal{
-        a{
+
+    .to-portal {
+        a {
             background: $primary-tourisme;
         }
     }
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
-        color:$primary-tourisme;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        color: $primary-tourisme;
     }
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
-    & > a:focus, & > a:hover{
-        color: $primary-tourisme !important;
-    }
-    &.show-nav{
-        & > a{
-            color:$primary-tourisme!important;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
+
+        &>a:focus,
+        &>a:hover {
+            color: $primary-tourisme !important;
         }
-    }
-    & > .nav-link {
-        color: $primary-tourisme !important;
-        &:before{
-            background-color: $primary-tourisme-svg!important;
+
+        &.show-nav {
+            &>a {
+                color: $primary-tourisme !important;
+            }
         }
-        @media screen and (min-width:992px){
-            &:after{
-                background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%234b2b26"/></svg>')!important;
+
+        &>.nav-link {
+            color: $primary-tourisme !important;
+
+            &:before {
+                background-color: $primary-tourisme-svg !important;
+            }
+
+            @media screen and (min-width:992px) {
+                &:after {
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%234b2b26"/></svg>') !important;
+                }
+            }
+        }
+
+        .dropdown .nav-link:focus,
+        .dropdown .nav-link:hover {
+            color: $primary-tourisme;
+        }
+
+        .nav-title {
+            a {
+                color: $primary-tourisme !important;
             }
         }
     }
-    .dropdown .nav-link:focus, .dropdown .nav-link:hover {
-        color: $primary-tourisme;
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+        border: solid 1px $primary-tourisme!important;
     }
-    .nav-title{
-        a{
-            color: $primary-tourisme!important;
-        }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        position: relative;
+        background-color: $primary-tourisme!important;
     }
-}
+    .swiper-pagination-bullet {
+        background-color: $primary-tourisme!important;
+    }
 }
 
 // sport
 
-    $primary-sport: #004f8c;
-    $primary-sport-svg: #ffd145;
-.site-sports{
+$primary-sport: #004f8c;
+$primary-sport-svg: #ffd145;
+
+.site-sports {
     .smartweb_herobanner::after {
         background: $primary-sport-svg;
     }
-    .quick-access{
-        .section-title{
-            color: $primary-sport!important;
+
+    .quick-access {
+        .section-title {
+            color: $primary-sport !important;
         }
+
         .body-section li a .image.d-block {
             border: 1px solid $primary-sport;
         }
+
         .body-section li a .table_title span {
             color: $primary-sport;
         }
+
         .body-section li a .image.d-block svg {
             fill: $primary-sport;
         }
-        .table_image:focus .image.d-block, .table_image:hover .image.d-block {
+
+        .table_image:focus .image.d-block,
+        .table_image:hover .image.d-block {
             background: $primary-sport !important;
         }
     }
-    #portal-colophon, #portal-footer-wrapper {
-        background: $primary-sport!important;
+
+    #portal-colophon,
+    #portal-footer-wrapper {
+        background: $primary-sport !important;
     }
+
     #portal-footer {
         background: $primary-sport !important;
     }
-    .to-portal{
-        a{
+
+    .to-portal {
+        a {
             background: $primary-sport;
         }
     }
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
-        color:$primary-sport;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        color: $primary-sport;
     }
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
-    & > a:focus, & > a:hover{
-        color: $primary-sport !important;
-    }
-    &.show-nav{
-        & > a{
-            color:$primary-sport!important;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
+
+        &>a:focus,
+        &>a:hover {
+            color: $primary-sport !important;
         }
-    }
-    & > .nav-link {
-        color: $primary-sport !important;
-        &:before{
-            background-color: $primary-sport-svg!important;
+
+        &.show-nav {
+            &>a {
+                color: $primary-sport !important;
+            }
         }
-        @media screen and (min-width:992px){
-            &:after{
-                background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23004f8c"/></svg>')!important;
+
+        &>.nav-link {
+            color: $primary-sport !important;
+
+            &:before {
+                background-color: $primary-sport-svg !important;
+            }
+
+            @media screen and (min-width:992px) {
+                &:after {
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23004f8c"/></svg>') !important;
+                }
+            }
+        }
+
+        .dropdown .nav-link:focus,
+        .dropdown .nav-link:hover {
+            color: $primary-sport;
+        }
+
+        .nav-title {
+            a {
+                color: $primary-sport !important;
             }
         }
     }
-    .dropdown .nav-link:focus, .dropdown .nav-link:hover {
-        color: $primary-sport;
+
+    .sectionevents {
+        background-color: $primary-sport;
     }
-    .nav-title{
-        a{
-            color: $primary-sport!important;
+
+    .sectionnews {
+        .section-title {
+            color: $primary-sport !important;
         }
     }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+        border: solid 1px $primary-sport!important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        position: relative;
+        background-color: $primary-sport!important;
+    }
+    .swiper-pagination-bullet {
+        background-color: $primary-sport!important;
     }
 }
 
@@ -157,71 +231,121 @@ $primary-tourisme-svg: #66c644;
 
 $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
-.site-cpas{
-.smartweb_herobanner::after {
-    background: $primary-cpas-svg;
-}
-.quick-access{
-    .section-title{
-        color: $primary-cpas!important;
-    }
-    .body-section li a .image.d-block {
-        border: 1px solid $primary-cpas;
-    }
-    .body-section li a .table_title span {
-        color: $primary-cpas;
-    }
-    .body-section li a .image.d-block svg {
-        fill: $primary-cpas;
-    }
-    .table_image:focus .image.d-block, .table_image:hover .image.d-block {
-        background: $primary-cpas !important;
-    }
-}
-#portal-colophon, #portal-footer-wrapper {
-    background: $primary-cpas!important;
-}
-#portal-footer {
-    background: $primary-cpas !important;
-}
-.to-portal{
-    a{
-        background: $primary-cpas;
-    }
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
-    color:$primary-cpas;
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
-& > a:focus, & > a:hover{
-    color: $primary-cpas !important;
-}
-&.show-nav{
-    & > a{
-        color:$primary-cpas!important;
-    }
-}
-& > .nav-link {
-    color: $primary-cpas !important;
-    &:before{
-        background-color: $primary-cpas-svg!important;
-    }
-    @media screen and (min-width:992px){
-        &:after{
-            background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>')!important;
+
+.site-cpas {
+    .sectionnews {
+        .section-title {
+            color: $primary-cpas !important;
         }
     }
-}
-.dropdown .nav-link:focus, .dropdown .nav-link:hover {
-    color: $primary-cpas;
-}
-.nav-title{
-    a{
-        color: $primary-cpas!important;
+
+    &.portaltype-imio-smartweb-portalpage {
+        .sectiontext {
+            h2 {
+                color: $primary-cpas;
+            }
+        }
     }
-}
-}
+
+    .sectionevents {
+        background-color: $primary-cpas;
+    }
+
+    .smartweb_herobanner::after {
+        background: $primary-cpas-svg;
+    }
+
+    .quick-access {
+        .section-title {
+            color: $primary-cpas !important;
+        }
+
+        .body-section li a .image.d-block {
+            border: 1px solid $primary-cpas;
+        }
+
+        .body-section li a .table_title span {
+            color: $primary-cpas;
+        }
+
+        .body-section li a .image.d-block svg {
+            fill: $primary-cpas;
+        }
+
+        .table_image:focus .image.d-block,
+        .table_image:hover .image.d-block {
+            background: $primary-cpas !important;
+        }
+    }
+
+    #portal-colophon,
+    #portal-footer-wrapper {
+        background: $primary-cpas !important;
+    }
+
+    #portal-footer {
+        background: $primary-cpas !important;
+    }
+
+    .to-portal {
+        a {
+            background: $primary-cpas;
+        }
+    }
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        color: $primary-cpas;
+    }
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
+
+        &>a:focus,
+        &>a:hover {
+            color: $primary-cpas !important;
+        }
+
+        &.show-nav {
+            &>a {
+                color: $primary-cpas !important;
+            }
+        }
+
+        &>.nav-link {
+            color: $primary-cpas !important;
+
+            &:before {
+                background-color: $primary-cpas-svg !important;
+            }
+
+            @media screen and (min-width:992px) {
+                &:after {
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>') !important;
+                }
+            }
+        }
+
+        .dropdown .nav-link:focus,
+        .dropdown .nav-link:hover {
+            color: $primary-cpas;
+        }
+
+        .nav-title {
+            a {
+                color: $primary-cpas !important;
+            }
+        }
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+        border: solid 1px $primary-cpas!important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        position: relative;
+        background-color: $primary-cpas!important;
+    }
+    .swiper-pagination-bullet {
+        background-color: $primary-cpas!important;
+    }
 }
 
 
@@ -240,75 +364,97 @@ $primary-cpas-svg: #fab4b6;
 
 $primary-competences: #3893a0;
 $primary-competences-svg: #f58214;
-.site-wellin-competences{
-.smartweb_herobanner::after {
-    background: $primary-competences-svg;
-}
-.quick-access{
-    .section-title{
-        color: $primary-competences!important;
+
+.site-wellin-competences {
+    .smartweb_herobanner::after {
+        background: $primary-competences-svg;
     }
-    .body-section li a .image.d-block {
-        border: 1px solid $primary-competences;
+
+    .quick-access {
+        .section-title {
+            color: $primary-competences !important;
+        }
+
+        .body-section li a .image.d-block {
+            border: 1px solid $primary-competences;
+        }
+
+        .body-section li a .table_title span {
+            color: $primary-competences;
+        }
+
+        .body-section li a .image.d-block svg {
+            fill: $primary-competences;
+        }
+
+        .table_image:focus .image.d-block,
+        .table_image:hover .image.d-block {
+            background: $primary-competences !important;
+        }
     }
-    .body-section li a .table_title span {
-        color: $primary-competences;
-    }
-    .body-section li a .image.d-block svg {
-        fill: $primary-competences;
-    }
-    .table_image:focus .image.d-block, .table_image:hover .image.d-block {
+
+    #portal-colophon,
+    #portal-footer-wrapper {
         background: $primary-competences !important;
     }
-}
-#portal-colophon, #portal-footer-wrapper {
-    background: $primary-competences!important;
-}
-#portal-footer {
-    background: $primary-competences !important;
-}
-.to-portal{
-    a{
-        background: $primary-competences;
+
+    #portal-footer {
+        background: $primary-competences !important;
     }
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
-    color:$primary-competences;
-}
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree,
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree {
-& > a:focus, & > a:hover{
-    color: $primary-competences !important;
-}
-&.show-nav{
-    & > a{
-        color:$primary-competences!important;
+
+    .to-portal {
+        a {
+            background: $primary-competences;
+        }
     }
-}
-& > .nav-link {
-    color: $primary-competences !important;
-    &:before{
-        background-color: $primary-competences-svg!important;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        color: $primary-competences;
     }
-    @media screen and (min-width:992px){
-        &:after{
-            background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%233893a0"/></svg>')!important;
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
+
+        &>a:focus,
+        &>a:hover {
+            color: $primary-competences !important;
+        }
+
+        &.show-nav {
+            &>a {
+                color: $primary-competences !important;
+            }
+        }
+
+        &>.nav-link {
+            color: $primary-competences !important;
+
+            &:before {
+                background-color: $primary-competences-svg !important;
+            }
+
+            @media screen and (min-width:992px) {
+                &:after {
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%233893a0"/></svg>') !important;
+                }
+            }
+        }
+
+        .dropdown .nav-link:focus,
+        .dropdown .nav-link:hover {
+            color: $primary-competences;
+        }
+
+        .nav-title {
+            a {
+                color: $primary-competences !important;
+            }
         }
     }
 }
-.dropdown .nav-link:focus, .dropdown .nav-link:hover {
-    color: $primary-competences;
-}
-.nav-title{
-    a{
-        color: $primary-competences!important;
-    }
-}
-}
-}
 
-.section-accueil.site-wellin-competences{
-    .sectiontext{
+.section-accueil.site-wellin-competences {
+    .sectiontext {
         margin-top: 3rem;
     }
 }
