@@ -1,0 +1,382 @@
+//*// COLORS
+$primary: #636274;
+$secondary: #636274;
+$primary-svg:#A6CE38;
+$greybg: #C8C9D2;
+$dark: #0D0D0D;
+
+//*// TYPOGRAPHY
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$font-family-base: "Lato",
+system-ui,
+-apple-system,
+"Segoe UI",
+"Helvetica Neue",
+"Noto Sans",
+"Liberation Sans",
+arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+$font-family-title: "Lato",
+system-ui,
+-apple-system,
+"Segoe UI" !default;
+$font-title-color: $dark;
+$font-title-color-light: #fff !default;
+$font-title-color-dark: $dark;
+$font-title-weight: 500;
+// $font-size-base affects the font size of the body text
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25;
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 2.50;
+$h3-font-size: $font-size-base * 1.50;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base !default;
+
+// Include Roboto as webfont
+
+//*// GLOBAL
+@function url-encoded-color($color) {
+  @return "%23"+str-slice("#{$color}", 2, -1);
+}
+
+$global-radius: 10px;
+$enable-title-uppercase: true;
+$home-section-title-margin:2rem 0rem 8rem 0rem;
+$home-section-title-padding:0 !default;
+$home-section-title-align: center;
+$section-padding-top:0 !default;
+$to-portal-link-color: $primary;
+$img-placeholder:#F2F2F2!default;
+//swiper
+$swiper-icon-color: #000 !default;
+$swiper-button-height: 45px !default;
+$swiper-button-width: 45px !default;
+$swiper-button-top: 26% !default;
+$swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-background-size: 50% !default;
+$swiper-background-color: #fff !default;
+$swiper-raduis: 50px !default;
+
+//*// HEADER
+$main-logo-max-width: 115px !default;
+$header-top-padding: 1rem 0 !default;
+$header-top-background: $primary;
+$header-center-nav: false !default;
+$header-nav-margin: 0 4rem 0 4rem;
+$header-links-color: #fff;
+$header-links-account-margin:0 !default;
+$header-links-account-padding:0 !default;
+$header-links-account-border:solid 1px $primary;;
+$header-links-account-bg:transparent !default;
+$header-links-account-hover-border:solid 1px $primary;;
+$header-links-account-hover-bg:transparent !default;
+$header-links-account-hover-color: $primary;
+$header-search-icon-color: $primary;
+$header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
+//bredcrumb
+$breadcrumb-bg: #d6d6d6 !default;
+$enable-full-width-breacrumb: false !default;
+
+// sitenav
+$navbar-padding-x: 2.5rem !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-link-color: #fff;
+$nav-link-open-color: $primary;
+$nav-link-font-size: initial !default;
+$nav-link-font-weight: 500 !default;
+$nav-link-drop-color:#000 !default;
+$nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
+$nav-link-drop-color-mobile:#000 !default;
+$nav-link-drop-mobile:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
+$nav-first-level-gap: 60px;
+$nav-first-level-uppercase: true !default;
+$nav-quick-link-color:$primary;
+$nav-quick-link-size:18px!default;
+$nav-quick-link-weight: bold!default;
+$nav-quick-link-padding:0!default;
+$nav-sub-link-font-size: $nav-link-font-size !default;
+$nav-sub-link-font-weight: $nav-link-font-weight !default;
+$nav-overlay-radius:$global-radius !default;
+$nav-overlay-title-color:$primary;
+$nav-overlay-title-font-size:24px !default;
+$nav-overlay-title-font-weight:bold !default;
+$nav-overlay-next-icon-color: #fff;
+$nav-overlay-next-icon-hover-color: $primary;
+$nav-overlay-next-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+
+//sub-header
+$subsite-logo-background: $primary;
+$subsite-logo-color:#fff !default;
+$subsite-navbar-bg:#fff !default;
+//sub-sitenav
+$sub-navbar-padding: 1rem 0 !default;
+$sub-nav-link-color: #000;
+$sub-nav-link-open-color:#000 !default;
+$sub-nav-link-drop-color:#000 !default;
+$sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
+
+//*// SECTION HOMEPAGE
+
+// banner
+$banner-enable-full-width: true !default;
+$banner-heigh: 500px !default;
+$banner-content-width: max-content !default;
+$banner-content-max-width: auto !default;
+$banner-content-margin: 0 !default;
+$banner-content-padding: 1rem !default;
+$banner-content-background: rgb(256 256 256 / 70%);
+$banner-content-is-vertical-center: true !default;
+$banner-content-title-font-size: 50px !default;
+$banner-content-title-color: black !default;
+$banner-content-title-text-transform: initial !default;
+$banner-content-text-align:left!default;
+$banner-content-description-font-size: 18px !default;
+$banner-content-description-color: black !default;
+
+// see_all
+$see-all-padding:1rem 3rem;
+$see-all-margin:2rem 0 0 0 !default;
+$see-all-bg: $secondary;
+$see-all-color: $primary;
+$see-all-radius:$global-radius;
+$see-all-border:solid 1px $primary;
+$see-all-text-transform:none !default;
+$see-all-font-size:16px !default;
+$see-all-transition:all .2s ease !default;
+$see-all-hover-bg: $primary;
+$see-all-hover-color:#fff;
+$see-all-hover-radius:$global-radius;
+$see-all-hover-border:solid 1px $secondary;
+$see-all-justify-content: center;
+$see-all-underline-color: transparent;
+$see-all-underline-width: 0%;
+$see-all-hover-underline-width:0%;
+
+// Quick access
+$quick-access-section-full-width: true;
+$quick-access-title-color: $dark;
+$quick-access-title-margin:$home-section-title-margin !default;
+$quick-access-title-padding:$home-section-title-padding !default;
+$quick-access-title-align:$home-section-title-align !default;
+$quick-access-container-padding: 0.5rem 0;
+$quick-access-width: 80px;
+$quick-access-height: 80px;
+$quick-access-background: #fff;
+$quick-access-border: none;
+$quick-access-border-radius: 50px;
+$quick-access-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+$quick-access-svg-width:40px;
+$quick-access-svg-color:$primary-svg;
+$quick-access-item-title-margin: 0.5rem 0 0 0;
+$quick-access-title-font-size: 16px;
+$quick-access-title-text-transform: initial !default;
+$quick-access-title-weight: 500;
+$quick-access-enable-full-bg: none;
+$quick-access-full-bg-color: none;
+$quick-access-full-bg-border:none;
+$quick-access-full-bg-shadow: none;
+
+// A la une
+$a-la-une-title-color: $font-title-color;
+$a-la-une-title-align:$home-section-title-align !default;
+$a-la-une-title-margin: $home-section-title-margin !default;
+$a-la-une-title-padding: $home-section-title-padding !default;
+$a-la-une-text-bg: rgb(244, 244, 244) !default;
+$a-la-une-item-image-margin:0 !default;
+$a-la-une-item-title-color: $secondary;
+$a-la-une-item-title-font-size:$h3-font-size !default;
+$a-la-une-item-title-margin:0 !default;
+$a-la-une-item-title-padding:36px 36px 0 !default;
+$a-la-une-item-title-radius:0 !default;
+$a-la-une-item-description-font-size: $font-size-lg !default;
+$a-la-une-item-description-color: $primary;
+$a-la-une-item-description-margin:0 !default;
+$a-la-une-item-description-padding:0 36px 36px !default;
+$a-la-une-item-description-radius:0 !default;
+$a-la-une-item-image-radius: 0 !default;
+
+// Actu
+$actu-section-full-width: true !default;
+$actu-section-padding-top: 2rem !default;
+$actu-section-padding-bottom: 2rem !default;
+$actu-section-margin: 0 !default;
+$actu-title-color: $font-title-color;
+$actu-title-align:$home-section-title-align;
+$actu-title-margin: $home-section-title-margin;
+$actu-title-padding: $home-section-title-padding;
+$actu-image-margin-bottom: 0;
+$actu-image-border-radius: 10px 10px 0 0;
+$actu-item-bg-color: $greybg;
+$actu-item-bg-radius:$global-radius;
+$actu-category-margin: 0 0 0.3rem 0 !default;
+$actu-category-padding: 0.5rem 1rem;
+$actu-category-color: $dark;
+$actu-category-bg-color: $primary-svg;
+$actu-category-text-transform: uppercase;
+$actu-category-font-size: 14px;
+$actu-category-font-weight: normal;
+$actu-category-radius: 0px 0px 10px 0px;
+$actu-item-title-margin: 1rem 0 !default;
+$actu-item-title-padding: 1rem;
+$actu-item-title-color: $dark;
+$actu-item-title-text-transform: initial !default;
+$actu-item-title-font-size: $h3-font-size;
+$actu-item-title-font-weight: 400;
+$actu-date-margin: 0 !default;
+$actu-date-padding: 1rem 0 0 1rem;
+$actu-date-color: $dark;
+$actu-date-font-size: 14px !default;
+$actu-see-all-justify-content: $see-all-justify-content !default;
+
+// Event
+$event-section-full-width: true !default;
+$event-section-padding-top: 2rem !default;
+$event-section-padding-bottom: 2rem !default;
+$event-section-margin: 0 !default;
+$event-title-color:$dark;
+$event-title-align:$home-section-title-align;
+$event-title-margin: $home-section-title-margin;
+$event-title-padding: $home-section-title-padding;
+$event-image-margin-bottom: 0rem;
+$event-image-border-radius: 10px 10px 0 0;
+$event-item-bg-color:$greybg;
+$event-item-bg-radius: $global-radius;
+$event-category-margin: 0 0 0.3rem 0 !default;
+$event-category-padding: 0.5rem 1rem;
+$event-category-color: $dark;
+$event-category-bg-color: $primary-svg;
+$event-category-text-transform: uppercase;
+$event-category-font-size: 14px;
+$event-category-font-weight: normal;
+$event-category-radius: 0px 0px 10px 0px;
+$event-item-title-margin: 1rem 0 !default;
+$event-item-title-padding: 0 1rem !default;
+$event-item-title-color: $dark;
+$event-item-title-text-transform: initial !default;
+$event-item-title-font-size: $h3-font-size;
+$event-item-title-font-weight: 400;
+$event-date-margin: 0 !default;
+$event-date-padding: 1rem 0 0 1rem;
+$event-date-color: $dark;
+$event-date-font-size: 14px !default;
+$event-see-all-justify-content: $see-all-justify-content !default;
+
+
+// Album
+$album-section-full-width: true !default;
+$album-section-bg:#EDEAE5 !default;
+$album-section-padding-top: 2rem !default;
+$album-section-padding-bottom: 2rem !default;
+$album-section-margin: 0 !default;
+$album-title-color:$secondary;
+$album-title-align:$home-section-title-align !default;
+$album-title-margin: $home-section-title-margin !default;
+$album-title-padding: $home-section-title-padding !default;
+$album-image-margin-bottom: 0.7rem !default;
+$album-image-border-radius: $global-radius !default;
+$album-item-bg-color:rgb(244, 244, 244) !default;
+$album-item-bg-radius:$global-radius+2 !default;
+$album-category-margin: 0 0 0.3rem 0 !default;
+$album-category-padding: 0 !default;
+$album-category-color: $secondary;
+$album-category-bg-color: #000 !default;
+$album-category-text-transform: uppercase;
+$album-category-font-size: 14px !default;
+$album-category-font-weight: initial !default;
+$album-category-radius: $global-radius !default;
+$album-item-title-margin: 1rem 0 !default;
+$album-item-title-padding: 0 !default;
+$album-item-title-color: initial !default;
+$album-item-title-text-transform: initial !default;
+$album-item-title-font-size: $h3-font-size !default;
+$album-item-title-font-weight: initial !default;
+$album-date-margin: 0 !default;
+$album-date-padding: 0 !default;
+$album-date-color: $primary;
+$album-date-font-size: 14px !default;
+$album-see-all-justify-content: $see-all-justify-content !default;
+
+/////////////// interne ///////////////
+
+//*// SECTION TEXTE
+$font-size-texte: $font-size-base !default;
+$mark-background-color: #f3f3f3 !default;
+$mark-color: #5c5c5c !default;
+$mark-padding: 20px 45px 20px 26px !default;
+$mark-border: solid 2px $secondary;
+$mark-radius: $global-radius !default;
+$mark-weight: 500 !default;
+$list-style-color: $secondary;
+$list-style-custom: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($list-style-color)}"/></svg>') !default;
+$section-text-h2-margin-top: 2rem !default;
+$section-text-h2-margin-bottom: 1.5rem !default;
+$section-text-h3-margin-top: 0 !default;
+$section-text-h3-margin-bottom: 0.5rem !default;
+$section-text-link-color: $primary;
+$section-text-link-hover-decoration: solid 1px $primary !default;
+$section-text-max-width: 760px !default;
+
+
+// Section
+$section-padding-y: 5.31rem;
+$section-padding: (sm: 3rem,
+  md: 4rem,
+  lg: 4.3rem,
+);
+// section-contact
+$section-contact-title-size:$h2-font-size;
+$section-contact-sub-title-size:$font-size-lg;
+$section-contact-title-color:$secondary;
+$section-contact-p-margin:1rem 0;
+$section-contact-portrait-ration:calc(4 / 5);
+
+// section-files
+$section-file-background-color: $secondary;
+$enable-full-width-section-files: true !default;
+$enable-light-color-section-files: false;
+
+// section-link
+$section-link-background-color: #F8F8F8;
+$enable-full-width-section-link: true;
+$enable-light-color-section-link: false;
+
+// section-list-block-img
+$section-list-block-img-card-title: 1.25rem;
+
+//*// LIST
+
+//Liste Block
+$block-full-shadow: 0px 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$list-group-border-width : 0px;
+$list-group-item-padding-x : 0px;
+
+// Message Viewlets
+
+$message-info:#27789c;
+$message-warning:#c06d01;
+$message-error:#ae2609;
+
+//NEW VARIABLES MANU 
+//ACTU
+$actu-item-title-align: left !default;
+$actu-date-align: left !default;
+$actu-description-align: left !default;
+$actu-description-font-family: $font-family-base !default;
+
+//QUICK ACCESS
+$quick-access-title-font-family: $font-family-title !default;
+
+//SEE ALL
+$see-all-font-family: $font-family-title !default;
