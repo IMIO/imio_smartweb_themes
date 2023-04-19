@@ -552,3 +552,35 @@ footer#portal-footer-wrapper{
 .sectionselections a {
 	text-decoration: none;
 }
+.compe-hi2{
+    .swiper-image{
+        border-radius: 10px;
+    }
+    .swiper-wrapper{
+        padding-bottom: 0!important;
+    }
+    .swiper_title{
+        margin-top: 1rem;
+    }
+}
+
+body.portaltype-imio-smartweb-portalpage:not(.is-in-minisite){
+    #portal-footer-wrapper{
+        position: relative;
+        overflow: visible;
+        margin-top: 100px;
+        &:before{
+            content: "";
+            width: 100px;
+            background-image: url("../../assets/svg/wellin-footer.svg") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 120px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 7%;
+            transform: translateY(-98%);
+        }
+    }
+}
