@@ -57,24 +57,3 @@
         }
     }
 }
-
-// delete after fix 
-
-
-.sectioncollection.bien-vivre-a-chastre .swiper-slide {
-    &:nth-child(1){
-        .swiper-image{
-            background-image:url("../../assets/svg/94.png")!important;
-        }
-    }
-    &:nth-child(3){
-        .swiper-image{
-            background-image:url("../../assets/svg/92.png")!important;
-        }
-    }
-    &:nth-child(4){
-        .swiper-image{
-            background-image:url("../../assets/svg/91.png")!important;
-        }
-    }
-}
