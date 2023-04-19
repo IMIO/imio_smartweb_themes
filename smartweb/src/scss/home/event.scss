@@ -165,6 +165,9 @@
                 .day::after {
                     content: '/';
                 }
+                .year::before{
+                    content: '/';
+                }
             }
         }
         .swiper_title{
