@@ -28,9 +28,9 @@
             @include media-breakpoint-up(md){
                 flex-direction: row;
                 gap: 0 30px;
-            }
-            .contact_titles{
-                flex: 1 0 100%;
+                .contact_titles{
+                    flex: 1 0 100%;
+                }
             }
             .contact_informations,.address,.schedule{
                 h2,h3{
