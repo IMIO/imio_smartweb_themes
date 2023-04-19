@@ -8,19 +8,8 @@
 }
 .sectionevents .swiper-slide > a:hover {
     background: $primary;
-    div h3, div span, div p 
+    div h3, div.swiper_date span, div.swiper_title, div.swiper_description, span, span, div p 
         {
             color: #fff;
         }
-}
-.sectionevents:before {
-    background: #f8f8f8;
-    bottom: 0;
-    content: "";
-    left: 50%;
-    position: absolute;
-    top: 0%;
-    transform: translateX(-50vw);
-    width: 100vw;
-    z-index: -1;
 }

@@ -1,3 +1,6 @@
+.sectionlinks.quick-access:first-child {
+    margin-top: -85px;
+}
 .sortable-section.sectionlinks.partenaires {
     padding-top: 5rem;
     z-index: 1;
@@ -97,4 +100,14 @@ div#body-section-acces-directs .table_image {
     div#body-section-acces-directs ul li {
         width: 33%;
     }
+    #portal-header #portal-header-top #portal-logo {
+        margin-right: 0px !important;
+        max-width: 40px;
+    }
+    .sectionlinks.quick-access:first-child {
+        margin-top: 0px;
+    }
+}
+.quick-access:first-child div a.table_image div.image:hover {
+    background: $primary !important;
 }

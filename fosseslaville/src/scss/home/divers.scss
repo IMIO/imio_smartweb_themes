@@ -32,12 +32,19 @@ span {
 #portal-breadcrumbs {
     background-color: #fff;
 }
-div#smartweb-minisite-footer {
-    h2 {
-        color: #fff;
-    }
-    background: $primary;
-}
+
 .list-card-body h2.list-card-title {
     font-size: 1.5rem;
+}
+.section-contact li.fax a:after {
+    content: " (fax)";
+}
+#portal-header #portal-header-top #portal-logo {
+    margin-right: 30px;
+  }
+  #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a {
+    color: #fff !important;
+  }
+  .a-la-une .swiper-slide .swiper_title h3 {
+    text-transform: initial;
 }

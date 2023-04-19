@@ -1,0 +1,92 @@
+footer {
+    #portal-colophon, div.colophon {
+    background-color: $primary;
+    }
+    div#body-section-liens-utiles li a {
+        text-decoration: none;
+    }
+}
+    footer ul.row {
+        margin-left: 0;
+    }
+
+    #portal-footer-wrapper #portal-footer.container {
+        background: $primary;
+        text-align: left;
+    }
+
+#portal-footer-wrapper{
+    position: relative;
+    background:transparent;
+}
+.smartweb_footer {
+    padding-top: 4rem;
+    .smartweb-footer li a {
+    color: #fff;
+    }
+    .sectioncontact h2, .sectionlinks h2 {
+        font-size: 1.5rem;
+        text-transform: none;
+        color: $primary-svg !important;
+    }
+    h3 {
+        color: #fff;
+        text-transform: none;
+        font-size: 1.2rem;
+    }
+}
+div#body-section-liens-utiles li a:hover {
+    text-decoration: underline;
+}
+.colophonWrapper ul li {
+    display: inline-block;
+}
+@media screen and (max-width: 992px) {
+    .sectiontext .section-text .body-section.figure-left figure img {
+    width: 40%;
+    margin: 0 auto;
+    }
+    #portal-footer-wrapper #portal-footer.container {
+        text-align: center;
+    }
+}
+.sectiontext .section-text .body-section.figure-left figure img {
+    max-width: 150%;
+}
+footer div#body-section-liens-utiles li a {
+    display: inline-block;
+    .plone-icon {
+        margin-left: -20px;    }
+}
+footer .contact_informations ul {
+    padding-left: 0;
+  }
+  div#smartweb-minisite-footer {
+    h2 {
+        color: $primary-svg;
+    }
+    background: $primary;
+}
+footer .schedule, footer .schedule a, footer .schedule a:after {
+    color: #fff;
+    fill: #fff;
+}
+footer .schedule .opening_informations::after {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228.444%22%20height%3D%225.2%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.247.254a.831.831%200%200%201%201.2%200l2.78%202.854L7.011.254A.831.831%200%200%201%208.2.264a.882.882%200%200%201%20.01%201.215L4.825%204.946a.835.835%200%200%201-.6.254%201.529%201.529%200%200%201-.6-.254L.247%201.479a.882.882%200%200%201%200-1.226Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.sectiontext .section-text .body-section.figure-left figure {
+    max-width: 100%;
+}
+footer .address .itinerary a {
+    color: #fff;
+  }
+#smartweb-footer,#smartweb-minisite-footer{
+    .sectiontext{
+        figure{
+            img{
+                width: 150px;
+                max-width: 100%;
+            }
+        }
+    }
+}

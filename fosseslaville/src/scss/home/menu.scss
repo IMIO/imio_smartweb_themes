@@ -17,14 +17,9 @@
 //     margin: 0 4rem 0 6rem;
 //     }
 // }
-// .dropdown  span.quick-access-title {
-//     font-weight: bold;
-//     display: block;
-//     color: $secondary;
-//     margin-top: 1em;
-//     font-size: 1.25rem;
-//     padding-bottom: 0.5rem;
-// }
+.dropdown  span.quick-access-title {
+    color: $primary !important;
+}
 @media screen and (max-width: 992px) {
 #portal-header #portal-header-top #portal-globalnav-wrapper {
     margin: 0 0rem;
