@@ -1,0 +1,84 @@
+.sectionevents{
+    .section-title{
+        font-weight: 200;
+        font-family:$font-family-roboto;
+        text-transform: uppercase;
+    }
+    background-color: #F6F2F1;
+    .swiper-wrapper{
+        .swiper-slide {
+            & > a{
+                grid-template-columns: 1fr 1fr;
+                padding: 0.5rem;
+                align-items: center;
+                border: solid 2px $primary;
+                .swiper-image{
+                    padding-bottom: 55%;
+                    grid-column-end: 3;
+                    grid-column-start: 1;
+                    transition: all .25s ease;
+                    margin-bottom: 2rem;
+                }
+                .swiper_category{
+                    margin-left: auto;
+                }
+                .swiper_date{
+                    text-transform: uppercase;
+                    font-family: $font-family-base; 
+                    grid-row-start: 2;
+                }
+                .swiper_title{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    margin-top: 10px;
+                    h3{
+                        color: #030720;
+                    }
+                }
+                .swiper_description{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    background: $primary;
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                    .swiper_category{
+                        color: #fff;
+                    }
+                    .swiper_date{
+                        color: #fff;
+
+                    }
+                    .swiper_title{
+                        h3{
+                            color: #fff;
+        
+                        }
+                    }
+                    .swiper_description{
+                        p{
+                            color: #fff;
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 54px;
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        border-radius: 50px;
+    }
+    .swiper-button-prev{
+        left: inherit;
+        right: 65px;
+    }
+}

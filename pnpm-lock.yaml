@@ -98,6 +98,18 @@ importers:
         specifier: ^4.11.1
         version: 4.13.2(webpack-cli@4.10.0)(webpack@5.79.0)
 
+  arris:
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base':
+        specifier: 0.0.6
+        version: link:../base
+      '@plone/plonetheme-barceloneta-base':
+        specifier: 3.0.0
+        version: 3.0.0(@popperjs/core@2.11.6)
+      '@popperjs/core':
+        specifier: ^2.11.6
+        version: 2.11.6
+
   attert:
     devDependencies:
       '@imiobe/plonetheme-smartweb-base':
