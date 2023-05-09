@@ -1,26 +1,25 @@
 .sectionnews{
+    background-color: $primary;
     .section-title{
-        font-weight: 200;
-        font-family:$font-family-roboto;
+        font-weight: 900;
         text-transform: uppercase;
-        color: $primary-svg!important;
+        // color: $primary-svg!important;
     }
     .swiper-wrapper{
         .swiper-slide {
             & > a{
-                grid-template-columns: 1fr 1fr;
-                padding: 0.5rem;
+                display: block;
                 align-items: center;
-                border: solid 2px $primary-svg;
                 .swiper-image{
                     padding-bottom: 55%;
-                    grid-column-end: 3;
-                    grid-column-start: 1;
                     transition: all .25s ease;
                     margin-bottom: 2rem;
                 }
                 .swiper_category{
                     margin-left: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
                 .swiper_date{
                     text-transform: uppercase;
@@ -28,16 +27,12 @@
                     grid-row-start: 2;
                 }
                 .swiper_title{
-                    grid-column-start: 1;
-                    grid-column-end: 3;
                     margin-top: 10px;
                     h3{
     
                     }
                 }
                 .swiper_description{
-                    grid-column-start: 1;
-                    grid-column-end: 3;
                     p{
                         margin: 0;
                     }
