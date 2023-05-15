@@ -1,0 +1,134 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import '@plone/plonetheme-barceloneta-base/scss/barceloneta';
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+@import 'home/quick';
+@import 'home/banner';
+@import 'home/actualites';
+@import 'home/events';
+@import 'home/divers';
+@import 'home/footer';
+@import 'home/menu';
+@import 'home/newsletter.scss';
+
+//// STYLES
+// ... add your styles here
+
+
+
+#portal-footer-wrapper h2 {
+	margin-top: 0!important;
+}
+.phones{
+    span{
+        display: block;
+    }
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+}
+
+.a-la-une .swiper-slide .swiper_title,
+.a-la-une .swiper-slide .swiper_description {
+    z-index: 1;
+}
+
+@include media-breakpoint-up(lg){
+    .a-la-une{
+        .swiper-slide{
+            & > a{
+                padding-top: 2rem;
+                &:after{
+                    content: "";
+                    background: transparent;
+                    z-index: 0;
+                    position: absolute;
+                    width: calc(40% + 2rem);
+                    right: 0;
+                    display: block;
+                    height: calc(100% - 3rem);
+                    top: 1rem;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.sites-partenaires{
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important;  
+}
+.flash-infos{
+    .swiper-slide .swiper-image {
+        padding-bottom: 134%!important;
+    }
+    .swiper_title{
+        margin-top: 2rem!important;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 40%!important;
+    }
+}
+
+.enquetes{
+    div.swiper-slide {
+        border: solid 2px #fff;
+        &:hover{
+            border: solid 2px $primary;
+        }
+    }
+}
+
+footer{
+    span{
+        word-wrap: normal; 
+    }
+}
+
+.nav_je-suis.has_subtree.nav-item{
+    margin-left: auto;
+}
+#portal-globalnav{
+    @include media-breakpoint-up(lg){
+        margin-left: 2rem;
+        align-items: center;
+        .nav_abonnement.nav-item{
+            margin-left: auto;
+        }
+    }
+}
+
+
+
+.swiper-banner-link{
+    a{
+        background: $primary;
+        padding: 0.5rem 1rem;
+        border-radius:0px;
+        color: #fff!important;
+        text-decoration: none;
+        border: solid 1px $primary;
+        margin-top: 0.6rem;
+        display: inline-block;
+        &:hover{
+            background: transparent;
+            color: $primary!important;
+        }
+    }
+}
+
+
+// .portaltype-imio-smartweb-eventsview{
+//     .r-map.annuaire-map{
+//         display: none;
+//     }
+// }
