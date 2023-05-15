@@ -164,3 +164,19 @@ footer{
 .smartweb_herobanner .bannerSwiper {
 	max-height: 50vw;
 }
+
+/* SUP-26886 */
+div.sectionfiles a[aria-expanded=false], div.sectionfiles a[aria-expanded=true]{
+    color: white;
+    text-decoration: none;
+  }
+  div.sectionfiles {
+    padding: .8em !important;
+  }
+  .subsection-vos-services-administratifs-cohesion-sociale-notre-equipe .sortable-section.sectiontext.col-sm-8 {
+  padding: 2.2rem 0 0 2rem;
+  }
+/* SUP-28985 */
+.sectiontext ul li a {
+    word-break: break-all;
+}
