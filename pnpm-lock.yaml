@@ -263,6 +263,18 @@ importers:
         specifier: ^2.11.6
         version: 2.11.7
 
+  estinnes:
+    devDependencies:
+      '@imiobe/plonetheme-smartweb-base':
+        specifier: 0.0.6
+        version: link:../base
+      '@plone/plonetheme-barceloneta-base':
+        specifier: 3.0.0
+        version: 3.0.0(@popperjs/core@2.11.6)
+      '@popperjs/core':
+        specifier: ^2.11.6
+        version: 2.11.6
+
   flemalle:
     devDependencies:
       '@imiobe/plonetheme-smartweb-base':

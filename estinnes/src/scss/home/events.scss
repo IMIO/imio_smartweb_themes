@@ -1,0 +1,90 @@
+.portaltype-imio-smartweb-portalpage.section-accueil,
+.portaltype-imio-smartweb-portalpage.section-home-page {
+    .sectionevents{
+        background: linear-gradient(#f0ebee,#daebf5);
+
+    }
+
+}
+.sectionevents{
+    .section-title{
+        color: $primary-svg!important;
+    }
+    .swiper-wrapper{
+        .swiper-slide {
+            & > a{
+
+                .swiper-image{
+                    transition: all .25s ease;
+                }
+                .swiper_category{
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                }
+                .swiper_date{
+                    text-transform: uppercase;
+                    font-family: $font-family-base; 
+                    background: #fff;
+                    width: 90%;
+                    margin: 0 auto;
+                    order: 1;
+                    padding: 0.5rem 1rem 1rem 1rem;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+                .swiper_title{
+                    background: #fff;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 1rem 1rem 0.5rem 1rem;
+                    margin-top: -45px;
+                    h3{
+                        margin: 0;
+                    }
+                }
+                .swiper_description{
+                    width: 90%;
+                    margin: 0 auto;
+                    background: #fff;
+                    padding: 0 1rem;
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                    .swiper_category{
+                        color: #fff;
+                    }
+                    .swiper_date{
+
+                    }
+                    .swiper_title{
+                        h3{
+        
+                        }
+                    }
+                    .swiper_description{
+                        p{
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: #486be8 !important;
+    }
+}
+
+.sectionevents .see_all a {
+	border: solid 2px #486be8;
+    &:hover{
+        color: $primary-svg;
+	    border: solid 2px #486be8;
+    }
+}
