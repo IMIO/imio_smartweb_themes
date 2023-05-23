@@ -1,0 +1,23 @@
+.section-home-page .sectionnews {
+    background: #F7F6F9;
+  }
+  @include media-breakpoint-up(lg) { 
+  .section-home-page .sectionnews:before {
+    top: 50%;
+    content: url('../../assets/svg/logo-bg-purple.svg');
+    display: block;
+    right: 0;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}
+.sectionnews .swiper-slide a:hover:after {
+  background: $color-purple;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  opacity: 0.2;
+}

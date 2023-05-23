@@ -1,0 +1,129 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/enquetes";
+@import "./home/newsletter";
+
+
+
+.r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder-oupeye.jpg");
+	background-size: cover;
+	background-position: center;
+}
+@include media-breakpoint-down(lg) { 
+	body.portaltype-imio-smartweb-portalpage {
+		.sortable-section h2.section-title {
+			font-size: 2rem;
+		}
+	}
+	body.portaltype-imio-smartweb-portalpage .sectionlinks.quick-access .body-section li {
+		list-style: none;
+		width: 50%;
+		padding-bottom: 1.5rem;
+	}
+}
+//MENU HAMBURGER DARK
+// .navbar-dark .navbar-toggler-icon {
+// 	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+// }
+//BANNER
+.smartweb_herobanner:before {
+    content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1919 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1919 80H0C0 80 538.14 0 903.735 0C1269.33 0 1919 80 1919 80Z' fill='white'/%3E%3C/svg%3E");
+    display: block;
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    left: 0;
+	transform: translateY(1px);
+}
+@include media-breakpoint-down(md) {
+	.smartweb_herobanner .bannerSwiper {
+		height: 160px;
+	}
+}
+
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+	.swiper-banner-title, 
+	.swiper-banner-description p {
+		@include media-breakpoint-up(md) {
+		font-weight: 600;
+		text-transform: uppercase;
+		}
+		@include media-breakpoint-down(md) {
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		}
+	}
+}
+.swiper-banner-content {
+	position: relative;
+}
+.swiper-banner-content::before {
+    content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 274 276' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.6' d='M137 0C167.755 58.7159 215.635 106.884 274 137.824C215.635 169.116 167.755 217.284 137 276C105.895 217.284 58.0153 169.116 0 137.824C58.0153 106.884 105.895 58.7159 137 0Z' fill='%235F5784'/%3E%3C/svg%3E");
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+	transform: translateX(-130%);
+	z-index: -2;
+}
+//INTERNAL PAGE TITLE
+body:not(.portaltype-imio-smartweb-portalpage) h2 {
+	font-size: 1.5rem;
+	font-weight: 800;
+  }
+h2.section-title a::after {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>');
+    display: inline-block;
+    padding-left: 1rem;
+}
+.portaltype-imio-smartweb-page .sectionfiles {
+	padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+	div h2 a {
+		color: #1c1c1c;
+	}
+	.collapse.show li a, .collapse.show li a span, .collapse.show a span, .collapse.show a {
+		color: #1c1c1c;
+	}
+}
+body:not(.portaltype-imio-smartweb-portalpage) h1 {
+	color: $color-purple;
+}
+body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    right: 0;
+}
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+    background-color: $color-purple;
+}
+#localmessagesviewlet .portalMessage.info, #messagesviewlet .portalMessage.info {
+    background-color: $color-green;
+}
+#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
+    background-color: $color-red;
+}

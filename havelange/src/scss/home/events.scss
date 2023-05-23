@@ -1,0 +1,10 @@
+.section-home-page .sectionevents::before {
+    content: url('../../assets/svg/havelange-logo-background-grey.svg');
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transform: scale(0.7);
+    transform-origin: right bottom;
+    z-index: -1;
+}

@@ -1,0 +1,22 @@
+.sectionevents {
+    .swiper-pagination-bullet {
+        background: $primary-svg;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #fff !important;
+    }
+}
+.sectionevents, .sectionnews {
+    .swiper-wrapper{
+        .swiper-slide {
+            & > a{
+                padding: 0rem;
+                border: solid 1px $secondary;
+                }
+            }
+        }
+}
+.sectionevents .swiper-wrapper .swiper-slide>a:hover {
+    background: $primary-svg;
+}
