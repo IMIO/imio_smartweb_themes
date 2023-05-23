@@ -177,20 +177,20 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding:.5rem 1.5rem;
+$see-all-padding:1rem 1.5rem .9rem 1.5rem;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg:$primary;
-$see-all-color:#fff;
-$see-all-radius:50px;
-$see-all-border:solid 1px $primary;
-$see-all-text-transform:none !default;
+$see-all-bg:#fff;
+$see-all-color:$primary;
+$see-all-radius:0;
+$see-all-border:solid 0 $primary;
+$see-all-text-transform:uppercase;
 $see-all-font-size:16px !default;
-$see-all-font-weight:400;
+$see-all-font-weight:bold;
 $see-all-transition:all .2s ease !default;
-$see-all-hover-bg:transparent !default;
+$see-all-hover-bg:#fff;
 $see-all-hover-color:$primary;
-$see-all-hover-radius:50px;
-$see-all-hover-border:solid 1px $primary;
+$see-all-hover-radius:0;
+$see-all-hover-border:solid 0 $primary;
 $see-all-justify-content: center;
 $see-all-underline-color: transparent;
 $see-all-underline-width: 0;
@@ -244,8 +244,8 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 4vw;
+$actu-section-padding-bottom: 4vw;
 $actu-section-margin: 0 !default;
 $actu-title-color:#fff;
 $actu-title-align:center;
@@ -413,7 +413,7 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0307200001A;
+$block-full-shadow: 0px 20px 40px #030720;
 $block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 $list-group-border-width : 0px;
 $list-group-item-padding-x : 0px;

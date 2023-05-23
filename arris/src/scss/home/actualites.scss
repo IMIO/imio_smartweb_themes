@@ -3,7 +3,19 @@
     .section-title{
         font-weight: 900;
         text-transform: uppercase;
-        // color: $primary-svg!important;
+        position: relative;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 7px;
+            background-color: $primary-svg;
+            left: 0;
+            bottom: 0;
+        }
     }
     .swiper-wrapper{
         .swiper-slide {
@@ -38,7 +50,6 @@
                     }
                 }
                 &:hover{
-                    background: $primary-svg;
                     .swiper-image{
                         mask-size: 99%;
                     }
@@ -51,7 +62,7 @@
                     }
                     .swiper_title{
                         h3{
-                            color: #fff;
+                            color: $primary-svg;
         
                         }
                     }
@@ -66,23 +77,15 @@
         }
     }
     .swiper-button-next, .swiper-button-prev {
-        top: 54px;
-        width: 45px;
-        height: 45px;
-        background-color: #fff;
-        border-radius: 50px;
+
     }
     .swiper-button-prev{
-        left: inherit;
-        right: 65px;
+
     }
 }
 
 .sectionnews .see_all a {
-	background: $primary-svg;
-	border: solid 1px $primary-svg;
     &:hover{
-	    border: solid 1px $primary-svg;
         color: $primary-svg;
     }
 }
