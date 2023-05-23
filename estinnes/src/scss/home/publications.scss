@@ -1,0 +1,59 @@
+.home-publication{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .swiper-slide{
+        background:#fff;
+        a{
+            text-decoration: none;
+        }
+    }
+    .section-title{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .swiper-image{
+        background-color: #eee;
+        padding-bottom: 141.42857142857142%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .swiper_title{
+        box-shadow: 0px 10px 20px rgba(0,0,0,.1);
+        padding: 2rem 1.5rem;
+        position: relative;
+        h3{
+            font-size: 18px;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='none'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23fff'/%3E%3Cpath fill='%23969696' d='M24.667 20.5a4.167 4.167 0 1 0 0 8.333 4.167 4.167 0 0 0 0-8.333Zm0 5.833a1.667 1.667 0 1 1 0-3.333 1.667 1.667 0 0 1 0 3.333Zm0-5.833a4.167 4.167 0 1 0 0 8.333 4.167 4.167 0 0 0 0-8.333Zm0 5.833a1.667 1.667 0 1 1 0-3.333 1.667 1.667 0 0 1 0 3.333Zm0-18.333a16.667 16.667 0 1 0 0 33.334 16.667 16.667 0 0 0 0-33.334Zm0 23.333c-4.384 0-8.334-2.616-10-6.666 2.3-5.517 8.65-8.134 14.166-5.834 2.634 1.1 4.734 3.2 5.834 5.834-1.667 4.05-5.617 6.666-10 6.666Zm0-10.833a4.167 4.167 0 1 0 0 8.333 4.167 4.167 0 0 0 0-8.333Zm0 5.833a1.667 1.667 0 1 1 0-3.333 1.667 1.667 0 0 1 0 3.333Z'/%3E%3C/svg%3E");
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%)
+        }
+    }
+    .see_all{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0;
+        a{
+            background: #fff;
+            border: 2px solid #969696;
+            border-radius: 5px;
+            color: #4c4c4c;
+            display: block;
+            font-family: $font-family-title;
+            font-size: 16px;
+            font-weight: 400;
+            padding: .5rem 1.5rem;
+            position: relative;
+            text-decoration: none;
+            text-transform: none;
+            transition: all .2s ease;
+            width: max-content;
+        }
+    }
+}

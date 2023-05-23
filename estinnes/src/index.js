@@ -22,5 +22,11 @@ $( document ).ready(function() {
         eventsSwiper.params.speed=1000,
         eventsSwiper.update();
     }
+    if($('.home-publication .swiper').length > 0){
+        var eventsSwiper = $('.home-publication .swiper')[0].swiper
+        eventsSwiper.params.spaceBetween=60;
+        eventsSwiper.params.speed=1000,
+        eventsSwiper.update();
+    }
 
 });

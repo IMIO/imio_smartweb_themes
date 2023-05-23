@@ -1,7 +1,11 @@
+body:not(.portaltype-imio-smartweb-portalpage){
+    #portal-footer-wrapper{
+        margin-top: 5rem;  
+    }
+}
 #portal-footer-wrapper{
     text-align: left!important;
     background: transparent;
-    margin-top: 5rem;
     #portal-footer{
         background: #3f3f3f!important;
         #smartweb-footer,#smartweb-minisite-footer{
