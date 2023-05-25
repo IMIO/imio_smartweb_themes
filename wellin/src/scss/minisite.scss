@@ -1,7 +1,7 @@
 .to-portal {
     a {
         padding: 0.5rem 1.5rem !important;
-        background: #4b2b26;
+        background: #00656f;
         display: inline-block;
         font-weight: bold;
         color: #fff;
@@ -11,8 +11,8 @@
 
 
 // tourisme
-$primary-tourisme: #4b2b26;
-$primary-tourisme-svg: #66c644;
+$primary-tourisme: #00656f;
+$primary-tourisme-svg: #00656f;
 
 .site-tourisme {
     .smartweb_herobanner::after {
@@ -44,7 +44,7 @@ $primary-tourisme-svg: #66c644;
 
     #portal-colophon,
     #portal-footer-wrapper {
-        background: #4b2b26 !important;
+        background: #00656f !important;
     }
 
     #portal-footer {
@@ -84,7 +84,7 @@ $primary-tourisme-svg: #66c644;
 
             @media screen and (min-width:992px) {
                 &:after {
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%234b2b26"/></svg>') !important;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%2300656f"/></svg>') !important;
                 }
             }
         }
