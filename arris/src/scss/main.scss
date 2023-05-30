@@ -17,7 +17,9 @@ $enable-roboto-webfont: false;
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./home/map.scss";
+@import "./common/map.scss";
+@import "./common/postit.scss";
+
 
 
 .bannerSwiper .section-slide{
@@ -160,4 +162,15 @@ footer #container-section-noussuivre{
     .portaltype-imio-smartweb-portalpage .section-title {
         font-size: 34px!important;
     }
+}
+
+#portal-breadcrumbs{
+    background: transparent!important;
+    .container,.breadcrumb{
+        padding-left: 0;
+    }
+}
+
+#portal-globalnav > li a:hover {
+	color: $primary-svg;
 }

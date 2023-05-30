@@ -23,4 +23,10 @@ $( document ).ready(function() {
         eventsSwiper.update();
     }
 
+
+    $(".portaltype-collection.section-projets #center-content-area").addClass("with-map");
+    $(".button-map").click(function(){
+        console.log("hello");
+        $(".portaltype-collection.section-projets #center-content-area").toggleClass("with-map");
+      });
 });
