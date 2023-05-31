@@ -1,5 +1,9 @@
 .sectionnews{
     background-color: $primary;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='676' height='804' fill='none'%3E%3Cpath fill='%23fff' fill-opacity='.03' stroke='%23fff' stroke-opacity='.03' d='m39.823 684.065-171.353-27.15 24.613-155.348 317.924-232.736-274.166-43.439L-27.606 1l702.55 111.314L565.55 802.751l-239.895-38.01 43.758-276.175-51.406-8.145L39.823 684.065Z'/%3E%3C/svg%3E");
+    background-position: left top;
+    background-size: 50%;
+    background-repeat: no-repeat;
     .section-title{
         font-weight: 900;
         text-transform: uppercase;

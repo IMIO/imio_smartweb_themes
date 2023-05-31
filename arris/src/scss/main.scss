@@ -42,16 +42,31 @@ $enable-roboto-webfont: false;
         top: 0;
     }
 }
-.swiper-banner-image:after {
-    content: "";
-    background: #3bbef2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: .7;
-    mix-blend-mode: color;
+.swiper-banner-image {
+    &:after {
+        content: "";
+        background: #3bbef2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: .7;
+        mix-blend-mode: color;
+    }
+    &:before{
+        content:"";
+        background: url("../../assets/svg/logo-banner.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 223px;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1;
+    }
 }
 
 .see_all a {
@@ -173,4 +188,23 @@ footer #container-section-noussuivre{
 
 #portal-globalnav > li a:hover {
 	color: $primary-svg;
+}
+
+h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 65px;
+        height: 7px;
+        background-color: $primary-svg;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.sectionfiles .section-title {
+	color: #181a21;
 }
