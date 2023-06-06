@@ -8,12 +8,18 @@
 
 // // // for arris
 body.faceted-map .button-map-content {
-    display: flex !important;
-    align-items: center;
-    position: absolute;
-    top: 321px;
-    left: calc(50vw + 648px);
-    transform: translateX(-100%);
+  align-items: center;
+  position: absolute;
+  top: 321px;
+  transform: translateX(-100%);
+  display: none;
+  @media screen and (min-width:900px){
+      display: flex !important;
+      left: 99vw;
+    }
+    @media screen and (min-width: 1340px){
+      left: calc(50vw + 648px);
+    }
     p{
         margin: 0!important;
     }
@@ -64,6 +70,13 @@ body.faceted-map{
                             grid-template-columns: 1fr 1fr 1fr;
                             display: grid;
                             grid-gap: 3.1%;
+                        }
+                        & > a {
+                          &:hover{
+                            .geo-item-title{
+                              color: $primary-svg;
+                            }
+                          }
                         }
                         .items-content{
                             flex-direction: column;
@@ -416,3 +429,14 @@ body.faceted-map{
     }
   }
 }
+
+
+
+.awesome-marker-icon-green,.awesome-marker-icon-red {
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#fe5919' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 95%;
+}
+

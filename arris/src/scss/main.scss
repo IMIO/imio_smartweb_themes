@@ -197,8 +197,8 @@ h1{
     &:after{
         content: "";
         position: absolute;
-        width: 65px;
-        height: 7px;
+        width: 50px;
+        height: 6px;
         background-color: $primary-svg;
         left: 0;
         bottom: 0;
@@ -207,4 +207,28 @@ h1{
 
 .sectionfiles .section-title {
 	color: #181a21;
+}
+
+.r-search.search-select-filter {
+	display: none;
+}
+
+
+.block-menu-element a .card-body {
+	border-radius: 0!important;
+}
+
+.sectiongallery{
+    margin-top: 4vw;
+}
+
+.sectiontext .mark, .sectiontext mark {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	color: $primary;
+	display: inline-block;
+	font-weight: 400;
+	padding: 0;
+	font-size: 18px;
 }

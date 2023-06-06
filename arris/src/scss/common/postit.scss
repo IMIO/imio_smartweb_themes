@@ -1,8 +1,25 @@
 .sectionpostit {
+    position: relative;
+    padding: 3vw 0;
+    margin-top: 4vw;
+    &:after{
+        content:"";
+        background: $primary;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
      .swiper-slide {
-        background: #fff;
+        color: #fff;
         text-align: center;
         padding: 2rem 0;
         border: solid 2px #fe5919;
+        h3,p,span{
+            color: #fff!important;
+        }
     }
 }
