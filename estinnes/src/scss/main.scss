@@ -53,7 +53,24 @@ $enable-roboto-webfont: false;
 	background-size: cover;
 	background-position: center;
 }
-
+// nav 
+@include media-breakpoint-up(lg){
+    .nav_je-suis{
+        margin-left: auto;
+    }
+}
+#header-links{
+    .account{
+        background: #a8cf45;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5px;
+        color: #000 !important;
+        text-decoration: none;
+        span{
+            color: #000 !important;
+        }
+    }
+}
 //footer 
 footer{
     #container-section-noussuivre{
@@ -67,6 +84,9 @@ footer{
                 width: auto;
             }
         }
+    }
+    h3{
+        color: #fff!important;
     }
 }
 
