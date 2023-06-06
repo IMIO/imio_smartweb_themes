@@ -1,0 +1,44 @@
+.home-partenaires{
+    background: transparent;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    .section-title{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 2rem;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 7px;
+            background-color: $primary-svg;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+        grid-gap: 50px;
+        text-align: center;
+        li{
+            width: auto!important;
+            a{
+                text-decoration: none;
+            }
+            .image{
+                padding-bottom: 65%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .table_title{
+                margin-top: 1rem;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

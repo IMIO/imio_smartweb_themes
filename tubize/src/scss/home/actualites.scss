@@ -1,0 +1,100 @@
+.sectionnews{
+    background-color: $primary;
+    .section-title{
+        font-weight: 900;
+        text-transform: uppercase;
+        position: relative;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 7px;
+            background-color: $primary-svg;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .swiper-wrapper{
+        .swiper-slide {
+            & > a{
+                display: block;
+                align-items: center;
+                .swiper-image{
+                    padding-bottom: 55%;
+                    transition: all .25s ease;
+                    margin-bottom: 2rem;
+                }
+                .swiper_category{
+                    margin-left: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .swiper_date{
+                    text-transform: uppercase;
+                    font-family: $font-family-base; 
+                    grid-row-start: 2;
+                }
+                .swiper_title{
+                    margin-top: 10px;
+                    h3{
+    
+                    }
+                }
+                .swiper_description{
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                    .swiper_category{
+                        color: #fff;
+                    }
+                    .swiper_date{
+                        color: #fff;
+
+                    }
+                    .swiper_title{
+                        h3{
+                            color: $primary-svg;
+        
+                        }
+                    }
+                    .swiper_description{
+                        p{
+                            color: #fff;
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+
+    }
+    .swiper-button-prev{
+
+    }
+}
+
+.sectionnews .see_all a {
+    &:hover{
+        color: $primary-svg;
+    }
+}
+
+
+
+.sectionnews{
+    &:before{
+        content: "";
+        background: #009EB0;
+    }
+}
