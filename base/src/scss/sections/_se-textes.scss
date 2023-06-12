@@ -1,8 +1,12 @@
+.mark,
+mark {
+ padding:0;
+}
 .sectiontext {
   font-size: $font-size-texte;
   mark {
     display: inline-block;
-    padding: $mark-padding;
+    padding: $mark-padding-sec;
     border: $mark-border;
     background-color: $mark-background-color;
     border-radius: $mark-radius;
@@ -227,3 +231,4 @@ strong {
 	position: initial !important;
 	margin-right: 0.5rem;
 }
+
