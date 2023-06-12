@@ -540,15 +540,6 @@ footer#portal-footer-wrapper{
     }
 }
 
-.sectionfiles{
-    .table_image{
-        &:hover{
-            .item_infos{
-                color: #fff!important;
-            }
-        }
-    }
-}
 .sectionselections a {
 	text-decoration: none;
 }
@@ -582,5 +573,44 @@ body.portaltype-imio-smartweb-portalpage:not(.is-in-minisite){
             right: 7%;
             transform: translateY(-98%);
         }
+    }
+}
+
+
+// se file 
+
+.sectionfiles{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    .section-title {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $primary;
+    }
+    .table_image{
+        border: 2px solid #0091a1;
+        padding: 0.9rem 1.2rem;
+        text-decoration: none;
+    }
+}
+// message viewlet
+
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+	background-color: #485768!important;
+}
+#localmessagesviewlet .portalMessage.info, #messagesviewlet .portalMessage.info {
+	background-color: #ddd;
+    span,p{
+        color: #485768;
+    }
+}
+#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
+	background-color: #303030;
+}
+
+@media (min-width: 992px) {
+    #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
+        margin-top: 4.25rem;
     }
 }

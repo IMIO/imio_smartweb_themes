@@ -15,10 +15,71 @@ $primary-tourisme: #00656f;
 $primary-tourisme-svg: #00656f;
 
 .site-tourisme {
+    .sectionfiles .section-title {
+        color: $primary-tourisme;
+    }
+    .sectionfiles .table_image {
+        border: 2px solid $primary-tourisme;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
+        color:$primary-tourisme;
+    }
+    .sectiontext .section-text .body-section a {
+        color:$primary-tourisme;
+    }
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
+        color: $primary-tourisme;
+    }
+    #portal-column-content .section-contact .contact-type-mission{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-tourisme !important;
+            }
+        }
+    }
+    #portal-column-content .section-contact .contact-type-organization{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-tourisme !important;
+            }
+        }
+    }
+    #portal-column-content .section-contact .contact-type-position{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-tourisme !important;
+            }
+        }
+    }
+    .sectionnews {
+        .section-title {
+            color: $primary-tourisme !important;
+        }
+    }
+    .to-portal a {
+        color: #fff;
+    }
+    .sectionnews .see_all a {
+        color: $primary-tourisme!important;
+        &:before {
+            border: 1px solid $primary-tourisme!important;
+        }
+        &:hover{
+            color: $primary-tourisme!important;
+            &:before {
+                border: 1px solid $primary-tourisme!important;
+            }
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        color:$primary-tourisme;
+    }
     .smartweb_herobanner::after {
         background: $primary-tourisme-svg;
     }
-
+    .sectiontext .section-text .body-section a {
+        color: $primary-tourisme;
+    }
     .quick-access {
         .section-title {
             color: $primary-tourisme !important;
@@ -118,6 +179,65 @@ $primary-sport: #004f8c;
 $primary-sport-svg: #ffd145;
 
 .site-sports {
+    .sectionfiles .section-title {
+        color: $primary-sport;
+    }
+    .sectionfiles .table_image {
+        border: 2px solid $primary-sport;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
+        color:$primary-sport;
+    }
+    .sectiontext .section-text .body-section a {
+        color:$primary-sport;
+    }
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
+        color: $primary-sport;
+    }
+    #portal-column-content .section-contact .contact-type-mission{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-sport !important;
+            }
+        }
+    }
+    #portal-column-content .section-contact .contact-type-organization{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-sport !important;
+            }
+        }
+    }
+    #portal-column-content .section-contact .contact-type-position{
+        .address,.contact_informations,.schedule{
+            h2,.h2,h3,.h3 {
+                color: $primary-sport !important;
+            }
+        }
+    }
+    .sectionnews {
+        .section-title {
+            color: $primary-sport !important;
+        }
+    }
+    .to-portal a {
+        color: #fff;
+    }
+    .sectionnews .see_all a {
+        color: $primary-sport!important;
+        &:before {
+            border: 1px solid $primary-sport!important;
+        }
+        &:hover{
+            color: $primary-sport!important;
+            &:before {
+                border: 1px solid $primary-sport!important;
+            }
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        color:$primary-sport;
+    }
     .smartweb_herobanner::after {
         background: $primary-sport-svg;
     }
@@ -233,12 +353,70 @@ $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 
 .site-cpas {
+    .sectionfiles .section-title {
+        color: $primary-cpas;
+    }
+    .sectionfiles .table_image {
+        border: 2px solid $primary-cpas;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
+        color:$primary-cpas;
+    }
+    .sectiontext .section-text .body-section a {
+        color:$primary-cpas;
+    }
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
+        color: #c4236b;
+    }
+    #portal-column-content .section-contact .contact-type-mission .address .h2, 
+    #portal-column-content .section-contact .contact-type-mission .address .h3, 
+    #portal-column-content .section-contact .contact-type-mission .address h2, 
+    #portal-column-content .section-contact .contact-type-mission .address h3, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3, 
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+     #portal-column-content .section-contact .contact-type-mission .schedule .h3, 
+     #portal-column-content .section-contact .contact-type-mission .schedule h2,
+     #portal-column-content .section-contact .contact-type-mission .schedule h3,
+     #portal-column-content .section-contact .contact-type-organization .address h3 {
+        color: $primary-cpas;
+    }
+    #portal-column-content .section-contact .contact-type-organization .address .h2,
+    #portal-column-content .section-contact .contact-type-organization .address .h3,
+    #portal-column-content .section-contact .contact-type-organization .address h2,
+    #portal-column-content .section-contact .contact-type-organization .address h3,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-organization .schedule .h2,
+    #portal-column-content .section-contact .contact-type-organization .schedule .h3,
+    #portal-column-content .section-contact .contact-type-organization .schedule h2,
+    #portal-column-content .section-contact .contact-type-organization .schedule h3 {
+        color: $primary-cpas;
+    }
     .sectionnews {
         .section-title {
             color: $primary-cpas !important;
         }
     }
-
+    .to-portal a {
+        color: #fff;
+    }
+    .sectionnews .see_all a {
+        color: $primary-cpas!important;
+        &:before {
+            border: 1px solid $primary-cpas!important;
+        }
+        &:hover{
+            color: $primary-cpas!important;
+            &:before {
+                border: 1px solid $primary-cpas!important;
+            }
+        }
+    }
     &.portaltype-imio-smartweb-portalpage {
         .sectiontext {
             h2 {
@@ -352,20 +530,79 @@ $primary-cpas-svg: #fab4b6;
 
 
 
-
-
-
-
-
-
-
-
 // competences
 
-$primary-competences: #3893a0;
-$primary-competences-svg: #f58214;
+$primary-competences: #007D6A;
+$primary-competences-svg: #DB7C00;
 
 .site-wellin-competences {
+    .sectionfiles .section-title {
+        color: $primary-competences;
+    }
+    .sectionfiles .table_image {
+        border: 2px solid  $primary-competences;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
+        color:$primary-competences;
+    }
+    .sectiontext .section-text .body-section a {
+        color:$primary-competences;
+    }
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
+        color: $primary-competences;
+    }
+    #portal-column-content .section-contact .contact-type-mission .address .h2, 
+    #portal-column-content .section-contact .contact-type-mission .address .h3, 
+    #portal-column-content .section-contact .contact-type-mission .address h2, 
+    #portal-column-content .section-contact .contact-type-mission .address h3, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h2, 
+    #portal-column-content .section-contact .contact-type-mission .contact_informations h3, 
+    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+     #portal-column-content .section-contact .contact-type-mission .schedule .h3, 
+     #portal-column-content .section-contact .contact-type-mission .schedule h2,
+     #portal-column-content .section-contact .contact-type-mission .schedule h3,
+     #portal-column-content .section-contact .contact-type-organization .address h3 {
+        color: $primary-competences;
+    }
+    #portal-column-content .section-contact .contact-type-organization .address .h2,
+    #portal-column-content .section-contact .contact-type-organization .address .h3,
+    #portal-column-content .section-contact .contact-type-organization .address h2,
+    #portal-column-content .section-contact .contact-type-organization .address h3,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations .h2,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations .h3,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h2,
+    #portal-column-content .section-contact .contact-type-organization .contact_informations h3,
+    #portal-column-content .section-contact .contact-type-organization .schedule .h2,
+    #portal-column-content .section-contact .contact-type-organization .schedule .h3,
+    #portal-column-content .section-contact .contact-type-organization .schedule h2,
+    #portal-column-content .section-contact .contact-type-organization .schedule h3 {
+        color: $primary-competences;
+    }
+    .sectionnews {
+        .section-title {
+            color: $primary-competences !important;
+        }
+    }
+    .to-portal a {
+        color: #fff;
+    }
+    .sectionnews .see_all a {
+        color: $primary-competences!important;
+        &:before {
+            border: 1px solid $primary-competences!important;
+        }
+        &:hover{
+            color: $primary-competences!important;
+            &:before {
+                border: 1px solid $primary-competences!important;
+            }
+        }
+    }
+
+
+
     .smartweb_herobanner::after {
         background: $primary-competences-svg;
     }
@@ -449,6 +686,11 @@ $primary-competences-svg: #f58214;
             a {
                 color: $primary-competences !important;
             }
+        }
+    }
+    .nav_je-participe-1{
+        a{
+            color: $primary-competences-svg;
         }
     }
 }
