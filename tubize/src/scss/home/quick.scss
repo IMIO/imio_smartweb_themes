@@ -1,56 +1,44 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
+    margin-top: -4.2rem;
     .body-section{
         padding: 0;
     }
 }
 .quick-access{
+    svg{
+        max-height: 45px;
+    }
     .body-section{
         li{
             .table_image{
-                background: #287FA4;
-                border: solid 4px #7eb2c8;
-                border-radius: 100px;
-                width: 120px;
-                height: 120px;
-                transition: all .15s ease;
-                &:hover,&:focus{
-                    transform: translateY(-15px);
+                .image.d-block{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    position: relative;
+                    transition: all .3s ease;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 8px;
+                        left: 0;
+                        right: 0;
+                        z-index: -1;
+                        box-shadow: 0px 20px 40px rgba(0,0,0,.16)!important;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                    }
                 }
                 .table_title{
                     span{
-                        line-height: 1;
                     }
                 }
-            }
-            &:nth-child(1){
-                .table_image{
-                    background: #287FA4;
-                    border: solid 4px #7eb2c8;
-                }
-            }
-            &:nth-child(2){
-                .table_image{
-                    background: #239C49;
-                    border: solid 4px #2bc492;
-                }
-            }
-            &:nth-child(3){
-                .table_image{
-                    background: #DA1E84;
-                    border: solid 4px #e978b5;
-                }
-            }
-            &:nth-child(4){
-                .table_image{
-                    background: #D33F0D;
-                    border: solid 4px #e58c6e;
-                }
-            }
-            &:nth-child(5){
-                .table_image{
-                    background: #16215B;
-                    border: solid 4px #737a9d;
+                &:hover{
+                    .image.d-block{
+                        transform: translateY(-10px);
+                    }
                 }
             }
         }

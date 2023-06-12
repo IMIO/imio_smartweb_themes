@@ -3,7 +3,7 @@
     background: transparent;
     margin-top: 5rem;
     #portal-footer{
-        background: #181a21!important;
+        background:$primary!important;
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
@@ -30,7 +30,7 @@
 }
 
 #portal-colophon{
-    background: #181A21!important;
+    background: $primary;
     padding: 1rem;
     ul{
         display: flex;

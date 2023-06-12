@@ -14,9 +14,12 @@ $enable-roboto-webfont: false;
 @import "./home/intro.scss";
 @import "./home/quick.scss";
 @import "./home/a-la-une";
+@import "./home/espace-citoyen";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
+@import "./home/section-en-image";
+
 
 
 
@@ -33,7 +36,7 @@ $enable-roboto-webfont: false;
 }
 .swiper-banner-image:after {
     content: "";
-    background: red;
+    background: #0000;
     position: absolute;
     left: 0;
     right: 0;
@@ -47,7 +50,10 @@ $enable-roboto-webfont: false;
 	background-size: cover;
 	background-position: center;
 }
-
+.swiper-banner-image{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius:30px;
+}
 //footer 
 footer{
     #container-section-noussuivre{
@@ -119,4 +125,7 @@ footer #container-section-noussuivre{
 
 #portal-globalnav > li a:hover {
 	color: $primary-svg;
+}
+.portaltype-imio-smartweb-portalpage{
+        background: #F8F8F8!important;
 }
