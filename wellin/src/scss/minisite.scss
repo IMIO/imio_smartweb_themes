@@ -533,7 +533,7 @@ $primary-cpas-svg: #fab4b6;
 // competences
 
 $primary-competences: #007D6A;
-$primary-competences-svg: #DB7C00;
+$primary-competences-svg: #E6740A;
 
 .site-wellin-competences {
     .sectionfiles .section-title {
@@ -699,4 +699,77 @@ $primary-competences-svg: #DB7C00;
     .sectiontext {
         margin-top: 3rem;
     }
+
+    .compe-intro{
+        &.sectiontext .section-text .body-section .text {
+            margin: 0;
+            max-width: 543px;
+            h2 {
+                color: $primary-competences-svg!important;
+            }
+            mark{
+                background: $primary-competences-svg!important;
+                border: solid 2px $primary-competences-svg!important;
+                border-radius: 12px!important;
+                display: inline-block!important;
+                font-size: 20px!important;
+                padding: 12px 25px!important;
+                &:hover {
+                    background: transparent!important;
+                    a{
+                        color: $primary-competences-svg!important;
+                    }
+                }
+                a{
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+
+    .compe-hi1 {
+        &:hover {
+            background: $primary-competences-svg!important;
+        }
+    }
+}
+
+
+.compe-hi1{
+    background: $primary-competences-svg;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 4vw!important;
+    .text {
+        padding: 30px;
+    }
+}
+.compe-hi1 h2,
+.compe-hi1 h3,
+.compe-hi1 p{
+    color: #fff!important;
+}
+
+.compe-hi1 mark{
+    padding: 0;
+background: top;
+border: 0;
+}
+.compe-hi1 mark a{
+    display: inline-block;
+    margin: 0 auto;
+    background: #00818f;
+    color: #fff!important;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+.compe-hi2{
+    margin-bottom: 4vw!important;
+    .section-title {
+        color: $primary-competences-svg!important;
+        margin-bottom: 2rem;
+    }
+}
+.compe-hi2 .swiper-pagination{
+    display: none;
 }
