@@ -96,7 +96,7 @@ $enable-roboto-webfont: false;
 
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
-        background-image: url("../../assets/svg/placeholder-manage.png") !important;
+        background-image: url("../../assets/svg/placeholder-manage.png");
     }
 }
 
@@ -356,4 +356,14 @@ li:marker {
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:hover, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a:focus {
 	color: #C93434!important;
+}
+
+.see_all a::after {
+display: none;
+}
+
+#portal-colophon ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }

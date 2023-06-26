@@ -1,4 +1,5 @@
 .sectionevents {
+	background: #343645;
     .swiper-pagination-bullet {
         background: #A1A1A1;
         opacity: 1;
@@ -6,4 +7,15 @@
     .swiper-pagination-bullet-active {
         background: #fff !important;
     }
+}
+
+.sectionevents .see_all a {
+    &:hover {
+        color: #fff!important;
+    }
+}
+
+footer #container-section-liens-utiles h2 {
+	font-size: 2.5rem !important;
+	transform: translateX(-13px);
 }
