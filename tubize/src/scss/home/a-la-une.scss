@@ -53,3 +53,27 @@
         }
     }
 }
+
+// videos
+.home-video{
+    position: relative;
+    .body-section {
+        max-width: 750px;
+    }
+    &:after {
+        content: "";
+        background: $primary-light;
+        position: absolute;
+        width: 110%;
+        top: 90px;
+        bottom: -274px;
+        display: block;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 30px;
+    }
+    iframe{
+        border-radius: 15px;
+    }
+}
