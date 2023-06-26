@@ -202,11 +202,9 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
     }
 }
 
-.portaltype-imio-smartweb-directoryview .r-annuaire-result {
-    .r-item-img {
-        background-image: url("../../assets/svg/plachld-wellin.png") !important;
+    .r-item-img.r-item-img-placeholder{
+        background-image: url("../../assets/svg/plachld-wellin.png");
     }
-}
 
 /// footer
 #portal-footer-wrapper {

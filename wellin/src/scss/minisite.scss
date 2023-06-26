@@ -729,14 +729,15 @@ $primary-competences-svg: #E6740A;
 
     .compe-hi1 {
         &:hover {
-            background: $primary-competences-svg!important;
+            background: #fff!important;
         }
     }
 }
 
 
 .compe-hi1{
-    background: $primary-competences-svg;
+    max-width: 500px;
+    box-shadow: 0px 0 10px #c9c9c9;
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 4vw!important;
@@ -747,7 +748,7 @@ $primary-competences-svg: #E6740A;
 .compe-hi1 h2,
 .compe-hi1 h3,
 .compe-hi1 p{
-    color: #fff!important;
+    color: $primary-competences!important;
 }
 
 .compe-hi1 mark{
@@ -768,6 +769,90 @@ border: 0;
     .section-title {
         color: $primary-competences-svg!important;
         margin-bottom: 2rem;
+        width: 100%;
+        background: #fff;
+        padding-bottom: 1.5rem;
+    }
+    .see_all {
+        display: none;
+    }
+    .swiper{
+        max-width: 450px;
+    }
+    .swiper-slide {
+        & > a {
+            place-items: unset;
+            &:after{
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, 0.55);
+                bottom: 0;
+                height: 0%;
+                width: 100%;
+                transition: all .2s ease;
+            }
+        }
+        .swiper_items_wrapper{
+            display: flex;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.55);
+            transition: all .2s ease;
+            position: absolute;
+            top: 100%;
+            transform: translateY(-100%);
+            width: 100%;
+            z-index: 1;
+            padding: 5px 20px;
+        }
+        .swiper-image {
+            padding-bottom: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .swiper_title {
+            order: -1;
+
+            h3{
+                margin-bottom: 0;
+                color: #fff!important;
+            }
+        }
+        .swiper_category{
+            display: none;
+            order: -2;
+            span{
+                width: max-content;
+            }
+        }
+        .swiper_date{
+            display: none;
+        }
+        .swiper_description {
+            p {
+                color: #fff!important;
+            }
+        }
+        & > a:hover {
+            .swiper_items_wrapper{
+                top: 0%;
+                border-radius: 15px 15px 0 0;
+                transform: translateY(0);
+                background: transparent;
+            }   
+            &:after{
+                height: 100%;
+                border-radius: 15px 15px 0 0;
+            }
+            .swiper_category{
+                display: block;
+            }
+            .swiper_date{
+                display: block;
+            }
+        }
+    }
+    .nb-items-batch-1{
+        background: $primary-competences-svg;
+        padding-bottom: 2rem;
     }
 }
 .compe-hi2 .swiper-pagination{
