@@ -66,6 +66,12 @@ body.faceted-map{
                         display: none;
                     }
                     #faceted-results-items{
+                      .faceted-map-item {
+                        transition: all .3s ease;
+                        &:hover {
+                          transform: translateY(-16px);
+                        }
+                      }
                         @include media-breakpoint-up(md) {
                             grid-template-columns: 1fr 1fr 1fr;
                             display: grid;

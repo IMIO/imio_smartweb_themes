@@ -231,4 +231,16 @@ h1{
 	font-weight: 400;
 	padding: 0;
 	font-size: 18px;
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: nowrap!important;
+    &::before {
+        content: "";
+        background-color: #fe5919;
+        height: 4px;
+        width: 27px;
+        min-width: 27px;
+        transform: translateY(11px);
+        margin-right: 10px;
+    }
 }
