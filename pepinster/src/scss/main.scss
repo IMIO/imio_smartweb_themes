@@ -1,0 +1,68 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/bulletin";
+@import "./home/cpas";
+
+body{
+    background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 10%, rgba(209,220,231,0.6) 100%);
+}
+.sortable-section .sectionfiles {
+    .item_infos {
+        color: #fff;
+    }
+    a.table_image:hover {
+        color: #fff;
+    }
+}
+.userrole-authenticated.plone-toolbar-left-expanded .smartweb_herobanner {
+    width: calc(100vw - 120px);
+}
+.userrole-authenticated.plone-toolbar-left-default .smartweb_herobanner {
+    width: calc(100vw - 60px);
+}
+/* Demande rcharlier par e-mail du 31 octobre 2022. description au dessus de la carte */
+#portal-column-content .section-contact .contact_map {
+	order: 1;
+}
+
+.section-text #body-section-logo.figure-top figure {
+    margin-top: 0;
+    width: 90%;
+}
+#portal-footer-wrapper,
+#portal-footer-wrapper .sectionlinks .section-title.h2, #portal-footer-wrapper .sectionlinks h2.section-title {
+    color: #222831;
+}
+#portal-footer-wrapper {
+    text-align: left;
+}
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper .section-title {
+    font-size: 2rem;
+}
+/*SUP28784*/
+.sectiontext table tr td ul li::before {
+  position: initial !important;
+  margin-right: 0.5rem;
+}
+div#subsite-logo {
+    margin-top: 0.5rem;
+}
+#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
+    margin-top: 1rem;
+}
