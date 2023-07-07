@@ -1,0 +1,37 @@
+.sectionevents {
+    background-color: #e8e8e8;
+    .swiper-slide {
+        & > a {
+            grid-auto-rows: auto;
+            grid-template-rows: auto 1fr;
+            .swiper-image {
+                order: 1;
+            }
+            .swiper_category {
+                position: absolute;
+                bottom: 0;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .swiper_description {
+                display: none;
+            }
+            .swiper_date {
+                margin-top: 1rem;
+                color: #898989;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .swiper_title {
+                margin-bottom: 1rem;
+                h3 {
+                    color: $primary-black;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: $font-family-base; 
+                }
+            }
+        }
+    }
+}
