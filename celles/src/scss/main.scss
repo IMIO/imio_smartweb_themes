@@ -367,3 +367,13 @@ display: none;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
+#viewlet-above-content-body {
+    .procedure{
+        display: none;
+    } 
+}
+
+.procedure a::after {
+    display: none;
+}
