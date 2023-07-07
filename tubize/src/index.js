@@ -22,4 +22,14 @@ $( document ).ready(function() {
         eventsSwiper.params.speed=1000,
         eventsSwiper.update();
     }
+
+    // For banner
+
+    let checkBanner = document.querySelector("#portal-header #banner");
+    let headerCustom = document.getElementById("portal-header");
+
+    if (checkBanner != null) {
+       console.log("test")
+       headerCustom.classList.add("header-custom");
+    }
 });
