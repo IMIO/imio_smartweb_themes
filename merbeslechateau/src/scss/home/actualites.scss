@@ -12,3 +12,21 @@ body.section-home-page #container-section-actualites::after {
     position:absolute;
     z-index: -1;
 }
+.swiper-image {
+    position: relative;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: .5;
+}
+div.swiper-image:before {
+    background: transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+}
