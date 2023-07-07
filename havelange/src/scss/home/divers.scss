@@ -79,3 +79,32 @@ div.swiper-image::before {
     transform-origin: left bottom;
     z-index: -1;
 }
+footer h3 {
+    color: #fff;
+  }
+.sectionlinks #portal-footer-wrapper li {
+    list-style-type: none;
+    margin-bottom: .25rem;
+    padding-left: 0;
+    width: 100%;
+  }
+footer .sectionlinks li {
+    width: 100% !important;
+}
+  .sectionfiles .body-section .h2, .sectionfiles .body-section h2, 
+  .sectionfiles .body-section p, .sectionfiles .body-section span, 
+  .sectionfiles .section-title .h2, .sectionfiles .section-title h2,
+  .sectionfiles .section-title p, .sectionfiles .section-title span,
+  .sectionfiles a .item_infos {
+    color: #000 !important;
+  }
+  .sectionfiles::after {
+    background: #e7ecef;
+  }
+  .sortable-section.sectionfiles {
+    padding: 3rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .sectionfiles h2.section-title {
+    color: #000 !important;
+}
