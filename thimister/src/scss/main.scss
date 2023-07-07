@@ -1,0 +1,47 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import '@plone/plonetheme-barceloneta-base/scss/barceloneta';
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+@import 'home/quick';
+@import 'home/banner';
+@import 'home/actualites';
+@import 'home/les-sites.scss';
+@import 'home/events';
+@import 'home/divers';
+@import 'home/footer';
+@import 'home/menu';
+@import 'home/newsletter.scss';
+
+//// STYLES
+// ... add your styles here
+body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper {
+    overflow-x: hidden;
+}
+.swiper-image {
+    position: relative;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: .5;
+}
+div.swiper-image:before {
+    background: transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+}
+.sectionfiles .item_infos {
+    color: #fff;
+}

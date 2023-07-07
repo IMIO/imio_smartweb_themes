@@ -1,0 +1,118 @@
+#portal-footer-wrapper{
+    text-align: left!important;
+    background: $primary;
+    margin-top: 5rem;
+    #portal-footer{
+        background: $primary;
+        #smartweb-footer,#smartweb-minisite-footer{
+            a,span,p,div,h2{
+                color: #fff!important;
+            }
+            h2{
+                font-size: 22px!important;
+                margin-top: 2rem;
+                &.section-title{
+                    margin-bottom: 1.5rem;
+                    margin-top: 2rem;
+                }
+            }
+            .sectiontext{
+                margin-top: 2rem;
+                figure{
+                    img{
+                        width: 150px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#portal-colophon{
+    background: $primary;
+    padding: 1rem;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        li{
+            color: #fff!important;
+            a,span,p,div{
+                color: #fff!important;
+            }
+        }
+    }
+}
+
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
+    background: $primary;
+}
+
+footer{
+    .schedule .opening_informations::after {
+        content: "";
+        width: 9px;
+        height: 6px;
+        display: block;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"8.444\" height=\"5.2\"><path fill=\"white\" d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\"/></svg>");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 0.4rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+@include media-breakpoint-down(md) {
+    #portal-footer-wrapper #portal-footer.container {
+    text-align: center;
+    }
+    #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
+    margin: 0 auto;
+    padding-top: 1rem;
+    }
+}
+#portal-footer-wrapper #portal-footer.container {
+    background: $primary;
+    padding: 3rem 0;
+}
+
+
+footer .image.d-block.w-100 svg {
+    display: none;
+}
+footer .body-section-formulaires ul {
+    padding-left: 12px;
+}
+.sectiontext.col-sm-3 {
+    z-index: 1;
+}
+.sectiontext .section-text .body-section.figure-left figure {
+    float: left;
+    margin-right: 2.5rem;
+    max-width: 100%;
+}
+// footer#portal-footer-wrapper:not(.) #portal-footer .smartweb-footer::after {
+//     content: "";
+//     background: #fff;
+//     left: 0;
+//     bottom: 0;
+//     right: 75%;
+//     top: 0;
+//     position: absolute;
+//     z-index: 0;
+//     border-radius: 0 50% 50% 0;
+// }
+// #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
+//     margin-top: 50%;
+// }
+@include media-breakpoint-up(xl) {
+    body:not(.is-in-minisite) #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, body:not(.is-in-minisite) #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
+        max-width: 100%;
+        width: 100%;
+    }
+    body:not(.is-in-minisite) .sectiontext .section-text .body-section.figure-left figure {
+        max-width: 100%;
+    }
+}

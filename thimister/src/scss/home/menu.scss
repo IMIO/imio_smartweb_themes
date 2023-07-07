@@ -1,0 +1,21 @@
+#portal-header #portal-header-top #portal-logo {
+    position: relative;
+}
+body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo:before {
+    background: #fff;
+    border-radius: 50%;
+    bottom: -20px;
+    content: "";
+    left: -50px;
+    position: absolute;
+    right: -50px;
+    top: -80px;
+    z-index: 0;
+}
+body:not(.is-in-minisite) #portal-header #portal-header-top #portal-logo {
+    height: 115px;
+}
+
+#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
+    position: relative;    
+}
