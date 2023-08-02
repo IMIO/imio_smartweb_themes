@@ -29,7 +29,6 @@ $( document ).ready(function() {
     let headerCustom = document.getElementById("portal-header");
 
     if (checkBanner != null) {
-       console.log("test")
        headerCustom.classList.add("header-custom");
     }
 });
