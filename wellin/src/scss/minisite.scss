@@ -536,6 +536,16 @@ $primary-competences: #007D6A;
 $primary-competences-svg: #E6740A;
 
 .site-wellin-competences {
+    .active > .page-link, .page-link.active {
+        background-color: $primary-competences;
+    }
+    .procedure a {
+        background: $primary-competences;
+        color: #FFF !important;
+    }
+    .sectionevents {
+        background-color:$primary-competences;
+    }
     .sectionfiles .section-title {
         color: $primary-competences;
     }
@@ -759,7 +769,7 @@ border: 0;
 .compe-hi1 mark a{
     display: inline-block;
     margin: 0 auto;
-    background: #00818f;
+    background: $primary-competences;
     color: #fff!important;
     padding: 1rem 2rem;
     border-radius: 15px;
