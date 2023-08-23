@@ -1,0 +1,14 @@
+body.portaltype-imio-smartweb-portalpage .sectionnews {
+    position: relative;
+}
+body.portaltype-imio-smartweb-portalpage .a-la-une::before {
+    background: #fef2f2;
+    bottom: -40%;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 55%;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -2;
+}

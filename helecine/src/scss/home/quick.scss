@@ -1,0 +1,6 @@
+.quick-access .table_image:focus .image.d-block, .quick-access .table_image:hover .image.d-block {
+    transform: translateY(-15px);
+}
+.quick-access .table_image .image.d-block {
+    transition: all .15s ease;
+}

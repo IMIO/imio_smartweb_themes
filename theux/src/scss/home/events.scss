@@ -1,0 +1,20 @@
+.sectionevents h2.section-title {
+    font-weight: 300;
+}
+body.portaltype-imio-smartweb-portalpage.section-home-page {
+    position: relative;
+}
+body.portaltype-imio-smartweb-portalpage.section-home-page:after {
+    background: url(../../assets/svg/vector-background.svg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -1;
+}

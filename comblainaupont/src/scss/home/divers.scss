@@ -1,0 +1,162 @@
+
+.swiper-banner-content {
+    position: relative;
+}
+.swiper-banner-content::after {
+    content: url("../../assets/svg/slogan-banner.svg");
+    position: absolute;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    text-align: center;
+  }
+div.swiper-image {
+    position: relative;
+  }
+div.swiper-image:before {
+    background: transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .2s ease;
+    z-index: 0;
+    border-radius: 5px;
+}
+.swiper-slide:hover a div.swiper-image:before {
+    background: $primary;
+    opacity: .5;
+}
+#container-section-magazine-communal .swiper-slide .swiper-image {
+    padding-bottom: 140%;
+}
+
+#container-section-magazine-communal {
+    position:relative;  
+    margin:7rem 0;
+}
+
+#container-section-magazine-communal:before {
+    background: #f1f1f1;
+    content: "";
+    left: 50%;
+    position: absolute;
+    height:250px;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -1;
+    bottom:0px;
+}
+
+#container-section-magazine-communal #body-section-magazine-communal .swiper-wrapper .swiper-slide a .swiper_title h3 {
+    font-size:1rem;
+    text-align:center;
+    padding: 2rem;
+    text-decoration:none;
+}
+
+#container-section-magazine-communal .see_all, #container-section-magazine-communal .swiper-pagination {
+    display:none;
+}
+
+#container-section-magazine-communal .section-title {
+    font-size: 3.25rem;
+    margin: 0 0 2rem;
+}
+
+#body-section-magazine-communal .swiper-wrapper .swiper-slide a {
+    text-decoration:none;
+}
+body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    padding: 0.5rem;
+}
+@include media-breakpoint-down(lg) { 
+    body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+        top: 30%;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    footer .sectiontext .section-text .body-section.figure-left figure img {
+        max-width: 130px;
+        margin: 0 auto;
+    }
+    #portal-footer-wrapper .sectionlinks.rs li {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+    footer .sectioncontact, footer .sectionlinks, footer .sextiontext {
+        text-align: center;
+        h2.section-title, h2 {
+            text-align: center;
+        }
+    }
+    #portal-header #portal-header-top #portal-logo {
+        max-width: 100px;
+    }
+    #portal-colophon .colophonWrapper ul {
+        display: initial;
+    }
+    .sectionlinks.quick-access .body-section li {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+    body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+        top: 21%;
+    }
+    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
+        top: 55%;
+    }
+    .swiper-banner-content::after {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.6);
+        text-align: center;
+    }
+}
+.faceted-results {
+    .list-menu-element a.row {
+        text-decoration: none;
+        border: 1px solid #dfdfdf;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+            &:hover {
+            border: solid 1px $primary;
+            }
+        }
+    }
+.faceted-form input#c1_button {
+        color: $primary;
+        transition: 0.5s;
+            &:hover {
+                background-color: $primary;
+                color: #fff;
+                }
+        }
+.sectionfiles .item_infos {
+    color: #fff;
+}
+.sectionfiles a:hover {
+    color: #fff;
+}
+#portal-breadcrumbs {
+    margin-top: 2rem !important;
+  }
+.subsite-container {
+margin-top: 2rem;
+  }
+  #portal-column-content .sectioncontact {
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: #d5d5d5 solid 1px;
+    background: #f7f7f7;
+    border-radius: 10px;
+  }

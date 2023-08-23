@@ -1,0 +1,40 @@
+.partenaires {
+    background: transparent;
+    a.table_image {
+        text-align: center;
+            .d-block {
+            align-items: center;
+            background: $secondary-svg;
+            border-radius: 50%;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            height: 60px;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60px;
+            .plone-icon {
+            height: 2em;
+            width: auto;
+            fill: #fff;
+            }
+        }
+    }
+    .table_title {
+        margin-top: 1rem;
+    }
+    li {
+        padding: 1rem 0;
+    }
+}
+.sortable-section.sectionlinks.partenaires a {
+    text-align: center;
+  }
+  .partenaires h2.section-title {
+    color: $primary;
+    font-size: 3rem;
+    margin: 0 auto 5rem;
+    padding: 0;
+    text-align: center;
+    font-weight: 300;
+}

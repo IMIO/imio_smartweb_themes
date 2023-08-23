@@ -1,0 +1,17 @@
+.portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
+    margin-top: -85px;
+    padding: 0;
+}
+.sectionlinks.quick-access.partenaires .section-title {
+    text-align: center;
+}
+.sectionlinks.quick-access.partenaires {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.quick-access .table_image .image.d-block {
+    transition: all .15s ease;
+}
+.quick-access .table_image:focus .image.d-block, .quick-access .table_image:hover .image.d-block {
+    transform: translateY(-10px);
+}

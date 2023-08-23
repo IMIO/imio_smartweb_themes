@@ -2,7 +2,7 @@
 // ... add your variables here
 
 $enable-roboto-webfont: false;
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 //// IMPORTS
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
@@ -16,18 +16,3 @@ $enable-roboto-webfont: false;
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./home/enquetes";
-@import "./home/newsletter";
-@import "./home/divers";
-
-
-
-// .r-item-img.r-item-img-placeholder {
-// 	background: url("../../assets/svg/placeholder-helecine.jpg");
-// 	background-size: cover;
-// 	background-position: center;
-// }
-
-// body{
-//     background: linear-gradient(180deg, rgba(245,203,92,1.000) 0%, rgb(245,203,92, 1.000) 100%);
-// }

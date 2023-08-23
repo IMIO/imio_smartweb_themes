@@ -1,0 +1,25 @@
+.body-section.contact-type-position {
+    background: #fdf2d7;
+}
+body.portaltype-imio-smartweb-portalpage.section-accueil {
+    background: linear-gradient(180deg, rgba(253,246,226,1), rgba(255,255,255,1));
+}
+//Style fichiers events
+.r-content-files .r-content-file-link {
+    background: #fdf2d7;
+}
+#subsite-navigation>ul li>.has_subtree.dropdown {
+    margin-top: 30px;
+}
+#portal-globalnav>li.has_subtree>a:before {
+    background-color: $primary-svg;
+}
+.subsite-container {
+    margin-top: 10px;
+}
+a#portal-logo {
+    margin-right: 25px;
+}
+.sortable-section.sectionmap {
+    z-index: 0;
+}
