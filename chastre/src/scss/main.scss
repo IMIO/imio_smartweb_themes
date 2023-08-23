@@ -24,11 +24,11 @@ $enable-roboto-webfont: false;
 
 
 
-.portaltype-imio-smartweb-directoryview .r-annuaire-result {
-    .r-item-img.r-item-img-placeholder {
-        background-image: url("../../assets/svg/plachld-chastre.png") !important;
-    }
+
+.r-item-img.r-item-img-placeholder {
+    background-image: url("../../assets/svg/plachld-chastre.png");
 }
+
 
 body{
     background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 10%, rgba(209,220,231,0.6) 100%);
