@@ -209,23 +209,6 @@ strong {
   padding-left: 0;
 }
 
-.r-content-text {
-  li {
-    position: relative;
-    display: table;
-    padding-left: 1rem;
-    margin: 0.25rem 0;
-    list-style: none;
-
-    &::before {
-      position: absolute;
-
-      // content: $list-style-custom;
-      top: -2px;
-      left: 0;
-    }
-  }
-}
 
 .sectiontext table tr td ul li::before {
 	position: initial !important;
