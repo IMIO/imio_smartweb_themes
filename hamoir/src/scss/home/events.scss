@@ -28,6 +28,7 @@
                 }
                 .swiper_category{
                     //margin-left: auto;
+                    span {background: $primary-dark;}    
                 }
                 .swiper_date{
                     text-transform: none;
@@ -39,11 +40,8 @@
                     padding:0 20px;
                 }
                 .swiper_title{
-                    //grid-column-start: 1;
-                    //grid-column-end: 3;
-                    margin: 1rem 0 0 0;
+                    margin: 1rem 0;
                     padding:0 20px;
-                    //padding:0 20px;
                     h3{
                         font-family: $font-family-base;
                         font-size: 22px;

@@ -24,8 +24,11 @@ $enable-roboto-webfont: false;
 @import "./se-files.scss";
 @import "./contact.scss";
 
+a {
+    color: $primary-dark;
+}
 
-
+.nav-link:focus-visible {box-shadow: 0 0 0 0.25rem rgb(0 0 0);}
 h1 {
     font-family: $font-family-base!important;
     font-weight: bold!important;
@@ -206,7 +209,7 @@ footer #container-section-noussuivre{
 }
 
 #portal-globalnav > li a:hover {
-	color: $primary-svg;
+	color: $primary-dark;
 }
 .portaltype-imio-smartweb-portalpage{
         background: url(../../assets/svg/bg-hamoir.svg) center center no-repeat;
@@ -249,8 +252,8 @@ footer #container-section-noussuivre{
 }
 
 .r-add-contact a, .r-add-event a, .r-add-news a {
-	background: #009EB0;
-	color: #000;
+	background: $primary-dark;
+	color: #fff;
 	padding: 1rem;
 	text-decoration: none;
     border-radius: 5px;
@@ -276,5 +279,9 @@ footer #container-section-noussuivre{
 }
 
 .sectiontext .section-text .body-section a {
-	color: #019eb1;
+	color: $primary;
+}
+
+.r-list-item-group:hover .r-item-arrow-more {
+    background-color: $primary-svg !important;
 }
