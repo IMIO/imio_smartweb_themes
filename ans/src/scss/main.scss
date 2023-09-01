@@ -15,7 +15,8 @@ $enable-roboto-webfont: false;
 @import './actualites.scss';
 @import './events.scss';
 @import './footer.scss';
-
+@import './a-la-une.scss';
+@import './en-images.scss';
 
 #portal-globalnav .quick-access .quick-access-title {
 	color: $primary!important;

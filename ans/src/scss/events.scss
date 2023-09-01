@@ -35,3 +35,14 @@
         }
     }
 }
+.sectionevents .see_all a {
+    background: transparent;
+    border: 2px solid $primary-svg;
+    color: $primary-svg;
+    transition: 0.2s;
+    &:hover {
+        background: $primary-svg;
+        color: #000;
+        border: 2px solid $primary-svg;
+    }
+}

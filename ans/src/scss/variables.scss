@@ -2,6 +2,7 @@
 $primary: #E12A19;
 $primary-svg: #ffec00;
 $primary-black:#181922;
+$color-grey: #707070;
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
@@ -193,9 +194,9 @@ $a-la-une-title-color: $font-title-color !default;
 $a-la-une-title-align:$home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
-$a-la-une-text-bg: rgb(244, 244, 244) !default;
+$a-la-une-text-bg: transparent;
 $a-la-une-item-image-margin:0 !default;
-$a-la-une-item-title-color:$primary !default;
+$a-la-une-item-title-color:#fff;
 $a-la-une-item-title-font-size:$h3-font-size !default;
 $a-la-une-item-title-margin:0 !default;
 $a-la-une-item-title-padding:36px 36px 0 !default;
@@ -242,7 +243,7 @@ $actu-item-description-align: left !default;
 $actu-item-description-font-family: $font-family-base !default;
 $actu-date-margin: 0 0 .5rem 0!default;
 $actu-date-padding: 0 1rem !default;
-$actu-date-color: $primary !default;
+$actu-date-color: $color-grey;
 $actu-date-font-size: 14px !default;
 $actu-date-align: left !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
@@ -251,9 +252,9 @@ $actu-see-all-justify-content: $see-all-justify-content !default;
 // Event
 $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
-$event-section-padding-bottom: 2rem !default;
+$event-section-padding-bottom: 20rem;
 $event-section-margin: 0 !default;
-$event-title-color:$primary !default;
+$event-title-color:$primary-svg;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
@@ -282,9 +283,9 @@ $event-item-description-align: left !default;
 $event-item-description-font-family: $font-family-base !default;
 $event-date-margin: 0 0 .5rem 0 !default;
 $event-date-padding: 0 1rem !default;
-$event-date-color: $primary !default;
+$event-date-color: $color-grey;
 $event-date-font-size: 14px !default;
-$event-see-all-justify-content: $see-all-justify-content !default;
+$event-see-all-justify-content: right;
 
 
 // Album
