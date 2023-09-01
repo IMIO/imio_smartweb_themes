@@ -1,16 +1,14 @@
 .a-la-une {
-    padding-top: 2rem;
-}
-
-@media (min-width: 768px) {
-    .sectionselections {
-        padding-top: 2rem;
-    }
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin:80px 0;
 }
 
 @media (max-width: 768px) {
     .sectionselections {
         padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin:50px 0;
     }
 }
 
@@ -18,17 +16,6 @@
     padding-bottom: 0px;
 }
 
-.a-la-une:after {
-    background: #CDD8E7;
-    bottom: 0px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    top: -70px;
-    transform: translateX(-50vw);
-    width: 100vw;
-    z-index: -1;
-}
 
 .a-la-une .swiper-slide .swiper_title h3, .a-la-une .swiper-slide .swiper_title .h3 {
     color: #3E4854;

@@ -1,4 +1,21 @@
+.sectionnews:after {
+    background: url("../../assets/svg/bgm.svg");
+	background-size: cover;
+	background-position: bottom;
+    bottom: 0px;
+    top:0px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -1;
+}
+
 .sectionnews{
+    padding-top:80px;
+    padding-bottom:120px;
+
     .section-title{
         font-weight: 300;
         position: relative;

@@ -1,15 +1,15 @@
 .quick-access:after {
-    background: url("../../assets/svg/bg1.svg");
+    background: url("../../assets/svg/bg1.svg") bottom center #CDD8E7;
 	background-size: cover;
-	background-position: bottom;
     bottom: 0px;
     content: "";
     left: 50%;
     position: absolute;
-    top: -70px;
+    top: -100px;
     transform: translateX(-50vw);
-    width: 100vw;
+    width: 200vw;
     z-index: -1;
+    
 }
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
@@ -19,11 +19,12 @@
     }
 }
 .quick-access{
+    padding-top:0px;
     svg{
         max-height: 30px;
     }
     .body-section{
-        padding: 1rem 0 4rem 0!important;
+        padding: 3rem 0 4rem 0!important;
         ul {
        
         li{
