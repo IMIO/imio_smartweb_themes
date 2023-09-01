@@ -88,30 +88,6 @@ div#formfield-form-widgets-basic_analytics {
 .template-folder_contents #content-core .table .itemRow.state-private .state-private {
     color: #dc3545 !important;
 }
-a.manage.contenttype-imio-smartweb-page:before {
-    content: '\e80e';
-    font-family: 'fontello';
-}
-a.manage.contenttype-imio-smartweb-folder:before {
-    content: '\e801';
-    font-family: 'fontello';
-}
-a.manage.contenttype-imio-smartweb-newsview:before {
-    content: '\e80f';
-    font-family: 'fontello';
-}
-a.manage.contenttype-imio-smartweb-eventsview:before {
-    content: '\e809';
-    font-family: 'fontello';
-}
-a.manage.contenttype-imio-smartweb-directoryview:before {
-    content: '\e842';
-    font-family: 'fontello';
-}
-a.manage.contenttype-collection:before {
-    content: '\e808';
-    font-family: 'fontello';
-}
 //---//
 
 // navigation de la vue contenu
@@ -396,12 +372,6 @@ div#viewlet-below-content-body .procedure {
     }
 }
 
-.a-la-une .swiper-slide .swiper_description p {
-    color: #676767;
-    font-size: 1.25rem;
-    max-width: 90%;
-    padding-top: 1rem;
-}
 .template-block_view_with_images #content-core,
 .template-block_view #content-core,
 .template-summary_view #content-core,
