@@ -1,0 +1,60 @@
+.home-annuaire {
+    background:$primary;
+    border-radius: 20px;
+    padding-left: 3vw;
+    margin-top: 4vw;
+    .section-title {
+        color: #fff;
+    }
+    .body-section {
+        display: flex;
+        justify-content: center;
+        &:after{
+            content: url("../../assets/svg/bw-map.svg");
+            width: 100%;
+            max-width: 620px;
+            display: block;
+            // background: url("../../assets/svg/map-shadow.svg");
+            // background-size: cover;
+        }
+        .row {
+            align-content: center;
+            gap: 10px;
+            li {
+                padding: 0;
+                max-width: 48%;
+            }
+        }
+        .table_image {
+            background-color: #2FAFC3;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            padding:1.1rem 1rem;
+            gap: 10px;
+            text-decoration: none;
+            transition: all .2 ease;
+            border: solid 2px $primary;
+            .d-block {
+                width: 35px;
+                height: 35px;
+                svg {
+                    fill: #fff;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .table_title {
+                span {
+                    color: #fff;
+                    font-family: $font-family-title;
+                    text-decoration: none;
+                }
+            }
+            &:hover,&:focus {
+                border: solid 2px $primary-yellow;
+                box-shadow: 0 10px 20px rgba(0, 0, 0,.1);
+            }
+        }
+    }
+}

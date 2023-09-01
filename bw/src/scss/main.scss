@@ -1,0 +1,242 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/espace-citoyen";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/section-en-image";
+@import "./home/home-annuaire";
+@import "./home/home-newsletter";
+@import "./home/home-dossiers";
+@import "./info-trav.scss";
+@import "./se-link.scss";
+@import "./se-files.scss";
+@import "./contact.scss";
+
+
+
+h1 {
+    font-family: $font-family-base!important;
+    font-weight: bold!important;
+}
+ .smartweb_herobanner {
+    padding: 0 40px;
+}
+
+.swiper-banner-image:after {
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.25;
+}
+
+.portaltype-imio-smartweb-portalpage {
+    #portal-header {
+        margin-bottom: 0;
+    }
+}
+.r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.nav_je-suis.nav-item {
+    margin-left: auto;
+    a {
+        color: $primary-svg!important;
+    }
+}
+.nav_un-clic.has_subtree.nav-item {
+    a {
+        color: $primary-svg!important;
+    }
+}
+//footer 
+footer{
+    #container-section-noussuivre{
+        .table_title{
+            display: none;
+        }
+        ul.row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+	display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+    #content > header {
+       display: none;
+   }
+}
+// bug z-index
+
+.pagination{
+    .page-item.active{
+        z-index: 0;
+    }
+}
+
+footer #container-section-noussuivre{
+    li{
+        svg{
+            path{
+                fill: #fff;
+            }
+        }
+        &:nth-child(1), &:nth-child(3){
+            svg path:nth-child(2) {
+                fill: #3f3f3f !important;
+            }
+        }
+    }
+} 
+@media screen and (max-width:900px) {
+    .portaltype-imio-smartweb-portalpage .section-title {
+        font-size: 34px!important;
+    }
+}
+
+#portal-breadcrumbs{
+    background: transparent!important;
+    .container,.breadcrumb{
+        padding-left: 0;
+    }
+}
+
+#portal-globalnav > li a:hover {
+	color: $primary-svg;
+}
+
+
+// footer
+.footer-logo {
+    figure img {
+        width:250px!important;
+    }
+}
+
+.footer-slogan {
+    .text {
+        max-width: 204px;
+        text-align: center;
+        p {
+            font-size: 33px;
+            font-weight: 200;
+        }
+    }
+}
+.footer-social {
+    margin-top: 2rem;
+    .table_image {
+        .table_title {
+            display: none;
+        }
+        .image{
+            width: auto;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+footer {
+    h3 {
+        color: #fff!important;
+    }
+} 
+.r-add-contact a, .r-add-event a, .r-add-news a {
+	background: $primary;
+	color: #fff;
+	padding: 1rem;
+	text-decoration: none;
+    border-radius: 5px;
+}
+
+.r-filter div[class*="control"] {
+	border-radius: 5px;
+}
+
+.procedure a::after {
+    content: "\F135";
+    font-family: Bootstrap-icons;
+    margin-left: .5rem;
+    position: relative;
+    top: 3px;
+}
+
+
+// sub-nav
+
+.subsite-container #subsite-logo {
+	font-size: 18px;
+}
+
+.sectiontext .section-text .body-section a {
+	color: $primary;
+}
+
+.sectiontext figure img {
+	border-radius: 15px;
+}
+
+#viewlet-above-content-body {
+    .procedure{
+        display: none;
+    } 
+}
+
+
+// header common 
+
+
+.portaltype-imio-smartweb-page,
+.portaltype-imio-smartweb-folder,
+.portaltype-imio-smartweb-procedure {
+    #portal-header {
+        #banner {
+            width: 100vw;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            border-radius: 0 0 30px 30px;
+            z-index: -1;
+        }
+    }
+}
+
+.breadcrumb-item {
+    a {
+     text-decoration: none;
+    }
+}
+.breadcrumb {
+	font-size: 13px;
+}
