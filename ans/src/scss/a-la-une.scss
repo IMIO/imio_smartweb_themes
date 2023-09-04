@@ -1,5 +1,47 @@
+.a-la-une .section-title {
+    color: #fff;
+    margin: 0 0 2rem;
+    padding: 0;
+    text-align: left;
+    background: $primary;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+
+.a-la-une .swiper-button-prev {
+    left: 60%;
+    margin-left: -130px;
+    top:80%!important;
+    display:none;
+    @include media-breakpoint-up(xl) {
+        display: block;
+  }
+}
+.a-la-une .swiper-button-next {
+    left: 60%;
+    margin-left: -80px;
+    top: 80%!important;
+    display:none;
+    @include media-breakpoint-up(xl) {
+        display: block;
+  }
+}
+
 .a-la-une .swiper-slide>a {
     grid-template-rows: auto auto auto 1fr;
+    background: none;
+    display: block;
+    @include media-breakpoint-up(lg) {
+            display: grid;
+      }
 }
 .a-la-une .swiper-slide .swiper-image {
     grid-row-end: 5;
@@ -18,7 +60,9 @@
     grid-row-start: 4;
 }
 .sectionnews.a-la-une .swiper-slide .swiper_category span {
-    background: $primary;
+    color: $primary;
+    background:none;
+    display: none;
 }
 .sectionnews.a-la-une .swiper-slide .swiper_date {
     color: $color-grey;
