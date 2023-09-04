@@ -17,7 +17,7 @@ $enable-roboto-webfont: false;
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./home/section-en-image";
+@import "./home/animate";
 @import "./home/home-annuaire";
 @import "./home/home-newsletter";
 @import "./home/home-dossiers";
@@ -33,7 +33,15 @@ h1 {
     font-weight: bold!important;
 }
  .smartweb_herobanner {
-    padding: 0 40px;
+    @include media-breakpoint-up(lg){
+        padding: 0 40px;
+    }
+    .bannerSwiper {
+        @include media-breakpoint-down(lg) {
+            height: 55vw;
+        }
+
+    }
 }
 
 .swiper-banner-image:after {

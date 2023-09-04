@@ -32,6 +32,7 @@
         width: max-content;
         gap: 20px;
         align-items: center;
+        transition: all .2s ease;
         .d-block {
             width: 25px;
             svg {
@@ -41,6 +42,20 @@
         .table_title {
             span {
                 color: #fff;
+            }
+        }
+        &:hover {
+            background: #f8f8f8;
+            border: solid 4px #d8084c;
+            .d-block {
+                svg {
+                    fill: #d8084c;
+                }
+            }
+            .table_title {
+                span {
+                    color: #d8084c;
+                }
             }
         }
     }
@@ -70,6 +85,7 @@
         color: #7C7C7C;
     }
     .table_image {
+        transition: all .2s ease;
         .table_title {
             position: absolute;
             width: 1px;
@@ -91,11 +107,18 @@
             align-items: center;
             border-radius: 15px;
             border: solid 4px #E2E2E2;
+            transition: all .2s ease;
             svg {
                 width: 35px;
                 height: 35px;
                 fill: $primary;
             }
+        }
+        &:hover {
+            .d-block {
+                border: solid 4px $primary-svg;
+            }
+
         }
     }
 }

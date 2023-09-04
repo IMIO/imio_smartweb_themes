@@ -9,6 +9,10 @@
     .body-section {
         display: flex;
         justify-content: center;
+        @include media-breakpoint-down (lg) {
+            flex-direction: column;
+            align-items: center;
+        }
         &:after{
             content: url("../../assets/svg/bw-map.svg");
             width: 100%;

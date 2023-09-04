@@ -2,19 +2,25 @@
     padding-top: 4vw;
     padding-bottom: 0;
     position: relative;
-    &:after {
-        content: "";
+    @include media-breakpoint-down(lg) {
         background: $primary;
-        width: calc(100vw - 80px);
-        top: -2px;
-        bottom: 60px;
-        z-index: -1;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+    }
 
+    @include media-breakpoint-up(lg){
+        &:after {
+            content: "";
+            background: $primary;
+            width: calc(100vw - 80px);
+            top: -2px;
+            bottom: 60px;
+            z-index: -1;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+
+        }
     }
     .swiper-wrapper{
         padding-bottom: 0;
