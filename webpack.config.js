@@ -215,6 +215,9 @@ module.exports = (env, argv) => {
       static: {
         directory: THEME_PATH,
       },
+      client: {
+        overlay: false,
+      },
       devMiddleware: {
         // This is necessary as Plone use `<script integrity=` and if we don't store the file on disk,
         // Plone has no way to recompute the hash and thus the file is not executed in the browser.
