@@ -542,7 +542,13 @@ $primary-competences-svg: #E6740A;
     .procedure a {
         background: $primary-competences;
         color: #FFF !important;
+        &:after {
+            content: "➔";
+            font-family: fontello;
+            margin-left: 0.5rem;
+        }
     }
+    
     .sectionevents {
         background-color:$primary-competences;
     }
@@ -557,6 +563,9 @@ $primary-competences-svg: #E6740A;
     }
     .sectiontext .section-text .body-section a {
         color:$primary-competences;
+    }
+    .sectiontext .section-text .body-section figure figcaption {
+        display:block !important;
     }
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: $primary-competences;
@@ -659,6 +668,15 @@ $primary-competences-svg: #E6740A;
         color: $primary-competences;
     }
 
+
+
+
+
+    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
+        color: #007d6a !important;
+    }
+
+
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
 
@@ -682,7 +700,7 @@ $primary-competences-svg: #E6740A;
 
             @media screen and (min-width:992px) {
                 &:after {
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%233893a0"/></svg>') !important;
+                    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23007d6a"/></svg>')!important;
                 }
             }
         }
