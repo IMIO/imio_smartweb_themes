@@ -1,0 +1,83 @@
+.sectionnews{
+    background: #F3F3F3;
+    margin-top: 3vw;
+    position: relative;
+    z-index: 1;
+    .swiper-wrapper{
+        .swiper-slide {
+            & > a{
+                display: grid;
+                align-items: center;
+                .swiper-image{
+                    padding-bottom: 55%;
+                    transition: all .25s ease;
+                    margin-bottom: 2rem;
+                    border-radius: 20px;
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                }
+                .swiper_category{
+                    grid-row-start: 1;
+                    position: relative;
+                    grid-column-start: 1;
+                    align-self: end;
+                    transform: translateY(-50%)
+                }
+                .swiper_date{
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-family: $font-family-title; 
+                    grid-row-start: 2;
+                    opacity: .65;
+                }
+                .swiper_title{
+                    width: 100%;
+                    h3{
+                        font-family: $font-family-title;
+                    }
+                }
+                .swiper_description{
+                    display: none;
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                    .swiper_category{
+                    }
+                    .swiper_date{
+
+                    }
+                    .swiper_title{
+                        h3{
+                            color: $primary-svg;
+        
+                        }
+                    }
+                    .swiper_description{
+                        p{
+                            color: #fff;
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .see_all{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+        z-index: 1;
+    } 
+    .swiper-button-next, .swiper-button-prev {
+
+    }
+    .swiper-button-prev{
+
+    }
+}

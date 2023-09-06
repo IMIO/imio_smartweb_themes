@@ -1,0 +1,97 @@
+.portaltype-imio-smartweb-page #main-container .sectionlinks {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    margin-top: 1vw;
+    margin-bottom:1vw;
+    .section-title {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2vw;
+        width: auto;
+        color: $primary-svg;
+    }
+
+    .section-container{
+        border-radius: 20px;
+        display: flex;
+        @media screen and (min-width:800px) {
+            padding: 0 50px;
+        }
+        .rich_description {
+            display: none;
+        }
+        & > div{
+            .section-title{
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 2vw;
+                font-family: $font-family-base;
+
+                &:before{
+                    content: "";
+                    background: url("data:image/svg+xml,%3Csvg id='link' xmlns='http://www.w3.org/2000/svg' width='48' height='48' style='fill:%23D8084C' viewBox='0 0 48 48'%3E%3Cpath id='Path_751' data-name='Path 751' d='M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0Zm0,46.4A22.4,22.4,0,1,1,46.4,24,22.4,22.4,0,0,1,24,46.4Zm0,0'/%3E%3Cpath id='Path_752' data-name='Path 752' d='M145.279,126.465a3.971,3.971,0,0,0-2.828,1.171l-4.526,4.526a4.005,4.005,0,0,0-.508,5.034l-.115.115a4.005,4.005,0,0,0-5.034.508l-4.526,4.526A4,4,0,0,0,133.4,148l4.526-4.526a4.005,4.005,0,0,0,.508-5.034l.115-.115a4.005,4.005,0,0,0,5.034-.508l4.526-4.526a4,4,0,0,0-2.829-6.828Zm-8.485,15.879-4.525,4.525a2.458,2.458,0,0,1-3.394,0,2.4,2.4,0,0,1,0-3.394l4.525-4.525a2.372,2.372,0,0,1,2.724-.462l-1.592,1.593a.8.8,0,1,0,1.131,1.131l1.593-1.593A2.4,2.4,0,0,1,136.794,142.344Zm10.182-10.182-4.525,4.525a2.4,2.4,0,0,1-2.725.462l1.593-1.593a.8.8,0,0,0-1.131-1.131l-1.593,1.593a2.4,2.4,0,0,1,.462-2.725l4.525-4.525a2.4,2.4,0,1,1,3.394,3.394Zm0,0' style='fill:%23D8084C' transform='translate(-113.926 -113.818)'/%3E%3C/svg%3E");
+                    width:25px;
+                    height: 25px;
+                    display: block;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                
+                
+            }
+            .body-section{
+
+                .row{
+                    flex-direction: row;
+                    list-style-type: none;
+                    gap: 30px 2%;
+                    li{
+                        padding: 0;
+                    }
+                    .table_image{
+                        display:flex;
+                        width:100%;
+                        gap: 10px;
+                    .image {
+                        width: auto;
+                        svg {
+                            max-width: 120px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            border: solid 1px rgb(165, 169, 172);
+                            border-radius: 5px;
+                            width: 6Opx;
+                            height: 60px;
+                            padding: 1rem;
+                        }
+                    }
+                    .table_title{
+                        span{
+                            display: flex;
+                            align-items: first baseline;
+                            gap: 10px;
+                            &:before{
+                                content: "";
+                                display: block;
+                                width: 10px;
+                                height: 11px;
+                                background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4.25 6.51'%3E%3Cpath d='M3.96 2.55 1.71.29C1.32-.1.68-.1.29.29s-.39 1.03 0 1.42l1.55 1.55L.29 4.81A.996.996 0 0 0 1 6.51c.26 0 .51-.1.71-.29l2.25-2.25a.996.996 0 0 0 0-1.41Z' style='fill:%23D8084C'/%3E%3C/svg%3E");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                
+                            }
+                        }
+                    }
+                }
+                }
+
+            }
+        }
+    }
+}
