@@ -1,0 +1,156 @@
+$vivre: #336D94;
+$cpas: #52016a;
+$Loisirs: #161B88;
+$Jeunesse: #5AC1DA;
+$litterature: #B0024C;
+$Slowfood: #EE0F0D;
+
+// vire à Silly
+.section-vivreasilly {
+    .subsite-container {
+        position: relative;
+        background: $vivre;
+        &:after {
+            content: "";
+            background: $vivre;
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            z-index: -1;
+        }
+        .nav-title {
+            a {
+                color: $vivre!important;
+            }
+        }
+        #subsite-navigation > ul > li > a {
+            color: #fff;
+        }
+    }
+    #subsite-logo {
+        background: rgba(255, 255, 255, 0.2);
+        a {
+            color: #fff;
+        }
+    }
+    .breadcrumb-item {
+        a {
+            color: $vivre;
+        }
+    }
+}
+
+//  cpas
+.site-cpas {
+    $primary: $cpas;
+    .subsite-container #subsite-logo {
+        background: $cpas;
+    }
+    a {
+        color: $primary;
+        &:hover {
+            color: #21022b;
+        }
+    }
+    #portal-globalnav .dropdown .nav-title a {
+        color: $cpas;
+    }
+    #portal-column-content .section-contact .contact-type-position .address .h2, #portal-column-content .section-contact .contact-type-position .address .h3, #portal-column-content .section-contact .contact-type-position .address h2, #portal-column-content .section-contact .contact-type-position .address h3, #portal-column-content .section-contact .contact-type-position .contact_informations .h2, #portal-column-content .section-contact .contact-type-position .contact_informations .h3, #portal-column-content .section-contact .contact-type-position .contact_informations h2, #portal-column-content .section-contact .contact-type-position .contact_informations h3, #portal-column-content .section-contact .contact-type-position .schedule .h2, #portal-column-content .section-contact .contact-type-position .schedule .h3, #portal-column-content .section-contact .contact-type-position .schedule h2, #portal-column-content .section-contact .contact-type-position .schedule h3 {
+        color: $cpas;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav .dropdown .nav-link:hover {
+        color: $cpas;
+    }
+}
+
+// Jeunesse & sports
+.subsection-jeunesse,.subsection-sports {
+    .subsite-container {
+        position: relative;
+        background: $Jeunesse;
+        &:after {
+            content: "";
+            background: $Jeunesse;
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            z-index: -1;
+        }
+        .nav-title {
+            a {
+                color: $Jeunesse!important;
+            }
+        }
+    }
+    #subsite-logo {
+        background: rgba(255, 255, 255, 0.2);
+        a {
+            color: #000;
+        }
+    }
+}
+
+
+// lite & jeux
+
+.subsection-biblioludo {
+    .subsite-container {
+        position: relative;
+        background: $litterature;
+        &:after {
+            content: "";
+            background: $litterature;
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            z-index: -1;
+        }
+        .nav-title {
+            a {
+                color: $litterature!important;
+            }
+        }
+        #subsite-navigation > ul > li > a {
+            color: #fff;
+        }
+    }
+    #subsite-logo {
+        background: rgba(255, 255, 255, 0.2);
+        a {
+            color: #fff;
+        }
+    }
+    .breadcrumb-item {
+        a {
+            color: $litterature;
+        }
+    }
+}
+
+
+// common
+.subsite-container {
+    #subsite-logo {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        border-radius: 10px;
+        a {
+            padding: .9rem 1.2rem;
+        }
+    }
+}
+
+#subsite-navigation > ul li.show-nav > .has_subtree.dropdown {
+    margin-top: 2rem;
+}
