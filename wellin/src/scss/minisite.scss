@@ -18,6 +18,11 @@ $primary-tourisme-svg: #00656f;
     .sectionfiles .section-title {
         color: $primary-tourisme;
     }
+    .sectiontext .section-text  ul li {
+        &::before {
+          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-tourisme)}"/></svg>') !important;
+        }
+      }
     .sectionfiles .table_image {
         border: 2px solid $primary-tourisme;
     }
@@ -179,6 +184,11 @@ $primary-sport: #004f8c;
 $primary-sport-svg: #ffd145;
 
 .site-sports {
+    .sectiontext .section-text  ul li {
+        &::before {
+          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-sport)}"/></svg>') !important;
+        }
+      }
     .sectionfiles .section-title {
         color: $primary-sport;
     }
@@ -353,6 +363,11 @@ $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 
 .site-cpas {
+    .sectiontext .section-text  ul li {
+        &::before {
+          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-cpas)}"/></svg>') !important;
+        }
+      }
     .sectionfiles .section-title {
         color: $primary-cpas;
     }
@@ -535,7 +550,9 @@ $primary-cpas-svg: #fab4b6;
 $primary-competences: #007D6A;
 $primary-competences-svg: #E6740A;
 
+
 .site-wellin-competences {
+
     .active > .page-link, .page-link.active {
         background-color: $primary-competences;
     }
@@ -567,6 +584,13 @@ $primary-competences-svg: #E6740A;
     .sectiontext .section-text .body-section figure figcaption {
         display:block !important;
     }
+
+    .sectiontext .section-text  ul li {
+        &::before {
+          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-competences)}"/></svg>') !important;
+        }
+      }
+
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: $primary-competences;
     }
