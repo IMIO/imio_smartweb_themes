@@ -193,7 +193,7 @@ footer {
 	color: #161B88;
 }
 .mask-menu {
-	background-color: rgba(15, 11, 11, 0.5);
+	background-color: rgba(15, 11, 11, 0.56);
 }
 @include media-breakpoint-up(lg) {
     .portaltype-imio-smartweb-page {
@@ -250,6 +250,21 @@ footer {
 }
 
 div.sectionfiles a[aria-expanded="false"], div.sectionfiles a[aria-expanded="true"] {
-	color: initial;
+	color: black !important;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    #portal-header #portal-header-top #header-links #search-link a {
+        border:0px;
+  }
+  }
+
+
+.r-wrapper .r-result-list .r-list-item-group .r-list-item .r-item-img {
+    background-color: #fff !important;
+}
+
+#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.show-nav.has_subtree>a {
+    color: #fff!important;
 }
