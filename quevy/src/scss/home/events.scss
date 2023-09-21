@@ -1,0 +1,107 @@
+.sectionevents:after {
+    background: url("../../assets/svg/bg-event.jpg") bottom center #CDD8E7;
+	background-size: cover;
+    bottom: 0px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0px;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: -1;
+}
+.sectionevents{
+    background: #166b8c;
+    padding:80px 0px;
+    .section-title{
+        font-weight: 300;
+        position: relative;
+        text-align: center;
+        margin-bottom:2rem;
+        &:after{
+            display: block;
+            width: 100px;
+            left:50%;
+            top: 50px;
+            bottom: 0px;
+            position: absolute;
+            transform: translate(-50%, 0%);
+        }
+    }
+
+    .see_all a {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color:#121212;
+        background:#ffffff;
+        &:after {
+            display:none;
+        }
+    }
+
+    .swiper-wrapper{
+        
+        .swiper-slide {
+            transition: .5s;
+            &:hover,&:focus{
+                background: #166B8C;
+                border-radius: 10px;
+                transition: .5s;
+                .swiper-image {
+                    transition: .5s;
+                }
+                //transform: translateY(-10px);
+            }
+            & > a{
+                align-items: center;
+                .swiper-image{
+                    transition: .5s;
+                }
+                .swiper_category{
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                }
+                .swiper_date{
+                    font-family: $font-family-base; 
+                    color:#fff;
+                }
+                .swiper_title{
+                    h3{
+                        font-family: $font-family-title;
+                        transition: .5s;
+                        color:#fff;
+                        
+                    }
+                }
+                .swiper_description{
+                    display: none;
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper-image{
+                    }
+                    .swiper_category{
+                    }
+                    .swiper_date{
+
+                    }
+                    .swiper_title{
+                        h3{
+                            transition: .5s;
+        
+                        }
+                    }
+                    .swiper_description{
+                        p{
+                            color: #fff;
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
