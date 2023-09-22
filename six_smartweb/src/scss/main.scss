@@ -24,7 +24,9 @@ $enable-roboto-webfont: false;
 @import "./se-files.scss";
 @import "./contact.scss";
 
-
+body{
+    background:#f8F8F8;
+}
 .swiper-banner-image:after {
     content: url("../../assets/svg/after-banner.svg");
     position: absolute;
@@ -51,7 +53,7 @@ $enable-roboto-webfont: false;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
-    margin: 120px auto;
+    margin: 120px auto 0;
     width: 90%;
     max-width: 500px;  
     .logo1 {
@@ -69,13 +71,96 @@ $enable-roboto-webfont: false;
     &:after {
         content: url("../../assets/svg/after-partenaires.svg");
         position: absolute;
-        top: 450px;
+        top: 300px;
         right: -10px;
         display: block;
         line-height: 0;
         @include media-breakpoint-down(lg){
             content:none;
         }
+    }
+}
+
+.bloc_presentation {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    margin: 120px auto 120px;
+    align-items: center;
+    position:relative;
+    width: 90%;
+    max-width: 1200px; 
+    &:after {
+        content: url("../../assets/svg/img-before.svg");
+        position: absolute;
+        top: 70px;
+        left: -125px;
+        display: block;
+        line-height: 0;
+        z-index: -1;
+        @include media-breakpoint-down(lg){
+            content:none;
+        }
+    } 
+    .img1 {
+        content: url("../../assets/svg/img1.jpg");
+            width: 100%;
+            left:Opx;
+            position: relative;
+            border-radius: 350px;
+            border-bottom-left-radius: 80px;  
+    }
+    .texte {
+        position:relative;
+        .titre {
+            font: 700 34px/44px "Roboto";
+            color: #292929;
+        }
+        .sous-titre {
+            font: 500 24px/34px "Playfair Display";
+            color: #DE047B;
+            margin-bottom: 20px;
+        }
+        p {
+            font: 400 14px/30px "Roboto";
+            color: #292929;
+            margin-bottom: 30px;
+        }
+        .btn {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 50%;
+            background: url("../../assets/svg/btn-plus.svg") 50% no-repeat #DE047B;
+            &:hover {
+                background: url("../../assets/svg/btn-plus.svg") 50% no-repeat #292929;
+            }
+        }
+    }  
+}
+
+.bloc_conclusion {
+    &:after {
+        content: url("../../assets/svg/img2-before.svg");
+        position: absolute;
+        top: 125px;
+        right: -90px;
+        left:auto;
+        display: block;
+        line-height: 0;
+        z-index: -1;
+        @include media-breakpoint-down(lg){
+            content:none;
+        }
+    } 
+    .img2 {
+        content: url("../../assets/svg/img2.jpg");
+            width: 100%;
+            left:Opx;
+            position: relative;
+            border-radius: 350px;
+            border-bottom-right-radius: 80px;  
     }
 }
 
