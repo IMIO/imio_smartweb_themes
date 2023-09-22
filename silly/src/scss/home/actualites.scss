@@ -1,5 +1,6 @@
 .sectionnews:not(.a-la-une){
     position: relative;
+    background-color: #dfddea;
     li {
         list-style: none;
     }
@@ -61,5 +62,12 @@
     }
     .see_all{
 
-    } 
+    }
+    &::after {
+        content: url("../../assets/svg/actu-bg.jpg");
+        position: absolute;
+        width: 100vw;
+        bottom: -7px;
+        z-index: -1;
+    }
 }

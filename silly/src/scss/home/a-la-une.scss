@@ -97,10 +97,10 @@
             }
         }
         .swiper_date {
-            display: none;
+            display: none!important;
         }
     }
     .see_all {
-        display: none;
+        margin-bottom: 2rem;
     }
 }

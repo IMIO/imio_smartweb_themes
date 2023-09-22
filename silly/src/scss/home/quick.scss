@@ -7,6 +7,8 @@
         max-height: 45px;
     }
     .row{
+        max-width: 680px;
+        margin: 0 auto;
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;
@@ -58,6 +60,77 @@
     &:nth-child(8) {
         a .image.d-block {
             background: #449980;
+        }
+    }
+} 
+
+.sectionlinks.quick-access .body-section ul {
+    justify-content: left;
+    gap: 20px 0px;
+}
+
+.quick-access-2 {
+    .row {
+        max-width: 311px;
+    }
+}
+
+
+.quick-access:not(.quick-access-2) {
+    @media screen and (max-width:575px) {        
+        #container-section-acces-directs {
+            border-bottom: solid 1px #000;
+        }
+    }
+    @media screen and (min-width:575px) {        
+        #container-section-acces-directs {
+            border-right: solid 1px #000;
+        }
+    }
+   &:after {
+        content: "";
+        background: #f4f3f8;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-36%);
+        z-index: -1;
+    }
+}
+
+
+/// 2 
+.quick-access-2 {
+    @media screen and (max-width:575px) {
+        padding-top: 0;
+    }      
+}
+
+.sectionlinks.quick-access-2 .body-section li {
+    &:nth-child(1) {
+        a .image.d-block {
+            background: url("../../assets/svg/cittaslow.png");
+            background-size: contain;
+        }
+    }
+    &:nth-child(2) {
+        a .image.d-block {
+            background: url("../../assets/svg/culture.png");
+            background-size: contain;
+        }
+    }
+    &:nth-child(3) {
+        a .image.d-block {
+            background: url("../../assets/svg/beslow.png");
+            background-size: contain;
+        }
+    }
+    &:nth-child(4) {
+        a .image.d-block {
+            background: url("../../assets/svg/sport.png");
+            background-size: contain;
         }
     }
 } 
