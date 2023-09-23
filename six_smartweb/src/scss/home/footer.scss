@@ -1,15 +1,25 @@
+#smartweb-footer .sectiontext figure,  #smartweb-minisite-footer .sectiontext figure {
+    float: left !important;
+    margin-right: 15% !important;
+    margin-left: 15% !important;
+    max-width: 70% !important;
+    /* text-align: center; */
+    display: block !important;
+}
 #smartweb-footer .sectiontext figure img,  #smartweb-minisite-footer .sectiontext figure img {
     max-width: 200px !important;
     width: 100% !important;
+    border-radius: 0px !important;
 }
 
 #portal-footer-wrapper{
     text-align: left!important;
     background: transparent;
     margin-top: 0rem;
+    
     #portal-footer{
-        background:#ffffff;
-        padding:2rem 0;
+        background:#292929!important;
+        padding:5rem 0;
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #121212!important;
@@ -29,7 +39,7 @@
                 margin-top: 2rem;
                 figure{
                     img{
-                        max-width: 100%;
+                        max-width: 100% !important;
                     }
                 }
             }
@@ -40,16 +50,29 @@
     margin-bottom: 0.5rem;
 }
 #portal-colophon{
-    background:#ffffff;
+    background:#292929;
+    position:relative;
     padding: 1rem;
+    /*&:after {
+        content: url("../../assets/svg/after-footer.svg");
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: block;
+        line-height: 0;
+        z-index: 1;
+        @include media-breakpoint-down(lg){
+            content:none;
+        }
+    } */
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
         li{
-            color: #121212!important;
+            color: #ffffff!important;
             a,span,p,div{
-                color: #121212!important;
+                color: #ffffff!important;
             }
         }
     }
