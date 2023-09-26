@@ -7,7 +7,8 @@ $primary-light: #D90416 !default;
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700&display=swap');
 
 $font-family-base:'Lato', sans-serif!default;
-$font-family-title:'Passion One', sans-serif!default;
+$font-family-title:'Lato', sans-serif!default;
+$font-family-title-accueil:'Passion One', sans-serif!default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -193,19 +194,19 @@ $a-la-une-title-color: $font-title-color !default;
 $a-la-une-title-align:$home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
-$a-la-une-text-bg: rgb(244, 244, 244) !default;
+$a-la-une-text-bg: #ffffff;
 $a-la-une-item-image-margin:0 !default;
 $a-la-une-item-title-color:$primary !default;
 $a-la-une-item-title-font-size:$h3-font-size !default;
 $a-la-une-item-title-margin:0 !default;
 $a-la-une-item-title-padding:36px 36px 0 !default;
-$a-la-une-item-title-radius:0 !default;
+$a-la-une-item-title-radius:0px;
 $a-la-une-item-description-font-size: $font-size-lg !default;
 $a-la-une-item-description-color:initial !default;
 $a-la-une-item-description-margin:0 !default;
 $a-la-une-item-description-padding:0 36px 36px !default;
 $a-la-une-item-description-radius:0 !default;
-$a-la-une-item-image-radius: 0 !default;
+$a-la-une-item-image-radius: 10px;
 
 // Actu
 $actu-section-full-width: true !default;

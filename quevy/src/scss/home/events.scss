@@ -18,6 +18,7 @@
         position: relative;
         text-align: center;
         margin-bottom:2rem;
+        font-family: "Passion One",sans-serif !important;
         &:after{
             display: block;
             width: 100px;
@@ -68,7 +69,7 @@
                 }
                 .swiper_title{
                     h3{
-                        font-family: $font-family-title;
+                        font-family: $font-family-title-accueil;
                         transition: .5s;
                         color:#fff;
                         

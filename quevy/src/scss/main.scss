@@ -211,7 +211,7 @@ footer #container-section-noussuivre{
 }
 
 .sectiontext .section-text .body-section a {
-	color: $primary;
+	color: $primary-svg;
 }
 
 .sectiontext figure img {
@@ -370,3 +370,30 @@ footer #container-section-noussuivre{
 
         
       }
+
+      #portal-breadcrumbs {
+        z-index: 0 !important;
+    }
+      #subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
+        z-index: 1 !important;
+        top: 70px !important;
+    }
+    .swiper, .swiper-container {
+        z-index: 0 !important;
+    }
+
+    .section-text .h1, .section-text .h2 {
+        color: #292929 !important;
+        font-family: "Lato",sans-serif !important;
+        font-weight: 600 !important;
+    }
+
+    .section-text .h3, .section-text .h4, .section-text .h5, .section-text .h6 {
+        color: #166b8c !important;
+        font-family: "Lato",sans-serif !important;
+        font-weight: 600 !important;
+    }
+
+    .a-la-une .swiper-slide .swiper_title .h3, .a-la-une .swiper-slide .swiper_title h3 {
+        font-family: "Passion One",sans-serif !important;
+    }
