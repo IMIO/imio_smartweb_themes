@@ -29,6 +29,8 @@ $enable-roboto-webfont: false;
 body{
     background:#f8F8F8;
 }
+
+// Banner after formes
 .swiper-banner-image:after {
     content: url("../../assets/svg/after-banner.svg");
     position: absolute;
@@ -36,11 +38,25 @@ body{
     display: block;
     line-height: 0;
     width: 390px;
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(xl){
         content:none;
     }
 }
 
+// Banner Six and the city titre
+.bannerSwiper .section-slide{
+    &:after{
+        content: url("../../assets/svg/banner-slogan.svg");
+        width: 500px;
+        max-width: 60%;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// Team par dessus banner
 .cont-team {
     content: url("../../assets/svg/teamwebp.webp");
         width: 500px;
@@ -48,9 +64,10 @@ body{
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
-        margin-top: -120px;
+        margin-top: -70px;
 }
 
+// Bloc 2 logos de partenaires (ploneconf et imio)
 .bloc_partenaires {
     display: grid;
     grid-gap: 50px;
@@ -77,12 +94,20 @@ body{
         right: -10px;
         display: block;
         line-height: 0;
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(xl){
             content:none;
         }
     }
 }
 
+@media screen and (max-width: 768px) {
+    .bloc_partenaire {
+        margin:80px auto 0;
+    }
+    }
+
+
+// Bloc présentation image + zone de texte
 .bloc_presentation {
     display: grid;
     grid-gap: 80px;
@@ -100,7 +125,7 @@ body{
         display: block;
         line-height: 0;
         z-index: -1;
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(xl){
             content:none;
         }
     } 
@@ -115,11 +140,11 @@ body{
     .texte {
         position:relative;
         .titre {
-            font: 700 34px/44px "Roboto";
+            font: 700 28px/38px "Roboto";
             color: #292929;
         }
         .sous-titre {
-            font: 500 24px/34px "Playfair Display";
+            font: 500 18px/28px "Playfair Display";
             color: #DE047B;
             margin-bottom: 20px;
         }
@@ -142,7 +167,28 @@ body{
     }  
 }
 
+@media screen and (max-width: 768px) {
+    .bloc_presentation {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        margin: 60px auto 60px;
+        align-items: center;
+        position:relative;
+        width: 90%;
+        max-width: 1200px; 
+        .img1 {
+            content: url("../../assets/svg/img1.jpg");
+                width: 100%;
+                left:Opx;
+                position: relative;
+                border-radius: 30px
+        }
+    }
+    }
 
+
+// Bloc Step by step (6 images)
 .bloc_stepbystep {
     display: grid;
     grid-gap: 80px;
@@ -166,7 +212,7 @@ body{
         display: block;
         line-height: 0;
         z-index: -1;
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(xl){
             content:none;
         }
     } 
@@ -178,7 +224,7 @@ body{
         display: block;
         line-height: 0;
         z-index: -1;
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(xl){
             content:none;
         }
     } 
@@ -232,7 +278,7 @@ body{
     }
 }
 
-
+// Bloc conclusion image + zone de texte
 .bloc_conclusion {
     margin:80px auto 200px;
     &:after {
@@ -244,7 +290,7 @@ body{
         display: block;
         line-height: 0;
         z-index: -1;
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(xl){
             content:none;
         }
     } 
@@ -257,24 +303,73 @@ body{
             border-bottom-right-radius: 80px;  
     }
 }
-
-.bannerSwiper .section-slide{
-    &:after{
-        content: url("../../assets/svg/banner-slogan.svg");
-        width: 500px;
-        max-width: 60%;
-        top: 50%;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+@media screen and (max-width: 768px) {
+    .bloc_conclusion {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        margin: 60px auto 60px;
+        align-items: center;
+        position:relative;
+        width: 90%;
+        max-width: 1200px; 
+        .img2 {
+            content: url("../../assets/svg/img2.jpg");
+                width: 100%;
+                left:Opx;
+                position: relative;
+                border-radius: 30px
+        }
     }
+    }
+
+
+@media screen and (max-width: 992px) {
+    .bloc_stepbystep {
+        display: grid;
+        grid-gap: 60px;
+        padding:40px;
+        grid-template-columns: 1fr 1fr;
+        margin:0px;
+        width: 100%;
+    }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .bloc_stepbystep {
+            width: 100%;
+            display: grid;
+            grid-gap: 40px;
+            padding:20px;
+            grid-template-columns: 1fr;
+            margin:0px;
+        }
+        }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+#portal-header #portal-header-top #header-links #search-link {
+    display: none;
 }
-
-
-
-#portal-header #portal-header-top {
-    position: absolute;
 }
+@media screen and (min-width: 992px) {
+
+    .section-index #portal-header #portal-header-top {
+        position: absolute;
+        width:100%;
+        gap :10px;
+    }
+    
+  }
+
 
 #portal-header #portal-header-top:after {
     background: none!important;
@@ -577,9 +672,12 @@ footer #container-section-noussuivre{
       .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
       }
-
+      #portal-globalnav-wrapper  {
+        width:120px;
+    }
       .navbar .container {
         padding: 0px 5px 0 0 !important;
+        justify-content: right;
       }
       
     }
@@ -595,6 +693,116 @@ footer #container-section-noussuivre{
       #portal-globalnav > li.has_subtree > a:before {
         background-color: $primary-svg;
     }
+}
 
+    @media screen and (min-width: 1200px) {
+
+
+        #portal-globalnav {
+            gap: 20px;
+            justify-content: right;
+        }
         
       }
+
+      //search
+#portal-header #portal-header-top #header-links #search-link a {
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    background: #DE047B;
+    transition: all 0.3s ease;
+}
+
+#portal-header #portal-header-top #header-links #search-link a:hover {
+    background: #292929;
+}
+
+#portal-languageselector {
+    margin-left: 0rem;
+}
+
+.language-en {
+    float: left;
+    a {
+    font-size: 0px;
+    background: #F1F1F1;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    float: left;    
+    text-decoration: none;
+    transition: all .3s ease;
+    &:after { 
+        color: #292929;
+        content: "EN";
+        font-size: 16px;
+        position: relative;
+        line-height: 50px;
+        margin-left: 15px;
+        font-weight: bold;
+
+    }
+    &:hover {
+        background: #292929;
+        transition: all .3s ease;
+        &:after { 
+            color: #ffffff;
+        }
+    } 
+}
+
+       
+   
+}
+
+#portal-header #portal-header-top #header-links {
+    gap: 15px !important;
+}
+.language-fr {
+    float: left;
+    a {
+    font-size: 0px;
+    background: #F1F1F1;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    float: left;    
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease;
+    margin-left:0px;
+    &:after { 
+        color: #292929;
+        content: "FR";
+        font-size: 16px;
+        position: relative;
+        line-height: 50px;
+        margin-left: 15px;
+        font-weight: bold;
+    } 
+    &:hover {
+        background: #292929;
+        transition: all .3s ease;
+        &:after { 
+            color: #ffffff;
+        }
+    } 
+    }   
+
+    
+}
+
+
+.sectiontext ul li:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 8px;
+    background: #de047b;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
