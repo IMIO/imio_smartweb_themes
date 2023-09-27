@@ -362,7 +362,7 @@ body{
 }
 @media screen and (min-width: 992px) {
 
-    .section-index #portal-header #portal-header-top {
+    .section-index #portal-header #portal-header-top, .section-home #portal-header #portal-header-top {
         position: absolute;
         width:100%;
         gap :10px;
@@ -805,4 +805,28 @@ footer #container-section-noussuivre{
     width: 6px;
     height: 6px;
     border-radius: 50%;
+}
+
+#body-section-procedure {
+    figure img {
+        width:100px!important;
+    }
+}
+
+#body-section-page {
+    figure img {
+        width:100px!important;
+    }
+}
+
+#body-section-news {
+    figure img {
+        width:100px!important;
+    }
+}
+
+#body-section-event {
+    figure img {
+        width:100px!important;
+    }
 }
