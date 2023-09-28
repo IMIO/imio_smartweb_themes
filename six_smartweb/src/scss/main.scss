@@ -25,10 +25,10 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 @import "./slide-th.scss";
 
-
-body{
-    background:#f8F8F8;
+body {
+    background: linear-gradient(180deg,#fff 0,#fff 500px,#F9F9F9);
 }
+
 
 // Banner after formes
 .swiper-banner-image:after {
@@ -42,6 +42,27 @@ body{
         content:none;
     }
 }
+
+@media screen and (max-width: 1900px) {
+    .swiper-banner-image:after {
+        left:-50px!important;
+    }
+    }
+    @media screen and (max-width: 1800px) {
+        .swiper-banner-image:after {
+            left:-180px!important;
+        }
+        }
+        @media screen and (max-width: 1540px) {
+            .swiper-banner-image:after {
+                left:-230px!important;
+            }
+            }
+            @media screen and (max-width: 1200px) {
+                .swiper-banner-image:after {
+                    left:-650px!important;
+                }
+                }
 
 // Banner Six and the city titre
 .bannerSwiper .section-slide{
@@ -726,7 +747,7 @@ footer #container-section-noussuivre{
     float: left;
     a {
     font-size: 0px;
-    background: #F1F1F1;
+    background: #FFFFFF;
     width: 50px;
     height: 50px;
     display: block;
@@ -745,11 +766,8 @@ footer #container-section-noussuivre{
 
     }
     &:hover {
-        background: #292929;
+        background: #F1F1F1;
         transition: all .3s ease;
-        &:after { 
-            color: #ffffff;
-        }
     } 
 }
 
@@ -764,7 +782,7 @@ footer #container-section-noussuivre{
     float: left;
     a {
     font-size: 0px;
-    background: #F1F1F1;
+    background: #FFFFFF;
     width: 50px;
     height: 50px;
     display: block;
@@ -784,15 +802,18 @@ footer #container-section-noussuivre{
         font-weight: bold;
     } 
     &:hover {
-        background: #292929;
+        background: #F1F1F1;
         transition: all .3s ease;
-        &:after { 
-            color: #ffffff;
-        }
     } 
     }   
 
     
+}
+
+.currentLanguage {
+    a{
+        background: #F1F1F1 !important;
+    }
 }
 
 
@@ -829,4 +850,30 @@ footer #container-section-noussuivre{
     figure img {
         width:100px!important;
     }
+}
+
+
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row {
+
+    gap: 10px 2%;
+}
+
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image {
+    text-decoration: none;
+}
+
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span {
+    position: relative;
+    padding-left: 20px;
+}
+
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span:before {
+    background: #de047b;
+    border-radius: 50%;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 6px;
 }
