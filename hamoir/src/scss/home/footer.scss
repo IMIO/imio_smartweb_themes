@@ -64,3 +64,18 @@ footer{
         vertical-align: middle;
     }
 }
+
+.smartweb_footer .smartweb-footer .container .row .sectionlinks {
+    #body-section-liens-utiles .row {
+        padding:0px !important;
+        .table_image {
+            padding:0px !important;
+        }
+    }
+}
+    #body-section-liens-utiles a .image {
+        display:none !important;
+    }
+    #body-section-liens-utiles .table_title {
+        margin: 0px !important;
+    }
