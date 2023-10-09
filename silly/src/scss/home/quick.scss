@@ -76,7 +76,7 @@
 }
 
 
-.quick-access:not(.quick-access-2) {
+.sectionlinks.quick-access:not(.quick-access-2) {
     @media screen and (max-width:575px) {        
         #container-section-acces-directs {
             border-bottom: solid 1px #000;
