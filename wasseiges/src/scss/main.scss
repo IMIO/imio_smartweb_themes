@@ -94,3 +94,33 @@ body:not(.section-accueil){
     position: absolute;
     top: 130px;
 }
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+    background-color: #3f3f42;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+    background-color: #3f3f42;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+    background-color: #3f3f42;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+    background: #3f3f42;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+    background: #3f3f42;
+}
+
+#messagesviewlet .portalMessage.error .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.error .messagesviewlet-type {
+    background: #3f3f42;
+}

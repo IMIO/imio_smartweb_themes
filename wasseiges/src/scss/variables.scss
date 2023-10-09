@@ -381,9 +381,9 @@ $list-group-item-padding-x : 0px;
 
 // Message Viewlets
 
-$message-info:#27789c !default;
-$message-warning:#c06d01 !default;
-$message-error:#ae2609 !default;
+$message-info:#27789c !important;
+$message-warning:#c06d01 !important;
+$message-error:#ae2609 !important;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;
