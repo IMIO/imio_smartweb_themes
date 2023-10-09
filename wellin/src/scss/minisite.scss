@@ -23,6 +23,11 @@ $primary-tourisme-svg: #00656f;
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-tourisme)}"/></svg>') !important;
         }
       }
+    @media screen and (min-width:768px) {
+        #portal-globalnav.activated>li>a {
+            color: $primary-tourisme!important;
+        }
+    }
     .sectionfiles .table_image {
         border: 2px solid $primary-tourisme;
     }
@@ -184,11 +189,17 @@ $primary-sport: #004f8c;
 $primary-sport-svg: #ffd145;
 
 .site-sports {
+    @media screen and (min-width:768px) {
+        #portal-globalnav.activated>li>a {
+            color: $primary-sport!important;
+        }
+    }
     .sectiontext .section-text  ul li {
         &::before {
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-sport)}"/></svg>') !important;
         }
       }
+    
     .sectionfiles .section-title {
         color: $primary-sport;
     }
@@ -363,6 +374,11 @@ $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 
 .site-cpas {
+    @media screen and (min-width:768px) {
+        #portal-globalnav.activated>li>a {
+            color: $primary-cpas!important;
+        }
+    }
     .sectiontext .section-text  ul li {
         &::before {
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-cpas)}"/></svg>') !important;
@@ -552,7 +568,11 @@ $primary-competences-svg: #E6740A;
 
 
 .site-wellin-competences {
-
+    @media screen and (min-width:768px) {
+        #portal-globalnav.activated>li>a {
+            color: $primary-competences!important;
+        }
+    }
     .active > .page-link, .page-link.active {
         background-color: $primary-competences;
     }
