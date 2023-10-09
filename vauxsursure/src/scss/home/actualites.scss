@@ -1,0 +1,86 @@
+.sectionnews{
+    .section-container{
+        position: relative;
+    }
+    
+    .section-title{
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 4.5rem;
+        width: max-content;
+        font-size: 3rem;
+        &:after{
+            left:0%;
+            top: 70px;
+            bottom: 0px;
+            position: absolute;
+            background: url("../../assets/svg/svg-titre.svg");
+            content: "";
+            display: block;
+            height: 13px;
+            position: absolute;
+            width: 113px;
+        }
+    }
+
+    .see_all a:after {
+        content: "";
+        transition: all 0.2s ease;
+        position: absolute;
+        height: 8px;
+        background: url("../../assets/svg/svg-yellow.svg");
+        left: 0%;
+        bottom: -15px;
+        width: 21px;
+    }
+    .see_all a:hover:after, .see_all a:focus:after {
+        width: 65px;
+    }
+
+    .swiper-wrapper{
+        .swiper-slide {
+            background: transparent;
+            transition: .5s;
+            
+            &:hover,&:focus{
+                    transition: .5s;
+                    transform: translateY(10px);
+            }
+            & > a{
+                align-items: center;
+                .swiper-image{
+                    transition: .5s;
+                }
+                .swiper_category{
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                }
+                .swiper_date{
+                    font-family: $font-family-base; 
+                }
+                .swiper_title{
+                    h3{
+                        font-family: $font-family-base;
+                        transition: .5s;
+                        
+                    }
+                }
+                .swiper_description{
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper_title{
+                        h3{
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
