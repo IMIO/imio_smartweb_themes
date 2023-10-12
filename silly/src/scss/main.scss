@@ -62,6 +62,20 @@ footer{
        display: none;
    }
 }
+
+body {
+    background-color: #F4F3F8!important;
+}
+
+.sortable-section.sectioncontact {
+    background: #fff;
+    .contact_logo {
+        background-position: left center;
+    }
+}
+.contact_leadimage.portrait {
+	border-radius: 10px;
+}
 // bug z-index
 
 .pagination{

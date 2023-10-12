@@ -5,6 +5,46 @@ $Jeunesse: #5AC1DA;
 $litterature: #B0024C;
 $Slowfood: #EE0F0D;
 
+
+
+// section-commune
+.section-commune {
+    .subsite-container {
+        position: relative;
+        background: $Loisirs;
+        &:after {
+            content: "";
+            background: $Loisirs;
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            z-index: -1;
+        }
+        .nav-title {
+            a {
+                color: black!important;
+            }
+        }
+        #subsite-navigation > ul > li > a {
+            color: #fff;
+        }
+    }
+    #subsite-logo {
+        background: $Loisirs;
+        a {
+            color: #fff;
+        }
+    }
+    .breadcrumb-item {
+        a {
+            color: $Loisirs;
+        }
+    }
+}
+
 // vire à Silly
 .section-vivreasilly {
     .subsite-container {
