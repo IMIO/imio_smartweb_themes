@@ -25,4 +25,19 @@
     span {
         color: #414141!important;
     }
+    .table_display {
+        .table_image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px 0;
+        }
+        .image.d-block.w-100 {
+            width: auto;
+        }
+        .plone-icon {
+            height: 40px;
+        }
+    }
 }

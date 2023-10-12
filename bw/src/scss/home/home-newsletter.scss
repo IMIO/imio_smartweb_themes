@@ -1,6 +1,7 @@
 .home-newsletter {
     padding-left: 3vw;
     padding-right: 3vw;
+    overflow-x: hidden;
     &:after {
         content: "";
         background: #f8f8f8;
@@ -75,6 +76,12 @@
         bottom: 15%;
         position: absolute;
         left: 0;
+    }
+    .row {
+        gap: 10px;
+        li {
+            width: auto;
+        }
     }
     .section-title {
         font-size: 32px;

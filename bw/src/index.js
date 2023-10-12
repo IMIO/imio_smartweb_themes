@@ -24,6 +24,12 @@ $(document).ready(function () {
             eventsSwiper.update();
     }
 
+    // scroll-top
+    // $(".footer-logo-scroll").click(function () {
+    //     var c = $(this).attr("href");
+    //     $('html, body').animate({scrollTop: $("#" + c).offset().top}, 1000, "linear");
+    //     return false;
+    // })
 
     // // animate
     // // Fonction pour déterminer si un élément est visible à l'écran
