@@ -1,7 +1,11 @@
 .sectionevents{
-    margin-top: 4rem;
+    margin-top: 7rem;
     .section-title{
         margin-bottom: 0;
+        position:absolute;
+    }
+    .swiper-pagination-bullets{
+        display: none !important;
     }
     .swiper-wrapper{
         padding-top: 0;
@@ -12,6 +16,7 @@
             &:nth-child(3n + 3) {
                 margin-top: 4rem;
             }
+            
             & > a{
                 padding: 1rem;
                 border: 1px solid #e3e3e3;
@@ -30,7 +35,7 @@
                     background: #fff;
                     box-shadow: 0 10px 20px #0000001a;
                     text-transform: uppercase;
-                    font-family: $font-family-title;
+                    font-family: 'Open Sans' !important;
                     align-self: end;
                     transform: translateY(-50%);
                 }
@@ -41,17 +46,46 @@
                 }
             }
         }
+        @media screen and (max-width: 1000px) {
+            .swiper-slide {
+                margin-top: 4rem !important;
+            }
+        }
     }
     .swiper-button-next, .swiper-button-prev {
-        top: 30px;
+        top: 25px;
         width: 45px;
         height: 45px;
         border-radius: 50px;
     }
     .swiper-button-prev{
-        left: inherit;
-        right: 65px;
+        left: 165px;
     }
+
+    .swiper-button-next{
+        left: 220px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .swiper-button-next, .swiper-button-prev {
+            display: block!important;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .swiper-button-prev{
+            right:55px !important;
+            left:auto !important;
+            
+        }
+        .swiper-button-next{
+            left: auto !important;
+            right:0px !important;
+        }
+    }
+
+
     &:after{
         content: "";
         position: absolute;

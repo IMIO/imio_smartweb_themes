@@ -45,15 +45,20 @@
             border-color: white;
 
             .table_image {
-                border: solid 1px #09AD6F;
+                border: solid 1px #ffffff;
                 text-decoration: none;
                 padding: 20px;
                 border-radius: 10px;
                 transition: all .2s ease;
                 &:hover {
                     border: solid 1px transparent;
-                    background-color: #0FE695;
+                    background-color: #ffffff;
+                    color:$primary;
                     box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.11);
+                    span, .item_infos {
+                        color:$primary !important;
+                    }
+                    
                 }
 
                 span,

@@ -26,6 +26,21 @@
                 }
             }
         }
+        .row {
+            margin:0px;
+        }
+    }
+
+
+    .footer-social {
+        .col-md-12 {
+            width: auto;
+        }
+        .table_image .image svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 

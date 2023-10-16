@@ -60,21 +60,33 @@
         li{
             .table_image{
                 border-radius: 30px 30px 0 30px;
+                transition: all .5s ease;
                 .image.d-block{
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
                     position: relative;
-                    transition: all .3s ease;
+                    transition: all .5s ease;
+                    svg {
+                        transition: all .5s ease;
+                    }
+                    .table_title {
+                        span {
+                            transition: all .5s ease;
+                        }
+                    }
                 }
                 &:hover,&:focus {
                     background: #fff;
+                    transition: all .5s ease;
                     svg {
                         fill: $primary-svg!important;
+                        transition: all .5s ease;
                     }
                     .table_title {
                         span {
                             color: $primary-svg!important;
+                            transition: all .5s ease;
                         }
                     }
                 }

@@ -9,15 +9,17 @@
     .body-section {
         display: flex;
         justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         @include media-breakpoint-down (lg) {
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: 1fr;
         }
         &:after{
             content: url("../../assets/svg/bw-map.svg");
             width: 100%;
             max-width: 620px;
             display: block;
+            margin: 0 auto;
             // background: url("../../assets/svg/map-shadow.svg");
             // background-size: cover;
         }
@@ -28,6 +30,13 @@
                 padding: 0;
                 max-width: 48%;
             }
+
+            @media screen and (max-width: 600px) {
+                li {
+                    max-width: 100% !important;
+                }
+            }
+            
         }
         .table_image {
             background-color: #2FAFC3;

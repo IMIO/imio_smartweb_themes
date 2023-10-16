@@ -87,12 +87,19 @@ h1 {
         margin-left: auto;
         a {
             color: $primary-svg!important;
+            &:hover {
+                    color: $primary!important;
+        }
+        
         }
     }
 }
 .nav_un-clic.has_subtree.nav-item {
     a {
         color: $primary-svg!important;
+        &:hover {
+            color: $primary!important;
+}
     }
 }
 //footer 
@@ -301,4 +308,27 @@ footer {
 
 .footer-social h2 {
 	margin-top: 0 !important;
+}
+
+.r-search-container .r-search-highlighter {
+    border-bottom: 2px solid $primary-svg !important;
+}
+
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper {
+    margin-top: 0px !important;
+}
+
+.sectiontext ol>li:before {
+    content: counter(sectioncounter) "." !important;
+}
+.container .row #portal-column-content {
+    padding-top: 20px !important;
+}
+
+.section-home-page .container .row #portal-column-content {
+    padding-top: 0px !important;
+}
+
+@media screen and (max-width: 991px) {
+#body-section-en-un-clic li{width:100%!important}
 }

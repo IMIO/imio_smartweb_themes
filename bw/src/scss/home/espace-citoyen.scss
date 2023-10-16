@@ -3,6 +3,10 @@
     padding-bottom: 3vw;
     padding-top: 3vw;
     background: #F3F3F3;
+    .section-title{
+        text-align: center;
+        color:$primary;
+    }
     &:after {
         content: "";
         background: #F3F3F3;
@@ -37,7 +41,7 @@
             width: auto;
         }
         .plone-icon {
-            height: 40px;
+            height: 55px;
         }
     }
 }
