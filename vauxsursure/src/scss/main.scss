@@ -50,7 +50,7 @@ body {
 
 #portal-header #portal-header-top #portal-logo{
     svg {
-        width:180px;
+        width:160px;
     }
 }
 
@@ -216,11 +216,16 @@ footer #container-section-noussuivre{
 }
 
 .r-add-contact a, .r-add-event a, .r-add-news a {
-	background: #ffffff;
-	color: #000;
-	padding: 1rem;
-	text-decoration: none;
-    border-radius: 0px;
+    background: #275e71;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover {
+        background: #000000;
+        transition: all .5s ease;
+    }
 }
 
 .r-filter div[class*="control"] {
@@ -248,6 +253,10 @@ footer #container-section-noussuivre{
 	color: $primary;
 }
 
+.sectiontext .section-text .section-title a { text-decoration: none;}
+.sectiontext .section-text .section-title a.collapsed {
+    color: #000 !important;
+}
 .sectiontext figure img {
 	border-radius: 15px;
 }
@@ -372,7 +381,17 @@ footer #container-section-noussuivre{
     display:none !important;
 }
 
+@media screen and (min-width: 992px) {
+
+
+    .nav_je-suis {
+        margin-left: auto!important;
+    }
+
+}
+
 @media screen and (max-width: 992px) {
+
 
       .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
@@ -427,8 +446,17 @@ footer #container-section-noussuivre{
             .table_title span {
                 background: #ffffff;
                 padding: 1rem 3rem;
-                border-radius: 8px;    
+                border-radius: 8px;  
+                color:#000; 
+                transition: all .5s ease;
+                &:hover {
+                    background: #133641 !important;
+                    color:#fff !important;   
+                    transition: all .5s ease;
+                } 
             }
+            
+            
             @media screen and (max-width:900px) {
                 .table_title span {
                     font-size: 14px !important;
@@ -521,3 +549,78 @@ footer #container-section-noussuivre{
     width: 100%!important;
 }
     }
+
+    #messagesviewlet .portalMessage.info,
+    #localmessagesviewlet .portalMessage.info {
+        background-color: $primary-green;
+        color:#fff;
+    }
+    
+    #messagesviewlet .portalMessage.error,
+    #localmessagesviewlet .portalMessage.error {
+        background-color: $primary-yellow;
+        color:#000;
+    }
+    
+    #messagesviewlet .portalMessage.warning,
+    #localmessagesviewlet .portalMessage.warning {
+        background-color: #DC2F4E;
+        color:#fff;
+    }
+    
+    #messagesviewlet .portalMessage.info .messagesviewlet-type,
+    #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+        background: $primary-green;
+        color:#fff;
+    }
+    
+    #messagesviewlet .portalMessage.warning .messagesviewlet-type,
+    #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+        background: #DC2F4E;
+        color:#fff;
+    }
+
+
+    // logo minisite
+    #portal-header #portal-header-top .minisite_logo {
+        max-width: 100px !important;
+    }
+
+    #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
+        margin-top: 0rem;
+    }
+
+
+    .sectiontext mark {
+        background-color: #275e71;
+        border: 0px;
+        border-radius: 8px;
+        color: #ffffff;
+        display: inline-block;
+        font-weight: 500;
+        padding: 20px 45px 20px 26px;
+    }
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #275e71;
+}
+
+.subsection-services-communaux-communication-bulletin-communal .block-menu-element a .card-img-top {
+    padding-top: 135%;
+    background-position: top;
+}
+
+.sectiontext ol>li:before {
+    content: counter(sectioncounter) "." !important;
+}
+#portal-footer-wrapper #portal-footer #smartweb-footer a, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
+    color:#ffffff;
+    transition: all .5s ease;
+}
+#portal-footer-wrapper #portal-footer #smartweb-footer a:hover, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
+    color:#36A9E1;
+    transition: all .5s ease;
+}

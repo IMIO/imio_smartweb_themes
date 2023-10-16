@@ -37,6 +37,32 @@
         }
     }
 
+    @media screen and (max-width: 992px) {
+
+        .body-section{
+            ul {
+                li{
+                    .table_image{
+                        .image.d-block {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+
+                    }
+
+                    a .table_title span {
+                        font-size: 14px;
+                    }
+    
+                }
+            }
+        }
+
+    }   
+
+
+
     .row{
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
@@ -249,7 +275,7 @@
     .body-section{
         text-align: center;
         li{
-            padding: 20px 10px 80px;
+            padding: 20px 10px 0px;
             .table_image{
                 text-decoration: none;
                 position: relative;
@@ -257,12 +283,12 @@
                 .image.d-block {
                     display: none!important;
                 }
-                &:after{
+                /*&:after{
                     left:0%;
                     top: 50px;
                     bottom: 0px;
                     position: absolute;
-                    background: url("../../assets/svg/svg-green.svg");
+                    
                     content: "";
                     display: block;
                     height: 34px;
@@ -270,15 +296,15 @@
                     position: absolute;
                     width: 90px;
                     transition: all .5s ease;
-        }
+        }*/
                
             
-                &:hover,&:focus{
+                /*&:hover,&:focus{
                     &:after{
                     transform: translateY(-10px);
                     transition: all .5s ease;
 
-            }
+            }*/
 
                     .image.d-block {
                     
@@ -296,6 +322,16 @@
                     text-transform: uppercase;
                     font-weight: 700;
                     font-family: "Open Sans", sans-serif;
+                    padding-bottom: 60px;
+                    background: url("../../assets/svg/svg-green.svg") no-repeat center bottom;
+                    display: block;
+                    transition: all .5s ease;
+                    min-height: 100px;
+
+                    &:hover{
+                        background: url("../../assets/svg/svg-green.svg") no-repeat center bottom 10px;
+                        transition: all .5s ease;
+    
                 }
                 @media screen and (max-width: 992px) {
                     .table_title span {

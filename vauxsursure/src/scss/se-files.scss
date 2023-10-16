@@ -2,17 +2,27 @@
     background-color: #ffffff;
     border-radius: 0px;
     font-weight: bold;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding:0px !important;
+
+    &:after {display: none!important;}
 
     .section-title {
         font-weight: 400;
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 2vw;
+        margin-bottom: 0vw;
         width: auto;
         color: #000;
+        padding:0px !important;
+        a {
+            text-decoration: none;
+        }
+        a.collapsed {
+            color: #000 !important;
+        }
     }
 
     .section-container {
