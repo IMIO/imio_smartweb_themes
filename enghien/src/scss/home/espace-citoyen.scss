@@ -1,0 +1,60 @@
+.espace-citoyen{
+    background: #fff;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    border-radius: 30px;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+    .section-title{
+        text-align: center;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .body-section{
+        .row{
+            max-width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0,.16);
+            border-radius: 15px;
+            li{
+                padding: 0!important;
+            }
+            .table_display{
+                height: 100%;
+            }
+            .table_image{
+                padding: 1.5rem 1rem;
+                background: #fff;
+                border-radius: 15px;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                height: 100%;
+                .image{
+                    width: auto;
+                    svg{
+                        height: auto;
+                        width: 40px;
+                        max-height: 40px;
+                    }
+                }
+                &:hover{
+                    background: $primary;
+                    .image{
+                        svg{
+                            fill: #fff;
+                        }
+                    }
+                    .table_title{
+                        span{
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
