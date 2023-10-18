@@ -42,14 +42,14 @@ $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
 $font-title-weight: 900;
 // $font-size-base affects the font size of the body text
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.17rem; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
-$font-size-lg: $font-size-base * 1.25 !default;
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.5 !default;
-$h4-font-size: $font-size-base * 1.25 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
+$font-size-lg: $font-size-base * 1.5;
+$h1-font-size: $font-size-base * 2.3;
+$h2-font-size: $font-size-base * 1.8;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.05;
+$h5-font-size: $font-size-base * 1.05;
 $h6-font-size: $font-size-base !default;
 
 // Include Roboto as webfont
@@ -92,7 +92,7 @@ $header-top-background: #fff !default;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 3rem !default;
 $header-nav-link-color:$primary!default;
-$header-nav-link-font-size:16px!default;
+$header-nav-link-font-size: $font-size-base;
 $header-nav-link-font-family:$font-family-base!default;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
@@ -126,7 +126,7 @@ $nav-link-drop-mobile:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.or
 $nav-first-level-gap: 30px;
 $nav-first-level-uppercase: false !default;
 $nav-quick-link-color:$primary-svg;
-$nav-quick-link-size:18px!default;
+$nav-quick-link-size: $font-size-base;
 $nav-quick-link-weight: bold!default;
 $nav-quick-link-padding:0!default;
 $nav-sub-link-font-size: $nav-link-font-size !default;
@@ -207,7 +207,7 @@ $quick-access-shadow: none !default;
 $quick-access-svg-width: 35px;
 $quick-access-svg-color: #fff;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
-$quick-access-title-font-size: 18px !default;
+$quick-access-title-font-size: $font-size-base;
 $quick-access-title-color: $primary !default;
 $quick-access-title-text-transform: initial !default;
 $quick-access-title-weight: 900;
