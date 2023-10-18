@@ -70,14 +70,9 @@ div.swiper-image:before {
 #body-section-magazine-communal .swiper-wrapper .swiper-slide a {
     text-decoration:none;
 }
-body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    padding: 0.5rem;
-}
+
 @include media-breakpoint-down(lg) { 
-    body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+    body.portaltype-imio-smartweb-portalpage.section-page-portail div#messagesviewlet {
         top: 30%;
     }
 }
@@ -107,7 +102,7 @@ body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
         width: 50%;
         padding-bottom: 1rem;
     }
-    body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+    body.portaltype-imio-smartweb-portalpage.section-page-portail div#messagesviewlet {
         top: 21%;
     }
     .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
@@ -154,9 +149,94 @@ body.portaltype-imio-smartweb-portalpage div#messagesviewlet {
 margin-top: 2rem;
   }
   #portal-column-content .sectioncontact {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
+        .contact-type-position{
+        // position: relative;
+        border: #d5d5d5 solid 1px;
+        background: #f7f7f7;
+        border-radius: 10px;
+            .contact_titles h2 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 150px;
+    width: 100%;
+    position: absolute;
+    margin-top: 4rem;
+}
+body:not(.portaltype-imio-smartweb-portalpage.section-page-portail, .portaltype-imio-smartweb-portalpage.is-in-minisite) h2.section-title {
+    font-size: 1.8rem;
+}
+
+
+
+#portal-header #portal-globalnav {
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+#portal-header #portal-header-top {
+    align-items: center;
+    display: flex;
+    padding: 2rem 0;
     position: relative;
-    border: #d5d5d5 solid 1px;
-    background: #f7f7f7;
-    border-radius: 10px;
+    z-index: 2;
+}
+
+
+body.portaltype-imio-smartweb-portalpage.section-page-portail div#messagesviewlet {
+    left: 0;
+    padding: 0px;
+    position: absolute;
+    top: 110px;
+    margin:0px;
+}
+
+#messagesviewlet .portalMessage {
+    background: rgba(0,0,0,.85) !important;
+    padding: 30px 30px 30px 180px;
+    margin:0px;
+    border-radius:0px !important;
+}
+
+@media (max-width:993px) { 
+#portal-header #portal-header-top #portal-logo {
+left: 50%;
+margin-left: -75px;
+}
+
+#messagesviewlet .portalMessage {
+    padding: 90px 30px 30px 30px;
+}
+}
+
+@media (min-width: 992px){ 
+#portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
+    margin-top: 7.5rem;
+}
+}
+
+.smartweb_footer #container-section-suivez-nous-sur-facebook .table_image .image.d-block  {
+       transition: all .15s ease;
+}
+.smartweb_footer #container-section-suivez-nous-sur-facebook .table_image:hover .image {
+       transform: translateY(-10px); 
+}
+#portal-globalnav .quick-access .quick-access-title {
+    color: #000;
+}
+.contact_informations {
+    word-break: break-all;
   }
+  .sortable-section.sectionmap {
+    padding: 2rem 0;
+    z-index: 0;
+  }
+  .contact_map .pat-leaflet.map {
+    z-index: 0;
+}
+#portal-header #portal-header-top #portal-logo img {
+    height: auto!important;
+    }
