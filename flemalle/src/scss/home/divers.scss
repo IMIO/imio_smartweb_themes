@@ -132,3 +132,9 @@ a h2.list-card-title:hover {
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
   color: $primary-svg;
 }
+#portal-column-content .sectioncontact+.sectioncontact .section-container, #portal-column-content .sectioncontact+.sectioncontact .section-container .body-section {
+  height: auto;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
