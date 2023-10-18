@@ -7,3 +7,98 @@
     background: #fff !important;
   }
 }
+
+/// AFFICHAGE TABLEAU
+.sectionevents a {
+  text-decoration: none;
+  .image.w-100 {
+  padding-bottom: 90%;
+  border-radius: 10px;
+  }
+  .table_title {
+      font-size: 1.5rem;
+  }
+}
+.sectionevents ul li {
+  list-style: none;
+  .tabble_date {
+      color: $primary;
+      display: inline-flex;
+      .start_date {
+          padding-right: 0.3rem;
+      }
+  }
+  .table_title {
+      color: #000;
+      font-weight: 600;
+  }
+  .table_category {
+
+      color: #000;
+  }
+}
+#container-section-agenda li div span, #container-section-agenda li div p {
+  color: $primary;
+}
+.sectionevents .body-section ul li {
+  margin-bottom: 1.5rem;
+  .table_date {
+
+  }
+}
+.sectionevents li .table_image div.image {
+  position: relative;
+}
+.sectionevents li .table_image div.image::after {
+  content: "";
+  background: transparent;
+  transition: all .2s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  top: 0;
+}
+.sectionevents li .table_image:hover div.image::after {
+  background: $primary-svg;
+  opacity: 0.5;
+}
+.sectionevents .table_date {
+  display: flex;
+}
+.sectionevents .end_date {
+  margin-left: 0.25rem;
+}
+.sectionevents .body-section ul li {
+  position: relative;
+}
+.sectionevents ul li .table_display>a:before {
+  background: hsla(0,0%,100%,.871);
+  border-radius: 20px;
+  bottom: 0;
+  content: "";
+  left: 12px;
+  position: absolute;
+  right: 12px;
+  top: 0px;
+  z-index: -1;
+}
+.sectionevents .table_category {
+  padding: 0.5rem 1rem;
+}
+.sectionevents .table_date, .sectionevents .table_title {
+  padding: 0 1rem;
+}
+@media only screen and (max-width: 767px) {
+.sectionevents {
+    .table_category,
+    .table_date,
+    .table_title {
+      position: relative;
+    }
+  }  
+  .sectionevents ul li .table_display>a:before {
+  z-index: 0;
+  }
+}

@@ -8,3 +8,59 @@
 .sectionnews .swiper-slide .swiper_category span {
   padding: 0 !important;
 }
+/// AFFICHAGE TABLEAU
+.sectionnews a {
+  text-decoration: none;
+  .image.w-100 {
+  padding-bottom: 90%;
+  border-radius: 10px;
+  }
+  .table_title {
+      font-size: 1.5rem;
+  }
+}
+.sectionnews ul li {
+  list-style: none;
+  .tabble_date {
+      color: $primary;
+      display: inline-flex;
+      .start_date {
+          padding-right: 0.3rem;
+      }
+  }
+  .table_title {
+      color: #000;
+      font-weight: 600;
+  }
+  .table_category {
+      padding: 1rem 0 0;
+      color: #000;
+  }
+}
+#container-section-actualites li div span, #container-section-actualites li div p {
+  color: $primary;
+}
+.sectionnews .body-section ul li {
+  margin-bottom: 1.5rem;
+  .table_date {
+      padding: 0.5rem 0;
+  }
+}
+.sectionnews li .table_image div.image {
+  position: relative;
+}
+.sectionnews li .table_image div.image::after {
+  content: "";
+  background: transparent;
+  transition: all .2s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  top: 0;
+}
+.sectionnews li .table_image:hover div.image::after {
+  background: $primary-svg;
+  opacity: 0.5;
+}
