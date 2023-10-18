@@ -64,3 +64,11 @@ footer{
         vertical-align: middle;
     }
 }
+@include media-breakpoint-down(md) { 
+    body footer#portal-footer-wrapper, body #portal-footer.container {
+        text-align: center;
+    }
+    #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img {
+        margin: 0 auto;
+    }
+}

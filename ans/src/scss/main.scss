@@ -17,7 +17,82 @@ $enable-roboto-webfont: false;
 @import './footer.scss';
 @import './a-la-une.scss';
 @import './en-images.scss';
+@import './partenaires.scss';
 
 #portal-globalnav .quick-access .quick-access-title {
 	color: $primary!important;
+}
+@include media-breakpoint-down(md) { 
+	.smartweb_herobanner .bannerSwiper {
+		height: 300px;
+	}
+}
+.sectionfiles {
+	a.table_image:hover, a.table_image:focus {
+		color: #fff;
+	}
+	.item_infos {
+    color: #fff;
+	}
+}
+//footer
+body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p:first-child {
+    background: $primary-svg;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    color: #000 !important;
+    margin-bottom: 20px;
+	a {
+		color: #000 !important;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	a:first-child {
+		font-size: 16px;
+		color: #000 !important;
+	}
+}
+#portal-footer-wrapper .facebook {
+	width: 2.5rem;
+	a {
+    background-image: url(../../assets/svg/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    font-size: 0;
+    height: 29px;
+    margin-top: 1rem;
+    width: 29px;
+	}
+}
+#portal-footer-wrapper .youtube {
+	width: 2.5rem;
+	display: inline-block;
+	a {
+    background-image: url(../../assets/svg/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    font-size: 0;
+    height: 29px;
+    margin-top: 1rem;
+    width: 29px;
+	}
+}
+.r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder-ans.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#portal-header #portal-header-top {
+    gap: 30px;
+}
+#portal-header #portal-header-top #portal-logo img {
+	height: auto!important;
+	}
+@media screen and (max-width: 767px) {
+ #gdpr-consent-banner .gdpr-actions input[name=refuse] {
+    margin-bottom: 20px;
+	color: #000;
+	}
 }
