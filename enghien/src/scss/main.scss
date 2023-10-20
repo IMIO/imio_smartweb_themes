@@ -68,7 +68,7 @@ h1 {
 }
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
-	max-height: 500px;
+	max-height: 300px;
 }
 
 #header-actions .account {
@@ -481,6 +481,8 @@ footer #container-section-noussuivre{
     }
 }
 
+
+
     .header-custom #portal-breadcrumbs {
         z-index: 0;
     }
@@ -579,4 +581,39 @@ footer #container-section-noussuivre{
 
 .navbar .container {
     padding:0px !important;
+}
+
+/*.section-home-page #messagesviewlet {
+    position:absolute !important;
+    top:110px !important;
+    z-index: 1!important;
+}*/
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+    background-color: $primary-svg;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+    background-color: $primary-orange;
+    color:#000;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+    background-color: $primary-orange;
+    color:#000;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+    background: $primary-svg;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+    background-color: $primary-orange;
+    color:#000;
 }
