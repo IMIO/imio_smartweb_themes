@@ -73,6 +73,7 @@ $header-top-padding: 1rem 0 !default;
 $header-top-background: $primary;
 $header-center-nav: false;
 $header-nav-margin: 0 1rem 0 3rem;
+$header-nav-link-color:#fff;
 $header-links-color:rgb(255, 255, 255);
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
@@ -344,7 +345,7 @@ $section-contact-p-margin:1rem 0;
 $section-contact-portrait-ration:calc(4 / 5);
 
 // section-files
-$section-file-background-color: $secondary;
+$section-file-background-color: $greybg;
 $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
