@@ -1,0 +1,237 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/quick.scss";
+@import "./home/home-social";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/newsletter";
+@import "./se-link.scss";
+@import "./se-files.scss";
+@import "./contact.scss";
+@import "./home/home-partenaires";
+@import "./custom-react/events";
+
+
+
+
+
+#portal-header #portal-header-top #header-links #search-link a {
+	background: $primary;
+}
+
+@media screen and (min-width:700px) {
+    .see_all {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+// footer
+
+#portal-footer-wrapper{
+    text-align: left!important;
+    background: transparent!important;
+    &:before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3458.9 135.6'%3E%3Cpath d='M0 135.6C608.9 35 1206.6 1 1729.5 0 2252.3 1.1 2850 35 3458.9 135.6l-1729.4-.6L0 135.6Z' style='fill:%23414e54;stroke-width:0'/%3E%3C/svg%3E");
+        line-height: 0;
+        display: block;
+        transform: translateY(1px);
+    }
+}
+
+.portaltype-imio-smartweb-portalpage {
+    #portal-footer-wrapper{
+        text-align: left!important;
+        background: transparent!important;
+        &:before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3458.9 366.2'%3E%3Cpath d='M1865.6 231.6c-.4-22.9-1-51.9-1.6-74 0-2.2 0-4 1.7-5.6 1.2-1 .8-2.1.2-3.4l-18.1-36.7c-1-2-1.7-3.7 0-5.6.8-1 .5-2-.4-2.8-.6-.6-1.3-.7-2-.3-1.1.7-1.5 1.7-.8 2.8 1.3 2.1.6 4-.3 6l-15.5 37.3c-.5 1.1-1.4 2.4-.1 3.5 1.9 1.7 1.7 4 1.8 6.3.2 6.8.2 13.6.5 20.5.1 2.3-.7 2.8-2.8 2.8-17.1.2-34.2.4-51.3.8-3 .1-3.5-.9-3.6-3.5 0-8.8-.3-17.5-.6-26.3-.2-9.5-1.2-19.2 2.2-28.5.6-1.5-.3-2.5-1.2-3.6-3.3-3.8-7.5-6.7-9.8-11.4l-31.5-64.8c-.9-1.8-2-4-1-5.4 2.7-4.2.4-7.9-.5-11.9-.8-3.5-.3-7.4-.5-11.1-.1-2.2 1-2.8 2.9-2.8 1.2 0 2.6.7 4-.4-1.3-1.2-2.5-.7-3.6-.6-2.6.1-3.8-.6-3.8-3.6 0-3.1-.5-6.2-.8-9.3v6.4c0 4.3-2.2 6.6-6.5 7l-.4.5 4.8.7c1 0 2 .3 2 1.5-.1 5.5 1 11.2-2.1 16.2-.8 1.3-1.1 2.7-.2 4 2.3 2.8 1.6 5.7.3 8.6l-21.6 47.2c-5.1 11-9 22.9-18.7 31.3-1.2 1.1-1 2.4-.3 3.8 2 4.5 2.5 9 2.3 14-.5 13.5-.6 27-.8 40.6 0 1.7-.5 2.2-2.2 2.3l-54.1 1c-2.3.1-2.9-.7-2.8-2.8v-20c0-2 .3-4 1.7-5.6 1.1-1.5 1-2.8.2-4.5l-16-36.3c-1-2.1-1.7-4.1-.6-6.4.3-1 .4-2-.6-2.6-.6-.4-1.3-.4-1.7.2-.7.7-1 1.7-.4 2.6 1.2 1.8.6 3.4-.3 5l-18 36.9c-1 1.9-1 3.2.6 4.7 1.9 2 2.5 4.1 2.4 7-.5 19.6.7 47.7.6 68.3C1106.5 237.8 558 274 0 366.2l1729.5-.6 1729.4.6c-556.7-92-1104-128.2-1593.3-134.6Zm-12.5-66.8c0-3.2 1.5-5 3.9-4.8 3 .2 3.2 2.6 3.3 4.9v9.5c-.1 1.3.8 3.2-.7 3.7-1.9.5-4 .2-6-.6-.8-.3-.5-1.3-.5-2v-10.8Zm-16-.5c.2-2.9 2-4.3 5.2-4.4 3 0 4.4 1.3 4.7 4.4V170.7c0 7.6-.4 8-8 7.4-1.5-.1-2-.6-1.9-2v-11.8Zm-85-21.2c.2-3.6 2.9-6.3 5.7-6.3 4 .1 7.3 3.2 7.5 7.3.2 3.7 0 7.3 0 11l.1 10.8c0 1.6-.5 2-2 1.7a152 152 0 0 0-9.5-1.6c-1.4-.2-1.8-.9-1.8-2.1V143Zm-32 .7c.2-6 4.2-9.7 10.3-9.8 5.4 0 9.2 4.2 9.3 10.1v19.2c0 1.7-.3 2.6-2.2 2.5h-15c-2 0-2.4-.8-2.3-2.5v-19.5Zm-24.3 19 .2-16.9c0-1.8.6-3.6 1.4-5.2 1.2-2.1 2.9-3.9 5.6-3.5 2.7.3 4.2 2.2 4.9 4.8.7 2.9.3 5.8.4 8.6v3.9c0 3-.1 6.2 0 9.3.2 2.2-.5 3.4-2.8 3.5-1.3.1-2.5.5-3.8.7-6 1-6 1-6-5.1Zm-84.4 3.5c0-2.7 1.4-4.4 4.3-4.6 3-.1 5.4 1.5 5.6 4 .3 4.4.1 8.8.1 13.1 0 1-.4 1.3-1.4 1.2h-.6c-5.4.2-8-2.6-8-8.3v-5.4Zm-13.3.4c.1-2.2.5-4.8 3.4-4.9 3 0 3.8 2.4 4 5v10.1c.2 2.2-.5 3-2.8 3.2-4.6.2-4.6.4-4.6-4.5v-8.9Z' style='fill:%23414e54;stroke-width:0'/%3E%3C/svg%3E");
+            line-height: 0;
+            display: block;
+            transform: translateY(1px);
+        }
+    }
+}
+
+//  tubize
+h1 {
+    font-family: $font-family-base!important;
+    font-weight: bold!important;
+}
+
+
+.swiper-banner-image:after {
+    content: "";
+    background: #0000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+//footer 
+footer{
+    #container-section-noussuivre{
+        .table_title{
+            display: none;
+        }
+        ul.row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+	display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+    #content > header {
+       display: none;
+   }
+}
+// bug z-index
+
+.pagination{
+    .page-item.active{
+        z-index: 0;
+    }
+}
+
+#main-container{
+    .sectionlinks{
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .portaltype-imio-smartweb-portalpage .section-title {
+        font-size: 34px!important;
+    }
+}
+
+#portal-breadcrumbs{
+    background: transparent!important;
+    .container,.breadcrumb{
+        padding-left: 0;
+    }
+}
+
+#portal-globalnav > li a:hover {
+	color: $primary-svg;
+}
+
+// footer
+.footer-logo {
+    figure img {
+        width:250px!important;
+    }
+}
+
+.footer-slogan {
+    .text {
+        max-width: 204px;
+        text-align: center;
+        p {
+            font-size: 33px;
+            font-weight: 200;
+        }
+    }
+}
+.footer-fb {
+    .table_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10px;
+        text-decoration: none;
+        .image{
+            width: auto;
+            svg {
+                height: 25px;
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.r-add-contact a, .r-add-event a, .r-add-news a {
+	background: $primary;
+	color: #000;
+	padding: 1rem;
+	text-decoration: none;
+    border-radius: 5px;
+}
+
+.r-filter div[class*="control"] {
+	border-radius: 5px;
+}
+
+.procedure a::after {
+    content: "\F135";
+    font-family: Bootstrap-icons;
+    margin-left: .5rem;
+    position: relative;
+    top: 3px;
+}
+
+
+// sub-nav
+
+.subsite-container  {
+    margin-top: .5rem;
+    #subsite-logo {
+	    font-size: 18px;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.sectiontext .section-text .body-section a {
+	color: #1A7CAD;
+}
+
+#viewlet-above-content-body {
+    .procedure{
+        display: none;
+    } 
+}
+
+.breadcrumb-item {
+    a {
+     text-decoration: none;
+    }
+}
+.breadcrumb {
+	font-size: 13px;
+}

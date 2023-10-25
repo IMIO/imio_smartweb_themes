@@ -1,0 +1,51 @@
+.home-social {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: transparent;
+    text-align: center;
+    margin-left: auto;
+    @media screen and (min-width: 575px) {
+        width: calc(50% - 20px);
+    }
+    .section-container {
+        border: solid 2px $primary;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 25px;
+        height: 100%;
+    }
+    .row {
+        max-width: 350px;
+        margin: auto;
+        gap: 20px 0;
+        li {
+            @include media-breakpoint-down (md) {
+                width: 50%;
+            }
+        }
+    }
+    .section-title {
+        color: #000;
+    }
+    .rich_description {
+        color: #000;
+        font-weight: 500;
+    }
+    .table_image {
+        display: block;
+        text-decoration: none;
+        .plone-icon {
+            height: 50px;
+            fill: $primary;
+            transition: all .2s ease;
+        }
+        &:hover {
+            .plone-icon{
+                translate: 0 -10px;
+            }
+        }
+    }
+    .table_title {
+        display: none;
+    }
+}

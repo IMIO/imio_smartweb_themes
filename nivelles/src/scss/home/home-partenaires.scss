@@ -1,0 +1,32 @@
+.home-partenaires {
+    background: transparent;
+    .row {
+        max-width: 730px;
+        margin: 3vw auto 0 auto;
+        li {
+            .table_image {
+                text-align: center;
+                .image.d-block{
+                    width: 200px;
+                    height: 200px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: 0 auto;
+                }
+                .table_title {
+                    span {
+                        position: absolute;
+                        width: 1px;
+                        height: 1px;
+                        padding: 0;
+                        margin: -1px;
+                        overflow: hidden;
+                        clip: rect(0, 0, 0, 0);
+                        white-space: nowrap;
+                        border-width: 0;
+                    }
+                }
+            }
+        }
+    }
+}

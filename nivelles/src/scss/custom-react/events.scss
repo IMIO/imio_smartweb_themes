@@ -1,0 +1,134 @@
+.portaltype-imio-smartweb-eventsview {
+    .annuaire-map {
+        display: none;
+    }
+    @media screen and (min-width: 600px) {
+        .r-annuaire-wrapper {
+            display: block;
+        }
+        .r-result-list {
+            max-width: 1296px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .r-list-item-group {
+            transition: all .2s ease;
+            &:hover,&:focus {
+                transform: translateY(-10px)!important;
+            }
+            .r-list-item {
+                flex-direction: column!important;
+                box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+                .r-item-img {
+                    border-radius: 0!important;
+                    width: 100%!important;
+                    height: 0!important;
+                    padding-bottom: 60%!important;
+                    margin-bottom: .5rem;
+                }
+                .r-item-text {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-right: 1.5rem;
+                    .r-item-categorie {
+                        color: $primary!important;
+                        grid-row-start: 1;
+
+                    } 
+                    .r-item-title {
+                        font-weight: 500!important;
+                        grid-row-start: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        margin-bottom: 2rem;
+                        margin-top: 1rem;
+
+
+                    }
+                    .r-item-date {
+                        color: $primary!important;
+                        grid-row-start: 1;
+                        grid-column-start: 2;
+                        justify-self: end;
+                    }
+                }
+            }
+        }
+    }
+
+    // content
+
+    .envent-content.r-content {
+        @media screen and (min-width: 600px) {
+        max-width: 1296px;
+        article {
+            display: grid;
+            gap: 0 20px;
+            grid-template-columns: 25% 25% 50%;
+            // grid-template-areas: 
+            //     "figure figure header"
+            //     ". . desc"
+            //     ". . text";
+            header {
+                grid-column-end: 3;
+                grid-column-start: 1;
+                grid-row-start: 1;
+            }
+            figure {
+                grid-column-end: 3;
+                grid-column-start: 1;
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+            .news-info-title {
+                grid-column-end: 3;
+                grid-column-start: 1;
+            }
+            .r-content-news-info {
+                grid-column-end: 3;
+                grid-column-start: 1;
+            }
+            .r-content-description {
+                grid-column-end: 3;
+                grid-column-start: 3;
+                grid-row-start: 2;
+                p {
+                    font-weight: bold;
+                }
+
+            }
+            .r-content-text {
+                grid-column-end: 3;
+                grid-column-start: 3;
+                grid-row-start: 3;
+            }
+            .r-content-news-info-contact {
+                width: auto!important;
+            }
+        }
+        }
+    }
+}
+
+
+.portaltype-imio-smartweb-eventsview .envent-content.r-content article {
+    .news-info-title {
+        background-color: #EDEDED;
+        margin-bottom: 0;
+        padding: 1rem;
+
+    }
+    .r-content-news-info {
+        background-color: #EDEDED;
+        padding: 0 1rem 1rem 1rem;
+
+    }
+    .r-content-img {
+        padding-bottom: 60%!important;
+        height: 0;
+    }
+} 
+.r-wrapper .r-result-list .r-list-item-group .r-list-item .r-item-text::after {
+    display: none;
+}
