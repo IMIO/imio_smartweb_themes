@@ -1,7 +1,10 @@
 .sectionlinks.quick-access {
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: -90px;
+
+    @media screen and (min-width: 1000px) {
+        margin-top: -90px;
+    }
     .section-container {
         @media screen and (min-width: 1000px) {
             & > div {
@@ -16,7 +19,11 @@
     }
 }
 
-
+@media screen and (max-width: 992px) {
+    body #body-section-en-un-clic li {
+      width: auto !important;
+    }
+  }
 .quick-access{
     svg{
         max-height: 40px;
@@ -51,11 +58,18 @@
     }
 
     .row{
+       @media screen and (max-width: 550px){
+            grid-gap: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr!important;
+            li{
+                width: auto!important;
+            }
+        }
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+            grid-template-columns: repeat(auto-fit,minmax(56px,181px));
             li{
                 width: auto!important;
             }
