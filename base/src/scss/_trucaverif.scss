@@ -477,26 +477,17 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     color: #fff;
 }
 /* section fichier */
-
-.portaltype-imio-smartweb-procedure .sectionfiles .table_display,
-.portaltype-imio-smartweb-procedure .sectionfiles li.col-md-12,
-.portaltype-imio-smartweb-page .sectionfiles .table_display,
-.portaltype-imio-smartweb-page .sectionfiles li.col-md-12 {
-    max-width: 760px;
-    margin: 0.5rem auto;
-    padding-left: 0;
-}
 .portaltype-imio-smartweb-procedure .sectionfiles .table_image,
 .portaltype-imio-smartweb-page .sectionfiles .table_image {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 6px;
 }
 .portaltype-imio-smartweb-procedure .sectionlinks .table_title,
 .portaltype-imio-smartweb-page .sectionlinks .table_title,
 .portaltype-imio-smartweb-procedure .sectionfiles .table_title,
 .portaltype-imio-smartweb-page .sectionfiles .table_title {
-    margin-right: 1rem;
     font-size: 1.25rem;
 }
 
