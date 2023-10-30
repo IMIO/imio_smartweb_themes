@@ -7,6 +7,7 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
 const { cp } = require("fs");
+const sass = require('sass-embedded');
 
 const BASE_PATH = path.resolve(__dirname, ".");
 
@@ -116,6 +117,7 @@ module.exports = (env, argv) => {
               loader: "sass-loader",
               options: {
                 sourceMap: mode === "development",
+                implementation: require('sass-embedded'),
               },
             },
           ],
