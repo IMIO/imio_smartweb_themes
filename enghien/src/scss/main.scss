@@ -68,7 +68,7 @@ h1 {
 }
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
-	max-height: 300px;
+	max-height: 500px;
 }
 
 #header-actions .account {
@@ -583,11 +583,11 @@ footer #container-section-noussuivre{
     padding:0px !important;
 }
 
-/*.section-home-page #messagesviewlet {
+.section-home-page #messagesviewlet {
     position:absolute !important;
     top:110px !important;
     z-index: 1!important;
-}*/
+}
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
     background-color: $primary-svg;
