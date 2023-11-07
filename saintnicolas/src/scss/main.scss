@@ -43,3 +43,39 @@ $enable-roboto-webfont: false;
         background-image: url("../../assets/svg/plachld-saintnicolas.png");
     }
 }
+
+
+.section-home-page #messagesviewlet {
+    position:absolute !important;
+    top:120px !important;
+    z-index: 1!important;
+}
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+    background-color: $primary;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+    background-color: $message-error;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+    background-color: #0A8765;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+    background: $primary;
+    color:#fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+    background-color: #0A8765;
+    color:#fff;
+}
