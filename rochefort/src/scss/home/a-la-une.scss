@@ -1,0 +1,8 @@
+.a-la-une.focus .swiper-slide>a {
+  // direction: rtl;
+  grid-auto-flow: dense;
+  grid-template-columns: 50% 50%;
+}
+.a-la-une.focus .swiper-slide>a .swiper_description, .a-la-une.focus .swiper-slide>a .swiper_title {
+  // direction: ltr!important;
+}
