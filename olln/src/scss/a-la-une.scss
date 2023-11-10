@@ -1,0 +1,54 @@
+.a-la-une {
+    .swiper-slide {
+      & > a {
+        @include media-breakpoint-up(lg) {
+            display: grid;
+            grid-template-columns: auto 600px;
+            grid-template-rows: auto 1fr;
+        }
+        .swiper-image {
+            padding-bottom: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-column-start: 2;
+        }
+        .swiper_title {
+            grid-column-start: 1;
+            text-align: right;
+        }
+        .swiper_description {
+            grid-column-start: 1;
+            text-align: right;
+        }
+      }  
+    }
+}
+
+.crl1{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    background: #D8E9F5;
+    border-radius: 50%;
+    z-index: -1;
+    left: 15%;
+    top: 15%;
+}
+
+.crl2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #FFCF1B;
+    opacity: .45;
+    border-radius: 50%;
+    z-index: 2;
+    right: 3%;
+    top: 70%;
+}
+.crl21{
+    z-index: -1;
+    background-color: yellow;
+    opacity: .25;
+}
