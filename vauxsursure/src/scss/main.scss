@@ -596,7 +596,7 @@ footer #container-section-noussuivre{
     }
 
 
-    .sectiontext mark {
+    .sectiontext mark, mark {
         background-color: #275e71;
         border: 0px;
         border-radius: 8px;
@@ -604,6 +604,10 @@ footer #container-section-noussuivre{
         display: inline-block;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
+    }
+
+    .sectiontext mark a, mark a {
+        color: #ffffff;
     }
 
 
