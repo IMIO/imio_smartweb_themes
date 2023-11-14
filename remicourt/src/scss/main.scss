@@ -289,13 +289,13 @@ footer #container-section-noussuivre{
     background: $primary-svg;
 }
 
-.sectiontext .section-text .body-section a {
-	color: $primary;
-}
 
 .sectiontext .section-text .section-title a { text-decoration: none;}
 .sectiontext .section-text .section-title a.collapsed {
     color: #000 !important;
+}
+.sectiontext .section-text .body-section a {
+	color: $primary!important;
 }
 .sectiontext figure img {
 	border-radius: 15px;
@@ -327,8 +327,8 @@ footer #container-section-noussuivre{
     z-index: 1;
     .breadcrumb {
         margin: 0!important;
-        background-color: #F2F2F5 !important;
-        padding: 15px 30px !important;
+        background-color: #fff !important;
+        padding: 12px 0 !important;  
         .breadcrumb-item {
             a {
                 color:#2F294E !important;
@@ -531,21 +531,7 @@ footer #container-section-noussuivre{
     }
 }
 
-    .header-custom #portal-breadcrumbs {
-        z-index: 0;
-    }
-    .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a, .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover {
-        color: #000000!important;
-    }
 
-    .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
-    }
-
-    .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
-        text-decoration: underline;
-    }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
         color: #000000!important;
@@ -579,6 +565,8 @@ footer #container-section-noussuivre{
     width: 100%!important;
 }
     }
+
+
 
     #messagesviewlet .portalMessage.info,
     #localmessagesviewlet .portalMessage.info {
@@ -633,11 +621,6 @@ footer #container-section-noussuivre{
             color:#ffffff;
         }
     }
-
-    .sectiontext .section-text .body-section a{
-        color:#ffffff;
-    }
-
 
 h3 {
     font-size: 1.5rem;
@@ -706,4 +689,19 @@ h3 {
 
 .navbar .container {
     padding:0px !important;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+    #messagesviewlet {
+        position: absolute;
+        top: 100px;
+    }
+}
+
+
+#portal-globalnav-collapse .dropdown .nav-link:focus,
+#portal-globalnav-collapse .dropdown .nav-link:hover,
+#subsite-navigation .dropdown .nav-link:focus,
+#subsite-navigation .dropdown .nav-link:hover {
+	color: #305ca9;
 }

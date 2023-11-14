@@ -23,12 +23,4 @@ $( document ).ready(function() {
         eventsSwiper.update();
     }
 
-    // For banner
-
-    let checkBanner = document.querySelector("#portal-header #banner");
-    let headerCustom = document.getElementById("portal-header");
-
-    if (checkBanner != null) {
-       headerCustom.classList.add("header-custom");
-    }
 });
