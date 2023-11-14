@@ -218,6 +218,7 @@ footer{
 .subsite-container  {
     margin-top: .5rem;
     #subsite-logo {
+        background-color: #1b7776;
 	    font-size: 18px;
         a {
             color: #fff;
@@ -273,4 +274,14 @@ footer{
             }
         }
     }
+}
+.portaltype-imio-smartweb-portalpage.section-home-page {
+    #messagesviewlet {
+        position: absolute;
+        top: 100px;
+    }
+}
+
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+	background-color: #092836!important;
 }
