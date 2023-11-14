@@ -1,0 +1,56 @@
+.sectionlinks.quick-access {
+    position: relative;
+    &:before {
+        content: "";
+        background: #e9e9e9 url("../../assets/theme.jpg") no-repeat;
+        display: block;
+        left: -63px;
+        width: 100vw;
+        height: 130%;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        top: -15%;
+        transform: translateX(-50%);
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 1fr;
+        align-items: center;
+        max-width: 520px;
+        margin-left: auto;
+        li {
+            width: auto;
+            border-bottom: 1px solid #fff;
+            border-left: 1px solid #fff;
+            aspect-ratio: 1/1;
+            &:first-of-type ,
+            &:nth-of-type(4), 
+            &:nth-of-type(7) 
+            {
+                border-left: none;
+            }
+            &:last-of-type,
+            &:nth-last-of-type(2),
+            &:nth-last-of-type(3) {
+                border-bottom: none;
+            }
+            .table_display {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            .table_image {
+                .table_title {
+                    span {
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

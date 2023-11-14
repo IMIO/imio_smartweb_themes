@@ -1,10 +1,16 @@
 .a-la-une {
+    padding-bottom: 0;
+    padding-top: 0;
+    @media screen and (min-width:900px) {
+        margin-top: -5rem;
+    }
     .swiper-slide {
       & > a {
         @include media-breakpoint-up(lg) {
             display: grid;
             grid-template-columns: auto 600px;
             grid-template-rows: auto 1fr;
+             max-width: 1149px;
         }
         .swiper-image {
             padding-bottom: 100%;
