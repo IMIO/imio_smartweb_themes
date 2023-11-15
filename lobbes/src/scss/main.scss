@@ -29,3 +29,18 @@ $enable-roboto-webfont: false;
         display: block;
     }
 }
+
+.site-cpas .swiper-banner-content-wrapper .swiper-banner-content  {
+    max-width: 900px;
+    margin:0 auto !important;
+    width: 100% !important;
+
+    .swiper-banner-title{
+        display: none;
+    }
+    .swiper-banner-description p {
+        font-size: 24px !important;
+        font-weight: 700;
+        text-align: center !important;
+    }
+}

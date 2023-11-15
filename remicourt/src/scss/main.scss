@@ -704,4 +704,14 @@ h3 {
 #subsite-navigation .dropdown .nav-link:focus,
 #subsite-navigation .dropdown .nav-link:hover {
 	color: #305ca9;
+.site-cpas .swiper-banner-content-wrapper .swiper-banner-content  {
+    .swiper-banner-title{
+        display: none;
+    }
+
+    .swiper-banner-description p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
 }
