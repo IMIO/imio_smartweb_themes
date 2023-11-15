@@ -37,7 +37,6 @@
       }
     }
     .swiper_title {
-      font-size: $a-la-une-item-title-font-size;
       border-radius: $a-la-une-item-title-radius;
       margin: 1rem 0 0 0;
       @include media-breakpoint-up(lg) {
@@ -50,6 +49,7 @@
       }
       h3 {
         color: $a-la-une-item-title-color;
+        font-size: $a-la-une-item-title-font-size;
       }
     }
     .swiper_description {
