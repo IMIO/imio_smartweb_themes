@@ -51,7 +51,7 @@ $( document ).ready(function() {
         console.log(tilty)
         TweenMax.to(".swiper-slide-active .circle.crl1", 1, {x:tilty*10, y:tiltx*10, rotation:0.01, ease:Power1.easeOut});
         TweenMax.to(".swiper-slide-active .circle.crl2", 1, {x:-tilty*17, y:-tiltx*17, rotation:0.01, ease:Power1.easeOut});
-        TweenMax.to(".swiper-slide-active .swiper-image", 1, {x:-tilty*4, y:-tiltx*4, rotation:0.01, ease:Power1.easeOut});
+        TweenMax.to(".a-la-une .swiper-slide-active .swiper-image", 1, {x:-tilty*4, y:-tiltx*4, rotation:0.01, ease:Power1.easeOut});
         // TweenMax.to(".main-homepage .zoom-sur .circle.crl1", 1, {x:tilty*6, y:tiltx*6, rotation:0.01, ease:Power1.easeOut});
     }
 

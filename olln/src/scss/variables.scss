@@ -48,13 +48,13 @@ $to-portal-link-color:#282828!default;
 $img-placeholder:#F2F2F2!default;
 //swiper
 $swiper-icon-color: $primary-svg !default;
-$swiper-button-height: 45px !default;
-$swiper-button-width: 45px !default;
+$swiper-button-height: 56px;
+$swiper-button-width: 56px;
 $swiper-button-top: 26% !default;
 $swiper-prev-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M26.5 42.5h45c1.1 0 2 .9 2 2s-.9 2-2 2h-45c-1.1 0-2-.9-2-2s.9-2 2-2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M16.68 45.91 48.5 77.73c.78.78 2.05.78 2.83 0 .78-.78.78-2.05 0-2.83L20.92 44.49l30.41-30.41a2.004 2.004 0 0 0-1.41-3.42c-.51 0-1.02.2-1.41.59L16.69 43.07c-.78.78-.78 2.05 0 2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 0c7.33 0 14.59 1.91 20.98 5.52.96.54 1.3 1.76.76 2.73-.54.96-1.76 1.3-2.72.76-5.8-3.27-12.37-5-19.02-5C21.72 4 4 22.17 4 44.5S21.72 85 43.5 85 83 66.83 83 44.5c0-4.92-.86-9.73-2.54-14.31-.38-1.04.15-2.19 1.19-2.57 1.04-.38 2.19.15 2.57 1.19 1.85 5.02 2.79 10.3 2.79 15.69 0 24.54-19.51 44.5-43.5 44.5S0 69.04 0 44.5 19.51 0 43.5 0Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E")!important;
 $swiper-next-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M60.5 46.5h-45c-1.1 0-2-.9-2-2s.9-2 2-2h45c1.1 0 2 .9 2 2s-.9 2-2 2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M70.32 43.09 38.5 11.27c-.78-.78-2.05-.78-2.83 0-.78.78-.78 2.05 0 2.83l30.41 30.41-30.41 30.41a2.004 2.004 0 0 0 1.41 3.42c.51 0 1.02-.2 1.41-.59l31.82-31.82c.78-.78.78-2.05 0-2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 89c-7.33 0-14.59-1.91-20.98-5.52-.96-.54-1.3-1.76-.76-2.73.54-.96 1.76-1.3 2.72-.76 5.8 3.27 12.37 5 19.02 5 21.78 0 39.5-18.17 39.5-40.5S65.28 4 43.5 4 4 22.17 4 44.5c0 4.92.86 9.73 2.54 14.31.38 1.04-.15 2.19-1.19 2.57-1.04.38-2.19-.15-2.57-1.19A45.234 45.234 0 0 1-.01 44.5C0 19.96 19.51 0 43.5 0S87 19.96 87 44.5 67.49 89 43.5 89Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E")!important;
 $swiper-background-size: 50% !default;
-$swiper-background-color: #fff !default;
+$swiper-background-color: transparent;
 $swiper-raduis: 50px !default;
 $swipper-bullet-color:$primary-svg!default;
 //*// HEADER
@@ -74,7 +74,7 @@ $header-links-account-bg:transparent !default;
 $header-links-account-hover-border:solid 0px #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
-$header-search-icon-color:#000 !default;
+$header-search-icon-color:#fff;
 $header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 $toggler-color:white !default;
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$toggler-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
@@ -143,24 +143,24 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding:0 !default;
+$see-all-padding:1em 2em;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg:transparent !default;
+$see-all-bg:$yellow;
 $see-all-color:$primary !default;
-$see-all-radius:$global-radius !default;
+$see-all-radius:50px;
 $see-all-border:solid 0px $primary !default;
-$see-all-text-transform:none !default;
-$see-all-font-size:16px !default;
-$see-all-font-weight:700!default;
+$see-all-text-transform:uppercase;
+$see-all-font-size:14px;
+$see-all-font-weight:700;
 $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:transparent !default;
 $see-all-hover-color:$primary-svg !default;
 $see-all-hover-radius:$global-radius !default;
 $see-all-hover-border:solid 0px $primary !default;
-$see-all-justify-content: right !default;
+$see-all-justify-content: center;
 $see-all-underline-color: $primary-svg!default;
-$see-all-underline-width: 25%!default;
-$see-all-hover-underline-width:50%!default;
+$see-all-underline-width: 0;
+$see-all-hover-underline-width:0;
 
 
 // Quick access
@@ -234,7 +234,7 @@ $actu-item-title-padding: 0 1rem !default;
 $actu-item-title-color: initial !default;
 $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size !default;
-$actu-item-title-font-weight: initial !default;
+$actu-item-title-font-weight: 600;
 $actu-item-title-align: left !default;
 $actu-item-description-margin: 0 0 .5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
@@ -275,7 +275,7 @@ $event-item-title-padding: 0 1rem !default;
 $event-item-title-color: $primary;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: 24px;
-$event-item-title-font-weight: bold;
+$event-item-title-font-weight: 600;
 $event-item-description-margin: 0 0 .5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
