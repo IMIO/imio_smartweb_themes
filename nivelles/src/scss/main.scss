@@ -249,16 +249,16 @@ footer{
 	background: #fff;
 	border-radius: 5px;
 }
-
+    
 .portalMessage.error {
-    background: #1b7776;
+    background: #a71800;
     h2 {
         color: #fff!important;
     }
 }
 
 #messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
-    background: #1b7776!important;
+    background: #a71800!important;
 }
 
 #portal-header-top {
@@ -283,5 +283,5 @@ footer{
 }
 
 #messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
-	background-color: #092836!important;
+	background-color: #D14600!important;
 }
