@@ -8,16 +8,22 @@
             color: #fff;
         }
     }
-    @if $enable-full-width-section-link {
-        // &:after{
-        //     @include full-width;
-        //     background:$section-link-background-color;
-        // }
-    }
     background: $section-link-background-color;
     position: relative;
     .section_files_list {
         @include ul-rm-padding;
+    }
+    .display-paysage {
+        .image.d-block.w-100 {
+            aspect-ratio: 1.67;
+            margin-bottom: 10px;
+        }
+    }
+    .display-portrait {
+        .image.d-block.w-100 {
+            aspect-ratio: 0.70;
+            margin-bottom: 10px;
+        }
     }
     li {
         list-style: none;
@@ -65,7 +71,6 @@
     }
     .section-title {
         &::before {
-            // content: url(../svg/files.svg);
             display: inline-block;
             vertical-align: middle;
             margin-right: 1.5rem;
@@ -79,9 +84,6 @@
         &:focus {
             background: rgba(255, 255, 255, 0.09);
             border: solid 1px rgba(255, 255, 255, 0);
-            &:after {
-                // background: url(../svg/download-arrow-blue.svg) no-repeat center #fff;
-            }
         }
         &:after {
             content: "";
@@ -89,7 +91,6 @@
             height: 30px;
             border: 1px solid #FFFFFF;
             border-radius: 30px;
-            // background: url(../svg/download-arrow.svg) no-repeat center;
             margin-right: 1rem;
             background-size: 35%;
             @include media-breakpoint-up(lg) {
@@ -103,7 +104,6 @@
         .section_files_image {
             border-radius: 10px 10px 10px 0px;
             flex-shrink: 0;
-            // background: url(../svg/files.svg) no-repeat center $primary; 
             @include media-breakpoint-up(md) {
                 border: 1px solid #FFFFFF;
             }
@@ -113,26 +113,6 @@
                 @include media-breakpoint-up(md) {
                     display: block;
                 }
-            }
-        }
-        &[href$=".pdf"] {
-            .section_files_image {
-                // background: url(../svg/pdf-file-icon.svg) no-repeat center $primary; 
-            }
-        }
-        &[href$=".jpg"],
-        &[href$=".jpeg"],
-        &[href$=".png"],
-        &[href$=".svg"] {
-            .section_files_image {
-                // background: url(../svg/image-file-icon.svg) no-repeat center $primary; 
-            }
-        }
-        &[href$=".mp4"],
-        &[href$=".webm"],
-        &[href$=".avi"] {
-            .section_files_image {
-                // background: url(../svg/video-file-icon.svg) no-repeat center $primary; 
             }
         }
         .section_files_text {
