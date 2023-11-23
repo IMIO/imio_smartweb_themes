@@ -1,0 +1,27 @@
+#portal-footer-wrapper {
+    #portal-footer.container {
+        background:$primary;
+        p,span,h2,h3,a, div {
+            color: #fff!important;
+        }
+    }
+}
+
+#portal-colophon {
+    background-color: $primary;
+    p,span,h2,h3,a, div {
+        color: #fff!important;
+    }
+    h2 {
+        font-size: 26px!important;
+        font-weight: 700;
+    }
+    .colophonWrapper {
+        padding: .5rem;
+    }
+    ul {
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
