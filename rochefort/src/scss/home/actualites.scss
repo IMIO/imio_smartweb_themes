@@ -103,3 +103,22 @@
 .sortable-section.sectionnews {
     margin-bottom: 2rem;
 }
+.sectionnews .body-section li div.table_display {
+    transition: all .5s ease;
+    a>div {
+        transition: all .5s ease;
+    }
+}
+.sectionnews .body-section li div.table_display:hover {
+    background-color: $primary;
+    border-radius: 10px;
+    transition: all .5s ease;
+    a>div {
+        color: #fff !important;
+        transition: all .5s ease;
+    }
+    a>div span, a>div p {
+        color: #fff !important;
+        transition: all .5s ease !important;
+    }
+}

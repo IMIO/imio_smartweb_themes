@@ -29,6 +29,9 @@ $enable-roboto-webfont: false;
 	background-size: cover;
 	background-position: center;
 }
+body {
+    position: relative;
+}
 body::after {
 background: url(../../assets/svg/frame.svg);
     background-repeat: no-repeat;
@@ -40,7 +43,61 @@ background: url(../../assets/svg/frame.svg);
     right: 0;
     top: 0;
     width: 50%;
-    z-index: -1;
+    z-index: -2;
     bottom: 0;
-    height: 4000px;
+    // height: 4000px;
+}
+//BANNER
+.smartweb_herobanner .bannerSwiper {
+    height: 50vw;
+    max-height: 500px;
+}
+//NEWSLETTER
+#body-section-newsletter form#form .formControls {
+    /* clip: rect(0,0,0,0); */
+    border: 0;
+    height: auto;
+    /* margin-top: 20px; */
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    bottom: -20px;
+    /* padding-bottom: 25px; */
+}
+//COntact
+#portal-column-content .sectioncontact .contact-type-organization {
+    border: 1px solid #F1F1F1F1;
+}
+//NEWSLETTER
+#body-section-newsletter form#form .formControls {
+    display: block;
+    height: auto;
+    margin-top: 2rem;
+    overflow: visible;
+    position: relative;
+    width: auto;
+}
+.sectionsendinblue #body-section-newsletter form#form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faceted-text-search input#search_button {
+    background: $primary;
+}
+//BANNER
+.bannerSwiper .section-slide {
+    position: relative;
+}
+.bannerSwiper .section-slide:after {
+    content: url(../../assets/svg/logo-rochefort-blanc.svg);
+    left: 50%;
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
 }
