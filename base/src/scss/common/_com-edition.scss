@@ -51,3 +51,6 @@ figcaption{
         fill: #000;
     }
 }
+.section-map .leaflet-container {
+	z-index: 0;
+}
