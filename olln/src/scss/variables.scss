@@ -18,7 +18,7 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
+$h2-font-size: 2.625rem;
 $h3-font-size: $font-size-base * 1.5 !default;
 $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
@@ -39,7 +39,7 @@ $container-max-widths: (
 );
 $global-radius: 0 !default;
 $enable-title-uppercase: false !default;
-$home-section-title-size:3.25rem!default;
+$home-section-title-size:2.25rem;
 $home-section-title-margin:0 0 2rem 0 !default;
 $home-section-title-padding:0 !default;
 $home-section-title-align:left !default;
@@ -58,7 +58,7 @@ $swiper-background-color: transparent;
 $swiper-raduis: 50px !default;
 $swipper-bullet-color:$primary-svg!default;
 //*// HEADER
-$main-logo-max-width: 115px !default;
+$main-logo-max-width: 270px;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: $primary;
 $header-center-nav: false !default;
