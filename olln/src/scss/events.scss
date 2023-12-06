@@ -10,7 +10,7 @@
         left: 50%;
         right: 0;
         top: 0;
-        bottom: 23%;
+        bottom: 40%;
         display: block;
         position: absolute;
         transform: translateX(-50%);
@@ -33,6 +33,16 @@
     .swiper_date {
         span {
             font-weight: 600;
+        }
+    }
+    .see_all {
+        a {
+            background: $primary!important;
+            color: #fff;
+            &:hover {   
+                background:#274988!important;
+                color: #fff!important;
+            }
         }
     }
 }
