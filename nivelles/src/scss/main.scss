@@ -285,3 +285,27 @@ footer{
 #messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
 	background-color: #D14600!important;
 }
+
+
+.is-in-minisite {
+    #portal-globalnav > li > a::before {
+        background-color: #fff;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        transition: all .15s ease;
+    }
+    #portal-globalnav > li > a:focus::before, 
+    #portal-globalnav > li > a:hover::before {
+        content: "";
+        opacity: 1;
+    }
+}
+
+#portal-globalnav > li a:hover {
+	color: #fff;
+}
