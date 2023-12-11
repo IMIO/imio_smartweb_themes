@@ -411,6 +411,11 @@ footer #container-section-noussuivre{
         padding-bottom: 6.5rem;
         padding-top: 6rem;
 
+        .image.d-block.w-100 {
+            aspect-ratio: auto !important;
+            margin-bottom: 0px;
+        }
+
         .section-title{
             font-weight: 800;
             text-align: center;
@@ -595,8 +600,10 @@ footer #container-section-noussuivre{
         margin-top: 0rem;
     }
 
-
-    .sectiontext mark, mark {
+    article {
+        word-break: break-word;
+    }
+    .sectiontext p mark, p mark {
         background-color: #275e71;
         border: 0px;
         border-radius: 8px;
@@ -604,9 +611,10 @@ footer #container-section-noussuivre{
         display: inline-block;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
+        word-break: break-word;
     }
 
-    .sectiontext mark a, mark a {
+    .sectiontext p mark a, p mark a {
         color: #ffffff;
     }
 
