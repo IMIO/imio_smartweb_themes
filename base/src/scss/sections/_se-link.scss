@@ -14,15 +14,19 @@
         @include ul-rm-padding;
     }
     .display-paysage {
-        .image.d-block.w-100 {
-            aspect-ratio: 1.67;
-            margin-bottom: 10px;
+        .table_image:not(.no-image) {
+            .image.d-block.w-100 {
+                aspect-ratio: 1.67;
+                margin-bottom: 10px;
+            }
         }
     }
     .display-portrait {
-        .image.d-block.w-100 {
-            aspect-ratio: 0.70;
-            margin-bottom: 10px;
+        .table_image:not(.no-image) {
+            .image.d-block.w-100 {
+                aspect-ratio: 0.70;
+                margin-bottom: 10px;
+            }
         }
     }
     li {
