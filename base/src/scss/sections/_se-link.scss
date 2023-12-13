@@ -15,7 +15,7 @@
     }
     .display-paysage {
         .table_image:not(.no-image) {
-            .image.d-block.w-100 {
+            .image.d-block.is-image.w-100 {
                 aspect-ratio: 1.67;
                 margin-bottom: 10px;
             }
@@ -23,7 +23,7 @@
     }
     .display-portrait {
         .table_image:not(.no-image) {
-            .image.d-block.w-100 {
+            .image.d-block.is-image.w-100 {
                 aspect-ratio: 0.70;
                 margin-bottom: 10px;
             }
