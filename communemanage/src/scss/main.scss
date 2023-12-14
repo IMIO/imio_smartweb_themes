@@ -332,3 +332,14 @@ li:marker {
 .sectionevents .see_all a:hover {
     background: #fff;
   }
+
+
+  #portal-globalnav>li>a {
+    color: #fff !important;
+}
+
+@media (max-width: 992px) {
+    #portal-globalnav>li>a {
+        color: #07689f !important;
+    }
+}
