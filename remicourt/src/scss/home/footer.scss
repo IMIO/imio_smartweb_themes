@@ -5,6 +5,17 @@
     max-width: 200px !important;
     width: 100% !important;
 }
+#smartweb-footer #container-section-contact {
+    background: #21478B;
+    border-radius: 8px;
+    color: #fff !important;
+    padding: 30px 20px 20px !important;
+    a {
+        color: #fff !important;
+        text-decoration: underline !important;
+        font-weight: 400;
+    }
+}
 #portal-footer-wrapper{
     text-align: left!important;
     @media screen and (max-width: 992px) {
