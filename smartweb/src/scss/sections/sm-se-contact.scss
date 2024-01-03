@@ -11,7 +11,7 @@
         .contact-type-organization{
             display: flex;
             flex-wrap: wrap;
-            padding: 2rem 0;
+            padding: 2rem;
             flex-direction: column;
             align-content: flex-start;
             @include media-breakpoint-up(md){
@@ -29,7 +29,8 @@
                 background: #f3f3f3;
             }
             .contact_titles{
-                flex: 1 0 100%;
+                // flex: 1 0 100%;
+                width:100%;
             }
             .contact_informations,.address,.schedule{
                 h2,h3{
@@ -67,7 +68,8 @@
                 border: solid 1px #f3f3f3;
             }
             .contact_titles{
-                flex: 1 0 100%;
+                // flex: 1 0 100%;
+                width:100%;
             }
             .contact_informations,.address,.schedule{
                 h2,h3{
@@ -95,7 +97,8 @@
         .contact-type-position{
             padding: 2rem 0;
             .contact_titles{
-                flex: 1 0 100%;
+                // flex: 1 0 100%;
+                width:100%;
             }
             .contact_informations,.address,.schedule{
                 h2,h3{
