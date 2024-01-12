@@ -14,7 +14,6 @@
             border-radius: 100px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             padding: 6px 0px;
             outline: solid $primary 0px;
@@ -36,6 +35,7 @@
                 width: 20px;
                 display: block;
                 margin: 0 auto;
+                margin-top: auto;
             }
             &:hover {
                 outline:solid $primary 10px;
@@ -127,7 +127,6 @@
     .section-container {
         & > div {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
         }
     }
