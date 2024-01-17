@@ -357,7 +357,6 @@ footer #container-section-noussuivre{
     text-decoration: none;
     transition: all .5s ease;
     &:hover {
-        background: #000000;
         transition: all .5s ease;
     }
 }
@@ -827,3 +826,7 @@ h3 {
 
 
 #portal-column-content .section-contact .contact-type-organization .contact_map {z-index: -1 !important;}
+
+.r-result .r-content .r-content-img {
+    border-radius: 10px 10px 10px 0px;
+}
