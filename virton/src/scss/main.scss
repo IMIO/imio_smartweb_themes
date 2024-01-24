@@ -58,8 +58,7 @@ $enable-roboto-webfont: false;
 .header-custom #banner:after {display: none!important;}
 
 h1 {
-    font-family: $font-family-base!important;
-    font-weight: 400!important;
+    text-transform: uppercase;
 }
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
@@ -287,20 +286,20 @@ footer #container-section-noussuivre{
     z-index: -1;
     .breadcrumb {
         margin: 0!important;
-        background-color: #F6EAD9 !important;
+        //background-color: #F6EAD9 !important;
         padding: 15px 30px !important;
         .breadcrumb-item {
             a {
-                color:#2F294E !important;
+                color:#000000 !important;
                 &:hover {
-                    color:#2F294E !important;
+                    color:#000000 !important;
                 }
             }
             &.active {
-                color:#2F294E!important ;
+                color:#000000!important ;
             }
             &:before {
-                color: #2F294E!important;
+                color: #000000!important;
             }
         }
     }
@@ -310,7 +309,6 @@ footer #container-section-noussuivre{
 .header-custom {
     #banner {
         z-index: -1;
-        height: auto !important;
         &:after {
             content: "";
             position: absolute;
@@ -330,13 +328,13 @@ footer #container-section-noussuivre{
         z-index: 1;
         .breadcrumb {
             margin: 0!important;
-            background-color: #F6EAD9 !important;
+            //background-color: #F6EAD9 !important;
             padding: 15px 30px !important;
             .breadcrumb-item {
                 a {
-                    color:#2F294E !important;
+                    color:#000000 !important;
                     &:hover {
-                        color:#2F294E !important;
+                        color:#000000 !important;
                     }
                 }
                 &.active {
@@ -655,4 +653,9 @@ h3 {
 #localmessagesviewlet .portalMessage .close-button:after, #messagesviewlet .portalMessage .close-button:after {
     content: "";
     height: 25px;
+}
+
+#localmessagesviewlet .portalMessage .messagesviewlet-type:after, #messagesviewlet .portalMessage .messagesviewlet-type:after {
+    content: ":";
+    margin-left: 5px !important;
 }
