@@ -377,3 +377,14 @@ display: none;
 .procedure a::after {
     display: none;
 }
+
+.portaltype-imio-smartweb-portalpage {
+    #messagesviewlet {
+        position: absolute;
+        top: 160px;
+    }
+}
+
+#messagesviewlet .close-button::after, #localmessagesviewlet .close-button::after {
+	content: ""!important;
+}
