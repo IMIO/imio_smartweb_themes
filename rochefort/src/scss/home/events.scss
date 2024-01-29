@@ -15,11 +15,32 @@
     margin-bottom: 1.5rem;
 }
 .sectionevents {
-    .tabble_date {
+    .table_date {
         color: $primary;
-        display: inline-flex;
+        display: flex !important;
         .start_date {
             padding-right: 0.3rem;
+            .day {
+                margin-right: 0px;
+            }
+            .day::after {
+                content: "/";
+            }
+        }
+        .end_date {
+            padding-right: 0.3rem;
+            .day {
+                margin-right: 0px;
+            }
+            .day::after {
+                content: "/";
+            }
+        }
+    }
+    .table_date .day {
+        margin-right: 0px;
+        &::after {
+            content: "/";
         }
     }
     .table_title {

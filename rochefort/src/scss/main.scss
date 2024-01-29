@@ -101,3 +101,33 @@ background: url(../../assets/svg/frame.svg);
     transform: translate(-50%,-50%);
     width: 600px;
 }
+//MENU
+.has_subtree.dropdown a.state-published.nav-link {
+    transition: 0.5s;
+}
+.has_subtree.dropdown a.state-published.nav-link:hover {
+    margin-left: 15px;
+    transition: 0.5s;
+}
+.subsite-container #subsite-logo {
+    background: $color-darkgrey;
+}
+.subsite-container {
+    background: $primary;
+    #subsite-logo a {
+    color: $primary;
+    }
+}
+#subsite-navigation>ul>li>a,
+#subsite-navigation.activated>ul>li>a {
+    color: #ffffff !important;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.has_subtree.dropdown {
+    margin-top: 22px;
+}
+body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link:after {
+    background-image: url(../../assets/svg/chevron.svg);
+}
