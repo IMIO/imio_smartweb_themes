@@ -1,0 +1,227 @@
+#main-container .quick-access {
+    margin: -1px 0 0 0;
+    max-width: 100vw;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding:0px 0px 80px 0px;
+
+    .container {
+        padding: 0 0 0 140px;
+    }
+
+
+
+    &:after {
+        background: $primary-svg;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: calc(50vw + 450px);
+        height:100%;
+        z-index: -1;
+        border-radius: 0 0 0 80px;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    #main-container .quick-access {
+        .container {
+            padding: 0px;
+        }
+      padding: 2rem 40px;
+       &:after {
+        right: 0px;
+        top: 0;
+        width: 100vw;
+        border-radius: 0;
+    }
+    }
+  }
+
+
+
+
+.quick-access{
+    
+    .body-section{
+        ul {
+            max-width: 1200px!important;
+            li{
+                .table_image{
+                    .image.d-block {
+                    width: 60px;
+                    height: 60px;
+                    transition: all .5s ease;
+                    position: relative;
+                    svg {
+                        transition: all .5s ease;
+                    }
+                    
+                }
+                    &:hover,&:focus{
+                        .image.d-block {
+                        transform: translateY(-10px);
+                        transition: all .5s ease;
+                        svg {
+                            fill:$primary-light;
+                            transition: all .5s ease;
+                        }
+                    }
+                }
+                    .table_title{
+                        span{
+                            line-height: 1;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+   
+
+
+
+    .row{
+        @include media-breakpoint-down(lg){
+            grid-gap: 20px;
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+            li{
+                width: auto!important;
+            }
+        }
+    }
+    .section-title{
+        font-weight: 200;
+        //font-family:$font-family-roboto;
+        text-transform: uppercase;
+        color: #ffffff!important;
+        margin: 0 0 2rem;
+    }
+}
+
+.sectionlinks.quick-access .body-section li a {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.sectionlinks.quick-access .body-section ul {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.sites-partenaires {
+    margin:100px auto 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    .container {
+    padding:50px 0;
+
+    
+
+    &:before{   
+        content: "";
+        transition: all 0.2s ease;
+        position: absolute;
+        height: 350px;
+        background: url("../../assets/svg/carte.png") center center no-repeat;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .row{
+        @include media-breakpoint-down(lg){
+            grid-gap: 20px;
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+            li{
+                width: auto!important;
+            }
+        }
+    }
+
+    .section-title{
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 2rem;
+        width: max-content;
+        font-size: 2.5rem;
+    }
+
+    .body-section{
+        ul {
+            text-align: center;
+            li{
+                padding:30px 20px;
+                .table_image{
+                    text-decoration: none !important;
+                    .image.d-block {
+                    width: 50px;
+                    height: 50px;
+                    transition: all .5s ease;
+                    position: relative;
+                    margin:0px auto;
+                    svg {
+                        width: 30px;
+                        height: auto;
+                        fill: $primary-red;
+                    }
+                    
+                }
+                    &:hover,&:focus{
+                        .image.d-block {
+                        transform: translateY(-10px);
+                        transition: all .5s ease;
+                    }
+                }
+                    .table_title{
+                        
+                        span{
+                            line-height: 1;
+                            font-size: 16px;
+                            color: $primary;
+                            text-transform: none;
+                            font-weight: 400;
+                            font-family: "Fira Sans", sans-serif;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .sites-partenaires {
+        margin:40px auto 0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        .container {
+        padding:50px 0;
+        }
+}
+}

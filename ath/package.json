@@ -1,6 +1,6 @@
 {
   "name": "@imiobe/plonetheme-smartweb-ath",
-  "description": "iA.Smartweb base theme for ath",
+  "description": "iA.Smartweb base theme for Plone",
   "private": false,
   "publishConfig": {
     "access": "public"

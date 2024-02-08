@@ -1,0 +1,91 @@
+.sectionnews {
+    .section-title{
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 2rem;
+        width: max-content;
+        font-size: 2.5rem;
+    }
+    .row {
+        gap:24px 0;
+        li {
+            list-style: none;
+            .table_display {
+                height: 100%;
+            }
+            .table_image {
+                display: block;
+                background: #fff;
+                text-decoration: none;
+                height: 100%;
+                padding-bottom: 20px;
+                position: relative;
+                transition: .5s;
+                &:hover,&:focus{
+                    transition: .5s;
+                    transform: translateY(10px);
+            }
+                &::after {
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    display: block;
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1.5rem;
+                }
+                .image {
+                    padding-bottom: 56%;
+                    margin-bottom: 1rem;
+                    border-radius: 14px;
+                }
+                .table_date {
+                    padding: 0 1.5rem;
+                    margin-bottom: 0.5;
+                    text-align: center;
+                    span {
+                        font-size: 12px;
+                    } 
+                }
+                .table_title {
+                    padding: 0 1.5rem;
+                    margin-bottom: .5rem;
+                    text-align: center;
+                    span {
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-family: $font-family-base; 
+                    }
+                }
+                div:last-child {
+                    padding-bottom: .5rem;
+                }
+                &:hover {
+
+                }
+            }
+        }
+    }
+    .see_all a:after {
+        display: none;
+    }
+
+
+    .swiper-wrapper{
+        .swiper-slide {
+                .swiper_category{
+                    bottom: 0px;
+                    right: 0px;
+                    width: 100%;
+                    margin:-20px 0 0 0;
+                    text-align: center;
+                    span {
+                        display:inline-block;
+                    }
+                }    
+            }
+        }     
+
+}
