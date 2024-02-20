@@ -19,10 +19,12 @@ $enable-roboto-webfont: false;
 @import "./home/events";
 @import "./home/footer";
 @import "./home/section-en-image";
+@import "./home/cpas";
 @import "./info-trav.scss";
 @import "./se-link.scss";
 @import "./se-files.scss";
 @import "./contact.scss";
+
 
 
 
@@ -588,11 +590,6 @@ footer #container-section-noussuivre{
         color:#fff;
     }
 
-
-    // logo minisite
-    #portal-header #portal-header-top .minisite_logo {
-        max-width: 100px !important;
-    }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
         margin-top: 0rem;
