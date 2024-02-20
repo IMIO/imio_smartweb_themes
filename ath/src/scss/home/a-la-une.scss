@@ -30,15 +30,18 @@
             font-weight: 700 !important;
             color:#fff;
             text-align: left;
+            font-size: 24px;
           }
         }
         .swiper_description {
           padding: 0px 0 20px 70px;
           color:#fff;
+          font-size: 16px;
       }
       .swiper_date {
         padding: 0px 0 20px 70px;
         color:#fff;
+        display: none !important;
       }
       }
      }
@@ -65,9 +68,9 @@
 
 
     a {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto 1fr;
+      //display: grid;
+      //grid-template-columns: 50% 50%;
+      //grid-template-rows: auto 1fr;
   }
 
   @media screen and (max-width: 992px) {
@@ -174,6 +177,7 @@ a .swiper-image {
       color:#fff;
       width: 100% !important;
       text-align: center !important;
+      display: none !important;
     }
 }
      }

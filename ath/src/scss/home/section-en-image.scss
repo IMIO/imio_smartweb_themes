@@ -1,4 +1,4 @@
-.section-annuaire {
+.section-home-page .section-annuaire {
     display: flex;
     align-items: center;
     padding: 0px 120px 0px 40px;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .section-annuaire {
+    .section-home-page .section-annuaire {
         display: flex;
         align-items: center;
         padding: 0px ;
@@ -289,29 +289,33 @@
     }
 }
 
-.albumhome {
+.albumhome-ath {
     padding-top:1rem;
-    .table_display {
+    .see_all {
+        display: none !important;
+    }
+    .swiper-slide {
         transition: .5s;
-        .table_image {
+        a {
             text-decoration: none;
-            text-align: center;
-            
-            .image {
-                border-radius: 14px;
+            .swiper_title {
+                h3 {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding-top:5px;
+                }
             }
-            
         }
         &:hover,&:focus{
             transition: .5s;
             transform: translateY(10px);
     }
-
     }
 }
 
 @media screen and (max-width: 800px) {
-    .albumhome {
+    .albumhome-ath {
         padding-top:1rem;
         .table_display {
             transition: .5s;

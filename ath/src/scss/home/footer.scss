@@ -16,8 +16,6 @@
                 font-weight: 500;
                 margin-top: 0rem;
                 &.section-title{
-                    margin-bottom: 1.5rem;
-                    margin-top: 2rem;
                 }
             }
             .sectiontext{
@@ -119,3 +117,44 @@
         display:none;
     }
 }
+
+
+.rs-footer {
+    max-width: 240px;
+    left: auto;
+    padding: 0px;
+    width: 100%;
+    .row {
+        li {
+            width:25% !important;
+    .table_display {
+      .table_image {
+        .image {
+          margin : 0 auto;
+          background: $primary-light;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          transition: all .5s ease;
+          svg {
+            width: 100%;
+            fill:$primary;
+            transition: all .5s ease;
+          }
+          &:hover {
+            background:#fff;
+          } 
+        }
+        .table_title {
+          display:none;
+        }
+      }
+    }
+} 
+}
+}
+  
