@@ -1,0 +1,78 @@
+#portal-footer-wrapper{
+    text-align: left!important;
+    background: transparent;
+    margin-top: 2rem;
+    #portal-footer{
+        background:$primary-blue-dark!important;
+        padding: 60px 0px;
+        #smartweb-footer,#smartweb-minisite-footer{
+            a,span,p,div,h2{
+                color: #fff!important;
+            }
+            h2{
+                font-size: 22px!important;
+                margin-top: 2rem;
+                &.section-title{
+                    margin-bottom: 1.5rem;
+                    margin-top: 2rem;
+                }
+            }
+            h3{
+                font-size: 18px!important;
+                color: #ffffff;
+            }
+            .sectiontext{
+                margin-top: 2rem;
+                figure{
+                    img{
+                        width: 150px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#portal-colophon{
+    background: url("../../assets/bg-footer.png") right bottom no-repeat $primary-blue-dark !important;
+    padding: 2rem 1rem ;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 0;
+        li{
+            color: #fff!important;
+            text-align: left;
+            width: auto;
+            a,span,p,div{
+                color: #fff!important;
+            }
+        }
+    }
+}
+
+#portal-colophon ul li:last-child {
+    display: block;
+    width: 100%;
+}
+
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
+    background: #f8ecd1;
+}
+
+footer{
+    .schedule .opening_informations::after {
+        content: "";
+        width: 9px;
+        height: 6px;
+        display: block;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"8.444\" height=\"5.2\"><path fill=\"white\" d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\"/></svg>");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 0.4rem;
+        display: inline-block;
+    }
+}

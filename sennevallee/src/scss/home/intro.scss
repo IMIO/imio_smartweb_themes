@@ -1,0 +1,62 @@
+.image-intro {
+    padding:0 1.5rem !important;
+    .section-text {
+        .body-section {
+            figure {
+                max-width:100% !important;
+                position:relative;
+                img {
+                    border-radius: 80px 80px 80px 0px;
+                }
+                &:before {
+                    background: url("../../assets/svg/image-before.svg");
+                    content: "";
+                    height: 215px;
+                    left: -20px;
+                    position: absolute;
+                    bottom: -20px;
+                    transition: all .2s ease;
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .image-intro {
+        .section-text {
+            .body-section {
+                figure {
+                    img {
+                        border-radius: 40px 40px 40px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .image-intro {
+        .section-text {
+            h2 {
+                font-size: 22px !important;
+            }
+        }
+    }
+}
+
+.section-intro {
+    padding:0 1.5rem !important;
+}
+
+@media screen and (max-width:1000px) {
+    .section-intro{
+        .section-text {
+            h2 {
+                font-size: 22px !important;
+            }
+        }
+    }
+}
