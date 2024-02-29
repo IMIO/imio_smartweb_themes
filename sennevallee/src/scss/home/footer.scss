@@ -22,7 +22,9 @@
                 color: #ffffff;
             }
             .sectiontext{
-                margin-top: 2rem;
+                #body-section-logo {
+                    margin-top: 2rem;
+                }
                 figure{
                     img{
                         width: 150px;
@@ -32,11 +34,14 @@
             }
         }
     }
+    .sectiontext .section-text .body-section.figure-left figure img, .sectiontext .section-text .body-section.figure-right figure img {
+        border-radius: 0px !important;
+    }
 }
 
 #portal-colophon{
     background: url("../../assets/bg-footer.png") right bottom no-repeat $primary-blue-dark !important;
-    padding: 2rem 1rem ;
+    padding: 2rem 350px 2rem 1rem;
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -53,6 +58,11 @@
     }
 }
 
+@media screen and (max-width:800px) {
+    #portal-colophon{
+        padding: 2rem 1rem 150px 1rem;
+    }
+}
 #portal-colophon ul li:last-child {
     display: block;
     width: 100%;
