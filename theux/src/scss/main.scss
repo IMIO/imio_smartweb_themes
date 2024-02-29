@@ -24,3 +24,35 @@ $enable-roboto-webfont: false;
     position: absolute;
     top: 110px;
 }
+
+#plone-lock-status {
+    .portalMessage.info.portalMessage.info {
+        background: #cff4fc !important;
+    }
+}
+
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+    background-color: #000000 !important;
+}
+
+#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
+    background-color: #000000 !important;
+}
+
+.sortable-section.sectionfiles {
+    padding: 1rem;
+    margin: 1rem 0;
+    .section-container {
+        .section-title {
+            a { 
+                color :#fff !important;
+            }
+        }
+    }
+  }
+
+  .r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder.jpg");
+	background-size: cover;
+	background-position: center;
+}
