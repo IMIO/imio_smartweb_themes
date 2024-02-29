@@ -29,6 +29,22 @@ $enable-roboto-webfont: false;
 	background-size: cover;
 	background-position: center;
 }
+
+#plone-lock-status {
+    .portalMessage.info.portalMessage.info {
+        background: #cff4fc !important;
+    }
+}
+
+#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
+    background-color: #77725C!important;
+}
+
+#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
+    background-color: #CD441C !important;
+}
+
+
 body {
     position: relative;
 }
@@ -47,6 +63,9 @@ background: url(../../assets/svg/frame.svg);
     bottom: 0;
     // height: 4000px;
 }
+.site-cpas::after, .site-bibliotheque-communale::after {
+    display:none!important;
+    }
 //BANNER
 .smartweb_herobanner .bannerSwiper {
     height: 50vw;
@@ -101,6 +120,9 @@ background: url(../../assets/svg/frame.svg);
     transform: translate(-50%,-50%);
     width: 600px;
 }
+.site-cpas .bannerSwiper .section-slide:after, .site-bibliotheque-communale .bannerSwiper .section-slide:after {
+    display:none!important;
+} 
 //MENU
 .has_subtree.dropdown a.state-published.nav-link {
     transition: 0.5s;

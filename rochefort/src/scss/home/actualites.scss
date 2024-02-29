@@ -8,6 +8,10 @@
     border: 1px solid $color-darkgrey;
     }
 }
+
+.sectionnews .swiper-slide>a {
+    background: #ffffff;
+}
 .sectionnews ul li {
     list-style: none;
 }
@@ -121,4 +125,29 @@
         color: #fff !important;
         transition: all .5s ease !important;
     }
+}
+
+
+.sectioncontenus {
+    .swiper_title h3 {
+    color: $primary;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    font-size: 20px;
+    line-height: 130%;
+    overflow: hidden;
+    font-family: var(--bs-body-font-family);
+    }
+    a{
+    text-decoration: none;
+    text-align: center;
+    }
+
+    .section-title {
+    margin: 0 0 2rem !important;
+    padding: 0 !important;
+    text-align: center !important;
+    }
+
 }
