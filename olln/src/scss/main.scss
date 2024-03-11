@@ -51,3 +51,36 @@ $enable-roboto-webfont: false;
     background-repeat: no-repeat;
     background-size: cover!important;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .smartweb_herobanner .bannerSwiper {
+      max-height: 40vh;
+    } 
+  }
+
+  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
+    color: #2b2b2b;
+    font-size: 40px;
+    text-transform: none;
+  }
+  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+    background: hsla(0, 0%, 100%, 0.77);
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem;
+    text-align: left;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 10px;
+  }
+
+  @media screen  and (max-width: 900px){
+    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
+      font-size: 31px;
+    }
+  }
+
+  .is-in-minisite div:not(.sectiontext) + .sectiontext .h2, div:not(.sectiontext) + .sectiontext h2 {
+    margin-top: 36px !important;
+  }
