@@ -137,7 +137,7 @@ mark {
         }
 
         figcaption {
-          // display: table-caption;
+          display: block;
           caption-side: bottom;
           font-size: $font-size-sm;
         }
