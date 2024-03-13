@@ -356,3 +356,56 @@ footer #container-section-noussuivre{
 .r-wrapper .r-result-list .r-list-item-group .r-list-item .r-item-text .r-item-all .r-item-contact .phones span{
     display: block;
 }
+//Section lien unique
+body:not(.portaltype-imio-smartweb-portalpage.section-home-page) .sectionlinks .body-section>.table_display {
+    max-width: 150px !important;
+    background: #cdd8e7;
+    text-align: center;
+    transition: all .3s ease;
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    height: 100%;
+    &:hover {
+    border-radius: 20px;
+    }
+    a.table_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+    &:hover .image.d-block.is-icon.w-100 {
+        transform: translateY(-5px);
+        }
+        .image.d-block.is-icon.w-100 {
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-top: 40px;
+            position: relative;
+            transition: all .3s ease;
+            
+        svg {
+            background-repeat: no-repeat;
+            background-size: contain;
+            max-width: 120px;
+            fill: #3e4854!important;
+            border: none!important;
+            height: auto!important;
+            padding: 0!important;
+            width: 45px!important;
+        }
+        }
+        .table_title {
+        margin-right: 0;
+        font-size: 16px;
+        margin: 0 0 20px;
+            span {
+                font-weight: 400;
+                color: #000;
+            }
+        }
+    }
+}

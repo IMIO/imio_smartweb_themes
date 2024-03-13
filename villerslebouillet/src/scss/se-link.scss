@@ -1,10 +1,7 @@
-.portaltype-imio-smartweb-page #main-container .sectionlinks {
-    
+// .portaltype-imio-smartweb-page #main-container .sectionlinks {
+body.portaltype-imio-smartweb-page #main-container .sectionlinks {
     background-color: white;
-
-
-
-    .section-container{
+    .section-container {
         .rich_description {
             display: none;
         }
@@ -26,9 +23,8 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
-                }
-                
-                
+                } 
+                  
             }
             .body-section{
 
@@ -44,16 +40,16 @@
                         width:100%;
                         gap: 20px;
                     .image {
-                        width: auto;
+                        width: 70px;
                         svg {
                             max-width: 120px;
                             background-size: contain;
                             background-repeat: no-repeat;
-                            border: solid 1px rgb(165, 169, 172);
-                            border-radius: 5px;
-                            width: auto;
+                            // border: solid 1px rgb(165, 169, 172);
+                            // border-radius: 5px;
+                            width: 30px;
                             height: auto;
-                            padding: 1rem;
+                            //padding: 1rem;
                         }
                     }
                     .table_title{
@@ -81,3 +77,66 @@
         }
     }
 }
+
+body .outer-wrapper #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span:before {
+    display: none;
+}
+//
+
+.sectionlinks .body-section>.table_display {
+        max-width: 300px;
+        width: 16.66666667%;
+}
+
+.sectionlinks .body-section>.table_display a.table_image {		    
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.sectionlinks .body-section>.table_display .image.d-block.is-icon.w-100 {
+        align-items: center;
+        background: #c90c0f;
+        border: 0 solid #25303b;
+        border-radius: 20px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70px;
+        transition: all .3s ease;
+}
+.sectionlinks .body-section>.table_display svg.plone-icon.plone-icon {
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: auto;
+        max-width: 120px;
+        width: 30px;
+}
+.sectionlinks .body-section>.table_display .table_title {
+    span {
+            align-items: first baseline;
+            display: flex;
+            gap: 10px;
+            color: #000;
+            font-family: Montserrat,sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: default;
+            text-decoration: none;
+        }
+}
+.sectionlinks .body-section>.table_display a.table_image:hover svg {
+        fill: #fff!important;
+}
+.sectionlinks .body-section>.table_display .table_image:hover .image.d-block {
+        background: #25303b;
+        transform: rotate(15deg);
+}
+
