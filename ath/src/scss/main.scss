@@ -117,6 +117,19 @@ $enable-roboto-webfont: false;
     }
 }
 
+#portal-header #portal-header-top .portal-logo {
+    max-width: 240px !important;
+    text-align: left !important;
+    img {
+        max-width: 160px;
+    }
+    @media screen and (max-width: 992px) {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
 
 .header-custom #banner:after {display: none!important;}
 
@@ -346,7 +359,7 @@ footer #container-section-noussuivre{
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
-    z-index: -1;
+    //z-index: -1;
     .breadcrumb {
         margin: 0!important;
         //background-color: #F6EAD9 !important;
@@ -443,14 +456,6 @@ footer #container-section-noussuivre{
     display:none !important;
 }
 
-@media screen and (min-width: 992px) {
-
-
-    .nav_je-suis {
-        margin-left: auto!important;
-    }
-
-}
 
 @media screen and (max-width: 992px) {
 
@@ -649,7 +654,9 @@ footer #container-section-noussuivre{
     }
 }
 
-
+#subsite-navigation>ul .dropdown .nav-title a {
+    color: $primary-red;
+}
 
     .mask-menu {    
         background-color: rgba(15, 11, 11, 0.95);
@@ -705,7 +712,16 @@ footer #container-section-noussuivre{
 
     // logo minisite
     #portal-header #portal-header-top .minisite_logo {
-        max-width: 100px !important;
+        max-width: 240px !important;
+        text-align: left !important;
+        img {
+            max-width: 160px;
+        }
+        @media screen and (max-width: 992px) {
+            img {
+                max-width: 100%;
+            }
+        }
     }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
@@ -716,7 +732,7 @@ footer #container-section-noussuivre{
         word-break: break-word;
     }
     .sectiontext p mark, p mark {
-        background-color:#F6EAD9 ;
+        background-color:$primary-light;
         border: 0px;
         border-radius: 8px;
         color: #000;
@@ -731,10 +747,16 @@ footer #container-section-noussuivre{
     }
 
 
-h3 {
+    .sectiontext h3 {
     font-size: 1.5rem;
+    font-weight: 600 !important;
+    color: $primary-svg;
+}
+
+.sectiontext h4 {
+    font-size: 1rem;
     font-weight: 400;
-    color: $primary-reddark;
+    color: $primary-svg;
 }
 
 .subsection-services-communaux-communication-bulletin-communal .block-menu-element a .card-img-top {
@@ -782,4 +804,14 @@ h3 {
     height: 1.5rem;
     right: 0;
     width: 50%;
+}
+
+
+
+#subsite-navigation > ul > li > a {
+    align-items: center;
+    color: #000;
+    display: flex;
+    padding: 0px;
+    font-size: 15px;
 }
