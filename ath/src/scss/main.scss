@@ -235,7 +235,19 @@ footer #container-section-noussuivre{
 }
 
 #portal-globalnav > li a:hover {
-	color: $primary-svg;
+	color: $primary-light;
+}
+
+#portal-globalnav>li.has_subtree>a:focus, #portal-globalnav>li.has_subtree>a:hover {
+    color: $primary-light;
+}
+
+#portal-header #portal-header-top #header-links span:hover {
+    color: $primary-light;
+}
+
+#portal-globalnav>li.has_subtree>a:before {
+    background-color: $primary-light;
 }
 .portaltype-imio-smartweb-portalpage{
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
