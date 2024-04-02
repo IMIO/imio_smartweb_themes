@@ -1,0 +1,71 @@
+.newsletter-custom{
+    background: transparent;
+    text-align: center;
+    &:after {
+        content: "";
+        background: #f0efe9;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100vw;
+        z-index: -1;
+    }
+    margin: 0!important;
+    padding: 5rem 0;
+    .section-title{
+        font-size: 3.25rem !important;
+        &:before{
+            content: url('../../assets/svg/enveloppe.svg');
+            margin-bottom: 1rem;
+            display: block;
+        }
+    }
+    .table_image{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        background: #4e5859;
+        color: #fff;;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        border: 1px solid #fff;
+        text-decoration: none;
+        margin-top: 2rem;
+        &:hover{
+            background: transparent;
+            color: #4e5859;
+            border: 1px solid #4e5859;
+        }
+        
+    }
+    #body-section-newsletter{
+        form#form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .formControls{
+                overflow: visible;
+                height: auto;
+                display: block;
+                position: relative;
+                width: auto;
+                margin-top: 2rem;
+                button{
+                    background: #fff;
+                    color: #4e5859;;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    border: 1px solid #4e5859;
+                    &:hover{
+                        background: transparent;
+                        color: #fff;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
