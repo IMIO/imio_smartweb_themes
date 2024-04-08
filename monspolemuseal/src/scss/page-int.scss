@@ -1,0 +1,373 @@
+.swiper{
+    z-index: 0;
+}
+.portaltype-imio-smartweb-eventsview {
+    #banner {
+        display: none !important;
+    }  
+}
+.portaltype-imio-smartweb-page, .portaltype-imio-smartweb-portalpage, .portaltype-imio-smartweb-folder, .portaltype-imio-smartweb-eventsview {
+    #banner {
+        height: 400px;
+    }
+    .subsite-container {
+        background: $primary-color;
+        color: $primary-titre;
+        border-radius: 0 60px 0 0 !important;
+        .nav-link {
+            color: $primary-titre;
+        }
+        #subsite-navigation.activated>ul>li>a {
+            color: $primary-titre;
+        }
+        .dropdown>ul>li>a {color:#000 !important;}
+        #subsite-logo {
+            font-size: 18px;
+            background: $primary-color-light;
+            color: $primary-titre;
+            border-radius: 0;
+            min-height: 90px !important;
+            align-content: center;
+            a img, a svg {
+                max-width: 150px;
+            }
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light;
+        color: $primary-titre;
+        .breadcrumb {
+            background: $primary-color-light;
+            color: $primary-titre;
+            padding: 12px 10px !important;
+            a {color: $primary-titre;}
+        }
+    }
+    .sectiontext .section-text .body-section a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    .sectiontext h2 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    
+}
+
+
+
+
+.subsection-anciens-abattoirs {
+    .subsite-container {
+        background: $primary-color-abattoirs;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-abattoirs;
+            color: $primary-titre-abattoirs;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-abattoirs;
+        color: $primary-titre-abattoirs;
+        .breadcrumb {
+            background: $primary-color-light-abattoirs;
+            color: $primary-titre-abattoirs;
+            a {color: $primary-titre-abattoirs;}
+        }
+    } 
+}
+
+
+
+.subsection-artotheque {
+    .subsite-container {
+        background: $primary-color-artotheque;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-artotheque;
+            color: $primary-titre-artotheque;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-artotheque;
+        color: $primary-titre-artotheque;
+        .breadcrumb {
+            background: $primary-color-light-artotheque;
+            color: $primary-titre-artotheque;
+            a {color: $primary-titre-artotheque;}
+        }
+    } 
+}
+
+.subsection-cap {
+    .subsite-container {
+        background: $primary-color-cap;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-cap;
+            color: $primary-titre-cap;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-cap;
+        color: $primary-titre-cap;
+        .breadcrumb {
+            background: $primary-color-light-cap;
+            color: $primary-titre-cap;
+            a {color: $primary-titre-cap;}
+        }
+    } 
+}
+
+.subsection-magasin-de-papier {
+    .subsite-container {
+        background: $primary-color-magasin-de-papier;
+        
+        #subsite-logo {
+            background: $primary-color-light-magasin-de-papier;
+            color: $primary-titre-magasin-de-papier;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-magasin-de-papier;
+        color: $primary-titre-magasin-de-papier;
+        .breadcrumb {
+            background: $primary-color-light-magasin-de-papier;
+            color: $primary-titre-magasin-de-papier;
+            a {color: $primary-titre-magasin-de-papier;}
+        }
+    } 
+}
+
+.subsection-maison-van-gogh {
+    .subsite-container {
+        background: $primary-color-maison-van-gogh;
+        
+        #subsite-logo {
+            background: $primary-color-light-maison-van-gogh;
+            color: $primary-titre-maison-van-gogh;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-maison-van-gogh;
+        color: $primary-titre-maison-van-gogh;
+        .breadcrumb {
+            background: $primary-color-light-maison-van-gogh;
+            color: $primary-titre-maison-van-gogh;
+            a {color: $primary-titre-maison-van-gogh;}
+        }
+    } 
+}
+
+.subsection-mons-memorial-museum {
+    .subsite-container {
+        background: $primary-color-mons-memorial-museum;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-mons-memorial-museum;
+            color: $primary-titre-mons-memorial-museum;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-mons-memorial-museum;
+        color: $primary-titre-mons-memorial-museum;
+        .breadcrumb {
+            background: $primary-color-light-mons-memorial-museum;
+            color: $primary-titre-mons-memorial-museum;
+            a {color: $primary-titre-mons-memorial-museum;}
+        }
+    } 
+}
+
+.subsection-musee-du-doudou {
+    .subsite-container {
+        background: $primary-color-musee-du-doudou;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-musee-du-doudou;
+            color: $primary-titre-musee-du-doudou;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-musee-du-doudou;
+        color: $primary-titre-musee-du-doudou;
+        .breadcrumb {
+            background: $primary-color-light-musee-du-doudou;
+            color: $primary-titre-musee-du-doudou;
+            a {color: $primary-titre-musee-du-doudou;}
+        }
+    } 
+}
+
+.subsection-salle-saint-georges {
+    .subsite-container {
+        background: $primary-color-salle-saint-georges;
+        
+        #subsite-logo {
+            background: $primary-color-light-salle-saint-georges;
+            color: $primary-titre-salle-saint-georges;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-salle-saint-georges;
+        color: $primary-titre-salle-saint-georges;
+        .breadcrumb {
+            background: $primary-color-light-salle-saint-georges;
+            color: $primary-titre-salle-saint-georges;
+            a {color: $primary-titre-salle-saint-georges;}
+        }
+    } 
+}
+
+.subsection-silexs {
+    .subsite-container {
+        background: $primary-color-silexs;
+        
+        #subsite-logo {
+            background: $primary-color-light-silexs;
+            color: $primary-titre-silexs;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-silexs;
+        color: $primary-titre-silexs;
+        .breadcrumb {
+            background: $primary-color-light-silexs;
+            color: $primary-titre-silexs;
+            a {color: $primary-titre-silexs;}
+        }
+    } 
+}
+
+.subsection-beffroi {
+    .subsite-container {
+        background: $primary-color-beffroi;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-beffroi;
+            color: $primary-titre-beffroi;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-beffroi;
+        color: $primary-titre-beffroi;
+        .breadcrumb {
+            background: $primary-color-light-beffroi;
+            color: $primary-titre-beffroi;
+            a {color: $primary-titre-beffroi;}
+        }
+    } 
+}
+
+.subsection-tresor-de-sainte-waudru {
+    .subsite-container {
+        background: $primary-color-tresor-de-sainte-waudru;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-tresor-de-sainte-waudru;
+            color: $primary-titre-tresor-de-sainte-waudru;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-tresor-de-sainte-waudru;
+        color: $primary-titre-tresor-de-sainte-waudru;
+        .breadcrumb {
+            background: $primary-color-light-tresor-de-sainte-waudru;
+            color: $primary-titre-tresor-de-sainte-waudru;
+            a {color: $primary-titre-tresor-de-sainte-waudru;}
+        }
+    } 
+}
+
+.subsection-musee-francois-duesberg {
+    .subsite-container {
+        background: $primary-color-musee-francois-duesberg;
+        #subsite-navigation>ul>li>a, #subsite-navigation.activated>ul>li>a {
+            filter: invert(1);
+        }
+        
+        #subsite-logo {
+            background: $primary-color-light-musee-francois-duesberg;
+            color: $primary-titre-musee-francois-duesberg;
+        }
+    }
+    #portal-breadcrumbs {
+        background: $primary-color-light-musee-francois-duesberg;
+        color: $primary-titre-musee-francois-duesberg;
+        .breadcrumb {
+            background: $primary-color-light-musee-francois-duesberg;
+            color: $primary-titre-musee-francois-duesberg;
+            a {color: $primary-titre-musee-francois-duesberg;}
+        }
+    } 
+}
+
+#container-section-visitez-en-tant-que {
+
+    .section-title{
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        text-transform: none;
+        position: relative;
+        color:$primary;
+        margin:0;
+        @media screen and (max-width: 992px) {
+            transform: rotate(0deg);
+            position: initial;
+            padding: 0;
+            writing-mode:initial;
+            margin:0px auto 30px;
+            background: none;
+            }
+    }  
+    a {
+        text-decoration: none;
+        .swiper-image {
+            padding-bottom: 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .swiper_title{
+            margin:0px;
+            text-align: center;
+            font-family: Jost, sans-serif;
+            margin-top: -15px;
+            transition: all .5s ease;
+            h3 {
+            font-size: 22px !important;
+            text-transform: uppercase;
+            font-weight: 300 !important;
+            }
+        }
+        &:hover {
+            .swiper_title{
+                margin-top: -25px;
+                transition: all .5s ease;
+            }
+        }
+
+    }
+
+}

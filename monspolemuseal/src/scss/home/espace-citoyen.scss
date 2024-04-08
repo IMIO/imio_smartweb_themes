@@ -1,0 +1,86 @@
+#container-section-liens-utiles {
+    padding:0px !important;
+}
+
+.liens-utiles{
+    background: $primary-color;
+    border-radius: 60px;
+    margin-bottom: 3vw;
+    margin-top: 0vw;
+    z-index: 0;
+    .section-title{
+        position: relative;
+        margin-bottom: 2rem;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 300 !important;
+        margin-bottom: 30px;
+        position: relative;
+        text-transform: uppercase;
+        
+    }
+    .body-section{
+        .row{
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 60px;
+            background: $primary-color;
+            padding: 0;
+            transition: .5s;
+            .col-md-2 {
+                width: 20%;
+            }
+            li{
+                padding: 0!important;
+            }
+            .table_display{
+                height: 100%;
+            }
+            .table_image{
+                display: none;
+                padding: 1.5rem 1rem;
+                background: $primary-color;
+                border-radius: 60px;
+                display: flex;
+                gap: 0px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                height: 100%;
+                transition: .5s;
+                .image{
+                    width: auto;
+                    svg{
+                        height: auto;
+                        width: 40px;
+                        max-height: 40px;
+                        fill: $primary-titre;
+                    }
+                }
+                .table_title{
+                    max-width:120px;
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $primary-titre;
+                    }
+                }
+                &:hover{
+                    transition: .5s;
+                    background: rgba(255, 255, 255, 0.2);
+                    .image{
+                        svg{
+                            fill: $primary-titre;
+                        }
+                    }
+                    .table_title{
+                        span{
+                            color: $primary-titre;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

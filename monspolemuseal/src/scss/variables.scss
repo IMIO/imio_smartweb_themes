@@ -1,0 +1,513 @@
+//*// COLORS
+$primary: #000000;
+$primary-svg: #F6BDD1 !default;
+$primary-light: #6BBC59 !default;
+$primary-yellow: #F3CF63;
+$primary-blue: #1B7BBB;
+$primary-green: #6BBC59;
+$primary-red: #B83434;
+$primary-color: #F6BDD1;
+$primary-color-light: #FCEBF1;
+$primary-titre : #000000;
+$primary-titre-hover : #000000;
+
+$primary-color-abattoirs: #E42C10 !important;
+$primary-color-light-abattoirs: #FBE0DD !important;
+$primary-titre-abattoirs : #ffffff !important;
+$primary-titre-hover-abattoirs : #ffffff !important;
+
+.subsection-anciens-abattoirs {
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FBE0DD' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-artotheque: #630611 !important;
+$primary-color-light-artotheque: #E8DADB !important;
+$primary-titre-artotheque : #ffffff !important;
+$primary-titre-hover-artotheque : #ffffff !important;
+
+.subsection-artotheque {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E8DADB' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-cap: #1A171B !important;
+$primary-color-light-cap: #DDDCDD !important;
+$primary-titre-cap : #ffffff !important;
+$primary-titre-hover-cap : #ffffff !important;
+.subsection-cap {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23DDDCDD' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-magasin-de-papier: #FEBF2E !important;
+$primary-color-light-magasin-de-papier: #FFF5E0 !important;
+$primary-titre-magasin-de-papier : #000000 !important;
+$primary-titre-hover-magasin-de-papier : #000000 !important;
+.subsection-magasin-de-papier {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FFF5E0' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-maison-van-gogh: #EC6A1E !important;
+$primary-color-light-maison-van-gogh: #FCE9DD !important;
+$primary-titre-maison-van-gogh : #000000 !important;
+$primary-titre-hover-maison-van-gogh : #000000 !important;
+.subsection-maison-van-gogh {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FCE9DD' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-mons-memorial-museum: #38717C !important;
+$primary-color-light-mons-memorial-museum: #E1EAEB !important;
+$primary-titre-mons-memorial-museum : #ffffff !important;
+$primary-titre-hover-mons-memorial-museum : #ffffff !important;
+.subsection-mons-memorial-museum {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E1EAEB' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-musee-du-doudou: #02623B !important;
+$primary-color-light-musee-du-doudou: #D9E7E2 !important;
+$primary-titre-musee-du-doudou : #ffffff !important;
+$primary-titre-hover-musee-du-doudou : #ffffff !important;
+.subsection-musee-du-doudou {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23D9E7E2' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-salle-saint-georges: #F9A828 !important;
+$primary-color-light-salle-saint-georges: #FEF2DF !important;
+$primary-titre-salle-saint-georges : #000000 !important;
+$primary-titre-hover-salle-saint-georges : #000000 !important;
+.subsection-salle-saint-georges {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FEF2DF' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-silexs: #A39481 !important;
+$primary-color-light-silexs: #F1EFEC !important;
+$primary-titre-silexs : #000000 !important;
+$primary-titre-hover-silexs : #000000 !important;
+.subsection-silexs {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23F1EFEC' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-beffroi: #025A8D !important;
+$primary-color-light-beffroi: #D9E6EE !important;
+$primary-titre-beffroi : #ffffff !important;
+$primary-titre-hover-beffroi : #ffffff !important;
+.subsection-beffroi {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23D9E6EE' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-tresor-de-sainte-waudru: #A55D9F !important;
+$primary-color-light-tresor-de-sainte-waudru: #F2E8F1 !important;
+$primary-titre-tresor-de-sainte-waudru : #ffffff !important;
+$primary-titre-hover-tresor-de-sainte-waudru : #ffffff !important;
+.subsection-tresor-de-sainte-waudru {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23F2E8F1' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+$primary-color-musee-francois-duesberg: #6B0E45 !important;
+$primary-color-light-musee-francois-duesberg: #E9DBE3 !important;
+$primary-titre-musee-francois-duesberg : #ffffff !important;
+$primary-titre-hover-musee-francois-duesberg : #ffffff !important;
+.subsection-musee-francois-duesberg {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E9DBE3' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
+}
+
+
+
+
+
+//*// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family-base:'Jost', sans-serif!default;
+$font-family-title:'Jost', sans-serif!default;
+$font-title-color: $primary !default;
+$font-title-color-light: #fff !default;
+$font-title-color-dark: #000 !default;
+$font-title-weight: 700;
+// $font-size-base affects the font size of the body text
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1 !default;
+$h6-font-size: $font-size-base !default;
+
+// Include Roboto as webfont
+
+//*// GLOBAL
+@function url-encoded-color($color) {
+  @return "%23"+str-slice("#{$color}", 2, -1);
+}
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+$global-radius: 0 !default;
+$enable-title-uppercase: false !default;
+$home-section-title-size:3.25rem!default;
+$home-section-title-margin:0 0 2rem 0 !default;
+$home-section-title-padding:0 !default;
+$home-section-title-align:left !default;
+$section-padding-top:0 !default;
+$to-portal-link-color:#282828!default;
+$img-placeholder:#F2F2F2!default;
+//swiper
+$swiper-icon-color: #fff !important;
+$swiper-button-height: 45px !default;
+$swiper-button-width: 45px !default;
+$swiper-button-top: 26% !default;
+$swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
+$swiper-background-size: 50% !default;
+$swiper-background-color: #ffffff !default;
+$swiper-raduis: 50px !default;
+$swipper-bullet-color:$primary;
+//*// HEADER
+$main-logo-max-width: 140px !default;
+$header-top-padding: 1rem 0 !default;
+$header-top-background: #fff !default;
+$header-center-nav: false !default;
+$header-nav-margin: 0 1rem 0 1rem !default;
+$header-nav-link-color:#000!default;
+$header-nav-link-font-size:16px!default;
+$header-nav-link-font-family:$font-family-base!default;
+$header-links-color:#000 !default;
+$header-links-account-margin:0 !default;
+$header-links-account-padding:0 !default;
+$header-links-account-border:solid 0px #000 !default;
+$header-links-account-bg:transparent !default;
+$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-bg:transparent !default;
+$header-links-account-hover-color:#000 !default;
+$header-search-icon-color:#fff !default;
+$header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
+$toggler-color:white !default;
+$header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$toggler-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
+//bredcrumb
+$breadcrumb-bg: #d6d6d6 !default;
+$enable-full-width-breacrumb: false !default;
+
+// sitenav
+$navbar-padding-x: 2.5rem !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-title-font-family:$font-family-base!default;
+$nav-link-color: #000!default;
+$nav-link-open-color: #000 !default;
+$nav-link-active-color: #000!default;
+$nav-link-font-size: initial !default;
+$nav-link-font-weight: 500 !default;
+$nav-link-drop-color:#000!default;
+$nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
+$nav-link-drop-color-mobile:#000 !default;
+$nav-link-drop-mobile:url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
+$nav-first-level-gap: 2rem !default;
+$nav-first-level-uppercase: false !default;
+$nav-quick-link-color:$primary !default;
+$nav-quick-link-size:18px!default;
+$nav-quick-link-weight: bold!default;
+$nav-quick-link-padding:0!default;
+$nav-sub-link-font-size: $nav-link-font-size !default;
+$nav-sub-link-font-weight: $nav-link-font-weight !default;
+$nav-overlay-radius:$global-radius !default;
+$nav-overlay-title-color:$primary !default;
+$nav-overlay-title-font-size:24px !default;
+$nav-overlay-title-font-weight:bold !default;
+$nav-overlay-next-color-hover:$primary !default;
+$nav-overlay-next-icon-color:#000;
+$nav-overlay-next-icon-hover-color:$primary;
+$nav-overlay-next-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+
+//sub-header
+$subsite-logo-background:$primary !default;
+$subsite-logo-color:#fff !default;
+$subsite-navbar-bg:#fff !default;
+//sub-sitenav
+$sub-navbar-padding: 1rem 0 !default;
+$sub-nav-link-color:#000 !default;
+$sub-nav-link-open-color:#000 !default;
+$sub-nav-link-drop-color:#000 !default;
+$sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
+
+//*// SECTION HOMEPAGE
+
+// banner
+$banner-enable-full-width: true !default;
+$banner-heigh: 630px !default;
+$banner-content-width: max-content !default;
+$banner-content-max-width: 100% !default;
+$banner-content-margin: 0 !default;
+$banner-content-padding: 1rem  5rem !default;
+$banner-content-background: #ffffff !default;
+$banner-content-is-vertical-center: true !default;
+$banner-content-title-font-size: 30px !default;
+$banner-content-title-color: #000000 !default;
+$banner-content-title-text-transform: initial !default;
+$banner-content-text-align:left!default;
+$banner-content-description-font-size: 18px !default;
+$banner-content-description-color: #000000;
+
+// see_all
+$see-all-padding:15px 30px;
+$see-all-margin: 2rem 0 0 0 !default;
+$see-all-bg:$primary-color;
+$see-all-color:#fff !default;
+$see-all-radius:90px !default;
+$see-all-border:solid 0px transparent !default;
+$see-all-text-transform:none !default;
+$see-all-font-size:16px;
+$see-all-font-weight:500;
+$see-all-transition:all .5s ease !default;
+$see-all-hover-bg:$primary !important;
+$see-all-hover-color:#fff !default;
+$see-all-hover-radius:90px !default;
+$see-all-hover-border:solid 0px $primary !default;
+$see-all-justify-content: center;
+$see-all-underline-color: transparent;
+$see-all-underline-width: 25%!default;
+$see-all-hover-underline-width:50%!default;
+
+
+// Quick access
+$quick-access-section-full-width:false !default;
+$quick-access-title-color:$primary !default;
+$quick-access-title-margin:$home-section-title-margin !default;
+$quick-access-title-padding:$home-section-title-padding !default;
+$quick-access-title-align:$home-section-title-align !default;
+$quick-access-container-padding: 1rem 0 !default;
+$quick-access-width: 100px !default;
+$quick-access-height: 100px !default;
+$quick-access-background:transparent !default;
+$quick-access-border: solid 0px $primary !default;
+$quick-access-border-radius:100px !default;
+$quick-access-shadow: none !default;
+$quick-access-svg-width:30px !default;
+$quick-access-svg-color:#000 !default;
+$quick-access-item-title-margin: 1rem 0 0 0 !default;
+$quick-access-title-font-size: 18px !default;
+$quick-access-title-color: $primary !default;
+$quick-access-title-text-transform: none;
+$quick-access-title-weight: 400;
+
+$quick-access-enable-full-bg: false !default;
+$quick-access-full-bg-color:$primary !default;
+$quick-access-full-bg-border:solid 1px green !default;
+$quick-access-full-bg-shadow: none !default;
+
+// A la une
+$a-la-une-title-color: #fff !default;
+$a-la-une-title-align:$home-section-title-align !default;
+$a-la-une-title-margin: $home-section-title-margin !default;
+$a-la-une-title-padding: $home-section-title-padding !default;
+$a-la-une-text-bg: transparent;
+$a-la-une-item-image-margin:0 !default;
+$a-la-une-item-title-color:#fff !default;
+$a-la-une-item-title-font-size:$h3-font-size !default;
+$a-la-une-item-title-margin:0 !default;
+$a-la-une-item-title-padding:36px 36px 0 !default;
+$a-la-une-item-title-radius:0 !default;
+$a-la-une-item-description-font-size: $font-size-lg !default;
+$a-la-une-item-description-color:initial !default;
+$a-la-une-item-description-margin:0 !default;
+$a-la-une-item-description-padding:0 36px 36px !default;
+$a-la-une-item-description-radius:0 !default;
+$a-la-une-item-image-radius: 60px 0 60px 0 !default;
+
+// Actu
+$actu-section-full-width: true !default;
+$actu-section-padding-top: 1rem;
+$actu-section-padding-bottom: 1rem;
+$actu-section-margin: 0 !default;
+$actu-title-color:$primary !default;
+$actu-title-align:$home-section-title-align !default;
+$actu-title-margin: $home-section-title-margin !default;
+$actu-title-padding: $home-section-title-padding !default;
+$actu-image-margin-bottom: 0 !default;
+$actu-image-border-radius: 0px !default;
+$actu-item-bg-color:transparent;
+$actu-item-bg-radius:50px 0 50px 0;
+$actu-category-margin: 0;
+$actu-category-padding: .5rem 1rem;
+$actu-category-color: #fff !default;
+$actu-category-bg-color: transparent !default;
+$actu-category-text-transform: uppurcase !default;
+$actu-category-font-size: 14px;
+$actu-category-font-weight: initial !default;
+$actu-category-radius: 0px 0px 8px 0px;
+$actu-item-title-margin: 0 0 0 0;
+$actu-item-title-padding: 0 1rem;
+$actu-item-title-color: initial !default;
+$actu-item-title-text-transform: initial !default;
+$actu-item-title-font-size: $h4-font-size !default;
+$actu-item-title-font-weight: 400 !important;
+$actu-item-title-align: left !default;
+$actu-item-description-margin: 0 0 1rem 0;
+$actu-item-description-padding: 0 1rem;
+$actu-item-description-color: initial !default;
+$actu-item-description-align: left !default;
+$actu-item-description-font-family: $font-family-base !default;
+$actu-date-margin: 1rem 0 0.5rem 0;
+$actu-date-padding: 0 1rem;
+$actu-date-color: $primary !default;
+$actu-date-font-size: 12px;
+$actu-date-align: left !default;
+$actu-see-all-justify-content: $see-all-justify-content !default;
+
+
+// Event
+$event-section-full-width: true !default;
+$event-section-padding-top: 8rem;
+$event-section-padding-bottom: 3rem;
+$event-section-margin: 0 !default;
+$event-title-color:$primary !default;
+$event-title-align:$home-section-title-align !default;
+$event-title-margin: $home-section-title-margin !default;
+$event-title-padding: $home-section-title-padding !default;
+$event-image-margin-bottom: 0 !default;
+$event-image-border-radius: 0px !default;
+$event-item-bg-color:transparent;
+$event-item-bg-radius:0px;
+$event-category-margin: 0 0 0 0;
+$event-category-padding: .5rem 2rem;
+$event-category-color: #fff !default;
+$event-category-bg-color: transparent !default;
+$event-category-text-transform: uppurcase !default;
+$event-category-font-size: 14px;
+$event-category-font-weight: initial !default;
+$event-category-radius: 0px 0px 30px 0px;
+$event-item-title-margin: 0 0 0 0;
+$event-item-title-padding: 0 1rem;
+$event-item-title-color: initial !default;
+$event-item-title-text-transform: initial !default;
+$event-item-title-font-size: $h4-font-size !default;
+$event-item-title-font-weight: 400 !important;
+$event-item-title-align: left !default;
+$event-item-description-margin: 0 0 1rem 0;
+$event-item-description-padding: 0 1rem;
+$event-item-description-color: initial !default;
+$event-item-description-align: left !default;
+$event-item-description-font-family: $font-family-base !default;
+$event-date-margin: 1rem 0 0.5rem 0;
+$event-date-padding: 0 1rem;
+$event-date-color: $primary !default;
+$event-date-font-size: 12px;
+$event-date-align: left !default;
+$event-see-all-justify-content: $see-all-justify-content !default;
+
+
+// Album
+$album-section-full-width: true !default;
+$album-section-bg:#EDEAE5 !default;
+$album-section-padding-top: 2rem !default;
+$album-section-padding-bottom: 2rem !default;
+$album-section-margin: 0 !default;
+$album-title-color:$primary !default;
+$album-title-align:$home-section-title-align !default;
+$album-title-margin: $home-section-title-margin !default;
+$album-title-padding: $home-section-title-padding !default;
+$album-image-margin-bottom: 0.7rem !default;
+$album-image-border-radius: $global-radius !default;
+$album-item-bg-color:rgb(244, 244, 244) !default;
+$album-item-bg-radius:$global-radius+2 !default;
+$album-category-margin: 0 0 0.3rem 0 !default;
+$album-category-padding: 0 !default;
+$album-category-color: $primary !default;
+$album-category-bg-color: #000 !default;
+$album-category-text-transform: uppurcase !default;
+$album-category-font-size: 14px !default;
+$album-category-font-weight: initial !default;
+$album-category-radius: $global-radius !default;
+$album-item-title-margin: 1rem 0 !default;
+$album-item-title-padding: 0 !default;
+$album-item-title-color: initial !default;
+$album-item-title-text-transform: initial !default;
+$album-item-title-font-size: $h3-font-size !default;
+$album-item-title-font-weight: initial !default;
+$album-date-margin: 0 !default;
+$album-date-padding: 0 !default;
+$album-date-color: $primary !default;
+$album-date-font-size: 14px !default;
+$album-see-all-justify-content: $see-all-justify-content !default;
+
+// Newsletter
+$newsletter-bg-color:$primary-svg!default;
+$newsletter-align: center!default;
+$newsletter-padding-top:2rem!default;
+$newsletter-padding-bottom:2rem!default;
+$newsletter-margin:3rem 0!default;
+$newsletter-text-color:#fff!default;
+/////////////// interne ///////////////
+
+//*// SECTION TEXTE
+$font-size-texte: $font-size-base !default;
+$mark-background-color: #f3f3f3 !default;
+$mark-color: #5c5c5c !default;
+$mark-padding-sec: 20px 45px 20px 26px !default;
+$mark-border: solid 2px $primary !default;
+$mark-radius: $global-radius !default;
+$mark-weight: 500 !default;
+$list-style-color: $primary !default;
+$list-style-custom: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($list-style-color)}"/></svg>') !default;
+$section-text-h2-margin-top: 2rem !default;
+$section-text-h2-margin-bottom: 1.5rem !default;
+$section-text-h3-margin-top: 0 !default;
+$section-text-h3-margin-bottom: 0.5rem !default;
+$section-text-link-color: $primary !default;
+$section-text-link-hover-decoration: solid 1px $primary !default;
+$section-text-max-width: 760px !default;
+
+// Section
+$section-padding-y: 5.31rem;
+$section-padding: (sm: 3rem,
+  md: 4rem,
+  lg: 4.3rem,
+);
+// section-contact
+$section-contact-title-size:$h2-font-size;
+$section-contact-sub-title-size:$font-size-lg;
+$section-contact-title-color:$primary;
+$section-contact-p-margin:1rem 0;
+$section-contact-portrait-ration:calc(4 / 5);
+$section-contact-background:#f3f3f3!default;
+
+// section-files
+$section-file-background-color: $primary !default;
+$enable-full-width-section-files: true !default;
+$enable-light-color-section-files: true !default;
+
+// section-link
+$section-link-background-color: #F8F8F8;
+$enable-full-width-section-link: true;
+$enable-light-color-section-link: false;
+
+// section-list-block-img
+$section-list-block-img-card-title: 1.25rem;
+
+//*// LIST
+
+//Liste Block
+$block-full-shadow: 0px 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$list-group-border-width : 0px;
+$list-group-item-padding-x : 0px;
+
+// Message Viewlets
+
+$message-info:#27789c;
+$message-warning:#c06d01;
+$message-error:#ae2609;
+
+//QUICK ACCESS
+$quick-access-title-font-family: $font-family-title !default;
+
+//SEE ALL
+$see-all-font-family: $font-family-title !default;
+:root {
+--bs-card-spacer-x:1rem;
+--bs-card-spacer-y:1rem;
+}
