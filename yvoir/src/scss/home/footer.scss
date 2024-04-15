@@ -7,6 +7,15 @@
 }
 #portal-footer-wrapper{
 
+    .row {
+        
+        li {
+            flex-direction: row;
+            list-style-type: none;
+            padding-left:0px;
+        }
+    }
+
     text-align: left!important;
     @media screen and (max-width: 992px) {
         margin-top:0rem;
