@@ -84,3 +84,108 @@ $enable-roboto-webfont: false;
   .is-in-minisite div:not(.sectiontext) + .sectiontext .h2, div:not(.sectiontext) + .sectiontext h2 {
     margin-top: 36px !important;
   }
+
+  // sous-site
+
+
+  .subsite-container{
+      margin-top: 5px;
+      li {
+        list-style-type: none!important;
+      } 
+      #subsite-logo {
+        border-radius: 5px;
+        .subsite-title {
+          font-size: 20px;
+        }
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .subsite-container {
+      gap: 20px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    #subsite-navigation .has_subtree.dropdown {
+      width: 80vw !important;
+    }
+    .subsite-container #subsite-logo {
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    #subsite-navigation::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 9px;
+      bottom: 17px;
+      width: 17px;
+      border-left: 1px solid #C1C1C1;
+      background-color: #FFF;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 13'%3E%3Cpath d='M.15.15c.2-.2.51-.2.71 0l6 6c.2.2.2.51 0 .71L.85 12.85c-.2.2-.51.2-.71 0s-.2-.51 0-.71l5.65-5.65L.15.85c-.2-.2-.2-.51 0-.71' style='fill:%23c2c1c1;fill-rule:evenodd;stroke-width:0'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 5px;
+    }
+    #subsite-navigation > ul {
+      // border-bottom: 1px solid #E4E4E4;
+      // padding-bottom: 5px;
+      padding-bottom: 0.5rem;
+      li:last-child {
+        padding-right: 15px;
+      }
+    }
+
+    #subsite-navigation {
+      position: relative;
+     & > ul > li.nav-item {
+        > a {
+          font-weight: 500!important;
+          font-size: 14px!important;
+          background: #f5f5f5;
+          padding: 5px;
+          border-radius: 3px;
+          border: 1px solid #ededed;
+        }
+      }
+    }
+
+    /// bredcrumb
+    #portal-breadcrumbs {
+      background: transparent;
+      margin-bottom: 0.5rem;
+      .container{
+        padding: 0;
+      }
+      .breadcrumb {
+        margin-bottom: 0;
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+
+
+    #subsite-navigation>ul>li>a:hover {
+      border-color:$primary;
+    }
+    #subsite-navigation>ul>li.show-nav>a {
+      border-color:$primary;
+    }
+    #subsite-navigation>ul>li>a:before {
+      display: none;
+    }
+  }
+
+
+  #subsite-navigation > ul li > .has_subtree {
+    padding: 1em!important;
+  }
+
+  .display-portrait .swiper-slide .swiper-image {
+	padding-bottom: 0;
+	aspect-ratio: 11/16;
+}
