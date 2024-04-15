@@ -649,6 +649,13 @@ footer #container-section-noussuivre{
         margin-top: 80px !important;
         margin-left: -20px;
     }
+
+    @media screen and (max-width: 1200px) {
+        #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
+            margin-top: 0px !important;
+            margin-left: 0px;
+        }
+    }
     #portal-globalnav {
         
     li .has_subtree {
