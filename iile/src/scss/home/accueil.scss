@@ -72,6 +72,16 @@
 }
 //BANNER
 @media screen and (max-width: 992px) {
+  .sectionnews .swiper-slide .swiper_title .h3, .sectionnews .swiper-slide .swiper_title h3 {
+    font-size: 1.2rem;
+  }
+  .portaltype-imio-smartweb-portalpage .section-title {
+    font-size: 28px;
+}
+.sectionnews {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
   #portal-footer-wrapper {
     text-align: center !important;
       #body-section-logo figure {
@@ -223,4 +233,29 @@ body .outer-wrapper #main-container .sectionfiles a.table_image.no-image:hover .
 body .sectioncontact .contact-type-organization, #portal-column-content .section-contact .contact-type-position {
   background: #222f6617 !important;
   border-radius: 10px !important;
+}
+body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper .outer-wrapper {
+  background: #F8F8F8;
+}
+body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper {
+  position: relative;
+}
+body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper:after {
+  background: url(../../assets/svg/fond-iile.png);
+  content: "";
+  height: 16%;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  width: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+  .swiper-banner-title, .swiper-banner-description p {
+  line-height: 50px;
+  }
+}
+.sectionnews .swiper-slide .swiper_date {
+  text-align: center;
 }
