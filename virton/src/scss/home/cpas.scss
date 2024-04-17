@@ -1,5 +1,14 @@
 .site-cpas {
 
+    .nav_lannuaire .nav-link:hover {
+        color: #ffffff !important;
+    }
+
+    .sectionnews {
+        padding-top:0px !important;
+        padding-bottom:0px !important;
+    }
+
     /*#portal-header #portal-header-top:after {
         background: #ede8e5 !important;
     }
@@ -108,7 +117,7 @@
 }
 
 #main-container .quick-access {
-    margin: 120px 0;
+    margin: 90px 0;
     padding: 0;
 }
 
