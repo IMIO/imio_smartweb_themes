@@ -44,8 +44,28 @@
     }
 }
 
-.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
-    background: $primary;
+#portal-footer-wrapper{
+    background: url(../../assets/svg/visu-footer.svg) center top no-repeat $primary;
+    background-size: 100%;
+    padding-top: 120px;
+    
+    @media screen and (min-width: 2701px) {
+        background: $primary!important;
+        padding:120px 0 2rem 0 !important;
+    }
+    @media screen and (max-width: 2700px) {
+        padding:300px 0 2rem 0 !important;
+    }
+    @media screen and (max-width: 2000px) {
+        padding:250px 0 2rem 0 !important;
+    }
+    @media screen and (max-width: 1600px) {
+        padding:200px 0 2rem 0 !important;
+    }
+    @media screen and (max-width: 1000px) {
+        padding:150px 0 2rem 0 !important;
+    }
+
 }
 
 footer{
@@ -69,9 +89,9 @@ footer{
 
 
 @media (min-width: 768px) {
-    .sectiontext .section-text .body-section.figure-left figure {
-        float: left;
-        margin-right: 0px;
-        max-width: 75px;
-    }
+    //.sectiontext .section-text .body-section.figure-left figure {
+        //float: left;
+        //margin-right: 0px;
+        //max-width: 75px;
+    //}
 }

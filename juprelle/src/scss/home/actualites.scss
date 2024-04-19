@@ -1,0 +1,86 @@
+.sectionnews{
+    .section-title{
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 4.5rem;
+        width: max-content;
+        &:after{
+            left:0%;
+            top: 80px;
+            bottom: 0px;
+            position: absolute;
+            background: $primary-svg;
+            content: "";
+            display: block;
+            height: 10px;
+            position: absolute;
+            width: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .section-title{
+            font-size: 32px !important;
+            &:after{
+                top: 50px;
+                height: 8px;
+                width: 70px;
+            }
+        }
+    }
+
+    #container-section-actualites .carousel {
+        //padding:15px !important;
+    }
+
+    .swiper-wrapper{
+        .swiper-slide {
+            background: transparent;
+            transition: .5s;
+            border-radius: 10px;
+            border:1px solid #E5F2F8;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0);
+            
+            &:hover,&:focus{
+                    transition: .5s;
+                    transform: translateY(10px);
+                    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
+            }
+            & > a{
+                align-items: center;
+                .swiper-image{
+                    transition: .5s;
+                }
+                .swiper_category{
+                }
+                .swiper_date{
+                    font-family: $font-family-base; 
+                }
+                .swiper_title{
+                    h3{
+                        font-family: $font-family-base;
+                        transition: .5s;
+                        
+                    }
+                }
+                .swiper_description{
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper_title{
+                        h3{
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-button-next {margin-right: 20px!important;}
+    .swiper-button-prev {margin-left: 20px!important;}
+}

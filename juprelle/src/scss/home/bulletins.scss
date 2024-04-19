@@ -1,0 +1,98 @@
+.bloc_news {
+    .swiper-slide .swiper-image {
+        padding-bottom: 140%;
+    }
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+
+
+    #container-section-bulletin-communal .carousel {
+        //padding:15px !important;
+    }
+    .section-title{
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 4.5rem;
+        width: max-content;
+        &:after{
+            left:0%;
+            top: 80px;
+            bottom: 0px;
+            position: absolute;
+            background: $primary-svg;
+            content: "";
+            display: block;
+            height: 10px;
+            position: absolute;
+            width: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .section-title{
+            font-size: 32px !important;
+            &:after{
+                top: 50px;
+                height: 8px;
+                width: 70px;
+            }
+        }
+    }
+    .swiper-slide {
+            background: transparent;
+            transition: .5s;
+            border-radius: 10px;
+            border:1px solid #E5F2F8;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0);
+        
+        &:hover,&:focus{
+                    transition: .5s;
+                    transform: translateY(10px);
+                    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
+    }
+         a {
+        text-decoration: none;
+    }
+}
+    .swiper_title h3 {
+    padding: 20px;
+    font-family: Roboto,sans-serif;
+    color: initial;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: none;
+    }
+
+
+    .swiper-button-next, .swiper-button-prev {
+        display:none;
+    }
+
+    .see_all a {
+    background: #f04801;
+    border: 1px solid #f04801;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 18.7px;
+    font-weight: 700;
+    padding: .8rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: none; 
+    transition: all .2s ease;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+        &:hover {
+            background: transparent;
+            border: 1px solid #f04801;
+            border-radius: 10px;
+            color: #f04801;
+        }
+    }
+
+}

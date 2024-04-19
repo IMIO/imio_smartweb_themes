@@ -36,6 +36,15 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
 .sectionlinks.quick-access .body-section li a:hover .image.d-block svg {
     fill: #fff;
 }
+
+@media screen and (max-width: 1000px) {
+    .sectionlinks.quick-access a .image.d-block::before {
+        display: none;
+    }
+    .sectionlinks.quick-access .body-section li a:hover .image.d-block svg {
+        fill: $secondary-svg;
+    }
+}
 .r-item-img.r-item-img-placeholder {
 	background: url("../../assets/svg/placeholder.jpg");
 	background-size: cover;
