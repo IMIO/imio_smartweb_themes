@@ -1,0 +1,114 @@
+.sectionnews{
+    background: linear-gradient(180deg,#fff 0,#fff 250px,#000 250px,#000);
+    .section-title{
+        font-weight: 500;
+        position: relative;
+        text-align: left;
+        padding-left:30px;
+        margin-bottom:2rem;
+        &:after{
+            background: $primary-green;
+            content: "";
+            display: block;
+            width: 8px;
+            height: 60px;
+            margin:-6px 0 0 -30px;
+            top: 0px;
+            bottom: 0px;
+            position: absolute;
+            border-radius: 20px;
+        }
+    }
+    .swiper-wrapper{
+        .swiper-slide {
+            transition: all .25s ease;
+            & > a{
+                display: block;
+                align-items: center;
+                .swiper-image{
+                    padding-bottom: 55%;
+                    transition: all .25s ease;
+                    margin-bottom: 0rem;
+                }
+                .swiper_category{
+                    margin-left: 0px;
+                    position:relative;
+                    width: max-content;
+                    top: 0px;
+                    left: 0px;
+                }
+                .swiper_date{
+                    font-family: $font-family-base; 
+                    grid-row-start: 2;
+                }
+                .swiper_title{
+                    margin-top: 10px;
+                    h3{
+                        font-family: $font-family-base;
+                        
+                    }
+                }
+                .swiper_description{
+                    display: none;
+                    p{
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    .swiper-image{
+                        mask-size: 99%;
+                    }
+                    .swiper_category{
+                    }
+                    .swiper_date{
+
+                    }
+                    .swiper_title{
+                        h3{
+                        }
+                    }
+                    .swiper_description{
+                        p{
+        
+                        }
+                    }
+                }
+            }
+            &:hover {
+                transform: translateY(10px);
+                transition: .5s;
+            }
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+
+    }
+    .swiper-button-prev{
+
+    }
+
+    .see_all a {
+        background: $primary-green;
+        border: 1px solid $primary-green;
+        border-radius: 10px;
+        color: #ffffff;
+        display: block;
+        font-family: Roboto Slab,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 1rem 1.5rem .9rem 1.5rem;
+        position: relative;
+        text-decoration: none;
+        text-transform: none;
+        transition: all .2s ease;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 30px auto 0;
+        &:hover {
+                background: #fff;
+                border: 1px solid #fff;
+                color: #000;
+                transition: all .2s ease;
+        }
+    }
+}
