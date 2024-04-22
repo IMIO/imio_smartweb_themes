@@ -139,10 +139,10 @@
 }
 //NAVIGATION
 @media screen and (min-width: 992px) {
-  li.nav-item {
+  .navbar-nav>li.nav-item {
     position: relative;
   }
-  .navbar-nav li.nav-item::before {
+  .navbar-nav>li.nav-item::before {
     content: "";
     top: 12px;
     bottom: 12px;
@@ -151,8 +151,7 @@
     background: transparent;
     transition: all .15s ease;
   }
-  .navbar-nav li.nav-item:hover {
-
+  .navbar-nav>li.nav-item:hover {
     &::before {
       content: "";
       top: -27px;
@@ -164,8 +163,8 @@
       transition: all .15s ease;
       display: block;
     }
-    a {
-      color: #fff !important;
+    >a {
+      color: $primary-svg;
     }
   }
 }
@@ -258,4 +257,36 @@ body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper
 }
 .sectionnews .swiper-slide .swiper_date {
   text-align: center;
+}
+//RECHERCHE
+.r-search .col-md-3.col-lg-2.py-1.r-search.search-select-filter {
+  display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+  .navbar-nav>li.nav-item:hover>a,
+  .navbar-nav>li.nav-item:focus>a,
+  .navbar-nav>li.nav-item:active>a {
+      color: #fff !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav>li.nav-item:hover>a,
+  .navbar-nav>li.nav-item:focus>a,
+  .navbar-nav>li.nav-item:active>a {
+      color: #fff !important;
+  }
+}
+#portal-globalnav>li.has_subtree>a:before {
+display: none;
+}
+.sectioncontact .contact-type-position {
+display: flex;
+flex-wrap: wrap;
+word-wrap: anywhere;
+gap: 15px 50px;
+}
+body.template-gdpr-view ul li {
+  margin-left: 1.5rem;
 }
