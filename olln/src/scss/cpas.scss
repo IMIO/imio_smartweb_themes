@@ -1,0 +1,98 @@
+.btn-custom {
+    .text  a{
+        background: #ffcf1b;
+        border: 0 solid #325aa6;
+        border-radius: 50px;
+        color: #325aa6;
+        display: block;
+        font-family: Open Sans,sans-serif;
+        font-size: 14px;
+        font-weight: 700!important;
+        padding: 1em 2em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .2s ease;
+        width: max-content;
+        &:hover, &:focus {
+            background: #e4b816;
+            text-decoration: none!important;
+        }
+    }
+}
+
+
+.footer-social-cpas {
+    position: relative;
+    text-align: center;
+    .row {
+        justify-content: center;
+    }
+    &:before {
+        content: url("../../assets/logo-cpas.png");
+        margin-bottom: 10px;
+        display: block;
+    }
+    .section-title {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .table_image {
+        width: 60px;
+        height: 60px;
+        display: block;
+        background:#fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            fill: $primary;
+            width:28px;
+            height: auto;
+        }
+    }
+    .table_title {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+        -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;  /* 2 */
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important;  
+    }
+    li {
+        width: auto;
+    }
+}
+
+
+#portal-footer-wrapper .sectiontext h2 {
+	margin-top: 0 !important;
+	margin-bottom: 7px;
+} 
+
+.portaltype-imio-smartweb-portalpage.section-homepage.site-cpas {
+    .swiper_date {
+        padding-top: 10px;
+        font-weight: 500;
+    }
+    #portal-footer-wrapper {
+        margin-top: 5rem;    
+    }
+    #portal-header {
+        margin-bottom: -5px;
+    }
+    @media screen and (min-width: 992px) {
+        .a-la-une-txt-cpas {
+          padding-top: 5rem;
+        }
+      }
+}
+
+
