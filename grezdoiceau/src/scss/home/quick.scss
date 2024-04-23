@@ -1,0 +1,93 @@
+.sectionlinks.quick-access {
+    margin-top: -180px;
+}
+@include media-breakpoint-down(md){
+    .sectionlinks.quick-access.suivez-nous {
+        transform: initial;
+        position: initial;
+    }
+    .sectionlinks.quick-access {
+        // margin-top: 9Opx;
+    }
+    #container-section-acces-directs #body-section-acces-directs ul.row {
+        grid-gap: 5px;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(auto-fit,minmax(135px,auto));
+    }
+    .suivez-nous ul.row {
+    grid-gap: 20px 15px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(136px,1fr));
+    }
+    body .sectionlinks.annuaire ul {
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    }
+}
+
+.sectionlinks.quick-access .body-section li a {
+border: solid 2px #EFECE8;
+border-radius: 50%;
+width: 142px;
+height: 142px;
+padding-top: 1rem;
+background: #EFECE8;
+box-shadow:
+  0px 0px 5.3px rgba(0, 0, 0, 0.02),
+  0px 0px 17.9px rgba(0, 0, 0, 0.03),
+  0px 0px 80px rgba(0, 0, 0, 0.05)
+;
+}
+
+.quick-access ul.row a.table_image:hover {
+  border: solid 2px $primary-svg;
+}
+.sectionlinks.quick-access.suivez-nous {
+    transform: initial;
+    position: initial;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+//  quick second
+
+
+.quick-access-more {
+    .row {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .table_image {
+        text-decoration: none;
+        position: relative;
+        display: block;
+        &:after {
+            content: "";
+            width: 70px;
+            height: 70px;
+            background-color: #F1E8E3;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    .image {
+        text-align: center;
+    }
+    .table_title {
+        text-align: center;
+        span {
+            font-weight: 500;
+        }
+    }
+}
