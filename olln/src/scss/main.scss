@@ -191,3 +191,7 @@ $enable-roboto-webfont: false;
 	padding-bottom: 0;
 	aspect-ratio: 11/16;
 }
+
+.template-facetednavigation_view .faceted-top-widgets input {
+  color: $primary;
+}
