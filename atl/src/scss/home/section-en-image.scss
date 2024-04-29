@@ -1,0 +1,72 @@
+.galerie-accueil {
+    position: relative;
+    margin-top: 120px;
+    .section-title{
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto 2rem;
+        width: auto;
+        font-size: 2.5rem;
+    }
+    #body-section-notre-ville {
+        overflow: hidden;
+        border-radius: 100px 100px 0px 100px;
+    }
+    &:after{
+        content: "";
+        transition: all 0.2s ease;
+        position: absolute;
+        height: 179px;
+        background: url("../../assets/svg/galerie-after.svg");
+        right: -25px;
+        bottom: 0px;
+        width: 179px;
+        mix-blend-mode: multiply;
+    }
+    &:before{   
+        content: "";
+        transition: all 0.2s ease;
+        position: absolute;
+        height: 124px;
+        background: url("../../assets/svg/galerie-before.svg");
+        right: 100px;
+        bottom: -30px;
+        width: 124px;
+        z-index: -1;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .galerie-accueil {
+        position: relative;
+        #body-section-notre-ville {
+            overflow: hidden;
+            border-radius: 40px 40px 0px 40px;
+        }
+        .section-title{
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin: 0 auto 2rem;
+            width: max-content;
+            font-size: 2.5rem;
+        }
+        #body-section-notre-ville {
+            overflow: hidden;
+            border-radius: 40px 40px 0px 40px;
+        }
+        &:after{
+            display: none;
+        }
+        &:before{   
+            display: none;
+        }
+    }
+
+    
+    
+}
