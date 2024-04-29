@@ -64,6 +64,20 @@ $enable-roboto-webfont: false;
             color: $primary-svg;
             padding-left:100px;
             line-height: 60px;
+            font-weight: 900;
+        }
+
+        @media screen and (max-width: 600px) {
+            .swiper-banner-title {
+                font-size: 28px!important;
+            }
+    
+            .swiper-banner-description p {
+                padding-left:0px;
+                font-size: 40px!important;
+                line-height: 40px;
+                font-weight: 900;
+            }
         }
 
         a {
@@ -93,4 +107,11 @@ $enable-roboto-webfont: false;
     &:after{
         //display: none;
     }
+}
+
+.section-home-page #messagesviewlet {
+    float: none;
+    padding-top: 0;
+    position: absolute;
+    top: 90px;
 }
