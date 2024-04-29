@@ -104,6 +104,12 @@
     position: relative;
     overflow: unset;
     border-top: solid 14px $primary-svg;
+    h2 {
+        color: $primary-svg!important;
+    }
+    .sectionlinks h2 {
+        margin-top: 0 !important;
+    }
 }
 
 @media screen and (max-width: 992px) {

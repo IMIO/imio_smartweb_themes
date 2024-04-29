@@ -1,5 +1,14 @@
 .sectionevents{
     background: #EFECE8;
+    &:after {
+        content: "";
+        background: #ea0101;
+        bottom: 0;
+        height: 14px;
+        right: 0;
+        position: absolute;
+        width: 50vw;
+    }
     .section-container{
         position: relative;
     .swiper-pagination-bullet {
