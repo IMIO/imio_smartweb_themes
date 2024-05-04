@@ -1,0 +1,769 @@
+//// VARIABLES
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+//// IMPORTS
+// Import barceloneta files from node_modules --load-path=node_modules
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main.scss';
+//// STYLES
+// ... add your styles here
+@import "./home/intro.scss";
+@import "./home/quick.scss";
+@import "./home/a-la-une";
+@import "./home/espace-citoyen";
+@import "./home/actualites";
+@import "./home/cpas";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/section-en-image";
+@import "./info-trav.scss";
+@import "./se-link.scss";
+@import "./se-files.scss";
+@import "./contact.scss";
+
+
+body {
+    background: #ffffff;
+}
+
+//search
+#portal-header #portal-header-top #header-links #search-link a {
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    background: $primary-green;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+    #portal-header #portal-header-top #header-links #search-link a {
+        padding-left:0px !important;
+    }
+}
+
+#portal-header #portal-header-top #header-links #search-link a:hover {
+    background: #000;
+}
+
+#portal-header #portal-header-top #portal-logo{
+    svg {
+        width:200px;
+    }
+}
+
+
+.header-custom #banner:after {display: none!important;}
+
+h1 {
+    font-family: $font-family-base!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+h2 {
+    font-family: $font-family-base!important;
+    font-weight: 400!important;
+    font-size: 22px;
+}
+
+.smartweb_herobanner .bannerSwiper {
+	height: 50vw;
+	max-height: 500px;
+}
+
+
+#header-actions .account {
+    text-decoration:none;
+    font-weight: 500;
+    position: relative;
+    &:before {
+        content: "";
+        height: 2px;
+        bottom: -3px;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        transition: all 0.15s ease;
+        right: 0;
+        opacity: 0;
+    }
+    span {
+        transition: all 0.3s ease;
+    }
+    &:hover {
+        span {
+        transition: all 0.3s ease;
+    }
+    &:before {
+        opacity: 1;
+    }
+}
+}
+
+.smartweb_herobanner {
+    border-radius: 120px 120px 0px 0px;
+    overflow: hidden;
+    width: 90vw;
+}
+
+@media screen and (max-width: 575px) {
+    .smartweb_herobanner  {
+      border-radius: 30px 30px 0 0;
+    }
+  }
+
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
+    position: absolute;
+    top: auto;
+    transform: none;
+    bottom: 0px !important;
+    max-width: 100%;
+    width: 100%;
+}
+
+.bannerSwiper .section-slide{
+    .swiper-banner-content {
+        position: absolute;
+        right:0px;
+        bottom:0px;
+        border-radius: 80px 0 0 0;
+        font-family: $font-family-title;
+        
+
+        @media screen and (max-width: 600px) {
+            display:none;
+            }
+    }
+
+    .swiper-banner-title {
+        line-height: 40px;
+        font-style: italic;
+    }
+}
+
+.r-item-img.r-item-img-placeholder {
+	background: url("../../assets/svg/placeholder.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+//footer 
+footer{
+    #container-section-noussuivre{
+        .table_title{
+            display: none;
+        }
+        ul.row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+	display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+    #content > header {
+       display: none;
+   }
+}
+// bug z-index
+
+.pagination{
+    .page-item.active{
+        z-index: 0;
+    }
+}
+
+
+
+footer #container-section-noussuivre{
+    li{
+        svg{
+            path{
+                fill: #fff;
+            }
+        }
+        &:nth-child(1), &:nth-child(3){
+            svg path:nth-child(2) {
+                fill: #3f3f3f !important;
+            }
+        }
+    }
+} 
+@media screen and (max-width:900px) {
+    .portaltype-imio-smartweb-portalpage .section-title {
+        font-size: 40px!important;
+        margin-bottom: 20px;
+    }
+
+    .portaltype-imio-smartweb-portalpage .section-title:after {
+        top: 45px;
+    }
+}
+
+#portal-breadcrumbs{
+    background: transparent!important;
+    .container,.breadcrumb{
+        padding-left: 0;
+    }
+}
+
+#portal-globalnav > li a:hover {
+	color: $primary-svg;
+}
+.portaltype-imio-smartweb-portalpage{
+    //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
+    background-size: cover;
+}
+
+
+
+
+// footer
+.footer-logo {
+    figure img {
+        width:100%!important;
+    }
+}
+
+.footer-slogan {
+    .text {
+        max-width: 204px;
+        text-align: center;
+        p {
+            font-size: 33px;
+            font-weight: 200;
+        }
+    }
+}
+.footer-fb {
+    .table_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10px;
+        text-decoration: none;
+        .image{
+            width: auto;
+            svg {
+                height: 25px;
+                fill: #fff;
+            }
+        }
+    }
+}
+
+#portal-footer-wrapper {
+    .smartweb_footer{
+        .text {
+            h4 {
+                color:#fff;
+            }
+        }
+    }
+}
+
+.r-add-contact a, .r-add-event a, .r-add-news a {
+    background: $primary-blue;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover {
+        background: #000000;
+        transition: all .5s ease;
+    }
+}
+
+.r-filter div[class*="control"] {
+	border-radius: 5px;
+}
+
+.procedure a::after {
+    content: "\F135";
+    font-family: Bootstrap-icons;
+    margin-left: .5rem;
+    position: relative;
+    top: 3px;
+}
+
+
+// sub-nav
+
+.subsite-container {
+    background: #EDEDED;
+    border-radius: 30px 0 30px 0;
+    #subsite-logo {
+	font-size: 18px;
+    background: $primary-svg;
+    border-radius: 30px 0 30px 0;
+    }
+}
+
+
+.sectiontext .section-text .section-title a { text-decoration: none;}
+.sectiontext .section-text .section-title a.collapsed {
+    color: #000 !important;
+}
+/*.sectiontext .section-text .body-section a {
+	color: #ffffff!important;
+}*/
+.sectiontext figure img {
+	border-radius: 15px;
+}
+/*#viewlet-above-content-body {
+    .procedure{
+        display: none;
+    } 
+}*/
+
+
+// header common 
+
+
+
+
+.breadcrumb-item {
+    a {
+     text-decoration: none;
+    }
+}
+.breadcrumb {
+	font-size: 13px;
+}
+#portal-breadcrumbs {
+    margin: 0 !important;
+    position:relative;
+    //z-index: -1;
+    .breadcrumb {
+        margin: 0!important;
+        background-color: #fff !important;
+        padding: 12px 0 !important;  
+        .breadcrumb-item {
+            a {
+                color:#2F294E !important;
+                &:hover {
+                    color:#2F294E !important;
+                }
+            }
+            &.active {
+                color:#2F294E!important ;
+            }
+            &:before {
+                color: #2F294E!important;
+            }
+        }
+    }
+}
+
+
+.header-custom {
+    #banner {
+        z-index: -1;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+    } 
+
+
+
+    #portal-breadcrumbs {
+        margin: 0 !important;
+        position: absolute;
+        z-index: 1;
+        .breadcrumb {
+            margin: 0!important;
+            background-color: #F2F2F5 !important;
+            padding: 15px 30px !important;
+            .breadcrumb-item {
+                a {
+                    color:#2F294E !important;
+                    &:hover {
+                        color:#2F294E !important;
+                    }
+                }
+                &.active {
+                    color:#CCCCCC!important ;
+                }
+                &:before {
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+}
+
+.block-menu-element a .card-title.h2, .block-menu-element a h2.card-title {
+    font-size: 1rem;
+}
+
+.block-menu-element a .card-body {
+    background: #fff;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.16);
+    height:auto;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 1.2s;
+}
+
+.template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a {
+    background: none;
+}
+
+.template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
+    background-color: #ffffff;
+}
+
+#portal-column-content .sectioncontact .contact-type-organization {
+    background: none;
+}
+.sectionlinks {
+    background: none;
+}
+.sectionlinks h2:before{
+    display:none !important;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+
+      .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+      }
+
+      .navbar .container {
+        padding: 0px 5px 0 0 !important;
+      }
+      
+    }
+
+    
+
+
+    .bloc-newsletter{
+        text-align: $newsletter-align;
+        position: relative;
+        margin: 6rem 0;
+        padding-bottom: 6.5rem;
+        padding-top: 6rem;
+
+        .section-title{
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin: 0 auto 4.5rem;
+            width: max-content;
+            font-size: 3rem;
+            color:#fff;
+            &:after{
+                left:0%;
+                top: 70px;
+                bottom: 0px;
+                position: absolute;
+                content: "";
+                display: block;
+                height: 13px;
+                position: absolute;
+                width: 113px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .section-title{
+                &:after{
+                    top: 45px;
+                }
+            }
+        }
+        .table_image {
+            text-decoration: none;
+            .table_title span {
+                background: #ffffff;
+                padding: 1rem 3rem;
+                border-radius: 8px;  
+                color:#000; 
+                transition: all .5s ease;
+                &:hover {
+                    background: #133641 !important;
+                    color:#fff !important;   
+                    transition: all .5s ease;
+                } 
+            }
+            
+            
+            @media screen and (max-width:900px) {
+                .table_title span {
+                    font-size: 14px !important;
+                    padding: 1rem 1rem !important;
+                }
+            }
+        }
+
+        
+        &:after{
+            content: "";
+            position: absolute;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            background:$newsletter-bg-color;
+        }
+        .lead{
+            margin: 0;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .bloc-newsletter{
+            margin: 4.5rem 0;
+            padding-bottom: 4rem;
+            padding-top: 3rem;
+    }
+}
+
+
+
+    #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
+        color: #000000!important;
+    }
+
+    #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
+        color: #000000!important;
+    }
+
+    #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
+        color: #000000!important;
+        text-decoration: underline;
+    }
+
+    #portal-globalnav .dropdown .nav-title a {
+        color: $primary-svg;
+    }
+
+    #portal-header #portal-header-top #portal-globalnav-wrapper {
+        margin: 0 2rem 0 2rem;
+    }
+    
+    @media screen and (min-width: 992px) {
+        #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
+            margin-top: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+#body-section-en-un-clic li {
+    width: 100%!important;
+}
+    }
+
+
+
+    #messagesviewlet .portalMessage.info,
+    #localmessagesviewlet .portalMessage.info {
+        background-color: $primary-blue;
+        color:#fff;
+    }
+    
+    #messagesviewlet .portalMessage.error,
+    #localmessagesviewlet .portalMessage.error {
+        background-color: $primary-yellow;
+        color:#000;
+    }
+    
+    #messagesviewlet .portalMessage.warning,
+    #localmessagesviewlet .portalMessage.warning {
+        background: $primary-green;
+        color:#000000;
+    }
+    
+    #messagesviewlet .portalMessage.info .messagesviewlet-type,
+    #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+        background: $primary-blue;
+        color:#fff;
+    }
+    
+    #messagesviewlet .portalMessage.warning .messagesviewlet-type,
+    #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+        background: $primary-green;
+        color:#000000;
+    }
+
+
+    // logo minisite
+    #portal-header #portal-header-top .minisite_logo {
+        max-width: 100px !important;
+    }
+
+    #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
+        margin-top: 0rem;
+    }
+
+
+    .sectiontext mark, .r-content-text mark {
+        background-color: $primary-blue;
+        border: 0px;
+        border-radius: 8px;
+        color: #ffffff;
+        display: inline-block;
+        font-weight: 500;
+        padding: 20px 45px 20px 26px;
+        a {
+            color:#ffffff !important;
+        }
+    }
+
+    .portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image {
+        background-color: $primary-blue;
+        border: 0px;
+        border-radius: 8px;
+        color: #ffffff;
+        font-weight: 500;
+        padding: 20px 45px 20px 26px;
+        div, span {
+            color:#ffffff !important;
+        }
+        a {
+            color:#ffffff !important;
+        }
+    }
+
+    .sectionfiles:after {
+        background-color: $primary-blue;
+        border-radius: 8px;
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50vw);
+        width: 100vw;
+        z-index: -1;
+    }
+
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $primary-blue;
+}
+
+.subsection-services-communaux-communication-bulletin-communal .block-menu-element a .card-img-top {
+    padding-top: 135%;
+    background-position: top;
+}
+
+.sectiontext ol>li:before {
+    content: counter(sectioncounter) "." !important;
+}
+#portal-footer-wrapper #portal-footer #smartweb-footer a, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
+    color:#ffffff;
+    transition: all .5s ease;
+}
+#portal-footer-wrapper #portal-footer #smartweb-footer a:hover, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
+    color:$primary-blue;
+    transition: all .5s ease;
+}
+
+
+
+// padding page accueil pour titre
+
+
+    .section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
+        padding:0;
+    }
+
+    @media screen and (max-width: 1700px) {
+        .section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
+            padding:0 80px;
+        }
+        #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-contact  {
+            padding:0px !important;
+        }
+        }
+
+    @media screen and (max-width: 992px) {
+        .section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+        }
+
+
+//navbar
+.navbar-toggler {
+    padding: 0px !important;
+    background: #fff !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar .container {
+    padding:0px !important;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+    #messagesviewlet {
+        position: absolute;
+        top: 100px;
+    }
+}
+
+
+#portal-globalnav-collapse .dropdown .nav-link:focus,
+#portal-globalnav-collapse .dropdown .nav-link:hover,
+#subsite-navigation .dropdown .nav-link:focus,
+#subsite-navigation .dropdown .nav-link:hover {
+	color: $primary-blue;
+.site-cpas .swiper-banner-content-wrapper .swiper-banner-content  {
+    .swiper-banner-title{
+        display: none;
+    }
+
+    .swiper-banner-description p {
+        font-size: 24px;
+        font-weight: 700;
+        color:#fff !important;
+        line-height: 34px;
+    }
+}
+}
+
+.template-block_view #content-core, .template-block_view_with_images #content-core, .template-summary_view #content-core, .template-summary_view_with_images #content-core {
+    margin-bottom: 3rem;
+}

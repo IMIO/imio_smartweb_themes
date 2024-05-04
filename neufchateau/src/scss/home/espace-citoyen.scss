@@ -1,0 +1,95 @@
+.espace-citoyen{
+    &:after {
+        background: $primary-svg;
+        border-radius: 0;
+
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        top: 0px;
+        transform: translateX(-50%);
+        width: 100vw;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 575px) {
+        &:after {
+            border-radius: 0 0 30px 30px;
+        }
+    }
+    background: #fff;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    border-radius: 30px;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    
+    .body-section{
+        .row{
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 15px;
+            
+            li{
+                padding: 0!important;
+            }
+            .table_display{
+                height: 100%;
+            }
+            .table_image{
+                padding: 1.5rem 1rem;
+                border-radius: 50px;
+                border: 5px solid transparent;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                height: 100%;
+                color: #fff;
+                transition: all 0.3s ease;
+                .image{
+                    width: auto;
+                    svg{
+                        height: auto;
+                        width: 40px;
+                        max-height: 40px;
+                        fill: #fff;
+                    }
+                }
+                &:hover{
+                    border: 5px solid #fff;
+                    transition: all 0.3s ease;
+                    .image{
+                        svg{
+                            
+                        }
+                    }
+                    .table_title{
+                        span{
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.espace-citoyen-titre{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    h2{
+        font-weight: 400;
+        text-transform: none;
+        position: relative;
+        color:$primary;
+        margin: 0px auto 50px;
+        content: url("../../assets/svg/titre-espace-citoyen.svg");
+        width:100%;
+        max-width: 400px;
+    }
+}
