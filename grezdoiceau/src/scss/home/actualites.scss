@@ -51,11 +51,8 @@
                     transition: .5s;
                 }
                 .swiper_category{
-                    bottom: 0px;
-                    right: 0px;
-                    width: 100%;
-                    margin:-20px 0 0 0;
-                    text-align: right;
+                    position: absolute;
+                    top: 0;
                     span {
                         display:inline-block;
                     }
