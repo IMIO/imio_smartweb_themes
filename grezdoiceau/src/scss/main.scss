@@ -275,7 +275,6 @@ footer #container-section-noussuivre{
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
-    z-index: -1;
     .breadcrumb {
         margin: 0!important;
         //background-color: #F6EAD9 !important;
@@ -534,14 +533,6 @@ footer #container-section-noussuivre{
             margin-top: 3.5rem;
         }
     }
-
-    @media screen and (max-width: 992px) {
-
-#body-section-en-un-clic li {
-    width: 100%!important;
-}
-    }
-
    .section-home-page #messagesviewlet {
         position:absolute !important;
         top:100px !important;
@@ -624,10 +615,6 @@ h3 {
     transition: all .5s ease;
 }
 
-#portal-header #portal-header-top #header-links span {
-    color: #ffffff;
-    text-decoration: none;
-}
 
 #portal-header #portal-header-top #header-links .account {
     text-decoration: none;
@@ -643,3 +630,30 @@ h3 {
     content: ":";
     margin-left: 5px !important;
 }
+
+.r-list-item-group:hover .r-item-arrow-more {
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/%3E%3C/svg%3E"),#fd0000!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+
+footer {
+    a:hover, a:focus {
+        text-decoration:  underline!important;
+    }
+}
+#portal-colophon ul li a {
+    text-decoration:  none!important;
+    &:hover, &:focus {
+        text-decoration:  underline!important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html .nav_je-suis {
+      margin-left: inherit !important;
+    }
+    .nav_ma-commune.nav-item {
+        margin-left: auto;
+    }
+  }

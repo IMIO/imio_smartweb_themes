@@ -1,4 +1,4 @@
-.sectionnews{
+.sectionnews:not(.a-la-une){
     position: relative;
     &:after{
         content: "";

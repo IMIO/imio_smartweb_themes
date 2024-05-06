@@ -10,10 +10,9 @@ $primary-reddark : #EA0101;
 
 
 //*// TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-$font-family-base:'Fira Sans', sans-serif!default;
-$font-family-title:'Fira Sans', sans-serif!default;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+$font-family-base:"Roboto", sans-serif;
+$font-family-title:"Roboto", sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -214,8 +213,8 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 130px;
-$actu-section-padding-bottom: 170px;
+$actu-section-padding-top: 3rem;
+$actu-section-padding-bottom: 3rem;
 $actu-section-margin: 0 !default;
 $actu-title-color:$primary !default;
 $actu-title-align:$home-section-title-align !default;
@@ -255,8 +254,8 @@ $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
 $event-section-full-width: true !default;
-$event-section-padding-top: 130px;
-$event-section-padding-bottom: 170px;
+$event-section-padding-top: 3rem;
+$event-section-padding-bottom: 3rem;
 $event-section-margin: 0 !default;
 $event-title-color:$primary;
 $event-title-align:$home-section-title-align !default;
