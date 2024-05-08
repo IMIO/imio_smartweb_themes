@@ -32,9 +32,16 @@
   border: solid 2px $primary-svg;
 }
 
-
-
-//  quick second
+@media screen and (max-width: 768px){
+    .quick-access{
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+     .portaltype-imio-smartweb-portalpage #content-core .row {
+        justify-content: flex-start!important;
+        gap: 40px 0!important;
+    }
+}
 
 
 .quick-access-more {
@@ -48,7 +55,12 @@
     .row {
         justify-content: center;
         margin-top: 4rem;
-        gap: 40px 0;
+        gap: 70px 0;
+        li {
+            @media screen and (max-width: 768px){
+                width: 50%;
+            }
+        }
     }
     .section-title {
         text-align: center;
@@ -86,4 +98,8 @@
             font-weight: 500;
         }
     }
+}
+
+html #content-core .quick-access-more .row {
+	gap: 70px 0!important;
 }
