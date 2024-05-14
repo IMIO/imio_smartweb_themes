@@ -66,12 +66,13 @@
                 .table_image {
                     .image {
                         position:absolute;
+                        padding-left:13px;
                         svg {
                             fill:#fff;
                         }
                     }
                     .table_title{
-                        padding-left:30px!important;
+                        padding-left:40px!important;
                         font-size: 1rem!important;
                         span {transition: all .5s ease;}
                         &:hover {
@@ -111,14 +112,16 @@
     background:$primary;
     background-size: 100%;
     padding-top: 100px;
-    padding:4rem 0 2rem 0 !important;
+    padding:5rem 0 2rem 0 !important;
+    margin-top:80px;
 }
 
 .section-home-page #portal-footer-wrapper{
     background:$primary;
     background-size: 100%;
     padding-top: 100px;
-    padding:10rem 0 2rem 0 !important;
+    padding:5rem 0 2rem 0 !important;
+    margin-top:0px;
 }
 
 
