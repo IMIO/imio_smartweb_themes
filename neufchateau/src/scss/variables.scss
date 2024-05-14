@@ -1,10 +1,10 @@
 //*// COLORS
 $primary: #000000;
-$primary-svg: #289181 !default;
-$primary-light: #6BBC59 !default;
+$primary-svg: #24847C !default;
+$primary-light: #E9F4F2 !default;
 $primary-yellow: #F3CF63;
-$primary-blue: #289181;
-$primary-green: #289181;
+$primary-blue: #24847C;
+$primary-green: #24847C;
 $primary-red: #B83434;
 
 
@@ -16,7 +16,7 @@ $font-family-title:'Open Sans', sans-serif!default;
 $font-title-color: $primary-blue !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
-$font-title-weight: 700;
+$font-title-weight: 600;
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
@@ -83,7 +83,7 @@ $header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 $toggler-color:white !default;
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$toggler-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
 //bredcrumb
-$breadcrumb-bg: #d6d6d6 !default;
+$breadcrumb-bg: $primary-light !default;
 $enable-full-width-breacrumb: false !default;
 
 // sitenav
@@ -137,13 +137,13 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem  5rem !default;
-$banner-content-background: rgb(40 145 129 / 80%) !default;
+$banner-content-background: rgb(36 132 124 / 80%) !default;
 $banner-content-is-vertical-center: true !default;
-$banner-content-title-font-size: 30px !default;
+$banner-content-title-font-size: 20px !default;
 $banner-content-title-color: #fff !default;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align:left!default;
-$banner-content-description-font-size: 18px !default;
+$banner-content-description-font-size: 30px !default;
 $banner-content-description-color: #ffffff;
 
 // see_all
@@ -228,7 +228,7 @@ $actu-item-bg-radius:50px 50px 0 0;
 $actu-category-margin: 0;
 $actu-category-padding: .5rem 1rem;
 $actu-category-color: #fff !default;
-$actu-category-bg-color: rgb(40 145 129 / 80%);
+$actu-category-bg-color: rgb(36 132 124 / 80%);
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: initial !default;
@@ -263,7 +263,7 @@ $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
-$event-image-border-radius: 30px 0px 30px 0px !default;
+$event-image-border-radius: 50px 50px 0px 0px !default;
 $event-item-bg-color:transparent;
 $event-item-bg-radius:0px;
 $event-category-margin: -37px 0 0 0;
@@ -311,7 +311,7 @@ $album-item-bg-radius:$global-radius+2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
-$album-category-bg-color: rgb(40 145 129 / 80%);
+$album-category-bg-color: rgb(36 132 124 / 80%);
 $album-category-text-transform: uppurcase !default;
 $album-category-font-size: 14px !default;
 $album-category-font-weight: initial !default;
@@ -339,7 +339,7 @@ $newsletter-text-color:#fff!default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
+$mark-background-color: $primary-light !default;
 $mark-color: #5c5c5c !default;
 $mark-padding-sec: 20px 45px 20px 26px !default;
 $mark-border: solid 2px $primary !default;

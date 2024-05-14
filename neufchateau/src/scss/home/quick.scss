@@ -1,9 +1,9 @@
 #main-container .quick-access {
     margin: 0;
-	padding: 40px 30px 60px;
+	padding: 30px 30px 50px;
     @include media-breakpoint-down(lg){
         margin: 0;
-        padding: 20px 30px 40px;
+        padding: 20px 20px 40px;
     }
 }
 
@@ -17,7 +17,7 @@
 
         &:after {
             background: $primary-svg;
-            border-radius: 0 0 120px 120px;
+            border-radius: 0 0 100px 100px;
     
             bottom: 0;
             content: "";
@@ -25,13 +25,14 @@
             position: absolute;
             top: -20px;
             transform: translateX(-50%);
-            width: 90vw;
+            width: calc(100vw - 100px);
             z-index: -1;
         }
     
         @media screen and (max-width: 575px) {
             &:after {
-                border-radius: 0 0 30px 30px;
+                border-radius: 0 0 50px 50px;
+                width: calc(100vw - 40px);
             }
         }
 
@@ -42,8 +43,8 @@
                     .image.d-block {
                     background: $primary-green !important;
                     border-radius: 100px;
-                    width: 140px;
-                    height: 140px;
+                    width: 120px;
+                    height: 120px;
                     transition: all .3s ease;
                     position: relative;
                 }
@@ -97,7 +98,7 @@
             grid-gap: 20px;
             display: grid;
             grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+            grid-template-columns: repeat(auto-fit,minmax(180px,180px));
             li{
                 width: auto!important;
             }
@@ -131,43 +132,92 @@
 .partenaires-titre{
     margin-bottom: 0px;
     padding-bottom: 0px;
+
+
+    .section-text{
+    .text {
     h2{
         font-weight: 400;
         text-transform: none;
         position: relative;
         color:$primary;
-        margin: 0px auto 50px;
+        margin: 0px auto 20px !important;
         content: url("../../assets/svg/titre-partenaires.svg");
         width:100%;
-        max-width: 330px;
+        height: 80px;
+        @media screen and (max-width: 992px) {
+            transform: rotate(0deg);
+            position: initial;
+            padding: 0;
+            writing-mode:initial;
+            height: 65px;
+            }
+        @media screen and (max-width: 600px) {
+            height: 50px;
+            }
     }
 }
+}
+}
+
+
+
+
+       
 
 #container-section-partenaires {
-    .section-title{
-        text-align: center;
-        position: relative;
-        color: #000;
+    &:before {
+        width: 100vw;
+        height: 635px;
+        background: url("../../assets/svg/vague-right.svg") top right no-repeat;
+        opacity: 0.3;
+        border-radius: 0;
+        content: "";
+        right:0px;
         position: absolute;
-        top:0px;
-        margin:-100px auto 0px;
-        width: 100%;
+        top: -625px;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
     }
+    @media screen and (max-width: 600px) {
+        &:before {
+            display:none;
+        }
+        }
+    
     .body-section{
+        
+        padding: 40px 30px 10px;
 
         &:after {
             background: $primary-svg;
-            border-radius:120px;
+            border-radius:100px;
             bottom: 0;
             content: "";
             left: 50%;
             position: absolute;
-            top: -20px;
+            top: 0px;
             transform: translateX(-50%);
-            width: 90vw;
+            width: calc(100vw - 100px);
             z-index: -1;
+            @media screen and (max-width: 575px) {
+                  width: calc(100vw - 40px) !important;
+                  border-radius: 50px !important;
+            }   
         }
-
-        
-    }
+        &:before {
+            background: $primary;
+            border-radius:0px;
+            bottom: 0;
+            content: "";
+            left: 50%;
+            position: absolute;
+            bottom: 0px;
+            transform: translateX(-50%);
+            width: 100vw;
+            z-index: -1;
+            height: 50%;
+        }
+}
 }

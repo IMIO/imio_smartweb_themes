@@ -58,15 +58,9 @@ body {
 
 .header-custom #banner:after {display: none!important;}
 
-h1 {
-    font-family: $font-family-base!important;
-    font-weight: 400!important;
-    font-style: italic;
-}
 
 h2 {
     font-family: $font-family-base!important;
-    font-weight: 400!important;
     font-size: 22px;
 }
 
@@ -105,14 +99,15 @@ h2 {
 }
 
 .smartweb_herobanner {
-    border-radius: 120px 120px 0px 0px;
+    border-radius: 100px 100px 0px 0px;
     overflow: hidden;
-    width: 90vw;
+    width: calc(100vw - 100px);
 }
 
 @media screen and (max-width: 575px) {
     .smartweb_herobanner  {
-      border-radius: 30px 30px 0 0;
+      width: calc(100vw - 40px);
+      border-radius: 50px 50px 0 0;
     }
   }
 
@@ -140,8 +135,10 @@ h2 {
     }
 
     .swiper-banner-title {
-        line-height: 40px;
-        font-style: italic;
+        font-style:italic;
+    }
+    .swiper-banner-description .rich_description {
+        font-weight: 600;
     }
 }
 
@@ -213,12 +210,6 @@ footer #container-section-noussuivre{
     }
 }
 
-#portal-breadcrumbs{
-    background: transparent!important;
-    .container,.breadcrumb{
-        padding-left: 0;
-    }
-}
 
 #portal-globalnav > li a:hover {
 	color: $primary-svg;
@@ -305,12 +296,12 @@ footer #container-section-noussuivre{
 // sub-nav
 
 .subsite-container {
-    background: #EDEDED;
-    border-radius: 30px 0 30px 0;
+    //background: $primary-light;
+    //border-radius: 50px 0 50px 0;
     #subsite-logo {
 	font-size: 18px;
     background: $primary-svg;
-    border-radius: 30px 0 30px 0;
+    border-radius: 50px 0 0 0;
     }
 }
 
@@ -322,9 +313,7 @@ footer #container-section-noussuivre{
 /*.sectiontext .section-text .body-section a {
 	color: #ffffff!important;
 }*/
-.sectiontext figure img {
-	border-radius: 15px;
-}
+
 /*#viewlet-above-content-body {
     .procedure{
         display: none;
@@ -345,30 +334,35 @@ footer #container-section-noussuivre{
 .breadcrumb {
 	font-size: 13px;
 }
+
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
     //z-index: -1;
+    .container {
+    padding:0 !important;
     .breadcrumb {
         margin: 0!important;
-        background-color: #fff !important;
-        padding: 12px 0 !important;  
+        background-color: $primary-light !important;
+        padding: 12px 10px !important;  
         .breadcrumb-item {
             a {
-                color:#2F294E !important;
+                color:$primary !important;
                 &:hover {
-                    color:#2F294E !important;
+                    color:$primary !important;
                 }
             }
             &.active {
-                color:#2F294E!important ;
+                color:$primary-svg !important ;
             }
             &:before {
-                color: #2F294E!important;
+                color: $primary-svg !important;
             }
         }
     }
 }
+}
+
 
 
 .header-custom {
@@ -550,15 +544,15 @@ footer #container-section-noussuivre{
 
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000000;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000000;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000000;
         text-decoration: underline;
     }
 
