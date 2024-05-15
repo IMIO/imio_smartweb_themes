@@ -440,7 +440,9 @@ footer #container-section-noussuivre{
 }
 
 
-
+.navbar-dark .navbar-toggler-icon {
+    background: #fff !important;
+}
 @media screen and (max-width: 992px) {
 
 
