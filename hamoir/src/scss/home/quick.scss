@@ -68,3 +68,39 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+.sectionlinks {
+    .table_image {
+        &:hover{
+            .image.d-block{
+                transform: translateY(-10px);
+                background: #00B0D6!important; 
+            }
+            svg{
+                fill: #ffffff !important;
+            }
+        }
+    }
+
+    .image.d-block {
+        align-items: center;
+        background: #e5f7fb;
+        border: 0 solid #009eb0;
+        border-radius: 50%;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        justify-content: center;
+        width: 70px;
+        transition: all .3s ease;
+    }
+    .table_title span {
+        color: #000;
+        font-family: Roboto,sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: default;
+      }
+}

@@ -195,3 +195,22 @@ $enable-roboto-webfont: false;
 .template-facetednavigation_view .faceted-top-widgets input {
   color: $primary;
 }
+
+#portal-logo {
+  div {
+    color: #FFF;
+  }
+}
+
+body:not(.site-office-du-tourisme-inforville) {
+  #portal-languageselector {
+    display: none;
+  }
+}
+.site-office-du-tourisme-inforville {
+  #portal-logo {
+    svg {
+      width: 50px;
+    }
+  }
+}
