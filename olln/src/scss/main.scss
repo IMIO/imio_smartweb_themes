@@ -214,3 +214,31 @@ body:not(.site-office-du-tourisme-inforville) {
     }
   }
 }
+
+.r-item-img-placeholder {
+	background: url("./../../assets/placeholder.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.r-content mark {
+	background: #325aa6;
+	color: #fff;
+	border-radius: 5px;
+	padding-left: 0.7rem;
+}
+.r-list-item {
+  .r-item-contact {
+    .topics {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      span {
+        background: #f1f1f1;
+        width: max-content;
+        padding: 1px 4px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

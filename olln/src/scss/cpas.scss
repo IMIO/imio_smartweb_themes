@@ -96,3 +96,66 @@
 }
 
 
+
+.footer-social-tour {
+    position: relative;
+    text-align: center;
+    .row {
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .table_image {
+        width: 60px;
+        height: 60px;
+        display: block;
+        background:#fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            fill: $primary;
+            width:28px;
+            height: auto;
+        }
+    }
+    .table_title {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+        -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;  /* 2 */
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important;  
+    }
+    li {
+        width: auto;
+    }
+}
+
+
+
+#portal-breadcrumbs {
+    background-color: #fff!important;
+    font-size: 14px;
+}
+
+#header-actions {
+    .account {
+        font-weight: 500;
+        text-decoration: none;
+        border-bottom: solid 2px transparent !important;
+        &:hover {
+            border-bottom: solid 2px #fff !important;
+        }
+    }
+
+}
