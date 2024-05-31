@@ -149,7 +149,7 @@ module.exports = (env, argv) => {
           loader: "@svgr/webpack",
         },
         {
-          test: /\.(png|jpg|gif|jpeg|svg)$/i,
+          test: /\.(png|jpg|gif|jpeg|svg|webp)$/i,
           type: "asset/resource",
           generator: {
             filename: "dist/images/[name][hash:8].[ext]",
