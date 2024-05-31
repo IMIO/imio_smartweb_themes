@@ -1,0 +1,79 @@
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+	background-color: $primary;
+}
+#messagesviewlet .portalMessage,
+#localmessagesviewlet .portalMessage {
+	align-items: center;
+}
+#messagesviewlet,
+#localmessagesviewlet {
+	float: none;
+	padding-top: 0;
+	.portalMessage {
+		display: block;
+		max-width: 1320px;
+		margin: 0 auto;
+		color: white;
+		padding: .5rem .75rem;
+		border-radius: 5px;
+		margin-bottom: .5rem;
+		margin-top: .5rem;
+		a {
+			color: #fff;
+		}
+		p:first-of-type {
+			display: inline;
+			padding-right: 0.7rem;
+		}
+		.close-button {
+			width: 26px;
+			height: 26px;
+			display: block;
+			background: transparent;
+			display: inline-block;
+			white-space: nowrap;
+			top: 0;
+			bottom: inherit;
+			transform: none;
+			margin-top: 0.35rem;
+			&::after {
+				content:""!important;
+				background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+				background-size: 50%;
+			}
+			&:hover,
+			&:focus {
+				&:after {
+					opacity: .7;
+				}
+			}
+		}
+		.messagesviewlet-type {
+			color: #fff;
+			padding: 0;
+			margin: 0;
+			font-weight: bold;
+			background: transparent !important;
+			&::after {
+				content: ":";
+				margin-left: 1px;
+			}
+		}
+	}
+}
+#messagesviewlet {
+	grid-area: messageviewlet;
+}
+#localmessagesviewlet {
+	grid-area: localmessageviewlet;
+}
+.portalMessage.info {
+	background: #27789c;
+}
+.portalMessage.warning {
+	background: #c06d01;
+}
+.portalMessage.error {
+	background: #ae2609;
+}

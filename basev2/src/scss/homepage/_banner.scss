@@ -1,0 +1,68 @@
+.smartweb_herobanner {
+  position: relative;
+  @if $banner-enable-full-width {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bannerSwiper {
+    height: $banner-heigh;
+    
+      .swiper-slide {
+        position: relative;
+
+        .swiper-banner-image {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+
+        .swiper-banner-color {
+          position: absolute;
+          z-index: -2;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+
+        .swiper-banner-content-wrapper {
+          @if $banner-content-is-vertical-center {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .swiper-banner-content {
+            width: $banner-content-width;
+            max-width: $banner-content-max-width;
+            padding: $banner-content-padding;
+            margin: $banner-content-margin;
+            background: $banner-content-background;
+            text-align:$banner-content-text-align;
+            .swiper-banner-title {
+              color: $banner-content-title-color;
+              font-size: $banner-content-title-font-size;
+              text-transform: $banner-content-title-text-transform;
+            }
+            .swiper-banner-description {
+              p {
+                margin: 0;
+                color: $banner-content-description-color;
+                font-size: $banner-content-description-font-size;
+              }
+            }
+          }
+        }
+      }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+  }
+}

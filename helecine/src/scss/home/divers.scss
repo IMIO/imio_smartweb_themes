@@ -88,16 +88,7 @@ a#portal-logo {
         padding-top: 0rem;
     }
 }
-.r-add-contact a:hover, .r-add-event a:hover, .r-add-news a:hover {
-    background: $primary-svg;
 
-}
-.r-add-contact a, .r-add-event a, .r-add-news a {
-    background: #fff;
-    border: 1px solid $primary-svg;
-    color: $primary;
-    transition: 0.3s;
-}
 .r-content>button {
     align-items: center;
     background: $primary-svg;

@@ -1,0 +1,20 @@
+#portal-colophon{
+    li{
+        list-style: none;
+    }
+}
+#portal-footer-wrapper li.facebook,
+#portal-footer-wrapper li.twitter {
+    display: inline-block;
+}
+.colophonWrapper {
+    padding: 0.5rem 1rem 0;
+}
+.colophonWrapper ul {
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+.colophonWrapper li {
+    margin-right: 0;
+}

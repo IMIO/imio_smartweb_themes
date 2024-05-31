@@ -1,0 +1,22 @@
+.sectionfiles {
+    li {
+        list-style: none;
+    }
+    .table_image {
+        background: #F5F5F5;
+        padding: 10px;
+        text-decoration: none;
+        .image {
+            max-width: 150px;
+            aspect-ratio: 16/9;
+        }
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; // Ajoutez cette ligne
+        & > * {
+           gap: 20px;
+        }
+    }
+}

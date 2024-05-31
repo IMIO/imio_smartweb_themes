@@ -280,7 +280,7 @@ footer #container-section-noussuivre{
         text-decoration: none;
         .image{
             width: auto;
-            svg {
+            svg {   
                 height: 25px;
                 fill: #fff;
             }
@@ -295,19 +295,6 @@ footer #container-section-noussuivre{
                 color:#fff;
             }
         }
-    }
-}
-
-.r-add-contact a, .r-add-event a, .r-add-news a {
-    background: $primary-blue;
-    border-radius: 8px;
-    color: #ffffff;
-    padding: 1rem;
-    text-decoration: none;
-    transition: all .5s ease;
-    &:hover {
-        background: #000000;
-        transition: all .5s ease;
     }
 }
 
