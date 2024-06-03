@@ -447,3 +447,81 @@ footer #container-section-noussuivre{
         }
     }
 }
+
+.section-pintimio {
+    .faceted-results{
+        a {
+            transition: .3s;
+        .card-img-top {
+            background-color: #f1f1f1;
+            border-radius: 10px 10px 0 0;
+            background-size: contain;
+            background-repeat: no-repeat; 
+            padding-top: 140%;
+            //background-position-y: 20px;
+            transition: .3s;
+        }
+        .card-body {
+            background:#f1f1f1;
+            border-radius: 0 0 10px 10px !important;
+            transition: .3s;
+            box-shadow: none;
+            .card-title {
+                color:#000000;
+                text-align: center;
+            }
+        }
+        &:hover {
+            transform: translateY(10px);
+            transition: .3s;
+            .card-img-top {
+                border-radius: 30px 30px 0 0;
+                background-size: contain;
+                background-repeat: no-repeat; 
+                padding-top: 140%;
+                //background-position-y: 20px;
+                transition: .3s;
+            }
+            .card-body {
+                border-radius: 0 0 30px 30px !important;
+                transition: .3s;
+                .card-title {
+                    //color:#fff;
+                    text-align: center;
+                }
+            }
+        }
+     }
+     
+    }
+    .outer-wrapper .sectiontext {
+        background: #f1f1f1;
+        padding: 30px 30px 15px 30px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        p a {
+            background: #fff;
+            border-radius: 10px;
+            color: $primary;
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 1rem 1.5rem .9rem;
+            position: relative;
+            text-decoration: none;
+            text-transform: none;
+            transition: all .2s ease;
+            width: -moz-max-content;
+            width: 150px;
+            text-decoration: none !important;
+
+            &:hover{
+                background: $primary-green;
+                color:#fff;
+            }
+        }
+
+        
+    }
+}
