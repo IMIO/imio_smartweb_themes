@@ -1,0 +1,67 @@
+.publications 
+    {
+        h2.section-title {
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+            .swiper-slide {
+        text-align: center;
+        background-color: #fff;
+        padding: 25px;
+        height: 250px;
+        overflow: hidden;
+        a {
+            color: $dark;
+            .swiper_date {
+                padding-bottom: 10px;
+                //background-color: $primary;
+                span {
+                    color: $primary;
+                    font-size: 0.9rem;
+                }
+            }
+            .swiper_title {
+                padding-bottom: 10px;
+                h3  {
+                    color: $dark;
+                    font-size: 1.3rem;
+                    font-family: $font-family-title;
+                }
+            }
+            .swiper_description {
+                p {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+.publications .see_all {
+    display: flex;
+    justify-content: right;
+    margin: 2rem 0 0;
+    a {
+        background: $dark;
+    border: 1px solid $dark;
+    border-radius: 0;
+    color: #fff !important;
+    display: block;
+    font-family: $font-family-title;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s ease;
+    width: -moz-max-content;
+    width: max-content;
+    }
+}
+.publications .see_all a:focus, .publications .see_all a:hover {
+    background: transparent;
+    border: 1px solid $dark;
+    border-radius: 0;
+    color: $dark !important;
+}
