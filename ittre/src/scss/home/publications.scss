@@ -7,7 +7,6 @@
         }
             .swiper-slide {
         text-align: center;
-        overflow: hidden;
         & > a {
             background-color: #fff;
             color: $dark;
@@ -16,6 +15,8 @@
             border-bottom-left-radius: 25px;
             text-decoration: none;
             display: block;
+            transform: translateY(0px);
+            overflow: hidden;
             &:hover,&:focus{
                 transition: .5s;
                 transform: translateY(10px);
