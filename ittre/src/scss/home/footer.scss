@@ -21,7 +21,7 @@
         margin-top:0rem;
         }
     #portal-footer{
-        background:$dark !important;
+        background:$secondary-svg !important;
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff;
@@ -144,6 +144,11 @@ footer{
     }
 
     
+}
+
+#smartweb-footer {
+	position: relative;
+	padding-top: 2.5rem;
 }
 
 

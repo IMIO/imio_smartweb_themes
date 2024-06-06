@@ -5,7 +5,6 @@
         text-transform: initial;
         position: relative;
         width: max-content;
-        font-size: 6rem;
     }
     .row {
         gap:60px 0;
@@ -71,9 +70,6 @@
                 }
                 div:last-child {
                     padding-bottom: .5rem;
-                }
-                &:hover {
-
                 }
             }
         }

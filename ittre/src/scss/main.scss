@@ -32,6 +32,27 @@ body {
     background: #F4F4F4;
 }
 
+
+// home title svg
+
+.section-title {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Calque 1' viewBox='0 0 89.52 86.72'%3E%3Cpath d='M60.67 26.06V0H0v60.67h28.86v26.06h4.27v-55.7h56.4v-4.97H60.67Zm-5 0H28.86v29.61H5V5h50.67v21.06Z' style='fill:%23fff;stroke-width:0'/%3E%3C/svg%3E");
+        z-index: -1;
+        transform: translate(-64%, -41%);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
 //search
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
@@ -72,9 +93,12 @@ h2 {
     font-size: 22px;
 }
 
-.smartweb_herobanner .bannerSwiper {
-	height: 50vw;
-	max-height: 500px;
+.smartweb_herobanner {
+    border-bottom: solid 15px #433F3D;
+    .bannerSwiper {
+        height: 50vw;
+        max-height: 500px;
+    }
 }
 
 
@@ -767,5 +791,5 @@ a:not(.portaltype-imio-smartweb-portalpage.section-home-page) {
 ul#portal-globalnav a {
     color: $dark;
     font-family: $font-family-title;
-    font-size: 18px;
+    font-size: 16px;
 }

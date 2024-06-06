@@ -7,12 +7,19 @@
         }
             .swiper-slide {
         text-align: center;
-        background-color: #fff;
-        padding: 25px;
-        height: 250px;
         overflow: hidden;
-        a {
+        & > a {
+            background-color: #fff;
             color: $dark;
+            padding: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            text-decoration: none;
+            display: block;
+            &:hover,&:focus{
+                transition: .5s;
+                transform: translateY(10px);
+        }
             .swiper_date {
                 padding-bottom: 10px;
                 //background-color: $primary;
@@ -42,9 +49,9 @@
     justify-content: right;
     margin: 2rem 0 0;
     a {
-        background: $dark;
+    background: $secondary-svg;
     border: 1px solid $dark;
-    border-radius: 0;
+    border-radius: 5px;
     color: #fff !important;
     display: block;
     font-family: $font-family-title;
@@ -61,7 +68,7 @@
 }
 .publications .see_all a:focus, .publications .see_all a:hover {
     background: transparent;
-    border: 1px solid $dark;
-    border-radius: 0;
+    border: 1px solid $secondary-svg;
+    border-radius: 5px;
     color: $dark !important;
 }
