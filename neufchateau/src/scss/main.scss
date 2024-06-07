@@ -143,9 +143,9 @@ h2 {
 }
 
 .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder.jpg");
-	background-size: cover;
-	background-position: center;
+	background: url("../../assets/svg/placeholder.jpg") !important;
+	background-size: cover !important;
+	background-position: center !important;
 }
 
 //footer 
@@ -274,9 +274,44 @@ footer #container-section-noussuivre{
     padding: 1rem;
     text-decoration: none;
     transition: all .5s ease;
+    font-size: 14px !important;
+    line-height: 28px !important;
     &:hover {
         background: #000000;
         transition: all .5s ease;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .r-add-contact, .r-add-event {
+        bottom: 0;
+        padding-bottom: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 20px;
+        padding-right: 13px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .r-add-news {
+        bottom: 0;
+        padding-bottom: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .r-add-news {
+        top:auto;
+        padding-bottom: 0px;
     }
 }
 
