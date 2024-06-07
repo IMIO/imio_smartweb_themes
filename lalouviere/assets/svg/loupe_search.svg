@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="44" viewBox="0 0 47 44">
+  <g id="Groupe_724" data-name="Groupe 724" transform="translate(322 -45)">
+    <g id="Groupe_720" data-name="Groupe 720" transform="translate(-2282 -531)">
+      <rect id="Rectangle_168" data-name="Rectangle 168" width="47" height="44" transform="translate(1960 576)" fill="#fff"/>
+      <g id="Groupe_703" data-name="Groupe 703" transform="translate(1971.728 585.413)">
+        <path id="Tracé_830" data-name="Tracé 830" d="M10.509,20.515A10.008,10.008,0,1,0,.5,10.507,10.008,10.008,0,0,0,10.509,20.515Z" transform="translate(-0.5 -0.5)" fill="#fff"/>
+        <line id="Ligne_183" data-name="Ligne 183" x2="7.47" y2="7.832" transform="translate(16.074 17.343)" fill="none"/>
+      </g>
+    </g>
+    <g id="Groupe_721" data-name="Groupe 721" transform="translate(-2279.494 -531.494)">
+      <rect id="Rectangle_168-2" data-name="Rectangle 168" width="44" height="44" transform="translate(1960.494 576.494)" fill="#e32451"/>
+      <g id="Groupe_703-2" data-name="Groupe 703" transform="translate(1973.122 588.466)">
+        <path id="Tracé_830-2" data-name="Tracé 830" d="M8.558,16.614A8.057,8.057,0,1,0,.5,8.556,8.058,8.058,0,0,0,8.558,16.614Z" transform="translate(-0.5 -0.5)" fill="#e32451"/>
+        <line id="Ligne_183-2" data-name="Ligne 183" x2="6.014" y2="6.305" transform="translate(12.941 13.963)" fill="none"/>
+      </g>
+    </g>
+    <g id="Groupe_722" data-name="Groupe 722" transform="translate(-309.5 53.5)">
+      <path id="Tracé_830-3" data-name="Tracé 830" d="M10.509,20.515A10.008,10.008,0,1,0,.5,10.507,10.008,10.008,0,0,0,10.509,20.515Z" fill="#fff"/>
+      <path id="Tracé_834" data-name="Tracé 834" d="M7.47,7.832" transform="translate(16.574 17.843)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+    <path id="Tracé_833" data-name="Tracé 833" d="M7.918,15.334A7.417,7.417,0,1,0,.5,7.916,7.417,7.417,0,0,0,7.918,15.334Z" transform="translate(-306.909 56.091)" fill="#e32451"/>
+    <rect id="Rectangle_174" data-name="Rectangle 174" width="12" height="3" transform="translate(-293.182 69.197) rotate(45)" fill="#fff"/>
+  </g>
+</svg>
