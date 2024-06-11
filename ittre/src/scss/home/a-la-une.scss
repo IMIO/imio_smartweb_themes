@@ -1,3 +1,40 @@
+
+.banner-social-link {
+    position: absolute;
+    z-index: 0;
+    top: 112px;
+    @media screen and (min-width: 989px) {
+        top: 508px;
+    }
+    .row {
+        width: max-content;
+        margin-left: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        gap: 25px;
+        padding: 20px;
+        border-radius: 22px;
+        @media screen and (min-width: 989px) {
+            border-radius: 0;
+            border-top-left-radius: 46px;
+        }
+        li {
+            width: auto;
+            .table_image {  
+                color: #fff!important;
+                svg {
+                    height: 30px;   
+                    fill: #fff!important;
+                }
+                .table_title {
+                    font-size: 0px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
 .a-la-une .swiper-slide a {
 display: grid;
 grid-template-columns: 50% 50%;
