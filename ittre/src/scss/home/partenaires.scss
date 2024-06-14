@@ -113,4 +113,17 @@ div#body-section-nos-partenaires ul li {
 }
 .sortable-section.sectionlinks.partenaires {
     padding: 60px 0 !important;
+    position: relative;
+}
+
+.partenaires:before {
+    background: #dcdcdc;
+    bottom: 0;
+    content: "";
+    left: 50% !important;
+    position: absolute;
+    top: 350px;
+    transform: translateX(-50vw);
+    width: 100vw !important;
+    z-index: -2;
 }

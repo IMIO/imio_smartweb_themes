@@ -4,6 +4,8 @@
             text-align: center;
             padding-bottom: 50px;
             padding-top: 50px;
+            font-family: $font-family-title;
+            font-weight: 600 !important;
         }
             .swiper-slide {
         text-align: center;
@@ -17,6 +19,7 @@
             display: block;
             transform: translateY(0px);
             overflow: hidden;
+            transition: .5s;
             &:hover,&:focus{
                 transition: .5s;
                 transform: translateY(10px);
@@ -35,6 +38,7 @@
                     color: $dark;
                     font-size: 1.3rem;
                     font-family: $font-family-title;
+                    font-weight: 500;
                 }
             }
             .swiper_description {
@@ -72,4 +76,7 @@
     border: 1px solid $secondary-svg;
     border-radius: 5px;
     color: $dark !important;
+}
+div#body-section-publications-officielles {
+    z-index: 0;
 }

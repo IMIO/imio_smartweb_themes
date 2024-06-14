@@ -12,7 +12,7 @@
         background-color: rgba(0, 0, 0, 0.7);
 
         gap: 25px;
-        padding: 20px;
+        padding: 20.5px;
         border-radius: 22px;
         @media screen and (min-width: 989px) {
             border-radius: 0;
@@ -57,4 +57,26 @@ border-radius: 0 0 50px 0;
 }
 .a-la-une .swiper-slide {
 
+}
+@media screen and (max-width: 989px) {
+    .banner-social-link {
+        top: 0;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+        .row {
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .a-la-une .swiper-slide a .swiper_title {
+        padding: 10px 30px 0;
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
+.a-la-une h2.section-title {
+    font-weight: 600 !important;
 }

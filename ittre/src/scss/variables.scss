@@ -4,11 +4,11 @@ $primary-svg: #A92B47;
 $secondary-svg: #433F3D;
 $grey-dark: #DCDCDC;
 $dark: #181818;
+$link: #0000a1;
 
 
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 $font-family-base:'Roboto', sans-serif!default;
@@ -155,7 +155,7 @@ $see-all-radius:5px;
 $see-all-border:solid 1px $secondary-svg;
 $see-all-text-transform:none !default;
 $see-all-font-size:16px !default;
-$see-all-font-weight:700!default;
+$see-all-font-weight:400;
 $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:transparent !default;
 $see-all-hover-color:$secondary-svg !important;
@@ -195,7 +195,7 @@ $quick-access-full-bg-shadow: none !default;
 
 // A la une
 $a-la-une-title-color: $font-title-color !default;
-$a-la-une-title-align: center;
+$a-la-une-title-align: left;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: 40px 0 40px;
 $a-la-une-text-bg: rgb(244, 244, 244) !default;
@@ -264,7 +264,7 @@ $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0rem !default;
 $event-image-border-radius: $global-radius !default;
-$event-item-bg-color:rgb(244, 244, 244) !default;
+$event-item-bg-color: #fff;
 $event-item-bg-radius:none;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: .5rem 1rem !default;
@@ -278,12 +278,12 @@ $event-item-title-margin: 0 !default;
 $event-item-title-padding: 0 1rem !default;
 $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
-$event-item-title-font-size: $h3-font-size !default;
-$event-item-title-font-weight: initial !default;
+$event-item-title-font-size: 18px;
+$event-item-title-font-weight: 600;
 $event-item-description-margin: 0 0 .5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
-$event-item-description-align: left !default;
+$event-item-description-align: center;
 $event-item-description-font-family: $font-family-base !default;
 $event-date-margin: 0 0 .5rem 0 !default;
 $event-date-padding: 0 1rem !default;
