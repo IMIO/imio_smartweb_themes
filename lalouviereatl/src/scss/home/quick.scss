@@ -1,29 +1,4 @@
 
-// quick annim
-
-.hero {
-    width: 480px;
-    aspect-ratio: 1;
-    position: relative;
-
-    .hero-img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transition: all .2s linear;
-    }
-
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-
-
-
 #main-container .quick-access {
     margin: 0;
 	padding: 30px 30px 50px;
@@ -36,87 +11,63 @@
 
 
 .quick-access{
-    width: 850px;
+    width: 63%;
     right:0px;
-    left:33.33%;
-    @media screen and (max-width: 1200px) {
-        width: 66.66%;
-    }
+    // @media screen and (max-width: 1200px) {
+    //     width: 66.66%;
+    // }
     @media screen and (max-width: 992px) {
         width: 100%;
         left: 0px;
     }
-    
-    
-
-    
-    
     .body-section{
-
-        &:after {
-            background: url("../../assets/svg/logo-banner.svg") top center no-repeat;
-            width:357px;
-            height: 278px;
-            border-radius: 0;
-            top: 50px;
-            content: "";
-            right: -100px;
-            position: absolute;
-            z-index: -1;
-            @media screen and (max-width: 1200px) {
-                display: none;
-            }
-        }
-
-
-    
-
         ul {
-            gap:15px;
-                
-
-            
+            gap:2%;
             li{
                 background: $primary;
-                width: 250px;
-                height: 250px;
+                width: 32%;
+                height: 0;
+                padding-bottom: 32%;
+                margin-bottom: 2%;
                 border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 transition: all .3s ease;
-                @media screen and (max-width: 1200px) {
-                width: 200px;
-                height: 200px;
+                position: relative;
+                .table_display {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
                 }
-                
                 &:nth-child(2) {
-                    margin-right: 33.3%;
-                    @media screen and (max-width: 1200px) {
+                    margin-right: 34%;
+                }
+                @media screen and (max-width: 430px) {
+                    width: 46%;
+                    &:nth-child(2) {
                         margin-right: 0%;
                     }
+                    &:nth-child(1) {
+                        margin-right: 50%;
+                    }
                 }
+
                 .table_image{
                     .image.d-block {
                     background: none;
                     border:none;
                     border-radius: 100px;
-                    width: 120px;
-                    height: 120px;
+                    width: 52%;
+                    height: 52%;
                     transition: all .3s ease;
                     position: relative;
                     @media screen and (max-width: 1200px) {
-                    width: 80px;
-                    height: 80px;
                     }
                 }
-                    .table_title{
-                        margin:20px 0px 0px 0px;
-                        span{
-                            line-height: 1;
-                        }
-                    }
                 }
 
                 &:hover,&:focus{
@@ -133,15 +84,15 @@
 
 
     .row{
-        @include media-breakpoint-down(lg){
-            grid-gap: 20px;
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(180px,180px));
-            li{
-                width: auto!important;
-            }
-        }
+        // @include media-breakpoint-down(lg){
+        //     grid-gap: 20px;
+        //     display: grid;
+        //     grid-auto-rows: 1fr;
+        //     grid-template-columns: repeat(auto-fit,minmax(180px,180px));
+        //     li{
+        //         width: auto!important;
+        //     }
+        // }
     }
     .section-title{
         font-weight: 200;
@@ -154,6 +105,7 @@
 
 .sectionlinks.quick-access .body-section li a {
 	display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
@@ -220,4 +172,10 @@
         }
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    .sectionlinks.quick-access .body-section li a .table_title span {
+        font-size: 15px;
+    }
 }

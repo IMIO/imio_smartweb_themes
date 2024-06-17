@@ -34,6 +34,8 @@
     "@popperjs/core": "^2.11.6"
   },
   "dependencies": {
-    "@lottiefiles/dotlottie-web": "^0.22.0"
+    "@lottiefiles/dotlottie-web": "^0.22.0",
+    "@lottiefiles/jlottie": "^1.2.1",
+    "lottie-web": "^5.12.2"
   }
 }
