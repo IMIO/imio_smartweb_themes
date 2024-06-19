@@ -1,7 +1,9 @@
 .sectionnews{
     margin:0 0 100px 0;
     @media screen and (max-width: 992px) {
-        margin: 70px 0;
+        margin: 0;
+        background:#F8F8F8;
+        padding:60px 0;
         }
 
 
@@ -16,6 +18,9 @@
             position: absolute;
             width: 100vw;
             z-index: -2;
+            @media screen and (max-width: 992px) {
+                display:none;
+                }
     }
 
 
@@ -158,7 +163,11 @@
                 position: initial;
                 padding: 0;
                 writing-mode:initial;
+                margin: 0px 0px 20px !important;
                 height: 65px;
+                background: none;
+                text-align: center;
+                font-size: 50px;
                 }
             @media screen and (max-width: 600px) {
                 height: 50px;

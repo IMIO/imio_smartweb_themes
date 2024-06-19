@@ -4,7 +4,7 @@
     &:before {
         width: 100vw;
         height: 635px;
-        background: url("../../assets/svg/vague-right.svg") top right no-repeat;
+        //background: url("../../assets/svg/vague-right.svg") top right no-repeat;
         opacity: 0.3;
         border-radius: 0;
         content: "";
@@ -107,7 +107,7 @@
         position: relative;
         color:$primary;
         margin: 0px auto 40px !important;
-        content: url("../../assets/svg/titre-espace-citoyen.svg");
+        //content: url("../../assets/svg/titre-espace-citoyen.svg");
         width:auto;
         height: 80px;
 

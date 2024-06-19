@@ -1,5 +1,6 @@
 //*// COLORS
 $primary: #000000;
+$primary-gris:#2B2E34;
 $primary-svg: #E32151 !default;
 $primary-light: #FFF0F3 !default;
 $primary-yellow: #F3CF63;
@@ -17,7 +18,7 @@ $primary-darkpurple:#530658;
 
 $font-family-base:'Rubik', sans-serif!default;
 $font-family-title:'Rubik', sans-serif!default;
-$font-title-color: $primary-blue !default;
+$font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
 $font-title-weight: 600;
@@ -43,7 +44,7 @@ $container-max-widths: (
   md: 100%,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1250px
 );
 $global-radius: 0 !default;
 $enable-title-uppercase: false !default;

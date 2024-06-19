@@ -35,12 +35,15 @@
                     height: 120px;
                     transition: all .3s ease;
                     position: relative;
-                    //svg path { fill:red;}
+                    
                 }
                     &:hover,&:focus{
                         .image.d-block {
+                            background: $primary-red !important;    
                         transform: translateY(-10px);
                         transition: all .3s ease;
+                        //svg path { fill:#ffffff;}
+                        svg { fill:#ffffff;}
                     }
                 }
                     .table_title{
@@ -86,8 +89,8 @@
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(180px,180px));
+            grid-auto-rows: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit,minmax(130px,130px));
             li{
                 width: auto!important;
             }
@@ -131,7 +134,7 @@
         position: relative;
         color:$primary;
         margin: 0px auto 20px !important;
-        content: url("../../assets/svg/titre-partenaires.svg");
+        //content: url("../../assets/svg/titre-partenaires.svg");
         width:auto;
         height: 80px;
         @media screen and (max-width: 992px) {
@@ -146,67 +149,5 @@
             }
     }
 }
-}
-}
-
-
-
-
-       
-
-#container-section-partenaires {
-    &:before {
-        width: 100vw;
-        height: 635px;
-        background: url("../../assets/svg/vague-right.svg") top right no-repeat;
-        opacity: 0.3;
-        border-radius: 0;
-        content: "";
-        right:0px;
-        position: absolute;
-        top: -625px;
-        z-index: -1;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    @media screen and (max-width: 600px) {
-        &:before {
-            display:none;
-        }
-        }
-    
-    .body-section{
-        
-        padding: 40px 30px 10px;
-
-        &:after {
-            background: $primary-svg;
-            border-radius:100px;
-            bottom: 0;
-            content: "";
-            left: 50%;
-            position: absolute;
-            top: 0px;
-            transform: translateX(-50%);
-            width: calc(100vw - 100px);
-            z-index: -1;
-            @media screen and (max-width: 575px) {
-                  width: calc(100vw - 40px) !important;
-                  border-radius: 50px !important;
-            }   
-        }
-        &:before {
-            background: $primary;
-            border-radius:0px;
-            bottom: 0;
-            content: "";
-            left: 50%;
-            position: absolute;
-            bottom: 0px;
-            transform: translateX(-50%);
-            width: 100vw;
-            z-index: -1;
-            height: 50%;
-        }
 }
 }

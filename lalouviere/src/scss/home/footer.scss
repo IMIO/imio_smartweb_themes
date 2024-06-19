@@ -21,7 +21,7 @@
         margin-top:0rem;
         }
     #portal-footer{
-        background:$primary!important;
+        background:$primary-gris!important;
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff;
@@ -90,7 +90,7 @@
 }}
 
 #portal-colophon{
-    background: $primary;
+    background: $primary-gris;
     padding: 1rem;
     ul{
         display: flex;
@@ -109,7 +109,7 @@
 }
 
 #portal-footer-wrapper{
-    background:$primary;
+    background:$primary-gris;
     background-size: 100%;
     padding-top: 100px;
     padding:5rem 0 2rem 0 !important;
@@ -117,7 +117,7 @@
 }
 
 .section-home-page #portal-footer-wrapper{
-    background:$primary;
+    background:$primary-gris;
     background-size: 100%;
     padding-top: 100px;
     padding:5rem 0 2rem 0 !important;
