@@ -354,6 +354,14 @@ footer #container-section-noussuivre{
     &:hover {
         background:$primary-green;
         transition: all .25s ease;
+        color:#fff;
+        div {
+            color:#fff !important;
+        }
+        span {
+            color:#fff !important;
+        }
+
     }
 }
 
@@ -411,4 +419,10 @@ footer #container-section-noussuivre{
 
 #portal-column-content .section-contact .contact-type-organization .contact_logo {
     max-width: 200px;
+}
+
+.site-agence-locale-pour-lemploi {
+    #portal-header #portal-header-top #portal-logo {
+        max-width: 80px !important;
+    }
 }
