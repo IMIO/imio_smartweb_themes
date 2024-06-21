@@ -62,12 +62,19 @@
         max-width: 45%;
     }
 }
+
+
 // actu 
 .anim-actu-container {
    .anim-actu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media screen and (max-width: 750px) {
+        min-height: 230px;
+        align-items:baseline;
+    }
     .anim-actu-title {
         position: relative;
         h2 {
@@ -80,6 +87,7 @@
             position: relative;
             width: -moz-max-content;
             width: max-content;
+            top:100px;
             &:after {
                 background: url("../../assets/svg/soulign_h2.svg") top center no-repeat;
                 bottom: 0;
@@ -94,14 +102,21 @@
         }
         #dotlottie-canvas-actu {
             position: absolute;
-            top: -19px;
-            right: -48px;
-            width: 73px;
+            top: 50px;
+            right: -50px;
+            width: 80px;
         }
     }
    } 
    .anim-actu-childs-container {
     position: relative;
+    
+
+    @media screen and (max-width: 750px) {
+        .bubble-svg, .childs-anim-container {
+            display:none;
+        }
+    }
    }
    .childs-bubble {
     &-green {
@@ -130,6 +145,7 @@
 
 
 .anim-bottom-container {
+    z-index: -1;
 
     .anim-bottom {
         width: 100vw;
@@ -137,6 +153,13 @@
         translate: -50%;
         max-width: 1700px;
         position: relative;
+        @media screen and (max-width: 1100px) {
+            .bubble-svg {
+            display:none;
+        }
+    }
+
+        
     }
     .anim-bottom-canvas {
         margin: 0 auto;
@@ -165,6 +188,7 @@
                 max-width: 100%;
             }
         }
+        
     }
     #dotlottie-canvas-bottom {
         // position: absolute;

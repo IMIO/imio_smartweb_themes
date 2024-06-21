@@ -16,7 +16,7 @@
             transform: translateX(-50%);
             width: calc(100vw - 60px);
             max-width: 1500px;
-            z-index: -1;
+            z-index: 0;
             @media screen and (max-width: 1000px) {
                   width: 100% !important;
                   border-radius: 0px !important;

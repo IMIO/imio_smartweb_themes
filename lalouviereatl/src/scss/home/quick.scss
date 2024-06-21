@@ -36,6 +36,9 @@
                 text-align: center;
                 transition: all .3s ease;
                 position: relative;
+                @media screen and (max-width: 430px) {
+                    padding-bottom: 55%;
+              }   
                 .table_display {
                     position: absolute;
                     top: 0;
@@ -120,12 +123,10 @@
 
 
 
-.atl_kesako_texte {
-    .text{
-    max-width: 100% !important;
-    margin:0 auto;
-    color:#fff;
-
+.atl_kesako_titre {
+    .anim-kesako-title {
+    position: relative;
+    display: inline-block;
     h2 {
         font-family: "Open Sans", sans-serif;
         color: #ffffff;
@@ -146,8 +147,22 @@
             position: absolute;
             top: 75px;
             width: 58px;
-        }
+        } }
     }
+    #dotlottie-canvas-actu {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 80px;
+    }
+}
+
+.atl_kesako_texte {
+    .text{
+    max-width: 100% !important;
+    margin:0 auto;
+    color:#fff;
+
 }
 
 }
@@ -171,11 +186,13 @@
             transform: translateY(10px);
         }
     }
+
+   
     
 }
 
 @media screen and (max-width: 500px) {
     .sectionlinks.quick-access .body-section li a .table_title span {
-        font-size: 15px;
+        font-size: 14rpx;
     }
 }
