@@ -69,15 +69,15 @@ $( document ).ready(function() {
         window.innerHeight / 2;
         });
 
-        let canvasSoloChild = document.querySelector('#testcanvas');
+        // let canvasSoloChild = document.querySelector('#testcanvas');
 
-        const soloChild = new DotLottie({
-          autoplay: true,
-          loop: true,
-          renderer: 'svg',
-          canvas: canvasSoloChild,
-          src: "https://lottie.host/4db68bbd-31f6-4cd8-84eb-189de081159a/IGmMCqhzpt.lottie", // or .json file
-        });
+        // const soloChild = new DotLottie({
+        //   autoplay: true,
+        //   loop: true,
+        //   renderer: 'svg',
+        //   canvas: canvasSoloChild,
+        //   src: "https://lottie.host/4db68bbd-31f6-4cd8-84eb-189de081159a/IGmMCqhzpt.lottie", // or .json file
+        // });
 
         //  launch on hover
 
