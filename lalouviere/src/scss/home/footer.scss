@@ -21,7 +21,7 @@
         margin-top:0rem;
         }
     #portal-footer{
-        background:$primary-gris!important;
+        background:$primary!important;
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff;
@@ -90,7 +90,7 @@
 }}
 
 #portal-colophon{
-    background: $primary-gris;
+    background: $primary;
     padding: 1rem;
     ul{
         display: flex;
@@ -109,7 +109,7 @@
 }
 
 #portal-footer-wrapper{
-    background:$primary-gris;
+    background:$primary;
     background-size: 100%;
     padding-top: 100px;
     padding:5rem 0 2rem 0 !important;
@@ -117,7 +117,7 @@
 }
 
 .section-home-page #portal-footer-wrapper{
-    background:$primary-gris;
+    background:$primary;
     background-size: 100%;
     padding-top: 100px;
     padding:5rem 0 2rem 0 !important;
@@ -314,4 +314,44 @@ footer{
 
 #portal-footer-wrapper li.facebook, #portal-footer-wrapper li.twitter {
     display: block !important;
+}
+
+
+.rs-footer {
+    max-width: 240px;
+    left: auto;
+    padding: 0px;
+    width: 100%;
+    .row {
+        li {
+            width:25% !important;
+    .table_display {
+      .table_image {
+        .image {
+          margin : 0 auto;
+          background: $primary-svg;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          transition: all .5s ease;
+          svg {
+            width: 100%;
+            fill:#ffffff;
+            transition: all .5s ease;
+          }
+          &:hover {
+            background:$primary-gris;
+          } 
+        }
+        .table_title {
+          display:none;
+        }
+      }
+    }
+} 
+}
 }

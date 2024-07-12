@@ -952,7 +952,7 @@ footer #container-section-noussuivre{
             color:#ffffff !important;
         }
     }
-
+    
     .sectionfiles:after {
         background-color: $primary-blue;
         border-radius: 8px;
@@ -1073,7 +1073,7 @@ h3 {
 }
 
 .contact_map {
-    z-index: -1;
+    z-index: 0 !important;
 }
 
 .citoyennete {
@@ -1106,11 +1106,12 @@ h3 {
         figure {
             margin:0px;
             max-width: 100%;
+            img {
+                width: 100%;
+               
+            }
             @media screen and (max-width: 700px) {
                 padding:30px;
-                img {
-                   
-                }
                     }
         }
         .text {
@@ -1173,6 +1174,14 @@ h3 {
 
 }
 
+
+	
+iframe.eaglebe {
+    height:400px !important;
+    position:relative;
+    margin:10px 0px 40px 0px;
+}
+
 .r-add-contact a, .r-add-event a, .r-add-news a {
     background: $primary-blue;
     border-radius: 8px;
@@ -1221,3 +1230,27 @@ h3 {
     }
 }
 
+.section-maternelles-et-primaires {
+.block-menu-element .card-body .card-text {
+    max-height: 4rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 13px!important;
+}
+
+.block-menu-element .card-body .card-text:after {
+    background: linear-gradient(275deg, #fff, transparent);
+    content: "";
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    /* top: 2.5rem; */
+    top: auto!important;
+    bottom: 0px!important;
+    width: 50%;
+}
+
+.block-menu-element .card-body .card-text:after {
+    display:none;
+}
+}

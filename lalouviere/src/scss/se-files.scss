@@ -1,10 +1,11 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles {
-    background-color: #ffffff;
-    border-radius: 0px;
+    background-color: $primary-red !important;
+    border-radius: 5px;
     font-weight: bold;
-    margin-top: 1vw;
+    margin-top: 2vw;
     margin-bottom: 1vw;
     padding:0px !important;
+
 
     &:after {display: none!important;}
 
@@ -75,4 +76,9 @@
         }
 
     }
+}
+
+.portaltype-imio-smartweb-procedure .sectionfiles .table_image {
+    color: #fff;
+    text-decoration: none;
 }
