@@ -16,10 +16,11 @@
             transform: translateX(-50%);
             width: calc(100vw - 60px);
             max-width: 1500px;
-            z-index: 0;
+            z-index: -10;
             @media screen and (max-width: 1000px) {
                   width: 100% !important;
                   border-radius: 0px !important;
+                  z-index: 0 !important;
             }   
         }
 
@@ -95,5 +96,10 @@
         }
         .swiper-button-next {
         display: none;
+        }
+
+        .see_all {
+            position: relative !important;
+            z-index: 1 !important;
         }
 }

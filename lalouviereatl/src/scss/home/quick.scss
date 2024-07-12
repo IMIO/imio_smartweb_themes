@@ -179,6 +179,9 @@
     .swiper-slide .swiper-image {
         padding-bottom: 100%;
         border-radius: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #ffffff;
         transition: all .3s ease;
         
         &:hover,&:focus{

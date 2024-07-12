@@ -241,6 +241,10 @@ footer #container-section-noussuivre{
     }
 }
 
+#portal-globalnav {
+    width: 100%;
+    place-content: flex-end;
+}
 
 #portal-globalnav > li a:hover {
 	color: $primary-pink;
