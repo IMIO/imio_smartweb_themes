@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  base-them:
+  base-theme:
     runs-on:
       group: self-hosted
     steps:
@@ -27,16 +27,8 @@ jobs:
       - name: Build theme
         run: |
           pnpm --theme=base build
-      - name: Install unzip
+      - name: Upload theme
         run: |
-          sudo apt-get update && sudo apt-get install -y unzip
-      - name: Unzip theme
-        run: |
-          mkdir -p tmp/theme && unzip base/theme.zip -d tmp/theme
-      - name: Archive theme
-        uses: actions/upload-artifact@v4.3.4
-        with:
-          name: theme
-          path: |
-            tmp/theme
-
+          sudo apt-get update && sudo apt-get install -y python3-pip
+          pip3 install requests && pip install bs4
+          python3 theme_uploader.py ${{ vars.PLONE_URL }} ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }}
