@@ -25,7 +25,52 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 
 
+.section-contact {
+    .contact_logo {
+        width: 100px!important;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.sectionfiles {
+    .display-carre {
+        .image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            aspect-ratio: 1/1;
+            display: block;
+            height: inherit;
+            width: 250px;
+        }
+    }
+    .display-paysage {
+        .image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            aspect-ratio: 16/9;
+            display: block;
+            height: inherit;
+            width: 250px;
+        }
+    }
+    .display-portrait {
+        .image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            aspect-ratio: 9/16;
+            height: 200px;
+            width: inherit;
+        }
+    }
+}
 
+.portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image {
+	gap: 11px;
+}
 h1 {
     font-family: $font-family-base!important;
     font-weight: bold!important;

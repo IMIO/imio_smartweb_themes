@@ -527,8 +527,8 @@ footer #container-section-noussuivre{
     }
     #messagesviewlet .portalMessage.info,
     #localmessagesviewlet .portalMessage.info {
-        background-color: $primary-light;
-        color:#000;
+        background-color: #181a2e;
+        color:#fff;
     }
     
     #messagesviewlet .portalMessage.error,
@@ -545,8 +545,8 @@ footer #container-section-noussuivre{
     
     #messagesviewlet .portalMessage.info .messagesviewlet-type,
     #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
-        background: $primary-light;
-        color:#000;
+        background: #181a2e;
+        color:#fff;
     }
     
     #messagesviewlet .portalMessage.warning .messagesviewlet-type,
