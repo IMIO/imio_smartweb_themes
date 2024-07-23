@@ -1,9 +1,41 @@
-name: Build
+name: Build and upload themes
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
-  base-theme:
+  get-changed-directories:
+    runs-on:
+      group: self-hosted
+    outputs:
+      changed-directories: ${{ steps.set-output.outputs.changed-directories }}
+    steps:
+      - name: Install Git
+        run: sudo apt-get update && sudo apt-get install -y git
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Get changed directories names
+        id: changed-directories
+        uses: tj-actions/changed-files@v44.5.6
+        with:
+          dir_names: 'true'
+          dir_names_exclude_current_dir: 'true'
+          dir_names_max_depth: '1'
+      - name: Set output
+        id: set-output
+        run: echo "changed-directories=${{ steps.changed-directories.outputs.all_changed_files }}" >> "$GITHUB_OUTPUT"
+      - name: Summary
+        run: |
+          echo "Changed directories: ${{ steps.changed-directories.outputs.all_changed_files }}"
+  build-push:
+    environment: build-push
+    needs: get-changed-directories
     runs-on:
       group: self-hosted
     steps:
@@ -21,14 +53,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install dev dependencies
+      - name: Install node dev dependencies
         run: |
           pnpm install
-      - name: Build theme
+      - name: Build themes
         run: |
-          pnpm --theme=base build
-      - name: Upload theme
+          for directory in ${{ needs.get-changed-directories.outputs.changed-directories }}; do
+            echo Building theme for $directory
+            pnpm --theme=$directory build
+          done
+      - name: Install upload dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y python3-pip
-          pip3 install requests && pip install bs4
-          python3 theme_uploader.py ${{ vars.PLONE_URL }} ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }}
+          sudo apt-get update && sudo apt-get install -y python3-pip jq
+          pip3 install requests && pip3 install bs4
+      - name: Upload themes
+        run: |
+          for directory in ${{ needs.get-changed-directories.outputs.changed-directories }}; do
+            python3 theme_uploader.py $(jq -r '.homepage' $directory/package.json) ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }} $directory
+          done

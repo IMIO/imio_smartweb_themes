@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Plone theme uploader
+
+This script is used to upload a theme to a Plone instance.
+
+Usage:
+    python theme_uploader.py INSTANCE_URL USERNAME PASSWORD THEME_LOCATION
+"""
+
 from bs4 import BeautifulSoup
 
 import requests
@@ -7,7 +17,7 @@ import sys
 INSTANCE_URL = sys.argv[1]
 USERNAME = sys.argv[2]
 PASSWORD = sys.argv[3]
-THEME_LOCATION = "base/theme.zip"
+THEME_LOCATION = f"{sys.argv[4]}/theme.zip"
 
 
 def authenticate(
@@ -55,8 +65,11 @@ def upload_theme(
 
 def main():
     session = requests.Session()
+    print("Authenticating to Plone instance...")
     response = authenticate(session, INSTANCE_URL, USERNAME, PASSWORD)
+    print("Getting token...")
     token = get_token(response)
+    print("Uploading theme...")
     response = upload_theme(session, INSTANCE_URL, token, THEME_LOCATION)
     if response.status_code == 200:
         print("Theme uploaded successfully")
