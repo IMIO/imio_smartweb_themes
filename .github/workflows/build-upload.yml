@@ -3,7 +3,12 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+    paths-ignore:
+      - '.github/**'
+      - '[template]/**'
+      - 'base/**'
+      - 'basev2/**'
+      - '/*'
 
 jobs:
   get-changed-directories:
