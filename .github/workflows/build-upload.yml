@@ -42,7 +42,17 @@ jobs:
           echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
       - name: Summary
         run: |
-          echo "Changed directories: ${{ steps.changed-directories.outputs.all_changed_files }}"
+          for dir in ${{ steps.changed-directories.outputs.all_changed_files }}; do
+            vhost=$(jq -r '.homepage' $dir/package.json | cut -c 9-)
+            echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
+          done
+          cat summary.txt
+      - name: Upload summary
+        if: ${{ !env.ACT }} # do not run locally
+        uses: actions/upload-artifact@v4
+        with:
+          name: summary
+          path: summary.txt
   build-push:
     environment: build-push
     needs: get-changed-directories
