@@ -93,20 +93,7 @@ footer .body-section-formulaires ul {
     margin-right: 2.5rem;
     max-width: 100%;
 }
-// footer#portal-footer-wrapper:not(.) #portal-footer .smartweb-footer::after {
-//     content: "";
-//     background: #fff;
-//     left: 0;
-//     bottom: 0;
-//     right: 75%;
-//     top: 0;
-//     position: absolute;
-//     z-index: 0;
-//     border-radius: 0 50% 50% 0;
-// }
-// #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
-//     margin-top: 50%;
-// }
+
 @include media-breakpoint-up(xl) {
     body:not(.is-in-minisite) #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, body:not(.is-in-minisite) #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
         max-width: 100%;
