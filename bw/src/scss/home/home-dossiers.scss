@@ -31,7 +31,7 @@
 
         &:before {
             width: 100%;
-            border-radius: 0px;
+            border-radius: 0;
          }
 
         .swiper {
@@ -55,7 +55,7 @@
         .section-title{
             font-size: 34px!important;
             position: relative;
-            left: 0px;
+            left: 0;
         }
     }
 
@@ -125,7 +125,7 @@
 
     .swiper-button-next, .swiper-button-prev {
         top: auto !important;
-        bottom:0px;
+        bottom:0;
         background-color: #fff;
         width: 45px;
         height: 45px;

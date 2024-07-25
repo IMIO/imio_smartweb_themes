@@ -57,9 +57,9 @@ $header-nav-margin: 0 1rem 0 1rem !default;
 $header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color:#fff;
@@ -157,12 +157,12 @@ $quick-access-height: 130px;
 $quick-access-background: #fff;
 $quick-access-border: none;
 $quick-access-border-radius:100%;
-$quick-access-shadow: 0px 0.4px 2.2px rgba(0, 0, 0, 0.02),
-0px 0.9px 5.3px rgba(0, 0, 0, 0.028),
-0px 1.6px 10px rgba(0, 0, 0, 0.035),
-0px 2.9px 17.9px rgba(0, 0, 0, 0.042),
-0px 5.4px 33.4px rgba(0, 0, 0, 0.05),
-0px 13px 80px rgba(0, 0, 0, 0.07)
+$quick-access-shadow: 0 0.4px 2.2px rgba(0, 0, 0, 0.02),
+0 0.9px 5.3px rgba(0, 0, 0, 0.028),
+0 1.6px 10px rgba(0, 0, 0, 0.035),
+0 2.9px 17.9px rgba(0, 0, 0, 0.042),
+0 5.4px 33.4px rgba(0, 0, 0, 0.05),
+0 13px 80px rgba(0, 0, 0, 0.07)
 ;
 $quick-access-svg-width: 60px;
 $quick-access-svg-color:$secondary;
@@ -251,13 +251,13 @@ $event-category-text-transform: uppercase;
 $event-category-font-size: 14px !default;
 $event-category-font-weight: 900;
 $event-category-radius: $global-radius !default;
-$event-item-title-margin: 0rem;
+$event-item-title-margin: 0;
 $event-item-title-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: 22px;
 $event-item-title-font-weight: bold;
-$event-date-margin: 0rem;
+$event-date-margin: 0;
 $event-date-padding: 0.5rem 2rem 0.5rem 2rem;
 $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
@@ -362,10 +362,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

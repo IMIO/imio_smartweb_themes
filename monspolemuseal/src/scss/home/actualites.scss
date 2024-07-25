@@ -18,7 +18,7 @@
             position: initial;
             padding: 0;
             writing-mode:initial;
-            margin:0px auto 30px;
+            margin:0 auto 30px;
             background: none;
             }
     }
@@ -39,8 +39,8 @@
 
             a .auth_source_container_title {
                 position: absolute;
-                top: 0px;
-                right: 0px;
+                top: 0;
+                right: 0;
                 padding: 10px;
                 border-radius: 0 0 0 20px;
                 background: #000;
@@ -143,13 +143,13 @@
                     width: 100%;
                     text-align: left;
                     position: absolute;
-                    top:0px;
+                    top:0;
                     display: none!important;
 
                     span {
                         display: inline-block;
                         background: $primary-svg;
-                        border-radius: 0px 0px 30px;
+                        border-radius: 0 0 30px;
                     }
                     
                 }

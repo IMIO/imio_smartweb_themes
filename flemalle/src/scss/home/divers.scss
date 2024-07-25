@@ -37,7 +37,7 @@ div#body-section-informations.figure-medium figure {
       align-items: center;
       background: #fff;
       border-radius: 15px;
-      box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+      box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
       display: flex;
       flex-wrap: wrap;
       height: 200px;
@@ -101,7 +101,7 @@ a[aria-expanded*="false"]:after {
   z-index: 1;
   right: 0;
   top: 0;
-  left: 0rem;
+  left: 0;
   transform: rotate(180deg);
 }
 

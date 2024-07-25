@@ -1,7 +1,7 @@
 .espace-citoyen{
     
-    padding-top: 0vw;
-    padding-bottom: 0vw;
+    padding-top: 0;
+    padding-bottom: 0;
     border-radius: 30px;
     margin-bottom: 120px;
     margin-top: 120px;
@@ -22,7 +22,7 @@
             margin: 0 auto;
             /*box-shadow: 0 20px 40px rgba(0, 0, 0,.16);*/
             background: $primary-red;
-            border-radius: 50px 50px 0px;
+            border-radius: 50px 50px 0;
 
             li{
                 padding: 0!important;
@@ -35,7 +35,7 @@
             .table_image{
                 padding: 2rem 1rem;
                 background: $primary-red;
-                border-radius: 50px 50px 0px;
+                border-radius: 50px 50px 0;
                 display: flex;
                 gap: 20px;
                 align-items: center;
@@ -60,7 +60,7 @@
                 &:hover{
                     background: $primary-reddark;
                     transition: all 0.5s ease;
-                    border-radius: 50px 50px 0px;
+                    border-radius: 50px 50px 0;
 
                     .image{
                         svg{

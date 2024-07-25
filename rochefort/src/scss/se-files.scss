@@ -6,11 +6,11 @@
 
     .portaltype-imio-smartweb-page #main-container .sectionfiles{
     background-color: #fff;
-    border-radius: 0px;
+    border-radius: 0;
     font-weight: bold;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    padding:0px !important;
+    padding:0 !important;
 
     &:after {display: none!important;}
 
@@ -19,10 +19,10 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 0vw;
+        margin-bottom: 0;
         width: auto;
         color: #000;
-        padding:0px !important;
+        padding:0 !important;
 
         a {
             text-decoration: none;
@@ -35,7 +35,7 @@
 
     .section-container {
         background-color: #fff;
-        border-radius: 0px;
+        border-radius: 0;
         display: flex;
         @media screen and (min-width:800px) {
             padding: 0 50px;
@@ -68,7 +68,7 @@
                 border: solid 1px #000;
                 text-decoration: none;
                 padding: 20px;
-                border-radius: 0px;
+                border-radius: 0;
 
 
                 span,

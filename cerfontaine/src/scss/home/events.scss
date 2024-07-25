@@ -25,7 +25,7 @@
         text-transform: none;
         position: relative;
         color:$primary;
-        margin: 0px auto 30px;
+        margin: 0 auto 30px;
         width: -moz-max-content;
         width: max-content;
         font-size: 2.5rem;
@@ -33,7 +33,7 @@
 
 
         @media screen and (max-width: 992px) {
-            margin:0px auto 30px;
+            margin:0 auto 30px;
             background: none;
             }
     }
@@ -48,7 +48,7 @@
                     transition: .5s;
                     transform: translateY(10px);
                     background: #eee;
-                    border-radius: 0px 0 50px;
+                    border-radius: 0 0 50px;
             }
 
             & > a{
@@ -63,13 +63,13 @@
                     width: 100%;
                     text-align: left;
                     position: absolute;
-                    top:0px;
+                    top:0;
 
                     span {
                         display: inline-block;
                         background: $primary-svg;
                         color:$primary-green;
-                        border-radius: 0px;
+                        border-radius: 0;
                     }
                     
                 }

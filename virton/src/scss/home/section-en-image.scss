@@ -14,7 +14,7 @@
 
     #body-section-notre-ville {
         overflow: hidden;
-        border-radius: 100px 100px 0px;
+        border-radius: 100px 100px 0;
     }
 
     &:after{
@@ -24,7 +24,7 @@
         height: 179px;
         background: url("../../assets/svg/galerie-after.svg");
         right: -25px;
-        bottom: 0px;
+        bottom: 0;
         width: 179px;
         mix-blend-mode: multiply;
     }
@@ -49,7 +49,7 @@
 
         #body-section-notre-ville {
             overflow: hidden;
-            border-radius: 40px 40px 0px;
+            border-radius: 40px 40px 0;
         }
 
         .section-title{
@@ -64,7 +64,7 @@
 
         #body-section-notre-ville {
             overflow: hidden;
-            border-radius: 40px 40px 0px;
+            border-radius: 40px 40px 0;
         }
 
         &:after{

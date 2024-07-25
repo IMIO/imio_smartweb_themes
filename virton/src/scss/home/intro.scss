@@ -45,10 +45,10 @@
                 float: right !important;
                 max-width: 832px !important;
                 width: 100% !important;
-                margin: 0rem !important;
+                margin: 0 !important;
 
                 img {
-                    border-radius: 100px 100px 0px;
+                    border-radius: 100px 100px 0;
                     width: 100%!important;
                        
                 }
@@ -58,7 +58,7 @@
     }
 
     &:before {
-        background: linear-gradient(to top, #fff 0px,#fff 100px, #CF102D 100px, #CF102D 100%);
+        background: linear-gradient(to top, #fff 0,#fff 100px, #CF102D 100px, #CF102D 100%);
         bottom: 0;
         content: "";
         left: 50%;
@@ -85,7 +85,7 @@
                     text-transform: uppercase;
                     color:#fff;
                     font-weight: 500;
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                 }
 
                 p {
@@ -114,10 +114,10 @@
                     float: right !important;
                     max-width: 832px !important;
                     width: 100% !important;
-                    margin: 0rem !important;
+                    margin: 0 !important;
 
                     img {
-                        border-radius: 70px 70px 0px;
+                        border-radius: 70px 70px 0;
                            
                     }
                 }
@@ -142,7 +142,7 @@
                         text-transform: uppercase;
                         color:#fff;
                         font-weight: 500;
-                        margin-bottom: 0px;
+                        margin-bottom: 0;
                     }
 
                     p {
@@ -202,10 +202,10 @@
                     float: right !important;
                     max-width: 832px !important;
                     width: 100% !important;
-                    margin: 0rem !important;
+                    margin: 0 !important;
                     
                     img {
-                        border-radius: 70px 70px 0px;
+                        border-radius: 70px 70px 0;
                            
                     }
                 }
@@ -231,7 +231,7 @@
                         text-transform: uppercase;
                         color:#fff;
                         font-weight: 500;
-                        margin-bottom: 0px;
+                        margin-bottom: 0;
                     }
 
                     p {
@@ -262,7 +262,7 @@
                         text-transform: uppercase;
                         color:#fff;
                         font-weight: 500;
-                        margin-bottom: 0px;
+                        margin-bottom: 0;
                     }
 
                     p {

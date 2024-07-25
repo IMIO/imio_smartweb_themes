@@ -28,7 +28,7 @@
             padding-right: 0.3rem;
 
             .day {
-                margin-right: 0px;
+                margin-right: 0;
             }
 
             .day::after {
@@ -40,7 +40,7 @@
             padding-right: 0.3rem;
 
             .day {
-                margin-right: 0px;
+                margin-right: 0;
             }
 
             .day::after {
@@ -50,7 +50,7 @@
     }
 
     .table_date .day {
-        margin-right: 0px;
+        margin-right: 0;
 
         &::after {
             content: "/";
@@ -86,7 +86,7 @@
         background-color: #fff;
         height: 470px;
         position: relative;
-        border: 0px solid transparent;
+        border: 0 solid transparent;
         max-width: 416px;
     }
 }
@@ -138,7 +138,7 @@
 
 .sectionevents .table_category {
     color: $primary;
-    padding: 0.5rem 2rem 0rem;
+    padding: 0.5rem 2rem 0;
     font-weight: 600;
 }
 

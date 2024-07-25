@@ -220,7 +220,7 @@ $nav-subtree-title-color : #008FD2;
 }
     // nav-mobile
 .navbar-toggler{
-    border: 0px!important;
+    border: 0!important;
 }
 
 .navbar-toggler:focus{
@@ -471,7 +471,7 @@ $nav-subtree-title-color : #008FD2;
 }
 
 #subsite-navigation > ul li > .has_subtree.dropdown {
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 #subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {

@@ -69,9 +69,9 @@ $header-nav-link-font-family:$font-family-base!default;
 $header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color:#fff;
@@ -148,7 +148,7 @@ $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:$yellow;
 $see-all-color:$primary !default;
 $see-all-radius:50px;
-$see-all-border:solid 0px $primary !default;
+$see-all-border:solid 0 $primary !default;
 $see-all-text-transform:uppercase;
 $see-all-font-size:14px;
 $see-all-font-weight:700;
@@ -156,7 +156,7 @@ $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:#e4b816;
 $see-all-hover-color:$primary;
 $see-all-hover-radius:50px;
-$see-all-hover-border:solid 0px $primary !default;
+$see-all-hover-border:solid 0 $primary !default;
 $see-all-justify-content: center;
 $see-all-underline-color: $primary-svg!default;
 $see-all-underline-width: 0;
@@ -173,7 +173,7 @@ $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 75px;
 $quick-access-height: 75px;
 $quick-access-background:#fff !default;
-$quick-access-border: solid 0px $primary;
+$quick-access-border: solid 0 $primary;
 $quick-access-border-radius:100px !default;
 $quick-access-shadow: none !default;
 $quick-access-svg-width:30px ;
@@ -258,7 +258,7 @@ $event-title-color:#fff;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0rem !default;
+$event-image-margin-bottom: 0 !default;
 $event-image-border-radius: $global-radius !default;
 $event-item-bg-color:#fff;
 $event-item-bg-radius:$global-radius+2 !default;
@@ -379,10 +379,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

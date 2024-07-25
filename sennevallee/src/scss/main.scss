@@ -27,9 +27,9 @@ $enable-roboto-webfont: false;
 
 
 #portal-header #portal-header-top #header-links #search-link a {
-    border: 0px solid #c1c1c1;
+    border: 0 solid #c1c1c1;
     background: $primary-green;
-    margin: 0px 20px !important;
+    margin: 0 20px !important;
 }
 
 h1{
@@ -42,7 +42,7 @@ h1{
 .smartweb_herobanner {
     width: 90vw;
     overflow: hidden;
-    border-radius: 80px 80px 80px 0px;
+    border-radius: 80px 80px 80px 0;
     margin-bottom: 100px;
 }
 
@@ -54,7 +54,7 @@ h1{
     .smartweb_herobanner {
         width: 100vw;
         overflow: hidden;
-        border-radius: 0px;
+        border-radius: 0;
         margin-bottom: 60px;
     }
 
@@ -69,9 +69,9 @@ h1{
     .swiper-banner-content-wrapper {
         top:auto !important;
         transform:none !important;
-        bottom: 0px !important;
+        bottom: 0 !important;
         position: absolute !important;
-        padding: 0px !important;
+        padding: 0 !important;
 
          .swiper-banner-content {
             padding: 40px 50px !important;
@@ -96,7 +96,7 @@ h1{
         @media screen and (max-width:900px) {
             .swiper-banner-content {
                 width: 100% !important;
-                border-radius: 0px !important;
+                border-radius: 0 !important;
                 padding: 20px !important;
 
                 .swiper-banner-title {
@@ -254,7 +254,7 @@ footer #container-section-noussuivre{
 	color: #000;
 	padding: 1rem;
 	text-decoration: none;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .r-filter div[class*="control"] {
@@ -274,12 +274,12 @@ footer #container-section-noussuivre{
 
 .subsite-container {
     background: $primary-light;
-    border-radius: 0px;
+    border-radius: 0;
 
     #subsite-logo {
 	font-size: 18px;
     background: $primary-blue;
-    border-radius: 0px;
+    border-radius: 0;
 
     a {
         .subsite-title{
@@ -352,7 +352,7 @@ footer #container-section-noussuivre{
     #portal-breadcrumbs {
         background: #f5f5f5 !important;
         padding: 5px 15px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         //position: absolute;
         .breadcrumb {
             margin: 0!important;
@@ -420,11 +420,11 @@ footer #container-section-noussuivre{
     transform: translateX(-50%);
     width: 100vw;
     z-index: -1;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .sectiontext mark {
-    margin:10px 0px;
+    margin:10px 0;
 }
 
 

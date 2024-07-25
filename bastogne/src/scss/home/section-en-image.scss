@@ -10,7 +10,7 @@
                 color:$primary !important;
                 text-transform: none;
                 position: relative;
-                margin: 0px 0px 50px 0;
+                margin: 0 0 50px 0;
                 text-align: left;
                 width: 100%;
                 font-size: 2.8rem;
@@ -18,10 +18,10 @@
 
                 &:after {
                     background: url("../../assets/star.svg");
-                    top:0px;
+                    top:0;
                     content: "";
                     height: 2px;
-                    left: 0px;
+                    left: 0;
                     margin-left: -133px;
                     margin-top: -110px;
                     z-index: -1;
@@ -44,7 +44,7 @@
             font-weight: 600;
             text-transform: none;
             position: relative;
-            margin: 0px 0px 20px 0;
+            margin: 0 0 20px 0;
             text-align: center;
             width: 100% !important;
             font-size: 2.8rem;
@@ -52,7 +52,7 @@
     
             &:after {
                 background: url("../../assets/ministar.svg");
-                top:0px;
+                top:0;
                 content: "";
                 height: 2px;
                 left: 50%;
@@ -139,10 +139,10 @@
     content: "";
     position: absolute;
     left: 0;
-    margin-left: 0px;
+    margin-left: 0;
     top: 0;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 0;
     z-index: -1;
 }
 }
@@ -152,20 +152,20 @@
         .section-text{
             figure {
                 max-width:100% !important;
-                margin:-120px 0px 0px !important;
+                margin:-120px 0 0 !important;
                 position:relative;
 
                 img {
-                    border-radius: 20px 20px 20px 0px;
+                    border-radius: 20px 20px 20px 0;
                 }
 
                 &:before {
                     background: url("../../assets/before-img.png");
                     bottom:-288px;
                     content: "";
-                    left: 0px;
-                    margin-left: 0px;
-                    margin-top: 0px;
+                    left: 0;
+                    margin-left: 0;
+                    margin-top: 0;
                     z-index: 3;
                     position: absolute;
                     transition: all .2s ease;
@@ -186,13 +186,13 @@
             figure {
                 width:600px !important;
                 min-width: 600px;
-                margin:-60px 0px 40px -300px !important;
+                margin:-60px 0 40px -300px !important;
                 position:relative;
                 left:50%;
 
                 img {
                     margin:0 auto;
-                    border-radius: 20px 20px 20px 0px;
+                    border-radius: 20px 20px 20px 0;
                 }
 
                 &:before {

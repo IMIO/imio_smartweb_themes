@@ -22,7 +22,7 @@
 
 
 .swiper-wrapper {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 992px) {
   .swiper-wrapper {
@@ -38,7 +38,7 @@
         font-weight: 300;
         text-transform: none;
         position: relative;
-        margin: 0px 0 0 -90px;
+        margin: 0 0 0 -90px;
         width: -moz-max-content;
         width: max-content;
         font-size: 3rem;
@@ -52,7 +52,7 @@
         position: initial;
         padding: 0;
         writing-mode:initial;
-        margin:0px auto 30px;
+        margin:0 auto 30px;
         background: none;
         }
     }
@@ -104,7 +104,7 @@
     left:50%;
     margin-left:36px;
     top: auto !important;
-    bottom: 0px;
+    bottom: 0;
    
   }
 
@@ -116,7 +116,7 @@
     left:50%;
     margin-left:96px;
     top: auto !important;
-    bottom: 0px;
+    bottom: 0;
   }
 
   @media screen and (max-width: 992px) {
@@ -125,10 +125,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
-      left:0px;
+      left:0;
       margin-left:20px;
       top: auto !important;
-      bottom: 0px;;
+      bottom: 0;;
      
     }
 
@@ -137,10 +137,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
-      left:0px;
+      left:0;
       margin-left:80px;
       top: auto !important;
-      bottom: 0px;
+      bottom: 0;
     }
   }
 

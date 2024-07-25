@@ -7,7 +7,7 @@
         position: absolute;
         height: 248px;
         background: url("../../assets/svg/before-agenda.svg");
-        right: 0px;
+        right: 0;
         top: -120px;
         width: 189px;
     }
@@ -18,7 +18,7 @@
         position: absolute;
         height: 351px;
         background: url("../../assets/svg/after-agenda.svg");
-        left: 0px;
+        left: 0;
         bottom: -59px;
         width: 292px;
     }
@@ -87,8 +87,8 @@
                 }
 
                 .swiper_category{
-                    bottom: 0px;
-                    right: 0px;
+                    bottom: 0;
+                    right: 0;
                     width: 100%;
                     margin:-20px 0 0;
                     text-align: right;

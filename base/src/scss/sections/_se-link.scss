@@ -93,7 +93,7 @@
 
     .section_files_link {
         border: solid 1px rgba(255, 255, 255, 0.25);
-        border-radius: 10px 10px 10px 0px;
+        border-radius: 10px 10px 10px 0;
         text-decoration: none;
 
         &:hover,
@@ -120,14 +120,14 @@
         }
 
         .section_files_image {
-            border-radius: 10px 10px 10px 0px;
+            border-radius: 10px 10px 10px 0;
             flex-shrink: 0;
             @include media-breakpoint-up(md) {
                 border: 1px solid #FFF;
             }
 
             img {
-                border-radius: 10px 10px 10px 0px;
+                border-radius: 10px 10px 10px 0;
                 display: none;
                 @include media-breakpoint-up(md) {
                     display: block;

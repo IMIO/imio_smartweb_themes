@@ -8,7 +8,7 @@
         opacity: 0.3;
         border-radius: 0;
         content: "";
-        right:0px;
+        right:0;
         position: absolute;
         top: -625px;
         z-index: -1;
@@ -29,7 +29,7 @@
         content: "";
         left: 50%;
         position: absolute;
-        top: 0px;
+        top: 0;
         transform: translateX(-50%);
         width: 100vw;
         z-index: -1;
@@ -44,8 +44,8 @@
     padding-top: 4vw;
     padding-bottom: 4vw;
     border-radius: 30px;
-    margin-bottom: 0vw;
-    margin-top: 0vw;
+    margin-bottom: 0;
+    margin-top: 0;
     
     .body-section{
         .row{
@@ -103,8 +103,8 @@
 
 
 .espace-citoyen-titre{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     .section-text {
         .text {

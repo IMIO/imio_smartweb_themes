@@ -1,7 +1,7 @@
 .quick-access:after {
     background: url("../../assets/svg/bg1.svg") bottom center #CDD8E7;
 	background-size: cover;
-    bottom: 0px;
+    bottom: 0;
     content: "";
     left: 50%;
     position: absolute;
@@ -22,7 +22,7 @@
 }
 
 .quick-access{
-    padding-top:0px;
+    padding-top:0;
 
     svg{
         max-height: 30px;
@@ -36,7 +36,7 @@
             .table_display {
                 background:#fff !important;
                 height: 100%;
-                border-radius: 0px;
+                border-radius: 0;
                 transition: all .25s ease;
                 
             .table_image{
@@ -83,7 +83,7 @@
         }
 
         li {
-            padding:0px;
+            padding:0;
         }
     }
 

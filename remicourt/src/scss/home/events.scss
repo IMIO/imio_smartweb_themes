@@ -13,7 +13,7 @@
 
     &:before {
         background: url("../../assets/svg/bg-couleur.svg") right center no-repeat #F4F4F4;
-        border-radius: 0px;
+        border-radius: 0;
         bottom: 0;
         content: "";
         left: 0;
@@ -39,7 +39,7 @@
         font-weight: 600;
         text-transform: none;
         position: relative;
-        margin: 0px 0 0 -90px;
+        margin: 0 0 0 -90px;
         width: -moz-max-content;
         width: max-content;
         font-size: 3.7rem;
@@ -54,7 +54,7 @@
             position: initial;
             padding: 0;
             writing-mode:initial;
-            margin:0px auto 30px;
+            margin:0 auto 30px;
             background: none;
             }
     }

@@ -71,9 +71,9 @@ $header-nav-link-font-family:$font-family-title;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color:$brun;
@@ -380,10 +380,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

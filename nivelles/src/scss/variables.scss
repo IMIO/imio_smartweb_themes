@@ -3,7 +3,7 @@
 $primary: #1B7776;
 $primary-svg: #414E54;
 $primary-light:#12A199;
-$breadcrumb-margin-bottom: 0px;
+$breadcrumb-margin-bottom: 0;
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
@@ -71,9 +71,9 @@ $header-nav-link-font-family:$font-family-base;
 $header-links-color:#fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #030720 !default;
+$header-links-account-border:solid 0 #030720 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #030720 !default;
+$header-links-account-hover-border:solid 0 #030720 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#ffffffba;
 $header-search-icon-color:#fff;
@@ -381,10 +381,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #030720;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #030720;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

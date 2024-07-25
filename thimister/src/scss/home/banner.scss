@@ -49,7 +49,7 @@ body:not(.portaltype-imio-smartweb-portalpage) #portal-header {
 }
 
 body.portaltype-imio-smartweb-portalpage #portal-header {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 @include media-breakpoint-down(md) {
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
@@ -117,7 +117,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-conten
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::after {
         background: #ffffff14;
         border-radius: 50%;
-        bottom: 0px;
+        bottom: 0;
         content: "";
         height: 420px;
         left: 20px;
@@ -130,7 +130,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-conten
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::before {
         background: #ffffff10;
         border-radius: 50%;
-        bottom: 0px;
+        bottom: 0;
         content: "";
         height: 430px;
         right: -180px;

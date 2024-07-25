@@ -73,7 +73,7 @@
 }
 
 .sectionlinks{
-    padding-top:0px;
+    padding-top:0;
 
     svg{
         max-height: 30px;
@@ -87,7 +87,7 @@
             .table_display {
                 background:$primary-svg;
                 height: 100%;
-                border-radius: 0px;
+                border-radius: 0;
                 transition: all .25s ease;
                 
             .table_image{
@@ -134,7 +134,7 @@
         }
 
         li {
-            padding:0px;
+            padding:0;
         }
     }
 
@@ -211,7 +211,7 @@
     height: auto !important;
     width: 45px !important;
     border:none !important;
-    padding:0px !important;
+    padding:0 !important;
 
 }
 
@@ -228,7 +228,7 @@
 }
 
 .portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span {
-    gap: 0px !important;
+    gap: 0 !important;
     display: block!important;
 }
 

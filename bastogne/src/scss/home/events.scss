@@ -1,7 +1,7 @@
 .sectionevents{
 
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
         margin-top: 1rem;
         margin-bottom: 5rem;
         position: relative;
@@ -39,7 +39,7 @@
 
             &:before {
                 width: 100%;
-                border-radius: 0px;
+                border-radius: 0;
              }
 
             .swiper {
@@ -56,7 +56,7 @@
             color:$primary !important;
             text-transform: none;
             position: relative;
-            margin: 0px 0px 50px 0;
+            margin: 0 0 50px 0;
             text-align: right;
             width: 100%;
             font-size: 2.8rem;
@@ -64,10 +64,10 @@
     
             &:after {
                 background: url("../../assets/star.svg");
-                top:0px;
+                top:0;
                 content: "";
                 height: 2px;
-                right: 0px;
+                right: 0;
                 margin-right: -133px;
                 margin-top: -110px;
                 z-index: -1;
@@ -82,7 +82,7 @@
                 font-weight: 600;
                 text-transform: none;
                 position: relative;
-                margin: 0px 0px 50px 0;
+                margin: 0 0 50px 0;
                 text-align: center;
                 width: 100% !important;
                 font-size: 2.8rem;
@@ -90,7 +90,7 @@
         
                 &:after {
                     background: url("../../assets/ministar.svg");
-                    top:0px;
+                    top:0;
                     content: "";
                     height: 2px;
                     left: 50%;
@@ -157,8 +157,8 @@
                     content: "";
                     background: url("../../assets/btn.svg");
                     position: absolute;
-                    left: 0px;
-                    margin-left:0px;
+                    left: 0;
+                    margin-left:0;
                     bottom:-40px;
                     width: 140px;
                     height:20px;
@@ -174,7 +174,7 @@
             }
 
             .swiper-image{
-                border-radius: 20px 20px 20px 0px;
+                border-radius: 20px 20px 20px 0;
             }
 
             .swiper_title{
@@ -212,7 +212,7 @@
         }
         @media screen and (max-width:1400px) {
             .swiper-slide{
-                padding-left:0px !important;
+                padding-left:0 !important;
 
                 .swiper_title {
                     font-size: 15px;
@@ -230,7 +230,7 @@
     
         .swiper-button-next, .swiper-button-prev {
             top: auto !important;
-            bottom:0px;
+            bottom:0;
             background-color: #002749;
             width: 45px;
             height: 45px;
@@ -247,7 +247,7 @@
 
         @media screen and (max-width:1400px) {
             .swiper-button-prev{
-                left: 0px;
+                left: 0;
             }
         
             .swiper-button-next{
@@ -334,12 +334,12 @@
         }
 
         .swiper {
-            padding-bottom: 0px;
+            padding-bottom: 0;
         }
 
         .swiper-slide{
             background: $primary-blue;
-            padding:0px 0px 100px;
+            padding:0 0 100px;
             border-radius: 20px;
 
             .swiper_category {

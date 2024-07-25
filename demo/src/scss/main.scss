@@ -41,8 +41,8 @@ h1{
         width: 8px;
         height: 60px;
         margin:-6px 0 0 -30px;
-        top: 0px;
-        bottom: 0px;
+        top: 0;
+        bottom: 0;
         position: absolute;
         border-radius: 20px;
 
@@ -298,7 +298,7 @@ footer #container-section-noussuivre{
     #portal-header {
         #banner {
             position: relative;
-            border-radius: 0px !important;
+            border-radius: 0 !important;
             z-index: -1;
         }
     }
@@ -412,7 +412,7 @@ footer #container-section-noussuivre{
 
 
 .sectiontext mark {
-    margin:10px 0px;
+    margin:10px 0;
 }
 
 
@@ -468,8 +468,8 @@ footer #container-section-noussuivre{
             width: 8px;
             height: 60px;
             margin:-6px 0 0 -30px;
-            top: 0px;
-            bottom: 0px;
+            top: 0;
+            bottom: 0;
             position: absolute;
             border-radius: 20px;
 

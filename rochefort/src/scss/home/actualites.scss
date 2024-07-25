@@ -62,7 +62,7 @@
         background-color: #fff;
         height: 470px;
         position: relative;
-        border: 0px solid transparent;
+        border: 0 solid transparent;
         max-width: 416px;
     }
 }
@@ -118,7 +118,7 @@
 
 .sectionnews .table_category {
     color: $primary;
-    padding: 0.5rem 2rem 0rem;
+    padding: 0.5rem 2rem 0;
     font-weight: 600;
 }
 

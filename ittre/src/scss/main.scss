@@ -60,14 +60,14 @@ html body {
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: $primary-svg;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
     #portal-header #portal-header-top #header-links #search-link a {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -153,7 +153,7 @@ h2 {
     position: absolute;
     top: auto;
     transform: none;
-    bottom: 0px !important;
+    bottom: 0 !important;
     max-width: 100%;
     width: 100%;
 }
@@ -161,8 +161,8 @@ h2 {
 .bannerSwiper .section-slide{
     .swiper-banner-content {
         position: absolute;
-        right:0px;
-        bottom:0px;
+        right:0;
+        bottom:0;
         border-radius: 80px 0 0;
         font-family: $font-family-title;
         
@@ -349,12 +349,12 @@ footer #container-section-noussuivre{
 
 .subsite-container {
     background: #F4F4F4;
-    border-radius: 0 0px 0 50px 0;
+    border-radius: 0 0 0 50px 0;
 
     #subsite-logo {
 	font-size: 18px;
     background: $primary-svg;
-    border-radius: 0px 0 50px;
+    border-radius: 0 0 50px;
     }
 }
 
@@ -500,7 +500,7 @@ footer #container-section-noussuivre{
       }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
       }
       
     }
@@ -528,7 +528,7 @@ footer #container-section-noussuivre{
             &:after{
                 left:0%;
                 top: 70px;
-                bottom: 0px;
+                bottom: 0;
                 position: absolute;
                 content: "";
                 display: block;
@@ -671,13 +671,13 @@ footer #container-section-noussuivre{
     }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
-        margin-top: 0rem;
+        margin-top: 0;
     }
 
 
     .sectiontext mark, .r-content-text mark {
         background-color: $primary-svg;
-        border: 0px;
+        border: 0;
         border-radius: 8px;
         color: #fff;
         display: inline-block;
@@ -691,7 +691,7 @@ footer #container-section-noussuivre{
 
     .portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image {
         background-color: $primary-svg;
-        border: 0px;
+        border: 0;
         border-radius: 8px;
         color: #fff;
         font-weight: 500;
@@ -762,7 +762,7 @@ h3 {
         }
 
         #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-contact  {
-            padding:0px !important;
+            padding:0 !important;
         }
         }
 
@@ -776,7 +776,7 @@ h3 {
 
 //navbar
 .navbar-toggler {
-    padding: 0px !important;
+    padding: 0 !important;
     background: #fff !important;
     height: 50px !important;
     width: 50px !important;
@@ -791,7 +791,7 @@ h3 {
 }
 
 .navbar .container {
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
@@ -865,7 +865,7 @@ ul#portal-globalnav a {
 }
 @media screen and (max-width: 575px) {
     .smartweb_herobanner {
-        border-radius: 0px 0 0;
+        border-radius: 0 0 0;
     }
 }
 

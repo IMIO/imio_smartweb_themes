@@ -111,7 +111,7 @@
         a{
             text-decoration: none;
             border-radius: 15px;
-            border-bottom-left-radius: 0px;
+            border-bottom-left-radius: 0;
         }
 
         & > a{
@@ -123,7 +123,7 @@
         }
 
         .swiper-image{
-            border-radius: 15px 15px 15px 0px;
+            border-radius: 15px 15px 15px 0;
             margin-bottom: 0.7rem;
             grid-row: 1;
             grid-column: 1;
@@ -160,7 +160,7 @@
             justify-content: center;
             flex-wrap: wrap;
             flex-direction: column;
-            border-radius: 10px 10px 10px 0px;
+            border-radius: 10px 10px 10px 0;
 
             .start_date{
                 text-align: center;
@@ -207,7 +207,7 @@
             border-radius: 15px;
             border: solid 1px #fff;
             background: #fff;
-            border-bottom-left-radius: 0px;
+            border-bottom-left-radius: 0;
             color: #000;
 
             &:after{

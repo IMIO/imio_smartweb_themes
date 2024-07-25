@@ -41,7 +41,7 @@ a#portal-logo {
 }
 
 .sectionlinks.quick-access.partenaires .body-section li a .table_title {
-    margin: 0rem 0 0;
+    margin: 0 0 0;
 }
 
 .sectionlinks.quick-access.partenaires .body-section li a .image.d-block {
@@ -56,7 +56,7 @@ a#portal-logo {
 
 .sectionlinks.quick-access.partenaires .body-section li a .image.d-block {
     background: transparent;
-    border: 0px solid #f5cb5c;
+    border: 0 solid #f5cb5c;
 }
 
 .quick-access.partenaires .table_image:focus .image.d-block, .quick-access.partenaires .table_image:hover .image.d-block {
@@ -98,12 +98,12 @@ a#portal-logo {
     }
 
     .quick-access {
-        padding-bottom: 0rem;
-        padding-top: 0rem;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .sectionnews {
-        padding-top: 0rem;
+        padding-top: 0;
     }
 }
 
@@ -148,7 +148,7 @@ nav.navbar button.navbar-toggler {
 
 @include media-breakpoint-down(md) {
     #portal-header-top a#portal-logo {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 

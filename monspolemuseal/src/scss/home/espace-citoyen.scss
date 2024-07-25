@@ -1,12 +1,12 @@
 #container-section-liens-utiles {
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .liens-utiles{
     background: $primary-color;
     border-radius: 60px;
     margin-bottom: 3vw;
-    margin-top: 0vw;
+    margin-top: 0;
     z-index: 0;
 
     .section-title{
@@ -48,7 +48,7 @@
                 background: $primary-color;
                 border-radius: 60px;
                 display: flex;
-                gap: 0px;
+                gap: 0;
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;

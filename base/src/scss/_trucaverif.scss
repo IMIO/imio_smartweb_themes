@@ -16,14 +16,14 @@
 }
 // Pour custom l'overlay vidéo
 .section-home-page-bla .plone-modal-header {
-    padding: 0px 10px;
-    border-bottom: 0px solid #e5e5e5;
+    padding: 0 10px;
+    border-bottom: 0 solid #e5e5e5;
     position: relative;
     z-index: 3;
 }
 
 .section-home-page-bla .plone-modal-footer {
-    border-top: 0px solid #e5e5e5;
+    border-top: 0 solid #e5e5e5;
     padding: 0;
 }
 
@@ -296,11 +296,11 @@ textarea {
 }
 
 .faceted-block-view-with-images .block-menu-element a .card-body {
-    border-radius: 0px 0px 15px 0;
+    border-radius: 0 0 15px 0;
 }
 
 .userrole-anonymous .pat-sortable .sortable-section {
-    border: 0px solid transparent !important;
+    border: 0 solid transparent !important;
 }
 
 .faceted-form {
@@ -422,7 +422,7 @@ div#viewlet-below-content-body .procedure {
 }
 
 body.template-block_view_with_images .block-menu-element a .card-body {
-    border-radius: 0px 0px 15px 0;
+    border-radius: 0 0 15px 0;
 }
 
 .block-menu-element a .card-body,
@@ -482,7 +482,7 @@ div#faceted-results {
 
 /* https://bla.preprod.imio.be/ma-commune/services-communaux/citoyennete/demarches/carte-d-identite-electronique-12-ans#section-prix-et-delai-de-livraison */
 .text table {
-    border: 0px;
+    border: 0;
 }
 
 .text table tr:nth-child(even) {
@@ -678,7 +678,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     position: absolute;
     width: 100vw;
     top: 0;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50vw);
     z-index: -1;
@@ -740,7 +740,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 }
 
 #portal-footer-wrapper .smartweb-footer #body-section-liens-utiles a .image {
-    width: 0rem !important;
+    width: 0 !important;
 }
 
 #portal-footer-wrapper .smartweb-footer .sectionlinks .section-container {
@@ -826,7 +826,7 @@ div#container-section-temps-dattente-aux-guichets {
 /* retour sur mobile */
 a.prev-nav:before {
     margin-right: 0.5rem;
-    top: 0px;
+    top: 0;
     position: relative;
     content: "〈";
     font-size: 0.9rem;

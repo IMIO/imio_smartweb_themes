@@ -33,14 +33,14 @@ body {
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: $primary-svg;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
     #portal-header #portal-header-top #header-links #search-link a {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -259,7 +259,7 @@ footer #container-section-noussuivre{
 .subsite-container #subsite-logo {
 	font-size: 18px;
     background: $primary-svg;
-    border-radius: 8px 9px 0px 0px;
+    border-radius: 8px 9px 0 0;
 }
 
 .sectiontext .section-text .body-section a {
@@ -424,7 +424,7 @@ footer #container-section-noussuivre{
       }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
       }
       
     }
@@ -439,7 +439,7 @@ footer #container-section-noussuivre{
 
         .image.d-block.w-100 {
             aspect-ratio: auto !important;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
 
         .section-title{
@@ -455,7 +455,7 @@ footer #container-section-noussuivre{
             &:after{
                 left:0%;
                 top: 70px;
-                bottom: 0px;
+                bottom: 0;
                 position: absolute;
                 background: url("../../assets/svg/svg-titre.svg");
                 content: "";
@@ -557,7 +557,7 @@ footer #container-section-noussuivre{
 
     body.template-block_view_with_images .block-menu-element a .card-body {
         background: $primary-svg;
-        border-radius: 0px 0px 8px 8px !important;
+        border-radius: 0 0 8px 8px !important;
         box-shadow: 0 1px 4px rgba(0,0,0,0);
         height: 90px;
         color: #fff;
@@ -629,7 +629,7 @@ footer #container-section-noussuivre{
     }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
-        margin-top: 0rem;
+        margin-top: 0;
     }
 
     article {
@@ -638,7 +638,7 @@ footer #container-section-noussuivre{
 
     .sectiontext p mark, p mark {
         background-color: #275e71;
-        border: 0px;
+        border: 0;
         border-radius: 8px;
         color: #fff;
         display: inline-block;

@@ -23,7 +23,7 @@
 
 
 .swiper-wrapper {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 992px) {
   .swiper-wrapper {
@@ -46,7 +46,7 @@
         position: initial;
         padding: 0;
         writing-mode:initial;
-        margin:0px auto 30px;
+        margin:0 auto 30px;
         background: none;
         }
     }

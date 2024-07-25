@@ -75,8 +75,8 @@
 
         >label {
             position: absolute;
-            right: 0em;
-            top: 0em;
+            right: 0;
+            top: 0;
             height: 3em;
             width: 4em;
             text-align: center;
@@ -171,7 +171,7 @@ header#content-header {
         div.has_subtree.dropdown>span {
             display: block;
             position: relative;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
 
         .dropdown {
@@ -195,8 +195,8 @@ header#content-header {
 
         &.has_subtree .has_subtree ul {
             z-index: 0;
-            left: 0em;
-            top: 0px;
+            left: 0;
+            top: 0;
         }
 
         & .dropdown a {
@@ -266,8 +266,8 @@ header#content-header {
 
         label {
             position: absolute;
-            right: 0em;
-            top: 0em;
+            right: 0;
+            top: 0;
             height: 3em;
             width: 4em;
             text-align: center;
@@ -404,11 +404,11 @@ header#content-header {
             top: 0;
             width: 100vw !important;
             box-shadow:
-                0 0px 6.5px rgba(0, 0, 0, 0.047),
-                0 0px 16.9px rgba(0, 0, 0, 0.067),
-                0 0px 33.8px rgba(0, 0, 0, 0.083),
-                0 0px 64.5px rgba(0, 0, 0, 0.103),
-                0 0px 139px rgba(0, 0, 0, 0.15);
+                0 0 6.5px rgba(0, 0, 0, 0.047),
+                0 0 16.9px rgba(0, 0, 0, 0.067),
+                0 0 33.8px rgba(0, 0, 0, 0.083),
+                0 0 64.5px rgba(0, 0, 0, 0.103),
+                0 0 139px rgba(0, 0, 0, 0.15);
         }
 
         #portal-globalnav>li>.nav-link {
@@ -457,11 +457,11 @@ header#content-header {
         .has_subtree.dropdown {
             width: 100vw !important;
             box-shadow:
-                0 0px 6.5px rgba(0, 0, 0, 0.047),
-                0 0px 16.9px rgba(0, 0, 0, 0.067),
-                0 0px 33.8px rgba(0, 0, 0, 0.083),
-                0 0px 64.5px rgba(0, 0, 0, 0.103),
-                0 0px 139px rgba(0, 0, 0, 0.15);
+                0 0 6.5px rgba(0, 0, 0, 0.047),
+                0 0 16.9px rgba(0, 0, 0, 0.067),
+                0 0 33.8px rgba(0, 0, 0, 0.083),
+                0 0 64.5px rgba(0, 0, 0, 0.103),
+                0 0 139px rgba(0, 0, 0, 0.15);
         }
 
         #portal-globalnav>li>.nav-link {

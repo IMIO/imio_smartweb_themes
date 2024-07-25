@@ -12,13 +12,13 @@
         li {
             flex-direction: row;
             list-style-type: none;
-            padding-left:0px;
+            padding-left:0;
         }
     }
 
     text-align: left!important;
     @media screen and (max-width: 992px) {
-        margin-top:0rem;
+        margin-top:0;
         }
 
     #portal-footer{
@@ -35,11 +35,11 @@
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
-                margin-top: 0rem;
+                margin-top: 0;
 
                 &.section-title{
                     margin-bottom: 0.5rem;
-                    margin-top: 0rem;
+                    margin-top: 0;
                 }
             }
 
@@ -60,7 +60,7 @@
 }
 
 .smartweb-footer .body-section figure img {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 

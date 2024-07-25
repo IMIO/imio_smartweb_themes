@@ -50,7 +50,7 @@ $h6-font-size: $font-size-base !default;
 
 $global-radius: 10px;
 $enable-title-uppercase: true;
-$home-section-title-margin:2rem 0rem 8rem 0rem;
+$home-section-title-margin:2rem 0 8rem 0;
 $home-section-title-padding:0 !default;
 $home-section-title-align: center;
 $section-padding-top:0 !default;
@@ -174,7 +174,7 @@ $quick-access-width: 80px;
 $quick-access-height: 80px;
 $quick-access-background: transparent;
 $quick-access-border: none;
-$quick-access-border-radius: 0px;
+$quick-access-border-radius: 0;
 $quick-access-shadow: none;
 $quick-access-svg-width:60px;
 $quick-access-svg-color:$primary;
@@ -226,7 +226,7 @@ $actu-category-bg-color: $primary;
 $actu-category-text-transform: uppercase;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: normal;
-$actu-category-radius: 0px 0px 10px 0px;
+$actu-category-radius: 0 0 10px 0;
 $actu-item-title-margin: 1rem 0 !default;
 $actu-item-title-padding: 1rem;
 $actu-item-title-color: #000;
@@ -248,7 +248,7 @@ $event-title-color:$primary;
 $event-title-align:$home-section-title-align;
 $event-title-margin: $home-section-title-margin;
 $event-title-padding: $home-section-title-padding;
-$event-image-margin-bottom: 0rem;
+$event-image-margin-bottom: 0;
 $event-image-border-radius: 10px 10px 0 0;
 $event-item-bg-color:$secondary;
 $event-item-bg-radius: $global-radius;
@@ -259,7 +259,7 @@ $event-category-bg-color: $primary;
 $event-category-text-transform: uppercase;
 $event-category-font-size: 14px;
 $event-category-font-weight: normal;
-$event-category-radius: 0px 0px 10px 0px;
+$event-category-radius: 0 0 10px 0;
 $event-item-title-margin: 1rem 0 !default;
 $event-item-title-padding: 0 1rem !default;
 $event-item-title-color: #000;
@@ -357,10 +357,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

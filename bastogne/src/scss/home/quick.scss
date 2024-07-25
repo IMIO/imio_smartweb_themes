@@ -11,7 +11,7 @@
         font-weight: 600;
         text-transform: none;
         position: relative;
-        margin: 0px 0px 50px 0;
+        margin: 0 0 50px 0;
         text-align: center;
         width: 100% !important;
         font-size: 2.8rem;
@@ -19,7 +19,7 @@
 
         &:after {
             background: url("../../assets/star.svg");
-            top:0px;
+            top:0;
             content: "";
             height: 2px;
             left: 50%;
@@ -39,7 +39,7 @@
             font-weight: 600;
             text-transform: none;
             position: relative;
-            margin: 0px 0px 50px 0;
+            margin: 0 0 50px 0;
             text-align: center;
             width: 100% !important;
             font-size: 2.8rem;
@@ -47,7 +47,7 @@
     
             &:after {
                 background: url("../../assets/ministar.svg");
-                top:0px;
+                top:0;
                 content: "";
                 height: 2px;
                 left: 50%;
@@ -181,7 +181,7 @@
         &:after{
             left:0%;
             top: 70px;
-            bottom: 0px;
+            bottom: 0;
             position: absolute;
             background: url("../../assets/svg/svg-titre.svg");
             content: "";
@@ -325,7 +325,7 @@
 
 .quick-partenaires{
     display: none!important;
-    padding-top:0px;
+    padding-top:0;
 
     .section-title{
         text-align: center;
@@ -339,7 +339,7 @@
         &:after{
             left:0%;
             top: 70px;
-            bottom: 0px;
+            bottom: 0;
             position: absolute;
             background: url("../../assets/svg/svg-titre.svg");
             content: "";
@@ -354,7 +354,7 @@
         text-align: center;
 
         li{
-            padding: 20px 10px 0px;
+            padding: 20px 10px 0;
 
             .table_image{
                 text-decoration: none;

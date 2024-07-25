@@ -2,7 +2,7 @@
     background: linear-gradient(0deg,#fff 0,#fff 21px,#F3F3F3 21px, #F3F3F3 100%);
     margin-top: 3vw;
     padding-top:4rem;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     position: relative;
     z-index: 1;
 
@@ -121,7 +121,7 @@
     }
 
     .swiper-button-next{
-        right:0px;
+        right:0;
         left:auto;
     }
 

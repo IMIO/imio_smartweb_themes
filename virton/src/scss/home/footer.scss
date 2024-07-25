@@ -18,7 +18,7 @@
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
-                margin-top: 0rem;
+                margin-top: 0;
 
                 &.section-title{
                     margin-bottom: 1.5rem;
@@ -28,7 +28,7 @@
 
             .sectiontext{
                 figure{
-                    margin-top:0px;
+                    margin-top:0;
 
                     img{
                         max-width: 100%;
@@ -79,7 +79,7 @@
 }
 
 .smartweb-footer .body-section figure img {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 
@@ -136,7 +136,7 @@
     position: absolute;
     height: 166px;
     background: url("../../assets/svg/footer-before.svg");
-    left: 0px;
+    left: 0;
     top: -45px;
     width: 121px;
 }

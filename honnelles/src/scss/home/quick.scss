@@ -21,8 +21,8 @@
             width: 8px;
             height: 60px;
             margin:-6px 0 0 -30px;
-            top: 0px;
-            bottom: 0px;
+            top: 0;
+            bottom: 0;
             position: absolute;
             border-radius: 20px;
         }
@@ -45,7 +45,7 @@
                 }
 
                 .table_title{
-                    margin-top:0px;
+                    margin-top:0;
 
                     span{
                         color:#000;

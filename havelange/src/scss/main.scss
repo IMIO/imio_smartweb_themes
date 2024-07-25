@@ -58,7 +58,7 @@ $enable-roboto-webfont: false;
                     display: block;
                     height: calc(100% - 3rem);
                     top: 1rem;
-                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
                     background: #fff;
                 }
             }
@@ -122,7 +122,7 @@ footer{
     a{
         background: $primary;
         padding: 0.5rem 1rem;
-        border-radius:0px;
+        border-radius:0;
         color: #fff!important;
         text-decoration: none;
         border: solid 1px $primary;

@@ -13,7 +13,7 @@
     background:$primary!important;
     
     @media screen and (max-width: 992px) {
-        margin-top:0rem;
+        margin-top:0;
         }
 
     #portal-footer{
@@ -29,11 +29,11 @@
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
-                margin-top: 0rem;
+                margin-top: 0;
 
                 &.section-title{
                     margin-bottom: 0.5rem;
-                    margin-top: 0rem;
+                    margin-top: 0;
                 }
             }
 
@@ -54,7 +54,7 @@
 }
 
 .smartweb-footer .body-section figure img {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 
@@ -72,7 +72,7 @@
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 992px) {
     #portal-footer-wrapper{
-        padding:0rem 1rem !important;
+        padding:0 1rem !important;
     }
     
 }
@@ -343,7 +343,7 @@ footer{
 .rs-footer {
     max-width: 240px;
     left: auto;
-    padding: 0px;
+    padding: 0;
     width: 100%;
 
     .row {

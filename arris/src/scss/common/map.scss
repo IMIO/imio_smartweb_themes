@@ -178,13 +178,13 @@ body.faceted-map{
 
 .leaflet-popup-close-button{
     background: #fff!important;
-    font-size: 0px!important;
+    font-size: 0!important;
     width: 30px!important;
     height: 30px!important;
     border-radius: 50px!important;
     top: 16px!important;
     right: 16px!important;
-    box-shadow: 0px 1.7px 3.2px rgba(0, 0, 0, 0.011), 0px 4.1px 7.6px rgba(0, 0, 0, 0.016), 0px 7.6px 14.3px rgba(0, 0, 0, 0.02), 0px 13.6px 25.5px rgba(0, 0, 0, 0.024), 0px 25.5px 47.6px rgba(0, 0, 0, 0.029), 0px 61px 114px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1.7px 3.2px rgba(0, 0, 0, 0.011), 0 4.1px 7.6px rgba(0, 0, 0, 0.016), 0 7.6px 14.3px rgba(0, 0, 0, 0.02), 0 13.6px 25.5px rgba(0, 0, 0, 0.024), 0 25.5px 47.6px rgba(0, 0, 0, 0.029), 0 61px 114px rgba(0, 0, 0, 0.04);
 
     &:before, &:after {
         position: absolute;
@@ -488,8 +488,8 @@ body.faceted-map{
 #top---default---widgets{
   #search_widget{
     #search_button{
-      font-size: 0px;
-      border-left: 0px;
+      font-size: 0;
+      border-left: 0;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: center;

@@ -78,7 +78,7 @@
                     right: 25px;
                     opacity: .5;
                     z-index: -1;
-                    box-shadow: rgba(0, 0, 0, 0.16) -10px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                    box-shadow: rgba(0, 0, 0, 0.16) -10px 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
                 }
             }
 
@@ -90,6 +90,6 @@
 
     .swiper-button-next, .swiper-button-prev {
         top: 50%!important;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
     }
 }

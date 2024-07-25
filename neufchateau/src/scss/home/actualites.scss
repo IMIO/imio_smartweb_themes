@@ -42,7 +42,7 @@
                     span {
                         display: inline-block;
                         background: $primary-svg;
-                        border-radius: 30px 0px 0px;
+                        border-radius: 30px 0 0;
                         padding: 8px 25px;
                         text-transform: none;
                     }
@@ -101,7 +101,7 @@
         opacity: 0.3;
         border-radius: 0;
         content: "";
-        right:0px;
+        right:0;
         position: absolute;
         top: -105px;
         z-index: -1;
@@ -120,7 +120,7 @@
             text-transform: none;
             position: relative;
             color:$primary;
-            margin: 0px auto 40px !important;
+            margin: 0 auto 40px !important;
             content: url("../../assets/svg/titre-actualites.svg");
             width:auto;
             height: 80px;

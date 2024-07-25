@@ -50,7 +50,7 @@
             position: initial;
             padding: 0;
             writing-mode:initial;
-            margin:0px auto 30px;
+            margin:0 auto 30px;
             background: none;
             }
     }  
@@ -76,7 +76,7 @@
     max-width: 90vw;    
     background: #fff;
     border-radius: 60px;
-    padding:30px 0px;
+    padding:30px 0;
     }
 
     #container-section-partenaires .swiper-wrapper {
@@ -120,7 +120,7 @@
                 }
 
                     .table_title{
-                        margin:0px;
+                        margin:0;
                         display: none;
 
                         span{

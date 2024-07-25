@@ -4,8 +4,8 @@
     }
 
     .sectionnews {
-        padding-top:0px !important;
-        padding-bottom:0px !important;
+        padding-top:0 !important;
+        padding-bottom:0 !important;
     }
 
     /*#portal-header #portal-header-top:after {
@@ -32,7 +32,7 @@
 
     .img-banner {
         &:before {
-            background: linear-gradient(to top, #fff 0px,#fff 100px, #ffda1e 100px, #ffda1e 140px, #F39200 140px, #f39200 180px, #cf102d 180px, #cf102d 100%);
+            background: linear-gradient(to top, #fff 0,#fff 100px, #ffda1e 100px, #ffda1e 140px, #F39200 140px, #f39200 180px, #cf102d 180px, #cf102d 100%);
         }
     }
 
@@ -62,7 +62,7 @@
     }
 
     #portal-footer-wrapper {
-        background: linear-gradient(to bottom, #ffda1e 0px,#ffda1e 40px, #F39200 40px, #F39200 80px, #cf102d 80px, #cf102d 100%);
+        background: linear-gradient(to bottom, #ffda1e 0,#ffda1e 40px, #F39200 40px, #F39200 80px, #cf102d 80px, #cf102d 100%);
         margin-top: 100px;
         overflow: unset;
         padding: 10rem 0 8rem !important;

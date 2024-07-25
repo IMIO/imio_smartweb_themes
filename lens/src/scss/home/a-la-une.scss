@@ -18,7 +18,7 @@
 }
 
 .a-la-une.focus:before {
-    bottom: 0px;
+    bottom: 0;
     background: url(../../assets/svg/wave-banner.svg);
     background-size: cover;
     position: absolute;
@@ -71,7 +71,7 @@
         grid-column: 2;
         grid-row: 1;
         margin: 1rem 0 0;
-        padding: 0px 36px 0;
+        padding: 0 36px 0;
         text-align: left;
     }
 

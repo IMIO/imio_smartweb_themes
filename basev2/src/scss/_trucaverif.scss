@@ -162,11 +162,11 @@ textarea {
 }
 
 .faceted-block-view-with-images .block-menu-element a .card-body {
-    border-radius: 0px 0px 15px 0;
+    border-radius: 0 0 15px 0;
 }
 
 .userrole-anonymous .pat-sortable .sortable-section {
-    border: 0px solid transparent !important;
+    border: 0 solid transparent !important;
 }
 
 .faceted-form {
@@ -238,7 +238,7 @@ div#viewlet-below-content-body .procedure {
 
 
 body.template-block_view_with_images .block-menu-element a .card-body {
-    border-radius: 0px 0px 15px 0;
+    border-radius: 0 0 15px 0;
 }
 
 .block-menu-element a .card-body,
@@ -298,7 +298,7 @@ div#faceted-results {
 
 /* https://bla.preprod.imio.be/ma-commune/services-communaux/citoyennete/demarches/carte-d-identite-electronique-12-ans#section-prix-et-delai-de-livraison */
 .text table {
-    border: 0px;
+    border: 0;
 }
 
 .text table tr:nth-child(even) {

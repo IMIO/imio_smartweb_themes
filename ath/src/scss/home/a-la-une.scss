@@ -38,7 +38,7 @@
         }
 
         .swiper_description {
-          padding: 0px 0 20px 70px;
+          padding: 0 0 20px 70px;
           color:#fff;
           font-size: 16px;
       }
@@ -48,7 +48,7 @@
       }
 
       .swiper_date {
-        padding: 0px 0 20px 70px;
+        padding: 0 0 20px 70px;
         color:#fff;
         display: none !important;
       }
@@ -65,7 +65,7 @@
     bottom: 0;
     content: "";
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 0;
     width: calc(50vw + 450px);
     height:100%;
@@ -127,7 +127,7 @@
 
       @media screen and (max-width: 992px) {
         .swiper-button-prev {
-          bottom: 0px !important; // Change this
+          bottom: 0 !important; // Change this
     left: 0; // Change this
     right: 0; // Add this
     margin: auto; // Change this
@@ -136,7 +136,7 @@
         }
 
         .swiper-button-next {
-          bottom: 0px !important; // Change this
+          bottom: 0 !important; // Change this
           left: 0; // Change this
           right: 0; // Add this
           margin: auto; // Change this
@@ -153,7 +153,7 @@
     padding: 2rem 40px;
 
      &:after {
-      right: 0px;
+      right: 0;
       top: 0;
       width: 100vw;
       border-radius: 0;
@@ -171,7 +171,7 @@ a .swiper-image {
     }
 
   .swiper_title {
-    padding: 10px 0 20px 0px !important;
+    padding: 10px 0 20px 0 !important;
     text-align: center;
     width: 100%;
 
@@ -184,14 +184,14 @@ a .swiper-image {
   }
 
   .swiper_description {
-    padding: 0px 0 20px 0px !important;
+    padding: 0 0 20px 0 !important;
     text-align: center;
     width: 100% !important;
   }
 
     .swiper_date {
-      padding: 20px 0 0 0px!important;
-      margin:0px !important;
+      padding: 20px 0 0 0!important;
+      margin:0 !important;
       color:#fff;
       width: 100% !important;
       text-align: center !important;
@@ -216,11 +216,11 @@ a .swiper-image {
   margin-top: -150px;
   margin-left: auto; // Add this
   max-width: 300px;
-  right: 0px;
+  right: 0;
   width: 20%;
   max-width: 240px;
   left: auto;
-  padding: 0px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -263,11 +263,11 @@ a .swiper-image {
     margin-top: -60px;
     margin-left: auto;
     max-width: 300px;
-    right: 0px;
+    right: 0;
     width: 20%;
     max-width: 240px;
     left: auto;
-    padding: 0px 20px 0px 0px;
+    padding: 0 20px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -277,14 +277,14 @@ a .swiper-image {
 
 @media screen and (max-width: 992px) {
   .rs-banner {
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: -60px;
     max-width: 300px;
-    right: 0px;
+    right: 0;
     width: 20%;
     max-width: 280px;
     left: auto;
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;

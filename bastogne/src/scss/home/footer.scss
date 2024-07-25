@@ -9,13 +9,13 @@
 
 #smartweb-footer #container-section-contact {
     color: #fff !important;
-    padding: 0px !important;
+    padding: 0 !important;
 }
 
 #portal-footer-wrapper{
     text-align: left!important;
     @media screen and (max-width: 992px) {
-        margin-top:0rem;
+        margin-top:0;
         }
 
     #portal-footer{
@@ -30,11 +30,11 @@
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
-                margin-top: 0rem;
+                margin-top: 0;
 
                 &.section-title{
                     margin-bottom: 0.5rem;
-                    margin-top: 0rem;
+                    margin-top: 0;
                 }
             }
 
@@ -58,7 +58,7 @@
 }
 
 .smartweb-footer .body-section figure img {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 
@@ -127,7 +127,7 @@
     &:after {
         background: url("../../assets/footer-bas.png");
         content: "";
-        right: 0px;
+        right: 0;
         z-index: 1;
         position: absolute;
         transition: all .2s ease;
@@ -145,7 +145,7 @@
         
         .colophonWrapper { 
             float:none;
-            padding-right : 0px;
+            padding-right : 0;
             padding-bottom:20px;
 
             ul{
@@ -160,7 +160,7 @@
         &:after {
             background: url("../../assets/footer-bas.png");
             content: "";
-            right: 0px;
+            right: 0;
             z-index: 1;
             position: absolute;
             transition: all .2s ease;

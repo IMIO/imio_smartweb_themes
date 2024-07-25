@@ -33,14 +33,14 @@ body {
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: #fff;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
     #portal-header #portal-header-top #header-links #search-link a {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -104,7 +104,7 @@ h1 {
     position: absolute;
     top: auto;
     transform: none;
-    bottom: 0px !important;
+    bottom: 0 !important;
     max-width: 100%;
     width: 100%;
 }
@@ -112,8 +112,8 @@ h1 {
 .bannerSwiper .section-slide{
     .swiper-banner-content {
         position: absolute;
-        right:0px;
-        bottom:0px;
+        right:0;
+        bottom:0;
         border-radius: 50px 0 0;
         font-family: $font-family-title;
         
@@ -468,7 +468,7 @@ footer #container-section-noussuivre{
       }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
       }
       
     }
@@ -496,7 +496,7 @@ footer #container-section-noussuivre{
             &:after{
                 left:0%;
                 top: 70px;
-                bottom: 0px;
+                bottom: 0;
                 position: absolute;
                 background: url("../../assets/svg/svg-titre.svg");
                 content: "";
@@ -640,13 +640,13 @@ footer #container-section-noussuivre{
     }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
-        margin-top: 0rem;
+        margin-top: 0;
     }
 
 
     .sectiontext mark, .r-content-text mark {
         background-color: $primary-red;
-        border: 0px;
+        border: 0;
         border-radius: 8px;
         color: #fff;
         display: inline-block;
@@ -698,7 +698,7 @@ h3 {
         }
 
         #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles  {
-            padding:0px !important;
+            padding:0 !important;
         }
         }
 
@@ -712,7 +712,7 @@ h3 {
 
 //navbar
 .navbar-toggler {
-    padding: 0px !important;
+    padding: 0 !important;
     background: #fff !important;
     height: 50px !important;
     width: 50px !important;
@@ -727,7 +727,7 @@ h3 {
 }
 
 .navbar .container {
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page {

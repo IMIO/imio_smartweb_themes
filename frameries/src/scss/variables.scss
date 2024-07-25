@@ -97,9 +97,9 @@ $header-nav-link-font-family:$font-family-base!default;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color: $primary;
@@ -214,7 +214,7 @@ $quick-access-title-weight: 900;
 
 $quick-access-enable-full-bg: false !default;
 $quick-access-full-bg-color:$primary !default;
-$quick-access-full-bg-border:solid 0px $primary !default;
+$quick-access-full-bg-border:solid 0 $primary !default;
 $quick-access-full-bg-shadow: none !default;
 
 // A la une
@@ -248,7 +248,7 @@ $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius:  10px 10px 10px 0;
 $actu-item-bg-color:transparent;
-$actu-item-bg-radius: 0px;
+$actu-item-bg-radius: 0;
 $actu-category-margin: 0 0 .5rem 0 !default;
 $actu-category-padding: .5rem 1rem !default;
 $actu-category-color: #fff !default;
@@ -270,7 +270,7 @@ $actu-item-description-color: initial !default;
 $actu-item-description-align: left !default;
 $actu-item-description-font-family: $font-family-base !default;
 $actu-date-margin: 0 0 .5rem 0!default;
-$actu-date-padding: 1rem 1rem 0rem !default;
+$actu-date-padding: 1rem 1rem 0 !default;
 $actu-date-color: transparent;
 $actu-date-font-size: 16px;
 $actu-date-align: left !default;
@@ -286,7 +286,7 @@ $event-title-color:$secondary;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0rem !default;
+$event-image-margin-bottom: 0 !default;
 $event-image-border-radius: 10px 10px 10px 0;
 $event-item-bg-color: transparent;
 $event-item-bg-radius:initial;
@@ -407,10 +407,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

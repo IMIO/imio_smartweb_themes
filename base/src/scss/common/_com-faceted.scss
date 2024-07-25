@@ -35,7 +35,7 @@
                 right: 10px;
                 top: 0;
                 bottom: 0;
-                font-size: 0px;
+                font-size: 0;
 
             }
         }
@@ -53,7 +53,7 @@
 }
 
 #faceted-form fieldset {
-    border: 0px solid white;
+    border: 0 solid white;
 }
 
 // /* filtres actifs */
@@ -133,7 +133,7 @@
     align-items: center;
 
     a {
-        inset: 0px;
+        inset: 0;
         position: absolute;
         z-index: 1;
     }

@@ -385,7 +385,7 @@ $enable-roboto-webfont: false;
   #form-buttons-subscribe{
     background: $primary;
     color: #fff;
-    border: 0px;
+    border: 0;
 
     &:focus,&:hover{
       background: #073044;

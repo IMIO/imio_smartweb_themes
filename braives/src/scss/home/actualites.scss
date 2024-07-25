@@ -15,8 +15,8 @@
             width: 8px;
             height: 60px;
             margin:-6px 0 0 -30px;
-            top: 0px;
-            bottom: 0px;
+            top: 0;
+            bottom: 0;
             position: absolute;
             border-radius: 20px;
         }
@@ -33,15 +33,15 @@
                 .swiper-image{
                     padding-bottom: 55%;
                     transition: all .25s ease;
-                    margin-bottom: 0rem;
+                    margin-bottom: 0;
                 }
 
                 .swiper_category{
-                    margin-left: 0px;
+                    margin-left: 0;
                     position:relative;
                     width: max-content;
-                    top: 0px;
-                    left: 0px;
+                    top: 0;
+                    left: 0;
                 }
 
                 .swiper_date{

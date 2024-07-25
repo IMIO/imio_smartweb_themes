@@ -5,7 +5,7 @@
 
     #portal-footer{
         background:$primary-blue-dark!important;
-        padding: 60px 0px;
+        padding: 60px 0;
 
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
@@ -43,7 +43,7 @@
     }
 
     .sectiontext .section-text .body-section.figure-left figure img, .sectiontext .section-text .body-section.figure-right figure img {
-        border-radius: 0px !important;
+        border-radius: 0 !important;
     }
 }
 

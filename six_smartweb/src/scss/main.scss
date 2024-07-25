@@ -107,7 +107,7 @@ body {
     .logo2 {
         content: url("../../assets/svg/logo-imio.svg");
             width: 100%;
-            right:0px;
+            right:0;
             position: relative;
     }  
 
@@ -234,7 +234,7 @@ body {
     background: #fff;
     border-radius: 30px;
     background-color: #fff;
-    box-shadow: 0px 0px 15px 0px #F1F1F1;
+    box-shadow: 0 0 15px 0 #F1F1F1;
     border-radius:50px;
     padding:80px;
 
@@ -377,7 +377,7 @@ body {
         grid-gap: 60px;
         padding:40px;
         grid-template-columns: 1fr 1fr;
-        margin:0px;
+        margin:0;
         width: 100%;
     }
     }
@@ -390,7 +390,7 @@ body {
             grid-gap: 40px;
             padding:20px;
             grid-template-columns: 1fr;
-            margin:0px;
+            margin:0;
         }
         }
 
@@ -567,7 +567,7 @@ footer #container-section-noussuivre{
 	color: #000;
 	padding: 1rem;
 	text-decoration: none;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .r-filter div[class*="control"] {
@@ -748,7 +748,7 @@ footer #container-section-noussuivre{
     }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
         justify-content: right;
       }
       
@@ -776,7 +776,7 @@ footer #container-section-noussuivre{
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: #DE047B;
     transition: all 0.3s ease;
 }
@@ -786,14 +786,14 @@ footer #container-section-noussuivre{
 }
 
 #portal-languageselector {
-    margin-left: 0rem;
+    margin-left: 0;
 }
 
 .language-en {
     float: left;
 
     a {
-    font-size: 0px;
+    font-size: 0;
     background: #FFF;
     width: 50px;
     height: 50px;
@@ -832,7 +832,7 @@ footer #container-section-noussuivre{
     float: left;
 
     a {
-    font-size: 0px;
+    font-size: 0;
     background: #FFF;
     width: 50px;
     height: 50px;
@@ -842,7 +842,7 @@ footer #container-section-noussuivre{
     font-weight: bold;
     text-decoration: none;
     transition: all .3s ease;
-    margin-left:0px;
+    margin-left:0;
 
     &:after { 
         color: #292929;

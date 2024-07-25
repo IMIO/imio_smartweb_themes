@@ -53,7 +53,7 @@ div.swiper-image:before {
     transform: translateX(-50vw);
     width: 100vw;
     z-index: -1;
-    bottom:0px;
+    bottom:0;
 }
 
 #container-section-magazine-communal #body-section-magazine-communal .swiper-wrapper .swiper-slide a .swiper_title h3 {
@@ -215,17 +215,17 @@ body:not(.portaltype-imio-smartweb-portalpage.section-page-portail, .portaltype-
 
 body.portaltype-imio-smartweb-portalpage.section-page-portail div#messagesviewlet {
     left: 0;
-    padding: 0px;
+    padding: 0;
     position: absolute;
     top: 110px;
-    margin:0px;
+    margin:0;
 }
 
 #messagesviewlet .portalMessage {
     background: rgba(0,0,0,.85) !important;
     padding: 30px 30px 30px 180px;
-    margin:0px;
-    border-radius:0px !important;
+    margin:0;
+    border-radius:0 !important;
 }
 
 @media (max-width:993px) { 

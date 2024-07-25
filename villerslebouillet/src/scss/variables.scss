@@ -70,9 +70,9 @@ $header-nav-link-font-family:$font-family-base;
 $header-links-color:$primary;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #030720 !default;
+$header-links-account-border:solid 0 #030720 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #030720 !default;
+$header-links-account-hover-border:solid 0 #030720 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:$primary-svg;
 $header-search-icon-color:$primary;
@@ -149,7 +149,7 @@ $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:$primary;
 $see-all-color:#fff;
 $see-all-radius:10px;
-$see-all-border:solid 0px #000;
+$see-all-border:solid 0 #000;
 $see-all-text-transform:uppercase;
 $see-all-font-size:12px !default;
 $see-all-font-weight:bold;
@@ -157,7 +157,7 @@ $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:$primary-svg;
 $see-all-hover-color:#fff;
 $see-all-hover-radius:10px;
-$see-all-hover-border:solid 0px #000!important;
+$see-all-hover-border:solid 0 #000!important;
 $see-all-justify-content: center;
 $see-all-underline-color: transparent;
 $see-all-underline-width: 0;
@@ -380,10 +380,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #030720;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #030720;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

@@ -69,9 +69,9 @@ $header-nav-link-font-family:$font-family-base!default;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color:#000 !default;
@@ -148,7 +148,7 @@ $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:#D90416;
 $see-all-color:#fff;
 $see-all-radius:$global-radius;
-$see-all-border:solid 0px $primary !default;
+$see-all-border:solid 0 $primary !default;
 $see-all-text-transform:none !default;
 $see-all-font-size:16px;
 $see-all-font-weight:300;
@@ -156,7 +156,7 @@ $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:#166B8C;
 $see-all-hover-color:#fff;
 $see-all-hover-radius:$global-radius !default;
-$see-all-hover-border:solid 0px $primary !default;
+$see-all-hover-border:solid 0 $primary !default;
 $see-all-justify-content: center;
 $see-all-underline-color: $primary-svg!default;
 $see-all-underline-width: 25%!default;
@@ -173,7 +173,7 @@ $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 100px !default;
 $quick-access-height: 100px !default;
 $quick-access-background:#fff !default;
-$quick-access-border: solid 0px $primary !default;
+$quick-access-border: solid 0 $primary !default;
 $quick-access-border-radius:100px !default;
 $quick-access-shadow: none !default;
 $quick-access-svg-width:30px !default;
@@ -200,7 +200,7 @@ $a-la-une-item-title-color:$primary !default;
 $a-la-une-item-title-font-size:$h3-font-size !default;
 $a-la-une-item-title-margin:0 !default;
 $a-la-une-item-title-padding:36px 36px 0 !default;
-$a-la-une-item-title-radius:0px;
+$a-la-une-item-title-radius:0;
 $a-la-une-item-description-font-size: $font-size-lg !default;
 $a-la-une-item-description-color:initial !default;
 $a-la-une-item-description-margin:0 !default;
@@ -381,10 +381,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

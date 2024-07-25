@@ -12,13 +12,13 @@
 
 .quick-access{
     width: 63%;
-    right:0px;
+    right:0;
     // @media screen and (max-width: 1200px) {
     //     width: 66.66%;
     // }
     @media screen and (max-width: 992px) {
         width: 100%;
-        left: 0px;
+        left: 0;
     }
 
     .body-section{
@@ -179,7 +179,7 @@
 
 .atl_kesako_logos {
     margin:0 auto;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     .swiper-button-prev, .swiper-button-next, .swiper_title { display:none;}
 

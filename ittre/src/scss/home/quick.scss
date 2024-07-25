@@ -30,7 +30,7 @@
                 }
 
                     .table_title{
-                        margin:20px 0px 0px;
+                        margin:20px 0 0;
 
                         span{
                             line-height: 1;
@@ -123,7 +123,7 @@
         &:after{
             left:0%;
             top: 70px;
-            bottom: 0px;
+            bottom: 0;
             position: absolute;
             content: "";
             display: block;
@@ -266,7 +266,7 @@
 
 .quick-partenaires{
     display: none!important;
-    padding-top:0px;
+    padding-top:0;
 
     .section-title{
         text-align: center;
@@ -280,7 +280,7 @@
         &:after{
             left:0%;
             top: 70px;
-            bottom: 0px;
+            bottom: 0;
             position: absolute;
             content: "";
             display: block;
@@ -294,7 +294,7 @@
         text-align: center;
 
         li{
-            padding: 20px 10px 0px;
+            padding: 20px 10px 0;
 
             .table_image{
                 text-decoration: none;

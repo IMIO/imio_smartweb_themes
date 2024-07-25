@@ -12,14 +12,14 @@
             content: "";
             left: 50%;
             position: absolute;
-            top: 0px;
+            top: 0;
             transform: translateX(-50%);
             width: calc(100vw - 60px);
             max-width: 1500px;
             z-index: -10;
             @media screen and (max-width: 1000px) {
                   width: 100% !important;
-                  border-radius: 0px !important;
+                  border-radius: 0 !important;
                   z-index: 0 !important;
             }   
         }
@@ -35,13 +35,13 @@
     .swiper-wrapper{
         .swiper-slide {
             background: transparent;
-            border-radius: 80px 80px 60px 0px;
+            border-radius: 80px 80px 60px 0;
             transition: .5s;
             
             &:hover,&:focus{
                     transition: .5s;
                     transform: translateY(10px);
-                    border-radius: 80px 80px 80px 0px;
+                    border-radius: 80px 80px 80px 0;
             }
 
             & > a{
@@ -60,7 +60,7 @@
                     span {
                         display: inline-block;
                         background: $primary-blue;
-                        border-radius: 0px 0px 10px 10px;
+                        border-radius: 0 0 10px 10px;
                         padding: 8px 25px;
                         text-transform: none;
                     }

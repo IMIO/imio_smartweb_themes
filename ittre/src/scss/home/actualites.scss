@@ -25,7 +25,7 @@
                 padding-bottom: 20px;
                 position: relative;
                 transition: .5s;
-                border-radius: 0 0 50px 0px;
+                border-radius: 0 0 50px 0;
 
                 &:hover,&:focus{
                     transition: .5s;
@@ -50,8 +50,8 @@
                 }
 
                 .table_category{
-                    bottom: 0px;
-                    right: 0px;
+                    bottom: 0;
+                    right: 0;
                     width: 100%;
                     margin:-14px 0 15px;
                     text-align: center;
@@ -95,8 +95,8 @@
     .swiper-wrapper{
         .swiper-slide {
                 .swiper_category{
-                    bottom: 0px;
-                    right: 0px;
+                    bottom: 0;
+                    right: 0;
                     width: 100%;
                     margin:-20px 0 0;
                     text-align: center;
@@ -117,7 +117,7 @@
 }
 
 .sectionnews .display-carre .row li .table_image .image {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     padding-bottom: 100%;
 }
 

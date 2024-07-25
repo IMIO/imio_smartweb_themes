@@ -153,12 +153,12 @@
 
   .sortable-section.sectionlinks.see_all {
     background: transparent;
-    padding-top: 0rem;
+    padding-top: 0;
 
     #container-section-tous-nos-services  {
       display: flex;
       justify-content: center;
-      margin: 0rem 0 0;
+      margin: 0 0 0;
 
       a {
     background: $primary;

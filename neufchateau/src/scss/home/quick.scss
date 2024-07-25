@@ -54,7 +54,7 @@
                 }
 
                     .table_title{
-                        margin:20px 0px 0px;
+                        margin:20px 0 0;
 
                         span{
                             line-height: 1;
@@ -131,8 +131,8 @@
 
 
 .partenaires-titre{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
 
     .section-text{
@@ -142,7 +142,7 @@
         text-transform: none;
         position: relative;
         color:$primary;
-        margin: 0px auto 20px !important;
+        margin: 0 auto 20px !important;
         content: url("../../assets/svg/titre-partenaires.svg");
         width:auto;
         height: 80px;
@@ -174,7 +174,7 @@
         opacity: 0.3;
         border-radius: 0;
         content: "";
-        right:0px;
+        right:0;
         position: absolute;
         top: -625px;
         z-index: -1;
@@ -198,7 +198,7 @@
             content: "";
             left: 50%;
             position: absolute;
-            top: 0px;
+            top: 0;
             transform: translateX(-50%);
             width: calc(100vw - 100px);
             z-index: -1;
@@ -210,12 +210,12 @@
 
         &:before {
             background: $primary;
-            border-radius:0px;
+            border-radius:0;
             bottom: 0;
             content: "";
             left: 50%;
             position: absolute;
-            bottom: 0px;
+            bottom: 0;
             transform: translateX(-50%);
             width: 100vw;
             z-index: -1;

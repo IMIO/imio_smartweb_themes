@@ -103,9 +103,9 @@ $header-nav-link-font-family:$font-family-title;
 $header-links-color:$primary !default;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #030720 !default;
+$header-links-account-border:solid 0 #030720 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #030720 !default;
+$header-links-account-hover-border:solid 0 #030720 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#030720 !default;
 $header-search-icon-color:#fff;
@@ -295,7 +295,7 @@ $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 1rem;
 $event-image-border-radius: 0;
 $event-item-bg-color:#F6F2F1;
-$event-item-bg-radius:0px;
+$event-item-bg-radius:0;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.2rem 0.5rem;
 $event-category-color: #fff !default;
@@ -413,10 +413,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #030720;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #030720;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

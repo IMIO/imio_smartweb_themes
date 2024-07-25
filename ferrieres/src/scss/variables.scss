@@ -70,9 +70,9 @@ $header-nav-link-font-family:$font-family-base;
 $header-links-color:$primary !important;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #A93D31;
+$header-links-account-border:solid 0 #A93D31;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #A93D31;
+$header-links-account-hover-border:solid 0 #A93D31;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#ffffffba;
 $header-search-icon-color:#fff;
@@ -148,7 +148,7 @@ $see-all-padding:0.85rem 1rem 0.85rem 1rem;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:transparent;
 $see-all-color:#000;
-$see-all-radius:0px;
+$see-all-radius:0;
 $see-all-border:solid 1px #000;
 $see-all-text-transform:none;
 $see-all-font-size:16px !default;
@@ -219,7 +219,7 @@ $actu-title-align:left;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
-$actu-image-border-radius: 0px;
+$actu-image-border-radius: 0;
 $actu-item-bg-color:transparent;
 $actu-item-bg-radius: 0;
 $actu-category-margin: 0 0 .5rem 0 !default;
@@ -261,9 +261,9 @@ $event-title-align:left;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0;
-$event-image-border-radius: 0px;
+$event-image-border-radius: 0;
 $event-item-bg-color:transparent;
-$event-item-bg-radius:0px;
+$event-item-bg-radius:0;
 $event-category-margin: 0 20px 0 0;
 $event-category-padding: 0.2rem 0.5rem;
 $event-category-color: #fff;
@@ -382,10 +382,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #030720;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #030720;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

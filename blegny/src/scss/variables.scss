@@ -65,13 +65,13 @@ $main-logo-max-width: 100px;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: $primary;
 $header-center-nav: true;
-$header-nav-margin: 0 3rem 0rem 0.5rem;
+$header-nav-margin: 0 3rem 0 0.5rem;
 $header-links-color: #fff;
 $header-links-account-margin:0 !default;
 $header-links-account-padding:0 !default;
-$header-links-account-border:solid 0px #000 !default;
+$header-links-account-border:solid 0 #000 !default;
 $header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0px #000 !default;
+$header-links-account-hover-border:solid 0 #000 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:#000 !default;
 $header-search-icon-color:#fff;
@@ -170,7 +170,7 @@ $quick-access-width: 40px;
 $quick-access-height: 40px;
 $quick-access-background: transparent;
 $quick-access-border: none;
-$quick-access-border-radius:0px;
+$quick-access-border-radius:0;
 $quick-access-shadow: none;
 $quick-access-svg-width: 40px;
 $quick-access-svg-color:$primary;
@@ -253,7 +253,7 @@ $event-title-color:$secondary;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0rem !default;
+$event-image-margin-bottom: 0 !default;
 $event-image-border-radius: $global-radius !default;
 $event-item-bg-color: transparent;
 $event-item-bg-radius:$global-radius;
@@ -373,10 +373,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0px 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-$list-group-border-width : 0px;
-$list-group-item-padding-x : 0px;
+$block-full-shadow: 0 20px 40px #0000001A;
+$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$list-group-border-width : 0;
+$list-group-item-padding-x : 0;
 
 // Message Viewlets
 

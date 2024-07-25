@@ -345,8 +345,8 @@ $border_grey: #d3d3d3;
                 border-radius: 15px;
                 width: 100%;
                 border-right-color: transparent;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
                 animation: .3s ease forwards  border-initial-black;
             }
 
@@ -471,8 +471,8 @@ $border_grey: #d3d3d3;
             border-radius: 15px;
             width: 100%;
             border-right-color: transparent;
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
             animation: .3s ease forwards  border-initial-yellow;
         }
 
@@ -644,7 +644,7 @@ $border_grey: #d3d3d3;
                             }
 
                             .table_title{
-                                font-size: 0px;
+                                font-size: 0;
                                 position: absolute;
                                 font-weight: 500;
                                 color: $blue;
@@ -830,7 +830,7 @@ $border_grey: #d3d3d3;
         top: 33px;
         background: transparent;
         border-bottom: solid 2px #000;
-        border-radius: 0px;
+        border-radius: 0;
 
         a{
             padding: 0 0 0.2rem;
@@ -1124,16 +1124,16 @@ div#body-section-albums-photos a h3{
 
     30% {
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     100% { 
         width: 10%;
         border: solid 1px transparent;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }  
 }
 @keyframes border-hover-black { 
@@ -1141,14 +1141,14 @@ div#body-section-albums-photos a h3{
         width: 10%;
         border: solid 1px rgba(0, 0, 0, 0.553);
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     70%{
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     99%{
@@ -1169,22 +1169,22 @@ div#body-section-albums-photos a h3{
         width: 100%;
         border: solid 1px $primary;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     30% {
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     100% { 
         width: 10%;
         border: solid 1px transparent;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }  
 }
 @keyframes border-hover-blue { 
@@ -1192,14 +1192,14 @@ div#body-section-albums-photos a h3{
         width: 10%;
         border: solid 1px $primary;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     70%{
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     99%{
@@ -1226,16 +1226,16 @@ div#body-section-albums-photos a h3{
 
     30% {
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     } 
 
     100% { 
         width: 10%;
         border: solid 1px transparent;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }  
 }
 @keyframes border-hover-yellow { 
@@ -1243,14 +1243,14 @@ div#body-section-albums-photos a h3{
         width: 10%;
         border: solid 2px #ffbb18;
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     70%{
         border-right-color: transparent;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     99%{

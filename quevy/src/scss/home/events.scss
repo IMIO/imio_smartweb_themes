@@ -1,11 +1,11 @@
 .sectionevents:after {
     background: url("../../assets/svg/bg-event.jpg") bottom center #CDD8E7;
 	background-size: cover;
-    bottom: 0px;
+    bottom: 0;
     content: "";
     left: 50%;
     position: absolute;
-    top: 0px;
+    top: 0;
     transform: translateX(-50vw);
     width: 100vw;
     z-index: -1;
@@ -13,7 +13,7 @@
 
 .sectionevents{
     background: #166b8c;
-    padding:80px 0px;
+    padding:80px 0;
 
     .section-title{
         font-weight: 300;
@@ -27,7 +27,7 @@
             width: 100px;
             left:50%;
             top: 50px;
-            bottom: 0px;
+            bottom: 0;
             position: absolute;
             transform: translate(-50%, 0%);
         }

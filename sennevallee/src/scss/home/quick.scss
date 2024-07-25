@@ -9,8 +9,8 @@
 .sectionlinks.quick-access{
     background: $primary-blue-dark !important;
     padding:50px !important;
-    margin:0px !important;
-    border-radius: 0px 0px 80px;
+    margin:0 !important;
+    border-radius: 0 0 80px;
 
     &:before {
         background: url("../../assets/svg/image-before.svg");
@@ -55,7 +55,7 @@
                 }
 
                 .table_title{
-                    margin-top:0px;
+                    margin-top:0;
 
                     span{
                         color:#fff !important;
@@ -94,7 +94,7 @@
 
     @media screen and (max-width:1000px) {
         .sectionlinks.quick-access{
-            border-radius:0px;
+            border-radius:0;
         
             &:before {
                 display: none;

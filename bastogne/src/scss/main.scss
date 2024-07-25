@@ -32,14 +32,14 @@ body {
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: $primary-red;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
     #portal-header #portal-header-top #header-links #search-link a {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -49,7 +49,7 @@ body {
 
 #portal-header #portal-header-top #portal-logo{
     position: relative;
-    top: 0px;
+    top: 0;
     overflow: hidden;
     height: 80px;
 
@@ -62,7 +62,7 @@ body {
 
 .section-home-page #portal-header #portal-header-top #portal-logo{
     position: absolute;
-    top: 0px;
+    top: 0;
     overflow:auto;
     height: 140px;
 
@@ -75,7 +75,7 @@ body {
 @media screen and (max-width:1200px) {
     .section-home-page #portal-header #portal-header-top #portal-logo{
         position: relative;
-    top: 0px;
+    top: 0;
     overflow: hidden;
     height: 80px;
 
@@ -158,7 +158,7 @@ h1 {
         background: #fff;
         width: 140px;
         padding: 15px;
-        border-radius: 0px 50px 50px 0;
+        border-radius: 0 50px 50px 0;
         bottom: 40px;
     }
 
@@ -175,7 +175,7 @@ h1 {
     position: absolute;
     top: auto;
     transform: none;
-    bottom: 0px !important;
+    bottom: 0 !important;
     max-width: 100%;
     width: 100%;
 }
@@ -202,8 +202,8 @@ h1 {
     }
     @media screen and (max-width:767px) {
         .swiper-banner-image {
-            margin-left:0px;
-            border-radius: 0px;
+            margin-left:0;
+            border-radius: 0;
         }
         }
 
@@ -362,7 +362,7 @@ footer #container-section-noussuivre{
     }
 
     li {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -383,12 +383,12 @@ footer #container-section-noussuivre{
 
 .subsite-container {
     background: #f1f1f1;
-    border-radius: 8px 8px 8px 0px;
+    border-radius: 8px 8px 8px 0;
 
     #subsite-logo {
 	font-size: 18px;
     background: $primary-svg;
-    border-radius: 8px 8px 8px 0px;
+    border-radius: 8px 8px 8px 0;
 }
 }
 
@@ -554,7 +554,7 @@ footer #container-section-noussuivre{
       }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
       }
       
     }
@@ -582,7 +582,7 @@ footer #container-section-noussuivre{
             &:after{
                 left:0%;
                 top: 70px;
-                bottom: 0px;
+                bottom: 0;
                 position: absolute;
                 background: url("../../assets/svg/svg-titre.svg");
                 content: "";
@@ -678,14 +678,14 @@ footer #container-section-noussuivre{
 
     @media screen and (max-width:1200px) {
         .section-home-page #portal-header #portal-header-top #portal-globalnav-wrapper {
-            margin: 0 2rem 0 0rem;
+            margin: 0 2rem 0 0;
         }
     
     }
 
     @media screen and (max-width:1200px) {
         #portal-header #portal-header-top #portal-globalnav-wrapper {
-            margin: 0 2rem 0 0rem;
+            margin: 0 2rem 0 0;
         }
     }
     
@@ -740,13 +740,13 @@ footer #container-section-noussuivre{
     }
 
     #portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
-        margin-top: 0rem;
+        margin-top: 0;
     }
 
 
     .sectiontext mark, .r-content-text mark {
         background-color: $primary-red;
-        border: 0px;
+        border: 0;
         border-radius: 8px;
         color: #fff;
         display: inline-block;
@@ -798,7 +798,7 @@ h3 {
         }
 
         #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles  {
-            padding:0px !important;
+            padding:0 !important;
         }
         }
 
@@ -812,7 +812,7 @@ h3 {
 
 //navbar
 .navbar-toggler {
-    padding: 0px !important;
+    padding: 0 !important;
     background: #fff !important;
     height: 50px !important;
     width: 50px !important;
@@ -827,7 +827,7 @@ h3 {
 }
 
 .navbar .container {
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
@@ -860,7 +860,7 @@ h3 {
 #portal-column-content .section-contact .contact-type-organization .contact_map {z-index: -1 !important;}
 
 .r-result .r-content .r-content-img {
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 0;
 }
 
 #localmessagesviewlet .portalMessage .close-button:after, #messagesviewlet .portalMessage .close-button:after {

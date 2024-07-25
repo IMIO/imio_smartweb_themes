@@ -34,14 +34,14 @@ body {
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
     background: $primary-orange;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
     #portal-header #portal-header-top #header-links #search-link a {
-        padding-left:0px !important;
+        padding-left:0 !important;
     }
 }
 
@@ -266,7 +266,7 @@ footer #container-section-noussuivre{
 .subsite-container #subsite-logo {
 	font-size: 18px;
     background: $primary-orange;
-    border-radius: 0px;
+    border-radius: 0;
 
     a {
         color:#000;
@@ -422,7 +422,7 @@ footer #container-section-noussuivre{
       }
 
       .navbar .container {
-        padding: 0px 5px 0 0 !important;
+        padding: 0 5px 0 0 !important;
       }
       
     }
@@ -448,7 +448,7 @@ footer #container-section-noussuivre{
             &:after{
                 left:0%;
                 top: 70px;
-                bottom: 0px;
+                bottom: 0;
                 position: absolute;
                 content: "";
                 display: block;
@@ -591,7 +591,7 @@ footer #container-section-noussuivre{
 
 //navbar
 .navbar-toggler {
-    padding: 0px !important;
+    padding: 0 !important;
     background: $primary-orange !important;
     height: 50px !important;
     width: 50px !important;
@@ -606,7 +606,7 @@ footer #container-section-noussuivre{
 }
 
 .navbar .container {
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .section-home-page #messagesviewlet {

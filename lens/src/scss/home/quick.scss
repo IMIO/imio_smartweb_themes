@@ -50,7 +50,7 @@ div#body-section-acces-directs ul li {
     align-items: center;
     width: auto;
     background: #fff;
-    box-shadow: 0px 0px 0px 1px $primary;
+    box-shadow: 0 0 0 1px $primary;
     transition: box-shadow 0.2s linear;
     flex-wrap: wrap;
     width: 170px;
@@ -59,10 +59,10 @@ div#body-section-acces-directs ul li {
 }
 
 div#body-section-acces-directs ul li:hover {
-    box-shadow: 0px 0px 0px 3px $primary;
+    box-shadow: 0 0 0 3px $primary;
 }
 @media screen and (max-width:992px) { 
     div#body-section-acces-directs ul li, div#body-section-acces-directs ul li:hover {
-        box-shadow: 0px 0px 0px 0px $primary;
+        box-shadow: 0 0 0 0 $primary;
     }
 }

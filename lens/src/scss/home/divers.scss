@@ -26,7 +26,7 @@ div.swiper-image::before {
     top: 0;
     transition: all .2s ease;
     z-index: 99;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
 }
 
 .swiper-slide:hover a div.swiper-image:before {

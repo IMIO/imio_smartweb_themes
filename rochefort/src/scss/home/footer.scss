@@ -24,11 +24,11 @@
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
-                margin-top: 0rem;
+                margin-top: 0;
 
                 &.section-title{
                     margin-bottom: 0.5rem;
-                    margin-top: 0rem;
+                    margin-top: 0;
                 }
             }
 
@@ -52,7 +52,7 @@
 }
 
 .smartweb-footer .body-section figure img {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 
@@ -112,7 +112,7 @@
 
 .section-accueil {
     #portal-footer-wrapper{
-        margin-top:0rem;
+        margin-top:0;
     }
 }
 
@@ -179,7 +179,7 @@ footer{
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -206,7 +206,7 @@ footer{
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -260,7 +260,7 @@ footer{
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -287,7 +287,7 @@ footer{
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -314,7 +314,7 @@ footer{
                     }
 
                     .table_title{
-                        padding-left:0px!important;
+                        padding-left:0!important;
                         font-size: 1rem!important;
 
                         span {transition: all .5s ease;}
@@ -338,7 +338,7 @@ body footer#portal-footer-wrapper div#portal-footer div.smartweb_footer .contain
 }
 
 #portal-footer-wrapper #portal-footer .sectionlinks .container .nb-items-batch-1 .body-section .row li .table_display .table_image .table_title {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
 }
 
 #portal-footer-wrapper{

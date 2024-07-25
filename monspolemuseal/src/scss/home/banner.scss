@@ -10,25 +10,25 @@
 
     .bannerSwiper {
         width: calc(100vw - 150px);
-        border-radius: 0px 0px 0px 230px;
+        border-radius: 0 0 0 230px;
         margin-left:150px;
         margin-bottom: 100px;
 
         @media screen and (max-width: 1400px) {
             width: calc(100vw - 50px);
-            border-radius: 0px 0px 0px 175px;
+            border-radius: 0 0 0 175px;
             margin-left:50px; 
             margin-bottom: 80px;
           }
 
           @media screen and (max-width: 1000px) {
-            border-radius: 0px 0px 0px 125px;
+            border-radius: 0 0 0 125px;
             margin-bottom: 60px;
           }
           @media screen and (max-width: 700px) {
             width:100vw;
-            border-radius: 0px;
-            margin-left:0px;
+            border-radius: 0;
+            margin-left:0;
           }
     }
 
@@ -76,10 +76,10 @@
     position: absolute;
     top: auto;
     transform: none;
-    bottom: 0px !important;
+    bottom: 0 !important;
     max-width: 100%;
     width: 100%;
-    padding:0px !important;
+    padding:0 !important;
 }
 
 .smartweb_herobanner:before {
@@ -95,13 +95,13 @@
 
     @media screen and (max-width: 1400px) {
     height: 450px;
-    left: 0px;
+    left: 0;
     bottom: -50px;
     width: 450px;      
     }
     @media screen and (max-width: 1000px) {
         height: 350px;
-        left: 0px;
+        left: 0;
         bottom: -50px;
         width: 350px;      
     }
