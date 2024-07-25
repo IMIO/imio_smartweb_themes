@@ -8,9 +8,9 @@
 
 .sectionlinks.quick-access{
     background: $primary-blue-dark !important;
-    padding:50px 50px !important;
+    padding:50px !important;
     margin:0px !important;
-    border-radius: 0px 0px 80px 0px;
+    border-radius: 0px 0px 80px;
 
     &:before {
         background: url("../../assets/svg/image-before.svg");
@@ -28,7 +28,7 @@
         position: relative;
         color:#fff !important;
         text-align: center !important;
-        margin: 0 0 2rem 0 !important ;
+        margin: 0 0 2rem !important ;
         width: 100%;
     }
 

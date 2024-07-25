@@ -21,7 +21,7 @@
             }
 
             .sectiontext{
-                margin: 3rem 0 1rem 0;
+                margin: 3rem 0 1rem;
 
                 figure{
                     img{
@@ -60,19 +60,19 @@
     
     @media screen and (min-width: 2701px) {
         background: $primary!important;
-        padding:120px 0 2rem 0 !important;
+        padding:120px 0 2rem !important;
     }
     @media screen and (max-width: 2700px) {
-        padding:300px 0 2rem 0 !important;
+        padding:300px 0 2rem !important;
     }
     @media screen and (max-width: 2000px) {
-        padding:250px 0 2rem 0 !important;
+        padding:250px 0 2rem !important;
     }
     @media screen and (max-width: 1600px) {
-        padding:200px 0 2rem 0 !important;
+        padding:200px 0 2rem !important;
     }
     @media screen and (max-width: 1000px) {
-        padding:150px 0 2rem 0 !important;
+        padding:150px 0 2rem !important;
     }
 
 }

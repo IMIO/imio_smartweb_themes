@@ -45,7 +45,7 @@
 
     .swiper_title {
       border-radius: $a-la-une-item-title-radius;
-      margin: 1rem 0 0 0;
+      margin: 1rem 0 0;
       @include media-breakpoint-up(lg) {
         align-self: start;
         padding: $a-la-une-item-title-padding;

@@ -157,7 +157,7 @@ footer{
 
 #main-container{
     .sectionlinks{
-        margin: 2rem 0 0 0;
+        margin: 2rem 0 0;
     }
 }
 
@@ -255,12 +255,12 @@ footer #container-section-noussuivre{
 
 .subsite-container {
     background: $primary-light;
-    border-radius: 10px 0 0 0;
+    border-radius: 10px 0 0;
 
     #subsite-logo {
 	font-size: 18px;
     background: #353535;
-    border-radius: 10px 0 0 0;
+    border-radius: 10px 0 0;
 
     a {
         .subsite-title{
@@ -330,7 +330,7 @@ footer #container-section-noussuivre{
     } 
 
     #portal-breadcrumbs {
-        margin: .5rem 0 0 0 !important;
+        margin: .5rem 0 0 !important;
         position: absolute;
 
         .breadcrumb {
@@ -534,7 +534,7 @@ footer #container-section-noussuivre{
 
     .outer-wrapper .sectiontext {
         background: #f1f1f1;
-        padding: 30px 30px 15px 30px;
+        padding: 30px 30px 15px;
         border-radius: 15px;
         margin-bottom: 40px;
 

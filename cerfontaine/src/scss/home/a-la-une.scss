@@ -12,7 +12,7 @@
   @media screen and (max-width: 992px) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    margin:3rem 0 0 0
+    margin:3rem 0 0
     }
 
     &:before{
@@ -37,7 +37,7 @@
         font-weight: 700;
         text-transform: none;
         position: relative;
-        margin: 0px 0px 30px 0px;
+        margin: 0px 0px 30px;
         width: -moz-max-content;
         width: max-content;
         font-size: 3rem;
@@ -152,7 +152,7 @@
 
   @media screen and (max-width: 575px) {
     .swiper-slide .swiper-image {
-      border-radius: 30px 0 30px 0;
+      border-radius: 30px 0;
     }
   }
 

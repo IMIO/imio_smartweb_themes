@@ -51,7 +51,7 @@
                 align-self: start;
                 margin-left: -10%;
                 background: #fff;
-                padding: 36px 36px 0 36px;
+                padding: 36px 36px 0;
                 margin-top: 3rem;
             }
             margin-top: 1rem;
@@ -67,7 +67,7 @@
                 grid-row: 2;
                 margin-left: -10%;
                 background: #fff;
-                padding: 0 36px 36px 36px;
+                padding: 0 36px 36px;
 
                 &::after{
                     content: "";

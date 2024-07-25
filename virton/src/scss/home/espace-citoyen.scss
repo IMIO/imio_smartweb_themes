@@ -22,7 +22,7 @@
             margin: 0 auto;
             /*box-shadow: 0 20px 40px rgba(0, 0, 0,.16);*/
             background: $primary-red;
-            border-radius: 50px 50px 0px 50px;
+            border-radius: 50px 50px 0px;
 
             li{
                 padding: 0!important;
@@ -35,7 +35,7 @@
             .table_image{
                 padding: 2rem 1rem;
                 background: $primary-red;
-                border-radius: 50px 50px 0px 50px;
+                border-radius: 50px 50px 0px;
                 display: flex;
                 gap: 20px;
                 align-items: center;
@@ -60,7 +60,7 @@
                 &:hover{
                     background: $primary-reddark;
                     transition: all 0.5s ease;
-                    border-radius: 50px 50px 0px 50px;
+                    border-radius: 50px 50px 0px;
 
                     .image{
                         svg{

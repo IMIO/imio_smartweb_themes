@@ -79,7 +79,7 @@ h1 {
     font-family: "Open Sans", sans-serif;
     color: $primary-svg;
     font-weight: 600;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
     position: relative;
     padding-bottom: 30px;
 
@@ -161,7 +161,7 @@ h1 {
         position: absolute;
         right:0px;
         bottom:0px;
-        border-radius: 80px 0 0 0;
+        border-radius: 80px 0 0;
         font-family: $font-family-title;
         
 
@@ -573,7 +573,7 @@ footer #container-section-noussuivre{
             @media screen and (max-width:900px) {
                 .table_title span {
                     font-size: 14px !important;
-                    padding: 1rem 1rem !important;
+                    padding: 1rem !important;
                 }
             }
         }
@@ -623,7 +623,7 @@ footer #container-section-noussuivre{
     }
 
     #portal-header #portal-header-top #portal-globalnav-wrapper {
-        margin: 0 2rem 0 2rem;
+        margin: 0 2rem;
     }
     
     @media screen and (min-width: 992px) {

@@ -40,7 +40,7 @@
 
 // //sub site
 #portal-globalnav-wrapper li>.has_subtree {
-    padding: 5em 2em 0 2em;
+    padding: 5em 2em 0;
     @media (min-width:992px) {
         padding: 2rem;
     }
@@ -397,7 +397,7 @@ header#content-header {
         background: #fff;
         z-index: 98;
         left: 100vw;
-        padding: 6em 2em 0 2em;
+        padding: 6em 2em 0;
         transition: all .5s cubic-bezier(.54, .01, .68, .64);
 
         .has_subtree.dropdown {

@@ -13,7 +13,7 @@
 
         .see_all {
             justify-content: right;
-            margin: 60px 0 0 0;
+            margin: 60px 0 0;
             display: flex;
         }
     
@@ -305,7 +305,7 @@
 
             .swiper-slide{
                 background: $primary-blue;
-                padding:80px 30px 140px 30px;
+                padding:80px 30px 140px;
                 border-radius: 20px;
 
                 .swiper_category {
@@ -339,7 +339,7 @@
 
         .swiper-slide{
             background: $primary-blue;
-            padding:0px 0px 100px 0px;
+            padding:0px 0px 100px;
             border-radius: 20px;
 
             .swiper_category {
@@ -349,7 +349,7 @@
             }
 
             .swiper_title {
-                padding:0 40px 0 40px;
+                padding:0 40px;
 
                 h3 {
                     font-size: 22px;

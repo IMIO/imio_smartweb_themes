@@ -1,7 +1,7 @@
 .slogan-container{
   margin: 0 auto;
   display: flex;
-  padding: 0 0;
+  padding: 0;
   @include media-breakpoint-up(lg){
     padding: 3rem 0;
   }

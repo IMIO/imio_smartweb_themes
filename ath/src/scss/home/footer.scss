@@ -112,7 +112,7 @@
 #portal-footer-wrapper{
     margin-top:100px;
     background: $primary-svg;
-    padding:8rem 0 8rem 0 !important;
+    padding:8rem 0 !important;
     position: relative;
     overflow: unset;
 }
@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 992px) {
     #portal-footer-wrapper{
-        padding:5rem 2rem 4rem 2rem !important;
+        padding:5rem 2rem 4rem !important;
     }
     
 }

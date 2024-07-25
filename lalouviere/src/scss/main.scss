@@ -775,7 +775,7 @@ footer #container-section-noussuivre{
             @media screen and (max-width:900px) {
                 .table_title span {
                     font-size: 14px !important;
-                    padding: 1rem 1rem !important;
+                    padding: 1rem !important;
                 }
             }
         }
@@ -825,7 +825,7 @@ footer #container-section-noussuivre{
     }
 
     #portal-header #portal-header-top #portal-globalnav-wrapper {
-        margin: 0 2rem 0 2rem;
+        margin: 0 2rem;
     }
     
     @media screen and (min-width: 992px) {
@@ -1242,7 +1242,7 @@ h3 {
 iframe.eaglebe {
     height:400px !important;
     position:relative;
-    margin:10px 0px 40px 0px;
+    margin:10px 0px 40px;
 }
 
 .r-add-contact a, .r-add-event a, .r-add-news a {

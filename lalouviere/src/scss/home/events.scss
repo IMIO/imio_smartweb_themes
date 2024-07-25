@@ -157,7 +157,7 @@ z-index: -4;
         font-weight: 400;
         transform: rotate(180deg);
         position: absolute;
-        padding: 40px 0 0 0;
+        padding: 40px 0 0;
         writing-mode: vertical-rl;
         background: url("../../assets/svg/cible_black.svg") center top no-repeat;
         color:$primary-darkpurple;
@@ -372,7 +372,7 @@ z-index: -4;
     left:0;
     transform: none;
     @media screen and (max-width: 1350px) {
-        margin:0px auto 0px;
+        margin:0px auto;
         padding:60px 30px;
         }
     
@@ -453,7 +453,7 @@ z-index: -4;
                 background: linear-gradient(180deg, transparent, transparent 100px, #fff 100px, #fff 100%);
                 text-decoration: none;
                 height: 100%;
-                padding: 12px 12px 30px 12px;
+                padding: 12px 12px 30px;
                 position: relative;
                 transition: .5s;
                 //box-shadow: 0 1px 4px rgba(0,0,0,.16);
@@ -576,7 +576,7 @@ z-index: -4;
                     bottom: 0px;
                     right: 0px;
                     width: 100%;
-                    margin:-20px 0 0 0;
+                    margin:-20px 0 0;
                     text-align: center;
 
                     span {

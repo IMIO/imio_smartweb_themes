@@ -18,7 +18,7 @@
         font-size: 3.7rem;
         transform: rotate(180deg);
         position: absolute;
-        padding: 100px 0 0 0;
+        padding: 100px 0 0;
         writing-mode: vertical-rl;
         background: url("../../assets/svg/before-titre.svg") center top no-repeat;
 
@@ -36,14 +36,14 @@
     .swiper-wrapper{
         .swiper-slide {
             background: #fff;
-            border-radius: 50px 0 0 0;
+            border-radius: 50px 0 0;
             transition: .5s;
             
             &:hover,&:focus{
                     transition: .5s;
                     transform: translateY(10px);
                     background: #f4f4f4;
-                    border-radius: 50px 0 50px 0;
+                    border-radius: 50px 0;
             }
 
             & > a{
