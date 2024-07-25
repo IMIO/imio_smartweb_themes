@@ -26,7 +26,7 @@ $enable-roboto-webfont: false;
 
 
 body {
-    background: #ffffff;
+    background: #fff;
 }
 
 //search
@@ -45,7 +45,7 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-    background: #000000;
+    background: #000;
 }
 
 #portal-header #portal-header-top #portal-logo{
@@ -218,12 +218,12 @@ footer #container-section-noussuivre{
 .r-add-contact a, .r-add-event a, .r-add-news a {
     background: #275e71;
     border-radius: 8px;
-    color: #ffffff;
+    color: #fff;
     padding: 1rem;
     text-decoration: none;
     transition: all .5s ease;
     &:hover {
-        background: #000000;
+        background: #000;
         transition: all .5s ease;
     }
 }
@@ -339,7 +339,7 @@ footer #container-section-noussuivre{
                     }
                 }
                 &.active {
-                    color:#CCCCCC!important ;
+                    color:#CCC!important ;
                 }
                 &:before {
                     color: #fff!important;
@@ -368,7 +368,7 @@ footer #container-section-noussuivre{
 }
 
 .template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #portal-column-content .sectioncontact .contact-type-organization {
@@ -449,7 +449,7 @@ footer #container-section-noussuivre{
         .table_image {
             text-decoration: none;
             .table_title span {
-                background: #ffffff;
+                background: #fff;
                 padding: 1rem 3rem;
                 border-radius: 8px;  
                 color:#000; 
@@ -498,28 +498,28 @@ footer #container-section-noussuivre{
         z-index: 0;
     }
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a, .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover {
-        color: #000000!important;
+        color: #000!important;
     }
 
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000!important;
         text-decoration: underline;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000!important;
         text-decoration: underline;
     }
 
@@ -528,7 +528,7 @@ footer #container-section-noussuivre{
         border-radius: 0px 0px 8px 8px !important;
         box-shadow: 0 1px 4px rgba(0,0,0,0);
         height: 90px;
-        color: #ffffff;
+        color: #fff;
         position: relative;
 
         .card-title {
@@ -607,7 +607,7 @@ footer #container-section-noussuivre{
         background-color: #275e71;
         border: 0px;
         border-radius: 8px;
-        color: #ffffff;
+        color: #fff;
         display: inline-block;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
@@ -615,7 +615,7 @@ footer #container-section-noussuivre{
     }
 
     .sectiontext p mark a, p mark a {
-        color: #ffffff;
+        color: #fff;
     }
 
 
@@ -634,7 +634,7 @@ h3 {
     content: counter(sectioncounter) "." !important;
 }
 #portal-footer-wrapper #portal-footer #smartweb-footer a, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
-    color:#ffffff;
+    color:#fff;
     transition: all .5s ease;
 }
 #portal-footer-wrapper #portal-footer #smartweb-footer a:hover, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {

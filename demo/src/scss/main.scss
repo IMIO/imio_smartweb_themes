@@ -84,9 +84,9 @@ h1{
             width: max-content;
         }
         a:hover {
-            background: #ffffff;
-            border: 1px solid #ffffff;
-            color: #000000;
+            background: #fff;
+            border: 1px solid #fff;
+            color: #000;
             transition: all .2s ease;
         }
     }
@@ -317,11 +317,11 @@ footer #container-section-noussuivre{
                 a {
                     color: #fff!important;
                     &:hover {
-                        color: #CCCCCC!important;
+                        color: #CCC!important;
                     }
                 }
                 &.active {
-                    color:#CCCCCC!important ;
+                    color:#CCC!important ;
                 }
                 &:before {
                     color: #fff!important;
@@ -350,7 +350,7 @@ footer #container-section-noussuivre{
 }
 
 .template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #portal-header #portal-header-top #header-links .account {
@@ -392,31 +392,31 @@ footer #container-section-noussuivre{
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
     background-color: $primary-green;
-    color:#000000;
+    color:#000;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
     background-color: $primary-green;
-    color:#000000;
+    color:#000;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
     background-color: $primary-green;
-    color:#000000;
+    color:#000;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
     background-color: $primary-green;
-    color:#000000;
+    color:#000;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
     background-color: $primary-green;
-    color:#000000;
+    color:#000;
 }
 
 #portal-column-content .section-contact .contact-type-organization .contact_logo {
@@ -467,7 +467,7 @@ footer #container-section-noussuivre{
             transition: .3s;
             box-shadow: none;
             .card-title {
-                color:#000000;
+                color:#000;
                 text-align: center;
             }
         }

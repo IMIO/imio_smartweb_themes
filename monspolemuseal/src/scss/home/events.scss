@@ -46,7 +46,7 @@
     .section-container{
         position: relative;
     .swiper-pagination-bullet-active {
-        background: #ffffff !important;
+        background: #fff !important;
       }
     }
     .section-title{
@@ -82,8 +82,8 @@
                 right: 0px;
                 padding: 10px;
                 border-radius: 0 0 0 20px;
-                background: #000000;
-                color: #ffffff;
+                background: #000;
+                color: #fff;
                 }
 
 
@@ -227,10 +227,10 @@
         display: none;
         }
      .section-container .swiper-pagination-bullet{
-        background: #ffffff !important;
+        background: #fff !important;
     }
     .section-container .swiper-pagination-bullet-active{
-        background: #ffffff !important;
+        background: #fff !important;
     }
     .see_all {
         position: absolute;

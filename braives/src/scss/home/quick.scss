@@ -25,7 +25,7 @@
     
     svg{
         max-height: 40px;
-        fill: #ffffff !important; 
+        fill: #fff !important; 
     }
     
     .body-section{
@@ -48,7 +48,7 @@
                         background: $primary; 
                     }
                     svg{
-                        fill: #ffffff !important;
+                        fill: #fff !important;
                     }
                 }
             }
@@ -102,7 +102,7 @@
                 background: none;
     
                 svg {
-                    fill: #000000 !important;
+                    fill: #000 !important;
                     transition: all .3s ease;
                 }
             }

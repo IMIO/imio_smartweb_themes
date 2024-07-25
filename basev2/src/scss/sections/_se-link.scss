@@ -93,7 +93,7 @@
             content: "";
             width: 30px;
             height: 30px;
-            border: 1px solid #FFFFFF;
+            border: 1px solid #FFF;
             border-radius: 30px;
             margin-right: 1rem;
             background-size: 35%;
@@ -109,7 +109,7 @@
             border-radius: 10px 10px 10px 0px;
             flex-shrink: 0;
             @include media-breakpoint-up(md) {
-                border: 1px solid #FFFFFF;
+                border: 1px solid #FFF;
             }
             img {
                 border-radius: 10px 10px 10px 0px;

@@ -26,14 +26,14 @@
 
     .swiper-wrapper{
         .swiper-slide {
-            background: #ffffff;
+            background: #fff;
             border-radius: 0;
             transition: .5s;
             
             &:hover,&:focus{
                     transition: .5s;
                     transform: translateY(10px);
-                    background: #eeeeee;
+                    background: #eee;
                     border-radius: 0px 0 50px 0;
             }
             & > a{

@@ -1,5 +1,5 @@
 //*// COLORS
-$primary: #000000;
+$primary: #000;
 $primary-svg: #F6BDD1 !default;
 $primary-light: #6BBC59 !default;
 $primary-yellow: #F3CF63;
@@ -8,13 +8,13 @@ $primary-green: #6BBC59;
 $primary-red: #B83434;
 $primary-color: #F6BDD1;
 $primary-color-light: #FCEBF1;
-$primary-titre : #000000;
-$primary-titre-hover : #000000;
+$primary-titre : #000;
+$primary-titre-hover : #000;
 
 $primary-color-abattoirs: #E42C10 !important;
 $primary-color-light-abattoirs: #FBE0DD !important;
-$primary-titre-abattoirs : #ffffff !important;
-$primary-titre-hover-abattoirs : #ffffff !important;
+$primary-titre-abattoirs : #fff !important;
+$primary-titre-hover-abattoirs : #fff !important;
 
 .subsection-anciens-abattoirs {
 
@@ -23,8 +23,8 @@ $primary-titre-hover-abattoirs : #ffffff !important;
 
 $primary-color-artotheque: #630611 !important;
 $primary-color-light-artotheque: #E8DADB !important;
-$primary-titre-artotheque : #ffffff !important;
-$primary-titre-hover-artotheque : #ffffff !important;
+$primary-titre-artotheque : #fff !important;
+$primary-titre-hover-artotheque : #fff !important;
 
 .subsection-artotheque {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E8DADB' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
@@ -32,80 +32,80 @@ $primary-titre-hover-artotheque : #ffffff !important;
 
 $primary-color-cap: #1A171B !important;
 $primary-color-light-cap: #DDDCDD !important;
-$primary-titre-cap : #ffffff !important;
-$primary-titre-hover-cap : #ffffff !important;
+$primary-titre-cap : #fff !important;
+$primary-titre-hover-cap : #fff !important;
 .subsection-cap {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23DDDCDD' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-magasin-de-papier: #FEBF2E !important;
 $primary-color-light-magasin-de-papier: #FFF5E0 !important;
-$primary-titre-magasin-de-papier : #000000 !important;
-$primary-titre-hover-magasin-de-papier : #000000 !important;
+$primary-titre-magasin-de-papier : #000 !important;
+$primary-titre-hover-magasin-de-papier : #000 !important;
 .subsection-magasin-de-papier {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FFF5E0' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-maison-van-gogh: #EC6A1E !important;
 $primary-color-light-maison-van-gogh: #FCE9DD !important;
-$primary-titre-maison-van-gogh : #000000 !important;
-$primary-titre-hover-maison-van-gogh : #000000 !important;
+$primary-titre-maison-van-gogh : #000 !important;
+$primary-titre-hover-maison-van-gogh : #000 !important;
 .subsection-maison-van-gogh {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FCE9DD' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-mons-memorial-museum: #38717C !important;
 $primary-color-light-mons-memorial-museum: #E1EAEB !important;
-$primary-titre-mons-memorial-museum : #ffffff !important;
-$primary-titre-hover-mons-memorial-museum : #ffffff !important;
+$primary-titre-mons-memorial-museum : #fff !important;
+$primary-titre-hover-mons-memorial-museum : #fff !important;
 .subsection-mons-memorial-museum {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E1EAEB' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-musee-du-doudou: #02623B !important;
 $primary-color-light-musee-du-doudou: #D9E7E2 !important;
-$primary-titre-musee-du-doudou : #ffffff !important;
-$primary-titre-hover-musee-du-doudou : #ffffff !important;
+$primary-titre-musee-du-doudou : #fff !important;
+$primary-titre-hover-musee-du-doudou : #fff !important;
 .subsection-musee-du-doudou {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23D9E7E2' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-salle-saint-georges: #F9A828 !important;
 $primary-color-light-salle-saint-georges: #FEF2DF !important;
-$primary-titre-salle-saint-georges : #000000 !important;
-$primary-titre-hover-salle-saint-georges : #000000 !important;
+$primary-titre-salle-saint-georges : #000 !important;
+$primary-titre-hover-salle-saint-georges : #000 !important;
 .subsection-salle-saint-georges {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FEF2DF' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-silexs: #A39481 !important;
 $primary-color-light-silexs: #F1EFEC !important;
-$primary-titre-silexs : #000000 !important;
-$primary-titre-hover-silexs : #000000 !important;
+$primary-titre-silexs : #000 !important;
+$primary-titre-hover-silexs : #000 !important;
 .subsection-silexs {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23F1EFEC' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-beffroi: #025A8D !important;
 $primary-color-light-beffroi: #D9E6EE !important;
-$primary-titre-beffroi : #ffffff !important;
-$primary-titre-hover-beffroi : #ffffff !important;
+$primary-titre-beffroi : #fff !important;
+$primary-titre-hover-beffroi : #fff !important;
 .subsection-beffroi {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23D9E6EE' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-tresor-de-sainte-waudru: #A55D9F !important;
 $primary-color-light-tresor-de-sainte-waudru: #F2E8F1 !important;
-$primary-titre-tresor-de-sainte-waudru : #ffffff !important;
-$primary-titre-hover-tresor-de-sainte-waudru : #ffffff !important;
+$primary-titre-tresor-de-sainte-waudru : #fff !important;
+$primary-titre-hover-tresor-de-sainte-waudru : #fff !important;
 .subsection-tresor-de-sainte-waudru {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23F2E8F1' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
 
 $primary-color-musee-francois-duesberg: #6B0E45 !important;
 $primary-color-light-musee-francois-duesberg: #E9DBE3 !important;
-$primary-titre-musee-francois-duesberg : #ffffff !important;
-$primary-titre-hover-musee-francois-duesberg : #ffffff !important;
+$primary-titre-musee-francois-duesberg : #fff !important;
+$primary-titre-hover-musee-francois-duesberg : #fff !important;
 .subsection-musee-francois-duesberg {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23E9DBE3' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat right 900px !important;
 }
@@ -164,7 +164,7 @@ $swiper-button-top: 26% !default;
 $swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-background-size: 50% !default;
-$swiper-background-color: #ffffff !default;
+$swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
 $swipper-bullet-color:$primary;
 //*// HEADER
@@ -243,14 +243,14 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem  5rem !default;
-$banner-content-background: #ffffff !default;
+$banner-content-background: #fff !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 30px !default;
-$banner-content-title-color: #000000 !default;
+$banner-content-title-color: #000 !default;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align:left!default;
 $banner-content-description-font-size: 18px !default;
-$banner-content-description-color: #000000;
+$banner-content-description-color: #000;
 
 // see_all
 $see-all-padding:15px 30px;

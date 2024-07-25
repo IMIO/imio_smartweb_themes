@@ -27,7 +27,7 @@ $enable-roboto-webfont: false;
 
 
 body {
-    background: #ffffff;
+    background: #fff;
 }
 
 //search
@@ -46,7 +46,7 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-    background: #ffffff;
+    background: #fff;
 }
 
 #portal-header #portal-header-top #portal-logo{
@@ -343,7 +343,7 @@ footer #container-section-noussuivre{
                     }
                 }
                 &.active {
-                    color:#CCCCCC!important ;
+                    color:#CCC!important ;
                 }
                 &:before {
                     color: #fff!important;
@@ -372,7 +372,7 @@ footer #container-section-noussuivre{
 }
 
 .template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #portal-column-content .sectioncontact .contact-type-organization {
@@ -437,7 +437,7 @@ footer #container-section-noussuivre{
         .table_image {
             text-decoration: none;
             .table_title span {
-                background: #ffffff;
+                background: #fff;
                 padding: 1rem 3rem;
                 border-radius: 8px;    
             }
@@ -479,28 +479,28 @@ footer #container-section-noussuivre{
         z-index: 0;
     }
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a, .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover {
-        color: #000000!important;
+        color: #000!important;
     }
 
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     .header-custom #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000!important;
         text-decoration: underline;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000!important;
         text-decoration: underline;
     }
 

@@ -1,7 +1,7 @@
 //*// COLORS
-$primary: #000000;
-$primary-svg: #000000 !default;
-$primary-light: #000000 !default;
+$primary: #000;
+$primary-svg: #000 !default;
+$primary-light: #000 !default;
 
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -145,7 +145,7 @@ $banner-content-description-color: black !default;
 $see-all-padding:8px 15px 10px 15px !important;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:#D90416;
-$see-all-color:#ffffff;
+$see-all-color:#fff;
 $see-all-radius:$global-radius;
 $see-all-border:solid 0px $primary !default;
 $see-all-text-transform:none !default;
@@ -153,7 +153,7 @@ $see-all-font-size:16px;
 $see-all-font-weight:300;
 $see-all-transition:all .2s ease !default;
 $see-all-hover-bg:#166B8C;
-$see-all-hover-color:#ffffff;
+$see-all-hover-color:#fff;
 $see-all-hover-radius:$global-radius !default;
 $see-all-hover-border:solid 0px $primary !default;
 $see-all-justify-content: center;
@@ -253,7 +253,7 @@ $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;
-$event-title-color:#ffffff;
+$event-title-color:#fff;
 $event-title-align:$home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;

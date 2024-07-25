@@ -3,7 +3,7 @@ $primary: #227F9B;
 $primary-svg: #0a6975;
 $tird: #A14073;
 
-$dark-b:#555555;
+$dark-b:#555;
 //*// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
@@ -11,7 +11,7 @@ $font-family-base:'Montserrat', sans-serif!default;
 $font-family-title:'Montserrat', sans-serif!default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: #555555;
+$font-title-color-dark: #555;
 $font-title-weight: 700 !default;
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`

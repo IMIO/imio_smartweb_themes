@@ -25,7 +25,7 @@
     .section-container{
         position: relative;
         .swiper-pagination-bullet {
-            background: #000000 !important;
+            background: #000 !important;
             opacity: 1;
           }
     .swiper-pagination-bullet-active {
@@ -69,7 +69,7 @@
                     text-align: right;
                     transition: .5s;
                     span {
-                        background: #000000;
+                        background: #000;
                         border-radius: 0 0 8px 8px;
                         padding: 0.5rem 1rem;
                         display: inline-block;

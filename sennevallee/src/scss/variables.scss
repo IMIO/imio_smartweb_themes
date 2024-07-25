@@ -1,5 +1,5 @@
 //*// COLORS
-$primary: #000000;
+$primary: #000;
 $primary-svg: #0A7CC1;
 $primary-light:#f5f5f5;
 $primary-blue:#0A7CC1;
@@ -64,7 +64,7 @@ $swipper-bullet-color:#fff;
 //*// HEADER
 $main-logo-max-width: 180px;
 $header-top-padding: .7rem 0 .7rem 0;
-$header-top-background: #ffffff;
+$header-top-background: #fff;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
 $header-nav-link-color:$primary;
@@ -78,7 +78,7 @@ $header-links-account-bg:transparent !default;
 $header-links-account-hover-border:solid 0px #030720 !default;
 $header-links-account-hover-bg:transparent !default;
 $header-links-account-hover-color:$primary-svg;
-$header-search-icon-color:#ffffff;
+$header-search-icon-color:#fff;
 $header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 $toggler-color: $primary;
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{url-encoded-color($toggler-color)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
@@ -184,7 +184,7 @@ $quick-access-svg-width:30px;
 $quick-access-svg-color:$primary;
 $quick-access-item-title-margin: 0 0 1rem 0;
 $quick-access-title-font-size: 15px;
-$quick-access-title-color: #000000;
+$quick-access-title-color: #000;
 $quick-access-title-text-transform: default;
 $quick-access-title-weight: 500;
 $quick-access-title-font-family: $font-family-base;

@@ -215,7 +215,7 @@ z-index: -4;
                 top: 0px;
                 bottom: 0px;
                 position: absolute;
-                background: linear-gradient(180deg, transparent, transparent 315px, #000000 100%);
+                background: linear-gradient(180deg, transparent, transparent 315px, #000 100%);
                 content: "";
                 display: block;
                 position: absolute;
@@ -419,7 +419,7 @@ z-index: -4;
             
             .table_image {
                 display: block;
-                background: linear-gradient(180deg, transparent, transparent 100px, #ffffff 100px, #ffffff 100%);
+                background: linear-gradient(180deg, transparent, transparent 100px, #fff 100px, #fff 100%);
                 text-decoration: none;
                 height: 100%;
                 padding: 12px 12px 30px 12px;

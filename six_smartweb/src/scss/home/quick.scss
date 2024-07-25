@@ -11,7 +11,7 @@
         li{
             .table_image{
                 .image.d-block {
-                background: #ffffff;
+                background: #fff;
                 border-radius: 100px;
                 width: 120px;
                 height: 120px;
@@ -24,7 +24,7 @@
                     transform: translateY(-10px);
                     transition: all .5s ease;
                     background:#166B8C;
-                    svg {fill:#ffffff;}
+                    svg {fill:#fff;}
                     
                 }
             }

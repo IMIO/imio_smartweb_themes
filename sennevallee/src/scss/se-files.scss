@@ -1,5 +1,5 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 0px;
     font-weight: bold;
     margin-top: 2vw;
@@ -17,7 +17,7 @@
 
 
     .section-container {
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 0px;
         display: flex;
         @media screen and (min-width:800px) {
@@ -50,7 +50,7 @@
             
 
             .table_image {
-                border: solid 1px #000000;
+                border: solid 1px #000;
                 text-decoration: none;
                 padding: 20px;
                 border-radius: 0px;
@@ -73,7 +73,7 @@
                 p,
                 a,
                 div {
-                    color: #ffffff;
+                    color: #fff;
                     font-weight: 400;
                 }
                 }

@@ -104,7 +104,7 @@
             content: "";
             width: 30px;
             height: 30px;
-            border: 1px solid #FFFFFF;
+            border: 1px solid #FFF;
             border-radius: 30px;
             // background: url(../svg/download-arrow.svg) no-repeat center;
             margin-right: 1rem;
@@ -123,7 +123,7 @@
             flex-shrink: 0;
             // background: url(../svg/files.svg) no-repeat center $primary; 
             @include media-breakpoint-up(md) {
-                border: 1px solid #FFFFFF;
+                border: 1px solid #FFF;
             }
             img {
                 border-radius: 10px 10px 10px 0px;

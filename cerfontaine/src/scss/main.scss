@@ -27,7 +27,7 @@ $enable-roboto-webfont: false;
 
 
 body {
-    background: #ffffff;
+    background: #fff;
 }
 
 //search
@@ -387,7 +387,7 @@ footer #container-section-noussuivre{
                     }
                 }
                 &.active {
-                    color:#CCCCCC!important ;
+                    color:#CCC!important ;
                 }
                 &:before {
                     color: #fff!important;
@@ -416,7 +416,7 @@ footer #container-section-noussuivre{
 }
 
 .template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #portal-column-content .sectioncontact .contact-type-organization {
@@ -486,7 +486,7 @@ footer #container-section-noussuivre{
         .table_image {
             text-decoration: none;
             .table_title span {
-                background: #ffffff;
+                background: #fff;
                 padding: 1rem 3rem;
                 border-radius: 8px;  
                 color:#000; 
@@ -534,15 +534,15 @@ footer #container-section-noussuivre{
 
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item.active, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item a, #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover, #portal-breadcrumbs .breadcrumb .breadcrumb-item:before {
-        color: #000000!important;
+        color: #000!important;
     }
 
     #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-        color: #000000!important;
+        color: #000!important;
         text-decoration: underline;
     }
 
@@ -583,7 +583,7 @@ footer #container-section-noussuivre{
     #messagesviewlet .portalMessage.warning,
     #localmessagesviewlet .portalMessage.warning {
         background: $primary-green;
-        color:#000000;
+        color:#000;
     }
     
     #messagesviewlet .portalMessage.info .messagesviewlet-type,
@@ -595,7 +595,7 @@ footer #container-section-noussuivre{
     #messagesviewlet .portalMessage.warning .messagesviewlet-type,
     #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
         background: $primary-green;
-        color:#000000;
+        color:#000;
     }
 
 
@@ -610,30 +610,30 @@ footer #container-section-noussuivre{
 
 
     .sectiontext mark, .r-content-text mark {
-        background-color: #dddddd;
+        background-color: #ddd;
         border: 0px;
         border-radius: 8px;
-        color: #ffffff;
+        color: #fff;
         display: inline-block;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
         a {
-            color:#ffffff !important;
+            color:#fff !important;
         }
     }
 
     .portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image {
-        background-color: #eeeeee;
+        background-color: #eee;
         border: 0px;
         border-radius: 8px;
-        color: #000000;
+        color: #000;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
         div, span {
-            color:#000000 !important;
+            color:#000 !important;
         }
         a {
-            color:#000000 !important;
+            color:#000 !important;
         }
     }
 
@@ -667,7 +667,7 @@ h3 {
     content: counter(sectioncounter) "." !important;
 }
 #portal-footer-wrapper #portal-footer #smartweb-footer a, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
-    color:#ffffff;
+    color:#fff;
     transition: all .5s ease;
 }
 #portal-footer-wrapper #portal-footer #smartweb-footer a:hover, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {

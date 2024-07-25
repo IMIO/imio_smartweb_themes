@@ -27,7 +27,7 @@
     
     svg{
         max-height: 40px;
-        fill: #ffffff !important; 
+        fill: #fff !important; 
     }
     
     .body-section{
@@ -43,7 +43,7 @@
                 .table_title{
                     margin-top:0px;
                     span{
-                        color:#000000;
+                        color:#000;
                     }
                 }
                 &:hover{
@@ -51,11 +51,11 @@
                         background: $primary; 
                     }
                     svg{
-                        fill: #ffffff !important;
+                        fill: #fff !important;
                     }
                     .table_title{
                         span{
-                            color:#ffffff;
+                            color:#fff;
                         }
                     }
                 }
@@ -91,7 +91,7 @@
         border-radius: 10px;
         transition: all .3s ease;
         margin-bottom: 10px;
-        color:#000000;
+        color:#000;
 
         .image.d-block {
             background: none;
@@ -106,13 +106,13 @@
             background:$primary-green;
             transition: all .3s ease;
             transform: translateY(10px);
-            color:#ffffff;
+            color:#fff;
     
             .image.d-block {
                 background: none;
     
                 svg {
-                    fill: #ffffff !important;
+                    fill: #fff !important;
                     transition: all .3s ease;
                 }
             }

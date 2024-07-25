@@ -183,7 +183,7 @@ footer #container-section-noussuivre{
 }
 
 .r-add-contact a, .r-add-event a, .r-add-news a {
-	background: #ffffff;
+	background: #fff;
 	color: #000;
 	padding: 1rem;
 	text-decoration: none;
@@ -272,11 +272,11 @@ footer #container-section-noussuivre{
                 a {
                     color: #fff!important;
                     &:hover {
-                        color: #CCCCCC!important;
+                        color: #CCC!important;
                     }
                 }
                 &.active {
-                    color:#CCCCCC!important ;
+                    color:#CCC!important ;
                 }
                 &:before {
                     color: #fff!important;
@@ -305,7 +305,7 @@ footer #container-section-noussuivre{
 }
 
 .template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 @media screen and (max-width: 992px) {
     #body-section-en-un-clic li {

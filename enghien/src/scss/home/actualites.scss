@@ -55,7 +55,7 @@
             transition: .5s;
             width:100% !important;
             max-width: none !important;
-            background:#ffffff;
+            background:#fff;
             padding: 40px 20px 40px 10px;
             
             &:hover,&:focus{
@@ -86,7 +86,7 @@
                     span {
                         display:inline-block !important;
                         background: #f1f1f1;
-                        color: #000000;
+                        color: #000;
                         padding:5px 10px;
                         transition: .5s;
                     }

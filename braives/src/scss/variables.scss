@@ -1,7 +1,7 @@
 //*// COLORS
 
-$primary: #000000;
-$primary-svg: #000000;
+$primary: #000;
+$primary-svg: #000;
 $primary-light:#f1f1f1;
 $primary-green:#C3EA68;
 
@@ -61,7 +61,7 @@ $swipper-bullet-color:#fff;
 //*// HEADER
 $main-logo-max-width: 180px;
 $header-top-padding: .7rem 0 .7rem 0;
-$header-top-background: #ffffff;
+$header-top-background: #fff;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
 $header-nav-link-color:$primary;
@@ -147,7 +147,7 @@ $banner-content-description-color: black !default;
 $see-all-padding:1rem 1.5rem .9rem 1.5rem;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg:$primary-green;
-$see-all-color:#000000;
+$see-all-color:#000;
 $see-all-radius:10px;
 $see-all-border:solid 1px $primary-green;
 $see-all-text-transform:none;
@@ -181,7 +181,7 @@ $quick-access-svg-width:30px;
 $quick-access-svg-color:$primary;
 $quick-access-item-title-margin: 0 0 1rem 0;
 $quick-access-title-font-size: 15px;
-$quick-access-title-color: #000000;
+$quick-access-title-color: #000;
 $quick-access-title-text-transform: default;
 $quick-access-title-weight: 500;
 $quick-access-title-font-family: $font-family-base;
