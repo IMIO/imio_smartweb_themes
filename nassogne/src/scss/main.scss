@@ -312,3 +312,14 @@ footer{
         }
     }
 }
+
+// SUP-38146
+#portal-column-content .sectioncontact {
+    margin-bottom: 1.5rem;
+    position: relative;
+    margin: 60px 0 !important;
+}
+
+#portal-column-content .sectionlinks {
+    margin: 60px 0 0 0 !important;
+}
