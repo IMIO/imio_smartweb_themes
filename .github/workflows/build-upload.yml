@@ -17,14 +17,17 @@ jobs:
     outputs:
       changed-directories: ${{ steps.set-output.outputs.changed-directories }}
     steps:
-      - name: Install Git
-        run: sudo apt-get update && sudo apt-get install -y git
+      - name: Install Git & jq
+        run: sudo apt-get update && sudo apt-get install -y git jq
+      - name: Install Node.js
+        if: ${{ env.ACT }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
+          curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+          sudo apt-get install -y nodejs
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
       - name: Get changed directories names
         id: changed-directories
         uses: tj-actions/changed-files@v44.5.6
@@ -34,7 +37,9 @@ jobs:
           dir_names_max_depth: '1'
       - name: Set output
         id: set-output
-        run: echo "changed-directories=${{ steps.changed-directories.outputs.all_changed_files }}" >> "$GITHUB_OUTPUT"
+        run: |
+          changed_dirs=$(printf "%s" "${{ steps.changed-directories.outputs.all_changed_files }}" | jq -R -s -c 'split(" ")')
+          echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
       - name: Summary
         run: |
           echo "Changed directories: ${{ steps.changed-directories.outputs.all_changed_files }}"
@@ -43,36 +48,47 @@ jobs:
     needs: get-changed-directories
     runs-on:
       group: self-hosted
+    strategy:
+      matrix:
+        directory: ${{ fromJson(needs.get-changed-directories.outputs.changed-directories) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Install Node.js
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
+          curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+          sudo apt-get install -y nodejs
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
           version: 8
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
       - name: Install node dev dependencies
         run: |
           pnpm install
       - name: Build themes
         run: |
-          for directory in ${{ needs.get-changed-directories.outputs.changed-directories }}; do
-            echo Building theme for $directory
-            pnpm --theme=$directory build
-          done
+          echo Building theme for ${{ matrix.directory }}
+          pnpm --theme=${{ matrix.directory }} build
       - name: Install upload dependencies
         run: |
           sudo apt-get update && sudo apt-get install -y python3-pip jq
           pip3 install requests && pip3 install bs4
       - name: Upload themes
+        if: ${{ !env.ACT }} # do not run locally
         run: |
-          for directory in ${{ needs.get-changed-directories.outputs.changed-directories }}; do
-            python3 theme_uploader.py $(jq -r '.homepage' $directory/package.json) ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }} $directory
-          done
+          python3 theme_uploader.py $(jq -r '.homepage' ${{ matrix.directory }}/package.json) ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }} ${{ matrix.directory }}
+      - name: Get vhost
+        run: |
+          vhost=$(echo $(jq -r '.homepage' ${{ matrix.directory }}/package.json) | cut -c 9-)
+          echo "vhost=$vhost" >> $GITHUB_ENV
+      - name: Purge cache
+        if: ${{ !env.ACT }} # do not run locally
+        uses: IMIO/gha/rundeck-notify@v3.3
+        with:
+          RUNDECK_URL: ${{ secrets.RUNDECK_URL }}
+          RUNDECK_TOKEN: ${{ secrets.SMARTWEB_RUNDECK_TOKEN }}
+          RUNDECK_JOB_ID: ${{ vars.RUNDECK_JOB_ID }}
+          RUNDECK_PARAMETERS: -F "option.vhost=${{ env.vhost }}"
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
