@@ -1,4 +1,4 @@
-.portaltype-imio-smartweb-page #main-container .sectionfiles {
+.portaltype-imio-smartweb-page #main-container .sectionfiles, .portaltype-imio-smartweb-portalpage #main-container .sectionfiles {
     background-color: #ffffff;
     border-radius: 0px;
     font-weight: bold;
@@ -19,6 +19,7 @@
         background-color: #ffffff;
         border-radius: 0px;
         display: flex;
+        flex-direction: column-reverse;
         @media screen and (min-width:800px) {
             padding: 0 50px;
         }
