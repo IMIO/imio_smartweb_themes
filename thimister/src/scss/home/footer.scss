@@ -2,22 +2,28 @@
     text-align: left!important;
     background: $primary;
     margin-top: 5rem;
+
     #portal-footer{
         background: $primary;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin-top: 2rem;
+
                 figure{
                     img{
                         width: 150px;
@@ -32,12 +38,15 @@
 #portal-colophon{
     background: $primary;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }
@@ -68,11 +77,13 @@ footer{
     #portal-footer-wrapper #portal-footer.container {
     text-align: center;
     }
+
     #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectiontext figure img {
     margin: 0 auto;
     padding-top: 1rem;
     }
 }
+
 #portal-footer-wrapper #portal-footer.container {
     background: $primary;
     padding: 3rem 0;
@@ -82,12 +93,15 @@ footer{
 footer .image.d-block.w-100 svg {
     display: none;
 }
+
 footer .body-section-formulaires ul {
     padding-left: 12px;
 }
+
 .sectiontext.col-sm-3 {
     z-index: 1;
 }
+
 .sectiontext .section-text .body-section.figure-left figure {
     float: left;
     margin-right: 2.5rem;
@@ -99,6 +113,7 @@ footer .body-section-formulaires ul {
         max-width: 100%;
         width: 100%;
     }
+
     body:not(.is-in-minisite) .sectiontext .section-text .body-section.figure-left figure {
         max-width: 100%;
     }

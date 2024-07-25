@@ -1,29 +1,36 @@
 .home-publication{
     padding-top: 3rem;
     padding-bottom: 3rem;
+
     .swiper-slide{
         background:#fff;
+
         a{
             text-decoration: none;
         }
     }
+
     .section-title{
         text-align: center;
         margin-bottom: 2rem;
     }
+
     .swiper-image{
         background-color: #eee;
         padding-bottom: 141.42857142857142%;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
+
     .swiper_title{
         box-shadow: 0px 10px 20px rgba(0,0,0,.1);
         padding: 2rem 1.5rem;
         position: relative;
+
         h3{
             font-size: 18px;
         }
+
         &:before{
             content: "";
             position: absolute;
@@ -35,10 +42,12 @@
             transform: translateY(-50%)
         }
     }
+
     .see_all{
         display: flex;
         justify-content: center;
         margin: 2rem 0 0;
+
         a{
             background: #fff;
             border: 2px solid #969696;

@@ -1,6 +1,7 @@
 #smartweb-footer .sectiontext figure,  #smartweb-minisite-footer .sectiontext figure {
     max-width: 65% !important;
 }
+
 #smartweb-footer .sectiontext figure img,  #smartweb-minisite-footer .sectiontext figure img {
     max-width: 200px !important;
     width: 100% !important;
@@ -10,22 +11,27 @@
 
     text-align: left!important;
     margin-top:2rem;
+
     #portal-footer{
         background:$primary-svg!important;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff;
                 text-decoration:none;
             }
+
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
                 margin-top: 0rem;
+
                 &.section-title{
                     margin-bottom: 0.5rem;
                     margin-top: 0rem;
                 }
             }
+
             .sectiontext{
                 figure{
                     img{
@@ -40,6 +46,7 @@
 .section-home-page #portal-footer-wrapper{
     margin-top: -5rem;
 }
+
 #portal-footer-wrapper #portal-footer h2.section-title {
     margin-bottom: 0.5rem;
 }
@@ -51,21 +58,23 @@
 
 #portal-footer-wrapper #portal-footer .sectionlinks .container .nb-items-batch-1 .body-section{
     .row {
-        
         li {
-        
             .table_display {
                 .table_image {
                     .image {
                         position:absolute;
+
                         svg {
                             fill:#fff;
                         }
                     }
+
                     .table_title{
                         padding-left:30px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -83,6 +92,7 @@
 #portal-colophon{
     background: $primary-svg;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -92,6 +102,7 @@
         }*/
         li{
             color: #fff;
+
             a,span,p,div{
                 color: #fff;
             }
@@ -155,22 +166,24 @@ footer{
 
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectionlinks .container .nb-items-batch-1 .body-section {
     .row {
-        
         li {
-
             .table_display {
                 .table_image {
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff !important;
                         }
                     }
+
                     .table_title{
                         padding-left:0px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                         span {color:$primary-svg !important;
                             transition: all .5s ease;}
@@ -186,14 +199,18 @@ footer{
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff !important;
                         }
                     }
+
                     .table_title{
                         padding-left:0px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -209,14 +226,18 @@ footer{
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff !important;
                         }
                     }
+
                     .table_title{
                         padding-left:30px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -232,14 +253,18 @@ footer{
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff !important;
                         }
                     }
+
                     .table_title{
                         padding-left:0px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -255,14 +280,18 @@ footer{
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff !important;
                         }
                     }
+
                     .table_title{
                         padding-left:0px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -278,14 +307,18 @@ footer{
                     .image {
                         width: 30px;
                         position:absolute;
+
                         svg {
                             fill:#fff!important;
                         }
                     }
+
                     .table_title{
                         padding-left:0px!important;
                         font-size: 1rem!important;
+
                         span {transition: all .5s ease;}
+
                         &:hover {
                             span {color:$primary-svg !important;
                                 transition: all .5s ease;}
@@ -309,11 +342,11 @@ body footer#portal-footer-wrapper div#portal-footer div.smartweb_footer .contain
 }
 
 #portal-footer-wrapper{
-
     .contact_informations {
         ul {
             list-style-type: none;
             padding: 0;
+
             li {
                 padding:0;
             } 

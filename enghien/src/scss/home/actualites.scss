@@ -4,6 +4,7 @@
     width:50%;
     padding: 0 0 0 40px;
     margin-bottom: 100px;
+
     .section-container{
         position: initial;
     }
@@ -50,6 +51,7 @@
         padding-bottom: 0px;
         background: #d4d4d4;
         border-bottom: 1px solid #d4d4d4;
+
         .swiper-slide {
             background: transparent;
             transition: .5s;
@@ -71,6 +73,7 @@
                         }
                     }
             }
+
             & > a{
                 align-items: center;
                 
@@ -78,11 +81,13 @@
                     transition: .5s;
                     display:none !important;
                 }
+
                 .swiper_category{
                     top: 20px;
                     left: auto;
                     right:20px;
                     position: absolute;
+
                     span {
                         display:inline-block !important;
                         background: #f1f1f1;
@@ -91,9 +96,11 @@
                         transition: .5s;
                     }
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                 }
+
                 .swiper_title{
                     h3{
                         font-family: $font-family-base;
@@ -101,11 +108,13 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -121,12 +130,14 @@
 .image-actualites-accueil {
     margin-bottom: 100px;
     padding: 0px;
+
     .section-text .body-section figure {
     height: 550px;
     width: 100% !important;
     max-width: 100% !important;
     display: block;
     margin: 0;
+
     img {
         width: 100%;
         border-radius: 0px;
@@ -138,7 +149,6 @@
 }
 
 @media screen and (max-width: 992px) {
-
     .sectionnews{
         width:100%;
         padding:0px;
@@ -146,6 +156,7 @@
         .swiper-button-next, .swiper-button-prev {
             display:none;
         }
+
         .swiper-pagination {
             display:none;
         }
@@ -162,6 +173,7 @@
             top:0px;
             left:0px;
         }
+
         .see_all {
             bottom: 0px;
             left: 0px;
@@ -175,12 +187,14 @@
         margin-bottom: 50px;
         padding: 0px;
         width: 100%;
+
         .section-text .body-section figure {
         height: auto;
         width: 100% !important;
         max-width: 100% !important;
         display: block;
         margin: 0;
+
         img {
             width: 100%;
             border-radius: 0px;

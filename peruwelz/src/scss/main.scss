@@ -42,9 +42,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -85,6 +87,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;

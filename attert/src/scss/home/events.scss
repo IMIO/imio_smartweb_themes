@@ -1,26 +1,32 @@
 .sectionevents .swiper-slide .swiper-image {
     display: none;
 }
+
 .sectionevents .swiper-slide {
     .swiper-image{
         order: 1;
     }
+
     .swiper_date {
         order: 2;
         background: $primary-svg;
         border-radius: 50px;
     }
+
     .swiper_category {
         order: 3;
     }
+
     .swiper_title {
         order: 4;
     }
 
 }
+
 .sectionevents .swiper-wrapper {
     position: relative;
 }
+
 .sectionevents .swiper{
     &::after {
         content: "";
@@ -31,6 +37,7 @@
         background: #dbdbdb;
         height: 1px;
     }
+
     &::before {
         content: "";
         background: #dbdbdb;
@@ -40,17 +47,21 @@
         right: 0;
         height: 1px;
     }
+
     .swiper-slide {
         padding: 2rem 0;
         border-right: solid 1px #dbdbdb;
+
         &:last-child{
             border-right: transparent;
         }
+
         & > a div:last-child {
             margin-bottom: 0 !important;
         }
     }
 }
+
   .sectionevents {
       .swiper-wrapper {
         padding-top: 0;

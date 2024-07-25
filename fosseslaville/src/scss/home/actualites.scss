@@ -21,6 +21,7 @@
 .container #main-container .sectionevents  {
     position: relative;
 }
+
 .container #main-container .sectionevents:after {
     background: url(../../assets/svg/logo-background.svg);
     background-size: cover;
@@ -33,6 +34,7 @@
     z-index: -1;
     height: 100vw;
 }
+
 .sectionevents h2.section-title, .sectionnews h2.section-title {
     font-size: 4rem;
     text-transform: uppercase;
@@ -42,23 +44,29 @@
     font-size: 3rem;
     margin: 3rem 0;
     }
+
     .smartweb_herobanner .bannerSwiper {
         height: 250px;
     }
 }
+
 .sectionnews .swiper-slide > a {
     transition: all .2s ease;
 }
+
 .sectionnews .swiper-slide > a:hover {
     background: $primary;
+
     div h3, div.swiper_date span, div.swiper_title, div.swiper_description, span, span, div p 
         {
             color: #fff;
         }
 }
+
 .sectionevents h2, .sectionnews h2 {
     font-weight: $font-title-weight;
 }
+
 .sectionnews .swiper-slide:hover,
 .sectionevents .swiper-slide:hover {
     .swiper_category span {
@@ -66,6 +74,7 @@
     color: #000;
     }
 }
+
 .sectionnews, .a-la-une {
     z-index: 1;
 }

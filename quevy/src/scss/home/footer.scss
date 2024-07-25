@@ -7,26 +7,32 @@
     text-align: left!important;
     background: transparent;
     margin-top: 0rem;
+
     #portal-footer{
         background:#fff;
         padding:2rem 0;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #121212!important;
                 text-decoration:none;
             }
+
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
                 margin-top: 2rem;
                 font-family: $font-family-base;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin-top: 2rem;
+
                 figure{
                     img{
                         max-width: 100%;
@@ -36,18 +42,23 @@
         }
     }
 }
+
 #portal-footer-wrapper #portal-footer #smartweb-footer h2.section-title {
     margin-bottom: 0.5rem;
 }
+
 #portal-colophon{
     background:#fff;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #121212!important;
+
             a,span,p,div{
                 color: #121212!important;
             }

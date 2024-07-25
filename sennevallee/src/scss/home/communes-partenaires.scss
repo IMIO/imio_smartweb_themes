@@ -10,9 +10,11 @@
         margin: 0px;
         text-align: center;
         padding-right: 50px;
+
         .section-title {
             margin-bottom: 30px;
         }
+
         .table_display a {
             background: $primary-green;
             text-decoration: none;
@@ -23,6 +25,7 @@
             color:#fff;
             transition: all .3s ease;
             font-weight: 650;
+
             &:hover {
                 background: $primary-blue;
             }

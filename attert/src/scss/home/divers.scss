@@ -1,16 +1,20 @@
 body.section-home-page #portal-header {
 margin: 0rem auto;
 }
+
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
 	bottom: -7px!important;
 }
+
 body.section-home-page .smartweb_herobanner .bannerSwiper {
     height: 900px;
   }
+
 body:not(.userrole-authenticated).section-home-page #portal-header #portal-header-top {
     position: absolute;
     width: 100%;
   }
+
 body.section-home-page #portal-header #portal-header-top::after {
     background: transparent;
   }
@@ -20,21 +24,26 @@ body.section-home-page #portal-header #portal-header-top::after {
     fill: #000!important;
   }
 }
+
 body:not(.userrole-authenticated).section-home-page {
   .sectionlinks {
     background: transparent!important;
   }
+
   #portal-logo{
     path{
       fill: #fff!important;
     }
   }
+
   #portal-header #portal-header-top #header-links span {
     color: #fff;
   }
+
   #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a {
       color: #fff;
     }
+
     #portal-globalnav-wrapper #portal-globalnav-collapse.activated > ul > li > a {
       color: #fff !important;
     }
@@ -42,9 +51,11 @@ body:not(.userrole-authenticated).section-home-page {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a{
       color: #fff !important;
     }
+
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::before {
       background-color: #fff;
     }
+
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
       background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"  width=\"8.444\" height=\"5.2\"><path d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\" fill=\"%23fff\"/></svg>");
       background-size: contain;
@@ -52,6 +63,7 @@ body:not(.userrole-authenticated).section-home-page {
       background-repeat: no-repeat;
     }
 } 
+
 body.section-home-page .swiper-banner-image::after {
   content: "";
   top: 0;
@@ -73,6 +85,7 @@ body.section-home-page .swiper-banner-image::after {
 	border-radius: 50px;
 	background: $primary-svg;
 }
+
 #portal-header #portal-header-top #header-links #search-link a::before {
 	content: "";
 	width: 14px;
@@ -96,18 +109,23 @@ body.section-home-page .swiper-banner-image::after {
   img{
     height: 100px;
   }
+
   figure{
     margin-right: auto !important;
   }
 }
+
 .footer-social{
   .table_title{
     display: none;
   }
+
   .row{
     justify-content: flex-start!important;
+
     li{
       width: auto!important;
+
       svg{
         width: 25px;
         height: auto;
@@ -115,6 +133,7 @@ body.section-home-page .swiper-banner-image::after {
     }
   }
 }
+
 footer h2 {
 	font-size: 20px !important;
 }

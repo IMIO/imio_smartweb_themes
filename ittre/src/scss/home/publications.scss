@@ -7,8 +7,10 @@
             font-family: $font-family-title;
             font-weight: 600 !important;
         }
+
             .swiper-slide {
         text-align: center;
+
         & > a {
             background-color: #fff;
             color: $dark;
@@ -20,10 +22,12 @@
             transform: translateY(0px);
             overflow: hidden;
             transition: .5s;
+
             &:hover,&:focus{
                 transition: .5s;
                 transform: translateY(10px);
         }
+
             .swiper_date {
                 padding-bottom: 10px;
                 //background-color: $primary;
@@ -32,8 +36,10 @@
                     font-size: 0.9rem;
                 }
             }
+
             .swiper_title {
                 padding-bottom: 10px;
+
                 h3  {
                     color: $dark;
                     font-size: 1.3rem;
@@ -41,6 +47,7 @@
                     font-weight: 500;
                 }
             }
+
             .swiper_description {
                 p {
                     color: $primary;
@@ -49,10 +56,12 @@
         }
     }
 }
+
 .publications .see_all {
     display: flex;
     justify-content: right;
     margin: 2rem 0 0;
+
     a {
     background: $secondary-svg;
     border: 1px solid $dark;
@@ -71,12 +80,14 @@
     width: max-content;
     }
 }
+
 .publications .see_all a:focus, .publications .see_all a:hover {
     background: transparent;
     border: 1px solid $secondary-svg;
     border-radius: 5px;
     color: $dark !important;
 }
+
 div#body-section-publications-officielles {
     z-index: 0;
 }

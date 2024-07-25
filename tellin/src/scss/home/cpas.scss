@@ -1,8 +1,8 @@
 .site-cpas {
-
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
         color: #BF281F;
     }
+
     #portal-globalnav .dropdown .nav-title a {
         color: #BF281F;
     }
@@ -10,6 +10,7 @@
     #portal-globalnav-collapse .dropdown .nav-link:focus, #portal-globalnav-collapse .dropdown .nav-link:hover, #subsite-navigation .dropdown .nav-link:focus, #subsite-navigation .dropdown .nav-link:hover {
         color: #BF281F;
     }
+
     #portal-globalnav>li a:hover {
         color: #000 !important;
     }
@@ -45,6 +46,7 @@
 .sectionnews .see_all a, .sectionevent .see_all a  {
     background: #F9CF00;
     border: 1px solid #F9CF00;
+
     &:hover {
         background: #1c313f;
         border: 1px solid #1c313f;

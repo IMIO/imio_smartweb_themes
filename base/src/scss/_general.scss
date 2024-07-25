@@ -1,6 +1,7 @@
 .frontend ul {
     padding-left: 0;
 }
+
 .offcanvas-start {
     top: 0;
     left: 0;
@@ -17,6 +18,7 @@
 .section-contact .table_schedule {
 	display: none;
 }
+
 .schedule .opening_informations:after{
     content: "";
     width: 9px;
@@ -66,9 +68,11 @@
 .section-contact .contact_informations a {
     display: block;
  }
+
 .userrole-authenticated.template-edit #content-core .edit .form-label {
     font-weight: 600;
 }
+
 .linkTypes a#tinymce-autotoc-autotoc-1 {
     display: none;
  }
@@ -79,6 +83,7 @@
     flex-wrap: wrap;
     gap: 1%;
 }
+
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .form-text{
     width:100%;
 }
@@ -89,16 +94,19 @@
     padding: 0.75rem;
     text-align: center;
 }
+
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .plone-icon {
     width: auto;
     height: 2.5rem;
 }
+
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .option label {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size:14px;
 }
+
 .mb-ign-mode-liste-carte{
     z-index:0;
 }

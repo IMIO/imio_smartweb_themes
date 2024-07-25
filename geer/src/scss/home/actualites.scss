@@ -1,11 +1,13 @@
 .sectionnews .swiper-slide .swiper_description {
     padding: 0 36px;
 }
+
 .sectionnews, .sectionevents {
     .swiper-image {
     position: relative;
     }
 }
+
 .sectionnews, .sectionevents {
     .swiper-image:after {
     content: "";
@@ -21,6 +23,7 @@
     border-radius: 50px 50px 0 0;
     }
 }
+
 .sectionnews, .sectionevents {
 .swiper-slide a:hover .swiper-image:after {
     opacity: 0.5;

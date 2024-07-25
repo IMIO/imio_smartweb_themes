@@ -40,18 +40,22 @@
         font-size: 3rem;
         color:#fff !important;
     }
+
     .swiper-slide {
         border-bottom: 1px solid #D4D4D4;
         padding-bottom: 20px;
         transition: .5s;
+
         &:hover,&:focus{
             transition: .5s;
             transform: translateY(10px);
     }
+
          a {
         text-decoration: none;
     }
 }
+
     .swiper_title h3 {
     padding-top: 20px;
     font-family: Roboto,sans-serif;
@@ -81,6 +85,7 @@
         width: -moz-max-content;
         width: max-content;
         margin: 30px auto 0;
+
         &:hover {
                 background: #000;
                 border: 0 solid #424242;

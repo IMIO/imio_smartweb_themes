@@ -36,6 +36,7 @@ $enable-roboto-webfont: false;
         }
     }
 }
+
 .swiper_title h3{
     font-family: $font-family-base!important;
 }
@@ -60,6 +61,7 @@ $enable-roboto-webfont: false;
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+
     .circle {
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: relative;
@@ -69,6 +71,7 @@ $enable-roboto-webfont: false;
         height: 3rem;
         background: $primary;
         border-radius: 1.625rem;
+
         .icon {
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
           position: absolute;
@@ -76,12 +79,14 @@ $enable-roboto-webfont: false;
           bottom: 0;
           margin: auto;
           background: $white;
+
           &.arrow {
             @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
             left: 0.625rem;
             width: 1.125rem;
             height: 0.125rem;
             background: none;
+
             &::before {
               position: absolute;
               content: '';
@@ -96,6 +101,7 @@ $enable-roboto-webfont: false;
           }
         }
     }
+
     a {
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: absolute!important;
@@ -113,9 +119,11 @@ $enable-roboto-webfont: false;
         font-family: $josefin!important;
         text-decoration: none!important;
       }
+
     &:hover {
         .circle {
           width: 100%;
+
           .icon {
             &.arrow {
             background: $white;
@@ -123,10 +131,12 @@ $enable-roboto-webfont: false;
             }
           }
         }
+
         .button-text {
           color: $white;
         }
       }
+
     &:hover {
       a{        
           color: $white;
@@ -139,6 +149,7 @@ $enable-roboto-webfont: false;
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
 	bottom: -6px!important;
 }
+
 .smartweb_herobanner .bannerSwiper .section-slide {
 	height: 100%;
 }
@@ -147,6 +158,7 @@ $enable-roboto-webfont: false;
 
 .home-video{
   padding: 2rem 0!important;
+
   .section-video{
     display: block;
     justify-content: space-between;
@@ -154,6 +166,7 @@ $enable-roboto-webfont: false;
     @include media-breakpoint-up(lg){
       display: flex;
     }
+
     & > p{
       font-family: $josefin;
       font-size: 28px;
@@ -162,28 +175,35 @@ $enable-roboto-webfont: false;
         font-size: 45px;
       }
     }
+
     #body-section-video-daccueil{
       max-width: 600px;
+
       iframe{
         border-radius: 10px;
       }
     }
   }
 }
+
 .home-en-image li {
   list-style: none;
   padding: 1px;
 }
+
 .home-en-image .image{
   padding-bottom: 100%;
 }
+
 .home-en-image .see_all {
 	margin: 0 auto 0 0 !important;
 }
+
 .home-en-image{
   .table_image{
     position: relative;
     display: block;
+
     &::before{
       content: "";
       position: absolute;
@@ -195,22 +215,26 @@ $enable-roboto-webfont: false;
       opacity: 0;
       transition: all .1s ease;
     }
+
     .table_title{
       position: absolute;
       top: 50%;
       z-index: 1;
       left: 0;
       right: 0;
+
       span{
         color: #fff;
         transition: all .1s ease;
         opacity: 0;
       }
     }
+
     &:hover{
       &:before{
         opacity: 1;
       }
+
       .table_title{
         span{
           opacity: 1;
@@ -219,16 +243,20 @@ $enable-roboto-webfont: false;
     }
   }
 }
+
 .en-images-titre .html {
 	display: none;
 }
+
 .en-images-titre {
 	margin-bottom: 5rem;
 }
+
 .home-publication {
 	padding: 5rem 0;
 	position: relative;
 }
+
 .home-publication::after {
 	content: "";
 	position: absolute;
@@ -242,13 +270,16 @@ $enable-roboto-webfont: false;
 	left: 50%;
 	transform: translateX(-50%);
 }
+
 .home-publication .section-title {
 	margin-bottom: 4rem;
 	text-align: right;
 }
+
 .home-publication .swiper-image {
 	padding-bottom: 141%;
 }
+
 .home-en-image .image{
   padding-bottom: 100%;
 }
@@ -264,14 +295,17 @@ $enable-roboto-webfont: false;
     padding: 10px 20px;
     z-index: 1;
     position: relative;
+
     &:before{
       content: url("../../assets/svg/eyes.svg");
       margin-top: -33px;
       display: block;
     }
   }
+
   .swiper-image{
     position: relative;
+
       &:after{
         content: "";
         position: absolute;
@@ -283,6 +317,7 @@ $enable-roboto-webfont: false;
         opacity: 0;
         transition: all .3s ease;
     }
+
     &:before{
         content: url("../../assets/svg/plus.svg");
         display: block;
@@ -295,20 +330,24 @@ $enable-roboto-webfont: false;
         opacity: 0;
         z-index: 1;
     }
+
     &:hover{
       &:after{
         opacity: 1;
       }
+
       &:before{
           opacity: 1;
       }
     }
   }
 }
+
 #portal-footer-wrapper{
   @include media-breakpoint-up(lg){
     text-align: left!important;
   }
+
   &:before{
     content: url("../../assets/svg/footer-comines.svg");
     background: #fff;
@@ -320,6 +359,7 @@ $enable-roboto-webfont: false;
 .block-menu-element a h2.card-title, .block-menu-element a .card-title.h2 {
 	font-weight: 400!important;
 }
+
 .r-search-header-title{
   font-family: inherit!important;
 }
@@ -327,6 +367,7 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper #portal-footer.container {
 	background: $primary;
 }
+
 .smartweb_footer h2, .smartweb_footer h3, .smartweb_footer a {
 	color: #fff !important;
 }
@@ -345,6 +386,7 @@ $enable-roboto-webfont: false;
     background: $primary;
     color: #fff;
     border: 0px;
+
     &:focus,&:hover{
       background: #073044;
     }

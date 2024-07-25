@@ -33,6 +33,7 @@ $enable-roboto-webfont: false;
         background-repeat: no-repeat;
     }
 }
+
 .sectionfiles {
     .display-carre {
         .image {
@@ -45,6 +46,7 @@ $enable-roboto-webfont: false;
             width: 250px;
         }
     }
+
     .display-paysage {
         .image {
             background-size: contain;
@@ -56,6 +58,7 @@ $enable-roboto-webfont: false;
             width: 250px;
         }
     }
+
     .display-portrait {
         .image {
             background-size: contain;
@@ -71,14 +74,17 @@ $enable-roboto-webfont: false;
 .portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image {
 	gap: 11px;
 }
+
 h1 {
     font-family: $font-family-base!important;
     font-weight: bold!important;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
 	max-height: 500px;
 }
+
 .bannerSwiper .section-slide{
     &:after{
         content: url("../../assets/svg/banner-slogan.svg");
@@ -90,6 +96,7 @@ h1 {
         transform: translate(-50%, -50%);
     }
 }
+
 .swiper-banner-image:after {
     content: "";
     background: #0000;
@@ -106,6 +113,7 @@ h1 {
 	background-size: cover;
 	background-position: center;
 }
+
 .swiper-banner-image{
     border-bottom-left-radius:0px;
     border-bottom-right-radius:0px;
@@ -249,9 +257,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -293,6 +303,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -308,6 +319,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -341,12 +353,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -355,8 +369,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;
@@ -403,9 +419,11 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page) .sectionlinks .
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
     height: 100%;
+
     &:hover {
     border-radius: 20px;
     }
+
     a.table_image {
     display: flex;
     flex-direction: column;
@@ -413,9 +431,11 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page) .sectionlinks .
     padding: 10px;
     gap: 20px;
     width: 100%;
+
     &:hover .image.d-block.is-icon.w-100 {
         transform: translateY(-5px);
         }
+
         .image.d-block.is-icon.w-100 {
             background-position: 50%;
             background-repeat: no-repeat;
@@ -435,10 +455,12 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page) .sectionlinks .
             width: 45px!important;
         }
         }
+
         .table_title {
         margin-right: 0;
         font-size: 16px;
         margin: 0 0 20px;
+
             span {
                 font-weight: 400;
                 color: #000;

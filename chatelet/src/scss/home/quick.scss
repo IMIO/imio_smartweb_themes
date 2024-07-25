@@ -1,15 +1,18 @@
 .sectionlinks.quick-access .body-section li a .image.d-block {
 	height: 40px;
 }
+
 .quick-access{
     padding-top: 0!important;
     padding-bottom: 0!important;
     border-bottom: solid 3px #ededed;
+
     .table_image{
         &:hover{
             svg{
                 fill: $tird!important;
             }
+
             .table_title{
                 span{
                     color: $tird!important;

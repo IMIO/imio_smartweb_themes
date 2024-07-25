@@ -1,22 +1,27 @@
 .sectionnews{
     background: linear-gradient(180deg,#fff 0,#fff 250px,#000 250px,#000);
+
     .section-title{
         font-weight: 500;
         position: relative;
         text-align: left;
         margin-bottom:2rem;
     }
+
     .swiper-wrapper{
         .swiper-slide {
             transition: all .25s ease;
+
             & > a{
                 display: block;
                 align-items: center;
+
                 .swiper-image{
                     padding-bottom: 55%;
                     transition: all .25s ease;
                     margin-bottom: 0rem;
                 }
+
                 .swiper_category{
                     margin-left: 0px;
                     position:relative;
@@ -24,36 +29,46 @@
                     top: 0px;
                     left: 0px;
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                     grid-row-start: 2;
                 }
+
                 .swiper_title{
                     margin-top: 10px;
+
                     h3{
                         font-family: $font-family-base;
                         
                     }
                 }
+
                 .swiper_description{
                     display: none;
+
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper-image{
                         mask-size: 99%;
                     }
+
                     .swiper_category{
                     }
+
                     .swiper_date{
 
                     }
+
                     .swiper_title{
                         h3{
                         }
                     }
+
                     .swiper_description{
                         p{
         
@@ -61,15 +76,18 @@
                     }
                 }
             }
+
             &:hover {
                 transform: translateY(10px);
                 transition: .5s;
             }
         }
     }
+
     .swiper-button-next, .swiper-button-prev {
 
     }
+
     .swiper-button-prev{
 
     }

@@ -33,9 +33,11 @@ $enable-roboto-webfont: false;
 body{
     background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 10%, rgba(209,220,231,0.6) 100%);
 }
+
 .contact_description{
     margin-top: 1rem;
 }
+
 .see_all a::after {
 	left: 50%!important;
 	transform: translateX(-50%)!important;
@@ -50,6 +52,7 @@ body{
                     margin-right: auto!important;
                     position: relative!important;
                     padding: 0 3rem!important;
+
                     &:after{
                         content: "";
                         width: 50px;
@@ -61,6 +64,7 @@ body{
                         top: 50%;
                         transform: translate(50%,50%);  
                     }
+
                     &:before{
                         content: "";
                         width: 50px;
@@ -82,20 +86,25 @@ body{
 #portal-footer-wrapper{
     text-align: left!important;
     background: transparent!important;
+
     &:before {
         content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='#222831'/%3E%3C/svg%3E%0A");
         line-height: 0;
         display: block;
         transform: translateY(1px);
     }
+
     #portal-footer{
         background: $dark!important;
+
         #smartweb-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
@@ -107,18 +116,22 @@ body{
 
 #portal-colophon{
     background: $dark!important;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }
         }
     }
 }
+
 body:not(.portaltype-imio-smartweb-portalpage){
     #portal-footer-wrapper{
         margin-top: 3rem;
@@ -161,6 +174,7 @@ footer{
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	max-height: 50vw;
 }
@@ -170,9 +184,11 @@ div.sectionfiles a[aria-expanded=false], div.sectionfiles a[aria-expanded=true]{
     color: white;
     text-decoration: none;
   }
+
   div.sectionfiles {
     padding: .8em !important;
   }
+
   .subsection-vos-services-administratifs-cohesion-sociale-notre-equipe .sortable-section.sectiontext.col-sm-8 {
   padding: 2.2rem 0 0 2rem;
   }

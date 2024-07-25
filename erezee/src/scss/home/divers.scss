@@ -1,6 +1,7 @@
 div.swiper-image {
     position: relative;
 }
+
 div.swiper-image::before {
     background: transparent;
     content: "";
@@ -12,32 +13,40 @@ div.swiper-image::before {
     transition: all .2s ease;
     z-index: 99;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $primary !important;
 }
+
 .sectionfiles:after {
     background: #f3f3f3;
 }
+
 .sectionfiles {
 h2 {
     color: $primary !important;
 }
+
 a {
     color: #000 !important;
 }
+
 span {
     color: #000 !important;
 }
 }
+
 #portal-breadcrumbs {
     background-color: #fff;
 }
+
 div#smartweb-minisite-footer {
     h2 {
         color: #fff;
     }
     background: $primary;
 }
+
 .list-card-body h2.list-card-title {
     font-size: 1.5rem;
 }

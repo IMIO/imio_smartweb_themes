@@ -53,6 +53,7 @@ $enable-roboto-webfont: false;
     .swiper-banner-content {
         //background-color: rgba(0, 0, 0, 0.8);
         border-radius: 10px;
+
         .swiper-banner-title {
             color: $primary;
             text-transform: initial;
@@ -98,12 +99,14 @@ $enable-roboto-webfont: false;
             width: -moz-max-content;
             width: max-content;
         }
+
         a:hover {
             background: #000;
             border: 1px solid #000;
             transition: all .2s ease;
         }
     }
+
     &:after{
         //display: none;
     }

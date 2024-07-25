@@ -18,6 +18,7 @@
         text-align: left;
         padding-left:30px;
         margin-bottom:2rem;
+
         &:after{
             background: $primary-green;
             content: "";
@@ -33,18 +34,22 @@
 
         }
     }
+
     .body-section{
         .row{
             max-width: 100%;
             margin: 0 auto;
             border-radius: 15px;
             background: #EDEAE9;
+
             li{
                 padding: 0!important;
             }
+
             .table_display{
                 height: 100%;
             }
+
             .table_image{
                 padding: 1.5rem 1rem;
                 background: #EDEAE9;
@@ -56,8 +61,10 @@
                 text-decoration: none;
                 height: 100%;
                 transition: all .25s ease;
+
                 .image{
                     width: auto;
+
                     svg{
                         height: auto;
                         width: 40px;
@@ -65,14 +72,17 @@
                         opacity: 0.5;
                     }
                 }
+
                 &:hover{
                     transition: all .25s ease;
                     background: $primary-green;
+
                     .image{
                         svg{
                             opacity:1;
                         }
                     }
+
                     .table_title{
                         span{
                         }

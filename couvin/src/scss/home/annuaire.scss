@@ -1,12 +1,14 @@
 body .sectionlinks.annuaire {
     background: transparent;
   }
+
 body .sectionlinks.annuaire ul {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
     grid-gap: 20px 15px;
     grid-auto-rows: 1fr;
 }
+
 body .sectionlinks.annuaire ul::before {
     content: "";
     width: 0;
@@ -14,6 +16,7 @@ body .sectionlinks.annuaire ul::before {
     grid-row: 1/1;
     grid-column: 1/1;
 }
+
 body .sectionlinks.annuaire ul li {
     position: relative;
     display: flex;
@@ -24,14 +27,17 @@ body .sectionlinks.annuaire ul li {
     border: solid 1px #d3d3d3;
     border-radius: 15px;
 }
+
 body .sectionlinks.annuaire ul>:first-child {
     grid-row: 1/1;
     grid-column: 1/1;
 }
+
 .sortable-section.sectiontext.couvin-carte {
     background-size: contain !important;
     background-repeat: no-repeat;
 }
+
 body .sectionlinks.annuaire a.table_image {
     text-align: center;
 }

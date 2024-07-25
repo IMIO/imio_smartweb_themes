@@ -5,27 +5,33 @@
 .sectionsendinblue label {
     color: $primary;
 }
+
 #body-section-newsletter form#form {
     display: block;
 }
+
 #body-section-newsletter form#form .formControls {
     display: block;
     position: initial;
     width: 100%;
     height: auto;
+
     .btn-secondary {
         background-color: #fff;
         border: 1px #fff solid;
         transition: 0.3s;
         color: $primary;
+
         &:hover {
             background-color: $primary-svg;
         }
     }
 }
+
 .sortable-section.sectionsendinblue {
     padding-bottom: 2rem;
 }
+
 .sectionsendinblue:after {
     width: 100%;
     border-radius: 20px;

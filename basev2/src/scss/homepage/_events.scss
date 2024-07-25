@@ -13,6 +13,7 @@
       transform: translateX(-50%);
     }
   }
+
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -23,6 +24,7 @@
       }
     }
   }
+
   .section-title {
     color: $event-title-color;
     margin: $event-title-margin;
@@ -31,11 +33,14 @@
     @include media-breakpoint-up(lg) {}
     @include media-breakpoint-up(xxl) {}
   }
+
   .swiper-slide {
     height: auto;
+
     a {
       text-decoration: none;
     }
+
     &>a {
       display: grid;
       height: 100%;
@@ -44,13 +49,16 @@
       background: $event-item-bg-color;
       border-radius: $event-item-bg-radius;
     }
+
     .swiper-image {
       margin-bottom: $event-image-margin-bottom;
       border-radius: $event-image-border-radius;
       width: 100%;
     }
+
     .swiper_category {
       margin: $event-category-margin;
+
       span {
         display: block;
         padding: $event-category-padding;
@@ -62,15 +70,18 @@
         border-radius: $event-category-radius;
       }
     }
+
     .swiper_date {
       padding: $event-date-padding;
       margin: $event-date-margin;
       color: $event-date-color;
       font-size: $event-date-font-size;
     }
+
     .swiper_title {
       padding: $event-item-title-padding;
       margin: $event-item-title-margin;
+
       h3 {
         color: $event-item-title-color;
         font-size: $event-item-title-font-size;
@@ -78,6 +89,7 @@
         text-transform: $event-item-title-text-transform;
       }
     }
+
     .swiper_description {
       text-align: $actu-item-description-align;
       font-family: $actu-item-description-font-family;
@@ -87,29 +99,36 @@
     }
   }
 }
+
 .sectionevents .swiper-slide .swiper_date .day_date .day::after,
 .sectionevents .swiper-slide .swiper_date .end_date .day::after,
 .sectionevents .swiper-slide .swiper_date .start_date .day::after {
 	content: "/";
 }
+
 .sectionevents .swiper-slide .swiper_date div {
 	display: flex;
 }
+
 .sectionevents{
   .swiper_date{
     display: flex;
+
     .day_date{
       .from_on{
         margin-right: .25em;
       }
     }
+
     .start_date{
       display: flex;
       margin-right: .25em;
+
       .from_on{
         margin-right: .25em;
       }
     }
+
     .end_date{
       .to{
         margin-right: .25em;

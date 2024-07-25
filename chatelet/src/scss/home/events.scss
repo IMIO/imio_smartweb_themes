@@ -3,16 +3,19 @@
      & > a{
         &:hover,&:focus{
             background: $primary;
+
             .swiper_date{
                 span{
                     color: #fff!important;
                 }
             }
+
             .swiper_title{
                 h3{
                     color: #fff!important;
                 }
             }
+
             .swiper_description{
                 color: #fff!important;
             }
@@ -20,6 +23,7 @@
      }
     }
 }
+
 .sectionevents .swiper-slide .swiper_category span {
 	width: max-content;
     border-bottom-right-radius: 10px;
@@ -27,6 +31,7 @@
     font-size: 13px;
     font-weight: bold;
 }
+
 .sectionevents .swiper-slide .swiper-image {
 	border-radius: 5px 5px 0 0!important;
 }

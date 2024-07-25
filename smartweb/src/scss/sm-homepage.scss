@@ -8,11 +8,14 @@ $border_grey: #d3d3d3;
 .table_image{
     text-decoration: none;
 }
+
 .section-home-page h2 {
 	font-size: 64px;
 }
+
 .see_all{
     display: inline-block;
+
     a{
         color: #fff;
         font-weight: bold;
@@ -24,6 +27,7 @@ $border_grey: #d3d3d3;
     //     background: rgb(46, 46, 46);
     // }
 }
+
 .swiper-button-next, .swiper-button-prev {
     top: 36%;
 	width: 48px;
@@ -35,10 +39,12 @@ $border_grey: #d3d3d3;
     background-size: 45%;
     background-position: center;
     transform: translateY(-50%);
+
     &:after{
         display: none;
     }
 }
+
 .swiper-button-prev{
     transform: rotate(180deg) translateY(50%);
 }
@@ -56,11 +62,13 @@ $border_grey: #d3d3d3;
 .sectiontext.en-un-clic-titre .body-section.figure-left.no-image .text {
     max-width: 50%;
     margin: 0 auto auto 0;
+
     h2 {
     text-transform: uppercase;
     color: $black;
     font-size: 3rem;
     }
+
     p {
         color: $grey;
         font-size: 1rem;
@@ -70,6 +78,7 @@ $border_grey: #d3d3d3;
 .sectionlinks.un-clic a:hover .image.d-block.w-100 {
     transform: scale(1.1);
 }
+
 .sectionlinks.un-clic .image.d-block.w-100 {
     transition: all 0.2s ease-in-out;
     position: relative;
@@ -90,11 +99,13 @@ $border_grey: #d3d3d3;
         width: 90px !important;
         height: 90px;
     }
+
     svg{
         width: 30px;
         height: 30px;
     }
 }
+
 .sortable-section.sectionlinks.un-clic {
     background-color: initial;
 }
@@ -116,11 +127,13 @@ $border_grey: #d3d3d3;
         width: 25%!important;
         text-align: center;
         margin: 1rem 0;
+
         & > div > a{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-decoration: none;
+
             .table_title{
                 span{
                     padding-top: 0.5rem;
@@ -153,24 +166,29 @@ $border_grey: #d3d3d3;
     font-size: 3rem;
     }
 }
+
 .sectionlinks.sites-de-la-ville{
     .section-container{
         display: flex;
         flex-wrap: wrap;
         padding: 3rem 0;
+
         .section-title{
             width: 27%;
         }
+
         .header-section{
             order: -1;
             width: 100%;
             flex: 1 0 100%;
         }
+
         #body-section-les-sites-de-la-ville{
             width: 73%;
         }
     }
 }
+
 #body-section-les-sites-de-la-ville{
     ul {
         display: grid;
@@ -180,10 +198,12 @@ $border_grey: #d3d3d3;
         @media screen and (max-width:360px){
             grid-template-columns: 1fr 1fr;
         }
+
         & > *:first-child {
             grid-row: 1 / 1;
             grid-column: 1 / 1;
           }
+
         &::before{
             content: '';
             width: 0;
@@ -191,6 +211,7 @@ $border_grey: #d3d3d3;
             grid-row: 1 / 1;
             grid-column: 1 / 1;
         }
+
         li{
             position: relative;
             display: flex;
@@ -200,6 +221,7 @@ $border_grey: #d3d3d3;
             background: #fff;
             border: solid 1px transparent;
             border-radius: 15px;
+
             &:before{
                 position: absolute;
                 content: "";
@@ -216,18 +238,22 @@ $border_grey: #d3d3d3;
                 border-bottom-right-radius: 0;
                 animation: .3s ease forwards border-initial-blue;
             }
+
             &:hover,&:focus{
                 &:before{
                     animation: .3s ease forwards  border-hover-blue;
                 }
             }
+
             .table_display{
                 text-align: center;
+
                 svg{
                     width: 40px;
                     height: 40px;
                     margin-bottom: 1rem;
                 }
+
                 .table_title{
                     text-align: center;
                     font-weight: bold;
@@ -241,6 +267,7 @@ $border_grey: #d3d3d3;
 
 .en-un-clic-titre{
     position: relative;
+
     svg{
         position: absolute;
         top: 0;
@@ -263,26 +290,31 @@ $border_grey: #d3d3d3;
     &:after {
     display: none;
     }
+
     h2 {
         text-transform: uppercase;
         color: $black;
         font-size: 3rem;
     }
+
     p {
         color: $grey;
         font-size: 1rem;
     }
 }
+
 #body-section-mon-bla{
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-gap: 15px;
         grid-auto-rows: 1fr;
+
         & > *:first-child {
             grid-row: 1 / 1;
             grid-column: 1 / 1;
           }
+
         &::before{
             content: '';
             width: 0;
@@ -290,6 +322,7 @@ $border_grey: #d3d3d3;
             grid-row: 1 / 1;
             grid-column: 1 / 1;
         }
+
         li{
             position: relative;
             display: flex;
@@ -299,6 +332,7 @@ $border_grey: #d3d3d3;
             background: #fff;
             border-radius: 15px;
             border: $border_grey solid 1px;
+
             &::before{
                 position: absolute;
                 content: "";
@@ -315,26 +349,31 @@ $border_grey: #d3d3d3;
                 border-bottom-right-radius: 0px;
                 animation: .3s ease forwards  border-initial-black;
             }
+
             &:hover,&:focus{
                 &:before{
                     animation: .3s ease forwards  border-hover-black;
                 }
             }
+
             a {
                 flex-direction: row;
                 display: flex;
                 align-items: center;
                 text-decoration: none;
+
                 .image.d-block.w-100 {
                     width: 50% !important;
                 }
             }
+
             .table_display{
                 svg{
                     width: 40px;
                     height: 40px;
                     text-align: center;
                 }
+
                 .table_title{
                     font-weight: bold;
                     text-decoration: none;
@@ -349,16 +388,19 @@ $border_grey: #d3d3d3;
 
 #body-section-section-monbla-images .section-monbla-img-container {
     position: relative;
+
     img.section-monbla-logo {
         position: absolute;
         left: 19%;
     }
+
     img.section-monbla-image2 {
         margin-right: 0;
         display: block;
         text-align: right;
         margin-left: auto;
     }
+
     img.section-monbla-image1 {
         position: absolute;
         bottom: 0;
@@ -373,16 +415,19 @@ $border_grey: #d3d3d3;
 .section-annuaire{
     margin: 0 auto auto 0;
     background: initial !important;
+
     h2 {
     text-transform: uppercase;
     color: $black;
     font-size: 3rem;
     margin-bottom: 2rem;
     }
+
     &::after{
         content: none;
     }
 }
+
 #body-section-annuaire ul {
     &::before {
         content: "";
@@ -391,6 +436,7 @@ $border_grey: #d3d3d3;
         grid-row: 1/1;
         grid-column: 1/1;
     }
+
     & > *:first-child {
         grid-row: 1 / 1;
         grid-column: 1 / 1;
@@ -402,6 +448,7 @@ $border_grey: #d3d3d3;
     @media screen and (max-width:360px){
         grid-template-columns: 1fr 1fr;
     }
+
         li {
         position: relative;
         display: flex;
@@ -411,6 +458,7 @@ $border_grey: #d3d3d3;
         background: #fff;
         border: solid 1px $border_grey;
         border-radius: 15px;
+
         &::before{
             position: absolute;
             content: "";
@@ -427,28 +475,35 @@ $border_grey: #d3d3d3;
             border-bottom-right-radius: 0px;
             animation: .3s ease forwards  border-initial-yellow;
         }
+
         &:hover,&:focus{
             &:before{
                 animation: .3s ease forwards  border-hover-yellow;
             }
         }
+
         &:last-child {
             border: initial;
+
             &::before{
                 display: none;
             }
         }
+
         .table_display {
             text-align: center;
+
                 .table_image{
                     text-decoration: none;
                 }
+
                 .table_title {
                     text-align: center;
                     font-weight: 700;
                     text-decoration: none;
                     font-style: normal;
                 }
+
                 svg {
                     width: 40px;
                     height: 40px;
@@ -457,10 +512,12 @@ $border_grey: #d3d3d3;
             }
         }
 }
+
 .sectiontext .section-text .body-section#body-section-plan-annuaire figure {
     width: 100%;
     max-width: 100%;
     float: initial;
+
         img {
         width: 60%;
         margin: 0 auto;
@@ -477,6 +534,7 @@ $border_grey: #d3d3d3;
     position: relative;
     color: #fff;
     padding-top: 4rem;
+
     &:before{
         content:"";
         width: 50px;
@@ -486,6 +544,7 @@ $border_grey: #d3d3d3;
         margin: 0 auto;
         margin-bottom: 1rem;
     }
+
     &:after{
         background:$blue;
         content: "";
@@ -497,27 +556,33 @@ $border_grey: #d3d3d3;
         transform: translateX(-50vw);
         z-index: -1;
     }  
+
     .section-title{
         text-align: center;
         margin: 0 auto;
         display: block;
         color: #fff;
     }
+
     .body-section{
         text-align: center;
     }
 }
+
 .reseaux-sociaux{
     position: relative;
     background:$blue;
     color: #fff;
     padding-top: 2rem;
+
     &:after{
         background:$blue;
     }
+
     .section-title{
         color: #fff;
     }
+
     .section-container{
         @include media-breakpoint-up(lg){
             display: flex;
@@ -525,6 +590,7 @@ $border_grey: #d3d3d3;
 
         justify-content: center;
         align-items: center;
+
         .rich_description{
             text-transform: uppercase;
             font-size: 16px;
@@ -532,6 +598,7 @@ $border_grey: #d3d3d3;
             @include media-breakpoint-down(lg){
                 margin-bottom: 2rem;
             }
+
             &:after{
                 content: "";
                 background: #fff;
@@ -542,12 +609,15 @@ $border_grey: #d3d3d3;
                 margin: 0 1rem;
             }
         }
+
         .body-section{
             ul{
                 align-items: center;
                 margin: 0;
+
                 li{
                     width: auto;
+
                     .table_display{
                        .table_image{
                         display: flex;
@@ -561,6 +631,7 @@ $border_grey: #d3d3d3;
                         border-radius: 15px;
                         border-bottom-left-radius:0;
                         transition: all .1s ease;
+
                             svg{
                                 fill: #fff;
                                 display: block;
@@ -571,6 +642,7 @@ $border_grey: #d3d3d3;
                                 transition: all .1s ease;
 
                             }
+
                             .table_title{
                                 font-size: 0px;
                                 position: absolute;
@@ -578,14 +650,18 @@ $border_grey: #d3d3d3;
                                 color: $blue;
                                 transition: all .3s ease;
                                 display: none;
+
                                 span{
                                     transition: all .1s ease;
                                 }
                             }
+
                             &:hover{
                                 background:#fff;
+
                                 svg{
                                     fill: $blue;
+
                                     path{
                                         fill: $blue!important;
                                     }
@@ -598,21 +674,26 @@ $border_grey: #d3d3d3;
         }
     }
 }
+
 .newsletterhomepage{
     position: relative;
     color: #fff;
+
     .body-section{
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 1rem;
     }
+
     .form-text{
         color: #fff;
     }
+
     button{
         background-color: #000;
     }
+
     &:after{
         background: #008fd2;
         content: "";
@@ -628,29 +709,35 @@ $border_grey: #d3d3d3;
 /* MON BLA  */
 .mon-bla-liens {
     background: transparent;
+
     &:after {
     display: none;
     }
+
     h2 {
         text-transform: uppercase;
         color: $black;
         font-size: 3rem;
     }
+
     p {
         color: $grey;
         font-size: 1rem;
     }
 }
+
 #body-section-mon-bla{
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-gap: 15px;
         grid-auto-rows: 1fr;
+
         & > *:first-child {
             grid-row: 1 / 1;
             grid-column: 1 / 1;
           }
+
         &::before{
             content: '';
             width: 0;
@@ -658,6 +745,7 @@ $border_grey: #d3d3d3;
             grid-row: 1 / 1;
             grid-column: 1 / 1;
         }
+
         li{
             position: relative;
             display: flex;
@@ -673,16 +761,19 @@ $border_grey: #d3d3d3;
                 display: flex;
                 align-items: center;
                 text-decoration: none;
+
                 .image.d-block.w-100 {
                     width: 50% !important;
                 }
             }
+
             .section_links_item{
                 svg{
                     width: 40px;
                     height: 40px;
                     text-align: center;
                 }
+
                 span.section_links_item_title{
                     font-weight: bold;
                     text-decoration: none;
@@ -693,21 +784,26 @@ $border_grey: #d3d3d3;
         }
     }
 }
+
 .section-mon-bla {
         padding: 4rem 0 3rem 0;
 }
+
 #body-section-section-monbla-images .section-monbla-img-container {
     position: relative;
+
     img.section-monbla-logo {
         position: absolute;
         left: 19%;
     }
+
     img.section-monbla-image2 {
         margin-right: 0;
         display: block;
         text-align: right;
         margin-left: auto;
     }
+
     img.section-monbla-image1 {
         position: absolute;
         bottom: 0;
@@ -727,6 +823,7 @@ $border_grey: #d3d3d3;
     position: relative;
     padding-top: 5rem;
     padding-bottom: 2rem;
+
     .see_all {
         position: absolute;
         right: 0;
@@ -734,14 +831,17 @@ $border_grey: #d3d3d3;
         background: transparent;
         border-bottom: solid 2px #000;
         border-radius: 0px;
+
         a{
             padding: 0 0 0.2rem 0;
             color: #000;
         }
     }
+
     .section-title{
         margin-bottom: 6rem;
     }
+
     &:after{
         content: "";
         position: absolute;
@@ -754,8 +854,10 @@ $border_grey: #d3d3d3;
         background:transparent linear-gradient(180deg, #FFCB04 0%, #FFB81C 100%) 0% 0% no-repeat padding-box;
         z-index: -1;
     }
+
     .section-container{
         position: relative;
+
         &:after{
             content: "";
             background: #fff;
@@ -767,9 +869,11 @@ $border_grey: #d3d3d3;
             margin-left: -50vw;
         }
     }
+
     a{
         text-decoration: none;
     }
+
     .swiper_title{
         h3{
             font-size: 16px;
@@ -788,6 +892,7 @@ $border_grey: #d3d3d3;
 div#body-section-albums-photos a {
     text-decoration: none;
 }
+
 div#body-section-albums-photos a h3{
     text-align: center;
     font-size: 18px;
@@ -799,6 +904,7 @@ div#body-section-albums-photos a h3{
         align-items: baseline;
     }
 }
+
 #body-section-bla-en-images a.table_image span {
     font-weight: 500;
     border-bottom: 2px solid #ffb81c;
@@ -821,6 +927,7 @@ div#body-section-albums-photos a h3{
         height: 25rem;
         position: absolute;
     }
+
     div#body-section-liens-citoyennete {
         width: 36.4%;
         margin-left: 2rem;
@@ -835,16 +942,19 @@ div#body-section-albums-photos a h3{
     background-position: left;
     border-radius: 0 30px 0 0;
 }
+
 .citoyennete-1 h2.hidden-section-title,
 .citoyennete-2 h2.hidden-section-title,
 .section-liens-citoyennete h2.hidden-section-title{
     display: none !important;
 }
+
 .citoyennete-1 #body-section-citoyennete div.text {
     padding-top: 9%;
     max-width: 22rem;
     margin-left: 3rem;
 }
+
 .citoyennete-1 h2 {
     color: white;
     text-transform: uppercase;
@@ -861,42 +971,51 @@ div#body-section-albums-photos a h3{
     line-height: 3.5rem;
     text-shadow: 0 0 14px rgba(0,0,0,0.2);
 }
+
 #content-core .citoyennete-2{
     padding-top:0;
     margin-top: 7rem;
     position: relative;
 }
+
 .citoyennete-2 div#body-section-texte-citoyennete {
     background: #378ed1;
     overflow: hidden;
     padding: 5rem;
     color: white;
 }
+
 .section-liens-citoyennete.sectionlinks{
     padding-top:0;
     margin-bottom:0;
     background-color:transparent !important;
 }
+
 .section-liens-citoyennete.sectionlinks:after{
     display:none;
 }
+
 .section-liens-citoyennete div#body-section-liens-citoyennete {
     background: #f7f7f7;
     padding: 1rem;
     position: relative;
 }
+
 .section-liens-citoyennete #body-section-liens-citoyennete ul {
     @include media-breakpoint-up(sm){
         padding: 1.5rem 2rem 1.25rem 3rem;
     }
 }
+
 .section-liens-citoyennete #body-section-liens-citoyennete ul li {
     line-height: 3rem;
     font-weight: 600;
 }
+
 .section-liens-citoyennete .table_title span{
     position:relative;
 }
+
 .section-liens-citoyennete .table_title span::before {
     content: "";
     width: 100%;
@@ -940,17 +1059,21 @@ div#body-section-albums-photos a h3{
     #body-section-section-monbla-images .section-monbla-img-container img.section-monbla-image2 {
     width: 100%;
     }
+
     .section-mon-bla, .mon-bla-liens {
         width: 50%;
     }
+
     #body-section-mon-bla ul {
         grid-template-columns: repeat(auto-fill,minmax(165px,1fr));
     }
+
     #body-section-section-monbla-images .section-monbla-img-container img.section-monbla-logo {
         position: absolute;
         left: 10%;
         width: 20%;
     }
+
     #body-section-section-monbla-images .section-monbla-img-container img.section-monbla-image1 {
         position: absolute;
         bottom: 0;
@@ -963,6 +1086,7 @@ div#body-section-albums-photos a h3{
     .section-mon-bla, .mon-bla-liens {
         width: 100%;
     }
+
     .section-mon-bla {
         padding-top: 0;
     }
@@ -997,11 +1121,13 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+
     30% {
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     100% { 
         width: 10%;
         border: solid 1px transparent;
@@ -1018,14 +1144,17 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     70%{
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     99%{
         border-right-color: transparent;
     }
+
     100% { 
         width: 100%;
         border: solid 1px rgba(0, 0, 0, 0.553);
@@ -1043,11 +1172,13 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     30% {
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     100% { 
         width: 10%;
         border: solid 1px transparent;
@@ -1064,14 +1195,17 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     70%{
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     99%{
         border-right-color: transparent;
     }
+
     100% { 
         width: 100%;
         border: solid 1px $primary;
@@ -1089,11 +1223,13 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+
     30% {
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     } 
+
     100% { 
         width: 10%;
         border: solid 1px transparent;
@@ -1110,14 +1246,17 @@ div#body-section-albums-photos a h3{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     70%{
         border-right-color: transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
     99%{
         border-right-color: transparent;
     }
+
     100% { 
         width: 100%;
         border: solid 2px #ffbb18;

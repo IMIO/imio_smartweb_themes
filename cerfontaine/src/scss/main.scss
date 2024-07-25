@@ -78,6 +78,7 @@ h2 {
     text-decoration:none;
     font-weight: 500;
     position: relative;
+
     &:before {
         content: "";
         height: 2px;
@@ -89,13 +90,16 @@ h2 {
         right: 0;
         opacity: 0;
     }
+
     span {
         transition: all 0.3s ease;
     }
+
     &:hover {
         span {
         transition: all 0.3s ease;
     }
+
     &:before {
         opacity: 1;
     }
@@ -154,9 +158,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -192,6 +198,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -212,6 +219,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -220,6 +228,7 @@ footer #container-section-noussuivre{
 #portal-globalnav > li a:hover {
 	color: $primary-svg;
 }
+
 .portaltype-imio-smartweb-portalpage{
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
@@ -239,12 +248,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -253,8 +264,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;
@@ -291,6 +304,7 @@ footer #container-section-noussuivre{
 .subsite-container {
     background: #EDEDED;
     border-radius: 30px 0 30px 0;
+
     #subsite-logo {
 	font-size: 18px;
     background: $primary;
@@ -300,6 +314,7 @@ footer #container-section-noussuivre{
 
 
 .sectiontext .section-text .section-title a { text-decoration: none;}
+
 .sectiontext .section-text .section-title a.collapsed {
     color: #000 !important;
 }
@@ -326,9 +341,11 @@ footer #container-section-noussuivre{
      text-decoration: none;
     }
 }
+
 .breadcrumb {
 	font-size: 13px;
 }
+
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
@@ -337,16 +354,20 @@ footer #container-section-noussuivre{
         margin: 0!important;
         background-color: #fff !important;
         padding: 12px 0 !important;  
+
         .breadcrumb-item {
             a {
                 color:#2F294E !important;
+
                 &:hover {
                     color:#2F294E !important;
                 }
             }
+
             &.active {
                 color:#2F294E!important ;
             }
+
             &:before {
                 color: #2F294E!important;
             }
@@ -358,6 +379,7 @@ footer #container-section-noussuivre{
 .header-custom {
     #banner {
         z-index: -1;
+
         &:after {
             content: "";
             position: absolute;
@@ -375,20 +397,25 @@ footer #container-section-noussuivre{
         margin: 0 !important;
         position: absolute;
         z-index: 1;
+
         .breadcrumb {
             margin: 0!important;
             background-color: #F2F2F5 !important;
             padding: 15px 30px !important;
+
             .breadcrumb-item {
                 a {
                     color:#2F294E !important;
+
                     &:hover {
                         color:#2F294E !important;
                     }
                 }
+
                 &.active {
                     color:#CCC!important ;
                 }
+
                 &:before {
                     color: #fff!important;
                 }
@@ -422,9 +449,11 @@ footer #container-section-noussuivre{
 #portal-column-content .sectioncontact .contact-type-organization {
     background: none;
 }
+
 .sectionlinks {
     background: none;
 }
+
 .sectionlinks h2:before{
     display:none !important;
 }
@@ -432,8 +461,6 @@ footer #container-section-noussuivre{
 
 
 @media screen and (max-width: 992px) {
-
-
       .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
       }
@@ -463,6 +490,7 @@ footer #container-section-noussuivre{
             width: max-content;
             font-size: 3rem;
             color:#fff;
+
             &:after{
                 left:0%;
                 top: 70px;
@@ -483,14 +511,17 @@ footer #container-section-noussuivre{
                 }
             }
         }
+
         .table_image {
             text-decoration: none;
+
             .table_title span {
                 background: #fff;
                 padding: 1rem 3rem;
                 border-radius: 8px;  
                 color:#000; 
                 transition: all .5s ease;
+
                 &:hover {
                     background: #133641 !important;
                     color:#fff !important;   
@@ -519,6 +550,7 @@ footer #container-section-noussuivre{
             bottom: 0;
             background:$newsletter-bg-color;
         }
+
         .lead{
             margin: 0;
         }
@@ -617,6 +649,7 @@ footer #container-section-noussuivre{
         display: inline-block;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
+
         a {
             color:#fff !important;
         }
@@ -629,9 +662,11 @@ footer #container-section-noussuivre{
         color: #000;
         font-weight: 500;
         padding: 20px 45px 20px 26px;
+
         div, span {
             color:#000 !important;
         }
+
         a {
             color:#000 !important;
         }
@@ -666,10 +701,12 @@ h3 {
 .sectiontext ol>li:before {
     content: counter(sectioncounter) "." !important;
 }
+
 #portal-footer-wrapper #portal-footer #smartweb-footer a, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
     color:#fff;
     transition: all .5s ease;
 }
+
 #portal-footer-wrapper #portal-footer #smartweb-footer a:hover, #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
     color:$primary-green;
     transition: all .5s ease;
@@ -688,6 +725,7 @@ h3 {
         .section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
             padding:0 80px;
         }
+
         #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-contact  {
             padding:0px !important;
         }
@@ -734,6 +772,7 @@ h3 {
 #subsite-navigation .dropdown .nav-link:focus,
 #subsite-navigation .dropdown .nav-link:hover {
 	color: $primary-green;
+
 .site-cpas .swiper-banner-content-wrapper .swiper-banner-content  {
     .swiper-banner-title{
         display: none;

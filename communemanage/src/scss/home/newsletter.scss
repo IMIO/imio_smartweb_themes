@@ -7,11 +7,13 @@
     background: #07689F;
     text-align: center;
     padding: 5rem 0;
+
     .section-title {
         width: max-content;
         margin: 0 auto;
         color: #fff !important;
         font-size: 24px !important;
+
         &:before {
             content: "";
             width: 50px;
@@ -24,14 +26,17 @@
             margin: 0 auto;
         }
     }
+
     .rich_description {
         font-family: 'Baloo 2', cursive;
     }
+
     .form-text {
         display: none;
         color: #fff !important;
         font-family: 'Baloo 2', cursive;
     }
+
     input {
         &:placeholder {
             font-family: 'Baloo 2', cursive;

@@ -1,6 +1,7 @@
 div.swiper-image {
     position: relative;
 }
+
 div.swiper-image::before {
     background: transparent;
     content: "";
@@ -12,30 +13,39 @@ div.swiper-image::before {
     transition: all .2s ease;
     z-index: 99;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $primary !important;
 }
+
 .sectionfiles:after {
     background: #f3f3f3;
 }
+
 .sectionfiles {
     padding-top: .5rem!important;
     padding-bottom: .5rem!important;
+
 h2 {
     color: $secondary !important;
 }
+
 a {
     color: $secondary !important;
 }
+
 span {
     color: $secondary !important;
 }
 }
+
 #portal-breadcrumbs {
     background-color: #fff;
 }
+
 body.section-home-page .container #main-container {
     position: relative;
+
     &:after {
     background: url(../../assets/svg/bb.svg);
     content: "";
@@ -55,17 +65,21 @@ body.section-home-page .container #main-container {
 #subsite-navigation>ul>li>a {
     color: #000;
 }
+
 .offcanvas.offcanvas-start{
     width:95%;
 }
+
 #offcanvasSearch .offcanvas-body{
     overflow:visible;
 }
+
 .colophonWrapper ul {
     gap: 0.5rem 1rem;
     display: flex;
     flex-wrap: wrap;
 }
+
 .colophonWrapper li:last-child {
     width: 100%;
 }
@@ -74,6 +88,7 @@ body.section-home-page .container #main-container {
     margin-top: 1rem;
     }
 }
+
 #subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
     margin-top: 2rem;
 }
@@ -97,13 +112,16 @@ body.userrole-authenticated ul.nav li a.nav-link {
             top: 100px;
         } 
     }
+
     .subsite-container {
         margin-top: 0!important;
     } 
 }
+
 #messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
 	background-color: #ff8f3e!important;
 }
+
 #portal-header #portal-header-top #header-links a, #portal-header #portal-header-top #header-links span {
 	color: #fff;
     font-weight: bold;
@@ -120,6 +138,7 @@ body.userrole-authenticated ul.nav li a.nav-link {
         color: #001344!important;
     }
 }
+
 #subsite-navigation .nav-link {
 	color: #001344;
     font-weight: 500;
@@ -128,9 +147,11 @@ body.userrole-authenticated ul.nav li a.nav-link {
 #main-container .sectionnews .see_all a:hover, #main-container .sectionnews .see_all a:focus {
 	color: #fff!important;
 }
+
 #main-container .sectionevents .see_all a:hover, #main-container .sectionevents .see_all a:focus {
 	color: #fff!important;
 }
+
 #smartweb-footer h3 {
 	color: #fff !important;
 }

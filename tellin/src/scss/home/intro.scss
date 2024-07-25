@@ -1,6 +1,7 @@
 .liens-accueil {
     padding:0px;
     margin-bottom:100px;
+
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -8,23 +9,28 @@
         padding:0 40px;
         /* align-items: center; */
         position: relative;
+
         li {
             width: 100%;
             padding:0px !important;
             text-align: right;
+
             .table_display {
                 background:$primary-svg;
                 width:100%;
                 padding:25px;
                 border-radius: 10px;
                 transition: all 0.3s ease;
+
                 .table_image {
                     color:#fff;
                     text-decoration: none;
                     font-size: 18px;
+
                     .d-block {
                         text-align: left;
                         height: 40px;
+
                         svg {
                             fill: #fff;
                             height: auto;
@@ -32,6 +38,7 @@
                         }
                     }
                 }
+
                 &:hover {
                     background: $primary;
                     transition: all 0.3s ease;

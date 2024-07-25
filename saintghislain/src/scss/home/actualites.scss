@@ -19,10 +19,12 @@
             opacity: .2;
         }
     }
+
     .swiper-slide {        
         & > a {
             .swiper-image{
                 position: relative;
+
                 &:after{
                     content: "";
                     position: absolute;
@@ -34,6 +36,7 @@
                     opacity: 0;
                 }
             }
+
             &:hover{
                 .swiper-image{
                     &:after{

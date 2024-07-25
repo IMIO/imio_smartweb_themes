@@ -8,6 +8,7 @@
         .rich_description {
             display: none;
         }
+
         & > div{
             .section-title{
                 font-weight: 400;
@@ -30,21 +31,25 @@
                 
                 
             }
-            .body-section{
 
+            .body-section{
                 .row{
                     flex-direction: row;
                     list-style-type: none;
                     gap: 30px 2%;
+
                     li{
                         padding: 0;
                     }
+
                     .table_image{
                         display:flex;
                         width:100%;
                         gap: 20px;
+
                     .image {
                         width: auto;
+
                         svg {
                             max-width: 120px;
                             background-size: contain;
@@ -56,11 +61,13 @@
                             padding: 1rem;
                         }
                     }
+
                     .table_title{
                         span{
                             display: flex;
                             align-items: first baseline;
                             gap: 10px;
+
                             &:before{
                                 content: "";
                                 display: block;

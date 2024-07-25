@@ -3,21 +3,27 @@
 	font-weight: bold;
     font-size: 14px;
 }
+
 legend {
 }
+
 .template-facetednavigation_view .faceted-top-widgets {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
 }
+
 .template-facetednavigation_view .faceted-top-widgets {
     .faceted-widget{
         width: 100%;
+
         fieldset{
             padding: 0!important;
+
             form{
                 position: relative;
             }
+
             .searchButton{
                 background: url(../../assets/svg/search.svg) no-repeat;
                 background-position: center;
@@ -33,6 +39,7 @@ legend {
             }
         }
     }
+
     .faceted_select,input{
         width: 100%;
         border-radius: 0;
@@ -42,6 +49,7 @@ legend {
         padding: 0 .5rem;
     }
 }
+
 #faceted-form fieldset {
     border: 0px solid white;
 }
@@ -50,12 +58,14 @@ legend {
 
 .faceted-criteria-widget  {
     width: 100%;
+
     .faceted-criteria-reset{
         a{
             color: #000!important;
             font-size: 14px;
             display: flex;
             align-items: center;
+
             &:before{
                 content:"";
                 width: 16px;
@@ -70,6 +80,7 @@ legend {
             }
         }
     }
+
     .widget-fieldset.faceted-criteria{
        & > legend{
         display: block;
@@ -77,21 +88,25 @@ legend {
         color: #292929;
         font-weight: normal;
        }
+
        .widget-body{
             display: flex;
             align-items: center;
             gap: 20px;
             flex-wrap: wrap;
+
         dl{
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             margin-bottom: .2rem;
+
             dd{
                 display: inline-block;
                 background: #efefef;
                 border-radius: 3px;
                 padding: 0.4em 0;
+
                 &:hover{
                     span span{
                         opacity: 1;
@@ -106,9 +121,11 @@ legend {
 .faceted-criteria dt{
     display: none;
 }
+
 .faceted-criteria .widget-body dl dd {
     margin: 0;
 }
+
 .faceted-criteria dd span {
     position: relative;
     display: flex;
@@ -119,9 +136,11 @@ legend {
         position: absolute;
         z-index: 1;
     }
+
     span{
         color: #000;
         opacity: .55;
+
         &:before{
             content:"";
             width: 16px;
@@ -136,6 +155,7 @@ legend {
         }
     }
 }
+
 .faceted-criteria .faceted-remove::before {
     display: none;
 }
@@ -144,6 +164,7 @@ legend {
     .template-facetednavigation_view {
         .faceted-top-widgets .faceted-widget {
             max-width: 250px;
+
             &.faceted-criteria-widget{
                 max-width: 100%;
             }
@@ -159,10 +180,12 @@ legend {
     text-align: center;
     padding: 0.25em 0;
 }
+
 .to-portal a{
     color:#fff;
     text-decoration: none;
 }
+
 .to-portal a:hover{
     text-decoration:underline;
 }

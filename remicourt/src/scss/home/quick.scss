@@ -5,11 +5,12 @@
         margin: 0;
     }
 }
+
 .quick-access{
-    
     .body-section{
         ul {
             max-width: 1200px!important;
+
             li{
                 .table_image{
                     .image.d-block {
@@ -20,17 +21,21 @@
                     transition: all .3s ease;
                     position: relative;
                 }
+
                     &:hover,&:focus{
                         .image.d-block {
                         transform: translateY(-5px);
                         transition: all .3s ease;
+
                         svg {
                             fill:$primary-red;
                         }
                     }
                 }
+
                     .table_title{
                         margin:0px;
+
                         span{
                             line-height: 1;
                         }
@@ -42,7 +47,6 @@
     }
 
     @media screen and (max-width: 992px) {
-
         .body-section{
             ul {
                 li{
@@ -73,11 +77,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         //font-family:$font-family-roboto;
@@ -108,6 +114,7 @@
     padding: 80px 0;
     background: url("../../assets/svg/carte.png") center right no-repeat !important;
     background-size: contain !important;
+
     .section-title{
         font-weight: 800;
         text-align: center;
@@ -117,6 +124,7 @@
         width: max-content;
         font-size: 3rem;
         z-index: 0;
+
         &:after{
             left:0%;
             top: 70px;
@@ -136,13 +144,16 @@
         position:relative;
         margin: 0 auto;
         left: -10%; 
+
         .row {
             grid-gap:25px;
            
         li{
             width:25%;
+
             .table_image{
                 text-decoration: none;
+
                 .image.d-block {
                 background: $primary-svg;
                 transition: all .5s ease;
@@ -182,6 +193,7 @@
                 margin: 1rem 0 0 0;
                 text-align: center;
                 text-decoration: none;
+
                 span {
                     font-size: 14px;
                     color: #000;
@@ -196,20 +208,23 @@
     }
 
     @media screen and (max-width: 992px) {
-
         .body-section{
             width: 100%;
             left: 0%; 
+
             .row {
                 grid-gap:25px;
                
             li{
                 width:33%;
+
                 .table_image{
                     text-decoration: none;
+
                     .image.d-block {
                     width: 80px;
                     height: 80px;
+
                     svg {
                         width: 30px;
                     }
@@ -225,6 +240,7 @@
                     margin: 1rem 0 0 0;
                     text-align: center;
                     text-decoration: none;
+
                     span {
                         font-size: 14px;
                         color: #000;
@@ -246,6 +262,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
@@ -256,6 +273,7 @@
 .quick-partenaires{
     display: none!important;
     padding-top:0px;
+
     .section-title{
         text-align: center;
         font-weight: 800;
@@ -264,6 +282,7 @@
         margin: 0 auto 4.5rem;
         width: max-content;
         font-size: 3rem;
+
         &:after{
             left:0%;
             top: 70px;
@@ -280,12 +299,15 @@
     
     .body-section{
         text-align: center;
+
         li{
             padding: 20px 10px 0px;
+
             .table_image{
                 text-decoration: none;
                 position: relative;
                 padding-bottom: 50px;
+
                 .image.d-block {
                     display: none!important;
                 }
@@ -316,6 +338,7 @@
                     
                 }
             }
+
                 .table_title{
                     span{
                         line-height: 1;
@@ -344,11 +367,13 @@
                         font-size: 16px;
                     }
                 }
+
                 a .table_title {
                     margin: 1rem 0 0 0;
                     text-align: center;
                     text-decoration: none;
                     position: relative;
+
                     span {
                         font-size: 16px;
                         color: #000;
@@ -370,6 +395,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }

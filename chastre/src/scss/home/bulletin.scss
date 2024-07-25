@@ -6,15 +6,18 @@
 .sectioncollection.bien-vivre-a-chastre{
     padding-top: 2rem;
     padding-bottom: 2rem;
+
     .section-title{
         margin: 0 0 2rem;
         color: $dark;
     }
+
     .swiper-slide > a{
         text-decoration: none;
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         .swiper_title{
             h3{
                 color: $dark!important;
@@ -22,10 +25,12 @@
             }
         }
     }
+
     .see_all{
         display: flex;
         justify-content: center;
         margin: 2rem 0 0;
+
         a{
             background: transparent;
             border: 0 solid #1b4f95;
@@ -40,6 +45,7 @@
             text-transform: none;
             transition: all .2s ease;
             width: max-content;
+
             &:after{
                 background-color: #235789;
                 bottom: -5px;
@@ -49,6 +55,7 @@
                 transition: all .2s ease;
                 width: 25%;
             }
+
             &:hover{
                 &:after{
                     width: 50%;

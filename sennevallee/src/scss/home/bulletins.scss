@@ -22,6 +22,7 @@
         margin-bottom:2rem;
         color:#fff;
     }
+
     .swiper-slide {
         background: #353535;
         padding-bottom: 20px;
@@ -33,10 +34,12 @@
             transition: .5s;
             transform: translateY(10px);
     }
+
          a {
         text-decoration: none;
     }
 }
+
     .swiper_title h3 {
     padding: 20px;
     font-family: Roboto,sans-serif;
@@ -67,6 +70,7 @@
         width: -moz-max-content;
         width: max-content;
         margin: 30px auto 0;
+
         &:hover {
                 background: #fff;
                 border: 1px solid #fff;

@@ -1,5 +1,6 @@
 .sectionnews{
     position: relative;
+
     &::before{
         content: "";
         position: absolute;
@@ -11,6 +12,7 @@
         bottom: 0;
         top: 40%;
     }
+
     &::after{
         content: "";
         width:103px;
@@ -23,6 +25,7 @@
         transform: translateY(-50%);
 
     }
+
     .swiper-pagination{
         display: none;
     }

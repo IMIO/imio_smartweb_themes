@@ -1,9 +1,11 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .quick-access{
     .body-section{
         li{
@@ -14,39 +16,46 @@
                 width: 120px;
                 height: 120px;
                 transition: all .15s ease;
+
                 &:hover,&:focus{
                     transform: translateY(-15px);
                 }
+
                 .table_title{
                     span{
                         line-height: 1;
                     }
                 }
             }
+
             &:nth-child(1){
                 .table_image{
                     background: #287FA4;
                     border: solid 4px #7eb2c8;
                 }
             }
+
             &:nth-child(2){
                 .table_image{
                     background: #239C49;
                     border: solid 4px #2bc492;
                 }
             }
+
             &:nth-child(3){
                 .table_image{
                     background: #DA1E84;
                     border: solid 4px #e978b5;
                 }
             }
+
             &:nth-child(4){
                 .table_image{
                     background: #D33F0D;
                     border: solid 4px #e58c6e;
                 }
             }
+
             &:nth-child(5){
                 .table_image{
                     background: #16215B;
@@ -62,11 +71,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         text-transform: uppercase;
@@ -98,6 +109,7 @@
                 background: #287FA4!important;
                 border: solid 4px #7eb2c8!important;
             }
+
             &:nth-child(even){
                 .table_image{
                     background: #005C42!important;

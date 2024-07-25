@@ -1,6 +1,7 @@
 .les-sites {
   padding: 5rem 0;
   position: relative;
+
   &:after{
     content: "";
     background: #F1F1F1;
@@ -12,6 +13,7 @@
     transform: translateX(-50vw);
     z-index: -1;
   }
+
   .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
@@ -19,6 +21,7 @@
     grid-auto-rows: 1fr;
     align-items: center;
     justify-content: center;
+
     li {
       position: relative;
       display: flex;
@@ -29,10 +32,12 @@
       border: 1px solid #D3D3D3;
       border-radius: 20px;
       height: 155px;
+
       &:hover,
       &:focus {
         border: solid 1px $secondary;
       }
+
       .table_title {
         &:after {
           content: '';
@@ -42,6 +47,7 @@
           bottom: 0;
           left: 0;
         }
+
         span {
           font-size: 18px !important;
           color: rgba(59, 59, 59, 1) !important;

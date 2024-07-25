@@ -6,6 +6,7 @@
     padding: 3rem 0;
   }
   position: relative;
+
   &:after {
     content: "";
     background: #f3f3f3;
@@ -20,6 +21,7 @@
 
 }
 }
+
 .bla-container{
   flex: 73%;
   position: relative;
@@ -31,11 +33,13 @@
   .letter{
     display: inline-block;
     mask-repeat: no-repeat;
+
     &::before{
       content: "";
       display: inline-block;
       width: 1px;
     }
+
     &.b{
       position: relative;
       background: url(../../assets/svg/b2-img.jpg) no-repeat center /cover;
@@ -45,10 +49,12 @@
       margin-right:3.32%;
       // height 348px
       animation: letterb 2.7s 1;
+
       &::before{
         padding-bottom: 123.84%; // 100 / 281 * 348
       }
     }
+
     &.l{
       position: relative;
       background: url(../../assets/svg/l2-img.jpg) no-repeat center /cover;
@@ -57,10 +63,12 @@
       width: 21.634%;
       margin-right:3.32%;
       animation: letterl 2.7s 1;
+
       &::before{
         padding-bottom: 185.106%;
       }
     }
+
     &.a{
       position: relative;
       background: url(../../assets/svg/a2-img.jpg) no-repeat center /cover;
@@ -68,11 +76,13 @@
       mask-image: url(../../assets/svg/a-svg.svg);
       width: 39.35558112773303%;
       animation: lettera 2.7s 1;
+
       &::before{
         padding-bottom: 101.754%;
       }
     }
   }
+
   .mascotte{
     position: absolute;
     background: url(../../assets/svg/mascotte.svg) no-repeat center /cover;
@@ -81,6 +91,7 @@
     right: 31.185%;  // 271px
     animation: mascotte 2.7s 1;
     transition: linear;
+
     &::before{
       content: "";
       display: inline-block;
@@ -89,19 +100,23 @@
     }
   }
 }
+
 .letter-container{
   position: relative;
 }
+
 .vid-container{
   animation: vid-container 2.7s 1;
   flex: 26%;
 }
+
 .slogan{
   width: 88%;
   background: url(../../assets/svg/slogan.svg) no-repeat center;
   margin-left: auto;
   position: relative;
   margin-top: 10%;
+
     &::before{
       content: "";
       display: inline-block;
@@ -109,6 +124,7 @@
       padding-bottom:28.461%; // 100 / 260 * 74
     }
 }
+
 .feder-logo{
   padding-bottom: 40%;
   background:url(../../assets/svg/logo_feder_wallonie.png);
@@ -117,6 +133,7 @@
   background-size: 87%;
   display: block;
 }
+
 .vid{
   width: 70%;
   background:url(../../assets/svg/banner-vid.jpg);
@@ -126,6 +143,7 @@
   padding-bottom:40%;
   margin-top: -7%;
   border-radius: 15px;
+
   &::after{
     content:"";
     width: 29%;
@@ -138,6 +156,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
   }
+
   &::before{
     content: "";
     display: inline-block;
@@ -151,9 +170,11 @@
     border-radius: 15px;
   }
 }
+
 .en-un-clic-titre,.un-clic{
   animation: clic-container 2.7s 1;
 }
+
 .en-un-clic-titre{
   z-index: -1;
 }
@@ -162,9 +183,11 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .vid{
     display: none;
   }
+
   .vid-container {
     animation: vid-container 2.7s 1;
     flex: 26% 1;
@@ -172,9 +195,11 @@
     width: 60%;
     margin: 0 auto;
   }
+
   .slogan {
     width: 100%;
   }
+
   .feder-logo{
     padding-bottom: 40%;
     background:url(../../assets/svg/logo_feder_wallonie.png);
@@ -189,20 +214,25 @@
   0%{
     transform: translateX(52px);
   }
+
   20%{
     transform: translateX(52px);
 
   }
+
   60%{
     transform: translateX(52px);
 
   }
+
   80%{
       transform: translateX(0);
   }
+
   90%{
     transform: translateX(0);
   }
+
   100%{
     transform: translateX(0);
   }
@@ -212,13 +242,16 @@
     opacity: 0;
     top: 25%;
   }
+
   20%{
     top: 25%;
   }
+
   60%{
     top: 0;
     opacity:1;
   }
+
   100%{
     opacity: 1;
     top:0;
@@ -231,25 +264,30 @@
     background-position: 10% center;
 
   }
+
   20%{
     opacity: 0;
     transform: translateX(-10%);
 
   }
+
   50%{
     opacity: 1;
     transform: translateX(0);
   }
+
   60%{
     background-position: center;
     background-position: 10% center;
 
   }
+
   80%{
     opacity: 1;
     transform: translateX(0%);
     background-position:  1% center;
   }
+
   100%{
     opacity: 1;
     transform: translateX(0%);
@@ -262,22 +300,27 @@
     transform: translateX(-8%);
     background-position: 10% center;
   }
+
   20%{
     opacity: 0;
     transform: translateX(-8%);
   }
+
   50%{
     transform: translateX(0);
     opacity: 1;
   }
+
   60%{
     background-position: 10% center;
   }
+
   80%{
     transform: translateX(0);
     opacity: 1;
     background-position: 1% center;
   }
+
   100%{
     transform: translateX(0);
     opacity: 1;
@@ -290,23 +333,28 @@
     transform: translateX(4%);
     background-position: 10% center;
   }
+
   20%{
     opacity: 0;
     transform: translateX(4%);
 
   }
+
   50%{
     opacity: 1;
     transform: translateX(0);
 
   }
+
   60%{
     background-position: 17% center;
   }
+
   80%{
     opacity: 1;
     background-position: 7% center;
   }
+
   100%{
     opacity: 1;
     background-position: 7% center;
@@ -317,15 +365,18 @@
     opacity: 0;
     transform: translateX(52px);
   }
+
   60%{
     opacity: 0;
     transform: translateX(52px);
 
   }
+
   80%{
     opacity: 1;
     transform: translateX(0);
   }
+
   100%{
     opacity: 1;
     transform: translateX(0);
@@ -339,9 +390,11 @@
   60%{
     opacity: 0;
   }
+
   80%{
     opacity: 1;
   }
+
   100%{
     opacity: 1;
     transform: translateX(0);
@@ -358,10 +411,12 @@
     height: 0;
     opacity: 0;
   }
+
   80%{
     opacity: 1;
     height: 35%;
   }
+
   100%{
     opacity: 1;
     height: 35%;
@@ -382,10 +437,12 @@
     opacity: 0;
     z-index: -2;
   }
+
   80%{
     opacity: 1;
     z-index: -2;
   }
+
   100%{
     opacity: 1;
     transform: translateX(0);

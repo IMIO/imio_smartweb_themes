@@ -8,6 +8,7 @@
     margin-bottom: 3vw;
     margin-top: 0vw;
     z-index: 0;
+
     .section-title{
         position: relative;
         margin-bottom: 2rem;
@@ -19,6 +20,7 @@
         text-transform: uppercase;
         
     }
+
     .body-section{
         .row{
             max-width: 100%;
@@ -27,15 +29,19 @@
             background: $primary-color;
             padding: 0;
             transition: .5s;
+
             .col-md-2 {
                 width: 20%;
             }
+
             li{
                 padding: 0!important;
             }
+
             .table_display{
                 height: 100%;
             }
+
             .table_image{
                 display: none;
                 padding: 1.5rem 1rem;
@@ -48,8 +54,10 @@
                 text-decoration: none;
                 height: 100%;
                 transition: .5s;
+
                 .image{
                     width: auto;
+
                     svg{
                         height: auto;
                         width: 40px;
@@ -57,22 +65,27 @@
                         fill: $primary-titre;
                     }
                 }
+
                 .table_title{
                     max-width:120px;
+
                     span{
                         font-size: 16px;
                         font-weight: 500;
                         color: $primary-titre;
                     }
                 }
+
                 &:hover{
                     transition: .5s;
                     background: rgba(255, 255, 255, 0.2);
+
                     .image{
                         svg{
                             fill: $primary-titre;
                         }
                     }
+
                     .table_title{
                         span{
                             color: $primary-titre;

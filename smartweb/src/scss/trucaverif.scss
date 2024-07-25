@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
     .plone-icon {
         height: 2em;
       }
@@ -20,10 +21,12 @@
     position: relative;
     z-index:3;
 }
+
 .section-home-page-bla .plone-modal-footer {
     border-top: 0px solid #e5e5e5;
     padding: 0;
 }
+
 .vid a.pat-plone-modal {
     display: block;
     width: 100%;
@@ -37,6 +40,7 @@
 .faceted-block-view-with-images .block-menu-element {
     position: relative;
 }
+
 .faceted-block-view-with-images .block-menu-element a.faceted_video {
     inset: 0!important;
     position: absolute!important;
@@ -55,13 +59,16 @@
     display: flex;
     flex-direction: column;
 }
+
 .view-name-consent > div > label.form-label {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+
 div#formfield-form-widgets-basic_cookies {
     order: 0;
 }
+
 div#formfield-form-widgets-basic_analytics {
     order: 1;
 }
@@ -74,6 +81,7 @@ div#formfield-form-widgets-basic_analytics {
     background-color: #c9c9c9 !important;
     background-position: center !important;
 }
+
 .r-search-img{
     background-color: #c9c9c9 !important;
 }
@@ -88,30 +96,37 @@ div#formfield-form-widgets-basic_analytics {
 .template-folder_contents #content-core .table .itemRow.state-private .state-private {
     color: #dc3545 !important;
 }
+
 a.manage.contenttype-imio-smartweb-page:before {
     content: '\e80e';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-imio-smartweb-folder:before {
     content: '\e801';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-imio-smartweb-newsview:before {
     content: '\e80f';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-imio-smartweb-eventsview:before {
     content: '\e809';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-imio-smartweb-directoryview:before {
     content: '\e842';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-collection:before {
     content: '\e808';
     font-family: 'fontello';
 }
+
 a.manage.contenttype-link:before {
     content: '\e806';
     font-family: 'fontello';
@@ -148,6 +163,7 @@ a.manage.contenttype-link:before {
             display: flex;
             align-items: center;
             font-size: 20px;
+
             &:after{
                 content: "";
                 width: 9px;

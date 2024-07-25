@@ -24,14 +24,17 @@
 
     .section-container{
         position: relative;
+
         .swiper-pagination-bullet {
             background: #000 !important;
             opacity: 1;
           }
+
     .swiper-pagination-bullet-active {
         background: $primary-orange !important;
       }
     }
+
     .section-title{
         font-weight: 500;
         text-align: center;
@@ -55,11 +58,14 @@
                     transition: .5s;
                     transform: translateY(10px);
             }
+
             & > a{
                 align-items: center;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     left: auto;
                     position: initial;
@@ -68,6 +74,7 @@
                     width: 100%;
                     text-align: right;
                     transition: .5s;
+
                     span {
                         background: #000;
                         border-radius: 0 0 8px 8px;
@@ -76,9 +83,11 @@
                         transition: .5s;
                     }
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                 }
+
                 .swiper_title{
                     h3{
                         font-family: $font-family-base;
@@ -87,19 +96,23 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
                             transition: .5s;
                         }
                     }
+
                     .swiper_category{
                         transition: .5s;
+
                         span {
                             background:$primary-orange;
                             color:#000;

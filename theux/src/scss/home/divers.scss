@@ -24,33 +24,42 @@ body.portaltype-imio-smartweb-portalpage.section-home-page:after {
 .smartweb-footer .container .row .sectionlinks .container .body-section .row {
    margin:0px;  
 }
+
 .sortable-section .swiper-slide>a:hover {
     background: $primary-svg;
 }
+
 #portal-column-content .section-contact {
     background: $primary-svg;
 }
+
 .sectionfiles .item_infos {
     color: #fff;
 }
+
 #portal-column-content .section-contact .contact-type-organization {
     background: $primary-svg;
 }
+
 .list-menu-element a.row {
     padding: 0.5rem;
     background: #fff;
     border: solid 1px $primary-svg;
     transition: 0.2s;
+
     &:hover {
         background: $primary-svg;
     }
 }
+
 .template-facetednavigation_view .faceted-top-widgets input#search_button {
     background: $primary;
 }
+
 .nav-link:focus-visible {
     box-shadow: 0 0 0 0.25rem $primary;
 }
+
 .nav-link:focus-visible {
     box-shadow: inset 0 0 0 0.1rem $primary;
     padding-left: 0.2rem !important;

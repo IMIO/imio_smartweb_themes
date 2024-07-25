@@ -15,6 +15,7 @@ portal-breadcrumbs {
 div.swiper-image {
     position: relative;
 }
+
 div.swiper-image::before {
     background: transparent;
     content: "";
@@ -27,36 +28,46 @@ div.swiper-image::before {
     z-index: 99;
     border-radius: 10px 10px 0px 0px;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: 0.5;
 }
+
 .sectionfiles {
     &:after {
         background: #f3f3f3;
     }   
+
     .section-title, div ul li a, div ul li a span, div ul li a span::before {
         color: $primary;
     }
 }
+
 .subsite-container {
     margin: 1rem 0;
 }
+
 #subsite-navigation>ul>li>a:focus:before, #subsite-navigation>ul>li>a:hover:before {
     background-color: $primary;
 }
+
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
     color: $secondary;
 }
+
 body.template-block_view_with_images .block-menu-element a .card-title.h2, body.template-block_view_with_images .block-menu-element a h2.card-title {
     font-size: $h2-font-size;
 }
+
 .r-actu-wrapper::after {
     display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background: $primary;
 }
+
 .r-content button {
     background: $primary;
     color: #fff;
@@ -71,22 +82,28 @@ body.template-block_view_with_images .block-menu-element a .card-title.h2, body.
     background-color: transparent;
     background: transparent;
 }
+
 #messagesviewlet {
     border: solid #fff 2px;
 }
+
 .section-home-page #portal-column-content {
     position: relative;
     z-index: 0;
 }
+
 .subsection-demarches-infos-pratiques .list-menu-element .list-card-title.h2, .subsection-demarches-infos-pratiques .list-menu-element h2.list-card-title {
     font-size: 2.25rem;
 }
+
 .r-search-header h2 {
     font-size: 2rem !important;
 }
+
 .r-search-header p {
     font-size: 1.5rem !important;
 }
+
 .table_title span {
     color: $primary !important;
 }

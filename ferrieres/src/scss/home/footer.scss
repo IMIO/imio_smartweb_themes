@@ -1,22 +1,28 @@
 #portal-footer-wrapper{
     text-align: left!important;
     background: transparent;
+
     #portal-footer{
         background:$primary!important;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin: 3rem 0 1rem 0;
+
                 figure{
                     img{
                         width: 250px;
@@ -31,12 +37,15 @@
 #portal-colophon{
     background: $primary;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }
@@ -66,6 +75,7 @@ footer{
 
 
 @media (min-width: 768px) {}
+
 .sectiontext .section-text .body-section.figure-left figure {
     float: left;
     margin-right: 0px;

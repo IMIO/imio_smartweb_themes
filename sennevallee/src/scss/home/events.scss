@@ -1,5 +1,6 @@
     .sectionevents{
         margin: 100px 0 !important;
+
         .section-title{
             width: 100%;
 
@@ -14,14 +15,17 @@
         .swiper-wrapper{
             .swiper-slide {
                 transition: all .25s ease;
+
                 & > a{
                     display: block;
                     align-items: center;
+
                     .swiper-image{
                         padding-bottom: 55%;
                         transition: all .25s ease;
                         margin-bottom: 0rem;
                     }
+
                     .swiper_category{
                         margin-left: 0px;
                         position:relative;
@@ -30,26 +34,32 @@
                         margin-top:-40px;
                         left: 0px;
                     }
+
                     .swiper_date{
                         font-family: $font-family-base; 
                         grid-row-start: 2;
                         justify-content: center;
                     }
+
                     .swiper_title{
                         margin-top: 10px;
+
                         h3{
                             font-family: $font-family-base;
                             text-align: center;
                             
                         }
                     }
+
                     .swiper_description{
                         display: none;
+
                         p{
                             margin: 0;
                         }
                     }
                 }
+
                 &:hover {
                     transform: translateY(10px);
                     transition: .5s;

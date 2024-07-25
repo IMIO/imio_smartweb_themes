@@ -1,5 +1,6 @@
 .home-annuaire{
     background: transparent;
+
     #body-section-annuaires{
         .row{
             display: grid;
@@ -10,14 +11,17 @@
                 gap:0;
                 align-items: end
             }
+
             li{
                 padding: 0;
                 width: 100%;
+
                 .table_display{
                   a.table_image{
                     text-decoration: none;
                     position: relative;
                     display: block;
+
                     &:after{
                         content: "";
                         position: absolute;
@@ -29,6 +33,7 @@
                         opacity: 0;
                         transition: all .3s ease;
                     }
+
                     &:before{
                         content: url("../../assets/svg/plus.svg");
                         display: block;
@@ -41,14 +46,17 @@
                         opacity: 0;
                         z-index: 1;
                     }
+
                     &:hover{
                         &:after{
                             opacity: 1;
                         }
+
                         &:before{
                             opacity: 1;
                         }
                     }
+
                     .image{
                         padding-bottom: 100%;
                         @include media-breakpoint-up(lg){
@@ -56,6 +64,7 @@
                         }
 
                     }
+
                     .table_title{
                         text-align: center;
                         background: $primary;
@@ -72,12 +81,14 @@
                     }
                   }  
                 }
+
                 &:first-child{
                     .image{
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
+
                     .table_title{
                         @include media-breakpoint-up(lg){
                             top: 0!important;
@@ -86,15 +97,18 @@
                         }
                     }
                 }
+
                 &:last-child{
                     @include media-breakpoint-up(lg){
                         margin-left: 12rem;
                     }
+
                     .image{
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
+
                     .table_title{
                         @include media-breakpoint-up(lg){
                             top: 50%!important;

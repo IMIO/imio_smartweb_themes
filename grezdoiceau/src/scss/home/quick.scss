@@ -3,6 +3,7 @@
     @include media-breakpoint-up(md){
         margin-top: -180px;
         background: transparent;
+
             .body-section li a {
             border: solid 2px #EFECE8;
             border-radius: 50%;
@@ -37,6 +38,7 @@
         padding-top: 1rem!important;
         padding-bottom: 1rem!important;
     }
+
      .portaltype-imio-smartweb-portalpage #content-core .row {
         justify-content: flex-start!important;
         gap: 40px 0!important;
@@ -52,23 +54,28 @@
         margin: 0 auto 2rem;
         font-size: 2.5rem;
       }
+
     .row {
         justify-content: center;
         margin-top: 4rem;
         gap: 70px 0;
+
         li {
             @media screen and (max-width: 768px){
                 width: 50%;
             }
         }
     }
+
     .section-title {
         text-align: center;
     }
+
     .table_image {
         text-decoration: none;
         position: relative;
         display: block;
+
         &:after {
             content: "";
             width: 70px;
@@ -83,17 +90,21 @@
             z-index: -1;
             border: solid 1px #fff;
         }
+
         &:hover,&:focus {
             &:after {
                 border: solid px $primary-svg;
             }
         }
     }
+
     .image {
         text-align: center;
     }
+
     .table_title {
         text-align: center;
+
         span {
             font-weight: 500;
         }

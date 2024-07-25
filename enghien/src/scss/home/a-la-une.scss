@@ -2,6 +2,7 @@
   display: none !important;
    padding-top: 2rem;
    padding-bottom:2rem;
+
     &:before{
         left:-1000px;
         top: 200px;
@@ -14,6 +15,7 @@
         width: 1200px;
         border-radius: 50%;
 }
+
     .section-title{
         font-weight: 800;
         text-align: center;
@@ -24,6 +26,7 @@
         margin: 0 auto 4.5rem;
         width: max-content;
         font-size: 3rem;
+
         &:after{
                     left:0%;
                     top: 70px;
@@ -38,7 +41,6 @@
     }
 
   .swiper-slide {
-
   .swiper_title h3 {
       margin-bottom: 20px;
   }
@@ -53,6 +55,7 @@
     .swiper_title h3 {
       padding: 0 1rem;
   }
+
     a {
       grid-template-columns: 100% !important;
       grid-template-rows: 1fr !important;
@@ -71,6 +74,7 @@
         background-repeat: no-repeat;
         background-size: 50%;
       }
+
       .swiper-button-next {
         background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23275E71\"/></svg>");
         background-position: center;

@@ -32,6 +32,7 @@ $enable-roboto-webfont: false;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     &:before {
         content: "";
         width: 40px;
@@ -42,6 +43,7 @@ $enable-roboto-webfont: false;
         top: 0;
     }
 }
+
 .swiper-banner-image {
     &:after {
         content: "";
@@ -54,6 +56,7 @@ $enable-roboto-webfont: false;
         opacity: .7;
         mix-blend-mode: color;
     }
+
     &:before{
         content:"";
         background: url("../../assets/svg/logo-banner.png");
@@ -71,6 +74,7 @@ $enable-roboto-webfont: false;
 
 .see_all a {
     position: relative;
+
     &:before{
         content: "";
         width: 100%;
@@ -81,6 +85,7 @@ $enable-roboto-webfont: false;
         bottom: 0;
         transition: all .3s ease;
     }
+
     &:hover{
         &:before{
             width: 70%;
@@ -91,6 +96,7 @@ $enable-roboto-webfont: false;
 .swiper-pagination-bullet {
 	background: #fff;
 }
+
 #portal-breadcrumbs {
 	margin-top: 2.5rem;
 }
@@ -99,6 +105,7 @@ $enable-roboto-webfont: false;
         position: absolute;
         transform: translateY(25%);
     }
+
     #portal-header #portal-header-top #portal-globalnav-wrapper {
         margin: 0 1rem 0 7rem;
     }
@@ -123,9 +130,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -166,6 +175,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -181,6 +191,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -194,6 +205,7 @@ h1{
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
+
     &:after{
         content: "";
         position: absolute;
@@ -234,6 +246,7 @@ h1{
     display: flex;
     flex-direction: row!important;
     flex-wrap: nowrap!important;
+
     &::before {
         content: "";
         background-color: #fe5919;

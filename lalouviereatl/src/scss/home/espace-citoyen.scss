@@ -56,9 +56,11 @@
             li{
                 padding: 0!important;
             }
+
             .table_display{
                 height: 100%;
             }
+
             .table_image{
                 padding: 1.5rem 1rem;
                 border-radius: 50px;
@@ -71,8 +73,10 @@
                 height: 100%;
                 color: #fff;
                 transition: all 0.3s ease;
+
                 .image{
                     width: auto;
+
                     svg{
                         height: auto;
                         width: 40px;
@@ -80,9 +84,11 @@
                         fill: #fff;
                     }
                 }
+
                 &:hover{
                     border: 5px solid #fff;
                     transition: all 0.3s ease;
+
                     .table_title{
                         span{
                             color: #fff;
@@ -99,6 +105,7 @@
 .espace-citoyen-titre{
     margin: 0px;
     padding: 0px;
+
     .section-text {
         .text {
     

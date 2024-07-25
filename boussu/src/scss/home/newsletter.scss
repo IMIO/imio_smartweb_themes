@@ -7,11 +7,13 @@
   background: #07689f;
   text-align: center;
   padding: 5rem 0;
+
   .section-title {
     width: max-content;
     margin: 0 auto;
     color: #fff !important;
     font-size: 24px !important;
+
     &:before {
       content: '';
       width: 50px;
@@ -24,12 +26,15 @@
       margin: 0 auto;
     }
   }
+
   .rich_description {
   }
+
   .form-text {
     display: none;
     color: #fff !important;
   }
+
   input {
     &:placeholder {
     }

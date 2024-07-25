@@ -1,7 +1,9 @@
 .partenaires {
     background: transparent;
+
     a.table_image {
         text-align: center;
+
     .plone-icon {
     height: 2em;
     width: auto;
@@ -9,13 +11,16 @@
     fill: $secondary;
         }
     }
+
     li {
         padding: 1rem 0;
     }
 }
+
 .sortable-section.sectionlinks.partenaires a {
     text-align: center;
   }
+
   .partenaires h2.section-title {
     color: $primary;
     font-size: 3rem;

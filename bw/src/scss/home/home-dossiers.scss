@@ -5,6 +5,7 @@
     margin-bottom: 5rem;
     position: relative;
     border-radius: 20px;
+
     &:after {
         display: none!important;
     }
@@ -23,20 +24,25 @@
 
      @media screen and (max-width: 991px) {
         background: none!important;
+
         &:after {
             display: none!important;
         }
+
         &:before {
             width: 100%;
             border-radius: 0px;
          }
+
         .swiper {
             padding-bottom: 60px;
         }
         }
+
     .swiper-wrapper{
         padding-bottom: 0;
     }
+
     .section-title{
         margin-bottom: 2rem;
         text-align: center;
@@ -52,6 +58,7 @@
             left: 0px;
         }
     }
+
     .swiper-slide{
         &>a {
             @include media-breakpoint-up(lg) {
@@ -61,32 +68,39 @@
             justify-content: center;
             }
         }
+
         .swiper_title {
             @include media-breakpoint-up(lg) {
             grid-column: 1!important;
             }
         }
+
         .swiper_description {
             @include media-breakpoint-up(lg) {
             grid-column: 1!important;
             }
         }
+
         .swiper-image{
             border-radius: 20px;
         }
+
         .swiper_title{
             margin-top: 0;
+
             h3 {
                 font-size: 32px;
                 padding: 1rem 0;
                 margin-bottom: 0;
             }
         }
+
         .swiper_description {
             p {
                 font-size: 16px;
                 color: rgba(255, 255, 255,.76);
                 font-family: $font-family-title;
+
                 &:after {
                     content: "Lire la suite";
                     font-weight: 500;
@@ -104,6 +118,7 @@
             }
         }
     }
+
     .swiper-pagination {
         display: none;
     }
@@ -116,6 +131,7 @@
         height: 45px;
         border-radius: 50px;
     }
+
     .swiper-button-prev{
         left: 100px;
     }

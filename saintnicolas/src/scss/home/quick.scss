@@ -12,15 +12,19 @@
     top: 0;
     background: $colorpink;
 }
+
 #portal-header {
     margin: 0rem auto;
 }
+
 .quick-access a.table_image svg {
     transition: 0.5s;
 }
+
 .quick-access a.table_image:hover svg {
     margin-top: -1.5rem;
 }
+
 .sortable-section.sectionlinks.quick-access {
     padding-top: 2.3rem;
 }
@@ -28,6 +32,7 @@
     .quick-access li.col-md-2 {
         border-right: 1px solid #fff;
     }
+
     .quick-access li.col-md-2:last-child {
         border: none;
     }

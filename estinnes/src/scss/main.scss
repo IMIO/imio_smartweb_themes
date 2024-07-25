@@ -23,6 +23,7 @@ $enable-roboto-webfont: false;
 .portaltype-imio-smartweb-portalpage.section-home-page{
     #portal-header {
         position: relative;
+
         #portal-header-top {
             position: absolute;
             width: 100%;
@@ -33,6 +34,7 @@ $enable-roboto-webfont: false;
             top: 10px;
         }
     } 
+
     .smartweb_herobanner:after {
         content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_629_19)'%3E%3Cpath d='M381.46 47.3H0V122.2H381.46V47.3Z' fill='white'/%3E%3Cpath d='M971.62 121.37C881.55 112.48 817.03 93.05 753.38 84.73C668.07 73.57 592.13 73.18 583.5 71.96C416.36 48.51 124.69 24.66 0 19V52.99C270.21 132.74 668.94 140.9 970.84 128.7L971.62 121.37Z' fill='%23DCEBB5'/%3E%3Cpath d='M1919 87.4799C1868.92 80.0199 1805.21 71.6499 1732.51 63.4399C1590.39 58.1999 1438.81 75.0799 1331.76 90.2899C1263.38 100.01 1121.83 101.71 973.59 108.37C965.29 108.74 970.83 128.7 970.83 128.7C1270.32 158.22 1656.62 174.57 1919.99 97.7999V87.5899L1919.57 87.5399L1918.99 87.4799H1919Z' fill='%23EEF5DA'/%3E%3Cpath d='M0 34C124.69 39.66 415.86 56.84 582.99 80.3C658.66 90.92 800.75 111.94 970.84 128.7C1130.33 122.25 1262.8 110.13 1335.02 99.86C1442.07 84.65 1600.02 72.04 1732.51 63.44C1451.25 31.7 1035.39 2.53 753.25 38.9C597.63 58.97 315.92 53.8 0 0V34Z' fill='%23D2E59E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_629_19'%3E%3Crect width='1920' height='153.3' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
         position: absolute;
@@ -59,6 +61,7 @@ $enable-roboto-webfont: false;
         margin-left: auto;
     }
 }
+
 #header-links{
     .account{
         background: #a8cf45;
@@ -66,6 +69,7 @@ $enable-roboto-webfont: false;
         border-radius: 5px;
         color: #000 !important;
         text-decoration: none;
+
         span{
             color: #000 !important;
         }
@@ -77,14 +81,17 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
         }
     }
+
     h3{
         color: #fff!important;
     }
@@ -123,6 +130,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -135,6 +143,7 @@ footer #container-section-noussuivre{
         font-size: 34px!important;
     }
 }
+
 #portal-breadcrumbs {
 	background-color: #f7f7f7;
 	border-radius: 5px;

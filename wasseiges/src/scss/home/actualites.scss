@@ -1,6 +1,7 @@
 .sortable-section.sectionnews {
     position: relative;
 }
+
 .sortable-section.sectionnews::after {
     background: url(../../assets/svg/round-blue.svg);
     top: -150px;
@@ -14,10 +15,12 @@
     background-size: 80%;
     z-index: -1;
 }
+
 body.portaltype-imio-smartweb-portalpage .outer-wrapper {
     position: relative;
     overflow: hidden;
 }
+
 body.portaltype-imio-smartweb-portalpage .outer-wrapper::after {
     background: url(../../assets/svg/round-green.svg);
     bottom: 0;

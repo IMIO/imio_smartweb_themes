@@ -45,11 +45,13 @@
             & > a{
                 align-items: center;
                 transition: all .25s ease;
+
                 .swiper-image{
                     padding-bottom: 55%;
                     transition: all .25s ease;
                     margin-bottom: 1rem;
                 }
+
                 .swiper_category{
                     margin-left: auto;
                     top: 0px;
@@ -72,6 +74,7 @@
                     }
                     
                 }
+
                 .swiper_category:before {
                     display: block; 
                     content: ""; 
@@ -82,6 +85,7 @@
                     position: absolute;
                     bottom:15px;
                 }
+
                 .swiper_date{
                     padding: 0;
                     margin: 0.5rem 0 0.5rem 0;
@@ -90,10 +94,12 @@
                     text-align: center;
                     width: 100%;
                     justify-content: center;
+
                     .day_date {
                         display:block;
                         text-align: center;
                         width: 100%;
+
                         .from_on {
                             margin:0px;
                         }
@@ -104,6 +110,7 @@
                     margin: 0 0 0 0;
                     text-align: center;
                     width: 100%;
+
                     h3{
                         color: #3E4854;
                         font-size: 22px;
@@ -113,20 +120,22 @@
                         padding: 0 20px;
                         width: 100%;
                         margin-bottom: 20px;
+
                         &:after{
                         }
                     }
                 }
+
                 .swiper_description{
                     display: none;
                 }
             }
+
             &:hover{
                 a {
                     background:#F8F8F8;
 
                     .swiper_category{
-        
                         span {
                             background: #F8F8F8;
                         }
@@ -135,6 +144,7 @@
                 }
             }
         }
+
         &:hover{
             .swiper-slide {
                 background: $primary-svg;

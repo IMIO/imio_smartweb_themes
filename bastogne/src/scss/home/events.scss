@@ -6,6 +6,7 @@
         margin-bottom: 5rem;
         position: relative;
         border-radius: 20px;
+
         &:after {
             display: none!important;
         }
@@ -31,20 +32,25 @@
     
          @media screen and (max-width: 991px) {
             background: none!important;
+
             &:after {
                 display: none!important;
             }
+
             &:before {
                 width: 100%;
                 border-radius: 0px;
              }
+
             .swiper {
                 padding-bottom: 60px;
             }
             }
+
         .swiper-wrapper{
             padding-bottom: 0;
         }
+
         .section-title{
             font-weight: 600;
             color:$primary !important;
@@ -106,6 +112,7 @@
                     }
                     }
                 }
+
         .swiper-slide{
             padding-left:80px;
             
@@ -117,10 +124,12 @@
                 justify-content: center;
                 }
             }
+
             .swiper_category {
                 position: absolute;
                 margin-top: 70px;       
             }
+
             .swiper_date{
                 position: absolute !important;
                 display: block;
@@ -130,16 +139,19 @@
                 font-size: 14px;
                 font-weight: initial;
                 border-radius: 0 20px 20px 0;
+
                 .start_date {
                     float:left;
                 }
             }
+
             .swiper_title {
                 position: relative !important;
                 @include media-breakpoint-up(lg) {
                 grid-column: 1!important;
                 grid-row: 1!important;
                 }
+
                 &:after {
                     bottom: 0;
                     content: "";
@@ -154,27 +166,33 @@
                     z-index: -1;
                  }
             }
+
             .swiper_description {
                 @include media-breakpoint-up(lg) {
                 grid-column: 1!important;
                 }
             }
+
             .swiper-image{
                 border-radius: 20px 20px 20px 0px;
             }
+
             .swiper_title{
                 margin-top: 0;
+
                 h3 {
                     font-size: 32px;
                     padding: 1rem 0;
                     margin-bottom: 0;
                 }
             }
+
             .swiper_description {
                 p {
                     font-size: 16px;
                     color: rgba(255, 255, 255,.76);
                     font-family: $font-family-title;
+
                     &:after {
                         content: "Lire la suite";
                         font-weight: 500;
@@ -195,6 +213,7 @@
         @media screen and (max-width:1400px) {
             .swiper-slide{
                 padding-left:0px !important;
+
                 .swiper_title {
                     font-size: 15px;
                     
@@ -204,6 +223,7 @@
                 }
             }
         }
+
         .swiper-pagination {
             display: none;
         }
@@ -216,6 +236,7 @@
             height: 45px;
             border-radius: 50px;
         }
+
         .swiper-button-prev{
             left: 80px;
         }
@@ -239,6 +260,7 @@
                 left: 60px;
                 bottom:60px;
             }
+
             .swiper-button-next{
                 left: 115px;
                 bottom:60px;
@@ -250,6 +272,7 @@
                 left: 40px;
                 bottom:40px;
             }
+
             .swiper-button-next{
                 left: 95px;
                 bottom:40px;
@@ -260,6 +283,7 @@
             .swiper-button-prev{
                 display: block;
             }
+
             .swiper-button-next{
                 display: block;
             }
@@ -274,18 +298,23 @@
             &:before {
                 display: none;
              }
+
             .see_all {
                 justify-content: center;
             }
+
             .swiper-slide{
                 background: $primary-blue;
                 padding:80px 30px 140px 30px;
                 border-radius: 20px;
+
                 .swiper_category {
                     padding-left:60px;      
                 }
+
                 .swiper_title {
                     padding-left:60px;
+
                     h3 {
                         font-size: 22px;
                     }   
@@ -299,21 +328,26 @@
         &:before {
             display: none;
          }
+
         .see_all {
             justify-content: center;
         }
+
         .swiper {
             padding-bottom: 0px;
         }
+
         .swiper-slide{
             background: $primary-blue;
             padding:0px 0px 100px 0px;
             border-radius: 20px;
+
             .swiper_category {
                 margin-top: 40px;
                 padding-left:40px;
                 position: relative;      
             }
+
             .swiper_title {
                 padding:0 40px 0 40px;
 

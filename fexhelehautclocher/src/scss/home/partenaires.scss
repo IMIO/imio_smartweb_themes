@@ -1,20 +1,25 @@
 .partenaires {
     background: transparent;
+
     a.table_image {
         text-align: center;
+
     .plone-icon {
     height: 2em;
     width: auto;
     fill: $secondary;
         }
     }
+
     li {
         padding: 1rem 0;
     }
 }
+
 .sortable-section.sectionlinks.partenaires a {
     text-align: center;
   }
+
   .partenaires h2.section-title {
     color: $primary;
     font-size: 3rem;
@@ -22,6 +27,7 @@
     padding: 0;
     text-align: center;
 }
+
 .sortable-section.sectionlinks.partenaires ul li a .image.d-block {
 align-items: center;
 background: #8fbee9;
@@ -36,6 +42,7 @@ margin: 0 auto;
 width: 70px;
 margin-bottom: 1rem;
 }
+
 body .sortable-section.sectionlinks ul li a.table_image:hover .image {
     background: transparent;
     border: solid 1px $primary-svg;
@@ -51,6 +58,7 @@ body .sortable-section.sectionlinks ul li a.table_image:hover .image {
         position: relative;
         top: 0;
     }
+
     .sectionlinks.quick-access .section-container>div {
     max-width: 100%;
     width: 100%;

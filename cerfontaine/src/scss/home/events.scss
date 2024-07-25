@@ -14,10 +14,12 @@
 
     .section-container{
         position: relative;
+
     .swiper-pagination-bullet-active {
         background: $primary-green !important;
       }
     }
+
     .section-title{
         font-weight: 700 !important;
         text-transform: none;
@@ -48,17 +50,21 @@
                     background: #eee;
                     border-radius: 0px 0 50px 0;
             }
+
             & > a{
                 align-items: center;
                 padding-bottom: 40px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     width: 100%;
                     text-align: left;
                     position: absolute;
                     top:0px;
+
                     span {
                         display: inline-block;
                         background: $primary-svg;
@@ -67,15 +73,19 @@
                     }
                     
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                     width: 100%;
+
                     div {
                         margin:0 auto;
                     }
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
@@ -83,12 +93,15 @@
                         
                     }
                 }
+
                 .swiper_description{
                     width: 100%;
+
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -99,12 +112,15 @@
             }
         }
     }
+
     .swiper-button-prev {
         display: none; 
         }
+
         .swiper-button-next {
         display: none;
         }
+
      .section-container .swiper-pagination-bullet-active{
         background: $primary-green !important;
     }

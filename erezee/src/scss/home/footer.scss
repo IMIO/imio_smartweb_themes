@@ -2,10 +2,12 @@ footer {
     #portal-colophon, div.colophon {
     background-color: $primary;
     }
+
     div#body-section-liens-utiles li a {
         text-decoration: none;
     }
 }
+
     footer ul.row {
         margin-left: 0;
     }
@@ -19,18 +21,23 @@ footer {
     position: relative;
     background:transparent;
 }
+
 .smartweb_footer {
     padding-top: 4rem;
+
     .sectioncontact h2, .smartweb-footer li a {
     color: #fff;
     }
+
     .sectioncontact h2, .sectionlinks h2 {
         font-size: 2rem;
     }
 }
+
 div#body-section-liens-utiles li a:hover {
     text-decoration: underline;
 }
+
 .colophonWrapper ul li {
     display: inline-block;
 }
@@ -39,6 +46,7 @@ div#body-section-liens-utiles li a:hover {
     width: 40%;
     margin: 0 auto;
     }
+
     #portal-footer-wrapper #portal-footer.container {
         text-align: center;
     }

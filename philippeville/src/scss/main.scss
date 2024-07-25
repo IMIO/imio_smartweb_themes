@@ -26,11 +26,13 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper h2 {
 	margin-top: 0!important;
 }
+
 .phones{
     span{
         display: block;
     }
 }
+
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
@@ -45,6 +47,7 @@ $enable-roboto-webfont: false;
         .swiper-slide{
             & > a{
                 padding-top: 2rem;
+
                 &:after{
                     content: "";
                     background: transparent;
@@ -67,13 +70,16 @@ $enable-roboto-webfont: false;
     padding-top: 4rem!important;
     padding-bottom: 4rem!important;  
 }
+
 .flash-infos{
     .swiper-slide .swiper-image {
         padding-bottom: 134%!important;
     }
+
     .swiper_title{
         margin-top: 2rem!important;
     }
+
     .swiper-button-next, .swiper-button-prev {
         top: 40%!important;
     }
@@ -82,6 +88,7 @@ $enable-roboto-webfont: false;
 .enquetes{
     div.swiper-slide {
         border: solid 2px #fff;
+
         &:hover{
             border: solid 2px $primary;
         }
@@ -97,10 +104,12 @@ footer{
 .nav_je-suis.has_subtree.nav-item{
     margin-left: auto;
 }
+
 #portal-globalnav{
     @include media-breakpoint-up(lg){
         margin-left: 2rem;
         align-items: center;
+
         .nav_abonnement.nav-item{
             margin-left: auto;
         }
@@ -116,6 +125,7 @@ footer{
             margin-left: auto!important;
             border-radius: 5px!important;
             border: solid 1px #fff!important;
+
             &:hover{
                 background: transparent!important;
                 color: #fff!important;
@@ -134,12 +144,14 @@ footer{
         border: solid 1px #52796f;
         margin-top: 0.6rem;
         display: inline-block;
+
         &:hover{
             background: transparent;
             color: $primary!important;
         }
     }
 }
+
 #portal-globalnav .quick-access .quick-access-title {
     color: $primary;
 }

@@ -1,13 +1,16 @@
 .sortable-section.section-en-image{
     padding-top: 4rem;
     padding-bottom: 4rem;
+
     h2.section-title {
         text-align: center;
     }
+
     .swiper-slide{
         & > a{
             text-decoration: none;
         }
+
         .swiper_title{
             padding-top: 1rem;
         }

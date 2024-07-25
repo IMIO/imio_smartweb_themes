@@ -4,6 +4,7 @@
 .faceted-block-view-with-images .block-menu-element {
     position: relative;
 }
+
 .faceted-block-view-with-images .block-menu-element a.faceted_video {
     inset: 0 !important;
     position: absolute !important;
@@ -28,9 +29,11 @@
     align-items: center;
     border-color: #ccc;
 }
+
 .select2-container .select2-choice .select2-arrow b {
     background-position: 0 0.4rem !important;
 }
+
 .faceted-multiselect-widget .select2-container .select2-choice abbr {
     top: 0.8rem;
 }
@@ -42,6 +45,7 @@ span.r-map-popup-title {
     text-align: center;
     text-decoration: underline;
 }
+
 .leaflet-popup-content p {
     margin: 0 !important;
     padding-top: 0.5rem;
@@ -52,20 +56,24 @@ span.r-map-popup-title {
 div#top-area.faceted-area .widget-fieldset legend {
     display: none;
 }
+
 .kssattr-fieldset-icons .plone-icon {
     height: auto;
     width: 3rem;
     margin: 0.5rem;
 }
+
 .kssattr-fieldset-icons span.option {
     margin-bottom: 0.5rem;
     cursor: pointer;
     position: relative;
     display: block;
 }
+
 .kssattr-fieldset-icons span.option:hover {
     background: #f9f9f9;
 }
+
 .kssattr-fieldset-icons .form-check-input {
     position: absolute;
     left: 0;
@@ -81,9 +89,11 @@ div#top-area.faceted-area .widget-fieldset legend {
     cursor: pointer;
     transition: all 0.25s ease;
 }
+
 .kssattr-fieldset-icons .form-check-input:hover {
     border: 1px solid #333;
 }
+
 .kssattr-fieldset-icons .form-check-input:checked:hover {
     border: 1px solid $primary;
 }
@@ -123,20 +133,24 @@ textarea {
 .userrole-anonymous.portaltype-imio-smartweb-page .category {
     display: none;
 }
+
 #portal-header #portal-logo.minisite_logo {
     padding: 0.5rem 0;
     text-align: center;
     text-decoration: none;
 }
+
 .block-menu-element a .card-title.h2,
 .block-menu-element a h2.card-title {
     font-size: 1.5rem;
 }
+
 .block-menu-element .card-body .card-text {
     max-height: 3rem;
     overflow: hidden;
     position: relative;
 }
+
 .block-menu-element .card-body .card-text:after {
     content: "";
     background: linear-gradient(275deg, white, transparent);
@@ -146,18 +160,23 @@ textarea {
     right: 0;
     width: 50%;
 }
+
 .faceted-block-view-with-images .block-menu-element a .card-body {
     border-radius: 0px 0px 15px 0;
 }
+
 .userrole-anonymous .pat-sortable .sortable-section {
     border: 0px solid transparent !important;
 }
+
 .faceted-form {
     padding: 0;
 }
+
 .sortable-section.sectionvideo {
     padding-bottom: 1.5rem;
 }
+
 .sortable-section.sectionvideo #container-section-video {
     padding: 0;
 }
@@ -165,6 +184,7 @@ textarea {
 #content header .lead.rich_description {
     max-width: 1024px;
 }
+
 .procedure a {
     background: $primary;
     padding: 0.75rem;
@@ -176,18 +196,22 @@ textarea {
     text-decoration: none;
     margin-bottom: 1rem;
 }
+
 .procedure a::after {
     content: '\e803';
     font-family: fontello;
     margin-left: 0.5rem;
 }
+
 div#viewlet-below-content-body .procedure {
     margin-bottom: 1rem;
 }
+
 #content-core .citoyennete-1 {
     z-index: 0;
     position: relative;
 }
+
 .citoyennete-1 div#container-section-citoyennete:after {
     content: "";
     position: absolute;
@@ -202,9 +226,11 @@ div#viewlet-below-content-body .procedure {
     .r-result-filter .r-filter {
         max-width: 100%;
     }
+
     .portaltype-imio-smartweb-portalpage #content-core .reseaux-sociaux .section-container .body-section ul {
         justify-content: space-between;
     }
+
     .reseaux-sociaux .section-container .body-section ul li {
         padding: 0;
     }
@@ -214,28 +240,36 @@ div#viewlet-below-content-body .procedure {
 body.template-block_view_with_images .block-menu-element a .card-body {
     border-radius: 0px 0px 15px 0;
 }
+
 .block-menu-element a .card-body,
 body.template-block_view_with_images .block-menu-element a .card-body {
     width: auto;
 }
+
 div#faceted-results {
     padding-bottom: 1.5rem;
 }
+
 .list-menu-element {
     margin-bottom: 1rem;
 }
+
 .list-menu-element a.row {
     text-decoration: none;
 }
+
 .newsletterhomepage .body-section {
     margin-top: 0;
 }
+
 .reseaux-sociaux {
     padding-top: 1rem;
 }
+
 .reseaux-sociaux .section-container .rich_description {
     margin: 0 0 1rem 0;
 }
+
 .faceted-block-view-with-images h2.card-title {
     font-size: 1rem;
 }
@@ -249,6 +283,7 @@ div#faceted-results {
 #portal-footer-wrapper #body-section-administration-communale li.website {
     display: none;
 }
+
 #container-section-les-sites-de-la-ville .nb-items-batch-1 {
     width: 100%;
     display: flex;
@@ -265,9 +300,11 @@ div#faceted-results {
 .text table {
     border: 0px;
 }
+
 .text table tr:nth-child(even) {
     background: #f7f7f7;
 }
+
 .plone-modal-close {
     opacity: 0.7;
     text-decoration: none;
@@ -275,6 +312,7 @@ div#faceted-results {
     margin-top: 0.25rem;
     margin-right: 0.25rem;
 }
+
 body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure .category {
     display: none;
 }
@@ -282,12 +320,15 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 #portal-footer-wrapper {
     padding: 0 !important;
 }
+
 #portal-footer-wrapper li {
     margin-bottom: 0.25rem;
 }
+
 #portal-footer-wrapper .contact_address span {
     display: block;
 }
+
 #portal-footer-wrapper #portal-footer.container {
     max-width: 100% !important;
     background: white;
@@ -315,6 +356,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     align-items: center;
     gap: 6px;
 }
+
 .portaltype-imio-smartweb-procedure .sectionlinks .table_title,
 .portaltype-imio-smartweb-page .sectionlinks .table_title,
 .portaltype-imio-smartweb-procedure .sectionfiles .table_title,
@@ -327,6 +369,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 .portaltype-imio-smartweb-procedure #content .sectionlinks ul.row {
     margin-left: 0;
 }
+
 .portaltype-imio-smartweb-page #content .sectionlinks:after,
 .portaltype-imio-smartweb-procedure #content .sectionlinks:after {
     content: "";
@@ -338,6 +381,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     position: absolute;
     z-index: -1;
 }
+
 .portaltype-imio-smartweb-procedure #content .sectionlinks .table_display,
 .portaltype-imio-smartweb-procedure #content .sectionlinks li.col-md-12,
 .portaltype-imio-smartweb-page #content .sectionlinks .table_display,
@@ -345,6 +389,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     max-width: 760px;
     margin: 0.5rem auto;
 }
+
 .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
 .portaltype-imio-smartweb-page #content .sectionlinks a.table_image {
     color: $primary;
@@ -353,10 +398,12 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 .subsection-demarches-infos-pratiques .list-menu-element .newsImage.card-img-left {
     margin-left: 1rem;
 }
+
 .sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
     position: relative;
     text-decoration: none;
 }
+
 .sortable-section.sectioncontact h2.section-title a[aria-expanded="true"]:after {
     content: "";
     background: #f3f3f3;
@@ -375,6 +422,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     .portaltype-imio-smartweb-page .sectionfiles {
         background: transparent;
     }
+
     .portaltype-imio-smartweb-procedure .sectionlinks:after,
     .portaltype-imio-smartweb-page .sectionlinks:after,
     .portaltype-imio-smartweb-procedure .sectionfiles:after,
@@ -395,6 +443,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     .sortable-section.sectioncontact .body-section.show {
         display: flex !important;
     }
+
     #portal-column-content .sortable-section.sectioncontact .body-section {
         flex-wrap: nowrap !important;
     }

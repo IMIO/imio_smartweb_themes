@@ -2,14 +2,17 @@
     margin-bottom: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
+
     &:after {
         border: solid 1px #e3e3e3;
         border-radius: 5px;
     }
+
     .section-title {
         display: flex;
         color: $primary;
     }
+
     .table_image {
         display: flex;
         flex-wrap: wrap;
@@ -22,15 +25,18 @@
         text-decoration: none;
         color: #3b3b3b;
         border: solid 1px rgba(0, 0, 0, 0.031);
+
         &:hover {
             border: solid 1px $primary;
         }
+
         .image {
             display: block;
             aspect-ratio: 1/1;
             max-width: 200px;
         }
     }
+
     li {
         margin: 10px 0;
     }

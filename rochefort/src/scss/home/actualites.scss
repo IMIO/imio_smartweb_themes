@@ -1,9 +1,11 @@
 .sectionnews a {
     text-decoration: none;
+
     .image.w-100 {
     padding-bottom: 60%;
     border-radius: 10px 10px 0 0;
     }
+
     .see_all a {
     border: 1px solid $color-darkgrey;
     }
@@ -12,20 +14,25 @@
 .sectionnews .swiper-slide>a {
     background: #fff;
 }
+
 .sectionnews ul li {
     list-style: none;
 }
+
 .sectionnews .body-section ul li {
     margin-bottom: 1.5rem;
 }
+
 .sectionnews {
     .tabble_date {
         color: $primary;
         display: flex;
+
         .start_date {
             padding-right: 0.3rem;
         }
     }
+
     .table_title {
         color: $primary;
         font-weight: 900;
@@ -35,17 +42,21 @@
         line-height: 130%;
         overflow: hidden;
     }
+
     .table_category {
         padding: 1rem 2rem;
         color: $primary;
     }
+
     .table_description {
         padding: 1rem 2rem;
     }
 }
+
 #container-section-actualites div span, #container-section-actualites div p {
     color: $primary;
   }
+
 .sectionnews .body-section {
     .table_display {
         background-color: #fff;
@@ -55,10 +66,12 @@
         max-width: 416px;
     }
 }
+
 .sectionnews .table_image div.image {
     position: relative;
     overflow: hidden;
 }
+
 .sectionnews .table_image div.image::before {
     content: "";
     background: transparent;
@@ -70,12 +83,15 @@
     border-radius: 10px;
     top: 0;
 }
+
 .sectionnews .end_date {
     margin-left: 0.25rem;
   }
+
 .sectionnews .table_date {
 
 }
+
 .sortable-section.sectionnews {
     position: relative;
 }
@@ -86,6 +102,7 @@
         font-weight: 300;
     }
 }
+
 .sectionnews .table_date span {
     margin-right: 5px;
 }
@@ -93,6 +110,7 @@
 .sectionnews .see_all a {
     border: 1px solid $color-darkgrey;
 }
+
 .sectionnews .see_all a:hover::before {
     right: 5px;
     color: $primary;
@@ -107,20 +125,25 @@
 .sortable-section.sectionnews {
     margin-bottom: 2rem;
 }
+
 .sectionnews .body-section li div.table_display {
     transition: all .5s ease;
+
     a>div {
         transition: all .5s ease;
     }
 }
+
 .sectionnews .body-section li div.table_display:hover {
     background-color: $primary;
     border-radius: 10px;
     transition: all .5s ease;
+
     a>div {
         color: #fff !important;
         transition: all .5s ease;
     }
+
     a>div span, a>div p {
         color: #fff !important;
         transition: all .5s ease !important;
@@ -139,6 +162,7 @@
     overflow: hidden;
     font-family: var(--bs-body-font-family);
     }
+
     a{
     text-decoration: none;
     text-align: center;

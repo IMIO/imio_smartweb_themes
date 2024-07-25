@@ -3,10 +3,12 @@
         background: $primary-svg;
         opacity: 1;
     }
+
     .swiper-pagination-bullet-active {
         background: #fff !important;
     }
 }
+
 .sectionevents, .sectionnews {
     .swiper-wrapper{
         .swiper-slide {
@@ -17,6 +19,7 @@
             }
         }
 }
+
 .sectionevents .swiper-wrapper .swiper-slide>a:hover {
     background: $primary-svg;
 }

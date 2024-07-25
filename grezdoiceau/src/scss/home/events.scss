@@ -1,5 +1,6 @@
 .sectionevents{
     background: #EFECE8;
+
     &:after {
         content: "";
         background: #ea0101;
@@ -9,13 +10,16 @@
         position: absolute;
         width: 50vw;
     }
+
     .section-container{
         position: relative;
+
     .swiper-pagination-bullet {
         background: #000;
         opacity: 1;
       }
     }
+
     .section-title{
         font-weight: 600;
         text-align: center;
@@ -25,15 +29,19 @@
         width: max-content;
         font-size: 2.5rem;
     }
+
     .see_all a {
         border: 2px solid #fff;
     }
+
     .see_all a:hover {
         border: 2px solid $primary;
     }
+
     .see_all a:after {
         display: none;
     }
+
     .see_all a:hover:after, .see_all a:focus:after {
         width: 65px;
     }
@@ -47,26 +55,33 @@
                     transition: .5s;
                     transform: translateY(10px);
             }
+
             & > a{
                 align-items: center;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     position: absolute;
                     top: 0;
+
                     span {
                         display:inline-block;
                     }
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                     margin: 1rem auto 0.5rem;
                     text-align: center !important;
                 }
+
                 .swiper_title{
                     width: 100% !important;
                         text-align: center !important;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
@@ -74,11 +89,13 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -89,6 +106,7 @@
             }
         }
     }
+
     .swiper-button-prev, .swiper-button-next {
         display: none!important;
     }

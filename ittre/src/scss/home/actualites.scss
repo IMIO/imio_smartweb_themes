@@ -6,13 +6,17 @@
         position: relative;
         width: max-content;
     }
+
     .row {
         gap:60px 0;
+
         li {
             list-style: none;
+
             .table_display {
                 height: 100%;
             }
+
             .table_image {
                 display: block;
                 background: #fff;
@@ -22,30 +26,36 @@
                 position: relative;
                 transition: .5s;
                 border-radius: 0 0 50px 0px;
+
                 &:hover,&:focus{
                     transition: .5s;
                     transform: translateY(10px);
             }
+
                 .image {
                     padding-bottom: 56%;
                     margin-bottom: 1rem;
                 }
+
                 .table_date {
                     padding: 0 1.5rem;
                     margin-bottom: 0.5;
                     text-align: center;
                     color: $dark;
+
                     span {
                         font-size: 12px;
                         
                     } 
                 }
+
                 .table_category{
                     bottom: 0px;
                     right: 0px;
                     width: 100%;
                     margin:-14px 0 15px 0;
                     text-align: center;
+
                     span {
                         background: $primary-svg;
                         border-radius: 0;
@@ -56,6 +66,7 @@
                         text-transform: none;
                     }
                 }
+
                 .table_title {
                     padding: 0 1.5rem;
                     margin-bottom: .5rem;
@@ -68,12 +79,14 @@
                         font-family: $font-family-title;
                     }
                 }
+
                 div:last-child {
                     padding-bottom: .5rem;
                 }
             }
         }
     }
+
     .see_all a:after {
         display: none;
     }
@@ -87,6 +100,7 @@
                     width: 100%;
                     margin:-20px 0 0 0;
                     text-align: center;
+
                     span {
                         display:inline-block;
                     }
@@ -101,10 +115,12 @@
         }     
 
 }
+
 .sectionnews .display-carre .row li .table_image .image {
     margin-bottom: 0rem;
     padding-bottom: 100%;
 }
+
 .sectionnews::before {
     background: #DCDCDC;
     bottom: 155px;
@@ -116,6 +132,7 @@
     width: 100vw !important;
     z-index: -2;
 }
+
 .sectionnews .table_description {
     text-align: center;
     color: $dark;

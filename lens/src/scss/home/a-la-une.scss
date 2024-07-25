@@ -2,17 +2,21 @@
     pointer-events: none;
     padding-top: 2rem;
 }
+
 .a-la-une.focus .swiper-slide > a {
 	grid-template-columns: 50% 50%;
     grid-auto-flow: dense;
     direction: rtl;
+
     .swiper_description, .swiper_title {
         direction: initial !important;
     }
 }
+
 .swiper_description{
     text-align: left;
 }
+
 .a-la-une.focus:before {
     bottom: 0px;
     background: url(../../assets/svg/wave-banner.svg);
@@ -25,6 +29,7 @@
     height: 140px;
     content: "";
 }
+
 .a-la-une.focus::after {
     content: "";
     background: $primary;
@@ -53,11 +58,13 @@
         text-transform: uppercase;
         font-family: $font-family-base;
     }
+
     .swiper-slide .swiper_description p {
         color: #fff !important;
         max-width: 100%;
         font-size: 25px;
     }
+
     .swiper-slide .swiper_title {
         align-self: start;
         background: transparent;
@@ -67,6 +74,7 @@
         padding: 0px 36px 0;
         text-align: left;
     }
+
     &::before {
         @media screen and (max-width:992px) {
             display: none;
@@ -79,6 +87,7 @@
         padding-bottom: 2.3rem;
         padding-top: 0;
         }
+
     .a-la-une.focus {
         .swiper-slide .swiper_title .h3,
         .swiper-slide .swiper_title h3 {

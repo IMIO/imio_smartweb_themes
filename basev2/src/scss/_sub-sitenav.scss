@@ -10,11 +10,13 @@
     gap: 40px;
     background: $subsite-navbar-bg;
   }
+
   #subsite-logo {
     font-size: 24px;
     text-transform: uppercase;
     display: inline-block;
     background: $subsite-logo-background;
+
     a {
       text-decoration: none;
       color: $subsite-logo-color;
@@ -26,6 +28,7 @@
       align-items: center;
       gap: 14px;
       flex-wrap: wrap;
+
       svg,img{
         max-width: 80px;
         max-height: 80px;
@@ -38,6 +41,7 @@
 // sub nav
 #subsite-navigation {
   padding: $sub-navbar-padding;
+
   &>ul {
     width: 100%;
     @include media-breakpoint-up(md) {
@@ -50,9 +54,11 @@
     @include media-breakpoint-up(xl) {
       gap: $nav-first-level-gap;
     }
+
     .index_html {
       display: none;
     }
+
     li {
       ul {
         left: 0;
@@ -77,10 +83,12 @@
         opacity: 1;
         visibility: visible;
         border-radius: $nav-overlay-radius;
+
         a {
           pointer-events: initial !important;
         }
       }
+
       &.show-nav>.has_subtree {
         visibility: visible;
 
@@ -124,6 +132,7 @@
         @if $nav-first-level-uppercase {
           text-transform: uppercase;
         }
+
         &:hover,
         &:focus {
           &:before {
@@ -141,12 +150,14 @@
 
       &>.has_subtree {
         width: 25em;
+
         .close-nav {
           position: absolute;
           z-index: 99;
           top: 0;
           right: 1.5em;
           border-bottom: none !important;
+
           .close-nav-icon {
             display: block;
             width: 20px;
@@ -161,6 +172,7 @@
       &>span {
         color: $primary;
       }
+
       &.dropdown {
         .has_subtree .nav-link {
           &[aria-haspopup="true"] {
@@ -168,6 +180,7 @@
               content: $nav-overlay-next-icon;
               right: 0;
             }
+
             &:hover,
             &:focus {
               &:after {
@@ -192,6 +205,7 @@
           overflow-y: scroll;
         }
       }
+
       .close-nav .close-nav-icon {
         display: block;
         width: 20px;
@@ -200,17 +214,21 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' aria-hidden='true' class='css-tj5bde-Svg'%3E%3Cpath d='M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z'/%3E%3C/svg%3E");
       }
     }
+
     .dropdown {
       background-color: aqua;
       opacity: 0;
       visibility: hidden;
+
       a {
         padding: 1rem 0;
         border-bottom: 1px solid #ddd;
         pointer-events: none;
       }
+
       .nav-title {
         padding: 0 !important;
+
         a {
           color: $nav-overlay-title-color;
           font-size: $nav-overlay-title-font-size;
@@ -218,11 +236,13 @@
           font-family: $nav-title-font-family;
         }
       }
+
       .nav-link {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: #000;
+
         &:hover,
         &:focus {
           color: $primary;
@@ -251,6 +271,7 @@
     }
   }
 }
+
 #subsite-navigation>ul>.has_subtree.nav-item>.nav-link::after {
   content: "";
   width: 9px;
@@ -282,16 +303,20 @@
     margin-bottom: 0;
     list-style: none;
   }
+
   li {
     a {
       padding: 0.75rem 1rem;
     }
   }
+
   .has_subtree {
     display: block;
+
     & .opener~ul {
       height: auto;
     }
+
     >label {
       position: absolute;
       top: 0;
@@ -305,15 +330,18 @@
       padding-right: 0.5em;
       text-align: center;
     }
+
     &>input {
       display: none;
     }
+
     &:hover {
       &>ul {
         opacity: 1;
         visibility: visible;
       }
     }
+
     .has_subtree:hover>ul {
       top: 0;
       left: 16em;
@@ -476,19 +504,24 @@
       width: 100% !important;
       left: 0 !important;
   }
+
   .subsite-container #subsite-logo {
       width: 100%;
+
       a{
           padding-left: 0.6rem;
           box-sizing: border-box;
       }
   }
+
   #subsite-navigation>ul>li:first-child {
       margin-left: 0.5rem;
   }
+
   #subsite-navigation>ul>li {
       margin-right: 0.75rem;
   }
+
   #portal-globalnav-collapse>ul>li>a,
   #subsite-navigation>ul>li>a {
       padding: 1rem 0;

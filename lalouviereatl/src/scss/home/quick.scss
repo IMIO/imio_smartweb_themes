@@ -20,9 +20,11 @@
         width: 100%;
         left: 0px;
     }
+
     .body-section{
         ul {
             gap:2%;
+
             li{
                 background: $primary;
                 width: 32%;
@@ -39,6 +41,7 @@
                 @media screen and (max-width: 430px) {
                     padding-bottom: 55%;
               }   
+
                 .table_display {
                     position: absolute;
                     top: 0;
@@ -46,14 +49,17 @@
                     bottom: 0;
                     right: 0;
                 }
+
                 &:nth-child(2) {
                     margin-right: 34%;
                 }
                 @media screen and (max-width: 430px) {
                     width: 46%;
+
                     &:nth-child(2) {
                         margin-right: 0%;
                     }
+
                     &:nth-child(1) {
                         margin-right: 50%;
                     }
@@ -97,6 +103,7 @@
         //     }
         // }
     }
+
     .section-title{
         font-weight: 200;
         //font-family:$font-family-roboto;
@@ -127,6 +134,7 @@
     .anim-kesako-title {
     position: relative;
     display: inline-block;
+
     h2 {
         font-family: "Open Sans", sans-serif;
         color: #fff;
@@ -137,6 +145,7 @@
         position: relative;
         width: -moz-max-content;
         width: max-content;
+
         &:after {
             background: url("../../assets/svg/soulign_h2.svg") top center no-repeat;
             bottom: 0;
@@ -149,6 +158,7 @@
             width: 58px;
         } }
     }
+
     #dotlottie-canvas-actu {
         position: absolute;
         top: -50px;
@@ -172,10 +182,12 @@
     padding-bottom: 0px;
 
     .swiper-button-prev, .swiper-button-next, .swiper_title { display:none;}
+
     .swiper-pagination{
         position:relative;
         margin-top: 60px;
     }
+
     .swiper-slide .swiper-image {
         padding-bottom: 100%;
         border-radius: 10px;

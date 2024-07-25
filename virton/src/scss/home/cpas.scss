@@ -1,5 +1,4 @@
 .site-cpas {
-
     .nav_lannuaire .nav-link:hover {
         color: #fff !important;
     }
@@ -30,6 +29,7 @@
         max-width: 200px;
         width: 100%;
     }
+
     .img-banner {
         &:before {
             background: linear-gradient(to top, #fff 0px,#fff 100px, #ffda1e 100px, #ffda1e 140px, #F39200 140px, #f39200 180px, #cf102d 180px, #cf102d 100%);
@@ -100,9 +100,11 @@
     .swiper-slide {
         background: transparent;
         transition: .5s;
+
         a {
             text-decoration: none;
         }
+
         &:hover,&:focus{
                 transition: .5s;
                 transform: translateY(10px);
@@ -126,6 +128,7 @@
         margin: 50px 0;
         padding: 0;
     }
+
     #body-section-vive-la-gaume {
         display: none !important;
     }

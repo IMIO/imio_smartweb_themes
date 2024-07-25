@@ -1,5 +1,6 @@
 .sortable-section.a-la-une {
     position: relative;
+
     &:before {
         bottom: 50px;
         content: "";
@@ -21,6 +22,7 @@
         grid-template-columns: 50% 50%;
         }
     }
+
 .sortable-section.sectionselections.a-la-une {
         margin-top: 3rem;
 }

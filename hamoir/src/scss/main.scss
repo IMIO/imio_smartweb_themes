@@ -29,10 +29,12 @@ a {
 }
 
 .nav-link:focus-visible {box-shadow: 0 0 0 0.25rem rgb(0 0 0);}
+
 h1 {
     font-family: $font-family-base!important;
     font-weight: bold!important;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
 	max-height: 600px;
@@ -70,6 +72,7 @@ h1 {
         transform: translate(-50%, -50%);
     }
 }
+
 .swiper-banner-image:after {
     content: "";
     background: #0000;
@@ -145,9 +148,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -188,6 +193,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -203,6 +209,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -211,6 +218,7 @@ footer #container-section-noussuivre{
 #portal-globalnav > li a:hover {
 	color: $primary-dark;
 }
+
 .portaltype-imio-smartweb-portalpage{
         background: url(../../assets/svg/bg-hamoir.svg) center center no-repeat;
 }
@@ -227,12 +235,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -241,8 +251,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;

@@ -16,6 +16,7 @@
         max-width: 100%;
         text-align: center;
     }
+
     &>span {
         @include media-breakpoint-up(lg) {
             max-width: 500px;
@@ -25,12 +26,14 @@
             padding-right: 30px;
         }
     }
+
     &>form {
         @include media-breakpoint-up(lg) {
             display: inline-block;
             vertical-align: middle;
         }
     }
+
     .gdpr-actions {
         &>a {
             background: #fff;
@@ -51,6 +54,7 @@
                 display: inline-block;
             }
         }
+
         input[name="consent"] {
             background: #000;
             color: #fff;
@@ -68,6 +72,7 @@
                 padding: 9px 10px;
             }
         }
+
         input[name="refuse"] {
             background: transparent;
             color:#000;
@@ -86,10 +91,12 @@
         display: flex;
         flex-direction: column;
     }
+
     #gdpr-consent-banner .gdpr-actions>a {
         margin-left: 0;
         text-align: center;
     }
+
     #gdpr-consent-banner .gdpr-actions input[name=refuse] {
         margin-left: 0;
         text-align: center;

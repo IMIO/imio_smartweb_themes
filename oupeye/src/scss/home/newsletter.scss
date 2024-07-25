@@ -1,6 +1,7 @@
 .newsletter-custom {
   background: transparent;
   text-align: center;
+
   &:after {
       content: "";
       background: linear-gradient(270deg,#3B7476,#2F3E46,#3B7476);
@@ -14,16 +15,19 @@
   }
   margin: 0!important;
   padding: 5rem 0;
+
   .section-title{
       font-size: 24px !important;
       color: #fff;
       font-weight: 100;
+
       &:before{
           content: url('../../assets/svg/enveloppe.svg');
           margin-bottom: 1rem;
           display: block;
       }
   }
+
   .table_image{
       display: block;
       width: max-content;
@@ -35,12 +39,14 @@
       border: 1px solid #fff;
       text-decoration: none;
       margin-top: 2rem;
+
       &:hover{
           background: transparent;
           color: #fff;
       }
   }
 }
+
 div#container-section-newsletter {
   width: 80%;
 }

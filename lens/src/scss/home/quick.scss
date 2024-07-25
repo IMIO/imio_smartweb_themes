@@ -3,11 +3,14 @@
     z-index: 1;
     position: relative;
 }
+
 #container-section-acces-directs {
     padding: 1rem 0;
+
     ul.row {
         justify-content: space-between;
     }
+
     .table_image {
             &::after {
                 content: "";
@@ -19,6 +22,7 @@
                 right: 0;
                 z-index: 1;
                 }
+
         .table_title {
             span {
                 position: relative;
@@ -26,6 +30,7 @@
                 line-height: 70%;
             }
         }
+
         &:hover,
         &:focus {
             .table_title {
@@ -37,6 +42,7 @@
         }
     }
 }
+
 div#body-section-acces-directs ul li {
     position: relative;
     display: flex;
@@ -51,6 +57,7 @@ div#body-section-acces-directs ul li {
     height: 170px;
     border-radius: 10px;
 }
+
 div#body-section-acces-directs ul li:hover {
     box-shadow: 0px 0px 0px 3px $primary;
 }

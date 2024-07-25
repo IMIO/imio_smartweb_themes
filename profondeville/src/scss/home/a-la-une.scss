@@ -1,14 +1,17 @@
 .a-la-une .swiper-slide>a {
     display: block;
     border: solid 1px #E3E3E3;
+
     .swiper_title {
         padding: 2rem 2rem 2rem 2rem;
+
         h3 {
             text-transform: initial;
             font-weight: 400;
         }
     }
 }
+
 .a-la-une a .swiper-image::before {
     content: "";
     background: transparent;
@@ -20,13 +23,16 @@
     border-radius: 5px;
     top: 0;
 }
+
 .a-la-une a .swiper-image {
     position: relative;
 }
+
 .a-la-une a:hover .swiper-image::before {
     background: $color-orange;
     opacity: 0.7;
 }
+
 .a-la-une a .swiper-image::after {
     transition: all .3s ease;
     content: "";
@@ -40,10 +46,12 @@
     opacity: 0;
     transform: rotate(45deg);
 }
+
 .a-la-une a:hover .swiper-image::after {
     opacity: 1;
     transform: rotate(90deg);
 }
+
 .a-la-une .see_all a::before {
     content: ">";
     position: absolute;
@@ -51,27 +59,34 @@
     color: $color-orange;
     transition: all .3s ease;
 }
+
 .a-la-une .see_all a:hover::before {
     right: 5px;
     color: #000;
 }
+
 .a-la-une {
     .see_all a {
         border: 1px solid $color-orange;
         }
     }
+
 .a-la-une h2.section-title::first-letter {
     color: $color-orange;
     }
+
 .swiper-slide a {
     transition: all .3s ease;
+
     &:hover {
     box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
     }
 }
+
 .a-la-une ul li .swiper_title {
     position: relative;
 }
+
 .a-la-une a {
     .swiper_title::before {
     content: ">";
@@ -88,6 +103,7 @@
     line-height: 38px;
     font-weight: 400;
     }
+
     .swiper_title::after {
         background: transparent;
         content: "";
@@ -100,10 +116,12 @@
         z-index: 0;
         transition: all .3s ease;
     }
+
     &:hover {
         .swiper_title::before {
             color: #fff;
             }
+
             .swiper_title::after {
                 background: $color-orange;
             }

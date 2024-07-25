@@ -1,6 +1,7 @@
 .sectionnews .swiper-slide .swiper_description {
 padding: 0 36px;
 }
+
 body.section-home-page #container-section-actualites::after {
     content: "";
     background: #EEE;
@@ -12,13 +13,16 @@ body.section-home-page #container-section-actualites::after {
     position:absolute;
     z-index: -1;
 }
+
 .swiper-image {
     position: relative;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: .5;
 }
+
 div.swiper-image:before {
     background: transparent;
     bottom: 0;

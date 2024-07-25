@@ -24,10 +24,12 @@ footer{
     z-index: 0;
     position: relative;
 }
+
 #portal-colophon{
     z-index: 0;
     position: relative;
     background: #000;
+
     p,a,div,span,h2,h3{
         color: #fff!important;
     }
@@ -39,11 +41,13 @@ footer{
 	padding-left: 0;
 	padding-right: 0;
 }
+
 #portal-footer-wrapper #portal-footer.container{
     p,a,div,span,h2,h3{
         color: #fff!important;
     }
 }
+
 .subsite-container #subsite-logo {
 	background: #FD3C88;
 	display: inline-block;
@@ -55,6 +59,7 @@ footer{
 	background: #25beae;
 	color: #000;
 	padding: 0.9rem;
+
     &:hover{
         background: #2bdbc9;
     }
@@ -92,8 +97,10 @@ footer{
     #container-section-logo{
         #body-section-logo{
             align-items: flex-start;
+
             figure{
                 margin-top: 0!important;
+
                 img{
                     max-width: 170px 
                 }
@@ -106,10 +113,12 @@ footer{
 body:not(.portaltype-imio-smartweb-portalpage){
     .sectionfiles::after {
         background: #d6d6d6;
+
         .section-title{
             color: #000!important;
         }
     }
+
     .sectionfiles .body-section .h2, .sectionfiles .body-section h2, .sectionfiles .body-section p, .sectionfiles .body-section span, .sectionfiles .section-title .h2, .sectionfiles .section-title h2, .sectionfiles .section-title p, .sectionfiles .section-title span {
         color: #000;
     }

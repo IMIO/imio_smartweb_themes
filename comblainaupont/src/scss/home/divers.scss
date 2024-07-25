@@ -2,6 +2,7 @@
 .swiper-banner-content {
     position: relative;
 }
+
 .swiper-banner-content::after {
     content: url("../../assets/svg/slogan-banner.svg");
     position: absolute;
@@ -11,9 +12,11 @@
     transform: translate(-50%, -50%) scale(0.6);
     text-align: center;
   }
+
 div.swiper-image {
     position: relative;
   }
+
 div.swiper-image:before {
     background: transparent;
     bottom: 0;
@@ -26,10 +29,12 @@ div.swiper-image:before {
     z-index: 0;
     border-radius: 5px;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: .5;
 }
+
 #container-section-magazine-communal .swiper-slide .swiper-image {
     padding-bottom: 140%;
 }
@@ -82,32 +87,41 @@ div.swiper-image:before {
         max-width: 130px;
         margin: 0 auto;
     }
+
     #portal-footer-wrapper .sectionlinks.rs li {
         width: 50%;
         padding-bottom: 1rem;
     }
+
     footer .sectioncontact, footer .sectionlinks, footer .sextiontext {
         text-align: center;
+
         h2.section-title, h2 {
             text-align: center;
         }
     }
+
     #portal-header #portal-header-top #portal-logo {
         max-width: 100px;
     }
+
     #portal-colophon .colophonWrapper ul {
         display: initial;
     }
+
     .sectionlinks.quick-access .body-section li {
         width: 50%;
         padding-bottom: 1rem;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-page-portail div#messagesviewlet {
         top: 21%;
     }
+
     .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
         top: 55%;
     }
+
     .swiper-banner-content::after {
         left: 50%;
         position: absolute;
@@ -116,6 +130,7 @@ div.swiper-image:before {
         text-align: center;
     }
 }
+
 .faceted-results {
     .list-menu-element a.row {
         text-decoration: none;
@@ -123,49 +138,61 @@ div.swiper-image:before {
         padding: 0.5rem;
         border-radius: 5px;
         background-color: #f1f1f1;
+
             &:hover {
             border: solid 1px $primary;
             }
         }
     }
+
 .faceted-form input#c1_button {
         color: $primary;
         transition: 0.5s;
+
             &:hover {
                 background-color: $primary;
                 color: #fff;
                 }
         }
+
 .sectionfiles .item_infos {
     color: #fff;
 }
+
 .sectionfiles a:hover {
     color: #fff;
 }
+
 #portal-breadcrumbs {
     margin-top: 2rem !important;
   }
+
 .subsite-container {
 margin-top: 2rem;
   }
+
   #portal-column-content .sectioncontact {
     margin-bottom: 15px;
+
         .contact-type-position{
         // position: relative;
         border: #d5d5d5 solid 1px;
         background: #f7f7f7;
         border-radius: 10px;
+
             .contact_titles h2 {
                 font-size: 1.8rem;
             }
         }
     }
+
   #portal-header #portal-header-top #portal-logo {
     max-width: 150px;
     width: 100%;
     position: absolute;
     margin-top: 4rem;
 }
+
 body:not(.portaltype-imio-smartweb-portalpage.section-page-portail, .portaltype-imio-smartweb-portalpage.is-in-minisite) h2.section-title {
     font-size: 1.8rem;
 }
@@ -221,22 +248,28 @@ margin-left: -75px;
 .smartweb_footer #container-section-suivez-nous-sur-facebook .table_image .image.d-block  {
        transition: all .15s ease;
 }
+
 .smartweb_footer #container-section-suivez-nous-sur-facebook .table_image:hover .image {
        transform: translateY(-10px); 
 }
+
 #portal-globalnav .quick-access .quick-access-title {
     color: #000;
 }
+
 .contact_informations {
     word-break: break-all;
   }
+
   .sortable-section.sectionmap {
     padding: 2rem 0;
     z-index: 0;
   }
+
   .contact_map .pat-leaflet.map {
     z-index: 0;
 }
+
 #portal-header #portal-header-top #portal-logo img {
     height: auto!important;
     }

@@ -3,6 +3,7 @@
     .list-group-item{
         border-bottom: $border-width solid $gray;
         position: relative;
+
         .tileHeadline{
             a::after{
                 content: "";
@@ -13,11 +14,13 @@
                 position: absolute;
                 z-index: 1;
             }
+
             &:hover,
             &:focus {
                 .summary{
                     border-bottom: $link-hover-decoration;
                 }
+
                 &::after {
                     content: url(../../assets/svg/arrow-right-white.svg);
                     background: $yellow;
@@ -30,6 +33,7 @@
                     line-height: 50px;
                 }
             }
+
             &::after {
                 content: url(../../assets/svg/arrow-right-yellow.svg);
                 background: #fff;
@@ -42,6 +46,7 @@
                     line-height: 50px;
             }
         }
+
         .summary{
             &:hover,
             &:focus {

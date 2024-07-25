@@ -45,6 +45,7 @@
         .table_display {
             border-color: white;
             display: inline-block;
+
             .table_image {
                 border: solid 1px rgb(22, 172, 180);
                 text-decoration: none;
@@ -53,10 +54,12 @@
                 gap: 6px;
                 flex-direction: column;
                 align-items: flex-start;
+
                 &:hover {
                     border: solid 1px transparent;
                     background-color: rgb(22, 172, 180);
                 }
+
                 .image {
                     width: 100%;
                     max-width: 128px;
@@ -65,6 +68,7 @@
                     background-repeat: no-repeat;
                     background-position: left center;
                 }
+
                 span,
                 p,
                 a,
@@ -75,6 +79,7 @@
             }
 
         }
+
         li .table_display {
             display: block;
         }

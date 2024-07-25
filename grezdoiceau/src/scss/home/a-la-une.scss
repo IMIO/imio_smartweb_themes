@@ -131,6 +131,7 @@
       translate: -50%;
       border-bottom: solid 14px #EA0101;
     }
+
     .swiper_title {
       margin-top: 2rem;
     }
@@ -152,9 +153,11 @@
     .swiper_title {
       margin-top: 2rem!important;
     }
+
     .swiper-wrapper {
       padding-bottom: 0;
     }
+
     &:before {
       display: none;
     }

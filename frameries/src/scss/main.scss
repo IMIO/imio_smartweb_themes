@@ -25,14 +25,17 @@ $enable-roboto-webfont: false;
 body {
     letter-spacing: 0.5px;
 }
+
 #portal-footer-wrapper h2 {
 	margin-top: 0!important;
 }
+
 .phones{
     span{
         display: block;
     }
 }
+
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
@@ -50,10 +53,12 @@ footer{
 .nav_je-suis.has_subtree.nav-item{
     margin-left: auto;
 }
+
 #portal-globalnav{
     @include media-breakpoint-up(lg){
         margin-left: 2rem;
         align-items: center;
+
         .nav_abonnement.nav-item{
             margin-left: auto;
         }
@@ -66,6 +71,7 @@ footer{
     font-weight: 900;
     }
 }
+
 body h3, body a, .subsite-container #subsite-logo a, 
 #portal-column-content .section-contact .contact-type-position .contact_informations h3,
 .sectiontext .section-text .body-section a {
@@ -75,20 +81,25 @@ body h3, body a, .subsite-container #subsite-logo a,
 body footer .schedule .opening_informations:after {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
 }
+
 .sectionfiles:after {
     background: #f2f2f2;
 }
+
 .sectionfiles {
     h2.section-title, ul li, a, ul li a, span, ul li a span {
         color: #000 !important;
     }
 }
+
 #portal-column-content .section-contact .contact-type-organization {
     background: #f2f2f2;
 }
+
 .pat-sortable .sortable-section.sectionevents, .pat-sortable .sortable-section.sectionnews {
     margin: 4rem 0;
 }
+
 body.subsection-vie-politique-college-communal .contact_titles h2 {
     font-size: 1.5rem;
 }
@@ -96,6 +107,7 @@ body.subsection-vie-politique-college-communal .contact_titles h2 {
 body.subsection-vie-politique-college-communal .card-img-top {
     padding-top: 140%;
 }
+
 .section-contact h3 {
     font-weight: 900;
 }

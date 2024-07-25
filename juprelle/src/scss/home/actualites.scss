@@ -6,6 +6,7 @@
         position: relative;
         margin: 0 auto 4.5rem;
         width: max-content;
+
         &:after{
             left:0%;
             top: 80px;
@@ -23,6 +24,7 @@
     @media screen and (max-width: 1000px) {
         .section-title{
             font-size: 32px !important;
+
             &:after{
                 top: 50px;
                 height: 8px;
@@ -48,16 +50,21 @@
                     transform: translateY(10px);
                     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
             }
+
             & > a{
                 align-items: center;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                 }
+
                 .swiper_title{
                     h3{
                         font-family: $font-family-base;
@@ -65,11 +72,13 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -82,5 +91,6 @@
     }
 
     .swiper-button-next {margin-right: 20px!important;}
+
     .swiper-button-prev {margin-left: 20px!important;}
 }

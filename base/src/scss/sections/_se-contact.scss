@@ -2,21 +2,26 @@
     .sectioncontact{
         position: relative;
         margin-bottom: 1.5rem;
+
         & + .sectioncontact
         .section-container{
             height: 100%;
+
             .body-section{
                 height: 100%;
             }
         }
     }
+
     .section-contact{
         padding: 0;
+
         ul{
             li{
                 list-style: none;
             }
         }
+
         .contact-type-organization{
             display: flex;
             flex-wrap: wrap;
@@ -28,10 +33,12 @@
             @include media-breakpoint-up(md){
                 flex-direction: row;
                 gap: 0 30px;
+
                 .contact_titles{
                     flex: 1 0 100%;
                 }
             }
+
             .contact_informations,.address,.schedule{
                 h2,h3{
                     color: $primary;
@@ -39,37 +46,46 @@
                     font-weight: 500;
                 }
             }
+
             .address{
                 .contact_address span {
                     display: block;
                 }
             }
+
             .contact_map{
                 width: 100%;
             }
+
             .schedule{
                 .table_schedule {
                     &--active {
                         display: block;
                     }
+
                     td{
                         vertical-align: top;
                     }
                 }
             }
+
             .contact_logo,.contact_leadimage {
                 width: 100%;
                 margin-bottom: 1em;
             }
+
             .contact_leadimage {
                 aspect-ratio: 16/9;
             }
+
             .portrait{
                 aspect-ratio: $section-contact-portrait-ration;
             }
         }
+
         .contact-type-mission{
             padding: 1.5rem;
+
             &:after {
                 content: "";
                 position: absolute;
@@ -80,9 +96,11 @@
                 z-index: -1;
                 border: solid 1px #f3f3f3;
             }
+
             .contact_titles{
                 flex: 1 0 100%;
             }
+
             .contact_informations,.address,.schedule{
                 h2,h3{
                     color: $primary;
@@ -90,37 +108,46 @@
                     font-weight: 500;
                 }
             }
+
             .address{
                 .contact_address span {
                     display: block;
                 }
             }
+
             .schedule{
                 .table_schedule {
                     &--active {
                         display: block;
                     }
+
                     td{
                         vertical-align: top;
                     }
                 }
             }
+
             .contact_logo,.contact_leadimage {
                 width: 100%;
                 margin-bottom: 1em;
             }
+
             .contact_leadimage {
                 aspect-ratio: 16/9;
             }
+
             .portrait{
                 aspect-ratio: $section-contact-portrait-ration;
             }
         }
+
         .contact-type-position{
             padding: 1.5rem;
+
             .contact_titles{
                 flex: 1 0 100%;
             }
+
             .contact_informations,.address,.schedule{
                 h2,h3{
                     color: $primary;
@@ -128,27 +155,33 @@
                     font-weight: 500;
                 }
             }
+
             .address{
                 .contact_address span {
                     display: block;
                 }
             }
+
             .contact_logo,.contact_leadimage {
                 width: 100%;
                 margin-bottom: 1em;
             }
+
             .contact_leadimage {
                 aspect-ratio: 16/9;
                 background-position: top;
             }
+
             .portrait{
                 aspect-ratio: $section-contact-portrait-ration;
             }
+
             .schedule{
                 .table_schedule {
                     &--active {
                         display: block;
                     }
+
                     td{
                         vertical-align: top;
                     }
@@ -157,12 +190,14 @@
         }
     } 
 }
+
 .img-portrait{
     .contact_leadimage {
         padding-top: 110%;
         background-position: top center;
     }
 }
+
 .contact_informations{
     a{
         display: block;
@@ -175,6 +210,7 @@
             & + .sectioncontact
             .section-container{
                 height: auto;
+
                 .body-section{
                     height:  auto;
                 }

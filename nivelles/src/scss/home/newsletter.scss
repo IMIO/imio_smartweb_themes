@@ -6,18 +6,22 @@
     @media screen and (min-width: 575px) {
         width: calc(50% - 20px);
     }
+
     .section-container {
         padding-top: 2rem;
         padding-bottom: 2rem;
         background: $primary;
         border-radius: 25px;
     }
+
     .section-title {
         color: #fff;
     }
+
     .rich_description {
         color: #fff;
     }
+
     .table_image {
         background-color: #fff;
         display: block;
@@ -28,9 +32,11 @@
         margin: 0 auto;
         border: solid 2px #fff;
         transition: all .2s ease;
+
         &:hover {
             background-color: $primary;
             border: solid 2px #fff;
+
             .table_title {
                 span {
                     color: #fff;
@@ -38,6 +44,7 @@
             }
         }
     }
+
     .table_title {
         span {
             color: #000;

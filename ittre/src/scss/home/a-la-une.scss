@@ -6,6 +6,7 @@
     @media screen and (min-width: 989px) {
         top: 508px;
     }
+
     .row {
         width: max-content;
         margin-left: auto;
@@ -18,14 +19,18 @@
             border-radius: 0;
             border-top-left-radius: 46px;
         }
+
         li {
             width: auto;
+
             .table_image {  
                 color: #fff!important;
+
                 svg {
                     height: 30px;   
                     fill: #fff!important;
                 }
+
                 .table_title {
                     font-size: 0px;
                     position: absolute;
@@ -40,6 +45,7 @@ display: grid;
 grid-template-columns: 50% 50%;
 grid-template-rows: auto 1fr;
 border-radius: 0 0 50px 0;
+
     .swiper_title {
         margin-top: 1rem;
         align-self: start;
@@ -49,12 +55,14 @@ border-radius: 0 0 50px 0;
         margin: 0;
         padding: 90px 100px 0;
         font-size: 6rem;
+
         h3 {
             color: $dark;
             font-family: $font-family-title;
         }
     }
 }
+
 .a-la-une .swiper-slide {
 
 }
@@ -64,19 +72,23 @@ border-radius: 0 0 50px 0;
         position: relative;
         padding-bottom: 0;
         padding-top: 0;
+
         .row {
             margin: 0 auto;
             width: 100%;
             border-radius: 20px;
         }
     }
+
     .a-la-une .swiper-slide a .swiper_title {
         padding: 10px 30px 0;
+
         h3 {
             font-size: 1rem;
         }
     }
 }
+
 .a-la-une h2.section-title {
     font-weight: 600 !important;
 }

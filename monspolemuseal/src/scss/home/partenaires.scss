@@ -19,6 +19,7 @@
         display: none;
       }
 }
+
 .bloc-partenaires {
     background: transparent;
     padding-top: 7rem;
@@ -79,8 +80,6 @@
     }
 
     #container-section-partenaires .swiper-wrapper {
-
-
         .swiper_title { display: none;}
 
         .swiper-slide .swiper-image {
@@ -98,6 +97,7 @@
     .body-section{
         ul {
             max-width: 1200px!important;
+
             li{
                 .table_image{
                     .image.d-block {
@@ -111,15 +111,18 @@
 
                     
                 }
+
                     &:hover,&:focus{
                         .image.d-block {
                         transform: rotate(20deg);
                         transition: all .3s ease;
                     }
                 }
+
                     .table_title{
                         margin:0px;
                         display: none;
+
                         span{
                             line-height: 1;
                         }

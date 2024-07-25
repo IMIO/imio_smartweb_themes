@@ -32,6 +32,7 @@ $enable-roboto-webfont: false;
     max-height: 60px;
   }
 }
+
 .see_all {
   font-weight: bold;
 }
@@ -39,8 +40,10 @@ $enable-roboto-webfont: false;
 .swiper-pagination-bullet-active {
   background: $primary !important;
 }
+
 .sectionlinks.quick-access {
   background: transparent !important;
+
   .row {
     justify-content: space-between;
   }
@@ -56,6 +59,7 @@ $enable-roboto-webfont: false;
 .r-actu-wrapper::after {
   display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
   background-color: $primary;
 }
@@ -69,6 +73,7 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper,
 #portal-colophon {
   background: #d13a3a;
+
   li,
   a {
     color: #fff;
@@ -96,6 +101,7 @@ $enable-roboto-webfont: false;
     left: inherit !important;
     transition: right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64) !important;
   }
+
   #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
     position: fixed !important;
     z-index: 1;
@@ -123,6 +129,7 @@ li:marker {
   h2 {
     color: #fff !important;
   }
+
   #body-section-nous-contacter {
     display: flex;
     justify-content: space-between;
@@ -134,10 +141,12 @@ li:marker {
       justify-content: center;
       align-items: center;
       text-align: center;
+
       .contact_logo {
         margin-bottom: 2rem;
       }
     }
+
     .contact_logo {
       width: 146px;
       height: 61px;
@@ -145,10 +154,12 @@ li:marker {
       background-repeat: no-repeat;
     }
   }
+
   .plone-icon {
     fill: #fff;
   }
 }
+
 #portal-colophon {
   li {
     list-style: none;
@@ -177,20 +188,25 @@ li:marker {
 .is-in-minisite .smartweb-footer .sectiontext {
   max-width: 150px;
 }
+
 .smartweb-footer {
   padding-top: 5rem;
+
   .row {
     justify-content: space-between;
     text-align: left;
   }
+
   .sectiontext {
     max-width: 140px;
+
     figure {
       margin: 0 !important;
       max-width: 100% !important;
       float: none !important;
     }
   }
+
   #container-section-liens-utiles {
     li {
       div {
@@ -203,11 +219,13 @@ li:marker {
     }
   }
 }
+
 .smartweb_footer{
   h3{
     color: #fff!important;
   }
 }
+
 .colophonWrapper {
   ul {
     margin: 0 !important;
@@ -221,9 +239,11 @@ li:marker {
   z-index: 0;
   left: 0;
 }
+
 .section-home-page {
   header#content-header {
     z-index: inherit !important;
+
     #portal-header {
       z-index: inherit !important;
     }
@@ -233,6 +253,7 @@ li:marker {
 @media sreen and (max-width: 989px) {
   #portal-header #portal-header-top #portal-logo {
     max-width: 144px;
+
     svg {
       width: 100%;
     }
@@ -246,6 +267,7 @@ li:marker {
 .see_all a {
   font-weight: bold;
 }
+
 .minisite_logo .minisite_title {
   font-weight: bold;
 }
@@ -260,11 +282,13 @@ li:marker {
       font-size: 3rem !important;
     }
   }
+
   .a-la-une {
     @media screen and (min-width:900px){
       margin-top: 8rem;
     }
   }
+
   .sectionnews,
   .sectionevents {
     padding-bottom: 5rem !important;
@@ -287,12 +311,15 @@ li:marker {
   #portal-header #portal-header-top #portal-globalnav-wrapper {
     margin: 0 !important;
   }
+
   #portal-header #portal-header-top #portal-logo {
     max-width: 130px;
+
     svg {
       width: 100%;
     }
   }
+
   #portal-globalnav-wrapper
     #portal-globalnav-collapse
     #portal-globalnav
@@ -306,6 +333,7 @@ li:marker {
       background: transparent;
       margin-left: 0;
     }
+
     &:hover {
       &:after {
         content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="%2307689f" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>');
@@ -319,6 +347,7 @@ li:marker {
     > li
     > a {
     text-transform: initial !important;
+
     &:hover {
       color: $primary !important;
     }
@@ -328,6 +357,7 @@ li:marker {
 .sectionselections.a-la-une {
   margin-top: 8rem !important;
 }
+
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a::after,
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree:hover > a::after
   {
@@ -336,12 +366,15 @@ li:marker {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 .sectionfiles .section-title{
   color: #323031!important;
 }
+
 #portal-colophon{
 	background: #323031!important;
 }
+
 .smartweb-footer {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -353,6 +386,7 @@ li:marker {
 
 .navbar-toggler{
   background: #000!important;
+
   span{
       background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important ;
   }
@@ -371,6 +405,7 @@ li:marker {
     max-width: 111px!important;
   }
 }
+
 .site-centre-culturel{
   #portal-logo{
     max-width: 70px!important;

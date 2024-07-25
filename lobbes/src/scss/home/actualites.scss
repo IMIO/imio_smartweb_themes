@@ -9,6 +9,7 @@
     width: 100vw;
     z-index: -1;
 }
+
 .sectionnews, .sectionevents {
     h2 {
     font-size: 5rem;
@@ -21,15 +22,19 @@
     font-size: 3rem;
     margin: 3rem 0;
     }
+
     .smartweb_herobanner .bannerSwiper {
         height: 250px;
     }
 }
+
 .sectionnews .swiper-slide > a {
     transition: all .2s ease;
 }
+
 .sectionnews .swiper-slide > a:hover {
     background: $primary;
+
     div h3, div span, div p 
         {
             color: #fff;
@@ -41,6 +46,7 @@
     font-weight: bolder;
     }
 }
+
 .swiper-pagination-bullet-active {
 	background: #c83e4d !important;
 }

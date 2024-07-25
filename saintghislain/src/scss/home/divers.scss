@@ -4,6 +4,7 @@
         display: flex;
         align-items: baseline;
         gap: 25px;
+
         &:before{
             content: "";
             width: 15px;
@@ -20,6 +21,7 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
     margin-top: 5rem;
+
     &:after{
         content: "";
         position: absolute;
@@ -31,10 +33,12 @@
         z-index: -1;
         background: $primary-svg;
     }
+
     .section-title{
         width: max-content;
         margin-left: auto!important;
         margin-right: auto!important;
+
         &:before{
             background-color: $primary;
         }
@@ -73,14 +77,17 @@
     margin: 0 auto;
     padding-top: 1.5rem!important;
     padding-bottom: 1.5rem!important;
+
     .item_infos{
         color: #fff;
     }
+
     .table_display{
         border: solid 1px #fff;
         border-radius: 5px;
         padding: 1rem!important;
     }
+
     .row{
         margin-bottom: 0!important;
     }
@@ -89,6 +96,7 @@
 .card-body {
 	padding: 1rem 1rem!important;
 }
+
 body.template-block_view_with_images .block-menu-element a .card-title.h2, body.template-block_view_with_images .block-menu-element a h2.card-title {
 	font-size: 1.45rem!important;
 }
@@ -96,9 +104,11 @@ body.template-block_view_with_images .block-menu-element a .card-title.h2, body.
 #messagesviewlet {
     .portalMessage.info {
         background-color: $primary-svg!important;
+
         p,span{
             color: $primary!important;
         }
+
         .close-button::after {
             background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230f4c81'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat!important;
             background-size: 50%!important;

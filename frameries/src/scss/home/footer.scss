@@ -1,28 +1,34 @@
 #portal-footer-wrapper #portal-footer.container, div#portal-colophon {
     background: $primary;
 }
+
 footer#portal-footer-wrapper, div#portal-colophon {
     h2, h3, p, li, a, span, td {
     color: #fff !important;
     font-weight: 900;
     }
 }
+
 #portal-footer-wrapper #portal-footer.container {
     padding-top: 7rem;
     padding-bottom: 1rem;
 }
+
 body #portal-footer-wrapper .smartweb-footer #body-section-liens-utiles a .image {
     width: 100% !important;
     text-align: center;
     padding: 0.5rem 0;
+
     .plone-icon {
         fill: #fff;
         height: 3em;
     }
 }
+
 body #portal-footer-wrapper .smartweb-footer #body-section-liens-utiles .table_title {
         display: none;
     }
+
 .colophonWrapper ul {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +38,7 @@ body #portal-footer-wrapper .smartweb-footer #body-section-liens-utiles .table_t
     text-align: center;
     padding-top: 2rem;
     font-size: $font-size-base;
+
     p {
         padding-bottom: 0;
     }

@@ -2,12 +2,14 @@
     background: #fff;
     border-radius: 50px;
   }
+
 .sortable-section.sectionlinks.rs a {
     text-align: center;
     display: block;
     width: 60px;
     margin: 0 auto;
   }
+
 .sortable-section.sectionlinks.rs h2.section-title {
     color: #584b43;
     font-size: 2rem;
@@ -15,12 +17,15 @@
     padding: 0;
     text-align: center;
 }
+
 .sortable-section.sectionlinks.rs .plone-icon {
     height: 2em;
+
     path {
     fill: $primary-svg;
     }
 }
+
   .sortable-section.sectionlinks.bulletin-communal::after {
     background: $primary-svg;
     bottom: 0px;
@@ -32,26 +37,32 @@
     width: 100vw!important;
     z-index: -2;
 }
+
 .sortable-section.sectionlinks.bulletin-communal {
     background: transparent;
     text-align: center;
 }
+
 .bulletin-communal .table_title span {
     border-radius: 50px;
     padding: 1rem 2rem;
     background: white;
 }
+
 div#container-section-bulletin-communal {
     max-width: 210px;
 }
+
 .bulletin-communal .table_title:hover span {
     background: $primary-svg;
     border: 2px #fff solid;
     color: $primary;
 }
+
 .rs a.table_image:hover span {
     position: relative;
 }
+
 .rs a.table_image:hover span::after {
     content: "";
     height: 4px;

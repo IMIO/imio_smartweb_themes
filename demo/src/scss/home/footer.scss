@@ -2,27 +2,35 @@
     text-align: left!important;
     background: transparent;
     margin-top: 2rem;
+
     #portal-footer{
         background:$primary!important;
+
         #smartweb-footer,#smartweb-minisite-footer{
             padding: 80px 0px;
+
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             h3{
                 font-size: 18px!important;
                 color: #fff;
             }
+
             .sectiontext{
                 margin-top: 2rem;
+
                 figure{
                     img{
                         width: 150px;
@@ -37,12 +45,15 @@
 #portal-colophon{
     background: $primary-green;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }

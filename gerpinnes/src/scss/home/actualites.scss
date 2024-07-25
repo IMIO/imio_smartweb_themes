@@ -4,6 +4,7 @@
         position: relative;
         text-align: center;
         margin-bottom:2rem;
+
         &:after{
             display: block;
             width: 100px;
@@ -26,6 +27,7 @@
         bottom: -5px;
         width: 25%;
     }
+
     .see_all a:hover:after, .see_all a:focus:after {
         width: 50%;
         margin-left: -25%;
@@ -33,25 +35,29 @@
 
     .swiper-wrapper{
         .swiper-slide {
-            
             &:hover,&:focus{
                 .swiper-image {
                     transition: .5s;
                 }
                 //transform: translateY(-10px);
             }
+
             & > a{
                 align-items: center;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     top: 10px;
                     left: 10px;
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                 }
+
                 .swiper_title{
                     h3{
                         font-family: $font-family-base;
@@ -59,20 +65,26 @@
                         
                     }
                 }
+
                 .swiper_description{
                     display: none;
+
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper-image{
                     }
+
                     .swiper_category{
                     }
+
                     .swiper_date{
 
                     }
+
                     .swiper_title{
                         h3{
                             color: #CC071E;
@@ -80,6 +92,7 @@
         
                         }
                     }
+
                     .swiper_description{
                         p{
                             color: #fff;

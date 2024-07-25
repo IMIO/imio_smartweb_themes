@@ -3,11 +3,14 @@
 
 .section-text-bg-main{
     margin-bottom: 22px;
+
     .body-section{
         background: #0ac189;
         padding: 1rem 25px;
+
         .text{
 			max-width: inherit!important;
+
             h2{
                 margin: 0!important;
                 padding: 0;
@@ -30,6 +33,7 @@ body:not(.portaltype-imio-smartweb-portalpage){
     h1{
         color: #000!important;
     }
+
     #content-core{
         h1,h2,h3,h4,h5{
          color: #000!important;
@@ -42,22 +46,26 @@ body:not(.portaltype-imio-smartweb-portalpage){
 .sectionfiles{
     padding-top: 2rem!important;
     padding-bottom: 2rem!important;
+
     .section-container{
         padding: 1.5rem!important;
         background: $light-green;
         border-radius: 15px;
+
         .section-title{
             h2{
                 font-size: 21px!important;
                 margin-bottom: 1.5rem!important;
             }
         }
+
         .table_image{
             padding: 1rem;
             border: solid 1px #09AD6F;
             border-radius: 15px;
             text-decoration: none;
             color: #000;
+
             &:hover,&:focus{
                 background: #00000028;
             }

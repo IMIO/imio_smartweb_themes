@@ -6,6 +6,7 @@
     /* text-align: center; */
     display: block !important;
 }
+
 #smartweb-footer .sectiontext figure img,  #smartweb-minisite-footer .sectiontext figure img {
     max-width: 200px !important;
     width: 100% !important;
@@ -20,23 +21,28 @@
     #portal-footer{
         background:#292929!important;
         padding:5rem 0;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #121212!important;
                 text-decoration:none;
             }
+
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
                 margin-top: 2rem;
                 font-family: $font-family-base;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin-top: 2rem;
+
                 figure{
                     img{
                         max-width: 100% !important;
@@ -46,9 +52,11 @@
         }
     }
 }
+
 #portal-footer-wrapper #portal-footer #smartweb-footer h2.section-title {
     margin-bottom: 0.5rem;
 }
+
 #portal-colophon{
     background:#292929;
     position:relative;
@@ -69,8 +77,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }

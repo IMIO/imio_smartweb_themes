@@ -49,6 +49,7 @@ $enable-roboto-webfont: false;
 body {
     position: relative;
 }
+
 body::after {
 background: url(../../assets/svg/frame.svg);
     background-repeat: no-repeat;
@@ -64,6 +65,7 @@ background: url(../../assets/svg/frame.svg);
     bottom: 0;
     // height: 4000px;
 }
+
 .site-cpas::after, .site-bibliotheque-communale::after {
     display:none!important;
     }
@@ -99,12 +101,14 @@ background: url(../../assets/svg/frame.svg);
     position: relative;
     width: auto;
 }
+
 .sectionsendinblue #body-section-newsletter form#form {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .faceted-text-search input#search_button {
     background: $primary;
 }
@@ -112,6 +116,7 @@ background: url(../../assets/svg/frame.svg);
 .bannerSwiper .section-slide {
     position: relative;
 }
+
 .bannerSwiper .section-slide:after {
     content: url(../../assets/svg/logo-rochefort-blanc.svg);
     left: 50%;
@@ -121,6 +126,7 @@ background: url(../../assets/svg/frame.svg);
     transform: translate(-50%,-50%);
     width: 600px;
 }
+
 .site-cpas .bannerSwiper .section-slide:after, .site-bibliotheque-communale .bannerSwiper .section-slide:after {
     display:none!important;
 } 
@@ -128,29 +134,37 @@ background: url(../../assets/svg/frame.svg);
 .has_subtree.dropdown a.state-published.nav-link {
     transition: 0.5s;
 }
+
 .has_subtree.dropdown a.state-published.nav-link:hover {
     margin-left: 15px;
     transition: 0.5s;
 }
+
 .subsite-container #subsite-logo {
     background: $color-darkgrey;
 }
+
 .subsite-container {
     background: $primary;
+
     #subsite-logo a {
     color: $primary;
     }
 }
+
 #subsite-navigation>ul>li>a,
 #subsite-navigation.activated>ul>li>a {
     color: #fff !important;
+
     &:hover {
         text-decoration: underline;
     }
 }
+
 .has_subtree.dropdown {
     margin-top: 22px;
 }
+
 body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link:after {
     background-image: url(../../assets/svg/chevron.svg);
 }

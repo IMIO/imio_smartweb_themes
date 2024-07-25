@@ -1,12 +1,15 @@
 .sectionevents .see_all a {
     font-family: $font-family-base;
 }
+
 .sectionnews .see_all a {
     font-family: $font-family-base;
 }
+
 .sortable-section.partenaires h2.section-title, .sortable-section.sectionevents h2.section-title, .sortable-section.sectionnews h2.section-title {
     position: relative;
 }
+
 .sortable-section.partenaires h2.section-title::after, .sortable-section.sectionevents h2.section-title::after, .sortable-section.sectionnews h2.section-title::after {
     content: "";
     background: $primary;
@@ -24,6 +27,7 @@
 div.swiper-image {
     position: relative;
 }
+
 div.swiper-image::before {
     background: transparent;
     content: "";
@@ -35,6 +39,7 @@ div.swiper-image::before {
     transition: all .2s ease;
     z-index: 0;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: 0.5;
@@ -50,17 +55,21 @@ div.swiper-image::before {
 .section-agenda.site-centre-culturel .r-filter.topics-Filter {
     display: none;
 }
+
 .sectionfiles .item_infos {
     color: #fff;
   }
+
   .swiper-banner-link a {
     color: #000;
     font-weight: bold;
   }
+
   .swiper-banner-link {
     display: block;
     text-align: center;
 }
+
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
     background: hsla(0, 0%, 100%, 0.83);
 }
@@ -69,6 +78,7 @@ div.swiper-image::before {
 	background: #E7ECEF;
     padding: 5rem 0;
 }
+
 .section-home-page .partenaires::before {
     content: url('../../assets/svg/havelange-logo-background-white.svg');
     display: block;
@@ -79,18 +89,22 @@ div.swiper-image::before {
     transform-origin: left bottom;
     z-index: -1;
 }
+
 footer h3 {
     color: #fff;
   }
+
 .sectionlinks #portal-footer-wrapper li {
     list-style-type: none;
     margin-bottom: .25rem;
     padding-left: 0;
     width: 100%;
   }
+
 footer .sectionlinks li {
     width: 100% !important;
 }
+
   .sectionfiles .body-section .h2, .sectionfiles .body-section h2, 
   .sectionfiles .body-section p, .sectionfiles .body-section span, 
   .sectionfiles .section-title .h2, .sectionfiles .section-title h2,
@@ -98,13 +112,16 @@ footer .sectionlinks li {
   .sectionfiles a .item_infos {
     color: #000 !important;
   }
+
   .sectionfiles::after {
     background: #e7ecef;
   }
+
   .sortable-section.sectionfiles {
     padding: 3rem 1rem;
     margin-bottom: 1rem;
   }
+
   .sectionfiles h2.section-title {
     color: #000 !important;
 }

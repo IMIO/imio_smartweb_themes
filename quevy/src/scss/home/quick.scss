@@ -5,8 +5,8 @@
         margin: 0;
     }
 }
+
 .quick-access{
-    
     .body-section{
         li{
             .table_image{
@@ -24,10 +24,12 @@
                     transform: translateY(-10px);
                     transition: all .5s ease;
                     background:#166B8C;
+
                     svg {fill:#fff;}
                     
                 }
             }
+
                 .table_title{
                     span{
                         line-height: 1;
@@ -44,11 +46,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         //font-family:$font-family-roboto;

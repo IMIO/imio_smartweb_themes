@@ -2,13 +2,17 @@
     .section-title{
         font-weight: 200;
     }
+
     .swiper-wrapper{
         .swiper-slide {
             height: inherit;
+
             &:nth-child(3n + 1) {
                 margin-top: 4rem;
+
                 &  > a {
                     background: #f8ecd1;
+
                     .swiper-image{
                         mask: url("../../assets/svg/square-mask.svg");
                         mask-repeat: no-repeat;
@@ -17,9 +21,11 @@
                     }
                 }
             }
+
             &:nth-child(3n + 2) {
                 &  > a {
                     background: #a5ffdd;
+
                     .swiper-image{
                         mask: url("../../assets/svg/triangle-mask.svg");
                         mask-repeat: no-repeat;
@@ -29,10 +35,13 @@
                     }
                 }
             }
+
             &:nth-child(3n + 3) {
                 margin-top: 6rem;
+
                 &  > a {
                     background: #97e1f4;
+
                     .swiper-image{
                         mask: url("../../assets/svg/round-mask.svg");
                         mask-repeat: no-repeat;
@@ -42,10 +51,12 @@
                     }
                 }
             }
+
             & > a{
                 grid-template-columns: 1fr 1fr;
                 padding: 1.5rem;
                 align-items: center;
+
                 .swiper-image{
                     width: 55%;
                     padding-bottom: 55%;
@@ -54,21 +65,26 @@
                     grid-column-start: 1;
                     transition: all .25s ease;
                 }
+
                 .swiper_category{
                     margin-left: auto;
                 }
+
                 .swiper_date{
                     text-transform: uppercase;
                     font-family: $font-family-title;
                     grid-row-start: 2;
                 }
+
                 .swiper_title{
                     grid-column-start: 1;
                     grid-column-end: 3;
+
                     h3{
     
                     }
                 }
+
                 &:hover{
                     .swiper-image{
                         mask-size: 99%;
@@ -77,6 +93,7 @@
             }
         }
     }
+
     .swiper-button-next, .swiper-button-prev {
         top: 54px;
         width: 45px;
@@ -84,6 +101,7 @@
         background-color: #fff;
         border-radius: 50px;
     }
+
     .swiper-button-prev{
         left: inherit;
         right: 65px;

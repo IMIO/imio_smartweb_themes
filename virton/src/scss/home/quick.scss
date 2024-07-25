@@ -5,11 +5,12 @@
         margin: 80px 0;
     }
 }
+
 .quick-access{
-    
     .body-section{
         ul {
             max-width: 1200px!important;
+
             li{
                 .table_image{
                     .image.d-block {
@@ -19,12 +20,14 @@
                     position: relative;
                     
                 }
+
                     &:hover,&:focus{
                         .image.d-block {
                         transform: translateY(-10px);
                         transition: all .5s ease;
                     }
                 }
+
                     .table_title{
                         span{
                             line-height: 1;
@@ -37,7 +40,6 @@
     }
 
     @media screen and (max-width: 992px) {
-
         .body-section{
             ul {
                 li{
@@ -68,11 +70,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         //font-family:$font-family-roboto;
@@ -102,6 +106,7 @@
     margin:100px auto 0px;
     padding-top:0px;
     padding-bottom:0px;
+
     .container {
     width: 40%;
     margin-left:60%;
@@ -121,6 +126,7 @@
         max-width: 470px;
         z-index: -1;
     }
+
     .section-title{
         font-weight: 600;
         text-align: center;
@@ -135,16 +141,20 @@
     .body-section{
         ul {
             text-align: center;
+
             li{
                 padding:30px 20px;
+
                 .table_image{
                     text-decoration: none !important;
+
                     .image.d-block {
                     width: 50px;
                     height: 50px;
                     transition: all .5s ease;
                     position: relative;
                     margin:0px auto;
+
                     svg {
                         width: 30px;
                         height: auto;
@@ -152,14 +162,15 @@
                     }
                     
                 }
+
                     &:hover,&:focus{
                         .image.d-block {
                         transform: translateY(-10px);
                         transition: all .5s ease;
                     }
                 }
+
                     .table_title{
-                        
                         span{
                             line-height: 1;
                             font-size: 16px;
@@ -183,6 +194,7 @@
         margin:100px auto 0px;
         padding-top:0px;
         padding-bottom:0px;
+
         .container {
         width: 100%;
         margin-left:0;

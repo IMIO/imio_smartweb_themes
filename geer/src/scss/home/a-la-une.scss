@@ -19,6 +19,7 @@
 .a-la-une .swiper-slide .swiper_description p {
     font-weight: 400;
   }
+
 .a-la-une, .sectionnews, .sectionevents {
   .section-title::before {
     content: "";
@@ -35,9 +36,11 @@
     transform: translate(-90%,-50%);
   }
 }
+
 .a-la-une .swiper-image {
   z-index: -1;
 }
+
 .a-la-une .swiper-image::before {
   background: no-repeat url("../../assets/svg/a-la-une-transparent-810.svg");
   // background-size: 820px;
@@ -55,12 +58,15 @@
 .a-la-une .swiper-slide .swiper-image {
   border-radius: 500px;
   }
+
   .a-la-une .swiper-slide .swiper_title {
     margin: 3rem 0 0;
   }
+
   .a-la-une .swiper-image::before {
     content: initial;
   }
+
   .a-la-une .swiper-slide .swiper_description {
   }
 }

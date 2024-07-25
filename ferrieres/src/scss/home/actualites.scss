@@ -43,11 +43,13 @@
                 display: block;
                 align-items: center;
                 transition: all .25s ease;
+
                 .swiper-image{
                     padding-bottom: 55%;
                     transition: all .25s ease;
                     margin-bottom: 2rem;
                 }
+
                 .swiper_category{
                     margin-left: auto;
                     top: 0px;
@@ -69,6 +71,7 @@
                     }
                     
                 }
+
                 .swiper_category:before {
                     display: block; 
                     content: ""; 
@@ -86,28 +89,32 @@
                     grid-row-start: 2;
                     padding:0 20px;
                 }
+
                 .swiper_title{
                     margin-top: 10px;
+
                     h3{
                         font-family: $font-family-base;
                         margin-bottom: 20px;
                         padding:0 20px;
                     }
                 }
+
                 .swiper_description{
                     display: none;
+
                     p{
                         margin: 0;
                     }
                 }
                 
             }
+
             &:hover{
                 a {
                     background: $primary-svg;
 
                     .swiper_category{
-    
                         span {
                             background: $primary-svg;
                         }
@@ -117,9 +124,11 @@
             }
         }
     }
+
     .swiper-button-next, .swiper-button-prev {
 
     }
+
     .swiper-button-prev{
 
     }

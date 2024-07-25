@@ -31,19 +31,23 @@ $enable-roboto-webfont: false;
         padding-bottom: 5rem;
     }
 }
+
 body:not(.section-accueil){
     #portal-footer-wrapper {
         margin-top: 5rem;
     } 
 }
+
 #portal-footer-wrapper {
     h2 {
         color: #fff !important;
     }
 } 
+
 .sectiontext .mark, .sectiontext mark {
 	background-color: #183f6e;
 	color: #fff!important;
+
     a{
         color: #fff!important;  
     }
@@ -71,12 +75,15 @@ body:not(.section-accueil){
     #portal-header #portal-header-top #portal-globalnav-wrapper {
         margin: 0 !important;
     }
+
     #portal-header #portal-header-top #portal-logo {
         max-width: 130px;
+
         svg {
             width: 100%;
         }
     }
+
     .smartweb_herobanner .bannerSwiper {
         height: 500px;
     }
@@ -84,6 +91,7 @@ body:not(.section-accueil){
 @media sreen and (max-width:989px) {
     #portal-header #portal-header-top #portal-logo {
         max-width: 144px;
+
         svg {
             width: 100%;
         }

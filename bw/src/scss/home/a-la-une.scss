@@ -22,39 +22,48 @@
 
         }
     }
+
     .swiper-wrapper{
         padding-bottom: 0;
     }
+
     .section-title{
         text-align: center;
         position: relative;
         margin-bottom: 2rem;
     }
+
     .swiper-slide{
         a{
             text-decoration: none;
         }
+
         &>a {
             @include media-breakpoint-up(lg) {
               grid-template-columns: 50% 40%;
             }
           }
+
         .swiper-image{
             border-radius: 20px;
         }
+
         .swiper_title{
             margin-top: 0;
+
             h3 {
                 font-size: 32px;
                 padding: 1rem 0;
                 margin-bottom: 0;
             }
         }
+
         .swiper_description {
             p {
                 font-size: 16px;
                 color: rgba(255, 255, 255,.76);
                 font-family: $font-family-title;
+
                 &:after {
                     content: "Lire la suite";
                     font-weight: 500;

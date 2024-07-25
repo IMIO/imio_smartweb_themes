@@ -2,8 +2,10 @@
 mark {
   display: block;
 }
+
 .sectiontext {
   font-size: $font-size-texte;
+
   mark {
     display: inline-block;
     padding: $mark-padding-sec;
@@ -28,12 +30,15 @@ mark {
     margin-top: $section-text-h3-margin-top;
     margin-bottom: $section-text-h3-margin-bottom;
   }
+
   ol {
     list-style-type:none;        
     counter-reset: sectioncounter;
+
     & > li{
       display: table;
       padding-left: 1rem;
+
       &:before{
         content: counter(sectioncounter) ":";
         counter-increment: sectioncounter;
@@ -46,6 +51,7 @@ mark {
       }
     }
   } 
+
   ul li {
     position: relative;
     display: table;

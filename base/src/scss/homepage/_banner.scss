@@ -44,11 +44,13 @@
             margin: $banner-content-margin;
             background: $banner-content-background;
             text-align:$banner-content-text-align;
+
             .swiper-banner-title {
               color: $banner-content-title-color;
               font-size: $banner-content-title-font-size;
               text-transform: $banner-content-title-text-transform;
             }
+
             .swiper-banner-description {
               p {
                 margin: 0;

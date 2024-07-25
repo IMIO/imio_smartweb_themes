@@ -1,5 +1,6 @@
 div#body-section-acces-directs:first-child ul {
   gap: 30px;
+
   li {
     align-items: center;
     background: #fff;
@@ -15,6 +16,7 @@ div#body-section-acces-directs:first-child ul {
     width: 150px;
     }
 }
+
 .sectionlinks.quick-access:first-child  {
   background: transparent!important;
   left: 0;
@@ -22,9 +24,11 @@ div#body-section-acces-directs:first-child ul {
   transform: translateY(-64%);
   z-index: 0;
 }
+
 .sectionlinks.quick-access li .image {
   transition: 0.5s;
 }
+
 .sectionlinks.quick-access li:hover .image {
   padding-bottom: 1.5rem;
 }
@@ -35,23 +39,29 @@ div#body-section-acces-directs:first-child ul {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .smartweb_herobanner .bannerSwiper {
   height: 340px;
 }
+
 body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
   transform: translateY(-120%);
   }
+
   .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title,
   .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
     font-size: 3rem;
   }
+
   .smartweb_herobanner .swiper-wrapper p.lead.rich_description:after {
     scale: 0.6;
   }
+
   body .smartweb_herobanner:before {
   height: 100px !important;
   }
 }
+
 .sectionlinks.quick-access .body-section li a .table_title {
   height: 45px;
 }

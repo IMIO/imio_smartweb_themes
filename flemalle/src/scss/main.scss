@@ -27,6 +27,7 @@ $enable-roboto-webfont: false;
     position: relative;
     font-weight: 500;
 }
+
 .smartweb_herobanner .swiper-wrapper p.lead.rich_description::after {
     content: url(../../assets/svg/visuel.svg);
     position: absolute;
@@ -36,10 +37,10 @@ $enable-roboto-webfont: false;
 }
 
 footer#portal-footer-wrapper{
-
     div:not(.sectiontext) + .sectiontext h2 {
         margin-top: 0 !important;
     }
+
     .sectionlinks li {
         padding-left: 0.85rem!important;
     }
@@ -47,6 +48,7 @@ footer#portal-footer-wrapper{
         .h2, h2 {
             font-size: 1.5rem!important;
         }
+
         .h3, h3 {
             font-size: 1.2rem!important;
         }
@@ -67,12 +69,15 @@ footer#portal-footer-wrapper{
         margin-bottom: 0;
     }
 }
+
 #localmessagesviewlet .portalMessage.info, #messagesviewlet .portalMessage.info {
 	background-color: #53616e!important;
 }
+
 #messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
 	background-color: $primary!important;
 }
+
 #messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
 	background-color: #2f9c5b!important;
 }
@@ -86,18 +91,22 @@ footer#portal-footer-wrapper{
         display: initial;
     }
 }
+
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_je-suis.has_subtree,
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.nav_en-un-clic.has_subtree {
     & > a:focus, & > a:hover{
         color: $darktext !important;
     }
+
     &.show-nav{
         & > a{
             color:$darktext!important;
         }
     }
+
     & > .nav-link {
         color: $primary-svg !important;
+
         &:before{
             background-color: $primary-svg!important;
         }
@@ -107,18 +116,22 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
         //     }
         // }
     }
+
     .dropdown .nav-link:focus, .dropdown .nav-link:hover {
         color: $primary-svg;
     }
+
     .nav-title{
         a{
             color: $darktext !important;
         }
     }
 }
+
 body .smartweb_herobanner {
     position: relative;
 }
+
 body .smartweb_herobanner::before {
     bottom: 0;
     content: "";
@@ -139,9 +152,11 @@ body .smartweb_herobanner::before {
     position: relative;
     background-color: $primary-svg!important;
     opacity: 1;
+
     &.swiper-pagination-bullet-active{
         position: relative;
         background-color: $primary-svg!important;
+
         &:after{
             content: "";    
             position: absolute;
@@ -163,8 +178,10 @@ body .smartweb_herobanner::before {
 .swiper-pagination-bullet-active {
     background: $primary !important;
 }
+
 .sectionlinks.quick-access {
     background: transparent !important;
+
     .row {
         justify-content: space-between;
     }
@@ -182,6 +199,7 @@ body .smartweb_herobanner::before {
 .r-actu-wrapper::after {
     display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $primary;
 }
@@ -195,6 +213,7 @@ body .smartweb_herobanner::before {
 #portal-footer-wrapper,
 #portal-colophon {
     background: $darktext;
+
     li,
     a {
         color: #fff;
@@ -220,6 +239,7 @@ body .smartweb_herobanner::before {
         left: inherit !important;
         transition: right .5s cubic-bezier(.54, .01, .68, .64) !important;
     }
+
     #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
         position: fixed !important;
         z-index: 1;
@@ -241,6 +261,7 @@ body .smartweb_herobanner::before {
     h2 {
         color: #fff !important;
     }
+
     #body-section-nous-contacter {
         display: flex;
         justify-content: space-between;
@@ -252,10 +273,12 @@ body .smartweb_herobanner::before {
             justify-content: center;
             align-items: center;
             text-align: center;
+
             .contact_logo {
                 margin-bottom: 2rem;
             }
         }
+
         .contact_logo {
             width: 146px;
             height: 61px;
@@ -263,14 +286,17 @@ body .smartweb_herobanner::before {
             background-repeat: no-repeat;
         }
     }
+
     .plone-icon {
         fill: #fff;
     }
 }
+
 #portal-colophon {
     li {
         list-style: none;
     }
+
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -300,15 +326,19 @@ body .smartweb_herobanner::before {
 
 .is-in-minisite .smartweb-footer .sectiontext {
 }
+
 .smartweb-footer {
     padding-top: 5rem;
+
     a.table_image {
         align-items: flex-start!important;
     }
+
     .row {
         justify-content: space-between;
         text-align: left;
     }
+
     .sectiontext {
         figure {
             margin: 0 !important;
@@ -316,6 +346,7 @@ body .smartweb_herobanner::before {
             float: none !important;
         }
     }
+
     #container-section-liens-utiles {
         li {
             div {
@@ -339,6 +370,7 @@ body .smartweb_herobanner::before {
 .section-home-page {
     header#content-header {
         z-index: inherit !important;
+
         #portal-header {
             z-index: inherit !important;
         }
@@ -349,6 +381,7 @@ body .smartweb_herobanner::before {
 @media sreen and (max-width:989px) {
     #portal-header #portal-header-top #portal-logo {
         max-width: 144px;
+
         svg {
             width: 100%;
         }
@@ -377,6 +410,7 @@ body .smartweb_herobanner::before {
 .see_all a {
     font-weight: bold;
 }
+
 .minisite_logo .minisite_title {
     font-weight: bold;
 }
@@ -404,6 +438,7 @@ body .smartweb_herobanner::before {
 .sectionnews .see_all a::after {
     display: none;
 }
+
 .sectionevent .see_all a::after {
     display: none;
 }
@@ -418,11 +453,13 @@ body .smartweb_herobanner::before {
     #portal-header #portal-header-top #portal-globalnav-wrapper {
         margin: 0 !important;
     }
+
     #portal-header #portal-header-top #portal-logo {
         svg {
             width: 100%;
         }
     }
+
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         // &::after {
         //     content: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>");
@@ -441,6 +478,7 @@ body .smartweb_herobanner::before {
 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         text-transform: initial !important;
+
         &:hover {
             color: $primary !important;
         }
@@ -495,9 +533,11 @@ body .smartweb_herobanner::before {
 .contactText .phones span {
 	display: block;
 }
+
 body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
     transform: translateY(-70%);
 }
+
 body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.nav_en-un-clic.has_subtree>.nav-link, body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.nav_je-suis.has_subtree>.nav-link {
     color: $darktext!important;
 }

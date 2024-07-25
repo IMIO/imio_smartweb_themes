@@ -3,9 +3,11 @@
     @media screen and (max-width: 992px) {
         margin: 3.5rem 0;
         }
+
     .section-container{
         position: relative;
     }
+
     .section-title{
         font-weight: 700 !important;
         text-transform: none;
@@ -36,17 +38,21 @@
                     background: #eee;
                     border-radius: 0px 0 50px 0;
             }
+
             & > a{
                 align-items: center;
                 padding-bottom: 20px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     width: 100%;
                     text-align: left;
                     position: absolute;
                     top:0px;
+
                     span {
                         display: inline-block;
                         background: $primary-svg;
@@ -60,19 +66,23 @@
                     font-family: $font-family-base; 
                     width: 100%;
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -83,9 +93,11 @@
             }
         }
     }
+
     .swiper-button-prev {
         display: none; 
         }
+
         .swiper-button-next {
         display: none;
         }

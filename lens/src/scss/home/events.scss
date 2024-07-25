@@ -1,8 +1,10 @@
 #section-agenda .end_date {
     display: inline-block;
   }
+
   .sortable-section.sectionevents {
     position: relative;
+
     &:after {
     background: url(../../assets/svg/logo-back.svg);
     content: "";

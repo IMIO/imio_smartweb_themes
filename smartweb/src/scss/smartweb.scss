@@ -127,12 +127,14 @@ body {
   max-width: 100%;
   padding-right: 0 !important;
 }
+
 .r-content button {
   background: transparent;
   border: none;
   position: relative;
   display: flex;
   align-items: center;
+
   &::before {
     content: url("../../assets/svg/arrow-right.svg");
     position: relative;
@@ -144,6 +146,7 @@ body {
     position: relative;
   }
 }
+
 .to-portal::before {
   content: "";
   background: $primary;

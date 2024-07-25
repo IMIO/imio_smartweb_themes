@@ -38,12 +38,14 @@ h1{
     text-align: left;
     margin-bottom:2rem;
 }
+
 .smartweb_herobanner {
     width: 90vw;
     overflow: hidden;
     border-radius: 80px 80px 80px 0px;
     margin-bottom: 100px;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
 	max-height: 500px;
@@ -55,6 +57,7 @@ h1{
         border-radius: 0px;
         margin-bottom: 60px;
     }
+
     .smartweb_herobanner .bannerSwiper {
         height: 450px;
     }
@@ -74,12 +77,14 @@ h1{
             padding: 40px 50px !important;
             border-radius: 0 40px 0 0;
             background: rgba(20, 71, 101, 0.85) !important;
+
             .swiper-banner-title {
                 color:#fff !important;
                 font-size: 38px !important;
                 font-weight: 600 !important;
                 line-height: 48px;
             }
+
             .rich_description {
                 color: #fff !important;
                 font-size: 25px !important;
@@ -93,12 +98,14 @@ h1{
                 width: 100% !important;
                 border-radius: 0px !important;
                 padding: 20px 20px !important;
+
                 .swiper-banner-title {
                     color:#fff !important;
                     font-size: 28px !important;
                     font-weight: 600 !important;
                     line-height: 38px;
                 }
+
                 .rich_description {
                     color: #fff !important;
                     font-size: 15px !important;
@@ -110,6 +117,7 @@ h1{
         
     }
 }
+
 .swiper-banner-image:after {
     content: "";
     background: #0000;
@@ -133,9 +141,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -176,6 +186,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -210,12 +221,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -224,8 +237,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;
@@ -260,10 +275,12 @@ footer #container-section-noussuivre{
 .subsite-container {
     background: $primary-light;
     border-radius: 0px;
+
     #subsite-logo {
 	font-size: 18px;
     background: $primary-blue;
     border-radius: 0px;
+
     a {
         .subsite-title{
             color:#fff!important;
@@ -312,12 +329,15 @@ footer #container-section-noussuivre{
      text-decoration: none;
     }
 }
+
 .breadcrumb {
 	font-size: 13px;
 }
+
 .header-custom {
     #banner {
         z-index: -1;
+
         &:after {
             content: "";
             position: absolute;
@@ -328,6 +348,7 @@ footer #container-section-noussuivre{
             background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.5) 100%);
         }
     } 
+
     #portal-breadcrumbs {
         background: #f5f5f5 !important;
         padding: 5px 15px;
@@ -370,6 +391,7 @@ footer #container-section-noussuivre{
 .swiper-pagination-bullet {
     background: #A3A3A3!important;
 }
+
 .swiper-pagination-bullet-active {
     background: $primary-blue!important;
 }
@@ -384,6 +406,7 @@ footer #container-section-noussuivre{
     background: $primary-light;
     color:#000;
     transition: all .25s ease;
+
     &:hover {
         background:$primary-blue;
         transition: all .25s ease;

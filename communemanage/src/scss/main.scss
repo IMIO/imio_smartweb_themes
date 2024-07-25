@@ -28,12 +28,15 @@ $enable-roboto-webfont: false;
 .swiper-pagination-bullet-active {
     background: $primary !important;
 }
+
 .sectionlinks.quick-access {
     background: transparent !important;
+
     span {
         font-family: 'Baloo 2',
             cursive;
     }
+
     .row {
         justify-content: space-between;
     }
@@ -51,6 +54,7 @@ $enable-roboto-webfont: false;
 .r-actu-wrapper::after {
     display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $primary;
 }
@@ -64,6 +68,7 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper,
 #portal-colophon {
     background: #D13A3A;
+
     li,
     a {
         color: #fff;
@@ -89,6 +94,7 @@ $enable-roboto-webfont: false;
         left: inherit !important;
         transition: right .5s cubic-bezier(.54, .01, .68, .64) !important;
     }
+
     #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
         position: fixed !important;
         z-index: 1;
@@ -115,6 +121,7 @@ li:marker {
     h2 {
         color: #fff !important;
     }
+
     #body-section-nous-contacter {
         display: flex;
         justify-content: space-between;
@@ -126,10 +133,12 @@ li:marker {
             justify-content: center;
             align-items: center;
             text-align: center;
+
             .contact_logo {
                 margin-bottom: 2rem;
             }
         }
+
         .contact_logo {
             width: 146px;
             height: 61px;
@@ -137,10 +146,12 @@ li:marker {
             background-repeat: no-repeat;
         }
     }
+
     .plone-icon {
         fill: #fff;
     }
 }
+
 #portal-colophon {
     li {
         list-style: none;
@@ -172,20 +183,25 @@ li:marker {
 .is-in-minisite .smartweb-footer .sectiontext {
     max-width: 150px;
 }
+
 .smartweb-footer {
     padding-top: 5rem;
+
     .row {
         justify-content: space-between;
         text-align: left;
     }
+
     .sectiontext {
         max-width: 140px;
+
         figure {
             margin: 0 !important;
             max-width: 100% !important;
             float: none !important;
         }
     }
+
     #container-section-liens-utiles {
         li {
             div {
@@ -212,9 +228,11 @@ li:marker {
     z-index: 0;
     left: 0;
 }
+
 .section-home-page {
     header#content-header {
         z-index: inherit !important;
+
         #portal-header {
             z-index: inherit !important;
         }
@@ -225,6 +243,7 @@ li:marker {
 @media sreen and (max-width:989px) {
     #portal-header #portal-header-top #portal-logo {
         max-width: 144px;
+
         svg {
             width: 100%;
         }
@@ -260,6 +279,7 @@ li:marker {
 .sectionlinks.quick-access .body-section li a .image.d-block svg {
     height: 40px;
 }
+
 .a-la-une .swiper-slide .swiper_description {
     p {
         font-family: 'Baloo 2', cursive;
@@ -270,6 +290,7 @@ li:marker {
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
 }
+
 .minisite_logo .minisite_title {
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
@@ -285,9 +306,11 @@ li:marker {
             font-size: 3rem !important;
         }
     }
+
     .a-la-une {
         margin-top: 8rem;
     }
+
     .sectionnews,
     .sectionevents {
         padding-bottom: 5rem !important;

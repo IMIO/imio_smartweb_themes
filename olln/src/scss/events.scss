@@ -17,29 +17,35 @@
         z-index: -1;
         width: 100vw;
     }
+
     .swiper-slide {
         & > a {
             padding-top: 15px;
             grid-auto-rows: auto;
         }
     }
+
     .swiper-image {
         grid-row-start: 4;
         align-self: end;
         background-size: cover;
     }
+
     .swiper-image{
         background: red;
     }
+
     .swiper_date {
         span {
             font-weight: 600;
         }
     }
+
     .see_all {
         a {
             background: $primary!important;
             color: #fff;
+
             &:hover {   
                 background:#274988!important;
                 color: #fff!important;

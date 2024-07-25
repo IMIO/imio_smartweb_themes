@@ -1,6 +1,7 @@
 #portal-footer-wrapper li.facebook, #portal-footer-wrapper li.twitter {
   width: 100%;
 }
+
 #portal-footer-wrapper .twitter a {
   margin-left: 0;
 }
@@ -8,6 +9,7 @@
 @media sreen and (max-width: 575px) {
   #portal-footer-wrapper .smartweb-footer .row {
   text-align: center;
+
   .twitter a, .sectiontext {
     margin: 0 auto;
     }

@@ -1,14 +1,18 @@
 footer {
     background: $secondary;
 }
+
 footer div#smartweb-footer {
     background: $secondary;
+
         h2, div a, ul li a, span {
         color: #fff !important;
         }
+
         h2 {
             font-size: $h3-font-size;
         }
+
         .table_tittle span {
             font-size: 1rem;
         }
@@ -17,21 +21,26 @@ footer div#smartweb-footer {
 footer .image.d-block {
     display: none;
 }
+
 footer .smartweb-footer {
     .sectiontext .section-text .body-section.figure-top figure {
         margin-top: 0rem;
     }
+
     .container > .row {
     padding: 5rem 0;
     }
+
     .sectiontext, .sectioncontact, .sectionlinks {
         text-align: left;
     }
 }
+
 footer {
     #portal-colophon, div.colophon {
     background-color: $secondary;
     }
+
     div#body-section-liens-utiles li a {
         text-decoration: none;
     }
@@ -40,6 +49,7 @@ footer {
         text-decoration: underline;
     }
 }
+
 .colophonWrapper ul li {
     display: inline-block;
 }
@@ -48,6 +58,7 @@ footer {
     width: 50%;
     }
 }
+
 footer ul.row {
     margin-left: 0;
 }
@@ -57,6 +68,7 @@ footer {
 #portal-colophon, div.colophon {
 background-color: $primary;
 }
+
 div#body-section-liens-utiles li a {
     text-decoration: none;
 }
@@ -65,6 +77,7 @@ div#body-section-liens-utiles li a:hover {
     text-decoration: underline;
 }
 }
+
 .colophonWrapper ul li {
     display: inline-block;
 }
@@ -73,6 +86,7 @@ div#body-section-liens-utiles li a:hover {
     width: 50%;
     }
 }
+
 footer ul.row {
     margin-left: 0;
 }
@@ -85,6 +99,7 @@ footer ul.row {
     position: relative;
     background:transparent;
 }
+
 .smartweb_footer .smartweb-footer li a {
     color: #fff;
 }

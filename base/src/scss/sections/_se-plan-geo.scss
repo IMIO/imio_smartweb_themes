@@ -2,12 +2,15 @@ body.faceted-map{
     .button-map-content{
         display: none;
     }
+
     nav.d-flex.justify-content-center:first-child{
         display: none;
     }
+
     .d-flex.justify-content-center{
         justify-content: left!important;
     }
+
     #main-container{
         #content{
             #center-content-area {
@@ -16,6 +19,7 @@ body.faceted-map{
                 }   
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(4,auto);
+
                 #faceted-results {
                     grid-column: 1;
                     @include media-breakpoint-up(md) {
@@ -24,6 +28,7 @@ body.faceted-map{
                     display: block !important;
                     opacity: 1 !important;
                 }
+
                 .faceted-map {
                     grid-column: 2;
                     grid-row: 2;
@@ -33,6 +38,7 @@ body.faceted-map{
             }
         }  
     }
+
     #faceted-results-items{
         @include media-breakpoint-down(md) {
             display: grid;
@@ -43,35 +49,43 @@ body.faceted-map{
             grid-template-columns: 1fr;
         }
     }
+
     .faceted-map-text{
         margin: 0;
         @include media-breakpoint-up(md) {
             margin: 1rem 0;
         }
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
         a{
             text-decoration: none;
         }
+
         .items-content{
             display: flex;
             @include media-breakpoint-down(md) {
                 flex-direction: column;
                 align-items: center;
             }
+
             .geo-item-image{
                 max-width: 250px;
+
                 img{
                     width: 100%;
                 }
             }
+
             .geo-item-text{
                 padding: 1rem 1.5rem;
+
                 .geo-item-title{
                     color: #1f1f1f;
                     font-weight: bold;
                     font-size: 15px;
                     text-decoration: none;
                 }
+
                 .geo-item-description{
                     margin-top: 0.3rem;
                     font-size: 15px;

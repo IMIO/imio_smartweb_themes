@@ -1,6 +1,7 @@
 body .a-la-une #container-section-a-la-une div {
     position: relative;
 }
+
 .a-la-une, .sectionnews {
     .swiper-slide {
     height: auto;
@@ -12,6 +13,7 @@ body .a-la-une #container-section-a-la-une div {
     left: 1rem;
     top: 1rem;
     }
+
     body .a-la-une .section-container:hover h2.section-title {
     left: 2rem;
     }
@@ -20,6 +22,7 @@ body .a-la-une #container-section-a-la-une div {
     body .a-la-une h2.section-title {
         right: 250px;
     }
+
     body .a-la-une .section-container:hover h2.section-title {
         right: 215px;
         }
@@ -33,6 +36,7 @@ body .a-la-une #container-section-a-la-une div {
     body .a-la-une h2.section-title {
         right: 320px;
     }
+
     body .a-la-une .section-container:hover h2.section-title {
         right: 285px;
         }
@@ -49,14 +53,17 @@ body .a-la-une #container-section-a-la-une div {
     text-transform: uppercase;
     transition: 0.5s;
     }
+
     body .a-la-une .section-container:hover h2.section-title {
     padding: 0.5rem 2rem;
     right: 350px;
     }
 }
+
 .sortable-section.sectionselections.a-la-une {
     z-index: 1;
 }
+
 .sortable-section.sectionselections.a-la-une {
 	z-index: 1;
 	padding-top: 0;

@@ -6,6 +6,7 @@
                 display: inline-block;
             }
         }
+
         &:hover,
         &:focus {
             .table_title {
@@ -24,6 +25,7 @@
             }
         }
     }
+
     #body-section-quick-access {
         .row {
             @include media-breakpoint-down(md) {

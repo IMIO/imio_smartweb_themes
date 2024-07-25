@@ -4,6 +4,7 @@
         margin-top: 5rem;
         padding: 5rem 0 10rem 0;
     }
+
     .row {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
@@ -11,6 +12,7 @@
         grid-auto-rows: 1fr;
         align-items: center;
         justify-content: center;
+
         li {
             position: relative;
             display: flex;
@@ -21,16 +23,19 @@
             border: solid 1px #D2D2D2;
             border-radius: 20px;
             height: 155px;
+
             &:hover,
             &:focus {
                 background: #fff;
                 border: solid 1px #FFC93C;
+
                 .image.d-block {
                     svg {
                         fill: #FFC93C !important;
                     }
                 }
             }
+
             .table_title {
                 &:after {
                     content: "";
@@ -40,12 +45,14 @@
                     bottom: 0;
                     left: 0;
                 }
+
                 span {
                     font-size: 18px !important;
                     color: rgba(59, 59, 59, 1) !important;
                     font-weight: 700 !important;
                 }
             }
+
             a .image.d-block svg {
                 fill: #fff !important;
             }
@@ -69,6 +76,7 @@
 
 .voit-tout-annuaire {
     background: transparent !important;
+
     a.table_image {
         width: max-content;
         display: block;
@@ -82,6 +90,7 @@
         border: 1px solid $secondary;
         background: $secondary;
         border-radius: 5px;
+
         &:hover,
         &:focus {
             border: 1px solid $secondary;

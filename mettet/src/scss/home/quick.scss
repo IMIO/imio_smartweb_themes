@@ -1,7 +1,9 @@
 .banner-quick {
     padding: 0;
+
     .swiper-wrapper {
         padding: 0;
+
         .swiper-slide {
             &>a {
                 max-width: 450px;
@@ -11,6 +13,7 @@
                 @include media-breakpoint-up(lg) {
                     padding: 60px 0;
                 }
+
                 &:after {
                     content: "";
                     position: absolute;
@@ -39,6 +42,7 @@
             }
         }
     }
+
     .swiper{
         z-index: 0;
     }
@@ -46,6 +50,7 @@
 
 .sectionlinks.quick-access{
     position: relative;
+
     .body-section{
         .row{
             justify-content: flex-start!important;
@@ -55,6 +60,7 @@
             @media (min-width:438px){
 
             }
+
             li{
                 padding: 0;
                 max-width: 131px;
@@ -64,10 +70,12 @@
             }
         }
     }
+
     .section-title{
         font-size: 32px;
         font-weight: 400;
     }
+
     &:after{
         content: "";
         width: 100vw;
@@ -88,8 +96,10 @@
             z-index: -1;
         }
     }
+
     .table_display{
         height: 100%;
+
         .table_image{
             background-color: #fff;
             border-radius: 100px;
@@ -97,16 +107,20 @@
             height: 100%;
             box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
             transition: all .2s ease;
+
             &:hover,&:focus{
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
                 svg{
                     fill: $jaune!important;
                 }
             }
         }
     }
+
     .table_title{
         padding: 0 .5rem;
+
         span{
             font-family: $font-family-base!important;
             font-size: 14px!important;

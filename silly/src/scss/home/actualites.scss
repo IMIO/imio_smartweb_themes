@@ -1,23 +1,28 @@
 .sectionnews:not(.a-la-une){
     position: relative;
     background-color: #dfddea;
+
     li {
         list-style: none;
     }
+
     .table_image {
         display: flex;
         flex-direction: column;
         position: relative;
         text-decoration: none;
+
         .image {
             padding-bottom: 56%;
             border-radius: 10px;
             transition: all .1s ease;
             background-size: 100%;
+
             &:hover {
                 background-size: 105%;
             }
         }
+
         .table_category {
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
@@ -28,6 +33,7 @@
             width: 100%;
             color: #fff;
             padding: 0.5rem 0 0 0;
+
             &:after {
                 content: "";
                 position: absolute;
@@ -40,19 +46,23 @@
                 bottom: 0;
                 transform: translateY(45%);
             }
+
             span {
                 position: relative;
                 z-index: 1;
             }
         }
+
         .table_title {
             margin-top: .5rem;
+
             span {
                 font-size: 20px;
                 font-weight: bold;
                 color: #000;
             }
         }
+
         .table_date {
             margin-top: .5rem;
             margin-bottom: 2rem;
@@ -60,9 +70,11 @@
             color: #636363;
         }
     }
+
     .see_all{
 
     }
+
     &::after {
         content: url("../../assets/svg/actu-bg.jpg");
         position: absolute;

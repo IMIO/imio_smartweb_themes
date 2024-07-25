@@ -1,19 +1,23 @@
 .sectionnews{
     background: #f9f9f9;
+
     .swiper-slide{
      & > a{
         &:hover,&:focus{
             background: $primary;
+
             .swiper_date{
                 span{
                     color: #fff!important;
                 }
             }
+
             .swiper_title{
                 h3{
                     color: #fff!important;
                 }
             }
+
             .swiper_description{
                 color: #fff!important;
             }
@@ -21,6 +25,7 @@
      }
     }
 }
+
 .sectionnews .swiper-slide .swiper_category span {
 	width: max-content;
     border-bottom-right-radius: 10px;

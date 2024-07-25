@@ -2,28 +2,35 @@
     max-width: 200px !important;
     width: 100% !important;
 }
+
 #portal-footer-wrapper{
     text-align: left!important;
     background: transparent;
     margin-top: 3rem;
+
     #portal-footer{
         background:$primary!important;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
                 text-decoration:none;
             }
+
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin-top: 2rem;
+
                 figure{
                     img{
                         max-width: 100%;
@@ -33,18 +40,23 @@
         }
     }
 }
+
 #portal-footer-wrapper #portal-footer #smartweb-footer h2.section-title {
     margin-bottom: 0.5rem;
 }
+
 #portal-colophon{
     background: $primary;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }

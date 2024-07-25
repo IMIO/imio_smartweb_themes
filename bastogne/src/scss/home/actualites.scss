@@ -3,9 +3,11 @@
     @media screen and (max-width: 992px) {
         margin: 3.5rem 0;
         }
+
     .section-container{
         position: relative;
     }
+
     .section-title{
         font-weight: 600;
         text-transform: none;
@@ -63,7 +65,6 @@
 
         @media screen and (max-width:900px) {
             .section-title{
-        
                 &:after {
                     margin-top: -80px;
                 }
@@ -80,33 +81,41 @@
                     transform: translateY(10px);
 
             }
+
             & > a{
                 align-items: center;
                 padding-bottom: 20px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     display: none!important;
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                     width: 100%;
                     text-align: center;
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -117,9 +126,11 @@
             }
         }
     }
+
     .swiper-button-prev {
         display: none; 
         }
+
         .swiper-button-next {
         display: none;
         }

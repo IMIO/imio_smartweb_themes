@@ -3,23 +3,28 @@
   @include media-breakpoint-down(lg) {
     padding-bottom: 0;
   }
+
   .container {
     padding-right: 0;
     padding-left: 0;
   }
+
   .section-title {
     color: $a-la-une-title-color;
     margin: $a-la-une-title-margin;
     padding: $a-la-une-title-padding;
     text-align: $a-la-une-title-align;
   }
+
   .swiper{
     z-index: 0;
   }
+
   .swiper-slide {
     a {
       text-decoration: none;
     }
+
     &>a {
       @include media-breakpoint-up(lg) {
         display: grid;
@@ -27,6 +32,7 @@
         grid-template-rows: auto 1fr;
       }
     }
+
     .swiper-image {
       border-radius: $a-la-une-item-image-radius;
       @include media-breakpoint-up(lg) {
@@ -36,6 +42,7 @@
         grid-row-start: 1;
       }
     }
+
     .swiper_title {
       border-radius: $a-la-une-item-title-radius;
       margin: 1rem 0 0 0;
@@ -47,11 +54,13 @@
         grid-column: 2;
         grid-row: 1;
       }
+
       h3 {
         color: $a-la-une-item-title-color;
         font-size: $a-la-une-item-title-font-size;
       }
     }
+
     .swiper_description {
       color: $a-la-une-item-description-color;
       font-size: $a-la-une-item-description-font-size;
@@ -85,12 +94,14 @@
     top: 50% !important;
     box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
   }
+
   .swiper-button-prev {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23D13A3A\"/></svg>");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
   }
+
   .swiper-button-next {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23D13A3A\"/></svg>");
     background-position: center;

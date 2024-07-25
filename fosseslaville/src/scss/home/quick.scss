@@ -1,17 +1,21 @@
 .sectionlinks.quick-access:first-child {
     margin-top: -85px;
 }
+
 .sortable-section.sectionlinks.partenaires {
     padding-top: 5rem;
     z-index: 1;
     position: relative;
     background: transparent;
 }
+
 #container-section-nos-partenaires {
     padding: 1rem 0;
+
     ul.row {
         justify-content: space-between;
     }
+
     .table_image {
             &::after {
                 content: "";
@@ -23,9 +27,11 @@
                 right: 0;
                 z-index: 1;
                 }
+
         .table_image {
             padding-bottom: 1rem;
         }
+
         .table_title {
             span {
                 position: relative;
@@ -35,6 +41,7 @@
         }
     }
 }
+
 div#body-section-nos-partenaires ul li {
     position: relative;
     display: flex;
@@ -48,18 +55,22 @@ div#body-section-nos-partenaires ul li {
     width: 140px;
     height: 140px;
     border-radius: 10px;
+
     svg.plone-icon {
         width: 100%;
         height: 2em;
     }
+
     div.image {
     padding-bottom: 1rem;
     }
+
     div.table_title {
         font-weight: 500;
         color: $secondary!important;
     }
 }
+
 div#body-section-nos-partenaires ul li:hover {
     box-shadow: 0px 0px 0px 3px $primary;
 }
@@ -68,6 +79,7 @@ div#body-section-nos-partenaires ul li:hover {
 .sectionlinks.quick-access {
     padding: 1rem 0;
 }
+
 div#body-section-acces-directs .table_image {
     .table_title {
         span {
@@ -75,6 +87,7 @@ div#body-section-acces-directs .table_image {
             display: inline-block;
         }
     }
+
     &:hover,
     &:focus {
         .table_title {
@@ -97,17 +110,21 @@ div#body-section-acces-directs .table_image {
     div#body-section-acces-directs ul li, div#body-section-acces-directs ul li:hover, div#body-section-nos-partenaires ul li, div#body-section-nos-partenaires ul li:hover {
         box-shadow: 0px 0px 0px 0px $primary;
     }
+
     div#body-section-acces-directs ul li {
         width: 33%;
     }
+
     #portal-header #portal-header-top #portal-logo {
         margin-right: 0px !important;
         max-width: 40px;
     }
+
     .sectionlinks.quick-access:first-child {
         margin-top: 0px;
     }
 }
+
 .quick-access:first-child div a.table_image div.image:hover {
     background: $primary !important;
 }

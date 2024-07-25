@@ -5,15 +5,19 @@
 body.portaltype-imio-smartweb-portalpage #portal-header { 
     margin-bottom: 0;
 }
+
 .sortable-section.sectionlinks.quick-access {
     padding-top: 0;
 }
+
 .sectionlinks.quick-access .body-section li a .table_title {
     margin: 0rem 0 0;
 }
+
 .sectionlinks.quick-access .image.d-block {
     position: relative;
 }
+
 .sectionlinks.quick-access a .image.d-block::before {
     background: url("../../assets/svg/qa-bckd.svg");
     position: absolute;
@@ -27,12 +31,15 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
     z-index: -1;
     transition: all 0.4s ease-out;
 }
+
 .sectionlinks.quick-access a:hover .image.d-block::before {
     top: -7px;
 }
+
 .sectionlinks.quick-access .body-section li a .image.d-block svg {
     transition: all 0.5s ease-out;
 }
+
 .sectionlinks.quick-access .body-section li a:hover .image.d-block svg {
     fill: #fff;
 }
@@ -41,21 +48,26 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
     .sectionlinks.quick-access a .image.d-block::before {
         display: none;
     }
+
     .sectionlinks.quick-access .body-section li a:hover .image.d-block svg {
         fill: $secondary-svg;
     }
 }
+
 .r-item-img.r-item-img-placeholder {
 	background: url("../../assets/svg/placeholder.jpg");
 	background-size: cover;
 	background-position: center;
 }
+
 ul#portal-globalnav {
     justify-content: flex-end;
 }
+
 .smartweb_herobanner .bannerSwiper span.swiper-banner-title {
     font-family: $font-family-base;
 }
+
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
     font-family: $font-family-slogan;
     font-style: italic;

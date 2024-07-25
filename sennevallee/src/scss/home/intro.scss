@@ -1,14 +1,17 @@
 .image-intro {
     padding:0 1.5rem !important;
+
     .section-text {
         .body-section {
             figure {
                 max-width:100% !important;
                 position:relative;
                 float:none !important;
+
                 img {
                     border-radius: 80px 80px 80px 0px;
                 }
+
                 &:before {
                     background: url("../../assets/svg/image-before.svg");
                     content: "";

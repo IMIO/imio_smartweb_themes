@@ -10,6 +10,7 @@
     width: 100vw!important;
     z-index: -2;
   }
+
   &:after {
   background: url(../../assets/svg/demi-logo-wavre-cpas.svg);
   content: "";
@@ -21,6 +22,7 @@
   width: 320px;
   }
 }
+
 .sortable-section.sectionselections {
     position: relative;
     padding-top: $actu-section-padding-top;
@@ -36,6 +38,7 @@
         transform: translateX(-50%);
       }
     }
+
     .container {
       padding-right: 0;
       padding-left: 0;
@@ -44,6 +47,7 @@
         padding-left: calc(var(--bs-gutter-x) * 0.5);
       }
     }
+
     .section-title {
       color: $actu-title-color;
       margin: $actu-title-margin;
@@ -52,11 +56,14 @@
       @include media-breakpoint-up(lg) {}
       @include media-breakpoint-up(xxl) {}
     }
+
     .swiper-slide {
       height: auto;
+
       a {
         text-decoration: none;
       }
+
       &>a {
         display: grid;
         height: 100%;
@@ -65,13 +72,16 @@
         background: $actu-item-bg-color;
         border-radius: $actu-item-bg-radius;
       }
+
       .swiper-image {
         margin-bottom: $actu-image-margin-bottom;
         border-radius: $actu-image-border-radius;
         width: 100%;
       }
+
       .swiper_category {
         margin: $actu-category-margin;
+
         span {
           display: block;
           padding: $actu-category-padding;
@@ -83,6 +93,7 @@
           border-radius: $actu-category-radius;
         }
       }
+
       .swiper_date {
         padding: $actu-date-padding;
         margin: $actu-date-margin;
@@ -90,11 +101,13 @@
         font-size: $actu-date-font-size;
         text-align: $actu-date-align;
       }
+
       .swiper_title {
         padding: $actu-item-title-padding;
         margin: $actu-item-title-margin;
         width: 100%;
         padding: 0 1rem;
+
         h3 {
           color: $actu-item-title-color;
           font-size: $actu-item-title-font-size;
@@ -103,6 +116,7 @@
           text-align: $actu-item-title-align;
         }
       }
+
       .swiper_description {
         text-align: $actu-description-align;
         font-family: $actu-description-font-family;
@@ -110,12 +124,14 @@
         padding: 0 1rem;
       }
     }
+
     .swiper-button-prev {
       background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23FFC93C\"/></svg>");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
     }
+
     .swiper-button-next {
       background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23FFC93C\"/></svg>");
       background-position: center;
@@ -123,6 +139,7 @@
       background-size: 50%;
     }
   }
+
   .swiper-pagination-bullet-active {
     background: $primary !important;
   }
@@ -133,13 +150,16 @@
       @include see-all-style;
     }
   }
+
   .sortable-section.sectionlinks.see_all {
     background: transparent;
     padding-top: 0rem;
+
     #container-section-tous-nos-services  {
       display: flex;
       justify-content: center;
       margin: 0rem 0 0;
+
       a {
     background: $primary;
     border: 1px solid $primary;
@@ -155,6 +175,7 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+
        &:hover {
       background: #fff;
       border: 1px solid $primary;

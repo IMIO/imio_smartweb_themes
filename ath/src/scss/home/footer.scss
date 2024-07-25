@@ -2,34 +2,43 @@
     max-width: 200px !important;
     width: 100% !important;
 }
+
 #portal-footer-wrapper{
     text-align: left!important;
+
     #portal-footer{
         background:$primary-svg!important;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff;
                 text-decoration:none;
             }
+
             h2{
                 font-size: 22px!important;
                 font-weight: 500;
                 margin-top: 0rem;
+
                 &.section-title{
                 }
             }
+
             .sectiontext{
                 figure{
                     margin-top:0px;
+
                     img{
                         max-width: 100%;
                     }
                 }
             }
+
             .sectionlinks{
                 #container-section-reseaux-sociaux{
                             .col-md-12 {
                                 width:auto !important;
+
                                 .table_display {
                                     .table_image {
                                         .image {
@@ -38,6 +47,7 @@
                                                 height: 25px!important;
                                             }
                                         }
+
                                         .table_title {
                                             display: none !important;
                                         }
@@ -61,6 +71,7 @@
         }
     }
 }
+
 #portal-footer-wrapper #portal-footer h2.section-title {
     margin-bottom: 0.5rem;
 }
@@ -75,6 +86,7 @@
 #portal-colophon{
     background:#fff;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -84,10 +96,12 @@
         }*/
         li{
             color: $primary;
+
             a,span,p,div{
                 color: $primary;
             }
         }
+
         li:last-child {
             display: block;
             width: 100%;
@@ -124,9 +138,11 @@
     left: auto;
     padding: 0px;
     width: 100%;
+
     .row {
         li {
             width:25% !important;
+
     .table_display {
       .table_image {
         .image {
@@ -140,15 +156,18 @@
           justify-content: center;
           align-items: center;
           transition: all .5s ease;
+
           svg {
             width: 100%;
             fill:$primary;
             transition: all .5s ease;
           }
+
           &:hover {
             background:#fff;
           } 
         }
+
         .table_title {
           display:none;
         }

@@ -45,6 +45,7 @@ body .has_subtree.dropdown:first-child {
 .sortable-section.sectionfiles {
     margin: 2rem 0;
     padding: 2rem 2rem;
+
     .item_infos {
     color: #fff;
     }
@@ -54,6 +55,7 @@ html body {
     h3 {
     font-weight: 400;
     }
+
     h2 {
         text-transform: initial;
     }
@@ -68,24 +70,29 @@ html body {
 @include media-breakpoint-down(md) { 
     body .container .section-text .body-section.figure-left {
         display: grid;
+
         figure {
             margin: 0 auto;
             max-width: 760px;
             padding-bottom: 20px;
             }
     }
+
     body .container .pat-navigationmarker#subsite-navigation>ul:first-child>li.nav-item {
         padding: 5px 10px;
         border-radius: 50px;
         border: solid 1px #dcdcdc;
+
         &>a {
             padding: initial;
         }
     }
+
     body .container #subsite-navigation>ul {
         padding-bottom: 10px;
     }
 }
+
 body .container .sectiontext .section-text .body-section.figure-left figure {
     margin-right: 20px;
 }

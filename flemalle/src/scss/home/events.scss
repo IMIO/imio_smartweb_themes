@@ -1,43 +1,55 @@
 .sectionevents a {
     text-decoration: none;
+
     .image.w-100 {
     padding-bottom: 90%;
     border-radius: 10px;
     }
+
     .table_title {
         font-size: 1.5rem;
     }
 }
+
 .sectionevents ul li {
     list-style: none;
+
     .tabble_date {
         color: #505050;
         display: inline-flex;
+
         .start_date {
             padding-right: 0.3rem;
         }
     }
+
     .table_title {
         color: #000;
         font-weight: 600;
     }
+
     .table_category {
         padding: 1rem 0 0;
         color: #000;
     }
 }
+
 #container-section-agenda li div span, #container-section-agenda li div p {
     color: $primary;
   }
+
 .sectionevents .body-section ul li {
     margin-bottom: 1.5rem;
+
     .table_date {
         padding: 0.5rem 0;
     }
 }
+
 .sectionevents li .table_image div.image {
     position: relative;
 }
+
 .sectionevents li .table_image div.image::after {
     content: "";
     background: transparent;
@@ -49,6 +61,7 @@
     border-radius: 10px;
     top: 0;
 }
+
 .sectionevents li .table_image:hover div.image::after {
     background: $primary-svg;
     opacity: 0.5;

@@ -1,9 +1,11 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .quick-access{
     svg{
         max-height: 40px;
@@ -20,15 +22,18 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     span{
                     }
                 }
+
                 &:hover{
                     .image.d-block{
                         transform: translateY(-10px);
                         background: #00B0D6!important; 
                     }
+
                     svg{
                         fill: #fff !important;
                     }
@@ -43,11 +48,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         text-transform: uppercase;
@@ -77,6 +84,7 @@
                 transform: translateY(-10px);
                 background: #00B0D6!important; 
             }
+
             svg{
                 fill: #fff !important;
             }
@@ -96,6 +104,7 @@
         width: 70px;
         transition: all .3s ease;
     }
+
     .table_title span {
         color: #000;
         font-family: Roboto,sans-serif;

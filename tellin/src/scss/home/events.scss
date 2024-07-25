@@ -18,10 +18,12 @@
 
     .section-container{
         position: relative;
+
     .swiper-pagination-bullet-active {
         background: $primary-blue !important;
       }
     }
+
     .section-title{
         font-weight: 500;
         text-transform: none;
@@ -48,17 +50,21 @@
         color: #fff;
         background: $primary-svg;
         border: 1px solid $primary-svg;
+
         &:hover {
             background: $primary;
             border: 1px solid $primary;
         }
     }
+
     .row {
         margin: 0;
+
         li{
             &::marker {content:""!important;}
             padding: 20px 10px;
             border-bottom: 1px solid #C1C1C1;
+
             .table_display {
                 .table_image {
                     text-decoration: none;
@@ -73,6 +79,7 @@
                 text-align: right;
                 display: flex;
                 justify-content: flex-end;
+
                 span {
                 background: #ddd;
                 border-radius: 5px;
@@ -83,10 +90,12 @@
                 
                    
                }
+
                .table_date {
                 font-size: 10px;
                 transition: all 0.3s ease;
                }
+
                .table_title {
                 font-size: 16px;
                 font-weight: 500;
@@ -98,6 +107,7 @@
                     padding-left:7px;
                     transition: all 0.3s ease;
                    }
+
                 .table_title {
                     color:$primary-svg;
                     padding-left:7px;
@@ -109,6 +119,7 @@
             }
             }
         }
+
         li::marker {
             display: none !important;
           }

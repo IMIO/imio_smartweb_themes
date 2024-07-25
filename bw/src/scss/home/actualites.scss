@@ -5,24 +5,30 @@
     padding-bottom: 0px;
     position: relative;
     z-index: 1;
+
     .section-title{
         margin-bottom: 0;
         position:absolute;
     }
+
     .swiper-pagination-bullets{
         display: none !important;
     }
+
     .carousel {
         position: relative;
         padding-top:4rem;
         overflow: hidden;
     }
+
     .swiper-wrapper{
         padding-bottom: 5rem;
+
         .swiper-slide {
             & > a{
                 display: grid;
                 align-items: center;
+
                 .swiper-image{
                     padding-bottom: 55%;
                     transition: all .25s ease;
@@ -31,6 +37,7 @@
                     grid-row-start: 1;
                     grid-column-start: 1;
                 }
+
                 .swiper_category{
                     grid-row-start: 1;
                     position: relative;
@@ -38,6 +45,7 @@
                     align-self: end;
                     transform: translateY(-50%)
                 }
+
                 .swiper_date{
                     width: 100%;
                     text-transform: uppercase;
@@ -45,33 +53,42 @@
                     grid-row-start: 2;
                     opacity: .65;
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-title;
                     }
                 }
+
                 .swiper_description{
                     display: none;
+
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper-image{
                         mask-size: 99%;
                     }
+
                     .swiper_category{
                     }
+
                     .swiper_date{
 
                     }
+
                     .swiper_title{
                         h3{
                             color: $primary-svg;
         
                         }
                     }
+
                     .swiper_description{
                         p{
                             color: #fff;
@@ -82,6 +99,7 @@
             }
         }
     }
+
     .see_all {
         bottom: auto;
         left: 0;
@@ -89,12 +107,14 @@
         transform: none;
         z-index: 1;
     }
+
     .swiper-button-next, .swiper-button-prev {
         top: 25px;
         width: 45px;
         height: 45px;
         border-radius: 50px;
     }
+
     .swiper-button-prev{
         right:55px;
         left:auto;

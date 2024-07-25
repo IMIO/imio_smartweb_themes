@@ -45,6 +45,7 @@ h1 {
     font-family: $font-family-base!important;
     font-weight: 400!important;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
 	max-height: 500px;
@@ -55,6 +56,7 @@ h1 {
 
 .bannerSwiper .section-slide{
     .swiper-banner-content {display: none;}
+
     &:after{
         width: 1200px;
         max-width: 90%;
@@ -77,9 +79,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -117,6 +121,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -132,6 +137,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -140,6 +146,7 @@ footer #container-section-noussuivre{
 #portal-globalnav > li a:hover {
 	color: $primary-svg;
 }
+
 .portaltype-imio-smartweb-portalpage{
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
@@ -159,12 +166,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -173,8 +182,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;
@@ -233,27 +244,34 @@ footer #container-section-noussuivre{
      text-decoration: none;
     }
 }
+
 .breadcrumb {
 	font-size: 13px;
 }
+
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
     z-index: 1;
+
     .breadcrumb {
         margin: 0!important;
         background-color: #F1F1F1 !important;
         padding: 15px 30px !important;
+
         .breadcrumb-item {
             a {
                 color:#000 !important;
+
                 &:hover {
                     color:#000 !important;
                 }
             }
+
             &.active {
                 color:#000!important ;
             }
+
             &:before {
                 color: #000!important;
             }
@@ -265,6 +283,7 @@ footer #container-section-noussuivre{
 .header-custom {
     #banner {
         z-index: -1;
+
         &:after {
             content: "";
             position: absolute;
@@ -282,20 +301,25 @@ footer #container-section-noussuivre{
         margin: 0 !important;
         position: absolute;
         z-index: 1;
+
         .breadcrumb {
             margin: 0!important;
             background-color: #F1F1F1 !important;
             padding: 15px 30px !important;
+
             .breadcrumb-item {
                 a {
                     color:#000 !important;
+
                     &:hover {
                         color:#000 !important;
                     }
                 }
+
                 &.active {
                     color:#CCC!important ;
                 }
+
                 &:before {
                     color: #fff!important;
                 }
@@ -329,15 +353,16 @@ footer #container-section-noussuivre{
 #portal-column-content .sectioncontact .contact-type-organization {
     background: none;
 }
+
 .sectionlinks {
     background: none !important;
 }
+
 .sectionlinks h2:before{
     display:none !important;
 }
 
 @media screen and (max-width: 992px) {
-
       .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
       }
@@ -349,9 +374,6 @@ footer #container-section-noussuivre{
     }
 
     @media screen and (min-width: 992px) {
-
-
-  
         #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
           margin-top: 5rem !important;
       }
@@ -366,10 +388,12 @@ footer #container-section-noussuivre{
       #portal-breadcrumbs {
         z-index: 0 !important;
     }
+
       #subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
         z-index: 1 !important;
         top: 70px !important;
     }
+
     .swiper, .swiper-container {
         z-index: 0 !important;
     }

@@ -1,16 +1,20 @@
 .template-facetednavigation_view.faceted-map{
     background-color: #F8F8F8;
+
     input,fieldset{
         background-color: #fff!important;
     }
+
     .eea-preview-items{
         .faceted-map-item {
             box-shadow: none!important;
+
             &>a{
                 display: block;
                 background-color: $primary-light;
                 border-radius: 10px;
                 padding: 1rem;
+
                 .items-content {
                     flex-direction: row-reverse;
                     gap: 20px;
@@ -27,29 +31,37 @@
                             max-width: 40px;
                         }
                     }
+
                     .geo-item-image{
 
                     }
+
                     .geo-item-text {
                         padding: 0;
+
                         .geo-item-title {
                             color: $primary;
                         }
+
                         .geo-item-description {
                             color: $primary;
                         }
                     }
                 }
+
                 &:hover {
                     background-color: $primary-svg;
+
                     .items-content {
                         .geo-item-image{
     
                         }
+
                         .geo-item-text {
                             .geo-item-title {
                                 color: #000;
                             }
+
                             .geo-item-description {
                                 color: #000;
                             }

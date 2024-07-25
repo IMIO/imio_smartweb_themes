@@ -3,6 +3,7 @@
     padding-bottom: 3vw;
     padding-top: 3vw;
     background: #F3F3F3;
+
     &:after {
         content: "";
         background: #F3F3F3;
@@ -14,14 +15,17 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     a {
      text-decoration: none;
     }
+
     .row {
         justify-content: center;
         margin-top: 3rem;
         align-items: center;
     }
+
     span {
         color: #414141!important;
     }

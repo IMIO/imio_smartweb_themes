@@ -4,6 +4,7 @@
     padding-bottom: $newsletter-padding-bottom;
     margin: $newsletter-margin;
     position: relative;
+
     &:after{
         content: "";
         position: absolute;
@@ -15,9 +16,11 @@
         bottom: 0;
         background:$newsletter-bg-color;
     }
+
     .lead{
         margin: 0;
     }
+
     h2,label,.lead,.form-text{
         color: $newsletter-text-color;
     }

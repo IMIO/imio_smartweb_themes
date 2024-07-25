@@ -1,11 +1,14 @@
 footer {
     background: $primary;
 }
+
 footer div#smartweb-footer {
     background: $primary;
+
         h2, div a, ul li a, span {
         color: #fff !important;
         }
+
         .table_tittle span {
             font-size: 1rem;
         }
@@ -14,36 +17,46 @@ footer div#smartweb-footer {
 footer .image.d-block {
     display: none;
 }
+
 footer#portal-footer-wrapper {
     margin-top: 2rem;
+
         .smartweb-footer {
         .sectiontext .section-text .body-section.figure-top figure {
             margin-top: 0rem;
         }
+
         .container > .row {
         padding: 5rem 0;
         }
     }
+
     div#portal-colophon {
         background-color: $primary;
+
         ul li a {
             color: #fff;
         }
+
         ul li::marker{
             display: none;
         }
     }
+
     .colophon.row {
         background: $primary;
     }
 }
+
 footer {
     .sectiontext, .sectioncontact, .sectionlinks {
         padding-bottom: 2rem;
     }
+
     #portal-colophon, div.colophon {
     background-color: $primary;
     }
+
     div#body-section-liens-utiles li a {
         text-decoration: none;
     }
@@ -51,13 +64,16 @@ footer {
     div#body-section-liens-utiles li a:hover {
         text-decoration: underline;
     }
+
     .sectiontext #body-section-logo {
         text-align: center;
     }
+
     div#body-section-liens-utiles ul {
         margin-left: 0;
     }
 }
+
 .colophonWrapper ul li {
     display: inline-block;
 }

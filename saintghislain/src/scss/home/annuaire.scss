@@ -1,18 +1,22 @@
 .section-annuaire-plan{
     margin-left: auto;
     margin-top: 2rem;
+
     figure{
         width: 80%;
+
         img{
             width: 100%;
             display: block;
         }
     }
 }
+
 .portaltype-imio-smartweb-portalpage{
     .section-annuaire{
         max-width: 436px;
         margin-top: 7rem;
+
         ul {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -23,6 +27,7 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+
             &:before {
                 content: "";
                 width: 0;
@@ -30,10 +35,12 @@
                 grid-row: 1/1;
                 grid-column: 1/1;
             }
+
             & > :first-child {
                 grid-row: 1/1;
                 grid-column: 1/1;
             }
+
             li{
                 position: relative;
                 display: flex;
@@ -43,21 +50,26 @@
                 background: #fff;
                 border: solid 1px $primary;
                 border-radius: 10px;
+
                .table_display {
                     text-align: center;
                     height: 100%;
+
                     .table_image{
                         height: 100%;
                         padding-top: 2rem;
+
                         .table_title{
                             margin-top: 0!important;
                         }
                     }
+
                     .image.d-block{
                         background: transparent!important;
                     }
 
                 }
+
                 a.table_image::before {
                     content: "";
                     position: absolute;
@@ -66,26 +78,34 @@
                     top: 0;
                     bottom: 0;
                 }
+
                 &:hover{
                     background: $primary;
+
                     svg{
                         fill: #fff!important;
                     }
+
                     span{
                         color: #fff!important;
                     }
                 }
+
                 &:last-child{
                     border: 0px;
                     text-decoration: underline;
+
                     .table_title{
                         margin-top: 0!important;
                     }
+
                     .image{
                         display: none!important;
                     }
+
                     &:hover{
                         background: transparent;
+
                         span{
                             color: $primary!important;
                         }

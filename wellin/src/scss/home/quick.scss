@@ -1,15 +1,18 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	margin-top: -50px;
 	padding: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .quick-access{
     .table_image{
         &:hover,&:focus{
             .image.d-block{
                 background: $primary!important;
+
                 svg{
                     fill: #fff!important;
                 }
@@ -17,6 +20,7 @@
         }
     }
 }
+
 .quick-access.sites-de-la-commune svg {
 	width: 60px !important;
 	height: 60px !important;
@@ -27,6 +31,7 @@
         .row{
             flex-wrap: wrap;
             gap: 10px;
+
             li{
                 max-width: 120px;
             }

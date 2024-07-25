@@ -1,6 +1,7 @@
 .sectionnews{
     padding-top: 4rem;
     padding-bottom: 4rem;
+
     &:after{
         background: #ffbf49;
         border-radius: 50%;
@@ -18,11 +19,14 @@
         width: 80vw;
         z-index: -1;
     }
+
     .swiper-wrapper{
             padding-bottom: 100px;
+
         .swiper-slide{
             .swiper-image{
             }
+
             .swiper_title{
             }
         }
@@ -32,11 +36,14 @@
 .sectionevents{
     padding-top: 4rem;
     padding-bottom: 4rem;
+
     .swiper-wrapper{
         padding-bottom: 100px;
+
     .swiper-slide{
         .swiper-image{
         }
+
         .swiper_title{
         }
     }

@@ -4,6 +4,7 @@
     align-items: center;
     gap: 20px;
 }
+
 #search-link{
     a{
         width: 46px;
@@ -13,6 +14,7 @@
         align-items: center;
         border: 1px solid #C1C1C1;
         border-radius: 50px;
+
         &:before{
             content: "";
             width: 14px;
@@ -27,6 +29,7 @@
 .offcanvas-backdrop.show {
 	opacity: .5;
 }
+
 .offcanvas-backdrop {
 	position: fixed;
 	top: 0;

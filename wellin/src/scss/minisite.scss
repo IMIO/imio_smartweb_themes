@@ -18,6 +18,7 @@ $primary-tourisme-svg: #00656f;
     .sectionfiles .section-title {
         color: $primary-tourisme;
     }
+
     .sectiontext .section-text  ul li {
         &::before {
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-tourisme)}"/></svg>') !important;
@@ -28,18 +29,23 @@ $primary-tourisme-svg: #00656f;
             color: $primary-tourisme!important;
         }
     }
+
     .sectionfiles .table_image {
         border: 2px solid $primary-tourisme;
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
         color:$primary-tourisme;
     }
+
     .sectiontext .section-text .body-section a {
         color:$primary-tourisme;
     }
+
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: $primary-tourisme;
     }
+
     #portal-column-content .section-contact .contact-type-mission{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -47,6 +53,7 @@ $primary-tourisme-svg: #00656f;
             }
         }
     }
+
     #portal-column-content .section-contact .contact-type-organization{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -54,6 +61,7 @@ $primary-tourisme-svg: #00656f;
             }
         }
     }
+
     #portal-column-content .section-contact .contact-type-position{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -61,35 +69,45 @@ $primary-tourisme-svg: #00656f;
             }
         }
     }
+
     .sectionnews {
         .section-title {
             color: $primary-tourisme !important;
         }
     }
+
     .to-portal a {
         color: #fff;
     }
+
     .sectionnews .see_all a {
         color: $primary-tourisme!important;
+
         &:before {
             border: 1px solid $primary-tourisme!important;
         }
+
         &:hover{
             color: $primary-tourisme!important;
+
             &:before {
                 border: 1px solid $primary-tourisme!important;
             }
         }
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
         color:$primary-tourisme;
     }
+
     .smartweb_herobanner::after {
         background: $primary-tourisme-svg;
     }
+
     .sectiontext .section-text .body-section a {
         color: $primary-tourisme;
     }
+
     .quick-access {
         .section-title {
             color: $primary-tourisme !important;
@@ -134,7 +152,6 @@ $primary-tourisme-svg: #00656f;
 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-
         &>a:focus,
         &>a:hover {
             color: $primary-tourisme !important;
@@ -171,13 +188,16 @@ $primary-tourisme-svg: #00656f;
             }
         }
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
         border: solid 1px $primary-tourisme!important;
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
         position: relative;
         background-color: $primary-tourisme!important;
     }
+
     .swiper-pagination-bullet {
         background-color: $primary-tourisme!important;
     }
@@ -194,6 +214,7 @@ $primary-sport-svg: #ffd145;
             color: $primary-sport!important;
         }
     }
+
     .sectiontext .section-text  ul li {
         &::before {
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-sport)}"/></svg>') !important;
@@ -203,18 +224,23 @@ $primary-sport-svg: #ffd145;
     .sectionfiles .section-title {
         color: $primary-sport;
     }
+
     .sectionfiles .table_image {
         border: 2px solid $primary-sport;
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
         color:$primary-sport;
     }
+
     .sectiontext .section-text .body-section a {
         color:$primary-sport;
     }
+
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: $primary-sport;
     }
+
     #portal-column-content .section-contact .contact-type-mission{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -222,6 +248,7 @@ $primary-sport-svg: #ffd145;
             }
         }
     }
+
     #portal-column-content .section-contact .contact-type-organization{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -229,6 +256,7 @@ $primary-sport-svg: #ffd145;
             }
         }
     }
+
     #portal-column-content .section-contact .contact-type-position{
         .address,.contact_informations,.schedule{
             h2,.h2,h3,.h3 {
@@ -236,29 +264,37 @@ $primary-sport-svg: #ffd145;
             }
         }
     }
+
     .sectionnews {
         .section-title {
             color: $primary-sport !important;
         }
     }
+
     .to-portal a {
         color: #fff;
     }
+
     .sectionnews .see_all a {
         color: $primary-sport!important;
+
         &:before {
             border: 1px solid $primary-sport!important;
         }
+
         &:hover{
             color: $primary-sport!important;
+
             &:before {
                 border: 1px solid $primary-sport!important;
             }
         }
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
         color:$primary-sport;
     }
+
     .smartweb_herobanner::after {
         background: $primary-sport-svg;
     }
@@ -307,7 +343,6 @@ $primary-sport-svg: #ffd145;
 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-
         &>a:focus,
         &>a:hover {
             color: $primary-sport !important;
@@ -354,13 +389,16 @@ $primary-sport-svg: #ffd145;
             color: $primary-sport !important;
         }
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
         border: solid 1px $primary-sport!important;
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
         position: relative;
         background-color: $primary-sport!important;
     }
+
     .swiper-pagination-bullet {
         background-color: $primary-sport!important;
     }
@@ -379,26 +417,33 @@ $primary-cpas-svg: #fab4b6;
             color: $primary-cpas!important;
         }
     }
+
     .sectiontext .section-text  ul li {
         &::before {
           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-cpas)}"/></svg>') !important;
         }
       }
+
     .sectionfiles .section-title {
         color: $primary-cpas;
     }
+
     .sectionfiles .table_image {
         border: 2px solid $primary-cpas;
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
         color:$primary-cpas;
     }
+
     .sectiontext .section-text .body-section a {
         color:$primary-cpas;
     }
+
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: #c4236b;
     }
+
     #portal-column-content .section-contact .contact-type-mission .address .h2, 
     #portal-column-content .section-contact .contact-type-mission .address .h3, 
     #portal-column-content .section-contact .contact-type-mission .address h2, 
@@ -414,6 +459,7 @@ $primary-cpas-svg: #fab4b6;
      #portal-column-content .section-contact .contact-type-organization .address h3 {
         color: $primary-cpas;
     }
+
     #portal-column-content .section-contact .contact-type-organization .address .h2,
     #portal-column-content .section-contact .contact-type-organization .address .h3,
     #portal-column-content .section-contact .contact-type-organization .address h2,
@@ -428,26 +474,33 @@ $primary-cpas-svg: #fab4b6;
     #portal-column-content .section-contact .contact-type-organization .schedule h3 {
         color: $primary-cpas;
     }
+
     .sectionnews {
         .section-title {
             color: $primary-cpas !important;
         }
     }
+
     .to-portal a {
         color: #fff;
     }
+
     .sectionnews .see_all a {
         color: $primary-cpas!important;
+
         &:before {
             border: 1px solid $primary-cpas!important;
         }
+
         &:hover{
             color: $primary-cpas!important;
+
             &:before {
                 border: 1px solid $primary-cpas!important;
             }
         }
     }
+
     &.portaltype-imio-smartweb-portalpage {
         .sectiontext {
             h2 {
@@ -508,7 +561,6 @@ $primary-cpas-svg: #fab4b6;
 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-
         &>a:focus,
         &>a:hover {
             color: $primary-cpas !important;
@@ -545,13 +597,16 @@ $primary-cpas-svg: #fab4b6;
             }
         }
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
         border: solid 1px $primary-cpas!important;
     }
+
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
         position: relative;
         background-color: $primary-cpas!important;
     }
+
     .swiper-pagination-bullet {
         background-color: $primary-cpas!important;
     }
@@ -573,12 +628,15 @@ $primary-competences-svg: #E6740A;
             color: $primary-competences!important;
         }
     }
+
     .active > .page-link, .page-link.active {
         background-color: $primary-competences;
     }
+
     .procedure a {
         background: $primary-competences;
         color: #FFF !important;
+
         &:after {
             content: "➔";
             font-family: fontello;
@@ -589,18 +647,23 @@ $primary-competences-svg: #E6740A;
     .sectionevents {
         background-color:$primary-competences;
     }
+
     .sectionfiles .section-title {
         color: $primary-competences;
     }
+
     .sectionfiles .table_image {
         border: 2px solid  $primary-competences;
     }
+
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
         color:$primary-competences;
     }
+
     .sectiontext .section-text .body-section a {
         color:$primary-competences;
     }
+
     .sectiontext .section-text .body-section figure figcaption {
         display:block !important;
     }
@@ -614,6 +677,7 @@ $primary-competences-svg: #E6740A;
     #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
         color: $primary-competences;
     }
+
     #portal-column-content .section-contact .contact-type-mission .address .h2, 
     #portal-column-content .section-contact .contact-type-mission .address .h3, 
     #portal-column-content .section-contact .contact-type-mission .address h2, 
@@ -629,6 +693,7 @@ $primary-competences-svg: #E6740A;
      #portal-column-content .section-contact .contact-type-organization .address h3 {
         color: $primary-competences;
     }
+
     #portal-column-content .section-contact .contact-type-organization .address .h2,
     #portal-column-content .section-contact .contact-type-organization .address .h3,
     #portal-column-content .section-contact .contact-type-organization .address h2,
@@ -643,21 +708,27 @@ $primary-competences-svg: #E6740A;
     #portal-column-content .section-contact .contact-type-organization .schedule h3 {
         color: $primary-competences;
     }
+
     .sectionnews {
         .section-title {
             color: $primary-competences !important;
         }
     }
+
     .to-portal a {
         color: #fff;
     }
+
     .sectionnews .see_all a {
         color: $primary-competences!important;
+
         &:before {
             border: 1px solid $primary-competences!important;
         }
+
         &:hover{
             color: $primary-competences!important;
+
             &:before {
                 border: 1px solid $primary-competences!important;
             }
@@ -723,7 +794,6 @@ $primary-competences-svg: #E6740A;
 
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-
         &>a:focus,
         &>a:hover {
             color: $primary-competences !important;
@@ -760,6 +830,7 @@ $primary-competences-svg: #E6740A;
             }
         }
     }
+
     .nav_je-participe-1{
         a{
             color: $primary-competences-svg;
@@ -776,9 +847,11 @@ $primary-competences-svg: #E6740A;
         &.sectiontext .section-text .body-section .text {
             margin: 0;
             max-width: 543px;
+
             h2 {
                 color: $primary-competences-svg!important;
             }
+
             mark{
                 background: $primary-competences-svg!important;
                 border: solid 2px $primary-competences-svg!important;
@@ -786,12 +859,15 @@ $primary-competences-svg: #E6740A;
                 display: inline-block!important;
                 font-size: 20px!important;
                 padding: 12px 25px!important;
+
                 &:hover {
                     background: transparent!important;
+
                     a{
                         color: $primary-competences-svg!important;
                     }
                 }
+
                 a{
                     color: #fff!important;
                 }
@@ -813,10 +889,12 @@ $primary-competences-svg: #E6740A;
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 4vw!important;
+
     .text {
         padding: 30px;
     }
 }
+
 .compe-hi1 h2,
 .compe-hi1 h3,
 .compe-hi1 p{
@@ -828,6 +906,7 @@ $primary-competences-svg: #E6740A;
 background: top;
 border: 0;
 }
+
 .compe-hi1 mark a{
     display: inline-block;
     margin: 0 auto;
@@ -836,8 +915,10 @@ border: 0;
     padding: 1rem 2rem;
     border-radius: 15px;
 }
+
 .compe-hi2{
     margin-bottom: 4vw!important;
+
     .section-title {
         color: $primary-competences-svg!important;
         margin-bottom: 2rem;
@@ -845,15 +926,19 @@ border: 0;
         background: #fff;
         padding-bottom: 1.5rem;
     }
+
     .see_all {
         display: none;
     }
+
     .swiper{
         max-width: 450px;
     }
+
     .swiper-slide {
         & > a {
             place-items: unset;
+
             &:after{
                 content: "";
                 position: absolute;
@@ -864,6 +949,7 @@ border: 0;
                 transition: all .2s ease;
             }
         }
+
         .swiper_items_wrapper{
             display: flex;
             flex-direction: column;
@@ -876,10 +962,12 @@ border: 0;
             z-index: 1;
             padding: 5px 20px;
         }
+
         .swiper-image {
             padding-bottom: 100%;
             border-radius: 15px 15px 0 0;
         }
+
         .swiper_title {
             order: -1;
 
@@ -888,21 +976,26 @@ border: 0;
                 color: #fff!important;
             }
         }
+
         .swiper_category{
             display: none;
             order: -2;
+
             span{
                 width: max-content;
             }
         }
+
         .swiper_date{
             display: none;
         }
+
         .swiper_description {
             p {
                 color: #fff!important;
             }
         }
+
         & > a:hover {
             .swiper_items_wrapper{
                 top: 0%;
@@ -910,23 +1003,28 @@ border: 0;
                 transform: translateY(0);
                 background: transparent;
             }   
+
             &:after{
                 height: 100%;
                 border-radius: 15px 15px 0 0;
             }
+
             .swiper_category{
                 display: block;
             }
+
             .swiper_date{
                 display: block;
             }
         }
     }
+
     .nb-items-batch-1{
         background: $primary-competences-svg;
         padding-bottom: 2rem;
     }
 }
+
 .compe-hi2 .swiper-pagination{
     display: none;
 }

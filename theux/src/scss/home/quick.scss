@@ -4,13 +4,16 @@
     z-index: 0;
     left: 0;
 }
+
 body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionlinks.quick-access:first-child {
     position: initial;
     transform: initial;
   }
+
 body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-page .container.header-section.hide-in-preview {
     margin-left: 0;
   }
+
 body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-page #container-section-quick-access {
     margin-left: 0;
   }
@@ -22,13 +25,16 @@ body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-pag
     z-index: 0;
     }
 }
+
 .sectionlinks.quick-access .body-section li a .image.d-block svg {
     transition: 0.5s;
 }
+
 .sectionlinks.quick-access .body-section li a .image.d-block:hover svg {
     width: 40px;
     height: 40px;
 }
+
 body .sectionlinks.quick-access .section-container .row {
     @include media-breakpoint-up(lg){
     display: grid;
@@ -41,12 +47,14 @@ body .sectionlinks.quick-access .section-container .row {
     .sectionlinks.quick-access .body-section {
         padding: 0 0!important;
     }
+
     #body-section-quick-access ul{
         grid-gap: 10px;
         display: grid;
         grid-auto-rows: 1fr;
         grid-template-columns: repeat(auto-fit,minmax(150px,150px));
     }
+
     .quick-access{
         margin-top: -50px;
     }
@@ -84,6 +92,7 @@ body .sectionlinks.quick-access .section-container .row {
         grid-template-rows: auto auto;
     }
     }
+
     .sectionlinks.quick-access .body-section ul {
         justify-content: center;
     }
@@ -93,9 +102,11 @@ body .sectionlinks.quick-access .section-container .row {
         width: 128px;
     }
     }
+
     .sortable-section.sectionlinks.quick-access:first-child {
         transform: translateY(-70%);
     }
+
     .sectionlinks.quick-access .body-section {
         padding: 6rem 0;
     }
@@ -104,6 +115,7 @@ body .sectionlinks.quick-access .section-container .row {
         padding-top: 3.5rem;
         }
     }
+
     #portal-globalnav .quick-access .quick-access-title {
         color: $dark-color;
     }

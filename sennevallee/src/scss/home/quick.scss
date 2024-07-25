@@ -1,9 +1,11 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .sectionlinks.quick-access{
     background: $primary-blue-dark !important;
     padding:50px 50px !important;
@@ -51,16 +53,20 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     margin-top:0px;
+
                     span{
                         color:#fff !important;
                     }
                 }
+
                 &:hover{
                     .image.d-block{
                         background: $primary-blue; 
                     }
+
                     svg{
                         fill: #fff !important;
                     }
@@ -75,6 +81,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,250px));
+
             li{
                 width: auto!important;
             }
@@ -121,6 +128,7 @@
 
         &:hover{
             transition: all .3s ease;
+
             .image.d-block {
                 background: $primary-blue;
     

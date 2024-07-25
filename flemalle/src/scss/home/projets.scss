@@ -3,9 +3,11 @@
     direction: rtl; 
     }
 }
+
 div#container-section-les-grands-projets {
     position: relative;
 }
+
 body .projets div h2.section-title {
     color: $darktext !important;
     position: absolute;
@@ -14,12 +16,15 @@ body .projets div h2.section-title {
     text-transform: uppercase;
     font-size: 1.5rem !important;
 }
+
 body .projets {
     .swiper-button-prev, .swiper-button-next {
         display: none;
     }
+
     div.swiper-slide .swiper_title {
         padding: 36px 0 0;
+
         h3 {
         text-align: left;
         font-size: 2.5rem !important;
@@ -35,8 +40,10 @@ body .projets {
     z-index: 1;
     }
 }
+
 body .projets .swiper-slide .swiper_description {
     padding: 0 0 0 0 !important;
+
     p {
     direction: ltr;
     max-width: 100%;

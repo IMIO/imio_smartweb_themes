@@ -8,10 +8,10 @@
 
 
 .quick-access{
-    
     .body-section{
         ul {
             max-width: 1200px!important;
+
             li{
                 .table_image{
                     .image.d-block {
@@ -22,6 +22,7 @@
                     height: 120px;
                     transition: all .5s ease;
                     position: relative;
+
                     &:before {
                     background: #fff !important;
                     border-radius: 0px !important;
@@ -37,11 +38,13 @@
                     transition: all .5s ease;
                     }
                 }
+
                     &:hover,&:focus{
                         .image.d-block {
                         transform: translateY(-10px);
                         background: $primary-orange !important;
                         transition: all .5s ease;
+
                         &:before {
                             background: $primary-orange !important;
                             transition: all .5s ease;
@@ -53,6 +56,7 @@
                         margin: 1rem 0 0 0;
                         text-align: center;
                         text-decoration: none;
+
                         span {
                             font-size: 16px;
                             color: #000;
@@ -75,11 +79,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         //font-family:$font-family-roboto;

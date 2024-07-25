@@ -43,16 +43,20 @@
                     transform: translateY(10px);
                     border-radius: 80px 80px 80px 0px;
             }
+
             & > a{
                 align-items: center;
                 padding-bottom: 20px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     width: 100%;
                     text-align: left;
                     margin: 0;
+
                     span {
                         display: inline-block;
                         background: $primary-blue;
@@ -67,8 +71,10 @@
                     font-family: $font-family-base; 
                     width: 100%;
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
@@ -76,11 +82,13 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -91,9 +99,11 @@
             }
         }
     }
+
     .swiper-button-prev {
         display: none; 
         }
+
         .swiper-button-next {
         display: none;
         }

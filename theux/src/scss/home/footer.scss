@@ -6,23 +6,29 @@
 .smartweb_footer a {
     color: #fff;
 }
+
 footer .sectioncontact, footer .sextiontext, footer .sectionlinks {
     text-align: left;
+
     h2, h3, h4 {
         color: #fff;
     }
+
     h2, h2.section-title {
         text-align: left;
         font-size: 24px;
     }
 }
+
 footer .sectionlinks.rs {
     text-align: center;
+
     h2 {
     padding: 3rem 0px;
     margin-bottom: 0;
     text-align: center;
     }
+
     .plone-icon {
         height: 4em;
         width: auto;
@@ -30,24 +36,31 @@ footer .sectionlinks.rs {
         padding-bottom: 1rem;
     }
   }
+
 #portal-footer-wrapper #portal-footer.container {
     padding: 5rem 0 0;
 }
+
 #portal-colophon {
     background-color: $dark-color;
+
     .colophonWrapper {
         background-color: $dark-color;
+
         ul {
         display: flex;
         }
+
         li, li a {
             color: #fff;
         }
     }
 }
+
 footer .sectionlinks.rs.col-sm-12 {
     margin-top: 2rem;
 }
+
 footer .sectionlinks.rs.col-sm-12::before {
     content: "";
     width: 30%;
@@ -58,6 +71,7 @@ footer .sectionlinks.rs.col-sm-12::before {
     position: absolute;
     border-top: 1px solid #fff;
 }
+
 footer .sectionlinks.rs.col-sm-12::after {
     content: "";
     width: 80%;
@@ -68,9 +82,11 @@ footer .sectionlinks.rs.col-sm-12::after {
     position: absolute;
     border-top: 1px solid #fff;
 }
+
 footer a.table_image {
     text-decoration: none;
 }
+
 #portal-footer-wrapper {
     margin-top: 2rem;
   }

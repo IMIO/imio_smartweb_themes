@@ -5,9 +5,11 @@
     background: #f5f5f5;
     border-radius: 10px;
 }
+
 #body-section-a-la-une .swiper-slide>a .swiper_description, #body-section-a-la-une .swiper-slide>a .swiper_title {
     direction: ltr!important;
 }
+
 #body-section-a-la-une .swiper-slide .swiper-image {
     grid-row-end: 3;
     grid-row-start: 1;
@@ -25,6 +27,7 @@
     margin: 0;
     padding: 2rem 2rem 0;
 }
+
 #body-section-a-la-une .swiper-slide .swiper_description {
     background: none;
     grid-column: 2;

@@ -1,9 +1,11 @@
 
 .sectionlinks {
     padding: 0;
+
     .body-section{
         padding: 0;
     }
+
     svg{
         max-height: 40px;
         fill: #00B0D6 !important; 
@@ -19,15 +21,18 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     span{
                     }
                 }
+
                 &:hover{
                     .image.d-block{
                         transform: translateY(-10px);
                         background: #00B0D6!important; 
                     }
+
                     svg{
                         fill: #fff !important;
                     }
@@ -42,11 +47,13 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+
             li{
                 width: auto!important;
             }
         }
     }
+
     .section-title{
         font-weight: 200;
         text-transform: uppercase;
@@ -71,8 +78,10 @@
     margin-left: auto;
     margin-right: auto;
     max-width: auto;
+
     li {
         list-style: none;
+
         a {
             display: flex;
             flex-direction: column;
@@ -80,6 +89,7 @@
             padding: 10px;
             color:black;
             text-decoration: none;
+
             .image.d-block {
                 align-items: center;
                 background: #e5f7fb;
@@ -92,14 +102,17 @@
                 justify-content: center;
                 margin: 0 auto;
                 width: 70px;
+
                 svg {
                     fill: #009eb0;
                     height: auto;
                     width: 35px;
                 }
             }
+
             .table_title {
                 margin: 1rem auto;
+
                 span {
                     color: #000;
                     font-family: Roboto,sans-serif;

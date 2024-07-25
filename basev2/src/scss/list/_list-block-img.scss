@@ -1,12 +1,14 @@
 body.template-block_view_with_images .block-menu-element {
     a {
         text-decoration: none;
+
         .card-body {
             background: #fff;
             height: 180px;
             border-radius: 15px 15px 15px 0px;
             box-shadow: $block-small-shadow;
             position: relative;
+
             &::after {
                 // content: url(../svg/arrow-right-yellow.svg);
                 background: #fff;
@@ -20,10 +22,12 @@ body.template-block_view_with_images .block-menu-element {
                 margin: 1rem 1rem;
             }
         }
+
         &:hover,
         &:focus {
             .card-body{
                 box-shadow: $block-full-shadow;
+
                 &::after {
                     // content: url(../svg/arrow-right-white.svg);
                     background: $yellow;
@@ -39,6 +43,7 @@ body.template-block_view_with_images .block-menu-element {
                 }
             }
         }
+
         h2.card-title {
             &:hover,
             &:focus {

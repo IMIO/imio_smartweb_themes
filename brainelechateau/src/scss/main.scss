@@ -26,6 +26,7 @@ $enable-roboto-webfont: false;
         background: transparent !important;
     }
 }
+
 .a-la-une.focus::after {
     content: "";
     background: #026770;
@@ -64,14 +65,17 @@ $enable-roboto-webfont: false;
 .a-la-une .swiper-slide .swiper_title h3 {
     color: #000;
 }
+
 .a-la-une.focus {
     .swiper-slide .swiper_title .h3,
     .swiper-slide .swiper_title h3 {
         color: #fff !important;
     }
+
     .swiper-slide .swiper_description p {
         color: #fff !important;
     }
+
     .swiper-slide .swiper_title {
         align-self: start;
         background: transparent;
@@ -80,6 +84,7 @@ $enable-roboto-webfont: false;
         margin: 1rem 0 0;
         padding: 0px 36px 0;
     }
+
     &::before {
         content: url("../../assets/svg/focus-shape2.png");
         position: absolute;
@@ -102,6 +107,7 @@ $enable-roboto-webfont: false;
 .r-actu-wrapper::after {
     display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $primary;
 }
@@ -115,6 +121,7 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper,
 #portal-colophon {
     background: $primary;
+
     li,
     a {
         color: #fff;
@@ -140,6 +147,7 @@ $enable-roboto-webfont: false;
         left: inherit !important;
         transition: right .5s cubic-bezier(.54, .01, .68, .64) !important;
     }
+
     #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
         position: fixed !important;
         z-index: 1;
@@ -166,6 +174,7 @@ li:marker {
     h2 {
         color: #fff !important;
     }
+
     #body-section-nous-contacter {
         display: flex;
         justify-content: space-between;
@@ -177,10 +186,12 @@ li:marker {
             justify-content: center;
             align-items: center;
             text-align: center;
+
             .contact_logo {
                 margin-bottom: 2rem;
             }
         }
+
         .contact_logo {
             width: 146px;
             height: 61px;
@@ -188,10 +199,12 @@ li:marker {
             background-repeat: no-repeat;
         }
     }
+
     .plone-icon {
         fill: #fff;
     }
 }
+
 #portal-colophon {
     li {
         list-style: none;

@@ -19,6 +19,7 @@
   @include media-breakpoint-down(md){
     display: none;
   }
+
   &::after {
     display: none;
   }
@@ -32,6 +33,7 @@
   @include media-breakpoint-down(md){
     display: none;
   }
+
   &::after {
     display: none;
   }
@@ -42,11 +44,13 @@
       max-width: 25%;
     }
   }
+
   .nb-items-batch-3{
     .swiper-slide{
       max-width: 33%;
     }
   }
+
   .nb-items-batch-2{
     .swiper-slide{
       max-width: 50%;

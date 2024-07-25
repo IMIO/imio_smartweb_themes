@@ -1,7 +1,9 @@
 .partenaires {
     background: transparent;
+
     a.table_image {
         text-align: center;
+
             .d-block {
             align-items: center;
             background: $secondary-svg;
@@ -13,6 +15,7 @@
             justify-content: center;
             margin: 0 auto;
             width: 60px;
+
             .plone-icon {
             height: 2em;
             width: auto;
@@ -20,16 +23,20 @@
             }
         }
     }
+
     .table_title {
         margin-top: 1rem;
     }
+
     li {
         padding: 1rem 0;
     }
 }
+
 .sortable-section.sectionlinks.partenaires a {
     text-align: center;
   }
+
   .partenaires h2.section-title {
     color: $primary;
     font-size: 3rem;

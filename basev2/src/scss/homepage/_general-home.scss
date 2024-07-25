@@ -1,6 +1,7 @@
 @mixin see-all-style {
     margin: $see-all-margin;
     display: flex;
+
     a {
         position: relative;
         display: block;
@@ -16,16 +17,19 @@
         transition: $see-all-transition;
         font-family: $see-all-font-family;
         font-weight: $see-all-font-weight;
+
         &:hover,
         &:focus {
             background: $see-all-hover-bg;
             color: $see-all-hover-color;
             border-radius: $see-all-hover-radius;
             border: $see-all-hover-border;
+
             &:after{
                 width: $see-all-hover-underline-width;
             }
         }
+
         &:after{
             content: "";
             transition: all .2s ease;
@@ -48,6 +52,7 @@
     #content > header{
         display: none;
     }
+
     #content-core {
         margin-bottom: 0;
     }

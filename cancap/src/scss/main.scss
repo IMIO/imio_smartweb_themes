@@ -31,6 +31,7 @@ $enable-roboto-webfont: false;
 #container-section-intro{
     padding-top: 1rem;
     padding-bottom: 1.8rem;
+
     h2{
         margin: 0 0 0.9rem 0 !important;
     }
@@ -39,10 +40,12 @@ $enable-roboto-webfont: false;
 .sectiontext:first-child .section-text .body-section.figure-top figure {
 	margin-top: 0;
 }
+
 .sectiontext .mark, .sectiontext mark {
 	padding: 0!important;
     margin: 1rem 0;
     text-align: center;
+
     a{
         padding: 20px 45px 20px 26px;
     }
@@ -51,10 +54,12 @@ $enable-roboto-webfont: false;
 .section-gallery{
     max-width: 760px;
 }
+
 .portaltype-imio-smartweb-portalpage{
     #portal-header{
         margin-bottom: 0;
     }
+
     footer#portal-footer-wrapper {
         margin-top: 0!important;
     }
@@ -62,6 +67,7 @@ $enable-roboto-webfont: false;
 
 .navbar-toggler{
     background: #0e4194!important;
+
     span{
         background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important ;
     }
@@ -71,9 +77,11 @@ $enable-roboto-webfont: false;
     .swiper.bannerSwiper .swiper-banner-content-wrapper {
         top: 50%!important;
         transform: translateY(-50%)!important;
+
         .swiper-banner-title{
             font-size: 1.3rem!important;
         }
+
         .swiper-banner-description{
             p{
                 font-size: 18px!important;
@@ -82,26 +90,32 @@ $enable-roboto-webfont: false;
         }
     }
 }
+
 .sectionlinks.services{
     .swiper-wrapper{
         padding-bottom: 0;
     }
 }
+
 .portaltype-imio-smartweb-page .sectiontext:nth-child(5) {
 	margin-top: 0.8rem;
 	border-top: solid 1px #cbcbcb;
 	padding-top: 2rem;
 }
+
 .txt-center{
     text-align: center;
 }
+
 .sectiontext .mark, .sectiontext mark {
 	border: 2px solid $primary!important;
     border-radius: 6px;
 }
+
 .subsite-container{
     margin-top: 1.5rem;
 }
+
 .portaltype-imio-smartweb-portalpage .subsite-container{
     margin-top: 0!important;
 }
@@ -113,6 +127,7 @@ $enable-roboto-webfont: false;
             margin-right: auto; 
         }
     }
+
         img{
             width: 250px  
         }

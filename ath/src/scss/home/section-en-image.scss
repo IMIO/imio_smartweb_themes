@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     padding: 0px 120px 0px 40px;
+
     .section-title{
         font-weight: 600;
         text-align: center;
@@ -11,6 +12,7 @@
         width: max-content;
         font-size: 2.5rem;
     }
+
     #body-section-annuaire {
         .row {
             display: grid;
@@ -42,6 +44,7 @@
                     font-weight: 400;
                     transition: .5s;
                     text-decoration: none;
+
                     &:hover {
                         background: $primary;
                         color: #fff;
@@ -51,10 +54,9 @@
                 }
 
                 &:last-child {
-         
-        
                         .table_image {
                     background: $primary-light;
+
                     &:hover {
                         background: $primary;
                         color: #fff;
@@ -107,6 +109,7 @@
         font-size: 2rem;
         color:#fff;
     }
+
     #body-section-avis-et-enquetes {
         .row {
             display: grid;
@@ -142,6 +145,7 @@
                     font-weight: 400;
                     transition: .5s;
                     text-decoration: none;
+
                     &:hover {
                         background: url(../../assets/svg/doc.png) 20px center no-repeat $primary;
                         color: #fff;
@@ -157,6 +161,7 @@
             
             
         }
+
         .see_all {
             position: relative;
             display: block;
@@ -173,6 +178,7 @@
             font-weight: 400;
             transition: .5s;
             margin-top:30px;
+
             a {
                 text-decoration: none;
                 transition: .5s;
@@ -213,12 +219,14 @@
 
 .section-link-ath-en-images {
     padding-bottom: 0px;
+
     .container {
         .nb-items-batch-2 {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             width: 100%;
+
             .section-title {
                 font-weight: 600;
                 text-align: left;
@@ -227,9 +235,11 @@
                 width: max-content;
                 font-size: 2.5rem;
             }
+
             .body-section {
                 .table_image {
                     text-decoration: none;
+
                     .table_title {
                         position: relative;
                         display: block;
@@ -245,6 +255,7 @@
                         font-family: "Roboto", sans-serif;
                         font-weight: 400;
                         transition: .5s;
+
                         &:hover {
                             background: $primary;
                             color: #fff;
@@ -267,14 +278,17 @@
                 justify-content: left;
                 align-items:normal;
                 width: 100%;
+
                 .section-title {
                     width: 100%;;
                     text-align: center !important;
                     margin-bottom: 10px;;
                 }
+
                 .body-section {
                     .table_image {
                         text-decoration: none;
+
                         .table_title {
                             margin-bottom: 5px;
                             width: 100%;
@@ -291,13 +305,17 @@
 
 .albumhome-ath {
     padding-top:1rem;
+
     .see_all {
         display: none !important;
     }
+
     .swiper-slide {
         transition: .5s;
+
         a {
             text-decoration: none;
+
             .swiper_title {
                 h3 {
                     text-align: center;
@@ -307,6 +325,7 @@
                 }
             }
         }
+
         &:hover,&:focus{
             transition: .5s;
             transform: translateY(10px);
@@ -317,9 +336,11 @@
 @media screen and (max-width: 800px) {
     .albumhome-ath {
         padding-top:1rem;
+
         .table_display {
             transition: .5s;
             margin-bottom: 20px;
+
             .table_image {
                 text-decoration: none;
                 text-align: center;
@@ -329,6 +350,7 @@
                 }
                 
             }
+
             &:hover,&:focus{
                 transition: .5s;
                 transform: translateY(10px);

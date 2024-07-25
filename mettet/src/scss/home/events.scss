@@ -3,24 +3,29 @@
         font-weight: 200;
         margin-bottom: 0;
     }
+
     .swiper-wrapper{
         padding-top: 4rem;
+
         .swiper-slide {
             & > a{
                 padding: 1rem;
                 border: 1px solid #e3e3e3;
                 grid-template-rows: min-content min-content 1fr;
+
                 .swiper-image{
                     background-size: 100%;
                     background-position: center center;
                     transition: all .25s ease;
                 }
+
                 .swiper_date{
                     text-transform: uppercase;
                     font-family: $font-family-title;
                     align-self: end;
                     order: 1;
                 }
+
                 &:hover,&:focus{
                     .swiper-image{
                         background-size: 105%;
@@ -29,6 +34,7 @@
             }
         }
     }
+
     .swiper-button-next, .swiper-button-prev {
         top: 30px;
         width: 45px;
@@ -37,10 +43,12 @@
         border-radius: 50px;
         background-color: $primary;
     }
+
     .swiper-button-prev{
         left: inherit;
         right: 65px;
     }
+
     &:after{
         content:"";
         background: url("../../assets/svg/m-logo.svg");

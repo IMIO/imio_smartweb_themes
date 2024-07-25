@@ -24,13 +24,16 @@ $enable-roboto-webfont: false;
 body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper {
     overflow-x: hidden;
 }
+
 .swiper-image {
     position: relative;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: .5;
 }
+
 div.swiper-image:before {
     background: transparent;
     bottom: 0;
@@ -42,6 +45,7 @@ div.swiper-image:before {
     transition: all .2s ease;
     z-index: 0;
 }
+
 .sectionfiles .item_infos {
     color: #fff;
 }

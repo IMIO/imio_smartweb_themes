@@ -33,6 +33,7 @@ h1{
     text-align: left;
     padding-left:30px;
     margin-bottom:2rem;
+
     &:after{
         background: $primary-green;
         content: "";
@@ -48,11 +49,13 @@ h1{
 
     }
 }
+
 .smartweb_herobanner {
     width: 90vw;
     overflow: hidden;
     border-radius: 30px;
 }
+
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
 	max-height: 500px;
@@ -63,10 +66,12 @@ h1{
 
 .bannerSwiper .section-slide{
     .swiper-banner-content {display: none;}
+
     &:after{
         display: none;
     }
 }
+
 .swiper-banner-image:after {
     content: "";
     background: #0000;
@@ -90,9 +95,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -133,6 +140,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -148,6 +156,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -172,12 +181,14 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-fb {
     .table_image {
         display: flex;
@@ -186,8 +197,10 @@ footer #container-section-noussuivre{
         flex-direction: row-reverse;
         gap: 10px;
         text-decoration: none;
+
         .image{
             width: auto;
+
             svg {
                 height: 25px;
                 fill: #fff;
@@ -214,10 +227,12 @@ footer #container-section-noussuivre{
 .subsite-container {
     background: $primary-light;
     border-radius: 10px;
+
     #subsite-logo {
 	font-size: 18px;
     background: #353535;
     border-radius: 10px 0 0 10px;
+
     a {
         .subsite-title{
             color:#fff!important;
@@ -268,12 +283,15 @@ footer #container-section-noussuivre{
      text-decoration: none;
     }
 }
+
 .breadcrumb {
 	font-size: 13px;
 }
+
 .header-custom {
     #banner {
         z-index: -1;
+
         &:after {
             content: "";
             position: absolute;
@@ -284,21 +302,27 @@ footer #container-section-noussuivre{
             background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.5) 100%);
         }
     } 
+
     #portal-breadcrumbs {
         margin: .5rem 0 0 0 !important;
         position: absolute;
+
         .breadcrumb {
             margin: 0!important;
+
             .breadcrumb-item {
                 a {
                     color: #fff!important;
+
                     &:hover {
                         color: #CCC!important;
                     }
                 }
+
                 &.active {
                     color:#CCC!important ;
                 }
+
                 &:before {
                     color: #fff!important;
                 }
@@ -337,6 +361,7 @@ footer #container-section-noussuivre{
 .swiper-pagination-bullet {
     background: #A3A3A3!important;
 }
+
 .swiper-pagination-bullet-active {
     background: $primary-green!important;
 }
@@ -351,13 +376,16 @@ footer #container-section-noussuivre{
     background: $primary-light;
     color:#000;
     transition: all .25s ease;
+
     &:hover {
         background:$primary-green;
         transition: all .25s ease;
         color:#fff;
+
         div {
             color:#fff !important;
         }
+
         span {
             color:#fff !important;
         }

@@ -67,24 +67,27 @@
 
         @media screen and (max-width:900px) {
             .section-title{
-        
                 &:after {
                     margin-top: -80px;
                 }
                 }
             }
+
     .body-section{
         .row{
             max-width: 100%;
             margin: 0 auto;
             border-radius: 100px;
             background: $primary-red;
+
             li{
                 padding: 0!important;
             }
+
             .table_display{
                 height: 100%;
             }
+
             .table_image{
                 padding: 1.5rem 1rem;
                 background: $primary-red;
@@ -97,8 +100,10 @@
                 height: 100%;
                 transition: all .25s ease;
                 color: #fff;
+
                 .image{
                     width: auto;
+
                     svg{
                         height: auto;
                         width: 40px;
@@ -107,14 +112,17 @@
                         fill: #fff;;
                     }
                 }
+
                 &:hover{
                     transition: all .25s ease;
                     background: $primary-redb;
+
                     .image{
                         svg{
                             opacity:1;
                         }
                     }
+
                     .table_title{
                         span{
                         }
@@ -127,6 +135,7 @@
         @media screen and (max-width:767px) {
             .row{
                 border-radius: 20px;
+
                 .table_image{
                     border-radius: 20px;
                 }

@@ -6,6 +6,7 @@
     svg{
         max-height: 45px;
     }
+
     .row{
         max-width: 680px;
         margin: 0 auto;
@@ -14,6 +15,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+
             li{
                 width: auto!important;
             }
@@ -27,36 +29,43 @@
             background: #2B3271;
         }
     }
+
     &:nth-child(2) {
         a .image.d-block {
             background: #68BDEB;
         }
     }
+
     &:nth-child(3) {
         a .image.d-block {
             background: #4082AA;
         }
     }
+
     &:nth-child(4) {
         a .image.d-block {
             background: #BA2645;
         }
     }
+
     &:nth-child(5) {
         a .image.d-block {
             background: #BA2645;
         }
     }
+
     &:nth-child(6 ) {
         a .image.d-block {
             background: #E59735;
         }
     }
+
     &:nth-child(7) {
         a .image.d-block {
             background: #76B14C;
         }
     }
+
     &:nth-child(8) {
         a .image.d-block {
             background: #449980;
@@ -87,6 +96,7 @@
             border-right: solid 1px #000;
         }
     }
+
    &:after {
         content: "";
         background: #f4f3f8;
@@ -115,18 +125,21 @@
             background-size: contain;
         }
     }
+
     &:nth-child(2) {
         a .image.d-block {
             background: url("../../assets/svg/culture.png");
             background-size: contain;
         }
     }
+
     &:nth-child(3) {
         a .image.d-block {
             background: url("../../assets/svg/beslow.png");
             background-size: contain;
         }
     }
+
     &:nth-child(4) {
         a .image.d-block {
             background: url("../../assets/svg/sport.png");

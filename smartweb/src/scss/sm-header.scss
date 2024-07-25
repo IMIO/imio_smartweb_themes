@@ -7,6 +7,7 @@
       grid-template-columns: $main-logo-max-width 1fr $main-search-max-width!important;
       grid-template-areas: "logo menu search" "messageviewlet messageviewlet messageviewlet"  "sub sub sub" "localmessageviewlet localmessageviewlet localmessageviewlet" "bread bread bread";
     }
+
     #portal-logo{
       grid-area: logo;
       max-width: $main-logo-max-width;
@@ -15,38 +16,47 @@
       @include media-breakpoint-down(lg) {
         justify-self: center;
       } 
+
       img{
         max-width: 100%;
       }
     }
+
     #portal-searchbox{
       justify-self: end;
       grid-area: search;
     }
+
     #portal-globalnav-wrapper{
       grid-area: menu;
       @include media-breakpoint-down(lg) {
         justify-self: right;
+
         .container{
           padding: 0;
         }
       }
     }
+
     #plone-breadcrumb{
       grid-area: bread;
     }
+
     nav#portal-breadcrumbs {
       grid-area: bread;
     }
+
     .subsite-container{
       grid-area: sub;
       overflow-x: clip;
     }
+
     #header-links{
       #header-actions{
         @include media-breakpoint-down(lg) {
           display: none;
         } 
+
         .account{
           text-decoration: none;
           text-decoration: none;
@@ -61,6 +71,7 @@
           overflow: hidden;
           transition: all .4s ease;
           width: max-content;
+
           &::after{
             content: "";
             background: $primary;
@@ -74,12 +85,15 @@
             border-bottom-right-radius: 20px;
             transition: all .4s ease;
           }
+
           &:hover{
             color: #fff;
+
             &:after{
               width: 106%;
             }
           }
+
           span{
             display: flex;
             gap: 5px;
@@ -87,6 +101,7 @@
             @include media-breakpoint-down(xl) {
               font-size: 14px;
             }
+
             &:before{
               content: url(../../assets/svg/mascotte.svg);
               display: flex;
@@ -108,9 +123,11 @@
 .portalMessage.info{
     background: $message-info;
 }
+
 .portalMessage.warning{
     background: $message-warning;
 }
+
 .portalMessage.error{
     background: $message-error;
 }

@@ -2,17 +2,21 @@
     text-align: left!important;
     background: transparent;
     margin-top: 5rem;
+
     #portal-footer{
         background: $primary!important;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+
         #smartweb-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
@@ -25,12 +29,15 @@
 #portal-colophon{
     background: $primary!important;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }

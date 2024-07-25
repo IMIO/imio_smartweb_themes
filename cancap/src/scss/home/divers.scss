@@ -15,6 +15,7 @@
 div.swiper-image {
     position: relative;
 }
+
 div.swiper-image::before {
     background: transparent;
     content: "";
@@ -26,6 +27,7 @@ div.swiper-image::before {
     transition: all .2s ease;
     z-index: 99;
 }
+
 .swiper-slide:hover a div.swiper-image:before {
     background: $primary;
     opacity: 0.5;
@@ -38,9 +40,11 @@ div.swiper-image::before {
 .r-actu-wrapper::after {
     display: none !important;
 }
+
 .r-list-item-group:hover .r-item-arrow-more {
     background-color: $secondary !important;
 }
+
 .r-content button {
     background: $primary;
     color: #fff;
@@ -50,6 +54,7 @@ div.swiper-image::before {
     border: solid 1px $primary;
     margin-bottom: 1rem;
 }
+
 .sectiontext .mark, .sectiontext mark {
     border: 2px solid $secondary;
 }

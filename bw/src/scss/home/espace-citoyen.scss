@@ -3,10 +3,12 @@
     padding-bottom: 3vw;
     padding-top: 3vw;
     background: #F3F3F3;
+
     .section-title{
         text-align: center;
         color:$primary;
     }
+
     &:after {
         content: "";
         background: #F3F3F3;
@@ -18,17 +20,21 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     a {
      text-decoration: none;
     }
+
     .row {
         justify-content: center;
         margin-top: 3rem;
         align-items: center;
     }
+
     span {
         color: #414141!important;
     }
+
     .table_display {
         .table_image {
             display: flex;
@@ -37,9 +43,11 @@
             align-items: center;
             gap: 10px 0;
         }
+
         .image.d-block.w-100 {
             width: auto;
         }
+
         .plone-icon {
             height: 55px;
         }

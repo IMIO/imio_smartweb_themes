@@ -2,29 +2,36 @@
     text-align: left!important;
     background: transparent;
     margin-top: 2rem;
+
     #portal-footer{
         background:$primary-blue-dark!important;
         padding: 60px 0px;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             h3{
                 font-size: 18px!important;
                 color: #fff;
             }
+
             .sectiontext{
                 #body-section-logo {
                     margin-top: 2rem;
                 }
+
                 figure{
                     img{
                         width: 150px;
@@ -34,6 +41,7 @@
             }
         }
     }
+
     .sectiontext .section-text .body-section.figure-left figure img, .sectiontext .section-text .body-section.figure-right figure img {
         border-radius: 0px !important;
     }
@@ -42,15 +50,18 @@
 #portal-colophon{
     background: url("../../assets/bg-footer.png") right bottom no-repeat $primary-blue-dark !important;
     padding: 2rem 350px 2rem 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
             text-align: left;
             width: auto;
+
             a,span,p,div{
                 color: #fff!important;
             }
@@ -63,6 +74,7 @@
         padding: 2rem 1rem 150px 1rem;
     }
 }
+
 #portal-colophon ul li:last-child {
     display: block;
     width: 100%;

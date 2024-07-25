@@ -1,6 +1,7 @@
 #portal-header #portal-header-top #portal-logo {
     position: relative;
 }
+
 body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo:before {
     background: #fff;
     border-radius: 50%;
@@ -12,6 +13,7 @@ body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo:before
     top: -80px;
     z-index: 0;
 }
+
 body:not(.is-in-minisite) #portal-header #portal-header-top #portal-logo {
     height: 115px;
 }

@@ -43,12 +43,15 @@
                     //transform: translateY(5px);
                     //border-radius: 50px;
             }
+
             & > a{
                 align-items: left;
                 padding-bottom: 20px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     //display:none !important;
                     span {
@@ -69,14 +72,17 @@
                     width: 100%;
                     text-transform: uppercase;
                 }
+
                 .swiper_title{
                     width: 100%;
+
                     h3{
                         font-family: $font-family-base;
                         transition: .5s;
                         font-weight: 600 !important;
                         
                     }
+
                     &:after {
                         background: url("../../assets/svg/btn.svg");
                         background-position: 100% 100%;
@@ -98,12 +104,15 @@
                         transition: .3s;
                     }
                 }
+
                 .swiper_description{
                     display: none;
+
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -113,12 +122,14 @@
 
                     .swiper_title{
                         width: 100%;
+
                         h3{
                             font-family: $font-family-base;
                             transition: .5s;
                             font-weight: 600 !important;
                             
                         }
+
                         &:after {
                             color: $primary-red;
                             padding-right: 2.5rem;
@@ -129,9 +140,11 @@
             }
         }
     }
+
     .swiper-button-next {
         border:2px solid #000;
     }
+
     .swiper-button-prev {
         border:2px solid #000;
     }

@@ -6,12 +6,15 @@ html body #portal-footer-wrapper{
     h2,h3,h4,p,span,a,div{
         color: #fff!important;
     }
+
     .contact_subtitle{
         display: none!important;
     }
+
     #portal-footer{
         padding-top: 5rem;
     }
+
     h2{
         font-size: 1.7rem!important;
     }
@@ -19,10 +22,12 @@ html body #portal-footer-wrapper{
 
 #portal-colophon{
     background: $primary;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0!important;
+
         h2,h3,h4,p,span,a,div,li{
             color: #fff!important;
         }

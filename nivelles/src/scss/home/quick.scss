@@ -5,12 +5,14 @@
     @media screen and (min-width: 1000px) {
         margin-top: -90px;
     }
+
     .section-container {
         @media screen and (min-width: 1000px) {
             & > div {
                  display: flex;
                  justify-content: space-between;
                  align-items: center;
+
                  .body-section {
                      flex-basis: 55%;
                  }
@@ -24,6 +26,7 @@
       width: auto !important;
     }
   }
+
 .quick-access{
     svg{
         max-height: 40px;
@@ -39,16 +42,19 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     span{
                     }
                 }
+
                 &:hover{
                     .image.d-block{
                         transform: translateY(-10px);
                         background: $primary!important; 
                         border: solid 5px $primary-light;
                     }
+
                     svg{
                         fill: #fff !important;
                     }
@@ -62,6 +68,7 @@
             grid-gap: 0;
             display: grid;
             grid-template-columns: 1fr 1fr!important;
+
             li{
                 width: auto!important;
             }
@@ -70,6 +77,7 @@
             grid-gap: 0;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(56px,181px));
+
             li{
                 width: auto!important;
             }

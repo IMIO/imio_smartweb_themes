@@ -29,10 +29,12 @@
 
     .section-container{
         position: relative;
+
     .swiper-pagination-bullet-active {
         background: $primary-blue !important;
       }
     }
+
     .section-title{
         font-weight: 600;
         text-transform: none;
@@ -69,18 +71,23 @@
                     background: #fff;
                     border-radius: 50px 0 50px 0;
             }
+
             & > a{
                 align-items: center;
                 padding-bottom: 20px;
+
                 .swiper-image{
                     transition: .5s;
                 }
+
                 .swiper_category{
                     
                 }
+
                 .swiper_date{
                     font-family: $font-family-base; 
                 }
+
                 .swiper_title{
                     h3{
                         font-family: $font-family-base;
@@ -88,11 +95,13 @@
                         
                     }
                 }
+
                 .swiper_description{
                     p{
                         margin: 0;
                     }
                 }
+
                 &:hover{
                     .swiper_title{
                         h3{
@@ -103,12 +112,15 @@
             }
         }
     }
+
     .swiper-button-prev {
         display: none; 
         }
+
         .swiper-button-next {
         display: none;
         }
+
      .section-container .swiper-pagination-bullet-active{
         background: $primary-red !important;
     }

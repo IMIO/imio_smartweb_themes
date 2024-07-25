@@ -3,10 +3,12 @@
         max-width: 240px;
         font-size: 42px;
     }
+
     .row {
         li {
             width: auto;
         }
+
         .table_image {
             width: 154px;
             height: 154px;
@@ -19,6 +21,7 @@
             outline: solid $primary 0px;
             transition: all .2s ease;
             text-decoration: none;
+
             .table_title {
                 span {
                     font-weight: bold;
@@ -27,9 +30,11 @@
                     text-transform: uppercase;
                 }
             }
+
             svg {
                 fill: #fff;
             }
+
             &:after {
                 content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Cpath d='M21 42C9.42 42 0 32.58 0 21S9.42 0 21 0s21 9.42 21 21-9.42 21-21 21Zm0-39C11.07 3 3 11.07 3 21s8.07 18 18 18 18-8.07 18-18S30.93 3 21 3Z' style='fill:%23fff;stroke-width:0'/%3E%3Cpath d='M28.5 19.5h-6v-6h-3v6h-6v3h6v6h3v-6h6v-3z' style='fill:%23fff;stroke-width:0'/%3E%3C/svg%3E");
                 width: 20px;
@@ -37,61 +42,75 @@
                 margin: 0 auto;
                 margin-top: auto;
             }
+
             &:hover {
                 outline:solid $primary 10px;
             }
         }
+
         li:nth-child(2) {
             .table_image  {
                 background: $yellow;
                 outline: solid $yellow 0px;
+
                 .table_title {
                     span {
                         color: $primary;
                     }
                 }
+
                 svg {
                     fill: $primary;
                 }
+
                 &:hover {
                     outline: solid $yellow 10px;
                 }
             }
         }
+
         li:nth-child(3) {
             .table_image  {
                 background: $primary-light;
                 outline: solid $primary-light 0px;
+
                 .table_title {
                     span {
                         color: #1E3567;
                     }
                 }
+
                 svg {
                     fill: #1E3567;
                 }
+
                 &:hover {
                     outline: solid $primary-light 10px;
                 }
             }
         }
+
         li:nth-child(4) {
             .table_image  {
                 background: $primary;
             }
         }
+
         li:nth-child(5) {
             .table_image  {
                 background: $yellow;
                 outline: solid $yellow 0px;
+
                 .table_title {
                     span {
                         color: $primary;
                     }
                 }
+
                 svg {
                     fill: $primary;
                 }
+
                 &:hover {
                     outline: solid $yellow 10px;
                 }
@@ -99,19 +118,23 @@
         }
 
     }
+
     .display-paysage .image.d-block.w-100 {
         aspect-ratio: inherit;
         margin-bottom: 2px;
         width: auto;
+
         svg {
             width: 45px;
             height: auto;
         }
     }
+
     .table_title {
         max-width: 130px;
         text-align: center;
     }
+
     &:after {
         content: "";
         background: #f8f8f8;

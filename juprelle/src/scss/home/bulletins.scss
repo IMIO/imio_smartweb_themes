@@ -9,6 +9,7 @@
     #container-section-bulletin-communal .carousel {
         //padding:15px !important;
     }
+
     .section-title{
         font-weight: 800;
         text-align: center;
@@ -16,6 +17,7 @@
         position: relative;
         margin: 0 auto 4.5rem;
         width: max-content;
+
         &:after{
             left:0%;
             top: 80px;
@@ -33,6 +35,7 @@
     @media screen and (max-width: 1000px) {
         .section-title{
             font-size: 32px !important;
+
             &:after{
                 top: 50px;
                 height: 8px;
@@ -40,6 +43,7 @@
             }
         }
     }
+
     .swiper-slide {
             background: transparent;
             transition: .5s;
@@ -52,10 +56,12 @@
                     transform: translateY(10px);
                     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
     }
+
          a {
         text-decoration: none;
     }
 }
+
     .swiper_title h3 {
     padding: 20px;
     font-family: Roboto,sans-serif;
@@ -87,6 +93,7 @@
     width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
+
         &:hover {
             background: transparent;
             border: 1px solid #f04801;

@@ -1,9 +1,11 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .quick-access{
     .section-title{
         font-weight: 800;
@@ -12,6 +14,7 @@
         position: relative;
         text-align: center !important;
         margin: 0 0 4rem 0 !important ;
+
         &:after{
             content: url("../../assets/svg/souligne.svg");
             display: block;
@@ -38,20 +41,26 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     margin-top:0px;
+
                     span{
                     }
                 }
+
                 &:hover{
                     .image.d-block{
                         background: $primary; 
                     }
+
                     svg{
                         fill: #fff !important;
                     }
+
                     .table_title{
                         margin-top:0px;
+
                         span{
                             color:#fff;
                         }
@@ -67,6 +76,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+
             li{
                 width: auto!important;
             }

@@ -1,9 +1,11 @@
 .sectionlinks .image.d-block {
     position: relative;
 }
+
 .sectionlinks {
     z-index: 0;
 }
+
 body:not(.section-home-page) .outer-wrapper .sectionlinks {
     padding-top: 4rem;
 }
@@ -11,6 +13,7 @@ body:not(.section-home-page) .outer-wrapper .sectionlinks {
 body:not(.section-home-page) #content .sectionlinks:after {
     background: transparent;
 }
+
 .sectionlinks li:nth-child(odd) .image.d-block::after {
     content: "";
     background: $secondary-svg;
@@ -22,6 +25,7 @@ body:not(.section-home-page) #content .sectionlinks:after {
     position: absolute;
     z-index: -1;
 }
+
 .sectionlinks li:nth-child(even) .image.d-block::after {
     content: "";
     background: $secondary-svg;
@@ -33,9 +37,11 @@ body:not(.section-home-page) #content .sectionlinks:after {
     position: absolute;
     z-index: -1;
 }
+
 .sectionlinks .table_image:focus .image.d-block, .sectionlinks .table_image:hover .image.d-block {
     transform: translateY(-15px);
 }
+
 .sectionlinks .table_image .image.d-block {
     transition: all .15s ease;
 }

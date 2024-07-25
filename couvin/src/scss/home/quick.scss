@@ -9,9 +9,11 @@
         transform: initial;
         position: initial;
     }
+
     .sectionlinks.quick-access {
         transform: translateY(-90%);
     }
+
     #container-section-acces-directs #body-section-acces-directs ul.row {
         grid-gap: 5px;
         align-items: center;
@@ -19,12 +21,14 @@
         grid-auto-rows: 1fr;
         grid-template-columns: repeat(auto-fit,minmax(135px,auto));
     }
+
     .suivez-nous ul.row {
     grid-gap: 20px 15px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill,minmax(136px,1fr));
     }
+
     body .sectionlinks.annuaire ul {
         grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
     }
@@ -42,6 +46,7 @@ background: #fff;
 .quick-access ul.row a.table_image:hover {
     background: $primary-svg;
 }
+
 .sectionlinks.quick-access.suivez-nous {
     transform: initial;
     position: initial;

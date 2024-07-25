@@ -14,6 +14,7 @@
         text-transform: uppercase;
         transition: all .2s ease;
         width: max-content;
+
         &:hover, &:focus {
             background: #e4b816;
             text-decoration: none!important;
@@ -25,19 +26,23 @@
 .footer-social-cpas {
     position: relative;
     text-align: center;
+
     .row {
         justify-content: center;
     }
+
     &:before {
         content: url("../../assets/logo-cpas.png");
         margin-bottom: 10px;
         display: block;
     }
+
     .section-title {
         font-size: 30px;
         margin-top: 5px;
         margin-bottom: 15px;
     }
+
     .table_image {
         width: 60px;
         height: 60px;
@@ -47,12 +52,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         svg {
             fill: $primary;
             width:28px;
             height: auto;
         }
     }
+
     .table_title {
         border: 0 !important;
         clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -66,6 +73,7 @@
         width: 1px !important;
         white-space: nowrap !important;  
     }
+
     li {
         width: auto;
     }
@@ -82,9 +90,11 @@
         padding-top: 10px;
         font-weight: 500;
     }
+
     #portal-footer-wrapper {
         margin-top: 5rem;    
     }
+
     #portal-header {
         margin-bottom: -5px;
     }
@@ -100,14 +110,17 @@
 .footer-social-tour {
     position: relative;
     text-align: center;
+
     .row {
         justify-content: center;
     }
+
     .section-title {
         font-size: 30px;
         margin-top: 5px;
         margin-bottom: 15px;
     }
+
     .table_image {
         width: 60px;
         height: 60px;
@@ -117,12 +130,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         svg {
             fill: $primary;
             width:28px;
             height: auto;
         }
     }
+
     .table_title {
         border: 0 !important;
         clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -136,6 +151,7 @@
         width: 1px !important;
         white-space: nowrap !important;  
     }
+
     li {
         width: auto;
     }
@@ -153,6 +169,7 @@
         font-weight: 500;
         text-decoration: none;
         border-bottom: solid 2px transparent !important;
+
         &:hover {
             border-bottom: solid 2px #fff !important;
         }

@@ -24,13 +24,16 @@ $enable-roboto-webfont: false;
 .portaltype-imio-smartweb-portalpage{
     overflow-x: hidden;
 }
+
 #portal-header #portal-header-top #header-links #search-link a {
     background: #fff;
 }
+
 .navbar-toggler{
     border: 1px solid #c1c1c1; 
     background: #fff;
 }
+
 .swiper-pagination{
     display: none;
 }
@@ -52,16 +55,20 @@ $enable-roboto-webfont: false;
 	border-radius: 20px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
+
 	#subsite-logo{
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
 	}
+
 	.nav-link{
 		text-transform: initial!important;
 	}
 }
+
 #portal-breadcrumbs{
 	background-color: transparent;
+
 	.container{
 		padding-left: 0;
 	}
@@ -72,9 +79,11 @@ $enable-roboto-webfont: false;
 		display: none;
 	}
 }
+
 #header-actions{
 	a{
 		text-decoration: none!important;
+
 		span{
 			font-size: 16px;
 			font-family: $font-family-title;

@@ -32,10 +32,12 @@ h1 {
     font-family: $font-family-base!important;
     font-weight: bold!important;
 }
+
  .smartweb_herobanner {
     @include media-breakpoint-up(lg){
         padding: 0 40px;
     }
+
     .bannerSwiper {
         @include media-breakpoint-down(lg) {
             height: 55vw;
@@ -43,6 +45,7 @@ h1 {
 
     }
 }
+
 #subsite-navigation {
     background: $primary;
 }
@@ -55,8 +58,10 @@ h1 {
 #subsite-navigation > ul > .has_subtree.nav-item > .nav-link::after {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.444' height='5.2' fill='%23fff'%3E%3Cpath d='M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z'/%3E%3C/svg%3E");
 }
+
 #subsite-navigation.activated > ul > li > a {
 	color: #fff !important;
+
     &:hover {
     }
 }
@@ -77,6 +82,7 @@ h1 {
         margin-bottom: 0;
     }
 }
+
 .r-item-img.r-item-img-placeholder {
 	background: url("../../assets/svg/placeholder.jpg");
 	background-size: cover;
@@ -85,8 +91,10 @@ h1 {
 @include media-breakpoint-up(lg) {
     .nav_je-suis.nav-item {
         margin-left: auto;
+
         a {
             color: $primary-svg!important;
+
             &:hover {
                     color: $primary!important;
         }
@@ -94,9 +102,11 @@ h1 {
         }
     }
 }
+
 .nav_un-clic.has_subtree.nav-item {
     a {
         color: $primary-svg!important;
+
         &:hover {
             color: $primary!important;
 }
@@ -108,9 +118,11 @@ footer{
         .table_title{
             display: none;
         }
+
         ul.row{
             flex-direction: row;
             flex-wrap: wrap;
+
             li{
                 width: auto;
             }
@@ -144,6 +156,7 @@ footer #container-section-noussuivre{
                 fill: #fff;
             }
         }
+
         &:nth-child(1), &:nth-child(3){
             svg path:nth-child(2) {
                 fill: #3f3f3f !important;
@@ -159,6 +172,7 @@ footer #container-section-noussuivre{
 
 #portal-breadcrumbs{
     background: transparent!important;
+
     .container,.breadcrumb{
         padding-left: 0;
     }
@@ -180,26 +194,32 @@ footer #container-section-noussuivre{
     .text {
         max-width: 204px;
         text-align: center;
+
         p {
             font-size: 33px;
             font-weight: 200;
         }
     }
 }
+
 .footer-social {
     margin-top: 2rem;
+
     .table_image {
         .table_title {
             display: none;
         }
+
         .image{
             width: auto;
+
             svg {
                 fill: #fff;
             }
         }
     }
 }
+
 footer {
     h3 {
         color: #fff!important;
@@ -263,6 +283,7 @@ footer {
      text-decoration: none;
     }
 }
+
 .breadcrumb {
 	font-size: 13px;
 }
@@ -285,6 +306,7 @@ footer {
     .table_title {
         display: none;
     }
+
     .image.d-block.w-100 {
         width: 100%;
         height: 205px;
@@ -314,6 +336,7 @@ footer {
 .sectiontext ol>li:before {
     content: counter(sectioncounter) "." !important;
 }
+
 .container .row #portal-column-content {
     padding-top: 20px !important;
 }

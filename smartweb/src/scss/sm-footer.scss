@@ -2,6 +2,7 @@
     display:flex;
     flex-wrap: wrap;
     gap: 50px;
+
     .row{
         .container{
             padding: 3rem 0 0 0;
@@ -17,15 +18,18 @@
 #smartweb-footer .section-contact:after{
     display:none;
 }
+
 #smartweb-footer .section-contact {
     background:transparent;
     color:white;
 }
+
 #smartweb-footer .section-contact .body-section h2,
 #smartweb-footer .section-contact .body-section h3,
 #smartweb-footer .section-contact .body-section a {
     color:white;
 }
+
 #smartweb-footer .section-contact table.table_schedule {
     color: black;
 }
@@ -37,9 +41,11 @@
     justify-content: center;
     list-style-type: none;
 }
+
 .colophonWrapper li {
     margin-right: 1rem;
 }
+
 .colophonWrapper a {
     text-decoration: none;
     border-bottom: 1px dotted #a7a7a7;
@@ -59,6 +65,7 @@ div#body-section-administration-communale {
     width: 100%;
     padding-bottom: 0;
 }
+
 #body-section-feder {
     width: 100%;
     text-align: center;
@@ -68,6 +75,7 @@ div#body-section-administration-communale {
     z-index:0;
     padding:1rem 0 0 0;
 }
+
 #body-section-feder:after {
     content: "";
     position: absolute;
@@ -79,26 +87,32 @@ div#body-section-administration-communale {
     transform: translateX(-50%);
     left:50%
 }
+
 div#body-section-feder figure{
     margin:0;
 }
+
 div#body-section-feder img {
     max-width: 500px;
     width:100%;
 }
+
 div#portal-colophon {
     z-index: 0;
     position: relative;
 }
+
 #portal-footer-wrapper{
     .sectionlinks {
         li{
             list-style-type:none;
         }
+
         a{
             color:#fff; 
         }
     }
+
     .facebook{
         a{
             display: block;
@@ -109,12 +123,14 @@ div#portal-colophon {
             background-repeat: no-repeat;
             background-size: contain;
             margin-top: 1rem;
+
             &:hover{
                 opacity: .7;
             }
         }
     }
 }
+
 #portal-footer-wrapper .colophon {
 	margin-left: 0!important;
     margin-right: 0!important;

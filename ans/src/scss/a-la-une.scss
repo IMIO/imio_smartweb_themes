@@ -25,6 +25,7 @@
         display: block;
   }
 }
+
 .a-la-une .swiper-button-next {
     left: 60%;
     margin-left: -80px;
@@ -43,27 +44,34 @@
             display: grid;
       }
 }
+
 .a-la-une .swiper-slide .swiper-image {
     grid-row-end: 5;
     grid-row-start: 1;
 }
+
 .sectionnews.a-la-une .swiper-slide .swiper_category {
     grid-row-start: 1;
 }
+
 .sectionnews.a-la-une .swiper-slide .swiper_date {
     grid-row-start: 2;
 }
+
 .sectionnews.a-la-une .swiper-slide .swiper_title {
     grid-row-start: 3;
 }
+
 .sectionnews .swiper-slide .swiper_description {
     grid-row-start: 4;
 }
+
 .sectionnews.a-la-une .swiper-slide .swiper_category span {
     color: $primary;
     background:none;
     display: none;
 }
+
 .sectionnews.a-la-une .swiper-slide .swiper_date {
     color: $color-grey;
 }

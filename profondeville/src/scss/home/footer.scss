@@ -2,23 +2,29 @@ body #portal-footer-wrapper{
     text-align: left!important;
     background: transparent !important;
     margin-top: 50px;
+
     #portal-footer{
         background:$color-dark !important;
         padding-top: 50px;
+
         #smartweb-footer,#smartweb-minisite-footer{
             a,span,p,div,h2{
                 color: #fff!important;
             }
+
             h2{
                 font-size: 22px!important;
                 margin-top: 2rem;
+
                 &.section-title{
                     margin-bottom: 1.5rem;
                     margin-top: 2rem;
                 }
             }
+
             .sectiontext{
                 margin: 3rem 0 1rem 0;
+
                 figure{
                     img{
                         width: 250px;
@@ -33,12 +39,15 @@ body #portal-footer-wrapper{
 #portal-colophon{
     background: $color-dark;
     padding: 1rem;
+
     ul{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
+
         li{
             color: #fff!important;
+
             a,span,p,div{
                 color: #fff!important;
             }
@@ -74,9 +83,11 @@ footer{
         max-width: 250px;
     }
 }
+
 footer div#container-section-logo figure {
     max-width: 150px;
 }
+
 footer #body-section-acces-rapides ul {
     margin-left: 0;
 }

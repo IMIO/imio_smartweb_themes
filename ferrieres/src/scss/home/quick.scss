@@ -11,22 +11,27 @@
     z-index: -1;
     
 }
+
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
 	padding: 0;
     margin-top: 0;
+
     .body-section{
         padding: 0;
     }
 }
+
 .quick-access{
     padding-top:0px;
+
     svg{
         max-height: 30px;
     }
+
     .body-section{
         padding: 3rem 0 4rem 0!important;
+
         ul {
-       
         li{
             .table_display {
                 background:#fff !important;
@@ -42,9 +47,11 @@
                     position: relative;
                     transition: all .3s ease;
                 }
+
                 .table_title{
                     margin: 0 0 20px 0;
                 }
+
                 &:hover{
                     .image.d-block{
                         transform: translateY(-5px);
@@ -53,6 +60,7 @@
             }
             
         }
+
         &:hover{
             .table_display {
                 border-radius: 20px;
@@ -68,14 +76,17 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+
             li{
                 width: auto!important;
             }
         }
+
         li {
             padding:0px;
         }
     }
+
     .section-title{
         font-weight: 200;
         text-transform: uppercase;

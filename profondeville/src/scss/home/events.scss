@@ -1,43 +1,54 @@
 .sectionevents a {
     text-decoration: none;
+
     .image.w-100 {
     padding-bottom: 60%;
     border-radius: 5px 5px 0 0;
     }
+
     .table_title {
         font-size: 1.5rem;
     }
 
 }
+
 .sectionevents ul li {
     list-style: none;
 }
+
 .sectionevents .body-section ul li {
     margin-bottom: 1.5rem;
 }
+
 .sectionevents {
     .tabble_date {
         color: $primary;
         display: inline-flex;
+
         .start_date {
             padding-right: 0.3rem;
         }
     }
+
     .table_title {
         color: #000;
         font-weight: 600;
     }
+
     .table_category {
         padding: 1rem 0 0;
         color: #000;
     }
 }
+
 #container-section-agenda div span, #container-section-agenda div p {
     color: $primary;
   }
+
 .sectionevents .body-section {
     .table_date {
     }
+
     .table_display {
         background-color: #fff;
         border: 1px solid #E3E3E3;
@@ -46,10 +57,12 @@
         max-width: 416px;
     }
 }
+
 .sectionevents .table_image div.image {
     position: relative;
     overflow: hidden;
 }
+
 .sectionevents .table_image div.image::before {
     content: "";
     background: transparent;
@@ -61,22 +74,27 @@
     border-radius: 5px;
     top: 0;
 }
+
 .sectionevents .table_image:hover div.image::before {
     background: $color-blue;
     opacity: 0.7;
 }
+
 .sectionevents .end_date {
     margin-left: 0.25rem;
   }
+
 .sectionevents .table_date {
     display: flex;
     padding: 0.5rem 2rem 0.5rem 2rem;
     font-weight: 300;
     font-style: italic;
 }
+
 .sectionevents .body-section {
     .table_date {
     }
+
     .table_title {
       padding: 0.5rem 1rem 0.5rem 1rem ;
       font-size: 22px;
@@ -84,6 +102,7 @@
       font-weight: 400;
     }
 }
+
 .sectionevents .table_image div.image::after {
     transition: all .3s ease;
     content: "";
@@ -97,12 +116,15 @@
     opacity: 0;
     transform: rotate(45deg);
 }
+
 .sectionevents .table_image:hover div.image::after {
     opacity: 1;
     transform: rotate(90deg);
 }
+
 .sectionevents .see_all a {
     border: 1px solid $color-blue;
+
     &::before {
     content: ">";
     position: absolute;
@@ -111,29 +133,36 @@
     transition: all .3s ease;
     }
 }
+
 .sectionevents .see_all a:hover::before {
     right: 5px;
     color: #000;
 }
+
 .sectionevents h2.section-title::first-letter {
     color: $color-blue;
 }
+
 .sectionevents .body-section .table_title {
     font-size: 22px;
     padding: 0rem 2rem 0 2rem;
     overflow: hidden;
 }
+
 .sectionevents span.day:after {
     content: " /";
 }
+
 .sectionevents .table_category {
     color: #000;
     padding: 0.5rem 2rem 0rem 2rem;
     font-weight: 600;
 }
+
 .sectionevents .table_title {
     // position: relative;
 }
+
 .sectionevents a {
     .table_title::before {
     content: ">";
@@ -150,6 +179,7 @@
     line-height: 38px;
     font-weight: 400;
     }
+
     .table_title::after {
         background: transparent;
         content: "";
@@ -162,15 +192,18 @@
         z-index: 0;
         transition: all .3s ease;
     }
+
     &:hover {
         .table_title::before {
             color: #fff;
             }
+
             .table_title::after {
                 background: $color-blue;
             }
     }
 }
+
 .sortable-section.sectionevents {
     margin-bottom: 2rem;
 }

@@ -6,6 +6,7 @@
         display: inline-block;
       }
     }
+
     &:hover,
     &:focus {
       .table_title {
@@ -24,6 +25,7 @@
       }
     }
   }
+
   #body-section-quick-access {
     .row {
       @include media-breakpoint-down(md) {
@@ -42,10 +44,12 @@
   .sortable-section.sectionlinks.quick-access:first-child {
     position: relative;
     transform: none;
+
     li.col-md-3 {
       padding: 2rem 0;
     }
   }
+
   .sectionlinks.quick-access {
     padding-bottom: 0rem;
     padding-top: 0rem;

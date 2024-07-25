@@ -7,6 +7,7 @@
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
     text-transform: uppercase;
 }
+
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
     font-weight: bold;    
 }
@@ -25,9 +26,11 @@
 body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
     z-index: 1;
 }
+
 body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper>.container {
     position: relative;
 }
+
 body.portaltype-imio-smartweb-portalpage.section-home-page:not(.userrole-authenticated) .outer-wrapper>.container:after {
     top: -1px;
     // content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 1918.64 202.5'%3E%3Cpath d='M0 86.5c-.18.53 6.64 3.59 7.11 3.88l19.5 10.42c3.05 1.52 6.58 3.4 10.51 5.5 11.86 6.33 26.43 14.11 44.69 21.14 23.78 10.78 53.85 21.55 92.2 33.2 6.05 1.52 12.51 3.22 19.14 5.04 12.51 3.34 25.25 6.68 38.82 9.9l14.1 2.75c16.5 3.28 33.36 6.62 50.92 9.14 39.35 5.74 91.85 12.47 148.58 13.7 52.8 2.17 108.7 1.64 166.38-1.46 32.24-1.7 60.72-3.75 87.15-6.27 25.37-1.93 51.09-4.8 75.99-7.56l13.21-1.46c65.6-7.61 130.61-16.87 180-24.01l265.51-39.82c10.27-1.35 20.43-2.69 30.53-4.1 18.39-2.52 36.59-4.98 54.68-7.09 48.86-6.27 101.42-11.54 160.56-16.05 9.22-.35 18.09-.82 26.84-1.29 16.8-.88 32.48-1.7 48.16-1.82 23.84-.64 47.16-1.17 69.59-.29 3.82.12 7.69.18 11.57.23 7.4.12 14.33.23 21.14.7l31.54 2.17c14.62.53 28.6 2.23 42.16 3.87 5.47.64 10.34 1.29 15.39 1.82 11.45 1 22.26 2.99 32.71 4.98 5.99 1.11 11.81 2.22 17.56 3.04 16.03 2.28 30.54 5.97 42.23 8.96 5.22 1.41 10.16 2.52 14.91 3.63 6.93 1.58 13.51 3.16 19.33 5.04 0 0 2.05.65 25.01 7.85l20.91 6.38V0H0v86.5Z' style='fill:%2323597a'/%3E%3C/svg%3E");
@@ -40,9 +43,11 @@ body.portaltype-imio-smartweb-portalpage.section-home-page:not(.userrole-authent
     width: 100vw;
     z-index: 0;
 }
+
 body:not(.portaltype-imio-smartweb-portalpage) #portal-header {
     margin-bottom: 2rem;
 }
+
 body.portaltype-imio-smartweb-portalpage #portal-header {
     margin-bottom: 0rem;
 }
@@ -51,28 +56,36 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
     margin: 0 auto;
     text-align: center;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
         font-size: 35px;
     }
+
     body #portal-header #portal-header-top #portal-logo {
         height: 80px !important;
         max-width: 80px;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
         font-size: 40px;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
         height: 200px;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-image {
         background: none;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper>.container:after {
         top: 0;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-content:after {
         display: none;
     }
+
     body.portaltype-imio-smartweb-portalpage.section-home-page .sectionnews {
         padding-top: 5rem;
     }
@@ -82,6 +95,7 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
     height: 430px;
     }
 }
+
 body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-content {
     position: relative;
 }

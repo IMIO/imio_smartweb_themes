@@ -27,10 +27,12 @@ $enable-roboto-webfont: false;
 		height: 300px;
 	}
 }
+
 .sectionfiles {
 	a.table_image:hover, a.table_image:focus {
 		color: #fff;
 	}
+
 	.item_infos {
     color: #fff;
 	}
@@ -42,18 +44,22 @@ body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p
     padding: 1rem 2rem;
     color: #000 !important;
     margin-bottom: 20px;
+
 	a {
 		color: #000 !important;
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+
 	a:first-child {
 		font-size: 16px;
 		color: #000 !important;
 	}
 }
+
 #portal-footer-wrapper .facebook {
 	width: 2.5rem;
+
 	a {
     background-image: url(../../assets/svg/facebook.svg);
     background-repeat: no-repeat;
@@ -65,9 +71,11 @@ body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p
     width: 29px;
 	}
 }
+
 #portal-footer-wrapper .youtube {
 	width: 2.5rem;
 	display: inline-block;
+
 	a {
     background-image: url(../../assets/svg/youtube.svg);
     background-repeat: no-repeat;
@@ -79,14 +87,17 @@ body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p
     width: 29px;
 	}
 }
+
 .r-item-img.r-item-img-placeholder {
 	background: url("../../assets/svg/placeholder-ans.jpg");
 	background-size: cover;
 	background-position: center;
 }
+
 #portal-header #portal-header-top {
     gap: 30px;
 }
+
 #portal-header #portal-header-top #portal-logo img {
 	height: auto!important;
 	}

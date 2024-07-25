@@ -12,6 +12,7 @@
             display: grid;
             grid-auto-rows: 1fr;
             grid-template-columns: repeat(auto-fit,minmax(120px,120px));
+
             li{
                 width: auto!important;
             }
@@ -25,9 +26,11 @@
     justify-content: space-evenly;
     padding: 10px;
 }
+
 .sectionlinks.quick-access {
     padding-top: 0;
 }
+
 .sectionlinks.quick-access .body-section ul {
 	max-width: 900px;
 	margin-left: auto;
@@ -38,9 +41,11 @@
       background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
     }
 }
+
 .quick-access .body-section ul li .table_image .image.d-block {
     transition: all .5s ease;
 }
+
 .quick-access .body-section ul li .table_image:focus .image.d-block, .quick-access .body-section ul li .table_image:hover .image.d-block {
     transform: translateY(-10px);
     transition: all .5s ease;

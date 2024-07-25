@@ -1,19 +1,23 @@
 .sortable-section.sectioncollection.enquetes .swiper-slide {
     background: #fff;
     padding: 2rem;
+
     a {
       text-decoration: none;
     }
+
     .swiper_title h3 {
         color: $primary;
         font-size: 1.5rem;
         font-weight: 400;
         text-transform: none;
     }
+
     .swiper-date {
       color: $primary;
     }
 }
+
 .sortable-section.enquetes:after {
   background: #F5F8F8;
   bottom: 0;
@@ -25,27 +29,32 @@
   width: 100vw!important;
   z-index: -2;
 }
+
 .portaltype-imio-smartweb-portalpage .enquetes .section-title {
   font-size: 5rem;
   color: $color-green;
   margin: 4rem 0 4rem;
   text-align: center;
 }
+
 .sortable-section.sectioncollection.enquetes {
   position: relative;
   padding-bottom: 2rem;
 }
+
 .enquetes .see_all a, .enquetes .see_all a:focus, .enquetes .see_all a:hover {
   background: transparent;
   border: 0 solid #1c1c1c;
   border-radius: 0;
   color: #1c1c1c;
 }
+
 .enquetes .see_all {
   display: flex;
   justify-content: right;
   margin: 2rem 0 0;
 }
+
 .enquetes .see_all a {
   display: block;
   font-family: Rubik,sans-serif;
@@ -58,6 +67,7 @@
   transition: all .2s ease;
   width: -moz-max-content;
   width: max-content;
+
   &::after {
     background-color: $primary;
     bottom: -5px;
@@ -68,10 +78,12 @@
     transition: all .2s ease;
     width: 25%;
   }
+
   &:hover:after {
     width: 50%;
   }
 }
+
 .section-home-page .enquetes {
   position: relative;
 }
@@ -85,6 +97,7 @@
   transform: translate(50vw, -50%);
   }
 }
+
 .enquetes .swiper-slide a:hover:after {
   background: $color-green;
   position: absolute;

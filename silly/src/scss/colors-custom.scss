@@ -12,6 +12,7 @@ $Slowfood: #EE0F0D;
     .subsite-container {
         position: relative;
         background: $Loisirs;
+
         &:after {
             content: "";
             background: $Loisirs;
@@ -23,21 +24,26 @@ $Slowfood: #EE0F0D;
             left: 50%;
             z-index: -1;
         }
+
         .nav-title {
             a {
                 color: black!important;
             }
         }
+
         #subsite-navigation > ul > li > a {
             color: #fff;
         }
     }
+
     #subsite-logo {
         background: $Loisirs;
+
         a {
             color: #fff;
         }
     }
+
     .breadcrumb-item {
         a {
             color: $Loisirs;
@@ -50,6 +56,7 @@ $Slowfood: #EE0F0D;
     .subsite-container {
         position: relative;
         background: $vivre;
+
         &:after {
             content: "";
             background: $vivre;
@@ -61,21 +68,26 @@ $Slowfood: #EE0F0D;
             left: 50%;
             z-index: -1;
         }
+
         .nav-title {
             a {
                 color: black!important;
             }
         }
+
         #subsite-navigation > ul > li > a {
             color: #fff;
         }
     }
+
     #subsite-logo {
         background: #4F7A96;
+
         a {
             color: #fff;
         }
     }
+
     .breadcrumb-item {
         a {
             color: $vivre;
@@ -86,23 +98,29 @@ $Slowfood: #EE0F0D;
 //  cpas
 .site-cpas {
     $primary: $cpas;
+
     .subsite-container #subsite-logo {
         background: $cpas;
     }
+
     a {
         color: $primary;
+
         &:hover {
             color: #21022b;
         }
     }
+
     #portal-globalnav .dropdown .nav-title a {
         color: black;
     }
+
     #portal-column-content .section-contact .contact-type-position .address .h2, #portal-column-content .section-contact .contact-type-position .address .h3, #portal-column-content .section-contact .contact-type-position .address h2, #portal-column-content .section-contact .contact-type-position .address h3, #portal-column-content .section-contact .contact-type-position .contact_informations .h2, #portal-column-content .section-contact .contact-type-position .contact_informations .h3, #portal-column-content .section-contact .contact-type-position .contact_informations h2, #portal-column-content .section-contact .contact-type-position .contact_informations h3, #portal-column-content .section-contact .contact-type-position .schedule .h2, #portal-column-content .section-contact .contact-type-position .schedule .h3, #portal-column-content .section-contact .contact-type-position .schedule h2, #portal-column-content .section-contact .contact-type-position .schedule h3 {
         color: $cpas;
         font-size: 1.25rem;
         font-weight: 500;
     }
+
     #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav .dropdown .nav-link:hover {
         color: $cpas;
     }
@@ -113,6 +131,7 @@ $Slowfood: #EE0F0D;
     .subsite-container {
         position: relative;
         background: $Jeunesse;
+
         &:after {
             content: "";
             background: $Jeunesse;
@@ -124,14 +143,17 @@ $Slowfood: #EE0F0D;
             left: 50%;
             z-index: -1;
         }
+
         .nav-title {
             a {
                 color: black!important;
             }
         }
     }
+
     #subsite-logo {
         background: rgba(255, 255, 255, 0.2);
+
         a {
             color: #000;
         }
@@ -145,6 +167,7 @@ $Slowfood: #EE0F0D;
     .subsite-container {
         position: relative;
         background: $litterature;
+
         &:after {
             content: "";
             background: $litterature;
@@ -156,21 +179,26 @@ $Slowfood: #EE0F0D;
             left: 50%;
             z-index: -1;
         }
+
         .nav-title {
             a {
                 color: black!important;
             }
         }
+
         #subsite-navigation > ul > li > a {
             color: #fff;
         }
     }
+
     #subsite-logo {
         background: rgba(255, 255, 255, 0.2);
+
         a {
             color: #fff;
         }
     }
+
     .breadcrumb-item {
         a {
             color: $litterature;
@@ -185,6 +213,7 @@ $Slowfood: #EE0F0D;
         margin-top: .5rem;
         margin-bottom: .5rem;
         border-radius: 10px;
+
         a {
             padding: .9rem 1.2rem;
         }

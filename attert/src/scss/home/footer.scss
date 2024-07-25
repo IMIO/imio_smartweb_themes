@@ -4,6 +4,7 @@
     h2 {
         color: #fff !important;
     }
+
     #body-section-nous-contacter {
         display: flex;
         justify-content: space-between;
@@ -15,10 +16,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+
             .contact_logo {
                 margin-bottom: 2rem;
             }
         }
+
         .contact_logo {
             width: 146px;
             height: 61px;
@@ -26,27 +29,34 @@
             background-repeat: no-repeat;
         }
     }
+
     .plone-icon {
         fill: #fff;
     }
 }
+
 .is-in-minisite .smartweb-footer .sectiontext {
     max-width: 150px;
 }
+
 .smartweb-footer {
     padding-top: 5rem;
+
     .row {
         justify-content: space-between;
         text-align: left;
     }
+
     .sectiontext {
         max-width: 140px;
+
         figure {
             margin: 0 !important;
             max-width: 100% !important;
             float: none !important;
         }
     }
+
     #container-section-liens-utiles {
         li {
             div {
@@ -59,21 +69,26 @@
         }
     }
 }
+
 .colophonWrapper {
     ul {
         margin: 0 !important;
         padding-bottom: .5rem !important;
     }
 }
+
 .colophonWrapper li:last-child {
     width: 100%;
 }
+
 .smartweb-footer .sectiontext {
     max-width: 100%;
 }
+
 .smartweb-footer .sectionlinks ul.row {
     margin-left: 0;
 }
+
 #portal-footer {
 	background: $secondary;
 }
@@ -82,22 +97,28 @@
 	display: flex;
     flex-wrap: wrap;
 }
+
 #portal-colophon, #portal-footer-wrapper, #portal-footer-wrapper #portal-footer.container {
 	background: $secondary;
+
     li,
     a {
         color: #fff;
     }
+
     li {
             list-style: none;
     }
 }
+
 footer h3 {
    color: #fff;
 }
+
 #portal-footer-wrapper .h2, #portal-footer-wrapper h2 {
     font-size: 2rem;
 }
+
 footer .h3, footer h3 {
     font-size: 1.5rem;
 }

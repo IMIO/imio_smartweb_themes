@@ -5,6 +5,7 @@
     border-radius: 30px;
     margin-bottom: 120px;
     margin-top: 120px;
+
     .section-title{
         font-weight: 600;
         text-align: center;
@@ -14,6 +15,7 @@
         width: max-content;
         font-size: 2.5rem;
     }
+
     .body-section{
         .row{
             max-width: 100%;
@@ -21,12 +23,15 @@
             /*box-shadow: 0 20px 40px rgba(0, 0, 0,.16);*/
             background: $primary-red;
             border-radius: 50px 50px 0px 50px;
+
             li{
                 padding: 0!important;
             }
+
             .table_display{
                 height: 100%;
             }
+
             .table_image{
                 padding: 2rem 1rem;
                 background: $primary-red;
@@ -39,8 +44,10 @@
                 height: 100%;
                 transition: all 0.5s ease;
                 color:#fff;
+
                 .image{
                     width: auto;
+
                     svg{
                         height: auto;
                         width: 40px;
@@ -49,16 +56,19 @@
                         transition: all 0.5s ease;
                     }
                 }
+
                 &:hover{
                     background: $primary-reddark;
                     transition: all 0.5s ease;
                     border-radius: 50px 50px 0px 50px;
+
                     .image{
                         svg{
                             /*fill: #fff;*/
                             transition: all 0.5s ease;
                         }
                     }
+
                     .table_title{
                         span{
                             /*color: #fff;*/

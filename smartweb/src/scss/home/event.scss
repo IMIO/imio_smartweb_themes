@@ -73,6 +73,7 @@
     position: relative;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
         &:after{
         content: "";
         position: absolute;
@@ -85,10 +86,12 @@
         background: url(../../assets/svg/event-bg.jpg) no-repeat center/cover;
         z-index: -1;
     }
+
     .container{
         padding-left: 0;
         padding-right: 0;
     }
+
     .section-title{
         font-size: calc(1.325rem + 2.5vw);
         text-transform: uppercase;
@@ -101,13 +104,16 @@
             font-size: 3.7rem;
         }
     }
+
     .swiper-slide{
         height: auto;
+
         a{
             text-decoration: none;
             border-radius: 15px;
             border-bottom-left-radius: 0px;
         }
+
         & > a{
             display: grid;
             height: 100%;
@@ -115,6 +121,7 @@
             place-items: start;
             grid-auto-rows: min-content;
         }
+
         .swiper-image{
             border-radius: 15px 15px 15px 0px;
             margin-bottom: 0.7rem;
@@ -122,9 +129,11 @@
             grid-column: 1;
             width: 100%;
         }
+
         .swiper_category{
             margin-bottom: 0.3rem;
             padding: 0 0 0 1rem;
+
             span{
                 color: #747474;
                 text-transform: uppercase;
@@ -132,6 +141,7 @@
                 font-weight: 500;
             }
         }
+
         .swiper_date{
             order: 1;
             font-size: 16px;
@@ -151,36 +161,46 @@
             flex-wrap: wrap;
             flex-direction: column;
             border-radius: 10px 10px 10px 0px;
+
             .start_date{
                 text-align: center;
             }
+
             .end_date{
                 text-align: center;
             }
+
             .from_on,.to{
                 display: none;
             }
+
             .day_date,.start_date,.end_date{
                 display: flex;
+
                 .day::after {
                     content: '/';
                 }
+
                 .year::before{
                     content: '/';
                 }
             }
         }
+
         .swiper_title{
             padding: 0 0 30px 1rem;
         }
     }
+
     .swiper-pagination-bullet{
         background: #fff;
         opacity: 1;
     }
+
     .see_all{
         float: right;
         margin: 2rem 0;
+
         a{
             position: relative;
             overflow: hidden;
@@ -189,6 +209,7 @@
             background: #fff;
             border-bottom-left-radius: 0px;
             color: #000;
+
             &:after{
                 content: "";
                 background: #fff;
@@ -204,6 +225,7 @@
                 z-index: 0;
                 mix-blend-mode: difference;
             }
+
             &:hover,&:focus{
                 &:after{
                     width: 103%;

@@ -2,14 +2,17 @@
 	display: flex;
 	color: #fff;
 }
+
 .sectionfiles{
     @include section-padding-top;
     @include section-padding-bottom;
+
     .section-title{
         h2{
             color:  #fff;
         }
     }
+
     .body-section,.section-title{
         @if $enable-light-color-section-files{
             h2,span,p{
@@ -25,16 +28,20 @@
     }
     background: $section-file-background-color;
     position: relative;
+
     .section_files_list{
         @include ul-rm-padding;
     }
+
     li{
         list-style: none;
     }
+
     .section_files_link{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .section_files_image{
             width: 36px;
             height: 44px;
@@ -45,10 +52,12 @@
                 margin-left: 0;
             }
             position: relative;
+
             img{
                 @include fit-cover;
             }
         }
+
         .section_files_text{
             .section_files_item_description{
                 margin: 0;
@@ -65,6 +74,7 @@
             gap: 6.8181%;
             flex-wrap: wrap;
         }
+
         .body-section{
             margin-bottom:0;
             max-width: max-content;
@@ -73,8 +83,10 @@
             }
         }
     }
+
     .section-title{
         display: flex;
+
         &::before{
             content: url(../../assets/svg/files.svg);
             display: inline-block;
@@ -82,23 +94,28 @@
             margin-right: 1.5rem;
         }
     }
+
     li{
         margin: 1.25rem 0;
         @include last-item-no-margin-bottom;
         @include first-item-no-margin-top;
     }
+
     .section_files_link{
         border: solid 1px rgba(255, 255, 255, 0.25);
         border-radius: 10px 10px 10px 0px;
         text-decoration: none;
+
         &:hover,
         &:focus{
             background: rgba(255, 255, 255, 0.09);
             border: solid 1px rgba(255, 255, 255, 0);
+
             &:after{
                 background: url(../../assets/svg/download-arrow-blue.svg) no-repeat center #fff;
             }
         }
+
         &:after{
             content:"";
             width: 30px;
@@ -117,6 +134,7 @@
                 flex-shrink: 0;
             }
         }
+
         .section_files_image{
             border-radius: 10px 10px 10px 0px;
             flex-shrink: 0;
@@ -124,6 +142,7 @@
             @include media-breakpoint-up(md){
                 border: 1px solid #FFF;
             }
+
             img{
                 border-radius: 10px 10px 10px 0px;
                 display: none;

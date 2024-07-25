@@ -1,18 +1,22 @@
 .swiper.bannerSwiper {
     overflow: initial;
+
     .swiper-banner-content-wrapper {
         position: relative;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
         .swiper-banner-content {
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
             width: 550px;
+
             .swiper-banner-title {
                 font-family: $font-family-title;
                 text-transform: uppercase;
                 font-size: 1.8rem;
             }
+
             .swiper-banner-description p {
                 font-size: 1.5rem;
             }
