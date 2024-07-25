@@ -4,6 +4,7 @@
 /// a la une est une section actualité
 /// diminuer titre 2
 // ... add your variables here
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 $enable-roboto-webfont: false;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
@@ -240,5 +241,66 @@ body:not(.site-office-du-tourisme-inforville) {
         border-radius: 5px;
       }
     }
+  }
+}
+
+#block-menu {
+  .block-menu-element {
+    position: relative;
+    a {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      &:after{
+        content: "\F4FA";
+        font-family: bootstrap-icons;
+        position: absolute;
+        bottom: 2px;
+        right: 25px;
+      }
+      .card-body {
+        height: 100%;
+      }
+    }
+  } 
+  .list-card-title {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.block-menu-element a .card-title.h2, .block-menu-element a h2.card-title {
+	font-size: 1.3rem;
+	line-height: 1.4;
+}
+
+.sectiontext .section-text .body-section a {
+  background: #dae9f1;
+}
+
+.sectionfiles {
+  .item_infos{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    &:after {
+      content: "\F30A";
+      display: block;
+      font-family: bootstrap-icons;
+      font-size: 20px;
+    }
+  }
+}
+
+body:not(.portaltype-imio-smartweb-portalpage) {
+  .sectionlinks {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #portal-globalnav div.has_subtree.dropdown {
+      height: 870px;
+      max-height: inherit;
   }
 }
