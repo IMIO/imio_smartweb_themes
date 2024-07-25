@@ -1,7 +1,15 @@
 {
-  "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-idiomatic-order",
-    "stylelint-config-prettier-scss"
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "color-hex-length": "short",
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
+  },
+  "customSyntax": "postcss-html",
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
   ]
 }
