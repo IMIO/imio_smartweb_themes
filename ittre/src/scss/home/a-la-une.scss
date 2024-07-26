@@ -49,12 +49,12 @@ grid-template-rows: auto 1fr;
 border-radius: 0 0 50px;
 
     .swiper_title {
-        margin-top: 1rem;
         align-self: start;
         background: transparent;
         grid-column: 2;
         grid-row: 1;
         margin: 0;
+        margin-top: 1rem;
         padding: 90px 100px 0;
         font-size: 6rem;
 
