@@ -7,7 +7,6 @@
     }
 
     .section-container {
-
         @media screen and (min-width: 1000px) {
             & > div {
                  display: flex;
@@ -65,7 +64,6 @@
     }
 
     .row{
-
        @media screen and (max-width: 550px){
             grid-gap: 0;
             display: grid;

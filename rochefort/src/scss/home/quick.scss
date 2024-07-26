@@ -1,5 +1,4 @@
 #main-container .quick-access {
-
     @include media-breakpoint-down(lg){
         margin: 0;
     }
@@ -8,7 +7,6 @@
 
 .quick-access{
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

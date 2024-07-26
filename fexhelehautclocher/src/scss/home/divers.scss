@@ -412,14 +412,12 @@ li:marker {
   }
 
     .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
-
         @include media-breakpoint-up(lg){
             height: 700px;
         }
     }
 
     body .sectionlinks.quick-access .section-container .row {
-
         @include media-breakpoint-up(lg){
         display: grid;
         gap: 10px;

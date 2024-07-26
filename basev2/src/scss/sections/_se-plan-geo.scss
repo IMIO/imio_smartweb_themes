@@ -14,7 +14,6 @@ body.faceted-map{
     #main-container{
         #content{
             #center-content-area {
-
                 @include media-breakpoint-up(md) {
                     display: grid;
                 }   
@@ -28,7 +27,7 @@ body.faceted-map{
                         margin-right: 1rem;
                     }   
                     display: block !important;
-                    opacity: 1 !important;
+                    opacity: 100% !important;
                 }
 
                 .faceted-map {
@@ -42,7 +41,6 @@ body.faceted-map{
     }
 
     #faceted-results-items{
-
         @include media-breakpoint-down(md) {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -60,7 +58,7 @@ body.faceted-map{
         @include media-breakpoint-up(md) {
             margin: 1rem 0;
         }
-        box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+        box-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 
         a{
             text-decoration: none;

@@ -77,7 +77,7 @@
 
 .sectionevents .table_image:hover div.image::before {
     background: $color-blue;
-    opacity: 0.7;
+    opacity: 70%;
 }
 
 .sectionevents .end_date {
@@ -113,12 +113,12 @@
     position: absolute;
     z-index: 1;
     background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
-    opacity: 0;
+    opacity: 0%;
     transform: rotate(45deg);
 }
 
 .sectionevents .table_image:hover div.image::after {
-    opacity: 1;
+    opacity: 100%;
     transform: rotate(90deg);
 }
 

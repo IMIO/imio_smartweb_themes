@@ -9,25 +9,17 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/intro.scss";
-
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./common/map.scss";
-
 @import "./common/postit.scss";
 
 
@@ -47,7 +39,7 @@ $enable-roboto-webfont: false;
         content: "";
         width: 40px;
         height: 220px;
-        background: linear-gradient(180deg, rgba(254,89,25,1) 0%, rgba(254,89,25,1) 60%, rgba(59,190,242,1) 60%, rgba(59,190,242,1) 80%, rgba(255,255,255,1) 80%);
+        background: linear-gradient(180deg, rgba(254,89,25,100%) 0%, rgba(254,89,25,100%) 60%, rgba(59,190,242,100%) 60%, rgba(59,190,242,100%) 80%, rgba(255,255,255,100%) 80%);
         position: absolute;
         right:0%;
         top: 0;
@@ -63,7 +55,7 @@ $enable-roboto-webfont: false;
         right: 0;
         top: 0;
         bottom: 0;
-        opacity: .7;
+        opacity: 70%;
         mix-blend-mode: color;
     }
 

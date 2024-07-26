@@ -8,7 +8,7 @@
     }
 
     .rich_description {
-        color: rgb(255, 255, 255,.70);
+        color: rgb(255, 255, 255,70%);
     }
 
     .section-title {
@@ -112,7 +112,6 @@
     }
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;

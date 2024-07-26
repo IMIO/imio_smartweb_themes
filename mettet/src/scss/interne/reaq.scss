@@ -23,7 +23,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         z-index: -1;
-        opacity: 0.05;
+        opacity: 5%;
         transform: translateX(-50%);
     }
 
@@ -178,7 +178,7 @@
         padding: 5px;
         background: #fff;
         border-radius: 15px;
-        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        box-shadow: 0 2px 4px rgba(0,0,0,10%);
     }
 
     .r-wrapper .r-result-list .r-list-item-group .r-list-item .r-item-img {
@@ -210,7 +210,7 @@
     background: #fff;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,10%);
 
     & > button{
         margin-top: 0;

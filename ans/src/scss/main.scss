@@ -9,23 +9,16 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import './quick.scss';
-
 @import './actualites.scss';
-
 @import './events.scss';
-
 @import './footer.scss';
-
 @import './a-la-une.scss';
-
 @import './en-images.scss';
-
 @import './partenaires.scss';
 
 #portal-globalnav .quick-access .quick-access-title {

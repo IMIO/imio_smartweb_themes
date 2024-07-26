@@ -167,7 +167,6 @@
 
 div:not(.sectiontext){
     & + .sectiontext{
-
         @include section-padding-top;
 
         h2{

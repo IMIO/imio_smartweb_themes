@@ -13,9 +13,9 @@
             padding-top: 1rem;
             background: #EFECE8;
             box-shadow:
-              0 0 5.3px rgba(0, 0, 0, 0.02),
-              0 0 17.9px rgba(0, 0, 0, 0.03),
-              0 0 80px rgba(0, 0, 0, 0.05)
+              0 0 5.3px rgba(0, 0, 0, 2%),
+              0 0 17.9px rgba(0, 0, 0, 3%),
+              0 0 80px rgba(0, 0, 0, 5%)
             ;
         }
     }
@@ -64,7 +64,6 @@
         gap: 70px 0;
 
         li {
-
             @media screen and (max-width: 768px){
                 width: 50%;
             }

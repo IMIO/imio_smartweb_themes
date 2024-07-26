@@ -16,7 +16,6 @@
   }
 
   #portal-header-top {
-
     @include media-breakpoint-down(lg) {
       justify-content: space-between;
     }
@@ -75,7 +74,6 @@
       }
 
       #header-actions {
-
         @include media-breakpoint-down(lg) {
           display: none !important;
         }
@@ -143,12 +141,12 @@
   left: 0;
   display: block;
   background-color: $nav-mask-background;
-  opacity: 0;
+  opacity: 0%;
   transition: opacity 0.05s, visibility 0s linear 0.25s;
   visibility: hidden;
 
   &.in {
-    opacity: 1;
+    opacity: 100%;
     transition: opacity 0.2s ease, visibility 0s;
     visibility: visible;
   }

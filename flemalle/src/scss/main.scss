@@ -9,31 +9,20 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/projets";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/en-image";
-
 @import "./home/annuaire";
-
 @import "./home/les-sites";
-
 @import "./home/bulletin.scss";
-
 @import "./home/divers.scss";
-
 @import "./minisite.scss";
 
 .smartweb_herobanner .swiper-wrapper p.lead.rich_description {
@@ -167,7 +156,7 @@ body .smartweb_herobanner::before {
     height: 15px;
     position: relative;
     background-color: $primary-svg!important;
-    opacity: 1;
+    opacity: 100%;
 
     &.swiper-pagination-bullet-active{
         position: relative;

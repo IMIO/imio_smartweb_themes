@@ -109,7 +109,7 @@ legend {
 
                 &:hover{
                     span span{
-                        opacity: 1;
+                        opacity: 100%;
                     }
                 }
             }
@@ -139,7 +139,7 @@ legend {
 
     span{
         color: #000;
-        opacity: .55;
+        opacity: 55%;
 
         &:before{
             content:"";

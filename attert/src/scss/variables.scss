@@ -6,7 +6,6 @@ $primary-svg: #F7004F;
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 $font-family-base: 'Open Sans', sans-serif;
 $font-family-title: 'Poppins', sans-serif;
@@ -30,7 +29,6 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
@@ -73,7 +71,7 @@ $enable-full-width-breacrumb: false;
 
 // sitenav
 $navbar-padding-x: 2.5rem;
-$nav-mask-background: rgb(15 11 11 / 0.76);
+$nav-mask-background: rgb(15 11 11 / 76%);
 $nav-link-color: $secondary;
 $nav-link-open-color: $secondary;
 $nav-link-active-color: $primary;

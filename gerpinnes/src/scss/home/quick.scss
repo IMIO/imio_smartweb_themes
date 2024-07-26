@@ -27,7 +27,7 @@
                     bottom: -8px;
                     right: -8px;
                     border-radius: 50%;
-                    border: solid 8px rgba(255, 255, 255, .5);
+                    border: solid 8px rgba(255, 255, 255, 50%);
                 }
             }
             
@@ -78,7 +78,6 @@
     }
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

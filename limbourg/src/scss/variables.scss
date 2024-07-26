@@ -6,13 +6,9 @@ $primary-svg: #fff;
 //*// TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 $font-family-base: "Montserrat",
 system-ui,
@@ -51,7 +47,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
@@ -95,7 +90,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-link-color: #fff;
 $nav-link-open-color:#fff;
 $nav-link-active-color: #fff;
@@ -376,7 +371,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

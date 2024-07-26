@@ -16,27 +16,18 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import './a-la-une.scss';
-
 @import './news.scss';
-
 @import './quick.scss';
-
 @import './events.scss';
-
 @import './footer.scss';
-
 @import './sites-de-la-ville.scss';
-
 @import './zomm-sur.scss';
-
 @import './section.scss';
-
 @import './cpas.scss';
 
 
@@ -82,7 +73,7 @@ $enable-roboto-webfont: false;
   }
 
   .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-    background: hsla(0, 0%, 100%, 0.77);
+    background: hsla(0, 0%, 100%, 77%);
     margin: 0;
     max-width: 100%;
     padding: 1rem;

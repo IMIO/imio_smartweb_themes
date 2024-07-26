@@ -26,7 +26,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  opacity: 100%;
 }
 
 .sortable-section.sectiontext.presentation {
@@ -35,7 +35,7 @@
   background: #fff;
   border-radius: 10px;
   margin-top: -110px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  box-shadow: rgba(100, 100, 111, 20%) 0 7px 29px 0;
   z-index: 0;
 
   h2 {

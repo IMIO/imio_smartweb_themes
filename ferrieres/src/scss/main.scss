@@ -10,33 +10,21 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/intro.scss";
-
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/espace-citoyen";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./home/section-en-image";
-
 @import "./info-trav.scss";
-
 @import "./se-link.scss";
-
 @import "./se-files.scss";
-
 @import "./contact.scss";
 
 
@@ -120,7 +108,7 @@ h1 {
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 30%;
 }
 
 .r-item-img.r-item-img-placeholder {

@@ -30,8 +30,8 @@
                         bottom: 0;
                         left: 0;
                         right: 0;
-                        background-color: hsl(200, 80%, 18%,.7);
-                        opacity: 0;
+                        background-color: hsl(200, 80%, 18%,70%);
+                        opacity: 0%;
                         transition: all .3s ease;
                     }
 
@@ -44,17 +44,17 @@
                         top: 50%;
                         transform: translate(-50%,-50%);
                         transition: all .3s ease;
-                        opacity: 0;
+                        opacity: 0%;
                         z-index: 1;
                     }
 
                     &:hover{
                         &:after{
-                            opacity: 1;
+                            opacity: 100%;
                         }
 
                         &:before{
-                            opacity: 1;
+                            opacity: 100%;
                         }
                     }
 
@@ -87,14 +87,12 @@
 
                 &:first-child{
                     .image{
-
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
 
                     .table_title{
-
                         @include media-breakpoint-up(lg){
                             top: 0!important;
                             left: 50%!important;
@@ -104,20 +102,17 @@
                 }
 
                 &:last-child{
-
                     @include media-breakpoint-up(lg){
                         margin-left: 12rem;
                     }
 
                     .image{
-
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
 
                     .table_title{
-
                         @include media-breakpoint-up(lg){
                             top: 50%!important;
                             left: 0!important;

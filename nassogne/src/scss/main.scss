@@ -9,23 +9,14 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
-
 @import 'home/quick';
-
 @import 'home/banner';
-
 @import 'home/actualites';
-
 @import 'home/events';
-
 @import 'home/divers';
-
 @import 'home/footer';
-
 @import 'home/menu';
-
 @import 'home/newsletter.scss';
 
 //// STYLES
@@ -67,7 +58,7 @@ $enable-roboto-webfont: false;
                     display: block;
                     height: calc(100% - 3rem);
                     top: 1rem;
-                    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+                    box-shadow: rgba(99, 99, 99, 20%) 0 2px 8px 0;
                     background: #fff;
                 }
             }
@@ -115,7 +106,6 @@ footer{
 }
 
 #portal-globalnav{
-
     @include media-breakpoint-up(lg){
         margin-left: 2rem;
         align-items: center;
@@ -308,7 +298,7 @@ footer{
         .row{
             max-width: 100%;
             margin: 0 auto;
-            box-shadow: 0 20px 40px rgba(0, 0, 0,.16);
+            box-shadow: 0 20px 40px rgba(0, 0, 0,16%);
             border-radius: 15px;
 
             li{

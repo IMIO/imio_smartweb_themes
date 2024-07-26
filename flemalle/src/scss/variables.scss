@@ -8,9 +8,7 @@ $darktext: #404040;
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
 
 $font-family-base:'Signika', sans-serif;
@@ -35,7 +33,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
@@ -87,7 +84,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-link-color: $darktext;
 $nav-link-open-color: $darktext;
 $nav-link-active-color: $darktext;
@@ -380,7 +377,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

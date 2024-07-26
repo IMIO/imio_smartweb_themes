@@ -10,7 +10,6 @@
   }
 
   @include media-breakpoint-up(lg) {
-
     @if $actu-section-full-width {
       left: 50%;
       transform: translateX(-50%);
@@ -22,7 +21,6 @@
     padding-left: 0;
 
     @include media-breakpoint-up(lg) {
-
       @if $actu-section-full-width {
         padding-right: calc(var(--bs-gutter-x) * 0.5);
         padding-left: calc(var(--bs-gutter-x) * 0.5);

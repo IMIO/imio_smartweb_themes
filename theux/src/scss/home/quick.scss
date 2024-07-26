@@ -36,7 +36,6 @@ body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-pag
 }
 
 body .sectionlinks.quick-access .section-container .row {
-
     @include media-breakpoint-up(lg){
     display: grid;
     gap: 10px;

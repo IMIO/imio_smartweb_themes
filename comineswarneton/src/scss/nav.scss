@@ -26,7 +26,7 @@
         top: inherit;
         transition: all 0.15s ease;
         right: inherit;
-        opacity: 1;
+        opacity: 100%;
         background-size: contain;
         margin-right: 0.6rem;
         background-repeat: no-repeat;
@@ -52,7 +52,7 @@
         top: inherit;
         transition: all 0.15s ease;
         right: inherit;
-        opacity: 1;
+        opacity: 100%;
         background-size: contain;
         margin-right: 0.6rem;
         background-repeat: no-repeat;
@@ -71,7 +71,6 @@
 }
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
-
     @include media-breakpoint-down(lg){
         margin-left: auto;
     }
@@ -98,7 +97,6 @@
 }
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
-
     @include media-breakpoint-up(lg){
         position: relative;
         top: 1px;
@@ -111,7 +109,6 @@
 }
 
 .portaltype-imio-smartweb-portalpage #portal-header #portal-header-top {
-
     @include media-breakpoint-up(lg){
         position: absolute;
         left: 0;

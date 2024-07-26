@@ -30,7 +30,7 @@
                         left: 0;
                         right: 0;
                         z-index: -1;
-                        box-shadow: 0 20px 40px rgba(0,0,0,.16)!important;
+                        box-shadow: 0 20px 40px rgba(0,0,0,16%)!important;
                         border-bottom-left-radius: 15px;
                         border-bottom-right-radius: 15px;
                     }
@@ -51,7 +51,6 @@
     }
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;

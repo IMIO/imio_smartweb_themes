@@ -3,7 +3,6 @@
 }
 
 .sectionevents{
-
     @include media-breakpoint-up(lg){
         &:after{
             content:"";
@@ -17,7 +16,7 @@
             top: -15%;
             right: -20%;
             z-index: -1;
-            opacity: .2;
+            opacity: 20%;
         }
     }
 
@@ -34,14 +33,14 @@
                     left: 0;
                     right: 0;
                     background-color: #0F4C81;
-                    opacity: 0;
+                    opacity: 0%;
                 }
             }
 
             &:hover{
                 .swiper-image{
                     &:after{
-                        opacity: .5;
+                        opacity: 50%;
                     }
                 }
             }

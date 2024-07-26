@@ -34,7 +34,7 @@
             }
 
             .section-slide{
-                background:rgba(9, 57, 81, 0.61) ;
+                background:rgba(9, 57, 81, 61%) ;
             }
         }
     }
@@ -87,7 +87,7 @@
                             border: 8px solid $primary;
                             border-color: transparent;
                             backface-visibility: hidden;
-                            opacity: 0;
+                            opacity: 0%;
                             animation: hooraii cubic-bezier(.18, .14, .29, 1) .5s;
                             
                         }
@@ -103,7 +103,7 @@
                                 border-right-color: $primary;
                                 border-bottom-color: $primary;
                                 border-top-color: $primary;
-                                opacity: 1;
+                                opacity: 100%;
                                 transition: all .5s linear;
                             }
                         }
@@ -118,16 +118,16 @@
 {
   0% { 
     transform: rotate(0deg); 
-    opacity: 0.0;
+    opacity: 0%;
   }
 
  50% {
-    opacity: .5;
+    opacity: 50%;
   }
 
 100% {
     transform: rotate(180deg); 
-    opacity: 1.0;
+    opacity: 100%;
   }
 }
 
@@ -135,15 +135,15 @@
 {
   0% { 
     transform: rotate(180deg); 
-    opacity: 1;
+    opacity: 100%;
   }
 
  50% {
-    opacity: .5;
+    opacity: 50%;
   }
 
 100% {
     transform: rotate(360deg); 
-    opacity: 0;
+    opacity: 0%;
   }
 }

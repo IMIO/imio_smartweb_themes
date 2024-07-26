@@ -70,7 +70,6 @@
 
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

@@ -10,27 +10,18 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/espace-citoyen";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./se-link.scss";
-
 @import "./se-files.scss";
-
 @import "./colors-custom.scss";
 
 
@@ -237,7 +228,7 @@ footer {
 }
 
 .mask-menu {
-	background-color: rgba(15, 11, 11, 0.56);
+	background-color: rgba(15, 11, 11, 56%);
 }
 
 @include media-breakpoint-up(lg) {

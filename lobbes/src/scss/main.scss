@@ -9,19 +9,12 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
-
 @import 'home/quick';
-
 @import 'home/banner';
-
 @import 'home/actualites';
-
 @import 'home/events';
-
 @import 'home/divers';
-
 @import 'home/footer';
 
 //// STYLES

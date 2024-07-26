@@ -28,7 +28,6 @@
         }
 
         & > a{
-
             @include media-breakpoint-up(lg) { 
                 display: grid;
                 grid-template-columns: 60% 40%;
@@ -38,7 +37,6 @@
         }
 
         .swiper-image{
-
             @include media-breakpoint-up(lg) {
                 padding-bottom: 60%;
                 grid-row-start: 1;
@@ -48,7 +46,6 @@
         }
 
         .swiper_title{
-
             @include media-breakpoint-up(lg) { 
                 grid-column: 2;
                 grid-row: 1;
@@ -66,7 +63,6 @@
         }
 
         .swiper_description{
-
             @include media-breakpoint-up(lg){
                 grid-column: 2;
                 grid-row: 2;
@@ -81,9 +77,9 @@
                     width: calc(40% + 1.7rem);
                     bottom: 0;
                     right: 25px;
-                    opacity: .5;
+                    opacity: 50%;
                     z-index: -1;
-                    box-shadow: rgba(0, 0, 0, 0.16) -10px 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+                    box-shadow: rgba(0, 0, 0, 16%) -10px 10px 36px 0, rgba(0, 0, 0, 6%) 0 0 0 1px;
                 }
             }
 
@@ -95,6 +91,6 @@
 
     .swiper-button-next, .swiper-button-prev {
         top: 50%!important;
-        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+        box-shadow: rgba(99, 99, 99, 20%) 0 2px 8px 0;
     }
 }

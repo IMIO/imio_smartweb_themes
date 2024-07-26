@@ -1,7 +1,5 @@
 .sectionlinks {
-
     @include section-padding-top;
-
     @include section-padding-bottom;
 
     @if $enable-light-color-section-link {
@@ -15,7 +13,6 @@
     position: relative;
 
     .section_files_list {
-
         @include ul-rm-padding;
     }
 
@@ -58,7 +55,6 @@
                 position: relative;
 
                 img {
-
                     @include fit-cover;
                 }
             }
@@ -75,7 +71,6 @@
 // for bal
 .sectionfiles {
     .section-container.section_links {
-
         @include media-breakpoint-up(lg) {
             display: flex;
             gap: 6.8181%;
@@ -100,14 +95,14 @@
     }
 
     .section_files_link {
-        border: solid 1px rgba(255, 255, 255, 0.25);
+        border: solid 1px rgba(255, 255, 255, 25%);
         border-radius: 10px 10px 10px 0;
         text-decoration: none;
 
         &:hover,
         &:focus {
-            background: rgba(255, 255, 255, 0.09);
-            border: solid 1px rgba(255, 255, 255, 0);
+            background: rgba(255, 255, 255, 9%);
+            border: solid 1px rgba(255, 255, 255, 0%);
         }
 
         &:after {

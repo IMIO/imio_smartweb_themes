@@ -31,7 +31,7 @@
                         right: 0;
                         transition: all .3s ease;
                         background-color: $primary;
-                        opacity: 0.8;
+                        opacity: 80%;
                     }
                 }
             }
@@ -39,7 +39,6 @@
     }
 
     #body-section-acces-directs {
-
         @include media-breakpoint-down(md) {
             padding: 0.5rem 0;
 
@@ -64,7 +63,7 @@
 }
 
 div#container-section-acces-directs {
-    background: rgba(25, 63, 110, 0.95);
+    background: rgba(25, 63, 110, 95%);
     border-radius: 10px;
 }
 
@@ -72,7 +71,6 @@ div#container-section-acces-directs {
     justify-content: space-around;
 
     li {
-
         @include media-breakpoint-up(md) {
         width: 11%;
         }

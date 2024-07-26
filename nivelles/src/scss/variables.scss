@@ -7,7 +7,6 @@ $breadcrumb-margin-bottom: 0;
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 
@@ -33,7 +32,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
@@ -90,7 +88,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-title-font-family:$font-family-title;
 $nav-link-color: $primary;
 $nav-link-open-color: #fff;
@@ -139,7 +137,7 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 0.5) !default;
+$banner-content-background: rgb(256 256 256 / 50%) !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
@@ -181,7 +179,7 @@ $quick-access-height: 100px;
 $quick-access-background:#fff;
 $quick-access-border: solid 5px transparent;
 $quick-access-border-radius:50px;
-$quick-access-shadow: 0 8px 26px rgba(0, 0, 0,0.11);
+$quick-access-shadow: 0 8px 26px rgba(0, 0, 0,11%);
 $quick-access-svg-width:45px;
 $quick-access-svg-color:$primary;
 $quick-access-item-title-margin: 1rem 0;
@@ -386,7 +384,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #030720;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

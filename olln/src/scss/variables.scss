@@ -3,7 +3,7 @@ $primary: #325aa6;
 $primary-svg: #325aa6;
 $primary-light:#64a7d9;
 $yellow: #ffcf1b;
-$breadcrumb-bg : rgba(214, 214, 214, 0.231);
+$breadcrumb-bg : rgba(214, 214, 214, 23.1%);
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
@@ -30,7 +30,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
@@ -87,7 +86,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-title-font-family:$font-family-base!default;
 $nav-link-color: #fff;
 $nav-link-open-color: #fff;
@@ -136,7 +135,7 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 0.5) !default;
+$banner-content-background: rgb(256 256 256 / 50%) !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
@@ -383,7 +382,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

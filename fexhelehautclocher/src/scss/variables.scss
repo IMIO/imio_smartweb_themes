@@ -6,7 +6,6 @@ $primary-svg: #8FBEE9;
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 $font-family-base: 'Oswald', sans-serif;
 $font-family-title: 'Oswald', sans-serif;
@@ -30,7 +29,6 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
@@ -72,7 +70,7 @@ $enable-full-width-breacrumb: false;
 
 // sitenav
 $navbar-padding-x: 2.5rem;
-$nav-mask-background: rgb(15 11 11 / 0.76);
+$nav-mask-background: rgb(15 11 11 / 76%);
 $nav-link-color: $secondary;
 $nav-link-open-color: $secondary;
 $nav-link-font-size: 20px;
@@ -113,7 +111,7 @@ $banner-content-width: max-content;
 $banner-content-max-width: auto;
 $banner-content-margin: 0;
 $banner-content-padding: 1rem;
-$banner-content-background: rgb(256 256 256 / 0.5);
+$banner-content-background: rgb(256 256 256 / 50%);
 $banner-content-is-vertical-center: true;
 $banner-content-title-font-size: 50px;
 $banner-content-title-color: $secondary;
@@ -344,7 +342,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

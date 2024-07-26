@@ -28,7 +28,6 @@
 
   #body-section-quick-access {
     .row {
-
       @include media-breakpoint-down(md) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(117px, auto));

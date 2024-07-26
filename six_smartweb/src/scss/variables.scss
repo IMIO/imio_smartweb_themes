@@ -29,7 +29,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
@@ -86,7 +85,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-title-font-family:$font-family-base!default;
 $nav-link-color: $primary!default;
 $nav-link-open-color: $primary !default;
@@ -135,7 +134,7 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 0.5) !default;
+$banner-content-background: rgb(256 256 256 / 50%) !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
@@ -221,7 +220,7 @@ $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius: 10px 10px 10px 10px !default;
-$actu-item-bg-color:rgb(255, 255, 255, 0) !default;
+$actu-item-bg-color:rgb(255, 255, 255, 0%) !default;
 $actu-item-bg-radius:10px;
 $actu-category-margin: 0;
 $actu-category-padding: .3rem 1rem .4rem;
@@ -262,7 +261,7 @@ $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
 $event-image-border-radius: 10px 10px 10px 10px !default;
-$event-item-bg-color:rgb(255, 255, 255, 0) !default;
+$event-item-bg-color:rgb(255, 255, 255, 0%) !default;
 $event-item-bg-radius:10px;
 $event-category-margin: 0;
 $event-category-padding: .3rem 1rem .4rem;
@@ -384,7 +383,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

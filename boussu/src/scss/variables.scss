@@ -29,7 +29,6 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
@@ -73,7 +72,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 0.76) !default;
+$nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-link-active-color: $secondary;
 $nav-link-color: #fff;
 $nav-link-open-color: #fff !default;
@@ -160,12 +159,12 @@ $quick-access-height: 130px;
 $quick-access-background: #fff;
 $quick-access-border: none;
 $quick-access-border-radius:100%;
-$quick-access-shadow: 0 0.4px 2.2px rgba(0, 0, 0, 0.02),
-0 0.9px 5.3px rgba(0, 0, 0, 0.028),
-0 1.6px 10px rgba(0, 0, 0, 0.035),
-0 2.9px 17.9px rgba(0, 0, 0, 0.042),
-0 5.4px 33.4px rgba(0, 0, 0, 0.05),
-0 13px 80px rgba(0, 0, 0, 0.07)
+$quick-access-shadow: 0 0.4px 2.2px rgba(0, 0, 0, 2%),
+0 0.9px 5.3px rgba(0, 0, 0, 2.8%),
+0 1.6px 10px rgba(0, 0, 0, 3.5%),
+0 2.9px 17.9px rgba(0, 0, 0, 4.2%),
+0 5.4px 33.4px rgba(0, 0, 0, 5%),
+0 13px 80px rgba(0, 0, 0, 7%)
 ;
 $quick-access-svg-width: 60px;
 $quick-access-svg-color:$secondary;
@@ -366,7 +365,7 @@ $section-list-block-img-card-title: 1.25rem;
 
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
-$block-small-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+$block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
 

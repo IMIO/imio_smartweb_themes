@@ -7,7 +7,7 @@
     .section-title,
     .rich_description,
     .section-container>div::before {
-        opacity: 0;
+        opacity: 0%;
         transition: opacity 600ms ease-out, transform 600ms ease-out;
         transition-delay: 0ms;
 
@@ -21,18 +21,17 @@
         li,
         .section-title,
         .rich_description {
-            opacity: 1;
+            opacity: 100%;
             transform: translateY(0);
         }
 
         .section-container>div::before {
-            opacity: 1;
+            opacity: 100%;
             transform: translateY(-83%);
         }
     }
 
     li {
-
         @media (min-width:1201px) {
             &:nth-child(1) {
                 transition-delay: 200ms;
@@ -62,7 +61,7 @@
     .swiper-image,
     .swiper_description,
     .swiper_title {
-       opacity: 0;
+       opacity: 0%;
        transition: opacity 600ms ease-out, transform 600ms ease-out;
        transition-delay: 0ms;
    }
@@ -88,7 +87,7 @@
     .swiper-image,
     .swiper_description,
     .swiper_title  {
-        opacity: 1;
+        opacity: 100%;
         transform: translateY(0);
         }
     }
@@ -97,7 +96,7 @@
 // acut event
 .sectionnews, .sectionevents{
     .section-container {
-        opacity: 0;
+        opacity: 0%;
         transition: opacity 600ms ease-out, transform 600ms ease-out;
         transition-delay: 0ms;
 
@@ -110,7 +109,7 @@
 
     &.play {
         .section-container  {
-            opacity: 1;
+            opacity: 100%;
             transform: translateY(0);
         }
     }
@@ -120,7 +119,7 @@
 
 .home-annuaire {
     li {
-        opacity: 0;
+        opacity: 0%;
         transition: opacity 600ms ease-out, transform 600ms ease-out;
         transition-delay: 0ms;
 
@@ -131,13 +130,12 @@
 
     &.play {
         li {
-            opacity: 1;
+            opacity: 100%;
             transform: translateY(0);
         }
     }
 
     li {
-
         @media (min-width:1201px) {
             &:nth-child(1) {
                 transition-delay: 200ms;

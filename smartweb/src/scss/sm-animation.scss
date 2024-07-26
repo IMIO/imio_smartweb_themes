@@ -168,7 +168,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 15%);
     border-radius: 15px;
   }
 }
@@ -244,7 +244,7 @@
 
 @keyframes mascotte {
   0%{
-    opacity: 0;
+    opacity: 0%;
     top: 25%;
   }
 
@@ -254,31 +254,31 @@
 
   60%{
     top: 0;
-    opacity:1;
+    opacity:100%;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     top:0;
   }
 }
 
 @keyframes letterb {
   0%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(-10%);
     background-position: 10% center;
 
   }
 
   20%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(-10%);
 
   }
 
   50%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
   }
 
@@ -288,13 +288,13 @@
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0%);
     background-position:  1% center;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0%);
     background-position:  1% center;
   }
@@ -302,19 +302,19 @@
 
 @keyframes letterl {
   0%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(-8%);
     background-position: 10% center;
   }
 
   20%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(-8%);
   }
 
   50%{
     transform: translateX(0);
-    opacity: 1;
+    opacity: 100%;
   }
 
   60%{
@@ -323,32 +323,32 @@
 
   80%{
     transform: translateX(0);
-    opacity: 1;
+    opacity: 100%;
     background-position: 1% center;
   }
 
   100%{
     transform: translateX(0);
-    opacity: 1;
+    opacity: 100%;
     background-position: 1% center;
   }
 }
 
 @keyframes lettera {
   0%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(4%);
     background-position: 10% center;
   }
 
   20%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(4%);
 
   }
 
   50%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
 
   }
@@ -358,54 +358,54 @@
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
     background-position: 7% center;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     background-position: 7% center;
   }
 }
 
 @keyframes vid-container {
   0%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(52px);
   }
 
   60%{
-    opacity: 0;
+    opacity: 0%;
     transform: translateX(52px);
 
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
   }
 }
 
 @keyframes clic-container {
   0%{
-    opacity: 0;
+    opacity: 0%;
   }
 
   60%{
-    opacity: 0;
+    opacity: 0%;
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
   }
 }
@@ -413,21 +413,21 @@
 @keyframes slogan-bg{
   0%{
     height: 0;
-    opacity: 0;
+    opacity: 0%;
   }
 
   60%{
     height: 0;
-    opacity: 0;
+    opacity: 0%;
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
     height: 35%;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     height: 35%;
   }
 }
@@ -439,22 +439,22 @@
 
 @keyframes z{
   0%{
-    opacity: 0;
+    opacity: 0%;
     z-index: -2;
   }
 
   60%{
-    opacity: 0;
+    opacity: 0%;
     z-index: -2;
   }
 
   80%{
-    opacity: 1;
+    opacity: 100%;
     z-index: -2;
   }
 
   100%{
-    opacity: 1;
+    opacity: 100%;
     transform: translateX(0);
     z-index: -2;
   }

@@ -9,29 +9,17 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
-
 @import 'home/quick';
-
 @import 'home/banner';
-
 @import 'home/actualites';
-
 @import 'home/events';
-
 @import 'home/divers';
-
 @import 'home/annuaire';
-
 @import 'home/footer';
-
 @import 'home/menu';
-
 @import 'home/a-la-une';
-
 @import 'home/newsletter';
-
 @import 'home/en-image';
 
 //// STYLES
@@ -86,7 +74,6 @@ footer{
 }
 
 #portal-globalnav{
-
     @include media-breakpoint-up(lg){
         margin-left: 2rem;
         align-items: center;

@@ -24,7 +24,7 @@
 
             .r-list-item {
                 flex-direction: column!important;
-                box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 8px 26px rgba(0, 0, 0, 8%);
 
                 .r-item-img {
                     border-radius: 0!important;
@@ -70,7 +70,6 @@
     // content
 
     .envent-content.r-content {
-
         @media screen and (min-width: 600px) {
         max-width: 1296px;
 

@@ -5,7 +5,6 @@ $secondary: #FCE181;
 //*// TYPOGRAPHY
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 $font-family-base: 'Montserrat',
   sans-serif,
@@ -37,7 +36,6 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 
@@ -79,7 +77,7 @@ $enable-full-width-breacrumb: false;
 
 // sitenav
 $navbar-padding-x: 2.5rem;
-$nav-mask-background: rgb(15 11 11 / 0.76);
+$nav-mask-background: rgb(15 11 11 / 76%);
 $nav-link-color: #fff;
 $nav-link-open-color: #fff;
 $nav-link-active-color: #fff;
@@ -121,7 +119,7 @@ $banner-content-width: max-content;
 $banner-content-max-width: auto;
 $banner-content-margin: 0;
 $banner-content-padding: 1rem;
-$banner-content-background: rgb(256 256 256 / 0.5);
+$banner-content-background: rgb(256 256 256 / 50%);
 $banner-content-is-vertical-center: true;
 $banner-content-title-font-size: 50px;
 $banner-content-title-color: black;

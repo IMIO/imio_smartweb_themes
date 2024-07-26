@@ -35,7 +35,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-
       @if $actu-section-full-width {
         left: 50%;
         transform: translateX(-50%);

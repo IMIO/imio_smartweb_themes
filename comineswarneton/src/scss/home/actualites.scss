@@ -20,7 +20,7 @@
     }
 
     .swiper-slide {
-        box-shadow: 0 6px 10px rgba(0,0,0,.08); 
+        box-shadow: 0 6px 10px rgba(0,0,0,8%); 
         transition: all .3s ease-out;
         transform-origin: center center;
         -webkit-font-smoothing: antialiased;
@@ -97,7 +97,7 @@
   
   @keyframes anim-out {
     0% {
-      opacity: 0;
+      opacity: 0%;
       border-radius: 0;
       width: 300px;
       height: 300px;
@@ -107,14 +107,14 @@
       width: 0;
       height: 0;
       border-radius: 100%;
-      opacity: 0.2;
+      opacity: 20%;
     }
   }
   
   
   @keyframes anim-in {
     100% {
-      opacity: 0;
+      opacity: 0%;
       border-radius: 0;
       width: 300px;
       height: 300px;
@@ -124,6 +124,6 @@
       width: 0;
       height: 0;
       border-radius: 100%;
-      opacity: 0.2;
+      opacity: 20%;
     }
   }

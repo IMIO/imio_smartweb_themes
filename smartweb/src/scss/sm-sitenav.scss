@@ -9,7 +9,6 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .navbar-nav {
-
     @include media-breakpoint-up(lg) {
 	align-items: center;
     }
@@ -22,7 +21,7 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .mask-menu{
-    opacity: 0;
+    opacity: 0%;
     z-index: 1;
     visibility: hidden;
     display: block;
@@ -32,11 +31,11 @@ $nav-subtree-title-color : #008FD2;
     left: 0;
     right: 0;
     transition: opacity .05s,visibility 0s linear .25s;
-    background-color: rgba(15, 11, 11, 0.76);
+    background-color: rgba(15, 11, 11, 76%);
 }
 
 .mask-menu.in {
-	opacity: 1;
+	opacity: 100%;
 	visibility: visible;
 	transition: opacity .2s ease,visibility 0s;
 }
@@ -121,7 +120,6 @@ $nav-subtree-title-color : #008FD2;
     }
 
     & > ul {
-
         @include media-breakpoint-up(md){
             gap: 15px;
         }
@@ -198,7 +196,6 @@ $nav-subtree-title-color : #008FD2;
 
     & > .nav-item.has_subtree{
         & > .nav-link{
-
             @include media-breakpoint-down(xl) {
                 font-size: 15px;
             }
@@ -213,7 +210,6 @@ $nav-subtree-title-color : #008FD2;
     }
 
     .je-suis{
-
         @media screen and (min-width:1200px) {
             margin-left: auto;
         }
@@ -244,7 +240,6 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .navbar-expand-md .navbar-nav {
-
 	@include media-breakpoint-up(md) {
         flex-direction: column;
     }
@@ -425,14 +420,12 @@ $nav-subtree-title-color : #008FD2;
 
 /* décalage menu vers le bas */
 #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
-
     @include media-breakpoint-up(lg) {
         margin-top: 2.25rem;
     }
 }
 
 #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
-
     @include media-breakpoint-down(lg) {
         overflow: hidden;
         overflow-y: scroll;
@@ -486,18 +479,16 @@ $nav-subtree-title-color : #008FD2;
 }
 
 #subsite-navigation > ul li > .has_subtree.dropdown {
-	box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+	box-shadow: rgba(149, 157, 165, 20%) 0 8px 24px;
 }
 
 #subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {
-
     @include media-breakpoint-down(lg){
 	    box-shadow: none!important;
     }
 }
 
 #subsite-navigation li .has_subtree.dropdown {
-
     @include media-breakpoint-down(lg){
         right: inherit;
         left: 0 !important;
@@ -505,7 +496,6 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .prev-nav{
-
     @include media-breakpoint-down(lg){
         display: block!important;
     }

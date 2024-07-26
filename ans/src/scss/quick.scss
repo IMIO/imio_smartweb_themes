@@ -24,7 +24,7 @@
                     background-position: center;
                     background-size: contain;
                     position: relative;
-                    box-shadow: 0 20px 40px hsla(0, 0%, 0%, 0.11)!important;
+                    box-shadow: 0 20px 40px hsla(0, 0%, 0%, 11%)!important;
                 }
 
                 .table_title{
@@ -34,7 +34,7 @@
                 
                 &:hover, &:focus{
                     transition: all .25s ease;
-                    box-shadow: 0 20px 40px hsla(0, 0%, 0%, 0.11);
+                    box-shadow: 0 20px 40px hsla(0, 0%, 0%, 11%);
                     background-color: #FFF;
 
                     .image.d-block{
@@ -46,7 +46,6 @@
     }
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;

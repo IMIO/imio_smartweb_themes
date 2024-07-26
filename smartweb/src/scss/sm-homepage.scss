@@ -586,7 +586,6 @@ $border_grey: #d3d3d3;
     }
 
     .section-container{
-
         @include media-breakpoint-up(lg){
             display: flex;
         }
@@ -977,7 +976,7 @@ div#body-section-albums-photos a h3{
     color: white;
     font-size: 3rem;
     line-height: 3.5rem;
-    text-shadow: 0 0 14px rgba(0,0,0,0.2);
+    text-shadow: 0 0 14px rgba(0,0,0,20%);
 }
 
 #content-core .citoyennete-2{
@@ -1010,7 +1009,6 @@ div#body-section-albums-photos a h3{
 }
 
 .section-liens-citoyennete #body-section-liens-citoyennete ul {
-
     @include media-breakpoint-up(sm){
         padding: 1.5rem 2rem 1.25rem 3rem;
     }
@@ -1127,7 +1125,7 @@ div#body-section-albums-photos a h3{
 @keyframes border-initial-black { 
     0% { 
         width: 100%;
-        border: solid 1px rgba(0, 0, 0, 0.553);
+        border: solid 1px rgba(0, 0, 0, 55.3%);
         border-right-color: transparent;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -1151,7 +1149,7 @@ div#body-section-albums-photos a h3{
 @keyframes border-hover-black { 
     0% { 
         width: 10%;
-        border: solid 1px rgba(0, 0, 0, 0.553);
+        border: solid 1px rgba(0, 0, 0, 55.3%);
         border-right-color: transparent;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -1169,8 +1167,8 @@ div#body-section-albums-photos a h3{
 
     100% { 
         width: 100%;
-        border: solid 1px rgba(0, 0, 0, 0.553);
-        border-right-color: rgba(0, 0, 0, 0.553);
+        border: solid 1px rgba(0, 0, 0, 55.3%);
+        border-right-color: rgba(0, 0, 0, 55.3%);
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }  

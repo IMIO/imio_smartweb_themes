@@ -71,7 +71,7 @@ body.section-home-page .swiper-banner-image::after {
   left: 0;
   right: 0;
   position: absolute;
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7903536414565826) 9%, rgba(0,0,0,0) 40%);
+  background: linear-gradient(180deg, rgba(2,0,36,100%) 0%, rgba(0,0,0,79%) 9%, rgba(0,0,0,0%) 40%);
 }
 
 #portal-header #portal-header-top #header-links #search-link a {
@@ -138,7 +138,7 @@ footer h2 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+	box-shadow: rgba(0, 0, 0, 24%) 0 3px 8px;
 }
 
 .galerie-photos{

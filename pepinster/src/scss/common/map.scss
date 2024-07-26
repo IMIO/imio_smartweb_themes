@@ -66,7 +66,6 @@ body.faceted-map{
                     }
 
                     #faceted-results-items{
-
                         @include media-breakpoint-up(md) {
                             grid-template-columns: 1fr 1fr 1fr;
                             display: grid;
@@ -168,7 +167,7 @@ body.faceted-map{
     border-radius: 50px!important;
     top: 16px!important;
     right: 16px!important;
-    box-shadow: 0 1.7px 3.2px rgba(0, 0, 0, 0.011), 0 4.1px 7.6px rgba(0, 0, 0, 0.016), 0 7.6px 14.3px rgba(0, 0, 0, 0.02), 0 13.6px 25.5px rgba(0, 0, 0, 0.024), 0 25.5px 47.6px rgba(0, 0, 0, 0.029), 0 61px 114px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1.7px 3.2px rgba(0, 0, 0, 1.1%), 0 4.1px 7.6px rgba(0, 0, 0, 1.6%), 0 7.6px 14.3px rgba(0, 0, 0, 2%), 0 13.6px 25.5px rgba(0, 0, 0, 2.4%), 0 25.5px 47.6px rgba(0, 0, 0, 2.9%), 0 61px 114px rgba(0, 0, 0, 4%);
 
     &:before, &:after {
         position: absolute;
@@ -190,7 +189,7 @@ body.faceted-map{
 
       &:hover{
         &:before,&:after{
-            opacity: .4;
+            opacity: 40%;
         }
       }
 }
@@ -259,7 +258,7 @@ body.faceted-map{
   .btn-toggle:after {
     content: "On";
     right: -4rem;
-    opacity: 0.5;
+    opacity: 50%;
   }
 
   .btn-toggle > .handle {
@@ -283,11 +282,11 @@ body.faceted-map{
   }
 
   .btn-toggle.active:before {
-    opacity: 0.5;
+    opacity: 50%;
   }
 
   .btn-toggle.active:after {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .btn-toggle.btn-sm:before,
@@ -305,15 +304,15 @@ body.faceted-map{
 
   .btn-toggle.btn-sm:after {
     text-align: left;
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-sm.active:before {
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-sm.active:after {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .btn-toggle:before,
@@ -340,15 +339,15 @@ body.faceted-map{
 
   .btn-toggle.btn-lg.btn-sm:after {
     text-align: left;
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-lg.btn-sm.active:before {
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-lg.btn-sm.active:after {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .btn-toggle.btn-sm {
@@ -390,7 +389,7 @@ body.faceted-map{
   .btn-toggle.btn-sm:after {
     content: "On";
     right: -0.5rem;
-    opacity: 0.5;
+    opacity: 50%;
   }
 
   .btn-toggle.btn-sm > .handle {
@@ -414,11 +413,11 @@ body.faceted-map{
   }
 
   .btn-toggle.btn-sm.active:before {
-    opacity: 0.5;
+    opacity: 50%;
   }
 
   .btn-toggle.btn-sm.active:after {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .btn-toggle.btn-sm.btn-sm:before,
@@ -436,15 +435,15 @@ body.faceted-map{
 
   .btn-toggle.btn-sm.btn-sm:after {
     text-align: left;
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-sm.btn-sm.active:before {
-    opacity: 0;
+    opacity: 0%;
   }
 
   .btn-toggle.btn-sm.btn-sm.active:after {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .btn-toggle.btn-secondary {

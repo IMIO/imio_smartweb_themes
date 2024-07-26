@@ -10,35 +10,22 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/intro.scss";
-
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/espace-citoyen";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./home/communes-partenaires";
-
 @import "./info-trav.scss";
-
 @import "./se-link.scss";
-
 @import "./se-files.scss";
-
 @import "./contact.scss";
-
 @import "./home/bulletins.scss";
 
 
@@ -93,7 +80,7 @@ h1{
          .swiper-banner-content {
             padding: 40px 50px !important;
             border-radius: 0 40px 0 0;
-            background: rgba(20, 71, 101, 0.85) !important;
+            background: rgba(20, 71, 101, 85%) !important;
 
             .swiper-banner-title {
                 color:#fff !important;
@@ -143,7 +130,7 @@ h1{
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 30%;
 }
 
 .r-item-img.r-item-img-placeholder {
@@ -363,7 +350,7 @@ footer #container-section-noussuivre{
             right: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            background: linear-gradient(0deg, rgba(0,0,0,0%) 0%, rgba(0, 0, 0, 50%) 100%);
         }
     } 
 
@@ -386,7 +373,7 @@ footer #container-section-noussuivre{
 .block-menu-element a .card-body {
     background: #fff;
     border-radius: 15px 15px 15px 0;
-    box-shadow: 0 1px 4px rgba(0,0,0,.16);
+    box-shadow: 0 1px 4px rgba(0,0,0,16%);
     height:auto;
     margin-bottom: 10px;
     position: relative;

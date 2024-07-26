@@ -9,23 +9,16 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/quick.scss";
-
 @import "./home/a-la-une";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./home/enquetes";
-
 @import "./home/newsletter";
 
 
@@ -75,7 +68,6 @@ $enable-roboto-webfont: false;
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
 	.swiper-banner-title, 
 	.swiper-banner-description p {
-
 		@include media-breakpoint-up(md) {
 		font-weight: 600;
 		text-transform: uppercase;

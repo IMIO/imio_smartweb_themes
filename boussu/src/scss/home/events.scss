@@ -1,7 +1,7 @@
 .sectionevents {
   .swiper-pagination-bullet {
     background: #a1a1a1;
-    opacity: 1;
+    opacity: 100%;
   }
 
   .swiper-pagination-bullet-active {
@@ -76,7 +76,7 @@
 
 .sectionevents li .table_image:hover div.image::after {
   background: $primary-svg;
-  opacity: 0.5;
+  opacity: 50%;
 }
 
 .sectionevents .table_date {
@@ -92,7 +92,7 @@
 }
 
 .sectionevents ul li .table_display>a:before {
-  background: hsla(0,0%,100%,.871);
+  background: hsla(0,0%,100%,87.1%);
   border-radius: 20px;
   bottom: 0;
   content: "";

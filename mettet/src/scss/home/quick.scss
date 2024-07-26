@@ -109,11 +109,11 @@
             border-radius: 100px;
             padding: 2.5rem 0;
             height: 100%;
-            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 16%);
             transition: all .2s ease;
 
             &:hover,&:focus{
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 25%);
 
                 svg{
                     fill: $jaune!important;
@@ -147,7 +147,6 @@
 }
 
 .banner-quick,.quick-access{
-
     @media (max-width: 992px) {
         &.col-sm-6 {
             width: 100%!important;

@@ -210,7 +210,6 @@ $primary-sport: #004f8c;
 $primary-sport-svg: #ffd145;
 
 .site-sports {
-
     @media screen and (min-width:768px) {
         #portal-globalnav.activated>li>a {
             color: $primary-sport!important;
@@ -414,7 +413,6 @@ $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 
 .site-cpas {
-
     @media screen and (min-width:768px) {
         #portal-globalnav.activated>li>a {
             color: $primary-cpas!important;
@@ -626,7 +624,6 @@ $primary-competences-svg: #E6740A;
 
 
 .site-wellin-competences {
-
     @media screen and (min-width:768px) {
         #portal-globalnav.activated>li>a {
             color: $primary-competences!important;
@@ -946,7 +943,7 @@ border: 0;
             &:after{
                 content: "";
                 position: absolute;
-                background: rgba(0, 0, 0, 0.55);
+                background: rgba(0, 0, 0, 55%);
                 bottom: 0;
                 height: 0%;
                 width: 100%;
@@ -957,7 +954,7 @@ border: 0;
         .swiper_items_wrapper{
             display: flex;
             flex-direction: column;
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(0, 0, 0, 55%);
             transition: all .2s ease;
             position: absolute;
             top: 100%;

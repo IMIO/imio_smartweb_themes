@@ -5,7 +5,7 @@
 	position: fixed;
 	top: 100vh;
 	transform: translateY(-100%);
-	box-shadow: 0 0 18px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 18px rgba(0, 0, 0, 20%);
 	border-radius: 5px;
 	color: #686868;
 	width: auto;
@@ -18,7 +18,6 @@
     }
 
     & > span {
-
         @include media-breakpoint-up(lg) {
             max-width: 500px;
             display: inline-block;
@@ -29,7 +28,6 @@
       }
 
     & > form {
-
         @include media-breakpoint-up(lg) {
             display: inline-block;
             vertical-align: middle;

@@ -12,9 +12,6 @@
 
 .quick-access{
     .body-section{
-
-
-    
         @media screen and (max-width: 575px) {
             &:after {
                 border-radius: 0 0 50px 50px;
@@ -87,7 +84,6 @@
 
 
     .row{
-
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

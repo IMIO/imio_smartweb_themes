@@ -83,7 +83,7 @@
 
       &.show-nav>.has_subtree.dropdown {
         z-index: 1;
-        opacity: 1;
+        opacity: 100%;
         visibility: visible;
         border-radius: $nav-overlay-radius;
 
@@ -223,7 +223,7 @@
 
     .dropdown {
       background-color: aqua;
-      opacity: 0;
+      opacity: 0%;
       visibility: hidden;
 
       a {
@@ -271,7 +271,6 @@
 
   &.activated {
     &>ul>li>a {
-
       @include media-breakpoint-up(md) {
         color: $sub-nav-link-open-color !important;
       }
@@ -293,7 +292,6 @@
 
 #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree,
 #subsite-navigation #portal-globalnav>li>.has_subtree {
-
   @include media-breakpoint-up(lg) {
     margin-top: 2.25rem;
   }
@@ -344,7 +342,7 @@
 
     &:hover {
       &>ul {
-        opacity: 1;
+        opacity: 100%;
         visibility: visible;
       }
     }
@@ -359,8 +357,8 @@
 #subsite-navigation>ul li>.has_subtree.dropdown {
   position: absolute;
   left: 0;
-  box-shadow: 0 1.6px 11.5px rgb(0 0 0 / 0.024), 0 4.5px 31.9px rgb(0 0 0 / 0.035),
-    0 10.9px 76.9px rgb(0 0 0 / 0.046), 0 36px 255px rgb(0 0 0 / 0.07);
+  box-shadow: 0 1.6px 11.5px rgb(0 0 0 / 2.4%), 0 4.5px 31.9px rgb(0 0 0 / 3.5%),
+    0 10.9px 76.9px rgb(0 0 0 / 4.6%), 0 36px 255px rgb(0 0 0 / 7%);
 
   .has_subtree.dropdown {
     top: 0;
@@ -378,7 +376,7 @@
 @media screen and (max-width: 992px) {
   .collapse:not(.show) {
     display: block;
-    opacity: 0;
+    opacity: 0%;
     visibility: hidden;
   }
 
@@ -400,9 +398,9 @@
     .has_subtree.dropdown {
       top: 0;
       width: 100vw !important;
-      box-shadow: 0 0 6.5px rgb(0 0 0 / 0.047), 0 0 16.9px rgb(0 0 0 / 0.067),
-        0 0 33.8px rgb(0 0 0 / 0.083), 0 0 64.5px rgb(0 0 0 / 0.103),
-        0 0 139px rgb(0 0 0 / 0.15);
+      box-shadow: 0 0 6.5px rgb(0 0 0 / 4.7%), 0 0 16.9px rgb(0 0 0 / 6.7%),
+        0 0 33.8px rgb(0 0 0 / 8.3%), 0 0 64.5px rgb(0 0 0 / 10.3%),
+        0 0 139px rgb(0 0 0 / 15%);
     }
 
     #portal-globalnav>li>.nav-link {
@@ -449,9 +447,9 @@
   #subsite-navigation {
     .has_subtree.dropdown {
       width: 100vw !important;
-      box-shadow: 0 0 6.5px rgb(0 0 0 / 0.047), 0 0 16.9px rgb(0 0 0 / 0.067),
-        0 0 33.8px rgb(0 0 0 / 0.083), 0 0 64.5px rgb(0 0 0 / 0.103),
-        0 0 139px rgb(0 0 0 / 0.15);
+      box-shadow: 0 0 6.5px rgb(0 0 0 / 4.7%), 0 0 16.9px rgb(0 0 0 / 6.7%),
+        0 0 33.8px rgb(0 0 0 / 8.3%), 0 0 64.5px rgb(0 0 0 / 10.3%),
+        0 0 139px rgb(0 0 0 / 15%);
     }
 
     #portal-globalnav>li>.nav-link {

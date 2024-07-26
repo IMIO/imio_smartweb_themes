@@ -7,7 +7,6 @@
 
     @if $enable-full-width-breacrumb {
         &:after{
-
           @include full-width;
           background: $breadcrumb-bg;
         }

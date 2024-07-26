@@ -30,7 +30,7 @@
 
 .a-la-une a:hover .swiper-image::before {
     background: $color-orange;
-    opacity: 0.7;
+    opacity: 70%;
 }
 
 .a-la-une a .swiper-image::after {
@@ -43,12 +43,12 @@
     position: absolute;
     z-index: 1;
     background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
-    opacity: 0;
+    opacity: 0%;
     transform: rotate(45deg);
 }
 
 .a-la-une a:hover .swiper-image::after {
-    opacity: 1;
+    opacity: 100%;
     transform: rotate(90deg);
 }
 
@@ -79,7 +79,7 @@
     transition: all .3s ease;
 
     &:hover {
-    box-shadow: rgb(100 100 111 / 0.1) 0 7px 29px 0;
+    box-shadow: rgb(100 100 111 / 10%) 0 7px 29px 0;
     }
 }
 

@@ -10,31 +10,20 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
-
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import "./home/quick.scss";
-
 @import "./home/home-social";
-
 @import "./home/actualites";
-
 @import "./home/events";
-
 @import "./home/footer";
-
 @import "./home/newsletter";
-
 @import "./se-link.scss";
-
 @import "./se-files.scss";
-
 @import "./contact.scss";
-
 @import "./home/home-partenaires";
-
 @import "./custom-react/events";
 
 
@@ -105,7 +94,7 @@ h1 {
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 30%;
 }
 
 .r-item-img-placeholder {
@@ -316,7 +305,7 @@ footer{
         content: "";
         height: 2px;
         left: 0;
-        opacity: 0;
+        opacity: 0%;
         position: absolute;
         right: 0;
         transition: all .15s ease;
@@ -325,7 +314,7 @@ footer{
     #portal-globalnav > li > a:focus::before, 
     #portal-globalnav > li > a:hover::before {
         content: "";
-        opacity: 1;
+        opacity: 100%;
     }
 }
 
