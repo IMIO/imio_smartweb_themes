@@ -12,8 +12,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -27,76 +27,74 @@ $enable-roboto-webfont: false;
 @import "./interne/reaq.scss";
 @import "./interne/divers.scss";
 
-
-
-.portaltype-imio-smartweb-portalpage{
-    overflow-x: hidden;
+.portaltype-imio-smartweb-portalpage {
+  overflow-x: hidden;
 }
 
 #portal-header #portal-header-top #header-links #search-link a {
-    background: #fff;
+  background: #fff;
 }
 
-.navbar-toggler{
-    border: 1px solid #c1c1c1; 
-    background: #fff;
+.navbar-toggler {
+  border: 1px solid #c1c1c1;
+  background: #fff;
 }
 
-.swiper-pagination{
-    display: none;
+.swiper-pagination {
+  display: none;
 }
 
-@include media-breakpoint-up(lg){
-    .nav_je-suis{
-        margin-left: auto;
-    }
+@include media-breakpoint-up(lg) {
+  .nav_je-suis {
+    margin-left: auto;
+  }
 }
 
 .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder-mettet.jpg");
-	background-size: cover;
-	background-position: center;
+  background: url("../../assets/svg/placeholder-mettet.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.subsite-container{
-	background: #0ac189;
-	border-radius: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+.subsite-container {
+  background: #0ac189;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 
-	#subsite-logo{
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-	}
+  #subsite-logo {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 
-	.nav-link{
-		text-transform: initial!important;
-	}
+  .nav-link {
+    text-transform: initial !important;
+  }
 }
 
-#portal-breadcrumbs{
-	background-color: transparent;
+#portal-breadcrumbs {
+  background-color: transparent;
 
-	.container{
-		padding-left: 0;
-	}
+  .container {
+    padding-left: 0;
+  }
 }
 
-#viewlet-below-content-body{
-	.procedure{
-		display: none;
-	}
+#viewlet-below-content-body {
+  .procedure {
+    display: none;
+  }
 }
 
-#header-actions{
-	a{
-		text-decoration: none!important;
+#header-actions {
+  a {
+    text-decoration: none !important;
 
-		span{
-			font-size: 16px;
-			font-family: $font-family-title;
-			font-weight: 500;
-			text-transform: uppercase!important;
-		}
-	}
+    span {
+      font-size: 16px;
+      font-family: $font-family-title;
+      font-weight: 500;
+      text-transform: uppercase !important;
+    }
+  }
 }

@@ -1,56 +1,56 @@
 .sectionlinks.quick-access {
-    position: absolute;
-    transform: translateY(-57%);
-    z-index: 0;
-    left: 0;
+  position: absolute;
+  transform: translateY(-57%);
+  z-index: 0;
+  left: 0;
 }
 
-@include media-breakpoint-down(md){
-    .sectionlinks.quick-access.suivez-nous {
-        transform: initial;
-        position: initial;
-    }
+@include media-breakpoint-down(md) {
+  .sectionlinks.quick-access.suivez-nous {
+    transform: initial;
+    position: initial;
+  }
 
-    .sectionlinks.quick-access {
-        transform: translateY(-90%);
-    }
+  .sectionlinks.quick-access {
+    transform: translateY(-90%);
+  }
 
-    #container-section-acces-directs #body-section-acces-directs ul.row {
-        grid-gap: 5px;
-        align-items: center;
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(auto-fit,minmax(135px,auto));
-    }
+  #container-section-acces-directs #body-section-acces-directs ul.row {
+    grid-gap: 5px;
+    align-items: center;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(135px, auto));
+  }
 
-    .suivez-nous ul.row {
+  .suivez-nous ul.row {
     grid-gap: 20px 15px;
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fill,minmax(136px,1fr));
-    }
+    grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+  }
 
-    body .sectionlinks.annuaire ul {
-        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
-    }
+  body .sectionlinks.annuaire ul {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 
 .sectionlinks.quick-access .body-section li a {
-border: 1px solid;
-border-radius: 10px;
-width: 120px;
-height: 120px;
-padding-top: 1rem;
-background: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  padding-top: 1rem;
+  background: #fff;
 }
 
 .quick-access ul.row a.table_image:hover {
-    background: $primary-svg;
+  background: $primary-svg;
 }
 
 .sectionlinks.quick-access.suivez-nous {
-    transform: initial;
-    position: initial;
-    width: 100%;
-    max-width: 100%;
+  transform: initial;
+  position: initial;
+  width: 100%;
+  max-width: 100%;
 }

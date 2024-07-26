@@ -1,112 +1,142 @@
 /* Logo site partenaire */
 #portal-header #portal-header-top #portal-logo {
-    margin-top: 0;
-    max-width: none;
-    width: auto;
-    display: flex;
-    align-items: center;
-    flex-grow: initial;
-    margin-right: 65px;
+  margin-top: 0;
+  max-width: none;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-grow: initial;
+  margin-right: 65px;
 }
 
-#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
-    max-width: initial;
-    margin-right: 0.5rem;
-    max-height: 4rem;
+#portal-header #portal-header-top #portal-logo img,
+#portal-header #portal-header-top #portal-logo svg {
+  max-width: initial;
+  margin-right: 0.5rem;
+  max-height: 4rem;
 }
 
 .subsite-container {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 li.quick-access {
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 1.25rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 a#message::before {
-    content: '\e83b';
+  content: "\e83b";
 }
 
 .colophonWrapper li {
-    display: inline-block;
-    margin-right: 0.25rem;
+  display: inline-block;
+  margin-right: 0.25rem;
 }
 
 .colophonWrapper li:last-child {
-    width: 100%;
+  width: 100%;
 }
 
 .fax a::after {
-    content: "(fax)";
+  content: "(fax)";
 }
 
 .section-contact .contact_description {
-    width: 100%;
+  width: 100%;
 }
 
 .section-contact .pat-leaflet {
-    min-height: 0;
+  min-height: 0;
 }
 
 #portal-column-content .section-contact .contact-type-organization {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 #portal-column-content .section-contact .contact-type-organization::after {
-    left: 0.5rem;
-    right: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks::after, 
+.portaltype-imio-smartweb-page #content .sectionlinks::after,
 .portaltype-imio-smartweb-procedure #content .sectionlinks::after {
-    display:none;
+  display: none;
 }
 
 .portaltype-imio-smartweb-page #content .sectionlinks .section-container,
 .portaltype-imio-smartweb-procedure #content .sectionlinks .section-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks .section-container .section-title,
-.portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .section-title,
-.portaltype-imio-smartweb-page #content .sectionlinks .section-container .hidden-section-title + .body-section,
-.portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .hidden-section-title + .body-section {
-    padding-top: 1rem;
+.portaltype-imio-smartweb-page
+  #content
+  .sectionlinks
+  .section-container
+  .section-title,
+.portaltype-imio-smartweb-procedure
+  #content
+  .sectionlinks
+  .section-container
+  .section-title,
+.portaltype-imio-smartweb-page
+  #content
+  .sectionlinks
+  .section-container
+  .hidden-section-title
+  + .body-section,
+.portaltype-imio-smartweb-procedure
+  #content
+  .sectionlinks
+  .section-container
+  .hidden-section-title
+  + .body-section {
+  padding-top: 1rem;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks .section-container .body-section::after, 
-.portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .body-section::after {
-    background: #f3f3f3;
-    inset: 1rem 0.5rem 0;
-    content: "";
-    position: absolute;
-    z-index: -1;
+.portaltype-imio-smartweb-page
+  #content
+  .sectionlinks
+  .section-container
+  .body-section::after,
+.portaltype-imio-smartweb-procedure
+  #content
+  .sectionlinks
+  .section-container
+  .body-section::after {
+  background: #f3f3f3;
+  inset: 1rem 0.5rem 0;
+  content: "";
+  position: absolute;
+  z-index: -1;
 }
 
-#portal-column-content .pat-sortable .sortable-section:last-child .body-section {
-    padding-bottom: 1rem;
+#portal-column-content
+  .pat-sortable
+  .sortable-section:last-child
+  .body-section {
+  padding-bottom: 1rem;
 }
 
 .offcanvas.offcanvas-start {
-    width: 95%;
+  width: 95%;
 }
 
 body #portal-header #portal-header-top #portal-logo {
   margin-right: 60px;
 }
 
-#portal-globalnav>li>a {
-    color: #fff !important;
+#portal-globalnav > li > a {
+  color: #fff !important;
 }
 
 .portaltype-imio-smartweb-portalpage .section-title {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 //BC COMMUNAL
 #container-section-bulletin-communal .swiper-slide .swiper-image {
-    padding-bottom: 140%;
+  padding-bottom: 140%;
 }

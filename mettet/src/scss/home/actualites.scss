@@ -1,101 +1,102 @@
-.sectionnews{
-    .section-title{
-        font-weight: 200;
-    }
+.sectionnews {
+  .section-title {
+    font-weight: 200;
+  }
 
-    .swiper-wrapper{
-        .swiper-slide {
-            height: inherit;
+  .swiper-wrapper {
+    .swiper-slide {
+      height: inherit;
 
-            &:nth-child(3n + 1) {
-                margin-top: 4rem;
+      &:nth-child(3n + 1) {
+        margin-top: 4rem;
 
-                &  > a {
-                    background: #f8ecd1;
+        & > a {
+          background: #f8ecd1;
 
-                    .swiper-image{
-                        mask: url("../../assets/svg/square-mask.svg");
-                        mask-repeat: no-repeat;
-                        mask-size: 95%;
-                        mask-position: center center;
-                    }
-                }
-            }
-
-            &:nth-child(3n + 2) {
-                &  > a {
-                    background: #a5ffdd;
-
-                    .swiper-image{
-                        mask: url("../../assets/svg/triangle-mask.svg");
-                        mask-repeat: no-repeat;
-                        mask-size: 95%;
-                        mask-position: center center;
-                    }
-                }
-            }
-
-            &:nth-child(3n + 3) {
-                margin-top: 6rem;
-
-                &  > a {
-                    background: #97e1f4;
-
-                    .swiper-image{
-                        mask: url("../../assets/svg/round-mask.svg");
-                        mask-repeat: no-repeat;
-                        mask-size: 95%;
-                        mask-position: center center;
-                    }
-                }
-            }
-
-            & > a{
-                grid-template-columns: 1fr 1fr;
-                padding: 1.5rem;
-                align-items: center;
-
-                .swiper-image{
-                    width: 55%;
-                    padding-bottom: 55%;
-                    margin: 3rem 0 1rem 2rem;
-                    grid-column: 1 / 3;
-                    transition: all .25s ease;
-                }
-
-                .swiper_category{
-                    margin-left: auto;
-                }
-
-                .swiper_date{
-                    text-transform: uppercase;
-                    font-family: $font-family-title;
-                    grid-row-start: 2;
-                }
-
-                .swiper_title{
-                    grid-column: 1 / 3;
-                }
-
-                &:hover{
-                    .swiper-image{
-                        mask-size: 99%;
-                    }
-                }
-            }
+          .swiper-image {
+            mask: url("../../assets/svg/square-mask.svg");
+            mask-repeat: no-repeat;
+            mask-size: 95%;
+            mask-position: center center;
+          }
         }
-    }
+      }
 
-    .swiper-button-next, .swiper-button-prev {
-        top: 54px;
-        width: 45px;
-        height: 45px;
-        background-color: #fff;
-        border-radius: 50px;
-    }
+      &:nth-child(3n + 2) {
+        & > a {
+          background: #a5ffdd;
 
-    .swiper-button-prev{
-        left: inherit;
-        right: 65px;
+          .swiper-image {
+            mask: url("../../assets/svg/triangle-mask.svg");
+            mask-repeat: no-repeat;
+            mask-size: 95%;
+            mask-position: center center;
+          }
+        }
+      }
+
+      &:nth-child(3n + 3) {
+        margin-top: 6rem;
+
+        & > a {
+          background: #97e1f4;
+
+          .swiper-image {
+            mask: url("../../assets/svg/round-mask.svg");
+            mask-repeat: no-repeat;
+            mask-size: 95%;
+            mask-position: center center;
+          }
+        }
+      }
+
+      & > a {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem;
+        align-items: center;
+
+        .swiper-image {
+          width: 55%;
+          padding-bottom: 55%;
+          margin: 3rem 0 1rem 2rem;
+          grid-column: 1 / 3;
+          transition: all 0.25s ease;
+        }
+
+        .swiper_category {
+          margin-left: auto;
+        }
+
+        .swiper_date {
+          text-transform: uppercase;
+          font-family: $font-family-title;
+          grid-row-start: 2;
+        }
+
+        .swiper_title {
+          grid-column: 1 / 3;
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
     }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 54px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+
+  .swiper-button-prev {
+    left: inherit;
+    right: 65px;
+  }
 }

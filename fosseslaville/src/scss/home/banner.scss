@@ -1,45 +1,58 @@
 header#content-header {
-    position: relative;
+  position: relative;
 
-   // z-index: 0;
+  // z-index: 0;
 }
 
 .smartweb_herobanner .bannerSwiper .swiper-wrapper {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 992px) {
-    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-        font-size: 2rem;
-        text-align: center;
-        width: 100%;
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
 
-        .swiper-banner-title {
-        font-size: 2rem;
-        }
+    .swiper-banner-title {
+      font-size: 2rem;
     }
+  }
 }
 
 .swiper-banner-content {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 3rem;
-    height: 100%;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 3rem;
+  height: 100%;
+  justify-content: center;
+}
 
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .swiper-banner-content-wrapper.container {
-    height: 100%;
+  height: 100%;
 }
 
-.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
-    font-weight: 700;
-    font-style: italic;
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-description
+  p {
+  font-weight: 700;
+  font-style: italic;
 }

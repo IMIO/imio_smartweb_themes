@@ -1,40 +1,40 @@
 #container-section-quick-access {
-    .table_image {
-        .table_title {
-            span {
-                position: relative;
-                display: inline-block;
-            }
-        }
-
-        &:hover,
-        &:focus {
-            .table_title {
-                span {
-                    &::after {
-                        content: "";
-                        bottom: -5px;
-                        height: 2px;
-                        left: 0;
-                        position: absolute;
-                        right: 0;
-                        transition: all .3s ease;
-                        background-color: $primary-svg !important;
-                    }
-                }
-            }
-        }
+  .table_image {
+    .table_title {
+      span {
+        position: relative;
+        display: inline-block;
+      }
     }
 
-    #body-section-quick-access {
-        .row {
-            @include media-breakpoint-down(md) {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(117px, auto));
-                grid-gap: 20px;
-                grid-auto-rows: 1fr;
-                align-items: center;
-            }
+    &:hover,
+    &:focus {
+      .table_title {
+        span {
+          &::after {
+            content: "";
+            bottom: -5px;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            transition: all 0.3s ease;
+            background-color: $primary-svg !important;
+          }
         }
+      }
     }
+  }
+
+  #body-section-quick-access {
+    .row {
+      @include media-breakpoint-down(md) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(117px, auto));
+        grid-gap: 20px;
+        grid-auto-rows: 1fr;
+        align-items: center;
+      }
+    }
+  }
 }

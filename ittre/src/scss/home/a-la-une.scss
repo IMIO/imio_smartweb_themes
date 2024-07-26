@@ -1,93 +1,92 @@
-
 .banner-social-link {
-    position: absolute;
-    z-index: 0;
-    top: 112px;
+  position: absolute;
+  z-index: 0;
+  top: 112px;
+
+  @media screen and (min-width: 989px) {
+    top: 508px;
+  }
+
+  .row {
+    width: max-content;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 70%);
+
+    gap: 25px;
+    padding: 20.5px;
+    border-radius: 22px;
 
     @media screen and (min-width: 989px) {
-        top: 508px;
+      border-radius: 0;
+      border-top-left-radius: 46px;
     }
 
-    .row {
-        width: max-content;
-        margin-left: auto;
-        background-color: rgba(0, 0, 0, 70%);
+    li {
+      width: auto;
 
-        gap: 25px;
-        padding: 20.5px;
-        border-radius: 22px;
+      .table_image {
+        color: #fff !important;
 
-        @media screen and (min-width: 989px) {
-            border-radius: 0;
-            border-top-left-radius: 46px;
+        svg {
+          height: 30px;
+          fill: #fff !important;
         }
 
-        li {
-            width: auto;
-
-            .table_image {  
-                color: #fff!important;
-
-                svg {
-                    height: 30px;   
-                    fill: #fff!important;
-                }
-
-                .table_title {
-                    font-size: 0;
-                    position: absolute;
-                }
-            }
+        .table_title {
+          font-size: 0;
+          position: absolute;
         }
+      }
     }
+  }
 }
 
 .a-la-une .swiper-slide a {
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: auto 1fr;
-border-radius: 0 0 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr;
+  border-radius: 0 0 50px;
 
-    .swiper_title {
-        align-self: start;
-        background: transparent;
-        grid-column: 2;
-        grid-row: 1;
-        margin: 0;
-        margin-top: 1rem;
-        padding: 90px 100px 0;
-        font-size: 6rem;
+  .swiper_title {
+    align-self: start;
+    background: transparent;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 90px 100px 0;
+    font-size: 6rem;
 
-        h3 {
-            color: $dark;
-            font-family: $font-family-title;
-        }
+    h3 {
+      color: $dark;
+      font-family: $font-family-title;
     }
+  }
 }
 
 @media screen and (max-width: 989px) {
-    .banner-social-link {
-        top: 0;
-        position: relative;
-        padding-bottom: 0;
-        padding-top: 0;
+  .banner-social-link {
+    top: 0;
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0;
 
-        .row {
-            margin: 0 auto;
-            width: 100%;
-            border-radius: 20px;
-        }
+    .row {
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 20px;
     }
+  }
 
-    .a-la-une .swiper-slide a .swiper_title {
-        padding: 10px 30px 0;
+  .a-la-une .swiper-slide a .swiper_title {
+    padding: 10px 30px 0;
 
-        h3 {
-            font-size: 1rem;
-        }
+    h3 {
+      font-size: 1rem;
     }
+  }
 }
 
 .a-la-une h2.section-title {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }

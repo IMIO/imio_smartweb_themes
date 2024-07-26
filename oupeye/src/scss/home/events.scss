@@ -1,11 +1,11 @@
 .section-home-page .sectionevents {
-    background: #FCF5F4;
-  }
+  background: #fcf5f4;
+}
 
-  @include media-breakpoint-up(lg) { 
+@include media-breakpoint-up(lg) {
   .section-home-page .sectionevents::before {
     top: 50%;
-    content: url('../../assets/svg/logo-bg-red.svg');
+    content: url("../../assets/svg/logo-bg-red.svg");
     display: block;
     left: 0;
     position: absolute;

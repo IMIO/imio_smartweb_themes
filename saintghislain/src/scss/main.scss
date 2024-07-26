@@ -12,8 +12,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -29,22 +29,24 @@ $enable-roboto-webfont: false;
 @import "./home/footer";
 @import "./home/divers";
 
-.sectionfiles{
-    .section-title{
-        a{
-            color: #fff!important;
-        }
-    }
-}
-
-footer a,#portal-colophon a{
-    text-decoration: none !important;
-
-    &:hover,&:focus{
-        text-decoration: underline!important;
+.sectionfiles {
+  .section-title {
+    a {
+      color: #fff !important;
     }
   }
+}
 
-#portal-colophon{
-    padding-bottom: 2rem;
+footer a,
+#portal-colophon a {
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline !important;
+  }
+}
+
+#portal-colophon {
+  padding-bottom: 2rem;
 }

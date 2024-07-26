@@ -74,8 +74,8 @@ const sites = [
   "wasseiges",
   "wavrecpas",
   "wellin",
-  "yvoir"
-]
+  "yvoir",
+];
 
 // let sitesbuild = "";
 // sites.forEach(element => {
@@ -83,13 +83,12 @@ const sites = [
 // })
 // console.log(sitesbuild);
 
+const execSync = require("child_process").execSync;
 
-const execSync = require('child_process').execSync;
-
-sites.forEach(site => {
-    let cmd = `pnpm --theme=${site} build`;
-    let options = { stdio: 'inherit' };
-    execSync(cmd, options);
+sites.forEach((site) => {
+  let cmd = `pnpm --theme=${site} build`;
+  let options = { stdio: "inherit" };
+  execSync(cmd, options);
 });
 
 // get all site folders
@@ -103,7 +102,7 @@ sites.forEach(site => {
 // fs.readdir(directoryPath, function (err, files) {
 //     if (err) {
 //         return console.log('Unable to scan directory: ' + err);
-//     } 
+//     }
 
 //     // Parcourir tous les fichiers et dossiers
 //     files.forEach(function (file) {

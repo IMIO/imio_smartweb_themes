@@ -1,98 +1,104 @@
 #portal-footer-wrapper #portal-footer.container {
-    background:$primary;
-    color:#fff;
+  background: $primary;
+  color: #fff;
 }
 
 .smartweb_footer a {
-    color: #fff;
+  color: #fff;
 }
 
-footer .sectioncontact, footer .sextiontext, footer .sectionlinks {
+footer .sectioncontact,
+footer .sextiontext,
+footer .sectionlinks {
+  text-align: left;
+
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+  }
+
+  h2,
+  h2.section-title {
     text-align: left;
-
-    h2, h3, h4 {
-        color: #fff;
-    }
-
-    h2, h2.section-title {
-        text-align: left;
-        font-size: 24px;
-    }
+    font-size: 24px;
+  }
 }
 
 footer .sectionlinks.rs {
-    text-align: center;
+  text-align: center;
 
-    h2 {
+  h2 {
     padding: 3rem 0;
     margin-bottom: 0;
     text-align: center;
-    }
-
-    .plone-icon {
-        height: 4em;
-        width: auto;
-        fill: #fff;
-        padding-bottom: 1rem;
-    }
   }
 
+  .plone-icon {
+    height: 4em;
+    width: auto;
+    fill: #fff;
+    padding-bottom: 1rem;
+  }
+}
+
 #portal-footer-wrapper #portal-footer.container {
-    padding: 5rem 0 0;
+  padding: 5rem 0 0;
 }
 
 #portal-colophon {
+  background-color: $dark-color;
+
+  .colophonWrapper {
     background-color: $dark-color;
 
-    .colophonWrapper {
-        background-color: $dark-color;
-
-        ul {
-        display: flex;
-        }
-
-        li, li a {
-            color: #fff;
-        }
+    ul {
+      display: flex;
     }
+
+    li,
+    li a {
+      color: #fff;
+    }
+  }
 }
 
 footer .sectionlinks.rs.col-sm-12 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 footer .sectionlinks.rs.col-sm-12::before {
-    content: "";
-    width: 30%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: absolute;
-    border-top: 1px solid #fff;
+  content: "";
+  width: 30%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  border-top: 1px solid #fff;
 }
 
 footer .sectionlinks.rs.col-sm-12::after {
-    content: "";
-    width: 80%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    border-top: 1px solid #fff;
+  content: "";
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-top: 1px solid #fff;
 }
 
 footer a.table_image {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #portal-footer-wrapper {
-    margin-top: 2rem;
-  }
+  margin-top: 2rem;
+}
 
 #portal-colophon .colophonWrapper ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
 }

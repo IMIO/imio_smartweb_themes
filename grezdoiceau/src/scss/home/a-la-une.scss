@@ -78,7 +78,6 @@
     .swiper_description {
       font-size: 16px;
     }
-
   }
 
   .swiper-pagination {
@@ -119,7 +118,7 @@
     inset: -270px 0 149px 50%;
     z-index: -2;
     translate: -50%;
-    border-bottom: solid 14px #EA0101;
+    border-bottom: solid 14px #ea0101;
   }
 
   @include media-breakpoint-down(lg) {
@@ -131,7 +130,7 @@
       inset: 0 0 0 50%;
       z-index: -2;
       translate: -50%;
-      border-bottom: solid 14px #EA0101;
+      border-bottom: solid 14px #ea0101;
     }
 
     .swiper_title {
@@ -153,7 +152,7 @@
 
   @include media-breakpoint-down(lg) {
     .swiper_title {
-      margin-top: 2rem!important;
+      margin-top: 2rem !important;
     }
 
     .swiper-wrapper {

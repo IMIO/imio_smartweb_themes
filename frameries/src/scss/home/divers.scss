@@ -1,37 +1,46 @@
 //Magazines Images
 body.subsection-magazine-communal-tous-les-magazines .card-img-top {
-    padding-top: 140%;
+  padding-top: 140%;
 }
 
 //CPAS LOGO
-#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
-    height: auto;
-    }
+#portal-header #portal-header-top #portal-logo img,
+#portal-header #portal-header-top #portal-logo svg {
+  height: auto;
+}
 
-.site-cpas #portal-header #portal-header-top #portal-logo img, .site-cpas #portal-header #portal-header-top #portal-logo svg {
-        max-width: 60%;
-    }
+.site-cpas #portal-header #portal-header-top #portal-logo img,
+.site-cpas #portal-header #portal-header-top #portal-logo svg {
+  max-width: 60%;
+}
 
 body.portaltype-imio-smartweb-eventsview .r-map.annuaire-map {
-        display: none;
+  display: none;
 }
 
-.site-cpas.portaltype-imio-smartweb-portalpage #content>header {
-    display: block;
+.site-cpas.portaltype-imio-smartweb-portalpage #content > header {
+  display: block;
 }
 
-.site-cpas.portaltype-imio-smartweb-portalpage #content header .lead.rich_description {
-    max-width: 100%;
+.site-cpas.portaltype-imio-smartweb-portalpage
+  #content
+  header
+  .lead.rich_description {
+  max-width: 100%;
 }
 
-.site-cpas.portaltype-imio-smartweb-portalpage .sectionlinks.quick-access .body-section ul {
-    justify-content: space-around;
+.site-cpas.portaltype-imio-smartweb-portalpage
+  .sectionlinks.quick-access
+  .body-section
+  ul {
+  justify-content: space-around;
 
-    li {
-        width: 12.333%;
-    }
+  li {
+    width: 12.333%;
+  }
 }
 
-.site-cpas.portaltype-imio-smartweb-portalpage .sortable-section.sectionlinks.quick-access.col-sm-12 {
-    padding-top: 1rem;
+.site-cpas.portaltype-imio-smartweb-portalpage
+  .sortable-section.sectionlinks.quick-access.col-sm-12 {
+  padding-top: 1rem;
 }

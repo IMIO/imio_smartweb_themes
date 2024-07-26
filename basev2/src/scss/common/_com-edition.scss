@@ -1,93 +1,98 @@
 .container.header-section.hide-in-preview {
-    padding: 0.5rem;
-    border-radius: 0;
-    border: 1px solid #ddd;
-    text-align: center;
+  padding: 0.5rem;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .manage-section a {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.pat-sortable> :hover {
-    cursor: move;
+.pat-sortable > :hover {
+  cursor: move;
 }
 
 .pat-sortable .sortable-section {
-    border: 1px solid transparent !important;
+  border: 1px solid transparent !important;
 }
 
-
 .pat-sortable .sortable-section {
-	padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-section .manage-section a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header-section .documentModified {
-    color: gray;
+  color: gray;
 }
 
-figcaption{
-    font-style: italic;
-    letter-spacing: 0.01rem;
+figcaption {
+  font-style: italic;
+  letter-spacing: 0.01rem;
 }
 
 .current-folder-view + a {
-    margin-bottom: 1rem;
-    display: block;
-    font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.5rem;
 }
 
-.userrole-authenticated.popover-upload-active .pat-structure .navbar.ui-offset-parent{
-    position: relative;
+.userrole-authenticated.popover-upload-active
+  .pat-structure
+  .navbar.ui-offset-parent {
+  position: relative;
 }
 
-#formfield-form-widgets-svg_icon{
-    svg{
-        fill: #000;
-    }
+#formfield-form-widgets-svg_icon {
+  svg {
+    fill: #000;
+  }
 }
 
 .section-map .leaflet-container {
-	z-index: 0;
+  z-index: 0;
 }
 
 .template-folder_contents #content-core .table .itemRow.state-private,
-.template-folder_contents #content-core .table .itemRow.state-private .state-private {
-    color: #dc3545 !important;
+.template-folder_contents
+  #content-core
+  .table
+  .itemRow.state-private
+  .state-private {
+  color: #dc3545 !important;
 }
 
 #content-core .pat-structure .navbar.ui-offset-parent {
-    z-index: 1;
+  z-index: 1;
 }
 
 //  je sais pas quoi (privacy)
 .view-name-consent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.view-name-consent>div>label.form-label {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+.view-name-consent > div > label.form-label {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 div#formfield-form-widgets-basic_cookies {
-    order: 0;
+  order: 0;
 }
 
 div#formfield-form-widgets-basic_analytics {
-    order: 1;
+  order: 1;
 }
 
 #content-core .sortable-section .collapse:not(.show) {
-    display: none;
+  display: none;
 }
 
 //---//

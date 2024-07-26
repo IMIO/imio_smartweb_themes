@@ -1,86 +1,84 @@
-.a-la-une{
-    padding-top: 4vw;
+.a-la-une {
+  padding-top: 4vw;
+  padding-bottom: 0;
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    background: $primary;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &::after {
+      content: "";
+      background: $primary;
+      width: calc(100vw - 80px);
+      top: -2px;
+      bottom: 60px;
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+  }
+
+  .swiper-wrapper {
     padding-bottom: 0;
+  }
+
+  .section-title {
+    text-align: center;
     position: relative;
+    margin-bottom: 2rem;
+  }
 
-    @include media-breakpoint-down(lg) {
-        background: $primary;
+  .swiper-slide {
+    a {
+      text-decoration: none;
     }
 
-    @include media-breakpoint-up(lg){
+    & > a {
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: 50% 40%;
+      }
+    }
+
+    .swiper-image {
+      border-radius: 20px;
+    }
+
+    .swiper_title {
+      margin-top: 0;
+
+      h3 {
+        font-size: 32px;
+        padding: 1rem 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .swiper_description {
+      p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 76%);
+        font-family: $font-family-title;
+
         &::after {
-            content: "";
-            background: $primary;
-            width: calc(100vw - 80px);
-            top: -2px;
-            bottom: 60px;
-            z-index: -1;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-
+          content: "Lire la suite";
+          font-weight: 500;
+          display: block;
+          margin-top: 1rem;
+          color: #fff;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23fdbd39' data-name='Ellipse 74'/%3E%3Cg fill='none' stroke='%23007a99' stroke-linecap='round' stroke-width='1.5' data-name='Group 747'%3E%3Cpath d='M10.563 9.127 13.436 12' data-name='Line 8'/%3E%3Cpath d='M10.563 14.873 13.436 12' data-name='Line 9'/%3E%3C/g%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: bottom right;
+          background-size: contain;
+          width: max-content;
+          padding-right: 2rem;
+          line-height: 1.4;
         }
+      }
     }
-
-    .swiper-wrapper{
-        padding-bottom: 0;
-    }
-
-    .section-title{
-        text-align: center;
-        position: relative;
-        margin-bottom: 2rem;
-    }
-
-    .swiper-slide{
-        a{
-            text-decoration: none;
-        }
-
-        &>a {
-            @include media-breakpoint-up(lg) {
-              grid-template-columns: 50% 40%;
-            }
-          }
-
-        .swiper-image{
-            border-radius: 20px;
-        }
-
-        .swiper_title{
-            margin-top: 0;
-
-            h3 {
-                font-size: 32px;
-                padding: 1rem 0;
-                margin-bottom: 0;
-            }
-        }
-
-        .swiper_description {
-            p {
-                font-size: 16px;
-                color: rgba(255, 255, 255,76%);
-                font-family: $font-family-title;
-
-                &::after {
-                    content: "Lire la suite";
-                    font-weight: 500;
-                    display: block;
-                    margin-top: 1rem;
-                    color: #fff;
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23fdbd39' data-name='Ellipse 74'/%3E%3Cg fill='none' stroke='%23007a99' stroke-linecap='round' stroke-width='1.5' data-name='Group 747'%3E%3Cpath d='M10.563 9.127 13.436 12' data-name='Line 8'/%3E%3Cpath d='M10.563 14.873 13.436 12' data-name='Line 9'/%3E%3C/g%3E%3C/svg%3E");
-                    background-repeat: no-repeat;
-                    background-position: bottom right;
-                    background-size: contain;
-                    width: max-content;
-                    padding-right: 2rem;
-                    line-height: 1.4;
-                }
-            }
-        }
-    }
-
+  }
 }

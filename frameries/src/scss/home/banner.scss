@@ -1,19 +1,19 @@
 @include media-breakpoint-down(md) {
-    .smartweb_herobanner .bannerSwiper {
+  .smartweb_herobanner .bannerSwiper {
     height: 300px;
-    }
+  }
 
-    footer#portal-footer-wrapper {
-        text-align: center;
-    }
+  footer#portal-footer-wrapper {
+    text-align: center;
+  }
 }
 
 @include media-breakpoint-down(sm) {
-    .smartweb_herobanner .bannerSwiper {
+  .smartweb_herobanner .bannerSwiper {
     height: 140px;
-    }
+  }
 
-    footer#portal-footer-wrapper {
-        text-align: center;
-    }
+  footer#portal-footer-wrapper {
+    text-align: center;
+  }
 }

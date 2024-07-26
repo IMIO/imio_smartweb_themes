@@ -1,153 +1,150 @@
 .sectionevents {
-    .section-title{
-        display: flex;
-        align-items: center;
+  .section-title {
+    display: flex;
+    align-items: center;
 
-        @include media-breakpoint-up(lg){
-            justify-content: end;
-        }
-
-        &::before{
-            content: "";
-            width: 10px;
-            background: #fff;
-            display: block;
-            height: 34px;
-            margin-right: 1rem;
-        }
+    @include media-breakpoint-up(lg) {
+      justify-content: end;
     }
 
-    .swiper-wrapper{
-        padding: 2rem 0 5rem;
+    &::before {
+      content: "";
+      width: 10px;
+      background: #fff;
+      display: block;
+      height: 34px;
+      margin-right: 1rem;
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 2rem 0 5rem;
+  }
+
+  .swiper-slide {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 8%);
+    transition: all 0.3s ease-out;
+    transform-origin: center center;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+    transform: scale(1);
+    filter: blur(0);
+    animation: anim-mouse-leave forwards 0.4s ease-out;
+
+    & > a {
+      padding-bottom: 2rem;
     }
 
-    .swiper-slide {
-        box-shadow: 0 6px 10px rgba(0,0,0,8%); 
-        transition: all .3s ease-out;
-        transform-origin: center center;
-        -webkit-font-smoothing: antialiased;
-        backface-visibility: hidden;
-        transform: scale(1);
-        filter: blur(0);
-        animation: anim-mouse-leave forwards 0.4s ease-out;
-
-        & > a{
-            padding-bottom: 2rem;
-        }
-
-        &:hover{
-            animation: anim-mouse-enter forwards 0.4s ease-out;
-            transition: all .4s ease-out; 
-        }
-
-        .swiper_date{
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            justify-content: center;
-            transform: translate(-50%,50%);
-            background: $secondary;
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            font-weight: bold;
-            border: solid 4px #fff;
-        }
+    &:hover {
+      animation: anim-mouse-enter forwards 0.4s ease-out;
+      transition: all 0.4s ease-out;
     }
+
+    .swiper_date {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      transform: translate(-50%, 50%);
+      background: $secondary;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      font-weight: bold;
+      border: solid 4px #fff;
+    }
+  }
 }
 
 .sectionevents .see_all a {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 @keyframes anim-mouse-down {
-    0% {
-          transform: scale(1);
-      }
-
-      33%{
-          transform: scale(0.93);
-      }
-
-      66% {
-          transform: scale(0.97);
-      }
-
-      100% {
-          transform: scale(0.95);
-      }
+  0% {
+    transform: scale(1);
   }
-  
-  @keyframes anim-mouse-enter {
-        0% {
-          transform: scale(1);
-      }
 
-      33% {
-          transform: scale(1.07);
-      }
-
-      66% {
-          transform: scale(1.03);
-      }
-
-      100% {
-          transform: scale(1.05);
-      }
+  33% {
+    transform: scale(0.93);
   }
-  
-  @keyframes anim-mouse-leave {
-        0% {
-          transform: scale(1.02);
-      }
 
-      33% {
-          transform: scale(0.98);
-      }
-
-      66% {
-          transform: scale(1.02);
-      }
-
-      100% {
-          transform: scale(1);
-      }
+  66% {
+    transform: scale(0.97);
   }
-  
-  
-  
-  @keyframes anim-out {
-    0% {
-      opacity: 0%;
-      border-radius: 0;
-      width: 300px;
-      height: 300px;
-    }
 
-    100% {
-      width: 0;
-      height: 0;
-      border-radius: 100%;
-      opacity: 20%;
-    }
+  100% {
+    transform: scale(0.95);
   }
-  
-  
-  @keyframes anim-in {
-    100% {
-      opacity: 0%;
-      border-radius: 0;
-      width: 300px;
-      height: 300px;
-    }
+}
 
-    0% {
-      width: 0;
-      height: 0;
-      border-radius: 100%;
-      opacity: 20%;
-    }
+@keyframes anim-mouse-enter {
+  0% {
+    transform: scale(1);
   }
+
+  33% {
+    transform: scale(1.07);
+  }
+
+  66% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes anim-mouse-leave {
+  0% {
+    transform: scale(1.02);
+  }
+
+  33% {
+    transform: scale(0.98);
+  }
+
+  66% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes anim-out {
+  0% {
+    opacity: 0%;
+    border-radius: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  100% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    opacity: 20%;
+  }
+}
+
+@keyframes anim-in {
+  100% {
+    opacity: 0%;
+    border-radius: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    opacity: 20%;
+  }
+}

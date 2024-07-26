@@ -1,11 +1,11 @@
 #section-agenda .end_date {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 
-  .sortable-section.sectionevents {
-    position: relative;
+.sortable-section.sectionevents {
+  position: relative;
 
-    &::after {
+  &::after {
     background: url("../../assets/svg/logo-back.svg");
     content: "";
     display: block;
@@ -17,11 +17,11 @@
     background-size: cover;
     background-position: right top;
     z-index: -99;
-    }
+  }
 }
 
 @media (max-width: 992px) {
   .sortable-section.sectionevents {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
   }
 }

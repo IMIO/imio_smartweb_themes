@@ -1,122 +1,112 @@
-
-
 .sectionlinks {
+  padding: 0;
+
+  .body-section {
     padding: 0;
+  }
 
-    .body-section{
-        padding: 0;
-    }
+  svg {
+    max-height: 40px;
+    fill: #00b0d6 !important;
+  }
 
-    svg{
-        max-height: 40px;
-        fill: #00B0D6 !important; 
-    }
-    
-    .body-section{
-        li{
-            .table_image{
-                .image.d-block{
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                    position: relative;
-                    transition: all .3s ease;
-                }
-
-                &:hover{
-                    .image.d-block{
-                        transform: translateY(-10px);
-                        background: #00B0D6!important; 
-                    }
-
-                    svg{
-                        fill: #fff !important;
-                    }
-                }
-            }
+  .body-section {
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          transition: all 0.3s ease;
         }
-    }
 
-    .row{
-        @include media-breakpoint-down(lg){
-            grid-gap: 0;
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+        &:hover {
+          .image.d-block {
+            transform: translateY(-10px);
+            background: #00b0d6 !important;
+          }
 
-            li{
-                width: auto!important;
-            }
+          svg {
+            fill: #fff !important;
+          }
         }
+      }
     }
+  }
 
-    .section-title{
-        font-weight: 200;
-        text-transform: uppercase;
-        color: $primary!important;
-        margin: 0 0 2rem;
+  .row {
+    @include media-breakpoint-down(lg) {
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 132px));
+
+      li {
+        width: auto !important;
+      }
     }
+  }
+
+  .section-title {
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $primary !important;
+    margin: 0 0 2rem;
+  }
 }
 
-
-
-
-
 .portaltype-imio-smartweb-page #main-container .sectionlinks {
-    
-    background-color: white;
-
-
-
+  background-color: white;
 }
 
 .sectionlinks .body-section ul {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: auto;
 
-    li {
-        list-style: none;
+  li {
+    list-style: none;
 
-        a {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            padding: 10px;
-            color:black;
-            text-decoration: none;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
 
-            .image.d-block {
-                align-items: center;
-                background: #e5f7fb;
-                border: 0 solid #009eb0;
-                border-radius: 50%;
-                box-shadow: none;
-                display: flex;
-                flex-direction: column;
-                height: 70px;
-                justify-content: center;
-                margin: 0 auto;
-                width: 70px;
+      .image.d-block {
+        align-items: center;
+        background: #e5f7fb;
+        border: 0 solid #009eb0;
+        border-radius: 50%;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70px;
 
-                svg {
-                    fill: #009eb0;
-                    height: auto;
-                    width: 35px;
-                }
-            }
-
-            .table_title {
-                margin: 1rem auto;
-
-                span {
-                    color: #000;
-                    font-family: Roboto,sans-serif;
-                    font-size: 15px;
-                    font-weight: 500;
-                    text-transform: default;
-                }
-            }
+        svg {
+          fill: #009eb0;
+          height: auto;
+          width: 35px;
         }
+      }
+
+      .table_title {
+        margin: 1rem auto;
+
+        span {
+          color: #000;
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          text-transform: default;
+        }
+      }
     }
+  }
 }

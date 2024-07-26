@@ -1,9 +1,9 @@
-.slogan-container{
+.slogan-container {
   margin: 0 auto;
   display: flex;
   padding: 0;
 
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     padding: 3rem 0;
   }
   position: relative;
@@ -19,84 +19,83 @@
     transform: translateX(-50%);
     z-index: -1;
     animation: slogan-bg 2.7s 1;
-
+  }
 }
-}
 
-.bla-container{
+.bla-container {
   flex: 73%;
   position: relative;
 
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     animation: bla-container 2.7s 1;
   }
   transition: ease;
 
   //869
-  .letter{
+  .letter {
     display: inline-block;
     mask-repeat: no-repeat;
 
-    &::before{
+    &::before {
       content: "";
       display: inline-block;
       width: 1px;
     }
 
-    &.b{
+    &.b {
       position: relative;
-      background: url("../../assets/svg/b2-img.jpg") no-repeat center /cover;
-      background-position:  1% center;
+      background: url("../../assets/svg/b2-img.jpg") no-repeat center / cover;
+      background-position: 1% center;
       mask-image: url("../../assets/svg/b-svg.svg");
       width: 32.34%; // = 281px
-      margin-right:3.32%;
+      margin-right: 3.32%;
 
       // height 348px
       animation: letterb 2.7s 1;
 
-      &::before{
+      &::before {
         padding-bottom: 123.84%; // 100 / 281 * 348
       }
     }
 
-    &.l{
+    &.l {
       position: relative;
-      background: url("../../assets/svg/l2-img.jpg") no-repeat center /cover;
-      background-position:  1% center;
+      background: url("../../assets/svg/l2-img.jpg") no-repeat center / cover;
+      background-position: 1% center;
       mask-image: url("../../assets/svg/l-svg.svg");
       width: 21.634%;
-      margin-right:3.32%;
+      margin-right: 3.32%;
       animation: letterl 2.7s 1;
 
-      &::before{
+      &::before {
         padding-bottom: 185.106%;
       }
     }
 
-    &.a{
+    &.a {
       position: relative;
-      background: url("../../assets/svg/a2-img.jpg") no-repeat center /cover;
-      background-position:  7% center;
+      background: url("../../assets/svg/a2-img.jpg") no-repeat center / cover;
+      background-position: 7% center;
       mask-image: url("../../assets/svg/a-svg.svg");
       width: 39.355%;
       animation: lettera 2.7s 1;
 
-      &::before{
+      &::before {
         padding-bottom: 101.754%;
       }
     }
   }
 
-  .mascotte{
+  .mascotte {
     position: absolute;
-    background: url("../../assets/svg/mascotte.svg") no-repeat center /cover;
+    background: url("../../assets/svg/mascotte.svg") no-repeat center / cover;
     width: 12.888%; //112px height = 137px
     z-index: 1;
-    right: 31.185%;  // 271px
+    right: 31.185%; // 271px
     animation: mascotte 2.7s 1;
     transition: linear;
 
-    &::before{
+    &::before {
       content: "";
       display: inline-block;
       width: 1px;
@@ -105,63 +104,63 @@
   }
 }
 
-.letter-container{
+.letter-container {
   position: relative;
 }
 
-.vid-container{
+.vid-container {
   animation: vid-container 2.7s 1;
   flex: 26%;
 }
 
-.slogan{
+.slogan {
   width: 88%;
   background: url("../../assets/svg/slogan.svg") no-repeat center;
   margin-left: auto;
   position: relative;
   margin-top: 10%;
 
-    &::before{
-      content: "";
-      display: inline-block;
-      width: 1px;
-      padding-bottom:28.461%; // 100 / 260 * 74
-    }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    padding-bottom: 28.461%; // 100 / 260 * 74
+  }
 }
 
-.feder-logo{
+.feder-logo {
   padding-bottom: 40%;
-  background:url("../../assets/svg/logo_feder_wallonie.png");
+  background: url("../../assets/svg/logo_feder_wallonie.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 87%;
   display: block;
 }
 
-.vid{
+.vid {
   width: 70%;
-  background:url("../../assets/svg/banner-vid.jpg");
+  background: url("../../assets/svg/banner-vid.jpg");
   margin-left: auto;
   position: relative;
   filter: brightness(68%);
-  padding-bottom:40%;
+  padding-bottom: 40%;
   margin-top: -7%;
   border-radius: 15px;
 
-  &::after{
-    content:"";
+  &::after {
+    content: "";
     width: 29%;
     height: 51%;
-    background:  url("../../assets/svg/play-vid.svg") no-repeat center /cover;
+    background: url("../../assets/svg/play-vid.svg") no-repeat center / cover;
     display: block;
     position: absolute;
     left: 50%;
     z-index: 1;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
-  &::before{
+  &::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -172,21 +171,22 @@
   }
 }
 
-.en-un-clic-titre,.un-clic{
+.en-un-clic-titre,
+.un-clic {
   animation: clic-container 2.7s 1;
 }
 
-.en-un-clic-titre{
+.en-un-clic-titre {
   z-index: -1;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .slogan-container {
     flex-direction: column;
     justify-content: center;
   }
 
-  .vid{
+  .vid {
     display: none;
   }
 
@@ -202,9 +202,9 @@
     width: 100%;
   }
 
-  .feder-logo{
+  .feder-logo {
     padding-bottom: 40%;
-    background:url("../../assets/svg/logo_feder_wallonie.png");
+    background: url("../../assets/svg/logo_feder_wallonie.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 100%;
@@ -214,119 +214,114 @@
 // annim
 
 @keyframes bla-container {
-  0%{
+  0% {
     transform: translateX(52px);
   }
 
-  20%{
+  20% {
     transform: translateX(52px);
-
   }
 
-  60%{
+  60% {
     transform: translateX(52px);
-
   }
 
-  80%{
-      transform: translateX(0);
-  }
-
-  90%{
+  80% {
     transform: translateX(0);
   }
 
-  100%{
+  90% {
+    transform: translateX(0);
+  }
+
+  100% {
     transform: translateX(0);
   }
 }
 
 @keyframes mascotte {
-  0%{
+  0% {
     opacity: 0%;
     top: 25%;
   }
 
-  20%{
+  20% {
     top: 25%;
   }
 
-  60%{
+  60% {
     top: 0;
-    opacity:100%;
+    opacity: 100%;
   }
 
-  100%{
+  100% {
     opacity: 100%;
-    top:0;
+    top: 0;
   }
 }
 
 @keyframes letterb {
-  0%{
+  0% {
     opacity: 0%;
     transform: translateX(-10%);
     background-position: 10% center;
-
   }
 
-  20%{
+  20% {
     opacity: 0%;
     transform: translateX(-10%);
-
   }
 
-  50%{
+  50% {
     opacity: 100%;
     transform: translateX(0);
   }
 
-  60%{
+  60% {
     background-position: 10% center;
-
   }
 
-  80%{
+  80% {
     opacity: 100%;
     transform: translateX(0%);
-    background-position:  1% center;
+    background-position: 1% center;
   }
 
-  100%{
+  100% {
     opacity: 100%;
     transform: translateX(0%);
-    background-position:  1% center;
+    background-position: 1% center;
   }
 }
 
 @keyframes letterl {
-  0%{
+  0% {
     opacity: 0%;
     transform: translateX(-8%);
     background-position: 10% center;
   }
 
-  20%{
+  20% {
     opacity: 0%;
     transform: translateX(-8%);
   }
 
-  50%{
+  50% {
     transform: translateX(0);
     opacity: 100%;
   }
 
-  60%{
+  60% {
     background-position: 10% center;
   }
 
-  80%{
+  80% {
     transform: translateX(0);
     opacity: 100%;
     background-position: 1% center;
   }
 
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 100%;
     background-position: 1% center;
@@ -334,125 +329,121 @@
 }
 
 @keyframes lettera {
-  0%{
+  0% {
     opacity: 0%;
     transform: translateX(4%);
     background-position: 10% center;
   }
 
-  20%{
+  20% {
     opacity: 0%;
     transform: translateX(4%);
-
   }
 
-  50%{
+  50% {
     opacity: 100%;
     transform: translateX(0);
-
   }
 
-  60%{
+  60% {
     background-position: 17% center;
   }
 
-  80%{
+  80% {
     opacity: 100%;
     background-position: 7% center;
   }
 
-  100%{
+  100% {
     opacity: 100%;
     background-position: 7% center;
   }
 }
 
 @keyframes vid-container {
-  0%{
+  0% {
     opacity: 0%;
     transform: translateX(52px);
   }
 
-  60%{
+  60% {
     opacity: 0%;
     transform: translateX(52px);
-
   }
 
-  80%{
+  80% {
     opacity: 100%;
     transform: translateX(0);
   }
 
-  100%{
+  100% {
     opacity: 100%;
     transform: translateX(0);
   }
 }
 
 @keyframes clic-container {
-  0%{
+  0% {
     opacity: 0%;
   }
 
-  60%{
+  60% {
     opacity: 0%;
   }
 
-  80%{
+  80% {
     opacity: 100%;
   }
 
-  100%{
+  100% {
     opacity: 100%;
     transform: translateX(0);
   }
 }
 
-@keyframes slogan-bg{
-  0%{
+@keyframes slogan-bg {
+  0% {
     height: 0;
     opacity: 0%;
   }
 
-  60%{
+  60% {
     height: 0;
     opacity: 0%;
   }
 
-  80%{
+  80% {
     opacity: 100%;
     height: 35%;
   }
 
-  100%{
+  100% {
     opacity: 100%;
     height: 35%;
   }
 }
 
-.un-clic{
+.un-clic {
   animation: z 2.7s 1;
-
 }
 
-@keyframes z{
-  0%{
+@keyframes z {
+  0% {
     opacity: 0%;
     z-index: -2;
   }
 
-  60%{
+  60% {
     opacity: 0%;
     z-index: -2;
   }
 
-  80%{
+  80% {
     opacity: 100%;
     z-index: -2;
   }
 
-  100%{
+  100% {
     opacity: 100%;
     transform: translateX(0);
     z-index: -2;

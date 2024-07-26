@@ -1,53 +1,65 @@
 footer {
+  background: $primary;
+
+  div#portal-footer,
+  .smartweb_footer,
+  .colophon.row {
     background: $primary;
+  }
 
-    div#portal-footer,
-    .smartweb_footer,
-    .colophon.row
-     {
-        background: $primary;
+  a,
+  h1,
+  h2,
+  h3,
+  span,
+  li,
+  div {
+    color: #fff;
+
+    &:hover {
+      color: #fff !important;
     }
+  }
 
-    a, h1, h2, h3, span, li,div{
-        color: #fff;
-
-        &:hover{
-            color: #fff!important;
-        }
-    }
-
-    .sectionlinks h2.section-title {
-        font-size: 2rem;
-        color: #fff;
-    }
+  .sectionlinks h2.section-title {
+    font-size: 2rem;
+    color: #fff;
+  }
 }
 
 footer .smartweb_footer {
-    padding: 5rem 0 0;
+  padding: 5rem 0 0;
 }
 
 div#portal-colophon {
-    background: $primary;
+  background: $primary;
 
-    a, h1, h2, h3, span, li {
-        color: #fff;
-    }
+  a,
+  h1,
+  h2,
+  h3,
+  span,
+  li {
+    color: #fff;
+  }
 
-    h2 {
-        font-size: 1.5rem;
-        color: #fff;
-    }
+  h2 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
 
 footer .sectiontext .section-text .body-section figure img {
-    max-width: 125px;
+  max-width: 125px;
 }
 
 #portal-footer-wrapper {
-    margin-top: 0;
+  margin-top: 0;
   text-align: left;
 
-  .contact_titles h2, div#portal-colophon h2, h2 {
+  .contact_titles h2,
+  div#portal-colophon h2,
+  h2 {
     font-weight: 600;
     font-size: 1.5rem;
     color: #fff;
@@ -59,18 +71,18 @@ footer .sectiontext .section-text .body-section figure img {
 }
 
 footer .sectiontext .section-text .body-section.figure-top figure {
-    margin-top: 0;
-  }
+  margin-top: 0;
+}
 
-  div#portal-footer {
-    padding-top: 0;
-  }
+div#portal-footer {
+  padding-top: 0;
+}
 
-  .colophonWrapper{
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-        padding: 1rem 0;
-    }
+.colophonWrapper {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 1rem 0;
   }
+}

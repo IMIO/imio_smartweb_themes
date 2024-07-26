@@ -1,70 +1,69 @@
 .sectionevents .swiper-slide .swiper-image {
-    display: none;
+  display: none;
 }
 
 .sectionevents .swiper-slide {
-    .swiper-image{
-        order: 1;
-    }
+  .swiper-image {
+    order: 1;
+  }
 
-    .swiper_date {
-        order: 2;
-        background: $primary-svg;
-        border-radius: 50px;
-    }
+  .swiper_date {
+    order: 2;
+    background: $primary-svg;
+    border-radius: 50px;
+  }
 
-    .swiper_category {
-        order: 3;
-    }
+  .swiper_category {
+    order: 3;
+  }
 
-    .swiper_title {
-        order: 4;
-    }
-
+  .swiper_title {
+    order: 4;
+  }
 }
 
 .sectionevents .swiper-wrapper {
-    position: relative;
+  position: relative;
 }
 
-.sectionevents .swiper{
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        background: #dbdbdb;
-        height: 1px;
+.sectionevents .swiper {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #dbdbdb;
+    height: 1px;
+  }
+
+  &::before {
+    content: "";
+    background: #dbdbdb;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    height: 1px;
+  }
+
+  .swiper-slide {
+    padding: 2rem 0;
+    border-right: solid 1px #dbdbdb;
+
+    &:last-child {
+      border-right: transparent;
     }
 
-    &::before {
-        content: "";
-        background: #dbdbdb;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        height: 1px;
+    & > a div:last-child {
+      margin-bottom: 0 !important;
     }
-
-    .swiper-slide {
-        padding: 2rem 0;
-        border-right: solid 1px #dbdbdb;
-
-        &:last-child{
-            border-right: transparent;
-        }
-
-        & > a div:last-child {
-            margin-bottom: 0 !important;
-        }
-    }
+  }
 }
 
-  .sectionevents {
-      .swiper-wrapper {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-  } 
+.sectionevents {
+  .swiper-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

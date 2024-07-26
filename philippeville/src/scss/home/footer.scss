@@ -1,110 +1,116 @@
 footer {
-    background: $secondary;
+  background: $secondary;
 }
 
 footer div#smartweb-footer {
-    background: $secondary;
+  background: $secondary;
 
-        h2, div a, ul li a, span {
-        color: #fff !important;
-        }
+  h2,
+  div a,
+  ul li a,
+  span {
+    color: #fff !important;
+  }
 
-        h2 {
-            font-size: $h3-font-size;
-        }
+  h2 {
+    font-size: $h3-font-size;
+  }
 
-        .table_tittle span {
-            font-size: 1rem;
-        }
+  .table_tittle span {
+    font-size: 1rem;
+  }
 }
 
 footer .image.d-block {
-    display: none;
+  display: none;
 }
 
 footer .smartweb-footer {
-    .sectiontext .section-text .body-section.figure-top figure {
-        margin-top: 0;
-    }
+  .sectiontext .section-text .body-section.figure-top figure {
+    margin-top: 0;
+  }
 
-    .container > .row {
+  .container > .row {
     padding: 5rem 0;
-    }
+  }
 
-    .sectiontext, .sectioncontact, .sectionlinks {
-        text-align: left;
-    }
+  .sectiontext,
+  .sectioncontact,
+  .sectionlinks {
+    text-align: left;
+  }
 }
 
 footer {
-    #portal-colophon, div.colophon {
+  #portal-colophon,
+  div.colophon {
     background-color: $secondary;
-    }
+  }
 
-    div#body-section-liens-utiles li a {
-        text-decoration: none;
-    }
-    
-    div#body-section-liens-utiles li a:hover {
-        text-decoration: underline;
-    }
+  div#body-section-liens-utiles li a {
+    text-decoration: none;
+  }
+
+  div#body-section-liens-utiles li a:hover {
+    text-decoration: underline;
+  }
 }
 
 .colophonWrapper ul li {
-    display: inline-block;
-    color: #fff;
+  display: inline-block;
+  color: #fff;
 
-    a {
-        color: #fff;
-    }
+  a {
+    color: #fff;
+  }
 }
 
 @media (max-width: 992px) {
-    .sectiontext .section-text .body-section.figure-left figure img {
+  .sectiontext .section-text .body-section.figure-left figure img {
     width: 50%;
-    }
+  }
 }
 
 footer ul.row {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-
-#portal-colophon, div.colophon {
-background-color: $primary;
+#portal-colophon,
+div.colophon {
+  background-color: $primary;
 }
 
 div#body-section-liens-utiles li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 div#body-section-liens-utiles li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .colophonWrapper ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 @media (max-width: 992px) {
-    .sectiontext .section-text .body-section.figure-left figure img {
+  .sectiontext .section-text .body-section.figure-left figure img {
     width: 50%;
-    }
+  }
 }
 
 footer ul.row {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #portal-footer-wrapper #portal-footer.container {
-    background: #1e1e1e!important;
+  background: #1e1e1e !important;
 }
 
-#portal-footer-wrapper{
-    position: relative;
-    background:transparent;
+#portal-footer-wrapper {
+  position: relative;
+  background: transparent;
 }
 
 .smartweb_footer .smartweb-footer li a {
-    color: #fff;
+  color: #fff;
 }

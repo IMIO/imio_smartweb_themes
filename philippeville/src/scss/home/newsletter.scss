@@ -1,124 +1,123 @@
-.sectionsendinblue{
-    margin: 0!important;
-    padding: 5rem 0;
+.sectionsendinblue {
+  margin: 0 !important;
+  padding: 5rem 0;
 
-    .section-title{
-        font-size: 24px !important;
+  .section-title {
+    font-size: 24px !important;
 
-        &::before{
-            content: url('../../assets/svg/enveloppe.svg');
-            margin-bottom: 1rem;
-            display: block;
-        }
+    &::before {
+      content: url("../../assets/svg/enveloppe.svg");
+      margin-bottom: 1rem;
+      display: block;
     }
+  }
 
-    #body-section-inscription-a-la-newsletter{
-        form#form{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+  #body-section-inscription-a-la-newsletter {
+    form#form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
-            .formControls{
-                overflow: visible;
-                height: auto;
-                display: block;
-                position: relative;
-                width: auto;
-                margin-top: 2rem;
-
-                button{
-                    background: #fff;
-                    color: #2f3e46;
-                    border-radius: 5px;
-                    padding: 0.5rem 1rem;
-                    border: 1px solid #fff;
-
-                    &:hover{
-                        background: transparent;
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.newsletter-custom{
-    background: transparent;
-    text-align: center;
-
-    &::after {
-        content: "";
-        background: linear-gradient(270deg,#137c8b,#164148,#137c8b);
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        top: 0;
-        transform: translateX(-50%);
-        width: 100vw;
-        z-index: -1;
-    }
-    margin: 0!important;
-    padding: 5rem 0;
-
-    .section-title{
-        font-size: 24px !important;
-
-        &::before{
-            content: url('../../assets/svg/enveloppe.svg');
-            margin-bottom: 1rem;
-            display: block;
-        }
-    }
-
-    .table_image{
+      .formControls {
+        overflow: visible;
+        height: auto;
         display: block;
-        width: max-content;
-        margin: 0 auto;
-        background: #fff;
-        color: #2f3e46;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        border: 1px solid #fff;
-        text-decoration: none;
+        position: relative;
+        width: auto;
         margin-top: 2rem;
 
-        &:hover{
+        button {
+          background: #fff;
+          color: #2f3e46;
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          border: 1px solid #fff;
+
+          &:hover {
             background: transparent;
             color: #fff;
+          }
         }
-        
+      }
     }
+  }
+}
 
-    #body-section-newsletter{
-        form#form{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+.newsletter-custom {
+  background: transparent;
+  text-align: center;
 
-            .formControls{
-                overflow: visible;
-                height: auto;
-                display: block;
-                position: relative;
-                width: auto;
-                margin-top: 2rem;
+  &::after {
+    content: "";
+    background: linear-gradient(270deg, #137c8b, #164148, #137c8b);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
+  margin: 0 !important;
+  padding: 5rem 0;
 
-                button{
-                    background: #fff;
-                    color: #2f3e46;
-                    border-radius: 5px;
-                    padding: 0.5rem 1rem;
-                    border: 1px solid #fff;
+  .section-title {
+    font-size: 24px !important;
 
-                    &:hover{
-                        background: transparent;
-                        color: #fff;
-                    }
-                }
-            }
+    &::before {
+      content: url("../../assets/svg/enveloppe.svg");
+      margin-bottom: 1rem;
+      display: block;
+    }
+  }
+
+  .table_image {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    background: #fff;
+    color: #2f3e46;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    margin-top: 2rem;
+
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+  }
+
+  #body-section-newsletter {
+    form#form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .formControls {
+        overflow: visible;
+        height: auto;
+        display: block;
+        position: relative;
+        width: auto;
+        margin-top: 2rem;
+
+        button {
+          background: #fff;
+          color: #2f3e46;
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          border: 1px solid #fff;
+
+          &:hover {
+            background: transparent;
+            color: #fff;
+          }
         }
+      }
     }
+  }
 }

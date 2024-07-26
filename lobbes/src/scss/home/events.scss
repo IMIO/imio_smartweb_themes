@@ -1,23 +1,24 @@
 .swiper_description {
-    color: $secondary;
-    padding: 0 1rem;
+  color: $secondary;
+  padding: 0 1rem;
 }
 
 .sectionevents .swiper-slide > a {
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .sectionevents .swiper-slide > a:hover {
-    background: $primary;
+  background: $primary;
 
-    div h3, div span, div p 
-        {
-            color: #fff;
-        }
+  div h3,
+  div span,
+  div p {
+    color: #fff;
+  }
 }
 
 .sectionevents {
-    h2.section-title {
+  h2.section-title {
     font-weight: bolder;
-    }
+  }
 }

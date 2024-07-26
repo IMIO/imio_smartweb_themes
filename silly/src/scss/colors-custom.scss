@@ -1,222 +1,249 @@
-$vivre: #336D94;
+$vivre: #336d94;
 $cpas: #52016a;
-$loisirs: #161B88;
-$jeunesse: #5AC1DA;
-$litterature: #B0024C;
+$loisirs: #161b88;
+$jeunesse: #5ac1da;
+$litterature: #b0024c;
 
 // section-commune
 .section-commune {
-    .subsite-container {
-        position: relative;
-        background: $loisirs;
+  .subsite-container {
+    position: relative;
+    background: $loisirs;
 
-        &::after {
-            content: "";
-            background: $loisirs;
-            position: absolute;
-            width: 100vw;
-            top: 0;
-            bottom: 0;
-            transform: translateX(-50%);
-            left: 50%;
-            z-index: -1;
-        }
-
-        .nav-title {
-            a {
-                color: black!important;
-            }
-        }
-
-        #subsite-navigation > ul > li > a {
-            color: #fff;
-        }
+    &::after {
+      content: "";
+      background: $loisirs;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: -1;
     }
 
-    #subsite-logo {
-        background: $loisirs;
-
-        a {
-            color: #fff;
-        }
+    .nav-title {
+      a {
+        color: black !important;
+      }
     }
 
-    .breadcrumb-item {
-        a {
-            color: $loisirs;
-        }
+    #subsite-navigation > ul > li > a {
+      color: #fff;
     }
+  }
+
+  #subsite-logo {
+    background: $loisirs;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .breadcrumb-item {
+    a {
+      color: $loisirs;
+    }
+  }
 }
 
 // vire à Silly
 .section-vivreasilly {
-    .subsite-container {
-        position: relative;
-        background: $vivre;
+  .subsite-container {
+    position: relative;
+    background: $vivre;
 
-        &::after {
-            content: "";
-            background: $vivre;
-            position: absolute;
-            width: 100vw;
-            top: 0;
-            bottom: 0;
-            transform: translateX(-50%);
-            left: 50%;
-            z-index: -1;
-        }
-
-        .nav-title {
-            a {
-                color: black!important;
-            }
-        }
-
-        #subsite-navigation > ul > li > a {
-            color: #fff;
-        }
+    &::after {
+      content: "";
+      background: $vivre;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: -1;
     }
 
-    #subsite-logo {
-        background: #4F7A96;
-
-        a {
-            color: #fff;
-        }
+    .nav-title {
+      a {
+        color: black !important;
+      }
     }
 
-    .breadcrumb-item {
-        a {
-            color: $vivre;
-        }
+    #subsite-navigation > ul > li > a {
+      color: #fff;
     }
+  }
+
+  #subsite-logo {
+    background: #4f7a96;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .breadcrumb-item {
+    a {
+      color: $vivre;
+    }
+  }
 }
 
 //  cpas
 .site-cpas {
-    $primary: $cpas;
+  $primary: $cpas;
 
-    .subsite-container #subsite-logo {
-        background: $cpas;
+  .subsite-container #subsite-logo {
+    background: $cpas;
+  }
+
+  a {
+    color: $primary;
+
+    &:hover {
+      color: #21022b;
     }
+  }
 
-    a {
-        color: $primary;
+  #portal-globalnav .dropdown .nav-title a {
+    color: black;
+  }
 
-        &:hover {
-            color: #21022b;
-        }
-    }
+  #portal-column-content .section-contact .contact-type-position .address .h2,
+  #portal-column-content .section-contact .contact-type-position .address .h3,
+  #portal-column-content .section-contact .contact-type-position .address h2,
+  #portal-column-content .section-contact .contact-type-position .address h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-position
+    .contact_informations
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-position
+    .contact_informations
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-position
+    .contact_informations
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-position
+    .contact_informations
+    h3,
+  #portal-column-content .section-contact .contact-type-position .schedule .h2,
+  #portal-column-content .section-contact .contact-type-position .schedule .h3,
+  #portal-column-content .section-contact .contact-type-position .schedule h2,
+  #portal-column-content .section-contact .contact-type-position .schedule h3 {
+    color: $cpas;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
 
-    #portal-globalnav .dropdown .nav-title a {
-        color: black;
-    }
-
-    #portal-column-content .section-contact .contact-type-position .address .h2, #portal-column-content .section-contact .contact-type-position .address .h3, #portal-column-content .section-contact .contact-type-position .address h2, #portal-column-content .section-contact .contact-type-position .address h3, #portal-column-content .section-contact .contact-type-position .contact_informations .h2, #portal-column-content .section-contact .contact-type-position .contact_informations .h3, #portal-column-content .section-contact .contact-type-position .contact_informations h2, #portal-column-content .section-contact .contact-type-position .contact_informations h3, #portal-column-content .section-contact .contact-type-position .schedule .h2, #portal-column-content .section-contact .contact-type-position .schedule .h3, #portal-column-content .section-contact .contact-type-position .schedule h2, #portal-column-content .section-contact .contact-type-position .schedule h3 {
-        color: $cpas;
-        font-size: 1.25rem;
-        font-weight: 500;
-    }
-
-    #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav .dropdown .nav-link:hover {
-        color: $cpas;
-    }
+  #portal-globalnav .dropdown .nav-link:focus,
+  #portal-globalnav .dropdown .nav-link:hover {
+    color: $cpas;
+  }
 }
 
 // jeunesse & sports
-.subsection-jeunesse,.subsection-sports {
-    .subsite-container {
-        position: relative;
-        background: $jeunesse;
+.subsection-jeunesse,
+.subsection-sports {
+  .subsite-container {
+    position: relative;
+    background: $jeunesse;
 
-        &::after {
-            content: "";
-            background: $jeunesse;
-            position: absolute;
-            width: 100vw;
-            top: 0;
-            bottom: 0;
-            transform: translateX(-50%);
-            left: 50%;
-            z-index: -1;
-        }
-
-        .nav-title {
-            a {
-                color: black!important;
-            }
-        }
+    &::after {
+      content: "";
+      background: $jeunesse;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: -1;
     }
 
-    #subsite-logo {
-        background: rgba(255, 255, 255, 20%);
-
-        a {
-            color: #000;
-        }
+    .nav-title {
+      a {
+        color: black !important;
+      }
     }
+  }
+
+  #subsite-logo {
+    background: rgba(255, 255, 255, 20%);
+
+    a {
+      color: #000;
+    }
+  }
 }
-
 
 // lite & jeux
 
 .subsection-biblioludo {
-    .subsite-container {
-        position: relative;
-        background: $litterature;
+  .subsite-container {
+    position: relative;
+    background: $litterature;
 
-        &::after {
-            content: "";
-            background: $litterature;
-            position: absolute;
-            width: 100vw;
-            top: 0;
-            bottom: 0;
-            transform: translateX(-50%);
-            left: 50%;
-            z-index: -1;
-        }
-
-        .nav-title {
-            a {
-                color: black!important;
-            }
-        }
-
-        #subsite-navigation > ul > li > a {
-            color: #fff;
-        }
+    &::after {
+      content: "";
+      background: $litterature;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: -1;
     }
 
-    #subsite-logo {
-        background: rgba(255, 255, 255, 20%);
-
-        a {
-            color: #fff;
-        }
+    .nav-title {
+      a {
+        color: black !important;
+      }
     }
 
-    .breadcrumb-item {
-        a {
-            color: $litterature;
-        }
+    #subsite-navigation > ul > li > a {
+      color: #fff;
     }
+  }
+
+  #subsite-logo {
+    background: rgba(255, 255, 255, 20%);
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .breadcrumb-item {
+    a {
+      color: $litterature;
+    }
+  }
 }
-
 
 // common
 .subsite-container {
-    #subsite-logo {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        border-radius: 10px;
+  #subsite-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
 
-        a {
-            padding: .9rem 1.2rem;
-        }
+    a {
+      padding: 0.9rem 1.2rem;
     }
+  }
 }
 
 #subsite-navigation > ul li.show-nav > .has_subtree.dropdown {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

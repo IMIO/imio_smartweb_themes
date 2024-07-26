@@ -1,84 +1,98 @@
-#portal-footer-wrapper{
-    text-align: left!important;
-    background: transparent;
-    margin-top: 5rem;
+#portal-footer-wrapper {
+  text-align: left !important;
+  background: transparent;
+  margin-top: 5rem;
 
-    #portal-footer{
-        background:$primary-black!important;
+  #portal-footer {
+    background: $primary-black !important;
 
-        #smartweb-footer,#smartweb-minisite-footer{
-            a,span,p,div,h2{
-                color: #fff!important;
-            }
+    #smartweb-footer,
+    #smartweb-minisite-footer {
+      a,
+      span,
+      p,
+      div,
+      h2 {
+        color: #fff !important;
+      }
 
-            h2{
-                font-size: 22px!important;
-                margin-top: 2rem;
+      h2 {
+        font-size: 22px !important;
+        margin-top: 2rem;
 
-                &.section-title{
-                    margin-bottom: 1.5rem;
-                    margin-top: 2rem;
-                }
-            }
-
-            .sectiontext{
-                margin-top: 2rem;
-
-                figure{
-                    img{
-                        width: 150px;
-                        max-width: 100%;
-                    }
-                }
-            }
+        &.section-title {
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
         }
-    }
-}
+      }
 
-#portal-colophon{
-    background: $primary-black;
-    padding: 1rem;
+      .sectiontext {
+        margin-top: 2rem;
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-
-        li{
-            color: #fff!important;
-
-            a,span,p,div{
-                color: #fff!important;
-            }
+        figure {
+          img {
+            width: 150px;
+            max-width: 100%;
+          }
         }
+      }
     }
+  }
 }
 
-.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
-    background: #f8ecd1;
+#portal-colophon {
+  background: $primary-black;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+
+    li {
+      color: #fff !important;
+
+      a,
+      span,
+      p,
+      div {
+        color: #fff !important;
+      }
+    }
+  }
 }
 
-footer{
-    .schedule .opening_informations::after {
-        content: "";
-        width: 9px;
-        height: 6px;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"8.444\" height=\"5.2\"><path fill=\"white\" d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\"/></svg>");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-left: 0.4rem;
-        display: inline-block;
-        vertical-align: middle;
-    }
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper {
+  background: #f8ecd1;
 }
 
-@include media-breakpoint-down(md) { 
-    body footer#portal-footer-wrapper, body #portal-footer.container {
-        text-align: center;
-    }
+footer {
+  .schedule .opening_informations::after {
+    content: "";
+    width: 9px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
-    #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext figure img {
-        margin: 0 auto;
-    }
+@include media-breakpoint-down(md) {
+  body footer#portal-footer-wrapper,
+  body #portal-footer.container {
+    text-align: center;
+  }
+
+  #portal-footer-wrapper
+    #portal-footer
+    #smartweb-footer
+    .sectiontext
+    figure
+    img {
+    margin: 0 auto;
+  }
 }

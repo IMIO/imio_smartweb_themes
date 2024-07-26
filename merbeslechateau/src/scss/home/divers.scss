@@ -1,38 +1,42 @@
 .contact_description {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .contact_description strong {
-    font-size: 1.25rem;
-    font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 div#subsite-logo img {
-	height: 3rem;
-	margin: 0 auto 0.5rem;
-	display: block;
+  height: 3rem;
+  margin: 0 auto 0.5rem;
+  display: block;
 }
 
-.nav-link{
- font-size:17px
+.nav-link {
+  font-size: 17px;
 }
 
 .subsite-container #subsite-logo {
-    background: $primary;
+  background: $primary;
 }
 
 #portal-breadcrumbs {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #portal-breadcrumbs {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .block-menu-element a .card-body {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.show-nav.has_subtree>a {
-    color: $primary !important;
+#portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  > li.show-nav.has_subtree
+  > a {
+  color: $primary !important;
 }

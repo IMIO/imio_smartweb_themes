@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -36,95 +36,90 @@ $enable-roboto-webfont: false;
 @import "./se-files.scss";
 @import "./contact.scss";
 
-
 .portaltype-imio-smartweb-portalpage {
-    background: url("../../assets/svg/visu-bckd.svg") right center no-repeat;
+  background: url("../../assets/svg/visu-bckd.svg") right center no-repeat;
 }
-
 
 //search
 #portal-header #portal-header-top #header-links #search-link a {
-    width: 50px;
-    height: 50px;
-    background: $primary-svg;
-    border: 2px solid $primary-svg;
-    transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  background: $primary-svg;
+  border: 2px solid $primary-svg;
+  transition: all 0.3s ease;
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-    background: $primary;
+  background: $primary;
 }
-
 
 // content banner
 
-.bannerSwiper .section-slide{
-    .swiper-banner-content {
+.bannerSwiper .section-slide {
+  .swiper-banner-content {
+    //background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 
-        //background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
-
-        .swiper-banner-title {
-            color: $primary;
-            text-transform: initial;
-            font-weight: 200 !important;
-        }
-
-        .swiper-banner-description p {
-            margin: 0;
-            color: $primary-svg;
-            padding-left:100px;
-            line-height: 60px;
-            font-weight: 900;
-        }
-
-        @media screen and (max-width: 600px) {
-            .swiper-banner-title {
-                font-size: 28px!important;
-            }
-    
-            .swiper-banner-description p {
-                padding-left:0;
-                font-size: 40px!important;
-                line-height: 40px;
-                font-weight: 900;
-            }
-        }
-
-        a {
-            background: $primary-svg;
-            border: 1px solid $primary-svg;
-            border-radius: 10px;
-            color: #fff;
-            display: block;
-            font-family: "Roboto Slab", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            padding: .8rem;
-            margin-top:20px !important;
-            position: relative;
-            text-decoration: none;
-            text-transform: none;
-            transition: all .2s ease;
-            width: max-content;
-        }
-
-        a:hover {
-            background: #000;
-            border: 1px solid #000;
-            transition: all .2s ease;
-        }
+    .swiper-banner-title {
+      color: $primary;
+      text-transform: initial;
+      font-weight: 200 !important;
     }
 
-    &::after{
-
-        //display: none;
+    .swiper-banner-description p {
+      margin: 0;
+      color: $primary-svg;
+      padding-left: 100px;
+      line-height: 60px;
+      font-weight: 900;
     }
+
+    @media screen and (max-width: 600px) {
+      .swiper-banner-title {
+        font-size: 28px !important;
+      }
+
+      .swiper-banner-description p {
+        padding-left: 0;
+        font-size: 40px !important;
+        line-height: 40px;
+        font-weight: 900;
+      }
+    }
+
+    a {
+      background: $primary-svg;
+      border: 1px solid $primary-svg;
+      border-radius: 10px;
+      color: #fff;
+      display: block;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0.8rem;
+      margin-top: 20px !important;
+      position: relative;
+      text-decoration: none;
+      text-transform: none;
+      transition: all 0.2s ease;
+      width: max-content;
+    }
+
+    a:hover {
+      background: #000;
+      border: 1px solid #000;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &::after {
+    //display: none;
+  }
 }
 
 .section-home-page #messagesviewlet {
-    float: none;
-    padding-top: 0;
-    position: absolute;
-    top: 90px;
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 90px;
 }

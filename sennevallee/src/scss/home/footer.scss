@@ -1,99 +1,109 @@
-#portal-footer-wrapper{
-    text-align: left!important;
-    background: transparent;
-    margin-top: 2rem;
+#portal-footer-wrapper {
+  text-align: left !important;
+  background: transparent;
+  margin-top: 2rem;
 
-    #portal-footer{
-        background:$primary-blue-dark!important;
-        padding: 60px 0;
+  #portal-footer {
+    background: $primary-blue-dark !important;
+    padding: 60px 0;
 
-        #smartweb-footer,#smartweb-minisite-footer{
-            a,span,p,div,h2{
-                color: #fff!important;
-            }
+    #smartweb-footer,
+    #smartweb-minisite-footer {
+      a,
+      span,
+      p,
+      div,
+      h2 {
+        color: #fff !important;
+      }
 
-            h2{
-                font-size: 22px!important;
-                margin-top: 2rem;
+      h2 {
+        font-size: 22px !important;
+        margin-top: 2rem;
 
-                &.section-title{
-                    margin-bottom: 1.5rem;
-                    margin-top: 2rem;
-                }
-            }
-
-            h3{
-                font-size: 18px!important;
-                color: #fff;
-            }
-
-            .sectiontext{
-                #body-section-logo {
-                    margin-top: 2rem;
-                }
-
-                figure{
-                    img{
-                        width: 150px;
-                        max-width: 100%;
-                    }
-                }
-            }
+        &.section-title {
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
         }
-    }
+      }
 
-    .sectiontext .section-text .body-section.figure-left figure img, .sectiontext .section-text .body-section.figure-right figure img {
-        border-radius: 0 !important;
+      h3 {
+        font-size: 18px !important;
+        color: #fff;
+      }
+
+      .sectiontext {
+        #body-section-logo {
+          margin-top: 2rem;
+        }
+
+        figure {
+          img {
+            width: 150px;
+            max-width: 100%;
+          }
+        }
+      }
     }
+  }
+
+  .sectiontext .section-text .body-section.figure-left figure img,
+  .sectiontext .section-text .body-section.figure-right figure img {
+    border-radius: 0 !important;
+  }
 }
 
-#portal-colophon{
-    background: url("../../assets/bg-footer.png") right bottom no-repeat $primary-blue-dark !important;
-    padding: 2rem 350px 2rem 1rem;
+#portal-colophon {
+  background: url("../../assets/bg-footer.png") right bottom no-repeat
+    $primary-blue-dark !important;
+  padding: 2rem 350px 2rem 1rem;
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        margin-bottom: 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 0;
 
-        li{
-            color: #fff!important;
-            text-align: left;
-            width: auto;
+    li {
+      color: #fff !important;
+      text-align: left;
+      width: auto;
 
-            a,span,p,div{
-                color: #fff!important;
-            }
-        }
+      a,
+      span,
+      p,
+      div {
+        color: #fff !important;
+      }
     }
+  }
 }
 
-@media screen and (max-width:800px) {
-    #portal-colophon{
-        padding: 2rem 1rem 150px;
-    }
+@media screen and (max-width: 800px) {
+  #portal-colophon {
+    padding: 2rem 1rem 150px;
+  }
 }
 
 #portal-colophon ul li:last-child {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
-    background: #f8ecd1;
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper {
+  background: #f8ecd1;
 }
 
-footer{
-    .schedule .opening_informations::after {
-        content: "";
-        width: 9px;
-        height: 6px;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"8.444\" height=\"5.2\"><path fill=\"white\" d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\"/></svg>");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-left: 0.4rem;
-        display: inline-block;
-    }
+footer {
+  .schedule .opening_informations::after {
+    content: "";
+    width: 9px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0.4rem;
+    display: inline-block;
+  }
 }

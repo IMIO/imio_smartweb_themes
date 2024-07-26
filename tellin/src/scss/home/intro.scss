@@ -1,61 +1,59 @@
 .liens-accueil {
-    padding:0;
-    margin-bottom:100px;
+  padding: 0;
+  margin-bottom: 100px;
 
-    ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        padding:0 40px;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0 40px;
 
-        /* align-items: center; */
-        position: relative;
+    /* align-items: center; */
+    position: relative;
 
-        li {
-            width: 100%;
-            padding:0 !important;
-            text-align: right;
+    li {
+      width: 100%;
+      padding: 0 !important;
+      text-align: right;
 
-            .table_display {
-                background:$primary-svg;
-                width:100%;
-                padding:25px;
-                border-radius: 10px;
-                transition: all 0.3s ease;
+      .table_display {
+        background: $primary-svg;
+        width: 100%;
+        padding: 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
 
-                .table_image {
-                    color:#fff;
-                    text-decoration: none;
-                    font-size: 18px;
+        .table_image {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
 
-                    .d-block {
-                        text-align: left;
-                        height: 40px;
+          .d-block {
+            text-align: left;
+            height: 40px;
 
-                        svg {
-                            fill: #fff;
-                            height: auto;
-                            width: 30px;
-                        }
-                    }
-                }
-
-                &:hover {
-                    background: $primary;
-                    transition: all 0.3s ease;
-                }
-                
+            svg {
+              fill: #fff;
+              height: auto;
+              width: 30px;
             }
+          }
         }
 
-        @media screen and (max-width: 1200px) {
-        grid-template-columns: 1fr 1fr;
+        &:hover {
+          background: $primary;
+          transition: all 0.3s ease;
         }
-
-        @media screen and (max-width: 600px) {
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-        }
+      }
     }
 
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
 }

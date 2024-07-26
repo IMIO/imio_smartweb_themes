@@ -1,22 +1,18 @@
 import "./scss/main.scss";
 import "./js/tween-max";
 
-$( document ).ready(function() {
-    $('#portal-globalnav-collapse').on('show.bs.collapse', function () {
-        document.body.classList.add('open-nav-overflow');
-        document.documentElement.classList.add('open-nav-overflow');
-    })
-    $('#portal-globalnav-collapse').on('hidden.bs.collapse', function () {
-        document.body.classList.remove('open-nav-overflow');
-        document.documentElement.classList.remove('open-nav-overflow');
-    })
-    
+$(document).ready(function () {
+  $("#portal-globalnav-collapse").on("show.bs.collapse", function () {
+    document.body.classList.add("open-nav-overflow");
+    document.documentElement.classList.add("open-nav-overflow");
+  });
+  $("#portal-globalnav-collapse").on("hidden.bs.collapse", function () {
+    document.body.classList.remove("open-nav-overflow");
+    document.documentElement.classList.remove("open-nav-overflow");
+  });
 });
 
-
-
 //  bubble
-
 
 // $( document ).ready(function() {
 
@@ -24,7 +20,7 @@ $( document ).ready(function() {
 //     var circleYellow = $('<div class="circle crl2"></div>');
 //     var circleYellow2 = $('<div class="circle crl2 crl21"></div>');
 //     var circleGrey2 = $('<div class="circle crl1"></div>');
-    
+
 //     $(".a-la-une .swiper_title").append(circleGrey, circleYellow, circleYellow2);
 //     // $(".zoom-sur").append(circleGrey2);
 

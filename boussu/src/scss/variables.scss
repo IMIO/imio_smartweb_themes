@@ -1,14 +1,13 @@
 //*// COLORS
 $primary: #323031;
-$secondary: #E9212D;
-
+$secondary: #e9212d;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 
-$font-family-base: "Montserrat",sans-serif,system-ui;
-$font-family-title: 'Montserrat', sans-serif;
+$font-family-base: "Montserrat", sans-serif, system-ui;
+$font-family-title: "Montserrat", sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -30,7 +29,7 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 
 $global-radius: 5px;
@@ -100,7 +99,6 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 $nav-link-active-color: $secondary;
 $nav-quick-link-color: $secondary;
 
-
 //sub-header
 $subsite-logo-background: $primary !default;
 $subsite-logo-color: #fff !default;
@@ -140,17 +138,16 @@ $see-all-radius: 50px;
 $see-all-border: solid 1px $primary !default;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
-$see-all-font-weight: 700!default;
-$see-all-transition: all .2s ease !default;
+$see-all-font-weight: 700 !default;
+$see-all-transition: all 0.2s ease !default;
 $see-all-hover-bg: #fff;
 $see-all-hover-color: $primary;
 $see-all-hover-radius: $global-radius !default;
 $see-all-hover-border: solid 1px $primary;
 $see-all-justify-content: center !default;
 $see-all-underline-color: transparent;
-$see-all-underline-width: 25%!default;
-$see-all-hover-underline-width: 50%!default;
-
+$see-all-underline-width: 25% !default;
+$see-all-hover-underline-width: 50% !default;
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -164,13 +161,13 @@ $quick-access-height: 130px;
 $quick-access-background: #fff;
 $quick-access-border: none;
 $quick-access-border-radius: 100%;
-$quick-access-shadow: 0 0.4px 2.2px rgba(0, 0, 0, 2%),
-0 0.9px 5.3px rgba(0, 0, 0, 2.8%),
-0 1.6px 10px rgba(0, 0, 0, 3.5%),
-0 2.9px 17.9px rgba(0, 0, 0, 4.2%),
-0 5.4px 33.4px rgba(0, 0, 0, 5%),
-0 13px 80px rgba(0, 0, 0, 7%)
-;
+$quick-access-shadow:
+  0 0.4px 2.2px rgba(0, 0, 0, 2%),
+  0 0.9px 5.3px rgba(0, 0, 0, 2.8%),
+  0 1.6px 10px rgba(0, 0, 0, 3.5%),
+  0 2.9px 17.9px rgba(0, 0, 0, 4.2%),
+  0 5.4px 33.4px rgba(0, 0, 0, 5%),
+  0 13px 80px rgba(0, 0, 0, 7%);
 $quick-access-svg-width: 60px;
 $quick-access-svg-color: $secondary;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
@@ -191,7 +188,7 @@ $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
 $a-la-une-text-bg: #fff;
 $a-la-une-item-image-margin: 0 !default;
-$a-la-une-item-title-color: #2354A5;
+$a-la-une-item-title-color: #2354a5;
 $a-la-une-item-title-font-size: $h3-font-size !default;
 $a-la-une-item-title-margin: 0 !default;
 $a-la-une-item-title-padding: 36px 36px 0 !default;
@@ -212,7 +209,7 @@ $actu-title-color: $primary;
 $actu-title-align: $home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
-$actu-image-margin-bottom: .7rem;
+$actu-image-margin-bottom: 0.7rem;
 $actu-image-border-radius: 5px;
 $actu-item-bg-color: none;
 $actu-item-bg-radius: none;
@@ -246,7 +243,7 @@ $event-title-color: #fff;
 $event-title-align: $home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: .7rem;
+$event-image-margin-bottom: 0.7rem;
 $event-image-border-radius: 5px 5px 0 0;
 $event-item-bg-color: #fff;
 $event-item-bg-radius: 0 20px;
@@ -270,10 +267,9 @@ $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
-
 // Album
 $album-section-full-width: true !default;
-$album-section-bg: #EDEAE5 !default;
+$album-section-bg: #edeae5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
@@ -284,7 +280,7 @@ $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
 $album-image-border-radius: $global-radius !default;
 $album-item-bg-color: red !default;
-$album-item-bg-radius: $global-radius+2 !default;
+$album-item-bg-radius: $global-radius + 2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
@@ -305,22 +301,6 @@ $album-date-color: $primary !default;
 $album-date-font-size: 14px !default;
 $album-see-all-justify-content: $see-all-justify-content !default;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
 $mark-background-color: #f3f3f3 !default;
@@ -339,10 +319,10 @@ $section-text-link-color: $primary !default;
 $section-text-link-hover-decoration: solid 1px $primary !default;
 $section-text-max-width: 760px !default;
 
-
 // Section
 $section-padding-y: 5.31rem;
-$section-padding: (sm: 3rem,
+$section-padding: (
+  sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
 );
@@ -360,7 +340,7 @@ $enable-full-width-section-files: true;
 $enable-light-color-section-files: false;
 
 // section-link
-$section-link-background-color: #F8F8F8;
+$section-link-background-color: #f8f8f8;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: true;
 
@@ -370,10 +350,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0 20px 40px #0000001A;
+$block-full-shadow: 0 20px 40px #0000001a;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
-$list-group-border-width : 0;
-$list-group-item-padding-x : 0;
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
 
 // Message Viewlets
 
@@ -381,7 +361,7 @@ $message-info: $primary;
 $message-warning: #c06d01;
 $message-error: #ae2609;
 
-//NEW VARIABLES MANU 
+//NEW VARIABLES MANU
 
 //ACTU
 $actu-item-title-align: left;

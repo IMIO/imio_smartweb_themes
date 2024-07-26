@@ -1,9 +1,9 @@
 @include media-breakpoint-up(lg) {
-body:not(.is-in-minisite) #portal-globalnav{
+  body:not(.is-in-minisite) #portal-globalnav {
     gap: 90px;
-    }
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page #portal-globalnav {
-        margin-left: 6rem;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page #portal-globalnav {
+    margin-left: 6rem;
+  }
 }

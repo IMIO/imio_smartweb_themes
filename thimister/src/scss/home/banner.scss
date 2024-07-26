@@ -1,15 +1,30 @@
-.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-image {
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: calc(50vw - 660px);
-  }
-
-.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
-    text-transform: uppercase;
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-image {
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: calc(50vw - 660px);
 }
 
-.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
-    font-weight: bold;    
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-description
+  p {
+  text-transform: uppercase;
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-title {
+  font-weight: bold;
 }
 
 // body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner:after {
@@ -35,130 +50,173 @@
 //     z-index: 0;
 
 // }
-body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
-    z-index: 1;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .smartweb_herobanner {
+  z-index: 1;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper>.container {
-    position: relative;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .outer-wrapper
+  > .container {
+  position: relative;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page:not(.userrole-authenticated) .outer-wrapper>.container::after {
-    top: -1px;
+body.portaltype-imio-smartweb-portalpage.section-home-page:not(
+    .userrole-authenticated
+  )
+  .outer-wrapper
+  > .container::after {
+  top: -1px;
 
-    // content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 1918.64 202.5'%3E%3Cpath d='M0 86.5c-.18.53 6.64 3.59 7.11 3.88l19.5 10.42c3.05 1.52 6.58 3.4 10.51 5.5 11.86 6.33 26.43 14.11 44.69 21.14 23.78 10.78 53.85 21.55 92.2 33.2 6.05 1.52 12.51 3.22 19.14 5.04 12.51 3.34 25.25 6.68 38.82 9.9l14.1 2.75c16.5 3.28 33.36 6.62 50.92 9.14 39.35 5.74 91.85 12.47 148.58 13.7 52.8 2.17 108.7 1.64 166.38-1.46 32.24-1.7 60.72-3.75 87.15-6.27 25.37-1.93 51.09-4.8 75.99-7.56l13.21-1.46c65.6-7.61 130.61-16.87 180-24.01l265.51-39.82c10.27-1.35 20.43-2.69 30.53-4.1 18.39-2.52 36.59-4.98 54.68-7.09 48.86-6.27 101.42-11.54 160.56-16.05 9.22-.35 18.09-.82 26.84-1.29 16.8-.88 32.48-1.7 48.16-1.82 23.84-.64 47.16-1.17 69.59-.29 3.82.12 7.69.18 11.57.23 7.4.12 14.33.23 21.14.7l31.54 2.17c14.62.53 28.6 2.23 42.16 3.87 5.47.64 10.34 1.29 15.39 1.82 11.45 1 22.26 2.99 32.71 4.98 5.99 1.11 11.81 2.22 17.56 3.04 16.03 2.28 30.54 5.97 42.23 8.96 5.22 1.41 10.16 2.52 14.91 3.63 6.93 1.58 13.51 3.16 19.33 5.04 0 0 2.05.65 25.01 7.85l20.91 6.38V0H0v86.5Z' style='fill:%2323597a'/%3E%3C/svg%3E");
-    content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.00335914 0.497953C-0.172949 1.02276 6.64764 4.0726 7.1178 4.36416L26.6292 14.7438C29.6852 16.2599 33.2114 18.1259 37.1489 20.2251C49.0203 26.5228 63.5951 34.2783 81.8724 41.2758C105.674 52.0052 135.764 62.7346 174.14 74.3387C180.193 75.8548 186.658 77.5459 193.299 79.3535C205.817 82.6773 218.57 86.0011 232.145 89.2083L246.25 91.949C262.764 95.2144 279.631 98.5383 297.203 101.046C336.579 106.76 389.118 113.466 445.889 114.691C498.723 116.848 554.671 116.323 612.383 113.233C644.647 111.542 673.15 109.501 699.597 106.994C724.985 105.069 750.726 102.212 775.644 99.4713L788.867 98.0134C854.512 90.4329 919.57 81.2195 968.995 74.1054L1234.69 34.4533C1244.98 33.1121 1255.14 31.7709 1265.25 30.3715C1283.65 27.864 1301.86 25.4149 1319.97 23.3157C1368.86 17.0763 1421.46 11.8281 1480.64 7.3381C1489.87 6.98823 1498.74 6.52173 1507.5 6.05523C1524.31 5.18055 1540 4.36418 1555.69 4.24756C1579.55 3.60612 1602.88 3.0813 1625.33 3.95598C1629.15 4.07261 1633.03 4.13092 1636.91 4.18924C1644.31 4.30586 1651.25 4.42249 1658.07 4.88899L1689.62 7.04654C1704.26 7.57135 1718.24 9.26241 1731.82 10.8952C1737.29 11.5366 1742.16 12.178 1747.22 12.7028C1758.68 13.6941 1769.49 15.6768 1779.95 17.6594C1785.95 18.7673 1791.77 19.8752 1797.52 20.6916C1813.57 22.9658 1828.08 26.6395 1839.78 29.6134C1845.01 31.0129 1849.95 32.1208 1854.71 33.2287C1861.64 34.8032 1868.22 36.3776 1874.04 38.2436C1874.04 38.2436 1876.1 38.8849 1899.08 46.0573L1920 52.4134V0H0.00335914V0.497953Z' fill='%2323597A'/%3E%3C/svg%3E");
-    display: block;
-    left: 50%;
-    line-height: 0;
-    position: absolute;
-    transform: translateX(-50vw);
-    width: 100vw;
-    z-index: 0;
+  // content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 1918.64 202.5'%3E%3Cpath d='M0 86.5c-.18.53 6.64 3.59 7.11 3.88l19.5 10.42c3.05 1.52 6.58 3.4 10.51 5.5 11.86 6.33 26.43 14.11 44.69 21.14 23.78 10.78 53.85 21.55 92.2 33.2 6.05 1.52 12.51 3.22 19.14 5.04 12.51 3.34 25.25 6.68 38.82 9.9l14.1 2.75c16.5 3.28 33.36 6.62 50.92 9.14 39.35 5.74 91.85 12.47 148.58 13.7 52.8 2.17 108.7 1.64 166.38-1.46 32.24-1.7 60.72-3.75 87.15-6.27 25.37-1.93 51.09-4.8 75.99-7.56l13.21-1.46c65.6-7.61 130.61-16.87 180-24.01l265.51-39.82c10.27-1.35 20.43-2.69 30.53-4.1 18.39-2.52 36.59-4.98 54.68-7.09 48.86-6.27 101.42-11.54 160.56-16.05 9.22-.35 18.09-.82 26.84-1.29 16.8-.88 32.48-1.7 48.16-1.82 23.84-.64 47.16-1.17 69.59-.29 3.82.12 7.69.18 11.57.23 7.4.12 14.33.23 21.14.7l31.54 2.17c14.62.53 28.6 2.23 42.16 3.87 5.47.64 10.34 1.29 15.39 1.82 11.45 1 22.26 2.99 32.71 4.98 5.99 1.11 11.81 2.22 17.56 3.04 16.03 2.28 30.54 5.97 42.23 8.96 5.22 1.41 10.16 2.52 14.91 3.63 6.93 1.58 13.51 3.16 19.33 5.04 0 0 2.05.65 25.01 7.85l20.91 6.38V0H0v86.5Z' style='fill:%2323597a'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.00335914 0.497953C-0.172949 1.02276 6.64764 4.0726 7.1178 4.36416L26.6292 14.7438C29.6852 16.2599 33.2114 18.1259 37.1489 20.2251C49.0203 26.5228 63.5951 34.2783 81.8724 41.2758C105.674 52.0052 135.764 62.7346 174.14 74.3387C180.193 75.8548 186.658 77.5459 193.299 79.3535C205.817 82.6773 218.57 86.0011 232.145 89.2083L246.25 91.949C262.764 95.2144 279.631 98.5383 297.203 101.046C336.579 106.76 389.118 113.466 445.889 114.691C498.723 116.848 554.671 116.323 612.383 113.233C644.647 111.542 673.15 109.501 699.597 106.994C724.985 105.069 750.726 102.212 775.644 99.4713L788.867 98.0134C854.512 90.4329 919.57 81.2195 968.995 74.1054L1234.69 34.4533C1244.98 33.1121 1255.14 31.7709 1265.25 30.3715C1283.65 27.864 1301.86 25.4149 1319.97 23.3157C1368.86 17.0763 1421.46 11.8281 1480.64 7.3381C1489.87 6.98823 1498.74 6.52173 1507.5 6.05523C1524.31 5.18055 1540 4.36418 1555.69 4.24756C1579.55 3.60612 1602.88 3.0813 1625.33 3.95598C1629.15 4.07261 1633.03 4.13092 1636.91 4.18924C1644.31 4.30586 1651.25 4.42249 1658.07 4.88899L1689.62 7.04654C1704.26 7.57135 1718.24 9.26241 1731.82 10.8952C1737.29 11.5366 1742.16 12.178 1747.22 12.7028C1758.68 13.6941 1769.49 15.6768 1779.95 17.6594C1785.95 18.7673 1791.77 19.8752 1797.52 20.6916C1813.57 22.9658 1828.08 26.6395 1839.78 29.6134C1845.01 31.0129 1849.95 32.1208 1854.71 33.2287C1861.64 34.8032 1868.22 36.3776 1874.04 38.2436C1874.04 38.2436 1876.1 38.8849 1899.08 46.0573L1920 52.4134V0H0.00335914V0.497953Z' fill='%2323597A'/%3E%3C/svg%3E");
+  display: block;
+  left: 50%;
+  line-height: 0;
+  position: absolute;
+  transform: translateX(-50vw);
+  width: 100vw;
+  z-index: 0;
 }
 
 body:not(.portaltype-imio-smartweb-portalpage) #portal-header {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 body.portaltype-imio-smartweb-portalpage #portal-header {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @include media-breakpoint-down(md) {
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content {
     margin: 0 auto;
     text-align: center;
-    }
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
-        font-size: 35px;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-title {
+    font-size: 35px;
+  }
 
-    body #portal-header #portal-header-top #portal-logo {
-        height: 80px !important;
-        max-width: 80px;
-    }
+  body #portal-header #portal-header-top #portal-logo {
+    height: 80px !important;
+    max-width: 80px;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
-        font-size: 40px;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-description
+    p {
+    font-size: 40px;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
-        height: 200px;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper {
+    height: 200px;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-image {
-        background: none;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .swiper-banner-image {
+    background: none;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper>.container::after {
-        top: 0;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .outer-wrapper
+    > .container::after {
+    top: 0;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-content::after {
-        display: none;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .swiper-banner-content::after {
+    display: none;
+  }
 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .sectionnews {
-        padding-top: 5rem;
-    }
+  body.portaltype-imio-smartweb-portalpage.section-home-page .sectionnews {
+    padding-top: 5rem;
+  }
 }
 
 @include media-breakpoint-up(xl) {
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper {
     height: 430px;
-    }
+  }
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-content {
-    position: relative;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .swiper-banner-content {
+  position: relative;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-content::after {
-    content: "";
-    background: #4F7A95;
-    left: 0;
-    right: 0;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .swiper-banner-content::after {
+  content: "";
+  background: #4f7a95;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 300px;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+}
+
+@include media-breakpoint-up(lg) {
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .section-slide::after {
+    background: #ffffff14;
     border-radius: 50%;
-    margin: 0 auto;
-    height: 300px;
     bottom: 0;
+    content: "";
+    height: 420px;
+    left: 20px;
     position: absolute;
+    width: 420px;
+    z-index: -2;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .section-slide::before {
+    background: #ffffff10;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: 430px;
+    right: -180px;
+    position: absolute;
+    width: 430px;
     z-index: -1;
-    width: 300px;
-}
-
-@include media-breakpoint-up(lg) {
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::after {
-        background: #ffffff14;
-        border-radius: 50%;
-        bottom: 0;
-        content: "";
-        height: 420px;
-        left: 20px;
-        position: absolute;
-        width: 420px;
-        z-index: -2;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::before {
-        background: #ffffff10;
-        border-radius: 50%;
-        bottom: 0;
-        content: "";
-        height: 430px;
-        right: -180px;
-        position: absolute;
-        width: 430px;
-        z-index: -1;
-    }
+  }
 }
 
 @media screen and (min-width: 1921px) {
-    .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-image {
-        background-size: 15%;
-    }
+  .portaltype-imio-smartweb-portalpage.section-home-page
+    .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-image {
+    background-size: 15%;
+  }
 }

@@ -1,104 +1,106 @@
-.a-la-une{
-    position: relative;
+.a-la-une {
+  position: relative;
 
-    @include media-breakpoint-down(lg){
-        padding-bottom: 0;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0;
+  }
+
+  &::after {
+    // content: "";
+
+    // background: #f3f3f3;
+
+    // z-index: -2;
+
+    // position: absolute;
+
+    // top: 0;
+
+    // width: 100vw;
+
+    // bottom: 65%;
+
+    // left: 50%;
+
+    // transform: translateX(-50%);
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-slide {
+    a {
+      text-decoration: none;
     }
 
-    &::after{
-
-        // content: "";
-
-        // background: #f3f3f3;
-
-        // z-index: -2;
-
-        // position: absolute;
-
-        // top: 0;
-
-        // width: 100vw;
-
-        // bottom: 65%;
-
-        // left: 50%;
-
-        // transform: translateX(-50%);  
+    & > a {
+      @include media-breakpoint-up(lg) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 118px 1fr;
+        padding-right: 25px;
+      }
     }
 
-    .container{
-        padding-left: 0;
-        padding-right: 0;
+    .swiper-image {
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 60%;
+        grid-row: 1 / 3;
+        margin-bottom: 3rem;
+      }
     }
 
-    .swiper-slide{
-        a{
-            text-decoration: none;
-        }
+    .swiper_title {
+      @include media-breakpoint-up(lg) {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+        margin-left: -10%;
+        background: #fff;
+        padding: 36px 36px 0;
+        margin-top: 3rem;
+      }
+      margin-top: 1rem;
 
-        & > a{
-            @include media-breakpoint-up(lg) { 
-                display: grid;
-                grid-template-columns: 60% 40%;
-                grid-template-rows: 118px 1fr;
-                padding-right: 25px;
-            }
-        }
-
-        .swiper-image{
-            @include media-breakpoint-up(lg) {
-                padding-bottom: 60%;
-                grid-row: 1 / 3;
-                margin-bottom: 3rem;
-            }
-        }
-
-        .swiper_title{
-            @include media-breakpoint-up(lg) { 
-                grid-column: 2;
-                grid-row: 1;
-                align-self: start;
-                margin-left: -10%;
-                background: #fff;
-                padding: 36px 36px 0;
-                margin-top: 3rem;
-            }
-            margin-top: 1rem;
-
-            h3{
-                color: $primary;
-            }
-        }
-
-        .swiper_description{
-            @include media-breakpoint-up(lg){
-                grid-column: 2;
-                grid-row: 2;
-                margin-left: -10%;
-                background: #fff;
-                padding: 0 36px 36px;
-
-                &::after{
-                    content: "";
-                    position: absolute;
-                    top: 3rem;
-                    width: calc(40% + 1.7rem);
-                    bottom: 0;
-                    right: 25px;
-                    opacity: 50%;
-                    z-index: -1;
-                    box-shadow: rgba(0, 0, 0, 16%) -10px 10px 36px 0, rgba(0, 0, 0, 6%) 0 0 0 1px;
-                }
-            }
-
-            p{
-                color: #676767;
-            }
-        }
+      h3 {
+        color: $primary;
+      }
     }
 
-    .swiper-button-next, .swiper-button-prev {
-        top: 50%!important;
-        box-shadow: rgba(99, 99, 99, 20%) 0 2px 8px 0;
+    .swiper_description {
+      @include media-breakpoint-up(lg) {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: -10%;
+        background: #fff;
+        padding: 0 36px 36px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          width: calc(40% + 1.7rem);
+          bottom: 0;
+          right: 25px;
+          opacity: 50%;
+          z-index: -1;
+          box-shadow:
+            rgba(0, 0, 0, 16%) -10px 10px 36px 0,
+            rgba(0, 0, 0, 6%) 0 0 0 1px;
+        }
+      }
+
+      p {
+        color: #676767;
+      }
     }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50% !important;
+    box-shadow: rgba(99, 99, 99, 20%) 0 2px 8px 0;
+  }
 }

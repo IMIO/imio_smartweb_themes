@@ -1,193 +1,187 @@
-.sectionnews{
-    margin:0 0 100px;
+.sectionnews {
+  margin: 0 0 100px;
+
+  @media screen and (max-width: 992px) {
+    margin: 0;
+    background: #f8f8f8;
+    padding: 60px 0;
+  }
+
+  &::before {
+    right: 0;
+    top: 0;
+    background: linear-gradient(
+      180deg,
+      #f8f8f8,
+      #f8f8f8 200px,
+      transparent 0,
+      transparent
+    );
+    content: "";
+    display: block;
+    height: 800px;
+    position: absolute;
+    width: 100vw;
+    z-index: -2;
 
     @media screen and (max-width: 992px) {
-        margin: 0;
-        background:#F8F8F8;
-        padding:60px 0;
+      display: none;
+    }
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background: transparent;
+      border-radius: 50px 50px 0 0;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+
+        //transform: translateY(5px);
+
+        //border-radius: 50px;
+      }
+
+      & > a {
+        align-items: left;
+        padding-bottom: 20px;
+
+        .swiper-image {
+          transition: 0.5s;
         }
 
-
-        &::before{
-            right:0;
-            top:0;
-            background: linear-gradient(180deg, #F8F8F8, #F8F8F8 200px, transparent 0, transparent);
-            content: "";
-            display: block;
-            height: 800px;
+        .swiper_category {
+          //display:none !important;
+          span {
+            display: inline-block;
+            background: $primary-svg;
+            border-radius: 0;
+            padding: 8px 25px;
+            text-transform: none;
             position: absolute;
-            width: 100vw;
-            z-index: -2;
-
-            @media screen and (max-width: 992px) {
-                display:none;
-                }
-    }
-
-
-        
-
-    .section-container{
-        position: relative;
-    }
-    
-
-
-    .swiper-wrapper{
-        .swiper-slide {
-            background: transparent;
-            border-radius: 50px 50px 0 0;
-            transition: .5s;
-            
-            &:hover,&:focus{
-                    transition: .5s;
-
-                    //transform: translateY(5px);
-
-                    //border-radius: 50px;
-            }
-
-            & > a{
-                align-items: left;
-                padding-bottom: 20px;
-
-                .swiper-image{
-                    transition: .5s;
-                }
-
-                .swiper_category{
-
-                    //display:none !important;
-                    span {
-                        display: inline-block;
-                        background: $primary-svg;
-                        border-radius: 0;
-                        padding: 8px 25px;
-                        text-transform: none;
-                        position: absolute;
-                        top:0;
-                        right:0;
-                    }
-                    
-                }
-
-                .swiper_date{
-                    font-family: $font-family-base; 
-                    width: 100%;
-                    text-transform: uppercase;
-                }
-
-                .swiper_title{
-                    width: 100%;
-
-                    h3{
-                        font-family: $font-family-base;
-                        transition: .5s;
-                        font-weight: 600 !important;
-                        
-                    }
-
-                    &::after {
-                        background: url("../../assets/svg/btn.svg");
-                        background-position: 100% 100%;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        color: #000;
-                        content: "Lire la suite";
-                        display: block;
-                        font-weight: 400;
-                        line-height: 1.4;
-                        margin-top: 2rem;
-                        padding-right: 2rem;
-                        font-size: 14px;
-
-                        //text-decoration: underline;
-                        top:auto;
-                        bottom:0;
-                        width: max-content;
-                        transition: .3s;
-                    }
-                }
-
-                .swiper_description{
-                    display: none;
-
-                    p{
-                        margin: 0;
-                    }
-                }
-
-                &:hover{
-                    .swiper_title{
-                        h3{
-                            transition: .5s;
-                        }
-                    }
-
-                    .swiper_title{
-                        width: 100%;
-
-                        h3{
-                            font-family: $font-family-base;
-                            transition: .5s;
-                            font-weight: 600 !important;
-                            
-                        }
-
-                        &::after {
-                            color: $primary-red;
-                            padding-right: 2.5rem;
-                            transition: .3s;
-                        }
-                    }
-                }
-            }
+            top: 0;
+            right: 0;
+          }
         }
-    }
 
-    .swiper-button-next {
-        border:2px solid #000;
-    }
+        .swiper_date {
+          font-family: $font-family-base;
+          width: 100%;
+          text-transform: uppercase;
+        }
 
-    .swiper-button-prev {
-        border:2px solid #000;
+        .swiper_title {
+          width: 100%;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+            font-weight: 600 !important;
+          }
+
+          &::after {
+            background: url("../../assets/svg/btn.svg");
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: #000;
+            content: "Lire la suite";
+            display: block;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 2rem;
+            padding-right: 2rem;
+            font-size: 14px;
+
+            //text-decoration: underline;
+            top: auto;
+            bottom: 0;
+            width: max-content;
+            transition: 0.3s;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+
+          .swiper_title {
+            width: 100%;
+
+            h3 {
+              font-family: $font-family-base;
+              transition: 0.5s;
+              font-weight: 600 !important;
+            }
+
+            &::after {
+              color: $primary-red;
+              padding-right: 2.5rem;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
     }
+  }
+
+  .swiper-button-next {
+    border: 2px solid #000;
+  }
+
+  .swiper-button-prev {
+    border: 2px solid #000;
+  }
 }
 
+.section-home-page .sectionnews {
+  @media screen and (max-width: 600px) {
+    &::before {
+      display: none;
+    }
+  }
 
+  .section-title {
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    color: $primary;
+    margin: 0 0 30px !important;
+    width: auto;
+    padding-left: 40px;
+    background: url("../../assets/svg/cible_black.svg") left center no-repeat;
 
-.section-home-page .sectionnews{
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 0 20px !important;
+      height: 65px;
+      background: none;
+      text-align: center;
+      font-size: 50px;
+    }
+
     @media screen and (max-width: 600px) {
-        &::before {
-            display:none;
-        }
-        }
-
-        .section-title{
-            font-weight: 400;
-            font-size: 30px;
-            position: relative;
-            color:$primary;
-            margin: 0 0 30px !important;
-            width:auto;
-            padding-left:40px;
-            background: url("../../assets/svg/cible_black.svg") left center no-repeat;
-    
-    
-            @media screen and (max-width: 992px) {
-                transform: rotate(0deg);
-                position: initial;
-                padding: 0;
-                writing-mode:initial;
-                margin: 0 0 20px !important;
-                height: 65px;
-                background: none;
-                text-align: center;
-                font-size: 50px;
-                }
-
-            @media screen and (max-width: 600px) {
-                height: 50px;
-                }
-        }
+      height: 50px;
+    }
+  }
 }

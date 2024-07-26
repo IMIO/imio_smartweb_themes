@@ -12,7 +12,7 @@
       .table_title {
         span {
           &::after {
-            content: '';
+            content: "";
             bottom: -5px;
             height: 2px;
             left: 0;
@@ -38,7 +38,6 @@
     }
   }
 }
-
 
 @media sreen and (min-width: 768px) {
   .sortable-section.sectionlinks.quick-access:first-child {

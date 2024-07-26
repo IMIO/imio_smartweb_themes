@@ -6,246 +6,249 @@ body.faceted-map .button-map-content {
   transform: translateX(-100%);
   display: none;
 
-  @media screen and (min-width:900px){
-      display: flex !important;
-      left: 99vw;
-    }
+  @media screen and (min-width: 900px) {
+    display: flex !important;
+    left: 99vw;
+  }
 
-    @media screen and (min-width: 1340px){
-      left: calc(50vw + 648px);
-    }
+  @media screen and (min-width: 1340px) {
+    left: calc(50vw + 648px);
+  }
 
-    p{
-        margin: 0!important;
-    }
+  p {
+    margin: 0 !important;
+  }
 
-    .button-map{
-      background: transparent;
-      font-weight: 500;
-      border: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      width: max-content;
+  .button-map {
+    background: transparent;
+    font-weight: 500;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: max-content;
 
-      &.hide-map{
-        &::after{
-          content: "";
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Calque 2' viewBox='0 0 16 10'%3E%3Cpath d='M5 0C2.24 0 0 2.24 0 5s2.24 5 5 5h6c2.76 0 5-2.24 5-5s-2.24-5-5-5H5Zm6 9C8.79 9 7 7.21 7 5s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4Z' style='fill:%23fe5919'/%3E%3C/svg%3E");
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 21px;
-          display: block;
-          padding-bottom: 10%;
-        }
-      }
-
-      &.show-map{
-        &::after{
-          content: "";
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Calque 2' viewBox='0 0 16 10'%3E%3Cpath d='M11 1c2.21 0 4 1.79 4 4s-1.79 4-4 4H8c1.26-.94 2-2.43 2-4 0-1.57-.74-3.06-2-4h3ZM5 9C2.79 9 1 7.21 1 5s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4ZM0 5c0 2.76 2.24 5 5 5h6c2.76 0 5-2.24 5-5s-2.24-5-5-5H5C2.24 0 0 2.24 0 5Z' style='fill:%23fe5919'/%3E%3C/svg%3E");
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 21px;
-          display: block;
-          padding-bottom: 10%;
-        }
-      }
-    }
-}
-
-body.faceted-map{
-    #main-container{
-        #content{
-            #center-content-area{
-                &:not(.with-map){
-                    grid-template-columns: 1fr;
-
-                    #faceted-map-container{
-                        display: none;
-                    }
-
-                    #faceted-results-items{
-                      .faceted-map-item {
-                        transition: all .3s ease;
-
-                        &:hover {
-                          transform: translateY(-16px);
-                        }
-                      }
-
-                        @include media-breakpoint-up(md) {
-                            grid-template-columns: 1fr 1fr 1fr;
-                            display: grid;
-                            grid-gap: 3.1%;
-                        }
-
-                        & > a {
-                          &:hover{
-                            .geo-item-title{
-                              color: $primary-svg;
-                            }
-                          }
-                        }
-
-                        .items-content{
-                            flex-direction: column;
-                            align-items: center;
-
-                            .geo-item-image{
-                                width: 100%;
-                                max-width: inherit;
-                                max-height: inherit;
-                                aspect-ratio: 16/11;
-                            }
-
-                            .geo-item-text{
-                                width: 100%;
-                            }
-                        }
-                    }
-
-                    // end no map
-                }
-
-                /*----------------*/
-
-                //with map
-                &.with-map{
-                    width: auto;
-
-                    @include media-breakpoint-up(md) {
-                        grid-template-columns: 25% auto;
-                        width: 100vw;
-
-                        #faceted-results-items{
-                            overflow-y: scroll;
-                            max-height: 70vh;
-                        }
-                    }
-
-                    @include media-breakpoint-up(lg) {
-                        margin-left: calc(-1 * (100vw - 936px) / 2);
-                        padding-left: calc((100vw - 936px) / 2);
-                    }
-
-                    @include media-breakpoint-up(xl) {
-                        margin-left: calc(-1 * (100vw - 1116px) / 2);
-                        padding-left: calc((100vw - 1116px) / 2);
-
-                        #faceted-results{
-                            margin-left: 0;
-                        }
-                    }
-
-                    @include media-breakpoint-up(xxl) {
-                        grid-template-columns: 22% auto;
-                        margin-left: calc(-1 * (100vw - 1296px) / 2);
-                        padding-left: calc((100vw - 1296px) / 2);
-                    }
-
-                    #faceted-map-container{
-                        height: 70vh!important;
-                        display: block;
-                    }
-
-                    #faceted-results-items{
-                        .faceted-map-item {
-                            margin: 0 3px 20px;
-
-                            .items-content{
-                                flex-direction: column;
-                                align-items: center;
-
-                                .geo-item-image{
-                                    width: 100%;
-                                    max-width: inherit;
-                                    max-height: inherit;
-                                }
-
-                                .geo-item-text{
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }  
-    }
-}
-
-.leaflet-popup-close-button{
-    background: #fff!important;
-    font-size: 0!important;
-    width: 30px!important;
-    height: 30px!important;
-    border-radius: 50px!important;
-    top: 16px!important;
-    right: 16px!important;
-    box-shadow: 0 1.7px 3.2px rgba(0, 0, 0, 1.1%), 0 4.1px 7.6px rgba(0, 0, 0, 1.6%), 0 7.6px 14.3px rgba(0, 0, 0, 2%), 0 13.6px 25.5px rgba(0, 0, 0, 2.4%), 0 25.5px 47.6px rgba(0, 0, 0, 2.9%), 0 61px 114px rgba(0, 0, 0, 4%);
-
-    &::before, &::after {
-        position: absolute;
-        left: 14px;
-        content: ' ';
-        height: 15px;
-        width: 2px;
-        background-color: #333;
-        top: 8px;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
+    &.hide-map {
       &::after {
-        transform: rotate(-45deg);
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Calque 2' viewBox='0 0 16 10'%3E%3Cpath d='M5 0C2.24 0 0 2.24 0 5s2.24 5 5 5h6c2.76 0 5-2.24 5-5s-2.24-5-5-5H5Zm6 9C8.79 9 7 7.21 7 5s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4Z' style='fill:%23fe5919'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 21px;
+        display: block;
+        padding-bottom: 10%;
       }
+    }
 
-      &:hover{
-        &::before,&::after{
-            opacity: 40%;
+    &.show-map {
+      &::after {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Calque 2' viewBox='0 0 16 10'%3E%3Cpath d='M11 1c2.21 0 4 1.79 4 4s-1.79 4-4 4H8c1.26-.94 2-2.43 2-4 0-1.57-.74-3.06-2-4h3ZM5 9C2.79 9 1 7.21 1 5s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4ZM0 5c0 2.76 2.24 5 5 5h6c2.76 0 5-2.24 5-5s-2.24-5-5-5H5C2.24 0 0 2.24 0 5Z' style='fill:%23fe5919'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 21px;
+        display: block;
+        padding-bottom: 10%;
+      }
+    }
+  }
+}
+
+body.faceted-map {
+  #main-container {
+    #content {
+      #center-content-area {
+        &:not(.with-map) {
+          grid-template-columns: 1fr;
+
+          #faceted-map-container {
+            display: none;
+          }
+
+          #faceted-results-items {
+            .faceted-map-item {
+              transition: all 0.3s ease;
+
+              &:hover {
+                transform: translateY(-16px);
+              }
+            }
+
+            @include media-breakpoint-up(md) {
+              grid-template-columns: 1fr 1fr 1fr;
+              display: grid;
+              grid-gap: 3.1%;
+            }
+
+            & > a {
+              &:hover {
+                .geo-item-title {
+                  color: $primary-svg;
+                }
+              }
+            }
+
+            .items-content {
+              flex-direction: column;
+              align-items: center;
+
+              .geo-item-image {
+                width: 100%;
+                max-width: inherit;
+                max-height: inherit;
+                aspect-ratio: 16/11;
+              }
+
+              .geo-item-text {
+                width: 100%;
+              }
+            }
+          }
+
+          // end no map
+        }
+
+        /*----------------*/
+
+        //with map
+        &.with-map {
+          width: auto;
+
+          @include media-breakpoint-up(md) {
+            grid-template-columns: 25% auto;
+            width: 100vw;
+
+            #faceted-results-items {
+              overflow-y: scroll;
+              max-height: 70vh;
+            }
+          }
+
+          @include media-breakpoint-up(lg) {
+            margin-left: calc(-1 * (100vw - 936px) / 2);
+            padding-left: calc((100vw - 936px) / 2);
+          }
+
+          @include media-breakpoint-up(xl) {
+            margin-left: calc(-1 * (100vw - 1116px) / 2);
+            padding-left: calc((100vw - 1116px) / 2);
+
+            #faceted-results {
+              margin-left: 0;
+            }
+          }
+
+          @include media-breakpoint-up(xxl) {
+            grid-template-columns: 22% auto;
+            margin-left: calc(-1 * (100vw - 1296px) / 2);
+            padding-left: calc((100vw - 1296px) / 2);
+          }
+
+          #faceted-map-container {
+            height: 70vh !important;
+            display: block;
+          }
+
+          #faceted-results-items {
+            .faceted-map-item {
+              margin: 0 3px 20px;
+
+              .items-content {
+                flex-direction: column;
+                align-items: center;
+
+                .geo-item-image {
+                  width: 100%;
+                  max-width: inherit;
+                  max-height: inherit;
+                }
+
+                .geo-item-text {
+                  width: 100%;
+                }
+              }
+            }
+          }
         }
       }
+    }
+  }
+}
+
+.leaflet-popup-close-button {
+  background: #fff !important;
+  font-size: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50px !important;
+  top: 16px !important;
+  right: 16px !important;
+  box-shadow:
+    0 1.7px 3.2px rgba(0, 0, 0, 1.1%),
+    0 4.1px 7.6px rgba(0, 0, 0, 1.6%),
+    0 7.6px 14.3px rgba(0, 0, 0, 2%),
+    0 13.6px 25.5px rgba(0, 0, 0, 2.4%),
+    0 25.5px 47.6px rgba(0, 0, 0, 2.9%),
+    0 61px 114px rgba(0, 0, 0, 4%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 14px;
+    content: " ";
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+    top: 8px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 40%;
+    }
+  }
 }
 
 .leaflet-popup-content-wrapper {
-    border-radius: 5px;
+  border-radius: 5px;
 
-    .leaflet-popup-content{
+  .leaflet-popup-content {
+    // width: auto!important;
+    margin: 10px !important;
 
-        // width: auto!important;
-        margin: 10px!important;
-
-        a{
-            text-decoration: none;
-        }
-
-        img {
-            margin-bottom: 0.6rem;
-          }
-
-          .popup_title{
-            color: #000;
-            font-weight: bold;
-            display: block;
-            font-size: 16px;
-            margin-bottom: 10px;
-          }
-
-          .popup_description{
-            color: #1b1b1b;
-          }
+    a {
+      text-decoration: none;
     }
+
+    img {
+      margin-bottom: 0.6rem;
+    }
+
+    .popup_title {
+      color: #000;
+      font-weight: bold;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .popup_description {
+      color: #1b1b1b;
+    }
+  }
 }
 
-
-
-
-
 ///// toggle
-  body{
+body {
   .btn-toggle:focus,
   .btn-toggle.focus,
   .btn-toggle:focus.active,
@@ -479,15 +482,14 @@ body.faceted-map{
 }
 
 .template-facetednavigation_view .faceted-top-widgets {
-	margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-
 
 // filter
 
-#top---default---widgets{
-  #search_widget{
-    #search_button{
+#top---default---widgets {
+  #search_widget {
+    #search_button {
       font-size: 0;
       border-left: 0;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
@@ -498,12 +500,10 @@ body.faceted-map{
   }
 }
 
-
-
-.awesome-marker-icon-green,.awesome-marker-icon-red {
-	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#fe5919' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
-	background-position: center;
+.awesome-marker-icon-green,
+.awesome-marker-icon-red {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#fe5919' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 95%;
 }
-

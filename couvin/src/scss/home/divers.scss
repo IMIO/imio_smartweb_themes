@@ -1,21 +1,21 @@
 .sectionevents .see_all a {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
 }
 
 .sectionnews .see_all a {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
 }
 
 .sectionnews .see_all a:focus,
 .sectionnews .see_all a:hover {
-    background: transparent;
-    border: 0 solid #014769;
-    border-radius: 0;
-    color: $black;
+  background: transparent;
+  border: 0 solid #014769;
+  border-radius: 0;
+  color: $black;
 }
 
 body .sortable-section.annuaire h2.section-title::after {
-    background-position: left;
+  background-position: left;
 }
 
 .sortable-section.a-la-une h2.section-title::after,
@@ -24,85 +24,85 @@ body .sortable-section.annuaire h2.section-title::after {
 .sortable-section.annuaire h2.section-title::after,
 .sortable-section.suivez-nous h2.section-title::after,
 .sortable-section.section-en-image h2.section-title::after {
-    content: "";
-    background: url("../../assets/svg/vague.svg");
-    bottom: 0;
-    position: initial;
-    width: 100%;
-    display: block;
-    background-size: 210px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
+  content: "";
+  background: url("../../assets/svg/vague.svg");
+  bottom: 0;
+  position: initial;
+  width: 100%;
+  display: block;
+  background-size: 210px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sortable-section.sectionevents h2.section-title,
 .sortable-section.sectionnews h2.section-title {
-    position: relative;
+  position: relative;
 }
 
 div.swiper-image {
-    position: relative;
+  position: relative;
 }
 
 div.swiper-image::before {
-    background: transparent;
-    content: "";
-    position: absolute;
-    inset: 0;
-    transition: all .2s ease;
-    z-index: 0;
+  background: transparent;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: all 0.2s ease;
+  z-index: 0;
 }
 
 .swiper-slide:hover a div.swiper-image::before {
-    background: $primary;
-    opacity: 50%;
+  background: $primary;
+  opacity: 50%;
 }
 
 .enquetes div.swiper-slide {
-    position: relative;
-    padding: 1rem;
-    background: #fff;
+  position: relative;
+  padding: 1rem;
+  background: #fff;
 }
 
 .block-menu-element a .card-body,
 body.template-block_view_with_images .block-menu-element a .card-body {
-    width: auto;
-    padding: 1rem;
+  width: auto;
+  padding: 1rem;
 }
 
 .block-menu-element a .card-body,
 body.template-block_view_with_images .block-menu-element a .card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .item_infos {
-    color: #fff;
+  color: #fff;
 }
 
 .sortable-section.sectionfiles h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 div#faceted-results .list-card-body:hover h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #localmessagesviewlet,
 #messagesviewlet {
-    float: none;
-    padding-top: 0;
-    position: absolute;
-    top: 110px;
-    width: 100%;
-    max-width: 95%;
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  max-width: 95%;
 }
 
 .sectionfiles .image.d-block.w-100 {
-    padding-bottom: 60%;
-    width: 100%;
+  padding-bottom: 60%;
+  width: 100%;
 }
 
 .sortable-section.sectionfiles {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

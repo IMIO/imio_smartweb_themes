@@ -1,47 +1,53 @@
-.swiper-banner-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.swiper-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @media screen and (max-width:900px) {
-        flex-direction: column;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
 
-        .swiper-banner-title{
-            font-size: 40px!important;
-        }
+    .swiper-banner-title {
+      font-size: 40px !important;
     }
+  }
 
-    .swiper-banner-title{
-        text-shadow: #262626 3px 5px 2px;
+  .swiper-banner-title {
+    text-shadow: #262626 3px 5px 2px;
+  }
+
+  .swiper-banner-description {
+    margin-left: 0.25em;
+    font-size: 65px;
+
+    p {
+      font-size: 65px !important;
+      text-transform: uppercase;
+      text-shadow: #262626 3px 5px 2px;
     }
-
-    .swiper-banner-description{
-        margin-left: .25em;
-        font-size: 65px;
-
-        p{
-            font-size: 65px!important;
-            text-transform: uppercase;
-            text-shadow: #262626 3px 5px 2px;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 915px) {
-    .swiper-banner-content {
-        display: block;
-    }
+  .swiper-banner-content {
+    display: block;
+  }
 
-    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
-        font-size: 30px!important;
-    }
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-description
+    p {
+    font-size: 30px !important;
+  }
 
-    .sortable-section.sectionlinks.quick-access:first-child {
-        position: relative!important;
-        transform: inherit!important;
-    }
+  .sortable-section.sectionlinks.quick-access:first-child {
+    position: relative !important;
+    transform: inherit !important;
+  }
 
-    .smartweb_herobanner .bannerSwiper {
-        height: 236px!important;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 236px !important;
+  }
 }

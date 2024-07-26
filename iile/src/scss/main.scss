@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -34,4 +34,3 @@ $enable-roboto-webfont: false;
 @import "./se-link.scss";
 @import "./se-files.scss";
 @import "./contact.scss";
-

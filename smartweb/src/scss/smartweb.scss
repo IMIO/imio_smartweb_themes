@@ -1,11 +1,10 @@
 // common
 $headings-color: #000;
-$primary: #008FD2;
+$primary: #008fd2;
 $bg-primary: red;
 $roboto-base-path: "@theme/assets/fonts/";
 
 @import "./sm-variables.scss";
-
 
 //  test
 
@@ -45,30 +44,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  fin test 
-
-
-
-
-
-
-
-
-
+//  fin test
 
 // @import "../../../plonetheme.barceloneta/scss/barceloneta.scss";
 
@@ -127,8 +103,7 @@ ul {
   background-color: transparent !important;
 }
 
-
-// GLOBAL 
+// GLOBAL
 html,
 body {
   max-width: 100%;
@@ -164,7 +139,6 @@ body {
   position: absolute;
   z-index: -1;
 }
-
 
 #portal-globalnav-wrapper li label,
 #subsite-navigation li label {

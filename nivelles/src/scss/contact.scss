@@ -1,20 +1,22 @@
 #portal-column-content .sectioncontact {
-    .contact-type-organization {
-        .section-container {
-            background: transparent;
-        }
+  .contact-type-organization {
+    .section-container {
+      background: transparent;
     }
+  }
 
-    h2,h3,h4{
-        font-family: $font-family-base;
-    }
+  h2,
+  h3,
+  h4 {
+    font-family: $font-family-base;
+  }
 }
 
 #portal-column-content .section-contact {
-	padding: 0;
-	background: #F8F8F8;
+  padding: 0;
+  background: #f8f8f8;
 }
 
 #portal-column-content .section-contact .contact-type-organization {
-	background: transparent;
+  background: transparent;
 }

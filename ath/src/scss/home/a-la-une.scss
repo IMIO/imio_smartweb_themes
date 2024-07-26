@@ -1,27 +1,26 @@
-.a-la-une{
-   padding-top: 2rem;
-   padding-bottom:2rem;
-   color:#fff;
-   margin: -1px 0 0;
-    max-width: 100vw;
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
+.a-la-une {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  margin: -1px 0 0;
+  max-width: 100vw;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
 
-   .container {
+  .container {
     max-width: 1320px;
 
     .swiper-wrapper {
       .swiper-slide {
         a {
           display: grid;
-          grid-template-columns:60% 40%;
+          grid-template-columns: 60% 40%;
           grid-template-rows: auto 1fr;
 
           .swiper-image {
             border-radius: 50px;
-
           }
         }
 
@@ -31,7 +30,7 @@
           h3 {
             margin-bottom: 20px;
             font-weight: 700 !important;
-            color:#fff;
+            color: #fff;
             text-align: left;
             font-size: 24px;
           }
@@ -39,28 +38,28 @@
 
         .swiper_description {
           padding: 0 0 20px 70px;
-          color:#fff;
+          color: #fff;
           font-size: 16px;
-      }
+        }
 
-      .swiper_category {
-        display: none !important;
-      }
+        .swiper_category {
+          display: none !important;
+        }
 
-      .swiper_date {
-        padding: 0 0 20px 70px;
-        color:#fff;
-        display: none !important;
+        .swiper_date {
+          padding: 0 0 20px 70px;
+          color: #fff;
+          display: none !important;
+        }
       }
-      }
-     }
-   }
+    }
+  }
 
-   .see_all {
+  .see_all {
     display: none;
-   }
+  }
 
-   &::after {
+  &::after {
     background: $primary-svg;
     bottom: 0;
     content: "";
@@ -68,154 +67,139 @@
     right: 0;
     top: 0;
     width: calc(50vw + 450px);
-    height:100%;
+    height: 100%;
     z-index: -1;
     border-radius: 0;
-}
+  }
 
+  a {
+    //display: grid;
 
+    //grid-template-columns: 50% 50%;
 
-
-    a {
-
-      //display: grid;
-
-      //grid-template-columns: 50% 50%;
-
-      //grid-template-rows: auto 1fr;
+    //grid-template-rows: auto 1fr;
   }
 
   @media screen and (max-width: 992px) {
     .swiper_title h3 {
       padding: 0 1rem;
-  }
+    }
 
     a {
       grid-template-columns: 100% !important;
       grid-template-rows: 1fr !important;
     }
-        }
-
-    .swiper_description {
-      font-size: 16px;
   }
 
+  .swiper_description {
+    font-size: 16px;
+  }
 
+  .swiper-button-prev {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="%234F2A66"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 50px !important;
+    left: 60% !important;
+    margin-left: -135px;
+  }
 
+  .swiper-button-next {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="%234F2A66"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 50px !important;
+    left: 60% !important;
+    margin-left: -80px;
+  }
+
+  .swiper-pagination-bullets {
+    display: none;
+  }
+
+  @media screen and (max-width: 992px) {
     .swiper-button-prev {
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%234F2A66\"/></svg>");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        position:absolute;
-        top:50px!important;
-        left:60% !important;
-        margin-left:-135px;
-      }
-
-      .swiper-button-next {
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%234F2A66\"/></svg>");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        position:absolute;
-        top:50px!important;
-        left:60% !important;
-        margin-left:-80px;
-      }
-
-      .swiper-pagination-bullets {
-        display: none;
-      }
-
-      @media screen and (max-width: 992px) {
-        .swiper-button-prev {
-          bottom: 0 !important; // Change this
-    left: 0; // Change this
-    right: 0; // Add this
-    margin: auto; // Change this
-    margin-right: 90px;
-
-        }
-
-        .swiper-button-next {
-          bottom: 0 !important; // Change this
-          left: 0; // Change this
-          right: 0; // Add this
-          margin: auto; // Change this
-          margin-right: 40px;
-        }
-
-
-        
-      }
-    
+      bottom: 0 !important; // Change this
+      left: 0; // Change this
+      right: 0; // Add this
+      margin: auto; // Change this
+      margin-right: 90px;
     }
 
+    .swiper-button-next {
+      bottom: 0 !important; // Change this
+      left: 0; // Change this
+      right: 0; // Add this
+      margin: auto; // Change this
+      margin-right: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 1400px) {
-  .a-la-une{
+  .a-la-une {
     padding: 2rem 40px;
 
-     &::after {
+    &::after {
       right: 0;
       top: 0;
       width: 100vw;
       border-radius: 0;
-  }
+    }
   }
 }
 
 @media screen and (max-width: 992px) {
-  .a-la-une{
-     .swiper-wrapper {
-    padding-bottom: 20px;
+  .a-la-une {
+    .swiper-wrapper {
+      padding-bottom: 20px;
 
-    .swiper-slide {
-a .swiper-image {
-        border-radius:20px !important;
-    }
+      .swiper-slide {
+        a .swiper-image {
+          border-radius: 20px !important;
+        }
 
-  .swiper_title {
-    padding: 10px 0 20px !important;
-    text-align: center;
-    width: 100%;
+        .swiper_title {
+          padding: 10px 0 20px !important;
+          text-align: center;
+          width: 100%;
 
-    h3 {
-      margin-bottom: 20px;
-      font-weight: 700 !important;
-      color:#fff;;
-      text-align: center !important;
+          h3 {
+            margin-bottom: 20px;
+            font-weight: 700 !important;
+            color: #fff;
+            text-align: center !important;
+          }
+        }
+
+        .swiper_description {
+          padding: 0 0 20px !important;
+          text-align: center;
+          width: 100% !important;
+        }
+
+        .swiper_date {
+          padding: 20px 0 0 !important;
+          margin: 0 !important;
+          color: #fff;
+          width: 100% !important;
+          text-align: center !important;
+          display: none !important;
+        }
+      }
     }
   }
-
-  .swiper_description {
-    padding: 0 0 20px !important;
-    text-align: center;
-    width: 100% !important;
-  }
-
-    .swiper_date {
-      padding: 20px 0 0!important;
-      margin:0 !important;
-      color:#fff;
-      width: 100% !important;
-      text-align: center !important;
-      display: none !important;
-    }
-}
-     }
-  }
-
-
-
 }
 
 @media screen and (max-width: 767px) {
-.a-la-une .swiper-pagination-bullets {
-  display: block;
+  .a-la-une .swiper-pagination-bullets {
+    display: block;
+  }
 }
-}
-
 
 .rs-banner {
   margin-top: -150px;
@@ -232,30 +216,30 @@ a .swiper-image {
   .table_display {
     .table_image {
       .image {
-        margin : 0 auto;
+        margin: 0 auto;
         background: $primary-light;
         position: absolute;
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        display: flex; 
+        display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         svg {
           width: 100%;
-          fill:$primary;
-          transition: all .5s ease;
+          fill: $primary;
+          transition: all 0.5s ease;
         }
 
         &:hover {
-          background:#fff;
-        } 
+          background: #fff;
+        }
       }
 
       .table_title {
-        display:none;
+        display: none;
       }
     }
   }
@@ -295,4 +279,4 @@ a .swiper-image {
   .rs-banner {
     display: none;
   }
-  }
+}

@@ -5,7 +5,7 @@
   flex-direction: column;
   position: relative;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;
     gap: 40px;
@@ -29,7 +29,8 @@
       gap: 14px;
       flex-wrap: wrap;
 
-      svg,img{
+      svg,
+      img {
         max-width: 80px;
         max-height: 80px;
       }
@@ -37,12 +38,11 @@
   }
 }
 
-
 // sub nav
 #subsite-navigation {
   padding: $sub-navbar-padding;
 
-  &>ul {
+  & > ul {
     width: 100%;
 
     @include media-breakpoint-up(md) {
@@ -81,7 +81,7 @@
         display: none;
       }
 
-      &.show-nav>.has_subtree.dropdown {
+      &.show-nav > .has_subtree.dropdown {
         z-index: 1;
         opacity: 100%;
         visibility: visible;
@@ -92,10 +92,10 @@
         }
       }
 
-      &.show-nav>.has_subtree {
+      &.show-nav > .has_subtree {
         visibility: visible;
 
-        .show-nav>.dropdown {
+        .show-nav > .dropdown {
           left: 25.5em;
 
           .dropdown {
@@ -104,7 +104,7 @@
         }
       }
 
-      &>.has_subtree {
+      & > .has_subtree {
         width: 21em;
         padding: 2em;
         background: #fff;
@@ -126,8 +126,8 @@
       }
     }
 
-    &>li {
-      &>a {
+    & > li {
+      & > a {
         display: flex;
         align-items: center;
         padding: 0;
@@ -146,13 +146,13 @@
             left: 0;
             background-color: $primary;
             bottom: 0;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             right: 0;
           }
         }
       }
 
-      &>.has_subtree {
+      & > .has_subtree {
         width: 25em;
 
         .close-nav {
@@ -173,7 +173,7 @@
     }
 
     div.has_subtree {
-      &>span {
+      & > span {
         color: $primary;
       }
 
@@ -201,7 +201,7 @@
           max-height: 85vh;
           flex-direction: column;
 
-          &>ul {
+          & > ul {
             overflow-y: auto;
           }
         }
@@ -270,7 +270,7 @@
   }
 
   &.activated {
-    &>ul>li>a {
+    & > ul > li > a {
       @include media-breakpoint-up(md) {
         color: $sub-nav-link-open-color !important;
       }
@@ -278,7 +278,7 @@
   }
 }
 
-#subsite-navigation>ul>.has_subtree.nav-item>.nav-link::after {
+#subsite-navigation > ul > .has_subtree.nav-item > .nav-link::after {
   content: "";
   width: 9px;
   height: 6px;
@@ -287,11 +287,11 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 
-#portal-globalnav-wrapper #portal-globalnav>li>.has_subtree,
-#subsite-navigation #portal-globalnav>li>.has_subtree {
+#portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+#subsite-navigation #portal-globalnav > li > .has_subtree {
   @include media-breakpoint-up(lg) {
     margin-top: 2.25rem;
   }
@@ -301,7 +301,7 @@
 
 //sub site
 #subsite-navigation {
-  &>ul {
+  & > ul {
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -318,11 +318,11 @@
   .has_subtree {
     display: block;
 
-    & .opener~ul {
+    & .opener ~ ul {
       height: auto;
     }
 
-    >label {
+    > label {
       position: absolute;
       top: 0;
       right: 0;
@@ -336,29 +336,32 @@
       text-align: center;
     }
 
-    &>input {
+    & > input {
       display: none;
     }
 
     &:hover {
-      &>ul {
+      & > ul {
         opacity: 100%;
         visibility: visible;
       }
     }
 
-    .has_subtree:hover>ul {
+    .has_subtree:hover > ul {
       top: 0;
       left: 16em;
     }
   }
 }
 
-#subsite-navigation>ul li>.has_subtree.dropdown {
+#subsite-navigation > ul li > .has_subtree.dropdown {
   position: absolute;
   left: 0;
-  box-shadow: 0 1.6px 11.5px rgb(0 0 0 / 2.4%), 0 4.5px 31.9px rgb(0 0 0 / 3.5%),
-    0 10.9px 76.9px rgb(0 0 0 / 4.6%), 0 36px 255px rgb(0 0 0 / 7%);
+  box-shadow:
+    0 1.6px 11.5px rgb(0 0 0 / 2.4%),
+    0 4.5px 31.9px rgb(0 0 0 / 3.5%),
+    0 10.9px 76.9px rgb(0 0 0 / 4.6%),
+    0 36px 255px rgb(0 0 0 / 7%);
 
   .has_subtree.dropdown {
     top: 0;
@@ -398,12 +401,15 @@
     .has_subtree.dropdown {
       top: 0;
       width: 100vw !important;
-      box-shadow: 0 0 6.5px rgb(0 0 0 / 4.7%), 0 0 16.9px rgb(0 0 0 / 6.7%),
-        0 0 33.8px rgb(0 0 0 / 8.3%), 0 0 64.5px rgb(0 0 0 / 10.3%),
+      box-shadow:
+        0 0 6.5px rgb(0 0 0 / 4.7%),
+        0 0 16.9px rgb(0 0 0 / 6.7%),
+        0 0 33.8px rgb(0 0 0 / 8.3%),
+        0 0 64.5px rgb(0 0 0 / 10.3%),
         0 0 139px rgb(0 0 0 / 15%);
     }
 
-    #portal-globalnav>li>.nav-link {
+    #portal-globalnav > li > .nav-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -411,11 +417,16 @@
     }
   }
 
-  .navbar-toggler[aria-expanded="true"]+#portal-globalnav-collapse {
+  .navbar-toggler[aria-expanded="true"] + #portal-globalnav-collapse {
     left: 0;
   }
 
-  #portal-globalnav-wrapper .navbar-nav li.show-nav>.has_subtree .show-nav>.dropdown {
+  #portal-globalnav-wrapper
+    .navbar-nav
+    li.show-nav
+    > .has_subtree
+    .show-nav
+    > .dropdown {
     z-index: 99;
     height: 100vh;
     background: #fff;
@@ -428,11 +439,13 @@
       right: -100vw;
       left: inherit;
       height: 100vh;
-      transition: right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64),
-        opacity 5s ease, 0.5s visibility ease;
+      transition:
+        right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64),
+        opacity 5s ease,
+        0.5s visibility ease;
     }
 
-    &.show-nav>.has_subtree.dropdown {
+    &.show-nav > .has_subtree.dropdown {
       right: 0;
       left: inherit !important;
       transition: right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64);
@@ -447,19 +460,22 @@
   #subsite-navigation {
     .has_subtree.dropdown {
       width: 100vw !important;
-      box-shadow: 0 0 6.5px rgb(0 0 0 / 4.7%), 0 0 16.9px rgb(0 0 0 / 6.7%),
-        0 0 33.8px rgb(0 0 0 / 8.3%), 0 0 64.5px rgb(0 0 0 / 10.3%),
+      box-shadow:
+        0 0 6.5px rgb(0 0 0 / 4.7%),
+        0 0 16.9px rgb(0 0 0 / 6.7%),
+        0 0 33.8px rgb(0 0 0 / 8.3%),
+        0 0 64.5px rgb(0 0 0 / 10.3%),
         0 0 139px rgb(0 0 0 / 15%);
     }
 
-    #portal-globalnav>li>.nav-link {
+    #portal-globalnav > li > .nav-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 1rem 0;
     }
 
-    li.show-nav>.has_subtree .show-nav>.dropdown {
+    li.show-nav > .has_subtree .show-nav > .dropdown {
       left: 0 !important;
     }
 
@@ -470,7 +486,7 @@
         left: 0 !important;
       }
 
-      &.show-nav>.has_subtree.dropdown {
+      &.show-nav > .has_subtree.dropdown {
         right: 0;
         left: 5% !important;
         max-width: 90%;
@@ -478,7 +494,7 @@
     }
   }
 
-  #subsite-navigation>ul {
+  #subsite-navigation > ul {
     display: flex;
     width: auto;
     flex-wrap: nowrap;
@@ -493,43 +509,43 @@
 
 // mobile
 
-#subsite-navigation>ul>li>a {
+#subsite-navigation > ul > li > a {
   white-space: nowrap;
 }
 
 // SUB
 
-#subsite-navigation>ul li>.has_subtree.dropdown .has_subtree.dropdown {
+#subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {
   bottom: 0;
 }
 
 @media screen and (max-width: 992px) {
-  #subsite-navigation>ul>li.show-nav>.has_subtree.dropdown {
-      margin-top: 1rem;
-      display: table;
-      width: 100% !important;
-      left: 0 !important;
+  #subsite-navigation > ul > li.show-nav > .has_subtree.dropdown {
+    margin-top: 1rem;
+    display: table;
+    width: 100% !important;
+    left: 0 !important;
   }
 
   .subsite-container #subsite-logo {
-      width: 100%;
+    width: 100%;
 
-      a{
-          padding-left: 0.6rem;
-          box-sizing: border-box;
-      }
+    a {
+      padding-left: 0.6rem;
+      box-sizing: border-box;
+    }
   }
 
-  #subsite-navigation>ul>li:first-child {
-      margin-left: 0.5rem;
+  #subsite-navigation > ul > li:first-child {
+    margin-left: 0.5rem;
   }
 
-  #subsite-navigation>ul>li {
-      margin-right: 0.75rem;
+  #subsite-navigation > ul > li {
+    margin-right: 0.75rem;
   }
 
-  #portal-globalnav-collapse>ul>li>a,
-  #subsite-navigation>ul>li>a {
-      padding: 1rem 0;
+  #portal-globalnav-collapse > ul > li > a,
+  #subsite-navigation > ul > li > a {
+    padding: 1rem 0;
   }
 }

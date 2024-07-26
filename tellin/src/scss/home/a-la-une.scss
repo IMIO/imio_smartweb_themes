@@ -1,93 +1,89 @@
-.a-la-une{
-
+.a-la-une {
   //background: url(../../assets/svg/bg-a-la-une.svg) center top no-repeat $primary;
   background-size: 100%;
   padding-top: 10rem;
   padding-bottom: 8rem;
-  margin:3rem 0;
+  margin: 3rem 0;
   max-width: 100vw;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
 
-
   @media screen and (max-width: 992px) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    margin:3rem 0 0
-    }
+    margin: 3rem 0 0;
+  }
 
-    &::before{
-        display:none;
-}
+  &::before {
+    display: none;
+  }
 
-
-.swiper-wrapper {
-  padding-bottom: 0;
-}
-
-@media screen and (max-width: 992px) {
   .swiper-wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
-  }
 
-.swiper-pagination {
-  display: none;
-}
-
-    .section-title{
-        font-weight: 300;
-        text-transform: none;
-        margin: 0 0 0 -90px;
-        width: max-content;
-        font-size: 3rem;
-        transform: rotate(180deg);
-        position: absolute;
-        padding: 100px 0 0;
-        writing-mode: vertical-rl;
-
-        @media screen and (max-width: 992px) {
-        transform: rotate(0deg);
-        position: initial;
-        padding: 0;
-        writing-mode:initial;
-        margin:0 auto 30px;
-        background: none;
-        }
+  @media screen and (max-width: 992px) {
+    .swiper-wrapper {
+      padding-bottom: 80px;
     }
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .section-title {
+    font-weight: 300;
+    text-transform: none;
+    margin: 0 0 0 -90px;
+    width: max-content;
+    font-size: 3rem;
+    transform: rotate(180deg);
+    position: absolute;
+    padding: 100px 0 0;
+    writing-mode: vertical-rl;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
 
   .swiper-slide {
-  .swiper_title h3 {
+    .swiper_title h3 {
       margin-bottom: 20px;
       font-weight: 300 !important;
-  }
+    }
 
     a {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto 1fr;
-  }
-
-  @media screen and (max-width: 992px) {
-    .swiper_title h3 {
-      padding: 0 1rem;
-  }
-
-    a {
-      grid-template-columns: 100% !important;
-      grid-template-rows: 1fr !important;
     }
-        }
+
+    @media screen and (max-width: 992px) {
+      .swiper_title h3 {
+        padding: 0 1rem;
+      }
+
+      a {
+        grid-template-columns: 100% !important;
+        grid-template-rows: 1fr !important;
+      }
+    }
 
     .swiper_description {
       font-size: 16px;
 
       p {
-        color:#fff;
+        color: #fff;
       }
-  }
-
+    }
   }
 
   .swiper-button-next,
@@ -97,48 +93,46 @@
   }
 
   .swiper-button-prev {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23000000\"/></svg>");
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
-    left:50%;
-    margin-left:36px;
+    left: 50%;
+    margin-left: 36px;
     top: auto !important;
     bottom: 0;
-   
   }
 
   .swiper-button-next {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23000000\"/></svg>");
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
-    left:50%;
-    margin-left:96px;
+    left: 50%;
+    margin-left: 96px;
     top: auto !important;
     bottom: 0;
   }
 
   @media screen and (max-width: 992px) {
     .swiper-button-prev {
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23000000\"/></svg>");
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
-      left:0;
-      margin-left:20px;
+      left: 0;
+      margin-left: 20px;
       top: auto !important;
-      bottom: 0;;
-     
+      bottom: 0;
     }
 
     .swiper-button-next {
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23000000\"/></svg>");
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
-      left:0;
-      margin-left:80px;
+      left: 0;
+      margin-left: 80px;
       top: auto !important;
       bottom: 0;
     }
@@ -154,12 +148,9 @@
     }
   }
 
-
   @media screen and (max-width: 575px) {
     .swiper-slide .swiper-image {
       border-radius: 30px 0;
     }
   }
-
 }
-

@@ -1,21 +1,16 @@
-
-
 //affichage des vidéos sur vue facettes
 .faceted-block-view-with-images .block-menu-element {
-    position: relative;
+  position: relative;
 }
 
 .faceted-block-view-with-images .block-menu-element a.faceted_video {
-    inset: 0 !important;
-    position: absolute !important;
+  inset: 0 !important;
+  position: absolute !important;
 }
-
-
 
 // ------- A remonter dans core ------ //
 
 // Pour supprimer le margin en fin de page ( si non le footer ne colle pas au sections)
-
 
 //---//
 
@@ -23,252 +18,256 @@
 
 /* select 2 */
 .faceted-multiselect-widget .select2-container .select2-choice {
-    border-radius: 0;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    border-color: #ccc;
+  border-radius: 0;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-color: #ccc;
 }
 
 .select2-container .select2-choice .select2-arrow b {
-    background-position: 0 0.4rem !important;
+  background-position: 0 0.4rem !important;
 }
 
 .faceted-multiselect-widget .select2-container .select2-choice abbr {
-    top: 0.8rem;
+  top: 0.8rem;
 }
 
 /* map */
 span.r-map-popup-title {
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .leaflet-popup-content p {
-    margin: 0 !important;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: #1c1c1c;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: #1c1c1c;
 }
 
 div#top-area.faceted-area .widget-fieldset legend {
-    display: none;
+  display: none;
 }
 
 .kssattr-fieldset-icons .plone-icon {
-    height: auto;
-    width: 3rem;
-    margin: 0.5rem;
+  height: auto;
+  width: 3rem;
+  margin: 0.5rem;
 }
 
 .kssattr-fieldset-icons span.option {
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-    position: relative;
-    display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  display: block;
 }
 
 .kssattr-fieldset-icons span.option:hover {
-    background: #f9f9f9;
+  background: #f9f9f9;
 }
 
 .kssattr-fieldset-icons .form-check-input {
-    position: absolute;
-    inset: 0;
-    width: inherit;
-    border-radius: 0 !important;
-    margin: 0;
-    height: 100%;
-    background: transparent;
-    background-image: none !important;
-    cursor: pointer;
-    transition: all 0.25s ease;
+  position: absolute;
+  inset: 0;
+  width: inherit;
+  border-radius: 0 !important;
+  margin: 0;
+  height: 100%;
+  background: transparent;
+  background-image: none !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 .kssattr-fieldset-icons .form-check-input:hover {
-    border: 1px solid #333;
+  border: 1px solid #333;
 }
 
 .kssattr-fieldset-icons .form-check-input:checked:hover {
-    border: 1px solid $primary;
+  border: 1px solid $primary;
 }
 
-@media screen and (min-width:576px) {
-    .sectioncontact.col-sm-3 {
-        flex: 0 0 auto;
-        width: 50% !important;
-    }
+@media screen and (min-width: 576px) {
+  .sectioncontact.col-sm-3 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
 }
 
-@media screen and (min-width:993px) {
-    .sectioncontact.col-sm-3 {
-        flex: 0 0 auto;
-        width: 25% !important;
-    }
+@media screen and (min-width: 993px) {
+  .sectioncontact.col-sm-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
+  }
 }
 
-@media screen and (min-width:576px) {
-    .sectioncontact.col-sm-4 {
-        flex: 0 0 auto;
-        width: 50% !important;
-    }
+@media screen and (min-width: 576px) {
+  .sectioncontact.col-sm-4 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
 }
 
-@media screen and (min-width:993px) {
-    .sectioncontact.col-sm-4 {
-        flex: 0 0 auto;
-        width: 33.333% !important;
-    }
+@media screen and (min-width: 993px) {
+  .sectioncontact.col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.333% !important;
+  }
 }
 
 textarea {
-    width: 100%;
+  width: 100%;
 }
 
 /* nouveautés */
 .userrole-anonymous.portaltype-imio-smartweb-procedure .category,
 .userrole-anonymous.portaltype-imio-smartweb-page .category {
-    display: none;
+  display: none;
 }
 
 #portal-header #portal-logo.minisite_logo {
-    padding: 0.5rem 0;
-    text-align: center;
-    text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-decoration: none;
 }
 
 .block-menu-element a .card-title.h2,
 .block-menu-element a h2.card-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .block-menu-element .card-body .card-text {
-    max-height: 3rem;
-    overflow: hidden;
-    position: relative;
+  max-height: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .block-menu-element .card-body .card-text::after {
-    content: "";
-    background: linear-gradient(275deg, white, transparent);
-    top: 1.5rem;
-    position: absolute;
-    height: 1.5rem;
-    right: 0;
-    width: 50%;
+  content: "";
+  background: linear-gradient(275deg, white, transparent);
+  top: 1.5rem;
+  position: absolute;
+  height: 1.5rem;
+  right: 0;
+  width: 50%;
 }
 
 .faceted-block-view-with-images .block-menu-element a .card-body {
-    border-radius: 0 0 15px;
+  border-radius: 0 0 15px;
 }
 
 .userrole-anonymous .pat-sortable .sortable-section {
-    border: 0 solid transparent !important;
+  border: 0 solid transparent !important;
 }
 
 .faceted-form {
-    padding: 0;
+  padding: 0;
 }
 
 .sortable-section.sectionvideo {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .sortable-section.sectionvideo #container-section-video {
-    padding: 0;
+  padding: 0;
 }
 
 #content header .lead.rich_description {
-    max-width: 1024px;
+  max-width: 1024px;
 }
 
 .procedure a {
-    background: $primary;
-    padding: 0.75rem;
-    position: relative;
-    display: inline-block;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin-bottom: 1rem;
+  background: $primary;
+  padding: 0.75rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .procedure a::after {
-    content: '\e803';
-    font-family: fontello;
-    margin-left: 0.5rem;
+  content: "\e803";
+  font-family: fontello;
+  margin-left: 0.5rem;
 }
 
 div#viewlet-below-content-body .procedure {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #content-core .citoyennete-1 {
-    z-index: 0;
-    position: relative;
+  z-index: 0;
+  position: relative;
 }
 
 .citoyennete-1 div#container-section-citoyennete::after {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 20%);
-    inset: 0;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 20%);
+  inset: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 443px) {
-    .r-result-filter .r-filter {
-        max-width: 100%;
-    }
+  .r-result-filter .r-filter {
+    max-width: 100%;
+  }
 
-    .portaltype-imio-smartweb-portalpage #content-core .reseaux-sociaux .section-container .body-section ul {
-        justify-content: space-between;
-    }
+  .portaltype-imio-smartweb-portalpage
+    #content-core
+    .reseaux-sociaux
+    .section-container
+    .body-section
+    ul {
+    justify-content: space-between;
+  }
 
-    .reseaux-sociaux .section-container .body-section ul li {
-        padding: 0;
-    }
+  .reseaux-sociaux .section-container .body-section ul li {
+    padding: 0;
+  }
 }
 
-
 body.template-block_view_with_images .block-menu-element a .card-body {
-    border-radius: 0 0 15px;
+  border-radius: 0 0 15px;
 }
 
 .block-menu-element a .card-body,
 body.template-block_view_with_images .block-menu-element a .card-body {
-    width: auto;
+  width: auto;
 }
 
 div#faceted-results {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .list-menu-element {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .list-menu-element a.row {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .newsletterhomepage .body-section {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .reseaux-sociaux {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .reseaux-sociaux .section-container .rich_description {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .faceted-block-view-with-images h2.card-title {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* vue actus */
@@ -281,61 +280,61 @@ div#faceted-results {
 
 // }
 
-
 #portal-footer-wrapper #body-section-administration-communale li.website {
-    display: none;
+  display: none;
 }
 
 #container-section-les-sites-de-la-ville .nb-items-batch-1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .search-news .r-search-img,
 .search-events .r-search-img {
-    float: left;
-    margin-right: 0.5rem;
+  float: left;
+  margin-right: 0.5rem;
 }
 
 /* https://bla.preprod.imio.be/ma-commune/services-communaux/citoyennete/demarches/carte-d-identite-electronique-12-ans#section-prix-et-delai-de-livraison */
 .text table {
-    border: 0;
+  border: 0;
 }
 
 .text table tr:nth-child(even) {
-    background: #f7f7f7;
+  background: #f7f7f7;
 }
 
 .plone-modal-close {
-    opacity: 70%;
-    text-decoration: none;
-    font-size: 1.75rem;
-    margin-top: 0.25rem;
-    margin-right: 0.25rem;
+  opacity: 70%;
+  text-decoration: none;
+  font-size: 1.75rem;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
 }
 
-body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure .category {
-    display: none;
+body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
+  .category {
+  display: none;
 }
 
 #portal-footer-wrapper {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 #portal-footer-wrapper li {
-    margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 #portal-footer-wrapper .contact_address span {
-    display: block;
+  display: block;
 }
 
 #portal-footer-wrapper #portal-footer.container {
-    max-width: 100% !important;
-    background: white;
-    padding-left: 0;
-    padding-right: 0;
+  max-width: 100% !important;
+  background: white;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 // div#smartweb-subsite-footer {
@@ -351,108 +350,109 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 #smartweb-subsite-footer .sectiontext,
 #smartweb-subsite-footer h2,
 #smartweb-subsite-footer h3 {
-    color: #fff;
+  color: #fff;
 }
 
 /* section fichier */
 .portaltype-imio-smartweb-procedure .sectionfiles .table_image,
 .portaltype-imio-smartweb-page .sectionfiles .table_image {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
 }
 
 .portaltype-imio-smartweb-procedure .sectionlinks .table_title,
 .portaltype-imio-smartweb-page .sectionlinks .table_title,
 .portaltype-imio-smartweb-procedure .sectionfiles .table_title,
 .portaltype-imio-smartweb-page .sectionfiles .table_title {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 /* section links */
 .portaltype-imio-smartweb-page #content .sectionlinks ul.row,
 .portaltype-imio-smartweb-procedure #content .sectionlinks ul.row {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .portaltype-imio-smartweb-page #content .sectionlinks::after,
 .portaltype-imio-smartweb-procedure #content .sectionlinks::after {
-    content: "";
-    background: #f3f3f3;
-    inset: 0 0.75rem;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  background: #f3f3f3;
+  inset: 0 0.75rem;
+  position: absolute;
+  z-index: -1;
 }
 
 .portaltype-imio-smartweb-procedure #content .sectionlinks .table_display,
 .portaltype-imio-smartweb-procedure #content .sectionlinks li.col-md-12,
 .portaltype-imio-smartweb-page #content .sectionlinks .table_display,
 .portaltype-imio-smartweb-page #content .sectionlinks li.col-md-12 {
-    max-width: 760px;
-    margin: 0.5rem auto;
+  max-width: 760px;
+  margin: 0.5rem auto;
 }
 
 .portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
 .portaltype-imio-smartweb-page #content .sectionlinks a.table_image {
-    color: $primary;
+  color: $primary;
 }
 
-.subsection-demarches-infos-pratiques .list-menu-element .newsImage.card-img-left {
-    margin-left: 1rem;
+.subsection-demarches-infos-pratiques
+  .list-menu-element
+  .newsImage.card-img-left {
+  margin-left: 1rem;
 }
 
 .sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
-.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"]::after {
-    content: "";
-    background: #f3f3f3;
-    position: absolute;
-    inset: 0.25rem -0.5rem 0;
-    z-index: -1;
-    border-radius: 10px 10px 0 0;
+.sortable-section.sectioncontact
+  h2.section-title
+  a[aria-expanded="true"]::after {
+  content: "";
+  background: #f3f3f3;
+  position: absolute;
+  inset: 0.25rem -0.5rem 0;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
 }
 
 @media screen and (min-width: 768px) {
-    .portaltype-imio-smartweb-procedure .sectionlinks,
-    .portaltype-imio-smartweb-page .sectionlinks,
-    .portaltype-imio-smartweb-procedure .sectionfiles,
-    .portaltype-imio-smartweb-page .sectionfiles {
-        background: transparent;
-    }
+  .portaltype-imio-smartweb-procedure .sectionlinks,
+  .portaltype-imio-smartweb-page .sectionlinks,
+  .portaltype-imio-smartweb-procedure .sectionfiles,
+  .portaltype-imio-smartweb-page .sectionfiles {
+    background: transparent;
+  }
 
-    .portaltype-imio-smartweb-procedure .sectionlinks::after,
-    .portaltype-imio-smartweb-page .sectionlinks::after,
-    .portaltype-imio-smartweb-procedure .sectionfiles::after,
-    .portaltype-imio-smartweb-page .sectionfiles::after {
-        width: auto;
-        left: 0.75rem;
-        right: 0.75rem;
-    }
+  .portaltype-imio-smartweb-procedure .sectionlinks::after,
+  .portaltype-imio-smartweb-page .sectionlinks::after,
+  .portaltype-imio-smartweb-procedure .sectionfiles::after,
+  .portaltype-imio-smartweb-page .sectionfiles::after {
+    width: auto;
+    left: 0.75rem;
+    right: 0.75rem;
+  }
 
-    /* supprimer #container-section-bla-en-images > div */
-    #container-section-bla-en-images>div {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 100%;
-    }
+  /* supprimer #container-section-bla-en-images > div */
+  #container-section-bla-en-images > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .sortable-section.sectioncontact .body-section.show {
-        display: flex !important;
-    }
+  .sortable-section.sectioncontact .body-section.show {
+    display: flex !important;
+  }
 
-    #portal-column-content .sortable-section.sectioncontact .body-section {
-        flex-wrap: nowrap !important;
-    }
+  #portal-column-content .sortable-section.sectioncontact .body-section {
+    flex-wrap: nowrap !important;
+  }
 }
 
-
-
 /* fin nouveautés */
-

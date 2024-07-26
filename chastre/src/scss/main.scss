@@ -12,8 +12,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -30,178 +30,193 @@ $enable-roboto-webfont: false;
 @import "./minisite.scss";
 @import "./home/banner";
 
-
-
-
 .r-item-img.r-item-img-placeholder {
-    background-image: url("../../assets/svg/plachld-chastre.png");
+  background-image: url("../../assets/svg/plachld-chastre.png");
 }
 
-
-body{
-    background: linear-gradient(180deg, rgba(255,255,255,60%) 0%, rgba(255,255,255,60%) 10%, rgba(209,220,231,60%) 100%);
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 60%) 0%,
+    rgba(255, 255, 255, 60%) 10%,
+    rgba(209, 220, 231, 60%) 100%
+  );
 }
 
-.contact_description{
-    margin-top: 1rem;
+.contact_description {
+  margin-top: 1rem;
 }
 
 .see_all a::after {
-	left: 50%!important;
-	transform: translateX(-50%)!important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
-@media screen and (min-width:1000px){
-    .portaltype-imio-smartweb-portalpage {
-        .bien-vivre-a-chastre,.sectionevents,.sectionnews,.a-la-une{
-            .section-title{
-                    width: max-content!important;
-                    margin-left: auto!important;
-                    margin-right: auto!important;
-                    position: relative!important;
-                    padding: 0 3rem!important;
+@media screen and (min-width: 1000px) {
+  .portaltype-imio-smartweb-portalpage {
+    .bien-vivre-a-chastre,
+    .sectionevents,
+    .sectionnews,
+    .a-la-une {
+      .section-title {
+        width: max-content !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+        padding: 0 3rem !important;
 
-                    &::after{
-                        content: "";
-                        width: 50px;
-                        height: 1px;
-                        background: $dark;
-                        display: block;
-                        position: absolute;
-                        right: 0;
-                        top: 50%;
-                        transform: translate(50%,50%);  
-                    }
-
-                    &::before{
-                        content: "";
-                        width: 50px;
-                        height: 1px;
-                        background: $dark;
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        transform: translate(-50%,50%);
-                    }
-            }
+        &::after {
+          content: "";
+          width: 50px;
+          height: 1px;
+          background: $dark;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(50%, 50%);
         }
 
+        &::before {
+          content: "";
+          width: 50px;
+          height: 1px;
+          background: $dark;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, 50%);
+        }
+      }
     }
+  }
 }
 
 // footer
-#portal-footer-wrapper{
-    text-align: left!important;
-    background: transparent!important;
+#portal-footer-wrapper {
+  text-align: left !important;
+  background: transparent !important;
 
-    &::before {
-        content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='#222831'/%3E%3C/svg%3E%0A");
-        line-height: 0;
-        display: block;
-        transform: translateY(1px);
-    }
+  &::before {
+    content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='#222831'/%3E%3C/svg%3E%0A");
+    line-height: 0;
+    display: block;
+    transform: translateY(1px);
+  }
 
-    #portal-footer{
-        background: $dark!important;
+  #portal-footer {
+    background: $dark !important;
 
-        #smartweb-footer{
-            a,span,p,div,h2{
-                color: #fff!important;
-            }
+    #smartweb-footer {
+      a,
+      span,
+      p,
+      div,
+      h2 {
+        color: #fff !important;
+      }
 
-            h2{
-                font-size: 22px!important;
+      h2 {
+        font-size: 22px !important;
 
-                &.section-title{
-                    margin-bottom: 1.5rem;
-                    margin-top: 2rem;
-                }
-            }
+        &.section-title {
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
         }
+      }
     }
+  }
 }
 
-#portal-colophon{
-    background: $dark!important;
+#portal-colophon {
+  background: $dark !important;
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 
-        li{
-            color: #fff!important;
+    li {
+      color: #fff !important;
 
-            a,span,p,div{
-                color: #fff!important;
-            }
-        }
+      a,
+      span,
+      p,
+      div {
+        color: #fff !important;
+      }
     }
+  }
 }
 
-body:not(.portaltype-imio-smartweb-portalpage){
-    #portal-footer-wrapper{
-        margin-top: 3rem;
-    }
+body:not(.portaltype-imio-smartweb-portalpage) {
+  #portal-footer-wrapper {
+    margin-top: 3rem;
+  }
 }
 
 .sectionlinks.quick-access .body-section ul {
-	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 footer #body-section-liens-utiles li:first-child {
-	.image{
-        display: none;
-    }
+  .image {
+    display: none;
+  }
 }
 
 body.template-block_view #content-core::after {
-    display: none!important;
+  display: none !important;
 }
 
-footer{
-    .sectiontext .section-text .body-section.figure-left figure img {
-        padding-top: 2px;
-    }
+footer {
+  .sectiontext .section-text .body-section.figure-left figure img {
+    padding-top: 2px;
+  }
 }
 
-#portal-footer-wrapper #portal-footer #smartweb-footer .row{
-    max-width: 890px;
-    margin-left: auto;
-    margin-right: auto;
+#portal-footer-wrapper #portal-footer #smartweb-footer .row {
+  max-width: 890px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#portal-footer-wrapper #portal-footer #smartweb-footer .row .sectiontext:first-child{
-    margin-top: 32px;
+#portal-footer-wrapper
+  #portal-footer
+  #smartweb-footer
+  .row
+  .sectiontext:first-child {
+  margin-top: 32px;
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 .smartweb_herobanner .bannerSwiper {
-	max-height: 50vw;
+  max-height: 50vw;
 }
 
 /* SUP-26886 */
-div.sectionfiles a[aria-expanded="false"], div.sectionfiles a[aria-expanded="true"]{
-    color: white;
-    text-decoration: none;
-  }
+div.sectionfiles a[aria-expanded="false"],
+div.sectionfiles a[aria-expanded="true"] {
+  color: white;
+  text-decoration: none;
+}
 
-  div.sectionfiles {
-    padding: .8em !important;
-  }
+div.sectionfiles {
+  padding: 0.8em !important;
+}
 
-  .subsection-vos-services-administratifs-cohesion-sociale-notre-equipe .sortable-section.sectiontext.col-sm-8 {
+.subsection-vos-services-administratifs-cohesion-sociale-notre-equipe
+  .sortable-section.sectiontext.col-sm-8 {
   padding: 2.2rem 0 0 2rem;
-  }
+}
 
 /* SUP-28985 */
 .sectiontext ul li a {
-    word-break: break-all;
+  word-break: break-all;
 }

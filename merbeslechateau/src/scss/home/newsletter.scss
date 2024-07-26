@@ -1,44 +1,43 @@
 .sectionsendinblue {
-    left: 50%;
-    max-width: 100vw;
-    position: relative;
-    transform: translateX(-50%);
-    width: 100vw;
-    background: #C93434;
-    text-align: center;
-    padding: 5rem 0;
+  left: 50%;
+  max-width: 100vw;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: #c93434;
+  text-align: center;
+  padding: 5rem 0;
 
-    .section-title {
-        width: max-content;
-        margin: 0 auto;
-        color: #fff !important;
-        font-size: 24px !important;
+  .section-title {
+    width: max-content;
+    margin: 0 auto;
+    color: #fff !important;
+    font-size: 24px !important;
 
-        &::before {
-            content: "";
-            width: 50px;
-            height: 50px;
-            background-image: url("../../assets/svg/newsletter.svg") !important;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: block;
-            margin: 0 auto;
-        }
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-image: url("../../assets/svg/newsletter.svg") !important;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      margin: 0 auto;
     }
+  }
 
-    .rich_description {
-        font-family: 'Baloo 2', cursive;
-    }
+  .rich_description {
+    font-family: "Baloo 2", cursive;
+  }
 
-    .form-text {
-        display: none;
-        color: #fff !important;
-        font-family: 'Baloo 2', cursive;
-    }
+  .form-text {
+    display: none;
+    color: #fff !important;
+    font-family: "Baloo 2", cursive;
+  }
 
-    input {
-        font-family: 'Baloo 2',
-        cursive;
-    }
+  input {
+    font-family: "Baloo 2", cursive;
+  }
 }

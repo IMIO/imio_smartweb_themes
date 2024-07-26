@@ -29,67 +29,76 @@
 // }
 .sectionnews .swiper-slide .swiper_title,
 .sectionevents .swiper-slide .swiper_title {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.container #main-container .sectionevents  {
-    position: relative;
+.container #main-container .sectionevents {
+  position: relative;
 }
 
 .container #main-container .sectionevents::after {
-    background: url("../../assets/svg/logo-background.svg");
-    background-size: cover;
-    bottom: 0;
-    content: "";
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50vw);
-    width: 100%;
-    z-index: -1;
-    height: 100vw;
+  background: url("../../assets/svg/logo-background.svg");
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50vw);
+  width: 100%;
+  z-index: -1;
+  height: 100vw;
 }
 
-.sectionevents h2.section-title, .sectionnews h2.section-title {
-    font-size: 4rem;
-    text-transform: uppercase;
+.sectionevents h2.section-title,
+.sectionnews h2.section-title {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 992px) {
-    .sectionevents h2.section-title, .sectionnews h2.section-title {
+  .sectionevents h2.section-title,
+  .sectionnews h2.section-title {
     font-size: 3rem;
     margin: 3rem 0;
-    }
+  }
 
-    .smartweb_herobanner .bannerSwiper {
-        height: 250px;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 250px;
+  }
 }
 
 .sectionnews .swiper-slide > a {
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .sectionnews .swiper-slide > a:hover {
-    background: $primary;
+  background: $primary;
 
-    div h3, div.swiper_date span, div.swiper_title, div.swiper_description, span, span, div p 
-        {
-            color: #fff;
-        }
+  div h3,
+  div.swiper_date span,
+  div.swiper_title,
+  div.swiper_description,
+  span,
+  span,
+  div p {
+    color: #fff;
+  }
 }
 
-.sectionevents h2, .sectionnews h2 {
-    font-weight: $font-title-weight;
+.sectionevents h2,
+.sectionnews h2 {
+  font-weight: $font-title-weight;
 }
 
 .sectionnews .swiper-slide:hover,
 .sectionevents .swiper-slide:hover {
-    .swiper_category span {
+  .swiper_category span {
     background: $primary-svg;
     color: #000;
-    }
+  }
 }
 
-.sectionnews, .a-la-une {
-    z-index: 1;
+.sectionnews,
+.a-la-une {
+  z-index: 1;
 }

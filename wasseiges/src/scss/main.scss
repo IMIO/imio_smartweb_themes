@@ -28,113 +28,116 @@ $enable-roboto-webfont: false;
 @import "./home/divers";
 @import "./home/footer";
 
-.portaltype-imio-smartweb-portalpage{
-    .outer-wrapper{
-        padding-bottom: 5rem;
-    }
+.portaltype-imio-smartweb-portalpage {
+  .outer-wrapper {
+    padding-bottom: 5rem;
+  }
 }
 
-body:not(.section-accueil){
-    #portal-footer-wrapper {
-        margin-top: 5rem;
-    } 
+body:not(.section-accueil) {
+  #portal-footer-wrapper {
+    margin-top: 5rem;
+  }
 }
 
 #portal-footer-wrapper {
-    h2 {
-        color: #fff !important;
-    }
-} 
-
-.sectiontext .mark, .sectiontext mark {
-	background-color: #183f6e;
-	color: #fff!important;
-
-    a{
-        color: #fff!important;  
-    }
+  h2 {
+    color: #fff !important;
+  }
 }
 
-.sectionfiles .table_display{
-    a, div{
-        color: #fff !important;
-    }
+.sectiontext .mark,
+.sectiontext mark {
+  background-color: #183f6e;
+  color: #fff !important;
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.sectionfiles .table_display {
+  a,
+  div {
+    color: #fff !important;
+  }
 }
 
 .sectionevents .swiper-slide .swiper_category span {
-	color: #fff!important;
+  color: #fff !important;
 }
 
-#container-section-acces-directs .table_image:focus .table_title span::after, #container-section-acces-directs .table_image:hover .table_title span::after {
-	background-color: #fff!important;
+#container-section-acces-directs .table_image:focus .table_title span::after,
+#container-section-acces-directs .table_image:hover .table_title span::after {
+  background-color: #fff !important;
 }
 
 //MENUHAMBURGER
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 //LOGO RESPONSIVE IPHONE
 
 @include media-breakpoint-down(lg) {
-    #portal-header #portal-header-top #portal-globalnav-wrapper {
-        margin: 0 !important;
-    }
+  #portal-header #portal-header-top #portal-globalnav-wrapper {
+    margin: 0 !important;
+  }
 
-    #portal-header #portal-header-top #portal-logo {
-        max-width: 130px;
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 130px;
 
-        svg {
-            width: 100%;
-        }
+    svg {
+      width: 100%;
     }
+  }
 
-    .smartweb_herobanner .bannerSwiper {
-        height: 500px;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 500px;
+  }
 }
 
-@media sreen and (max-width:989px) {
-    #portal-header #portal-header-top #portal-logo {
-        max-width: 144px;
+@media sreen and (max-width: 989px) {
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 144px;
 
-        svg {
-            width: 100%;
-        }
+    svg {
+      width: 100%;
     }
+  }
 }
 
 .portaltype-imio-smartweb-portalpage #messagesviewlet {
-    position: absolute;
-    top: 130px;
+  position: absolute;
+  top: 130px;
 }
 
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
-    background-color: #3f3f42;
+  background-color: #3f3f42;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
-    background-color: #3f3f42;
+  background-color: #3f3f42;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-    background-color: #3f3f42;
+  background-color: #3f3f42;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
-    background: #3f3f42;
+  background: #3f3f42;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
-    background: #3f3f42;
+  background: #3f3f42;
 }
 
 #messagesviewlet .portalMessage.error .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.error .messagesviewlet-type {
-    background: #3f3f42;
+  background: #3f3f42;
 }

@@ -1,18 +1,16 @@
 //*// COLORS
 
-$primary: #009EB0;
+$primary: #009eb0;
 $primary-dark: #006673;
 $primary-svg: #00b0d6;
 $primary-light: #e5f7fb;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-
-
-$font-family-base: 'Roboto', sans-serif;
-$font-family-title: 'Roboto', serif;
+$font-family-base: "Roboto", sans-serif;
+$font-family-title: "Roboto", serif;
 $font-title-color: #333;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #333;
@@ -34,14 +32,14 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
   sm: 100%,
   md: 100%,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1320px,
 );
 $global-radius: 15px;
 $enable-title-uppercase: false !default;
@@ -50,8 +48,8 @@ $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
 $section-padding-top: 0 !default;
-$to-portal-link-color: #282828!default;
-$img-placeholder: #F2F2F2!default;
+$to-portal-link-color: #282828 !default;
+$img-placeholder: #f2f2f2 !default;
 
 //swiper
 $swiper-icon-color: $primary-svg !default;
@@ -67,7 +65,7 @@ $swipper-bullet-color: $primary-dark;
 
 //*// HEADER
 $main-logo-max-width: 120px;
-$header-top-padding: .8rem 0 .8rem 0;
+$header-top-padding: 0.8rem 0 0.8rem 0;
 $header-top-background: #fff;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
@@ -103,13 +101,13 @@ $nav-link-font-weight: 400 !default;
 $nav-link-drop-color: $primary-dark;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
 $nav-link-drop-color-mobile: #030720 !default;
-$nav-link-drop-mobile: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
+$nav-link-drop-mobile: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="%23000" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-first-level-gap: 30px !default;
 $nav-first-level-uppercase: false;
 $nav-quick-link-color: $primary-svg;
-$nav-quick-link-size: 18px!default;
-$nav-quick-link-weight: bold!default;
-$nav-quick-link-padding: 0!default;
+$nav-quick-link-size: 18px !default;
+$nav-quick-link-weight: bold !default;
+$nav-quick-link-padding: 0 !default;
 $nav-sub-link-font-size: $nav-link-font-size !default;
 $nav-sub-link-font-weight: $nav-link-font-weight !default;
 $nav-overlay-radius: $global-radius !default;
@@ -148,12 +146,12 @@ $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
 $banner-content-title-text-transform: initial !default;
-$banner-content-text-align: left!default;
+$banner-content-text-align: left !default;
 $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding: 1rem 4rem .9rem 4rem;
+$see-all-padding: 1rem 4rem 0.9rem 4rem;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg: #fff;
 $see-all-color: #000;
@@ -162,16 +160,15 @@ $see-all-border: solid 2px $primary-dark;
 $see-all-text-transform: default;
 $see-all-font-size: 18px !default;
 $see-all-font-weight: 500;
-$see-all-transition: all .2s ease !default;
+$see-all-transition: all 0.2s ease !default;
 $see-all-hover-bg: $primary-dark;
 $see-all-hover-color: #fff;
 $see-all-hover-radius: 15px;
-$see-all-hover-border: solid 2px $primary-dark!important;
+$see-all-hover-border: solid 2px $primary-dark !important;
 $see-all-justify-content: center;
 $see-all-underline-color: transparent;
 $see-all-underline-width: 0;
 $see-all-hover-underline-width: 0;
-
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -182,7 +179,7 @@ $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 70px;
 $quick-access-height: 70px;
-$quick-access-background: #E5F7FB;
+$quick-access-background: #e5f7fb;
 $quick-access-border: solid 0 $primary;
 $quick-access-border-radius: 50%;
 $quick-access-shadow: none !default;
@@ -198,8 +195,6 @@ $quick-access-enable-full-bg: false !default;
 $quick-access-full-bg-color: $primary !default;
 $quick-access-full-bg-border: solid 1px green !default;
 $quick-access-full-bg-shadow: none;
-
-
 
 // A la une
 $a-la-une-title-color: $font-title-color !default;
@@ -233,7 +228,7 @@ $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius: 10px 10px 0 0;
 $actu-item-bg-color: #fff;
 $actu-item-bg-radius: 0 0 10px 10px;
-$actu-category-margin: 0 0 .5rem 0 !default;
+$actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.2rem 0.5rem;
 $actu-category-color: #fff;
 $actu-category-bg-color: $primary;
@@ -248,18 +243,17 @@ $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: 18px;
 $actu-item-title-font-weight: 400;
 $actu-item-title-align: left;
-$actu-item-description-margin: 0 0 .5rem 0 !default;
+$actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0;
 $actu-item-description-color: $font-title-color;
 $actu-item-description-align: left;
 $actu-item-description-font-family: $font-family-base !default;
-$actu-date-margin: 0 0 .5rem 0!default;
+$actu-date-margin: 0 0 0.5rem 0 !default;
 $actu-date-padding: 0;
 $actu-date-color: #747474;
 $actu-date-font-size: 12px;
 $actu-date-align: left;
 $actu-see-all-justify-content: $see-all-justify-content !default;
-
 
 // Event
 $event-section-full-width: true !default;
@@ -288,7 +282,7 @@ $event-item-title-color: $font-title-color;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: 18px;
 $event-item-title-font-weight: 400;
-$event-item-description-margin: 0 0 .5rem 0 !default;
+$event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0;
 $event-item-description-color: initial !default;
 $event-item-description-align: left !default;
@@ -299,10 +293,9 @@ $event-date-color: #747474;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
-
 // Album
 $album-section-full-width: true !default;
-$album-section-bg: #EDEAE5 !default;
+$album-section-bg: #edeae5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
@@ -313,7 +306,7 @@ $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
 $album-image-border-radius: $global-radius !default;
 $album-item-bg-color: rgb(244, 244, 244) !default;
-$album-item-bg-radius: $global-radius+2 !default;
+$album-item-bg-radius: $global-radius + 2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
@@ -335,12 +328,12 @@ $album-date-font-size: 14px !default;
 $album-see-all-justify-content: $see-all-justify-content !default;
 
 // Newsletter
-$newsletter-bg-color: $primary-svg!default;
-$newsletter-align: center!default;
-$newsletter-padding-top: 2rem!default;
-$newsletter-padding-bottom: 2rem!default;
-$newsletter-margin: 3rem 0!default;
-$newsletter-text-color: #fff!default;
+$newsletter-bg-color: $primary-svg !default;
+$newsletter-align: center !default;
+$newsletter-padding-top: 2rem !default;
+$newsletter-padding-bottom: 2rem !default;
+$newsletter-margin: 3rem 0 !default;
+$newsletter-text-color: #fff !default;
 
 /////////////// interne ///////////////
 
@@ -364,7 +357,8 @@ $section-text-max-width: 760px !default;
 
 // Section
 $section-padding-y: 5.31rem;
-$section-padding: (sm: 3rem,
+$section-padding: (
+  sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
 );
@@ -375,7 +369,7 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: #f3f3f3!default;
+$section-contact-background: #f3f3f3 !default;
 
 // section-files
 $section-file-background-color: #fff;
@@ -395,8 +389,8 @@ $section-list-block-img-card-title: 1.25rem;
 //Liste Block
 $block-full-shadow: 0 20px 40px #030720;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
-$list-group-border-width : 0;
-$list-group-item-padding-x : 0;
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
 
 // Message Viewlets
 
@@ -408,6 +402,6 @@ $message-error: #ae2609;
 $see-all-font-family: $font-family-base;
 
 :root {
---bs-card-spacer-x:1rem;
---bs-card-spacer-y:1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-spacer-y: 1rem;
 }

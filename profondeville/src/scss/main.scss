@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -30,7 +30,7 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 
 .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder.png");
-	background-size: cover;
-	background-position: center;
+  background: url("../../assets/svg/placeholder.png");
+  background-size: cover;
+  background-position: center;
 }

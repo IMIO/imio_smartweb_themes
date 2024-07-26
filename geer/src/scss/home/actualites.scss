@@ -1,27 +1,30 @@
 .sectionnews .swiper-slide .swiper_description {
-    padding: 0 36px;
+  padding: 0 36px;
 }
 
-.sectionnews, .sectionevents {
-    .swiper-image {
+.sectionnews,
+.sectionevents {
+  .swiper-image {
     position: relative;
-    }
+  }
 }
 
-.sectionnews, .sectionevents {
-    .swiper-image::after {
+.sectionnews,
+.sectionevents {
+  .swiper-image::after {
     content: "";
     background: $primary-svg;
     position: absolute;
     inset: 0;
     opacity: 0%;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-radius: 50px 50px 0 0;
-    }
+  }
 }
 
-.sectionnews, .sectionevents {
-.swiper-slide a:hover .swiper-image::after {
+.sectionnews,
+.sectionevents {
+  .swiper-slide a:hover .swiper-image::after {
     opacity: 50%;
-    }
+  }
 }

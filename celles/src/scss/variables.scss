@@ -1,13 +1,13 @@
 //*// COLORS
-$primary: #191E2F;
-$secondary: #C93434;
-$primary-svg: #C93434;
+$primary: #191e2f;
+$secondary: #c93434;
+$primary-svg: #c93434;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-$font-family-base: 'Inter', sans-serif;
-$font-family-title: 'Inter', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+$font-family-base: "Inter", sans-serif;
+$font-family-title: "Inter", sans-serif;
 $font-title-color: rgba(59, 59, 59, 100%);
 $font-title-color-light: #fff;
 $font-title-color-dark: #000;
@@ -29,7 +29,7 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 
 $global-radius: 5px;
@@ -62,7 +62,7 @@ $header-links-account-border: solid 0 #000 !default;
 $header-links-account-bg: transparent !default;
 $header-links-account-hover-border: solid 0 #000 !default;
 $header-links-account-hover-bg: transparent !default;
-$header-links-account-hover-color: #C93434;
+$header-links-account-hover-color: #c93434;
 $header-search-icon-color: #000;
 $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 
@@ -88,7 +88,7 @@ $nav-overlay-title-color: $primary-svg;
 $nav-overlay-title-font-size: 20px;
 $nav-overlay-title-font-weight: bold !default;
 $nav-overlay-next-icon-color: $primary;
-$nav-overlay-next-icon-hover-color: #C93434;
+$nav-overlay-next-icon-hover-color: #c93434;
 $nav-overlay-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 
@@ -103,7 +103,6 @@ $sub-nav-link-color: #000 !default;
 $sub-nav-link-open-color: #000 !default;
 $sub-nav-link-drop-color: #1a1313;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
-
 
 //*// SECTION HOMEPAGE
 
@@ -131,13 +130,12 @@ $see-all-radius: $global-radius;
 $see-all-border: solid 1px $secondary;
 $see-all-text-transform: none;
 $see-all-font-size: 16px;
-$see-all-transition: all .2s ease;
+$see-all-transition: all 0.2s ease;
 $see-all-hover-bg: transparent;
 $see-all-hover-color: $primary;
 $see-all-hover-radius: $global-radius;
 $see-all-hover-border: solid 1px $secondary;
 $see-all-justify-content: center;
-
 
 // Quick access
 $quick-access-section-full-width: true;
@@ -203,7 +201,7 @@ $actu-category-text-transform: uppurcase;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: initial;
 $actu-category-radius: $global-radius;
-$actu-item-title-margin: .5rem 0;
+$actu-item-title-margin: 0.5rem 0;
 $actu-item-title-padding: 0;
 $actu-item-title-color: initial;
 $actu-item-title-text-transform: initial;
@@ -243,14 +241,14 @@ $event-item-title-text-transform: initial;
 $event-item-title-font-size: 20px;
 $event-item-title-font-weight: bold;
 $event-date-margin: 0;
-$event-date-padding: .5rem 36px;
+$event-date-padding: 0.5rem 36px;
 $event-date-color: #000;
 $event-date-font-size: 14px;
 $event-see-all-justify-content: $see-all-justify-content;
 
 // album
 $album-section-full-width: true;
-$album-section-bg: #EDEAE5;
+$album-section-bg: #edeae5;
 $album-section-padding-top: 5rem;
 $album-section-padding-bottom: 5rem;
 $album-title-color: $primary;
@@ -269,7 +267,7 @@ $album-category-text-transform: uppurcase;
 $album-category-font-size: 14px;
 $album-category-font-weight: initial;
 $album-category-radius: $global-radius;
-$album-item-title-margin: .5rem 0;
+$album-item-title-margin: 0.5rem 0;
 $album-item-title-padding: 0;
 $album-item-title-color: initial;
 $album-item-title-text-transform: initial;

@@ -1,85 +1,85 @@
-.sectionnews:not(.a-la-une){
+.sectionnews:not(.a-la-une) {
+  position: relative;
+  background-color: #dfddea;
+
+  li {
+    list-style: none;
+  }
+
+  .table_image {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    background-color: #dfddea;
+    text-decoration: none;
 
-    li {
-        list-style: none;
+    .image {
+      padding-bottom: 56%;
+      border-radius: 10px;
+      transition: all 0.1s ease;
+      background-size: 100%;
+
+      &:hover {
+        background-size: 105%;
+      }
     }
 
-    .table_image {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-decoration: none;
+    .table_category {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      position: absolute;
+      background: $primary;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      padding: 0.5rem 0 0;
 
-        .image {
-            padding-bottom: 56%;
-            border-radius: 10px;
-            transition: all .1s ease;
-            background-size: 100%;
-
-            &:hover {
-                background-size: 105%;
-            }
-        }
-
-        .table_category {
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-            position: absolute;
-            background: $primary;
-            top: 0;
-            text-align: center;
-            width: 100%;
-            color: #fff;
-            padding: 0.5rem 0 0;
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                height: 30px;
-                background: $primary;
-                border-radius: 50%;
-                z-index: 0;
-                bottom: 0;
-                transform: translateY(45%);
-            }
-
-            span {
-                position: relative;
-                z-index: 1;
-            }
-        }
-
-        .table_title {
-            margin-top: .5rem;
-
-            span {
-                font-size: 20px;
-                font-weight: bold;
-                color: #000;
-            }
-        }
-
-        .table_date {
-            margin-top: .5rem;
-            margin-bottom: 2rem;
-            order: 1;
-            color: #636363;
-        }
-    }
-
-    &::after {
-        content: url("../../assets/svg/actu-bg.jpg");
+      &::after {
+        content: "";
         position: absolute;
-        width: 100vw;
-        bottom: -7px;
-        z-index: -1;
+        left: 0;
+        right: 0;
+        height: 30px;
+        background: $primary;
+        border-radius: 50%;
+        z-index: 0;
+        bottom: 0;
+        transform: translateY(45%);
+      }
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
     }
+
+    .table_title {
+      margin-top: 0.5rem;
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+
+    .table_date {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      order: 1;
+      color: #636363;
+    }
+  }
+
+  &::after {
+    content: url("../../assets/svg/actu-bg.jpg");
+    position: absolute;
+    width: 100vw;
+    bottom: -7px;
+    z-index: -1;
+  }
 }
 
 .sectionnews .table_display {
-	max-width: 420px;
+  max-width: 420px;
 }

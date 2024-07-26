@@ -1,13 +1,13 @@
 .les-sites {
-    padding: 5rem 0 0;
+  padding: 5rem 0 0;
 
-    &::after {
-        content: url("../../assets/svg/footer-svg-city.svg");
-        display: block;
-        margin: 0 auto;
-        max-width: 1200px;
-        width: 90vw;
-        transform: translateY(15px);
-        overflow: hidden;
-    }
+  &::after {
+    content: url("../../assets/svg/footer-svg-city.svg");
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90vw;
+    transform: translateY(15px);
+    overflow: hidden;
+  }
 }

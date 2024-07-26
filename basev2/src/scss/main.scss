@@ -92,10 +92,10 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/album";
 @import "./homepage/newsletter";
 
-#faceted-map-container{
-    z-index: 0;
+#faceted-map-container {
+  z-index: 0;
 }
 
 .leaflet-top.leaflet-left {
-    z-index: inherit !important;
+  z-index: inherit !important;
 }

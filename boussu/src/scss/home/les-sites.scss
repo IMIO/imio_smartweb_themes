@@ -2,9 +2,9 @@
   padding: 5rem 0;
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
-    background: #F1F1F1;
+    background: #f1f1f1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -29,7 +29,7 @@
       align-items: center;
       width: auto;
       background: #ffff;
-      border: 1px solid #D3D3D3;
+      border: 1px solid #d3d3d3;
       border-radius: 20px;
       height: 155px;
 
@@ -40,7 +40,7 @@
 
       .table_title {
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           inset: 0;
         }
@@ -55,13 +55,12 @@
   }
 }
 
-
 .sectionlinks.quick-access.les-sites .body-section li a .image.d-block {
-	box-shadow: none!important;
-	display: block!important;
-	flex-direction: column;
-	height: auto!important;
-	justify-content: center;
-	margin: 0 auto;
-	width: auto!important;
+  box-shadow: none !important;
+  display: block !important;
+  flex-direction: column;
+  height: auto !important;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto !important;
 }

@@ -14,7 +14,7 @@
   width: 3rem !important;
 }
 
-.subsection-vie-politique .contact-type-position h2{
+.subsection-vie-politique .contact-type-position h2 {
   font-size: 1.5rem;
 }
 
@@ -37,19 +37,21 @@ div#body-section-informations.figure-medium figure {
       align-items: center;
       background: #fff;
       border-radius: 15px;
-      box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
+      box-shadow:
+        rgb(0 0 0 / 16%) 0 10px 36px 0,
+        rgb(0 0 0 / 6%) 0 0 0 1px;
       display: flex;
       flex-wrap: wrap;
       height: 200px;
       justify-content: center;
       position: relative;
-      transition: box-shadow .2s linear;
+      transition: box-shadow 0.2s linear;
       width: 150px;
-      }
+    }
   }
 
-  .sectionlinks.quick-access:first-child  {
-    background: transparent!important;
+  .sectionlinks.quick-access:first-child {
+    background: transparent !important;
     left: 0;
     position: absolute;
     transform: translateY(-64%);
@@ -82,7 +84,7 @@ a[aria-expanded*="false"]::after {
   position: relative;
 }
 
-.sortable-section.sectioncontact .container h2 a{
+.sortable-section.sectioncontact .container h2 a {
   text-decoration: none;
 }
 
@@ -115,8 +117,9 @@ a[aria-expanded*="false"]::after {
 .card-body {
   padding: 1rem;
 
-  h2, .card-text {
-  color: $primary;
+  h2,
+  .card-text {
+    color: $primary;
   }
 }
 
@@ -132,17 +135,17 @@ a h2.list-card-title:hover {
   text-decoration: underline;
 }
 
-.portaltype-imio-smartweb-portalpage #content-core > .row{
+.portaltype-imio-smartweb-portalpage #content-core > .row {
   z-index: 0;
   position: relative;
 }
 
 //BANNER
 
-@include media-breakpoint-down(lg){
+@include media-breakpoint-down(lg) {
   #portal-header div#banner {
-  background-size: contain !important;
-  background-repeat: no-repeat;
+    background-size: contain !important;
+    background-repeat: no-repeat;
   }
 }
 
@@ -154,11 +157,25 @@ a h2.list-card-title:hover {
   color: #fff;
 }
 
-#portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:focus, #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .dropdown .nav-link:hover {
+#portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  .dropdown
+  .nav-link:focus,
+#portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  .dropdown
+  .nav-link:hover {
   color: $primary-svg;
 }
 
-#portal-column-content .sectioncontact+.sectioncontact .section-container, #portal-column-content .sectioncontact+.sectioncontact .section-container .body-section {
+#portal-column-content .sectioncontact + .sectioncontact .section-container,
+#portal-column-content
+  .sectioncontact
+  + .sectioncontact
+  .section-container
+  .body-section {
   height: auto;
 }
 

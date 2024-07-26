@@ -1,32 +1,32 @@
-@include media-breakpoint-down(md) { 
-    .sectionlinks.quick-access.partenaires .body-section li a .image.d-block {
-        height: 75px;
-        width: 75px;
-        transition: 0.2s;
-    }
+@include media-breakpoint-down(md) {
+  .sectionlinks.quick-access.partenaires .body-section li a .image.d-block {
+    height: 75px;
+    width: 75px;
+    transition: 0.2s;
+  }
 
-    .sectionlinks.quick-access.partenaires .body-section li a {
-        height: 100%;
-        transition: 0.2s;
-        width: 100%;
-    }
+  .sectionlinks.quick-access.partenaires .body-section li a {
+    height: 100%;
+    transition: 0.2s;
+    width: 100%;
+  }
 
-    .sectionlinks.quick-access.partenaires .body-section li a .table_title {
-        margin-top: 1rem;
-    }
+  .sectionlinks.quick-access.partenaires .body-section li a .table_title {
+    margin-top: 1rem;
+  }
 
-    .sectionlinks.quick-access.partenaires .body-section li {
-        width: 33%;
-    }
+  .sectionlinks.quick-access.partenaires .body-section li {
+    width: 33%;
+  }
 
-    .sectionlinks.quick-access.partenaires .body-section li a::after {
-        transition: 0.2s;
-        width: 80px;
-        height: 80px;
-        margin: 0 auto;
-    }
+  .sectionlinks.quick-access.partenaires .body-section li a::after {
+    transition: 0.2s;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
 
-    .sectionlinks.quick-access.partenaires .section-title {
-        margin: 0 0 1rem;
-    }
+  .sectionlinks.quick-access.partenaires .section-title {
+    margin: 0 0 1rem;
+  }
 }

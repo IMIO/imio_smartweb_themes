@@ -1,73 +1,72 @@
-.home-partenaires{
-    background: transparent;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+.home-partenaires {
+  background: transparent;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 
-    .section-title{
-        width: max-content;
-        margin-left: auto;
-        margin-right: auto;
+  .section-title {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 65px;
+      height: 7px;
+      background-color: $primary-svg;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 50px;
+    text-align: center;
+
+    li {
+      width: auto !important;
+
+      .table_display {
         position: relative;
-        margin-bottom: 2rem;
+        overflow: hidden;
+        padding: 1rem;
+      }
 
-        &::after{
-            content: "";
-            position: absolute;
-            width: 65px;
-            height: 7px;
-            background-color: $primary-svg;
-            left: 0;
-            bottom: 0;
+      a {
+        text-decoration: none;
+
+        &:hover {
+          .table_title {
+            transform: translateY(0);
+          }
         }
-    }
+      }
 
-    .row{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
-        grid-gap: 50px;
-        text-align: center;
+      .image {
+        padding-bottom: 65%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 
-        li{
-            width: auto!important;
+      .table_title {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 0;
+        background: #3bbef2;
+        transform: translateY(-100%);
+        transition: all 0.3s ease;
 
-            .table_display{
-                position: relative;
-                overflow: hidden;
-                padding: 1rem;
-            }
-
-            a{
-                text-decoration: none;
-
-                &:hover{
-                    .table_title{
-                        transform: translateY(0);
-                    }
-
-                }
-            }
-
-            .image{
-                padding-bottom: 65%;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .table_title{
-                margin-top: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding: 0.5rem 0;
-                background: #3bbef2;
-                transform: translateY(-100%);
-                transition: all .3s ease;
-
-                span{
-                    font-weight: bold;
-                }
-            }
+        span {
+          font-weight: bold;
         }
+      }
     }
+  }
 }

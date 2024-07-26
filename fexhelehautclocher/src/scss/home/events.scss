@@ -1,25 +1,26 @@
 .sectionevents {
-    .swiper-pagination-bullet {
-        background: $primary-svg;
-        opacity: 100%;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: #fff !important;
-    }
-}
-
-.sectionevents, .sectionnews {
-    .swiper-wrapper{
-        .swiper-slide {
-            & > a{
-                padding: 0;
-                border: solid 1px $secondary;
-                }
-            }
-        }
-}
-
-.sectionevents .swiper-wrapper .swiper-slide>a:hover {
+  .swiper-pagination-bullet {
     background: $primary-svg;
+    opacity: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #fff !important;
+  }
+}
+
+.sectionevents,
+.sectionnews {
+  .swiper-wrapper {
+    .swiper-slide {
+      & > a {
+        padding: 0;
+        border: solid 1px $secondary;
+      }
+    }
+  }
+}
+
+.sectionevents .swiper-wrapper .swiper-slide > a:hover {
+  background: $primary-svg;
 }

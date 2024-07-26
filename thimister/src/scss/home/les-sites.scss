@@ -1,12 +1,15 @@
 @include media-breakpoint-down(md) {
-    .sectionlinks.quick-access .body-section li {
-        width: 135px;
-    }
+  .sectionlinks.quick-access .body-section li {
+    width: 135px;
+  }
 
-    .portaltype-imio-smartweb-portalpage #content-core .sectionlinks.quick-access ul.row {
-        justify-content: center !important;
-        gap: 10px 5%;
-        margin: 0;
-        max-width: max-content;
-    }
+  .portaltype-imio-smartweb-portalpage
+    #content-core
+    .sectionlinks.quick-access
+    ul.row {
+    justify-content: center !important;
+    gap: 10px 5%;
+    margin: 0;
+    max-width: max-content;
+  }
 }

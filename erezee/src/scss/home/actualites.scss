@@ -1,7 +1,7 @@
 .container #main-container .sectionnews {
-    position: relative;
+  position: relative;
 
-&::before {
+  &::before {
     bottom: 0;
     content: "";
     left: 50%;
@@ -12,34 +12,37 @@
     transform: translateX(-50vw);
     width: 100vw;
     z-index: -1;
-    }
+  }
 }
 
-.sectionevents h2.section-title, .sectionnews h2.section-title {
-    font-size: 5rem;
-    text-transform: uppercase;
+.sectionevents h2.section-title,
+.sectionnews h2.section-title {
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 992px) {
-    .sectionevents h2.section-title, .sectionnews h2.section-title {
+  .sectionevents h2.section-title,
+  .sectionnews h2.section-title {
     font-size: 3rem;
     margin: 3rem 0;
-    }
+  }
 
-    .smartweb_herobanner .bannerSwiper {
-        height: 250px;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 250px;
+  }
 }
 
 .sectionnews .swiper-slide > a {
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .sectionnews .swiper-slide > a:hover {
-    background: $primary;
+  background: $primary;
 
-    div h3, div span, div p 
-        {
-            color: #fff;
-        }
+  div h3,
+  div span,
+  div p {
+    color: #fff;
+  }
 }

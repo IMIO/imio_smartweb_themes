@@ -1,151 +1,150 @@
 .sectionlinks.quick-access {
-    background-color: #F4F3F8;
+  background-color: #f4f3f8;
 }
 
-.quick-access{
-    svg{
-        max-height: 45px;
+.quick-access {
+  svg {
+    max-height: 45px;
+  }
+
+  .row {
+    max-width: 680px;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(lg) {
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 132px));
+
+      li {
+        width: auto !important;
+      }
     }
-
-    .row{
-        max-width: 680px;
-        margin: 0 auto;
-
-        @include media-breakpoint-down(lg){
-            grid-gap: 0;
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(56px,132px));
-
-            li{
-                width: auto!important;
-            }
-        }
-    }
+  }
 }
 
 .sectionlinks.quick-access .body-section li {
-    &:nth-child(1) {
-        a .image.d-block {
-            background: #2B3271;
-        }
+  &:nth-child(1) {
+    a .image.d-block {
+      background: #2b3271;
     }
+  }
 
-    &:nth-child(2) {
-        a .image.d-block {
-            background: #68BDEB;
-        }
+  &:nth-child(2) {
+    a .image.d-block {
+      background: #68bdeb;
     }
+  }
 
-    &:nth-child(3) {
-        a .image.d-block {
-            background: #4082AA;
-        }
+  &:nth-child(3) {
+    a .image.d-block {
+      background: #4082aa;
     }
+  }
 
-    &:nth-child(4) {
-        a .image.d-block {
-            background: #BA2645;
-        }
+  &:nth-child(4) {
+    a .image.d-block {
+      background: #ba2645;
     }
+  }
 
-    &:nth-child(5) {
-        a .image.d-block {
-            background: #BA2645;
-        }
+  &:nth-child(5) {
+    a .image.d-block {
+      background: #ba2645;
     }
+  }
 
-    &:nth-child(6 ) {
-        a .image.d-block {
-            background: #E59735;
-        }
+  &:nth-child(6) {
+    a .image.d-block {
+      background: #e59735;
     }
+  }
 
-    &:nth-child(7) {
-        a .image.d-block {
-            background: #76B14C;
-        }
+  &:nth-child(7) {
+    a .image.d-block {
+      background: #76b14c;
     }
+  }
 
-    &:nth-child(8) {
-        a .image.d-block {
-            background: #449980;
-        }
+  &:nth-child(8) {
+    a .image.d-block {
+      background: #449980;
     }
-} 
+  }
+}
 
 .sectionlinks.quick-access .body-section ul {
-    justify-content: left;
-    gap: 20px 0;
+  justify-content: left;
+  gap: 20px 0;
 }
 
 .quick-access-2 {
-    .row {
-        max-width: 311px;
-    }
+  .row {
+    max-width: 311px;
+  }
 }
 
-
-.portaltype-imio-smartweb-portalpage.section-home-page .sectionlinks.quick-access:not(.quick-access-2) {
-    @media screen and (max-width:575px) {        
-        #container-section-acces-directs {
-            border-bottom: solid 1px #000;
-        }
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .sectionlinks.quick-access:not(.quick-access-2) {
+  @media screen and (max-width: 575px) {
+    #container-section-acces-directs {
+      border-bottom: solid 1px #000;
     }
+  }
 
-    @media screen and (min-width:575px) {        
-        #container-section-acces-directs {
-            border-right: solid 1px #000;
-        }
+  @media screen and (min-width: 575px) {
+    #container-section-acces-directs {
+      border-right: solid 1px #000;
     }
+  }
 
-   &::after {
-        content: "";
-        background: #f4f3f8;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-36%);
-        z-index: -1;
-    }
+  &::after {
+    content: "";
+    background: #f4f3f8;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-36%);
+    z-index: -1;
+  }
 }
 
-
-/// 2 
+/// 2
 .quick-access-2 {
-    @media screen and (max-width:575px) {
-        padding-top: 0;
-    }      
+  @media screen and (max-width: 575px) {
+    padding-top: 0;
+  }
 }
 
 .sectionlinks.quick-access-2 .body-section li {
-    &:nth-child(1) {
-        a .image.d-block {
-            background: url("../../assets/svg/cittaslow.png");
-            background-size: contain;
-        }
+  &:nth-child(1) {
+    a .image.d-block {
+      background: url("../../assets/svg/cittaslow.png");
+      background-size: contain;
     }
+  }
 
-    &:nth-child(2) {
-        a .image.d-block {
-            background: url("../../assets/svg/culture.png");
-            background-size: contain;
-        }
+  &:nth-child(2) {
+    a .image.d-block {
+      background: url("../../assets/svg/culture.png");
+      background-size: contain;
     }
+  }
 
-    &:nth-child(3) {
-        a .image.d-block {
-            background: url("../../assets/svg/beslow.png");
-            background-size: contain;
-        }
+  &:nth-child(3) {
+    a .image.d-block {
+      background: url("../../assets/svg/beslow.png");
+      background-size: contain;
     }
+  }
 
-    &:nth-child(4) {
-        a .image.d-block {
-            background: url("../../assets/svg/sport.png");
-            background-size: contain;
-        }
+  &:nth-child(4) {
+    a .image.d-block {
+      background: url("../../assets/svg/sport.png");
+      background-size: contain;
     }
-} 
+  }
+}

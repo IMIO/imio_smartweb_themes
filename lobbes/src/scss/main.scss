@@ -12,43 +12,41 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
-@import 'home/quick';
-@import 'home/banner';
-@import 'home/actualites';
-@import 'home/events';
-@import 'home/divers';
-@import 'home/footer';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
+@import "home/quick";
+@import "home/banner";
+@import "home/actualites";
+@import "home/events";
+@import "home/divers";
+@import "home/footer";
 
 //// STYLES
 
 // ... add your styles here
 
-
-
 #portal-footer-wrapper h2 {
-	margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
-.phones{
-    span{
-        display: block;
-    }
+.phones {
+  span {
+    display: block;
+  }
 }
 
-.site-cpas .swiper-banner-content-wrapper .swiper-banner-content  {
-    max-width: 900px;
-    margin:0 auto !important;
-    width: 100% !important;
+.site-cpas .swiper-banner-content-wrapper .swiper-banner-content {
+  max-width: 900px;
+  margin: 0 auto !important;
+  width: 100% !important;
 
-    .swiper-banner-title{
-        display: none;
-    }
+  .swiper-banner-title {
+    display: none;
+  }
 
-    .swiper-banner-description p {
-        font-size: 24px !important;
-        font-weight: 700;
-        text-align: center !important;
-    }
+  .swiper-banner-description p {
+    font-size: 24px !important;
+    font-weight: 700;
+    text-align: center !important;
+  }
 }

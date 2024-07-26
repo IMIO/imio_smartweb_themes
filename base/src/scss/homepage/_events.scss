@@ -33,10 +33,6 @@
     margin: $event-title-margin;
     padding: $event-title-padding;
     text-align: $event-title-align;
-
-
-
-
   }
 
   .swiper-slide {
@@ -46,7 +42,7 @@
       text-decoration: none;
     }
 
-    &>a {
+    & > a {
       display: grid;
       height: 100%;
       place-items: start;
@@ -98,9 +94,9 @@
     .swiper_description {
       text-align: $actu-item-description-align;
       font-family: $actu-item-description-font-family;
-      margin:$actu-item-description-margin;
+      margin: $actu-item-description-margin;
       padding: $actu-item-description-padding;
-      color:$actu-item-description-color;
+      color: $actu-item-description-color;
     }
   }
 }
@@ -108,35 +104,35 @@
 .sectionevents .swiper-slide .swiper_date .day_date .day::after,
 .sectionevents .swiper-slide .swiper_date .end_date .day::after,
 .sectionevents .swiper-slide .swiper_date .start_date .day::after {
-	content: "/";
+  content: "/";
 }
 
 .sectionevents .swiper-slide .swiper_date div {
-	display: flex;
+  display: flex;
 }
 
-.sectionevents{
-  .swiper_date{
+.sectionevents {
+  .swiper_date {
     display: flex;
 
-    .day_date{
-      .from_on{
-        margin-right: .25em;
+    .day_date {
+      .from_on {
+        margin-right: 0.25em;
       }
     }
 
-    .start_date{
+    .start_date {
       display: flex;
-      margin-right: .25em;
+      margin-right: 0.25em;
 
-      .from_on{
-        margin-right: .25em;
+      .from_on {
+        margin-right: 0.25em;
       }
     }
 
-    .end_date{
-      .to{
-        margin-right: .25em;
+    .end_date {
+      .to {
+        margin-right: 0.25em;
       }
     }
   }

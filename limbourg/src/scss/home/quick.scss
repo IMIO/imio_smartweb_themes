@@ -1,38 +1,38 @@
 .sectionlinks.quick-access {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 #container-section-acces-directs {
-    .table_image {
-        .table_title {
-            span {
-                position: relative;
-                display: inline-block;
-            }
-        }
-
-        &:hover,
-        &:focus {
-            .table_title {
-                span {
-                    &::after {
-                        content: "";
-                        bottom: -5px;
-                        height: 2px;
-                        left: 0;
-                        position: absolute;
-                        right: 0;
-                        transition: all .3s ease;
-                        background-color: $secondary !important;
-                    }
-                }
-            }
-        }
+  .table_image {
+    .table_title {
+      span {
+        position: relative;
+        display: inline-block;
+      }
     }
+
+    &:hover,
+    &:focus {
+      .table_title {
+        span {
+          &::after {
+            content: "";
+            bottom: -5px;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            transition: all 0.3s ease;
+            background-color: $secondary !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .sectionlinks.quick-access .body-section li {
+  .sectionlinks.quick-access .body-section li {
     width: 50%;
-    }
+  }
 }

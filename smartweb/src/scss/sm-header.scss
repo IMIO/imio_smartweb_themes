@@ -1,140 +1,141 @@
-#portal-header{
-    display: grid!important;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    grid-template-areas: "search logo menu" "messageviewlet messageviewlet messageviewlet" "sub sub sub" "localmessageviewlet localmessageviewlet localmessageviewlet" "bread bread bread";    margin: 0 auto;
+#portal-header {
+  display: grid !important;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-template-areas: "search logo menu" "messageviewlet messageviewlet messageviewlet" "sub sub sub" "localmessageviewlet localmessageviewlet localmessageviewlet" "bread bread bread";
+  margin: 0 auto;
 
-    @include media-breakpoint-up(lg) { 
-      grid-template-columns: $main-logo-max-width 1fr $main-search-max-width!important;
-      grid-template-areas: "logo menu search" "messageviewlet messageviewlet messageviewlet"  "sub sub sub" "localmessageviewlet localmessageviewlet localmessageviewlet" "bread bread bread";
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: $main-logo-max-width 1fr $main-search-max-width !important;
+    grid-template-areas: "logo menu search" "messageviewlet messageviewlet messageviewlet" "sub sub sub" "localmessageviewlet localmessageviewlet localmessageviewlet" "bread bread bread";
+  }
+
+  #portal-logo {
+    grid-area: logo;
+    max-width: $main-logo-max-width;
+    padding: $logo-margin-y 0;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      justify-self: center;
     }
 
-    #portal-logo{
-      grid-area: logo;
-      max-width: $main-logo-max-width;
-      padding: $logo-margin-y 0;
-      width: 100%;
-
-      @include media-breakpoint-down(lg) {
-        justify-self: center;
-      } 
-
-      img{
-        max-width: 100%;
-      }
-    }
-
-    #portal-searchbox{
-      justify-self: end;
-      grid-area: search;
-    }
-
-    #portal-globalnav-wrapper{
-      grid-area: menu;
-
-      @include media-breakpoint-down(lg) {
-        justify-self: right;
-
-        .container{
-          padding: 0;
-        }
-      }
-    }
-
-    #plone-breadcrumb{
-      grid-area: bread;
-    }
-
-    nav#portal-breadcrumbs {
-      grid-area: bread;
-    }
-
-    .subsite-container{
-      grid-area: sub;
-      overflow-x: clip;
-    }
-
-    #header-links{
-      #header-actions{
-        @include media-breakpoint-down(lg) {
-          display: none;
-        } 
-
-        .account{
-          text-decoration: none;
-          height: 46px;
-          border: 1px solid #C1C1C1;
-          display: flex;
-          align-items: center;
-          border-radius: 15px;
-          padding: 0 1rem;
-          font-weight: 500;
-          position: relative;
-          overflow: hidden;
-          transition: all .4s ease;
-          width: max-content;
-
-          &::after{
-            content: "";
-            background: $primary;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 0;
-            z-index: -1;
-            left: 0;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            transition: all .4s ease;
-          }
-
-          &:hover{
-            color: #fff;
-
-            &::after{
-              width: 106%;
-            }
-          }
-
-          span{
-            display: flex;
-            gap: 5px;
-            align-items: center;
-
-            @include media-breakpoint-down(xl) {
-              font-size: 14px;
-            }
-
-            &::before{
-              content: url("../../assets/svg/mascotte.svg");
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
-      }
-    }
-
-    @include media-breakpoint-up($nav-main-breakpoint) {
-      position: relative;
-
-      @include make-row(0);
-      margin: 0 auto;
+    img {
+      max-width: 100%;
     }
   }
 
-  // message-viewlet
+  #portal-searchbox {
+    justify-self: end;
+    grid-area: search;
+  }
 
-.portalMessage.info{
-    background: $message-info;
+  #portal-globalnav-wrapper {
+    grid-area: menu;
+
+    @include media-breakpoint-down(lg) {
+      justify-self: right;
+
+      .container {
+        padding: 0;
+      }
+    }
+  }
+
+  #plone-breadcrumb {
+    grid-area: bread;
+  }
+
+  nav#portal-breadcrumbs {
+    grid-area: bread;
+  }
+
+  .subsite-container {
+    grid-area: sub;
+    overflow-x: clip;
+  }
+
+  #header-links {
+    #header-actions {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+      .account {
+        text-decoration: none;
+        height: 46px;
+        border: 1px solid #c1c1c1;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 0 1rem;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        width: max-content;
+
+        &::after {
+          content: "";
+          background: $primary;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 0;
+          z-index: -1;
+          left: 0;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          color: #fff;
+
+          &::after {
+            width: 106%;
+          }
+        }
+
+        span {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+
+          @include media-breakpoint-down(xl) {
+            font-size: 14px;
+          }
+
+          &::before {
+            content: url("../../assets/svg/mascotte.svg");
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up($nav-main-breakpoint) {
+    position: relative;
+
+    @include make-row(0);
+    margin: 0 auto;
+  }
 }
 
-.portalMessage.warning{
-    background: $message-warning;
+// message-viewlet
+
+.portalMessage.info {
+  background: $message-info;
 }
 
-.portalMessage.error{
-    background: $message-error;
+.portalMessage.warning {
+  background: $message-warning;
+}
+
+.portalMessage.error {
+  background: $message-error;
 }
 
 // .is-in-subsite #portal-header{

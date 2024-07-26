@@ -1,6 +1,6 @@
 //// VARIABLES
 
-/// 
+///
 
 /// styliser section files
 
@@ -22,24 +22,22 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
 // ... add your styles here
 
-@import './a-la-une.scss';
-@import './news.scss';
-@import './quick.scss';
-@import './events.scss';
-@import './footer.scss';
-@import './sites-de-la-ville.scss';
-@import './zomm-sur.scss';
-@import './section.scss';
-@import './cpas.scss';
-
-
+@import "./a-la-une.scss";
+@import "./news.scss";
+@import "./quick.scss";
+@import "./events.scss";
+@import "./footer.scss";
+@import "./sites-de-la-ville.scss";
+@import "./zomm-sur.scss";
+@import "./section.scss";
+@import "./cpas.scss";
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
   #portal-header {
@@ -47,179 +45,188 @@ $enable-roboto-webfont: false;
   }
 }
 
-
 .swiper-button-next,
 .swiper-button-prev {
   top: 50% !important;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .swiper-button-prev {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M26.5 42.5h45c1.1 0 2 .9 2 2s-.9 2-2 2h-45c-1.1 0-2-.9-2-2s.9-2 2-2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M16.68 45.91 48.5 77.73c.78.78 2.05.78 2.83 0 .78-.78.78-2.05 0-2.83L20.92 44.49l30.41-30.41a2.004 2.004 0 0 0-1.41-3.42c-.51 0-1.02.2-1.41.59L16.69 43.07c-.78.78-.78 2.05 0 2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 0c7.33 0 14.59 1.91 20.98 5.52.96.54 1.3 1.76.76 2.73-.54.96-1.76 1.3-2.72.76-5.8-3.27-12.37-5-19.02-5C21.72 4 4 22.17 4 44.5S21.72 85 43.5 85 83 66.83 83 44.5c0-4.92-.86-9.73-2.54-14.31-.38-1.04.15-2.19 1.19-2.57 1.04-.38 2.19.15 2.57 1.19 1.85 5.02 2.79 10.3 2.79 15.69 0 24.54-19.51 44.5-43.5 44.5S0 69.04 0 44.5 19.51 0 43.5 0Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover!important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M26.5 42.5h45c1.1 0 2 .9 2 2s-.9 2-2 2h-45c-1.1 0-2-.9-2-2s.9-2 2-2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M16.68 45.91 48.5 77.73c.78.78 2.05.78 2.83 0 .78-.78.78-2.05 0-2.83L20.92 44.49l30.41-30.41a2.004 2.004 0 0 0-1.41-3.42c-.51 0-1.02.2-1.41.59L16.69 43.07c-.78.78-.78 2.05 0 2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 0c7.33 0 14.59 1.91 20.98 5.52.96.54 1.3 1.76.76 2.73-.54.96-1.76 1.3-2.72.76-5.8-3.27-12.37-5-19.02-5C21.72 4 4 22.17 4 44.5S21.72 85 43.5 85 83 66.83 83 44.5c0-4.92-.86-9.73-2.54-14.31-.38-1.04.15-2.19 1.19-2.57 1.04-.38 2.19.15 2.57 1.19 1.85 5.02 2.79 10.3 2.79 15.69 0 24.54-19.51 44.5-43.5 44.5S0 69.04 0 44.5 19.51 0 43.5 0Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M60.5 46.5h-45c-1.1 0-2-.9-2-2s.9-2 2-2h45c1.1 0 2 .9 2 2s-.9 2-2 2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M70.32 43.09 38.5 11.27c-.78-.78-2.05-.78-2.83 0-.78.78-.78 2.05 0 2.83l30.41 30.41-30.41 30.41a2.004 2.004 0 0 0 1.41 3.42c.51 0 1.02-.2 1.41-.59l31.82-31.82c.78-.78.78-2.05 0-2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 89c-7.33 0-14.59-1.91-20.98-5.52-.96-.54-1.3-1.76-.76-2.73.54-.96 1.76-1.3 2.72-.76 5.8 3.27 12.37 5 19.02 5 21.78 0 39.5-18.17 39.5-40.5S65.28 4 43.5 4 4 22.17 4 44.5c0 4.92.86 9.73 2.54 14.31.38 1.04-.15 2.19-1.19 2.57-1.04.38-2.19-.15-2.57-1.19A45.234 45.234 0 0 1-.01 44.5C0 19.96 19.51 0 43.5 0S87 19.96 87 44.5 67.49 89 43.5 89Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+@media screen and (max-width: 768px) {
+  .smartweb_herobanner .bannerSwiper {
+    max-height: 40vh;
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-title {
+  color: #2b2b2b;
+  font-size: 40px;
+  text-transform: none;
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  background: hsla(0deg, 0%, 100%, 77%);
+  margin: 0;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: left;
+  width: max-content;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-title {
+    font-size: 31px;
+  }
+}
+
+.is-in-minisite div:not(.sectiontext) + .sectiontext .h2,
+div:not(.sectiontext) + .sectiontext h2 {
+  margin-top: 36px !important;
+}
+
+// sous-site
+
+.subsite-container {
+  margin-top: 5px;
+
+  li {
+    list-style-type: none !important;
   }
 
-  .swiper-button-next {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 87 89'%3E%3Cpath d='M60.5 46.5h-45c-1.1 0-2-.9-2-2s.9-2 2-2h45c1.1 0 2 .9 2 2s-.9 2-2 2Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M70.32 43.09 38.5 11.27c-.78-.78-2.05-.78-2.83 0-.78.78-.78 2.05 0 2.83l30.41 30.41-30.41 30.41a2.004 2.004 0 0 0 1.41 3.42c.51 0 1.02-.2 1.41-.59l31.82-31.82c.78-.78.78-2.05 0-2.83Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3Cpath d='M43.5 89c-7.33 0-14.59-1.91-20.98-5.52-.96-.54-1.3-1.76-.76-2.73.54-.96 1.76-1.3 2.72-.76 5.8 3.27 12.37 5 19.02 5 21.78 0 39.5-18.17 39.5-40.5S65.28 4 43.5 4 4 22.17 4 44.5c0 4.92.86 9.73 2.54 14.31.38 1.04-.15 2.19-1.19 2.57-1.04.38-2.19-.15-2.57-1.19A45.234 45.234 0 0 1-.01 44.5C0 19.96 19.51 0 43.5 0S87 19.96 87 44.5 67.49 89 43.5 89Z' style='fill:%23e3e3e3;stroke-width:0'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover!important;
+  #subsite-logo {
+    border-radius: 5px;
+
+    .subsite-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subsite-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #subsite-navigation .has_subtree.dropdown {
+    width: 80vw !important;
   }
 
-
-  @media screen and (max-width: 768px) {
-    .smartweb_herobanner .bannerSwiper {
-      max-height: 40vh;
-    } 
-  }
-
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
-    color: #2b2b2b;
-    font-size: 40px;
-    text-transform: none;
-  }
-
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-    background: hsla(0deg, 0%, 100%, 77%);
-    margin: 0;
-    max-width: 100%;
-    padding: 1rem;
-    text-align: left;
-    width: max-content;
+  .subsite-container #subsite-logo {
     border-radius: 10px;
+    font-size: 16px;
+    margin-top: 5px;
   }
 
-  @media screen  and (max-width: 900px){
-    .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
-      font-size: 31px;
+  #subsite-navigation::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    bottom: 17px;
+    width: 17px;
+    border-left: 1px solid #c1c1c1;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 13'%3E%3Cpath d='M.15.15c.2-.2.51-.2.71 0l6 6c.2.2.2.51 0 .71L.85 12.85c-.2.2-.51.2-.71 0s-.2-.51 0-.71l5.65-5.65L.15.85c-.2-.2-.2-.51 0-.71' style='fill:%23c2c1c1;fill-rule:evenodd;stroke-width:0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5px;
+  }
+
+  #subsite-navigation > ul {
+    // border-bottom: 1px solid #E4E4E4;
+
+    // padding-bottom: 5px;
+    padding-bottom: 0.5rem;
+
+    li:last-child {
+      padding-right: 15px;
     }
   }
 
-  .is-in-minisite div:not(.sectiontext) + .sectiontext .h2, div:not(.sectiontext) + .sectiontext h2 {
-    margin-top: 36px !important;
+  #subsite-navigation {
+    position: relative;
+
+    & > ul > li.nav-item {
+      > a {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        background: #f5f5f5;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ededed;
+      }
+    }
   }
 
-  // sous-site
+  /// bredcrumb
+  #portal-breadcrumbs {
+    background: transparent;
+    margin-bottom: 0.5rem;
 
+    .container {
+      padding: 0;
+    }
 
-  .subsite-container{
-      margin-top: 5px;
+    .breadcrumb {
+      margin-bottom: 0;
 
       li {
-        list-style-type: none!important;
-      } 
-
-      #subsite-logo {
-        border-radius: 5px;
-
-        .subsite-title {
-          font-size: 20px;
-        }
+        font-size: 14px;
       }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .subsite-container {
-      gap: 20px;
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    #subsite-navigation .has_subtree.dropdown {
-      width: 80vw !important;
-    }
-
-    .subsite-container #subsite-logo {
-      border-radius: 10px;
-      font-size: 16px;
-      margin-top: 5px;
-    }
-
-    #subsite-navigation::after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 9px;
-      bottom: 17px;
-      width: 17px;
-      border-left: 1px solid #C1C1C1;
-      background-color: #FFF;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 13'%3E%3Cpath d='M.15.15c.2-.2.51-.2.71 0l6 6c.2.2.2.51 0 .71L.85 12.85c-.2.2-.51.2-.71 0s-.2-.51 0-.71l5.65-5.65L.15.85c-.2-.2-.2-.51 0-.71' style='fill:%23c2c1c1;fill-rule:evenodd;stroke-width:0'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 5px;
-    }
-
-    #subsite-navigation > ul {
-
-      // border-bottom: 1px solid #E4E4E4;
-
-      // padding-bottom: 5px;
-      padding-bottom: 0.5rem;
-
-      li:last-child {
-        padding-right: 15px;
-      }
-    }
-
-    #subsite-navigation {
-      position: relative;
-
-     & > ul > li.nav-item {
-        > a {
-          font-weight: 500!important;
-          font-size: 14px!important;
-          background: #f5f5f5;
-          padding: 5px;
-          border-radius: 3px;
-          border: 1px solid #ededed;
-        }
-      }
-    }
-
-    /// bredcrumb
-    #portal-breadcrumbs {
-      background: transparent;
-      margin-bottom: 0.5rem;
-
-      .container{
-        padding: 0;
-      }
-
-      .breadcrumb {
-        margin-bottom: 0;
-
-        li {
-          font-size: 14px;
-        }
-      }
-    }
-
-
-    #subsite-navigation>ul>li>a:hover {
-      border-color:$primary;
-    }
-
-    #subsite-navigation>ul>li.show-nav>a {
-      border-color:$primary;
-    }
-
-    #subsite-navigation>ul>li>a::before {
-      display: none;
-    }
+  #subsite-navigation > ul > li > a:hover {
+    border-color: $primary;
   }
 
-
-  #subsite-navigation > ul li > .has_subtree {
-    padding: 1em!important;
+  #subsite-navigation > ul > li.show-nav > a {
+    border-color: $primary;
   }
 
-  .display-portrait .swiper-slide .swiper-image {
-	padding-bottom: 0;
-	aspect-ratio: 11/16;
+  #subsite-navigation > ul > li > a::before {
+    display: none;
+  }
+}
+
+#subsite-navigation > ul li > .has_subtree {
+  padding: 1em !important;
+}
+
+.display-portrait .swiper-slide .swiper-image {
+  padding-bottom: 0;
+  aspect-ratio: 11/16;
 }
 
 .template-facetednavigation_view .faceted-top-widgets input {
@@ -228,7 +235,7 @@ $enable-roboto-webfont: false;
 
 #portal-logo {
   div {
-    color: #FFF;
+    color: #fff;
   }
 }
 
@@ -238,7 +245,8 @@ body:not(.site-office-du-tourisme-inforville) {
   }
 }
 
-.site-office-du-tourisme-inforville, .site-toeristische-dienst-inforville {
+.site-office-du-tourisme-inforville,
+.site-toeristische-dienst-inforville {
   #portal-logo {
     svg {
       width: 50px;
@@ -247,16 +255,16 @@ body:not(.site-office-du-tourisme-inforville) {
 }
 
 .r-item-img-placeholder {
-	background: url("./../../assets/placeholder.jpg");
-	background-size: cover;
-	background-position: center;
+  background: url("./../../assets/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .r-content mark {
-	background: #325aa6;
-	color: #fff;
-	border-radius: 5px;
-	padding-left: 0.7rem;
+  background: #325aa6;
+  color: #fff;
+  border-radius: 5px;
+  padding-left: 0.7rem;
 }
 
 .r-list-item {
@@ -285,7 +293,7 @@ body:not(.site-office-du-tourisme-inforville) {
       display: block;
       height: 100%;
 
-      &::after{
+      &::after {
         content: "\F4FA";
         font-family: bootstrap-icons;
         position: absolute;
@@ -297,7 +305,7 @@ body:not(.site-office-du-tourisme-inforville) {
         height: 100%;
       }
     }
-  } 
+  }
 
   .list-card-title {
     text-decoration: underline;
@@ -306,9 +314,10 @@ body:not(.site-office-du-tourisme-inforville) {
   }
 }
 
-.block-menu-element a .card-title.h2, .block-menu-element a h2.card-title {
-	font-size: 1.3rem;
-	line-height: 1.4;
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1.3rem;
+  line-height: 1.4;
 }
 
 .sectiontext .section-text .body-section a {
@@ -316,7 +325,7 @@ body:not(.site-office-du-tourisme-inforville) {
 }
 
 .sectionfiles {
-  .item_infos{
+  .item_infos {
     display: flex;
     gap: 14px;
     align-items: center;
@@ -338,8 +347,8 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 @media screen and (min-width: 768px) {
   #portal-globalnav div.has_subtree.dropdown {
-      height: 870px;
-      max-height: inherit;
+    height: 870px;
+    max-height: inherit;
   }
 }
 

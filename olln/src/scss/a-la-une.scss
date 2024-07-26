@@ -64,7 +64,7 @@
 
 //         }
 
-//       }  
+//       }
 
 //     }
 
@@ -122,38 +122,37 @@
 
 // }
 
-
 ///
 
 .a-la-une-home {
-    padding-bottom: 0;
+  padding-bottom: 0;
 
-    @include media-breakpoint-down(lg) {
-        width: 100%;
-    }
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
 
-    .swiper-slide {
-        background-color: $primary;
+  .swiper-slide {
+    background-color: $primary;
 
-        a {
-            text-decoration: none;
+    a {
+      text-decoration: none;
 
-            .swiper_description {
-                padding-right: 2rem;
-                padding-left: 2rem;
-                padding-bottom: 1rem;
-                color: #fff;
-            }
+      .swiper_description {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        color: #fff;
+      }
 
-            .swiper_title {
-                padding-right: 2rem;
-                padding-left: 2rem;
-                padding-top: 1rem;
+      .swiper_title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
 
-                h3 {
-                    color: #fff!important;
-                }
-            }
+        h3 {
+          color: #fff !important;
         }
+      }
     }
+  }
 }

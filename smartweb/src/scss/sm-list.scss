@@ -1,65 +1,63 @@
+.list-group {
+  .list-group-item {
+    border-bottom: $border-width solid $gray;
+    position: relative;
 
-.list-group{
-    .list-group-item{
-        border-bottom: $border-width solid $gray;
-        position: relative;
+    .tileHeadline {
+      a::after {
+        content: "";
+        inset: 0;
+        position: absolute;
+        z-index: 1;
+      }
 
-        .tileHeadline{
-            a::after{
-                content: "";
-                inset: 0;
-                position: absolute;
-                z-index: 1;
-            }
-
-            &:hover,
-            &:focus {
-                .summary{
-                    border-bottom: $link-hover-decoration;
-                }
-
-                &::after {
-                    content: url("../../assets/svg/arrow-right-white.svg");
-                    background: $yellow;
-                    position: absolute;
-                    right: 0;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 50px;
-                }
-            }
-
-            &::after {
-                content: url("../../assets/svg/arrow-right-yellow.svg");
-                background: #fff;
-                    position: absolute;
-                    right: 0;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 50px;
-            }
+      &:hover,
+      &:focus {
+        .summary {
+          border-bottom: $link-hover-decoration;
         }
 
-        .summary{
-            &:hover,
-            &:focus {
-                border-bottom: $link-hover-decoration;
-            }
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            
-        }   
+        &::after {
+          content: url("../../assets/svg/arrow-right-white.svg");
+          background: $yellow;
+          position: absolute;
+          right: 0;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 50px;
+        }
+      }
+
+      &::after {
+        content: url("../../assets/svg/arrow-right-yellow.svg");
+        background: #fff;
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+      }
     }
+
+    .summary {
+      &:hover,
+      &:focus {
+        border-bottom: $link-hover-decoration;
+      }
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
 }
 
 //HTML
-body .list-group{
-    .list-group-item {
-        border: none !important;
-    }
+body .list-group {
+  .list-group-item {
+    border: none !important;
+  }
 }

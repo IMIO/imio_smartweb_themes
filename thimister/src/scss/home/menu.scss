@@ -1,20 +1,24 @@
 #portal-header #portal-header-top #portal-logo {
-    position: relative;
+  position: relative;
 }
 
-body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo::before {
-    background: #fff;
-    border-radius: 50%;
-    inset: -80px -50px -20px;
-    content: "";
-    position: absolute;
-    z-index: 0;
+body:not(.is-in-minisite)
+  #portal-header
+  #portal-header-top
+  a#portal-logo::before {
+  background: #fff;
+  border-radius: 50%;
+  inset: -80px -50px -20px;
+  content: "";
+  position: absolute;
+  z-index: 0;
 }
 
 body:not(.is-in-minisite) #portal-header #portal-header-top #portal-logo {
-    height: 115px;
+  height: 115px;
 }
 
-#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
-    position: relative;    
+#portal-header #portal-header-top #portal-logo img,
+#portal-header #portal-header-top #portal-logo svg {
+  position: relative;
 }

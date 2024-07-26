@@ -1,53 +1,56 @@
 .sectionnews::before {
-    background: transparent;
-    bottom: 0;
-    content: "";
-    left: 50%;
-    position: absolute;
-    top: 0%;
-    transform: translateX(-50vw);
-    width: 100vw;
-    z-index: -1;
+  background: transparent;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0%;
+  transform: translateX(-50vw);
+  width: 100vw;
+  z-index: -1;
 }
 
-.sectionnews, .sectionevents {
-    h2 {
+.sectionnews,
+.sectionevents {
+  h2 {
     font-size: 5rem;
     text-transform: uppercase;
-    }
-    padding-bottom: 8rem;
+  }
+  padding-bottom: 8rem;
 }
 
 @media screen and (max-width: 992px) {
-    .sectionevents h2.section-title, .sectionnews h2.section-title {
+  .sectionevents h2.section-title,
+  .sectionnews h2.section-title {
     font-size: 3rem;
     margin: 3rem 0;
-    }
+  }
 
-    .smartweb_herobanner .bannerSwiper {
-        height: 250px;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 250px;
+  }
 }
 
 .sectionnews .swiper-slide > a {
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .sectionnews .swiper-slide > a:hover {
-    background: $primary;
+  background: $primary;
 
-    div h3, div span, div p 
-        {
-            color: #fff;
-        }
+  div h3,
+  div span,
+  div p {
+    color: #fff;
+  }
 }
 
 .sectionnews {
-    h2.section-title {
+  h2.section-title {
     font-weight: bolder;
-    }
+  }
 }
 
 .swiper-pagination-bullet-active {
-	background: #c83e4d !important;
+  background: #c83e4d !important;
 }

@@ -1,131 +1,130 @@
-.sectionevents{
-    &::before {
-        background: url("../../assets/svg/bg-agenda.svg") center center no-repeat $primary-red;
-        border-radius: 0 80px 80px 0;
-        bottom: 0;
-        content: "";
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 98%;
-        z-index: -1;
-    }
+.sectionevents {
+  &::before {
+    background: url("../../assets/svg/bg-agenda.svg") center center no-repeat
+      $primary-red;
+    border-radius: 0 80px 80px 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 98%;
+    z-index: -1;
+  }
 
-    .section-container{
-        position: relative;
+  .section-container {
+    position: relative;
 
     .swiper-pagination-bullet {
-        background: $primary;
-        opacity: 100%;
-      }
-    }
-
-    .section-title{
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        margin: 0 auto 2rem;
-        width: max-content;
-        font-size: 2.5rem;
-    }
-
-    .see_all a:hover {
-        background-color: #fff;
-        color:$primary;
-    }
-
-    .see_all a::after {
-        display: none;
-    }
-
-    .see_all a:hover::after, .see_all a:focus::after {
-        width: 65px;
-    }
-
-    .swiper-wrapper{
-        .swiper-slide {
-            background: transparent;
-            transition: .5s;
-            
-            &:hover,&:focus{
-                    transition: .5s;
-                    transform: translateY(10px);
-            }
-
-            & > a{
-                align-items: center;
-
-                .swiper-image{
-                    transition: .5s;
-                }
-
-                .swiper_category{
-                    bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    margin:-20px 0 0;
-                    text-align: center;
-
-                    span {
-                        display:inline-block;
-                    }
-                }
-
-                .swiper_date{
-                    font-family: $font-family-base; 
-                    margin: 1rem auto 0.5rem !important;
-                    text-align: center !important;
-                }
-
-                .swiper_title{
-                    width: 100% !important;
-                        text-align: center !important;
-
-                    h3{
-                        transition: .5s;
-                        font-size: 18px;
-                                font-weight: 600;
-                                font-family: $font-family-base; 
-                        
-                        
-                    }
-                }
-
-                .swiper_description{
-                    p{
-                        margin: 0;
-                    }
-                }
-
-                &:hover{
-                    .swiper_title{
-                        h3{
-                            transition: .5s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .swiper-button-prev, .swiper-button-next {
-        display: none!important;
-    }
-}
-
-
-
-@media screen and (max-width: 1400px) {
-    .sectionevents{
-        &::before {
-            background: url("../../assets/svg/bg-agenda.svg") center center no-repeat $primary-red;
-            border-radius: 0;
-            top: 0;
-            width: 100%;
-            z-index: -1;
-        }
+      background: $primary;
+      opacity: 100%;
     }
   }
 
+  .section-title {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto 2rem;
+    width: max-content;
+    font-size: 2.5rem;
+  }
 
+  .see_all a:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .see_all a::after {
+    display: none;
+  }
+
+  .see_all a:hover::after,
+  .see_all a:focus::after {
+    width: 65px;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background: transparent;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+      }
+
+      & > a {
+        align-items: center;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .swiper_category {
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          margin: -20px 0 0;
+          text-align: center;
+
+          span {
+            display: inline-block;
+          }
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          margin: 1rem auto 0.5rem !important;
+          text-align: center !important;
+        }
+
+        .swiper_title {
+          width: 100% !important;
+          text-align: center !important;
+
+          h3 {
+            transition: 0.5s;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $font-family-base;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .sectionevents {
+    &::before {
+      background: url("../../assets/svg/bg-agenda.svg") center center no-repeat
+        $primary-red;
+      border-radius: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

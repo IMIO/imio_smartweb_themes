@@ -12,93 +12,91 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
-@import 'home/quick';
-@import 'home/banner';
-@import 'home/actualites';
-@import 'home/events';
-@import 'home/divers';
-@import 'home/annuaire';
-@import 'home/footer';
-@import 'home/menu';
-@import 'home/a-la-une';
-@import 'home/newsletter';
-@import 'home/en-image';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
+@import "home/quick";
+@import "home/banner";
+@import "home/actualites";
+@import "home/events";
+@import "home/divers";
+@import "home/annuaire";
+@import "home/footer";
+@import "home/menu";
+@import "home/a-la-une";
+@import "home/newsletter";
+@import "home/en-image";
 
 //// STYLES
 
 // ... add your styles here
 
-
-
 #portal-footer-wrapper h2 {
-	margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
-.phones{
-    span{
-        display: block;
-    }
+.phones {
+  span {
+    display: block;
+  }
 }
 
 .navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
 
-
-.sites-partenaires{
-    padding-top: 4rem!important;
-    padding-bottom: 4rem!important;  
+.sites-partenaires {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
-.flash-infos{
-    .swiper-slide .swiper-image {
-        padding-bottom: 134%!important;
-    }
+.flash-infos {
+  .swiper-slide .swiper-image {
+    padding-bottom: 134% !important;
+  }
 
-    .swiper_title{
-        margin-top: 2rem!important;
-    }
+  .swiper_title {
+    margin-top: 2rem !important;
+  }
 
-    .swiper-button-next, .swiper-button-prev {
-        top: 40%!important;
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 40% !important;
+  }
 }
 
-footer{
-    span{
-        word-wrap: normal; 
-    }
+footer {
+  span {
+    word-wrap: normal;
+  }
 }
 
-@include media-breakpoint-up(lg){
-    .nav_je-suis.has_subtree.nav-item{
-      margin-left: auto;
-    }
+@include media-breakpoint-up(lg) {
+  .nav_je-suis.has_subtree.nav-item {
+    margin-left: auto;
+  }
 }
 
-#portal-globalnav{
-    @include media-breakpoint-up(lg){
-        margin-left: 2rem;
-        align-items: center;
-    }
+#portal-globalnav {
+  @include media-breakpoint-up(lg) {
+    margin-left: 2rem;
+    align-items: center;
+  }
 }
 
-.swiper-banner-link{
-    a{
-        background: $primary;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        color: #fff!important;
-        text-decoration: none;
-        border: solid 1px $primary;
-        margin-top: 0.6rem;
-        display: inline-block;
+.swiper-banner-link {
+  a {
+    background: $primary;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff !important;
+    text-decoration: none;
+    border: solid 1px $primary;
+    margin-top: 0.6rem;
+    display: inline-block;
 
-        &:hover{
-            background: transparent;
-            color: $primary!important;
-        }
+    &:hover {
+      background: transparent;
+      color: $primary !important;
     }
+  }
 }

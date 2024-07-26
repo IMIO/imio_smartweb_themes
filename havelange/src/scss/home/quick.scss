@@ -1,44 +1,44 @@
 .sectionlinks.quick-access {
-padding-top: 0;
-padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.quick-access{
-    .table_image{
-        .table_title{
-            span{
-                position: relative;
-                display: inline-block;
+.quick-access {
+  .table_image {
+    .table_title {
+      span {
+        position: relative;
+        display: inline-block;
 
-                &::after{
-                    content: "";
-                    background:$primary;
-                    position: absolute;
-                    height: 2px;
-                    left: 50%;
-                    bottom: -6px;
-                    width: 50%;
-                    transform: translateX(-50%);
-                    opacity: 0%;
-                    transition: all .2s ease;
-                }
-            }
+        &::after {
+          content: "";
+          background: $primary;
+          position: absolute;
+          height: 2px;
+          left: 50%;
+          bottom: -6px;
+          width: 50%;
+          transform: translateX(-50%);
+          opacity: 0%;
+          transition: all 0.2s ease;
         }
-
-        &:hover{
-            .table_title{
-                    span{
-                        &::after{
-                            opacity: 100%;
-                        }
-                    }
-            }
-        }
+      }
     }
+
+    &:hover {
+      .table_title {
+        span {
+          &::after {
+            opacity: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .sectionlinks.quick-access .body-section li {
-    @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(lg) {
     width: 50%;
-    }
+  }
 }

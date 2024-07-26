@@ -1,139 +1,138 @@
-.portaltype-imio-smartweb-portalpage{
-    &::before{
-        content:"";
-        position: absolute;
-        width: 180px;
-        background: url("../../assets/svg/logo-tutch-white.svg");
-        top: 0;
-        right: 2vw;
-        height: 180px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+.portaltype-imio-smartweb-portalpage {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    background: url("../../assets/svg/logo-tutch-white.svg");
+    top: 0;
+    right: 2vw;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-    &::after {
-        @media screen and (min-width: 574px){
-            content:"";
-            position: absolute;
-            right: 0;
-            width: 50vw;
-            background: url("../../assets/svg/body-bg.svg");
-            height: 1300px;
-            top: 0;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            z-index: -9;
-        }
+  &::after {
+    @media screen and (min-width: 574px) {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 50vw;
+      background: url("../../assets/svg/body-bg.svg");
+      height: 1300px;
+      top: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      z-index: -9;
     }
+  }
 
-    #portal-header #portal-header-top::after {
-        background: transparent;
-    }
+  #portal-header #portal-header-top::after {
+    background: transparent;
+  }
 }
 
 .banner-logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
-    .section-container{
-        max-width: 500px;
-        margin-left: 0;
+  .section-container {
+    max-width: 500px;
+    margin-left: 0;
+  }
+
+  .swiper_title {
+    display: none;
+  }
+
+  .swiper-slide {
+    & > a {
+      display: block;
+      background: url("../../assets/svg/bg-round.svg");
+      background-repeat: no-repeat;
     }
+  }
 
-    .swiper_title{
-        display: none;
-    }
-
-    .swiper-slide{
-        & > a{
-            display: block;
-            background: url("../../assets/svg/bg-round.svg");
-            background-repeat: no-repeat;
-        }
-    }
-
-    .swiper-image{
-        padding-bottom: 90%!important;
-        mask-image: url("../../assets/svg/bg-line.svg");
-        mask-repeat: no-repeat;
-        mask-size: 94%;
-        position: relative;
-        mask-position: center top;
-    }
-}
-
-.quick-access{
-    .container{
-        max-width: 280px;
-
-        .section-title{
-            font-size: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-
-            &::after{
-                content: url("../../assets/svg/draw-arrow-black.svg");
-                position: absolute;
-                bottom: 0;
-                transform: translateY(86%);
-                right: -110px;
-            }
-        }
-
-        .row{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: initial;
-            gap: 20px;
-
-            li{
-                width: auto;
-            }
-        }
-    }
-}
-
-.site-partenaires{
-    background: transparent;
+  .swiper-image {
+    padding-bottom: 90% !important;
+    mask-image: url("../../assets/svg/bg-line.svg");
+    mask-repeat: no-repeat;
+    mask-size: 94%;
     position: relative;
-
-    &::after{
-        content: "";
-        background: #F9F9F9;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100vw;
-        left: 50%;
-        transform: translateX(-50vw);
-        z-index: -1;
-    }
-
-    .section-title{
-        margin-bottom: 4rem;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    .row{
-        justify-content: center;
-
-        .table_image{
-            text-align: center;
-        }
-    }
-
-    .plone-icon {
-        height: 2em;
-        width: auto;
-        margin-bottom: 1rem;
-    }
+    mask-position: center top;
+  }
 }
 
+.quick-access {
+  .container {
+    max-width: 280px;
+
+    .section-title {
+      font-size: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        content: url("../../assets/svg/draw-arrow-black.svg");
+        position: absolute;
+        bottom: 0;
+        transform: translateY(86%);
+        right: -110px;
+      }
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: initial;
+      gap: 20px;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.site-partenaires {
+  background: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: #f9f9f9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50vw);
+    z-index: -1;
+  }
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .row {
+    justify-content: center;
+
+    .table_image {
+      text-align: center;
+    }
+  }
+
+  .plone-icon {
+    height: 2em;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+}

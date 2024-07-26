@@ -1,52 +1,52 @@
 // Pour modifier la section utilisée pour le formulaire de contact
-#body-section-formulaires-de-contact .table_image{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#body-section-formulaires-de-contact .table_image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-    .plone-icon {
-        height: 2em;
-      }
+  .plone-icon {
+    height: 2em;
+  }
 }
 
 //---//
-.sectionlinks{
-    .swiper_title{
-        margin-top: 1rem;
-    }
+.sectionlinks {
+  .swiper_title {
+    margin-top: 1rem;
+  }
 }
 
 // Pour custom l'overlay vidéo
 .section-home-page-bla .plone-modal-header {
-    padding: 0 10px;
-    border-bottom: 0 solid #e5e5e5;
-    position: relative;
-    z-index:3;
+  padding: 0 10px;
+  border-bottom: 0 solid #e5e5e5;
+  position: relative;
+  z-index: 3;
 }
 
 .section-home-page-bla .plone-modal-footer {
-    border-top: 0 solid #e5e5e5;
-    padding: 0;
+  border-top: 0 solid #e5e5e5;
+  padding: 0;
 }
 
 .vid a.pat-plone-modal {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 //---//
 
 //affichage des vidéos sur vue facettes
 .faceted-block-view-with-images .block-menu-element {
-    position: relative;
+  position: relative;
 }
 
 .faceted-block-view-with-images .block-menu-element a.faceted_video {
-    inset: 0!important;
-    position: absolute!important;
+  inset: 0 !important;
+  position: absolute !important;
 }
 
 //---//
@@ -55,139 +55,143 @@
 
 /* https://bla.preprod.imio.be/zone-de-police/presentation/agents-de-quartier/votre-inspecteur-de-proximite#b_start=0 */
 .subsection-agents-de-quartier .card-img-top {
-    padding-top: 120%;
+  padding-top: 120%;
 }
 
 //---//
 
 //  je sais pas quoi (privacy)
-.view-name-consent{
-    display: flex;
-    flex-direction: column;
+.view-name-consent {
+  display: flex;
+  flex-direction: column;
 }
 
 .view-name-consent > div > label.form-label {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 div#formfield-form-widgets-basic_cookies {
-    order: 0;
+  order: 0;
 }
 
 div#formfield-form-widgets-basic_analytics {
-    order: 1;
+  order: 1;
 }
 
 //---//
 
 // Pour react
 
-.no-search-item-img{
-    background: url("../../assets/svg/img-placeholder-bla.png");
-    background-size: cover !important;
-    background-color: #c9c9c9 !important;
-    background-position: center !important;
+.no-search-item-img {
+  background: url("../../assets/svg/img-placeholder-bla.png");
+  background-size: cover !important;
+  background-color: #c9c9c9 !important;
+  background-position: center !important;
 }
 
-.r-search-img{
-    background-color: #c9c9c9 !important;
+.r-search-img {
+  background-color: #c9c9c9 !important;
 }
 
 //---//
-
-
 
 // ------- A remonter dans core ------ //
 
 // style icônes vue contenu
 .template-folder_contents #content-core .table .itemRow.state-private,
-.template-folder_contents #content-core .table .itemRow.state-private .state-private {
-    color: #dc3545 !important;
+.template-folder_contents
+  #content-core
+  .table
+  .itemRow.state-private
+  .state-private {
+  color: #dc3545 !important;
 }
 
 a.manage.contenttype-imio-smartweb-page::before {
-    content: '\e80e';
-    font-family: fontello;
+  content: "\e80e";
+  font-family: fontello;
 }
 
 a.manage.contenttype-imio-smartweb-folder::before {
-    content: '\e801';
-    font-family: fontello;
+  content: "\e801";
+  font-family: fontello;
 }
 
 a.manage.contenttype-imio-smartweb-newsview::before {
-    content: '\e80f';
-    font-family: fontello;
+  content: "\e80f";
+  font-family: fontello;
 }
 
 a.manage.contenttype-imio-smartweb-eventsview::before {
-    content: '\e809';
-    font-family: fontello;
+  content: "\e809";
+  font-family: fontello;
 }
 
 a.manage.contenttype-imio-smartweb-directoryview::before {
-    content: '\e842';
-    font-family: fontello;
+  content: "\e842";
+  font-family: fontello;
 }
 
 a.manage.contenttype-collection::before {
-    content: '\e808';
-    font-family: fontello;
+  content: "\e808";
+  font-family: fontello;
 }
 
 a.manage.contenttype-link::before {
-    content: '\e806';
-    font-family: fontello;
+  content: "\e806";
+  font-family: fontello;
 }
 
 //---//
 
 // navigation de la vue contenu
 #content-core .pat-structure .navbar.ui-offset-parent {
-    z-index: 1;
+  z-index: 1;
 }
 
 //---//
 
 // Affiche les commandes du plan devant le menu
 .leaflet-top.leaflet-left {
-    z-index: 1;
+  z-index: 1;
 }
 
 //---//
 
 // Pour supprimer le margin en fin de page ( si non le footer ne colle pas au sections)
-#main-container, #content-core {
-	margin-bottom: 0;
+#main-container,
+#content-core {
+  margin-bottom: 0;
 }
 
 //---//
 
 /* slider sinon un click sur la flèches inactive amène sur l'élément derrière */
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    pointer-events: visible;
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  pointer-events: visible;
 }
 
-.section-en-un-clic.subsection-contact .sectioncontact{
-    .section-title{
-        a{
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            font-size: 20px;
+.section-en-un-clic.subsection-contact .sectioncontact {
+  .section-title {
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
 
-            &::after{
-                content: "";
-                width: 9px;
-                height: 6px;
-                display: block;
-                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                margin-left: .4rem;
-            }
-        }
+      &::after {
+        content: "";
+        width: 9px;
+        height: 6px;
+        display: block;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 0.4rem;
+      }
     }
+  }
 }

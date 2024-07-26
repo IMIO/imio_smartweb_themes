@@ -1,9 +1,11 @@
 .sectionnews h2.section-title {
-    font-weight: 300;
+  font-weight: 300;
 }
 
-.sectionnews, .sectionevents, .partenaires {
-    h2.section-title::after {
+.sectionnews,
+.sectionevents,
+.partenaires {
+  h2.section-title::after {
     content: "";
     display: block;
     height: 4px;
@@ -13,5 +15,5 @@
     margin: 0 auto;
     margin-top: 10px;
     background-color: $secondary-svg;
-    }
+  }
 }

@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -34,155 +34,157 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 @import "./home/newsletter.scss";
 
-
 .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder.jpg");
-	background-size: cover;
-	background-position: center;
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #plone-lock-status {
-    .portalMessage.info.portalMessage.info {
-        background: #cff4fc !important;
-    }
+  .portalMessage.info.portalMessage.info {
+    background: #cff4fc !important;
+  }
 }
 
-#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
-    background-color: #77725C!important;
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: #77725c !important;
 }
 
-#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
-    background-color: #CD441C !important;
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: #cd441c !important;
 }
-
 
 body {
-    position: relative;
+  position: relative;
 }
 
 body::after {
-background: url("../../assets/svg/frame.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    z-index: -2;
-    bottom: 0;
+  background: url("../../assets/svg/frame.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: -2;
+  bottom: 0;
 
-    // height: 4000px;
+  // height: 4000px;
 }
 
-.site-cpas::after, .site-bibliotheque-communale::after {
-    display:none!important;
-    }
+.site-cpas::after,
+.site-bibliotheque-communale::after {
+  display: none !important;
+}
 
 //BANNER
 .smartweb_herobanner .bannerSwiper {
-    height: 50vw;
-    max-height: 500px;
+  height: 50vw;
+  max-height: 500px;
 }
 
 //NEWSLETTER
 #body-section-newsletter form#form .formControls {
-    /* clip: rect(0,0,0,0); */
-    border: 0;
-    height: auto;
+  /* clip: rect(0,0,0,0); */
+  border: 0;
+  height: auto;
 
-    /* margin-top: 20px; */
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 100%;
-    bottom: -20px;
+  /* margin-top: 20px; */
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+  bottom: -20px;
 
-    /* padding-bottom: 25px; */
+  /* padding-bottom: 25px; */
 }
 
 //COntact
 #portal-column-content .sectioncontact .contact-type-organization {
-    border: 1px solid #F1F1F1F1;
+  border: 1px solid #f1f1f1f1;
 }
 
 //NEWSLETTER
 #body-section-newsletter form#form .formControls {
-    display: block;
-    height: auto;
-    margin-top: 2rem;
-    overflow: visible;
-    position: relative;
-    width: auto;
+  display: block;
+  height: auto;
+  margin-top: 2rem;
+  overflow: visible;
+  position: relative;
+  width: auto;
 }
 
 .sectionsendinblue #body-section-newsletter form#form {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .faceted-text-search input#search_button {
-    background: $primary;
+  background: $primary;
 }
 
 //BANNER
 .bannerSwiper .section-slide {
-    position: relative;
+  position: relative;
 }
 
 .bannerSwiper .section-slide::after {
-    content: url("../../assets/svg/logo-rochefort-blanc.svg");
-    left: 50%;
-    max-width: 60%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
+  content: url("../../assets/svg/logo-rochefort-blanc.svg");
+  left: 50%;
+  max-width: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
 }
 
-.site-cpas .bannerSwiper .section-slide::after, .site-bibliotheque-communale .bannerSwiper .section-slide::after {
-    display:none!important;
-} 
+.site-cpas .bannerSwiper .section-slide::after,
+.site-bibliotheque-communale .bannerSwiper .section-slide::after {
+  display: none !important;
+}
 
 //MENU
 .has_subtree.dropdown a.state-published.nav-link {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .has_subtree.dropdown a.state-published.nav-link:hover {
-    margin-left: 15px;
-    transition: 0.5s;
+  margin-left: 15px;
+  transition: 0.5s;
 }
 
 .subsite-container #subsite-logo {
-    background: $color-darkgrey;
+  background: $color-darkgrey;
 }
 
 .subsite-container {
-    background: $primary;
+  background: $primary;
 
-    #subsite-logo a {
+  #subsite-logo a {
     color: $primary;
-    }
+  }
 }
 
-#subsite-navigation>ul>li>a,
-#subsite-navigation.activated>ul>li>a {
-    color: #fff !important;
+#subsite-navigation > ul > li > a,
+#subsite-navigation.activated > ul > li > a {
+  color: #fff !important;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .has_subtree.dropdown {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
-body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link::after {
-    background-image: url("../../assets/svg/chevron.svg");
+body #subsite-navigation > ul > .has_subtree.nav-item > .nav-link::after {
+  background-image: url("../../assets/svg/chevron.svg");
 }

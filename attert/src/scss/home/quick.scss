@@ -1,88 +1,110 @@
 .sortable-section.sectionlinks.quick-access {
-    background: $primary-svg;
+  background: $primary-svg;
 
-    .row{
-        li{
-            border-right: 1px solid #dbdbdb;
+  .row {
+    li {
+      border-right: 1px solid #dbdbdb;
 
-            &:last-child{
-                border-right: transparent;
-            }               
-        }
+      &:last-child {
+        border-right: transparent;
+      }
     }
+  }
 }
 
 .sectionlinks.quick-access h2.section-title {
-    padding: 0.5rem 2rem;
-    background: #fff;
-    border-radius: 50px;
-    font-size: 14px;
-    position: absolute;
-    right: 50%;
-    text-transform: uppercase;
-    top: -20px;
-    transition: .5s;
-    z-index: 1;
-    color: #67b347;
+  padding: 0.5rem 2rem;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  position: absolute;
+  right: 50%;
+  text-transform: uppercase;
+  top: -20px;
+  transition: 0.5s;
+  z-index: 1;
+  color: #67b347;
 }
 
 .sortable-section.sectionlinks.quick-access::after {
-    content: "";
-    position: absolute;
-    background: $primary-svg;
-    inset: -1px 0 -300px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: $primary-svg;
+  inset: -1px 0 -300px;
+  z-index: -1;
 }
 
 @include media-breakpoint-down(lg) {
-.sectionlinks.quick-access .body-section ul {
+  .sectionlinks.quick-access .body-section ul {
     grid-template-columns: auto auto auto auto;
     display: grid;
     justify-content: stretch;
-    }
+  }
 
-    .sectionlinks.quick-access .body-section li {
-        align-self: start;
-        border: solid #fff;
-        border-radius: inherit;
-        border-width: 0 1px 0 0;
-        height: 100%;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        }
+  .sectionlinks.quick-access .body-section li {
+    align-self: start;
+    border: solid #fff;
+    border-radius: inherit;
+    border-width: 0 1px 0 0;
+    height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 body .quick-access ul.row li:last-child {
-    border: none;
+  border: none;
 }
 
 .quick-access a.table_image:hover svg {
-    animation: shake 0.5s;
+  animation: shake 0.5s;
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-
-    20% { transform: translate(-3px, 0) rotate(1deg); }
-
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

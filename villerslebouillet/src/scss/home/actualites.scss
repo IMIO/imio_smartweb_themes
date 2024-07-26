@@ -1,93 +1,87 @@
-.sectionnews{
-    .section-title{
-        font-weight: 800;
-        position: relative;
-        text-align: center;
-        margin-bottom:4rem;
+.sectionnews {
+  .section-title {
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
 
-        &::after{
-            content: url("../../assets/svg/souligne.svg");
-            display: block;
-            width: 100px;
-            left:50%;
-            top: 50px;
-            bottom: 0;
-            position: absolute;
-            transform: translate(-50%, 0%);
-        }
+    &::after {
+      content: url("../../assets/svg/souligne.svg");
+      display: block;
+      width: 100px;
+      left: 50%;
+      top: 50px;
+      bottom: 0;
+      position: absolute;
+      transform: translate(-50%, 0%);
     }
+  }
 
-    .swiper-wrapper{
-        .swiper-slide {
-            & > a{
-                display: block;
-                align-items: center;
+  .swiper-wrapper {
+    .swiper-slide {
+      & > a {
+        display: block;
+        align-items: center;
 
-                .swiper-image{
-                    padding-bottom: 55%;
-                    transition: all .25s ease;
-                    margin-bottom: 2rem;
-                }
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 2rem;
+        }
 
-                .swiper_category{
-                    margin-left: auto;
-                    position: absolute;
-                    top: 10px;
-                    left: 10px;
-                }
+        .swiper_category {
+          margin-left: auto;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
 
-                .swiper_date{
-                    font-family: $font-family-base; 
-                    grid-row-start: 2;
-                }
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+        }
 
-                .swiper_title{
-                    margin-top: 10px;
+        .swiper_title {
+          margin-top: 10px;
 
-                    h3{
-                        font-family: $font-family-base;
-                        
-                    }
-                }
+          h3 {
+            font-family: $font-family-base;
+          }
+        }
 
-                .swiper_description{
-                    display: none;
+        .swiper_description {
+          display: none;
 
-                    p{
-                        margin: 0;
-                    }
-                }
+          p {
+            margin: 0;
+          }
+        }
 
-                &:hover{
-                    .swiper-image{
-                        mask-size: 99%;
-                    }
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
 
-                    .swiper_title{
-                        h3{
-                            color: $primary-svg;
-        
-                        }
-                    }
-
-                    .swiper_description{
-                        p{
-                            color: #fff;
-        
-                        }
-                    }
-                }
+          .swiper_title {
+            h3 {
+              color: $primary-svg;
             }
+          }
+
+          .swiper_description {
+            p {
+              color: #fff;
+            }
+          }
         }
+      }
     }
+  }
 }
 
-
-
-
-.sectionnews{
-    &::before{
-        content: "";
-        background: #fff;
-    }
+.sectionnews {
+  &::before {
+    content: "";
+    background: #fff;
+  }
 }

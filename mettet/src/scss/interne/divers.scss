@@ -1,79 +1,81 @@
-
 //  Pour section text ici https://commune-mettet.preprod.imio.be/loisirs/salles
 
-.section-text-bg-main{
-    margin-bottom: 22px;
+.section-text-bg-main {
+  margin-bottom: 22px;
 
-    .body-section{
-        background: #0ac189;
-        padding: 1rem 25px;
+  .body-section {
+    background: #0ac189;
+    padding: 1rem 25px;
 
-        .text{
-			max-width: inherit!important;
+    .text {
+      max-width: inherit !important;
 
-            h2{
-                margin: 0!important;
-                padding: 0;
-				color: #000!important;
-            }
-        }
+      h2 {
+        margin: 0 !important;
+        padding: 0;
+        color: #000 !important;
+      }
     }
+  }
 }
 
 // pour section contact
-.contact_titles{
-    h2{
-        font-size: 21px!important;
-    }
+.contact_titles {
+  h2 {
+    font-size: 21px !important;
+  }
 }
 
-
 // color title
-body:not(.portaltype-imio-smartweb-portalpage){
-    h1{
-        color: #000!important;
-    }
+body:not(.portaltype-imio-smartweb-portalpage) {
+  h1 {
+    color: #000 !important;
+  }
 
-    #content-core{
-        h1,h2,h3,h4,h5{
-         color: #000!important;
-        }
+  #content-core {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #000 !important;
     }
+  }
 }
 
 // se files
 
-.sectionfiles{
-    padding-top: 2rem!important;
-    padding-bottom: 2rem!important;
+.sectionfiles {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 
-    .section-container{
-        padding: 1.5rem!important;
-        background: $light-green;
-        border-radius: 15px;
+  .section-container {
+    padding: 1.5rem !important;
+    background: $light-green;
+    border-radius: 15px;
 
-        .section-title{
-            h2{
-                font-size: 21px!important;
-                margin-bottom: 1.5rem!important;
-            }
-        }
-
-        .table_image{
-            padding: 1rem;
-            border: solid 1px #09AD6F;
-            border-radius: 15px;
-            text-decoration: none;
-            color: #000;
-
-            &:hover,&:focus{
-                background: #00000028;
-            }
-        }
+    .section-title {
+      h2 {
+        font-size: 21px !important;
+        margin-bottom: 1.5rem !important;
+      }
     }
 
+    .table_image {
+      padding: 1rem;
+      border: solid 1px #09ad6f;
+      border-radius: 15px;
+      text-decoration: none;
+      color: #000;
+
+      &:hover,
+      &:focus {
+        background: #00000028;
+      }
+    }
+  }
 }
 
 #portal-column-content .section-contact .contact-type-organization {
-	background: #f8ecd1;
+  background: #f8ecd1;
 }

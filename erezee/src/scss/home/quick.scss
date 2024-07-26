@@ -1,110 +1,113 @@
 .sortable-section.sectionlinks.partenaires {
-    padding-top: 5rem;
-    z-index: 1;
-    position: relative;
-    background: transparent;
+  padding-top: 5rem;
+  z-index: 1;
+  position: relative;
+  background: transparent;
 }
 
 #container-section-nos-partenaires {
-    padding: 1rem 0;
+  padding: 1rem 0;
 
-    ul.row {
-        justify-content: space-between;
+  ul.row {
+    justify-content: space-between;
+  }
+
+  .table_image {
+    &::after {
+      content: "";
+      position: absolute;
+      background: transparent;
+      inset: 0;
+      z-index: 1;
     }
 
     .table_image {
-            &::after {
-                content: "";
-                position: absolute;
-                background: transparent;
-                inset: 0;
-                z-index: 1;
-                }
-
-        .table_image {
-            padding-bottom: 1rem;
-        }
-
-        .table_title {
-            span {
-                position: relative;
-                display: inline-block;
-                line-height: 70%;
-            }
-        }
+      padding-bottom: 1rem;
     }
+
+    .table_title {
+      span {
+        position: relative;
+        display: inline-block;
+        line-height: 70%;
+      }
+    }
+  }
 }
 
 div#body-section-nos-partenaires ul li {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 0 0 1px $primary;
-    transition: box-shadow 0.2s linear;
-    flex-wrap: wrap;
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 0 1px $primary;
+  transition: box-shadow 0.2s linear;
+  flex-wrap: wrap;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
 
-    svg.plone-icon {
-        width: 100%;
-        height: 2em;
-    }
+  svg.plone-icon {
+    width: 100%;
+    height: 2em;
+  }
 
-    div.image {
+  div.image {
     padding-bottom: 1rem;
-    }
+  }
 
-    div.table_title {
-        font-weight: 500;
-        color: $secondary!important;
-    }
+  div.table_title {
+    font-weight: 500;
+    color: $secondary !important;
+  }
 }
 
 div#body-section-nos-partenaires ul li:hover {
-    box-shadow: 0 0 0 3px $primary;
+  box-shadow: 0 0 0 3px $primary;
 }
 
 //QA
 .sectionlinks.quick-access {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 div#body-section-acces-directs .table_image {
-    .table_title {
-        span {
-            position: relative;
-            display: inline-block;
-        }
+  .table_title {
+    span {
+      position: relative;
+      display: inline-block;
     }
+  }
 
-    &:hover,
-    &:focus {
-        .table_title {
-            span {
-                &::after {
-                    content: "";
-                    bottom: -5px;
-                    height: 2px;
-                    left: 0;
-                    position: absolute;
-                    right: 0;
-                    transition: all .3s ease;
-                    background-color: $primary !important;
-                }
-            }
+  &:hover,
+  &:focus {
+    .table_title {
+      span {
+        &::after {
+          content: "";
+          bottom: -5px;
+          height: 2px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          transition: all 0.3s ease;
+          background-color: $primary !important;
         }
+      }
     }
+  }
 }
 
-@media screen and (max-width:992px) { 
-    div#body-section-acces-directs ul li, div#body-section-acces-directs ul li:hover, div#body-section-nos-partenaires ul li, div#body-section-nos-partenaires ul li:hover {
-        box-shadow: 0 0 0 0 $primary;
-    }
+@media screen and (max-width: 992px) {
+  div#body-section-acces-directs ul li,
+  div#body-section-acces-directs ul li:hover,
+  div#body-section-nos-partenaires ul li,
+  div#body-section-nos-partenaires ul li:hover {
+    box-shadow: 0 0 0 0 $primary;
+  }
 
-    div#body-section-acces-directs ul li {
-        width: 33%;
-    }
+  div#body-section-acces-directs ul li {
+    width: 33%;
+  }
 }

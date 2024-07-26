@@ -3,47 +3,47 @@
   text-align: center;
 
   &::after {
-      content: "";
-      background: linear-gradient(270deg,#3B7476,#2F3E46,#3B7476);
-      bottom: 0;
-      left: 50%;
-      position: absolute;
-      top: 0;
-      transform: translateX(-50%);
-      width: 100vw;
-      z-index: -1;
+    content: "";
+    background: linear-gradient(270deg, #3b7476, #2f3e46, #3b7476);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
   }
-  margin: 0!important;
+  margin: 0 !important;
   padding: 5rem 0;
 
-  .section-title{
-      font-size: 24px !important;
-      color: #fff;
-      font-weight: 100;
+  .section-title {
+    font-size: 24px !important;
+    color: #fff;
+    font-weight: 100;
 
-      &::before{
-          content: url('../../assets/svg/enveloppe.svg');
-          margin-bottom: 1rem;
-          display: block;
-      }
+    &::before {
+      content: url("../../assets/svg/enveloppe.svg");
+      margin-bottom: 1rem;
+      display: block;
+    }
   }
 
-  .table_image{
-      display: block;
-      width: max-content;
-      margin: 0 auto;
-      background: #fff;
-      color: #3B7476;
-      border-radius: 5px;
-      padding: 0.5rem 1rem;
-      border: 1px solid #fff;
-      text-decoration: none;
-      margin-top: 2rem;
+  .table_image {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    background: #fff;
+    color: #3b7476;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    margin-top: 2rem;
 
-      &:hover{
-          background: transparent;
-          color: #fff;
-      }
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
   }
 }
 

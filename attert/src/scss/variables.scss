@@ -1,14 +1,14 @@
 //*// COLORS
 $primary: #414141;
 $secondary: #414141;
-$primary-svg: #F7004F;
+$primary-svg: #f7004f;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-$font-family-base: 'Open Sans', sans-serif;
-$font-family-title: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+$font-family-base: "Open Sans", sans-serif;
+$font-family-title: "Poppins", sans-serif;
 $font-title-color: $secondary;
 $font-title-color-light: #fff;
 $font-title-color-dark: $secondary;
@@ -30,7 +30,7 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 
 $global-radius: 0;
@@ -107,7 +107,6 @@ $sub-nav-link-open-color: $secondary;
 $sub-nav-link-drop-color: $secondary;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
 
-
 //*// SECTION HOMEPAGE
 
 // banner
@@ -123,7 +122,7 @@ $banner-content-title-font-size: 5rem;
 $banner-content-title-color: #fff;
 $banner-content-title-text-transform: initial;
 $banner-content-description-font-size: 5rem;
-$banner-content-text-align: left ;
+$banner-content-text-align: left;
 $banner-content-description-color: #fff;
 
 // see_all
@@ -135,13 +134,12 @@ $see-all-radius: none;
 $see-all-border: solid 0 $secondary;
 $see-all-text-transform: none;
 $see-all-font-size: 16px;
-$see-all-transition: all .2s ease;
+$see-all-transition: all 0.2s ease;
 $see-all-hover-bg: transparent;
 $see-all-hover-color: $secondary;
 $see-all-hover-radius: none;
 $see-all-hover-border: solid 0 $secondary;
 $see-all-justify-content: right;
-
 
 // Quick access
 $quick-access-section-full-width: true;
@@ -214,7 +212,7 @@ $actu-item-title-text-transform: initial;
 $actu-item-title-font-size: 25px;
 $actu-item-title-font-weight: initial;
 $actu-date-margin: 0;
-$actu-date-padding: .5rem 1rem;
+$actu-date-padding: 0.5rem 1rem;
 $actu-date-color: $secondary;
 $actu-date-font-size: 14px;
 $actu-see-all-justify-content: $see-all-justify-content;
@@ -247,14 +245,14 @@ $event-item-title-text-transform: initial;
 $event-item-title-font-size: 20px;
 $event-item-title-font-weight: initial;
 $event-date-margin: 0;
-$event-date-padding: .5rem 36px;
+$event-date-padding: 0.5rem 36px;
 $event-date-color: #fff;
 $event-date-font-size: 14px;
 $event-see-all-justify-content: $see-all-justify-content;
 
 // album
 $album-section-full-width: true;
-$album-section-bg: #EDEAE5;
+$album-section-bg: #edeae5;
 $album-section-padding-top: 5rem;
 $album-section-padding-bottom: 5rem;
 $album-title-color: $primary-svg;
@@ -273,7 +271,7 @@ $album-category-text-transform: initial;
 $album-category-font-size: 14px;
 $album-category-font-weight: initial;
 $album-category-radius: $global-radius;
-$album-item-title-margin: .5rem 0;
+$album-item-title-margin: 0.5rem 0;
 $album-item-title-padding: 0;
 $album-item-title-color: initial;
 $album-item-title-text-transform: initial;
@@ -301,4 +299,4 @@ $section-text-h3-margin-top: 0;
 $section-text-h3-margin-bottom: 0.5rem;
 $section-text-link-color: $secondary;
 $section-text-link-hover-decoration: solid 1px $primary-svg;
-$section-text-max-width: 760px; 
+$section-text-max-width: 760px;

@@ -1,32 +1,32 @@
 .sortable-section.sectioncollection.enquetes .swiper-slide {
-    background: #fff;
-    padding: 2rem;
+  background: #fff;
+  padding: 2rem;
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    .swiper_title h3 {
-        color: $primary;
-        font-size: 1.5rem;
-        font-weight: 400;
-        text-transform: none;
-    }
+  .swiper_title h3 {
+    color: $primary;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: none;
+  }
 
-    .swiper-date {
-      color: $primary;
-    }
+  .swiper-date {
+    color: $primary;
+  }
 }
 
 .sortable-section.enquetes::after {
-  background: #F5F8F8;
+  background: #f5f8f8;
   bottom: 0;
   content: "";
-  left: 50%!important;
+  left: 50% !important;
   position: absolute;
   top: 0;
   transform: translateX(-50vw);
-  width: 100vw!important;
+  width: 100vw !important;
   z-index: -2;
 }
 
@@ -42,7 +42,9 @@
   padding-bottom: 2rem;
 }
 
-.enquetes .see_all a, .enquetes .see_all a:focus, .enquetes .see_all a:hover {
+.enquetes .see_all a,
+.enquetes .see_all a:focus,
+.enquetes .see_all a:hover {
   background: transparent;
   border: 0 solid #1c1c1c;
   border-radius: 0;
@@ -57,14 +59,14 @@
 
 .enquetes .see_all a {
   display: block;
-  font-family: Rubik,sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 0;
   position: relative;
   text-decoration: none;
   text-transform: none;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   width: max-content;
 
   &::after {
@@ -74,7 +76,7 @@
     height: 2px;
     left: 0;
     position: absolute;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
     width: 25%;
   }
 
@@ -87,14 +89,14 @@
   position: relative;
 }
 
-@include media-breakpoint-up(lg) { 
-.section-home-page .enquetes::before {
-  top: 50%;
-  content: url('../../assets/svg/logo-bg-green.svg');
-  display: block;
-  right: 50%;
-  position: absolute;
-  transform: translate(50vw, -50%);
+@include media-breakpoint-up(lg) {
+  .section-home-page .enquetes::before {
+    top: 50%;
+    content: url("../../assets/svg/logo-bg-green.svg");
+    display: block;
+    right: 50%;
+    position: absolute;
+    transform: translate(50vw, -50%);
   }
 }
 

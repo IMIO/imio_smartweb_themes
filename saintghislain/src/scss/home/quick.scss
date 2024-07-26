@@ -1,29 +1,29 @@
-.sectionlinks.quick-access{
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+.sectionlinks.quick-access {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-@include media-breakpoint-up(md){
-    .quick-access:not(.section-annuaire){
-        .table_image{
-            &:hover{
-                .image{
-                    transform: translateY(-10px);
-                }
-            }
-
-            .image{
-                transition: all .2s ease;
-            }
+@include media-breakpoint-up(md) {
+  .quick-access:not(.section-annuaire) {
+    .table_image {
+      &:hover {
+        .image {
+          transform: translateY(-10px);
         }
+      }
+
+      .image {
+        transition: all 0.2s ease;
+      }
     }
+  }
 }
 
-#container-section-en-un-clic{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#container-section-en-un-clic {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .sectionlinks.quick-access .section-title {
-	margin: 0 0 4rem!important;
+  margin: 0 0 4rem !important;
 }

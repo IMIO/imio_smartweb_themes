@@ -1,88 +1,88 @@
-.a-la-une .swiper-slide>a {
-    display: block;
-    border: solid 1px #E3E3E3;
+.a-la-une .swiper-slide > a {
+  display: block;
+  border: solid 1px #e3e3e3;
 
-    .swiper_title {
-        padding: 2rem;
+  .swiper_title {
+    padding: 2rem;
 
-        h3 {
-            text-transform: initial;
-            font-weight: 400;
-        }
+    h3 {
+      text-transform: initial;
+      font-weight: 400;
     }
+  }
 }
 
 .a-la-une a .swiper-image::before {
-    content: "";
-    background: transparent;
-    transition: all .3s ease;
-    position: absolute;
-    inset: 0;
-    border-radius: 5px;
+  content: "";
+  background: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
 }
 
 .a-la-une a .swiper-image {
-    position: relative;
+  position: relative;
 }
 
 .a-la-une a:hover .swiper-image::before {
-    background: $color-orange;
-    opacity: 70%;
+  background: $color-orange;
+  opacity: 70%;
 }
 
 .a-la-une a .swiper-image::after {
-    transition: all .3s ease;
-    content: "";
-    inset: 0;
-    position: absolute;
-    z-index: 1;
-    background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
-    opacity: 0%;
-    transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
+  opacity: 0%;
+  transform: rotate(45deg);
 }
 
 .a-la-une a:hover .swiper-image::after {
-    opacity: 100%;
-    transform: rotate(90deg);
+  opacity: 100%;
+  transform: rotate(90deg);
 }
 
 .a-la-une .see_all a::before {
-    content: ">";
-    position: absolute;
-    right: 10px;
-    color: $color-orange;
-    transition: all .3s ease;
+  content: ">";
+  position: absolute;
+  right: 10px;
+  color: $color-orange;
+  transition: all 0.3s ease;
 }
 
 .a-la-une .see_all a:hover::before {
-    right: 5px;
-    color: #000;
+  right: 5px;
+  color: #000;
 }
 
 .a-la-une {
-    .see_all a {
-        border: 1px solid $color-orange;
-        }
-    }
+  .see_all a {
+    border: 1px solid $color-orange;
+  }
+}
 
 .a-la-une h2.section-title::first-letter {
-    color: $color-orange;
-    }
+  color: $color-orange;
+}
 
 .swiper-slide a {
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 
-    &:hover {
+  &:hover {
     box-shadow: rgb(100 100 111 / 10%) 0 7px 29px 0;
-    }
+  }
 }
 
 .a-la-une ul li .swiper_title {
-    position: relative;
+  position: relative;
 }
 
 .a-la-une a {
-    .swiper_title::before {
+  .swiper_title::before {
     content: ">";
     bottom: 25px;
     right: 25px;
@@ -96,28 +96,28 @@
     align-items: center;
     line-height: 38px;
     font-weight: 400;
+  }
+
+  .swiper_title::after {
+    background: transparent;
+    content: "";
+    bottom: 25px;
+    right: 25px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .swiper_title::before {
+      color: #fff;
     }
 
     .swiper_title::after {
-        background: transparent;
-        content: "";
-        bottom: 25px;
-        right: 25px;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        z-index: 0;
-        transition: all .3s ease;
+      background: $color-orange;
     }
-
-    &:hover {
-        .swiper_title::before {
-            color: #fff;
-            }
-
-            .swiper_title::after {
-                background: $color-orange;
-            }
-    }
+  }
 }

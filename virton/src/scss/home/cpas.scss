@@ -1,14 +1,14 @@
 .site-cpas {
-    .nav_lannuaire .nav-link:hover {
-        color: #fff !important;
-    }
+  .nav_lannuaire .nav-link:hover {
+    color: #fff !important;
+  }
 
-    .sectionnews {
-        padding-top:0 !important;
-        padding-bottom:0 !important;
-    }
+  .sectionnews {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 
-    /*#portal-header #portal-header-top:after {
+  /*#portal-header #portal-header-top:after {
         background: #ede8e5 !important;
     }
 
@@ -24,119 +24,134 @@
         color: #000000 !important;
     }*/
 
-    #portal-header #portal-header-top #portal-logo {
-        margin-top: 0;
-        max-width: 200px;
-        width: 100%;
+  #portal-header #portal-header-top #portal-logo {
+    margin-top: 0;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .img-banner {
+    &::before {
+      background: linear-gradient(
+        to top,
+        #fff 0,
+        #fff 100px,
+        #ffda1e 100px,
+        #ffda1e 140px,
+        #f39200 140px,
+        #f39200 180px,
+        #cf102d 180px,
+        #cf102d 100%
+      );
     }
+  }
 
-    .img-banner {
-        &::before {
-            background: linear-gradient(to top, #fff 0,#fff 100px, #ffda1e 100px, #ffda1e 140px, #F39200 140px, #f39200 180px, #cf102d 180px, #cf102d 100%);
-        }
-    }
+  .img-banner::after {
+    display: none !important;
+  }
 
-    .img-banner::after {
-        display: none !important;
-    }
+  .img-banner .section-text::after {
+    display: none !important;
+  }
 
-    .img-banner .section-text::after {
-        display: none !important;
-    }
+  .img-banner .section-text .figure-affiche::before {
+    display: none !important;
+  }
 
+  #portal-footer-wrapper::before {
+    display: none !important;
+  }
 
-    .img-banner .section-text .figure-affiche::before {
-        display: none !important;
-    }
+  #portal-footer-wrapper::after {
+    display: none !important;
+  }
 
-    #portal-footer-wrapper::before {
-        display: none !important;
-    }
+  .sectionnews::after {
+    display: none !important;
+  }
 
-    #portal-footer-wrapper::after {
-        display: none !important;
-    }
+  #portal-footer-wrapper {
+    background: linear-gradient(
+      to bottom,
+      #ffda1e 0,
+      #ffda1e 40px,
+      #f39200 40px,
+      #f39200 80px,
+      #cf102d 80px,
+      #cf102d 100%
+    );
+    margin-top: 100px;
+    overflow: unset;
+    padding: 10rem 0 8rem !important;
+    position: relative;
+  }
 
-    .sectionnews::after {
-        display: none !important;
-    }
+  .acces-direct {
+    margin-top: 100px;
 
-    #portal-footer-wrapper {
-        background: linear-gradient(to bottom, #ffda1e 0,#ffda1e 40px, #F39200 40px, #F39200 80px, #cf102d 80px, #cf102d 100%);
-        margin-top: 100px;
-        overflow: unset;
-        padding: 10rem 0 8rem !important;
-        position: relative;
-    }
-
-    .acces-direct{
-        margin-top:100px;
-
-    .section-title{
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        margin: 0 auto 2rem;
-        width: max-content;
-        font-size: 2.5rem;
+    .section-title {
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      margin: 0 auto 2rem;
+      width: max-content;
+      font-size: 2.5rem;
     }
 
     .swiper-slide .swiper-image {
-        border-radius: 40px 40px 0;
-        margin-bottom: 0;
-        width: 100%;
+      border-radius: 40px 40px 0;
+      margin-bottom: 0;
+      width: 100%;
     }
 
     .swiper-slide .swiper_title h3 {
-        color: initial;
-        font-size: 1.25rem;
-        font-weight: 500;
-        text-align: center;
-        text-transform: none;
-        font-family: "Fira Sans",sans-serif;
+      color: initial;
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: none;
+      font-family: "Fira Sans", sans-serif;
     }
 
     .swiper-slide {
-        background: transparent;
-        transition: .5s;
+      background: transparent;
+      transition: 0.5s;
 
-        a {
-            text-decoration: none;
-        }
+      a {
+        text-decoration: none;
+      }
 
-        &:hover,&:focus{
-                transition: .5s;
-                transform: translateY(10px);
-        }
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+      }
     }
+  }
 
-}
-
-.txt-banner .section-text .figure-affiche {
+  .txt-banner .section-text .figure-affiche {
     position: absolute;
     top: 200px;
-}
+  }
 
-#main-container .quick-access {
+  #main-container .quick-access {
     margin: 90px 0;
     padding: 0;
-}
+  }
 
-@media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     #main-container .quick-access {
-        margin: 50px 0;
-        padding: 0;
+      margin: 50px 0;
+      padding: 0;
     }
 
     #body-section-vive-la-gaume {
-        display: none !important;
+      display: none !important;
     }
-        }
+  }
 
-#content-core::after {
-    background:none !important;
-}
-
-
+  #content-core::after {
+    background: none !important;
+  }
 }

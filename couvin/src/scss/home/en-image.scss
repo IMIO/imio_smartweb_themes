@@ -1,26 +1,26 @@
-.sortable-section.section-en-image{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.sortable-section.section-en-image {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
-    h2.section-title {
-        text-align: center;
+  h2.section-title {
+    text-align: center;
+  }
+
+  .swiper-slide {
+    & > a {
+      text-decoration: none;
     }
 
-    .swiper-slide{
-        & > a{
-            text-decoration: none;
-        }
-
-        .swiper_title{
-            padding-top: 1rem;
-        }
+    .swiper_title {
+      padding-top: 1rem;
     }
+  }
 }
 
 .section-en-image {
-    .see_all {
-      justify-content: $event-see-all-justify-content;
+  .see_all {
+    justify-content: $event-see-all-justify-content;
 
-      @include see-all-style;
-    }
+    @include see-all-style;
   }
+}

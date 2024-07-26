@@ -1,38 +1,44 @@
-body.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionhtml.ansenimages {
-    background: #fff;
-    padding: 4rem 1rem 0 2rem;
-    margin-top: -15rem;
-    z-index: 0;
-    box-shadow: 0 20px 40px rgba(0,0,0,11%);
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .sortable-section.sectionhtml.ansenimages {
+  background: #fff;
+  padding: 4rem 1rem 0 2rem;
+  margin-top: -15rem;
+  z-index: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 11%);
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page div#container-section-video-2 {
-    padding: 0;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  div#container-section-video-2 {
+  padding: 0;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionvideo {
-    padding: 0;
-    margin-top: -15rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,11%);
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .sortable-section.sectionvideo {
+  padding: 0;
+  margin-top: -15rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 11%);
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionhtml.ansenimages h2 {
-    font-size: 3.25rem;
-    color: #000;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .sortable-section.sectionhtml.ansenimages
+  h2 {
+  font-size: 3.25rem;
+  color: #000;
 }
 
-@include media-breakpoint-down(md) { 
-    body.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionhtml.ansenimages {
-        padding: 7rem 1rem 4rem 2rem;
-    }
+@include media-breakpoint-down(md) {
+  body.portaltype-imio-smartweb-portalpage.section-home-page
+    .sortable-section.sectionhtml.ansenimages {
+    padding: 7rem 1rem 4rem 2rem;
+  }
 }
 
 .sortable-section.sectionhtml.ansenimages {
-    p {
-        margin-bottom: 50px;
-    }
+  p {
+    margin-bottom: 50px;
+  }
 
-    a.enimages {
+  a.enimages {
     padding: 1rem;
     background: $primary;
     border-radius: 25px;
@@ -40,10 +46,10 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sec
     font-weight: 700;
     border: solid 1px $primary;
 
-        &:hover {
-            background: #fff;
-            color: #000;
-            border: solid 1px $primary;
-        }
+    &:hover {
+      background: #fff;
+      color: #000;
+      border: solid 1px $primary;
     }
+  }
 }

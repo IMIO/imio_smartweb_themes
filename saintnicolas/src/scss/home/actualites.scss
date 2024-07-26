@@ -1,16 +1,16 @@
 .sectionnews .swiper-slide .swiper_category span {
-    display: inline-block !important;
+  display: inline-block !important;
 }
 
-.sectionnews{
-    .swiper-slide {        
-        & > a {
-            &:hover{
-                .swiper-image{
-                    background-color: #0f4c81;
-                    background-blend-mode: soft-light;
-                }
-            }
+.sectionnews {
+  .swiper-slide {
+    & > a {
+      &:hover {
+        .swiper-image {
+          background-color: #0f4c81;
+          background-blend-mode: soft-light;
         }
+      }
     }
+  }
 }

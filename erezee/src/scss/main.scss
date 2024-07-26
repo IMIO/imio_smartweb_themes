@@ -12,41 +12,43 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
-@import 'home/quick';
-@import 'home/banner';
-@import 'home/actualites';
-@import 'home/events';
-@import 'home/divers';
-@import 'home/footer';
-@import 'home/menu';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
+@import "home/quick";
+@import "home/banner";
+@import "home/actualites";
+@import "home/events";
+@import "home/divers";
+@import "home/footer";
+@import "home/menu";
 
 //// STYLES
 
 // ... add your styles here
 
-
-
-#portal-column-content .section-contact .contact-type-position .contact_leadimage, #portal-column-content .section-contact .contact-type-position .contact_logo {
-	border-radius: 10px 10px 10px 0!important;
+#portal-column-content
+  .section-contact
+  .contact-type-position
+  .contact_leadimage,
+#portal-column-content .section-contact .contact-type-position .contact_logo {
+  border-radius: 10px 10px 10px 0 !important;
 }
 
-.sectiontext img{
-	border-radius: 10px 10px 10px 0!important;
+.sectiontext img {
+  border-radius: 10px 10px 10px 0 !important;
 }
 
-.sectionevents{
-    padding-bottom: 4rem;
+.sectionevents {
+  padding-bottom: 4rem;
 }
 
 #portal-footer-wrapper h2 {
-	margin-top: 0!important;
-	color: #fff!important;
+  margin-top: 0 !important;
+  color: #fff !important;
 }
 
-.phones{
-    span{
-        display: block;
-    }
+.phones {
+  span {
+    display: block;
+  }
 }

@@ -1,19 +1,19 @@
 //*// COLORS
-$primary: #07689F;
-$secondary: #FFC93C;
+$primary: #07689f;
+$secondary: #ffc93c;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://use.typekit.net/unl5gas.css");
-$font-family-base: gill-sans-nova,
-sans-serif;
-$font-family-title: 'Baloo 2',
-cursive,
-system-ui,
--apple-system,
-"Segoe UI";
+$font-family-base: gill-sans-nova, sans-serif;
+$font-family-title:
+  "Baloo 2",
+  cursive,
+  system-ui,
+  -apple-system,
+  "Segoe UI";
 $font-title-color: rgba(59, 59, 59, 100%);
 $font-title-color-light: #fff;
 $font-title-color-dark: #000;
@@ -35,7 +35,7 @@ $h6-font-size: $font-size-base;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 
 $global-radius: 5px;
@@ -111,7 +111,6 @@ $sub-nav-link-open-color: #000 !default;
 $sub-nav-link-drop-color: #1a1313;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
 
-
 //*// SECTION HOMEPAGE
 
 // banner
@@ -138,13 +137,12 @@ $see-all-radius: $global-radius;
 $see-all-border: solid 1px $secondary;
 $see-all-text-transform: none;
 $see-all-font-size: 16px;
-$see-all-transition: all .2s ease;
+$see-all-transition: all 0.2s ease;
 $see-all-hover-bg: transparent;
 $see-all-hover-color: $primary;
 $see-all-hover-radius: $global-radius;
 $see-all-hover-border: solid 1px $secondary;
 $see-all-justify-content: center;
-
 
 // Quick access
 $quick-access-section-full-width: true;
@@ -211,7 +209,7 @@ $actu-category-text-transform: uppurcase;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: initial;
 $actu-category-radius: $global-radius;
-$actu-item-title-margin: .5rem 0;
+$actu-item-title-margin: 0.5rem 0;
 $actu-item-title-padding: 0;
 $actu-item-title-color: initial;
 $actu-item-title-text-transform: initial;
@@ -251,14 +249,14 @@ $event-item-title-text-transform: initial;
 $event-item-title-font-size: 20px;
 $event-item-title-font-weight: bold;
 $event-date-margin: 0;
-$event-date-padding: .5rem 36px;
+$event-date-padding: 0.5rem 36px;
 $event-date-color: #000;
 $event-date-font-size: 14px;
 $event-see-all-justify-content: $see-all-justify-content;
 
 // album
 $album-section-full-width: true;
-$album-section-bg: #EDEAE5;
+$album-section-bg: #edeae5;
 $album-section-padding-top: 5rem;
 $album-section-padding-bottom: 5rem;
 $album-title-color: $primary;
@@ -277,7 +275,7 @@ $album-category-text-transform: uppurcase;
 $album-category-font-size: 14px;
 $album-category-font-weight: initial;
 $album-category-radius: $global-radius;
-$album-item-title-margin: .5rem 0;
+$album-item-title-margin: 0.5rem 0;
 $album-item-title-padding: 0;
 $album-item-title-color: initial;
 $album-item-title-text-transform: initial;

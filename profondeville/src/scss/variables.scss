@@ -1,20 +1,19 @@
 //*// COLORS
 $primary: #000;
 $primary-svg: #000;
-$color-orange: #F38B00;
-$color-red: #DD0031;
-$color-green: #77BC1F;
-$color-pink: #E70095;
-$color-grey: #6F6F6E;
-$color-blue: #07689F;
+$color-orange: #f38b00;
+$color-red: #dd0031;
+$color-green: #77bc1f;
+$color-pink: #e70095;
+$color-grey: #6f6f6e;
+$color-blue: #07689f;
 $color-dark: #090909;
 
 //*// TYPOGRAPHY
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: "Roboto", sans-serif;
 $font-family-title: $font-family-base;
 $font-title-color: $primary;
 $font-title-color-light: #fff !default;
@@ -37,24 +36,24 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (
   sm: 100%,
   md: 100%,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1320px,
 );
 $global-radius: 5;
 $enable-title-uppercase: false;
-$home-section-title-size: 3.25rem!default;
+$home-section-title-size: 3.25rem !default;
 $home-section-title-margin: 4rem 0 6rem 0;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: center;
 $section-padding-top: 0 !default;
 $to-portal-link-color: #000;
-$img-placeholder: #F2F2F2!default;
+$img-placeholder: #f2f2f2 !default;
 
 //swiper
 $swiper-icon-color: $primary-svg !default;
@@ -66,7 +65,7 @@ $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/20
 $swiper-background-size: 50% !default;
 $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
-$swipper-bullet-color: $primary-svg!default;
+$swipper-bullet-color: $primary-svg !default;
 
 //*// HEADER
 $main-logo-max-width: 140px;
@@ -74,9 +73,9 @@ $header-top-padding: 1rem 0 !default;
 $header-top-background: #fff !default;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
-$header-nav-link-color: $primary!default;
+$header-nav-link-color: $primary !default;
 $header-nav-link-font-size: 18px;
-$header-nav-link-font-family: $font-family-base!default;
+$header-nav-link-font-family: $font-family-base !default;
 $header-links-color: $primary !default;
 $header-links-account-margin: 0 !default;
 $header-links-account-padding: 0 !default;
@@ -97,22 +96,22 @@ $enable-full-width-breacrumb: false !default;
 // sitenav
 $navbar-padding-x: 2.5rem !default;
 $nav-mask-background: rgb(15 11 11 / 76%) !default;
-$nav-title-font-family: $font-family-base!default;
-$nav-link-color: $primary!default;
+$nav-title-font-family: $font-family-base !default;
+$nav-link-color: $primary !default;
 $nav-link-open-color: $primary !default;
 $nav-link-active-color: $primary-svg !default;
 $nav-link-font-size: initial !default;
 $nav-link-font-weight: 500 !default;
-$nav-link-drop-color: $primary!default;
+$nav-link-drop-color: $primary !default;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
 $nav-link-drop-color-mobile: #000 !default;
-$nav-link-drop-mobile: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"6\" height=\"9\"><path fill=\"%23000\" d=\"M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z\" /></svg>")!default;
+$nav-link-drop-mobile: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="%23000" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-first-level-gap: 35px;
 $nav-first-level-uppercase: false !default;
 $nav-quick-link-color: $primary-svg !default;
-$nav-quick-link-size: 18px!default;
-$nav-quick-link-weight: bold!default;
-$nav-quick-link-padding: 0!default;
+$nav-quick-link-size: 18px !default;
+$nav-quick-link-weight: bold !default;
+$nav-quick-link-padding: 0 !default;
 $nav-sub-link-font-size: $nav-link-font-size !default;
 $nav-sub-link-font-weight: $nav-link-font-weight !default;
 $nav-overlay-radius: $global-radius !default;
@@ -151,7 +150,7 @@ $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
 $banner-content-title-text-transform: initial !default;
-$banner-content-text-align: left!default;
+$banner-content-text-align: left !default;
 $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
@@ -165,16 +164,15 @@ $see-all-border: solid 1px $primary;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
 $see-all-font-weight: 400;
-$see-all-transition: all .3s ease;
+$see-all-transition: all 0.3s ease;
 $see-all-hover-bg: transparent !default;
 $see-all-hover-color: $primary-svg !default;
 $see-all-hover-radius: $global-radius !default;
 $see-all-hover-border: solid 1px $primary;
 $see-all-justify-content: center;
 $see-all-underline-color: none;
-$see-all-underline-width: 25%!default;
-$see-all-hover-underline-width: 50%!default;
-
+$see-all-underline-width: 25% !default;
+$see-all-hover-underline-width: 50% !default;
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -233,9 +231,9 @@ $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius: $global-radius !default;
 $actu-item-bg-color: #fff;
-$actu-item-bg-radius: $global-radius+2 !default;
-$actu-category-margin: 0 0 .5rem 0 !default;
-$actu-category-padding: .5rem 1rem !default;
+$actu-item-bg-radius: $global-radius + 2 !default;
+$actu-category-margin: 0 0 0.5rem 0 !default;
+$actu-category-padding: 0.5rem 1rem !default;
 $actu-category-color: #000;
 $actu-category-bg-color: #fff;
 $actu-category-text-transform: uppurcase !default;
@@ -249,18 +247,17 @@ $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size !default;
 $actu-item-title-font-weight: 400;
 $actu-item-title-align: left !default;
-$actu-item-description-margin: 0 0 .5rem 0 !default;
+$actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
 $actu-item-description-color: initial !default;
 $actu-item-description-align: left !default;
 $actu-item-description-font-family: $font-family-base !default;
-$actu-date-margin: 0 0 .5rem 0!default;
+$actu-date-margin: 0 0 0.5rem 0 !default;
 $actu-date-padding: 1rem 2rem 0.5rem 2rem;
-$actu-date-color: #6F6F6E;
+$actu-date-color: #6f6f6e;
 $actu-date-font-size: 14px !default;
 $actu-date-align: left !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
-
 
 // Event
 $event-section-full-width: true !default;
@@ -274,9 +271,9 @@ $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
 $event-image-border-radius: $global-radius !default;
 $event-item-bg-color: #fff;
-$event-item-bg-radius: $global-radius+2 !default;
+$event-item-bg-radius: $global-radius + 2 !default;
 $event-category-margin: 0 0 0.5rem 0 !default;
-$event-category-padding: .5rem 2rem 0 2rem;
+$event-category-padding: 0.5rem 2rem 0 2rem;
 $event-category-color: #000;
 $event-category-bg-color: #fff;
 $event-category-text-transform: uppurcase !default;
@@ -289,21 +286,20 @@ $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size !default;
 $event-item-title-font-weight: 400;
-$event-item-description-margin: 0 0 .5rem 0 !default;
+$event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
 $event-item-description-align: left !default;
 $event-item-description-font-family: $font-family-base !default;
-$event-date-margin: 0 0 .5rem 0 !default;
+$event-date-margin: 0 0 0.5rem 0 !default;
 $event-date-padding: 1rem 2rem 0.5rem 2rem;
-$event-date-color: #6F6F6E;
+$event-date-color: #6f6f6e;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
-
 // Album
 $album-section-full-width: true !default;
-$album-section-bg: #EDEAE5 !default;
+$album-section-bg: #edeae5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
@@ -314,7 +310,7 @@ $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
 $album-image-border-radius: $global-radius !default;
 $album-item-bg-color: rgb(244, 244, 244) !default;
-$album-item-bg-radius: $global-radius+2 !default;
+$album-item-bg-radius: $global-radius + 2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
@@ -336,12 +332,12 @@ $album-date-font-size: 14px !default;
 $album-see-all-justify-content: $see-all-justify-content !default;
 
 // Newsletter
-$newsletter-bg-color: $primary-svg!default;
-$newsletter-align: center!default;
-$newsletter-padding-top: 2rem!default;
-$newsletter-padding-bottom: 2rem!default;
-$newsletter-margin: 3rem 0!default;
-$newsletter-text-color: #fff!default;
+$newsletter-bg-color: $primary-svg !default;
+$newsletter-align: center !default;
+$newsletter-padding-top: 2rem !default;
+$newsletter-padding-bottom: 2rem !default;
+$newsletter-margin: 3rem 0 !default;
+$newsletter-text-color: #fff !default;
 
 /////////////// interne ///////////////
 
@@ -365,7 +361,8 @@ $section-text-max-width: 760px !default;
 
 // Section
 $section-padding-y: 5.31rem;
-$section-padding: (sm: 3rem,
+$section-padding: (
+  sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
 );
@@ -376,7 +373,7 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: #F2F9FC;
+$section-contact-background: #f2f9fc;
 
 // section-files
 $section-file-background-color: $primary !default;
@@ -384,7 +381,7 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: #F2F9FC;
+$section-link-background-color: #f2f9fc;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
@@ -394,10 +391,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0 20px 40px #0000001A;
+$block-full-shadow: 0 20px 40px #0000001a;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
-$list-group-border-width : 0;
-$list-group-item-padding-x : 0;
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
 
 // Message Viewlets
 
@@ -412,6 +409,6 @@ $quick-access-title-font-family: $font-family-title !default;
 $see-all-font-family: $font-family-title !default;
 
 :root {
---bs-card-spacer-x:1rem;
---bs-card-spacer-y:1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-spacer-y: 1rem;
 }

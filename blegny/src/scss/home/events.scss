@@ -1,17 +1,17 @@
 .sortable-section.sectionevents.bg1 {
-    position: relative;
+  position: relative;
 }
 
 .sortable-section.sectionevents.bg1::after {
-    background: url("../../assets/svg/smile-blegny-white.svg");
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 90%;
-    position: absolute;
-    background-size: contain;
-    right: 0;
-    background-repeat: no-repeat;
-    width: 410px;
-    z-index: -1;
+  background: url("../../assets/svg/smile-blegny-white.svg");
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 90%;
+  position: absolute;
+  background-size: contain;
+  right: 0;
+  background-repeat: no-repeat;
+  width: 410px;
+  z-index: -1;
 }

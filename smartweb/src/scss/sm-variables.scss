@@ -1,6 +1,6 @@
 // colors
-$primary: #008FD2;
-$primary-accessibility: #007DB8;
+$primary: #008fd2;
+$primary-accessibility: #007db8;
 $bg-primary: red;
 $gray: #d8d8d8;
 $yellow: #f9b300;
@@ -28,26 +28,25 @@ $navbar-padding-x: 2.5rem !default;
 $banner-height: 250px;
 
 // liste group variables
-$list-group-border-width : 0;
-$list-group-item-padding-x : 0;
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
 $list-style-custom: url(../../assets/svg/list-style-yellow.svg);
 
 //link
 $link-color: #000;
-$link-hover-decoration : solid 3px $yellow;
+$link-hover-decoration: solid 3px $yellow;
 
 //Liste Block
-$block-full-shadow: 0 20px 40px #0000001A;
+$block-full-shadow: 0 20px 40px #0000001a;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
 
 // font
-$font-family-base: ff-tisa-sans-web-pro,sans-serif;
+$font-family-base: ff-tisa-sans-web-pro, sans-serif;
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px` (don't change)
-$font-size-sm: $font-size-base * .875;
+$font-size-sm: $font-size-base * 0.875;
 $font-size-lg: $font-size-base * 1.125;
 $font-size-xl: $font-size-base * 1.1875;
-
 
 $h1-font-size: $font-size-base * 3.75; /*--64--*/
 $h2-font-size: $font-size-base * 2; /*--34--*/
@@ -66,7 +65,6 @@ $breadcrumb-padding-x: 0;
 $breadcrumb-font-size: $font-size-sm;
 $enable-full-width-breacrumb: false;
 
-
 // Section
 $section-padding-y: 5.31rem;
 $section-padding: (
@@ -75,38 +73,37 @@ $section-padding: (
   lg: 4.3rem,
 );
 
-    // section-contact
+// section-contact
 $section-contact-title-size: $font-size-xl;
 $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-width: 260px;
 
-    // section-files
+// section-files
 $section-file-background-color: #008fd2;
 $enable-full-width-section-files: true;
 $enable-light-color-section-files: true;
 
-    // section-link
-$section-link-background-color: #F8F8F8;
+// section-link
+$section-link-background-color: #f8f8f8;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
-    // section-text
+// section-text
 $section-text-h2-margin-top: 2rem;
 $section-text-h2-margin-bottom: 1.5rem;
 $section-text-h3-margin-top: 0;
-$section-text-h3-margin-bottom: .5rem;
+$section-text-h3-margin-bottom: 0.5rem;
 $section-text-link-color: $primary-accessibility;
-$section-text-link-hover-decoration : solid 1px $yellow;
+$section-text-link-hover-decoration: solid 1px $yellow;
 
-    // section-list-block-img
+// section-list-block-img
 $section-list-block-img-card-title: 1.25rem;
 
 // subsite
-$subsite-logo-background: #FFB81C;
+$subsite-logo-background: #ffb81c;
 $subsite-logo-color: #fff;
-
 
 // Message Viewlets
 

@@ -1,54 +1,57 @@
 @media (min-width: 992px) {
-.projets.a-la-une .swiper-slide>a { 
-    direction: rtl; 
-    }
+  .projets.a-la-une .swiper-slide > a {
+    direction: rtl;
+  }
 }
 
 div#container-section-les-grands-projets {
-    position: relative;
+  position: relative;
 }
 
 body .projets div h2.section-title {
-    color: $darktext !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 1.5rem !important;
+  color: $darktext !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem !important;
 }
 
 body .projets {
-    .swiper-button-prev, .swiper-button-next {
-        display: none;
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  div.swiper-slide .swiper_title {
+    padding: 36px 0 0;
+
+    h3 {
+      text-align: left;
+      font-size: 2.5rem !important;
+      color: $primary-svg;
     }
+  }
+}
 
-    div.swiper-slide .swiper_title {
-        padding: 36px 0 0;
-
-        h3 {
-        text-align: left;
-        font-size: 2.5rem !important;
-        color: $primary-svg;
-        }
-    } 
-} 
-
-@include media-breakpoint-up(lg){
-    body .projets .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+@include media-breakpoint-up(lg) {
+  body
+    .projets
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
     text-align: left;
     bottom: 30%;
     z-index: 1;
-    }
+  }
 }
 
 body .projets .swiper-slide .swiper_description {
-    padding: 0 !important;
+  padding: 0 !important;
 
-    p {
+  p {
     direction: ltr;
     max-width: 100%;
     width: 100%;
     padding: 0 !important;
-    }
+  }
 }

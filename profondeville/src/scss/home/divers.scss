@@ -38,105 +38,112 @@
 
 // }
 #portal-header-top::before {
-    background: url("../../assets/svg/multicolor-line.svg") top right no-repeat;
-    background-size: 100% 100%;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 5px;
-    width: 100vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  background: url("../../assets/svg/multicolor-line.svg") top right no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @include media-breakpoint-down(md) {
-    .smartweb_herobanner .bannerSwiper {
-        height: 200px;
-    }
+  .smartweb_herobanner .bannerSwiper {
+    height: 200px;
+  }
 }
 
 //SOUS SITE
 body .has_subtree.dropdown:first-child {
-    margin-top: 22px !important;
+  margin-top: 22px !important;
 
-    // margin-left: -1px;
+  // margin-left: -1px;
 }
 
 //FILES
 .sortable-section.sectionfiles {
-    margin: 2rem 0;
-    padding: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
 
-    .item_infos {
+  .item_infos {
     color: #fff;
-    }
+  }
 }
 
 //H3
 html body {
-    h3 {
+  h3 {
     font-weight: 400;
-    }
+  }
 
-    h2 {
-        text-transform: initial;
-    }
+  h2 {
+    text-transform: initial;
+  }
 }
 
 //MENU
 
 @media (min-width: 992px) {
-    #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
-        margin-top: 3rem;
-    }
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 3rem;
+  }
 }
 
 // Section text internal page
 
-@include media-breakpoint-down(md) { 
-    body .container .section-text .body-section.figure-left {
-        display: grid;
+@include media-breakpoint-down(md) {
+  body .container .section-text .body-section.figure-left {
+    display: grid;
 
-        figure {
-            margin: 0 auto;
-            max-width: 760px;
-            padding-bottom: 20px;
-            }
+    figure {
+      margin: 0 auto;
+      max-width: 760px;
+      padding-bottom: 20px;
     }
+  }
 
-    body .container .pat-navigationmarker#subsite-navigation>ul:first-child>li.nav-item {
-        padding: 5px 10px;
-        border-radius: 50px;
-        border: solid 1px #dcdcdc;
+  body
+    .container
+    .pat-navigationmarker#subsite-navigation
+    > ul:first-child
+    > li.nav-item {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: solid 1px #dcdcdc;
 
-        &>a {
-            padding: initial;
-        }
+    & > a {
+      padding: initial;
     }
+  }
 
-    body .container #subsite-navigation>ul {
-        padding-bottom: 10px;
-    }
+  body .container #subsite-navigation > ul {
+    padding-bottom: 10px;
+  }
 }
 
 body .container .sectiontext .section-text .body-section.figure-left figure {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 //SECTION TEXT
 body .sectiontext .section-text .body-section a {
-    text-decoration: underline;
-    font-weight: 300;
+  text-decoration: underline;
+  font-weight: 300;
 }
 
 //LOGO
 a#portal-logo {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 //IMAGES BC SECTION FICHIERS
-.subsection-services-autres-services-communication .sectionfiles .image.d-block.w-100 {
-    padding-bottom: 140%;
-    margin-bottom: 20px;
+.subsection-services-autres-services-communication
+  .sectionfiles
+  .image.d-block.w-100 {
+  padding-bottom: 140%;
+  margin-bottom: 20px;
 }

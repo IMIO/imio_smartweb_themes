@@ -1,169 +1,176 @@
-#portal-column-content{
-    .sectioncontact{
-        position: relative;
+#portal-column-content {
+  .sectioncontact {
+    position: relative;
+  }
+
+  .section-contact {
+    ul {
+      li {
+        list-style: none;
+      }
     }
 
-    .section-contact{
-        ul{
-            li{
-                list-style: none;
-            }
+    .contact-type-organization {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 2rem;
+      align-content: flex-start;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+        gap: 10px 30px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 1rem;
+        z-index: -1;
+        background: #f3f3f3;
+      }
+
+      .contact_titles {
+        // flex: 1 0 100%;
+        width: 100%;
+      }
+
+      .contact_informations,
+      .address,
+      .schedule {
+        h2,
+        h3 {
+          color: $primary;
+          font-size: 1.25rem;
+          font-weight: 500;
         }
+      }
 
-        .contact-type-organization{
-            display: flex;
-            flex-flow: column wrap;
-            padding: 2rem;
-            align-content: flex-start;
-
-            @include media-breakpoint-up(md){
-                flex-direction: row;
-                gap: 10px 30px;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 1rem;
-                z-index: -1;
-                background: #f3f3f3;
-            }
-
-            .contact_titles{
-
-                // flex: 1 0 100%;
-                width:100%;
-            }
-
-            .contact_informations,.address,.schedule{
-                h2,h3{
-                    color: $primary;
-                    font-size: 1.25rem;
-                    font-weight: 500;
-                }
-            }
-
-            .address{
-                .contact_address span {
-                    display: block;
-                }
-            }
-
-            .schedule{
-                .table_schedule {
-                    &--active {
-                        display: block;
-                    }
-
-                    td{
-                        vertical-align: top;
-                    }
-                }
-            }
+      .address {
+        .contact_address span {
+          display: block;
         }
+      }
 
-        .contact-type-mission{
-            padding: 2rem 0;
+      .schedule {
+        .table_schedule {
+          &--active {
+            display: block;
+          }
 
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 1rem;
-                z-index: -1;
-                border: solid 1px #f3f3f3;
-            }
-
-            .contact_titles{
-
-                // flex: 1 0 100%;
-                width:100%;
-            }
-
-            .contact_informations,.address,.schedule{
-                h2,h3{
-                    color: $primary;
-                    font-size: 1.25rem;
-                    font-weight: 500;
-                }
-            }
-
-            .address{
-                .contact_address span {
-                    display: block;
-                }
-            }
-
-            .schedule{
-                .table_schedule {
-                    &--active {
-                        display: block;
-                    }
-
-                    td{
-                        vertical-align: top;
-                    }
-                }
-            }
+          td {
+            vertical-align: top;
+          }
         }
+      }
+    }
 
-        .contact-type-position{
-            padding: 2rem 0;
+    .contact-type-mission {
+      padding: 2rem 0;
 
-            .contact_titles{
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 1rem;
+        z-index: -1;
+        border: solid 1px #f3f3f3;
+      }
 
-                // flex: 1 0 100%;
-                width:100%;
-            }
+      .contact_titles {
+        // flex: 1 0 100%;
+        width: 100%;
+      }
 
-            .contact_informations,.address,.schedule{
-                h2,h3{
-                    color: $primary;
-                    font-size: 1.25rem;
-                    font-weight: 500;
-                }
-            }
-
-            .address{
-                .contact_address span {
-                    display: block;
-                }
-            }
-
-            .contact_logo,.contact_leadimage {
-                border-radius: 8px;
-                width: 100%;
-                margin-bottom: 1em;
-
-                &.contact_placeholder {
-                    display: none;
-                }
-            }
-
-            .schedule{
-                .table_schedule {
-                    &--active {
-                        display: block;
-                    }
-
-                    td{
-                        vertical-align: top;
-                    }
-                }
-            }
+      .contact_informations,
+      .address,
+      .schedule {
+        h2,
+        h3 {
+          color: $primary;
+          font-size: 1.25rem;
+          font-weight: 500;
         }
-    } 
+      }
+
+      .address {
+        .contact_address span {
+          display: block;
+        }
+      }
+
+      .schedule {
+        .table_schedule {
+          &--active {
+            display: block;
+          }
+
+          td {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    .contact-type-position {
+      padding: 2rem 0;
+
+      .contact_titles {
+        // flex: 1 0 100%;
+        width: 100%;
+      }
+
+      .contact_informations,
+      .address,
+      .schedule {
+        h2,
+        h3 {
+          color: $primary;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+      }
+
+      .address {
+        .contact_address span {
+          display: block;
+        }
+      }
+
+      .contact_logo,
+      .contact_leadimage {
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 1em;
+
+        &.contact_placeholder {
+          display: none;
+        }
+      }
+
+      .schedule {
+        .table_schedule {
+          &--active {
+            display: block;
+          }
+
+          td {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
 }
-    
 
-.img-portrait{
-    .contact_leadimage {
-        padding-top: 110%;
-        background-position: top center;
-    }
+.img-portrait {
+  .contact_leadimage {
+    padding-top: 110%;
+    background-position: top center;
+  }
 }
 
-.contact_logo,.contact_leadimage {
-    &.contact_placeholder {
-        display: none;
-    }
+.contact_logo,
+.contact_leadimage {
+  &.contact_placeholder {
+    display: none;
+  }
 }

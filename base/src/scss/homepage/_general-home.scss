@@ -1,55 +1,55 @@
 @mixin see-all-style {
-    margin: $see-all-margin;
-    display: flex;
+  margin: $see-all-margin;
+  display: flex;
 
-    a {
-        position: relative;
-        display: block;
-        width: max-content;
-        padding: $see-all-padding;
-        background: $see-all-bg;
-        color: $see-all-color;
-        border-radius: $see-all-radius;
-        border: $see-all-border;
-        text-decoration: none;
-        text-transform: $see-all-text-transform;
-        font-size: $see-all-font-size;
-        transition: $see-all-transition;
-        font-family: $see-all-font-family;
-        font-weight: $see-all-font-weight;
+  a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: $see-all-padding;
+    background: $see-all-bg;
+    color: $see-all-color;
+    border-radius: $see-all-radius;
+    border: $see-all-border;
+    text-decoration: none;
+    text-transform: $see-all-text-transform;
+    font-size: $see-all-font-size;
+    transition: $see-all-transition;
+    font-family: $see-all-font-family;
+    font-weight: $see-all-font-weight;
 
-        &:hover,
-        &:focus {
-            background: $see-all-hover-bg;
-            color: $see-all-hover-color;
-            border-radius: $see-all-hover-radius;
-            border: $see-all-hover-border;
+    &:hover,
+    &:focus {
+      background: $see-all-hover-bg;
+      color: $see-all-hover-color;
+      border-radius: $see-all-hover-radius;
+      border: $see-all-hover-border;
 
-            &::after{
-                width: $see-all-hover-underline-width;
-            }
-        }
-
-        &::after{
-            content: "";
-            transition: all .2s ease;
-            position: absolute;
-            height: 2px;
-            background-color: $see-all-underline-color;
-            left: 0;
-            bottom: -5px;
-            width: $see-all-underline-width;
-        }
+      &::after {
+        width: $see-all-hover-underline-width;
+      }
     }
+
+    &::after {
+      content: "";
+      transition: all 0.2s ease;
+      position: absolute;
+      height: 2px;
+      background-color: $see-all-underline-color;
+      left: 0;
+      bottom: -5px;
+      width: $see-all-underline-width;
+    }
+  }
 }
 
 #content-core,
 #main-container {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.portaltype-imio-smartweb-portalpage{
-    #content > header{
-        display: none;
-    }
+.portaltype-imio-smartweb-portalpage {
+  #content > header {
+    display: none;
+  }
 }

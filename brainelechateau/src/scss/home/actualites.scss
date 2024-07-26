@@ -1,32 +1,31 @@
-.sectionnews{
-    position: relative;
+.sectionnews {
+  position: relative;
 
-    &::before{
-        content: "";
-        position: absolute;
-        width: 100vw;
-        left: 50%;
-        transform: translateX(-50vw);
-        background: #EDEAE5;
-        z-index: -1;
-        bottom: 0;
-        top: 40%;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50vw);
+    background: #edeae5;
+    z-index: -1;
+    bottom: 0;
+    top: 40%;
+  }
 
-    &::after{
-        content: "";
-        width:103px;
-        height: 206px;
-        background: url("../../assets/svg/moulin-green.svg");
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 40%;
-        transform: translateY(-50%);
+  &::after {
+    content: "";
+    width: 103px;
+    height: 206px;
+    background: url("../../assets/svg/moulin-green.svg");
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+  }
 
-    }
-
-    .swiper-pagination{
-        display: none;
-    }
+  .swiper-pagination {
+    display: none;
+  }
 }

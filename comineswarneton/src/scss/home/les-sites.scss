@@ -1,80 +1,77 @@
 .les-sites {
-    padding: 5rem 0;
-    background: transparent!important;
+  padding: 5rem 0;
+  background: transparent !important;
 
-    .section-title{
-        margin-bottom: 4rem;
-        text-align: center;
-    }
+  .section-title {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
 
-    .row {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
-        grid-auto-rows: 1fr;
-        align-items: center;
-        justify-content: center;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 155px));
+    grid-auto-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 
-        li {
-            position: relative;
-            border: solid 0 #D2D2D2;
-            border-right: 1px solid #d2d2d2;
-            border-radius: inherit;
-            text-align: center;
-            width: auto;
-            height: 100%;
-            align-self: start;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+    li {
+      position: relative;
+      border: solid 0 #d2d2d2;
+      border-right: 1px solid #d2d2d2;
+      border-radius: inherit;
+      text-align: center;
+      width: auto;
+      height: 100%;
+      align-self: start;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
 
-            &:last-child{
-                border-right: 0;
-            }
+      &:last-child {
+        border-right: 0;
+      }
 
-            .table_display{
-                width: 100%;
-                height: 100%;  
-            }
+      .table_display {
+        width: 100%;
+        height: 100%;
+      }
 
-            a{
-                text-decoration: none;
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                gap: 15px;
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 15px;
 
-                svg{
-                    fill: $secondary!important;
-                    height: 2.5rem;
-                }
-            }
-
-            &:hover,
-            &:focus {
-                background: $primary;
-
-                a{
-                    color: #fff;
-
-                    span{
-                        color: #fff!important;
-                    }
-
-                    svg{
-                        fill: #fff!important;
-                    }
-                
-                }
-            }
-
-            span {
-                font-size: 18px !important;
-                color: #000!important;
-                font-weight: 700 !important;
-                font-family: $josefin;
-            
-            }   
+        svg {
+          fill: $secondary !important;
+          height: 2.5rem;
         }
-    }
+      }
 
+      &:hover,
+      &:focus {
+        background: $primary;
+
+        a {
+          color: #fff;
+
+          span {
+            color: #fff !important;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+        }
+      }
+
+      span {
+        font-size: 18px !important;
+        color: #000 !important;
+        font-weight: 700 !important;
+        font-family: $josefin;
+      }
+    }
+  }
 }

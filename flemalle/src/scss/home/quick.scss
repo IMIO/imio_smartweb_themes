@@ -5,19 +5,21 @@ div#body-section-acces-directs:first-child ul {
     align-items: center;
     background: #fff;
     border-radius: 15px;
-    box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
+    box-shadow:
+      rgb(0 0 0 / 16%) 0 10px 36px 0,
+      rgb(0 0 0 / 6%) 0 0 0 1px;
     display: flex;
     flex-wrap: wrap;
     height: 200px;
     justify-content: center;
     position: relative;
-    transition: box-shadow .2s linear;
+    transition: box-shadow 0.2s linear;
     width: 150px;
-    }
+  }
 }
 
-.sectionlinks.quick-access:first-child  {
-  background: transparent!important;
+.sectionlinks.quick-access:first-child {
+  background: transparent !important;
   left: 0;
   position: absolute;
   transform: translateY(-64%);
@@ -33,23 +35,38 @@ div#body-section-acces-directs:first-child ul {
 }
 
 @include media-breakpoint-down(lg) {
-.sectionlinks.quick-access:first-child {
-  position: initial;
-  transform: initial;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.smartweb_herobanner .bannerSwiper {
-  height: 340px;
-}
-
-body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
-  transform: translateY(-120%);
+  .sectionlinks.quick-access:first-child {
+    position: initial;
+    transform: initial;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title,
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-description p {
+  .smartweb_herobanner .bannerSwiper {
+    height: 340px;
+  }
+
+  body
+    .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper {
+    transform: translateY(-120%);
+  }
+
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-title,
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-description
+    p {
     font-size: 3rem;
   }
 
@@ -58,7 +75,7 @@ body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wra
   }
 
   body .smartweb_herobanner::before {
-  height: 100px !important;
+    height: 100px !important;
   }
 }
 

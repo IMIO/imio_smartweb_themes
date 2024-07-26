@@ -1,34 +1,31 @@
-
 .galerie-accueil {
+  position: relative;
+  margin: 100px 0;
+
+  .section-title {
+    font-weight: 400;
+    font-size: 30px;
     position: relative;
-    margin: 100px 0;
+    color: $primary;
+    margin: 0 0 30px !important;
+    width: auto;
+    padding-left: 40px;
+    background: url("../../assets/svg/cible_black.svg") left center no-repeat;
 
-    .section-title{
-        font-weight: 400;
-        font-size: 30px;
-        position: relative;
-        color:$primary;
-        margin: 0 0 30px !important;
-        width:auto;
-        padding-left:40px;
-        background: url("../../assets/svg/cible_black.svg") left center no-repeat;
-
-        @media screen and (max-width: 992px) {
-            transform: rotate(0deg);
-            position: initial;
-            padding: 0;
-            writing-mode:initial;
-            margin: 0 0 20px !important;
-            height: 65px;
-            background: none;
-            text-align: center;
-            font-size: 50px;
-            }
-
-        @media screen and (max-width: 600px) {
-            height: auto;
-            }
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 0 20px !important;
+      height: 65px;
+      background: none;
+      text-align: center;
+      font-size: 50px;
     }
 
+    @media screen and (max-width: 600px) {
+      height: auto;
+    }
+  }
 }
-

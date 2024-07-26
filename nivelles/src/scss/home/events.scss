@@ -1,95 +1,91 @@
-.sectionevents{
-    background-image: url("../../assets/svg/party.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.sectionevents {
+  background-image: url("../../assets/svg/party.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    .section-title{
-        position: relative;
-    }
+  .section-title {
+    position: relative;
+  }
 
-    .section-container {
-        position: relative;
-    }
+  .section-container {
+    position: relative;
+  }
 
-    .swiper-wrapper{
-        .swiper-slide {
-            & > a{
-                display: block;
-                align-items: center;
-                padding-bottom: 1rem;
+  .swiper-wrapper {
+    .swiper-slide {
+      & > a {
+        display: block;
+        align-items: center;
+        padding-bottom: 1rem;
 
-                .swiper-image{
-                    padding-bottom: 60%;
-                    transition: all .25s ease;
-                    margin-bottom: 0.5rem;
-                }
-
-                .swiper_category{
-                    margin-left: auto;
-                    position: absolute;
-                    top: 10px;
-                    left: 10px;
-                }
-
-                .swiper_date{
-                    text-transform: uppercase;
-                    font-family: $font-family-base; 
-                    grid-row-start: 2;
-                }
-
-                .swiper_title{
-                    margin-top: 10px;
-
-                    h3{
-                        font-family: $font-family-base;
-                    }
-                }
-
-                .swiper_description{
-                    p{
-                        margin: 0;
-                    }
-                }
-
-                &:hover{
-                    background: $primary;
-
-                    .swiper-image{
-                        mask-size: 99%;
-                    }
-
-                    .swiper_date{
-                        color: #fff;
-
-                        span {
-                            color: #fff;
-                        }
-                    }
-
-                    .swiper_title{
-                        h3{
-                            color: #fff;
-        
-                        }
-                    }
-
-                    .swiper_description{
-                        p{
-                            color: #fff;
-                        }
-                    }
-                }
-            }
+        .swiper-image {
+          padding-bottom: 60%;
+          transition: all 0.25s ease;
+          margin-bottom: 0.5rem;
         }
+
+        .swiper_category {
+          margin-left: auto;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
+
+        .swiper_date {
+          text-transform: uppercase;
+          font-family: $font-family-base;
+          grid-row-start: 2;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+
+          h3 {
+            font-family: $font-family-base;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          background: $primary;
+
+          .swiper-image {
+            mask-size: 99%;
+          }
+
+          .swiper_date {
+            color: #fff;
+
+            span {
+              color: #fff;
+            }
+          }
+
+          .swiper_title {
+            h3 {
+              color: #fff;
+            }
+          }
+
+          .swiper_description {
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
-
-
-
-.sectionevents{
-    &::before{
-        content: "";
-        background: #009EB0;
-    }
+.sectionevents {
+  &::before {
+    content: "";
+    background: #009eb0;
+  }
 }

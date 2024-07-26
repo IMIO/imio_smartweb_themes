@@ -1,38 +1,39 @@
-
 // List Block
 h2.card-title {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 //RGPD
 #gdpr-consent-banner .gdpr-actions input[name="consent"] {
-    background: $primary;
+  background: $primary;
 }
 
 //TITLE SECTION HOME PAGE
 
-@include media-breakpoint-down(md) { 
-    .sectionnews h2.section-title, .sectionevents h2.section-title, .section-home-page .row h2 {
-        font-size: 3rem;
-    }
- }
+@include media-breakpoint-down(md) {
+  .sectionnews h2.section-title,
+  .sectionevents h2.section-title,
+  .section-home-page .row h2 {
+    font-size: 3rem;
+  }
+}
 
 //BANNER
 
-@include media-breakpoint-down(md) { 
-    .smartweb_herobanner .bannerSwiper {
-        height: 150px;
-    }
+@include media-breakpoint-down(md) {
+  .smartweb_herobanner .bannerSwiper {
+    height: 150px;
+  }
 
-    #portal-header #portal-header-top #portal-globalnav-wrapper {
-        margin: 0;
-    }
+  #portal-header #portal-header-top #portal-globalnav-wrapper {
+    margin: 0;
+  }
 
-    #container-section-quick-access .row {
-        margin-bottom: 0;
-        display: grid !important;
-        gap: 20px;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr;
-    }
+  #container-section-quick-access .row {
+    margin-bottom: 0;
+    display: grid !important;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
 }

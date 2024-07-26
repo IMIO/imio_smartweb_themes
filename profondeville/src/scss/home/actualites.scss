@@ -1,172 +1,173 @@
 .sectionnews a {
-    text-decoration: none;
+  text-decoration: none;
 
-    .image.w-100 {
+  .image.w-100 {
     padding-bottom: 60%;
     border-radius: 5px 5px 0 0;
-    }
+  }
 
-    .table_title {
-        font-size: 1.5rem;
-    }
+  .table_title {
+    font-size: 1.5rem;
+  }
 
-    .see_all a {
+  .see_all a {
     border: 1px solid $color-red;
-    }
+  }
 }
 
 .sectionnews ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .sectionnews .body-section ul li {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .sectionnews {
-    .tabble_date {
-        color: $primary;
-        display: inline-flex;
-
-        .start_date {
-            padding-right: 0.3rem;
-        }
-    }
-
-    .table_title {
-        color: #000;
-        font-weight: 600;
-    }
-
-    .table_category {
-        padding: 1rem 0 0;
-        color: #000;
-    }
-}
-
-#container-section-actualites div span, #container-section-actualites div p {
+  .tabble_date {
     color: $primary;
+    display: inline-flex;
+
+    .start_date {
+      padding-right: 0.3rem;
+    }
   }
 
+  .table_title {
+    color: #000;
+    font-weight: 600;
+  }
+
+  .table_category {
+    padding: 1rem 0 0;
+    color: #000;
+  }
+}
+
+#container-section-actualites div span,
+#container-section-actualites div p {
+  color: $primary;
+}
+
 .sectionnews .body-section {
-    .table_display {
-        background-color: #fff;
-        height: 470px;
-        position: relative;
-        border: 1px solid #E3E3E3;
-        max-width: 416px;
-    }
+  .table_display {
+    background-color: #fff;
+    height: 470px;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    max-width: 416px;
+  }
 }
 
 .sectionnews .table_image div.image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .sectionnews .table_image div.image::before {
-    content: "";
-    background: transparent;
-    transition: all .3s ease;
-    position: absolute;
-    inset: 0;
-    border-radius: 5px;
+  content: "";
+  background: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
 }
 
 .sectionnews .table_image:hover div.image::before {
-    background: $color-red;
-    opacity: 70%;
+  background: $color-red;
+  opacity: 70%;
 }
 
 .sectionnews .end_date {
-    margin-left: 0.25rem;
-  }
+  margin-left: 0.25rem;
+}
 
 .sectionnews .table_date {
-    display: flex;
+  display: flex;
 }
 
 .sortable-section.sectionnews {
-    position: relative;
+  position: relative;
 }
 
 body.section-home-page .sortable-section.sectionnews::after {
-    content: "";
-    background: #f8f8f8;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+  content: "";
+  background: #f8f8f8;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 .sectionnews .body-section {
-    .table_date {
-        padding: 0.5rem 2rem;
-        font-weight: 300;
-        font-style: italic;
-    }
+  .table_date {
+    padding: 0.5rem 2rem;
+    font-weight: 300;
+    font-style: italic;
+  }
 
-    .table_title {
-      padding: 0.5rem 1rem;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 130%;
-    }
+  .table_title {
+    padding: 0.5rem 1rem;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+  }
 }
 
 .sectionnews .table_date span {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .sectionnews .table_image div.image::after {
-    transition: all .3s ease;
-    content: "";
-    inset: 0;
-    position: absolute;
-    z-index: 1;
-    background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
-    opacity: 0%;
-    transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
+  opacity: 0%;
+  transform: rotate(45deg);
 }
 
 .sectionnews .table_image:hover div.image::after {
-    opacity: 100%;
-    transform: rotate(90deg);
+  opacity: 100%;
+  transform: rotate(90deg);
 }
 
 .sectionnews .see_all a {
-    border: 1px solid $color-red;
+  border: 1px solid $color-red;
 
-    &::before {
+  &::before {
     content: ">";
     position: absolute;
     right: 10px;
     color: $color-pink;
-    transition: all .3s ease;
-    }
+    transition: all 0.3s ease;
+  }
 }
 
 .sectionnews .see_all a:hover::before {
-    right: 5px;
-    color: #000;
+  right: 5px;
+  color: #000;
 }
 
 .sectionnews h2.section-title::first-letter {
-    color: $color-red;
+  color: $color-red;
 }
 
 .sectionnews .body-section .table_title {
-    font-size: 22px;
-    padding: 0 2rem;
-    overflow: hidden;
+  font-size: 22px;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
 .sectionnews .table_category {
-    color: #000;
-    padding: 0.5rem 2rem 0;
-    font-weight: 600;
+  color: #000;
+  padding: 0.5rem 2rem 0;
+  font-weight: 600;
 }
 
 .sectionnews a {
-    .table_title::before {
+  .table_title::before {
     content: ">";
     bottom: 25px;
     right: 25px;
@@ -180,32 +181,32 @@ body.section-home-page .sortable-section.sectionnews::after {
     align-items: center;
     line-height: 38px;
     font-weight: 400;
+  }
+
+  .table_title::after {
+    background: transparent;
+    content: "";
+    bottom: 25px;
+    right: 25px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .table_title::before {
+      color: #fff;
     }
 
     .table_title::after {
-        background: transparent;
-        content: "";
-        bottom: 25px;
-        right: 25px;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        z-index: 0;
-        transition: all .3s ease;
+      background: $color-red;
     }
-
-    &:hover {
-        .table_title::before {
-            color: #fff;
-            }
-
-            .table_title::after {
-                background: $color-red;
-            }
-    }
+  }
 }
 
 .sortable-section.sectionnews {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }

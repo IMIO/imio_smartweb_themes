@@ -1,149 +1,151 @@
-.home-dossiers{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    position: relative;
+.home-dossiers {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  border-radius: 20px;
+
+  &::after {
+    display: none !important;
+  }
+
+  &::before {
+    background: $primary-svg;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
     border-radius: 20px;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 991px) {
+    background: none !important;
 
     &::after {
-        display: none!important;
+      display: none !important;
     }
 
     &::before {
-        background:$primary-svg;
-        bottom: 0;
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 90%;
-        border-radius: 20px;
-        z-index: -1;
-     }
+      width: 100%;
+      border-radius: 0;
+    }
 
-     @media screen and (max-width: 991px) {
-        background: none!important;
+    .swiper {
+      padding-bottom: 60px;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    left: 110px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .section-title {
+      font-size: 34px !important;
+      position: relative;
+      left: 0;
+    }
+  }
+
+  .swiper-slide {
+    & > a {
+      @include media-breakpoint-up(lg) {
+        display: grid;
+        grid-template-columns: 40% 50% !important;
+        grid-template-rows: auto 1fr;
+        justify-content: center;
+      }
+    }
+
+    .swiper_title {
+      @include media-breakpoint-up(lg) {
+        grid-column: 1 !important;
+      }
+    }
+
+    .swiper_description {
+      @include media-breakpoint-up(lg) {
+        grid-column: 1 !important;
+      }
+    }
+
+    .swiper-image {
+      border-radius: 20px;
+    }
+
+    .swiper_title {
+      margin-top: 0;
+
+      h3 {
+        font-size: 32px;
+        padding: 1rem 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .swiper_description {
+      p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 76%);
+        font-family: $font-family-title;
 
         &::after {
-            display: none!important;
+          content: "Lire la suite";
+          font-weight: 500;
+          display: block;
+          margin-top: 1rem;
+          color: #fff;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23fdbd39' data-name='Ellipse 74'/%3E%3Cg fill='none' stroke='%23007a99' stroke-linecap='round' stroke-width='1.5' data-name='Group 747'%3E%3Cpath d='M10.563 9.127 13.436 12' data-name='Line 8'/%3E%3Cpath d='M10.563 14.873 13.436 12' data-name='Line 9'/%3E%3C/g%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: bottom right;
+          background-size: contain;
+          width: max-content;
+          padding-right: 2rem;
+          line-height: 1.4;
         }
-
-        &::before {
-            width: 100%;
-            border-radius: 0;
-         }
-
-        .swiper {
-            padding-bottom: 60px;
-        }
-        }
-
-    .swiper-wrapper{
-        padding-bottom: 0;
+      }
     }
+  }
 
-    .section-title{
-        margin-bottom: 2rem;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 16px;
-        position: absolute;
-        left: 110px;
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto !important;
+    bottom: 0;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+  }
+
+  .swiper-button-prev {
+    left: 100px;
+  }
+
+  .swiper-button-next {
+    left: 155px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block !important;
     }
-
-    @media screen and (max-width: 900px) {
-        .section-title{
-            font-size: 34px!important;
-            position: relative;
-            left: 0;
-        }
-    }
-
-    .swiper-slide{
-        &>a {
-            @include media-breakpoint-up(lg) {
-            display: grid;
-            grid-template-columns: 40% 50%!important;
-            grid-template-rows: auto 1fr;
-            justify-content: center;
-            }
-        }
-
-        .swiper_title {
-            @include media-breakpoint-up(lg) {
-            grid-column: 1!important;
-            }
-        }
-
-        .swiper_description {
-            @include media-breakpoint-up(lg) {
-            grid-column: 1!important;
-            }
-        }
-
-        .swiper-image{
-            border-radius: 20px;
-        }
-
-        .swiper_title{
-            margin-top: 0;
-
-            h3 {
-                font-size: 32px;
-                padding: 1rem 0;
-                margin-bottom: 0;
-            }
-        }
-
-        .swiper_description {
-            p {
-                font-size: 16px;
-                color: rgba(255, 255, 255,76%);
-                font-family: $font-family-title;
-
-                &::after {
-                    content: "Lire la suite";
-                    font-weight: 500;
-                    display: block;
-                    margin-top: 1rem;
-                    color: #fff;
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23fdbd39' data-name='Ellipse 74'/%3E%3Cg fill='none' stroke='%23007a99' stroke-linecap='round' stroke-width='1.5' data-name='Group 747'%3E%3Cpath d='M10.563 9.127 13.436 12' data-name='Line 8'/%3E%3Cpath d='M10.563 14.873 13.436 12' data-name='Line 9'/%3E%3C/g%3E%3C/svg%3E");
-                    background-repeat: no-repeat;
-                    background-position: bottom right;
-                    background-size: contain;
-                    width: max-content;
-                    padding-right: 2rem;
-                    line-height: 1.4;
-                }
-            }
-        }
-    }
-
-    .swiper-pagination {
-        display: none;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        top: auto !important;
-        bottom:0;
-        background-color: #fff;
-        width: 45px;
-        height: 45px;
-        border-radius: 50px;
-    }
-
-    .swiper-button-prev{
-        left: 100px;
-    }
-
-    .swiper-button-next{
-        left: 155px;
-    }
-
-    @media screen and (max-width: 767px) {
-        .swiper-button-next, .swiper-button-prev {
-            display: block!important;
-        }
-    }
+  }
 }

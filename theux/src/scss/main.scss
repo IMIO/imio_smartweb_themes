@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -30,39 +30,41 @@ $enable-roboto-webfont: false;
 @import "./home/partenaires";
 
 .section-home-page #messagesviewlet {
-    position: absolute;
-    top: 110px;
+  position: absolute;
+  top: 110px;
 }
 
 #plone-lock-status {
-    .portalMessage.info.portalMessage.info {
-        background: #cff4fc !important;
-    }
+  .portalMessage.info.portalMessage.info {
+    background: #cff4fc !important;
+  }
 }
 
-#messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {
-    background-color: #000 !important;
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: #000 !important;
 }
 
-#messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
-    background-color: #000 !important;
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: #000 !important;
 }
 
 .sortable-section.sectionfiles {
-    padding: 1rem;
-    margin: 1rem 0;
+  padding: 1rem;
+  margin: 1rem 0;
 
-    .section-container {
-        .section-title {
-            a { 
-                color :#fff !important;
-            }
-        }
+  .section-container {
+    .section-title {
+      a {
+        color: #fff !important;
+      }
     }
   }
+}
 
-  .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder.jpg");
-	background-size: cover;
-	background-position: center;
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
 }

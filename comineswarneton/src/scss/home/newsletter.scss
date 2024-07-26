@@ -1,123 +1,122 @@
-.home-annuaire{
-    background: transparent;
+.home-annuaire {
+  background: transparent;
 
-    #body-section-annuaires{
-        .row{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
+  #body-section-annuaires {
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
 
-            @include media-breakpoint-up(lg){
-                grid-template-columns: 30% 60%;
-                gap:0;
-                align-items: end
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: 30% 60%;
+        gap: 0;
+        align-items: end;
+      }
+
+      li {
+        padding: 0;
+        width: 100%;
+
+        .table_display {
+          a.table_image {
+            text-decoration: none;
+            position: relative;
+            display: block;
+
+            &::after {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background-color: hsl(200deg, 80%, 18%, 70%);
+              opacity: 0%;
+              transition: all 0.3s ease;
             }
 
-            li{
-                padding: 0;
-                width: 100%;
-
-                .table_display{
-                  a.table_image{
-                    text-decoration: none;
-                    position: relative;
-                    display: block;
-
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        background-color: hsl(200deg, 80%, 18%,70%);
-                        opacity: 0%;
-                        transition: all .3s ease;
-                    }
-
-                    &::before{
-                        content: url("../../assets/svg/plus.svg");
-                        display: block;
-                        line-height: 0;
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%,-50%);
-                        transition: all .3s ease;
-                        opacity: 0%;
-                        z-index: 1;
-                    }
-
-                    &:hover{
-                        &::after{
-                            opacity: 100%;
-                        }
-
-                        &::before{
-                            opacity: 100%;
-                        }
-                    }
-
-                    .image{
-                        padding-bottom: 100%;
-
-                        @include media-breakpoint-up(lg){
-                            padding-bottom: 56%;
-                        }
-
-                    }
-
-                    .table_title{
-                        text-align: center;
-                        background: $primary;
-                        color: #fff;
-                        font-family: $josefin;
-                        z-index: 1;
-
-                        @include media-breakpoint-up(lg){
-                            position: absolute;
-                            font-size: 20px;
-                            padding: 0.4rem 1.7rem;
-                            left: 70%;
-                            top: 94%;
-                        }
-                    }
-                  }  
-                }
-
-                &:first-child{
-                    .image{
-                        @include media-breakpoint-up(lg){
-                            padding-bottom: 84%!important;
-                        }
-                    }
-
-                    .table_title{
-                        @include media-breakpoint-up(lg){
-                            top: 0!important;
-                            left: 50%!important;
-                            transform: translate(-50%,-50%)!important;
-                        }
-                    }
-                }
-
-                &:last-child{
-                    @include media-breakpoint-up(lg){
-                        margin-left: 12rem;
-                    }
-
-                    .image{
-                        @include media-breakpoint-up(lg){
-                            padding-bottom: 84%!important;
-                        }
-                    }
-
-                    .table_title{
-                        @include media-breakpoint-up(lg){
-                            top: 50%!important;
-                            left: 0!important;
-                            transform: translate(-50%,-50%)!important;
-                        }
-                    }
-                }
+            &::before {
+              content: url("../../assets/svg/plus.svg");
+              display: block;
+              line-height: 0;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              transition: all 0.3s ease;
+              opacity: 0%;
+              z-index: 1;
             }
+
+            &:hover {
+              &::after {
+                opacity: 100%;
+              }
+
+              &::before {
+                opacity: 100%;
+              }
+            }
+
+            .image {
+              padding-bottom: 100%;
+
+              @include media-breakpoint-up(lg) {
+                padding-bottom: 56%;
+              }
+            }
+
+            .table_title {
+              text-align: center;
+              background: $primary;
+              color: #fff;
+              font-family: $josefin;
+              z-index: 1;
+
+              @include media-breakpoint-up(lg) {
+                position: absolute;
+                font-size: 20px;
+                padding: 0.4rem 1.7rem;
+                left: 70%;
+                top: 94%;
+              }
+            }
+          }
         }
+
+        &:first-child {
+          .image {
+            @include media-breakpoint-up(lg) {
+              padding-bottom: 84% !important;
+            }
+          }
+
+          .table_title {
+            @include media-breakpoint-up(lg) {
+              top: 0 !important;
+              left: 50% !important;
+              transform: translate(-50%, -50%) !important;
+            }
+          }
+        }
+
+        &:last-child {
+          @include media-breakpoint-up(lg) {
+            margin-left: 12rem;
+          }
+
+          .image {
+            @include media-breakpoint-up(lg) {
+              padding-bottom: 84% !important;
+            }
+          }
+
+          .table_title {
+            @include media-breakpoint-up(lg) {
+              top: 50% !important;
+              left: 0 !important;
+              transform: translate(-50%, -50%) !important;
+            }
+          }
+        }
+      }
     }
+  }
 }

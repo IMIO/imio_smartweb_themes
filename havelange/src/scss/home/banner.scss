@@ -1,8 +1,13 @@
-.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content .swiper-banner-title {
-    font-size: 2.25rem;
-    font-weight: bold;
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-title {
+  font-size: 2.25rem;
+  font-weight: bold;
 
-    @include media-breakpoint-down(lg) {
-        font-size: 2rem;
-        }
+  @include media-breakpoint-down(lg) {
+    font-size: 2rem;
+  }
 }

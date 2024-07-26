@@ -1,38 +1,42 @@
 .swiper.bannerSwiper {
-    overflow: initial;
+  overflow: initial;
 
-    .swiper-banner-content-wrapper {
-        position: relative;
-        left: 0;
+  .swiper-banner-content-wrapper {
+    position: relative;
+    left: 0;
 
-        .swiper-banner-content {
-            box-shadow: rgba(0, 0, 0, 10%) 0 10px 50px;
-            width: 550px;
+    .swiper-banner-content {
+      box-shadow: rgba(0, 0, 0, 10%) 0 10px 50px;
+      width: 550px;
 
-            .swiper-banner-title {
-                font-family: $font-family-title;
-                text-transform: uppercase;
-                font-size: 1.8rem;
-            }
+      .swiper-banner-title {
+        font-family: $font-family-title;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
 
-            .swiper-banner-description p {
-                font-size: 1.5rem;
-            }
-        }
+      .swiper-banner-description p {
+        font-size: 1.5rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .swiper.bannerSwiper {
-        .swiper-banner-content-wrapper {
-            .swiper-banner-content {
-             width: 100% !important;
-             padding: 2rem !important;
-            }
-        }
+  .swiper.bannerSwiper {
+    .swiper-banner-content-wrapper {
+      .swiper-banner-content {
+        width: 100% !important;
+        padding: 2rem !important;
+      }
     }
   }
+}
 
-  .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-	backdrop-filter: blur(3px);
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  backdrop-filter: blur(3px);
 }

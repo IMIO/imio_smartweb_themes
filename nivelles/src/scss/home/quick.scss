@@ -1,95 +1,95 @@
 .sectionlinks.quick-access {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 
+  @media screen and (min-width: 1000px) {
+    margin-top: -90px;
+  }
+
+  .section-container {
     @media screen and (min-width: 1000px) {
-        margin-top: -90px;
-    }
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    .section-container {
-        @media screen and (min-width: 1000px) {
-            & > div {
-                 display: flex;
-                 justify-content: space-between;
-                 align-items: center;
-
-                 .body-section {
-                     flex-basis: 55%;
-                 }
-             }
+        .body-section {
+          flex-basis: 55%;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    body #body-section-en-un-clic li {
-      width: auto !important;
+  body #body-section-en-un-clic li {
+    width: auto !important;
+  }
+}
+
+.quick-access {
+  svg {
+    max-height: 40px;
+  }
+
+  .body-section {
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          .image.d-block {
+            transform: translateY(-10px);
+            background: $primary !important;
+            border: solid 5px $primary-light;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+        }
+      }
     }
   }
 
-.quick-access{
-    svg{
-        max-height: 40px;
-    }
-    
-    .body-section{
-        li{
-            .table_image{
-                .image.d-block{
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                    position: relative;
-                    transition: all .3s ease;
-                }
+  .row {
+    @media screen and (max-width: 550px) {
+      grid-gap: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr !important;
 
-                &:hover{
-                    .image.d-block{
-                        transform: translateY(-10px);
-                        background: $primary!important; 
-                        border: solid 5px $primary-light;
-                    }
-
-                    svg{
-                        fill: #fff !important;
-                    }
-                }
-            }
-        }
+      li {
+        width: auto !important;
+      }
     }
 
-    .row{
-       @media screen and (max-width: 550px){
-            grid-gap: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr!important;
+    @include media-breakpoint-down(lg) {
+      grid-gap: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 181px));
 
-            li{
-                width: auto!important;
-            }
-        }
-
-        @include media-breakpoint-down(lg){
-            grid-gap: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(56px,181px));
-
-            li{
-                width: auto!important;
-            }
-        }
+      li {
+        width: auto !important;
+      }
     }
+  }
 }
 
 .sectionlinks.quick-access .body-section li a {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
 .sectionlinks.quick-access .body-section ul {
-	max-width: auto;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

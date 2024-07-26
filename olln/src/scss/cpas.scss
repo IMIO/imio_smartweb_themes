@@ -1,175 +1,169 @@
 .btn-custom {
-    .text  a{
-        background: #ffcf1b;
-        border: 0 solid #325aa6;
-        border-radius: 50px;
-        color: #325aa6;
-        display: block;
-        font-family: "Open Sans",sans-serif;
-        font-size: 14px;
-        font-weight: 700!important;
-        padding: 1em 2em;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all .2s ease;
-        width: max-content;
+  .text a {
+    background: #ffcf1b;
+    border: 0 solid #325aa6;
+    border-radius: 50px;
+    color: #325aa6;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700 !important;
+    padding: 1em 2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    width: max-content;
 
-        &:hover, &:focus {
-            background: #e4b816;
-            text-decoration: none!important;
-        }
+    &:hover,
+    &:focus {
+      background: #e4b816;
+      text-decoration: none !important;
     }
+  }
 }
-
 
 .footer-social-cpas {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 
-    .row {
-        justify-content: center;
+  .row {
+    justify-content: center;
+  }
+
+  &::before {
+    content: url("../../assets/logo-cpas.png");
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .table_image {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: $primary;
+      width: 28px;
+      height: auto;
     }
+  }
 
-    &::before {
-        content: url("../../assets/logo-cpas.png");
-        margin-bottom: 10px;
-        display: block;
-    }
+  .table_title {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+    clip-path: inset(50%) !important; /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
 
-    .section-title {
-        font-size: 30px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    .table_image {
-        width: 60px;
-        height: 60px;
-        background:#fff;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-            fill: $primary;
-            width:28px;
-            height: auto;
-        }
-    }
-
-    .table_title {
-        border: 0 !important;
-        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-            clip-path: inset(50%) !important;  /* 2 */
-        height: 1px !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        position: absolute !important;
-        width: 1px !important;
-        white-space: nowrap !important;  
-    }
-
-    li {
-        width: auto;
-    }
+  li {
+    width: auto;
+  }
 }
-
 
 #portal-footer-wrapper .sectiontext h2 {
-	margin-top: 0 !important;
-	margin-bottom: 7px;
-} 
+  margin-top: 0 !important;
+  margin-bottom: 7px;
+}
 
 .portaltype-imio-smartweb-portalpage.section-homepage.site-cpas {
-    .swiper_date {
-        padding-top: 10px;
-        font-weight: 500;
-    }
+  .swiper_date {
+    padding-top: 10px;
+    font-weight: 500;
+  }
 
-    #portal-footer-wrapper {
-        margin-top: 5rem;    
-    }
+  #portal-footer-wrapper {
+    margin-top: 5rem;
+  }
 
-    #portal-header {
-        margin-bottom: -5px;
-    }
+  #portal-header {
+    margin-bottom: -5px;
+  }
 
-    @media screen and (min-width: 992px) {
-        .a-la-une-txt-cpas {
-          padding-top: 5rem;
-        }
-      }
+  @media screen and (min-width: 992px) {
+    .a-la-une-txt-cpas {
+      padding-top: 5rem;
+    }
+  }
 }
-
-
 
 .footer-social-tour {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 
-    .row {
-        justify-content: center;
+  .row {
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .table_image {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: $primary;
+      width: 28px;
+      height: auto;
     }
+  }
 
-    .section-title {
-        font-size: 30px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
+  .table_title {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+    clip-path: inset(50%) !important; /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
 
-    .table_image {
-        width: 60px;
-        height: 60px;
-        background:#fff;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-            fill: $primary;
-            width:28px;
-            height: auto;
-        }
-    }
-
-    .table_title {
-        border: 0 !important;
-        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-            clip-path: inset(50%) !important;  /* 2 */
-        height: 1px !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        position: absolute !important;
-        width: 1px !important;
-        white-space: nowrap !important;  
-    }
-
-    li {
-        width: auto;
-    }
+  li {
+    width: auto;
+  }
 }
 
-
-
 #portal-breadcrumbs {
-    background-color: #fff!important;
-    font-size: 14px;
+  background-color: #fff !important;
+  font-size: 14px;
 }
 
 #header-actions {
-    .account {
-        font-weight: 500;
-        text-decoration: none;
-        border-bottom: solid 2px transparent !important;
+  .account {
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: solid 2px transparent !important;
 
-        &:hover {
-            border-bottom: solid 2px #fff !important;
-        }
+    &:hover {
+      border-bottom: solid 2px #fff !important;
     }
-
+  }
 }

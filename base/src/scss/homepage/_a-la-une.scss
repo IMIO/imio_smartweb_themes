@@ -17,7 +17,7 @@
     text-align: $a-la-une-title-align;
   }
 
-  .swiper{
+  .swiper {
     z-index: 0;
   }
 
@@ -26,7 +26,7 @@
       text-decoration: none;
     }
 
-    &>a {
+    & > a {
       @include media-breakpoint-up(lg) {
         display: grid;
         grid-template-columns: 60% 40%;

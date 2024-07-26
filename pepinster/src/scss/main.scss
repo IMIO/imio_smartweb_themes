@@ -12,8 +12,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -27,49 +27,55 @@ $enable-roboto-webfont: false;
 @import "./home/bulletin";
 @import "./home/cpas";
 
-body{
-    background: linear-gradient(180deg, rgba(255,255,255,60%) 0%, rgba(255,255,255,60%) 10%, rgba(209,220,231,60%) 100%);
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 60%) 0%,
+    rgba(255, 255, 255, 60%) 10%,
+    rgba(209, 220, 231, 60%) 100%
+  );
 }
 
 .sortable-section .sectionfiles {
-    .item_infos {
-        color: #fff;
-    }
+  .item_infos {
+    color: #fff;
+  }
 
-    a.table_image:hover {
-        color: #fff;
-    }
+  a.table_image:hover {
+    color: #fff;
+  }
 }
 
 .userrole-authenticated.plone-toolbar-left-expanded .smartweb_herobanner {
-    width: calc(100vw - 120px);
+  width: calc(100vw - 120px);
 }
 
 .userrole-authenticated.plone-toolbar-left-default .smartweb_herobanner {
-    width: calc(100vw - 60px);
+  width: calc(100vw - 60px);
 }
 
 /* Demande rcharlier par e-mail du 31 octobre 2022. description au dessus de la carte */
 #portal-column-content .section-contact .contact_map {
-	order: 1;
+  order: 1;
 }
 
 .section-text #body-section-logo.figure-top figure {
-    margin-top: 0;
-    width: 90%;
+  margin-top: 0;
+  width: 90%;
 }
 
 #portal-footer-wrapper,
-#portal-footer-wrapper .sectionlinks .section-title.h2, #portal-footer-wrapper .sectionlinks h2.section-title {
-    color: #222831;
+#portal-footer-wrapper .sectionlinks .section-title.h2,
+#portal-footer-wrapper .sectionlinks h2.section-title {
+  color: #222831;
 }
 
 #portal-footer-wrapper {
-    text-align: left;
+  text-align: left;
 }
 
 .portaltype-imio-smartweb-portalpage #portal-footer-wrapper .section-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /*SUP28784*/
@@ -79,9 +85,9 @@ body{
 }
 
 div#subsite-logo {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
-    margin-top: 1rem;
+#subsite-navigation > ul li.show-nav > .has_subtree.dropdown {
+  margin-top: 1rem;
 }

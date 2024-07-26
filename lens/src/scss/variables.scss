@@ -1,32 +1,33 @@
 //*// COLORS
-$primary: #343F4D;
-$secondary: #C3423D;
-
+$primary: #343f4d;
+$secondary: #c3423d;
 
 //*// TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-$font-family-base: "Montserrat",
-system-ui,
--apple-system,
-"Segoe UI",
-"Helvetica Neue",
-"Noto Sans",
-"Liberation Sans",
-arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji" !default;
-$font-family-title: "Dongle",
-system-ui,
--apple-system,
-"Segoe UI" !default;
+$font-family-base:
+  "Montserrat",
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  "Helvetica Neue",
+  "Noto Sans",
+  "Liberation Sans",
+  arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$font-family-title:
+  "Dongle",
+  system-ui,
+  -apple-system,
+  "Segoe UI" !default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -48,7 +49,7 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23"+str-slice("#{$color}", 2, -1);
+  @return "%23" + str-slice("#{$color}", 2, -1);
 }
 
 $global-radius: 10px;
@@ -135,7 +136,7 @@ $banner-content-width: fit-content;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 3rem;
-$banner-content-background: #F6F6F6;
+$banner-content-background: #f6f6f6;
 $banner-content-is-vertical-center: false;
 $banner-content-title-font-size: 30px;
 $banner-content-title-color: $primary;
@@ -152,13 +153,12 @@ $see-all-radius: $global-radius !default;
 $see-all-border: solid 1px $primary !default;
 $see-all-text-transform: none !default;
 $see-all-font-size: 25px;
-$see-all-transition: all .2s ease !default;
+$see-all-transition: all 0.2s ease !default;
 $see-all-hover-bg: $secondary;
 $see-all-hover-color: #fff;
 $see-all-hover-radius: $global-radius;
 $see-all-hover-border: solid 1px $secondary;
 $see-all-justify-content: center !default;
-
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -272,10 +272,9 @@ $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
-
 // Album
 $album-section-full-width: true !default;
-$album-section-bg: #EDEAE5 !default;
+$album-section-bg: #edeae5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
@@ -286,7 +285,7 @@ $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
 $album-image-border-radius: $global-radius !default;
 $album-item-bg-color: red !default;
-$album-item-bg-radius: $global-radius+2 !default;
+$album-item-bg-radius: $global-radius + 2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
@@ -307,22 +306,6 @@ $album-date-color: $primary !default;
 $album-date-font-size: 14px !default;
 $album-see-all-justify-content: $see-all-justify-content !default;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
 $mark-background-color: #f3f3f3 !default;
@@ -341,10 +324,10 @@ $section-text-link-color: $primary !default;
 $section-text-link-hover-decoration: solid 1px $primary !default;
 $section-text-max-width: 760px !default;
 
-
 // Section
 $section-padding-y: 5.31rem;
-$section-padding: (sm: 3rem,
+$section-padding: (
+  sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
 );
@@ -362,7 +345,7 @@ $enable-full-width-section-files: true;
 $enable-light-color-section-files: true;
 
 // section-link
-$section-link-background-color: #F8F8F8;
+$section-link-background-color: #f8f8f8;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
@@ -372,10 +355,10 @@ $section-list-block-img-card-title: 1.25rem;
 //*// LIST
 
 //Liste Block
-$block-full-shadow: 0 20px 40px #0000001A;
+$block-full-shadow: 0 20px 40px #0000001a;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
-$list-group-border-width : 0;
-$list-group-item-padding-x : 0;
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
 
 // Message Viewlets
 
@@ -383,7 +366,7 @@ $message-info: $primary;
 $message-warning: #c06d01;
 $message-error: $secondary;
 
-//NEW VARIABLES MANU 
+//NEW VARIABLES MANU
 
 //ACTU
 $actu-item-title-align: left;

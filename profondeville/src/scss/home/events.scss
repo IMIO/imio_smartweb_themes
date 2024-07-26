@@ -1,154 +1,154 @@
 .sectionevents a {
-    text-decoration: none;
+  text-decoration: none;
 
-    .image.w-100 {
+  .image.w-100 {
     padding-bottom: 60%;
     border-radius: 5px 5px 0 0;
-    }
+  }
 
-    .table_title {
-        font-size: 1.5rem;
-    }
-
+  .table_title {
+    font-size: 1.5rem;
+  }
 }
 
 .sectionevents ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .sectionevents .body-section ul li {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .sectionevents {
-    .tabble_date {
-        color: $primary;
-        display: inline-flex;
-
-        .start_date {
-            padding-right: 0.3rem;
-        }
-    }
-
-    .table_title {
-        color: #000;
-        font-weight: 600;
-    }
-
-    .table_category {
-        padding: 1rem 0 0;
-        color: #000;
-    }
-}
-
-#container-section-agenda div span, #container-section-agenda div p {
+  .tabble_date {
     color: $primary;
+    display: inline-flex;
+
+    .start_date {
+      padding-right: 0.3rem;
+    }
   }
 
+  .table_title {
+    color: #000;
+    font-weight: 600;
+  }
+
+  .table_category {
+    padding: 1rem 0 0;
+    color: #000;
+  }
+}
+
+#container-section-agenda div span,
+#container-section-agenda div p {
+  color: $primary;
+}
+
 .sectionevents .body-section {
-    .table_display {
-        background-color: #fff;
-        border: 1px solid #E3E3E3;
-        height: 470px;
-        position: relative;
-        max-width: 416px;
-    }
+  .table_display {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    height: 470px;
+    position: relative;
+    max-width: 416px;
+  }
 }
 
 .sectionevents .table_image div.image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .sectionevents .table_image div.image::before {
-    content: "";
-    background: transparent;
-    transition: all .3s ease;
-    position: absolute;
-    inset: 0;
-    border-radius: 5px;
+  content: "";
+  background: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
 }
 
 .sectionevents .table_image:hover div.image::before {
-    background: $color-blue;
-    opacity: 70%;
+  background: $color-blue;
+  opacity: 70%;
 }
 
 .sectionevents .end_date {
-    margin-left: 0.25rem;
-  }
+  margin-left: 0.25rem;
+}
 
 .sectionevents .table_date {
-    display: flex;
-    padding: 0.5rem 2rem;
-    font-weight: 300;
-    font-style: italic;
+  display: flex;
+  padding: 0.5rem 2rem;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .sectionevents .body-section {
-    .table_title {
-      padding: 0.5rem 1rem;
-      font-size: 22px;
-      line-height: 130%;
-      font-weight: 400;
-    }
+  .table_title {
+    padding: 0.5rem 1rem;
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 400;
+  }
 }
 
 .sectionevents .table_image div.image::after {
-    transition: all .3s ease;
-    content: "";
-    inset: 0;
-    position: absolute;
-    z-index: 1;
-    background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
-    opacity: 0%;
-    transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: url("../../assets/svg/bouton-plus.svg") no-repeat center;
+  opacity: 0%;
+  transform: rotate(45deg);
 }
 
 .sectionevents .table_image:hover div.image::after {
-    opacity: 100%;
-    transform: rotate(90deg);
+  opacity: 100%;
+  transform: rotate(90deg);
 }
 
 .sectionevents .see_all a {
-    border: 1px solid $color-blue;
+  border: 1px solid $color-blue;
 
-    &::before {
+  &::before {
     content: ">";
     position: absolute;
     right: 10px;
     color: $color-blue;
-    transition: all .3s ease;
-    }
+    transition: all 0.3s ease;
+  }
 }
 
 .sectionevents .see_all a:hover::before {
-    right: 5px;
-    color: #000;
+  right: 5px;
+  color: #000;
 }
 
 .sectionevents h2.section-title::first-letter {
-    color: $color-blue;
+  color: $color-blue;
 }
 
 .sectionevents .body-section .table_title {
-    font-size: 22px;
-    padding: 0 2rem;
-    overflow: hidden;
+  font-size: 22px;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
 .sectionevents span.day::after {
-    content: " /";
+  content: " /";
 }
 
 .sectionevents .table_category {
-    color: #000;
-    padding: 0.5rem 2rem 0;
-    font-weight: 600;
+  color: #000;
+  padding: 0.5rem 2rem 0;
+  font-weight: 600;
 }
 
 .sectionevents a {
-    .table_title::before {
+  .table_title::before {
     content: ">";
     bottom: 25px;
     right: 25px;
@@ -162,32 +162,32 @@
     align-items: center;
     line-height: 38px;
     font-weight: 400;
+  }
+
+  .table_title::after {
+    background: transparent;
+    content: "";
+    bottom: 25px;
+    right: 25px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .table_title::before {
+      color: #fff;
     }
 
     .table_title::after {
-        background: transparent;
-        content: "";
-        bottom: 25px;
-        right: 25px;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        z-index: 0;
-        transition: all .3s ease;
+      background: $color-blue;
     }
-
-    &:hover {
-        .table_title::before {
-            color: #fff;
-            }
-
-            .table_title::after {
-                background: $color-blue;
-            }
-    }
+  }
 }
 
 .sortable-section.sectionevents {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }

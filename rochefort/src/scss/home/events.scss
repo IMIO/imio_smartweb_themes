@@ -1,167 +1,169 @@
 .sectionevents a {
-    text-decoration: none;
+  text-decoration: none;
 
-    .image.w-100 {
+  .image.w-100 {
     padding-bottom: 60%;
     border-radius: 10px 10px 0 0;
-    }
+  }
 
-    .see_all a {
+  .see_all a {
     border: 1px solid $color-darkgrey;
-    }
+  }
 }
 
 .sectionevents ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .sectionevents .body-section ul li {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .sectionevents {
-    .table_date {
-        color: $primary;
-        display: flex !important;
+  .table_date {
+    color: $primary;
+    display: flex !important;
 
-        .start_date {
-            padding-right: 0.3rem;
+    .start_date {
+      padding-right: 0.3rem;
 
-            .day {
-                margin-right: 0;
-            }
-
-            .day::after {
-                content: "/";
-            }
-        }
-
-        .end_date {
-            padding-right: 0.3rem;
-
-            .day {
-                margin-right: 0;
-            }
-
-            .day::after {
-                content: "/";
-            }
-        }
-    }
-
-    .table_date .day {
+      .day {
         margin-right: 0;
+      }
 
-        &::after {
-            content: "/";
-        }
+      .day::after {
+        content: "/";
+      }
     }
 
-    .table_title {
-        color: $primary;
-        font-weight: 900;
-        padding: 0 2rem;
-        font-size: 20px;
-        line-height: 130%;
-        overflow: hidden;
-    }
+    .end_date {
+      padding-right: 0.3rem;
 
-    .table_category {
-        padding: 1rem 2rem;
-        color: $primary;
-    }
+      .day {
+        margin-right: 0;
+      }
 
-    .table_description {
-        padding: 1rem 2rem;
+      .day::after {
+        content: "/";
+      }
     }
-}
+  }
 
-#container-section-actualites div span, #container-section-actualites div p {
+  .table_date .day {
+    margin-right: 0;
+
+    &::after {
+      content: "/";
+    }
+  }
+
+  .table_title {
+    color: $primary;
+    font-weight: 900;
+    padding: 0 2rem;
+    font-size: 20px;
+    line-height: 130%;
+    overflow: hidden;
+  }
+
+  .table_category {
+    padding: 1rem 2rem;
     color: $primary;
   }
 
+  .table_description {
+    padding: 1rem 2rem;
+  }
+}
+
+#container-section-actualites div span,
+#container-section-actualites div p {
+  color: $primary;
+}
+
 .sectionevents .body-section {
-    .table_display {
-        background-color: #fff;
-        height: 470px;
-        position: relative;
-        border: 0 solid transparent;
-        max-width: 416px;
-    }
+  .table_display {
+    background-color: #fff;
+    height: 470px;
+    position: relative;
+    border: 0 solid transparent;
+    max-width: 416px;
+  }
 }
 
 .sectionevents .table_image div.image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .sectionevents .table_image div.image::before {
-    content: "";
-    background: transparent;
-    transition: all .3s ease;
-    position: absolute;
-    inset: 0;
-    border-radius: 10px;
+  content: "";
+  background: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
 }
 
 .sectionevents .end_date {
-    margin-left: 0.25rem;
-  }
+  margin-left: 0.25rem;
+}
 
 .sortable-section.sectionevents {
-    position: relative;
+  position: relative;
 }
 
 .sectionevents .body-section {
-    .table_date {
-        padding: 0.5rem 2rem;
-        font-weight: 300;
-    }
+  .table_date {
+    padding: 0.5rem 2rem;
+    font-weight: 300;
+  }
 }
 
 .sectionevents .table_date span {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .sectionevents .see_all a {
-    border: 1px solid $color-darkgrey;
+  border: 1px solid $color-darkgrey;
 }
 
 .sectionevents .see_all a:hover::before {
-    right: 5px;
-    color: $primary;
+  right: 5px;
+  color: $primary;
 }
 
 .sectionevents .table_category {
-    color: $primary;
-    padding: 0.5rem 2rem 0;
-    font-weight: 600;
+  color: $primary;
+  padding: 0.5rem 2rem 0;
+  font-weight: 600;
 }
 
 .sortable-section.sectionevents {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .sectionevents .body-section li div.table_display {
-    transition: all .5s ease;
+  transition: all 0.5s ease;
 
-    a>div {
-        transition: all .5s ease;
-    }
+  a > div {
+    transition: all 0.5s ease;
+  }
 }
 
 .sectionevents .body-section li .table_display:hover {
-    background-color: $primary;
-    border-radius: 10px;
-    transition: all .5s ease;
+  background-color: $primary;
+  border-radius: 10px;
+  transition: all 0.5s ease;
 
-    a>div {
-        color: #fff;
-        transition: all .5s ease;
-    }
+  a > div {
+    color: #fff;
+    transition: all 0.5s ease;
+  }
 
-    a>div span, a>div p {
-        color: #fff;
-        transition: all .5s ease;
-    }
+  a > div span,
+  a > div p {
+    color: #fff;
+    transition: all 0.5s ease;
+  }
 }

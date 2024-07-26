@@ -1,88 +1,87 @@
 .sectionnews {
-    .row {
-        gap: 20px 0;
+  .row {
+    gap: 20px 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .table_display {
+    height: 100%;
+  }
+
+  .table_image {
+    // grid-template-columns: minmax(250px, 250px) auto;
+
+    // grid-template-rows: min-content 1fr;
+    background-color: $primary;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .image {
+      aspect-ratio: 5 / 3;
+      background-color: #9b9a9a;
+
+      // max-width: 250px;
+      grid-row: 1 / 5;
     }
 
-    li {
-        list-style: none;
-    }
+    .table_date {
+      padding: 0.5rem;
+      grid-column-start: 2;
+      display: flex;
+      align-items: center;
 
-    .table_display {
-        height: 100%;
-    }
+      span {
+        color: #fff;
+        font-size: 14px;
+        opacity: 80%;
+      }
 
-    .table_image {
-
-        // grid-template-columns: minmax(250px, 250px) auto;
-
-        // grid-template-rows: min-content 1fr;
-        background-color: $primary;
-        margin-bottom: 1rem;
-        position: relative;
+      .pat-display-time {
         display: flex;
-        flex-direction: column;
-        height: 100%;
-
-        .image {
-            aspect-ratio: 5 / 3;
-            background-color: #9b9a9a;
-
-            // max-width: 250px;
-            grid-row: 1 / 5;
-        }
-
-        .table_date {
-            padding:.5rem;
-            grid-column-start:2;
-            display: flex;
-            align-items: center;
-
-            span {
-                color: #fff;
-                font-size: 14px;
-                opacity: 80%;
-            }
-
-            .pat-display-time {
-                display: flex;
-                align-items: baseline;
-                width: 100%;
-                justify-content: space-between;
-                padding-left: 4px;
-            }
-        }
-
-        .table_title {
-            padding:.5rem;
-            padding-bottom: .2rem;
-
-            span {
-                color: #fff;
-                font-size: 18px;
-                font-weight: 600;
-                text-transform: uppercase;
-            }
-        }
-
-        .table_category {
-            grid-row-start: 3;
-            color: $primary;
-            background: #ffcf1b;
-            display: inline-block;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            font-weight: 500;
-            padding: 5px 10px;
-        }
-
-        &::after {
-            content: "";
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 41.5 41.5'%3E%3Cpath d='M20.75 41.5C9.31 41.5 0 32.19 0 20.75S9.31 0 20.75 0 41.5 9.31 41.5 20.75 32.19 41.5 20.75 41.5Zm0-39.5C10.41 2 2 10.41 2 20.75S10.41 39.5 20.75 39.5 39.5 31.09 39.5 20.75 31.09 2 20.75 2Z' style='fill:%23fff;stroke-width:0'/%3E%3Cpath d='M28.75 19.75h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2z' style='fill:%23fff;stroke-width:0'/%3E%3C/svg%3E");
-            width: 40px;
-            display: block;
-            aspect-ratio: 1;
-            margin: auto 10px 10px auto;
-        }
+        align-items: baseline;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 4px;
+      }
     }
+
+    .table_title {
+      padding: 0.5rem;
+      padding-bottom: 0.2rem;
+
+      span {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    .table_category {
+      grid-row-start: 3;
+      color: $primary;
+      background: #ffcf1b;
+      display: inline-block;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      font-weight: 500;
+      padding: 5px 10px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 41.5 41.5'%3E%3Cpath d='M20.75 41.5C9.31 41.5 0 32.19 0 20.75S9.31 0 20.75 0 41.5 9.31 41.5 20.75 32.19 41.5 20.75 41.5Zm0-39.5C10.41 2 2 10.41 2 20.75S10.41 39.5 20.75 39.5 39.5 31.09 39.5 20.75 31.09 2 20.75 2Z' style='fill:%23fff;stroke-width:0'/%3E%3Cpath d='M28.75 19.75h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2z' style='fill:%23fff;stroke-width:0'/%3E%3C/svg%3E");
+      width: 40px;
+      display: block;
+      aspect-ratio: 1;
+      margin: auto 10px 10px auto;
+    }
+  }
 }

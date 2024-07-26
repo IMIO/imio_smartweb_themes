@@ -1,207 +1,257 @@
 .to-portal {
-    a {
-        padding: 0.5rem 1.5rem !important;
-        background: #00656f;
-        display: inline-block;
-        font-weight: bold;
-        color: #fff;
-    }
+  a {
+    padding: 0.5rem 1.5rem !important;
+    background: #00656f;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+  }
 }
-
-
 
 // tourisme
 $primary-tourisme: #00656f;
 $primary-tourisme-svg: #00656f;
 
 .site-tourisme {
-    .sectionfiles .section-title {
-        color: $primary-tourisme;
+  .sectionfiles .section-title {
+    color: $primary-tourisme;
+  }
+
+  .sectiontext .section-text ul li {
+    &::before {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-tourisme)}"/></svg>') !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #portal-globalnav.activated > li > a {
+      color: $primary-tourisme !important;
+    }
+  }
+
+  .sectionfiles .table_image {
+    border: 2px solid $primary-tourisme;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: $primary-tourisme;
+  }
+
+  .sectiontext .section-text .body-section a {
+    color: $primary-tourisme;
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3 {
+    color: $primary-tourisme;
+  }
+
+  #portal-column-content .section-contact .contact-type-mission {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-tourisme !important;
+      }
+    }
+  }
+
+  #portal-column-content .section-contact .contact-type-organization {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-tourisme !important;
+      }
+    }
+  }
+
+  #portal-column-content .section-contact .contact-type-position {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-tourisme !important;
+      }
+    }
+  }
+
+  .sectionnews {
+    .section-title {
+      color: $primary-tourisme !important;
+    }
+  }
+
+  .to-portal a {
+    color: #fff;
+  }
+
+  .sectionnews .see_all a {
+    color: $primary-tourisme !important;
+
+    &::before {
+      border: 1px solid $primary-tourisme !important;
     }
 
-    .sectiontext .section-text  ul li {
-        &::before {
-          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-tourisme)}"/></svg>') !important;
-        }
+    &:hover {
+      color: $primary-tourisme !important;
+
+      &::before {
+        border: 1px solid $primary-tourisme !important;
+      }
+    }
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary-tourisme;
+  }
+
+  .smartweb_herobanner::after {
+    background: $primary-tourisme-svg;
+  }
+
+  .sectiontext .section-text .body-section a {
+    color: $primary-tourisme;
+  }
+
+  .quick-access {
+    .section-title {
+      color: $primary-tourisme !important;
+    }
+
+    .body-section li a .image.d-block {
+      border: 1px solid $primary-tourisme;
+    }
+
+    .body-section li a .table_title span {
+      color: $primary-tourisme;
+    }
+
+    .body-section li a .image.d-block svg {
+      fill: $primary-tourisme;
+    }
+
+    .table_image:focus .image.d-block,
+    .table_image:hover .image.d-block {
+      background: $primary-tourisme !important;
+    }
+  }
+
+  #portal-colophon,
+  #portal-footer-wrapper {
+    background: #00656f !important;
+  }
+
+  #portal-footer {
+    background: $primary-tourisme !important;
+  }
+
+  .to-portal {
+    a {
+      background: $primary-tourisme;
+    }
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li
+    > a {
+    color: $primary-tourisme;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree,
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree {
+    & > a:focus,
+    & > a:hover {
+      color: $primary-tourisme !important;
+    }
+
+    &.show-nav {
+      & > a {
+        color: $primary-tourisme !important;
+      }
+    }
+
+    & > .nav-link {
+      color: $primary-tourisme !important;
+
+      &::before {
+        background-color: $primary-tourisme-svg !important;
       }
 
-    @media screen and (min-width:768px) {
-        #portal-globalnav.activated>li>a {
-            color: $primary-tourisme!important;
+      @media screen and (min-width: 992px) {
+        &::after {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%2300656f"/></svg>') !important;
         }
+      }
     }
 
-    .sectionfiles .table_image {
-        border: 2px solid $primary-tourisme;
+    .dropdown .nav-link:focus,
+    .dropdown .nav-link:hover {
+      color: $primary-tourisme;
     }
 
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
-        color:$primary-tourisme;
+    .nav-title {
+      a {
+        color: $primary-tourisme !important;
+      }
     }
+  }
 
-    .sectiontext .section-text .body-section a {
-        color:$primary-tourisme;
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    border: solid 1px $primary-tourisme !important;
+  }
 
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
-        color: $primary-tourisme;
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    position: relative;
+    background-color: $primary-tourisme !important;
+  }
 
-    #portal-column-content .section-contact .contact-type-mission{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-tourisme !important;
-            }
-        }
-    }
-
-    #portal-column-content .section-contact .contact-type-organization{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-tourisme !important;
-            }
-        }
-    }
-
-    #portal-column-content .section-contact .contact-type-position{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-tourisme !important;
-            }
-        }
-    }
-
-    .sectionnews {
-        .section-title {
-            color: $primary-tourisme !important;
-        }
-    }
-
-    .to-portal a {
-        color: #fff;
-    }
-
-    .sectionnews .see_all a {
-        color: $primary-tourisme!important;
-
-        &::before {
-            border: 1px solid $primary-tourisme!important;
-        }
-
-        &:hover{
-            color: $primary-tourisme!important;
-
-            &::before {
-                border: 1px solid $primary-tourisme!important;
-            }
-        }
-    }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-        color:$primary-tourisme;
-    }
-
-    .smartweb_herobanner::after {
-        background: $primary-tourisme-svg;
-    }
-
-    .sectiontext .section-text .body-section a {
-        color: $primary-tourisme;
-    }
-
-    .quick-access {
-        .section-title {
-            color: $primary-tourisme !important;
-        }
-
-        .body-section li a .image.d-block {
-            border: 1px solid $primary-tourisme;
-        }
-
-        .body-section li a .table_title span {
-            color: $primary-tourisme;
-        }
-
-        .body-section li a .image.d-block svg {
-            fill: $primary-tourisme;
-        }
-
-        .table_image:focus .image.d-block,
-        .table_image:hover .image.d-block {
-            background: $primary-tourisme !important;
-        }
-    }
-
-    #portal-colophon,
-    #portal-footer-wrapper {
-        background: #00656f !important;
-    }
-
-    #portal-footer {
-        background: $primary-tourisme !important;
-    }
-
-    .to-portal {
-        a {
-            background: $primary-tourisme;
-        }
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
-        color: $primary-tourisme;
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-        &>a:focus,
-        &>a:hover {
-            color: $primary-tourisme !important;
-        }
-
-        &.show-nav {
-            &>a {
-                color: $primary-tourisme !important;
-            }
-        }
-
-        &>.nav-link {
-            color: $primary-tourisme !important;
-
-            &::before {
-                background-color: $primary-tourisme-svg !important;
-            }
-
-            @media screen and (min-width:992px) {
-                &::after {
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%2300656f"/></svg>') !important;
-                }
-            }
-        }
-
-        .dropdown .nav-link:focus,
-        .dropdown .nav-link:hover {
-            color: $primary-tourisme;
-        }
-
-        .nav-title {
-            a {
-                color: $primary-tourisme !important;
-            }
-        }
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-        border: solid 1px $primary-tourisme!important;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        position: relative;
-        background-color: $primary-tourisme!important;
-    }
-
-    .swiper-pagination-bullet {
-        background-color: $primary-tourisme!important;
-    }
+  .swiper-pagination-bullet {
+    background-color: $primary-tourisme !important;
+  }
 }
 
 // sport
@@ -210,202 +260,252 @@ $primary-sport: #004f8c;
 $primary-sport-svg: #ffd145;
 
 .site-sports {
-    @media screen and (min-width:768px) {
-        #portal-globalnav.activated>li>a {
-            color: $primary-sport!important;
-        }
+  @media screen and (min-width: 768px) {
+    #portal-globalnav.activated > li > a {
+      color: $primary-sport !important;
+    }
+  }
+
+  .sectiontext .section-text ul li {
+    &::before {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-sport)}"/></svg>') !important;
+    }
+  }
+
+  .sectionfiles .section-title {
+    color: $primary-sport;
+  }
+
+  .sectionfiles .table_image {
+    border: 2px solid $primary-sport;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: $primary-sport;
+  }
+
+  .sectiontext .section-text .body-section a {
+    color: $primary-sport;
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3 {
+    color: $primary-sport;
+  }
+
+  #portal-column-content .section-contact .contact-type-mission {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-sport !important;
+      }
+    }
+  }
+
+  #portal-column-content .section-contact .contact-type-organization {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-sport !important;
+      }
+    }
+  }
+
+  #portal-column-content .section-contact .contact-type-position {
+    .address,
+    .contact_informations,
+    .schedule {
+      h2,
+      .h2,
+      h3,
+      .h3 {
+        color: $primary-sport !important;
+      }
+    }
+  }
+
+  .sectionnews {
+    .section-title {
+      color: $primary-sport !important;
+    }
+  }
+
+  .to-portal a {
+    color: #fff;
+  }
+
+  .sectionnews .see_all a {
+    color: $primary-sport !important;
+
+    &::before {
+      border: 1px solid $primary-sport !important;
     }
 
-    .sectiontext .section-text  ul li {
-        &::before {
-          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-sport)}"/></svg>') !important;
+    &:hover {
+      color: $primary-sport !important;
+
+      &::before {
+        border: 1px solid $primary-sport !important;
+      }
+    }
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary-sport;
+  }
+
+  .smartweb_herobanner::after {
+    background: $primary-sport-svg;
+  }
+
+  .quick-access {
+    .section-title {
+      color: $primary-sport !important;
+    }
+
+    .body-section li a .image.d-block {
+      border: 1px solid $primary-sport;
+    }
+
+    .body-section li a .table_title span {
+      color: $primary-sport;
+    }
+
+    .body-section li a .image.d-block svg {
+      fill: $primary-sport;
+    }
+
+    .table_image:focus .image.d-block,
+    .table_image:hover .image.d-block {
+      background: $primary-sport !important;
+    }
+  }
+
+  #portal-colophon,
+  #portal-footer-wrapper {
+    background: $primary-sport !important;
+  }
+
+  #portal-footer {
+    background: $primary-sport !important;
+  }
+
+  .to-portal {
+    a {
+      background: $primary-sport;
+    }
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li
+    > a {
+    color: $primary-sport;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree,
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree {
+    & > a:focus,
+    & > a:hover {
+      color: $primary-sport !important;
+    }
+
+    &.show-nav {
+      & > a {
+        color: $primary-sport !important;
+      }
+    }
+
+    & > .nav-link {
+      color: $primary-sport !important;
+
+      &::before {
+        background-color: $primary-sport-svg !important;
+      }
+
+      @media screen and (min-width: 992px) {
+        &::after {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23004f8c"/></svg>') !important;
         }
       }
-    
-    .sectionfiles .section-title {
-        color: $primary-sport;
     }
 
-    .sectionfiles .table_image {
-        border: 2px solid $primary-sport;
+    .dropdown .nav-link:focus,
+    .dropdown .nav-link:hover {
+      color: $primary-sport;
     }
 
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
-        color:$primary-sport;
+    .nav-title {
+      a {
+        color: $primary-sport !important;
+      }
     }
+  }
 
-    .sectiontext .section-text .body-section a {
-        color:$primary-sport;
+  .sectionevents {
+    background-color: $primary-sport;
+  }
+
+  .sectionnews {
+    .section-title {
+      color: $primary-sport !important;
     }
+  }
 
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
-        color: $primary-sport;
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    border: solid 1px $primary-sport !important;
+  }
 
-    #portal-column-content .section-contact .contact-type-mission{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-sport !important;
-            }
-        }
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    position: relative;
+    background-color: $primary-sport !important;
+  }
 
-    #portal-column-content .section-contact .contact-type-organization{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-sport !important;
-            }
-        }
-    }
-
-    #portal-column-content .section-contact .contact-type-position{
-        .address,.contact_informations,.schedule{
-            h2,.h2,h3,.h3 {
-                color: $primary-sport !important;
-            }
-        }
-    }
-
-    .sectionnews {
-        .section-title {
-            color: $primary-sport !important;
-        }
-    }
-
-    .to-portal a {
-        color: #fff;
-    }
-
-    .sectionnews .see_all a {
-        color: $primary-sport!important;
-
-        &::before {
-            border: 1px solid $primary-sport!important;
-        }
-
-        &:hover{
-            color: $primary-sport!important;
-
-            &::before {
-                border: 1px solid $primary-sport!important;
-            }
-        }
-    }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-        color:$primary-sport;
-    }
-
-    .smartweb_herobanner::after {
-        background: $primary-sport-svg;
-    }
-
-    .quick-access {
-        .section-title {
-            color: $primary-sport !important;
-        }
-
-        .body-section li a .image.d-block {
-            border: 1px solid $primary-sport;
-        }
-
-        .body-section li a .table_title span {
-            color: $primary-sport;
-        }
-
-        .body-section li a .image.d-block svg {
-            fill: $primary-sport;
-        }
-
-        .table_image:focus .image.d-block,
-        .table_image:hover .image.d-block {
-            background: $primary-sport !important;
-        }
-    }
-
-    #portal-colophon,
-    #portal-footer-wrapper {
-        background: $primary-sport !important;
-    }
-
-    #portal-footer {
-        background: $primary-sport !important;
-    }
-
-    .to-portal {
-        a {
-            background: $primary-sport;
-        }
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
-        color: $primary-sport;
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-        &>a:focus,
-        &>a:hover {
-            color: $primary-sport !important;
-        }
-
-        &.show-nav {
-            &>a {
-                color: $primary-sport !important;
-            }
-        }
-
-        &>.nav-link {
-            color: $primary-sport !important;
-
-            &::before {
-                background-color: $primary-sport-svg !important;
-            }
-
-            @media screen and (min-width:992px) {
-                &::after {
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23004f8c"/></svg>') !important;
-                }
-            }
-        }
-
-        .dropdown .nav-link:focus,
-        .dropdown .nav-link:hover {
-            color: $primary-sport;
-        }
-
-        .nav-title {
-            a {
-                color: $primary-sport !important;
-            }
-        }
-    }
-
-    .sectionevents {
-        background-color: $primary-sport;
-    }
-
-    .sectionnews {
-        .section-title {
-            color: $primary-sport !important;
-        }
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-        border: solid 1px $primary-sport!important;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        position: relative;
-        background-color: $primary-sport!important;
-    }
-
-    .swiper-pagination-bullet {
-        background-color: $primary-sport!important;
-    }
+  .swiper-pagination-bullet {
+    background-color: $primary-sport !important;
+  }
 }
-
-
 
 // cpas
 
@@ -413,619 +513,799 @@ $primary-cpas: #c4236b;
 $primary-cpas-svg: #fab4b6;
 
 .site-cpas {
-    @media screen and (min-width:768px) {
-        #portal-globalnav.activated>li>a {
-            color: $primary-cpas!important;
-        }
+  @media screen and (min-width: 768px) {
+    #portal-globalnav.activated > li > a {
+      color: $primary-cpas !important;
+    }
+  }
+
+  .sectiontext .section-text ul li {
+    &::before {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-cpas)}"/></svg>') !important;
+    }
+  }
+
+  .sectionfiles .section-title {
+    color: $primary-cpas;
+  }
+
+  .sectionfiles .table_image {
+    border: 2px solid $primary-cpas;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: $primary-cpas;
+  }
+
+  .sectiontext .section-text .body-section a {
+    color: $primary-cpas;
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3 {
+    color: #c4236b;
+  }
+
+  #portal-column-content .section-contact .contact-type-mission .address .h2,
+  #portal-column-content .section-contact .contact-type-mission .address .h3,
+  #portal-column-content .section-contact .contact-type-mission .address h2,
+  #portal-column-content .section-contact .contact-type-mission .address h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    h3,
+  #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+  #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+  #portal-column-content .section-contact .contact-type-mission .schedule h2,
+  #portal-column-content .section-contact .contact-type-mission .schedule h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h3 {
+    color: $primary-cpas;
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    h3 {
+    color: $primary-cpas;
+  }
+
+  .sectionnews {
+    .section-title {
+      color: $primary-cpas !important;
+    }
+  }
+
+  .to-portal a {
+    color: #fff;
+  }
+
+  .sectionnews .see_all a {
+    color: $primary-cpas !important;
+
+    &::before {
+      border: 1px solid $primary-cpas !important;
     }
 
-    .sectiontext .section-text  ul li {
-        &::before {
-          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-cpas)}"/></svg>') !important;
-        }
+    &:hover {
+      color: $primary-cpas !important;
+
+      &::before {
+        border: 1px solid $primary-cpas !important;
+      }
+    }
+  }
+
+  &.portaltype-imio-smartweb-portalpage {
+    .sectiontext {
+      h2 {
+        color: $primary-cpas;
+      }
+    }
+  }
+
+  .sectionevents {
+    background-color: $primary-cpas;
+  }
+
+  .smartweb_herobanner::after {
+    background: $primary-cpas-svg;
+  }
+
+  .quick-access {
+    .section-title {
+      color: $primary-cpas !important;
+    }
+
+    .body-section li a .image.d-block {
+      border: 1px solid $primary-cpas;
+    }
+
+    .body-section li a .table_title span {
+      color: $primary-cpas;
+    }
+
+    .body-section li a .image.d-block svg {
+      fill: $primary-cpas;
+    }
+
+    .table_image:focus .image.d-block,
+    .table_image:hover .image.d-block {
+      background: $primary-cpas !important;
+    }
+  }
+
+  #portal-colophon,
+  #portal-footer-wrapper {
+    background: $primary-cpas !important;
+  }
+
+  #portal-footer {
+    background: $primary-cpas !important;
+  }
+
+  .to-portal {
+    a {
+      background: $primary-cpas;
+    }
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li
+    > a {
+    color: $primary-cpas;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree,
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree {
+    & > a:focus,
+    & > a:hover {
+      color: $primary-cpas !important;
+    }
+
+    &.show-nav {
+      & > a {
+        color: $primary-cpas !important;
+      }
+    }
+
+    & > .nav-link {
+      color: $primary-cpas !important;
+
+      &::before {
+        background-color: $primary-cpas-svg !important;
       }
 
-    .sectionfiles .section-title {
-        color: $primary-cpas;
-    }
-
-    .sectionfiles .table_image {
-        border: 2px solid $primary-cpas;
-    }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
-        color:$primary-cpas;
-    }
-
-    .sectiontext .section-text .body-section a {
-        color:$primary-cpas;
-    }
-
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
-        color: #c4236b;
-    }
-
-    #portal-column-content .section-contact .contact-type-mission .address .h2, 
-    #portal-column-content .section-contact .contact-type-mission .address .h3, 
-    #portal-column-content .section-contact .contact-type-mission .address h2, 
-    #portal-column-content .section-contact .contact-type-mission .address h3, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations h2, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations h3, 
-    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
-     #portal-column-content .section-contact .contact-type-mission .schedule .h3, 
-     #portal-column-content .section-contact .contact-type-mission .schedule h2,
-     #portal-column-content .section-contact .contact-type-mission .schedule h3,
-     #portal-column-content .section-contact .contact-type-organization .address h3 {
-        color: $primary-cpas;
-    }
-
-    #portal-column-content .section-contact .contact-type-organization .address .h2,
-    #portal-column-content .section-contact .contact-type-organization .address .h3,
-    #portal-column-content .section-contact .contact-type-organization .address h2,
-    #portal-column-content .section-contact .contact-type-organization .address h3,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations .h2,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations .h3,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h2,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3,
-    #portal-column-content .section-contact .contact-type-organization .schedule .h2,
-    #portal-column-content .section-contact .contact-type-organization .schedule .h3,
-    #portal-column-content .section-contact .contact-type-organization .schedule h2,
-    #portal-column-content .section-contact .contact-type-organization .schedule h3 {
-        color: $primary-cpas;
-    }
-
-    .sectionnews {
-        .section-title {
-            color: $primary-cpas !important;
+      @media screen and (min-width: 992px) {
+        &::after {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>') !important;
         }
+      }
     }
 
-    .to-portal a {
-        color: #fff;
+    .dropdown .nav-link:focus,
+    .dropdown .nav-link:hover {
+      color: $primary-cpas;
     }
 
-    .sectionnews .see_all a {
-        color: $primary-cpas!important;
-
-        &::before {
-            border: 1px solid $primary-cpas!important;
-        }
-
-        &:hover{
-            color: $primary-cpas!important;
-
-            &::before {
-                border: 1px solid $primary-cpas!important;
-            }
-        }
+    .nav-title {
+      a {
+        color: $primary-cpas !important;
+      }
     }
+  }
 
-    &.portaltype-imio-smartweb-portalpage {
-        .sectiontext {
-            h2 {
-                color: $primary-cpas;
-            }
-        }
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    border: solid 1px $primary-cpas !important;
+  }
 
-    .sectionevents {
-        background-color: $primary-cpas;
-    }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    position: relative;
+    background-color: $primary-cpas !important;
+  }
 
-    .smartweb_herobanner::after {
-        background: $primary-cpas-svg;
-    }
-
-    .quick-access {
-        .section-title {
-            color: $primary-cpas !important;
-        }
-
-        .body-section li a .image.d-block {
-            border: 1px solid $primary-cpas;
-        }
-
-        .body-section li a .table_title span {
-            color: $primary-cpas;
-        }
-
-        .body-section li a .image.d-block svg {
-            fill: $primary-cpas;
-        }
-
-        .table_image:focus .image.d-block,
-        .table_image:hover .image.d-block {
-            background: $primary-cpas !important;
-        }
-    }
-
-    #portal-colophon,
-    #portal-footer-wrapper {
-        background: $primary-cpas !important;
-    }
-
-    #portal-footer {
-        background: $primary-cpas !important;
-    }
-
-    .to-portal {
-        a {
-            background: $primary-cpas;
-        }
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
-        color: $primary-cpas;
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-        &>a:focus,
-        &>a:hover {
-            color: $primary-cpas !important;
-        }
-
-        &.show-nav {
-            &>a {
-                color: $primary-cpas !important;
-            }
-        }
-
-        &>.nav-link {
-            color: $primary-cpas !important;
-
-            &::before {
-                background-color: $primary-cpas-svg !important;
-            }
-
-            @media screen and (min-width:992px) {
-                &::after {
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23c4236b"/></svg>') !important;
-                }
-            }
-        }
-
-        .dropdown .nav-link:focus,
-        .dropdown .nav-link:hover {
-            color: $primary-cpas;
-        }
-
-        .nav-title {
-            a {
-                color: $primary-cpas !important;
-            }
-        }
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-        border: solid 1px $primary-cpas!important;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        position: relative;
-        background-color: $primary-cpas!important;
-    }
-
-    .swiper-pagination-bullet {
-        background-color: $primary-cpas!important;
-    }
+  .swiper-pagination-bullet {
+    background-color: $primary-cpas !important;
+  }
 }
-
-
-
-
 
 // competences
 
-$primary-competences: #007D6A;
-$primary-competences-svg: #E6740A;
-
+$primary-competences: #007d6a;
+$primary-competences-svg: #e6740a;
 
 .site-wellin-competences {
-    @media screen and (min-width:768px) {
-        #portal-globalnav.activated>li>a {
-            color: $primary-competences!important;
-        }
+  @media screen and (min-width: 768px) {
+    #portal-globalnav.activated > li > a {
+      color: $primary-competences !important;
+    }
+  }
+
+  .active > .page-link,
+  .page-link.active {
+    background-color: $primary-competences;
+  }
+
+  .procedure a {
+    background: $primary-competences;
+    color: #fff !important;
+
+    &::after {
+      content: "➔";
+      font-family: fontello;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .sectionevents {
+    background-color: $primary-competences;
+  }
+
+  .sectionfiles .section-title {
+    color: $primary-competences;
+  }
+
+  .sectionfiles .table_image {
+    border: 2px solid $primary-competences;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: $primary-competences;
+  }
+
+  .sectiontext .section-text .body-section a {
+    color: $primary-competences;
+  }
+
+  .sectiontext .section-text .body-section figure figcaption {
+    display: block !important;
+  }
+
+  .sectiontext .section-text ul li {
+    &::before {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-competences)}"/></svg>') !important;
+    }
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3 {
+    color: $primary-competences;
+  }
+
+  #portal-column-content .section-contact .contact-type-mission .address .h2,
+  #portal-column-content .section-contact .contact-type-mission .address .h3,
+  #portal-column-content .section-contact .contact-type-mission .address h2,
+  #portal-column-content .section-contact .contact-type-mission .address h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-mission
+    .contact_informations
+    h3,
+  #portal-column-content .section-contact .contact-type-mission .schedule .h2,
+  #portal-column-content .section-contact .contact-type-mission .schedule .h3,
+  #portal-column-content .section-contact .contact-type-mission .schedule h2,
+  #portal-column-content .section-contact .contact-type-mission .schedule h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h3 {
+    color: $primary-competences;
+  }
+
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .address
+    h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .contact_informations
+    h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    .h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    .h3,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    h2,
+  #portal-column-content
+    .section-contact
+    .contact-type-organization
+    .schedule
+    h3 {
+    color: $primary-competences;
+  }
+
+  .sectionnews {
+    .section-title {
+      color: $primary-competences !important;
+    }
+  }
+
+  .to-portal a {
+    color: #fff;
+  }
+
+  .sectionnews .see_all a {
+    color: $primary-competences !important;
+
+    &::before {
+      border: 1px solid $primary-competences !important;
     }
 
-    .active > .page-link, .page-link.active {
-        background-color: $primary-competences;
+    &:hover {
+      color: $primary-competences !important;
+
+      &::before {
+        border: 1px solid $primary-competences !important;
+      }
+    }
+  }
+
+  .smartweb_herobanner::after {
+    background: $primary-competences-svg;
+  }
+
+  .quick-access {
+    .section-title {
+      color: $primary-competences !important;
     }
 
-    .procedure a {
-        background: $primary-competences;
-        color: #FFF !important;
-
-        &::after {
-            content: "➔";
-            font-family: fontello;
-            margin-left: 0.5rem;
-        }
-    }
-    
-    .sectionevents {
-        background-color:$primary-competences;
+    .body-section li a .image.d-block {
+      border: 1px solid $primary-competences;
     }
 
-    .sectionfiles .section-title {
-        color: $primary-competences;
+    .body-section li a .table_title span {
+      color: $primary-competences;
     }
 
-    .sectionfiles .table_image {
-        border: 2px solid  $primary-competences;
+    .body-section li a .image.d-block svg {
+      fill: $primary-competences;
     }
 
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,a{
-        color:$primary-competences;
+    .table_image:focus .image.d-block,
+    .table_image:hover .image.d-block {
+      background: $primary-competences !important;
+    }
+  }
+
+  #portal-colophon,
+  #portal-footer-wrapper {
+    background: $primary-competences !important;
+  }
+
+  #portal-footer {
+    background: $primary-competences !important;
+  }
+
+  .to-portal {
+    a {
+      background: $primary-competences;
+    }
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li
+    > a {
+    color: $primary-competences;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li
+    > a {
+    color: #007d6a !important;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree,
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.has_subtree {
+    & > a:focus,
+    & > a:hover {
+      color: $primary-competences !important;
     }
 
-    .sectiontext .section-text .body-section a {
-        color:$primary-competences;
+    &.show-nav {
+      & > a {
+        color: $primary-competences !important;
+      }
     }
 
-    .sectiontext .section-text .body-section figure figcaption {
-        display:block !important;
-    }
+    & > .nav-link {
+      color: $primary-competences !important;
 
-    .sectiontext .section-text  ul li {
-        &::before {
-          content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($primary-competences)}"/></svg>') !important;
-        }
+      &::before {
+        background-color: $primary-competences-svg !important;
       }
 
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3 {
-        color: $primary-competences;
+      @media screen and (min-width: 992px) {
+        &::after {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23007d6a"/></svg>') !important;
+        }
+      }
     }
 
-    #portal-column-content .section-contact .contact-type-mission .address .h2, 
-    #portal-column-content .section-contact .contact-type-mission .address .h3, 
-    #portal-column-content .section-contact .contact-type-mission .address h2, 
-    #portal-column-content .section-contact .contact-type-mission .address h3, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations .h2, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations .h3, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations h2, 
-    #portal-column-content .section-contact .contact-type-mission .contact_informations h3, 
-    #portal-column-content .section-contact .contact-type-mission .schedule .h2,
-     #portal-column-content .section-contact .contact-type-mission .schedule .h3, 
-     #portal-column-content .section-contact .contact-type-mission .schedule h2,
-     #portal-column-content .section-contact .contact-type-mission .schedule h3,
-     #portal-column-content .section-contact .contact-type-organization .address h3 {
-        color: $primary-competences;
+    .dropdown .nav-link:focus,
+    .dropdown .nav-link:hover {
+      color: $primary-competences;
     }
 
-    #portal-column-content .section-contact .contact-type-organization .address .h2,
-    #portal-column-content .section-contact .contact-type-organization .address .h3,
-    #portal-column-content .section-contact .contact-type-organization .address h2,
-    #portal-column-content .section-contact .contact-type-organization .address h3,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations .h2,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations .h3,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h2,
-    #portal-column-content .section-contact .contact-type-organization .contact_informations h3,
-    #portal-column-content .section-contact .contact-type-organization .schedule .h2,
-    #portal-column-content .section-contact .contact-type-organization .schedule .h3,
-    #portal-column-content .section-contact .contact-type-organization .schedule h2,
-    #portal-column-content .section-contact .contact-type-organization .schedule h3 {
-        color: $primary-competences;
+    .nav-title {
+      a {
+        color: $primary-competences !important;
+      }
     }
+  }
 
-    .sectionnews {
-        .section-title {
-            color: $primary-competences !important;
-        }
+  .nav_je-participe-1 {
+    a {
+      color: $primary-competences-svg;
     }
-
-    .to-portal a {
-        color: #fff;
-    }
-
-    .sectionnews .see_all a {
-        color: $primary-competences!important;
-
-        &::before {
-            border: 1px solid $primary-competences!important;
-        }
-
-        &:hover{
-            color: $primary-competences!important;
-
-            &::before {
-                border: 1px solid $primary-competences!important;
-            }
-        }
-    }
-
-
-
-    .smartweb_herobanner::after {
-        background: $primary-competences-svg;
-    }
-
-    .quick-access {
-        .section-title {
-            color: $primary-competences !important;
-        }
-
-        .body-section li a .image.d-block {
-            border: 1px solid $primary-competences;
-        }
-
-        .body-section li a .table_title span {
-            color: $primary-competences;
-        }
-
-        .body-section li a .image.d-block svg {
-            fill: $primary-competences;
-        }
-
-        .table_image:focus .image.d-block,
-        .table_image:hover .image.d-block {
-            background: $primary-competences !important;
-        }
-    }
-
-    #portal-colophon,
-    #portal-footer-wrapper {
-        background: $primary-competences !important;
-    }
-
-    #portal-footer {
-        background: $primary-competences !important;
-    }
-
-    .to-portal {
-        a {
-            background: $primary-competences;
-        }
-    }
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
-        color: $primary-competences;
-    }
-
-
-
-
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
-        color: #007d6a !important;
-    }
-
-
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree,
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.has_subtree {
-        &>a:focus,
-        &>a:hover {
-            color: $primary-competences !important;
-        }
-
-        &.show-nav {
-            &>a {
-                color: $primary-competences !important;
-            }
-        }
-
-        &>.nav-link {
-            color: $primary-competences !important;
-
-            &::before {
-                background-color: $primary-competences-svg !important;
-            }
-
-            @media screen and (min-width:992px) {
-                &::after {
-                    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23007d6a"/></svg>')!important;
-                }
-            }
-        }
-
-        .dropdown .nav-link:focus,
-        .dropdown .nav-link:hover {
-            color: $primary-competences;
-        }
-
-        .nav-title {
-            a {
-                color: $primary-competences !important;
-            }
-        }
-    }
-
-    .nav_je-participe-1{
-        a{
-            color: $primary-competences-svg;
-        }
-    }
+  }
 }
 
 .section-accueil.site-wellin-competences {
-    .sectiontext {
-        margin-top: 3rem;
-    }
+  .sectiontext {
+    margin-top: 3rem;
+  }
 
-    .compe-intro{
-        &.sectiontext .section-text .body-section .text {
-            margin: 0;
-            max-width: 543px;
+  .compe-intro {
+    &.sectiontext .section-text .body-section .text {
+      margin: 0;
+      max-width: 543px;
 
-            h2 {
-                color: $primary-competences-svg!important;
-            }
+      h2 {
+        color: $primary-competences-svg !important;
+      }
 
-            mark{
-                background: $primary-competences-svg!important;
-                border: solid 2px $primary-competences-svg!important;
-                border-radius: 12px!important;
-                display: inline-block!important;
-                font-size: 20px!important;
-                padding: 12px 25px!important;
+      mark {
+        background: $primary-competences-svg !important;
+        border: solid 2px $primary-competences-svg !important;
+        border-radius: 12px !important;
+        display: inline-block !important;
+        font-size: 20px !important;
+        padding: 12px 25px !important;
 
-                &:hover {
-                    background: transparent!important;
-
-                    a{
-                        color: $primary-competences-svg!important;
-                    }
-                }
-
-                a{
-                    color: #fff!important;
-                }
-            }
-        }
-    }
-
-    .compe-hi1 {
         &:hover {
-            background: #fff!important;
+          background: transparent !important;
+
+          a {
+            color: $primary-competences-svg !important;
+          }
         }
+
+        a {
+          color: #fff !important;
+        }
+      }
     }
+  }
+
+  .compe-hi1 {
+    &:hover {
+      background: #fff !important;
+    }
+  }
 }
 
+.compe-hi1 {
+  max-width: 500px;
+  box-shadow: 0 0 10px #c9c9c9;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 4vw !important;
 
-.compe-hi1{
-    max-width: 500px;
-    box-shadow: 0 0 10px #c9c9c9;
-    border-radius: 20px;
-    padding: 2rem;
-    margin-bottom: 4vw!important;
-
-    .text {
-        padding: 30px;
-    }
+  .text {
+    padding: 30px;
+  }
 }
 
 .compe-hi1 h2,
 .compe-hi1 h3,
-.compe-hi1 p{
-    color: $primary-competences!important;
+.compe-hi1 p {
+  color: $primary-competences !important;
 }
 
-.compe-hi1 mark{
-    padding: 0;
-background: top;
-border: 0;
+.compe-hi1 mark {
+  padding: 0;
+  background: top;
+  border: 0;
 }
 
-.compe-hi1 mark a{
-    display: inline-block;
-    margin: 0 auto;
-    background: $primary-competences;
-    color: #fff!important;
-    padding: 1rem 2rem;
-    border-radius: 15px;
+.compe-hi1 mark a {
+  display: inline-block;
+  margin: 0 auto;
+  background: $primary-competences;
+  color: #fff !important;
+  padding: 1rem 2rem;
+  border-radius: 15px;
 }
 
-.compe-hi2{
-    margin-bottom: 4vw!important;
+.compe-hi2 {
+  margin-bottom: 4vw !important;
 
-    .section-title {
-        color: $primary-competences-svg!important;
-        margin-bottom: 2rem;
-        width: 100%;
-        background: #fff;
-        padding-bottom: 1.5rem;
-    }
+  .section-title {
+    color: $primary-competences-svg !important;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 1.5rem;
+  }
 
-    .see_all {
-        display: none;
-    }
-
-    .swiper{
-        max-width: 450px;
-    }
-
-    .swiper-slide {
-        & > a {
-            place-items: unset;
-
-            &::after{
-                content: "";
-                position: absolute;
-                background: rgba(0, 0, 0, 55%);
-                bottom: 0;
-                height: 0%;
-                width: 100%;
-                transition: all .2s ease;
-            }
-        }
-
-        .swiper_items_wrapper{
-            display: flex;
-            flex-direction: column;
-            background: rgba(0, 0, 0, 55%);
-            transition: all .2s ease;
-            position: absolute;
-            top: 100%;
-            transform: translateY(-100%);
-            width: 100%;
-            z-index: 1;
-            padding: 5px 20px;
-        }
-
-        .swiper-image {
-            padding-bottom: 100%;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .swiper_title {
-            order: -1;
-
-            h3{
-                margin-bottom: 0;
-                color: #fff!important;
-            }
-        }
-
-        .swiper_category{
-            display: none;
-            order: -2;
-
-            span{
-                width: max-content;
-            }
-        }
-
-        .swiper_date{
-            display: none;
-        }
-
-        .swiper_description {
-            p {
-                color: #fff!important;
-            }
-        }
-
-        & > a:hover {
-            .swiper_items_wrapper{
-                top: 0%;
-                border-radius: 15px 15px 0 0;
-                transform: translateY(0);
-                background: transparent;
-            }   
-
-            &::after{
-                height: 100%;
-                border-radius: 15px 15px 0 0;
-            }
-
-            .swiper_category{
-                display: block;
-            }
-
-            .swiper_date{
-                display: block;
-            }
-        }
-    }
-
-    .nb-items-batch-1{
-        background: $primary-competences-svg;
-        padding-bottom: 2rem;
-    }
-}
-
-.compe-hi2 .swiper-pagination{
+  .see_all {
     display: none;
+  }
+
+  .swiper {
+    max-width: 450px;
+  }
+
+  .swiper-slide {
+    & > a {
+      place-items: unset;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: rgba(0, 0, 0, 55%);
+        bottom: 0;
+        height: 0%;
+        width: 100%;
+        transition: all 0.2s ease;
+      }
+    }
+
+    .swiper_items_wrapper {
+      display: flex;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 55%);
+      transition: all 0.2s ease;
+      position: absolute;
+      top: 100%;
+      transform: translateY(-100%);
+      width: 100%;
+      z-index: 1;
+      padding: 5px 20px;
+    }
+
+    .swiper-image {
+      padding-bottom: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .swiper_title {
+      order: -1;
+
+      h3 {
+        margin-bottom: 0;
+        color: #fff !important;
+      }
+    }
+
+    .swiper_category {
+      display: none;
+      order: -2;
+
+      span {
+        width: max-content;
+      }
+    }
+
+    .swiper_date {
+      display: none;
+    }
+
+    .swiper_description {
+      p {
+        color: #fff !important;
+      }
+    }
+
+    & > a:hover {
+      .swiper_items_wrapper {
+        top: 0%;
+        border-radius: 15px 15px 0 0;
+        transform: translateY(0);
+        background: transparent;
+      }
+
+      &::after {
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .swiper_category {
+        display: block;
+      }
+
+      .swiper_date {
+        display: block;
+      }
+    }
+  }
+
+  .nb-items-batch-1 {
+    background: $primary-competences-svg;
+    padding-bottom: 2rem;
+  }
+}
+
+.compe-hi2 .swiper-pagination {
+  display: none;
 }

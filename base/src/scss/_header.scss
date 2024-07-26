@@ -11,7 +11,7 @@
   margin-top: 0;
   margin-bottom: 1.25rem;
 
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     position: relative;
   }
 
@@ -139,12 +139,16 @@
   display: block;
   background-color: $nav-mask-background;
   opacity: 0%;
-  transition: opacity 0.05s, visibility 0s linear 0.25s;
+  transition:
+    opacity 0.05s,
+    visibility 0s linear 0.25s;
   visibility: hidden;
 
   &.in {
     opacity: 100%;
-    transition: opacity 0.2s ease, visibility 0s;
+    transition:
+      opacity 0.2s ease,
+      visibility 0s;
     visibility: visible;
   }
 }

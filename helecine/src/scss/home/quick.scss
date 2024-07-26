@@ -1,11 +1,12 @@
-.quick-access .table_image:focus .image.d-block, .quick-access .table_image:hover .image.d-block {
-    transform: translateY(-15px);
+.quick-access .table_image:focus .image.d-block,
+.quick-access .table_image:hover .image.d-block {
+  transform: translateY(-15px);
 }
 
 .quick-access .table_image .image.d-block {
-    transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 
 .sortable-section.sectionlinks.quick-access {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }

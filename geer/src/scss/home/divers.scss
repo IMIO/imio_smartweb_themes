@@ -1,195 +1,209 @@
 .contact_description {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .contact_description strong {
-    font-size: 1.25rem;
-    font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 div#subsite-logo img {
-	height: 3rem;
-	margin: 0 auto 0.5rem;
-	display: block;
+  height: 3rem;
+  margin: 0 auto 0.5rem;
+  display: block;
 }
 
-#portal-header #portal-header-top #portal-logo img, #portal-header #portal-header-top #portal-logo svg {
-    max-width: 100%;
+#portal-header #portal-header-top #portal-logo img,
+#portal-header #portal-header-top #portal-logo svg {
+  max-width: 100%;
 }
 
-.nav-link{
- font-size:17px
+.nav-link {
+  font-size: 17px;
 }
 
 .subsite-container #subsite-logo {
-    background: $secondary;
+  background: $secondary;
 }
 
 #portal-breadcrumbs {
-    background-color: transparent;
-    margin-top: 2rem;
+  background-color: transparent;
+  margin-top: 2rem;
 }
 
 .block-menu-element a .card-body {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .sortable-section.sectionfiles {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
-    &::after {
-        border-radius: 50px;
-    }
+  &::after {
+    border-radius: 50px;
+  }
 }
 
-#subsite-navigation>ul li.show-nav>.has_subtree.dropdown {
-    margin-top: 2rem;
+#subsite-navigation > ul li.show-nav > .has_subtree.dropdown {
+  margin-top: 2rem;
 }
 
 .subsite-container {
-    background: transparent;
-    padding: 1rem 0;
+  background: transparent;
+  padding: 1rem 0;
 }
 
 .subsite-container #subsite-logo {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 //SEE ALL
 body .see_all a::after {
-    background-color: $primary-svg;
-    bottom: -5px;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transition: all .2s ease;
-    width: 25%;
+  background-color: $primary-svg;
+  bottom: -5px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: all 0.2s ease;
+  width: 25%;
 }
 
-body .see_all a:focus::after, body .see_all a:hover::after {
-    width: 50%;
+body .see_all a:focus::after,
+body .see_all a:hover::after {
+  width: 50%;
 }
 
 body #portal-header #portal-header-top #portal-logo {
-    max-width: 100px;
+  max-width: 100px;
 }
 
-body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access .quick-access-title {
-    color: $primary;
+body
+  #portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  .quick-access
+  .quick-access-title {
+  color: $primary;
 }
 
-body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.show-nav.has_subtree>a {
-    color: $primary !important;
+body
+  #portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  > li.show-nav.has_subtree
+  > a {
+  color: $primary !important;
 }
 
 .text p:not(.section-home-page) a {
-    position: relative;
+  position: relative;
 }
 
 .text p:not(.section-home-page) a::after {
-    content: "";
-    background: $primary-svg;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    position: absolute;
-    transition: 0.5s;
+  content: "";
+  background: $primary-svg;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  position: absolute;
+  transition: 0.5s;
 }
 
 .text p:not(.section-home-page) a:hover {
-    text-decoration: none !important;
+  text-decoration: none !important;
 
- &::after {
+  &::after {
     bottom: 0;
     left: 10%;
     right: 10%;
-    }
+  }
 }
 
 button.focus:hover {
-    padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.75rem;
 }
 
 .contact_leadimage.contact_placeholder.portrait {
-    background: url("../../assets/svg/person-place-holder.jpeg");
-    background-size: cover;
-    background-position: center;
+  background: url("../../assets/svg/person-place-holder.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .sectionfiles .section-container a {
-    color: white;
+  color: white;
 }
 
 #portal-header #portal-header-top #portal-logo {
-    max-width: 135px;
+  max-width: 135px;
 }
 
 .minisite_logo .minisite_title {
-    color: #584b43;
+  color: #584b43;
 }
 
 .procedure a {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .smartweb-footer ul.row {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-
 @media (min-width: 992px) {
-.sectionlinks.quick-access {
+  .sectionlinks.quick-access {
     left: 0;
     padding: 0;
     position: absolute;
     top: 484px;
     transform: translateY(-50%);
-}
+  }
 }
 
 @media (min-width: 992px) {
-.sectionlinks.quick-access .section-container>div {
+  .sectionlinks.quick-access .section-container > div {
     margin-left: auto;
     max-width: 500px;
-    background: #E1F1F5;
+    background: #e1f1f5;
     border-radius: 50%;
     height: 500px;
     width: 500%;
-}
+  }
 }
 
 @media (min-width: 992px) {
-.sectionlinks.quick-access .section-container .row {
+  .sectionlinks.quick-access .section-container .row {
     display: grid;
     gap: 20px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-}
+  }
 }
 
 .sectionlinks.quick-access .body-section ul {
-    justify-content: center;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
-.sectionlinks.quick-access .section-container .row li {
+  .sectionlinks.quick-access .section-container .row li {
     padding: 0;
     width: 128px;
-}
+  }
 }
 
 .sortable-section.sectionlinks.quick-access:first-child {
-    transform: translateY(-70%);
+  transform: translateY(-70%);
 }
 
 .sectionlinks.quick-access .body-section {
-    padding: 6rem 0;
+  padding: 6rem 0;
 }
 
 @media (max-width: 992px) {
-    #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access {
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    .quick-access {
     padding-top: 3.5rem;
-    }
+  }
 }

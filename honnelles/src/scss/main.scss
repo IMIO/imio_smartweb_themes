@@ -14,8 +14,8 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main.scss';
+@import "./variables";
+@import "../../../base/src/scss/main.scss";
 
 //// STYLES
 
@@ -35,427 +35,439 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 @import "./home/bulletins.scss";
 
+h1 {
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 2rem;
 
-
-h1{
-    font-weight: 500;
-    position: relative;
-    text-align: left;
-    padding-left:30px;
-    margin-bottom:2rem;
-
-    &::after{
-        background: $primary-green;
-        content: "";
-        display: block;
-        width: 8px;
-        height: 60px;
-        margin:-6px 0 0 -30px;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        border-radius: 20px;
-
-
-    }
+  &::after {
+    background: $primary-green;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 60px;
+    margin: -6px 0 0 -30px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 20px;
+  }
 }
 
 .smartweb_herobanner {
-    width: 90vw;
-    overflow: hidden;
-    border-radius: 30px;
+  width: 90vw;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 .smartweb_herobanner .bannerSwiper {
-	height: 50vw;
-	max-height: 500px;
+  height: 50vw;
+  max-height: 500px;
 }
 
+.bannerSwiper .section-slide {
+  .swiper-banner-content {
+    display: none;
+  }
 
-
-
-.bannerSwiper .section-slide{
-    .swiper-banner-content {display: none;}
-
-    &::after{
-        display: none;
-    }
+  &::after {
+    display: none;
+  }
 }
 
 .swiper-banner-image::after {
-    content: "";
-    background: #0000;
-    position: absolute;
-    inset: 0;
-    opacity: 30%;
+  content: "";
+  background: #0000;
+  position: absolute;
+  inset: 0;
+  opacity: 30%;
 }
 
 .r-item-img.r-item-img-placeholder {
-	background: url("../../assets/svg/placeholder.jpg");
-	background-size: cover;
-	background-position: center;
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-//footer 
-footer{
-    #container-section-noussuivre{
-        .table_title{
-            display: none;
-        }
-
-        ul.row{
-            flex-flow: row wrap;
-
-            li{
-                width: auto;
-            }
-        }
+//footer
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
     }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
 }
 
 .sectiontext .section-text .body-section figure figcaption {
-	display: block;
+  display: block;
 }
 
 .portaltype-imio-smartweb-directoryview,
 .portaltype-imio-smartweb-newsview,
 .portaltype-imio-smartweb-eventsview {
-    #content > header {
-       display: none;
-   }
+  #content > header {
+    display: none;
+  }
 }
 
 // bug z-index
 
-.pagination{
-    .page-item.active{
-        z-index: 0;
-    }
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
 }
 
-#main-container{
-    .sectionlinks{
-        margin: 2rem 0 0;
-    }
+#main-container {
+  .sectionlinks {
+    margin: 2rem 0 0;
+  }
 }
 
-
-footer #container-section-noussuivre{
-    li{
-        svg{
-            path{
-                fill: #fff;
-            }
-        }
-
-        &:nth-child(1), &:nth-child(3){
-            svg path:nth-child(2) {
-                fill: #3f3f3f !important;
-            }
-        }
+footer #container-section-noussuivre {
+  li {
+    svg {
+      path {
+        fill: #fff;
+      }
     }
-} 
 
-@media screen and (max-width:900px) {
-    .portaltype-imio-smartweb-portalpage .section-title {
-        font-size: 34px!important;
+    &:nth-child(1),
+    &:nth-child(3) {
+      svg path:nth-child(2) {
+        fill: #3f3f3f !important;
+      }
     }
+  }
 }
 
-#portal-breadcrumbs{
-    background: transparent!important;
+@media screen and (max-width: 900px) {
+  .portaltype-imio-smartweb-portalpage .section-title {
+    font-size: 34px !important;
+  }
+}
 
-    .container,.breadcrumb{
-        padding-left: 0;
-    }
+#portal-breadcrumbs {
+  background: transparent !important;
+
+  .container,
+  .breadcrumb {
+    padding-left: 0;
+  }
 }
 
 #portal-globalnav > li a:hover {
-	color: $primary-svg;
+  color: $primary-svg;
 }
-
-
-
-
 
 // footer
 .footer-logo {
-    figure img {
-        width:250px!important;
-    }
+  figure img {
+    width: 250px !important;
+  }
 }
 
 .footer-slogan {
-    .text {
-        max-width: 204px;
-        text-align: center;
+  .text {
+    max-width: 204px;
+    text-align: center;
 
-        p {
-            font-size: 33px;
-            font-weight: 200;
-        }
+    p {
+      font-size: 33px;
+      font-weight: 200;
     }
+  }
 }
 
 .footer-fb {
-    .table_image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row-reverse;
-        gap: 10px;
-        text-decoration: none;
+  .table_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    text-decoration: none;
 
-        .image{
-            width: auto;
+    .image {
+      width: auto;
 
-            svg {
-                height: 25px;
-                fill: #fff;
-            }
-        }
+      svg {
+        height: 25px;
+        fill: #fff;
+      }
     }
+  }
 }
 
 .r-filter div[class*="control"] {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 .procedure a::after {
-    content: "\F135";
-    font-family: Bootstrap-icons;
-    margin-left: .5rem;
-    position: relative;
-    top: 3px;
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
 }
-
 
 // sub-nav
 
 .subsite-container {
-    background: $primary-light;
-    border-radius: 10px;
+  background: $primary-light;
+  border-radius: 10px;
 
-    #subsite-logo {
-	font-size: 18px;
+  #subsite-logo {
+    font-size: 18px;
     background: #353535;
     border-radius: 10px 0 0 10px;
 
     a {
-        .subsite-title{
-            color:#fff!important;
-        }
+      .subsite-title {
+        color: #fff !important;
+      }
     }
-    }
+  }
 }
 
 .contact_leadimage {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .sectiontext .section-text .body-section a {
-	color: $primary;
+  color: $primary;
 }
 
 .sectiontext figure img {
-	border-radius: 15px;
+  border-radius: 15px;
 }
 
 #viewlet-above-content-body {
-    .procedure{
-        display: none;
-    } 
+  .procedure {
+    display: none;
+  }
 }
 
-
-// header common 
-
+// header common
 
 .portaltype-imio-smartweb-page,
 .portaltype-imio-smartweb-folder,
 .portaltype-imio-smartweb-procedure {
-    #portal-header {
-        #banner {
-            width: 100vw;
-            left: 50%;
-            position: relative;
-            transform: translateX(-50%);
-            border-radius: 0 0 30px 30px;
-            z-index: -1;
-        }
+  #portal-header {
+    #banner {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      border-radius: 0 0 30px 30px;
+      z-index: -1;
     }
+  }
 }
 
 .breadcrumb-item {
-    a {
-     text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 .breadcrumb {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 .header-custom {
-    #banner {
-        z-index: -1;
+  #banner {
+    z-index: -1;
 
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(0deg, rgba(0,0,0,0%) 0%, rgba(0, 0, 0, 50%) 100%);
-        }
-    } 
-
-    #portal-breadcrumbs {
-        margin: .5rem 0 0 !important;
-        position: absolute;
-
-        .breadcrumb {
-            margin: 0!important;
-
-            .breadcrumb-item {
-                a {
-                    color: #fff!important;
-
-                    &:hover {
-                        color: #CCC!important;
-                    }
-                }
-
-                &.active {
-                    color:#CCC!important ;
-                }
-
-                &::before {
-                    color: #fff!important;
-                }
-            }
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0%) 0%,
+        rgba(0, 0, 0, 50%) 100%
+      );
     }
+  }
+
+  #portal-breadcrumbs {
+    margin: 0.5rem 0 0 !important;
+    position: absolute;
+
+    .breadcrumb {
+      margin: 0 !important;
+
+      .breadcrumb-item {
+        a {
+          color: #fff !important;
+
+          &:hover {
+            color: #ccc !important;
+          }
+        }
+
+        &.active {
+          color: #ccc !important ;
+        }
+
+        &::before {
+          color: #fff !important;
+        }
+      }
+    }
+  }
 }
 
-.block-menu-element a .card-title.h2, .block-menu-element a h2.card-title {
-    font-size: 1rem;
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
 }
 
 .block-menu-element a .card-body {
-    background: #fff;
-    border-radius: 15px 15px 15px 0;
-    box-shadow: 0 1px 4px rgba(0,0,0,16%);
-    height:auto;
-    margin-bottom: 10px;
-    position: relative;
-    transition: 1.2s;
+  background: #fff;
+  border-radius: 15px 15px 15px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 1.2s;
 }
 
-.template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a {
-    background: none;
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
 }
 
-.template-facetednavigation_view.faceted-map .eea-preview-items .faceted-map-item>a:hover {
-    background-color: #fff;
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
 }
 
 #portal-header #portal-header-top #header-links .account {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 .swiper-pagination-bullet {
-    background: #A3A3A3!important;
+  background: #a3a3a3 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background: $primary-green!important;
+  background: $primary-green !important;
 }
 
 .contact_map {
-    z-index: 0!important;
+  z-index: 0 !important;
 }
 
-.portaltype-imio-smartweb-page #main-container .sectionfiles .section-container .table_display .table_image, .portaltype-imio-smartweb-portalpage .sectionfiles .section-container .table_display .table_image {
-    border:none;
-    border-radius: 10px;
-    background: $primary-light;
-    color:#000;
-    transition: all .25s ease;
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image,
+.portaltype-imio-smartweb-portalpage
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border: none;
+  border-radius: 10px;
+  background: $primary-light;
+  color: #000;
+  transition: all 0.25s ease;
 
-    &:hover {
-        background:$primary-green;
-        transition: all .25s ease;
-        color:#fff;
+  &:hover {
+    background: $primary-green;
+    transition: all 0.25s ease;
+    color: #fff;
 
-        div {
-            color:#fff !important;
-        }
-
-        span {
-            color:#fff !important;
-        }
-
+    div {
+      color: #fff !important;
     }
+
+    span {
+      color: #fff !important;
+    }
+  }
 }
 
-.portaltype-imio-smartweb-folder #portal-header #banner, .portaltype-imio-smartweb-page #portal-header #banner, .portaltype-imio-smartweb-procedure #portal-header #banner {
-    border-radius: 0;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    width: 100vw;
-    z-index: -1;
-    margin-top: 0;
+.portaltype-imio-smartweb-folder #portal-header #banner,
+.portaltype-imio-smartweb-page #portal-header #banner,
+.portaltype-imio-smartweb-procedure #portal-header #banner {
+  border-radius: 0;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: -1;
+  margin-top: 0;
 }
 
 .sectiontext mark {
-    margin:10px 0;
+  margin: 10px 0;
 }
 
-
 .section-home-page #messagesviewlet {
-    float: none;
-    padding-top: 0;
-    position: absolute;
-    top: 90px;
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 90px;
 }
 
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
-    background-color: $primary-green;
-    color:#fff;
+  background-color: $primary-green;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
-    background-color: $primary-green;
-    color:#fff;
+  background-color: $primary-green;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-    background-color: $primary-green;
-    color:#fff;
+  background-color: $primary-green;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
-    background-color: $primary-green;
-    color:#fff;
+  background-color: $primary-green;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
-    background-color: $primary-green;
-    color:#fff;
+  background-color: $primary-green;
+  color: #fff;
 }
 
-#portal-column-content .section-contact .contact-type-organization .contact_logo {
-    max-width: 200px;
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
 }
 
 .site-agence-locale-pour-lemploi {
-    #portal-header #portal-header-top #portal-logo {
-        max-width: 80px !important;
-    }
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 80px !important;
+  }
 }

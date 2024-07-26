@@ -1,78 +1,78 @@
 .bulletin .swiper-slide .swiper-image {
-    padding-bottom: 140%;
-    border: $light-blue solid 1px;
+  padding-bottom: 140%;
+  border: $light-blue solid 1px;
 }
 
-.sectioncollection.bulletin{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.sectioncollection.bulletin {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
-    .section-title{
-        margin: 0 0 2rem;
-        color: $dark;
+  .section-title {
+    margin: 0 0 2rem;
+    color: $dark;
+  }
+
+  .swiper-slide > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .swiper_title {
+      h3 {
+        color: $dark !important;
+        font-size: 18px !important;
+      }
     }
+  }
 
-    .swiper-slide > a{
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+  .see_all {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0;
 
-        .swiper_title{
-            h3{
-                color: $dark!important;
-                font-size: 18px!important;
-            }
+    a {
+      background: transparent;
+      border: 0 solid $primary;
+      border-radius: 10px;
+      color: #222831;
+      display: block;
+      font-size: 18px;
+      font-weight: 200;
+      padding: 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: none;
+      transition: all 0.2s ease;
+      width: max-content;
+
+      &::after {
+        background-color: $primary;
+        bottom: -5px;
+        content: "";
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s ease;
+        width: 25%;
+      }
+
+      &:hover {
+        &::after {
+          width: 50%;
         }
+      }
     }
-
-    .see_all{
-        display: flex;
-        justify-content: center;
-        margin: 2rem 0 0;
-
-        a{
-            background: transparent;
-            border: 0 solid $primary;
-            border-radius: 10px;
-            color: #222831;
-            display: block;
-            font-size: 18px;
-            font-weight: 200;
-            padding: 0;
-            position: relative;
-            text-decoration: none;
-            text-transform: none;
-            transition: all .2s ease;
-            width: max-content;
-
-            &::after{
-                background-color: $primary;
-                bottom: -5px;
-                content: "";
-                height: 2px;
-                position: absolute;
-                transition: all .2s ease;
-                width: 25%;
-            }
-
-            &:hover{
-                &::after{
-                    width: 50%;
-                }
-            }
-        }
-    }
+  }
 }
 
 .sectioncollection.bulletin .section-title {
-    text-align: center;
+  text-align: center;
 }
 
 .sectioncollection.bulletin .see_all a::after {
-    left: 0;
+  left: 0;
 }
 
 .sectioncollection.bulletin .see_all a:hover {
-    color: $primary;
+  color: $primary;
 }

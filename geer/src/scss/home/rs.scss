@@ -1,74 +1,74 @@
 .sortable-section.sectionlinks.rs {
-    background: #fff;
-    border-radius: 50px;
-  }
+  background: #fff;
+  border-radius: 50px;
+}
 
 .sortable-section.sectionlinks.rs a {
-    text-align: center;
-    display: block;
-    width: 60px;
-    margin: 0 auto;
-  }
+  text-align: center;
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+}
 
 .sortable-section.sectionlinks.rs h2.section-title {
-    color: #584b43;
-    font-size: 2rem;
-    margin: 0 auto 5rem;
-    padding: 0;
-    text-align: center;
+  color: #584b43;
+  font-size: 2rem;
+  margin: 0 auto 5rem;
+  padding: 0;
+  text-align: center;
 }
 
 .sortable-section.sectionlinks.rs .plone-icon {
-    height: 2em;
+  height: 2em;
 
-    path {
+  path {
     fill: $primary-svg;
-    }
+  }
 }
 
-  .sortable-section.sectionlinks.bulletin-communal::after {
-    background: $primary-svg;
-    bottom: 0;
-    content: "";
-    left: 50%!important;
-    position: absolute;
-    top: -100px;
-    transform: translateX(-50vw);
-    width: 100vw!important;
-    z-index: -2;
+.sortable-section.sectionlinks.bulletin-communal::after {
+  background: $primary-svg;
+  bottom: 0;
+  content: "";
+  left: 50% !important;
+  position: absolute;
+  top: -100px;
+  transform: translateX(-50vw);
+  width: 100vw !important;
+  z-index: -2;
 }
 
 .sortable-section.sectionlinks.bulletin-communal {
-    background: transparent;
-    text-align: center;
+  background: transparent;
+  text-align: center;
 }
 
 .bulletin-communal .table_title span {
-    border-radius: 50px;
-    padding: 1rem 2rem;
-    background: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  background: white;
 }
 
 div#container-section-bulletin-communal {
-    max-width: 210px;
+  max-width: 210px;
 }
 
 .bulletin-communal .table_title:hover span {
-    background: $primary-svg;
-    border: 2px #fff solid;
-    color: $primary;
+  background: $primary-svg;
+  border: 2px #fff solid;
+  color: $primary;
 }
 
 .rs a.table_image:hover span {
-    position: relative;
+  position: relative;
 }
 
 .rs a.table_image:hover span::after {
-    content: "";
-    height: 4px;
-    background:  $primary-svg;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
+  content: "";
+  height: 4px;
+  background: $primary-svg;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }

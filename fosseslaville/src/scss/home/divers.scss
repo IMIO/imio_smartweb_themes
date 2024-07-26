@@ -1,58 +1,62 @@
 div.swiper-image {
-    position: relative;
+  position: relative;
 }
 
 div.swiper-image::before {
-    background: transparent;
-    content: "";
-    position: absolute;
-    inset: 0;
-    transition: all .2s ease;
-    z-index: 99;
+  background: transparent;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: all 0.2s ease;
+  z-index: 99;
 }
 
 .r-list-item-group:hover .r-item-arrow-more {
-    background-color: $primary !important;
+  background-color: $primary !important;
 }
 
 .sectionfiles::after {
-    background: #f3f3f3;
+  background: #f3f3f3;
 }
 
 .sectionfiles {
-h2 {
+  h2 {
     color: $primary !important;
-}
+  }
 
-a {
+  a {
     color: #000 !important;
-}
+  }
 
-span {
+  span {
     color: #000 !important;
-}
+  }
 }
 
 #portal-breadcrumbs {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .list-card-body h2.list-card-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .section-contact li.fax a::after {
-    content: " (fax)";
+  content: " (fax)";
 }
 
 #portal-header #portal-header-top #portal-logo {
-    margin-right: 30px;
-  }
+  margin-right: 30px;
+}
 
-  #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.show-nav.has_subtree > a {
-    color: #fff !important;
-  }
+#portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  > li.show-nav.has_subtree
+  > a {
+  color: #fff !important;
+}
 
-  .a-la-une .swiper-slide .swiper_title h3 {
-    text-transform: initial;
+.a-la-une .swiper-slide .swiper_title h3 {
+  text-transform: initial;
 }

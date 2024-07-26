@@ -1,130 +1,128 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.quick-access {
-	padding: 0;
+  padding: 0;
 
-    .body-section{
-        padding: 0;
-    }
+  .body-section {
+    padding: 0;
+  }
 }
 
-.quick-access{
-    .section-title{
-        font-weight: 500;
-        position: relative;
-        text-align: left;
-        padding-left:30px;
-        margin-bottom:2rem;
+.quick-access {
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
 
-        &::after{
-            background: $primary-green;
-            content: "";
-            display: block;
-            width: 8px;
-            height: 60px;
-            margin:-6px 0 0 -30px;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            border-radius: 20px;
+    &::after {
+      background: $primary-green;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
+  }
+
+  svg {
+    max-height: 40px;
+    fill: #fff !important;
+  }
+
+  .body-section {
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          transition: all 0.3s ease;
         }
-    }
-    
-    svg{
-        max-height: 40px;
-        fill: #fff !important; 
-    }
-    
-    .body-section{
-        li{
-            .table_image{
-                .image.d-block{
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                    position: relative;
-                    transition: all .3s ease;
-                }
 
-                .table_title{
-                    margin-top:0;
+        .table_title {
+          margin-top: 0;
 
-                    span{
-                        color:#000;
-                    }
-                }
+          span {
+            color: #000;
+          }
+        }
 
-                &:hover{
-                    .image.d-block{
-                        background: $primary; 
-                    }
+        &:hover {
+          .image.d-block {
+            background: $primary;
+          }
 
-                    svg{
-                        fill: #fff !important;
-                    }
+          svg {
+            fill: #fff !important;
+          }
 
-                    .table_title{
-                        span{
-                            color:#fff;
-                        }
-                    }
-                }
+          .table_title {
+            span {
+              color: #fff;
             }
+          }
         }
+      }
     }
+  }
 
-    .row{
-        @include media-breakpoint-down(lg){
-            grid-gap: 0;
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(56px,132px));
+  .row {
+    @include media-breakpoint-down(lg) {
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 132px));
 
-            li{
-                width: auto!important;
-            }
-        }
+      li {
+        width: auto !important;
+      }
     }
+  }
 }
-
 
 .sectionlinks.quick-access .body-section ul {
-	max-width: auto;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    li a {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 10px;
-        background: #EDEAE9;
-        border-radius: 10px;
-        transition: all .3s ease;
-        margin-bottom: 10px;
-        color:#000;
+  li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: #edeae9;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    color: #000;
 
-        .image.d-block {
-            background: none;
+    .image.d-block {
+      background: none;
 
-            svg {
-                fill: $primary-green !important;
-            }
-        }
-
-        &:hover{
-
-            background:$primary-green;
-            transition: all .3s ease;
-            transform: translateY(10px);
-            color:#fff;
-    
-            .image.d-block {
-                background: none;
-    
-                svg {
-                    fill: #fff !important;
-                    transition: all .3s ease;
-                }
-            }
-        }
+      svg {
+        fill: $primary-green !important;
+      }
     }
+
+    &:hover {
+      background: $primary-green;
+      transition: all 0.3s ease;
+      transform: translateY(10px);
+      color: #fff;
+
+      .image.d-block {
+        background: none;
+
+        svg {
+          fill: #fff !important;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
 }

@@ -1,19 +1,18 @@
 .swiper-banner-image::before {
-    bottom: 0;
-    background: url("../../assets/svg/wave.svg") top center;
-    background-size: cover;
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50vw);
-    width: 100vw;
-    height: 120px;
-    content: "";
+  bottom: 0;
+  background: url("../../assets/svg/wave.svg") top center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50vw);
+  width: 100vw;
+  height: 120px;
+  content: "";
 }
 
-@media (max-width:1000px) { 
-    .swiper-banner-image::before {
-        height: 50px;
-    }
- }
-    
+@media (max-width: 1000px) {
+  .swiper-banner-image::before {
+    height: 50px;
+  }
+}

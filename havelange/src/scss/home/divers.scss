@@ -1,126 +1,138 @@
 .sectionevents .see_all a {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
 }
 
 .sectionnews .see_all a {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
 }
 
-.sortable-section.partenaires h2.section-title, .sortable-section.sectionevents h2.section-title, .sortable-section.sectionnews h2.section-title {
-    position: relative;
+.sortable-section.partenaires h2.section-title,
+.sortable-section.sectionevents h2.section-title,
+.sortable-section.sectionnews h2.section-title {
+  position: relative;
 }
 
-.sortable-section.partenaires h2.section-title::after, .sortable-section.sectionevents h2.section-title::after, .sortable-section.sectionnews h2.section-title::after {
-    background: $primary;
-    bottom: 0;
-    content: "";
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    padding-bottom: 5px;
+.sortable-section.partenaires h2.section-title::after,
+.sortable-section.sectionevents h2.section-title::after,
+.sortable-section.sectionnews h2.section-title::after {
+  background: $primary;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  padding-bottom: 5px;
 
-    //top: 69px;
-    width: 12%;
+  //top: 69px;
+  width: 12%;
 }
 
 div.swiper-image {
-    position: relative;
+  position: relative;
 }
 
 div.swiper-image::before {
-    background: transparent;
-    content: "";
-    position: absolute;
-    inset: 0;
-    transition: all .2s ease;
-    z-index: 0;
+  background: transparent;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: all 0.2s ease;
+  z-index: 0;
 }
 
 .swiper-slide:hover a div.swiper-image::before {
-    background: $primary;
-    opacity: 50%;
+  background: $primary;
+  opacity: 50%;
 }
 
 .enquetes div.swiper-slide {
-    position: relative;
-    padding: 1rem;
-    background: #fff;
+  position: relative;
+  padding: 1rem;
+  background: #fff;
 }
 
 //thematique agenda
 
 .section-agenda.site-centre-culturel .r-filter.topics-Filter {
-    display: none;
+  display: none;
 }
 
 .sectionfiles .item_infos {
-    color: #fff;
-  }
-
-  .swiper-banner-link a {
-    color: #000;
-    font-weight: bold;
-  }
-
-  .swiper-banner-link {
-    display: block;
-    text-align: center;
+  color: #fff;
 }
 
-.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-    background: hsla(0deg, 0%, 100%, 83%);
+.swiper-banner-link a {
+  color: #000;
+  font-weight: bold;
+}
+
+.swiper-banner-link {
+  display: block;
+  text-align: center;
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  background: hsla(0deg, 0%, 100%, 83%);
 }
 
 //PARTENAIRES
 .section-home-page .partenaires {
-	background: #E7ECEF;
-    padding: 5rem 0;
+  background: #e7ecef;
+  padding: 5rem 0;
 }
 
 .section-home-page .partenaires::before {
-    content: url('../../assets/svg/havelange-logo-background-white.svg');
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transform: scale(0.7);
-    transform-origin: left bottom;
-    z-index: -1;
+  content: url("../../assets/svg/havelange-logo-background-white.svg");
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: scale(0.7);
+  transform-origin: left bottom;
+  z-index: -1;
 }
 
 footer h3 {
-    color: #fff;
-  }
-
-.sectionlinks #portal-footer-wrapper li {
-    list-style-type: none;
-    margin-bottom: .25rem;
-    padding-left: 0;
-    width: 100%;
-  }
-
-footer .sectionlinks li {
-    width: 100% !important;
+  color: #fff;
 }
 
-  .sectionfiles .body-section .h2, .sectionfiles .body-section h2, 
-  .sectionfiles .body-section p, .sectionfiles .body-section span, 
-  .sectionfiles .section-title .h2, .sectionfiles .section-title h2,
-  .sectionfiles .section-title p, .sectionfiles .section-title span,
-  .sectionfiles a .item_infos {
-    color: #000 !important;
-  }
+.sectionlinks #portal-footer-wrapper li {
+  list-style-type: none;
+  margin-bottom: 0.25rem;
+  padding-left: 0;
+  width: 100%;
+}
 
-  .sectionfiles::after {
-    background: #e7ecef;
-  }
+footer .sectionlinks li {
+  width: 100% !important;
+}
 
-  .sortable-section.sectionfiles {
-    padding: 3rem 1rem;
-    margin-bottom: 1rem;
-  }
+.sectionfiles .body-section .h2,
+.sectionfiles .body-section h2,
+.sectionfiles .body-section p,
+.sectionfiles .body-section span,
+.sectionfiles .section-title .h2,
+.sectionfiles .section-title h2,
+.sectionfiles .section-title p,
+.sectionfiles .section-title span,
+.sectionfiles a .item_infos {
+  color: #000 !important;
+}
 
-  .sectionfiles h2.section-title {
-    color: #000 !important;
+.sectionfiles::after {
+  background: #e7ecef;
+}
+
+.sortable-section.sectionfiles {
+  padding: 3rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.sectionfiles h2.section-title {
+  color: #000 !important;
 }

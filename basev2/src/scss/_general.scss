@@ -1,111 +1,110 @@
 .frontend ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .offcanvas-start {
-    top: 0;
-    left: 0;
-    width: 95%!important;
+  top: 0;
+  left: 0;
+  width: 95% !important;
 }
 
 .contact_gallery {
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 }
 
 // affichage horraire
 .section-contact .table_schedule {
-	display: none;
+  display: none;
 }
 
-.schedule .opening_informations::after{
-    content: "";
-    width: 9px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: .4rem;
-    display: inline-block;
-    vertical-align: middle;
+.schedule .opening_informations::after {
+  content: "";
+  width: 9px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 //Cacher le bouton téléverser et l’afficher là ou il est utile
 #content .navbar a#btn-upload {
-    visibility: hidden;
- }
- 
+  visibility: hidden;
+}
+
 .portaltype-imio-smartweb-sectionfiles #content .navbar a#btn-upload,
 .portaltype-imio-smartweb-sectiongallery #content .navbar a#btn-upload,
-.portaltype-imio-smartweb-sectionhtml #content .navbar a#btn-upload{
-   visibility: visible;
+.portaltype-imio-smartweb-sectionhtml #content .navbar a#btn-upload {
+  visibility: visible;
 }
 
 .select2-results .select2-highlighted {
-    background: #f9f9f9;
- }
- 
+  background: #f9f9f9;
+}
 
 // img placeholder
 
-.r-item-img-placeholder{
-    background: $img-placeholder;
-    background-size: cover;
-    background-position: center;
+.r-item-img-placeholder {
+  background: $img-placeholder;
+  background-size: cover;
+  background-position: center;
 }
 
 .block-menu-element .newsImage.no-image {
-    background: $img-placeholder;
-    background-size: cover;
-    background-position: center;
+  background: $img-placeholder;
+  background-size: cover;
+  background-position: center;
 }
 
 // Afficher les intitulés sur une ligne et l’info (numéro de téléphone, email) sur une ligne suivante.
 
 .section-contact .contact_informations a {
-    display: block;
- }
+  display: block;
+}
 
 .userrole-authenticated.template-edit #content-core .edit .form-label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .linkTypes a#tinymce-autotoc-autotoc-1 {
-    display: none;
- }
- 
-// backoffie icon
-.kssattr-fieldset-icons div#formfield-form-widgets-svg_icon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
+  display: none;
 }
 
-.kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .form-text{
-    width:100%;
+// backoffie icon
+.kssattr-fieldset-icons div#formfield-form-widgets-svg_icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .form-text {
+  width: 100%;
 }
 
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .option {
-    position: relative;
-    flex-basis: 15%;
-    padding: 0.75rem;
-    text-align: center;
+  position: relative;
+  flex-basis: 15%;
+  padding: 0.75rem;
+  text-align: center;
 }
 
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .plone-icon {
-    width: auto;
-    height: 2.5rem;
+  width: auto;
+  height: 2.5rem;
 }
 
 .kssattr-fieldset-icons div#formfield-form-widgets-svg_icon .option label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size:14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
 }
 
-.mb-ign-mode-liste-carte{
-    z-index:0;
+.mb-ign-mode-liste-carte {
+  z-index: 0;
 }

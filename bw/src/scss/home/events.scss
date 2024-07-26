@@ -1,111 +1,111 @@
-.sectionevents{
-    margin-top: 7rem;
+.sectionevents {
+  margin-top: 7rem;
 
-    .section-title{
-        margin-bottom: 0;
-        position:absolute;
-    }
+  .section-title {
+    margin-bottom: 0;
+    position: absolute;
+  }
 
-    .swiper-pagination-bullets{
-        display: none !important;
-    }
+  .swiper-pagination-bullets {
+    display: none !important;
+  }
 
-    .swiper-wrapper{
-        padding-top: 0;
+  .swiper-wrapper {
+    padding-top: 0;
 
-        .swiper-slide {
-            &:nth-child(3n + 1) {
-                margin-top: 4rem;
-            }
+    .swiper-slide {
+      &:nth-child(3n + 1) {
+        margin-top: 4rem;
+      }
 
-            &:nth-child(3n + 3) {
-                margin-top: 4rem;
-            }
-            
-            & > a{
-                padding: 1rem;
-                border: 1px solid #e3e3e3;
-                grid-template-rows: min-content min-content 1fr;
-                box-shadow: 0 20px 40px #0000001a;
+      &:nth-child(3n + 3) {
+        margin-top: 4rem;
+      }
 
-                .swiper-image{
-                    background-size: 100%;
-                    background-position: center center;
-                    transition: all .25s ease;
-                }
+      & > a {
+        padding: 1rem;
+        border: 1px solid #e3e3e3;
+        grid-template-rows: min-content min-content 1fr;
+        box-shadow: 0 20px 40px #0000001a;
 
-                .swiper_category {
-                    order: 1;
-
-                }
-
-                .swiper_date{
-                    background: #fff;
-                    box-shadow: 0 10px 20px #0000001a;
-                    text-transform: uppercase;
-                    font-family: 'Open Sans' !important;
-                    align-self: end;
-                    transform: translateY(-50%);
-                }
-
-                &:hover,&:focus{
-                    .swiper-image{
-                        background-size: 105%;
-                     }
-                }
-            }
+        .swiper-image {
+          background-size: 100%;
+          background-position: center center;
+          transition: all 0.25s ease;
         }
 
-        @media screen and (max-width: 1000px) {
-            .swiper-slide {
-                margin-top: 4rem !important;
-            }
-        }
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        top: 25px;
-        width: 45px;
-        height: 45px;
-        border-radius: 50px;
-    }
-
-    .swiper-button-prev{
-        left: 165px;
-    }
-
-    .swiper-button-next{
-        left: 220px;
-    }
-
-    @media screen and (max-width: 767px) {
-        .swiper-button-next, .swiper-button-prev {
-            display: block!important;
-        }
-    }
-
-    @media screen and (max-width: 575px) {
-        .swiper-button-prev{
-            right:55px !important;
-            left:auto !important;
-            
+        .swiper_category {
+          order: 1;
         }
 
-        .swiper-button-next{
-            left: auto !important;
-            right:0 !important;
+        .swiper_date {
+          background: #fff;
+          box-shadow: 0 10px 20px #0000001a;
+          text-transform: uppercase;
+          font-family: "Open Sans" !important;
+          align-self: end;
+          transform: translateY(-50%);
         }
+
+        &:hover,
+        &:focus {
+          .swiper-image {
+            background-size: 105%;
+          }
+        }
+      }
     }
 
-
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 65vw;
-        z-index: -1;
-        background: #F3F3F3;
-        right: 0;
+    @media screen and (max-width: 1000px) {
+      .swiper-slide {
+        margin-top: 4rem !important;
+      }
     }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+  }
+
+  .swiper-button-prev {
+    left: 165px;
+  }
+
+  .swiper-button-next {
+    left: 220px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block !important;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .swiper-button-prev {
+      right: 55px !important;
+      left: auto !important;
+    }
+
+    .swiper-button-next {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 65vw;
+    z-index: -1;
+    background: #f3f3f3;
+    right: 0;
+  }
 }

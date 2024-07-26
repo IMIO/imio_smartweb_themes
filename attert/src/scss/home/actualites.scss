@@ -1,11 +1,11 @@
 .sortable-section.sectionnews::after {
-    content: "";
-    width: 100vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -350px;
-    bottom: 0;
-    z-index: -99;
-    background: #f0f0f0;
+  content: "";
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -350px;
+  bottom: 0;
+  z-index: -99;
+  background: #f0f0f0;
 }

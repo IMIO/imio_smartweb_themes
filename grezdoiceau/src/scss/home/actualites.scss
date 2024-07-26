@@ -1,107 +1,108 @@
-.sectionnews:not(.a-la-une){
+.sectionnews:not(.a-la-une) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 14px;
+    background: $primary-svg;
+    width: 50vw;
+    bottom: 0;
+  }
+
+  .section-container {
     position: relative;
 
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        height: 14px;
-        background: $primary-svg;
-        width: 50vw;
-        bottom: 0;
+    .swiper-pagination-bullet {
+      background: #880811;
+      opacity: 100%;
     }
+  }
 
-    .section-container{
-        position: relative;
+  .section-title {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto 2rem;
+    width: max-content;
+    font-size: 2.5rem;
+  }
 
-        .swiper-pagination-bullet {
-            background: #880811;
-            opacity: 100%;
-          }
-    }
-    
-    .section-title{
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        margin: 0 auto 2rem;
-        width: max-content;
-        font-size: 2.5rem;
-    }
+  .see_all a {
+    border: 2px solid $primary-red;
+  }
 
-    .see_all a {
-        border: 2px solid $primary-red;
-    }
+  .see_all a:hover {
+    border: 2px solid $primary;
+  }
 
-    .see_all a:hover {
-        border: 2px solid $primary;
-    }
+  .see_all a::after {
+    display: none;
+  }
 
-    .see_all a::after {
-        display: none;
-    }
+  .swiper-wrapper {
+    .swiper-slide {
+      background: transparent;
+      transition: 0.5s;
 
-    .swiper-wrapper{
-        .swiper-slide {
-            background: transparent;
-            transition: .5s;
-            
-            &:hover,&:focus{
-                    transition: .5s;
-                    transform: translateY(10px);
-            }
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+      }
 
-            & > a{
-                align-items: center;
+      & > a {
+        align-items: center;
 
-                .swiper-image{
-                    transition: .5s;
-                }
-
-                .swiper_category{
-                    position: absolute;
-                    top: 0;
-
-                    span {
-                        display:inline-block;
-                    }
-                }
-
-                .swiper_date{
-                    font-family: $font-family-base; 
-                    width: 100%;
-                }
-
-                .swiper_title{
-                    width: 100% !important;
-                        text-align: center !important;
-
-                    h3{
-                        font-family: $font-family-base;
-                        transition: .5s;
-                        
-                    }
-                }
-
-                .swiper_description{
-                    p{
-                        margin: 0;
-                    }
-                }
-
-                &:hover{
-                    .swiper_title{
-                        h3{
-                            transition: .5s;
-                        }
-                    }
-                }
-            }
+        .swiper-image {
+          transition: 0.5s;
         }
-    }
 
-    .swiper-button-prev, .swiper-button-next {
-        display: none!important;
+        .swiper_category {
+          position: absolute;
+          top: 0;
+
+          span {
+            display: inline-block;
+          }
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          width: 100%;
+        }
+
+        .swiper_title {
+          width: 100% !important;
+          text-align: center !important;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
     }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }

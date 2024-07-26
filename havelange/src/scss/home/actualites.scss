@@ -1,19 +1,19 @@
 .section-home-page .sectionnews {
-	background: #E7ECEF;
+  background: #e7ecef;
 }
 
 .section-home-page .sectionnews::before {
-    content: url('../../assets/svg/havelange-logo-background-white.svg');
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transform: scale(0.7);
-    transform-origin: left bottom;
+  content: url("../../assets/svg/havelange-logo-background-white.svg");
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: scale(0.7);
+  transform-origin: left bottom;
 }
 
 .portaltype-imio-smartweb-portalpage .section-title {
-    @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(lg) {
     font-size: 2.25rem;
-    }
+  }
 }

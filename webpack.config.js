@@ -1,5 +1,5 @@
 const path = require("path");
-const WebpackBar = require('webpackbar');
+const WebpackBar = require("webpackbar");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
@@ -7,7 +7,7 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
 const { cp } = require("fs");
-const sass = require('sass-embedded');
+const sass = require("sass-embedded");
 
 const BASE_PATH = path.resolve(__dirname, ".");
 
@@ -57,8 +57,7 @@ module.exports = (env, argv) => {
                       "**/node_modules",
                     ],
                   },
-
-                },      
+                },
                 {
                   source: `${THEME_PATH}/dist`,
                   destination: `${THEME_PATH}/tmp/${THEME_FOLDER}/dist`,
@@ -73,7 +72,7 @@ module.exports = (env, argv) => {
                 },
               ],
             },
-           { delete: [`${THEME_PATH}/tmp`] },
+            { delete: [`${THEME_PATH}/tmp`] },
           ],
         },
       }),
@@ -117,7 +116,7 @@ module.exports = (env, argv) => {
               loader: "sass-loader",
               options: {
                 sourceMap: mode === "development",
-                implementation: require('sass-embedded'),
+                implementation: require("sass-embedded"),
               },
             },
           ],
@@ -212,7 +211,7 @@ module.exports = (env, argv) => {
     devServer: {
       port: 3000,
       hot: true,
-      allowedHosts: 'all',
+      allowedHosts: "all",
       liveReload: false, // Mandatory as we use hot module replacements (see `hot` above)
       static: {
         directory: THEME_PATH,

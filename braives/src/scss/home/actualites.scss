@@ -1,86 +1,81 @@
-.sectionnews{
-    background: linear-gradient(180deg,#fff 0,#fff 250px,#000 250px,#000);
+.sectionnews {
+  background: linear-gradient(180deg, #fff 0, #fff 250px, #000 250px, #000);
 
-    .section-title{
-        font-weight: 500;
-        position: relative;
-        text-align: left;
-        padding-left:30px;
-        margin-bottom:2rem;
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
 
-        &::after{
-            background: $primary-green;
-            content: "";
-            display: block;
-            width: 8px;
-            height: 60px;
-            margin:-6px 0 0 -30px;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            border-radius: 20px;
-        }
+    &::after {
+      background: $primary-green;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
     }
+  }
 
-    .swiper-wrapper{
-        .swiper-slide {
-            transition: all .25s ease;
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
 
-            & > a{
-                display: block;
-                align-items: center;
+      & > a {
+        display: block;
+        align-items: center;
 
-                .swiper-image{
-                    padding-bottom: 55%;
-                    transition: all .25s ease;
-                    margin-bottom: 0;
-                }
-
-                .swiper_category{
-                    margin-left: 0;
-                    position:relative;
-                    width: max-content;
-                    top: 0;
-                    left: 0;
-                }
-
-                .swiper_date{
-                    font-family: $font-family-base; 
-                    grid-row-start: 2;
-                }
-
-                .swiper_title{
-                    margin-top: 10px;
-
-                    h3{
-                        font-family: $font-family-base;
-                        
-                    }
-                }
-
-                .swiper_description{
-                    display: none;
-
-                    p{
-                        margin: 0;
-                    }
-                }
-
-                &:hover{
-                    .swiper-image{
-                        mask-size: 99%;
-                    }
-
-                    
-                }
-            }
-
-            &:hover {
-                transform: translateY(10px);
-                transition: .5s;
-            }
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
         }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          top: 0;
+          left: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+
+          h3 {
+            font-family: $font-family-base;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
     }
-
-
+  }
 }

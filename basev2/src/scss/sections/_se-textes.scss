@@ -32,25 +32,25 @@ mark {
   }
 
   ol {
-    list-style-type:none;        
+    list-style-type: none;
     counter-reset: sectioncounter;
 
-    & > li{
+    & > li {
       display: table;
       padding-left: 1rem;
 
-      &::before{
+      &::before {
         content: counter(sectioncounter) ":";
         counter-increment: sectioncounter;
-        display:inline-block; 
-        width:2em; 
-        text-align:right;
-        position:relative; 
-        left:-2.5em; 
-        margin-right:-2em;
+        display: inline-block;
+        width: 2em;
+        text-align: right;
+        position: relative;
+        left: -2.5em;
+        margin-right: -2em;
       }
     }
-  } 
+  }
 
   ul li {
     position: relative;
@@ -160,8 +160,7 @@ mark {
 }
 
 div:not(.sectiontext) {
-  &+.sectiontext {
-
+  & + .sectiontext {
     // @include section-padding-top;
     h2 {
       margin-top: 10px !important;
@@ -194,7 +193,7 @@ blockquote::before {
   font-size: 32px;
   font-weight: 600;
   line-height: 0;
-  margin-right: .75rem;
+  margin-right: 0.75rem;
 }
 
 blockquote::after {
@@ -218,18 +217,15 @@ strong {
   padding-left: 0;
 }
 
-
 .sectiontext table tr td ul li::before {
-	position: initial !important;
-	margin-right: 0.5rem;
+  position: initial !important;
+  margin-right: 0.5rem;
 }
-
 
 .section-container.section-text mark {
   display: flex;
   flex-flow: column wrap;
 }
-
 
 .sectiontext .section-text .body-section figure img {
   max-width: 100%;

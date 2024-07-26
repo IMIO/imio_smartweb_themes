@@ -1,21 +1,22 @@
-.quick-access.section-annuaire{
-    .section-title{
-        color: $primary-svg!important;
-    }
+.quick-access.section-annuaire {
+  .section-title {
+    color: $primary-svg !important;
+  }
 
-    .body-section li a .image.d-block {
-        border: 1px solid $primary-svg;
-    }
+  .body-section li a .image.d-block {
+    border: 1px solid $primary-svg;
+  }
 
-    .body-section li a .table_title span {
-        color: $primary-svg;
-    }
+  .body-section li a .table_title span {
+    color: $primary-svg;
+  }
 
-    .body-section li a .image.d-block svg {
-        fill: $primary-svg;
-    }
+  .body-section li a .image.d-block svg {
+    fill: $primary-svg;
+  }
 
-    .table_image:focus .image.d-block, .table_image:hover .image.d-block {
-        background: $primary-svg !important;
-    }
+  .table_image:focus .image.d-block,
+  .table_image:hover .image.d-block {
+    background: $primary-svg !important;
+  }
 }

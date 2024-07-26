@@ -2,13 +2,13 @@
   grid-template-columns: 60% 40%;
 }
 
-.a-la-une{
+.a-la-une {
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
-    background: url('../../assets/svg/mosaic.svg') !important;
+    background: url("../../assets/svg/mosaic.svg") !important;
     width: 100vw;
     top: 0;
     bottom: -110px;
