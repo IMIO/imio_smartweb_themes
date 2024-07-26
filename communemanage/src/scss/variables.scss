@@ -1,6 +1,6 @@
 //*// COLORS
 $primary: #07689F;
-$secondary:#FFC93C;
+$secondary: #FFC93C;
 
 //*// TYPOGRAPHY
 
@@ -40,9 +40,9 @@ $h6-font-size: $font-size-base;
 
 $global-radius: 5px;
 $enable-title-uppercase: false;
-$home-section-title-margin:0 auto 5rem auto;
-$home-section-title-align:left;
-$home-section-title-padding:0;
+$home-section-title-margin: 0 auto 5rem auto;
+$home-section-title-align: left;
+$home-section-title-padding: 0;
 
 //swiper
 $swiper-icon-color: #000;
@@ -61,16 +61,16 @@ $header-top-padding: 1rem 0;
 $header-top-background: $primary;
 $header-center-nav: false;
 $header-nav-margin: 0 2.5rem 0 7rem;
-$header-links-color:#fff;
-$header-links-account-margin:0 !default;
-$header-links-account-padding:0 !default;
-$header-links-account-border:solid 0 #000 !default;
-$header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0 #000 !default;
-$header-links-account-hover-bg:transparent !default;
-$header-links-account-hover-color:#fff;
-$header-search-icon-color:#fff;
-$header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
+$header-links-color: #fff;
+$header-links-account-margin: 0 !default;
+$header-links-account-padding: 0 !default;
+$header-links-account-border: solid 0 #000 !default;
+$header-links-account-bg: transparent !default;
+$header-links-account-hover-border: solid 0 #000 !default;
+$header-links-account-hover-bg: transparent !default;
+$header-links-account-hover-color: #fff;
+$header-search-icon-color: #fff;
+$header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 
 //bredcrumb
 $breadcrumb-bg: transparent;
@@ -84,31 +84,31 @@ $nav-link-open-color: #fff;
 $nav-link-active-color: #fff;
 $nav-link-font-size: 20px;
 $nav-link-font-weight: 500;
-$nav-link-drop-color:#fff;
+$nav-link-drop-color: #fff;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
 $nav-first-level-gap: 40px;
 $nav-first-level-uppercase: true;
 $nav-sub-link-font-size: $nav-link-font-size;
 $nav-sub-link-font-weight: $nav-link-font-weight;
-$nav-overlay-radius:$global-radius !default;
-$nav-overlay-title-color:$primary !default;
-$nav-overlay-title-font-size:24px !default;
-$nav-overlay-title-font-weight:bold !default;
-$nav-overlay-next-icon-color:#000;
-$nav-overlay-next-icon-hover-color:$primary;
-$nav-overlay-next-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
-$nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-radius: $global-radius !default;
+$nav-overlay-title-color: $primary !default;
+$nav-overlay-title-font-size: 24px !default;
+$nav-overlay-title-font-weight: bold !default;
+$nav-overlay-next-icon-color: #000;
+$nav-overlay-next-icon-hover-color: $primary;
+$nav-overlay-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 
 //sub-header
-$subsite-logo-background:$primary !default;
-$subsite-logo-color:#fff !default;
-$subsite-navbar-bg:#fff !default;
+$subsite-logo-background: $primary !default;
+$subsite-logo-color: #fff !default;
+$subsite-navbar-bg: #fff !default;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
-$sub-nav-link-color:#000 !default;
-$sub-nav-link-open-color:#000 !default;
-$sub-nav-link-drop-color:#1a1313;
+$sub-nav-link-color: #000 !default;
+$sub-nav-link-open-color: #000 !default;
+$sub-nav-link-drop-color: #1a1313;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
 
 
@@ -130,37 +130,37 @@ $banner-content-description-font-size: 18px;
 $banner-content-description-color: black;
 
 // see_all
-$see-all-padding:0.6rem 2rem;
-$see-all-margin:5rem 0 0 0;
-$see-all-bg:$secondary;
-$see-all-color:$primary;
-$see-all-radius:$global-radius;
-$see-all-border:solid 1px $secondary;
-$see-all-text-transform:none;
-$see-all-font-size:16px;
-$see-all-transition:all .2s ease;
-$see-all-hover-bg:transparent;
-$see-all-hover-color:$primary;
-$see-all-hover-radius:$global-radius;
-$see-all-hover-border:solid 1px $secondary;
+$see-all-padding: 0.6rem 2rem;
+$see-all-margin: 5rem 0 0 0;
+$see-all-bg: $secondary;
+$see-all-color: $primary;
+$see-all-radius: $global-radius;
+$see-all-border: solid 1px $secondary;
+$see-all-text-transform: none;
+$see-all-font-size: 16px;
+$see-all-transition: all .2s ease;
+$see-all-hover-bg: transparent;
+$see-all-hover-color: $primary;
+$see-all-hover-radius: $global-radius;
+$see-all-hover-border: solid 1px $secondary;
 $see-all-justify-content: center;
 
 
 // Quick access
-$quick-access-section-full-width:true;
-$quick-access-title-color:$primary;
-$quick-access-title-margin:$home-section-title-margin;
-$quick-access-title-padding:$home-section-title-padding;
-$quick-access-title-align:$home-section-title-align;
+$quick-access-section-full-width: true;
+$quick-access-title-color: $primary;
+$quick-access-title-margin: $home-section-title-margin;
+$quick-access-title-padding: $home-section-title-padding;
+$quick-access-title-align: $home-section-title-align;
 $quick-access-container-padding: 2rem 0;
 $quick-access-width: auto;
 $quick-access-height: auto;
-$quick-access-background:transparent;
+$quick-access-background: transparent;
 $quick-access-border: solid 0 $primary;
-$quick-access-border-radius:0;
+$quick-access-border-radius: 0;
 $quick-access-shadow: none;
-$quick-access-svg-width:40px;
-$quick-access-svg-color:$primary;
+$quick-access-svg-width: 40px;
+$quick-access-svg-color: $primary;
 $quick-access-item-title-margin: 1rem 0 0 0;
 $quick-access-title-font-size: 18px;
 $quick-access-title-color: $primary;
@@ -168,41 +168,41 @@ $quick-access-title-text-transform: initial;
 $quick-access-title-weight: bold;
 
 $quick-access-enable-full-bg: true;
-$quick-access-full-bg-color:rgba(255, 255, 255, 100%);
-$quick-access-full-bg-border:solid 0 green;
+$quick-access-full-bg-color: rgba(255, 255, 255, 100%);
+$quick-access-full-bg-border: solid 0 green;
 $quick-access-full-bg-shadow: 0 11px 10px rgba(0, 0, 0, 5%);
 
 // A la une
 $a-la-une-title-color: $primary;
-$a-la-une-title-align:$home-section-title-align;
+$a-la-une-title-align: $home-section-title-align;
 $a-la-une-title-margin: $home-section-title-margin;
 $a-la-une-title-padding: $home-section-title-padding;
 $a-la-une-text-bg: rgba(243, 243, 243, 100%);
-$a-la-une-item-image-margin:2rem 0 0 0;
-$a-la-une-item-title-color:$primary;
-$a-la-une-item-title-font-size:$h3-font-size;
-$a-la-une-item-title-margin:0 0 0 -35px;
-$a-la-une-item-title-padding:50px 50px 0;
-$a-la-une-item-title-radius:5px 5px 0 0;
+$a-la-une-item-image-margin: 2rem 0 0 0;
+$a-la-une-item-title-color: $primary;
+$a-la-une-item-title-font-size: $h3-font-size;
+$a-la-une-item-title-margin: 0 0 0 -35px;
+$a-la-une-item-title-padding: 50px 50px 0;
+$a-la-une-item-title-radius: 5px 5px 0 0;
 $a-la-une-item-description-font-size: $font-size-lg;
-$a-la-une-item-description-color:rgba(59, 59, 59, 100%);
-$a-la-une-item-description-margin:0 0 2rem -35px;
-$a-la-une-item-description-padding:0 50px 50px;
-$a-la-une-item-description-radius:0 0 5px 5px;
+$a-la-une-item-description-color: rgba(59, 59, 59, 100%);
+$a-la-une-item-description-margin: 0 0 2rem -35px;
+$a-la-une-item-description-padding: 0 50px 50px;
+$a-la-une-item-description-radius: 0 0 5px 5px;
 $a-la-une-item-image-radius: $global-radius;
 
 // Actu
 $actu-section-full-width: true;
 $actu-section-padding-top: 5rem;
 $actu-section-padding-bottom: 5rem;
-$actu-title-color:$primary;
-$actu-title-align:$home-section-title-align;
+$actu-title-color: $primary;
+$actu-title-align: $home-section-title-align;
 $actu-title-margin: 0 auto 7rem auto;
 $actu-title-padding: $home-section-title-padding;
 $actu-image-margin-bottom: 0.7rem;
 $actu-image-border-radius: $global-radius;
-$actu-item-bg-color:transparent;
-$actu-item-bg-radius:0;
+$actu-item-bg-color: transparent;
+$actu-item-bg-radius: 0;
 $actu-category-margin: 0 0 0.3rem 0;
 $actu-category-padding: 0;
 $actu-category-color: $primary;
@@ -228,14 +228,14 @@ $event-section-full-width: true;
 $event-section-padding-top: 2rem;
 $event-section-padding-bottom: 2rem;
 $event-section-margin: 0;
-$event-title-color:#fff;
-$event-title-align:$home-section-title-align;
+$event-title-color: #fff;
+$event-title-align: $home-section-title-align;
 $event-title-margin: $home-section-title-margin;
 $event-title-padding: $home-section-title-padding;
 $event-image-margin-bottom: 0;
-$event-image-border-radius:0;
-$event-item-bg-color:#fff;
-$event-item-bg-radius:0;
+$event-image-border-radius: 0;
+$event-item-bg-color: #fff;
+$event-item-bg-radius: 0;
 $event-category-margin: 0 0 0.3rem 0;
 $event-category-padding: 8px 11px 8px 34px;
 $event-category-color: #000;
@@ -258,17 +258,17 @@ $event-see-all-justify-content: $see-all-justify-content;
 
 // album
 $album-section-full-width: true;
-$album-section-bg:#EDEAE5;
+$album-section-bg: #EDEAE5;
 $album-section-padding-top: 5rem;
 $album-section-padding-bottom: 5rem;
-$album-title-color:$primary;
-$album-title-align:$home-section-title-align;
+$album-title-color: $primary;
+$album-title-align: $home-section-title-align;
 $album-title-margin: $home-section-title-margin;
 $album-title-padding: $home-section-title-padding;
 $album-image-margin-bottom: 0.7rem;
 $album-image-border-radius: $global-radius;
-$album-item-bg-color:transparent;
-$album-item-bg-radius:0;
+$album-item-bg-color: transparent;
+$album-item-bg-radius: 0;
 $album-category-margin: 0 0 0.3rem 0;
 $album-category-padding: 0;
 $album-category-color: $primary;

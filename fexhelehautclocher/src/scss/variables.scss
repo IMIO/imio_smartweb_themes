@@ -1,6 +1,6 @@
 //*// COLORS
 $primary: #1D1D1B;
-$secondary:#1D1D1B;
+$secondary: #1D1D1B;
 $primary-svg: #8FBEE9;
 
 //*// TYPOGRAPHY
@@ -35,9 +35,9 @@ $h6-font-size: $font-size-base;
 
 $global-radius: 50px;
 $enable-title-uppercase: false;
-$home-section-title-margin:0 auto 5rem auto;
+$home-section-title-margin: 0 auto 5rem auto;
 $home-section-title-align: center;
-$home-section-title-padding:0;
+$home-section-title-padding: 0;
 
 //swiper
 $swiper-icon-color: $primary;
@@ -57,15 +57,15 @@ $header-top-background: #fff;
 $header-center-nav: false;
 $header-nav-margin: 0 2.5rem 0 2rem;
 $header-links-color: $secondary;
-$header-links-account-margin:0 !default;
-$header-links-account-padding:0 !default;
-$header-links-account-border:solid 0 #000 !default;
-$header-links-account-bg:transparent !default;
-$header-links-account-hover-border:solid 0 #000 !default;
-$header-links-account-hover-bg:transparent !default;
+$header-links-account-margin: 0 !default;
+$header-links-account-padding: 0 !default;
+$header-links-account-border: solid 0 #000 !default;
+$header-links-account-bg: transparent !default;
+$header-links-account-hover-border: solid 0 #000 !default;
+$header-links-account-hover-bg: transparent !default;
 $header-links-account-hover-color: $secondary;
-$header-search-icon-color:$secondary;
-$header-search-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
+$header-search-icon-color: $secondary;
+$header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 
 //bredcrumb
 $breadcrumb-bg: #fff;
@@ -78,31 +78,31 @@ $nav-link-color: $secondary;
 $nav-link-open-color: $secondary;
 $nav-link-font-size: 20px;
 $nav-link-font-weight: 400;
-$nav-link-drop-color:$primary;
+$nav-link-drop-color: $primary;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
 $nav-first-level-gap: 50px;
 $nav-first-level-uppercase: true;
 $nav-sub-link-font-size: $nav-link-font-size;
 $nav-sub-link-font-weight: $nav-link-font-weight;
 $nav-overlay-radius: 0 0 50px 50px;
-$nav-overlay-title-color:$secondary;
-$nav-overlay-title-font-size:20px;
-$nav-overlay-title-font-weight:bold;
-$nav-overlay-next-icon-color:$primary;
+$nav-overlay-title-color: $secondary;
+$nav-overlay-title-font-size: 20px;
+$nav-overlay-title-font-weight: bold;
+$nav-overlay-next-icon-color: $primary;
 $nav-overlay-next-icon-hover-color: $primary-svg;
-$nav-overlay-next-icon:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>');
-$nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>');
+$nav-overlay-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>');
+$nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>');
 
 //sub-header
-$subsite-logo-background:$secondary;
-$subsite-logo-color:#fff !default;
-$subsite-navbar-bg:#fff !default;
+$subsite-logo-background: $secondary;
+$subsite-logo-color: #fff !default;
+$subsite-navbar-bg: #fff !default;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
 $sub-nav-link-color: $secondary;
-$sub-nav-link-open-color:$secondary;
-$sub-nav-link-drop-color:$secondary;
+$sub-nav-link-open-color: $secondary;
+$sub-nav-link-drop-color: $secondary;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
 
 
@@ -124,36 +124,36 @@ $banner-content-description-font-size: 18px;
 $banner-content-description-color: $secondary;
 
 // see_all
-$see-all-padding:0.6rem 2rem;
-$see-all-margin:5rem 0 0 0;
+$see-all-padding: 0.6rem 2rem;
+$see-all-margin: 5rem 0 0 0;
 $see-all-bg: transparent;
 $see-all-color: $secondary;
 $see-all-radius: none;
-$see-all-border:solid 0 $secondary;
-$see-all-text-transform:none;
-$see-all-font-size:16px;
-$see-all-transition:all .2s ease;
-$see-all-hover-bg:transparent;
-$see-all-hover-color:$secondary;
+$see-all-border: solid 0 $secondary;
+$see-all-text-transform: none;
+$see-all-font-size: 16px;
+$see-all-transition: all .2s ease;
+$see-all-hover-bg: transparent;
+$see-all-hover-color: $secondary;
 $see-all-hover-radius: none;
-$see-all-hover-border:solid 0 $secondary;
+$see-all-hover-border: solid 0 $secondary;
 $see-all-justify-content: right;
 
 
 // Quick access
-$quick-access-section-full-width:true;
-$quick-access-title-color:$secondary;
-$quick-access-title-margin:$home-section-title-margin;
-$quick-access-title-padding:$home-section-title-padding;
-$quick-access-title-align:$home-section-title-align;
+$quick-access-section-full-width: true;
+$quick-access-title-color: $secondary;
+$quick-access-title-margin: $home-section-title-margin;
+$quick-access-title-padding: $home-section-title-padding;
+$quick-access-title-align: $home-section-title-align;
 $quick-access-container-padding: 2rem 0;
 $quick-access-width: 70px;
 $quick-access-height: 70px;
-$quick-access-background:$primary-svg;
+$quick-access-background: $primary-svg;
 $quick-access-border: solid 0 $primary-svg;
 $quick-access-border-radius: 25%;
 $quick-access-shadow: none;
-$quick-access-svg-width:35px;
+$quick-access-svg-width: 35px;
 $quick-access-svg-color: $secondary;
 $quick-access-item-title-margin: 1rem 0 0 0;
 $quick-access-title-font-size: 18px;
@@ -161,35 +161,35 @@ $quick-access-title-color: $secondary;
 $quick-access-title-text-transform: initial;
 $quick-access-title-weight: initial;
 $quick-access-enable-full-bg: none;
-$quick-access-full-bg-color:transparent;
-$quick-access-full-bg-border:solid 0 $primary-svg;
+$quick-access-full-bg-color: transparent;
+$quick-access-full-bg-border: solid 0 $primary-svg;
 $quick-access-full-bg-shadow: none;
 
 // A la une
 $a-la-une-title-color: $secondary;
-$a-la-une-title-align:$home-section-title-align;
+$a-la-une-title-align: $home-section-title-align;
 $a-la-une-title-margin: $home-section-title-margin;
 $a-la-une-title-padding: $home-section-title-padding;
 $a-la-une-text-bg: transparent;
-$a-la-une-item-image-margin:0 0 0 0;
-$a-la-une-item-title-color:$secondary;
-$a-la-une-item-title-font-size:$h3-font-size;
-$a-la-une-item-title-margin:0 0 0 0;
+$a-la-une-item-image-margin: 0 0 0 0;
+$a-la-une-item-title-color: $secondary;
+$a-la-une-item-title-font-size: $h3-font-size;
+$a-la-une-item-title-margin: 0 0 0 0;
 $a-la-une-item-title-padding: 50px 110px 0 0;
-$a-la-une-item-title-radius:0;
+$a-la-une-item-title-radius: 0;
 $a-la-une-item-description-font-size: $font-size-lg;
 $a-la-une-item-description-color: $secondary;
-$a-la-une-item-description-margin:0 0 2rem -35px;
-$a-la-une-item-description-padding:0 100px 50px 30px;
-$a-la-une-item-description-radius:0 0 5px 5px;
+$a-la-une-item-description-margin: 0 0 2rem -35px;
+$a-la-une-item-description-padding: 0 100px 50px 30px;
+$a-la-une-item-description-radius: 0 0 5px 5px;
 $a-la-une-item-image-radius: 500px 0% 0% 500px;
 
 // Actu
 $actu-section-full-width: true;
 $actu-section-padding-top: 5rem;
 $actu-section-padding-bottom: 5rem;
-$actu-title-color:$secondary;
-$actu-title-align:$home-section-title-align;
+$actu-title-color: $secondary;
+$actu-title-align: $home-section-title-align;
 $actu-title-margin: 0 auto 7rem auto;
 $actu-title-padding: $home-section-title-padding;
 $actu-image-margin-bottom: 0;
@@ -227,12 +227,12 @@ $event-section-padding-top: 2rem;
 $event-section-padding-bottom: 2rem;
 $event-section-margin: 0;
 $event-title-color: $secondary;
-$event-title-align:$home-section-title-align;
+$event-title-align: $home-section-title-align;
 $event-title-margin: $home-section-title-margin;
 $event-title-padding: $home-section-title-padding;
 $event-image-margin-bottom: 0;
 $event-image-border-radius: 50px 50px 0 0;
-$event-item-bg-color:#fff;
+$event-item-bg-color: #fff;
 $event-item-bg-radius: 50px 50px 50px 50px;
 $event-category-margin: 0 0 0.3rem 0;
 $event-category-padding: 8px 45px 8px 34px;
@@ -256,18 +256,18 @@ $event-see-all-justify-content: $see-all-justify-content;
 
 // Album
 $album-section-full-width: true !default;
-$album-section-bg:#EDEAE5 !default;
+$album-section-bg: #EDEAE5 !default;
 $album-section-padding-top: 2rem !default;
 $album-section-padding-bottom: 2rem !default;
 $album-section-margin: 0 !default;
-$album-title-color:$primary !default;
-$album-title-align:$home-section-title-align !default;
+$album-title-color: $primary !default;
+$album-title-align: $home-section-title-align !default;
 $album-title-margin: $home-section-title-margin !default;
 $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
 $album-image-border-radius: $global-radius !default;
-$album-item-bg-color:rgb(244, 244, 244) !default;
-$album-item-bg-radius:$global-radius+2 !default;
+$album-item-bg-color: rgb(244, 244, 244) !default;
+$album-item-bg-radius: $global-radius+2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
@@ -289,12 +289,12 @@ $album-date-font-size: 14px !default;
 $album-see-all-justify-content: $see-all-justify-content !default;
 
 // Newsletter
-$newsletter-bg-color:$primary-svg!default;
+$newsletter-bg-color: $primary-svg!default;
 $newsletter-align: center!default;
-$newsletter-padding-top:2rem!default;
-$newsletter-padding-bottom:2rem!default;
-$newsletter-margin:3rem 0!default;
-$newsletter-text-color:#fff!default;
+$newsletter-padding-top: 2rem!default;
+$newsletter-padding-bottom: 2rem!default;
+$newsletter-margin: 3rem 0!default;
+$newsletter-text-color: #fff!default;
 
 /////////////// interne ///////////////
 
@@ -324,12 +324,12 @@ $section-padding: (sm: 3rem,
 );
 
 // section-contact
-$section-contact-title-size:$h2-font-size;
-$section-contact-sub-title-size:$font-size-lg;
-$section-contact-title-color:$primary;
-$section-contact-p-margin:1rem 0;
-$section-contact-portrait-ration:calc(4 / 5);
-$section-contact-background:#f3f3f3!default;
+$section-contact-title-size: $h2-font-size;
+$section-contact-sub-title-size: $font-size-lg;
+$section-contact-title-color: $primary;
+$section-contact-p-margin: 1rem 0;
+$section-contact-portrait-ration: calc(4 / 5);
+$section-contact-background: #f3f3f3!default;
 
 // section-files
 $section-file-background-color: $primary !default;
@@ -354,9 +354,9 @@ $list-group-item-padding-x : 0;
 
 // Message Viewlets
 
-$message-info:#27789c;
-$message-warning:#c06d01;
-$message-error:#ae2609;
+$message-info: #27789c;
+$message-warning: #c06d01;
+$message-error: #ae2609;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;
