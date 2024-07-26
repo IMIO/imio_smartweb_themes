@@ -1,7 +1,7 @@
 .sectionevents{
     background: $primary-red;
 
-    &:before{
+    &::before{
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -12,7 +12,7 @@
         width: 189px;
     }
 
-    &:after{
+    &::after{
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -61,11 +61,11 @@
         border: 2px solid $primary;
     }
 
-    .see_all a:after {
+    .see_all a::after {
         display: none;
     }
 
-    .see_all a:hover:after, .see_all a:focus:after {
+    .see_all a:hover::after, .see_all a:focus::after {
         width: 65px;
     }
 

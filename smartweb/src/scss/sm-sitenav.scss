@@ -65,7 +65,7 @@ $nav-subtree-title-color : #008FD2;
                 color: $primary;
 
                 &[aria-haspopup="true"]{
-                    &:after{
+                    &::after{
                         content: url(../../assets/svg/arrow-right-blue.svg);
                         right: 0;
 
@@ -85,7 +85,7 @@ $nav-subtree-title-color : #008FD2;
             }
 
             &[aria-haspopup="true"]{
-                &:after{
+                &::after{
                     content: url(../../assets/svg/arrow-right.svg);
                     position: relative;
                     right: 11px;
@@ -94,7 +94,7 @@ $nav-subtree-title-color : #008FD2;
 
                 &:hover,
                 &:focus{
-                    &:after{
+                    &::after{
                         content: url(../../assets/svg/arrow-right-blue.svg);
                     }
                 }
@@ -136,7 +136,7 @@ $nav-subtree-title-color : #008FD2;
                     text-transform: uppercase;
                 }
 
-                &:before{
+                &::before{
                     content: "";       
                     height: 2px;
                     position: absolute;
@@ -151,7 +151,7 @@ $nav-subtree-title-color : #008FD2;
                 @media (hover: hover) and (pointer: fine) {
                     &:focus,
                     &:hover{
-                        &:before{
+                        &::before{
                             width: 100%;
                         }
                     }
@@ -179,7 +179,7 @@ $nav-subtree-title-color : #008FD2;
             align-items: center;
 
         @include media-breakpoint-up(lg){
-            &:after{
+            &::after{
                 content:"";
                 width: 9px;
                 height: 6px;
@@ -305,7 +305,7 @@ $nav-subtree-title-color : #008FD2;
             display: flex;
             align-items: center;
 
-            &:after{
+            &::after{
                 content: url(../../assets/svg/drop-down-arrow.svg);
                 display: flex;
                 align-items: center;
@@ -366,8 +366,8 @@ $nav-subtree-title-color : #008FD2;
     transition: all 0.5s ease;
     transform: translateY(-1px);
 
-    &:before,
-    &:after{
+    &::before,
+    &::after{
       content: "";
       border-radius: 50px;
       position: absolute;
@@ -378,12 +378,12 @@ $nav-subtree-title-color : #008FD2;
       transition: all 0.5s ease;
     }
 
-    &:before {
+    &::before {
       bottom: 10px;
       width: 24px;
     }
 
-    &:after {
+    &::after {
       top: 10px;
       width: 11px;
 
@@ -394,16 +394,16 @@ $nav-subtree-title-color : #008FD2;
   .navbar-toggler-icon {
     background: transparent;
 
-    &:before, &:after {
+    &::before, &::after {
       transform-origin: 0 50%;
       width: 28.28427125px;
     }
 
-    &:before {
+    &::before {
       transform: rotateZ(0.78539816rad)
     }
 
-    &:after {
+    &::after {
       transform: rotateZ(-0.78539816rad);
     }
   }

@@ -17,7 +17,7 @@
         border-radius: 100px 100px 0;
     }
 
-    &:after{
+    &::after{
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -29,7 +29,7 @@
         mix-blend-mode: multiply;
     }
 
-    &:before{   
+    &::before{   
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -67,11 +67,11 @@
             border-radius: 40px 40px 0;
         }
 
-        &:after{
+        &::after{
             display: none;
         }
 
-        &:before{   
+        &::before{   
             display: none;
         }
     }

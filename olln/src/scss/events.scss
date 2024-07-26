@@ -2,7 +2,7 @@
 
 
 .sectionevents{
-    &:before {
+    &::before {
         background: $primary;
         background-position: 50% 0;
         background-size: cover;

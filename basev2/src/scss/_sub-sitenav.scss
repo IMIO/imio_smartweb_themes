@@ -139,7 +139,7 @@
 
         &:hover,
         &:focus {
-          &:before {
+          &::before {
             content: "";
             height: 2px;
             position: absolute;
@@ -180,14 +180,14 @@
       &.dropdown {
         .has_subtree .nav-link {
           &[aria-haspopup="true"] {
-            &:after {
+            &::after {
               content: $nav-overlay-next-icon;
               right: 0;
             }
 
             &:hover,
             &:focus {
-              &:after {
+              &::after {
                 content: $nav-overlay-next-icon-hover;
               }
             }

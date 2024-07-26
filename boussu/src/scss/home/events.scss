@@ -91,7 +91,7 @@
   position: relative;
 }
 
-.sectionevents ul li .table_display>a:before {
+.sectionevents ul li .table_display>a::before {
   background: hsla(0,0%,100%,87.1%);
   border-radius: 20px;
   bottom: 0;
@@ -120,7 +120,7 @@
     }
   }  
 
-  .sectionevents ul li .table_display>a:before {
+  .sectionevents ul li .table_display>a::before {
   z-index: 0;
   }
 }

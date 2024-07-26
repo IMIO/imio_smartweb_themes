@@ -1,7 +1,7 @@
 .container #main-container .sectionnews {
     position: relative;
 
-&:before {
+&::before {
     bottom: 0;
     content: "";
     left: 50%;

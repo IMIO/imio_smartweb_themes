@@ -12,7 +12,7 @@
         width: max-content;
         font-size: 3rem;
 
-        &:after{
+        &::after{
             left:0%;
             top: 70px;
             bottom: 0;
@@ -25,7 +25,7 @@
         }
     }
 
-    .see_all a:after {
+    .see_all a::after {
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -36,7 +36,7 @@
         width: 21px;
     }
 
-    .see_all a:hover:after, .see_all a:focus:after {
+    .see_all a:hover::after, .see_all a:focus::after {
         width: 65px;
     }
 

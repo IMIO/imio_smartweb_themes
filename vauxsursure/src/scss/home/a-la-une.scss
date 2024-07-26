@@ -2,7 +2,7 @@
    padding-top: 2rem;
    padding-bottom:2rem;
 
-    &:before{
+    &::before{
         left:-1000px;
         top: 200px;
         background:$primary-yellow;
@@ -25,7 +25,7 @@
         width: max-content;
         font-size: 3rem;
 
-        &:after{
+        &::after{
                     left:0%;
                     top: 70px;
                     bottom: 0;

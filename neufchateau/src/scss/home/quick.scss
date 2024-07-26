@@ -12,7 +12,7 @@
 
 .quick-access{
     .body-section{
-        &:after {
+        &::after {
             background: $primary-svg;
             border-radius: 0 0 100px 100px;
     
@@ -27,7 +27,7 @@
         }
     
         @media screen and (max-width: 575px) {
-            &:after {
+            &::after {
                 border-radius: 0 0 50px 50px;
                 width: calc(100vw - 40px);
             }
@@ -170,7 +170,7 @@
        
 
 #container-section-partenaires {
-    &:before {
+    &::before {
         width: 100vw;
         height: 635px;
         background: url("../../assets/svg/vague-right.svg") top right no-repeat;
@@ -186,7 +186,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        &:before {
+        &::before {
             display:none;
         }
         }
@@ -195,7 +195,7 @@
         
         padding: 40px 30px 10px;
 
-        &:after {
+        &::after {
             background: $primary-svg;
             border-radius:100px;
             bottom: 0;
@@ -213,7 +213,7 @@
             }   
         }
 
-        &:before {
+        &::before {
             background: $primary;
             border-radius:0;
             content: "";

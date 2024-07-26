@@ -3,7 +3,7 @@
     position: relative;
     z-index: -1;
 
-     &:after{
+     &::after{
             content: "";
             transition: all 0.2s ease;
             position: absolute;
@@ -15,7 +15,7 @@
         }
   
     .section-text {
-        &:after{
+        &::after{
             content: "";
             transition: all 0.2s ease;
             position: absolute;
@@ -29,7 +29,7 @@
 
         
         .figure-affiche{
-            &:before{
+            &::before{
                 content: "";
                 transition: all 0.2s ease;
                 position: absolute;
@@ -57,7 +57,7 @@
 
     }
 
-    &:before {
+    &::before {
         background: linear-gradient(to top, #fff 0,#fff 100px, #CF102D 100px, #CF102D 100%);
         bottom: 0;
         content: "";
@@ -167,12 +167,12 @@
         position: relative;
         z-index: -1;
 
-        &:after{
+        &::after{
             display: none;
         }
   
     .section-text {
-        &:after{
+        &::after{
             content: "";
             transition: all 0.2s ease;
             position: absolute;
@@ -186,7 +186,7 @@
 
         
         .figure-affiche{
-            &:before{
+            &::before{
                 content: "";
                 transition: all 0.2s ease;
                 position: absolute;

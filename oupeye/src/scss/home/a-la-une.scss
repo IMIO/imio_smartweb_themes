@@ -24,7 +24,7 @@
 //   }
 
 @include media-breakpoint-up(lg) { 
-.section-home-page .a-la-une:before {
+.section-home-page .a-la-une::before {
     top: 50%;
     content: url('../../assets/svg/logo-bg-orange.svg');
     display: block;
@@ -40,7 +40,7 @@
     }
 }
 
-.a-la-une .swiper-slide a:hover:after {
+.a-la-une .swiper-slide a:hover::after {
     background: $color-orange;
     position: absolute;
     top: 0;
@@ -51,7 +51,7 @@
     opacity: 20%;
   }
 
-  .sortable-section.a-la-une:after {
+  .sortable-section.a-la-une::after {
     background: #FFFAF7;
     bottom: 0;
     content: "";

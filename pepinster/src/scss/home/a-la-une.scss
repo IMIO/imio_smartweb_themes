@@ -8,7 +8,7 @@
     direction: ltr!important;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-image:before {
+body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-image::before {
     bottom: -2px;
     content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='white'/%3E%3C/svg%3E");
     position: absolute;

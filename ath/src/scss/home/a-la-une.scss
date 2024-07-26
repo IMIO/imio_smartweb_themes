@@ -60,7 +60,7 @@
     display: none;
    }
 
-   &:after {
+   &::after {
     background: $primary-svg;
     bottom: 0;
     content: "";
@@ -153,7 +153,7 @@
   .a-la-une{
     padding: 2rem 40px;
 
-     &:after {
+     &::after {
       right: 0;
       top: 0;
       width: 100vw;

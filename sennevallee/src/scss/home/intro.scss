@@ -12,7 +12,7 @@
                     border-radius: 80px 80px 80px 0;
                 }
 
-                &:before {
+                &::before {
                     background: url("../../assets/svg/image-before.svg");
                     content: "";
                     height: 215px;

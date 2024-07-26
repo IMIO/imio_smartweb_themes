@@ -8,7 +8,7 @@
             padding-left:30px;
             margin-bottom:2rem;
 
-            &:after{
+            &::after{
                 background: $primary-green;
                 content: "";
                 display: block;

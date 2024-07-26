@@ -1,5 +1,5 @@
 .sectionnews{
-    &:after{
+    &::after{
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -37,7 +37,7 @@
         border: 2px solid $primary;
     }
 
-    .see_all a:after {
+    .see_all a::after {
         display: none;
     }
 

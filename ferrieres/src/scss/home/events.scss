@@ -1,4 +1,4 @@
-.sectionevents:after {
+.sectionevents::after {
     background: url("../../assets/svg/bg1.svg") bottom center #CDD8E7;
 	background-size: cover;
     bottom: 0;
@@ -24,7 +24,7 @@
         padding-left: 20px;
     }
 
-    .section-title:before {
+    .section-title::before {
         display: block; 
         content: ""; 
         width: 5px; 
@@ -75,7 +75,7 @@
                     
                 }
 
-                .swiper_category:before {
+                .swiper_category::before {
                     display: block; 
                     content: ""; 
                     width: 100%; 
@@ -121,7 +121,7 @@
                         width: 100%;
                         margin-bottom: 20px;
 
-                        &:after{
+                        &::after{
                         }
                     }
                 }

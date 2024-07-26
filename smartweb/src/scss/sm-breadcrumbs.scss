@@ -6,7 +6,7 @@
     position: relative;
 
     @if $enable-full-width-breacrumb {
-        &:after{
+        &::after{
           @include full-width;
           background: $breadcrumb-bg;
         }
@@ -28,14 +28,14 @@
           text-decoration: none;
         }
 
-        &:before {
+        &::before {
           float: right;
           content: ">";
           padding-right: 0.25rem;
           padding-left: 0.25rem;
         }
 
-        &:last-child:before {
+        &:last-child::before {
           content: "";
         }
       }

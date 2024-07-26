@@ -4,7 +4,7 @@
 
 .sectionnews{
     @include media-breakpoint-up(lg){
-        &:after{
+        &::after{
             content:"";
             background:url("../../assets/svg/aigle-jn.svg");
             background-size: contain;
@@ -25,7 +25,7 @@
             .swiper-image{
                 position: relative;
 
-                &:after{
+                &::after{
                     content: "";
                     position: absolute;
                     top: 0;
@@ -39,7 +39,7 @@
 
             &:hover{
                 .swiper-image{
-                    &:after{
+                    &::after{
                         opacity: 50%;
                     }
                 }

@@ -11,7 +11,7 @@
         &:focus {
             .table_title {
                 span {
-                    &:after {
+                    &::after {
                         content: "";
                         bottom: -5px;
                         height: 2px;

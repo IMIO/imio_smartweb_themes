@@ -125,7 +125,7 @@ div#body-section-nos-partenaires ul li {
     position: relative;
 }
 
-.partenaires:before {
+.partenaires::before {
     background: #dcdcdc;
     bottom: 0;
     content: "";

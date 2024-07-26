@@ -2,7 +2,7 @@
   background: transparent;
   text-align: center;
 
-  &:after {
+  &::after {
       content: "";
       background: linear-gradient(270deg,#3B7476,#2F3E46,#3B7476);
       bottom: 0;
@@ -21,7 +21,7 @@
       color: #fff;
       font-weight: 100;
 
-      &:before{
+      &::before{
           content: url('../../assets/svg/enveloppe.svg');
           margin-bottom: 1rem;
           display: block;

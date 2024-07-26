@@ -18,7 +18,7 @@
         margin: 0 auto 4.5rem;
         width: max-content;
 
-        &:after{
+        &::after{
             left:0%;
             top: 80px;
             bottom: 0;
@@ -35,7 +35,7 @@
         .section-title{
             font-size: 32px !important;
 
-            &:after{
+            &::after{
                 top: 50px;
                 height: 8px;
                 width: 70px;

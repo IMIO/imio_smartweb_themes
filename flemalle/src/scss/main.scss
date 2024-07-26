@@ -113,7 +113,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
     & > .nav-link {
         color: $primary-svg !important;
 
-        &:before{
+        &::before{
             background-color: $primary-svg!important;
         }
         // @media screen and (min-width:992px){
@@ -162,7 +162,7 @@ body .smartweb_herobanner::before {
         position: relative;
         background-color: $primary-svg!important;
 
-        &:after{
+        &::after{
             content: "";    
             position: absolute;
             top: 0;

@@ -38,7 +38,7 @@
             }
 
             .table_title {
-                &:after {
+                &::after {
                     content: "";
                     position: absolute;
                     top: 0;
@@ -62,7 +62,7 @@
 }
 
 .sortable-section.sectionlinks.quick-access.quick-annuaire {
-    &:after {
+    &::after {
         content: "";
         background-image: url("../../assets/svg/manage-annuaire.svg") !important;
         position: absolute;

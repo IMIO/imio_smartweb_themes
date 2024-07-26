@@ -1,5 +1,5 @@
 .sortable-section.sectionselections.services {
-  &:before {
+  &::before {
     position: absolute;
     top: 50%;
     bottom: -65%;
@@ -11,7 +11,7 @@
     z-index: -2;
   }
 
-  &:after {
+  &::after {
   background: url(../../assets/svg/demi-logo-wavre-cpas.svg);
   content: "";
   display: block;

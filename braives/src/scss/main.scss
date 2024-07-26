@@ -37,7 +37,7 @@ h1{
     padding-left:30px;
     margin-bottom:2rem;
 
-    &:after{
+    &::after{
         background: $primary-green;
         content: "";
         display: block;
@@ -70,12 +70,12 @@ h1{
 .bannerSwiper .section-slide{
     .swiper-banner-content {display: none;}
 
-    &:after{
+    &::after{
         display: none;
     }
 }
 
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: "";
     background: #0000;
     position: absolute;
@@ -296,7 +296,7 @@ footer #container-section-noussuivre{
     #banner {
         z-index: -1;
 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -327,7 +327,7 @@ footer #container-section-noussuivre{
                     color:#CCC!important ;
                 }
 
-                &:before {
+                &::before {
                     color: #fff!important;
                 }
             }

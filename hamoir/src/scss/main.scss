@@ -65,7 +65,7 @@ h1 {
 
 
 .bannerSwiper .section-slide{
-    &:after{
+    &::after{
         content: url("../../assets/svg/banner-slogan.svg");
         width: 600px;
         max-width: 60%;
@@ -76,7 +76,7 @@ h1 {
     }
 }
 
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: "";
     background: #0000;
     position: absolute;

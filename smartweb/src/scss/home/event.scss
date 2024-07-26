@@ -74,7 +74,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-        &:after{
+        &::after{
         content: "";
         position: absolute;
         top: 0;
@@ -212,7 +212,7 @@
             border-bottom-left-radius: 0;
             color: #000;
 
-            &:after{
+            &::after{
                 content: "";
                 background: #fff;
                 position: absolute;
@@ -228,7 +228,7 @@
             }
 
             &:hover,&:focus{
-                &:after{
+                &::after{
                     width: 103%;
                 }
             }

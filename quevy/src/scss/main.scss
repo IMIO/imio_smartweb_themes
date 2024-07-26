@@ -28,7 +28,7 @@ $enable-roboto-webfont: false;
 @import "./contact.scss";
 
 
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: url("../../assets/svg/after-banner.svg");
     position: absolute;
     bottom: 0;
@@ -61,7 +61,7 @@ h1 {
 .bannerSwiper .section-slide{
     .swiper-banner-content {display: none;}
 
-    &:after{
+    &::after{
         width: 1200px;
         max-width: 90%;
         bottom:-15px;
@@ -277,7 +277,7 @@ footer #container-section-noussuivre{
                 color:#000!important ;
             }
 
-            &:before {
+            &::before {
                 color: #000!important;
             }
         }
@@ -289,7 +289,7 @@ footer #container-section-noussuivre{
     #banner {
         z-index: -1;
 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -325,7 +325,7 @@ footer #container-section-noussuivre{
                     color:#CCC!important ;
                 }
 
-                &:before {
+                &::before {
                     color: #fff!important;
                 }
             }
@@ -363,7 +363,7 @@ footer #container-section-noussuivre{
     background: none !important;
 }
 
-.sectionlinks h2:before{
+.sectionlinks h2::before{
     display:none !important;
 }
 
@@ -383,7 +383,7 @@ footer #container-section-noussuivre{
           margin-top: 5rem !important;
       }
 
-      #portal-globalnav > li.has_subtree > a:before {
+      #portal-globalnav > li.has_subtree > a::before {
         background-color: $primary-svg;
     }
 

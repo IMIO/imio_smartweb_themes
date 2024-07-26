@@ -102,7 +102,7 @@
 .section-home-page #portal-footer-wrapper{
     margin-top:300px;
 
-    &:before {
+    &::before {
         background: url("../../assets/svg/top-footer.svg") top center no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -151,7 +151,7 @@ footer{
         vertical-align: middle;
     }
 
-    .sectiontext ul li:before {
+    .sectiontext ul li::before {
         display: none !important;
     }
 

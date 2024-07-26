@@ -46,7 +46,7 @@
             transition: all .2s ease;
             width: max-content;
 
-            &:after{
+            &::after{
                 background-color: $primary;
                 bottom: -5px;
                 content: "";
@@ -57,7 +57,7 @@
             }
 
             &:hover{
-                &:after{
+                &::after{
                     width: 50%;
                 }
             }
@@ -69,7 +69,7 @@
     text-align: center;
 }
 
-.sectioncollection.bulletin .see_all a:after {
+.sectioncollection.bulletin .see_all a::after {
     left: 0;
 }
 

@@ -14,7 +14,7 @@ body.portaltype-imio-smartweb-portalpage.section-accueil {
     margin-top: 30px;
 }
 
-#portal-globalnav>li.has_subtree>a:before {
+#portal-globalnav>li.has_subtree>a::before {
     background-color: $primary-svg;
 }
 

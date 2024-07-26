@@ -3,7 +3,7 @@
     overflow: hidden;
     position: relative;
 
-    &:after {
+    &::after {
         background: url("../../assets/svg/bg-wh.svg") top right no-repeat;
         width: 100%;
         height: 400px;

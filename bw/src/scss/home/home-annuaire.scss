@@ -17,7 +17,7 @@
             grid-template-columns: 1fr;
         }
 
-        &:after{
+        &::after{
             content: url("../../assets/svg/bw-map.svg");
             width: 100%;
             max-width: 620px;

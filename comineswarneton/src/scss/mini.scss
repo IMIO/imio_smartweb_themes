@@ -253,7 +253,7 @@ body:not(.portaltype-imio-smartweb-portalpage).site-centre-culturel #portal-head
     }
 
     #portal-footer-wrapper{
-      &:before {
+      &::before {
         display: none;
       }
     }

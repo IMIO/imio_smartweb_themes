@@ -49,7 +49,7 @@ $enable-roboto-webfont: false;
             & > a{
                 padding-top: 2rem;
 
-                &:after{
+                &::after{
                     content: "";
                     z-index: 0;
                     position: absolute;
@@ -281,7 +281,7 @@ footer{
         position: relative;
         margin-bottom: 2rem;
 
-        &:after {
+        &::after {
             background: #2f3e46;
             bottom: 0;
             content: "";

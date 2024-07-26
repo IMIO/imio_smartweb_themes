@@ -118,7 +118,7 @@
       align-items: center;
       padding: 0;
 
-      &:after {
+      &::after {
         content: "";
         width: 9px;
         height: 6px;
@@ -140,7 +140,7 @@
         margin-left: .4rem;
       }
 
-      &:before {
+      &::before {
         content: "";
         height: 2px;
         position: absolute;
@@ -156,7 +156,7 @@
       &:focus {
         color: $nav-link-active-color;
 
-        &:before {
+        &::before {
           content: "";
           opacity: 100%;
         }
@@ -191,14 +191,14 @@
     &.dropdown {
       .has_subtree .nav-link {
         &[aria-haspopup="true"] {
-          &:after {
+          &::after {
             content: $nav-overlay-next-icon;
             right: 0;
           }
 
           &:hover,
           &:focus {
-            &:after {
+            &::after {
               content: $nav-overlay-next-icon-hover;
             }
           }

@@ -196,7 +196,7 @@ $enable-roboto-webfont: false;
       border-color:$primary;
     }
 
-    #subsite-navigation>ul>li>a:before {
+    #subsite-navigation>ul>li>a::before {
       display: none;
     }
   }
@@ -275,7 +275,7 @@ body:not(.site-office-du-tourisme-inforville) {
       display: block;
       height: 100%;
 
-      &:after{
+      &::after{
         content: "\F4FA";
         font-family: bootstrap-icons;
         position: absolute;
@@ -311,7 +311,7 @@ body:not(.site-office-du-tourisme-inforville) {
     gap: 14px;
     align-items: center;
 
-    &:after {
+    &::after {
       content: "\F30A";
       display: block;
       font-family: bootstrap-icons;

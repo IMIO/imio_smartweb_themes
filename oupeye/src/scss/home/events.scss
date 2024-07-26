@@ -3,7 +3,7 @@
   }
 
   @include media-breakpoint-up(lg) { 
-  .section-home-page .sectionevents:before {
+  .section-home-page .sectionevents::before {
     top: 50%;
     content: url('../../assets/svg/logo-bg-red.svg');
     display: block;
@@ -13,7 +13,7 @@
   }
 }
 
-.sectionevents .swiper-slide a:hover:after {
+.sectionevents .swiper-slide a:hover::after {
   background: $color-red;
   position: absolute;
   top: 0;

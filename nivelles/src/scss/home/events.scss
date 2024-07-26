@@ -100,7 +100,7 @@
 
 
 .sectionevents{
-    &:before{
+    &::before{
         content: "";
         background: #009EB0;
     }

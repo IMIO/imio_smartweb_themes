@@ -39,7 +39,7 @@ mark {
       display: table;
       padding-left: 1rem;
 
-      &:before{
+      &::before{
         content: counter(sectioncounter) ":";
         counter-increment: sectioncounter;
         display:inline-block; 

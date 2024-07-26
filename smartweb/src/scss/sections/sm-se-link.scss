@@ -99,12 +99,12 @@
             background: rgba(255, 255, 255, 9%);
             border: solid 1px rgba(255, 255, 255, 0%);
 
-            &:after{
+            &::after{
                 background: url(../../assets/svg/download-arrow-blue.svg) no-repeat center #fff;
             }
         }
 
-        &:after{
+        &::after{
             content:"";
             width: 30px;
             height: 30px;

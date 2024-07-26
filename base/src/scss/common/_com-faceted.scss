@@ -68,7 +68,7 @@
             display: flex;
             align-items: center;
 
-            &:before {
+            &::before {
                 content: "";
                 width: 16px;
                 height: 16px;
@@ -142,7 +142,7 @@
         color: #000;
         opacity: 55%;
 
-        &:before {
+        &::before {
             content: "x";
             width: 16px;
             height: 16px;

@@ -38,7 +38,7 @@
             }
 
             .table_title {
-                &:after {
+                &::after {
                     content: "";
                     position: absolute;
                     top: 0;

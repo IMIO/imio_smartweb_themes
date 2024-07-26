@@ -155,7 +155,7 @@ footer{
         vertical-align: middle;
     }
 
-    .sectiontext ul li:before {
+    .sectiontext ul li::before {
         display: none !important;
     }
 

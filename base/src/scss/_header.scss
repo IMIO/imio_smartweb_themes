@@ -33,7 +33,7 @@
       }
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       width: 100vw;
@@ -110,7 +110,7 @@
           border: 1px solid #c1c1c1;
           border-radius: 50px;
 
-          &:before {
+          &::before {
             content: "";
             width: 14px;
             height: 14px;

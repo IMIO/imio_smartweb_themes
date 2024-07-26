@@ -15,7 +15,7 @@
         border: 1px solid #C1C1C1;
         border-radius: 50px;
 
-        &:before{
+        &::before{
             content: "";
             width: 14px;
             height: 14px;

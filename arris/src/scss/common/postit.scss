@@ -3,7 +3,7 @@
     padding: 3vw 0;
     margin-top: 4vw;
 
-    &:after{
+    &::after{
         content:"";
         background: $primary;
         position: absolute;

@@ -15,7 +15,7 @@
                   font-weight: 500;
 
                   .r-card-date-last{
-                    &:before{
+                    &::before{
                         content: "-";
                         margin-right: 10px;
                     }

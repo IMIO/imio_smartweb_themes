@@ -153,7 +153,7 @@ textarea {
     position: relative;
 }
 
-.block-menu-element .card-body .card-text:after {
+.block-menu-element .card-body .card-text::after {
     content: "";
     background: linear-gradient(275deg, white, transparent);
     top: 1.5rem;
@@ -214,7 +214,7 @@ div#viewlet-below-content-body .procedure {
     position: relative;
 }
 
-.citoyennete-1 div#container-section-citoyennete:after {
+.citoyennete-1 div#container-section-citoyennete::after {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 20%);
@@ -373,8 +373,8 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     margin-left: 0;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks:after,
-.portaltype-imio-smartweb-procedure #content .sectionlinks:after {
+.portaltype-imio-smartweb-page #content .sectionlinks::after,
+.portaltype-imio-smartweb-procedure #content .sectionlinks::after {
     content: "";
     background: #f3f3f3;
     left: 0.75rem;
@@ -407,7 +407,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     text-decoration: none;
 }
 
-.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"]:after {
+.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"]::after {
     content: "";
     background: #f3f3f3;
     position: absolute;
@@ -427,10 +427,10 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
         background: transparent;
     }
 
-    .portaltype-imio-smartweb-procedure .sectionlinks:after,
-    .portaltype-imio-smartweb-page .sectionlinks:after,
-    .portaltype-imio-smartweb-procedure .sectionfiles:after,
-    .portaltype-imio-smartweb-page .sectionfiles:after {
+    .portaltype-imio-smartweb-procedure .sectionlinks::after,
+    .portaltype-imio-smartweb-page .sectionlinks::after,
+    .portaltype-imio-smartweb-procedure .sectionfiles::after,
+    .portaltype-imio-smartweb-page .sectionfiles::after {
         width: auto;
         left: 0.75rem;
         right: 0.75rem;

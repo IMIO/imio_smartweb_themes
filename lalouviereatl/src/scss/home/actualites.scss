@@ -6,7 +6,7 @@
         }
 
 
-        &:after {
+        &::after {
             background: $primary;
             border-radius:50px;
             bottom: 0;

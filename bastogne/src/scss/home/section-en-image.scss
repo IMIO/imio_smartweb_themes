@@ -16,7 +16,7 @@
                 font-size: 2.8rem;
                 padding:0;
 
-                &:after {
+                &::after {
                     background: url("../../assets/star.svg");
                     top:0;
                     content: "";
@@ -49,7 +49,7 @@
             font-size: 2.8rem;
             padding:0;
     
-            &:after {
+            &::after {
                 background: url("../../assets/ministar.svg");
                 top:0;
                 content: "";
@@ -99,7 +99,7 @@
             }
         }
 
-    &:before {
+    &::before {
         background: #0056A4;
         bottom: 0;
         content: "";
@@ -131,7 +131,7 @@
         color:#fff;
         min-height: 200px;
 
-&:before {
+&::before {
     background: #0056A4;
     bottom: 0;
     content: "";
@@ -157,7 +157,7 @@
                     border-radius: 20px 20px 20px 0;
                 }
 
-                &:before {
+                &::before {
                     background: url("../../assets/before-img.png");
                     bottom:-288px;
                     content: "";
@@ -193,7 +193,7 @@
                     border-radius: 20px 20px 20px 0;
                 }
 
-                &:before {
+                &::before {
                    display: none;
                 }
                 

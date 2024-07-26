@@ -31,7 +31,7 @@
         justify-content: center;
     }
 
-    &:before {
+    &::before {
         content: url("../../assets/logo-cpas.png");
         margin-bottom: 10px;
         display: block;

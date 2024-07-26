@@ -126,7 +126,7 @@
         font-size: 3rem;
         z-index: 0;
 
-        &:after{
+        &::after{
             left:0%;
             top: 70px;
             bottom: 0;
@@ -283,7 +283,7 @@
         width: max-content;
         font-size: 3rem;
 
-        &:after{
+        &::after{
             left:0%;
             top: 70px;
             bottom: 0;

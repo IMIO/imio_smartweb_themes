@@ -69,7 +69,7 @@ h1 {
     }
 }
 
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: "";
     background: #000;
     position: absolute;
@@ -338,7 +338,7 @@ footer {
     margin-top: 0 !important;
 }
 
-.sectiontext ol>li:before {
+.sectiontext ol>li::before {
     content: counter(sectioncounter) "." !important;
 }
 

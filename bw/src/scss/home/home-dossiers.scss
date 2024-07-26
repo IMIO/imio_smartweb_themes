@@ -6,11 +6,11 @@
     position: relative;
     border-radius: 20px;
 
-    &:after {
+    &::after {
         display: none!important;
     }
 
-    &:before {
+    &::before {
         background:$primary-svg;
         bottom: 0;
         content: "";
@@ -25,11 +25,11 @@
      @media screen and (max-width: 991px) {
         background: none!important;
 
-        &:after {
+        &::after {
             display: none!important;
         }
 
-        &:before {
+        &::before {
             width: 100%;
             border-radius: 0;
          }
@@ -102,7 +102,7 @@
                 color: rgba(255, 255, 255,76%);
                 font-family: $font-family-title;
 
-                &:after {
+                &::after {
                     content: "Lire la suite";
                     font-weight: 500;
                     display: block;

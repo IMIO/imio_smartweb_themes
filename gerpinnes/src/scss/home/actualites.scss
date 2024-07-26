@@ -5,7 +5,7 @@
         text-align: center;
         margin-bottom:2rem;
 
-        &:after{
+        &::after{
             display: block;
             width: 100px;
             left:50%;
@@ -16,7 +16,7 @@
         }
     }
 
-    .see_all a:after {
+    .see_all a::after {
         content: "";
         transition: all 0.2s ease;
         position: absolute;
@@ -28,7 +28,7 @@
         width: 25%;
     }
 
-    .see_all a:hover:after, .see_all a:focus:after {
+    .see_all a:hover::after, .see_all a:focus::after {
         width: 50%;
         margin-left: -25%;
     }

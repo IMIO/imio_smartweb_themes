@@ -25,7 +25,7 @@
         width: 1200px;
         border-radius: 50%;
 }*/
-&:before {
+&::before {
   background: url("../../assets/svg/bg-couleur.svg") left center no-repeat #F4F4F4;
   border-radius: 0;
   bottom: 0;

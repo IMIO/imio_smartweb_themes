@@ -79,7 +79,7 @@
         position: relative;
         display: block;
 
-        &:after {
+        &::after {
             content: "";
             width: 70px;
             height: 70px;
@@ -95,7 +95,7 @@
         }
 
         &:hover,&:focus {
-            &:after {
+            &::after {
                 border: solid px $primary-svg;
             }
         }

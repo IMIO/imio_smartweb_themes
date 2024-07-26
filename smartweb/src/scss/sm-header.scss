@@ -91,7 +91,7 @@
           &:hover{
             color: #fff;
 
-            &:after{
+            &::after{
               width: 106%;
             }
           }
@@ -105,7 +105,7 @@
               font-size: 14px;
             }
 
-            &:before{
+            &::before{
               content: url(../../assets/svg/mascotte.svg);
               display: flex;
               align-items: center;

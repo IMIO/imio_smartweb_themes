@@ -23,7 +23,7 @@
                     position: relative;
                     display: block;
 
-                    &:after{
+                    &::after{
                         content: "";
                         position: absolute;
                         top: 0;
@@ -35,7 +35,7 @@
                         transition: all .3s ease;
                     }
 
-                    &:before{
+                    &::before{
                         content: url("../../assets/svg/plus.svg");
                         display: block;
                         line-height: 0;
@@ -49,11 +49,11 @@
                     }
 
                     &:hover{
-                        &:after{
+                        &::after{
                             opacity: 100%;
                         }
 
-                        &:before{
+                        &::before{
                             opacity: 100%;
                         }
                     }

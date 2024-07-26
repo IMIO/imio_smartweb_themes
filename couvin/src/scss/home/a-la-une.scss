@@ -1,7 +1,7 @@
 .sortable-section.a-la-une {
     position: relative;
 
-    &:before {
+    &::before {
         bottom: 50px;
         content: "";
         left: -5%!important;

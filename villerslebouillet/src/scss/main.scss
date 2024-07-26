@@ -45,7 +45,7 @@ h1 {
 .bannerSwiper .section-slide{
     .swiper-banner-content {display: none;}
 
-    &:after{
+    &::after{
         content: url("../../assets/svg/banner-slogan.svg");
         width: 1200px;
         max-width: 90%;
@@ -56,7 +56,7 @@ h1 {
     }
 }
 
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: "";
     background: #0000;
     position: absolute;
@@ -272,7 +272,7 @@ footer #container-section-noussuivre{
     #banner {
         z-index: -1;
 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -303,7 +303,7 @@ footer #container-section-noussuivre{
                     color:#CCC!important ;
                 }
 
-                &:before {
+                &::before {
                     color: #fff!important;
                 }
             }

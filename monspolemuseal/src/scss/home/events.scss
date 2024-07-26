@@ -32,7 +32,7 @@
           }
     }
 
-    &:before {
+    &::before {
         background: $primary-color;
         border-radius: 0;
         bottom: 0;
@@ -314,7 +314,7 @@
         background: $primary-color-abattoirs;
     }
 
-    &:before {
+    &::before {
         background: $primary-color-abattoirs;
     }
 
@@ -363,7 +363,7 @@
             background: $primary-color-artotheque;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-artotheque;
         }
 
@@ -411,7 +411,7 @@
             background: $primary-color-cap;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-cap;
         }
 
@@ -459,7 +459,7 @@
             background: $primary-color-magasin-de-papier;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-magasin-de-papier;
         }
 
@@ -507,7 +507,7 @@
             background: $primary-color-maison-van-gogh;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-maison-van-gogh;
         }
 
@@ -555,7 +555,7 @@
             background: $primary-color-mons-memorial-museum;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-mons-memorial-museum;
         }
 
@@ -603,7 +603,7 @@
             background: $primary-color-musee-du-doudou;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-musee-du-doudou;
         }
 
@@ -651,7 +651,7 @@
             background: $primary-color-salle-saint-georges;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-salle-saint-georges;
         }
 
@@ -699,7 +699,7 @@
             background: $primary-color-silexs;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-silexs;
         }
 
@@ -747,7 +747,7 @@
             background: $primary-color-beffroi;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-beffroi;
         }
 
@@ -795,7 +795,7 @@
             background: $primary-color-tresor-de-sainte-waudru;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-tresor-de-sainte-waudru;
         }
 
@@ -843,7 +843,7 @@
             background: $primary-color-musee-francois-duesberg;
         }
 
-        &:before {
+        &::before {
             background: $primary-color-musee-francois-duesberg;
         }
 

@@ -49,7 +49,7 @@ $enable-roboto-webfont: false;
             & > a{
                 padding-top: 2rem;
 
-                &:after{
+                &::after{
                     content: "";
                     z-index: 0;
                     position: absolute;

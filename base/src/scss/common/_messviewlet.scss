@@ -51,7 +51,7 @@
 
 			&:hover,
 			&:focus {
-				&:after {
+				&::after {
 					opacity: 70%;
 				}
 			}

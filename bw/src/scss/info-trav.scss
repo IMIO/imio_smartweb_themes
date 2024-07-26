@@ -23,7 +23,7 @@
                     }
 
                     @media screen and (min-width: 992px) {
-                        &:before {
+                        &::before {
                             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' style='fill:%2327606a'/%3E%3Cpath d='M20 19.62a1.92 1.92 0 1 1 .001-3.841A1.92 1.92 0 0 1 20 19.62m0-7.29c-2.97 0-5.37 2.4-5.37 5.37 0 4.03 5.37 9.97 5.37 9.97s5.37-5.94 5.37-9.97c0-2.97-2.4-5.37-5.37-5.37Z' style='fill:%23fff'/%3E%3C/svg%3E");
                             display: block;
                             order: 1;

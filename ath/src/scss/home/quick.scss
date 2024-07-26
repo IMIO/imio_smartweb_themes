@@ -13,7 +13,7 @@
 
 
 
-    &:after {
+    &::after {
         background: $primary-svg;
         bottom: 0;
         content: "";
@@ -35,7 +35,7 @@
         }
       padding: 2rem 40px;
 
-       &:after {
+       &::after {
         right: 0;
         top: 0;
         width: 100vw;
@@ -140,7 +140,7 @@
 
     
 
-    &:before{   
+    &::before{   
         content: "";
         transition: all 0.2s ease;
         position: absolute;

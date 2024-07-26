@@ -87,7 +87,7 @@
         .contact-type-mission{
             padding: 1.5rem;
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 left: 1rem;

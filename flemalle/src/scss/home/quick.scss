@@ -53,11 +53,11 @@ body .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wra
     font-size: 3rem;
   }
 
-  .smartweb_herobanner .swiper-wrapper p.lead.rich_description:after {
+  .smartweb_herobanner .swiper-wrapper p.lead.rich_description::after {
     scale: 0.6;
   }
 
-  body .smartweb_herobanner:before {
+  body .smartweb_herobanner::before {
   height: 100px !important;
   }
 }

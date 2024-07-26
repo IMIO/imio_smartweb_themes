@@ -47,7 +47,7 @@ $enable-roboto-webfont: false;
 // 	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
 // }
 //BANNER
-.smartweb_herobanner:before {
+.smartweb_herobanner::before {
     content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1919 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1919 80H0C0 80 538.14 0 903.735 0C1269.33 0 1919 80 1919 80Z' fill='white'/%3E%3C/svg%3E");
     display: block;
     line-height: 0;

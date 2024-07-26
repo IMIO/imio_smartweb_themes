@@ -18,7 +18,7 @@
 //         margin-bottom: -1px;
 //     }
 // }
-#portal-header-top:before {
+#portal-header-top::before {
     background: url("../../assets/svg/multicolor-line.svg") top right no-repeat;
     background-size: 100% 100%;
     bottom: 0;

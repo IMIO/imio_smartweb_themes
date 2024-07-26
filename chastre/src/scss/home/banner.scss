@@ -1,4 +1,4 @@
-.swiper-banner-image:before {
+.swiper-banner-image::before {
     bottom: 0;
     background: url(../../assets/svg/wave.svg) top center;
     background-size: cover;
@@ -12,7 +12,7 @@
 }
 
 @media (max-width:1000px) { 
-    .swiper-banner-image:before {
+    .swiper-banner-image::before {
         height: 50px;
     }
  }

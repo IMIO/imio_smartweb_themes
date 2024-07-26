@@ -86,7 +86,7 @@
     padding: 80px 40px;
     position: relative;
 
-    &:after {
+    &::after {
         background: $primary-svg;
         bottom: 0;
         content: "";
@@ -197,7 +197,7 @@
         width: 100%;
         margin:80px 0;
     
-        &:after {
+        &::after {
             background: $primary-svg;
             bottom: 0;
             content: "";

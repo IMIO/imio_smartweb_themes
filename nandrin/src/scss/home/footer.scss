@@ -101,7 +101,7 @@ footer ul.row {
     position: relative;
     background:transparent;
 
-    &:before{
+    &::before{
         content:url('../../assets/svg/nandrin-curve.svg');
         display: block;
         top: 7px;

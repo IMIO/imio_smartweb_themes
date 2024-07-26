@@ -125,7 +125,7 @@
 }
 
 @media screen and (max-width: 1350px) {
-    .section-home-page #container-section-evenements:before {
+    .section-home-page #container-section-evenements::before {
 top: 0;
 background: linear-gradient(180deg, transparent, transparent 200px, $primary-purple 200px, $primary-purple 100%);
 content: "";
@@ -167,7 +167,7 @@ z-index: -4;
             color:#000;
             }
 
-        &:before {
+        &::before {
             width: 535px;
             height: 535px;
             background: url("../../assets/svg/cible_purple.svg") top left no-repeat;
@@ -186,7 +186,7 @@ z-index: -4;
         }
 
         @media screen and (max-width: 600px) {
-            &:before {
+            &::before {
                 display:none;
             }
             }
@@ -228,7 +228,7 @@ z-index: -4;
             border-radius: 0;
             z-index: -2;
 
-            &:after {
+            &::after {
                 right: 0;
                 top: 0;
                 bottom: 0;
@@ -271,7 +271,7 @@ z-index: -4;
                 //margin-top: -150px;
                 
 
-                &:after {
+                &::after {
                     background: url("../../assets/svg/btn_purple.svg");
                     background-position: 100% 100%;
                     background-repeat: no-repeat;
@@ -298,7 +298,7 @@ z-index: -4;
 
     .swiper-slide a:hover {
         h3 {
-            &:after {
+            &::after {
                 padding-right: 2.5rem;
                 transition: .3s;
             }
@@ -315,7 +315,7 @@ z-index: -4;
 
 
 
-    &:before {
+    &::before {
         top: 0;
         background: linear-gradient(180deg, transparent, transparent 200px, $primary-purple 200px, $primary-purple 100%);
         content: "";
@@ -341,7 +341,7 @@ z-index: -4;
             }
     }
 
-    &:after {
+    &::after {
         width: 85vw;
         height: 560px;
         background: url("../../assets/svg/tete_loup.svg") top right no-repeat;
@@ -521,7 +521,7 @@ z-index: -4;
                             
                         }
 
-                        &:after {
+                        &::after {
                             background: url("../../assets/svg/btn_purple.svg");
                             transition: .3s;
                             background-position: 100% 100%;
@@ -549,7 +549,7 @@ z-index: -4;
 
                 &:hover {
                         .table_title {
-                            &:after {
+                            &::after {
                                 padding-right: 2.5rem;
                                 transition: .3s;
                                 color:$primary-purple;
@@ -560,7 +560,7 @@ z-index: -4;
         }
     }
 
-    .see_all a:after {
+    .see_all a::after {
         display: none;
     }
 

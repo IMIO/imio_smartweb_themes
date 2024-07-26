@@ -4,7 +4,7 @@
     }
     margin-top: 0;
 
-    &:after {
+    &::after {
         display: none;
     }
 
@@ -13,7 +13,7 @@
         color: #000;
         margin-bottom: 2rem;
 
-        &:before{
+        &::before{
             content: "";
             display: block;
             background-image: url("../../assets/svg/env.svg");
@@ -42,7 +42,7 @@
         display: none;
     }
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         top: 0;
@@ -62,7 +62,7 @@
         display: inline-block;
         position: relative;
 
-        &:after{
+        &::after{
             content: "";
             background: url("../../assets/svg/draw-arrow-pink.svg");
             display: inline-block;
@@ -86,7 +86,7 @@
         display: none;
     }
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         top: 0;

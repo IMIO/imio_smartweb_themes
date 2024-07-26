@@ -48,7 +48,7 @@
         right: 65px;
     }
 
-    &:after{
+    &::after{
         content:"";
         background: url("../../assets/svg/m-logo.svg");
         position: absolute;

@@ -2,7 +2,7 @@
     background: transparent;
     text-align: center;
 
-    &:after {
+    &::after {
         content: "";
         background: #f0efe9;
         bottom: 0;
@@ -19,7 +19,7 @@
     .section-title{
         font-size: 3.25rem !important;
 
-        &:before{
+        &::before{
             content: url('../../assets/svg/enveloppe.svg');
             margin-bottom: 1rem;
             display: block;

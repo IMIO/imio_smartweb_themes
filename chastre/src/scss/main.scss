@@ -55,7 +55,7 @@ body{
                     position: relative!important;
                     padding: 0 3rem!important;
 
-                    &:after{
+                    &::after{
                         content: "";
                         width: 50px;
                         height: 1px;
@@ -67,7 +67,7 @@ body{
                         transform: translate(50%,50%);  
                     }
 
-                    &:before{
+                    &::before{
                         content: "";
                         width: 50px;
                         height: 1px;
@@ -89,7 +89,7 @@ body{
     text-align: left!important;
     background: transparent!important;
 
-    &:before {
+    &::before {
         content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1920 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120C950.699 -40 950.699 -40 1920 120H0Z' fill='#222831'/%3E%3C/svg%3E%0A");
         line-height: 0;
         display: block;

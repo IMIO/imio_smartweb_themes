@@ -15,7 +15,7 @@
         text-align: center !important;
         margin: 0 0 4rem !important ;
 
-        &:after{
+        &::after{
             content: url("../../assets/svg/souligne.svg");
             display: block;
             width: 100px;

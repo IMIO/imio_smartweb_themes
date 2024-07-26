@@ -99,7 +99,7 @@
         }
     }
 
-   &:after {
+   &::after {
         content: "";
         background: #f4f3f8;
         width: 100vw;

@@ -25,7 +25,7 @@ li.quick-access {
     font-size: 1.25rem;
 }
 
-a#message:before {
+a#message::before {
     content: '\e83b';
 }
 
@@ -38,7 +38,7 @@ a#message:before {
     width: 100%;
 }
 
-.fax a:after {
+.fax a::after {
     content: "(fax)";
 }
 
@@ -54,13 +54,13 @@ a#message:before {
     padding: 2rem 1rem;
 }
 
-#portal-column-content .section-contact .contact-type-organization:after {
+#portal-column-content .section-contact .contact-type-organization::after {
     left: 0.5rem;
     right: 0.5rem;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks:after, 
-.portaltype-imio-smartweb-procedure #content .sectionlinks:after {
+.portaltype-imio-smartweb-page #content .sectionlinks::after, 
+.portaltype-imio-smartweb-procedure #content .sectionlinks::after {
     display:none;
 }
 
@@ -77,8 +77,8 @@ a#message:before {
     padding-top: 1rem;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks .section-container .body-section:after, 
-.portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .body-section:after {
+.portaltype-imio-smartweb-page #content .sectionlinks .section-container .body-section::after, 
+.portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .body-section::after {
     background: #f3f3f3;
     bottom: 0;
     content: "";

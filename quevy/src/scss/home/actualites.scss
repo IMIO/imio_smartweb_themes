@@ -9,7 +9,7 @@
         margin-bottom:2rem;
         font-family: "Passion One",sans-serif !important;
 
-        &:after{
+        &::after{
             display: block;
             width: 100px;
             left:50%;
@@ -24,7 +24,7 @@
         font-family: "Lato", sans-serif;
         font-weight: 400;
 
-        &:after {
+        &::after {
             display:none;
         }
     }

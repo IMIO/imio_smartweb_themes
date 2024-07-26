@@ -10,7 +10,7 @@
         position: relative;
         margin-bottom: 2rem;
 
-        &:after{
+        &::after{
             content: "";
             position: absolute;
             width: 65px;

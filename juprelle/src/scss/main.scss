@@ -108,7 +108,7 @@ $enable-roboto-webfont: false;
         }
     }
 
-    &:after{
+    &::after{
         //display: none;
     }
 }

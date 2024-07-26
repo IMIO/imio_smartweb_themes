@@ -1,4 +1,4 @@
-.header-custom #banner:after {display: none!important;}
+.header-custom #banner::after {display: none!important;}
 
 .smartweb_herobanner .bannerSwiper {
 	height: 50vw;
@@ -85,7 +85,7 @@
     padding:0 !important;
 }
 
-.smartweb_herobanner:before {
+.smartweb_herobanner::before {
     background: $primary-color;
     border-radius: 50%;
     content: "";

@@ -34,7 +34,7 @@ body {
 
 
 // Banner after formes
-.swiper-banner-image:after {
+.swiper-banner-image::after {
     content: url("../../assets/svg/after-banner.svg");
     position: absolute;
     top: 0;
@@ -48,32 +48,32 @@ body {
 }
 
 @media screen and (max-width: 1900px) {
-    .swiper-banner-image:after {
+    .swiper-banner-image::after {
         left:-50px!important;
     }
     }
 
     @media screen and (max-width: 1800px) {
-        .swiper-banner-image:after {
+        .swiper-banner-image::after {
             left:-180px!important;
         }
         }
 
         @media screen and (max-width: 1540px) {
-            .swiper-banner-image:after {
+            .swiper-banner-image::after {
                 left:-230px!important;
             }
             }
 
             @media screen and (max-width: 1200px) {
-                .swiper-banner-image:after {
+                .swiper-banner-image::after {
                     left:-650px!important;
                 }
                 }
 
 // Banner Six and the city titre
 .bannerSwiper .section-slide{
-    &:after{
+    &::after{
         content: url("../../assets/svg/banner-slogan.svg");
         width: 500px;
         max-width: 60%;
@@ -118,7 +118,7 @@ body {
             position: relative;
     }  
 
-    &:after {
+    &::after {
         content: url("../../assets/svg/after-partenaires.svg");
         position: absolute;
         top: 300px;
@@ -150,7 +150,7 @@ body {
     width: 90%;
     max-width: 1200px; 
 
-    &:after {
+    &::after {
         content: url("../../assets/svg/img-before.svg");
         position: absolute;
         top: 70px;
@@ -246,7 +246,7 @@ body {
     border-radius:50px;
     padding:80px;
 
-    &:before {
+    &::before {
         content: url("../../assets/svg/before-step.svg");
         position: absolute;
         top: -280px;
@@ -260,7 +260,7 @@ body {
         }
     } 
 
-    &:after {
+    &::after {
         content: url("../../assets/svg/after-step.svg");
         position: absolute;
         bottom: -180px;
@@ -336,7 +336,7 @@ body {
 .bloc_conclusion {
     margin:80px auto 200px;
 
-    &:after {
+    &::after {
         content: url("../../assets/svg/img2-before.svg");
         position: absolute;
         top: 125px;
@@ -430,7 +430,7 @@ body {
   }
 
 
-#portal-header #portal-header-top:after {
+#portal-header #portal-header-top::after {
     background: none!important;
 }
 
@@ -662,7 +662,7 @@ footer #container-section-noussuivre{
                 color:#000!important ;
             }
 
-            &:before {
+            &::before {
                 color: #000!important;
             }
         }
@@ -674,7 +674,7 @@ footer #container-section-noussuivre{
     #banner {
         z-index: -1;
 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -710,7 +710,7 @@ footer #container-section-noussuivre{
                     color:#CCC!important ;
                 }
 
-                &:before {
+                &::before {
                     color: #fff!important;
                 }
             }
@@ -748,7 +748,7 @@ footer #container-section-noussuivre{
     background: none !important;
 }
 
-.sectionlinks h2:before{
+.sectionlinks h2::before{
     display:none !important;
 }
 
@@ -773,7 +773,7 @@ footer #container-section-noussuivre{
           margin-top: 5rem !important;
       }
 
-      #portal-globalnav > li.has_subtree > a:before {
+      #portal-globalnav > li.has_subtree > a::before {
         background-color: $primary-svg;
     }
 }
@@ -817,7 +817,7 @@ footer #container-section-noussuivre{
     text-decoration: none;
     transition: all .3s ease;
 
-    &:after { 
+    &::after { 
         color: #292929;
         content: "EN";
         font-size: 16px;
@@ -858,7 +858,7 @@ footer #container-section-noussuivre{
     transition: all .3s ease;
     margin-left:0;
 
-    &:after { 
+    &::after { 
         color: #292929;
         content: "FR";
         font-size: 16px;
@@ -884,7 +884,7 @@ footer #container-section-noussuivre{
 }
 
 
-.sectiontext ul li:before {
+.sectiontext ul li::before {
     content: "";
     left: 0;
     position: absolute;
@@ -934,7 +934,7 @@ footer #container-section-noussuivre{
     padding-left: 20px;
 }
 
-.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span:before {
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span::before {
     background: #de047b;
     border-radius: 50%;
     content: "";

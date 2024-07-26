@@ -1,4 +1,4 @@
-.sectionevents:after {
+.sectionevents::after {
     background: url("../../assets/svg/bg-event.jpg") bottom center #CDD8E7;
 	background-size: cover;
     bottom: 0;
@@ -22,7 +22,7 @@
         margin-bottom:2rem;
         font-family: "Passion One",sans-serif !important;
 
-        &:after{
+        &::after{
             display: block;
             width: 100px;
             left:50%;
@@ -39,7 +39,7 @@
         color:#121212;
         background:#fff;
 
-        &:after {
+        &::after {
             display:none;
         }
     }

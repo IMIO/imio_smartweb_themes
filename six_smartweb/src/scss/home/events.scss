@@ -1,4 +1,4 @@
-.sectionevents:after {
+.sectionevents::after {
     background: url("../../assets/svg/bg-event.jpg") bottom center #CDD8E7;
 	background-size: cover;
     bottom: 0;
@@ -21,7 +21,7 @@
         text-align: center;
         margin-bottom:2rem;
 
-        &:after{
+        &::after{
             display: block;
             width: 100px;
             left:50%;
@@ -38,7 +38,7 @@
         color:#121212;
         background:#fff;
 
-        &:after {
+        &::after {
             display:none;
         }
     }

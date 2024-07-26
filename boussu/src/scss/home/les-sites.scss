@@ -2,7 +2,7 @@
   padding: 5rem 0;
   position: relative;
 
-  &:after{
+  &::after{
     content: "";
     background: #F1F1F1;
     position: absolute;
@@ -39,7 +39,7 @@
       }
 
       .table_title {
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           top: 0;

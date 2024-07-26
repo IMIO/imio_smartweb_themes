@@ -3,7 +3,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    &:after {
+    &::after {
         border: solid 1px #e3e3e3;
         border-radius: 5px;
     }

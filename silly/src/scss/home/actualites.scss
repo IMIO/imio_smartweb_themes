@@ -34,7 +34,7 @@
             color: #fff;
             padding: 0.5rem 0 0;
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 left: 0;

@@ -119,7 +119,7 @@ background: url(../../assets/svg/frame.svg);
     position: relative;
 }
 
-.bannerSwiper .section-slide:after {
+.bannerSwiper .section-slide::after {
     content: url(../../assets/svg/logo-rochefort-blanc.svg);
     left: 50%;
     max-width: 60%;
@@ -129,7 +129,7 @@ background: url(../../assets/svg/frame.svg);
     width: 600px;
 }
 
-.site-cpas .bannerSwiper .section-slide:after, .site-bibliotheque-communale .bannerSwiper .section-slide:after {
+.site-cpas .bannerSwiper .section-slide::after, .site-bibliotheque-communale .bannerSwiper .section-slide::after {
     display:none!important;
 } 
 //MENU
@@ -167,6 +167,6 @@ background: url(../../assets/svg/frame.svg);
     margin-top: 22px;
 }
 
-body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link:after {
+body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link::after {
     background-image: url(../../assets/svg/chevron.svg);
 }

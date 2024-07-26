@@ -5,7 +5,7 @@
         align-items: baseline;
         gap: 25px;
 
-        &:before{
+        &::before{
             content: "";
             width: 15px;
             height: 15px;
@@ -22,7 +22,7 @@
     padding-bottom: 2rem !important;
     margin-top: 5rem;
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         top: 0;
@@ -39,7 +39,7 @@
         margin-left: auto!important;
         margin-right: auto!important;
 
-        &:before{
+        &::before{
             background-color: $primary;
         }
     }

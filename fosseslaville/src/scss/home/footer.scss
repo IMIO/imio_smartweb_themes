@@ -83,7 +83,7 @@ footer .contact_informations ul {
     background: $primary;
 }
 
-footer .schedule, footer .schedule a, footer .schedule a:after {
+footer .schedule, footer .schedule a, footer .schedule a::after {
     color: #fff;
     fill: #fff;
 }

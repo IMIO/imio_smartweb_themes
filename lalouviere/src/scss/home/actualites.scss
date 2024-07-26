@@ -8,7 +8,7 @@
         }
 
 
-        &:before{
+        &::before{
             right:0;
             top:0;
             background: linear-gradient(180deg, #F8F8F8, #F8F8F8 200px, transparent 0, transparent);
@@ -84,7 +84,7 @@
                         
                     }
 
-                    &:after {
+                    &::after {
                         background: url("../../assets/svg/btn.svg");
                         background-position: 100% 100%;
                         background-repeat: no-repeat;
@@ -130,7 +130,7 @@
                             
                         }
 
-                        &:after {
+                        &::after {
                             color: $primary-red;
                             padding-right: 2.5rem;
                             transition: .3s;
@@ -154,7 +154,7 @@
 
 .section-home-page .sectionnews{
     @media screen and (max-width: 600px) {
-        &:before {
+        &::before {
             display:none;
         }
         }

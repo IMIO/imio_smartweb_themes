@@ -1,7 +1,7 @@
 .sectionevents{
     background: #EFECE8;
 
-    &:after {
+    &::after {
         content: "";
         background: #ea0101;
         bottom: 0;
@@ -38,11 +38,11 @@
         border: 2px solid $primary;
     }
 
-    .see_all a:after {
+    .see_all a::after {
         display: none;
     }
 
-    .see_all a:hover:after, .see_all a:focus:after {
+    .see_all a:hover::after, .see_all a:focus::after {
         width: 65px;
     }
 

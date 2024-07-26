@@ -24,7 +24,7 @@
                     transition: all .5s ease;
                     position: relative;
 
-                    &:before {
+                    &::before {
                     background: #fff !important;
                     border-radius: 0 !important;
                     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
@@ -46,7 +46,7 @@
                         background: $primary-orange !important;
                         transition: all .5s ease;
 
-                        &:before {
+                        &::before {
                             background: $primary-orange !important;
                             transition: all .5s ease;
                             }

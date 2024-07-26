@@ -14,7 +14,7 @@
     color: $black;
 }
 
-body .sortable-section.annuaire h2.section-title:after {
+body .sortable-section.annuaire h2.section-title::after {
     background-position: left;
 }
 
@@ -57,7 +57,7 @@ div.swiper-image::before {
     z-index: 0;
 }
 
-.swiper-slide:hover a div.swiper-image:before {
+.swiper-slide:hover a div.swiper-image::before {
     background: $primary;
     opacity: 50%;
 }

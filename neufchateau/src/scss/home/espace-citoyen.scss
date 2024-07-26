@@ -1,7 +1,7 @@
 .espace-citoyen{
     position: relative;
 
-    &:before {
+    &::before {
         width: 100vw;
         height: 635px;
         background: url("../../assets/svg/vague-right.svg") top right no-repeat;
@@ -17,12 +17,12 @@
     }
 
     @media screen and (max-width: 600px) {
-        &:before {
+        &::before {
             display:none;
         }
         }
 
-    &:after {
+    &::after {
         background: $primary-svg;
         border-radius: 0;
         bottom: 0;
@@ -36,7 +36,7 @@
     }
 
     @media screen and (max-width: 575px) {
-        &:after {
+        &::after {
             border-radius: 0;
         }
     }

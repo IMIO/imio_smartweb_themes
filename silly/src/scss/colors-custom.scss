@@ -13,7 +13,7 @@ $Slowfood: #EE0F0D;
         position: relative;
         background: $Loisirs;
 
-        &:after {
+        &::after {
             content: "";
             background: $Loisirs;
             position: absolute;
@@ -57,7 +57,7 @@ $Slowfood: #EE0F0D;
         position: relative;
         background: $vivre;
 
-        &:after {
+        &::after {
             content: "";
             background: $vivre;
             position: absolute;
@@ -132,7 +132,7 @@ $Slowfood: #EE0F0D;
         position: relative;
         background: $Jeunesse;
 
-        &:after {
+        &::after {
             content: "";
             background: $Jeunesse;
             position: absolute;
@@ -168,7 +168,7 @@ $Slowfood: #EE0F0D;
         position: relative;
         background: $litterature;
 
-        &:after {
+        &::after {
             content: "";
             background: $litterature;
             position: absolute;

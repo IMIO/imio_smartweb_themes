@@ -3,7 +3,7 @@
   }
 
   @include media-breakpoint-up(lg) { 
-  .section-home-page .sectionnews:before {
+  .section-home-page .sectionnews::before {
     top: 50%;
     content: url('../../assets/svg/logo-bg-purple.svg');
     display: block;
@@ -13,7 +13,7 @@
   }
 }
 
-.sectionnews .swiper-slide a:hover:after {
+.sectionnews .swiper-slide a:hover::after {
   background: $color-purple;
   position: absolute;
   top: 0;

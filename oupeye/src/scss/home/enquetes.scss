@@ -18,7 +18,7 @@
     }
 }
 
-.sortable-section.enquetes:after {
+.sortable-section.enquetes::after {
   background: #F5F8F8;
   bottom: 0;
   content: "";
@@ -78,7 +78,7 @@
     width: 25%;
   }
 
-  &:hover:after {
+  &:hover::after {
     width: 50%;
   }
 }
@@ -88,7 +88,7 @@
 }
 
 @include media-breakpoint-up(lg) { 
-.section-home-page .enquetes:before {
+.section-home-page .enquetes::before {
   top: 50%;
   content: url('../../assets/svg/logo-bg-green.svg');
   display: block;
@@ -98,7 +98,7 @@
   }
 }
 
-.enquetes .swiper-slide a:hover:after {
+.enquetes .swiper-slide a:hover::after {
   background: $color-green;
   position: absolute;
   top: 0;

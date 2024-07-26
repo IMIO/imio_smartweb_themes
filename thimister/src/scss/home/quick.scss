@@ -10,7 +10,7 @@ body:not(.section-home-page) .outer-wrapper .sectionlinks {
     padding-top: 4rem;
 }
 
-body:not(.section-home-page) #content .sectionlinks:after {
+body:not(.section-home-page) #content .sectionlinks::after {
     background: transparent;
 }
 

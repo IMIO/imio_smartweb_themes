@@ -18,7 +18,7 @@ div.swiper-image::before {
     background-color: $primary !important;
 }
 
-.sectionfiles:after {
+.sectionfiles::after {
     background: #f3f3f3;
 }
 
@@ -46,7 +46,7 @@ span {
 body.section-home-page .container #main-container {
     position: relative;
 
-    &:after {
+    &::after {
     background: url(../../assets/svg/bb.svg);
     content: "";
     display: block;

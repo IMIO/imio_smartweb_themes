@@ -91,7 +91,7 @@ div#body-section-acces-directs .table_image {
     &:focus {
         .table_title {
             span {
-                &:after {
+                &::after {
                     content: "";
                     bottom: -5px;
                     height: 2px;

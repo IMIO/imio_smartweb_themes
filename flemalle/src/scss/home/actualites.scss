@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.sortable-section.sectionnews:after {
+.sortable-section.sectionnews::after {
     right: -40%;
     content: "";
     width: 100vw;
@@ -15,7 +15,7 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .sortable-section.sectionnews:after {
+    .sortable-section.sectionnews::after {
     background: #f0f0f0;
     bottom: 0;
     content: "";
@@ -32,7 +32,7 @@ div.swiper-image {
     position: relative;
 }
 
-div.swiper-image:before {
+div.swiper-image::before {
     background: transparent;
     border-radius: 10px 10px 0 0;
     bottom: 0;
@@ -45,12 +45,12 @@ div.swiper-image:before {
     z-index: 99;
 }
 
-.swiper-slide:hover a div.swiper-image:before {
+.swiper-slide:hover a div.swiper-image::before {
     background: $primary-svg;
     opacity: 50%;
 }
 
-.sectionnews .see_all a:after {
+.sectionnews .see_all a::after {
     background-color: $primary-svg;
     bottom: -5px;
     content: "";

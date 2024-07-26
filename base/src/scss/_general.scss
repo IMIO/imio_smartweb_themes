@@ -19,7 +19,7 @@
 	display: none;
 }
 
-.schedule .opening_informations:after{
+.schedule .opening_informations::after{
     content: "";
     width: 9px;
     height: 6px;

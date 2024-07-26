@@ -15,7 +15,7 @@
     text-align: left;
 }
 
-#smartweb-footer .section-contact:after{
+#smartweb-footer .section-contact::after{
     display:none;
 }
 
@@ -76,7 +76,7 @@ div#body-section-administration-communale {
     padding:1rem 0 0;
 }
 
-#body-section-feder:after {
+#body-section-feder::after {
     content: "";
     position: absolute;
     background: #fff;

@@ -1,5 +1,5 @@
 .portaltype-imio-smartweb-newsview{
-    &:before{
+    &::before{
         content: "";
         position: absolute;
         top: -140px;
@@ -13,7 +13,7 @@
         border-bottom-right-radius: 50px;
     }
 
-    &:after{
+    &::after{
         content:"";
         background: url("../../assets/svg/m-logo.svg");
         position: absolute;
@@ -31,7 +31,7 @@
         margin-bottom: 0;
 
         #portal-header-top {
-            &:after {
+            &::after {
                 background: #fff;
             }
         }
@@ -98,7 +98,7 @@
 .portaltype-imio-smartweb-eventsview,.portaltype-imio-smartweb-directoryview {
     background: #f8f8f8;
 
-    &:after {
+    &::after {
         content: "";
         background: $light-green;
         height: 570px;

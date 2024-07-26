@@ -20,7 +20,7 @@
             position: relative;
             display: block;
 
-            &:after{
+            &::after{
                 content: "";
                 position: absolute;
                 background: $subsite-logo-background;
@@ -45,7 +45,7 @@
     #plone-breadcrumb{
         background: transparent;
 
-        &:after{
+        &::after{
             display: none;
         }
     }

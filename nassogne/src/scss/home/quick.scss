@@ -10,7 +10,7 @@ padding-bottom: 0;
                 position: relative;
                 display: inline-block;
 
-                &:after{
+                &::after{
                     content: "";
                     background:$primary;
                     position: absolute;
@@ -28,7 +28,7 @@ padding-bottom: 0;
         &:hover{
             .table_title{
                     span{
-                        &:after{
+                        &::after{
                             opacity: 100%;
                         }
                     }

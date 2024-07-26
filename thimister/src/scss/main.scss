@@ -30,12 +30,12 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper {
     position: relative;
 }
 
-.swiper-slide:hover a div.swiper-image:before {
+.swiper-slide:hover a div.swiper-image::before {
     background: $primary;
     opacity: 50%;
 }
 
-div.swiper-image:before {
+div.swiper-image::before {
     background: transparent;
     bottom: 0;
     content: "";

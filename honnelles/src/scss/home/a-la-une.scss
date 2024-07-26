@@ -78,7 +78,7 @@
         max-width: 750px;
     }
 
-    &:after {
+    &::after {
         content: "";
         background: $primary-light;
         position: absolute;

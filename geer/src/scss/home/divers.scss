@@ -37,7 +37,7 @@ div#subsite-logo img {
 .sortable-section.sectionfiles {
     margin-bottom: 1rem;
 
-    &:after {
+    &::after {
         border-radius: 50px;
     }
 }
@@ -55,7 +55,7 @@ div#subsite-logo img {
     border-radius: 50px;
 }
 //SEE ALL
-body .see_all a:after {
+body .see_all a::after {
     background-color: $primary-svg;
     bottom: -5px;
     content: "";
@@ -66,7 +66,7 @@ body .see_all a:after {
     width: 25%;
 }
 
-body .see_all a:focus:after, body .see_all a:hover:after {
+body .see_all a:focus::after, body .see_all a:hover::after {
     width: 50%;
 }
 
@@ -86,7 +86,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li.s
     position: relative;
 }
 
-.text p:not(.section-home-page) a:after {
+.text p:not(.section-home-page) a::after {
     content: "";
     background: $primary-svg;
     bottom: 0;

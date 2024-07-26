@@ -48,7 +48,7 @@
 .sortable-section.sectionevents.bg1 {
     position: relative;
 
-  &:after {
+  &::after {
     background: url(../../assets/svg/demi-logo-wavre-cpas-gris.svg);
     content: "";
     display: block;

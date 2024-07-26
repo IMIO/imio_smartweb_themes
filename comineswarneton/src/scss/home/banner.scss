@@ -10,7 +10,7 @@
             position: absolute;
             height: 800px;
 
-            &:before{
+            &::before{
                 content: url("../../assets/svg/logo-comines-svg.svg");
                 position: absolute;
                 z-index: 2;
@@ -20,7 +20,7 @@
                 right: 230px;
             }
 
-            &:after{
+            &::after{
                 content: "";
                 background-color: #F6F6F6;
                 position: absolute;
@@ -74,7 +74,7 @@
                     .image{
                         position: relative;
 
-                        &:after{
+                        &::after{
                             content: "";
                             background: transparent;
                             position: absolute;
@@ -95,7 +95,7 @@
 
                     &:hover{
                         .image{
-                            &:after{
+                            &::after{
                                 border-color: transparent;
                                 background: transparent;
                                 animation: hoorai cubic-bezier(.18, .14, .29, 1) .5s; 

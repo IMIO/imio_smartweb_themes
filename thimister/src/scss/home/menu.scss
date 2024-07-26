@@ -2,7 +2,7 @@
     position: relative;
 }
 
-body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo:before {
+body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo::before {
     background: #fff;
     border-radius: 50%;
     bottom: -20px;

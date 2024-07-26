@@ -13,7 +13,7 @@
     margin:3rem 0 0
     }
 
-    &:before{
+    &::before{
         right:0;
         top:0;
         background: linear-gradient(180deg, transparent, transparent 315px, #F8F8F8 0, #F8F8F8);
@@ -33,7 +33,7 @@
   padding-bottom: 50px;
 }
 
-&:after {
+&::after {
         display: block;
         height: 800px;
         width: 400px;
@@ -161,7 +161,7 @@
         font-size: 14px;
         color:#747474;
 
-        &:after {
+        &::after {
           background: url("../../assets/svg/btn.svg");
           background-position: 100% 100%;
           background-repeat: no-repeat;

@@ -29,7 +29,7 @@
                 margin-right: 10px;
             }
 
-            &:before {
+            &::before {
                 content: "";
                 width: 0;
                 padding-bottom: 100%;

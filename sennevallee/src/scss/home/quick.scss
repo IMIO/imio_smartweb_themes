@@ -12,7 +12,7 @@
     margin:0 !important;
     border-radius: 0 0 80px;
 
-    &:before {
+    &::before {
         background: url("../../assets/svg/image-before.svg");
         content: "";
         height: 215px;
@@ -96,7 +96,7 @@
         .sectionlinks.quick-access{
             border-radius:0;
         
-            &:before {
+            &::before {
                 display: none;
             }
         }

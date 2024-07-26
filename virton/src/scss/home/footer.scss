@@ -119,7 +119,7 @@
     overflow: unset;
 }
 
-#portal-footer-wrapper:after{
+#portal-footer-wrapper::after{
     content: "";
     transition: all 0.2s ease;
     position: absolute;
@@ -130,7 +130,7 @@
     width: 200px;
 }
 
-#portal-footer-wrapper:before{   
+#portal-footer-wrapper::before{   
     content: "";
     transition: all 0.2s ease;
     position: absolute;
@@ -150,7 +150,7 @@
 
 
 @media screen and (max-width: 1000px) {
-    #portal-footer-wrapper:after{
+    #portal-footer-wrapper::after{
         display:none;
     }
 }

@@ -22,7 +22,7 @@
                 gap: 10px 30px;
             }
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 left: 1rem;
@@ -68,7 +68,7 @@
         .contact-type-mission{
             padding: 2rem 0;
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 left: 1rem;

@@ -97,37 +97,37 @@ div#formfield-form-widgets-basic_analytics {
     color: #dc3545 !important;
 }
 
-a.manage.contenttype-imio-smartweb-page:before {
+a.manage.contenttype-imio-smartweb-page::before {
     content: '\e80e';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-imio-smartweb-folder:before {
+a.manage.contenttype-imio-smartweb-folder::before {
     content: '\e801';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-imio-smartweb-newsview:before {
+a.manage.contenttype-imio-smartweb-newsview::before {
     content: '\e80f';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-imio-smartweb-eventsview:before {
+a.manage.contenttype-imio-smartweb-eventsview::before {
     content: '\e809';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-imio-smartweb-directoryview:before {
+a.manage.contenttype-imio-smartweb-directoryview::before {
     content: '\e842';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-collection:before {
+a.manage.contenttype-collection::before {
     content: '\e808';
     font-family: 'fontello';
 }
 
-a.manage.contenttype-link:before {
+a.manage.contenttype-link::before {
     content: '\e806';
     font-family: 'fontello';
 }
@@ -164,7 +164,7 @@ a.manage.contenttype-link:before {
             align-items: center;
             font-size: 20px;
 
-            &:after{
+            &::after{
                 content: "";
                 width: 9px;
                 height: 6px;

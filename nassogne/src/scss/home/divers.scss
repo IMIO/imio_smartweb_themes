@@ -26,7 +26,7 @@
 .sortable-section.a-la-une {
     position: relative;
 
-    &:before {
+    &::before {
       position: absolute;
       top: 300px;
       bottom: 0;
@@ -42,7 +42,7 @@
 .sortable-section.enquetes {
     position: relative;
 
-    &:before {
+    &::before {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -71,7 +71,7 @@ div.swiper-image::before {
     z-index: 0;
 }
 
-.swiper-slide:hover a div.swiper-image:before {
+.swiper-slide:hover a div.swiper-image::before {
     background: $primary;
     opacity: 50%;
 }

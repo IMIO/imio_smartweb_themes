@@ -1,7 +1,7 @@
 .sectionnews:not(.a-la-une){
     position: relative;
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         left: 0;
@@ -38,7 +38,7 @@
         border: 2px solid $primary;
     }
 
-    .see_all a:after {
+    .see_all a::after {
         display: none;
     }
 

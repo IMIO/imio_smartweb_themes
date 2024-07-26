@@ -15,7 +15,7 @@
                     padding: 60px 0;
                 }
 
-                &:after {
+                &::after {
                     content: "";
                     position: absolute;
                     width: 100%;
@@ -79,7 +79,7 @@
         font-weight: 400;
     }
 
-    &:after{
+    &::after{
         content: "";
         width: 100vw;
         top: -579px;

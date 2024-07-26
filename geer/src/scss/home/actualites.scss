@@ -9,7 +9,7 @@
 }
 
 .sectionnews, .sectionevents {
-    .swiper-image:after {
+    .swiper-image::after {
     content: "";
     background: $primary-svg;
     position: absolute;
@@ -25,7 +25,7 @@
 }
 
 .sectionnews, .sectionevents {
-.swiper-slide a:hover .swiper-image:after {
+.swiper-slide a:hover .swiper-image::after {
     opacity: 50%;
     }
 }

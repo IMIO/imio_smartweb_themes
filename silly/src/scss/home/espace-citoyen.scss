@@ -4,7 +4,7 @@
     padding-top: 3vw;
     background: #F3F3F3;
 
-    &:after {
+    &::after {
         content: "";
         background: #F3F3F3;
         width: 100vw;

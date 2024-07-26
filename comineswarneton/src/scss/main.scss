@@ -235,7 +235,7 @@ $enable-roboto-webfont: false;
     }
 
     &:hover{
-      &:before{
+      &::before{
         opacity: 100%;
       }
 
@@ -299,7 +299,7 @@ $enable-roboto-webfont: false;
     z-index: 1;
     position: relative;
 
-    &:before{
+    &::before{
       content: url("../../assets/svg/eyes.svg");
       margin-top: -33px;
       display: block;
@@ -309,7 +309,7 @@ $enable-roboto-webfont: false;
   .swiper-image{
     position: relative;
 
-      &:after{
+      &::after{
         content: "";
         position: absolute;
         top: 0;
@@ -321,7 +321,7 @@ $enable-roboto-webfont: false;
         transition: all .3s ease;
     }
 
-    &:before{
+    &::before{
         content: url("../../assets/svg/plus.svg");
         display: block;
         line-height: 0;
@@ -335,11 +335,11 @@ $enable-roboto-webfont: false;
     }
 
     &:hover{
-      &:after{
+      &::after{
         opacity: 100%;
       }
 
-      &:before{
+      &::before{
           opacity: 100%;
       }
     }
@@ -351,7 +351,7 @@ $enable-roboto-webfont: false;
     text-align: left!important;
   }
 
-  &:before{
+  &::before{
     content: url("../../assets/svg/footer-comines.svg");
     background: #fff;
     display: block;

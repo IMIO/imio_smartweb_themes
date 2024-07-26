@@ -290,7 +290,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper
   position: relative;
 }
 
-body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper:after {
+body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper::after {
   background: url(../../assets/svg/fond-iile.png);
   content: "";
   height: 16%;
@@ -333,7 +333,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper
   }
 }
 
-#portal-globalnav>li.has_subtree>a:before {
+#portal-globalnav>li.has_subtree>a::before {
 display: none;
 }
 

@@ -25,7 +25,7 @@
     }
 
     @if $enable-full-width-section-files {
-        &:after {
+        &::after {
             @include full-width;
             background: $section-file-background-color;
         }
@@ -115,12 +115,12 @@
             background: rgba(255, 255, 255, 9%);
             border: solid 1px rgba(255, 255, 255, 0%);
 
-            &:after {
+            &::after {
                 // background: url(../svg/download-arrow-blue.svg) no-repeat center #fff;
             }
         }
 
-        &:after {
+        &::after {
             content: "";
             width: 30px;
             height: 30px;
@@ -207,7 +207,7 @@
     margin-left: 0;
 }
 
-.portaltype-imio-smartweb-procedure .sectionfiles:after,
-.portaltype-imio-smartweb-page .sectionfiles:after {
+.portaltype-imio-smartweb-procedure .sectionfiles::after,
+.portaltype-imio-smartweb-page .sectionfiles::after {
     transform: translateX(0);
 }

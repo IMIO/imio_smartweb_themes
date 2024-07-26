@@ -234,12 +234,12 @@ header#content-header {
         .opener {
             display: none;
 
-            &+label:after {
+            &+label::after {
                 transform: rotate(0deg);
                 transition: ease-in 0.35s;
             }
 
-            &:checked+label:after {
+            &:checked+label::after {
                 transform: rotate(-180deg);
                 transition: ease-in 0.35s;
 
@@ -284,7 +284,7 @@ header#content-header {
                 width: auto;
             }
 
-            &:after {
+            &::after {
                 @media (min-width:992px) {
                     font-size: 0.75em;
                     background: transparent;

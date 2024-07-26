@@ -11,7 +11,7 @@
         margin:70px 0;
         }
 
-        &:before {
+        &::before {
             width: 100vw;
             height: 635px;
             background: url("../../assets/svg/vague-left.svg") top left no-repeat;
@@ -27,7 +27,7 @@
         }
 
         @media screen and (max-width: 600px) {
-            &:before {
+            &::before {
                 display:none;
             }
             }

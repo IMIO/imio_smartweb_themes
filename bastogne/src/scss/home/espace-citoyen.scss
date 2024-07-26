@@ -21,7 +21,7 @@
         font-size: 2.8rem;
         padding:0;
 
-        &:after {
+        &::after {
             background: url("../../assets/star.svg");
             top:0;
             content: "";
@@ -47,7 +47,7 @@
             font-size: 2.8rem;
             padding:0;
     
-            &:after {
+            &::after {
                 background: url("../../assets/ministar.svg");
                 top:0;
                 content: "";
@@ -65,7 +65,7 @@
 
         @media screen and (max-width:900px) {
             .section-title{
-                &:after {
+                &::after {
                     margin-top: -80px;
                 }
                 }

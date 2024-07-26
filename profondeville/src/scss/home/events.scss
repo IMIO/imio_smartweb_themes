@@ -149,7 +149,7 @@
     overflow: hidden;
 }
 
-.sectionevents span.day:after {
+.sectionevents span.day::after {
     content: " /";
 }
 

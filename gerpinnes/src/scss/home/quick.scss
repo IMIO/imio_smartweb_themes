@@ -19,7 +19,7 @@
                 transition: all .5s ease;
                 position: relative;
 
-                &:after {
+                &::after {
                     content: '';
                     position: absolute;
                     top: -8px;

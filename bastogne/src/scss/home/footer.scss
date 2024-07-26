@@ -125,7 +125,7 @@
         }
 }
 
-    &:after {
+    &::after {
         background: url("../../assets/footer-bas.png");
         content: "";
         right: 0;
@@ -158,7 +158,7 @@
             }
     }
     
-        &:after {
+        &::after {
             background: url("../../assets/footer-bas.png");
             content: "";
             right: 0;
@@ -215,7 +215,7 @@ footer{
         vertical-align: middle;
     }
 
-    .sectiontext ul li:before {
+    .sectiontext ul li::before {
         display: none !important;
     }
 

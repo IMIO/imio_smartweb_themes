@@ -8,7 +8,7 @@ body #container-section-flemalle-en-images {
         position: relative;
     }
 
-    li:first-child a.table_image:before {
+    li:first-child a.table_image::before {
         content: url(../../assets/svg/camera.svg);
         display: block;
         left: 50%;
@@ -21,7 +21,7 @@ body #container-section-flemalle-en-images {
         z-index: 1;
     }
 
-    li:nth-child(2) a.table_image:before {
+    li:nth-child(2) a.table_image::before {
         content: url(../../assets/svg/play-button.svg);
         display: block;
         left: 50%;

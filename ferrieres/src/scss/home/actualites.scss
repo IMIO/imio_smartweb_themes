@@ -1,4 +1,4 @@
-.sectionnews:after {
+.sectionnews::after {
     background: url("../../assets/svg/bgm.svg");
 	background-size: cover;
 	background-position: bottom;
@@ -25,7 +25,7 @@
         padding-left: 20px;
     }
 
-    .section-title:before {
+    .section-title::before {
         display: block; 
         content: ""; 
         width: 5px; 
@@ -72,7 +72,7 @@
                     
                 }
 
-                .swiper_category:before {
+                .swiper_category::before {
                     display: block; 
                     content: ""; 
                     width: 100%; 
@@ -138,7 +138,7 @@
 
 
 .sectionnews{
-    &:before{
+    &::before{
         content: "";
         background: #A93D31;
     }

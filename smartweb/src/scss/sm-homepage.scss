@@ -39,7 +39,7 @@ $border_grey: #d3d3d3;
     background-position: center;
     transform: translateY(-50%);
 
-    &:after{
+    &::after{
         display: none;
     }
 }
@@ -222,7 +222,7 @@ $border_grey: #d3d3d3;
             border: solid 1px transparent;
             border-radius: 15px;
 
-            &:before{
+            &::before{
                 position: absolute;
                 content: "";
                 box-sizing: content-box;
@@ -240,7 +240,7 @@ $border_grey: #d3d3d3;
             }
 
             &:hover,&:focus{
-                &:before{
+                &::before{
                     animation: .3s ease forwards  border-hover-blue;
                 }
             }
@@ -288,7 +288,7 @@ $border_grey: #d3d3d3;
         padding-top: 6rem;
     }
 
-    &:after {
+    &::after {
     display: none;
     }
 
@@ -352,7 +352,7 @@ $border_grey: #d3d3d3;
             }
 
             &:hover,&:focus{
-                &:before{
+                &::before{
                     animation: .3s ease forwards  border-hover-black;
                 }
             }
@@ -479,7 +479,7 @@ $border_grey: #d3d3d3;
         }
 
         &:hover,&:focus{
-            &:before{
+            &::before{
                 animation: .3s ease forwards  border-hover-yellow;
             }
         }
@@ -537,7 +537,7 @@ $border_grey: #d3d3d3;
     color: #fff;
     padding-top: 4rem;
 
-    &:before{
+    &::before{
         content:"";
         width: 50px;
         height: 50px;
@@ -547,7 +547,7 @@ $border_grey: #d3d3d3;
         margin-bottom: 1rem;
     }
 
-    &:after{
+    &::after{
         background:$blue;
         content: "";
         position: absolute;
@@ -577,7 +577,7 @@ $border_grey: #d3d3d3;
     color: #fff;
     padding-top: 2rem;
 
-    &:after{
+    &::after{
         background:$blue;
     }
 
@@ -602,7 +602,7 @@ $border_grey: #d3d3d3;
                 margin-bottom: 2rem;
             }
 
-            &:after{
+            &::after{
                 content: "";
                 background: #fff;
                 width: 30px;
@@ -699,7 +699,7 @@ $border_grey: #d3d3d3;
         background-color: #000;
     }
 
-    &:after{
+    &::after{
         background: #008fd2;
         content: "";
         position: absolute;
@@ -715,7 +715,7 @@ $border_grey: #d3d3d3;
 .mon-bla-liens {
     background: transparent;
 
-    &:after {
+    &::after {
     display: none;
     }
 
@@ -847,7 +847,7 @@ $border_grey: #d3d3d3;
         margin-bottom: 6rem;
     }
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         top: 0;
@@ -863,7 +863,7 @@ $border_grey: #d3d3d3;
     .section-container{
         position: relative;
 
-        &:after{
+        &::after{
             content: "";
             background: #fff;
             width: 100vw;
@@ -998,7 +998,7 @@ div#body-section-albums-photos a h3{
     background-color:transparent !important;
 }
 
-.section-liens-citoyennete.sectionlinks:after{
+.section-liens-citoyennete.sectionlinks::after{
     display:none;
 }
 
@@ -1047,9 +1047,9 @@ div#body-section-albums-photos a h3{
 
 
 
-#body-section-mon-bla ul li .table_display a.table_image:before,
-#body-section-annuaire ul li .table_display a.table_image:before,
-#body-section-les-sites-de-la-ville ul li .table_display a.table_image:before{
+#body-section-mon-bla ul li .table_display a.table_image::before,
+#body-section-annuaire ul li .table_display a.table_image::before,
+#body-section-les-sites-de-la-ville ul li .table_display a.table_image::before{
     content: "";
     position: absolute;
     left: 0;

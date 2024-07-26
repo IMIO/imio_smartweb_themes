@@ -5,7 +5,7 @@
   .sortable-section.sectionevents {
     position: relative;
 
-    &:after {
+    &::after {
     background: url(../../assets/svg/logo-back.svg);
     content: "";
     display: block;

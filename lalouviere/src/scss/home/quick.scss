@@ -13,7 +13,7 @@
 .quick-access{
     .body-section{
         @media screen and (max-width: 575px) {
-            &:after {
+            &::after {
                 border-radius: 0 0 50px 50px;
                 width: calc(100vw - 40px);
             }
