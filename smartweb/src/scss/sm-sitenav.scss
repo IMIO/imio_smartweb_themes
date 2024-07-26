@@ -129,7 +129,7 @@ $nav-subtree-title-color : #008FD2;
             & > a{
                 padding: 0;
 
-                @if($nav-first-level-uppercase){
+                @if $nav-first-level-uppercase{
                     text-transform: uppercase;
                 }
 
@@ -171,7 +171,7 @@ $nav-subtree-title-color : #008FD2;
 #portal-globalnav{
     width: 100%;
 
-    & > .nav-item.has_subtree:not(.je-suis):not(.en-un-clic){
+    & > .nav-item.has_subtree:not(.je-suis, .en-un-clic){
         & > .nav-link{
             display: flex;
             align-items: center;
@@ -215,7 +215,7 @@ $nav-subtree-title-color : #008FD2;
   }
 
 @include media-breakpoint-up(lg){
-    .activated #portal-globalnav > .nav-item.has_subtree:not(.je-suis):not(.en-un-clic) > .nav-link::after {
+    .activated #portal-globalnav > .nav-item.has_subtree:not(.je-suis, .en-un-clic) > .nav-link::after {
       background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
       background-size: contain;
       background-position: center;
@@ -391,7 +391,7 @@ $nav-subtree-title-color : #008FD2;
     }
   }
 
-  &[aria-expanded=true] {
+  &[aria-expanded="true"] {
   .navbar-toggler-icon {
     background: transparent;
 

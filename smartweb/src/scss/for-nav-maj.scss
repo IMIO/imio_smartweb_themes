@@ -426,7 +426,7 @@ header#content-header {
         }
     }
 
-    .navbar-toggler[aria-expanded=true]+#portal-globalnav-collapse {
+    .navbar-toggler[aria-expanded="true"]+#portal-globalnav-collapse {
         left: 0;
     }
 

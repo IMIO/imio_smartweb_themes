@@ -7,7 +7,7 @@ $dark: #3F3F3F;
 //*// TYPOGRAPHY
 
 @font-face {
-  font-family: 'T-Star';
+  font-family: T-Star;
   src: url('../../assets/fonts/T-Star-Light.woff2') format('woff2'),
   url('../../assets/fonts/T-Star-Light.woff') format('woff');
   font-weight: 300;
@@ -15,7 +15,7 @@ $dark: #3F3F3F;
 }
 
 @font-face {
-  font-family: 'T-Star';
+  font-family: T-Star;
   src: url('../../assets/fonts/T-Star-Regular.woff2') format('woff2'),
   url('../../assets/fonts/T-Star-Regular.woff') format('woff');
   font-weight: 400;
@@ -23,7 +23,7 @@ $dark: #3F3F3F;
 }
 
 @font-face {
-  font-family: 'T-Star';
+  font-family: T-Star;
   src: url('../../assets/fonts/T-Star-RegularItalic.woff2') format('woff2'),
   url('../../assets/fonts/T-Star-RegularItalic.woff') format('woff');
   font-weight: 400;
@@ -31,7 +31,7 @@ $dark: #3F3F3F;
 }
 
 @font-face {
-  font-family: 'T-Star';
+  font-family: T-Star;
   src: url('../../assets/fonts/T-Star-Bold.woff2') format('woff2'),
   url('../../assets/fonts/T-Star-Bold.woff') format('woff');
   font-weight: 500;
@@ -39,7 +39,7 @@ $dark: #3F3F3F;
 }
 
 @font-face {
-  font-family: 'T-Star';
+  font-family: T-Star;
   src: url('../../assets/fonts/T-Star-Heavy.woff2') format('woff2'),
   url('../../assets/fonts/T-Star-Heavy.woff') format('woff');
   font-weight: 900;

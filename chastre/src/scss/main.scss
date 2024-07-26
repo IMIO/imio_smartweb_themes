@@ -188,7 +188,7 @@ footer{
 }
 
 /* SUP-26886 */
-div.sectionfiles a[aria-expanded=false], div.sectionfiles a[aria-expanded=true]{
+div.sectionfiles a[aria-expanded="false"], div.sectionfiles a[aria-expanded="true"]{
     color: white;
     text-decoration: none;
   }

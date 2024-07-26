@@ -350,7 +350,7 @@ textarea {
 
 .procedure a::after {
     content: '\e803';
-    font-family: "fontello";
+    font-family: fontello;
     margin-left: 0.5rem;
 }
 
@@ -661,7 +661,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
         text-align: center;
     }
 
-    #gdpr-consent-banner .gdpr-actions input[name=refuse] {
+    #gdpr-consent-banner .gdpr-actions input[name="refuse"] {
         margin-left: 0;
         text-align: center;
     }

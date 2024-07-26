@@ -28,7 +28,7 @@
         -webkit-font-smoothing: antialiased;
         backface-visibility: hidden;
         transform: scale(1);
-        -webkit-filter: blur(0);
+        filter: blur(0);
         animation: anim-mouse-leave forwards 0.4s ease-out;
 
         & > a{

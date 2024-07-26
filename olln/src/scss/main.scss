@@ -84,7 +84,7 @@ $enable-roboto-webfont: false;
   }
 
   .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
-    background: hsla(0, 0%, 100%, 77%);
+    background: hsla(0deg, 0%, 100%, 77%);
     margin: 0;
     max-width: 100%;
     padding: 1rem;
@@ -289,7 +289,7 @@ body:not(.site-office-du-tourisme-inforville) {
 
       &::after{
         content: "\F4FA";
-        font-family: "bootstrap-icons";
+        font-family: bootstrap-icons;
         position: absolute;
         bottom: 2px;
         right: 25px;
@@ -326,7 +326,7 @@ body:not(.site-office-du-tourisme-inforville) {
     &::after {
       content: "\F30A";
       display: block;
-      font-family: "bootstrap-icons";
+      font-family: bootstrap-icons;
       font-size: 20px;
     }
   }
