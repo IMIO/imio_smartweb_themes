@@ -56,7 +56,7 @@ jobs:
             echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
           done
           cat summary.txt
-          cat "summary=$(cat summary.txt)" >> "$GITHUB_OUTPUT"
+          echo "summary=$(cat summary.txt)" >> "$GITHUB_OUTPUT"
       - name: Send summary to Mattermost
         if: ${{ !env.ACT }} # do not run locally
         uses: IMIO/gha/mattermost-notify@main
