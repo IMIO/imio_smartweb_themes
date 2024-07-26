@@ -5,7 +5,7 @@
 body:not(.is-in-minisite) #portal-header #portal-header-top a#portal-logo::before {
     background: #fff;
     border-radius: 50%;
-    inset: -80px -50px -20px -50px;
+    inset: -80px -50px -20px;
     content: "";
     position: absolute;
     z-index: 0;

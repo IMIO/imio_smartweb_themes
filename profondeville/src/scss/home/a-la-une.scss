@@ -17,7 +17,7 @@
     background: transparent;
     transition: all .3s ease;
     position: absolute;
-    inset: 0 0 0 0;
+    inset: 0;
     border-radius: 5px;
 }
 
@@ -33,7 +33,7 @@
 .a-la-une a .swiper-image::after {
     transition: all .3s ease;
     content: "";
-    inset: 0 0 0 0;
+    inset: 0;
     position: absolute;
     z-index: 1;
     background: url("../../assets/svg/bouton-plus.svg") no-repeat center;

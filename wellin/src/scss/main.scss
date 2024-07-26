@@ -104,7 +104,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
         &::after{
             content: "";    
             position: absolute;
-            inset: 0 0 0 0;
+            inset: 0;
             transform: scale(1.65);
             border-radius: 50px;
             border: solid 1px $primary-svg;

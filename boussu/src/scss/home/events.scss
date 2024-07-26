@@ -63,7 +63,7 @@
   background: transparent;
   transition: all .2s ease;
   position: absolute;
-  inset: 0 0 0 0;
+  inset: 0;
   border-radius: 10px;
 }
 
@@ -87,7 +87,7 @@
 .sectionevents ul li .table_display>a::before {
   background: hsla(0,0%,100%,87.1%);
   border-radius: 20px;
-  inset: 0 12px 0 12px;
+  inset: 0 12px;
   content: "";
   position: absolute;
   z-index: -1;

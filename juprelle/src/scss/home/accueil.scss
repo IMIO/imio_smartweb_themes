@@ -12,7 +12,7 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
 }
 
 .sectionlinks.quick-access .body-section li a .table_title {
-    margin: 0 0 0;
+    margin: 0;
 }
 
 .sectionlinks.quick-access .image.d-block {
@@ -23,7 +23,7 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
     background: url("../../assets/svg/qa-bckd.svg");
     position: absolute;
     content: "";
-    inset:-120px 0 0 0;
+    inset:-120px 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -1;

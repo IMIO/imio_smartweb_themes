@@ -10,7 +10,7 @@
 .a-la-une, .sectionnews, .sectionevents {
   .section-title::before {
     content: "";
-    inset: 50% 50% 0 50%;
+    inset: 50% 50% 0;
     background:  #E1F1F5;
     width: 180px;
     height: 180px;

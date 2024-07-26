@@ -32,7 +32,7 @@ div.swiper-image::before {
     background: transparent;
     content: "";
     position: absolute;
-    inset: 0 0 0 0;
+    inset: 0;
     transition: all .2s ease;
     z-index: 0;
 }

@@ -25,7 +25,7 @@
                     &::after{
                         content: "";
                         position: absolute;
-                        inset: 0 0 8px 0;
+                        inset: 0 0 8px;
                         z-index: -1;
                         box-shadow: 0 20px 40px rgba(0,0,0,16%)!important;
                         border-bottom-left-radius: 15px;

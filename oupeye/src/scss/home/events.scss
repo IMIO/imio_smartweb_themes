@@ -16,7 +16,7 @@
 .sectionevents .swiper-slide a:hover::after {
   background: $color-red;
   position: absolute;
-  inset: 0 0 0 0;
+  inset: 0;
   content: "";
   opacity: 20%;
 }

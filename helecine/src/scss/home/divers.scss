@@ -43,7 +43,7 @@ a#portal-logo {
 }
 
 .sectionlinks.quick-access.partenaires .body-section li a .table_title {
-    margin: 0 0 0;
+    margin: 0;
 }
 
 .sectionlinks.quick-access.partenaires .body-section li a .image.d-block {
@@ -68,7 +68,7 @@ a#portal-logo {
 .sectionlinks.quick-access.partenaires .body-section li a::after {
     background: $primary-svg;
     content: "";
-    inset: 0 0 0 0;
+    inset: 0;
     position: absolute;
     border-radius: 100%;
     z-index: -1;

@@ -22,7 +22,7 @@
   background: linear-gradient(-90deg, #c825256b, #222F66);
   position: absolute;
   content: "";
-  inset: 0 0 0 0;
+  inset: 0;
   opacity: 100%;
 }
 
@@ -173,7 +173,7 @@
 
   .navbar-nav>li.nav-item::before {
     content: "";
-    inset: 12px -10px 12px -10px;
+    inset: 12px -10px;
     background: transparent;
     transition: all .15s ease;
   }
@@ -181,7 +181,7 @@
   .navbar-nav>li.nav-item:hover {
     &::before {
       content: "";
-      inset: -27px -10px -27px -10px;
+      inset: -27px -10px;
       background: $primary;
       position: absolute;
       transition: all .15s ease;

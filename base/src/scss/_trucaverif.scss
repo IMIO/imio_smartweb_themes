@@ -223,7 +223,7 @@ div#top-area.faceted-area .widget-fieldset legend {
 
 .kssattr-fieldset-icons .form-check-input {
     position: absolute;
-    inset: 0 0 0 0;
+    inset: 0;
     width: inherit;
     border-radius: 0 !important;
     margin: 0;
@@ -308,7 +308,7 @@ textarea {
 }
 
 .faceted-block-view-with-images .block-menu-element a .card-body {
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px;
 }
 
 .userrole-anonymous .pat-sortable .sortable-section {
@@ -367,7 +367,7 @@ div#viewlet-below-content-body .procedure {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 20%);
-    inset: 0 0 0 0;
+    inset: 0;
     z-index: -1;
 }
 
@@ -431,7 +431,7 @@ div#viewlet-below-content-body .procedure {
 }
 
 body.template-block_view_with_images .block-menu-element a .card-body {
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px;
 }
 
 .block-menu-element a .card-body,
@@ -576,7 +576,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 .portaltype-imio-smartweb-procedure #content .sectionlinks::after {
     content: "";
     background: #f3f3f3;
-    inset: 0 0.75rem 0 0.75rem;
+    inset: 0 0.75rem;
     position: absolute;
     z-index: -1;
 }
@@ -607,7 +607,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     content: "";
     background: #f3f3f3;
     position: absolute;
-    inset: 0.25rem -0.5rem 0 -0.5rem;
+    inset: 0.25rem -0.5rem 0;
     z-index: -1;
     border-radius: 10px 10px 0 0;
 }

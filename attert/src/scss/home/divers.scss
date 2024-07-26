@@ -67,7 +67,7 @@ body:not(.userrole-authenticated).section-home-page {
 
 body.section-home-page .swiper-banner-image::after {
   content: "";
-  inset: 0 0 0 0;
+  inset: 0;
   position: absolute;
   background: linear-gradient(180deg, rgba(2,0,36,100%) 0%, rgba(0,0,0,79%) 9%, rgba(0,0,0,0%) 40%);
 }

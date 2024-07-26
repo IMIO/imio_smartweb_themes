@@ -6,7 +6,7 @@
         .tileHeadline {
             a::after {
                 content: "";
-                inset: 0 0 0 0;
+                inset: 0;
                 position: absolute;
                 z-index: 1;
             }
