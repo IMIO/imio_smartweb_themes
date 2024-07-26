@@ -50,6 +50,7 @@ jobs:
             echo "environment=build-push" >> "$GITHUB_OUTPUT"
           fi
       - name: Summary
+        id: summary
         run: |
           for dir in ${{ steps.changed-directories.outputs.all_changed_files }}; do
             vhost=$(jq -r '.homepage' $dir/package.json | cut -c 9-)
