@@ -19,7 +19,7 @@
 
 .a-la-une.focus::before {
     bottom: 0;
-    background: url(../../assets/svg/wave-banner.svg);
+    background: url("../../assets/svg/wave-banner.svg");
     background-size: cover;
     position: absolute;
     left: 50%;

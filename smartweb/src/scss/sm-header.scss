@@ -106,7 +106,7 @@
             }
 
             &::before{
-              content: url(../../assets/svg/mascotte.svg);
+              content: url("../../assets/svg/mascotte.svg");
               display: flex;
               align-items: center;
             }

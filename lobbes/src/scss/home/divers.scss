@@ -47,7 +47,7 @@ body.section-home-page .container #main-container {
     position: relative;
 
     &::after {
-    background: url(../../assets/svg/bb.svg);
+    background: url("../../assets/svg/bb.svg");
     content: "";
     display: block;
     height: 105%;

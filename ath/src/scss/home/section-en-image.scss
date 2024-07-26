@@ -133,7 +133,7 @@
                     display: block;
                     width: 100%;
                     padding: 30px 20px 30px 80px;
-                    background: url(../../assets/svg/doc.png) 10px center no-repeat $primary-svg;
+                    background: url("../../assets/svg/doc.png") 10px center no-repeat $primary-svg;
                     color: #fff;
                     border-radius: 8px;
                     border: solid 0 #FFD400;
@@ -145,7 +145,7 @@
                     text-decoration: none;
 
                     &:hover {
-                        background: url(../../assets/svg/doc.png) 20px center no-repeat $primary;
+                        background: url("../../assets/svg/doc.png") 20px center no-repeat $primary;
                         color: #fff;
                         transition: .5s;
                     }

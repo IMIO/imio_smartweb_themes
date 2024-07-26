@@ -114,7 +114,7 @@ button.focus:hover {
 }
 
 .contact_leadimage.contact_placeholder.portrait {
-    background: url(../../assets/svg/person-place-holder.jpeg);
+    background: url("../../assets/svg/person-place-holder.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -262,7 +262,7 @@ body#visual-portal-wrapper {
 }
 
 .r-item-img.r-item-img-placeholder {
-	background: url(../../assets/svg/placeholder.jpg);
+	background: url("../../assets/svg/placeholder.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -503,7 +503,7 @@ button.focus:hover {
 }
 
 .r-list-item-group:hover .r-item-arrow-more {
-    background: url(../../assets/svg/next-white.svg),$primary-svg;
+    background: url("../../assets/svg/next-white.svg"),$primary-svg;
 }
 
 body.portaltype-imio-smartweb-portalpage h2.section-title::after {
@@ -522,7 +522,7 @@ body.portaltype-imio-smartweb-portalpage {
 }
 
 body.portaltype-imio-smartweb-portalpage::after {
-    background: url(../../assets/svg/fexhe-background.svg);
+    background: url("../../assets/svg/fexhe-background.svg");
     background-size: cover;
     top: 0;
     content: "";

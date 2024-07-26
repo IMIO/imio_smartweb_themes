@@ -134,7 +134,7 @@ h2 {
 
 .bannerSwiper .section-slide{
     &::after {
-        content: url(../../assets/svg/logo-banner.svg);
+        content: url("../../assets/svg/logo-banner.svg");
 
         //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
         left: 25%;

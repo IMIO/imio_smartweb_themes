@@ -37,7 +37,7 @@
 }
 
 .container #main-container .sectionevents::after {
-    background: url(../../assets/svg/logo-background.svg);
+    background: url("../../assets/svg/logo-background.svg");
     background-size: cover;
     bottom: 0;
     content: "";

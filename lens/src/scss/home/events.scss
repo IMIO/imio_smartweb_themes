@@ -6,7 +6,7 @@
     position: relative;
 
     &::after {
-    background: url(../../assets/svg/logo-back.svg);
+    background: url("../../assets/svg/logo-back.svg");
     content: "";
     display: block;
     height: 2000px;

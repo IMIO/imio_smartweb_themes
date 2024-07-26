@@ -66,7 +66,7 @@ $nav-subtree-title-color : #008FD2;
 
                 &[aria-haspopup="true"]{
                     &::after{
-                        content: url(../../assets/svg/arrow-right-blue.svg);
+                        content: url("../../assets/svg/arrow-right-blue.svg");
                         right: 0;
 
                     }
@@ -86,7 +86,7 @@ $nav-subtree-title-color : #008FD2;
 
             &[aria-haspopup="true"]{
                 &::after{
-                    content: url(../../assets/svg/arrow-right.svg);
+                    content: url("../../assets/svg/arrow-right.svg");
                     position: relative;
                     right: 11px;
                     transition: all .2s ease;
@@ -95,7 +95,7 @@ $nav-subtree-title-color : #008FD2;
                 &:hover,
                 &:focus{
                     &::after{
-                        content: url(../../assets/svg/arrow-right-blue.svg);
+                        content: url("../../assets/svg/arrow-right-blue.svg");
                     }
                 }
             }
@@ -308,7 +308,7 @@ $nav-subtree-title-color : #008FD2;
             align-items: center;
 
             &::after{
-                content: url(../../assets/svg/drop-down-arrow.svg);
+                content: url("../../assets/svg/drop-down-arrow.svg");
                 display: flex;
                 align-items: center;
                 padding-left: 0.4rem;
@@ -323,7 +323,7 @@ $nav-subtree-title-color : #008FD2;
             border-bottom: 1px solid #ddd;
 
             &[aria-haspopup="true"]::after {
-                content: url(../../assets/svg/arrow-right.svg);
+                content: url("../../assets/svg/arrow-right.svg");
                 position: relative;
                 right: 11px;
             }
@@ -336,7 +336,7 @@ $nav-subtree-title-color : #008FD2;
             border-bottom: 1px solid #ddd;
 
             &[aria-haspopup="true"]::after {
-                content: url(../../assets/svg/arrow-right.svg);
+                content: url("../../assets/svg/arrow-right.svg");
                 position: relative;
                 right: 11px;
             }
@@ -418,7 +418,7 @@ $nav-subtree-title-color : #008FD2;
 	height: 20px;
 	width: 20px;
 	display: block;
-	background-image: url(../../assets/svg/close.svg);
+	background-image: url("../../assets/svg/close.svg");
 	padding: 0;
 }
 

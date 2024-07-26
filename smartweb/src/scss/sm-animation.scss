@@ -45,9 +45,9 @@
 
     &.b{
       position: relative;
-      background: url(../../assets/svg/b2-img.jpg) no-repeat center /cover;
+      background: url("../../assets/svg/b2-img.jpg") no-repeat center /cover;
       background-position:  1% center;
-      mask-image: url(../../assets/svg/b-svg.svg);
+      mask-image: url("../../assets/svg/b-svg.svg");
       width: 32.34%; // = 281px
       margin-right:3.32%;
 
@@ -61,9 +61,9 @@
 
     &.l{
       position: relative;
-      background: url(../../assets/svg/l2-img.jpg) no-repeat center /cover;
+      background: url("../../assets/svg/l2-img.jpg") no-repeat center /cover;
       background-position:  1% center;
-      mask-image: url(../../assets/svg/l-svg.svg);
+      mask-image: url("../../assets/svg/l-svg.svg");
       width: 21.634%;
       margin-right:3.32%;
       animation: letterl 2.7s 1;
@@ -75,9 +75,9 @@
 
     &.a{
       position: relative;
-      background: url(../../assets/svg/a2-img.jpg) no-repeat center /cover;
+      background: url("../../assets/svg/a2-img.jpg") no-repeat center /cover;
       background-position:  7% center;
-      mask-image: url(../../assets/svg/a-svg.svg);
+      mask-image: url("../../assets/svg/a-svg.svg");
       width: 39.35558112773303%;
       animation: lettera 2.7s 1;
 
@@ -89,7 +89,7 @@
 
   .mascotte{
     position: absolute;
-    background: url(../../assets/svg/mascotte.svg) no-repeat center /cover;
+    background: url("../../assets/svg/mascotte.svg") no-repeat center /cover;
     width: 12.888%; //112px height = 137px
     z-index: 1;
     right: 31.185%;  // 271px
@@ -116,7 +116,7 @@
 
 .slogan{
   width: 88%;
-  background: url(../../assets/svg/slogan.svg) no-repeat center;
+  background: url("../../assets/svg/slogan.svg") no-repeat center;
   margin-left: auto;
   position: relative;
   margin-top: 10%;
@@ -131,7 +131,7 @@
 
 .feder-logo{
   padding-bottom: 40%;
-  background:url(../../assets/svg/logo_feder_wallonie.png);
+  background:url("../../assets/svg/logo_feder_wallonie.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 87%;
@@ -140,7 +140,7 @@
 
 .vid{
   width: 70%;
-  background:url(../../assets/svg/banner-vid.jpg);
+  background:url("../../assets/svg/banner-vid.jpg");
   margin-left: auto;
   position: relative;
   filter: brightness(68%);
@@ -152,7 +152,7 @@
     content:"";
     width: 29%;
     height: 51%;
-    background:  url(../../assets/svg/play-vid.svg) no-repeat center /cover;
+    background:  url("../../assets/svg/play-vid.svg") no-repeat center /cover;
     display: block;
     position: absolute;
     left: 50%;
@@ -207,7 +207,7 @@
 
   .feder-logo{
     padding-bottom: 40%;
-    background:url(../../assets/svg/logo_feder_wallonie.png);
+    background:url("../../assets/svg/logo_feder_wallonie.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 100%;

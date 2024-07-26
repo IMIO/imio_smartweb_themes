@@ -9,7 +9,7 @@ body #container-section-flemalle-en-images {
     }
 
     li:first-child a.table_image::before {
-        content: url(../../assets/svg/camera.svg);
+        content: url("../../assets/svg/camera.svg");
         display: block;
         left: 50%;
         line-height: 0;
@@ -22,7 +22,7 @@ body #container-section-flemalle-en-images {
     }
 
     li:nth-child(2) a.table_image::before {
-        content: url(../../assets/svg/play-button.svg);
+        content: url("../../assets/svg/play-button.svg");
         display: block;
         left: 50%;
         line-height: 0;

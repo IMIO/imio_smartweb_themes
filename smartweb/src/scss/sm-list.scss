@@ -22,7 +22,7 @@
                 }
 
                 &::after {
-                    content: url(../../assets/svg/arrow-right-white.svg);
+                    content: url("../../assets/svg/arrow-right-white.svg");
                     background: $yellow;
                     position: absolute;
                     right: 0;
@@ -35,7 +35,7 @@
             }
 
             &::after {
-                content: url(../../assets/svg/arrow-right-yellow.svg);
+                content: url("../../assets/svg/arrow-right-yellow.svg");
                 background: #fff;
                     position: absolute;
                     right: 0;

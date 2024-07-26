@@ -61,7 +61,7 @@ body {
 }
 
 body::after {
-background: url(../../assets/svg/frame.svg);
+background: url("../../assets/svg/frame.svg");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -136,7 +136,7 @@ background: url(../../assets/svg/frame.svg);
 }
 
 .bannerSwiper .section-slide::after {
-    content: url(../../assets/svg/logo-rochefort-blanc.svg);
+    content: url("../../assets/svg/logo-rochefort-blanc.svg");
     left: 50%;
     max-width: 60%;
     position: absolute;
@@ -185,5 +185,5 @@ background: url(../../assets/svg/frame.svg);
 }
 
 body #subsite-navigation>ul>.has_subtree.nav-item>.nav-link::after {
-    background-image: url(../../assets/svg/chevron.svg);
+    background-image: url("../../assets/svg/chevron.svg");
 }

@@ -37,7 +37,7 @@ $enable-roboto-webfont: false;
 }
 
 .smartweb_herobanner .swiper-wrapper p.lead.rich_description::after {
-    content: url(../../assets/svg/visuel.svg);
+    content: url("../../assets/svg/visuel.svg");
     position: absolute;
     left: 50%;
     top: 100%;
@@ -156,7 +156,7 @@ body .smartweb_herobanner::before {
     position: absolute;
     transform: translateX(-50vw);
     width: 100vw;
-    background: url(../../assets/svg/courbe-banner-400.svg);
+    background: url("../../assets/svg/courbe-banner-400.svg");
     background-size: cover;
     height: 400px;
     z-index: 2;

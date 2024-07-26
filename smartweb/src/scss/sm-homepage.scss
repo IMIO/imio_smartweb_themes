@@ -36,7 +36,7 @@ $border_grey: #d3d3d3;
 	width: 48px;
 	height: 48px;
 	border-radius: 50px;
-    background: url(../../assets/svg/arrow-right.svg) #fff;
+    background: url("../../assets/svg/arrow-right.svg") #fff;
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: center;
@@ -549,7 +549,7 @@ $border_grey: #d3d3d3;
         width: 50px;
         height: 50px;
         display: block;
-        background: url(../../assets/svg/email.svg) no-repeat center/contain;
+        background: url("../../assets/svg/email.svg") no-repeat center/contain;
         margin: 0 auto;
         margin-bottom: 1rem;
     }

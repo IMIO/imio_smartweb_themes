@@ -79,7 +79,7 @@
 
     .section-title{
         &::before{
-            content: url(../../assets/svg/files.svg);
+            content: url("../../assets/svg/files.svg");
             display: inline-block;
             vertical-align: middle;
             margin-right: 1.5rem;
@@ -104,7 +104,7 @@
             border: solid 1px rgba(255, 255, 255, 0%);
 
             &::after{
-                background: url(../../assets/svg/download-arrow-blue.svg) no-repeat center #fff;
+                background: url("../../assets/svg/download-arrow-blue.svg") no-repeat center #fff;
             }
         }
 
@@ -114,7 +114,7 @@
             height: 30px;
             border: 1px solid #FFF;
             border-radius: 30px;
-            background: url(../../assets/svg/download-arrow.svg) no-repeat center;
+            background: url("../../assets/svg/download-arrow.svg") no-repeat center;
             margin-right: 1rem;
             background-size: 35%;
 
@@ -130,7 +130,7 @@
         .section_files_image{
             border-radius: 10px 10px 10px 0;
             flex-shrink: 0;
-            background: url(../../assets/svg/files.svg) no-repeat center $primary; 
+            background: url("../../assets/svg/files.svg") no-repeat center $primary; 
 
             @include media-breakpoint-up(md){
                 border: 1px solid #FFF;
@@ -148,7 +148,7 @@
 
         &[href$=".pdf"]{
             .section_files_image{
-                background: url(../../assets/svg/pdf-file-icon.svg) no-repeat center $primary; 
+                background: url("../../assets/svg/pdf-file-icon.svg") no-repeat center $primary; 
             }
         }
 
