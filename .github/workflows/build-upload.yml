@@ -41,13 +41,6 @@ jobs:
         run: |
           changed_dirs=$(printf "%s" "${{ steps.changed-directories.outputs.all_changed_files }}" | jq -R -s -c 'split(" ")')
           echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
-      - name: Summary
-        run: |
-          for dir in ${{ steps.changed-directories.outputs.all_changed_files }}; do
-            vhost=$(jq -r '.homepage' $dir/package.json | cut -c 9-)
-            echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
-          done
-          cat summary.txt
       - name: Get build push environment
         id: get-build-push-environment
         run: |
@@ -56,6 +49,23 @@ jobs:
           else
             echo "environment=build-push" >> "$GITHUB_OUTPUT"
           fi
+      - name: Summary
+        run: |
+          for dir in ${{ steps.changed-directories.outputs.all_changed_files }}; do
+            vhost=$(jq -r '.homepage' $dir/package.json | cut -c 9-)
+            echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
+          done
+          cat summary.txt
+          cat "summary=$(cat summary.txt) >> "$GITHUB_OUTPUT"
+      - name: Send summary to Mattermost
+        if: ${{ !env.ACT }} # do not run locally
+        uses: IMIO/gha/mattermost-notify@main
+        with:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
+          MESSAGE: |
+            A build has been triggered for the following themes:
+            ${{ steps.summary.outputs.summary }}
+            [Click here to review the changes and eventually deploy to instances]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)
   build-push:
     environment: ${{ needs.get-changed-directories.outputs.environment }}
     needs: get-changed-directories
