@@ -1,5 +1,6 @@
 import "./scss/main.scss";
 $(document).ready(function () {
+  console.log("kamoulox");
   $("#portal-globalnav-collapse").on("show.bs.collapse", function () {
     document.body.classList.add("open-nav-overflow");
     document.documentElement.classList.add("open-nav-overflow");
