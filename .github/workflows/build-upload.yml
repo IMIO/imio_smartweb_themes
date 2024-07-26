@@ -16,6 +16,7 @@ jobs:
       group: self-hosted
     outputs:
       changed-directories: ${{ steps.set-output.outputs.changed-directories }}
+      environment: ${{ steps.get-build-push-environment.outputs.environment }}
     steps:
       - name: Install Git & jq
         run: sudo apt-get update && sudo apt-get install -y git jq
@@ -48,14 +49,15 @@ jobs:
           done
           cat summary.txt
       - name: Get build push environment
+        id: get-build-push-environment
         run: |
           if [[ "${{ github.event.head_commit.message }}" == *"[quick]"* ]]; then
-            echo "environment=build-push-quick" >> $GITHUB_ENV
+            echo "environment=build-push-quick" >> "$GITHUB_OUTPUT"
           else
-            echo "environment=build-push" >> $GITHUB_ENV
+            echo "environment=build-push" >> "$GITHUB_OUTPUT"
           fi
   build-push:
-    environment: ${{ env.environment }}
+    environment: ${{ needs.get-changed-directories.outputs.environment }}
     needs: get-changed-directories
     runs-on:
       group: self-hosted
