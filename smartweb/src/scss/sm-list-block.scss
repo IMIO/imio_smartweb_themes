@@ -34,10 +34,6 @@ body.template-block_view #content-core {
             &:focus {
                     
                     box-shadow: $block-full-shadow;
-
-                    h2.card-title {
-                    }
-
             &::after {
                     content: url("../../assets/svg/arrow-right-white.svg");
                     background: $yellow;

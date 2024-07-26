@@ -45,10 +45,6 @@
       margin: $actu-title-margin;
       padding: $actu-title-padding;
       text-align: $actu-title-align;
-
-      @include media-breakpoint-up(lg) {}
-
-      @include media-breakpoint-up(xxl) {}
     }
 
     .swiper-slide {
@@ -136,79 +132,3 @@
   .swiper-pagination-bullet-active {
     background: $primary !important;
   }
-
-  // see all
-
-//   .sectionnews {
-
-//     .see_all {
-
-//       justify-content: $actu-see-all-justify-content;
-
-//       @include see-all-style;
-
-//     }
-
-//   }
-
-//   .sortable-section.sectionlinks.see_all {
-
-//     background: transparent;
-
-//     padding-top: 0rem;
-
-//     #container-section-tous-nos-services  {
-
-//       display: flex;
-
-//       justify-content: center;
-
-//       margin: 0rem 0 0;
-
-//       a {
-
-//     background: $primary;
-
-//     border: 1px solid $primary;
-
-//     border-radius: 0;
-
-//     color: #fff;
-
-//     display: block;
-
-//     font-family: Josefin Sans,system-ui,-apple-system,Segoe UI;
-
-//     font-size: 16px;
-
-//     padding: 1rem 2rem;
-
-//     text-decoration: none;
-
-//     text-transform: none;
-
-//     transition: all .2s ease;
-
-//     width: -webkit-max-content;
-
-//     width: -moz-max-content;
-
-//     width: max-content;
-
-//        &:hover {
-
-//       background: #fff;
-
-//       border: 1px solid $primary;
-
-//       border-radius: 0;
-
-//       color: $primary;
-
-//        }
-
-//     }
-
-//   }
-
-// }

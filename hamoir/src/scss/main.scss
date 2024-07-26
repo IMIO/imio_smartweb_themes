@@ -65,12 +65,6 @@ h1 {
     border-radius: 0;
 }
 
-
-// section titre h2
-.section-title { }
-
-
-
 .bannerSwiper .section-slide{
     &::after{
         content: url("../../assets/svg/banner-slogan.svg");

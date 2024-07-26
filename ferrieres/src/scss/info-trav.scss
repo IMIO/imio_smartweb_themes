@@ -8,7 +8,6 @@
     .eea-preview-items{
         .faceted-map-item {
             box-shadow: none!important;
-
             &>a{
                 display: block;
                 background-color: $primary-light;
@@ -32,11 +31,6 @@
                             max-width: 40px;
                         }
                     }
-
-                    .geo-item-image{
-
-                    }
-
                     .geo-item-text {
                         padding: 0;
 
@@ -54,10 +48,6 @@
                     background-color: $primary-svg;
 
                     .items-content {
-                        .geo-item-image{
-    
-                        }
-
                         .geo-item-text {
                             .geo-item-title {
                                 color: #000;

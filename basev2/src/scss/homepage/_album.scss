@@ -28,9 +28,8 @@
         padding: $album-title-padding;
         text-align: $album-title-align;
 
-        @include media-breakpoint-up(lg) {}
 
-        @include media-breakpoint-up(xxl) {}
+
     }
 
     .swiper-slide {

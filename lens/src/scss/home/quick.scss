@@ -30,16 +30,6 @@
                 line-height: 70%;
             }
         }
-
-        &:hover,
-        &:focus {
-            .table_title {
-                span {
-                    &::after {
-                    }
-                }
-            }
-        }
     }
 }
 

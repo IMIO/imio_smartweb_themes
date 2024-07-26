@@ -45,10 +45,6 @@
       margin: $actu-title-margin;
       padding: $actu-title-padding;
       text-align: $actu-title-align;
-
-      @include media-breakpoint-up(lg) {}
-
-      @include media-breakpoint-up(xxl) {}
     }
 
     .swiper-slide {

@@ -27,18 +27,10 @@
 
                 .swiper-image{
                     padding-bottom: 55%;
-
-                    //grid-column-end: 3;
-
-                    //grid-column-start: 1;
                     transition: all .25s ease;
-
-                    //margin-bottom: 1rem;
                 }
 
                 .swiper_category{
-
-                    //margin-left: auto;
                     span {background: $primary-dark;}    
                 }
 
@@ -47,8 +39,6 @@
                     font-size: 16px;
                     font-weight: 300;
                     font-family: $font-family-base; 
-
-                    //grid-row-start: 2;
                     margin: 1rem 0 0;
                     padding:0 20px;
                 }
@@ -56,7 +46,6 @@
                 .swiper_title{
                     margin: 1rem 0;
                     padding:0 20px;
-
                     h3{
                         font-family: $font-family-base;
                         font-size: 22px;
@@ -66,8 +55,6 @@
                 }
 
                 .swiper_description{
-
-                    //display: none;
                     margin: 0 0 1rem;
                     padding:0 20px;
                 }
@@ -75,25 +62,6 @@
                 &:hover{
                     .swiper-image{
                         mask-size: 99%;
-                    }
-
-                    .swiper_category{
-                    }
-
-                    .swiper_date{
-
-                    }
-
-                    .swiper_title{
-                        h3{
-        
-                        }
-                    }
-
-                    .swiper_description{
-                        p{
-        
-                        }
                     }
                 }
             }
@@ -105,8 +73,5 @@
         height: 50px;
         background-color: #fff;
         border-radius: 50px;
-    }
-
-    .swiper-button-prev{
     }
 }

@@ -12,10 +12,6 @@
   #portal-header #portal-header-top #header-links #search-link a {
     background: $secondary;
     border: none;
-
-    &::before {
-
-    }
   }
 
 @media (min-width: 992px) {

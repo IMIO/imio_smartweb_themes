@@ -3,31 +3,6 @@
     position: relative;
 }
 
-// .a-la-une .swiper-image::after {
-
-//     content: "";
-
-//     width: 1295px;
-
-//     height: 389px;
-
-//     position: absolute;
-
-//     background: #fff;
-
-//     bottom: 0;
-
-//     top: 0;
-
-//     left: 0px;
-
-//     right: 0;
-
-//     border-radius: 500px;
-
-//     z-index: -1;
-
-// }
 .a-la-une .swiper-slide .swiper_description p {
     font-weight: 400;
   }
@@ -55,8 +30,6 @@
 
 .a-la-une .swiper-image::before {
   background: no-repeat url("../../assets/svg/a-la-une-transparent-810.svg");
-
-  // background-size: 820px;
   background-size: 65% 101%;
   bottom: 0;
   content: "";
@@ -81,6 +54,4 @@
     content: initial;
   }
 
-  .a-la-une .swiper-slide .swiper_description {
-  }
 }

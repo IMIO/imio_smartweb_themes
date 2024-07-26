@@ -66,8 +66,8 @@
                 &::after {
                     margin-top: -80px;
                 }
-                }
             }
+        }
     
     .body-section{
         ul {
@@ -88,9 +88,6 @@
                         .image.d-block {
                         transform: translateY(-5px);
                         transition: all .3s ease;
-
-                        svg {
-                        }
                     }
                 }
 
@@ -360,33 +357,6 @@
 
                 .image.d-block {
                     display: none!important;
-                }
-
-                /*&:after{
-                    left:0%;
-                    top: 50px;
-                    bottom: 0px;
-                    position: absolute;
-                    
-                    content: "";
-                    display: block;
-                    height: 34px;
-                    margin-left:-45px;
-                    position: absolute;
-                    width: 90px;
-                    transition: all .5s ease;
-        }*/
-               
-            
-                /*&:hover,&:focus{
-                    &:after{
-                    transform: translateY(-10px);
-                    transition: all .5s ease;
-
-            }*/
-
-                    .image.d-block {
-                    
                 }
             }
 

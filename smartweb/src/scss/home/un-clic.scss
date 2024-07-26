@@ -10,9 +10,6 @@
             font-size: calc(1.325rem + 2.5vw);
             text-transform: uppercase;
 
-            @include media-breakpoint-up(lg) { 
-            }
-
             @include media-breakpoint-up(xxl) { 
                 font-size: 3.7rem;
             }

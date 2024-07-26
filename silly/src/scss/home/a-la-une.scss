@@ -3,9 +3,6 @@
     padding-bottom: 0;
     position: relative;
 
-    @include media-breakpoint-down(lg) {
-    }
-
     &::after {
         content: "";
         background:#E8E6F1;
