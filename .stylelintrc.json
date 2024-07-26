@@ -1,9 +1,29 @@
 {
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
   "plugins": ["stylelint-scss"],
   "rules": {
-    "color-hex-length": "short",
+    "scss/no-global-function-names": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "import-notation": null,
+    "scss/at-import-partial-extension": null,
+    "selector-id-pattern": null,
+    "alpha-value-notation":"percentage",
+    "color-function-notation": null,
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true
+    "comment-whitespace-inside": null,
+    "media-feature-range-notation": "prefix",
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "scss/at-rule-no-unknown": true,
+    "declaration-empty-line-before" :null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/operator-no-unspaced": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/dollar-variable-colon-space-before": null,  
+    "selector-class-pattern": "^[a-zA-Z][a-zA-Z0-9-_]*$"
   },
   "customSyntax": "postcss-html",
   "overrides": [
