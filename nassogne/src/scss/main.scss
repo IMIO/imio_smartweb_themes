@@ -50,7 +50,6 @@ $enable-roboto-webfont: false;
 
                 &:after{
                     content: "";
-                    background: transparent;
                     z-index: 0;
                     position: absolute;
                     width: calc(40% + 2rem);

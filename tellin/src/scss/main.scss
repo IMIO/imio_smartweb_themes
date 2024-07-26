@@ -142,7 +142,6 @@ h2 {
         left:50%;
         max-width: 540px !important;
         width: 100% !important;
-        display: block;
         border-radius: 0;
         font-family: $font-family-title;
         height: 500px;
@@ -183,7 +182,6 @@ h2 {
         position: absolute;
         background:rgb(101 91 140 / 0.95);
         left:0%;
-        max-width: 100% !important;
         max-width: 700px !important;
         width: 100% !important;
         display: block;
@@ -575,7 +573,6 @@ footer #container-section-noussuivre{
                 left:0%;
                 top: 70px;
                 bottom: 0;
-                position: absolute;
                 content: "";
                 display: block;
                 height: 13px;
@@ -809,7 +806,6 @@ h3 {
     color: var(--bs-navbar-color);
     background-color: transparent;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-    border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
 }
 

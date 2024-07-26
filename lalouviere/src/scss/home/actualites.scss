@@ -10,7 +10,6 @@
         &:before{
             right:0;
             top:0;
-            position: absolute;
             background: linear-gradient(180deg, #F8F8F8, #F8F8F8 200px, transparent 0, transparent);
             content: "";
             display: block;
@@ -99,7 +98,6 @@
                         //text-decoration: underline;
                         top:auto;
                         bottom:0;
-                        width: -moz-max-content;
                         width: max-content;
                         transition: .3s;
                     }

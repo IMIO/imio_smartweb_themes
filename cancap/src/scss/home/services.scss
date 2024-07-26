@@ -92,7 +92,6 @@
       }
 
       .swiper_title {
-        padding: $actu-item-title-padding;
         margin: $actu-item-title-margin;
         width: 100%;
         padding: 0 1rem;
@@ -161,8 +160,6 @@
     text-decoration: none;
     text-transform: none;
     transition: all .2s ease;
-    width: -webkit-max-content;
-    width: -moz-max-content;
     width: max-content;
 
        &:hover {

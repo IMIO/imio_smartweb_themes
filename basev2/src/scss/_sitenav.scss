@@ -104,7 +104,6 @@
   &>li {
     &>a {
       padding: 0;
-      color: $nav-link-color;
       color: $header-nav-link-color;
       font-size: $header-nav-link-font-size;
       font-family: $header-nav-link-font-family;
@@ -375,7 +374,6 @@
 #subsite-navigation {
   &>ul {
     display: flex;
-    flex-direction: column;
     flex-direction: row;
     padding-left: 0;
     margin-bottom: 0;
@@ -560,7 +558,6 @@
       .has_subtree.dropdown {
         position: absolute;
         z-index: 1;
-        left: inherit;
         left: 0 !important;
       }
 

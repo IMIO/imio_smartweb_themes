@@ -36,7 +36,6 @@ $enable-roboto-webfont: false;
 #portal-header #portal-header-top #header-links #search-link a {
     width: 50px;
     height: 50px;
-    border: 0;
     background: $primary-svg;
     border: 2px solid $primary-svg;
     transition: all 0.3s ease;
@@ -96,7 +95,6 @@ $enable-roboto-webfont: false;
             text-decoration: none;
             text-transform: none;
             transition: all .2s ease;
-            width: -moz-max-content;
             width: max-content;
         }
 

@@ -449,7 +449,6 @@ footer #container-section-noussuivre{
                 left:0%;
                 top: 70px;
                 bottom: 0;
-                position: absolute;
                 content: "";
                 display: block;
                 height: 13px;
@@ -601,7 +600,6 @@ footer #container-section-noussuivre{
     color: var(--bs-navbar-color);
     background-color: transparent;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-    border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
 }
 

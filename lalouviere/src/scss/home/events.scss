@@ -49,8 +49,6 @@
                 }
 
                 .swiper_category{
-                    width: 100%;
-                    text-align: right;
                     text-align: right;
                     width: 100%;
                     position: absolute;
@@ -127,9 +125,7 @@
 
 @media screen and (max-width: 1350px) {
     .section-home-page #container-section-evenements:before {
-left: 0;
 top: 0;
-position: absolute;
 background: linear-gradient(180deg, transparent, transparent 200px, $primary-purple 200px, $primary-purple 100%);
 content: "";
 display: block;
@@ -147,11 +143,8 @@ z-index: -4;
     z-index: 1;
 
     .section-title{
-        font-weight: 600;
         text-transform: none;
-        position: relative;
         margin: 0 0 0 -80px;
-        width: -moz-max-content;
         width: max-content;
         font-size: 50px;
         font-weight: 400;
@@ -235,7 +228,6 @@ z-index: -4;
                 right: 0;
                 top: 0;
                 bottom: 0;
-                position: absolute;
                 background: linear-gradient(180deg, transparent, transparent 315px, #000 100%);
                 content: "";
                 display: block;
@@ -291,7 +283,6 @@ z-index: -4;
                     //text-decoration: underline;
                     top:auto;
                     bottom:0;
-                    width: -moz-max-content;
                     width: max-content;
                     transition: .3s;
                 }
@@ -321,9 +312,7 @@ z-index: -4;
 
 
     &:before {
-        left: 0;
         top: 0;
-        position: absolute;
         background: linear-gradient(180deg, transparent, transparent 200px, $primary-purple 200px, $primary-purple 100%);
         content: "";
         display: block;
@@ -335,9 +324,7 @@ z-index: -4;
         z-index: -4;
 
         @media screen and (max-width: 1350px) {
-        left: 0;
         top: 0;
-        position: absolute;
         background: $primary-purple;
         content: "";
         display: block;
@@ -394,7 +381,6 @@ z-index: -4;
         gap: 40px;
         //top:-250px;
         @media screen and (max-width: 650px) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-gap: 30px;
             align-items: center;
@@ -542,7 +528,6 @@ z-index: -4;
                             //text-decoration: underline;
                             top:auto;
                             bottom:0;
-                            width: -moz-max-content;
                             width: max-content;
                         }
                   

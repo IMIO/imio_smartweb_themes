@@ -7,7 +7,6 @@
         &:before{
             right:-700px;
             top: -120px;
-            position: absolute;
             background:$primary-blue;
             content: "";
             display: block;
@@ -35,7 +34,6 @@
             left:0%;
             top: 70px;
             bottom: 0;
-            position: absolute;
             background: url("../../assets/svg/svg-titre.svg");
             content: "";
             display: block;

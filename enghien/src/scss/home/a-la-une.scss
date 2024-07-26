@@ -6,7 +6,6 @@
     &:before{
         left:-1000px;
         top: 200px;
-        position: absolute;
         background:$primary-yellow;
         content: "";
         display: block;
@@ -31,7 +30,6 @@
                     left:0%;
                     top: 70px;
                     bottom: 0;
-                    position: absolute;
                     content: "";
                     display: block;
                     height: 13px;

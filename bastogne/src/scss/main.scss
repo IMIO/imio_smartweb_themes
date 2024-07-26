@@ -583,7 +583,6 @@ footer #container-section-noussuivre{
                 left:0%;
                 top: 70px;
                 bottom: 0;
-                position: absolute;
                 background: url("../../assets/svg/svg-titre.svg");
                 content: "";
                 display: block;
@@ -822,7 +821,6 @@ h3 {
     color: var(--bs-navbar-color);
     background-color: transparent;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-    border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
 }
 

@@ -32,7 +32,6 @@ $border_grey: #d3d3d3;
     top: 36%;
 	width: 48px;
 	height: 48px;
-	background: #fff;
 	border-radius: 50px;
     background: url(../../assets/svg/arrow-right.svg) #fff;
     background-repeat: no-repeat;
@@ -84,7 +83,6 @@ $border_grey: #d3d3d3;
     position: relative;
     width: 70px !important;
     height: 70px;
-    background: 0 0;
     background-image: none;
     box-shadow: 0 3px 6px #00000029;
     border-radius: 15px;
@@ -938,7 +936,6 @@ div#body-section-albums-photos a h3{
     padding-top:0;
     margin-top: 7rem;
     height: 31rem;
-    background-position: top;
     background-position: left;
     border-radius: 0 30px 0 0;
 }

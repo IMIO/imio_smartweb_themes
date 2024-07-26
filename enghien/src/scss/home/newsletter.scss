@@ -20,7 +20,6 @@
         height: 400px;
         display: block;
         position: absolute;
-        top:0;
         max-width: 100%;
         content: "";
         left: 0;
@@ -82,7 +81,6 @@
         text-decoration: none;
         text-transform: none;
         transition: all .2s ease;
-        width: -moz-max-content;
         width: max-content;
         margin: 30px auto 0;
 

@@ -29,7 +29,6 @@
                     .swiper-image{
                         mask: url("../../assets/svg/triangle-mask.svg");
                         mask-repeat: no-repeat;
-                        mask-size: contain;
                         mask-size: 95%;
                         mask-position: center center;
                     }
@@ -45,7 +44,6 @@
                     .swiper-image{
                         mask: url("../../assets/svg/round-mask.svg");
                         mask-repeat: no-repeat;
-                        mask-size: contain;
                         mask-size: 95%;
                         mask-position: center center;
                     }

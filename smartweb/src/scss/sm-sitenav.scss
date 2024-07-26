@@ -85,7 +85,6 @@ $nav-subtree-title-color : #008FD2;
 
             &[aria-haspopup="true"]{
                 &:after{
-                    content: url(../../assets/svg/arrow-right-blue.svg);
                     content: url(../../assets/svg/arrow-right.svg);
                     position: relative;
                     right: 11px;
@@ -311,7 +310,6 @@ $nav-subtree-title-color : #008FD2;
             border-bottom: 1px solid #ddd;
 
             &[aria-haspopup="true"]::after {
-                content: url(../../assets/svg/arrow-right-blue.svg);
                 content: url(../../assets/svg/arrow-right.svg);
                 position: relative;
                 right: 11px;
@@ -324,7 +322,6 @@ $nav-subtree-title-color : #008FD2;
             border-bottom: 1px solid #ddd;
 
             &[aria-haspopup="true"]::after {
-                content: url(../../assets/svg/arrow-right-blue.svg);
                 content: url(../../assets/svg/arrow-right.svg);
                 position: relative;
                 right: 11px;

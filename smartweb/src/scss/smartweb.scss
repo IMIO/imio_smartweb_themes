@@ -137,7 +137,6 @@ body {
 
   &::before {
     content: url("../../assets/svg/arrow-right.svg");
-    position: relative;
     transition: all 0.2s ease;
     display: block;
     transform: rotate(180deg);

@@ -53,7 +53,6 @@
 #subsite-navigation {
     &>ul {
         display: flex;
-        flex-direction: column;
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
@@ -478,7 +477,6 @@ header#content-header {
         li {
             .has_subtree.dropdown {
                 position: absolute;
-                left: inherit;
                 z-index: 1;
                 left: 0 !important;
             }

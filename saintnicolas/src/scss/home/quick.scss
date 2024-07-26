@@ -1,7 +1,6 @@
 .sortable-section.sectionlinks.quick-access::after {
     content: "";
     position: absolute;
-    left: 0;
     bottom: -330px;
     transform: translateX(-50%);
     z-index: -1;
