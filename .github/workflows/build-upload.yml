@@ -47,14 +47,15 @@ jobs:
             echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
           done
           cat summary.txt
-      - name: Upload summary
-        if: ${{ !env.ACT }} # do not run locally
-        uses: actions/upload-artifact@v4
-        with:
-          name: summary
-          path: summary.txt
+      - name: Get build push environment
+        run: |
+          if [[ "${{ github.event.head_commit.message }}" == *"[quick]"* ]]; then
+            echo "environment=build-push-quick" >> $GITHUB_ENV
+          else
+            echo "environment=build-push" >> $GITHUB_ENV
+          fi
   build-push:
-    environment: build-push
+    environment: ${{ env.environment }}
     needs: get-changed-directories
     runs-on:
       group: self-hosted
