@@ -6,8 +6,11 @@ $black: #000;
 //$lineargradient: linear-gradient(to left, #52796f, #2f3e46, #52796f);
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $font-family-base:'Oswald', sans-serif;
@@ -30,7 +33,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

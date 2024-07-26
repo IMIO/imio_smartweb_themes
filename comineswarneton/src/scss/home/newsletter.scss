@@ -6,6 +6,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
+
             @include media-breakpoint-up(lg){
                 grid-template-columns: 30% 60%;
                 gap:0;
@@ -59,6 +60,7 @@
 
                     .image{
                         padding-bottom: 100%;
+
                         @include media-breakpoint-up(lg){
                             padding-bottom: 56%;
                         }
@@ -71,6 +73,7 @@
                         color: #fff;
                         font-family: $josefin;
                         z-index: 1;
+
                         @include media-breakpoint-up(lg){
                             position: absolute;
                             font-size: 20px;
@@ -84,12 +87,14 @@
 
                 &:first-child{
                     .image{
+
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
 
                     .table_title{
+
                         @include media-breakpoint-up(lg){
                             top: 0!important;
                             left: 50%!important;
@@ -99,17 +104,20 @@
                 }
 
                 &:last-child{
+
                     @include media-breakpoint-up(lg){
                         margin-left: 12rem;
                     }
 
                     .image{
+
                         @include media-breakpoint-up(lg){
                             padding-bottom: 84%!important;
                         }
                     }
 
                     .table_title{
+
                         @include media-breakpoint-up(lg){
                             top: 50%!important;
                             left: 0!important;

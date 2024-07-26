@@ -2,6 +2,7 @@
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
+
     @include media-breakpoint-down(lg) {
     }
 
@@ -36,6 +37,7 @@
             padding-top: 2vw;
             padding-bottom: 2vw;
             background: transparent;
+
             @include media-breakpoint-down(lg) {
                 max-width: 700px;
                 margin: 0 auto;
@@ -52,6 +54,7 @@
 
         .swiper-image{
             position: relative;
+
             @include media-breakpoint-up(lg) {            
                 max-width: 400px;
                 padding-bottom: 0;

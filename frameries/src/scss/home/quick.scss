@@ -16,6 +16,7 @@
     }
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
@@ -30,6 +31,7 @@
 }
 
 .sectionlinks.quick-access .body-section li a .table_title span {
+
     @include media-breakpoint-up(lg) { 
     width: 64%;
     display: inline-block;

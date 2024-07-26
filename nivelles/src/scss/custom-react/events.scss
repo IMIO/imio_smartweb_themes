@@ -2,6 +2,7 @@
     .annuaire-map {
         display: none;
     }
+
     @media screen and (min-width: 600px) {
         .r-annuaire-wrapper {
             display: block;
@@ -69,6 +70,7 @@
     // content
 
     .envent-content.r-content {
+
         @media screen and (min-width: 600px) {
         max-width: 1296px;
 

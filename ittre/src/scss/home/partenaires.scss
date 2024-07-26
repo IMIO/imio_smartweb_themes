@@ -1,6 +1,7 @@
 #main-container .partenaires {
     margin: initial;
 	padding: 0;
+
     @include media-breakpoint-down(lg){
         margin: 0;
     }
@@ -69,6 +70,7 @@
 
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

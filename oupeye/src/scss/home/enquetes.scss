@@ -86,6 +86,7 @@
 .section-home-page .enquetes {
   position: relative;
 }
+
 @include media-breakpoint-up(lg) { 
 .section-home-page .enquetes:before {
   top: 50%;

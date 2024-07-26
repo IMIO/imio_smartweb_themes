@@ -72,6 +72,7 @@ footer{
         vertical-align: middle;
     }
 }
+
 @include media-breakpoint-down(md) { 
     body footer#portal-footer-wrapper, body #portal-footer.container {
         text-align: center;

@@ -1,11 +1,15 @@
 .sectionlinks{
+
     @include section-padding-top;
+
     @include section-padding-bottom;
+
     @if $enable-light-color-section-link{
         h2,span,p{
             color: #fff;
         }
     }
+
     @if $enable-full-width-section-link{
         // &:after{
         //     @include full-width;
@@ -16,6 +20,7 @@
     position: relative;
 
     .section_files_list{
+
         @include ul-rm-padding;
     }
 
@@ -31,6 +36,7 @@
                 width: 36px;
                 height: 44px;
                 margin-left: 1rem;
+
                 @include media-breakpoint-up(md){
                     width: 160px;
                     height: 121px;
@@ -39,6 +45,7 @@
                 position: relative;
 
                 img{
+
                     @include fit-cover;
                 }
             }
@@ -55,6 +62,7 @@
 // for bal
 .sectionfiles{
     .section-container.section_links{
+
         @include media-breakpoint-up(lg) {
             display: flex;
             gap: 6.8181%;
@@ -63,6 +71,7 @@
         .section_files_list{
             margin-bottom:0;
             max-width: max-content;
+
             @include media-breakpoint-up(lg) {
                 max-width: inherit;
             }
@@ -80,7 +89,9 @@
 
     li{
         margin: 1.25rem 0;
+
         @include last-item-no-margin-bottom;
+
         @include first-item-no-margin-top;
     }
 
@@ -108,6 +119,7 @@
             background: url(../../assets/svg/download-arrow.svg) no-repeat center;
             margin-right: 1rem;
             background-size: 35%;
+
             @include media-breakpoint-up(lg) {
                 width: 60px;
                 height: 60px;
@@ -121,6 +133,7 @@
             border-radius: 10px 10px 10px 0;
             flex-shrink: 0;
             background: url(../../assets/svg/files.svg) no-repeat center $primary; 
+
             @include media-breakpoint-up(md){
                 border: 1px solid #FFF;
             }
@@ -128,6 +141,7 @@
             img{
                 border-radius: 10px 10px 10px 0;
                 display: none;
+
                 @include media-breakpoint-up(md){
                     display: block;
                 }
@@ -154,6 +168,7 @@
             font-size: 18px;
             max-width: 300px;
             margin: 1rem 1.5rem;
+
             @include media-breakpoint-up(lg){
                 margin: 1rem 2.5rem;
             }

@@ -1,5 +1,6 @@
 .sectionlinks.quick-access {
     background: #f0edeb;
+
     @include media-breakpoint-up(md){
         margin-top: -180px;
         background: transparent;
@@ -18,9 +19,11 @@
             ;
         }
     }
+
     @include media-breakpoint-up(sm){
         margin-top: -180px;
     }
+
     @media (min-width: 320px) and (max-width: 768px) {
         li {
             width: 50%;
@@ -61,6 +64,7 @@
         gap: 70px 0;
 
         li {
+
             @media screen and (max-width: 768px){
                 width: 50%;
             }

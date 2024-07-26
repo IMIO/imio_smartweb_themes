@@ -3,8 +3,10 @@
   position: relative;
   margin-bottom: 0;
   background-color: $breadcrumb-bg;
+
   @if $enable-full-width-breacrumb {
     &::after {
+
       @include full-width;
 
       background: $breadcrumb-bg;

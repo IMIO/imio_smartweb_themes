@@ -137,6 +137,7 @@ a h2.list-card-title:hover {
   position: relative;
 }
 //BANNER
+
 @include media-breakpoint-down(lg){
   #portal-header div#banner {
   background-size: contain !important;

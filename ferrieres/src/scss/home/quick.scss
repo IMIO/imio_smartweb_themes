@@ -72,6 +72,7 @@
 
     .row{
         grid-gap: 10px;
+
         @include media-breakpoint-down(lg){
             display: grid;
             grid-auto-rows: 1fr;

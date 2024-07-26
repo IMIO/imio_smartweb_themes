@@ -46,6 +46,7 @@
     }
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;
@@ -78,6 +79,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
 @include media-breakpoint-down(md) { 
     .sectionlinks.quick-access .body-section ul {
         gap: 10px;

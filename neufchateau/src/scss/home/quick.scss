@@ -1,6 +1,7 @@
 #main-container .quick-access {
     margin: 0;
 	padding: 30px 30px 50px;
+
     @include media-breakpoint-down(lg){
         margin: 0;
         padding: 20px 20px 40px;
@@ -93,6 +94,7 @@
 
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
@@ -146,6 +148,7 @@
         content: url("../../assets/svg/titre-partenaires.svg");
         width:auto;
         height: 80px;
+
         @media screen and (max-width: 992px) {
             transform: rotate(0deg);
             position: initial;
@@ -153,6 +156,7 @@
             writing-mode:initial;
             height: 65px;
             }
+
         @media screen and (max-width: 600px) {
             height: 50px;
             }
@@ -181,6 +185,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     @media screen and (max-width: 600px) {
         &:before {
             display:none;
@@ -202,6 +207,7 @@
             transform: translateX(-50%);
             width: calc(100vw - 100px);
             z-index: -1;
+
             @media screen and (max-width: 575px) {
                   width: calc(100vw - 40px) !important;
                   border-radius: 50px !important;

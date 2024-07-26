@@ -5,6 +5,7 @@ $primary-svg: #FE5919;
 $dark:#3F3F3F;
 
 //*// TYPOGRAPHY
+
 @font-face {
   font-family: 'T-Star';
   src: url('../../assets/fonts/T-Star-Light.woff2') format('woff2'),
@@ -12,6 +13,7 @@ $dark:#3F3F3F;
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'T-Star';
   src: url('../../assets/fonts/T-Star-Regular.woff2') format('woff2'),
@@ -19,6 +21,7 @@ $dark:#3F3F3F;
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'T-Star';
   src: url('../../assets/fonts/T-Star-RegularItalic.woff2') format('woff2'),
@@ -26,6 +29,7 @@ $dark:#3F3F3F;
   font-weight: 400;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'T-Star';
   src: url('../../assets/fonts/T-Star-Bold.woff2') format('woff2'),
@@ -33,6 +37,7 @@ $dark:#3F3F3F;
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'T-Star';
   src: url('../../assets/fonts/T-Star-Heavy.woff2') format('woff2'),
@@ -61,7 +66,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

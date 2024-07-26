@@ -11,6 +11,7 @@
     height: 1000px;
     border-radius: 500px;
     width: 1000px;
+
     @include media-breakpoint-down(lg){
         height: 100vw;
         width: 100vw;
@@ -19,6 +20,7 @@
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
+
         @include media-breakpoint-up(lg){
             height: 700px;
         }

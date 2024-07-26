@@ -7,21 +7,31 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import './quick.scss';
+
 @import './actualites.scss';
+
 @import './events.scss';
+
 @import './footer.scss';
+
 @import './a-la-une.scss';
+
 @import './en-images.scss';
+
 @import './partenaires.scss';
 
 #portal-globalnav .quick-access .quick-access-title {
 	color: $primary!important;
 }
+
 @include media-breakpoint-down(md) { 
 	.smartweb_herobanner .bannerSwiper {
 		height: 300px;
@@ -101,6 +111,7 @@ body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p
 #portal-header #portal-header-top #portal-logo img {
 	height: auto!important;
 	}
+
 @media screen and (max-width: 767px) {
  #gdpr-consent-banner .gdpr-actions input[name=refuse] {
     margin-bottom: 20px;

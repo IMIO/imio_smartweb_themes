@@ -30,6 +30,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 @include media-breakpoint-down(md) {
     .smartweb_herobanner .bannerSwiper {
         height: 200px;
@@ -61,12 +62,14 @@ html body {
     }
 }
 //MENU
+
 @media (min-width: 992px) {
     #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
         margin-top: 3rem;
     }
 }
 // Section text internal page
+
 @include media-breakpoint-down(md) { 
     body .container .section-text .body-section.figure-left {
         display: grid;

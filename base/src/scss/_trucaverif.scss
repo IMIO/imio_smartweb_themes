@@ -238,6 +238,7 @@ div#top-area.faceted-area .widget-fieldset legend {
         width: 50% !important;
     }
 }
+
 @media screen and (min-width:993px) {
     .sectioncontact.col-sm-3 {
         flex: 0 0 auto;
@@ -251,6 +252,7 @@ div#top-area.faceted-area .widget-fieldset legend {
         width: 50% !important;
     }
 }
+
 @media screen and (min-width:993px) {
     .sectioncontact.col-sm-4 {
         flex: 0 0 auto;
@@ -599,6 +601,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     z-index: -1;
     border-radius: 10px 10px 0 0;
 }
+
 @media screen and (min-width: 768px) {
     .portaltype-imio-smartweb-procedure .sectionlinks,
     .portaltype-imio-smartweb-page .sectionlinks,
@@ -623,6 +626,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
         width: 100%;
     }
 }
+
 @media screen and (max-width: 767px) {
     #banner {
         height: 150px;
@@ -666,6 +670,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     bottom: 0;
     transform: translateX(-50vw);
 }
+
 @media screen and (max-width: 575px) {
     #content .sortable-section.sectionlinks.un-clic:after {
         left: 50% !important;
@@ -784,12 +789,14 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     width: 100%;
     background-position: top;
 }
+
 @media screen and (min-width: 1215px) {
     div#container-section-temps-dattente-aux-guichets {
         margin-top: -12rem !important;
 
     }
 }
+
 @media screen and (min-width: 768px) {
     div#container-section-temps-dattente-aux-guichets {
         width: 40%;

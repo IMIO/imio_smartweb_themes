@@ -5,6 +5,7 @@ $primary-svg: #FF4646;
 $darkred: #95211E;
 
 //*// TYPOGRAPHY
+
 @font-face {
   font-family: 'Platform';
   src: url('../../assets/fonts/Platform-Regular.woff') format('woff'),
@@ -12,6 +13,7 @@ $darkred: #95211E;
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Platform';
   src: url('../../assets/fonts/Platform-Italic.woff') format('woff'),
@@ -19,6 +21,7 @@ $darkred: #95211E;
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Platform';
   src: url('../../assets/fonts/Platform-Medium.woff') format('woff'),
@@ -26,6 +29,7 @@ $darkred: #95211E;
   font-weight: 500;
   font-style: medium;
 }
+
 @font-face {
   font-family: 'Platform';
   src: url('../../assets/fonts/Platform-Bold.woff') format('woff'),
@@ -55,7 +59,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

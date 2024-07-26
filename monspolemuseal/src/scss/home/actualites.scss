@@ -1,5 +1,6 @@
 .sectionnews{
     margin:6rem 0;
+
     @media screen and (max-width: 992px) {
         margin: 3.5rem 0;
         }
@@ -13,6 +14,7 @@
         text-transform: none;
         position: relative;
         color:$primary;
+
         @media screen and (max-width: 992px) {
             transform: rotate(0deg);
             position: initial;

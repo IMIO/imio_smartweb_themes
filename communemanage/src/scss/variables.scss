@@ -3,8 +3,11 @@ $primary: #07689F;
 $secondary:#FFC93C;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 @import url("https://use.typekit.net/unl5gas.css");
 $font-family-base: gill-sans-nova,
 sans-serif;
@@ -31,7 +34,9 @@ $h6-font-size: $font-size-base;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 

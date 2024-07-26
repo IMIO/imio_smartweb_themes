@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: flex;
   padding: 0;
+
   @include media-breakpoint-up(lg){
     padding: 3rem 0;
   }
@@ -25,6 +26,7 @@
 .bla-container{
   flex: 73%;
   position: relative;
+
   @include media-breakpoint-up(lg){
     animation: bla-container 2.7s 1;
   }
@@ -178,6 +180,7 @@
 .en-un-clic-titre{
   z-index: -1;
 }
+
 @media screen and (max-width:900px) {
   .slogan-container {
     flex-direction: column;
@@ -210,6 +213,7 @@
 }
 
 // annim
+
 @keyframes bla-container {
   0%{
     transform: translateX(52px);
@@ -237,6 +241,7 @@
     transform: translateX(0);
   }
 }
+
 @keyframes mascotte {
   0%{
     opacity: 0;
@@ -257,6 +262,7 @@
     top:0;
   }
 }
+
 @keyframes letterb {
   0%{
     opacity: 0;
@@ -293,6 +299,7 @@
     background-position:  1% center;
   }
 }
+
 @keyframes letterl {
   0%{
     opacity: 0;
@@ -326,6 +333,7 @@
     background-position: 1% center;
   }
 }
+
 @keyframes lettera {
   0%{
     opacity: 0;
@@ -359,6 +367,7 @@
     background-position: 7% center;
   }
 }
+
 @keyframes vid-container {
   0%{
     opacity: 0;
@@ -381,6 +390,7 @@
     transform: translateX(0);
   }
 }
+
 @keyframes clic-container {
   0%{
     opacity: 0;
@@ -426,6 +436,7 @@
   animation: z 2.7s 1;
 
 }
+
 @keyframes z{
   0%{
     opacity: 0;

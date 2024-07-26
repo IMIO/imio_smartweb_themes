@@ -8,12 +8,14 @@ h2.card-title {
     background: $primary;
 }
 //TITLE SECTION HOME PAGE
+
 @include media-breakpoint-down(md) { 
     .sectionnews h2.section-title, .sectionevents h2.section-title, .section-home-page .row h2 {
         font-size: 3rem;
     }
  }
 //BANNER
+
 @include media-breakpoint-down(md) { 
     .smartweb_herobanner .bannerSwiper {
         height: 150px;

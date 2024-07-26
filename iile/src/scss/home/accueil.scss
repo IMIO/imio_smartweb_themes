@@ -81,6 +81,7 @@
   width: 10%;
 }
 //BANNER
+
 @media screen and (max-width: 992px) {
   .sectionnews .swiper-slide .swiper_title .h3, .sectionnews .swiper-slide .swiper_title h3 {
     font-size: 1.2rem;
@@ -165,6 +166,7 @@
   }
 }
 //NAVIGATION
+
 @media screen and (min-width: 992px) {
   .navbar-nav>li.nav-item {
     position: relative;
@@ -268,6 +270,7 @@ body .outer-wrapper #main-container .sectionfiles a.table_image.no-image:hover .
 	background-size: cover;
 	background-position: center;
 }
+
 @media screen and (min-width: 992px) {
   .subsite-container {
     background: #222f6617;
@@ -321,6 +324,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page#visual-portal-wrapper
       color: #fff !important;
   }
 }
+
 @media screen and (min-width: 768px) {
   .navbar-nav>li.nav-item:hover>a,
   .navbar-nav>li.nav-item:focus>a,

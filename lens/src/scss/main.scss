@@ -7,26 +7,41 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import "./variables";
+
 @import "../../../base/src/scss/main.scss";
 
 //// STYLES
 // ... add your styles here
+
 @import "./home/quick";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/annuaire";
+
 @import "./home/les-sites";
+
 @import "./home/newsletter";
+
 @import "./home/banner";
+
 @import "./home/menu";
+
 @import "./home/divers";
+
 @import "./home/footer";
 
 
 //
+
 @media screen and (max-width: 992px) {
     #portal-globalnav-wrapper .navbar-nav li.show-nav > .has_subtree.dropdown {
       right: 0;

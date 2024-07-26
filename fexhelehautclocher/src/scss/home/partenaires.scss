@@ -47,11 +47,13 @@ body .sortable-section.sectionlinks ul li a.table_image:hover .image {
     background: transparent;
     border: solid 1px $primary-svg;
 }
+
 @include media-breakpoint-down(lg) {
 .partenaires ul li, .quick-access ul li {
     width: 50%;
     }
 }
+
 @include media-breakpoint-down(xl) {
     .portaltype-imio-smartweb-portalpage.section-home-page .sortable-section.sectionlinks.quick-access:first-child {
         transform: translateY(0);

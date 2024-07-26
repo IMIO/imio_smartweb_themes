@@ -23,6 +23,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-image:
 body #content div.a-la-une .swiper-image {
     border-radius: 10px;
 }
+
 @include media-breakpoint-down(md) {
 .smartweb_herobanner .bannerSwiper {
     height: 280px;

@@ -11,6 +11,7 @@
     width: auto;
     left: 0;
     max-width: 100vw !important;
+
     @include media-breakpoint-up(lg) {
         right: 0;
         max-width: 100%;
@@ -18,6 +19,7 @@
     }
 
     &>span {
+
         @include media-breakpoint-up(lg) {
             max-width: 500px;
             display: inline-block;
@@ -28,6 +30,7 @@
     }
 
     &>form {
+
         @include media-breakpoint-up(lg) {
             display: inline-block;
             vertical-align: middle;
@@ -45,9 +48,11 @@
             margin-left: 0.6rem;
             text-decoration: none;
             margin-top: 2rem;
+
             @include media-breakpoint-up(lg) {
                 margin-top: 0;
             }
+
             @include media-breakpoint-down(sm) {
                 font-size: 13px;
                 padding: 9px 10px;
@@ -64,9 +69,11 @@
             font-size: 14px;
             cursor: pointer;
             margin-top: 2rem;
+
             @include media-breakpoint-up(lg) {
                 margin-top: 0;
             }
+
             @include media-breakpoint-down(sm) {
                 font-size: 13px;
                 padding: 9px 10px;

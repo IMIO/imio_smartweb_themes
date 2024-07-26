@@ -16,6 +16,7 @@
 
 // solo-child
 .home-hero {
+
     @media screen and (max-width: 992px) {
         display: none!important;
     }
@@ -55,9 +56,11 @@
     position: absolute;
     top: 72px;
     right: 0;
+
     @media screen and (min-width: 992px) {
         right: -57px;
     }
+
     @media screen and (max-width: 430px) {
         top: 46px;
     }
@@ -66,6 +69,7 @@
 .atl-anim-container {
     max-width: 28%;
     margin-left: auto;
+
     @media screen and (max-width: 430px) {
         max-width: 45%;
     }
@@ -169,6 +173,7 @@
         translate: -50%;
         max-width: 1700px;
         position: relative;
+
         @media screen and (max-width: 1100px) {
             .bubble-svg {
             display:none;

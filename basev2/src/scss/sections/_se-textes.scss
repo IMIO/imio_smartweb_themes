@@ -83,6 +83,7 @@ mark {
         figure {
           display: block;
           max-width: 100%;
+
           @include media-breakpoint-up(md) {
             max-width: 45%;
             margin-right: 2.5rem;
@@ -99,6 +100,7 @@ mark {
         figure {
           display: block;
           max-width: 100%;
+
           @include media-breakpoint-up(md) {
             max-width: 45%;
             margin-left: 2.5rem;
@@ -162,6 +164,7 @@ div:not(.sectiontext) {
     // @include section-padding-top;
     h2 {
       margin-top: 10px !important;
+
       @include media-breakpoint-up(md) {
         margin-top: 50px !important;
       }

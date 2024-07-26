@@ -4,27 +4,39 @@
 /// a la une est une section actualité
 /// diminuer titre 2
 // ... add your variables here
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 $enable-roboto-webfont: false;
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 //// IMPORTS
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
 
 @import './a-la-une.scss';
+
 @import './news.scss';
+
 @import './quick.scss';
+
 @import './events.scss';
+
 @import './footer.scss';
+
 @import './sites-de-la-ville.scss';
+
 @import './zomm-sur.scss';
+
 @import './section.scss';
+
 @import './cpas.scss';
 
 
@@ -113,6 +125,7 @@ $enable-roboto-webfont: false;
       gap: 20px;
     }
   }
+
   @media screen and (max-width: 1200px) {
     #subsite-navigation .has_subtree.dropdown {
       width: 80vw !important;

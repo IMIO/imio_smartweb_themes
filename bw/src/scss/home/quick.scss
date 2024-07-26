@@ -1,6 +1,7 @@
 .sectionlinks.quick-access {
     background-color: $primary;
     padding-bottom: 0!important;
+
     @include media-breakpoint-up(lg){
         width: calc(100vw - 80px);
         padding: 100px 0 0 0;
@@ -22,6 +23,7 @@
         .section-container > div {
             display: grid;
             grid-template-columns: auto auto;
+
             @include media-breakpoint-down(lg){
                 display: block;
             }
@@ -110,6 +112,7 @@
     }
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;

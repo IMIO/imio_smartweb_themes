@@ -4,6 +4,7 @@ $secondary:#C93434;
 $primary-svg: #C93434;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 $font-family-base: 'Inter', sans-serif;
 $font-family-title: 'Inter', sans-serif;
@@ -25,7 +26,9 @@ $h6-font-size: $font-size-base;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 

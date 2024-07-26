@@ -14,6 +14,7 @@ $primary-darkpurple:#530658;
 
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 $font-family-base:'Rubik', sans-serif!default;
@@ -36,7 +37,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

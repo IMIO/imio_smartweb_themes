@@ -97,9 +97,11 @@
         text-transform: uppercase;
         margin-bottom: 1rem;
         color: #fff;
+
         @include media-breakpoint-up(lg) { 
             margin-bottom: 2.5rem;
         }
+
         @include media-breakpoint-up(xxl) { 
             font-size: 3.7rem;
         }

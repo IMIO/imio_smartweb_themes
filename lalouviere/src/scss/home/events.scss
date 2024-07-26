@@ -6,6 +6,7 @@
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
+
     @media screen and (max-width: 992px) {
         margin:70px 0;
 
@@ -183,6 +184,7 @@ z-index: -4;
                 display:none;
                 }
         }
+
         @media screen and (max-width: 600px) {
             &:before {
                 display:none;
@@ -198,6 +200,7 @@ z-index: -4;
             height: 65px;
             margin: 0 auto 25px !important;
             }
+
         @media screen and (max-width: 600px) {
             height: 50px;
             }
@@ -208,6 +211,7 @@ z-index: -4;
         right:0;
         position: absolute;
         padding-left:20px;
+
         @media screen and (max-width: 1350px) {
             width: 100%;
             max-width:660px;
@@ -358,6 +362,7 @@ z-index: -4;
     display: block;
     left:0;
     transform: none;
+
     @media screen and (max-width: 1350px) {
         margin:0 auto;
         padding:60px 30px;
@@ -380,6 +385,7 @@ z-index: -4;
         grid-template-rows: repeat(6, 1fr);
         gap: 40px;
         //top:-250px;
+
         @media screen and (max-width: 650px) {
             grid-template-columns: 1fr;
             grid-gap: 30px;
@@ -398,6 +404,7 @@ z-index: -4;
             &:nth-child(1) {
                 //margin-top:-00px;
                 grid-area: 1 / 1 / 4 / 2; 
+
                 @media screen and (max-width: 650px) {
                     display:none;
                     }
@@ -408,9 +415,11 @@ z-index: -4;
             &:nth-child(2) {
                 //margin-top:100px;
                 grid-area: 3 / 2 / 6 / 3;
+
                 @media screen and (max-width: 1350px) {
                     grid-area: 1 / 2 / 4 / 2;
                     }
+
                     @media screen and (max-width: 650px) {
                         display:none;
                         }
@@ -419,6 +428,7 @@ z-index: -4;
 
             &:nth-child(3) {
                 grid-area: 4 / 1 / 7 / 2;
+
                 @media screen and (max-width: 650px) {
                     display:none;
                     }
@@ -581,6 +591,7 @@ z-index: -4;
         .see_all {
             justify-content: left;
             margin-top: 60px;
+
             @media screen and (max-width: 650px) {
                 justify-content: center;
                 margin:0;

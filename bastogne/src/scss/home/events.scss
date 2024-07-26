@@ -76,6 +76,7 @@
                 height:267px;
             }
         }
+
         @media screen and (max-width:1200px) {
             .section-title{
                 font-weight: 600;
@@ -115,6 +116,7 @@
             padding-left:80px;
             
             &>a {
+
                 @include media-breakpoint-up(lg) {
                 display: grid;
                 grid-template-columns: 50% 50%!important;
@@ -145,6 +147,7 @@
 
             .swiper_title {
                 position: relative !important;
+
                 @include media-breakpoint-up(lg) {
                 grid-column: 1!important;
                 grid-row: 1!important;
@@ -165,6 +168,7 @@
             }
 
             .swiper_description {
+
                 @include media-breakpoint-up(lg) {
                 grid-column: 1!important;
                 }
@@ -207,6 +211,7 @@
                 }
             }
         }
+
         @media screen and (max-width:1400px) {
             .swiper-slide{
                 padding-left:0 !important;

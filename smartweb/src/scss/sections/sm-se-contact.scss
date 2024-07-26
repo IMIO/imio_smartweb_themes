@@ -16,6 +16,7 @@
             padding: 2rem;
             flex-direction: column;
             align-content: flex-start;
+
             @include media-breakpoint-up(md){
                 flex-direction: row;
                 gap: 10px 30px;

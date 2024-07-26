@@ -1,6 +1,7 @@
 #main-container .quick-access {
     margin: 2rem 0;
 	padding: 0;
+
     @include media-breakpoint-down(lg){
         margin: 0;
     }
@@ -72,6 +73,7 @@
 
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
@@ -256,6 +258,7 @@
     }   
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
@@ -360,6 +363,7 @@
                         transition: all .5s ease;
     
                 }
+
                 @media screen and (max-width: 992px) {
                     .table_title span {
                         font-size: 16px;
@@ -388,6 +392,7 @@
     }
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;

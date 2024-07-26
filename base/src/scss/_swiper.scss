@@ -16,6 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: $swiper-background-size;
+
   @include media-breakpoint-down(md){
     display: none;
   }
@@ -30,6 +31,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: $swiper-background-size;
+
   @include media-breakpoint-down(md){
     display: none;
   }
@@ -38,6 +40,7 @@
     display: none;
   }
 }
+
 @include media-breakpoint-up(lg){
   .nb-items-batch-4{
     .swiper-slide{

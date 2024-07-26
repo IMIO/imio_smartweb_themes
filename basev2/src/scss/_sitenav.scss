@@ -290,6 +290,7 @@
 
   &.activated {
     &>li>a {
+
       @include media-breakpoint-up(md) {
         color: $nav-link-open-color !important;
       }
@@ -317,6 +318,7 @@
 }
 
 .prev-nav {
+
   @include media-breakpoint-down(lg) {
     display: block !important;
   }
@@ -328,6 +330,7 @@
 
 #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree,
 #subsite-navigation #portal-globalnav>li>.has_subtree {
+
   @include media-breakpoint-up(lg) {
     margin-top: 2.25rem;
   }
@@ -352,6 +355,7 @@
 }
 
 // de core
+
 @media screen and (max-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li.show-nav>.has_subtree.dropdown {
     right: 0;

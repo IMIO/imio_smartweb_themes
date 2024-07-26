@@ -38,6 +38,7 @@ padding-bottom: 0;
 }
 
 .sectionlinks.quick-access .body-section li {
+
     @include media-breakpoint-down(lg) {
     width: 50%;
     }

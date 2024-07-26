@@ -90,6 +90,7 @@
                 figure{
                     display: block;
                     max-width: 100%;
+
                     @include media-breakpoint-up(md){
                         float: left;
                         margin-right: 2.5rem;
@@ -106,6 +107,7 @@
                 figure{
                     display: block;
                     max-width: 100%;
+
                     @include media-breakpoint-up(md){
                         float: right;
                         margin-left: 2.5rem;
@@ -165,10 +167,12 @@
 
 div:not(.sectiontext){
     & + .sectiontext{
+
         @include section-padding-top;
 
         h2{
             margin-top: 10px!important;
+
             @include media-breakpoint-up(md){
                 margin-top: 50px!important;
             }

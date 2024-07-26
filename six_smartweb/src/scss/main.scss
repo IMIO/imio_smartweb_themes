@@ -2,27 +2,43 @@
 // ... add your variables here
 
 $enable-roboto-webfont: false;
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 //// IMPORTS
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/intro.scss";
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/espace-citoyen";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/footer";
+
 @import "./home/section-en-image";
+
 @import "./info-trav.scss";
+
 @import "./se-link.scss";
+
 @import "./se-files.scss";
+
 @import "./contact.scss";
+
 @import "./slide-th.scss";
 
 body {
@@ -38,6 +54,7 @@ body {
     display: block;
     line-height: 0;
     width: 390px;
+
     @include media-breakpoint-down(xl){
         content:none;
     }
@@ -48,16 +65,19 @@ body {
         left:-50px!important;
     }
     }
+
     @media screen and (max-width: 1800px) {
         .swiper-banner-image:after {
             left:-180px!important;
         }
         }
+
         @media screen and (max-width: 1540px) {
             .swiper-banner-image:after {
                 left:-230px!important;
             }
             }
+
             @media screen and (max-width: 1200px) {
                 .swiper-banner-image:after {
                     left:-650px!important;
@@ -118,6 +138,7 @@ body {
         right: -10px;
         display: block;
         line-height: 0;
+
         @include media-breakpoint-down(xl){
             content:none;
         }
@@ -150,6 +171,7 @@ body {
         display: block;
         line-height: 0;
         z-index: -1;
+
         @include media-breakpoint-down(xl){
             content:none;
         }
@@ -245,6 +267,7 @@ body {
         display: block;
         line-height: 0;
         z-index: -1;
+
         @include media-breakpoint-down(xl){
             content:none;
         }
@@ -258,6 +281,7 @@ body {
         display: block;
         line-height: 0;
         z-index: -1;
+
         @include media-breakpoint-down(xl){
             content:none;
         }
@@ -334,6 +358,7 @@ body {
         display: block;
         line-height: 0;
         z-index: -1;
+
         @include media-breakpoint-down(xl){
             content:none;
         }
@@ -348,6 +373,7 @@ body {
             border-bottom-right-radius: 80px;  
     }
 }
+
 @media screen and (max-width: 768px) {
     .bloc_conclusion {
         display: grid;
@@ -406,6 +432,7 @@ body {
     display: none;
 }
 }
+
 @media screen and (min-width: 992px) {
     .section-index #portal-header #portal-header-top, .section-home #portal-header #portal-header-top {
         position: absolute;
@@ -496,6 +523,7 @@ footer #container-section-noussuivre{
         }
     }
 } 
+
 @media screen and (max-width:900px) {
     .portaltype-imio-smartweb-portalpage .section-title {
         font-size: 34px!important;

@@ -5,8 +5,11 @@ $color-grey: #F0EFE9;
 $color-darkgrey: #B6B192;
 
 //*// TYPOGRAPHY
+
 @import url("https://use.typekit.net/zyz1phs.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
 $font-family-base: 'calibri', sans-serif;
@@ -29,7 +32,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

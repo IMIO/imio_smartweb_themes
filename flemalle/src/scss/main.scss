@@ -7,20 +7,33 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/projets";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/annuaire";
+
 @import "./home/les-sites";
+
 @import "./home/bulletin.scss";
+
 @import "./home/divers.scss";
+
 @import "./minisite.scss";
 
 .smartweb_herobanner .swiper-wrapper p.lead.rich_description {
@@ -44,6 +57,7 @@ footer#portal-footer-wrapper{
     .sectionlinks li {
         padding-left: 0.85rem!important;
     }
+
     @media screen and (min-width:1200px){
         .h2, h2 {
             font-size: 1.5rem!important;
@@ -53,6 +67,7 @@ footer#portal-footer-wrapper{
             font-size: 1.2rem!important;
         }
     }
+
     @media screen and (max-width:600px){
         .sectiontext{
             #container-section-logo{
@@ -81,11 +96,13 @@ footer#portal-footer-wrapper{
 #messagesviewlet .portalMessage.error, #localmessagesviewlet .portalMessage.error {
 	background-color: #2f9c5b!important;
 }
+
 @media screen and (min-width:992px){
     .nav_je-suis.has_subtree{
         margin-left: auto;
     }
 }
+
 @include media-breakpoint-down(lg){
     .swiper-pagination{
         display: initial;
@@ -266,6 +283,7 @@ body .smartweb_herobanner::before {
         justify-content: space-between;
         padding-top: 6rem;
         text-align: left;
+
         @include media-breakpoint-down(lg) {
             padding-top: 2rem;
             flex-direction: column;
@@ -413,6 +431,7 @@ body .smartweb_herobanner::before {
 .minisite_logo .minisite_title {
     font-weight: bold;
 }
+
 @media screen and (min-width:1200px) {
     .a-la-une,
     .sectionnews,
@@ -442,6 +461,7 @@ body .smartweb_herobanner::before {
     display: none;
 }
 //// respo
+
 @include media-breakpoint-up(lg) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         font-weight: bold !important;
@@ -483,6 +503,7 @@ body .smartweb_herobanner::before {
         }
     }
 }
+
 @include media-breakpoint-up(lg){
 .sectionselections.a-la-une {
     margin-top: 8rem !important;

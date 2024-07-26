@@ -45,6 +45,7 @@
     bottom: 166px;
     transform: translateX(-50vw);
     z-index: -1;
+
     @include media-breakpoint-down(lg){
         bottom: 0;
     }
@@ -100,6 +101,7 @@
             font-size: 57px;
             text-transform: uppercase;
             font-weight: bold;
+
             @include media-breakpoint-down(lg){
                 font-size: 34px;
             }

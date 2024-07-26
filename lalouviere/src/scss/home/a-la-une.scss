@@ -23,6 +23,7 @@
         position: absolute;
         width: 100vw;
         z-index: -2;
+
         @media (max-width: 992px) {
           display:none;
           }
@@ -44,6 +45,7 @@
         top: 0;
         margin-top:-150px;
         z-index: -1;
+
   @media screen and (max-width: 1200px) {
     display: none;
     }
@@ -105,6 +107,7 @@
       font-size: 24px;
       font-weight: 500 !important;
       color:$primary-red;
+
       @media (max-width: 992px) {
       padding:0 !important;
     }
@@ -116,6 +119,7 @@
       grid-template-rows: auto 1fr;
   }
   }
+
   @media screen and (max-width: 992px) {
     .swiper_title h3 {
       padding: 0 1rem;
@@ -187,6 +191,7 @@
     right: auto;
     left:100px;
     border:2px solid #000;
+
     @media (max-width: 992px) {
     right: 40px;
     left:auto;
@@ -200,6 +205,7 @@
     right: auto;
     left:40px;
     border:2px solid #000;
+
     @media (max-width: 992px) {
       right: 100px;
       left:auto;

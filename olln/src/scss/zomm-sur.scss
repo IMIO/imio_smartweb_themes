@@ -1,6 +1,7 @@
 .zoom-sur {
     padding-bottom: 0;
     position: relative;
+
     @include media-breakpoint-down(lg) {
         width: 100%;
     }
@@ -75,6 +76,7 @@
         max-width: 440px;
         margin: 0 auto;
         text-align: center;
+
         @media screen and (max-width:400px) {
             grid-template-columns: repeat(2,1fr);
 
@@ -83,6 +85,7 @@
             }
 
         }
+
         @include media-breakpoint-down(lg) {
             margin: 0 auto;
         }

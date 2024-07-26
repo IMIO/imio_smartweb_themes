@@ -2,6 +2,7 @@
     background: $secondary;
     border: none;
 }
+
 @media screen and (min-width: 992px) {
     .je-suis.nav-item {
     margin-left: auto;
@@ -13,6 +14,7 @@
     font-weight: 400 !important;
     text-transform: none !important;
 }
+
 @media screen and (min-width: 992px) {
 #portal-header #portal-header-top #portal-globalnav-wrapper {
     margin: 0 4rem 0 6rem;
@@ -27,6 +29,7 @@
     font-size: 1.25rem;
     padding-bottom: 0.5rem;
 }
+
 @media screen and (max-width: 992px) {
 #portal-header #portal-header-top #portal-globalnav-wrapper {
     margin: 0 0;

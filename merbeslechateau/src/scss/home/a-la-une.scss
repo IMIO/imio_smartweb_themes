@@ -80,6 +80,7 @@
     }
 
     &::before {
+
         @media screen and (max-width:992px) {
             display: none;
         }
@@ -99,6 +100,7 @@
         }
     }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .a-la-une.focus {
         .swiper-slide .swiper_title .h3,

@@ -91,6 +91,7 @@ div#body-section-nos-partenaires ul li {
 div#body-section-nos-partenaires ul li:hover {
     box-shadow: 0 0 0 3px $primary;
 }
+
 @media screen and (max-width:992px) { 
     div#body-section-nos-partenaires ul li, div#body-section-nos-partenaires ul li:hover {
         box-shadow: 0 0 0 0 $primary;
@@ -127,6 +128,7 @@ div#body-section-acces-directs .table_image {
         }
     }
 }
+
 @media screen and (max-width:992px) { 
     div#body-section-acces-directs ul li, div#body-section-acces-directs ul li:hover {
         box-shadow: 0 0 0 0 $primary;

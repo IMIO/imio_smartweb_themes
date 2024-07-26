@@ -4,7 +4,9 @@ $secondary:#414141;
 $primary-svg: #F7004F;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 $font-family-base: 'Open Sans', sans-serif;
 $font-family-title: 'Poppins', sans-serif;
@@ -26,7 +28,9 @@ $h6-font-size: $font-size-base;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 

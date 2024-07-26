@@ -27,6 +27,7 @@
 .sortable-section.sectionlinks.quick-access {
     padding-top: 2.3rem;
 }
+
 @include media-breakpoint-up(md) { 
     .quick-access li.col-md-2 {
         border-right: 1px solid #fff;

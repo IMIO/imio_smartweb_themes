@@ -3,6 +3,7 @@
 	position: absolute;
 	transform: translateY(-56%);
 	z-index: 0;
+
     @include media-breakpoint-down(md) {
             transform: translateY(-75%);
         }
@@ -38,6 +39,7 @@
     }
 
     #body-section-acces-directs {
+
         @include media-breakpoint-down(md) {
             padding: 0.5rem 0;
 
@@ -70,6 +72,7 @@ div#container-section-acces-directs {
     justify-content: space-around;
 
     li {
+
         @include media-breakpoint-up(md) {
         width: 11%;
         }

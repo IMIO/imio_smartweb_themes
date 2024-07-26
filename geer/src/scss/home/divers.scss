@@ -147,6 +147,7 @@ button.focus:hover {
     transform: translateY(-50%);
 }
 }
+
 @media (min-width: 992px) {
 .sectionlinks.quick-access .section-container>div {
     margin-left: auto;
@@ -157,6 +158,7 @@ button.focus:hover {
     width: 500%;
 }
 }
+
 @media (min-width: 992px) {
 .sectionlinks.quick-access .section-container .row {
     display: grid;
@@ -169,6 +171,7 @@ button.focus:hover {
 .sectionlinks.quick-access .body-section ul {
     justify-content: center;
 }
+
 @media (min-width: 992px) {
 .sectionlinks.quick-access .section-container .row li {
     padding: 0;
@@ -183,6 +186,7 @@ button.focus:hover {
 .sectionlinks.quick-access .body-section {
     padding: 6rem 0;
 }
+
 @media (max-width: 992px) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access {
     padding-top: 3.5rem;

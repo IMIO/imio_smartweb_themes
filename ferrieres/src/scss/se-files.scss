@@ -19,6 +19,7 @@
         background-color: #fff !important;
         border-radius: 20px;
         display: flex;
+
         @media screen and (min-width:800px) {
             padding: 0 50px;
         }
@@ -123,6 +124,7 @@
 
     .row{
         grid-gap: 10px;
+
         @include media-breakpoint-down(lg){
             display: grid;
             grid-auto-rows: 1fr;

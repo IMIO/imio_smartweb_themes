@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
   @media screen and (min-width:1200px) {
     flex-direction: row;
     align-items: center;
@@ -43,13 +44,16 @@
 
   &>ul {
     width: 100%;
+
     @include media-breakpoint-up(md) {
       flex-direction: column;
       gap: 15px;
     }
+
     @include media-breakpoint-up(lg) {
       flex-direction: row;
     }
+
     @include media-breakpoint-up(xl) {
       gap: $nav-first-level-gap;
     }
@@ -128,6 +132,7 @@
         align-items: center;
         padding: 0;
         color: $sub-nav-link-color;
+
         @if $nav-first-level-uppercase {
           text-transform: uppercase;
         }
@@ -188,6 +193,7 @@
             }
           }
         }
+
         @include media-breakpoint-up(md) {
           display: flex;
           height: 800px;
@@ -199,6 +205,7 @@
             overflow-y: auto;
           }
         }
+
         @include media-breakpoint-down(lg) {
           overflow: hidden;
           overflow-y: scroll;
@@ -264,6 +271,7 @@
 
   &.activated {
     &>ul>li>a {
+
       @include media-breakpoint-up(md) {
         color: $sub-nav-link-open-color !important;
       }
@@ -285,6 +293,7 @@
 
 #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree,
 #subsite-navigation #portal-globalnav>li>.has_subtree {
+
   @include media-breakpoint-up(lg) {
     margin-top: 2.25rem;
   }
@@ -494,6 +503,7 @@
 #subsite-navigation>ul li>.has_subtree.dropdown .has_subtree.dropdown {
   bottom: 0;
 }
+
 @media screen and (max-width: 992px) {
   #subsite-navigation>ul>li.show-nav>.has_subtree.dropdown {
       margin-top: 1rem;

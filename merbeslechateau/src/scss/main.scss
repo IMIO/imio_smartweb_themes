@@ -7,19 +7,31 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/annuaire";
+
 @import "./home/les-sites";
+
 @import "./home/newsletter.scss";
+
 @import "./home/footer";
+
 @import "./home/divers";
 
 #portal-header {
@@ -114,6 +126,7 @@ li:marker {
         justify-content: space-between;
         padding-top: 6rem;
         text-align: left;
+
         @include media-breakpoint-down(lg) {
             padding-top: 2rem;
             flex-direction: column;
@@ -232,6 +245,7 @@ li:marker {
 .minisite_logo .minisite_title {
     font-weight: bold;
 }
+
 @media screen and (min-width:1200px) {
     .a-la-une,
     .sectionnews,
@@ -259,6 +273,7 @@ li:marker {
     display: none;
 }
 //// respo
+
 @include media-breakpoint-up(lg) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         font-weight: bold !important;

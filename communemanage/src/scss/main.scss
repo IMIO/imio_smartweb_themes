@@ -7,18 +7,28 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 
 //// STYLES
 // ... add your styles here
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/annuaire";
+
 @import "./home/les-sites";
+
 @import "./home/newsletter.scss";
 
 .see_all {
@@ -127,6 +137,7 @@ li:marker {
         justify-content: space-between;
         padding-top: 6rem;
         text-align: left;
+
         @include media-breakpoint-down(lg) {
             padding-top: 2rem;
             flex-direction: column;
@@ -295,6 +306,7 @@ li:marker {
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
 }
+
 @media screen and (min-width:1200px) {
     .a-la-une,
     .sectionnews,
@@ -328,6 +340,7 @@ li:marker {
 
 
 //// respo
+
 @include media-breakpoint-up(lg) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         font-weight: bold !important;
@@ -346,6 +359,7 @@ li:marker {
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 @include media-breakpoint-down(lg){
     #portal-globalnav > li > a {
         text-transform: initial;

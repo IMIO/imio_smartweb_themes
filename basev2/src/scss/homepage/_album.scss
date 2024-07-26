@@ -4,6 +4,7 @@
     padding-bottom: $album-section-padding-bottom;
     margin: $album-section-margin;
     background: $album-section-bg;
+
     @if $album-section-full-width {
         width: 100vw;
         left: 50%;
@@ -14,6 +15,7 @@
     .container {
         padding-right: 0;
         padding-left: 0;
+
         @if $album-section-full-width {
             padding-right: calc(var(--bs-gutter-x) * 0.5);
             padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -25,7 +27,9 @@
         margin: $album-title-margin;
         padding: $album-title-padding;
         text-align: $album-title-align;
+
         @include media-breakpoint-up(lg) {}
+
         @include media-breakpoint-up(xxl) {}
     }
 
@@ -91,6 +95,7 @@
 .sectionnews {
     .see_all {
         justify-content: $album-see-all-justify-content;
+
         @include see-all-style;
     }
 }

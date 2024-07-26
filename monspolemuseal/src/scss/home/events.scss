@@ -10,6 +10,7 @@
         background: $primary-color;
         padding-top: 8rem;
         padding-bottom: 7rem;
+
         @media screen and (max-width: 1000px) {
             width: 100vw;
             margin:0 auto;
@@ -20,6 +21,7 @@
                 line-height: 3rem;
             }
           }
+
           @media screen and (max-width: 700px) {
             padding : 0 30px;
 
@@ -42,6 +44,7 @@
         max-width: 100%;
         z-index: -1;
     }
+
     @media screen and (max-width: 992px) {
         padding: 0;
         padding-top: 3.5rem;
@@ -61,6 +64,7 @@
         text-transform: none;
         position: relative;
         color: $primary-titre;
+
         @media screen and (max-width: 992px) {
             transform: rotate(0deg);
             position: initial;
@@ -280,6 +284,7 @@
                 color:#fff !important;
                 border: 50px solid $primary-color;
             }
+
             @media screen and (max-width: 1000px) {
                     border: 0 !important;
 
@@ -288,9 +293,11 @@
                     }
                 }  
         }
+
         @media screen and (max-width: 1601px) {
             right:0;
           }
+
           @media screen and (max-width: 1000px) {
             position: relative;
             right: auto;

@@ -1,6 +1,7 @@
 .section-home-page .sectionnews {
     background: #F7F6F9;
   }
+
   @include media-breakpoint-up(lg) { 
   .section-home-page .sectionnews:before {
     top: 50%;

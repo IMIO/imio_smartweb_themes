@@ -4,7 +4,9 @@ $primary: #486be8;
 $primary-svg: #4c4c4c;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap');
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-title: 'Be Vietnam Pro', sans-serif;
@@ -26,7 +28,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

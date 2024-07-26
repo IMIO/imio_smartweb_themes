@@ -3,6 +3,7 @@
 }
 
 .sectionnews{
+
     @include media-breakpoint-up(lg){
         &:after{
             content:"";

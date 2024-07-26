@@ -3,6 +3,7 @@
 }
 
 .sectionevents{
+
     @include media-breakpoint-up(lg){
         &:after{
             content:"";

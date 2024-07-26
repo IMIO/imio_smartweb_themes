@@ -1,5 +1,6 @@
 .a-la-une{
     position: relative;
+
     @include media-breakpoint-down(lg){
         padding-bottom: 0;
     }
@@ -27,6 +28,7 @@
         }
 
         & > a{
+
             @include media-breakpoint-up(lg) { 
                 display: grid;
                 grid-template-columns: 60% 40%;
@@ -36,6 +38,7 @@
         }
 
         .swiper-image{
+
             @include media-breakpoint-up(lg) {
                 padding-bottom: 60%;
                 grid-row-start: 1;
@@ -45,6 +48,7 @@
         }
 
         .swiper_title{
+
             @include media-breakpoint-up(lg) { 
                 grid-column: 2;
                 grid-row: 1;
@@ -62,6 +66,7 @@
         }
 
         .swiper_description{
+
             @include media-breakpoint-up(lg){
                 grid-column: 2;
                 grid-row: 2;

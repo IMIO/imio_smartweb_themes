@@ -1,6 +1,7 @@
 .sectionlinks.quick-access {
   position: relative;
   background: transparent;
+
   @if $quick-access-section-full-width {
     width: 100vw;
     left: 50%;
@@ -11,6 +12,7 @@
   .container {
     padding-right: 0;
     padding-left: 0;
+
     @if $quick-access-section-full-width {
       padding-right: calc(var(--bs-gutter-x) * 0.5);
       padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -22,7 +24,9 @@
     margin: $quick-access-title-margin;
     padding: $quick-access-title-padding;
     text-align: $quick-access-title-align;
+
     @include media-breakpoint-up(lg) {}
+
     @include media-breakpoint-up(xxl) {}
   }
 
@@ -78,6 +82,7 @@
 }
 
 #container-section-quick-access {
+
   @if $quick-access-enable-full-bg {
     background: $quick-access-full-bg-color;
     border: $quick-access-full-bg-border;

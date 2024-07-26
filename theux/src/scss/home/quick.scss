@@ -36,6 +36,7 @@ body.userrole-authenticated.portaltype-imio-smartweb-portalpage.section-home-pag
 }
 
 body .sectionlinks.quick-access .section-container .row {
+
     @include media-breakpoint-up(lg){
     display: grid;
     gap: 10px;
@@ -43,6 +44,7 @@ body .sectionlinks.quick-access .section-container .row {
     grid-template-rows: auto auto;
     }
 }
+
 @include media-breakpoint-down(lg){
     .sectionlinks.quick-access .body-section {
         padding: 0!important;
@@ -59,6 +61,7 @@ body .sectionlinks.quick-access .section-container .row {
         margin-top: -50px;
     }
 }
+
 @include media-breakpoint-down(md){
     .sectionlinks.quick-access .body-section li {
         width: 45%;
@@ -74,6 +77,7 @@ body .sectionlinks.quick-access .section-container .row {
         transform: translateY(-50%);
     }
     }
+
     @media (min-width: 992px) {
     .sectionlinks.quick-access .section-container>div {
         margin-left: auto;
@@ -84,6 +88,7 @@ body .sectionlinks.quick-access .section-container .row {
         width: 500%;
     }
     }
+
     @media (min-width: 992px) {
     .sectionlinks.quick-access .section-container .row {
         display: grid;
@@ -96,6 +101,7 @@ body .sectionlinks.quick-access .section-container .row {
     .sectionlinks.quick-access .body-section ul {
         justify-content: center;
     }
+
     @media (min-width: 992px) {
     .sectionlinks.quick-access .section-container .row li {
         padding: 0;
@@ -110,6 +116,7 @@ body .sectionlinks.quick-access .section-container .row {
     .sectionlinks.quick-access .body-section {
         padding: 6rem 0;
     }
+
     @media (max-width: 992px) {
         #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access {
         padding-top: 3.5rem;

@@ -9,6 +9,7 @@ $primary-red: #B83434;
 
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&display=swap');
 
 $font-family-base:'Roboto', sans-serif!default;
@@ -31,7 +32,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

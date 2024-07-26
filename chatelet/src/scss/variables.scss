@@ -5,6 +5,7 @@ $tird: #A14073;
 
 $dark-b:#555;
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 $font-family-base:'Montserrat', sans-serif!default;
@@ -27,7 +28,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

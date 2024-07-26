@@ -93,6 +93,7 @@ $border_grey: #d3d3d3;
     display: flex !important;
     align-items: center;
     justify-content: center;
+
     @include media-breakpoint-up(lg) {
         width: 90px !important;
         height: 90px;
@@ -193,6 +194,7 @@ $border_grey: #d3d3d3;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-gap: 15px;
         grid-auto-rows: 1fr;
+
         @media screen and (max-width:360px){
             grid-template-columns: 1fr 1fr;
         }
@@ -281,6 +283,7 @@ $border_grey: #d3d3d3;
 .sectionlinks.mon-bla-liens {
     background: transparent;
     padding-top: 2rem;
+
     @include media-breakpoint-up(md) {
         padding-top: 6rem;
     }
@@ -443,6 +446,7 @@ $border_grey: #d3d3d3;
     grid-template-columns: repeat(auto-fill,minmax(136px,1fr));
     grid-gap: 20px 15px;
     grid-auto-rows: 1fr;
+
     @media screen and (max-width:360px){
         grid-template-columns: 1fr 1fr;
     }
@@ -582,6 +586,7 @@ $border_grey: #d3d3d3;
     }
 
     .section-container{
+
         @include media-breakpoint-up(lg){
             display: flex;
         }
@@ -593,6 +598,7 @@ $border_grey: #d3d3d3;
             text-transform: uppercase;
             font-size: 16px;
             margin: 0;
+
             @include media-breakpoint-down(lg){
                 margin-bottom: 2rem;
             }
@@ -622,6 +628,7 @@ $border_grey: #d3d3d3;
                         gap: 10px;
                         align-items: center;
                         padding: 10px;
+
                         @include media-breakpoint-up(lg){
                             padding: 12px;
                         }
@@ -634,6 +641,7 @@ $border_grey: #d3d3d3;
                                 fill: #fff;
                                 display: block;
                                 height: 25px;
+
                                 @include media-breakpoint-up(lg){
                                     height: 35px;
                                 }
@@ -895,6 +903,7 @@ div#body-section-albums-photos a h3{
     text-align: center;
     font-size: 18px;
 }
+
 @include media-breakpoint-up(md){
     a#section-bla-en-images ~ .section-container {
         display: flex;
@@ -913,10 +922,12 @@ div#body-section-albums-photos a h3{
 /* citoyenneté page d'accueil */
 .citoyennete-2 div#body-section-texte-citoyennete{
     margin-top: 0;
+
     @media screen and (min-width: 992px){
         margin-top: 26%;
     }   
 }
+
 @media screen and (min-width: 600px){
     .citoyennete-2 div#body-section-texte-citoyennete {
         width: 106%;
@@ -999,6 +1010,7 @@ div#body-section-albums-photos a h3{
 }
 
 .section-liens-citoyennete #body-section-liens-citoyennete ul {
+
     @include media-breakpoint-up(sm){
         padding: 1.5rem 2rem 1.25rem 3rem;
     }
@@ -1052,6 +1064,7 @@ div#body-section-albums-photos a h3{
 /* MEDIA QUERIES */
 
 //MON BLA
+
 @include media-breakpoint-down(xl) {
     #body-section-section-monbla-images .section-monbla-img-container img.section-monbla-image2 {
     width: 100%;
@@ -1078,6 +1091,7 @@ div#body-section-albums-photos a h3{
         width: 40%;
     }
 }
+
 @include media-breakpoint-down(lg) {
     //MON BLA
     .section-mon-bla, .mon-bla-liens {
@@ -1133,6 +1147,7 @@ div#body-section-albums-photos a h3{
         border-bottom-right-radius: 0;
     }  
 }
+
 @keyframes border-hover-black { 
     0% { 
         width: 10%;
@@ -1184,6 +1199,7 @@ div#body-section-albums-photos a h3{
         border-bottom-right-radius: 0;
     }  
 }
+
 @keyframes border-hover-blue { 
     0% { 
         width: 10%;
@@ -1235,6 +1251,7 @@ div#body-section-albums-photos a h3{
         border-bottom-right-radius: 0;
     }  
 }
+
 @keyframes border-hover-yellow { 
     0% { 
         width: 10%;

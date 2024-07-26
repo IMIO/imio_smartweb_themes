@@ -32,6 +32,7 @@
     }
 
     li {
+
         @media (min-width:1201px) {
             &:nth-child(1) {
                 transition-delay: 200ms;
@@ -65,6 +66,7 @@
        transition: opacity 600ms ease-out, transform 600ms ease-out;
        transition-delay: 0ms;
    }
+
    @media (min-width:1201px) {
     .swiper-image {
         transform: translateY(40px);
@@ -98,6 +100,7 @@
         opacity: 0;
         transition: opacity 600ms ease-out, transform 600ms ease-out;
         transition-delay: 0ms;
+
         @media (min-width:1201px) {
             transform: translateY(40px);
             transition-delay: 400ms;
@@ -120,6 +123,7 @@
         opacity: 0;
         transition: opacity 600ms ease-out, transform 600ms ease-out;
         transition-delay: 0ms;
+
         @media (min-width:1201px) {
             transform: translateY(40px);
         }
@@ -133,6 +137,7 @@
     }
 
     li {
+
         @media (min-width:1201px) {
             &:nth-child(1) {
                 transition-delay: 200ms;
@@ -163,6 +168,7 @@
 
 
 // config all
+
 @media (max-width:1200px) {
     *.play {
         transition-delay: 300ms;

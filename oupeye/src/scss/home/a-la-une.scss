@@ -22,6 +22,7 @@
 // .section-home-page .a-la-une {
 //     background: #FFFAF7;
 //   }
+
 @include media-breakpoint-up(lg) { 
 .section-home-page .a-la-une:before {
     top: 50%;
@@ -32,6 +33,7 @@
     transform: translate(-50vw, -50%);
     }
 }
+
 @include media-breakpoint-down(lg) { 
     .a-la-une {
     padding-top: 0.5rem;

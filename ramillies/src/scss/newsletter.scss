@@ -1,4 +1,5 @@
 .home-newsletter{
+
     @media screen and (min-width:580px){
         padding-top: 10rem!important;
     }
@@ -37,6 +38,7 @@
     text-align: center;
     position: relative;
     min-height: 520px;
+
     @media screen and (max-width: 580px){
         display: none;
     }
@@ -80,6 +82,7 @@
 
 .home-newsletter2{
     position: relative;
+
     @media screen and (max-width: 580px){
         display: none;
     }
@@ -103,6 +106,7 @@
 
 .home-link{
     background-color: transparent!important;
+
     @media screen and (min-width:580px){
         padding-top: 10rem!important;
     }

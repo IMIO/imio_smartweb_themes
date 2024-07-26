@@ -10,6 +10,7 @@
     align-items: center;
     grid-template-columns: 115px 1fr auto;
     grid-template-areas: "logo menu search""bread bread bread""sub sub sub";
+
     @media screen and (min-width:1000px) {
         grid-template-columns: auto auto auto;
     }
@@ -41,6 +42,7 @@
 // //sub site
 #portal-globalnav-wrapper li>.has_subtree {
     padding: 5em 2em 0;
+
     @media (min-width:992px) {
         padding: 2rem;
     }
@@ -240,6 +242,7 @@ header#content-header {
             &:checked+label:after {
                 transform: rotate(-180deg);
                 transition: ease-in 0.35s;
+
                 @media (min-width:992px) {
                     transform: rotate(0);
                 }
@@ -256,6 +259,7 @@ header#content-header {
             }
 
             &:checked~ul {
+
                 @media (max-width:992px) {
                     visibility: visible;
                     opacity: 1;
@@ -275,12 +279,14 @@ header#content-header {
             justify-content: center;
             align-items: flex-end;
             padding-right: 0.5em;
+
             @media (min-width:992px) {
                 align-items: flex-start;
                 width: auto;
             }
 
             &:after {
+
                 @media (min-width:992px) {
                     font-size: 0.75em;
                     background: transparent;
@@ -314,6 +320,7 @@ header#content-header {
     #portal-globalnav>li>.has_subtree {
         width: 25em;
     }
+
     @media screen and (min-width:992px) {
         #portal-globalnav>li>.has_subtree>ul>li>.has_subtree.dropdown,
         #subsite-navigation #portal-globalnav>li>.has_subtree>ul>li>.has_subtree.dropdown {
@@ -523,6 +530,7 @@ html #portal-header {
         order: -2;
     }
 }
+
 @media screen and (min-width: 992px) {
     html #portal-header {
         display: block !important;
@@ -538,6 +546,7 @@ html #portal-header {
         }
     }
 }
+
 @media screen and (min-width:992px) {
     #portal-globalnav-wrapper {
         flex: 1;

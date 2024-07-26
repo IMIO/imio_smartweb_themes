@@ -9,10 +9,12 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .navbar-nav {
+
     @include media-breakpoint-up(lg) {
 	align-items: center;
     }
 }
+
 @include media-breakpoint-up(lg) {
     .collapse:not(.show) {
         display: block;
@@ -119,9 +121,11 @@ $nav-subtree-title-color : #008FD2;
     }
 
     & > ul {
+
         @include media-breakpoint-up(md){
             gap: 15px;
         }
+
         @include media-breakpoint-up(xl) {
             gap: $nav-first-level-gap;
         }
@@ -129,6 +133,7 @@ $nav-subtree-title-color : #008FD2;
         & > li{
             & > a{
                 padding: 0;
+
                 @if($nav-first-level-uppercase){
                     text-transform: uppercase;
                 }
@@ -144,6 +149,7 @@ $nav-subtree-title-color : #008FD2;
                     right: 0; 
                     width: 0;
                 }
+
                 @media (hover: hover) and (pointer: fine) {
                     &:focus,
                     &:hover{
@@ -160,6 +166,7 @@ $nav-subtree-title-color : #008FD2;
 // Drop arrow for navlink
 .navbar{
     padding-right: 0!important;
+
     @media screen and (min-width:1200px){
         padding-right: 1.5rem!important;
     }
@@ -172,6 +179,7 @@ $nav-subtree-title-color : #008FD2;
         & > .nav-link{
             display: flex;
             align-items: center;
+
         @include media-breakpoint-up(lg){
             &:after{
                 content:"";
@@ -190,6 +198,7 @@ $nav-subtree-title-color : #008FD2;
 
     & > .nav-item.has_subtree{
         & > .nav-link{
+
             @include media-breakpoint-down(xl) {
                 font-size: 15px;
             }
@@ -204,11 +213,13 @@ $nav-subtree-title-color : #008FD2;
     }
 
     .je-suis{
+
         @media screen and (min-width:1200px) {
             margin-left: auto;
         }
     }
   }
+
 @include media-breakpoint-up(lg){
     .activated #portal-globalnav > .nav-item.has_subtree:not(.je-suis):not(.en-un-clic) > .nav-link::after {
       background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
@@ -225,6 +236,7 @@ $nav-subtree-title-color : #008FD2;
 .navbar-toggler:focus{
     box-shadow: none!important;
 }
+
 @media screen and (min-width:768px){
     .navbar-expand-md .navbar-toggler {
         display: block;
@@ -232,9 +244,11 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .navbar-expand-md .navbar-nav {
+
 	@include media-breakpoint-up(md) {
         flex-direction: column;
     }
+
     @include media-breakpoint-up(lg) {
         flex-direction: row;
     }
@@ -242,6 +256,7 @@ $nav-subtree-title-color : #008FD2;
 
 .navbar-expand-md .navbar-collapse {
         display: block !important;
+
         @include media-breakpoint-up(lg) {
             display: flex !important;
         }
@@ -304,6 +319,7 @@ $nav-subtree-title-color : #008FD2;
         }
     }
 }
+
 @media screen and (max-width:992px) {
     #portal-globalnav-collapse{
         #portal-globalnav > li > .nav-link{
@@ -409,12 +425,14 @@ $nav-subtree-title-color : #008FD2;
 
 /* décalage menu vers le bas */
 #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
+
     @include media-breakpoint-up(lg) {
         margin-top: 2.25rem;
     }
 }
 
 #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
+
     @include media-breakpoint-down(lg) {
         overflow: hidden;
         overflow-y: scroll;
@@ -472,12 +490,14 @@ $nav-subtree-title-color : #008FD2;
 }
 
 #subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {
+
     @include media-breakpoint-down(lg){
 	    box-shadow: none!important;
     }
 }
 
 #subsite-navigation li .has_subtree.dropdown {
+
     @include media-breakpoint-down(lg){
         right: inherit;
         left: 0 !important;
@@ -485,9 +505,11 @@ $nav-subtree-title-color : #008FD2;
 }
 
 .prev-nav{
+
     @include media-breakpoint-down(lg){
         display: block!important;
     }
+
     @include media-breakpoint-up(lg){
         display: none!important;
     }

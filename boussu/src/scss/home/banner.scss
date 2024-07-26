@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media screen and (max-width:900px) {
         flex-direction: column;
 
@@ -25,6 +26,7 @@
         }
     }
 }
+
 @media screen and (max-width: 915px) {
     .swiper-banner-content {
         display: block;

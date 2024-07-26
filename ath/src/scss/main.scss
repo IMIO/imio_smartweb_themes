@@ -2,26 +2,41 @@
 // ... add your variables here
 
 $enable-roboto-webfont: false;
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 //// IMPORTS
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/intro.scss";
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/espace-citoyen";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/footer";
+
 @import "./home/section-en-image";
+
 @import "./info-trav.scss";
+
 @import "./se-link.scss";
+
 @import "./se-files.scss";
+
 @import "./contact.scss";
 
 
@@ -131,6 +146,7 @@ $enable-roboto-webfont: false;
     img {
         max-width: 160px;
     }
+
     @media screen and (max-width: 992px) {
         img {
             max-width: 100%;
@@ -230,6 +246,7 @@ footer #container-section-noussuivre{
         }
     }
 } 
+
 @media screen and (max-width:900px) {
     .portaltype-imio-smartweb-portalpage .section-title {
         font-size: 28px!important;
@@ -616,6 +633,7 @@ footer #container-section-noussuivre{
             margin: 0;
         }
     }
+
     @media screen and (max-width: 992px) {
         .bloc-newsletter{
             margin: 4.5rem 0;
@@ -705,6 +723,7 @@ footer #container-section-noussuivre{
     .mask-menu {    
         background-color: rgba(15, 11, 11, 0.95);
     }
+
     @media screen and (min-width: 992px) {
         #portal-globalnav-wrapper #portal-globalnav>li>.has_subtree, #subsite-navigation #portal-globalnav>li>.has_subtree {
             margin-top: 3.5rem;
@@ -762,6 +781,7 @@ footer #container-section-noussuivre{
         img {
             max-width: 160px;
         }
+
         @media screen and (max-width: 992px) {
             img {
                 max-width: 100%;

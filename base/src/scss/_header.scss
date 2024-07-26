@@ -10,11 +10,13 @@
   display: block;
   margin-top: 0;
   margin-bottom: 1.25rem;
+
   @include media-breakpoint-up(md){
     position: relative;
   }
 
   #portal-header-top {
+
     @include media-breakpoint-down(lg) {
       justify-content: space-between;
     }
@@ -23,6 +25,7 @@
     display: flex;
     align-items: center;
     padding: $header-top-padding;
+
     @if $header-center-nav {
       justify-content: space-between;
 
@@ -62,14 +65,17 @@
       display: flex;
       align-items: center;
       gap: 26px;
+
       @include media-breakpoint-up(lg) {
         margin-left: auto;
       }
+
       @include media-breakpoint-down(lg) {
         order: -2;
       }
 
       #header-actions {
+
         @include media-breakpoint-down(lg) {
           display: none !important;
         }

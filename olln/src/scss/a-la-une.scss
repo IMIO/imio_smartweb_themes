@@ -69,6 +69,7 @@
 
 .a-la-une-home {
     padding-bottom: 0;
+
     @include media-breakpoint-down(lg) {
         width: 100%;
     }

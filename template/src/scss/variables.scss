@@ -3,7 +3,9 @@ $primary: #323031;
 $primary-svg: #E9212D;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
 
 $font-family-base:'Montserrat', sans-serif;
@@ -26,7 +28,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

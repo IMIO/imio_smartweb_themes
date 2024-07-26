@@ -4,6 +4,7 @@ $primary-svg: #2F294D !default;
 $primary-light: #2F294D !default;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 
 $font-family-base:'Hind Siliguri', sans-serif!default;
@@ -26,7 +27,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

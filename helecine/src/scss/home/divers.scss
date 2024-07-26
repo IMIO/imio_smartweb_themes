@@ -74,6 +74,7 @@ a#portal-logo {
     border-radius: 100%;
     z-index: -1;
 }
+
 @include media-breakpoint-down(lg) {
     .sectionlinks.quick-access.partenaires .body-section li {
         width: 30%;
@@ -83,6 +84,7 @@ a#portal-logo {
         margin: 0 auto 1rem;
     }
 }
+
 @include media-breakpoint-down(md) {
     .sectionlinks.quick-access.partenaires .body-section li {
         width: 50%;
@@ -179,6 +181,7 @@ body .container #portal-column-content .section-contact .contact-type-position {
     flex-wrap: wrap;
     padding: 1.5rem;
 }
+
 @include media-breakpoint-down(sm) { 
     body .container #portal-column-content .section-contact .contact-type-position {
         display: block;

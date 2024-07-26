@@ -147,6 +147,7 @@ button.focus:hover {
     transform: translateY(-50%);
 }
 }
+
 @media (min-width: 992px) {
 .sectionlinks.quick-access .section-container>div {
     margin-left: auto;
@@ -166,6 +167,7 @@ button.focus:hover {
 .sectionlinks.quick-access .body-section ul {
     justify-content: center;
 }
+
 @media (min-width: 992px) {
 .sectionlinks.quick-access .section-container .row li {
     padding: 0;
@@ -180,6 +182,7 @@ button.focus:hover {
 .sectionlinks.quick-access .body-section {
     padding: 6rem 0;
 }
+
 @media (max-width: 992px) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav .quick-access {
     padding-top: 3.5rem;
@@ -301,6 +304,7 @@ li:marker {
 .minisite_logo .minisite_title {
     font-weight: bold;
 }
+
 @media screen and (min-width:1200px) {
     .a-la-une,
     .sectionnews,
@@ -332,6 +336,7 @@ li:marker {
     display: none;
 }
 //// respo
+
 @include media-breakpoint-up(lg) {
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav>li>a {
         font-weight: bold !important;
@@ -398,6 +403,7 @@ li:marker {
     height: 1000px;
     border-radius: 500px;
     width: 1000px;
+
     @include media-breakpoint-down(lg){
         height: 100vw;
         width: 100vw;
@@ -406,12 +412,14 @@ li:marker {
   }
 
     .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
+
         @include media-breakpoint-up(lg){
             height: 700px;
         }
     }
 
     body .sectionlinks.quick-access .section-container .row {
+
         @include media-breakpoint-up(lg){
         display: grid;
         gap: 10px;
@@ -419,6 +427,7 @@ li:marker {
         grid-template-rows: auto auto;
         }
     }
+
     @include media-breakpoint-down(lg){
         .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
             transform: translate(-40%,0);

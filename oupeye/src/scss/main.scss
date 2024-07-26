@@ -7,16 +7,25 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/footer";
+
 @import "./home/enquetes";
+
 @import "./home/newsletter";
 
 
@@ -26,6 +35,7 @@ $enable-roboto-webfont: false;
 	background-size: cover;
 	background-position: center;
 }
+
 @include media-breakpoint-down(lg) { 
 	body.portaltype-imio-smartweb-portalpage {
 		.sortable-section h2.section-title {
@@ -55,6 +65,7 @@ $enable-roboto-webfont: false;
     left: 0;
 	transform: translateY(1px);
 }
+
 @include media-breakpoint-down(md) {
 	.smartweb_herobanner .bannerSwiper {
 		height: 160px;
@@ -64,10 +75,12 @@ $enable-roboto-webfont: false;
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
 	.swiper-banner-title, 
 	.swiper-banner-description p {
+
 		@include media-breakpoint-up(md) {
 		font-weight: 600;
 		text-transform: uppercase;
 		}
+
 		@include media-breakpoint-down(md) {
 		font-size: 2rem;
 		font-weight: 600;

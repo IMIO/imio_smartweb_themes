@@ -10,6 +10,7 @@
         justify-content: space-between;
         padding-top: 6rem;
         text-align: left;
+
         @include media-breakpoint-down(lg) {
             padding-top: 2rem;
             flex-direction: column;
@@ -126,6 +127,7 @@ footer .h3, footer h3 {
 footer .sectiontext .section-text .body-section figure img, .smartweb-footer div#body-section-administration-communale {
     max-width: 100%;
 }
+
 @include media-breakpoint-down(lg) {
     .smartweb-footer .row {
         text-align: center;

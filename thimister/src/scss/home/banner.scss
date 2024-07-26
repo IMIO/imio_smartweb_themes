@@ -51,6 +51,7 @@ body:not(.portaltype-imio-smartweb-portalpage) #portal-header {
 body.portaltype-imio-smartweb-portalpage #portal-header {
     margin-bottom: 0;
 }
+
 @include media-breakpoint-down(md) {
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
     margin: 0 auto;
@@ -90,6 +91,7 @@ body.portaltype-imio-smartweb-portalpage #portal-header {
         padding-top: 5rem;
     }
 }
+
 @include media-breakpoint-up(xl) {
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper {
     height: 430px;
@@ -113,6 +115,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-conten
     z-index: -1;
     width: 300px;
 }
+
 @include media-breakpoint-up(lg) {
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::after {
         background: #ffffff14;
@@ -126,6 +129,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-conten
         z-index: -2;
     }
 }
+
 @include media-breakpoint-up(lg) {
     body.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .section-slide::before {
         background: #ffffff10;
@@ -139,6 +143,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .swiper-banner-conten
         z-index: -1;
     }
 }
+
 @media screen and (min-width: 1921px) {
     .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-image {
         background-size: 15%;

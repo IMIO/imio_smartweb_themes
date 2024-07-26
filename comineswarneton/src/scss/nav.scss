@@ -71,6 +71,7 @@
 }
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
+
     @include media-breakpoint-down(lg){
         margin-left: auto;
     }
@@ -97,6 +98,7 @@
 }
 
 #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li.has_subtree > a::after {
+
     @include media-breakpoint-up(lg){
         position: relative;
         top: 1px;
@@ -109,12 +111,14 @@
 }
 
 .portaltype-imio-smartweb-portalpage #portal-header #portal-header-top {
+
     @include media-breakpoint-up(lg){
         position: absolute;
         left: 0;
         right: 0;
     }
 }
+
 @include media-breakpoint-up(lg){
     #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li > a {
         color: #fff!important;

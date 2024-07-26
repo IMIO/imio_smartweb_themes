@@ -4,6 +4,7 @@ $primary-svg: #D90416 !default;
 $primary-light: #D90416 !default;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700&display=swap');
 
 $font-family-base:'Lato', sans-serif!default;
@@ -27,7 +28,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

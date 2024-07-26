@@ -83,6 +83,7 @@ body.section-home-page .container #main-container {
 .colophonWrapper li:last-child {
     width: 100%;
 }
+
 @media screen and (min-width: 1200px) {
 .subsite-container {
     margin-top: 1rem;
@@ -106,6 +107,7 @@ body.userrole-authenticated ul.nav li a.nav-link {
     #portal-header{
         margin-bottom: 0!important;
     }
+
     @media screen and (min-width:900px) {        
         #messagesviewlet {
             position: absolute;

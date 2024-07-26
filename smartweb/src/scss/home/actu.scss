@@ -8,9 +8,11 @@
         font-size: calc(1.325rem + 2.5vw);
         text-transform: uppercase;
         margin-bottom: 1rem;
+
         @include media-breakpoint-up(lg) { 
             margin-bottom: 2.5rem;
         }
+
         @include media-breakpoint-up(xxl) { 
             font-size: 3.7rem;
         }

@@ -8,6 +8,7 @@ body .a-la-une #container-section-a-la-une div {
     box-shadow: 0 10px 10px -2px #dbdbdb;
   }
 }
+
 @include media-breakpoint-down(md) {
     body .a-la-une h2.section-title {
     left: 1rem;
@@ -18,6 +19,7 @@ body .a-la-une #container-section-a-la-une div {
     left: 2rem;
     }
 }
+
 @include media-breakpoint-up(md) {
     body .a-la-une h2.section-title {
         right: 250px;
@@ -27,11 +29,13 @@ body .a-la-une #container-section-a-la-une div {
         right: 215px;
         }
 }
+
 @include media-breakpoint-up(lg) {
     .a-la-une.sectionselections {
         padding-bottom: 4rem;
     }
 }
+
 @include media-breakpoint-up(lg) {
     body .a-la-une h2.section-title {
         right: 320px;
@@ -41,6 +45,7 @@ body .a-la-une #container-section-a-la-une div {
         right: 285px;
         }
 }
+
 @include media-breakpoint-up(xl) {
     body .a-la-une h2.section-title {
     position: absolute;

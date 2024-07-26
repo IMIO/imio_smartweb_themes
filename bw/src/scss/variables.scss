@@ -4,7 +4,9 @@ $primary-yellow: #FDBD39;
 $primary-svg: #D8084C;
 
 //*// TYPOGRAPHY
+
 @import url("https://use.typekit.net/pca8fww.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 $font-family-base:'Open Sans', sans-serif;
@@ -27,7 +29,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

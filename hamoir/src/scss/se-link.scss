@@ -42,6 +42,7 @@
     }
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 0;
             display: grid;

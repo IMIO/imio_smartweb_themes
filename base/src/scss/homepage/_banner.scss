@@ -1,5 +1,6 @@
 .smartweb_herobanner {
   position: relative;
+
   @if $banner-enable-full-width {
     width: 100vw;
     left: 50%;
@@ -31,6 +32,7 @@
         }
 
         .swiper-banner-content-wrapper {
+
           @if $banner-content-is-vertical-center {
             position: relative;
             top: 50%;

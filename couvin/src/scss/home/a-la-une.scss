@@ -17,6 +17,7 @@
 .a-la-une .swiper-slide .swiper_description {
     z-index: 1;
 }
+
 @include media-breakpoint-up(lg){
     .a-la-une .swiper-slide>a {
         grid-template-columns: 50% 50%;

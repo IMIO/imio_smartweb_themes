@@ -7,21 +7,34 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import "./variables";
+
 @import "../../../base/src/scss/main.scss";
 
 //// STYLES
 // ... add your styles here
+
 @import "./nav.scss";
+
 @import "./home/banner.scss";
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/annuaire";
+
 @import "./home/les-sites";
+
 @import "./home/newsletter.scss";
+
 @import "./mini.scss";
 
 @media screen and (min-width:1200px) {
@@ -63,6 +76,7 @@ $enable-roboto-webfont: false;
     font-family: inherit;
 
     .circle {
+
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: relative;
         display: block;
@@ -73,6 +87,7 @@ $enable-roboto-webfont: false;
         border-radius: 1.625rem;
 
         .icon {
+
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
           position: absolute;
           top: 0;
@@ -81,6 +96,7 @@ $enable-roboto-webfont: false;
           background: $white;
 
           &.arrow {
+
             @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
             left: 0.625rem;
             width: 1.125rem;
@@ -103,6 +119,7 @@ $enable-roboto-webfont: false;
     }
 
     a {
+
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: absolute!important;
         width: max-content!important;
@@ -163,6 +180,7 @@ $enable-roboto-webfont: false;
     display: block;
     justify-content: space-between;
     align-items: center;
+
     @include media-breakpoint-up(lg){
       display: flex;
     }
@@ -171,6 +189,7 @@ $enable-roboto-webfont: false;
       font-family: $josefin;
       font-size: 28px;
       text-align: center;
+
       @include media-breakpoint-up(lg){
         font-size: 45px;
       }
@@ -343,6 +362,7 @@ $enable-roboto-webfont: false;
 }
 
 #portal-footer-wrapper{
+
   @include media-breakpoint-up(lg){
     text-align: left!important;
   }

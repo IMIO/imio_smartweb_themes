@@ -8,7 +8,9 @@ $colormedimblue: #3a6ba5;
 $colorlightblue: #72a5d4;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
 $font-family-base:'Roboto', sans-serif!default;
@@ -31,7 +33,9 @@ $h6-font-size: $font-size-base !default;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 $container-max-widths: (

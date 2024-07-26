@@ -20,6 +20,7 @@
 .section-en-image {
     .see_all {
       justify-content: $event-see-all-justify-content;
+
       @include see-all-style;
     }
   }

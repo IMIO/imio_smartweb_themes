@@ -10,6 +10,7 @@
                 display: block;
                 position: relative;
                 margin: 0 auto;
+
                 @include media-breakpoint-up(lg) {
                     padding: 60px 0;
                 }
@@ -25,6 +26,7 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     z-index: -1;
+
                     @include media-breakpoint-up(lg) {
                         background-size: cover;
                     }
@@ -57,6 +59,7 @@
             gap: 10px 3%;
             margin: 0;
             max-width: max-content;
+
             @media (min-width:438px){
 
             }
@@ -85,6 +88,7 @@
         position: absolute;
         transform: skew(-26deg, 0deg) translateX(2%);
         z-index: -1;
+
         @include media-breakpoint-up(lg){
             content: "";
             width: 90vw;
@@ -135,6 +139,7 @@
     height: auto;
     display: block;
 }
+
 @media screen and (max-width: 992px){
     #body-section-en-un-clic li {
     width: 31.3% !important;
@@ -142,6 +147,7 @@
 }
 
 .banner-quick,.quick-access{
+
     @media (max-width: 992px) {
         &.col-sm-6 {
             width: 100%!important;

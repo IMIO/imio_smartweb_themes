@@ -7,17 +7,27 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import './variables';
+
 @import '../../../base/src/scss/main.scss';
 //// STYLES
 // ... add your styles here
+
 @import "./home/intro.scss";
+
 @import "./home/quick.scss";
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/footer";
+
 @import "./common/map.scss";
+
 @import "./common/postit.scss";
 
 
@@ -100,6 +110,7 @@ $enable-roboto-webfont: false;
 #portal-breadcrumbs {
 	margin-top: 2.5rem;
 }
+
 @include media-breakpoint-up(lg){
     #portal-header #portal-header-top #portal-logo {
         position: absolute;
@@ -183,6 +194,7 @@ footer #container-section-noussuivre{
         }
     }
 } 
+
 @media screen and (max-width:900px) {
     .portaltype-imio-smartweb-portalpage .section-title {
         font-size: 34px!important;

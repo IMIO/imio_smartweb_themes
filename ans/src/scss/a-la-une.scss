@@ -20,6 +20,7 @@
     margin-left: -130px;
     top:80%!important;
     display:none;
+
     @include media-breakpoint-up(xl) {
         display: block;
   }
@@ -30,6 +31,7 @@
     margin-left: -80px;
     top: 80%!important;
     display:none;
+
     @include media-breakpoint-up(xl) {
         display: block;
   }
@@ -39,6 +41,7 @@
     grid-template-rows: auto auto auto 1fr;
     background: none;
     display: block;
+
     @include media-breakpoint-up(lg) {
             display: grid;
       }

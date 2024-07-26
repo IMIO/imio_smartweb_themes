@@ -30,6 +30,7 @@
             align-content: flex-start;
             background: $section-contact-background;
             word-wrap: anywhere;
+
             @include media-breakpoint-up(md){
                 flex-direction: row;
                 gap: 0 30px;

@@ -3,6 +3,7 @@
     position: absolute;
     z-index: 0;
     top: 112px;
+
     @media screen and (min-width: 989px) {
         top: 508px;
     }
@@ -15,6 +16,7 @@
         gap: 25px;
         padding: 20.5px;
         border-radius: 22px;
+
         @media screen and (min-width: 989px) {
             border-radius: 0;
             border-top-left-radius: 46px;
@@ -66,6 +68,7 @@ border-radius: 0 0 50px;
 .a-la-une .swiper-slide {
 
 }
+
 @media screen and (max-width: 989px) {
     .banner-social-link {
         top: 0;

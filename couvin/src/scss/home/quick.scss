@@ -4,6 +4,7 @@
     z-index: 0;
     left: 0;
 }
+
 @include media-breakpoint-down(md){
     .sectionlinks.quick-access.suivez-nous {
         transform: initial;

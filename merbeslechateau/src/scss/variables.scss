@@ -5,7 +5,9 @@ $primary-svg: #EEE;
 $dark-txt:#222831;
 
 //*// TYPOGRAPHY
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 $font-family-base: 'Oswald', sans-serif;
 $font-family-title: 'Oswald', sans-serif;
@@ -27,7 +29,9 @@ $h6-font-size: $font-size-base;
 // Include Roboto as webfont
 
 //*// GLOBAL
+
 @function url-encoded-color($color) {
+
   @return "%23"+str-slice("#{$color}", 2, -1);
 }
 

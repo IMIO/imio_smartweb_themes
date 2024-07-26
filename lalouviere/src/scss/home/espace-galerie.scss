@@ -12,6 +12,7 @@
         width:auto;
         padding-left:40px;
         background: url("../../assets/svg/cible_black.svg") left center no-repeat;
+
         @media screen and (max-width: 992px) {
             transform: rotate(0deg);
             position: initial;
@@ -23,6 +24,7 @@
             text-align: center;
             font-size: 50px;
             }
+
         @media screen and (max-width: 600px) {
             height: auto;
             }

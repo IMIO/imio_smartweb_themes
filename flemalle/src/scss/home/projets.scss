@@ -32,6 +32,7 @@ body .projets {
         }
     } 
 } 
+
 @include media-breakpoint-up(lg){
     body .projets .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;

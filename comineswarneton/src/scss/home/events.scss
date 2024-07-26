@@ -2,6 +2,7 @@
     .section-title{
         display: flex;
         align-items: center;
+
         @include media-breakpoint-up(lg){
             justify-content: end;
         }
@@ -62,6 +63,7 @@
 .sectionevents .see_all a {
 	color: #fff !important;
 }
+
 @keyframes anim-mouse-down {
     0% {
           transform: scale(1);

@@ -1,5 +1,6 @@
 .sectionnews{
     margin:100px 0;
+
     @media screen and (max-width: 992px) {
         margin: 70px 0;
         }
@@ -133,6 +134,7 @@
                 writing-mode:initial;
                 height: 65px;
                 }
+
             @media screen and (max-width: 600px) {
                 height: 50px;
                 }

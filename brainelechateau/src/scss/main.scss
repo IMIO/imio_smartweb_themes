@@ -7,15 +7,22 @@ $enable-roboto-webfont: false;
 // Import barceloneta files from node_modules --load-path=node_modules
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import "./variables";
+
 @import "../../../base/src/scss/main.scss";
 
 //// STYLES
 // ... add your styles here
+
 @import "./home/a-la-une";
+
 @import "./home/actualites";
+
 @import "./home/events";
+
 @import "./home/en-image";
+
 @import "./home/les-sites";
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
@@ -91,11 +98,13 @@ $enable-roboto-webfont: false;
         right: -15%;
         z-index: 1;
         bottom: -111px;
+
         @media screen and (max-width:992px) {
             display: none;
         }
     }
 }
+
 @media (min-width: 992px) {
     .sectionselections {
         padding-top: 0 !important;
@@ -180,6 +189,7 @@ li:marker {
         justify-content: space-between;
         padding-top: 6rem;
         text-align: left;
+
         @include media-breakpoint-down(lg) {
             padding-top: 2rem;
             flex-direction: column;

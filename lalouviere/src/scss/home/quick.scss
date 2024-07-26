@@ -1,6 +1,7 @@
 #main-container .quick-access {
     margin: 0;
 	padding: 120px 30px 50px;
+
     @include media-breakpoint-down(lg){
         margin: 0;
         padding: 20px 20px 40px;
@@ -86,6 +87,7 @@
 
 
     .row{
+
         @include media-breakpoint-down(lg){
             grid-gap: 20px;
             display: grid;
@@ -136,6 +138,7 @@
         //content: url("../../assets/svg/titre-partenaires.svg");
         width:auto;
         height: 80px;
+
         @media screen and (max-width: 992px) {
             transform: rotate(0deg);
             position: initial;
@@ -143,6 +146,7 @@
             writing-mode:initial;
             height: 65px;
             }
+
         @media screen and (max-width: 600px) {
             height: 50px;
             }

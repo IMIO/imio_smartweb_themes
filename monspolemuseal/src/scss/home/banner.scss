@@ -25,6 +25,7 @@
             border-radius: 0 0 0 125px;
             margin-bottom: 60px;
           }
+
           @media screen and (max-width: 700px) {
             width:100vw;
             border-radius: 0;
@@ -59,6 +60,7 @@
         left:auto;
         top: auto !important;
         bottom: 60px;
+
         @media screen and (max-width: 766px) {
             right:30px;
             bottom: 30px;
@@ -66,6 +68,7 @@
           }
       }
 }
+
 @media screen and (max-width: 575px) {
     .smartweb_herobanner  {
       border-radius: 30px 0;
@@ -99,12 +102,14 @@
     bottom: -50px;
     width: 450px;      
     }
+
     @media screen and (max-width: 1000px) {
         height: 350px;
         left: 0;
         bottom: -50px;
         width: 350px;      
     }
+
     @media screen and (max-width: 700px) {
         display: none;     
     }
