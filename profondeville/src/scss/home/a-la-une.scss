@@ -17,11 +17,8 @@
     background: transparent;
     transition: all .3s ease;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     border-radius: 5px;
-    top: 0;
 }
 
 .a-la-une a .swiper-image {
@@ -36,10 +33,7 @@
 .a-la-une a .swiper-image::after {
     transition: all .3s ease;
     content: "";
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0 0 0 0;
     position: absolute;
     z-index: 1;
     background: url("../../assets/svg/bouton-plus.svg") no-repeat center;

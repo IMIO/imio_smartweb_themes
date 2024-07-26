@@ -356,10 +356,7 @@ h2 {
 }
 
 .smartweb_herobanner .swiper-button-prev {
-    top: auto;
-    bottom: 40px;
-    right: 160px;
-    left:auto;
+    inset: auto 160px 40px auto;
     border:2px solid #000;
 }
 
@@ -377,8 +374,7 @@ footer{
         }
 
         ul.row{
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
 
             li{
                 width: auto;
@@ -641,10 +637,7 @@ footer #container-section-noussuivre{
         &::after {
             content: "";
             position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            inset: 0 0 0 0;
             background: linear-gradient(0deg, rgba(0,0,0,0%) 0%, rgba(0, 0, 0, 50%) 100%);
         }
     } 

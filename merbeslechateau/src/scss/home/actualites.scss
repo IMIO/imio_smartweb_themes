@@ -6,10 +6,7 @@ body.section-home-page #container-section-actualites::after {
     content: "";
     background: #EEE;
     clip-path: polygon(50% 0, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%);
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     position:absolute;
     z-index: -1;
 }
@@ -25,12 +22,9 @@ body.section-home-page #container-section-actualites::after {
 
 div.swiper-image::before {
     background: transparent;
-    bottom: 0;
+    inset: 0 0 0 0;
     content: "";
-    left: 0;
     position: absolute;
-    right: 0;
-    top: 0;
     transition: all .2s ease;
     z-index: 0;
 }

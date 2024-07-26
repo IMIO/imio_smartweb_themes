@@ -21,10 +21,7 @@ div.swiper-image::before {
     background: transparent;
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    inset: 0 0 0 0;
     transition: all .2s ease;
     z-index: 99;
 }
@@ -210,11 +207,8 @@ div.swiper-image::before {
 }
 
 .smartweb_herobanner .bannerSwiper .sectionslide .section-slide .swiper-banner-image {
-    bottom: 0;
-    left: 0;
+    inset: 0 0 0 0;
     position: absolute;
-    right: 0;
-    top: 0;
     z-index: -1;
 }
 

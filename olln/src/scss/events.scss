@@ -7,10 +7,7 @@
         background-position: 50% 0;
         background-size: cover;
         content: "";
-        left: 50%;
-        right: 0;
-        top: 0;
-        bottom: 40%;
+        inset: 0 0 40% 50%;
         display: block;
         position: absolute;
         transform: translateX(-50%);

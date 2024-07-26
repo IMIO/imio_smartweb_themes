@@ -143,10 +143,7 @@
         &::after{
         content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        right: 0;
+        inset: 0 0 0 50%;
         width: 100vw;
         transform: translateX(-50%);
         background: url("../../assets/svg/event-bg.jpg") no-repeat center/cover;
@@ -226,8 +223,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: column;
+            flex-flow: column wrap;
             border-radius: 10px 10px 10px 0;
 
             .start_date{

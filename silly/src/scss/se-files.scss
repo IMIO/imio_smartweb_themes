@@ -89,7 +89,6 @@
 
 .portaltype-imio-smartweb-procedure .sectionfiles .table_image, .portaltype-imio-smartweb-page .sectionfiles .table_image {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: column wrap;
 	align-items: flex-start;
-	flex-direction: column;
 }

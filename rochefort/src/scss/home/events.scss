@@ -100,11 +100,8 @@
     background: transparent;
     transition: all .3s ease;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     border-radius: 10px;
-    top: 0;
 }
 
 .sectionevents .end_date {

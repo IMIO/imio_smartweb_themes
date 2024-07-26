@@ -1,14 +1,11 @@
 .sortable-section.sectionlinks.quick-access::after {
     content: "";
     position: absolute;
-    bottom: -330px;
+    inset: 0 0 -330px 50%;
     transform: translateX(-50%);
     z-index: -1;
-    left: 50%;
     max-width: 100vw;
-    right: 0;
     width: 100vw;
-    top: 0;
     background: $colorpink;
 }
 

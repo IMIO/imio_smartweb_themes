@@ -135,10 +135,7 @@
 .mask-menu {
   position: fixed;
   z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0 0 0 0;
   display: block;
   background-color: $nav-mask-background;
   opacity: 0%;

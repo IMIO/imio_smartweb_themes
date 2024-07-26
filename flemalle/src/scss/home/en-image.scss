@@ -83,10 +83,7 @@ body #container-section-flemalle-en-images {
     content: "";
     background: #f2f2f2;
     position: absolute;
-    left: 50%;
-    right: 0;
-    top: -50%;
-    bottom: 50%;
+    inset: -50% 0 50% 50%;
     transform: translateX(-50vw);
     z-index: -1;
     width: 100vw;

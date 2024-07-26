@@ -223,10 +223,7 @@ div#top-area.faceted-area .widget-fieldset legend {
 
 .kssattr-fieldset-icons .form-check-input {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     width: inherit;
     border-radius: 0 !important;
     margin: 0;
@@ -370,10 +367,7 @@ div#viewlet-below-content-body .procedure {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 20%);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     z-index: -1;
 }
 
@@ -582,10 +576,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 .portaltype-imio-smartweb-procedure #content .sectionlinks::after {
     content: "";
     background: #f3f3f3;
-    left: 0.75rem;
-    right: 0.75rem;
-    top: 0;
-    bottom: 0;
+    inset: 0 0.75rem 0 0.75rem;
     position: absolute;
     z-index: -1;
 }
@@ -616,10 +607,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     content: "";
     background: #f3f3f3;
     position: absolute;
-    left: -0.5rem;
-    right: -0.5rem;
-    bottom: 0;
-    top: 0.25rem;
+    inset: 0.25rem -0.5rem 0 -0.5rem;
     z-index: -1;
     border-radius: 10px 10px 0 0;
 }
@@ -959,10 +947,7 @@ a.prev-nav::before {
         width: 100vw;
         z-index: -2;
         position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: -50vw;
+        inset: 0 0 0 -50vw;
         margin-left: 50%;
     }
 

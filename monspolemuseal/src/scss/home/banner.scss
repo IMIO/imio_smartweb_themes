@@ -38,10 +38,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 50%;
-        right:60px;
-        left:auto;
-        top: auto !important;
-        bottom: 120px;
+        inset:auto 60px 120px auto;
 
         @media screen and (max-width: 766px) {
             right:30px;
@@ -56,10 +53,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 50%;
-        right:60px;
-        left:auto;
-        top: auto !important;
-        bottom: 60px;
+        inset:auto 60px 60px auto;
 
         @media screen and (max-width: 766px) {
             right:30px;

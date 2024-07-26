@@ -68,10 +68,7 @@ a#portal-logo {
 .sectionlinks.quick-access.partenaires .body-section li a::after {
     background: $primary-svg;
     content: "";
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    inset: 0 0 0 0;
     position: absolute;
     border-radius: 100%;
     z-index: -1;
@@ -180,8 +177,7 @@ body .container #portal-column-content .section-contact .contact-type-position {
     align-content: flex-start;
     background: #fdf2d7;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     padding: 1.5rem;
 }
 

@@ -68,11 +68,8 @@
   background: transparent;
   transition: all .2s ease;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0 0 0 0;
   border-radius: 10px;
-  top: 0;
 }
 
 .sectionnews li .table_image:hover div.image::after {

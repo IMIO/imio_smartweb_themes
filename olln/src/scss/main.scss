@@ -266,8 +266,7 @@ body:not(.site-office-du-tourisme-inforville) {
     .topics {
       display: flex;
       gap: 5px;
-      flex-wrap: wrap;
-      flex-direction: column;
+      flex-flow: column wrap;
 
       span {
         background: #f1f1f1;

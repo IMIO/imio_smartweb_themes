@@ -151,13 +151,10 @@
 
 .sortable-section.sectionlinks.quick-access::after {
     background: #f8f8f8;
-    bottom: 0;
+    inset: -75px 0 0 50%;
     content: "";
     position: absolute;
-    right: 0;
-    top: -75px;
     width: 100vw;
     z-index: -1;
-    left: 50%;
     transform: translateX(-50%);
 }

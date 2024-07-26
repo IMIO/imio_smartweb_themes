@@ -80,12 +80,9 @@ a#message::before {
 .portaltype-imio-smartweb-page #content .sectionlinks .section-container .body-section::after, 
 .portaltype-imio-smartweb-procedure #content .sectionlinks .section-container .body-section::after {
     background: #f3f3f3;
-    bottom: 0;
+    inset: 1rem 0.5rem 0 0.5rem;
     content: "";
-    left: 0.5rem;
     position: absolute;
-    right: 0.5rem;
-    top: 1rem;
     z-index: -1;
 }
 

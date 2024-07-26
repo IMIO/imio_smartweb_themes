@@ -10,16 +10,13 @@
 .a-la-une, .sectionnews, .sectionevents {
   .section-title::before {
     content: "";
-    right: 50%;
-    bottom: 0;
+    inset: 50% 50% 0 50%;
     background:  #E1F1F5;
     width: 180px;
     height: 180px;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
     transform: translate(-90%,-50%);
   }
 }

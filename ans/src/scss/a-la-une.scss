@@ -48,8 +48,7 @@
 }
 
 .a-la-une .swiper-slide .swiper-image {
-    grid-row-end: 5;
-    grid-row-start: 1;
+    grid-row: 1 / 5;
 }
 
 .sectionnews.a-la-une .swiper-slide .swiper_category {

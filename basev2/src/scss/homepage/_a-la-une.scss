@@ -40,8 +40,7 @@
       @include media-breakpoint-up(lg) {
         margin: $a-la-une-item-image-margin;
         padding-bottom: 60%;
-        grid-row-end: 3;
-        grid-row-start: 1;
+        grid-row: 1 / 3;
       }
     }
 

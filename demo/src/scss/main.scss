@@ -116,10 +116,7 @@ h1{
     content: "";
     background: #0000;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     opacity: 30%;
 }
 
@@ -137,8 +134,7 @@ footer{
         }
 
         ul.row{
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
 
             li{
                 width: auto;
@@ -334,10 +330,7 @@ footer #container-section-noussuivre{
         &::after {
             content: "";
             position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            inset: 0 0 0 0;
             background: linear-gradient(0deg, rgba(0,0,0,0%) 0%, rgba(0, 0, 0, 50%) 100%);
         }
     } 

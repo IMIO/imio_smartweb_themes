@@ -63,11 +63,8 @@
   background: transparent;
   transition: all .2s ease;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0 0 0 0;
   border-radius: 10px;
-  top: 0;
 }
 
 .sectionevents li .table_image:hover div.image::after {
@@ -90,12 +87,9 @@
 .sectionevents ul li .table_display>a::before {
   background: hsla(0,0%,100%,87.1%);
   border-radius: 20px;
-  bottom: 0;
+  inset: 0 12px 0 12px;
   content: "";
-  left: 12px;
   position: absolute;
-  right: 12px;
-  top: 0;
   z-index: -1;
 }
 

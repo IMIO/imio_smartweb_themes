@@ -591,8 +591,7 @@ body {
 }
 
 #banner {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column: 1 / -1;
     height: 200px;
     background-size: cover;
 }

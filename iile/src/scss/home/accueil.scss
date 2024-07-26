@@ -22,10 +22,7 @@
   background: linear-gradient(-90deg, #c825256b, #222F66);
   position: absolute;
   content: "";
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0 0 0 0;
   opacity: 100%;
 }
 
@@ -176,10 +173,7 @@
 
   .navbar-nav>li.nav-item::before {
     content: "";
-    top: 12px;
-    bottom: 12px;
-    left: -10px;
-    right: -10px;
+    inset: 12px -10px 12px -10px;
     background: transparent;
     transition: all .15s ease;
   }
@@ -187,10 +181,7 @@
   .navbar-nav>li.nav-item:hover {
     &::before {
       content: "";
-      top: -27px;
-      bottom: -27px;
-      left: -10px;
-      right: -10px;
+      inset: -27px -10px -27px -10px;
       background: $primary;
       position: absolute;
       transition: all .15s ease;

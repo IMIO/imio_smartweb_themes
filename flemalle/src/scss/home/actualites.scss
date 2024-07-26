@@ -35,12 +35,9 @@ div.swiper-image {
 div.swiper-image::before {
     background: transparent;
     border-radius: 10px 10px 0 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     content: "";
-    left: 0;
     position: absolute;
-    right: 0;
-    top: 0;
     transition: all .2s ease;
     z-index: 99;
 }

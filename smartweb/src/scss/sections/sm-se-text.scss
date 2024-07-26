@@ -1,8 +1,7 @@
 .mce-content-body{
     mark{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         background-color: #f3f3f3;
         border: 2px solid #ffb81c;
         border-radius: 10px;

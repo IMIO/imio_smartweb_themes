@@ -42,12 +42,9 @@ body.portaltype-imio-smartweb-portalpage.section-home-page .outer-wrapper {
 
 div.swiper-image::before {
     background: transparent;
-    bottom: 0;
+    inset: 0 0 0 0;
     content: "";
-    left: 0;
     position: absolute;
-    right: 0;
-    top: 0;
     transition: all .2s ease;
     z-index: 0;
 }

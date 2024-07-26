@@ -227,8 +227,7 @@ strong {
 
 .section-container.section-text mark {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 

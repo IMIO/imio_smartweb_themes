@@ -32,12 +32,9 @@
     content: "";
     width: 12%;
     position: absolute;
-    top: 69px;
+    inset: 69px 5px -5px 9px;
     background: $secondary;
-    bottom: -5px;
-    left: 9px;
     text-align: center;
-    right: 5px;
     margin: 0 auto;
 }
 

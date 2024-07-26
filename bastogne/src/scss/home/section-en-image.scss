@@ -70,10 +70,7 @@
 
 .enimages-left {
             position:  relative !important;
-            padding-top: 100px;
-            padding-bottom: 100px;
-            padding-right:80px;
-            padding-left:80px;
+            padding: 100px 80px 100px 80px;
             margin-top: 0;
             margin-bottom: 280px;
             color:#fff;
@@ -122,10 +119,7 @@
 @media screen and (max-width:1200px) {
     .enimages-left {
         width: 100%!important;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-right:60px;
-        padding-left:60px;
+        padding: 80px 60px 80px 60px;
         margin-top: 0;
         margin-bottom: 20px;
         color:#fff;

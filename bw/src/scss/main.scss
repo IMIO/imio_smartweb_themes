@@ -77,10 +77,7 @@ h1 {
     content: "";
     background: #000;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0 0 0 0;
     opacity: 25%;
 }
 
@@ -129,8 +126,7 @@ footer{
         }
 
         ul.row{
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
 
             li{
                 width: auto;

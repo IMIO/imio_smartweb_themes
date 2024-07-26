@@ -42,8 +42,7 @@
 
         .swiper_date{
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+            flex-flow: column wrap;
             align-items: center;
             justify-content: center;
             transform: translate(-50%,50%);

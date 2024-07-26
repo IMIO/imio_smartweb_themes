@@ -57,10 +57,7 @@ $enable-roboto-webfont: false;
         content: "";
         background: #3bbef2;
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        inset: 0 0 0 0;
         opacity: 70%;
         mix-blend-mode: color;
     }
@@ -141,8 +138,7 @@ footer{
         }
 
         ul.row{
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
 
             li{
                 width: auto;
@@ -254,8 +250,7 @@ h1{
 	padding: 0;
 	font-size: 18px;
     display: flex;
-    flex-direction: row!important;
-    flex-wrap: nowrap!important;
+    flex-flow: row nowrap!important;
 
     &::before {
         content: "";

@@ -22,10 +22,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    top: -8px;
-                    left: -8px;
-                    bottom: -8px;
-                    right: -8px;
+                    inset: -8px -8px -8px -8px;
                     border-radius: 50%;
                     border: solid 8px rgba(255, 255, 255, 50%);
                 }
