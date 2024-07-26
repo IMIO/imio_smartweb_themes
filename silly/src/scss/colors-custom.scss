@@ -1,7 +1,7 @@
 $vivre: #336D94;
 $cpas: #52016a;
-$Loisirs: #161B88;
-$Jeunesse: #5AC1DA;
+$loisirs: #161B88;
+$jeunesse: #5AC1DA;
 $litterature: #B0024C;
 $Slowfood: #EE0F0D;
 
@@ -11,11 +11,11 @@ $Slowfood: #EE0F0D;
 .section-commune {
     .subsite-container {
         position: relative;
-        background: $Loisirs;
+        background: $loisirs;
 
         &::after {
             content: "";
-            background: $Loisirs;
+            background: $loisirs;
             position: absolute;
             width: 100vw;
             top: 0;
@@ -37,7 +37,7 @@ $Slowfood: #EE0F0D;
     }
 
     #subsite-logo {
-        background: $Loisirs;
+        background: $loisirs;
 
         a {
             color: #fff;
@@ -46,7 +46,7 @@ $Slowfood: #EE0F0D;
 
     .breadcrumb-item {
         a {
-            color: $Loisirs;
+            color: $loisirs;
         }
     }
 }
@@ -126,15 +126,15 @@ $Slowfood: #EE0F0D;
     }
 }
 
-// Jeunesse & sports
+// jeunesse & sports
 .subsection-jeunesse,.subsection-sports {
     .subsite-container {
         position: relative;
-        background: $Jeunesse;
+        background: $jeunesse;
 
         &::after {
             content: "";
-            background: $Jeunesse;
+            background: $jeunesse;
             position: absolute;
             width: 100vw;
             top: 0;

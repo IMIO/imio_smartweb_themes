@@ -397,15 +397,15 @@ $nav-subtree-title-color : #008FD2;
 
     &::before, &::after {
       transform-origin: 0 50%;
-      width: 28.28427125px;
+      width: 28.284px;
     }
 
     &::before {
-      transform: rotateZ(0.78539816rad)
+      transform: rotateZ(0.785rad)
     }
 
     &::after {
-      transform: rotateZ(-0.78539816rad);
+      transform: rotateZ(-0.785rad);
     }
   }
   }
