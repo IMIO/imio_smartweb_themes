@@ -289,7 +289,7 @@ body:not(.site-office-du-tourisme-inforville) {
 
       &::after{
         content: "\F4FA";
-        font-family: bootstrap-icons;
+        font-family: "bootstrap-icons";
         position: absolute;
         bottom: 2px;
         right: 25px;
@@ -326,7 +326,7 @@ body:not(.site-office-du-tourisme-inforville) {
     &::after {
       content: "\F30A";
       display: block;
-      font-family: bootstrap-icons;
+      font-family: "bootstrap-icons";
       font-size: 20px;
     }
   }
