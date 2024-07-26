@@ -87,7 +87,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-mask-background: rgb(15 11 11 / 0.76) !default;
 $nav-link-color: #000 !default;
 $nav-link-open-color: #fff ;
 $nav-link-active-color: #000;
@@ -134,7 +134,7 @@ $banner-content-width: max-content !default;
 $banner-content-max-width: auto !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
+$banner-content-background: rgb(256 256 256 / 0.5) !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;

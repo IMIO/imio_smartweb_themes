@@ -93,7 +93,7 @@ $enable-full-width-breacrumb: false !default;
 
 // sitenav
 $navbar-padding-x: 2.5rem !default;
-$nav-mask-background: rgb(15 11 11 / 76%) !default;
+$nav-mask-background: rgb(15 11 11 / 0.76) !default;
 $nav-title-font-family:$font-family-base!default;
 $nav-link-color: #000!default;
 $nav-link-open-color: #000 !default;
@@ -232,7 +232,7 @@ $actu-item-bg-radius:50px 50px 0 0;
 $actu-category-margin: 0;
 $actu-category-padding: .5rem 1rem;
 $actu-category-color: #fff !default;
-$actu-category-bg-color: rgb(36 132 124 / 80%);
+$actu-category-bg-color: rgb(36 132 124 / 0.8);
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: initial !default;
@@ -315,7 +315,7 @@ $album-item-bg-radius:$global-radius+2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
 $album-category-padding: 0 !default;
 $album-category-color: $primary !default;
-$album-category-bg-color: rgb(36 132 124 / 80%);
+$album-category-bg-color: rgb(36 132 124 / 0.8);
 $album-category-text-transform: uppurcase !default;
 $album-category-font-size: 14px !default;
 $album-category-font-weight: initial !default;
