@@ -49,6 +49,7 @@ body.template-block_view_with_images .block-menu-element{
         h2.card-title {
             &:hover,
             &:focus {
+
                 //border-bottom: $link-hover-decoration;
                 text-decoration-color: $yellow;
             }
@@ -58,4 +59,5 @@ body.template-block_view_with_images .block-menu-element{
         }   
     }
 }
+
 //HTML

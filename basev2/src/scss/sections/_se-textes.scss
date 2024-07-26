@@ -161,6 +161,7 @@ mark {
 
 div:not(.sectiontext) {
   &+.sectiontext {
+
     // @include section-padding-top;
     h2 {
       margin-top: 10px !important;

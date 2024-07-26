@@ -75,27 +75,44 @@ div.swiper-image::before {
     background: $primary;
     opacity: 50%;
 }
+
 //
 .enquetes div.swiper-slide {
     position: relative;
     padding: 1rem;
     background: #fff;
 }
+
 // .enquetes div.swiper-slide::before {
+
 //     background: transparent;
+
 //     content: "";
+
 //     position: absolute;
+
 //     left: 0;
+
 //     right: 0;
+
 //     bottom: 0;
+
 //     top: 0;
+
 //     transition: all .2s ease;
+
 //     z-index: 99;
+
 // }
+
 // .enquetes .swiper-slide:hover a div.swiper-slide:before {
+
 //     background: $primary;
+
 //     opacity: 0.5;
+
 // }
+
 //CENTRE CULTUREL thematique agenda
 
 .section-agenda.site-centre-culturel .r-filter.topics-Filter {

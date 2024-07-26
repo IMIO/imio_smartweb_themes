@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -194,6 +200,7 @@ div.sectionfiles a[aria-expanded=false], div.sectionfiles a[aria-expanded=true]{
   .subsection-vos-services-administratifs-cohesion-sociale-notre-equipe .sortable-section.sectiontext.col-sm-8 {
   padding: 2.2rem 0 0 2rem;
   }
+
 /* SUP-28985 */
 .sectiontext ul li a {
     word-break: break-all;

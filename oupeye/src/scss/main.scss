@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -42,10 +48,15 @@ $enable-roboto-webfont: false;
 		padding-bottom: 1.5rem;
 	}
 }
+
 //MENU HAMBURGER DARK
+
 // .navbar-dark .navbar-toggler-icon {
+
 // 	background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+
 // }
+
 //BANNER
 .smartweb_herobanner::before {
     content: url("data:image/svg+xml,%3Csvg preserveAspectRatio='xMinYMin meet' viewBox='0 0 1919 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1919 80H0C0 80 538.14 0 903.735 0C1269.33 0 1919 80 1919 80Z' fill='white'/%3E%3C/svg%3E");
@@ -95,6 +106,7 @@ $enable-roboto-webfont: false;
 	transform: translateX(-130%);
 	z-index: -2;
 }
+
 //INTERNAL PAGE TITLE
 body:not(.portaltype-imio-smartweb-portalpage) h2 {
 	font-size: 1.5rem;

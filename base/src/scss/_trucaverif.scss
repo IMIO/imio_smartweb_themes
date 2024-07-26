@@ -8,12 +8,14 @@
         height: 2em;
     }
 }
+
 //---//
 .sectionlinks {
     .swiper_title {
         margin-top: 1rem;
     }
 }
+
 // Pour custom l'overlay vidéo
 .section-home-page-bla .plone-modal-header {
     padding: 0 10px;
@@ -34,6 +36,7 @@
     position: absolute;
     z-index: 2;
 }
+
 //---//
 
 //affichage des vidéos sur vue facettes
@@ -45,13 +48,16 @@
     inset: 0 !important;
     position: absolute !important;
 }
+
 //---//
 
 // Custom de la vue pour afficher les images en portrait
+
 /* https://bla.preprod.imio.be/zone-de-police/presentation/agents-de-quartier/votre-inspecteur-de-proximite#b_start=0 */
 .subsection-agents-de-quartier .card-img-top {
     padding-top: 120%;
 }
+
 //---//
 
 //  je sais pas quoi (privacy)
@@ -72,7 +78,9 @@ div#formfield-form-widgets-basic_cookies {
 div#formfield-form-widgets-basic_analytics {
     order: 1;
 }
+
 //---//
+
 // Pour react
 
 .no-search-item-img {
@@ -85,6 +93,7 @@ div#formfield-form-widgets-basic_analytics {
 .r-search-img {
     background-color: #c9c9c9 !important;
 }
+
 //---//
 
 
@@ -96,12 +105,14 @@ div#formfield-form-widgets-basic_analytics {
 .template-folder_contents #content-core .table .itemRow.state-private .state-private {
     color: #dc3545 !important;
 }
+
 //---//
 
 // navigation de la vue contenu
 #content-core .pat-structure .navbar.ui-offset-parent {
     z-index: 1;
 }
+
 //---//
 
 //---//
@@ -111,6 +122,7 @@ div#formfield-form-widgets-basic_analytics {
 #content-core {
     margin-bottom: 0;
 }
+
 //---//
 
 /* slider sinon un click sur la flèches inactive amène sur l'élément derrière */
@@ -155,6 +167,7 @@ div#formfield-form-widgets-basic_analytics {
 .portaltype-link.userrole-authenticated img.figure-img {
     max-width: 10rem;
 }
+
 /* select 2 */
 .faceted-multiselect-widget .select2-container .select2-choice {
     border-radius: 0;
@@ -459,10 +472,15 @@ div#faceted-results {
 .faceted-block-view-with-images h2.card-title {
     font-size: 1rem;
 }
+
 /* vue actus */
+
 // .portaltype-imio-smartweb-eventsview li,
+
 // .portaltype-imio-smartweb-newsview li {
+
 //     list-style-position: inside;
+
 // }
 
 
@@ -521,8 +539,11 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     padding-left: 0;
     padding-right: 0;
 }
+
 // div#smartweb-subsite-footer {
+
 //     background: #007db8;
+
 // }
 #smartweb-subsite-footer .section-contact .body-section .h2,
 #smartweb-subsite-footer .section-contact .body-section .h3,
@@ -534,6 +555,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 #smartweb-subsite-footer h3 {
     color: #fff;
 }
+
 /* section fichier */
 .portaltype-imio-smartweb-procedure .sectionfiles .table_image,
 .portaltype-imio-smartweb-page .sectionfiles .table_image {
@@ -618,6 +640,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
         left: 0.75rem;
         right: 0.75rem;
     }
+
     /* supprimer #container-section-bla-en-images > div */
     #container-section-bla-en-images>div {
         display: flex;
@@ -660,7 +683,9 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 .subsection-demarches-infos-pratiques .list-menu-element h2.list-card-title {
     font-size: 1.25rem;
 }
+
 /* attention de ne cibler que les type page pour le bg des sections links */
+
 /*.portaltype-imio-smartweb-portalpage .sectionlinks {
     background: transparent;
 }*/
@@ -700,6 +725,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     z-index: -1;
     background: #f8f8f8;
 }
+
 /* newsletter */
 #body-section-newsletter label.form-label,
 .newsletterhomepage .form-text {
@@ -726,6 +752,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
+
     /* added line */
     border: 0;
 }
@@ -808,6 +835,7 @@ div#container-section-temps-dattente-aux-guichets {
     margin: 0;
     display: flex;
     align-items: center;
+
     /* z-index: -1; */
     position: relative;
     flex-direction: column;
@@ -816,6 +844,7 @@ div#container-section-temps-dattente-aux-guichets {
 #content-core .sortable-section .collapse:not(.show) {
     display: none;
 }
+
 /* la hauter du banner est encore à définir */
 #body-section-formulaires-de-contact .table_image .image,
 #body-section-formulaires-de-contact .table_image .table_title {

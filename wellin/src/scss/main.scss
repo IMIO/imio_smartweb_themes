@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -415,6 +421,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
 .sectionevent .see_all a::after {
     display: none;
 }
+
 //// respo
 
 @include media-breakpoint-up(lg) {
@@ -528,6 +535,7 @@ body #portal-globalnav-wrapper #portal-globalnav-collapse #portal-globalnav > li
         }
     }
 }
+
 // footer
 
 #smartweb-subsite-footer{
@@ -651,6 +659,7 @@ body.portaltype-imio-smartweb-portalpage:not(.is-in-minisite){
         text-decoration: none;
     }
 }
+
 // message viewlet
 
 #messagesviewlet .portalMessage.warning, #localmessagesviewlet .portalMessage.warning {

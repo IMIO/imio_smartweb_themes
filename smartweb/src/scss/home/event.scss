@@ -1,71 +1,137 @@
 // .sectionevents.event{
+
 //     position: relative;
+
 //     padding: 2rem 0;
+
 //     &:after{
+
 //         content: "";
+
 //         position: absolute;
+
 //         top: 0;
+
 //         bottom: 0;
+
 //         left: 50%;
+
 //         right: 0;
+
 //         width: 100vw;
+
 //         transform: translateX(-50%);
+
 //         background: url(../../assets/svg/event-bg.jpg) no-repeat center/cover;
+
 //         z-index: -1;
+
 //     }
+
 //     .section-title {
+
 //         color: #fff;
+
 //         margin-bottom: 3rem;
+
 //     }
+
 //     .swiper-slide{
+
 //         height: auto;
+
 //         & > a{
+
 //             display: block;
+
 //             height: 100%;
+
 //             background: #fff;
+
 //         }
+
 //         a{
+
 //             text-decoration: none;
+
 //             border-radius: 15px;
+
 //             border-bottom-left-radius: 0px;
+
 //         }
+
 //         .swiper-image{
+
 //             margin-bottom: 1rem;
+
 //             border-radius: 15px;
+
 //             border-bottom-left-radius: 0px;
+
 //         }
+
 //         .swiper_category{
+
 //             padding: 0 0 0 1rem;
+
 //             span{
+
 //                 text-transform: uppercase;
+
 //                 font-size: 14px;
+
 //                 font-weight: 500;
+
 //                 color: #565656;  
+
 //             }
+
 //         }
+
 //         .swiper_date{
+
 //             padding: 0 0 0 1rem;
+
 //         }
+
 //         .swiper_title{
+
 //             background: #fff;
+
 //             padding: .5rem 0 1rem 1rem;
+
 //             border-bottom-right-radius: 15px;
+
 //             h3{
+
 //                 font-size: 18px;
+
 //             }
+
 //         }
+
 //     }   
+
 //     .see_all {
+
 //         background: #fff!important;
+
 //         float: right;
+
 //         a{
+
 //          color: #000 !important;
+
 //         }
+
 //     }
+
 // }
 
 // .sectionevents.event .swiper-slide {
+
 //     margin-right: 10px!important;
+
 // }
 
 

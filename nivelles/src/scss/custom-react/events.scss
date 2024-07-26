@@ -77,9 +77,13 @@
             display: grid;
             gap: 0 20px;
             grid-template-columns: 25% 25% 50%;
+
             // grid-template-areas: 
+
             //     "figure figure header"
+
             //     ". . desc"
+
             //     ". . text";
             header {
                 grid-column-end: 3;

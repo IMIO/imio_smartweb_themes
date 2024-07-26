@@ -51,10 +51,13 @@ body.portaltype-imio-smartweb-page #main-container .sectionlinks {
                             max-width: 120px;
                             background-size: contain;
                             background-repeat: no-repeat;
+
                             // border: solid 1px rgb(165, 169, 172);
+
                             // border-radius: 5px;
                             width: 30px;
                             height: auto;
+
                             //padding: 1rem;
                         }
                     }
@@ -89,6 +92,7 @@ body.portaltype-imio-smartweb-page #main-container .sectionlinks {
 body .outer-wrapper #main-container .sectionlinks .section-container>div .body-section .row .table_image .table_title span::before {
     display: none;
 }
+
 //
 
 .sectionlinks .body-section>.table_display {

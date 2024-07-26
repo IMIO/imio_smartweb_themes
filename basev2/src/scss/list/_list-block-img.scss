@@ -10,6 +10,7 @@ body.template-block_view_with_images .block-menu-element {
             position: relative;
 
             &::after {
+
                 // content: url(../svg/arrow-right-yellow.svg);
                 background: #fff;
                 position: absolute;
@@ -29,6 +30,7 @@ body.template-block_view_with_images .block-menu-element {
                 box-shadow: $block-full-shadow;
 
                 &::after {
+
                     // content: url(../svg/arrow-right-white.svg);
                     background: $yellow;
                     left: 0;

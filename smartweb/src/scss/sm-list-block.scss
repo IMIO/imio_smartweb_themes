@@ -72,6 +72,7 @@ body.template-block_view #content-core {
         h2.card-title {
             &:hover,
             &:focus {
+
                 //border-bottom: $link-hover-decoration;
                 text-decoration-color: $yellow;
             }
@@ -81,4 +82,5 @@ body.template-block_view #content-core {
         }   
     }
 }
+
 //HTML

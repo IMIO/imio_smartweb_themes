@@ -23,8 +23,11 @@ $border_grey: #d3d3d3;
         padding: 0.5rem 1rem;
         display: block;
     }
+
     // &:hover,&:focus{
+
     //     background: rgb(46, 46, 46);
+
     // }
 }
 
@@ -47,7 +50,9 @@ $border_grey: #d3d3d3;
 .swiper-button-prev{
     transform: rotate(180deg) translateY(50%);
 }
+
 //SECTION EN UN CLIC
+
 /* FOND GRIS */
 #content .sortable-section.sectionlinks.un-clic::after{
     left: 0 !important;
@@ -56,6 +61,7 @@ $border_grey: #d3d3d3;
     width: 100vw !important;
     z-index: -2;
 }
+
 /* TITRE */
 
 .sectiontext.en-un-clic-titre .body-section.figure-left.no-image .text {
@@ -73,6 +79,7 @@ $border_grey: #d3d3d3;
         font-size: 1rem;
     }
 }
+
 /* LIENS */
 .sectionlinks.un-clic a:hover .image.d-block.w-100 {
     transform: scale(1.1);
@@ -711,6 +718,7 @@ $border_grey: #d3d3d3;
         z-index: -1;
     }
 }
+
 /* MON BLA  */
 .mon-bla-liens {
     background: transparent;
@@ -1033,6 +1041,7 @@ div#body-section-albums-photos a h3{
     position: absolute;
     bottom: -0.5rem;
 }
+
 /* publications */
 
 .kiosque .swiper_title .h3, .kiosque .swiper_title h3 {
@@ -1091,6 +1100,7 @@ div#body-section-albums-photos a h3{
 }
 
 @include media-breakpoint-down(lg) {
+
     //MON BLA
     .section-mon-bla, .mon-bla-liens {
         width: 100%;
@@ -1108,16 +1118,27 @@ div#body-section-albums-photos a h3{
 }
 
 // .swiper-slide{
+
 //     & > a{
+
 //         &:hover{
+
 //             .swiper-image{
+
 //                 scale: 1.01;
+
 //             }
+
 //         }
+
 //         .swiper-image{
+
 //             transition: scale .1s linear;
+
 //         }
+
 //     }
+
 // }
 
 

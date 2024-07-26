@@ -1,17 +1,24 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -122,6 +129,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -284,6 +292,7 @@ footer #container-section-noussuivre{
 
     .breadcrumb {
         margin: 0!important;
+
         //background-color: #F6EAD9 !important;
         padding: 15px 30px !important;
 
@@ -327,11 +336,13 @@ footer #container-section-noussuivre{
 
     #portal-breadcrumbs {
         margin: 0 !important;
+
         //position: absolute;
         z-index: 1;
 
         .breadcrumb {
             margin: 0!important;
+
             //background-color: #F6EAD9 !important;
             padding: 15px 30px !important;
 

@@ -21,6 +21,7 @@
                 }
 
                 &::after {
+
                     // content: url(../svg/arrow-right-white.svg);
                     background: $yellow;
                     position: absolute;
@@ -34,6 +35,7 @@
             }
 
             &::after {
+
                 // content: url(../svg/arrow-right-yellow.svg);
                 background: #fff;
                 position: absolute;
@@ -58,6 +60,7 @@
         }
     }
 }
+
 //HTML
 body .list-group {
     .list-group-item {

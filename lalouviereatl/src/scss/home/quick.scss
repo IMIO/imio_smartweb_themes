@@ -14,8 +14,11 @@
 .quick-access{
     width: 63%;
     right:0;
+
     // @media screen and (max-width: 1200px) {
+
     //     width: 66.66%;
+
     // }
 
     @media screen and (max-width: 992px) {
@@ -98,19 +101,29 @@
 
 
     .row{
+
         // @include media-breakpoint-down(lg){
+
         //     grid-gap: 20px;
+
         //     display: grid;
+
         //     grid-auto-rows: 1fr;
+
         //     grid-template-columns: repeat(auto-fit,minmax(180px,180px));
+
         //     li{
+
         //         width: auto!important;
+
         //     }
+
         // }
     }
 
     .section-title{
         font-weight: 200;
+
         //font-family:$font-family-roboto;
         text-transform: uppercase;
         color: $primary!important;

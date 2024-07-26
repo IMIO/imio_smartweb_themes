@@ -1,17 +1,24 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/intro.scss";
@@ -69,6 +76,7 @@ h1{
 
 .bannerSwiper .section-slide{
     .swiper-banner-content {
+
         //background-color: rgba(0, 0, 0, 0.8);
         border-radius: 10px;
 
@@ -99,6 +107,7 @@ h1{
     }
 
     &::after{
+
         //display: none;
     }
 }
@@ -149,6 +158,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -492,6 +502,7 @@ footer #container-section-noussuivre{
             background-size: contain;
             background-repeat: no-repeat; 
             padding-top: 140%;
+
             //background-position-y: 20px;
             transition: .3s;
         }
@@ -517,6 +528,7 @@ footer #container-section-noussuivre{
                 background-size: contain;
                 background-repeat: no-repeat; 
                 padding-top: 140%;
+
                 //background-position-y: 20px;
                 transition: .3s;
             }
@@ -526,6 +538,7 @@ footer #container-section-noussuivre{
                 transition: .3s;
 
                 .card-title {
+
                     //color:#fff;
                     text-align: center;
                 }

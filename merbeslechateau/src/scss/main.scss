@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -95,9 +101,13 @@ $enable-roboto-webfont: false;
 }
 
 // .portaltype-imio-smartweb-directoryview .r-annuaire-result {
+
 //     .r-item-img {
+
 //         background-image: url("../../assets/svg/placeholder-manage.png") !important;
+
 //     }
+
 // }
 
 li:marker {
@@ -262,6 +272,7 @@ li:marker {
 .sectionevent .see_all a::after {
     display: none;
 }
+
 //// respo
 
 @include media-breakpoint-up(lg) {

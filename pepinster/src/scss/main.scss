@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -42,6 +48,7 @@ body{
 .userrole-authenticated.plone-toolbar-left-default .smartweb_herobanner {
     width: calc(100vw - 60px);
 }
+
 /* Demande rcharlier par e-mail du 31 octobre 2022. description au dessus de la carte */
 #portal-column-content .section-contact .contact_map {
 	order: 1;
@@ -64,6 +71,7 @@ body{
 .portaltype-imio-smartweb-portalpage #portal-footer-wrapper .section-title {
     font-size: 2rem;
 }
+
 /*SUP28784*/
 .sectiontext table tr td ul li::before {
   position: initial !important;

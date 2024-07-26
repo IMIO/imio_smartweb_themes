@@ -1,17 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
 @import "../../../base/src/scss/main.scss";
 
 //// STYLES
+
 // ... add your styles here
 
 @import "./nav.scss";
@@ -42,6 +47,7 @@ $enable-roboto-webfont: false;
 .swiper_title h3{
     font-family: $font-family-base!important;
 }
+
 // // see-all
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {

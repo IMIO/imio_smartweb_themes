@@ -8,12 +8,14 @@
 .sectionevents, .sectionnews{
     background: none;
     background-size: cover;
+
     //background-position: center right;
     background-repeat: no-repeat;
 
     .swiper-wrapper{
         .swiper-slide {
             & > a{
+
                 //grid-template-columns: 1fr 1fr;
                 align-items: center;
                 background: #fff;
@@ -25,13 +27,17 @@
 
                 .swiper-image{
                     padding-bottom: 55%;
+
                     //grid-column-end: 3;
+
                     //grid-column-start: 1;
                     transition: all .25s ease;
+
                     //margin-bottom: 1rem;
                 }
 
                 .swiper_category{
+
                     //margin-left: auto;
                     span {background: $primary-dark;}    
                 }
@@ -41,6 +47,7 @@
                     font-size: 16px;
                     font-weight: 300;
                     font-family: $font-family-base; 
+
                     //grid-row-start: 2;
                     margin: 1rem 0 0;
                     padding:0 20px;
@@ -59,6 +66,7 @@
                 }
 
                 .swiper_description{
+
                     //display: none;
                     margin: 0 0 1rem;
                     padding:0 20px;

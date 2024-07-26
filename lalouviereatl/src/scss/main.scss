@@ -1,17 +1,24 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/intro.scss";
@@ -217,6 +224,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -264,6 +272,7 @@ footer #container-section-noussuivre{
 }
 
 .portaltype-imio-smartweb-portalpage{
+
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
 }
@@ -336,7 +345,9 @@ footer #container-section-noussuivre{
 // sub-nav
 
 .subsite-container {
+
     //background: $primary-light;
+
     //border-radius: 50px 0 50px 0;
     #subsite-logo {
     background: none;
@@ -357,6 +368,7 @@ footer #container-section-noussuivre{
 .sectiontext .section-text .section-title a.collapsed {
     color: #000 !important;
 }
+
 /*.sectiontext .section-text .body-section a {
 	color: #ffffff!important;
 }*/
@@ -386,6 +398,7 @@ footer #container-section-noussuivre{
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
+
     //z-index: -1;
     .container {
     padding:0 !important;

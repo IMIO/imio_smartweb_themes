@@ -39,6 +39,7 @@
                             background: $primary-red !important;    
                         transform: translateY(-10px);
                         transition: all .3s ease;
+
                         //svg path { fill:#ffffff;}
                         svg { fill:#fff;}
                     }
@@ -131,6 +132,7 @@
         position: relative;
         color:$primary;
         margin: 0 auto 20px !important;
+
         //content: url("../../assets/svg/titre-partenaires.svg");
         width:auto;
         height: 80px;

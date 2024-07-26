@@ -1,17 +1,31 @@
 // .container #main-container .sectionnews {
+
 //     position: relative;
+
 // &:before {
+
 //     bottom: 0;
+
 //     content: "";
+
 //     left: 50%;
+
 //     position: absolute;
+
 //     top: 0;
+
 //     background: url(../../assets/svg/logo-background.svg);
+
 //     background-size: cover;
+
 //     transform: translateX(-50vw);
+
 //     width: 100vw;
+
 //     z-index: -1;
+
 //     }
+
 // }
 .sectionnews .swiper-slide .swiper_title,
 .sectionevents .swiper-slide .swiper_title {

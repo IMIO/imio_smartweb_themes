@@ -71,7 +71,9 @@ $roboto-base-path: "@theme/assets/fonts/";
 
 
 // @import "../../../plonetheme.barceloneta/scss/barceloneta.scss";
+
 // @import "../../../barcelonetabeta3/plonetheme.barceloneta/scss/barceloneta.scss";
+
 // @import "../../../plonetheme.common/scss/base.scss";
 
 @import "./for-nav-maj.scss";
@@ -98,6 +100,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./sm-list-block-img.scss";
 @import "./sm-list-img.scss";
 @import "./sm-subsite.scss";
+
 // @import "./sm-carousel.scss";
 
 @import "./sm-homepage.scss";
@@ -118,6 +121,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 ul {
   padding-left: 0;
 }
+
 // à voir dans html
 .bg-primary {
   background-color: transparent !important;
@@ -166,6 +170,7 @@ body {
 #subsite-navigation li label {
   top: -100vh !important;
 }
+
 //// Notes
 
 // j'ai ajouté une div mask-menu dans le index.html du theme: bon ou pas ?

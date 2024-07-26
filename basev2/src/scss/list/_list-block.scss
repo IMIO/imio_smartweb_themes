@@ -38,6 +38,7 @@ body.template-block_view #content-core {
                 h2.card-title {}
 
                 &::after {
+
                     // content: url(../svg/arrow-right-white.svg);
                     background: $yellow;
                     left: 0;
@@ -53,6 +54,7 @@ body.template-block_view #content-core {
             }
 
             &::after {
+
                 // content: url(../svg/arrow-right-yellow.svg);
                 background: transparent;
                 position: absolute;
@@ -71,6 +73,7 @@ body.template-block_view #content-core {
         h2.card-title {
             &:hover,
             &:focus {
+
                 //border-bottom: $link-hover-decoration;
                 text-decoration-color: $yellow;
             }
@@ -80,4 +83,5 @@ body.template-block_view #content-core {
         }
     }
 }
+
 //HTML

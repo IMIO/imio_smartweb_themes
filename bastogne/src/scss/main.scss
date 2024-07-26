@@ -1,16 +1,23 @@
 //// VARIABLES
+
 // ... add your variables here
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/intro.scss";
@@ -98,6 +105,7 @@ body {
     #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree, #subsite-navigation #portal-globalnav > li > .has_subtree {
         margin-top: 3.5rem;
         margin-left: 14rem;
+
         /* border-radius: 10px; */
     }
 
@@ -262,6 +270,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -312,6 +321,7 @@ footer #container-section-noussuivre{
 }
 
 .portaltype-imio-smartweb-portalpage{
+
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
 }
@@ -412,6 +422,7 @@ footer #container-section-noussuivre{
 .sectiontext figure img {
 	border-radius: 15px;
 }
+
 /*#viewlet-above-content-body {
     .procedure{
         display: none;

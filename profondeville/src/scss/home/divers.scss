@@ -1,22 +1,41 @@
 // .swiper.bannerSwiper {
+
 //     position: relative;
+
 //     &:before {
+
 //         content: "";
+
 //         left: 0;
+
 //         right: 0;
+
 //         background: url("../../assets/svg/multicolor-line.svg") top right no-repeat;
+
 //         content: "";
+
 //         left: 0;
+
 //         right: 0;
+
 //         top: 0;
+
 //         bottom: 0;
+
 //         width: 100%;
+
 //         height: 10px;
+
 //         display: block;
+
 //         max-width: 100%;
+
 //         background-size: 100% 100%;
+
 //         margin-bottom: -1px;
+
 //     }
+
 // }
 #portal-header-top::before {
     background: url("../../assets/svg/multicolor-line.svg") top right no-repeat;
@@ -40,8 +59,10 @@
 //SOUS SITE
 body .has_subtree.dropdown:first-child {
     margin-top: 22px !important;
+
     // margin-left: -1px;
 }
+
 //FILES
 .sortable-section.sectionfiles {
     margin: 2rem 0;
@@ -51,6 +72,7 @@ body .has_subtree.dropdown:first-child {
     color: #fff;
     }
 }
+
 //H3
 html body {
     h3 {
@@ -61,6 +83,7 @@ html body {
         text-transform: initial;
     }
 }
+
 //MENU
 
 @media (min-width: 992px) {
@@ -68,6 +91,7 @@ html body {
         margin-top: 3rem;
     }
 }
+
 // Section text internal page
 
 @include media-breakpoint-down(md) { 
@@ -99,15 +123,18 @@ html body {
 body .container .sectiontext .section-text .body-section.figure-left figure {
     margin-right: 20px;
 }
+
 //SECTION TEXT
 body .sectiontext .section-text .body-section a {
     text-decoration: underline;
     font-weight: 300;
 }
+
 //LOGO
 a#portal-logo {
     margin-right: 20px;
 }
+
 //IMAGES BC SECTION FICHIERS
 .subsection-services-autres-services-communication .sectionfiles .image.d-block.w-100 {
     padding-bottom: 140%;

@@ -8,12 +8,14 @@
         height: 2em;
       }
 }
+
 //---//
 .sectionlinks{
     .swiper_title{
         margin-top: 1rem;
     }
 }
+
 // Pour custom l'overlay vidéo
 .section-home-page-bla .plone-modal-header {
     padding: 0 10px;
@@ -34,6 +36,7 @@
     position: absolute;
     z-index: 2;
 }
+
 //---//
 
 //affichage des vidéos sur vue facettes
@@ -45,13 +48,16 @@
     inset: 0!important;
     position: absolute!important;
 }
+
 //---//
 
 // Custom de la vue pour afficher les images en portrait
+
 /* https://bla.preprod.imio.be/zone-de-police/presentation/agents-de-quartier/votre-inspecteur-de-proximite#b_start=0 */
 .subsection-agents-de-quartier .card-img-top {
     padding-top: 120%;
 }
+
 //---//
 
 //  je sais pas quoi (privacy)
@@ -72,7 +78,9 @@ div#formfield-form-widgets-basic_cookies {
 div#formfield-form-widgets-basic_analytics {
     order: 1;
 }
+
 //---//
+
 // Pour react
 
 .no-search-item-img{
@@ -85,6 +93,7 @@ div#formfield-form-widgets-basic_analytics {
 .r-search-img{
     background-color: #c9c9c9 !important;
 }
+
 //---//
 
 
@@ -131,24 +140,28 @@ a.manage.contenttype-link::before {
     content: '\e806';
     font-family: 'fontello';
 }
+
 //---//
 
 // navigation de la vue contenu
 #content-core .pat-structure .navbar.ui-offset-parent {
     z-index: 1;
 }
+
 //---//
 
 // Affiche les commandes du plan devant le menu
 .leaflet-top.leaflet-left {
     z-index: 1;
 }
+
 //---//
 
 // Pour supprimer le margin en fin de page ( si non le footer ne colle pas au sections)
 #main-container, #content-core {
 	margin-bottom: 0;
 }
+
 //---//
 
 /* slider sinon un click sur la flèches inactive amène sur l'élément derrière */

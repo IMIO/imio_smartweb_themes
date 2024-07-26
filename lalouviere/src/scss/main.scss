@@ -1,17 +1,24 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/intro.scss";
@@ -31,6 +38,7 @@ $enable-roboto-webfont: false;
 
 @media (min-width: 1400px) {
     .section-home-page .container-xxl, .section-home-page .container-xl, .section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
+
         //max-width: 1140px;
     }
 }
@@ -249,6 +257,7 @@ h2 {
     margin-left: -225px;
 
     &::after{
+
         //top: 70px;
         bottom: -140px;
         content: "";
@@ -309,6 +318,7 @@ h2 {
 
 
         @media screen and (max-width: 600px) {
+
             //display:none;
             left:50%;
             text-align: center!important;  
@@ -388,6 +398,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -431,6 +442,7 @@ footer #container-section-noussuivre{
 }
 
 .portaltype-imio-smartweb-portalpage{
+
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
 }
@@ -518,6 +530,7 @@ footer #container-section-noussuivre{
 
 .subsite-container {
     background: #F8F8F8;
+
     //border-radius: 50px 0 50px 0;
     gap:20px;
 
@@ -553,8 +566,11 @@ footer #container-section-noussuivre{
     width: 100% !important;
     display: block !important;
 }
+
 //.sectiontext .section-text .section-title a.collapsed {
+
 //}
+
 /*.sectiontext .section-text .body-section a {
 	color: #ffffff!important;
 }*/
@@ -584,6 +600,7 @@ footer #container-section-noussuivre{
 #portal-breadcrumbs {
     margin: 0 !important;
     position:relative;
+
     //z-index: -1;
     .container {
     padding:0 !important;
@@ -1055,11 +1072,17 @@ h3 {
     }
 
     @media screen and (max-width: 1700px) {
+
         //.section-home-page .container-lg, .section-home-page .container-md, .section-home-page .container-sm, .section-home-page .container {
+
         //    padding:0 80px;
+
         //}
+
         //#portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-liens-utiles, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-adresse, #portal-footer-wrapper #portal-footer #smartweb-footer #container-section-contact  {
+
         //    padding:0px !important;
+
         //}
         }
 
@@ -1308,6 +1331,7 @@ iframe.eaglebe {
     height: 1.5rem;
     position: absolute;
     right: 0;
+
     /* top: 2.5rem; */
     top: auto!important;
     bottom: 0!important;

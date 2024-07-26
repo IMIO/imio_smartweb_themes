@@ -31,6 +31,7 @@ $font-title-color: $primary;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: $dark;
 $font-title-weight: 900;
+
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
@@ -58,6 +59,7 @@ $home-section-title-align: left;
 $section-padding-top:0 !default;
 $to-portal-link-color: $primary;
 $img-placeholder:#F2F2F2!default;
+
 //swiper
 $swiper-icon-color: #000 !default;
 $swiper-button-height: 45px !default;
@@ -125,6 +127,7 @@ $nav-overlay-next-icon-hover:url('data:image/svg+xml;utf8,<svg xmlns="http://www
 $subsite-logo-background: $primary;
 $subsite-logo-color:#fff !default;
 $subsite-navbar-bg:#fff !default;
+
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
 $sub-nav-link-color: #000;
@@ -340,6 +343,7 @@ $section-padding: (sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
 );
+
 // section-contact
 $section-contact-title-size:$h2-font-size;
 $section-contact-sub-title-size:$font-size-lg;
@@ -375,6 +379,7 @@ $message-warning:#c06d01;
 $message-error:#ae2609;
 
 //NEW VARIABLES MANU 
+
 //ACTU
 $actu-item-title-align: left !default;
 $actu-date-align: left !default;

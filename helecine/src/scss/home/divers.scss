@@ -5,6 +5,7 @@
 body.portaltype-imio-smartweb-portalpage.section-accueil {
     background: linear-gradient(180deg, rgba(253,246,226,100%), rgba(255,255,255,100%));
 }
+
 //Style fichiers events
 .r-content-files .r-content-file-link {
     background: #fdf2d7;
@@ -29,6 +30,7 @@ a#portal-logo {
 .sortable-section.sectionmap {
     z-index: 0;
 }
+
 //Partenaires
 .sectionlinks.quick-access.partenaires .body-section ul {
     justify-content: space-between;
@@ -166,6 +168,7 @@ nav.navbar button.navbar-toggler {
     background: #f5f5f5;
     padding: 0.5rem;
 }
+
 //
     body .container #portal-column-content .section-contact .contact-type-position {
         flex-direction: row !important;

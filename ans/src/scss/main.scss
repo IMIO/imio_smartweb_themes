@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import './quick.scss';
@@ -40,6 +46,7 @@ $enable-roboto-webfont: false;
     color: #fff;
 	}
 }
+
 //footer
 body #portal-footer-wrapper #portal-footer #smartweb-footer .sectiontext .text p:first-child {
     background: $primary-svg;

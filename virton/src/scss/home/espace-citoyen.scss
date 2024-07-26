@@ -20,6 +20,7 @@
         .row{
             max-width: 100%;
             margin: 0 auto;
+
             /*box-shadow: 0 20px 40px rgba(0, 0, 0,.16);*/
             background: $primary-red;
             border-radius: 50px 50px 0;
@@ -64,6 +65,7 @@
 
                     .image{
                         svg{
+
                             /*fill: #fff;*/
                             transition: all 0.5s ease;
                         }
@@ -71,6 +73,7 @@
 
                     .table_title{
                         span{
+
                             /*color: #fff;*/
                         }
                     }

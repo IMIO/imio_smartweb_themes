@@ -5,14 +5,17 @@ $bg-primary: red;
 $gray: #d8d8d8;
 $yellow: #f9b300;
 $color-content-text:#505050;
+
 // $secondary: #f9b300;
 
 // images
 $image-raduis: 20px 20px 20px 0;
+
 // header
 $main-logo-max-width: 115px;
 $main-search-max-width: auto;
 $logo-margin-y: 1.5rem;
+
 // nav
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              500 !default;
@@ -20,8 +23,10 @@ $nav-first-level-uppercase: true;
 $nav-first-level-gap: 30px;
 
 $navbar-padding-x:                  2.5rem !default;
+
 // banner
 $banner-height: 250px;
+
 // liste group variables
 $list-group-border-width : 0;
 $list-group-item-padding-x : 0;
@@ -30,9 +35,11 @@ $list-style-custom: url(../../assets/svg/list-style-yellow.svg);
 //link
 $link-color: #000;
 $link-hover-decoration :  solid 3px $yellow;
+
 //Liste Block
 $block-full-shadow: 0 20px 40px #0000001A;
 $block-small-shadow: rgba(0, 0, 0, 16%) 0 1px 4px;
+
 // font
 $font-family-base:            ff-tisa-sans-web-pro,sans-serif;
 
@@ -67,6 +74,7 @@ $section-padding: (
   md: 4rem,
   lg: 4.3rem,
 );
+
     // section-contact
 $section-contact-title-size:$font-size-xl;
 $section-contact-sub-title-size:$font-size-lg;

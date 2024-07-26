@@ -1,16 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick.scss";
@@ -25,11 +31,17 @@ $enable-roboto-webfont: false;
 
 
 // .r-item-img.r-item-img-placeholder {
+
 // 	background: url("../../assets/svg/placeholder-helecine.jpg");
+
 // 	background-size: cover;
+
 // 	background-position: center;
+
 // }
 
 // body{
+
 //     background: linear-gradient(180deg, rgba(245,203,92,1.000) 0%, rgb(245,203,92, 1.000) 100%);
+
 // }

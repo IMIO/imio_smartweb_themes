@@ -3,10 +3,12 @@
 h2.card-title {
     padding: 1.5rem;
 }
+
 //RGPD
 #gdpr-consent-banner .gdpr-actions input[name=consent] {
     background: $primary;
 }
+
 //TITLE SECTION HOME PAGE
 
 @include media-breakpoint-down(md) { 
@@ -14,6 +16,7 @@ h2.card-title {
         font-size: 3rem;
     }
  }
+
 //BANNER
 
 @include media-breakpoint-down(md) { 

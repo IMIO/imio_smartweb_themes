@@ -1,17 +1,24 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
 @import '../../../base/src/scss/main.scss';
+
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/intro.scss";
@@ -146,6 +153,7 @@ footer{
        display: none;
    }
 }
+
 // bug z-index
 
 .pagination{
@@ -196,6 +204,7 @@ footer #container-section-noussuivre{
 }
 
 .portaltype-imio-smartweb-portalpage{
+
     //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
     background-size: cover;
 }
@@ -576,18 +585,21 @@ footer #container-section-noussuivre{
 
 
     .smartweb_herobanner .swiper-button-next, .smartweb_herobanner .swiper-button-prev {
+
         /*top: auto;
         bottom: 40px;
         left: 50%;*/
     }
 
     .smartweb_herobanner .swiper-button-next {
+
         //margin-left: 10px;
         background: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z\" fill=\"%23ffffff\"/></svg>") center center no-repeat rgba(0, 0, 0, 60%);
     }
 
     .smartweb_herobanner .swiper-button-prev {
         background: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path d=\"M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z\" fill=\"%23ffffff\"/></svg>") center center no-repeat rgba(0, 0, 0, 60%);
+
         //margin-left: -50px;
     }
 

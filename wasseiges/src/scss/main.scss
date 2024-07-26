@@ -1,17 +1,22 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
 @import "../../../base/src/scss/main.scss";
 
 //// STYLES
+
 // ... add your styles here
 
 @import "./home/quick";
@@ -68,10 +73,12 @@ body:not(.section-accueil){
 #container-section-acces-directs .table_image:focus .table_title span::after, #container-section-acces-directs .table_image:hover .table_title span::after {
 	background-color: #fff!important;
 }
+
 //MENUHAMBURGER
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
+
 //LOGO RESPONSIVE IPHONE
 
 @include media-breakpoint-down(lg) {

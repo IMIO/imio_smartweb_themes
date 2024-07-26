@@ -4,6 +4,7 @@
 }
 
 // a modifier dans le barceloneta
+
 // header
 #portal-header {
     display: grid;
@@ -125,6 +126,7 @@
 }
 
 //*// SITE NAV //*//
+
 // hidden sur le body quand nav mobile open
 .open-nav-overflow {
     overflow: hidden;
@@ -249,6 +251,7 @@ header#content-header {
             }
 
             &~ul {
+
                 // transition: ease-out 0.35s;
                 transition: opacity .35s ease, visibility 0s linear 0s;
             }

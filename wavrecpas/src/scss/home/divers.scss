@@ -1,4 +1,5 @@
 //MEDIAS
+
 //PLACEHOLDER
 .portaltype-imio-smartweb-directoryview .r-annuaire-result {
     .r-item-img {
@@ -54,6 +55,7 @@ div.swiper-image::before {
 .sectiontext .mark, .sectiontext mark {
     border: 2px solid $secondary;
 }
+
 //CUSTOM
 .r-content-text mark {
     padding: 1rem;
@@ -64,6 +66,7 @@ div.swiper-image::before {
     color: #4f4f4f;
     font-size: 0.9rem;
 }
+
 /* affichage liste sur actus */
 .r-content-text ul {
     padding-left: 2rem;
@@ -185,6 +188,7 @@ div.swiper-image::before {
 
 //HEROBANNER 040822
 .swiper-slide {
+
     // flex-shrink: initial;
     width: initial;
     height: initial;
@@ -193,6 +197,7 @@ div.swiper-image::before {
 }
 
 .section-slide {
+
     // flex-shrink: 0;
     width: 100%;
     height: 100%;
@@ -270,6 +275,7 @@ body.section-actualites blockquote::after, body.section-actualites blockquote::b
 body.section-actualites .r-content-news-info-link {
     padding: 1rem 0;
 }
+
 //SUP-25876
 body .sectiontext ol li {
     display: list-item !important;
@@ -283,6 +289,7 @@ body .sectiontext ol li {
 body .sectiontext ol li::before {
     display: none;
 }
+
 //SEE ALL
 .see_all a::after {
     display: none;

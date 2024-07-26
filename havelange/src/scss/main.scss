@@ -1,11 +1,15 @@
 //// VARIABLES
+
 // ... add your variables here
 
 $enable-roboto-webfont: false;
 
 //// IMPORTS
+
 // Import barceloneta files from node_modules --load-path=node_modules
+
 // @import '@plone/plonetheme-barceloneta-base/scss/barceloneta';
+
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import './variables';
@@ -20,6 +24,7 @@ $enable-roboto-webfont: false;
 @import 'home/newsletter.scss';
 
 //// STYLES
+
 // ... add your styles here
 
 
@@ -138,7 +143,11 @@ footer{
 
 
 // .portaltype-imio-smartweb-eventsview{
+
 //     .r-map.annuaire-map{
+
 //         display: none;
+
 //     }
+
 // }

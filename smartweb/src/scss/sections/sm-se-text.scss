@@ -29,6 +29,7 @@
 }
 
 .sectiontext{
+
     // @include section-padding-bottom;
     font-size: $font-size-lg;
     color:$color-content-text;
@@ -151,6 +152,7 @@
                 }
 
                 figcaption{
+
                     // display: table-caption;
                     caption-side: bottom;
                     font-size: $font-size-sm;
@@ -220,6 +222,7 @@ strong {
 // for bla
 
 .sectiontext{
+
     // @include section-padding-bottom;
     .section-text{
         .body-section{

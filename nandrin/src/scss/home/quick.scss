@@ -1,21 +1,39 @@
 // .sortable-section.sectionlinks.quick-access:first-child {
+
 //     left: 0;
+
 //     position: absolute;
+
 //     transform: translateY(-135.8%);
+
 //     z-index: 0;
+
 //     background-color: rgba(242, 242, 242, 0.8);
+
 //     padding: 0;
+
 // }
+
 // .sortable-section.sectionlinks.quick-access::after {
+
 //     position: absolute;
+
 //     background: rgba(242, 242, 242, 0.95);
+
 //     left: 0;
+
 //     right: 0;
+
 //     bottom: 69px;
+
 //     content: "";
+
 //     top: 69px;
+
 //     z-index: -1;
+
 //     padding: -5rem;
+
 // }
 
 //LINKS
@@ -97,6 +115,7 @@ div#body-section-nos-partenaires ul li:hover {
         box-shadow: 0 0 0 0 $primary;
     }
 }
+
 //QA
 .sectionlinks.quick-access {
     padding: 1rem 0;

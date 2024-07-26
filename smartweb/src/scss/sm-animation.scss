@@ -31,6 +31,7 @@
     animation: bla-container 2.7s 1;
   }
   transition: ease;
+
   //869
   .letter{
     display: inline-block;
@@ -49,6 +50,7 @@
       mask-image: url(../../assets/svg/b-svg.svg);
       width: 32.34%; // = 281px
       margin-right:3.32%;
+
       // height 348px
       animation: letterb 2.7s 1;
 

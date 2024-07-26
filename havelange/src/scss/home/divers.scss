@@ -19,6 +19,7 @@
     position: absolute;
     right: 0;
     padding-bottom: 5px;
+
     //top: 69px;
     width: 12%;
 }
@@ -43,12 +44,14 @@ div.swiper-image::before {
     background: $primary;
     opacity: 50%;
 }
+
 //
 .enquetes div.swiper-slide {
     position: relative;
     padding: 1rem;
     background: #fff;
 }
+
 //thematique agenda
 
 .section-agenda.site-centre-culturel .r-filter.topics-Filter {
@@ -72,6 +75,7 @@ div.swiper-image::before {
 .smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-content-wrapper .swiper-banner-content {
     background: hsla(0, 0%, 100%, 83%);
 }
+
 //PARTENAIRES
 .section-home-page .partenaires {
 	background: #E7ECEF;
