@@ -329,3 +329,11 @@ body:not(.portaltype-imio-smartweb-portalpage) {
       max-height: inherit;
   }
 }
+
+.site-nl {
+  #header-actions {
+    .account {
+      display: none;
+    }
+  }
+}
