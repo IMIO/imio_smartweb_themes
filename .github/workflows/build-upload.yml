@@ -68,6 +68,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Cache Primes
+        id: cache-primes
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node_modules-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Install node dev dependencies
         run: |
           pnpm install
