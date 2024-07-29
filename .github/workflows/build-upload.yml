@@ -51,7 +51,7 @@ jobs:
           echo "summary=$(cat summary.txt)" >> "$GITHUB_OUTPUT"
       - name: Send summary to Mattermost
         if: ${{ !env.ACT }} # do not run locally
-        uses: IMIO/gha/mattermost-notify@v3.6
+        uses: IMIO/gha/mattermost-notify@main
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
           MESSAGE: |
