@@ -13,21 +13,11 @@ on:
 
 jobs:
   get-changed-directories:
-    runs-on:
-      group: self-hosted
+    runs-on: gha-runners-smartweb
     outputs:
       changed-directories: ${{ steps.set-output.outputs.changed-directories }}
       environment: ${{ steps.get-build-push-environment.outputs.environment }}
     steps:
-      - name: Install Git & jq
-        run: sudo apt-get update && sudo apt-get install -y git jq
-      - name: Install Node.js
-        if: ${{ env.ACT }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
-          curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-          sudo apt-get install -y nodejs
       - name: Checkout
         uses: actions/checkout@v4
       - name: Get changed directories names
@@ -71,24 +61,13 @@ jobs:
   build-push:
     environment: ${{ needs.get-changed-directories.outputs.environment }}
     needs: get-changed-directories
-    runs-on:
-      group: self-hosted
+    runs-on: gha-runners-smartweb
     strategy:
       matrix:
         directory: ${{ fromJson(needs.get-changed-directories.outputs.changed-directories) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Node.js
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
-          curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-          sudo apt-get install -y nodejs
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          version: 8
       - name: Install node dev dependencies
         run: |
           pnpm install
@@ -96,10 +75,6 @@ jobs:
         run: |
           echo Building theme for ${{ matrix.directory }}
           pnpm --theme=${{ matrix.directory }} build
-      - name: Install upload dependencies
-        run: |
-          sudo apt-get update && sudo apt-get install -y python3-pip jq
-          pip3 install requests && pip3 install bs4
       - name: Upload themes
         if: ${{ !env.ACT }} # do not run locally
         run: |
