@@ -68,13 +68,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Cache Primes
-        id: cache-primes
+      - name: Cache nodes modules
+        id: cache-nodes-modules
         uses: actions/cache@v4
         with:
           path: node_modules
           key: node_modules-${{ hashFiles('package.json') }}
       - name: Install node dev dependencies
+        if: steps.cache-nodes-modules.outputs.cache-hit != 'true'
         run: |
           pnpm install
       - name: Build themes
