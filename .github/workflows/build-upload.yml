@@ -83,7 +83,6 @@ jobs:
             pnpm-lock.yaml
           key: node_modules-${{ hashFiles('package.json') }}
       - name: Install node dev dependencies
-        if: steps.cache-nodes-modules.outputs.cache-hit != 'true'
         run: |
           pnpm install
       - name: Build themes
