@@ -12,7 +12,28 @@ on:
       - '/*'
 
 jobs:
+  lint:
+    runs-on: gha-runners-smartweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cache nodes modules
+        id: cache-nodes-modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            pnpm-lock.yaml
+          key: node_modules-${{ hashFiles('package.json') }}
+      - name: Install node dev dependencies
+        run: |
+          pnpm install
+      - name: Lint
+        run: pnpm run stylelint
+      - name: Pretty
+        run: pnpm run prettier
   get-changed-directories:
+    needs: lint
     runs-on: gha-runners-smartweb
     outputs:
       changed-directories: ${{ steps.set-output.outputs.changed-directories }}
