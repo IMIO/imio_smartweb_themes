@@ -108,3 +108,11 @@
 .mb-ign-mode-liste-carte {
   z-index: 0;
 }
+
+.procedure a::after {
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
