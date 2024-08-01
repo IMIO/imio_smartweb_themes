@@ -295,15 +295,15 @@ body:not(.site-office-du-tourisme-inforville) {
 
       .card-body {
         &::after {
-          content: "\F4FA"!important;
-          font-family: bootstrap-icons!important;
-          position: absolute!important;
-          bottom: -10px!important;
-          right: -4px!important;
-          background: transparent!important;
-          margin: 0!important;
-          padding: 0!important;
-          left: inherit!important;
+          content: "\F4FA" !important;
+          font-family: bootstrap-icons !important;
+          position: absolute !important;
+          bottom: -10px !important;
+          right: -4px !important;
+          background: transparent !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          left: inherit !important;
         }
       }
     }
