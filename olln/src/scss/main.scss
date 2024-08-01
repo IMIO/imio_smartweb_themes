@@ -293,16 +293,18 @@ body:not(.site-office-du-tourisme-inforville) {
       display: block;
       height: 100%;
 
-      &::after {
-        content: "\F4FA";
-        font-family: bootstrap-icons;
-        position: absolute;
-        bottom: 2px;
-        right: 25px;
-      }
-
       .card-body {
-        height: 100%;
+        &::after {
+          content: "\F4FA"!important;
+          font-family: bootstrap-icons!important;
+          position: absolute!important;
+          bottom: -10px!important;
+          right: -4px!important;
+          background: transparent!important;
+          margin: 0!important;
+          padding: 0!important;
+          left: inherit!important;
+        }
       }
     }
   }
