@@ -27,7 +27,7 @@ jobs:
           key: node_modules-${{ hashFiles('package.json') }}
       - name: Install node dev dependencies
         run: |
-          pnpm install
+          pnpm install --no-frozen-lockfile
       - name: Lint
         run: pnpm run stylelint
       - name: Pretty
