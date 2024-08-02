@@ -13,19 +13,19 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./home/quick.scss";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./interne/reaq.scss";
-@import "./interne/divers.scss";
+@import "./interne/reaq";
+@import "./interne/divers";
 
 .portaltype-imio-smartweb-portalpage {
   overflow-x: hidden;

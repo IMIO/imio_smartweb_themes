@@ -23,21 +23,21 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./a-la-une.scss";
-@import "./news.scss";
-@import "./quick.scss";
-@import "./events.scss";
-@import "./footer.scss";
-@import "./sites-de-la-ville.scss";
-@import "./zomm-sur.scss";
-@import "./section.scss";
-@import "./cpas.scss";
+@import "./a-la-une";
+@import "./news";
+@import "./quick";
+@import "./events";
+@import "./footer";
+@import "./sites-de-la-ville";
+@import "./zomm-sur";
+@import "./section";
+@import "./cpas";
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
   #portal-header {
@@ -360,4 +360,8 @@ body:not(.portaltype-imio-smartweb-portalpage) {
       display: none;
     }
   }
+}
+
+.subsite-container {
+  background-color: #f8f8f8;
 }

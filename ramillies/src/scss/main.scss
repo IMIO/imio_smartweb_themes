@@ -13,7 +13,7 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 @import "home/quick";
 @import "./section-actu";
 @import "./newsletter";
@@ -128,23 +128,22 @@ footer {
 }
 
 // se  files
-body:not(.portaltype-imio-smartweb-portalpage) {
-  .sectionfiles::after {
-    background: #d6d6d6;
+.sectionfiles::after {
+  background: #d6d6d6;
 
-    .section-title {
-      color: #000 !important;
-    }
+  .section-title {
+    color: #000 !important;
   }
+}
 
-  .sectionfiles .body-section .h2,
-  .sectionfiles .body-section h2,
-  .sectionfiles .body-section p,
-  .sectionfiles .body-section span,
-  .sectionfiles .section-title .h2,
-  .sectionfiles .section-title h2,
-  .sectionfiles .section-title p,
-  .sectionfiles .section-title span {
-    color: #000;
-  }
+.sectionfiles .section-title,
+.sectionfiles .body-section .h2,
+.sectionfiles .body-section h2,
+.sectionfiles .body-section p,
+.sectionfiles .body-section span,
+.sectionfiles .section-title .h2,
+.sectionfiles .section-title h2,
+.sectionfiles .section-title p,
+.sectionfiles .section-title span {
+  color: #000;
 }

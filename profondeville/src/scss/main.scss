@@ -15,19 +15,19 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./home/divers.scss";
-@import "./home/quick.scss";
+@import "./home/divers";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./contact.scss";
+@import "./contact";
 
 .r-item-img.r-item-img-placeholder {
   background: url("../../assets/svg/placeholder.png");

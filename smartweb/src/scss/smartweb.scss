@@ -4,7 +4,7 @@ $primary: #008fd2;
 $bg-primary: red;
 $roboto-base-path: "@theme/assets/fonts/";
 
-@import "./sm-variables.scss";
+@import "./sm-variables";
 
 //  test
 
@@ -52,41 +52,41 @@ $roboto-base-path: "@theme/assets/fonts/";
 
 // @import "../../../plonetheme.common/scss/base.scss";
 
-@import "./for-nav-maj.scss";
-@import "./common/com-faceted.scss";
-@import "./common/com-list-image.scss";
-@import "./sm-messviewlet.scss";
-@import "./common/com-edition.scss";
-@import "./common/com-header.scss";
-@import "./common/com-cookies.scss";
-@import "./sm-mixin.scss";
-@import "./sm-list.scss";
-@import "././sections/sm-se-text.scss";
-@import "././sections/sm-se-link.scss";
-@import "././sections/sm-se-linked-content.scss";
-@import "././sections/sm-se-file.scss";
-@import "././sections/sm-se-contact.scss";
-@import "././sections/sm-se-plan.scss";
-@import "././sections/sm-se-gallery.scss";
-@import "./sm-header.scss";
-@import "./sm-footer.scss";
-@import "./sm-sitenav.scss";
-@import "./sm-breadcrumbs.scss";
-@import "./sm-list-block.scss";
-@import "./sm-list-block-img.scss";
-@import "./sm-list-img.scss";
-@import "./sm-subsite.scss";
+@import "./for-nav-maj";
+@import "./common/com-faceted";
+@import "./common/com-list-image";
+@import "./sm-messviewlet";
+@import "./common/com-edition";
+@import "./common/com-header";
+@import "./common/com-cookies";
+@import "./sm-mixin";
+@import "./sm-list";
+@import "././sections/sm-se-text";
+@import "././sections/sm-se-link";
+@import "././sections/sm-se-linked-content";
+@import "././sections/sm-se-file";
+@import "././sections/sm-se-contact";
+@import "././sections/sm-se-plan";
+@import "././sections/sm-se-gallery";
+@import "./sm-header";
+@import "./sm-footer";
+@import "./sm-sitenav";
+@import "./sm-breadcrumbs";
+@import "./sm-list-block";
+@import "./sm-list-block-img";
+@import "./sm-list-img";
+@import "./sm-subsite";
 
 // @import "./sm-carousel.scss";
 
-@import "./sm-homepage.scss";
-@import "./sm-animation.scss";
-@import "./sm-print.scss";
-@import "./trucaverif.scss";
-@import "./home/a-la-une.scss";
-@import "./home/actu.scss";
-@import "./home/event.scss";
-@import "./home/un-clic.scss";
+@import "./sm-homepage";
+@import "./sm-animation";
+@import "./sm-print";
+@import "./trucaverif";
+@import "./home/a-la-une";
+@import "./home/actu";
+@import "./home/event";
+@import "./home/un-clic";
 
 .r-item-img-placeholder {
   background: url("../../assets/svg/img-placeholder-bla.png");

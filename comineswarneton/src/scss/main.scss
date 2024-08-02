@@ -13,23 +13,23 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./nav.scss";
-@import "./home/banner.scss";
-@import "./home/quick.scss";
+@import "./nav";
+@import "./home/banner";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/en-image";
 @import "./home/annuaire";
 @import "./home/les-sites";
-@import "./home/newsletter.scss";
-@import "./mini.scss";
+@import "./home/newsletter";
+@import "./mini";
 
 @media screen and (min-width: 1200px) {
   .a-la-une,

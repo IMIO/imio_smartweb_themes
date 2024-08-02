@@ -15,15 +15,15 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
 @import "./home/banner";
-@import "./home/intro.scss";
-@import "./home/quick.scss";
+@import "./home/intro";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/espace-citoyen";
 @import "./home/actualites";
@@ -31,11 +31,11 @@ $enable-roboto-webfont: false;
 @import "./home/partenaires";
 @import "./home/footer";
 @import "./home/section-en-image";
-@import "./info-trav.scss";
-@import "./page-int.scss";
-@import "./se-link.scss";
-@import "./se-files.scss";
-@import "./contact.scss";
+@import "./info-trav";
+@import "./page-int";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";
 
 body {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='1653' fill='none'%3E%3Cpath fill='%23FCEBF1' fill-rule='evenodd' d='M1048 30.016C977.506 10.454 903.224 0 826.5 0 370.037 0 0 370.037 0 826.5 0 1282.96 370.037 1653 826.5 1653c76.724 0 151.006-10.45 221.5-30.02v-255.04c-68.352 28-143.181 43.44-221.615 43.44-323.084 0-584.995-261.91-584.995-584.996 0-323.084 261.911-584.995 584.995-584.995 78.434 0 153.263 15.436 221.615 43.436V30.016Z' clip-rule='evenodd'/%3E%3C/svg%3E")

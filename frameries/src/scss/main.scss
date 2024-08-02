@@ -13,7 +13,7 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 @import "home/quick";
 @import "home/banner";
 @import "home/actualites";
@@ -21,7 +21,7 @@ $enable-roboto-webfont: false;
 @import "home/divers";
 @import "home/footer";
 @import "home/menu";
-@import "home/newsletter.scss";
+@import "home/newsletter";
 
 //// STYLES
 

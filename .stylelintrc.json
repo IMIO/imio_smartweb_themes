@@ -6,8 +6,6 @@
     "scss/no-global-function-names": null,
     "font-family-no-missing-generic-family-keyword": null,
     "import-notation": null,
-    "scss/at-import-partial-extension": null,
-    "scss/load-partial-extension": null,
     "selector-id-pattern": null,
     "alpha-value-notation": "percentage",
     "color-function-notation": null,

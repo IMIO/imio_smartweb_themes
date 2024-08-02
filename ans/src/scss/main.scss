@@ -13,19 +13,19 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./quick.scss";
-@import "./actualites.scss";
-@import "./events.scss";
-@import "./footer.scss";
-@import "./a-la-une.scss";
-@import "./en-images.scss";
-@import "./partenaires.scss";
+@import "./quick";
+@import "./actualites";
+@import "./events";
+@import "./footer";
+@import "./a-la-une";
+@import "./en-images";
+@import "./partenaires";
 
 #portal-globalnav .quick-access .quick-access-title {
   color: $primary !important;

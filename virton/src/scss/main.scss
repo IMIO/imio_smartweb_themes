@@ -15,14 +15,14 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "../../../base/src/scss/main.scss";
+@import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./home/intro.scss";
-@import "./home/quick.scss";
+@import "./home/intro";
+@import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/espace-citoyen";
 @import "./home/actualites";
@@ -30,10 +30,10 @@ $enable-roboto-webfont: false;
 @import "./home/footer";
 @import "./home/section-en-image";
 @import "./home/cpas";
-@import "./info-trav.scss";
-@import "./se-link.scss";
-@import "./se-files.scss";
-@import "./contact.scss";
+@import "./info-trav";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";
 
 //search
 #portal-header #portal-header-top #header-links #search-link a {
