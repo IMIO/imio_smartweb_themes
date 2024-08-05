@@ -1,0 +1,121 @@
+.sectionnews {
+  .see_all a {
+    background: $primary-svg;
+  }
+
+  &::after {
+    content: "";
+    background: $primary;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0 0 80px;
+    z-index: -1;
+  }
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    width: max-content !important;
+    margin: 0 auto 50px;
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 0;
+
+    &::before {
+      background: $primary;
+      content: "";
+      display: block;
+      height: 4px;
+      left: -30%;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 50px;
+    }
+
+    &::after {
+      background: $primary;
+      content: "";
+      display: block;
+      height: 4px;
+      position: absolute;
+      right: -30%;
+      bottom: 25%;
+      transform: translate(50%, 50%);
+      width: 50px;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      & > a {
+        display: block;
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          top: -37px;
+          left: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sectionnews::after {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .sectionevents::after {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #portal-footer-wrapper {
+    margin-top: 0;
+  }
+}
