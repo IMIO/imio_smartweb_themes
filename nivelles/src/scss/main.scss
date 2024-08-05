@@ -12,10 +12,9 @@ $enable-roboto-webfont: false;
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
-// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
-
 @import "./variables";
-@import "../../../base/src/scss/main";
+// @import "../../../base/src/scss/main";
+@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 //// STYLES
 
