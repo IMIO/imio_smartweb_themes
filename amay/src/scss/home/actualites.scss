@@ -1,0 +1,147 @@
+.sectionnews {
+  margin: 130px 0 60px;
+
+  @media screen and (max-width: 992px) {
+    margin: 3.5rem 0;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .swiper {
+    padding: 0 54px 0 25px;
+  }
+
+  &::before {
+    background: $primary;
+    border-radius: 0 0 100px 100px;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 130px;
+    margin-left: -700px;
+    width: 1400px;
+    z-index: -1;
+
+    @media screen and (max-width: 1400px) {
+      border-radius: 0;
+      left: 0;
+      top: 130px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    position: relative;
+    color: $primary;
+    width: max-content;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
+
+  .swiper-wrapper {
+    column-gap: 15px;
+
+    .swiper-slide {
+      background: none;
+      border-radius: 30px 0 0;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        //transform: translateY(10px);
+        //background: #EBEAE5;
+        //border-radius: 30px 0 30px 0;
+        h3 {
+          transition: 0.5s;
+          color: $primary-green;
+        }
+      }
+
+      & > a {
+        align-items: center;
+        padding-bottom: 20px;
+
+        .swiper-image {
+          transition: 0.5s;
+
+          &::after {
+            border-radius: 0;
+            content: "";
+            right: -25px;
+            position: absolute;
+            top: 1px;
+            width: 30px;
+            height: 50px;
+            z-index: -1;
+            background: url("../../assets/svg/relief-img.svg") top right
+              no-repeat;
+          }
+        }
+
+        .swiper_category {
+          width: 100%;
+          text-align: right;
+          margin: -37px 0 0;
+
+          span {
+            display: inline-block;
+            background: $primary-svg;
+            border-radius: 10px 0 0;
+            color: $primary;
+          }
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          width: 100%;
+        }
+
+        .swiper_title {
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}
