@@ -33,15 +33,15 @@ mark {
 
   ol {
     list-style-type: none;
-    counter-reset: sectioncounter;
+    counter-reset: item;
 
     & > li {
       display: table;
       padding-left: 1rem;
 
       &::before {
-        content: counter(sectioncounter) ":";
-        counter-increment: sectioncounter;
+        content: counters(item, ".") " ";
+        counter-increment: item;
         display: inline-block;
         width: 2em;
         text-align: right;
