@@ -1,5 +1,12 @@
 
 
+## [0.1.2](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.0...v0.1.2) (2024-08-05)
+
+
+### Bug Fixes
+
+* ol sublist counter ([76f0bbc](https://github.com/IMIO/imio_smartweb_themes/commit/76f0bbc231a29058cf22515bf030e22d96509ff6))
+
 # [0.1.0](https://github.com/IMIO/imio_smartweb_themes/compare/0.0.6...v0.1.0) (2024-08-02)
 
 
