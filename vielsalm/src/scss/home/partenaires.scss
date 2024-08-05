@@ -1,63 +1,63 @@
 .portaltype-imio-smartweb-portalpage .sectionlinks:first-child.partenaires {
-	margin-top: -50px;
-	padding: 0;
+  margin-top: -50px;
+  padding: 0;
 
-    .body-section{
-        padding: 0;
-    }
+  .body-section {
+    padding: 0;
+  }
 }
 
-.partenaires{
-    .table_image{
-        .image.d-block{
-            transition: all .15s ease;
-            border-radius: 100% !important;
-        }
+.partenaires {
+  .table_image {
+    .image.d-block {
+      transition: all 0.15s ease;
+      border-radius: 100% !important;
     }
+  }
 }
 
-.partenaires{
-    .table_image{
-        &:hover,&:focus{
-            .image.d-block{
-                transform: translateY(-15px);
-            }
-        }
-
+.partenaires {
+  .table_image {
+    &:hover,
+    &:focus {
+      .image.d-block {
+        transform: translateY(-15px);
+      }
     }
+  }
 
-    .table_title span {
-        color: $primary !important;
+  .table_title span {
+    color: $primary !important;
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      grid-gap: 20px;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+
+      li {
+        width: auto !important;
+      }
     }
-
-    .row{
-        @include media-breakpoint-down(lg){
-            grid-gap: 20px;
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(auto-fit,minmax(150px,150px));
-
-            li{
-                width: auto!important;
-            }
-        }
-    }
+  }
 }
 
-.partenaires{
-    .body-section{
-        svg{
-            height: 30px!important;
-            width: 30px!important;
-        }
+.partenaires {
+  .body-section {
+    svg {
+      height: 30px !important;
+      width: 30px !important;
     }
+  }
 }
 
 .sectionlinks.partenaires .body-section li a .table_title {
-    margin: 15px 0 1rem;
+  margin: 15px 0 1rem;
 }
 
 .sectionlinks.partenaires .body-section li a .image.d-block {
-    background: $primary-green;
-    border: 0 solid $primary-green;
+  background: $primary-green;
+  border: 0 solid $primary-green;
 }

@@ -1,11 +1,14 @@
 #portal-column-content .sectioncontact {
-    .contact-type-organization, .body-section.contact-type-position {
-        background: #f1f7fb;
-        border-radius: 10px !important;
-        margin: 10px;
-    }
+  .contact-type-organization,
+  .body-section.contact-type-position {
+    background: #f1f7fb;
+    border-radius: 10px !important;
+    margin: 10px;
+  }
 
-    h2,h3,h4{
-        font-family: $font-family-base;
-    }
+  h2,
+  h3,
+  h4 {
+    font-family: $font-family-base;
+  }
 }

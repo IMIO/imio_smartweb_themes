@@ -1,129 +1,137 @@
-#portal-footer-wrapper{
-    text-align: left!important;
-    background: transparent;
-    margin-top: 2rem;
+#portal-footer-wrapper {
+  text-align: left !important;
+  background: transparent;
+  margin-top: 2rem;
 
-    .row {
-        li {
-            flex-direction: row;
-            list-style-type: none;
-            padding-left:0;
+  .row {
+    li {
+      flex-direction: row;
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+
+  #portal-footer {
+    background: $primary !important;
+    padding: 3rem 0 2rem !important;
+
+    #smartweb-footer,
+    #smartweb-minisite-footer {
+      a,
+      span,
+      p,
+      div,
+      h2 {
+        color: #fff !important;
+      }
+
+      h2 {
+        font-size: 22px !important;
+        margin-top: 2rem;
+
+        &.section-title {
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
         }
-    }
-    
-    #portal-footer{
-        background: $primary !important;
-        padding:3rem 0 2rem !important;
+      }
 
-        #smartweb-footer,#smartweb-minisite-footer{
-            a,span,p,div,h2{
-                color: #fff!important;
-            }
+      h3 {
+        font-size: 18px !important;
+        color: #fff;
+      }
 
-            h2{
-                font-size: 22px!important;
-                margin-top: 2rem;
+      .sectiontext {
+        margin-top: 2rem;
 
-                &.section-title{
-                    margin-bottom: 1.5rem;
-                    margin-top: 2rem;
-                }
-            }
-
-            h3{
-                font-size: 18px!important;
-                color: #fff;
-            }
-
-            .sectiontext{
-                margin-top: 2rem;
-
-                figure{
-                    img{
-                        width: 150px;
-                        max-width: 100%;
-                    }
-                }
-            }
+        figure {
+          img {
+            width: 150px;
+            max-width: 100%;
+          }
         }
+      }
     }
+  }
 }
 
-#portal-colophon{
-    background: $primary;
-    padding: 1rem;
+#portal-colophon {
+  background: $primary;
+  padding: 1rem;
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 
-        li{
-            color: #fff!important;
+    li {
+      color: #fff !important;
 
-            a,span,p,div{
-                color: #fff!important;
-            }
-        }
+      a,
+      span,
+      p,
+      div {
+        color: #fff !important;
+      }
     }
+  }
 }
 
-.portaltype-imio-smartweb-portalpage #portal-footer-wrapper{
-    background: #fff;
+.portaltype-imio-smartweb-portalpage #portal-footer-wrapper {
+  background: #fff;
 }
 
-footer{
-    .schedule .opening_informations::after {
-        content: "";
-        width: 9px;
-        height: 6px;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"8.444\" height=\"5.2\"><path fill=\"white\" d=\"M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z\"/></svg>");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-left: 0.4rem;
-        display: inline-block;
-        vertical-align: middle;
-    }
+footer {
+  .schedule .opening_informations::after {
+    content: "";
+    width: 9px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="white" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
-#portal-footer-wrapper li.facebook, #portal-footer-wrapper li.twitter {
-    display: block !important;
+#portal-footer-wrapper li.facebook,
+#portal-footer-wrapper li.twitter {
+  display: block !important;
 }
 
 footer .sectionlinks ul.row {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 footer .sectionlinks h2 {
-margin-bottom: .5rem;   
+  margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width:900px) {
-    body footer#portal-footer-wrapper {
-        text-align: center !important;
-    }
+@media screen and (max-width: 900px) {
+  body footer#portal-footer-wrapper {
+    text-align: center !important;
+  }
 
-    .sectiontext .section-text .body-section.figure-left figure {
-        margin: 0 auto;
-    }
-
+  .sectiontext .section-text .body-section.figure-left figure {
+    margin: 0 auto;
+  }
 }
 //MINISITE FOOTER
 .site-cpas #portal-footer-wrapper #portal-footer {
-    background: #d4d4d4 !important;
+  background: #d4d4d4 !important;
 
-        .smartweb-footer .container .row #body-section-contact .h2, 
-        .smartweb-footer .container .row #body-section-contact h2,
-        .smartweb-footer .container .row #body-section-contact a, 
-        .smartweb-footer .container .row #body-section-contact div, 
-        .smartweb-footer .container .row #body-section-contact h3, 
-        .smartweb-footer .container .row #body-section-contact p, 
-        .smartweb-footer .container .row #body-section-contact span {
-            color: $primary !important;
-        }
+  .smartweb-footer .container .row #body-section-contact .h2,
+  .smartweb-footer .container .row #body-section-contact h2,
+  .smartweb-footer .container .row #body-section-contact a,
+  .smartweb-footer .container .row #body-section-contact div,
+  .smartweb-footer .container .row #body-section-contact h3,
+  .smartweb-footer .container .row #body-section-contact p,
+  .smartweb-footer .container .row #body-section-contact span {
+    color: $primary !important;
+  }
 }
 
 body footer#portal-footer-wrapper .sectiontext figure img {
-    border-radius: 0;
+  border-radius: 0;
 }
