@@ -1,0 +1,125 @@
+.logo-amay {
+  z-index: -3;
+
+  .section-text .body-section.figure-left figure {
+    max-width: 100% !important;
+    margin: 0 !important;
+    width: 100% !important;
+
+    img {
+      border-radius: 100px 0 0 100px;
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100% !important;
+
+    .section-text .body-section.figure-left figure {
+      width: calc(100% - 80px) !important;
+      margin: 0 40px !important;
+
+      img {
+        border-radius: 50px;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.texte-logo-amay {
+  padding-left: 70px;
+
+  h3 {
+    color: $primary;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 15px 30px;
+    background: $primary-dark;
+    color: #041e42;
+    border-radius: 15px;
+    border: solid 2px $primary-dark;
+    text-decoration: none !important;
+    text-transform: none;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    margin: 0;
+
+    &:hover {
+      background: $primary;
+      border: solid 2px $primary-light;
+      color: #fff !important;
+      text-decoration: none !important;
+      transition: all 0.5s ease;
+      border-radius: 40px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+.images-x3 {
+  position: relative;
+  margin-top: -86px;
+  text-align: right;
+  width: 100%;
+
+  .section-text .body-section.figure-left figure {
+    margin: 0 !important;
+    float: right;
+    max-width: 850px !important;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      border-radius: 0;
+      content: "";
+      left: -40px;
+      right: auto;
+      position: absolute;
+      top: 0;
+      width: 76px;
+      height: 86px;
+      z-index: -1;
+      background: url("../../assets/svg/relief-x3.svg") top right no-repeat;
+    }
+
+    img {
+      border-radius: 0 0 100px 100px;
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+
+    .section-text .body-section.figure-left figure {
+      margin: 0 auto !important;
+      float: none !important;
+      max-width: calc(100% - 80px) !important;
+      width: 100%;
+      position: relative;
+
+      &::after {
+        display: none;
+      }
+
+      img {
+        border-radius: 50px;
+        width: 100% !important;
+      }
+    }
+  }
+}
