@@ -11,18 +11,18 @@
   h4,
   h5,
   h6 {
-    color: #bf281f;
+    color: $primary;
   }
 
   #portal-globalnav .dropdown .nav-title a {
-    color: #bf281f;
+    color: $primary;
   }
 
   #portal-globalnav-collapse .dropdown .nav-link:focus,
   #portal-globalnav-collapse .dropdown .nav-link:hover,
   #subsite-navigation .dropdown .nav-link:focus,
   #subsite-navigation .dropdown .nav-link:hover {
-    color: #bf281f;
+    color: $primary;
   }
 
   #portal-globalnav > li a:hover {
@@ -33,7 +33,7 @@
   .r-content-text mark,
   .sectiontext .mark,
   .sectiontext mark {
-    background-color: #bf281f;
+    background-color: $primary;
   }
 
   #portal-globalnav-wrapper
@@ -62,7 +62,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background: #bf281f !important;
+    background: $primary !important;
   }
 
   .sectionnews .see_all a,
@@ -78,7 +78,7 @@
 
   .a-la-une {
     background: url("../../assets/svg/bg-a-la-une-cpas.svg") center top
-      no-repeat #bf281f;
+      no-repeat $primary;
     background-size: 100%;
     padding-top: 10rem;
     padding-bottom: 8rem;
@@ -94,7 +94,7 @@
     .swiper-slide
     .swiper-banner-content-wrapper
     .swiper-banner-content {
-    background: rgba(191, 40, 31, 90%);
+    background: $primary;
   }
 }
 
@@ -104,5 +104,5 @@
   .section-container
   .table_display
   .table_image {
-  background-color: #bf281f;
+  background-color: $primary;
 }
