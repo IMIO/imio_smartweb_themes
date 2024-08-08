@@ -23,6 +23,7 @@
 
   .swiper-wrapper {
     padding-bottom: 0;
+    column-gap: 0 !important;
   }
 
   @media screen and (max-width: 992px) {
