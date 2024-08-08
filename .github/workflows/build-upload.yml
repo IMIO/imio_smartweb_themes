@@ -82,7 +82,7 @@ jobs:
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
           MESSAGE: |
-            A build has been triggered for the following themes:
+            A build has been triggered by ${{ github.actor }} for the following themes:
             ${{ steps.summary.outputs.summary }}
             [Click here to review the changes and eventually deploy to instances]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)
   build-push:
@@ -103,21 +103,19 @@ jobs:
             node_modules
             pnpm-lock.yaml
           key: node_modules-${{ hashFiles('package.json') }}
-      - name: Install node dev dependencies
+      - name: Get vhost and instance url
         run: |
-          pnpm install --no-frozen-lockfile
-      - name: Build themes
-        run: |
-          echo Building theme for ${{ matrix.directory }}
-          pnpm --theme=${{ matrix.directory }} build
-      - name: Upload themes
-        if: ${{ !env.ACT }} # do not run locally
-        run: |
-          python3 theme_uploader.py $(jq -r '.homepage' ${{ matrix.directory }}/package.json) ${{ secrets.PLONE_USER }} ${{ secrets.PLONE_PASSWORD }} ${{ matrix.directory }}
-      - name: Get vhost
-        run: |
+          plone_url=$(jq -r '.homepage' ${{ matrix.directory }}/package.json)
           vhost=$(echo $(jq -r '.homepage' ${{ matrix.directory }}/package.json) | cut -c 9-)
           echo "vhost=$vhost" >> $GITHUB_ENV
+          echo "plone_url=$plone_url" >> $GITHUB_ENV
+      - name: Build push theme to plone site
+        uses: IMIO/gha/plone-theme-build-push-notify@main
+        with:
+          THEME_PATH: ${{ matrix.directory }}
+          PLONE_URL: ${{ env.plone_url }}
+          PLONE_USERNAME: ${{ secrets.PLONE_USER }}
+          PLONE_PASSWORD: ${{ secrets.PLONE_PASSWORD }}
       - name: Purge cache
         if: ${{ !env.ACT }} # do not run locally
         uses: IMIO/gha/rundeck-notify@main
