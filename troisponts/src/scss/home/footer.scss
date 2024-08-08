@@ -29,7 +29,7 @@
   }
 
   #portal-footer {
-    background: $primary !important;
+    background: $primary-dark !important;
     padding: 60px 0 30px;
 
     #smartweb-footer,
@@ -101,7 +101,7 @@
 
             &:hover {
               span {
-                color: $primary-dark !important;
+                color: #fff !important;
                 transition: all 0.5s ease;
               }
             }
@@ -113,7 +113,7 @@
 }
 
 #portal-colophon {
-  background: $primary;
+  background: $primary-dark;
   padding: 10px 0 20px;
 
   ul {
@@ -125,13 +125,13 @@
             display: block;
         }*/
     li {
-      color: $primary;
+      color: #fff;
 
       a,
       span,
       p,
       div {
-        color: $primary;
+        color: #fff;
         text-decoration: none;
       }
     }
@@ -200,7 +200,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: #fff !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -231,7 +231,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: #fff !important;
                   transition: all 0.5s ease;
                 }
               }

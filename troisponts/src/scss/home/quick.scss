@@ -15,7 +15,7 @@
       li {
         .table_image {
           .image.d-block {
-            background: none !important;
+            background: $primary;
             border-radius: 100px;
             width: 80px;
             height: 80px;
@@ -23,19 +23,19 @@
             position: relative;
 
             svg {
-              fill: $primary;
+              fill: #fff;
             }
           }
 
           &:hover,
           &:focus {
             .image.d-block {
-              background: $primary !important;
+              background: $primary-svg !important;
               transform: translateY(-5px);
               transition: all 0.3s ease;
 
               svg {
-                fill: $primary;
+                fill: $primary-dark;
               }
             }
           }
