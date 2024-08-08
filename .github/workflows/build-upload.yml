@@ -61,8 +61,10 @@ jobs:
           echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
       - name: Get build push environment
         id: get-build-push-environment
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         run: |
-          if [[ "${{ github.event.head_commit.message }}" == *"[quick]"* ]]; then
+          if [[ "$COMMIT_MESSAGE" == *"[quick]"* ]]; then
             echo "environment=build-push-quick" >> "$GITHUB_OUTPUT"
           else
             echo "environment=build-push" >> "$GITHUB_OUTPUT"
