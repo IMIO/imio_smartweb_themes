@@ -78,7 +78,9 @@ jobs:
           done
           cat summary.txt
           echo "echo summary.txt content to steps.summary.outputs.summary"
-          echo "summary=$(cat summary.txt)" >> "$GITHUB_OUTPUT"
+          echo "summary<<EOF" >> "$GITHUB_OUTPUT"
+          cat summary.txt >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
       - name: Send summary to Mattermost
         if: ${{ !env.ACT }} # do not run locally
         uses: IMIO/gha/mattermost-notify@main
