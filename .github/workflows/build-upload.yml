@@ -83,7 +83,7 @@ jobs:
           echo "EOF" >> "$GITHUB_OUTPUT"
       - name: Send summary to Mattermost
         if: ${{ !env.ACT }} # do not run locally
-        uses: IMIO/gha/mattermost-notify@main
+        uses: IMIO/gha/mattermost-notify@v3.8
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
           MESSAGE: |
@@ -115,7 +115,7 @@ jobs:
           echo "vhost=$vhost" >> $GITHUB_ENV
           echo "plone_url=$plone_url" >> $GITHUB_ENV
       - name: Build push theme to plone site
-        uses: IMIO/gha/plone-theme-build-push-notify@main
+        uses: IMIO/gha/plone-theme-build-push-notify@v3.8
         with:
           THEME_PATH: ${{ matrix.directory }}
           PLONE_URL: ${{ env.plone_url }}
@@ -123,7 +123,7 @@ jobs:
           PLONE_PASSWORD: ${{ secrets.PLONE_PASSWORD }}
       - name: Purge cache
         if: ${{ !env.ACT }} # do not run locally
-        uses: IMIO/gha/rundeck-notify@main
+        uses: IMIO/gha/rundeck-notify@v3.8
         with:
           RUNDECK_URL: ${{ secrets.RUNDECK_URL }}
           RUNDECK_TOKEN: ${{ secrets.SMARTWEB_RUNDECK_TOKEN }}
