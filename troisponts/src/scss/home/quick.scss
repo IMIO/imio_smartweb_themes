@@ -1,5 +1,5 @@
 #main-container .quick-access {
-  margin: 60px 0 100px;
+  margin: 20px 0 50px;
   padding: 0;
 
   @include media-breakpoint-down(lg) {
@@ -15,10 +15,6 @@
       li {
         .table_image {
           .image.d-block {
-            background: $primary;
-            border-radius: 100px;
-            width: 80px;
-            height: 80px;
             transition: all 0.3s ease;
             position: relative;
 
@@ -136,7 +132,7 @@
     text-decoration: none !important;
 
     .table_title {
-      color: $primary;
+      color: #000;
       font-weight: 600;
       transition: 0.5s;
       font-size: 18px;
@@ -149,7 +145,7 @@
 
     &:hover {
       .table_title {
-        color: $primary;
+        color: #000;
         transition: 0.5s;
       }
     }

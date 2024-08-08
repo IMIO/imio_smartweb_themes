@@ -14,7 +14,6 @@ $enable-roboto-webfont: false;
 // ... add your styles here
 @import "./home/intro";
 @import "./home/quick";
-@import "./home/a-la-une";
 @import "./home/espace-citoyen";
 @import "./home/actualites";
 @import "./home/cpas";
@@ -25,3 +24,4 @@ $enable-roboto-webfont: false;
 @import "./se-link";
 @import "./se-files";
 @import "./contact";
+@import "./home/a-la-une";
