@@ -13,36 +13,17 @@
     padding: 0 54px 0 25px;
   }
 
-  &::before {
-    background: $primary;
-    border-radius: 0 0 100px 100px;
-    bottom: 0;
-    content: "";
-    left: 50%;
-    position: absolute;
-    top: 130px;
-    margin-left: -700px;
-    width: 1400px;
-    z-index: -1;
-
-    @media screen and (max-width: 1400px) {
-      border-radius: 0;
-      left: 0;
-      top: 130px;
-      margin-left: 0;
-      width: 100%;
-    }
-  }
-
   .section-title {
-    font-weight: 900 !important;
-    text-transform: uppercase;
-    position: relative;
-    color: $primary;
+    font-weight: 600;
+    text-transform: none;
+    margin: 0 0 0 -90px;
     width: max-content;
-    font-size: 50px;
-    line-height: 50px;
-    padding-left: 25px;
+    font-size: 3.7rem;
+    transform: rotate(180deg);
+    position: absolute;
+    padding: 100px 0 0;
+    writing-mode: vertical-rl;
+    background: transparent;
 
     @media screen and (max-width: 992px) {
       transform: rotate(0deg);
@@ -65,9 +46,7 @@
       &:hover,
       &:focus {
         transition: 0.5s;
-        //transform: translateY(10px);
-        //background: #EBEAE5;
-        //border-radius: 30px 0 30px 0;
+
         h3 {
           transition: 0.5s;
           color: $primary;
@@ -77,34 +56,23 @@
       & > a {
         align-items: center;
         padding-bottom: 20px;
+        position: relative;
 
         .swiper-image {
           transition: 0.5s;
-
-          &::after {
-            border-radius: 0;
-            content: "";
-            right: -25px;
-            position: absolute;
-            top: 1px;
-            width: 30px;
-            height: 50px;
-            z-index: -1;
-            background: url("../../assets/svg/relief-img.svg") top right
-              no-repeat;
-          }
         }
 
         .swiper_category {
           width: 100%;
           text-align: right;
-          margin: -37px 0 0;
+          margin: 0;
+          position: absolute;
+          top: 0;
 
           span {
             display: inline-block;
-            background: $primary-svg;
-            border-radius: 10px 0 0;
-            color: $primary;
+            border-radius: 0 10px;
+            text-transform: initial;
           }
         }
 
@@ -114,6 +82,8 @@
         }
 
         .swiper_title {
+          width: 100%;
+
           h3 {
             font-family: $font-family-base;
             transition: 0.5s;
@@ -121,8 +91,12 @@
         }
 
         .swiper_description {
+          text-align: center;
+          width: 100%;
+
           p {
             margin: 0;
+            text-align: center;
           }
         }
 

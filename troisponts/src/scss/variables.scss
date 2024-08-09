@@ -42,7 +42,7 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
 );
-$global-radius: 0 !default;
+$global-radius: 10px;
 $enable-title-uppercase: false !default;
 $home-section-title-size: 3.25rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
@@ -152,24 +152,24 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding: 0 !default;
+$see-all-padding: 1rem 2rem;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg: transparent !default;
-$see-all-color: $primary !default;
+$see-all-bg: $primary-svg;
+$see-all-color: $primary-dark;
 $see-all-radius: $global-radius !default;
-$see-all-border: solid 0 $primary !default;
+$see-all-border: solid 1px $primary-svg;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
 $see-all-font-weight: 700 !default;
 $see-all-transition: all 0.2s ease !default;
 $see-all-hover-bg: transparent !default;
-$see-all-hover-color: $primary-svg !default;
+$see-all-hover-color: $primary-dark;
 $see-all-hover-radius: $global-radius !default;
-$see-all-hover-border: solid 0 $primary !default;
-$see-all-justify-content: right !default;
+$see-all-hover-border: solid 1 $primary-svg;
+$see-all-justify-content: center;
 $see-all-underline-color: $primary-svg !default;
-$see-all-underline-width: 25% !default;
-$see-all-hover-underline-width: 50% !default;
+$see-all-underline-width: none;
+$see-all-hover-underline-width: none;
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -221,18 +221,18 @@ $actu-section-full-width: true !default;
 $actu-section-padding-top: 2rem !default;
 $actu-section-padding-bottom: 2rem !default;
 $actu-section-margin: 0 !default;
-$actu-title-color: $primary !default;
+$actu-title-color: #000;
 $actu-title-align: $home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
-$actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color: rgb(244, 244, 244) !default;
+$actu-image-border-radius: 10px;
+$actu-item-bg-color: transparent;
 $actu-item-bg-radius: $global-radius + 2 !default;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
 $actu-category-color: #fff !default;
-$actu-category-bg-color: $primary-svg !default;
+$actu-category-bg-color: $primary;
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px !default;
 $actu-category-font-weight: initial !default;
@@ -243,17 +243,17 @@ $actu-item-title-color: initial !default;
 $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size !default;
 $actu-item-title-font-weight: initial !default;
-$actu-item-title-align: left !default;
+$actu-item-title-align: center;
 $actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
-$actu-item-description-color: initial !default;
-$actu-item-description-align: left !default;
+$actu-item-description-color: #000;
+$actu-item-description-align: center;
 $actu-item-description-font-family: $font-family-base !default;
 $actu-date-margin: 0 0 0.5rem 0 !default;
 $actu-date-padding: 0 1rem !default;
-$actu-date-color: $primary !default;
+$actu-date-color: #000;
 $actu-date-font-size: 14px !default;
-$actu-date-align: left !default;
+$actu-date-align: center;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
