@@ -7,3 +7,19 @@
   text-transform: initial;
   font-weight: 600;
 }
+
+.container footer {
+  position: relative;
+}
+
+.container footer {
+  &::after {
+    content: url("../../../assets/svg/footer-brigde.svg");
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    transform: translateY(15px);
+    width: 90vw;
+  }
+}
