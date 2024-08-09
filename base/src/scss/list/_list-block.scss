@@ -19,58 +19,51 @@ body.template-block_view #content-core {
 }
 
 .block-menu-element {
-  a {
+  & > a {
     text-decoration: none;
+    display: block;
+    height: 100%;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: $block-small-shadow;
+    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    position: relative;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      box-shadow: $block-full-shadow;
+
+      .newsImage {
+        transform: scale(1);
+      }
+    }
+
+    .newsImage {
+      transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+      transform: scale(1.03);
+    }
 
     .card-body {
-      background: #fff;
-      height: 180px;
-      border-radius: 15px 15px 15px 0;
-      box-shadow: $block-small-shadow;
-      transition: 1.2s;
-      position: relative;
-
-      &:hover,
-      &:focus {
-        box-shadow: $block-full-shadow;
+      .card-text {
+        max-height: 3rem;
+        overflow: hidden;
+        position: relative;
 
         &::after {
-          background: $yellow;
-          left: 0;
-          bottom: 0;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          text-align: center;
+          content: "";
+          background: linear-gradient(275deg, white, transparent);
+          top: 1.5rem;
           position: absolute;
-          margin: 1rem;
-          line-height: 50px;
+          height: 1.5rem;
+          right: 0;
+          width: 50%;
         }
-      }
-
-      &::after {
-        // content: url(../svg/arrow-right-yellow.svg);
-        background: transparent;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        text-align: center;
-        margin: 1rem;
-        line-height: 50px;
-        transition: 0.5s;
       }
     }
 
     h2.card-title {
-      &:hover,
-      &:focus {
-        //border-bottom: $link-hover-decoration;
-        text-decoration-color: $yellow;
-      }
-
+      font-size: $section-list-block-img-card-title;
       text-transform: initial;
       font-weight: bold;
     }

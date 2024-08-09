@@ -39,27 +39,6 @@
 
 //---//
 
-//affichage des vidéos sur vue facettes
-.faceted-block-view-with-images .block-menu-element {
-  position: relative;
-}
-
-.faceted-block-view-with-images .block-menu-element a.faceted_video {
-  inset: 0 !important;
-  position: absolute !important;
-}
-
-//---//
-
-// Custom de la vue pour afficher les images en portrait
-
-/* https://bla.preprod.imio.be/zone-de-police/presentation/agents-de-quartier/votre-inspecteur-de-proximite#b_start=0 */
-.subsection-agents-de-quartier .card-img-top {
-  padding-top: 120%;
-}
-
-//---//
-
 //  je sais pas quoi (privacy)
 .view-name-consent {
   display: flex;
@@ -286,31 +265,6 @@ textarea {
   text-decoration: none;
 }
 
-.block-menu-element a .card-title.h2,
-.block-menu-element a h2.card-title {
-  font-size: 1.5rem;
-}
-
-.block-menu-element .card-body .card-text {
-  max-height: 3rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.block-menu-element .card-body .card-text::after {
-  content: "";
-  background: linear-gradient(275deg, white, transparent);
-  top: 1.5rem;
-  position: absolute;
-  height: 1.5rem;
-  right: 0;
-  width: 50%;
-}
-
-.faceted-block-view-with-images .block-menu-element a .card-body {
-  border-radius: 0 0 15px;
-}
-
 .userrole-anonymous .pat-sortable .sortable-section {
   border: 0 solid transparent !important;
 }
@@ -427,15 +381,6 @@ div#viewlet-below-content-body .procedure {
 .template-summary_view #content-core,
 .template-summary_view_with_images #content-core {
   padding-bottom: 3rem;
-}
-
-body.template-block_view_with_images .block-menu-element a .card-body {
-  border-radius: 0 0 15px;
-}
-
-.block-menu-element a .card-body,
-body.template-block_view_with_images .block-menu-element a .card-body {
-  width: auto;
 }
 
 div#faceted-results {
