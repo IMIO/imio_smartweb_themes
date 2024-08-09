@@ -1,0 +1,29 @@
+.bannerSwiper .section-slide {
+  position: relative;
+
+  .swiper-banner-content-wrapper {
+    position: initial !important;
+    top: initial !important;
+    transform: initial !important;
+
+    .swiper-banner-content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 0 50px 0 0;
+      font-family: $font-family-title;
+
+      .swiper-banner-title {
+        line-height: 60px;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .swiper-banner-image {
+    background-position: top;
+  }
+}
