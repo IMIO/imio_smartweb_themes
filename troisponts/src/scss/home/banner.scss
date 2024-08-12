@@ -27,11 +27,11 @@
   }
 }
 
-body {
+body.portaltype-imio-smartweb-portalpage {
   position: relative;
 }
 
-body::after {
+body.portaltype-imio-smartweb-portalpage::after {
   content: "";
   background-image: url("../../assets/svg/back-form.svg");
   display: block;
