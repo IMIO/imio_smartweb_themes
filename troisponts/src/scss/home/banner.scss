@@ -25,10 +25,10 @@
       }
     }
   }
+}
 
-  .swiper-banner-image {
-    background-position: top;
-  }
+body {
+  position: relative;
 }
 
 body::after {
@@ -47,6 +47,8 @@ body::after {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  max-height: -webkit-fill-available;
+  max-height: fill-available;
 }
 
 @media screen and (max-width: 600px) {
