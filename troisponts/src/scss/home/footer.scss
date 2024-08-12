@@ -10,8 +10,8 @@
 }
 
 #portal-footer-wrapper {
-  margin: 60px 0 0;
-  background: $primary;
+  margin: 0;
+  background: $primary-dark;
   padding: 40px 0 !important;
 
   .row {
@@ -370,4 +370,18 @@ footer {
 #portal-footer-wrapper li.facebook,
 #portal-footer-wrapper li.twitter {
   display: block !important;
+}
+
+body.portaltype-imio-smartweb-portalpage .outer-wrapper {
+  &::after {
+    content: url("../../assets/svg/footer-brigde.svg");
+    display: block;
+    margin: 0 auto -8px;
+    max-width: 1200px;
+    overflow: hidden;
+    width: 90vw;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
