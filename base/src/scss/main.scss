@@ -4,6 +4,7 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./variables";
 
 // Plone Barceloneta Styling & components
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 // Plone colors
 
@@ -44,16 +45,13 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./common/com-cookies";
 @import "./common/com-edition";
 @import "./common/com-faceted";
-@import "./common/com-list-image";
 @import "./common/messviewlet";
 @import "./common/com-react";
 @import "./common/com-footer";
 
 ///// List
 
-@import "./list/list-block";
-@import "./list/list-img";
-@import "./list/list";
+@import "./common/folder-view";
 
 ///// Base
 

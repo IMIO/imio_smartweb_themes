@@ -94,18 +94,6 @@ div#formfield-form-widgets-basic_analytics {
   z-index: 1;
 }
 
-//---//
-
-//---//
-
-// Pour supprimer le margin en fin de page ( si non le footer ne colle pas au sections)
-#main-container,
-#content-core {
-  margin-bottom: 0;
-}
-
-//---//
-
 /* slider sinon un click sur la flèches inactive amène sur l'élément derrière */
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -376,23 +364,8 @@ div#viewlet-below-content-body .procedure {
   }
 }
 
-.template-block_view_with_images #content-core,
-.template-block_view #content-core,
-.template-summary_view #content-core,
-.template-summary_view_with_images #content-core {
-  padding-bottom: 3rem;
-}
-
 div#faceted-results {
   padding-bottom: 1.5rem;
-}
-
-.list-menu-element {
-  margin-bottom: 1rem;
-}
-
-.list-menu-element a.row {
-  text-decoration: none;
 }
 
 .newsletterhomepage .body-section {
@@ -538,12 +511,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
   color: $primary;
 }
 
-.subsection-demarches-infos-pratiques
-  .list-menu-element
-  .newsImage.card-img-left {
-  margin-left: 1rem;
-}
-
 .sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
   position: relative;
   text-decoration: none;
@@ -613,11 +580,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
     margin-left: 0;
     text-align: center;
   }
-}
-
-.subsection-demarches-infos-pratiques .list-menu-element .list-card-title.h2,
-.subsection-demarches-infos-pratiques .list-menu-element h2.list-card-title {
-  font-size: 1.25rem;
 }
 
 /* attention de ne cibler que les type page pour le bg des sections links */
