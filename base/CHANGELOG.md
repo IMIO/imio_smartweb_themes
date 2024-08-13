@@ -1,5 +1,22 @@
 
 
+## [0.1.3](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.2...v0.1.3) (2024-08-13)
+
+
+### Bug Fixes
+
+* **ci/cd:** commit message in env so it is properly escaped ([bd2033c](https://github.com/IMIO/imio_smartweb_themes/commit/bd2033ca9d2a9d5b8b9361692405aa4f82e04cf9))
+* **ci/cd:** ignore pattern ([342739f](https://github.com/IMIO/imio_smartweb_themes/commit/342739f96e9588ae31d5c9385cc28ff6de1264f1))
+* **ci/cd:** multiple folders summary ([5f60e76](https://github.com/IMIO/imio_smartweb_themes/commit/5f60e76157bfff17b2a4446164e795f534011093))
+* **ci/cd:** multiple folders summary ([9983bad](https://github.com/IMIO/imio_smartweb_themes/commit/9983bad959dd82b105f2c95ed40eb2769655468b))
+
+
+### Features
+
+* bump smartweb-base-theme on florennes and verlaine [quick] ([2268e1e](https://github.com/IMIO/imio_smartweb_themes/commit/2268e1ee7350214b7fe7e98c4353622a61c3250a))
+* bump smartweb-base-theme on montsaintguibert pecq and tintigny ([bd12d36](https://github.com/IMIO/imio_smartweb_themes/commit/bd12d36e818a023082e04b3a21a87518a7556fcb))
+* **ci/cd:** use IMIO/gha/plone-theme-build-push-notify ([c199213](https://github.com/IMIO/imio_smartweb_themes/commit/c199213557a3a07bc3e8208ca28c22827073cfeb))
+
 ## [0.1.2](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.0...v0.1.2) (2024-08-05)
 
 
