@@ -457,15 +457,6 @@
 @media screen and (max-width: 992px) {
   .open-nav-overflow {
     overflow: hidden;
-
-    .navbar-dark .navbar-toggler {
-      color: #000;
-      border-color: #000;
-    }
-
-    .navbar-dark .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
-    }
   }
 
   .collapse:not(.show) {
@@ -605,8 +596,18 @@
   color: #c4183c;
 }
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: $header-toggler-icon !important;
+#portal-globalnav-wrapper {
+  button[aria-expanded="true"] {
+    .navbar-toggler-icon {
+      background-image: $header-toggler-icon-open;
+    }
+  }
+
+  button[aria-expanded="false"] {
+    .navbar-toggler-icon {
+      background-image: $header-toggler-icon-close;
+    }
+  }
 }
 
 .navbar-toggler:focus {
