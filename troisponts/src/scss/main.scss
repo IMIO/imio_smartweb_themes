@@ -30,7 +30,7 @@ $enable-roboto-webfont: false;
 
 .navbar-toggler {
   padding: 0 !important;
-  background: $primary !important;
+  background: #d9ebf4 !important;
   height: 50px !important;
   width: 50px !important;
   border-radius: 50% !important;
@@ -38,6 +38,11 @@ $enable-roboto-webfont: false;
   line-height: 1;
   color: var(--bs-navbar-color);
   background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border: 1px solid $primary;
   transition: var(--bs-navbar-toggler-transition);
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  border: 1px solid $primary;
+  background: #d9ebf4;
 }
