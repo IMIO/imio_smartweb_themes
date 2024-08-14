@@ -142,7 +142,7 @@ h2.section-title::after {
   h2.section-title::after {
     transform: rotate(90deg);
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: -10px;
     top: initial;
   }
