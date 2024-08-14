@@ -1,5 +1,6 @@
 .sectionnews {
   margin: 50px 0 60px;
+  position: relative;
 
   @media screen and (max-width: 992px) {
     margin: 3.5rem 0;
@@ -122,4 +123,42 @@
   border-radius: 10px;
   border: solid 1px;
   font-size: 14px;
+}
+
+//visu title
+h2.section-title::after {
+  position: relative;
+  content: url("../../assets/svg/form-title.svg");
+  display: block;
+  text-align: center;
+  top: -15px;
+}
+
+h2.section-title::after {
+  transform: initial;
+}
+
+@media screen and (min-width: 960px) {
+  h2.section-title::after {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    top: initial;
+  }
+}
+
+.sectionnews .swiper {
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 960px) {
+  .partenaires h2.section-title::after,
+  .partenaires .section-title.h2::after {
+    transform: initial;
+    bottom: -22px;
+    right: 400px;
+    left: initial;
+    top: 20px;
+  }
 }

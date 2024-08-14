@@ -101,7 +101,7 @@
 
             &:hover {
               span {
-                color: #fff !important;
+                color: $primary-svg !important;
                 transition: all 0.5s ease;
               }
             }
@@ -113,7 +113,7 @@
 }
 
 #portal-colophon {
-  background: $primary-dark;
+  background: #fff;
   padding: 10px 0 20px;
 
   ul {
@@ -125,13 +125,13 @@
             display: block;
         }*/
     li {
-      color: #fff;
+      color: #000;
 
       a,
       span,
       p,
       div {
-        color: #fff;
+        color: #000;
         text-decoration: none;
       }
     }
@@ -200,7 +200,7 @@ footer {
 
               &:hover {
                 span {
-                  color: #fff !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -231,7 +231,7 @@ footer {
 
               &:hover {
                 span {
-                  color: #fff !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -262,7 +262,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -293,7 +293,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -324,7 +324,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
@@ -355,7 +355,7 @@ footer {
 
               &:hover {
                 span {
-                  color: $primary !important;
+                  color: $primary-svg !important;
                   transition: all 0.5s ease;
                 }
               }
