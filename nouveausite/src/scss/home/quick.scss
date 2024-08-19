@@ -36,6 +36,32 @@
   padding: 0 80px 80px;
   border-radius: 0 0 100px 100px;
   text-align: center;
+
+  &::before {
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    height: 354px;
+    background: url("../../assets/svg/form-bloc-app.svg") center top no-repeat;
+    z-index: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px;
+    width: 2536px;
+  }
+
+  &::after {
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    height: 200px;
+    background: $primary;
+    z-index: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100vw;
+  }
 }
 
 .bloc-app .body-section ul li {
