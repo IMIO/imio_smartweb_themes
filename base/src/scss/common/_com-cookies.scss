@@ -90,3 +90,15 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  #gdpr-consent-banner .gdpr-actions > a {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #gdpr-consent-banner .gdpr-actions input[name="refuse"] {
+    margin-left: 0;
+    text-align: center;
+  }
+}

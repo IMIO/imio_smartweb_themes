@@ -233,7 +233,6 @@
   }
 
   .dropdown {
-    background-color: aqua;
     opacity: 0%;
     visibility: hidden;
 
@@ -245,6 +244,21 @@
 
     .nav-title {
       padding: 0 !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &::after {
+        content: $nav-overlay-next-icon;
+        right: 0;
+      }
+
+      &:hover,
+      &:focus {
+        &::after {
+          content: $nav-overlay-next-icon-hover;
+        }
+      }
 
       a {
         color: $nav-overlay-title-color;
