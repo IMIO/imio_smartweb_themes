@@ -1,0 +1,89 @@
+.bloc-intro {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: $primary-svg;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 50px;
+    color: $primary;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    height: 2200px;
+    background: url("../../assets/svg/cercle-intro.svg") center top no-repeat;
+    z-index: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -200px;
+    width: 100vw;
+  }
+}
+
+.blocsx3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  position: relative;
+  padding: 0;
+
+  .bloc1 {
+    background: url("../../assets/svg/img-bloc1.svg") 30px center no-repeat
+      $primary-light;
+    padding: 30px 40px 40px 140px;
+    border-radius: 20px;
+
+    strong {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+  }
+
+  .bloc2 {
+    background: url("../../assets/svg/img-bloc2.svg") 30px center no-repeat
+      $primary-light;
+    padding: 30px 40px 40px 140px;
+    border-radius: 20px;
+
+    strong {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+  }
+
+  .bloc3 {
+    background: url("../../assets/svg/img-bloc3.svg") 30px center no-repeat
+      $primary-light;
+    padding: 30px 40px 40px 140px;
+    border-radius: 20px;
+
+    strong {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+  }
+}
+
+#body-section-perso {
+  figure {
+    max-width: 100%;
+    margin: 0;
+  }
+}

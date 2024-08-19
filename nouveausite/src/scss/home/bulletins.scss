@@ -1,0 +1,114 @@
+.bloc_news {
+  .swiper-slide .swiper-image {
+    padding-bottom: 140%;
+  }
+
+  overflow: hidden;
+  position: relative;
+  margin: 60px 0;
+  max-width: 100vw;
+  padding-bottom: 6rem;
+  padding-top: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .swiper {
+    max-width: 1200px;
+  }
+
+  &::before {
+    background: $primary;
+    border-radius: 100px 100px 0 0;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 80px;
+    margin-left: -700px;
+    width: 1400px;
+    z-index: -1;
+
+    @media screen and (max-width: 1400px) {
+      border-radius: 0;
+      left: 0;
+      top: 130px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    position: relative;
+    color: $primary;
+    width: max-content;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    margin-bottom: 130px;
+  }
+
+  .swiper-slide {
+    padding-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+    a {
+      text-decoration: none;
+    }
+
+    .swiper_title h3 {
+      padding: 20px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.5s;
+    }
+
+    &:hover,
+    &:focus {
+      transition: 0.5s;
+      //transform: translateY(10px);
+      .swiper_title h3 {
+        color: $primary-green;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .see_all a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 15px 30px;
+    background: $primary-blue;
+    color: #041e42;
+    border-radius: 15px;
+    border: solid 2px $primary-blue;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    margin: 30px auto 0;
+
+    &:hover {
+      background: $primary;
+      border: solid 2px $primary-light;
+      color: #fff;
+      transition: all 0.5s ease;
+      border-radius: 40px;
+    }
+  }
+
+  .swiper-wrapper {
+    column-gap: 15px;
+  }
+}

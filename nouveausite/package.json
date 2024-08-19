@@ -1,0 +1,36 @@
+{
+  "name": "@imiobe/plonetheme-smartweb-nouveausite",
+  "description": "iA.Smartweb base theme for Plone",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "Thomas Lambert (iMio)",
+      "email": "thomas.lambert@imio.be",
+      "url": "https://imio.be"
+    }
+  ],
+  "homepage": "https://nouveausite.preprod.imio.be",
+  "keywords": [
+    "imio",
+    "plone",
+    "smartweb"
+  ],
+  "version": "0.0.2",
+  "license": "GPL version 2",
+  "scripts": {
+    "stylelint": "npx stylelint 'src/**/*.{css,less}' 'src/**/*.{css,less}",
+    "stylelint:fix": "npx stylelint 'src/**/*.{css,less}' --fix",
+    "prettier": "npx prettier --single-quote --check 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+    "prettier:fix": "npx prettier --single-quote --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@plone/plonetheme-barceloneta-base": "3.0.0",
+    "@imiobe/plonetheme-smartweb-base": "0.1.0",
+    "@popperjs/core": "^2.11.6"
+  }
+}
