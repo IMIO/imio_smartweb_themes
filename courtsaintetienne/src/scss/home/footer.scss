@@ -46,7 +46,7 @@
 }
 
 #portal-colophon {
-  background: $primary;
+  background: #fff;
   padding: 1rem;
 
   ul {
@@ -55,13 +55,13 @@
     margin-bottom: 0;
 
     li {
-      color: #fff !important;
+      color: $primary !important;
 
       a,
       span,
       p,
       div {
-        color: #fff !important;
+        color: $primary !important;
       }
     }
   }

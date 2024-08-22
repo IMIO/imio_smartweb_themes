@@ -235,21 +235,6 @@ footer #container-section-noussuivre {
 }
 
 .header-custom {
-  #banner {
-    z-index: -1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0%) 0%,
-        rgba(0, 0, 0, 50%) 100%
-      );
-    }
-  }
-
   #portal-breadcrumbs {
     margin: 0.5rem 0 0 !important;
     position: absolute;
