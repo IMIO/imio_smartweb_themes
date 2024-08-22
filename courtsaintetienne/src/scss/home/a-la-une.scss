@@ -39,14 +39,12 @@
 
   .section-title {
     font-weight: 600;
-    text-transform: none;
-    margin: 0 -70px 0 -90px;
+    text-transform: uppercase;
+    margin: initial;
     width: max-content;
     font-size: 3.7rem;
-    transform: rotate(180deg);
-    position: absolute;
-    padding: 100px 0 0;
-    writing-mode: vertical-rl;
+    position: relative;
+    padding: initial;
     background: transparent;
 
     @media screen and (max-width: 992px) {
@@ -72,6 +70,10 @@
       direction: rtl;
       grid-auto-flow: dense;
       text-align: left;
+
+      .swiper-image {
+        border-radius: 10px;
+      }
 
       .swiper_date {
         display: none;
