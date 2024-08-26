@@ -150,9 +150,9 @@
     margin: 0 auto;
   }
 
-  .sectiontext .figure {
+  .sectiontext figure {
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -382,7 +382,7 @@ body.portaltype-imio-smartweb-portalpage .outer-wrapper {
   &::after {
     content: url("../../assets/svg/footer-brigde.svg");
     display: block;
-    margin: 0 auto -8px;
+    margin: 0 auto -58px;
     max-width: 1200px;
     overflow: hidden;
     width: 90vw;
