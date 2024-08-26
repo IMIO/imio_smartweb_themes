@@ -1,4 +1,4 @@
-.sectionnews {
+.portaltype-imio-smartweb-portalpage.section-home-page .sectionnews {
   margin: 50px 0 60px;
   position: relative;
 
@@ -126,7 +126,7 @@
 }
 
 //visu title
-h2.section-title::after {
+.portaltype-imio-smartweb-portalpage.section-home-page h2.section-title::after {
   position: relative;
   content: url("../../assets/svg/form-title.svg");
   display: block;
@@ -134,12 +134,13 @@ h2.section-title::after {
   top: -15px;
 }
 
-h2.section-title::after {
+.portaltype-imio-smartweb-portalpage.section-home-page h2.section-title::after {
   transform: initial;
 }
 
 @media screen and (min-width: 960px) {
-  h2.section-title::after {
+  .portaltype-imio-smartweb-portalpage.section-home-page
+    h2.section-title::after {
     transform: rotate(90deg);
     position: absolute;
     bottom: 0;

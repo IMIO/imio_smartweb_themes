@@ -43,8 +43,8 @@ $enable-roboto-webfont: false;
 }
 
 #portal-header #portal-header-top #header-links #search-link a {
-  border: 1px solid $primary;
-  background: #d9ebf4;
+  border: none;
+  background: $primary-svg;
 }
 
 .subsite-container #subsite-logo {

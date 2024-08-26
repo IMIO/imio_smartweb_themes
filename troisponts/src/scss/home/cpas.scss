@@ -33,7 +33,7 @@
   .r-content-text mark,
   .sectiontext .mark,
   .sectiontext mark {
-    background-color: $primary-dark;
+    background-color: $primary-light;
   }
 
   #portal-globalnav-wrapper
@@ -49,16 +49,16 @@
   }
 
   #portal-header #portal-header-top #header-links #search-link a {
-    background: $primary-dark !important;
+    background: $primary-svg !important;
   }
 
   .quick-access .body-section ul li .table_image .image.d-block {
-    background: #f9cf00 !important;
+    background: $primary-light;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    background-color: #f9cf00;
+    background-color: $primary-light;
   }
 
   .swiper-pagination-bullet-active {

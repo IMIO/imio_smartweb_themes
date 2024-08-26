@@ -7,3 +7,53 @@
   text-transform: initial;
   font-weight: 600;
 }
+
+.portaltype-imio-smartweb-portalpage.section-home-page .css_partenaires {
+  .section-title {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    position: relative;
+    color: $primary;
+    width: max-content;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
+
+  .table_display {
+    padding: 0 25px;
+  }
+
+  a {
+    text-decoration: none !important;
+
+    .table_title {
+      color: $primary-dark;
+      font-weight: 600;
+      transition: 0.5s;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .image {
+      border-radius: 20px 0 0 20px !important;
+    }
+
+    &:hover {
+      .table_title {
+        color: $primary-dark;
+        transition: 0.5s;
+      }
+    }
+  }
+}
