@@ -1,5 +1,5 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles {
-  background-color: #fff;
+  background-color: $primary-light;
   border-radius: 0;
   font-weight: bold;
   margin-top: 1vw;
@@ -17,7 +17,7 @@
     gap: 10px;
     margin-bottom: 0;
     width: auto;
-    color: #000;
+    color: $primary-dark;
     padding: 0 !important;
 
     a {
@@ -25,7 +25,7 @@
     }
 
     a.collapsed {
-      color: #000 !important;
+      color: $primary-dark !important;
     }
   }
 
@@ -59,7 +59,7 @@
       border-color: white;
 
       .table_image {
-        border: solid 1px #000;
+        border: solid 1px $primary;
         text-decoration: none;
         padding: 20px;
         border-radius: 0;
@@ -68,7 +68,7 @@
         p,
         a,
         div {
-          color: #000 !important;
+          color: $primary-dark !important;
           font-weight: 400;
         }
       }

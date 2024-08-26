@@ -1,11 +1,14 @@
 #portal-column-content .sectioncontact {
-  .contact-type-organization {
+  .contact-type-organization,
+  .contact-type-position {
     background: $primary-light;
+    margin: 5px;
   }
 
   h2,
   h3,
   h4 {
     font-family: $font-family-base;
+    color: $primary-dark !important;
   }
 }
