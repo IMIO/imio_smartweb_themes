@@ -12,9 +12,9 @@ $primary-dark: #26383f;
 
 $font-family-base: "Roboto", sans-serif !default;
 $font-family-title: "Roboto", sans-serif;
-$font-title-color: #000;
+$font-title-color: $primary-dark;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: #000 !default;
+$font-title-color-dark: $primary-dark;
 $font-title-weight: 700 !default;
 
 // $font-size-base affects the font size of the body text
@@ -49,7 +49,7 @@ $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
 $section-padding-top: 0 !default;
-$to-portal-link-color: #282828 !default;
+$to-portal-link-color: $primary-dark;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper

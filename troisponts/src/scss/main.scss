@@ -46,3 +46,33 @@ $enable-roboto-webfont: false;
   border: 1px solid $primary;
   background: #d9ebf4;
 }
+
+.subsite-container #subsite-logo {
+  font-size: 20px;
+  text-transform: initial;
+}
+
+.subsite-container {
+  background: #eef4fa;
+}
+
+.sectiontext .mark,
+.sectiontext mark {
+  background-color: #eef4fa;
+  border: 1px solid $primary-dark;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-dark;
+}

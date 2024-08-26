@@ -11,11 +11,11 @@
   h4,
   h5,
   h6 {
-    color: $primary;
+    color: $primary-dark;
   }
 
   #portal-globalnav .dropdown .nav-title a {
-    color: $primary;
+    color: $primary-dark;
   }
 
   #portal-globalnav-collapse .dropdown .nav-link:focus,
@@ -33,7 +33,7 @@
   .r-content-text mark,
   .sectiontext .mark,
   .sectiontext mark {
-    background-color: $primary;
+    background-color: $primary-dark;
   }
 
   #portal-globalnav-wrapper
@@ -49,7 +49,7 @@
   }
 
   #portal-header #portal-header-top #header-links #search-link a {
-    background: #f9cf00 !important;
+    background: $primary-dark !important;
   }
 
   .quick-access .body-section ul li .table_image .image.d-block {
@@ -63,17 +63,6 @@
 
   .swiper-pagination-bullet-active {
     background: $primary !important;
-  }
-
-  .sectionnews .see_all a,
-  .sectionevent .see_all a {
-    background: #f9cf00;
-    border: 1px solid #f9cf00;
-
-    &:hover {
-      background: #1c313f;
-      border: 1px solid #1c313f;
-    }
   }
 
   .a-la-une {
