@@ -1,7 +1,7 @@
 //*// COLORS
 $primary: #007bb6;
 $primary-svg: #afc33a;
-$primary-light: #e9f3f9;
+$primary-light: #eef4fa;
 $primary-yellow: #f3cf63;
 $primary-dark: #26383f;
 
@@ -378,7 +378,7 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: #f8f8f8;
+$section-link-background-color: $primary-light;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 

@@ -81,3 +81,23 @@
     }
   }
 }
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .section-container
+  > div
+  .body-section
+  .row
+  .table_image
+  .table_title
+  span::before {
+  content: "\F471";
+  font-family: bootstrap-icons;
+  font-size: 22px;
+  margin-right: 10px;
+  color: $primary;
+  background: none;
+  height: initial;
+  width: initial;
+}
