@@ -785,3 +785,7 @@ h3 {
   background-position: top;
   background-size: contain;
 }
+
+.sectiontext ol > li::before {
+  content: counters(item, ".") " " !important;
+}
