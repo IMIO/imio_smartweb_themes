@@ -1,9 +1,9 @@
 .sectionlinks.quick-access {
   padding: 1rem 0;
-  
+
   div#container-section-quickacces {
     &::after {
-      background:$primary;
+      background: $primary;
       content: "";
       position: absolute;
       right: 0;
