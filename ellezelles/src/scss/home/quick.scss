@@ -1,0 +1,22 @@
+.sectionlinks.quick-access {
+  padding: 1rem 0;
+  
+  div#container-section-quickacces {
+    &::after {
+      background:$primary;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50vw);
+      width: 100vw;
+    }
+  }
+}
+
+#portal-header {
+  margin-bottom: 0;
+}
