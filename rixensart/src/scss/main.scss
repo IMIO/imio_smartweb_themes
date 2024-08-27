@@ -108,10 +108,7 @@ h1 {
   }
 }
 
-.smartweb_herobanner
-  .bannerSwiper
-  .swiper-slide
-  .swiper-banner-content-wrapper {
+.smartweb_herobanner .bannerSwiper .swiper-slide .swiper-banner-image {
   position: absolute;
   top: auto;
   transform: none;
@@ -361,7 +358,7 @@ footer #container-section-noussuivre {
 #portal-breadcrumbs {
   margin: 0 !important;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 
   .breadcrumb {
     margin: 0 !important;
@@ -774,4 +771,17 @@ h3 {
       font-weight: 700;
     }
   }
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-position
+  .contact_leadimage {
+  background-size: contain;
+}
+
+#portal-column-content .section-contact .contact-type-position .portrait {
+  aspect-ratio: 16 / 9;
+  background-position: top;
+  background-size: contain;
 }

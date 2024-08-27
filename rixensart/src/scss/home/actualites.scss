@@ -52,6 +52,10 @@
           transition: 0.5s;
         }
 
+        .swiper_category {
+          display: none !important;
+        }
+
         .swiper_date {
           font-family: $font-family-base;
         }

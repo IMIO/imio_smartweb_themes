@@ -80,6 +80,14 @@
           transition: 0.5s;
         }
 
+        .auth_source_container_title {
+          color: #000;
+          font-size: 12px;
+          margin: 1rem 0 0.5rem;
+          padding: 0 1rem;
+          text-align: left;
+        }
+
         .swiper_date {
           font-family: $font-family-base;
           background: $primary-blue;
