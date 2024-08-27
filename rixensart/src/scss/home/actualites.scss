@@ -1,0 +1,106 @@
+.sectionnews {
+  margin: 6rem 0;
+
+  @media screen and (max-width: 992px) {
+    margin: 3.5rem 0;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .section-title {
+    font-weight: 600;
+    margin: 0 0 0 -30px;
+    width: max-content;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: absolute;
+    padding: 100px 0 0;
+    writing-mode: vertical-rl;
+    background: url("../../assets/svg/before-titre.svg") center top no-repeat;
+    left: 20px;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      border-radius: 50px 0 0;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+        border-radius: 50px 0;
+      }
+
+      & > a {
+        align-items: center;
+        padding-bottom: 20px;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+        }
+
+        .swiper_title {
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $primary-light !important;
+  }
+}
+
+.sectionnews .see_all a {
+  background: #fff;
+  color: $primary;
+  border: solid 1px #dedede;
+
+  &:hover {
+    background: $primary-blue;
+    border: solid 1px $primary-blue;
+    color: #fff;
+  }
+}
