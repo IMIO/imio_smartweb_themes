@@ -66,6 +66,7 @@ body.faceted-map {
 
     .items-content {
       display: flex;
+      justify-content: start;
 
       @include media-breakpoint-down(md) {
         flex-direction: column;
@@ -73,7 +74,11 @@ body.faceted-map {
       }
 
       .geo-item-image {
-        max-width: 250px;
+        max-width: 170px;
+
+        @media screen and (min-width: 450px) {
+          margin-left: auto;
+        }
 
         img {
           width: 100%;
