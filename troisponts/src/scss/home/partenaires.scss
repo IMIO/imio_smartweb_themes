@@ -6,6 +6,12 @@
   width: 100%;
   text-transform: initial;
   font-weight: 600;
+
+  &::after {
+    bottom: -20px;
+    right: -80px;
+    transform: initial;
+  }
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page .partenaires {
@@ -18,7 +24,7 @@
     font-size: 50px;
     line-height: 50px;
     padding-left: 25px;
-    margin-bottom: 40px;
+    margin: 0 auto;
 
     @media screen and (max-width: 992px) {
       transform: rotate(0deg);

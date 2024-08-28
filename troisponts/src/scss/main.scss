@@ -76,3 +76,25 @@ h5,
 h6 {
   color: $primary-dark;
 }
+
+#portal-breadcrumbs {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.subsite-container {
+  background: #eef4fa;
+  border-radius: 10px;
+
+  #subsite-logo {
+    font-size: 20px;
+    text-transform: none;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+//CPAS
+.site-cpas #portal-header #portal-header-top .minisite_logo {
+  max-width: 150px !important;
+  margin-right: 40px;
+}
