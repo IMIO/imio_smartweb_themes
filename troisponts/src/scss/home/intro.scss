@@ -80,19 +80,6 @@
     width: 100%;
     position: relative;
 
-    &::after {
-      border-radius: 0;
-      content: "";
-      left: -40px;
-      right: auto;
-      position: absolute;
-      top: 0;
-      width: 76px;
-      height: 86px;
-      z-index: -1;
-      background: url("../../assets/svg/relief-x3.svg") top right no-repeat;
-    }
-
     img {
       border-radius: 0 0 100px 100px;
       width: 100% !important;
