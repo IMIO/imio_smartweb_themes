@@ -59,9 +59,12 @@
 
         .swiper_date {
           font-family: $font-family-base;
+          display: none;
         }
 
         .swiper_title {
+          margin-top: 20px;
+
           h3 {
             font-family: $font-family-base;
             transition: 0.5s;

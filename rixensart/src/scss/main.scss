@@ -674,10 +674,6 @@ h3 {
   background-position: top;
 }
 
-.sectiontext ol > li::before {
-  content: counter(sectioncounter) "." !important;
-}
-
 #portal-footer-wrapper #portal-footer #smartweb-footer a,
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
   color: #fff;
@@ -771,19 +767,6 @@ h3 {
       font-weight: 700;
     }
   }
-}
-
-#portal-column-content
-  .section-contact
-  .contact-type-position
-  .contact_leadimage {
-  background-size: contain;
-}
-
-#portal-column-content .section-contact .contact-type-position .portrait {
-  aspect-ratio: 16 / 9;
-  background-position: top;
-  background-size: contain;
 }
 
 .sectiontext ol > li::before {
