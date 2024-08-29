@@ -11,6 +11,11 @@
     bottom: -20px;
     right: -80px;
     transform: initial;
+
+    @media screen and (max-width: 992px) {
+      bottom: initial;
+      right: initial;
+    }
   }
 }
 
