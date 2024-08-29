@@ -7,6 +7,15 @@
   transform: translateX(-50%);
   width: 100vw;
 
+  .section-container {
+    position: relative;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
   @media screen and (max-width: 992px) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -128,7 +137,7 @@
 }
 
 .bloc-presentation {
-  padding: 120px 0 !important;
+  padding: 120px 0 0 !important;
   margin: 0;
   position: relative;
 
@@ -206,10 +215,5 @@
         transition: all 0.3s ease;
       }
     }
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
   }
 }
