@@ -192,186 +192,31 @@ footer {
   .body-section {
   .row {
     li {
-      &:nth-child(1) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
+      .table_display {
+        .table_image {
+          .image {
+            width: 30px;
+            position: absolute;
 
-              svg {
-                fill: #fff !important;
-              }
-            }
-
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
-              span {
-                transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
-              }
+            svg {
+              fill: #fff !important;
             }
           }
-        }
-      }
 
-      &:nth-child(2) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
+          .table_title {
+            padding-left: 30px !important;
+            font-size: 1rem !important;
+            color: #fff !important;
+            text-decoration: none !important;
 
-              svg {
-                fill: #fff !important;
-              }
+            span {
+              transition: all 0.5s ease;
             }
 
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
+            &:hover {
               span {
+                color: $primary-blue !important;
                 transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &:nth-child(3) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
-
-              svg {
-                fill: #fff !important;
-              }
-            }
-
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
-              span {
-                transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &:nth-child(4) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
-
-              svg {
-                fill: #fff !important;
-              }
-            }
-
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
-              span {
-                transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &:nth-child(5) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
-
-              svg {
-                fill: #fff !important;
-              }
-            }
-
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
-              span {
-                transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &:nth-child(6) {
-        .table_display {
-          .table_image {
-            .image {
-              width: 30px;
-              position: absolute;
-
-              svg {
-                fill: #fff !important;
-              }
-            }
-
-            .table_title {
-              padding-left: 30px !important;
-              font-size: 1rem !important;
-
-              span {
-                transition: all 0.5s ease;
-              }
-
-              &:hover {
-                span {
-                  color: $primary-blue !important;
-                  transition: all 0.5s ease;
-                }
               }
             }
           }
