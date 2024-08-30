@@ -64,12 +64,7 @@
   border-radius: 0 !important;
 }
 
-#portal-footer-wrapper
-  #portal-footer
-  .sectionlinks
-  .container
-  .nb-items-batch-1
-  .body-section {
+#portal-footer-wrapper #portal-footer .sectionlinks .container .body-section {
   .row {
     li {
       .table_display {
@@ -393,5 +388,10 @@ footer {
 
   .sectiontext .section-text .body-section.figure-left figure img {
     width: 100px;
+  }
+
+  .sectiontext .section-text .body-section a,
+  .sectiontext .section-text .section-title a.collapsed {
+    color: #fff !important;
   }
 }
