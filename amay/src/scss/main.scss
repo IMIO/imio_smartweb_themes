@@ -811,3 +811,13 @@ h3 {
 .contact_map {
   z-index: -1;
 }
+
+.subsection-services-communaux-communication-1-bulletin-communal-1 {
+  .block-menu-element a .card-body {
+    box-shadow: none;
+  }
+
+  .card-img-top {
+    padding-top: 150%;
+  }
+}
