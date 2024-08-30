@@ -188,6 +188,8 @@ footer {
     li {
       .table_display {
         .table_image {
+          text-decoration: none !important;
+
           .image {
             width: 30px;
             position: absolute;
@@ -223,7 +225,7 @@ footer {
 #smartweb-subsite-footer {
   padding: 0 0 40px;
   margin-bottom: 60px;
-  background: linear-gradient(180deg, #276577 0, #1f4854 400px, #fff);
+  background: linear-gradient(180deg, #276577 0, #1f4854 400px, #1f4854);
 
   .sectiontext .section-text .body-section.figure-left figure img {
     width: 100px;

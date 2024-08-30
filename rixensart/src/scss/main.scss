@@ -768,7 +768,3 @@ h3 {
     }
   }
 }
-
-.sectiontext ol > li::before {
-  content: counters(item, ".") " " !important;
-}
