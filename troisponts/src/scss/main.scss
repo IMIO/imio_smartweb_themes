@@ -98,3 +98,9 @@ h6 {
   max-width: 150px !important;
   margin-right: 40px;
 }
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
