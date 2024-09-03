@@ -56,9 +56,12 @@
           transition: 0.5s;
         }
 
-        .swiper_category,
         .auth_source_container_title {
-          display: none !important;
+          color: #000;
+          font-size: 12px;
+          margin: 1rem 0 0.5rem;
+          padding: 0 1rem;
+          text-align: left;
         }
 
         .swiper_date {
