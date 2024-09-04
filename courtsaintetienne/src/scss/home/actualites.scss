@@ -7,6 +7,18 @@
     z-index: -1;
   }
 
+  &::before {
+    background: url("../../assets/svg/tree-background.svg") no-repeat;
+    content: "";
+    position: absolute;
+    inset: 1px;
+    z-index: -1;
+    transform: translateX(-50vw);
+    width: 100vw !important;
+    left: 50%;
+    top: -100%;
+  }
+
   .section-title {
     font-weight: 500;
     position: relative;

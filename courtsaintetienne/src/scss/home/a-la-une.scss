@@ -1,11 +1,12 @@
 .a-la-une {
-  padding-top: 1rem;
+  padding-top: 5rem;
   padding-bottom: 6rem;
   margin: 3rem 0;
   max-width: 100vw;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
   @media screen and (max-width: 992px) {
     padding-top: 3.5rem;

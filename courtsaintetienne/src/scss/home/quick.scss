@@ -68,6 +68,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (max-width: 900px) {
+    gap: 25px;
+  }
+
   li a {
     display: flex;
     flex-direction: column;
@@ -76,9 +80,14 @@
     background: #fff;
     border-radius: 100%;
     transition: all 0.3s ease;
-    height: 155px;
-    width: 155px;
+    height: 145px;
+    width: 145px;
     box-shadow: rgba(149, 157, 165, 20%) 1px 8px 20px;
+
+    @media screen and (max-width: 900px) {
+      height: 115px;
+      width: 115px;
+    }
 
     .image.d-block {
       background: none;

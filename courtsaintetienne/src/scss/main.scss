@@ -78,8 +78,8 @@ footer {
 }
 
 #main-container {
-  .sectionlinks {
-    margin: 2rem 0 0;
+  .sectionlinks.quick-access {
+    margin: -10rem 0 0;
   }
 }
 
@@ -377,4 +377,48 @@ footer #container-section-noussuivre {
   .contact-type-organization
   .contact_logo {
   max-width: 200px;
+}
+
+.swiper-banner-image {
+  position: relative;
+}
+
+.swiper-banner-image::before {
+  background: url("../../assets/svg/wave.svg");
+  background-position: top;
+  background-size: cover;
+  bottom: -1px;
+  content: "";
+  height: 120px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50vw);
+  width: 100vw;
+  z-index: 1;
+}
+
+#content-core .swiper-wrapper .swiper-slide > a {
+  .swiper_category {
+    left: initial;
+    position: absolute;
+    right: 0;
+
+    span {
+      border-radius: 0 10px;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.auth_source_container_title {
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+#content-core .swiper-slide .swiper_date {
+  margin: 0.4rem 0 0.5rem;
 }
