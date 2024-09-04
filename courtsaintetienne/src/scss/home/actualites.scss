@@ -99,3 +99,57 @@
     }
   }
 }
+
+//Bloc description
+.sectionnews,
+.sectionevents {
+  .swiper-slide a {
+    position: relative;
+  }
+
+  .auth_source_container_title {
+    position: absolute;
+    width: calc(100% - 40px);
+    margin: -60px auto 0 !important;
+    height: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 10px !important;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .swiper_date {
+    position: absolute;
+    width: calc(100% - 40px);
+    margin: -30px auto 0 !important;
+    height: 30px;
+    left: 0;
+    right: 0;
+    padding: 10px !important;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+
+    .day_date {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper_title {
+    background: #fff;
+    width: calc(100% - 40px);
+    margin: 0 auto !important;
+    height: 100px;
+    left: 0;
+    right: 0;
+    padding: 12px !important;
+    border-radius: 0 0 10px 10px;
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 5%),
+      0 8px 10px -6px rgba(0, 0, 0, 5%);
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 80px;
+  }
+}
