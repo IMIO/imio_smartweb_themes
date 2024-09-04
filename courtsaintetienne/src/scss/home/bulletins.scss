@@ -92,3 +92,17 @@
     }
   }
 }
+
+.portaltype-imio-smartweb-page.subsection-services-communaux-communication-bulletin-communal
+  #main-container
+  .sectionlinks
+  .section-container
+  > div
+  .body-section
+  .row {
+  gap: 30px 0%;
+
+  .table_image {
+    display: block;
+  }
+}
