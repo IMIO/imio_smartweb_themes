@@ -100,3 +100,10 @@ footer {
     vertical-align: middle;
   }
 }
+
+.portaltype-imio-smartweb-portalpage.section-home-page
+  #portal-footer-wrapper::before {
+  content: url("../../assets/svg/footer-visu.svg");
+  line-height: 0;
+  transform: translateY(1px);
+}
