@@ -424,3 +424,18 @@ footer #container-section-noussuivre {
 .sectiontext .section-text .body-section a {
   color: #325ddf;
 }
+
+body:not(.portaltype-imio-smartweb-portalpage) .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: initial;
+}
