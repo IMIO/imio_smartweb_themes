@@ -56,6 +56,19 @@
 
           h3 {
             font-family: $font-family-base;
+            position: relative;
+
+            &::after {
+              content: "";
+              background: $primary;
+              width: 80px;
+              height: 1px;
+              left: 0;
+              right: 0;
+              bottom: -10px;
+              position: absolute;
+              margin: 0 auto;
+            }
           }
         }
 
