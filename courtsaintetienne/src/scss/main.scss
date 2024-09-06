@@ -229,11 +229,22 @@ footer #container-section-noussuivre {
   font-size: 13px;
 }
 
+#portal-breadcrumbs {
+  margin: 0.5rem 0 0 !important;
+  border-radius: 10px;
+  background-color: $primary;
+  padding: 10px;
+
+  &::before {
+    color: #fff;
+  }
+}
+
 .header-custom {
   #portal-breadcrumbs {
     margin: 0.5rem 0 0 !important;
     position: absolute;
-    padding-left: 10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: $primary;
 
@@ -241,6 +252,7 @@ footer #container-section-noussuivre {
       margin: 0 !important;
 
       .breadcrumb-item {
+        li,
         a {
           color: #fff !important;
 
