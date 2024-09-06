@@ -101,8 +101,7 @@ footer {
   }
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page
-  #portal-footer-wrapper::before {
+#portal-footer-wrapper::before {
   content: url("../../assets/svg/footer-visu.svg");
   line-height: 0;
   transform: translateY(1px);
@@ -111,9 +110,14 @@ footer {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 992px) {
+    bottom: -45px;
+    transform: scale(0.5);
+  }
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page #portal-footer-wrapper {
+#portal-footer-wrapper {
   background: #313131;
   padding-bottom: 140px !important;
   padding-top: 60px !important;

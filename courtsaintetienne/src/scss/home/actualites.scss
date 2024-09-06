@@ -27,6 +27,10 @@
       margin: 0 auto;
       left: 30%;
       right: 0;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
     }
   }
 
@@ -155,9 +159,11 @@
   }
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page {
-  .sectionnews {
-    margin-top: -300px;
+@media screen and (min-width: 992px) {
+  .portaltype-imio-smartweb-portalpage.section-home-page {
+    .sectionnews {
+      margin-top: -300px;
+    }
   }
 }
 

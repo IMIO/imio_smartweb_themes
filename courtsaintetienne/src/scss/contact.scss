@@ -1,6 +1,8 @@
 #portal-column-content .sectioncontact {
-  .contact-type-organization {
-    background: $primary-light;
+  .contact-type-organization,
+  .contact-type-mission,
+  .contact-type-position {
+    background: $primary-green;
     border-radius: 10px !important;
     margin: 10px;
   }
@@ -9,5 +11,6 @@
   h3,
   h4 {
     font-family: $font-family-base;
+    text-transform: initial;
   }
 }
