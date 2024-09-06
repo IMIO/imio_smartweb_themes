@@ -23,12 +23,9 @@ $enable-roboto-webfont: false;
 
 @import "./home/quick";
 @import "./home/a-la-une";
-@import "./home/espace-citoyen";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
-@import "./home/section-en-image";
-@import "./info-trav";
 @import "./se-link";
 @import "./se-files";
 @import "./contact";
@@ -238,6 +235,9 @@ footer #container-section-noussuivre {
   #portal-breadcrumbs {
     margin: 0.5rem 0 0 !important;
     position: absolute;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: $primary;
 
     .breadcrumb {
       margin: 0 !important;
@@ -247,12 +247,12 @@ footer #container-section-noussuivre {
           color: #fff !important;
 
           &:hover {
-            color: #ccc !important;
+            color: $primary-light !important;
           }
         }
 
         &.active {
-          color: #ccc !important ;
+          color: $primary-light !important ;
         }
 
         &::before {
@@ -421,4 +421,8 @@ footer #container-section-noussuivre {
 
 #content-core .swiper-slide .swiper_date {
   margin: 0.4rem 0 0.5rem;
+}
+
+.sectiontext .section-text .body-section a {
+  color: #325ddf;
 }
