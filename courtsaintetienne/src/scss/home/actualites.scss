@@ -13,6 +13,7 @@
     text-align: center;
     padding-left: 30px;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 
     &::after {
       background: $primary;
@@ -169,4 +170,15 @@
 
 body .swiper-pagination-bullet-active {
   background: #76b82a !important;
+}
+
+.sectionevents .see_all a {
+  background: #fff;
+  border: 1px solid #5ab532;
+
+  &:hover,
+  :focus {
+    background-color: #5ab532;
+    color: $primary;
+  }
 }

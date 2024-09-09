@@ -7,6 +7,7 @@
     text-align: center;
     padding-left: 30px;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 
     &::after {
       background: $primary;
@@ -68,6 +69,10 @@
               bottom: -10px;
               position: absolute;
               margin: 0 auto;
+
+              @media screen and (max-width: 992px) {
+                display: none;
+              }
             }
           }
         }
