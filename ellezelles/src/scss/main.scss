@@ -30,3 +30,40 @@ $enable-roboto-webfont: false;
 @import "./se-link";
 @import "./se-files";
 @import "./contact";
+
+//SLOGAN BANNER
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  .swiper-banner-title {
+    font-weight: 300;
+  }
+
+  .swiper-banner-description {
+    p {
+      font-weight: 700;
+    }
+    padding-left: 50px;
+  }
+}
+
+.smartweb_herobanner .section-slide,
+.smartweb_herobanner .section-slide .swiper-banner-image {
+  background-image: linear-gradient(
+    to right,
+    rgba(255 255 255),
+    rgba(255, 255, 255, 0%)
+  );
+}
+
+.sortable-section.partenaires {
+  background: url("../../assets/svg/birds-background.svg");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100vw;
+}
