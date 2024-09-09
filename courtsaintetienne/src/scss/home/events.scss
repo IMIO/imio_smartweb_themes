@@ -99,3 +99,14 @@
     }
   }
 }
+
+.sectionevents .see_all a {
+  background: #fff;
+  border: 1px solid $primary-svg;
+
+  &:hover,
+  :focus {
+    background-color: $primary-svg;
+    color: #fff !important;
+  }
+}

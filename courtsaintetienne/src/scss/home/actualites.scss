@@ -172,13 +172,13 @@ body .swiper-pagination-bullet-active {
   background: #76b82a !important;
 }
 
-.sectionevents .see_all a {
+.sectionnews .see_all a {
   background: #fff;
-  border: 1px solid #5ab532;
+  border: 1px solid #5ab532 !important;
 
   &:hover,
   :focus {
-    background-color: #5ab532;
-    color: $primary;
+    background-color: #5ab532 !important;
+    color: $primary !important;
   }
 }
