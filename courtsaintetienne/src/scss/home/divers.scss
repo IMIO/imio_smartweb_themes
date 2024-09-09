@@ -1,0 +1,420 @@
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer */
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
+    }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+}
+
+/* Hide content header for specific portal types */
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+  #content > header {
+    display: none;
+  }
+}
+
+/* Fix z-index bug for pagination */
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
+}
+
+#main-container {
+  .sectionlinks.quick-access {
+    margin: -10rem 0 0;
+  }
+}
+
+footer #container-section-noussuivre {
+  li {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      svg path:nth-child(2) {
+        fill: #3f3f3f !important;
+      }
+    }
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  .portaltype-imio-smartweb-portalpage .section-title {
+    font-size: 34px !important;
+  }
+
+  .header-custom #portal-breadcrumbs {
+    width: 94%;
+  }
+
+  .smartweb_herobanner .bannerSwiper {
+    height: 270px;
+  }
+}
+
+#portal-breadcrumbs {
+  .container,
+  .breadcrumb {
+    padding-left: 0;
+  }
+}
+
+#portal-globalnav > li a:hover {
+  color: $primary-svg;
+}
+
+/* Footer */
+.footer-logo figure img {
+  width: 250px !important;
+}
+
+.footer-slogan .text {
+  max-width: 204px;
+  text-align: center;
+
+  p {
+    font-size: 33px;
+    font-weight: 200;
+  }
+}
+
+.footer-fb .table_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+  text-decoration: none;
+
+  .image {
+    width: auto;
+
+    svg {
+      height: 25px;
+      fill: #fff;
+    }
+  }
+}
+
+.r-filter div[class*="control"] {
+  border-radius: 5px;
+}
+
+.procedure a::after {
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+/* Sub-nav */
+.subsite-container {
+  background: #efefef !important;
+  border-radius: 10px;
+
+  #subsite-logo {
+    font-size: 18px;
+    background: #353535;
+    border-radius: 10px 0 0 10px;
+
+    a {
+      .subsite-title {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+#content-header #subsite-navigation > ul li > .has_subtree {
+  margin-top: 26px;
+}
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 15px;
+}
+
+#viewlet-above-content-body .procedure {
+  display: none;
+}
+
+/* Header common */
+.portaltype-imio-smartweb-page,
+.portaltype-imio-smartweb-folder,
+.portaltype-imio-smartweb-procedure {
+  #portal-header {
+    #banner {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      border-radius: 0 0 30px 30px;
+      z-index: -1;
+    }
+  }
+}
+
+/* Breadcrumbs */
+.breadcrumb-item a {
+  text-decoration: none;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  padding: initial;
+}
+
+nav#portal-breadcrumbs {
+  margin: 0.5rem 0 0 !important;
+  border-radius: 10px;
+  background-color: rgba(49, 49, 49, 70%);
+  padding: 10px;
+
+  a,
+  li {
+    color: #fff !important;
+  }
+
+  li.breadcrumb-item::before {
+    color: #fff !important;
+  }
+}
+
+.header-custom #portal-breadcrumbs {
+  margin: 0.5rem 0 0 !important;
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(49, 49, 49, 70%);
+
+  .breadcrumb {
+    margin: 0 !important;
+
+    .breadcrumb-item {
+      li,
+      a {
+        color: #fff !important;
+
+        &:hover {
+          color: $primary-light !important;
+        }
+      }
+
+      &.active {
+        color: $primary-light !important;
+      }
+
+      &::before {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.block-menu-element a .card-body {
+  background: #fff;
+  border-radius: 15px 15px 15px 0;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 1.2s;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: #a3a3a3 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-green !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border: none;
+  border-radius: 10px;
+  background: $primary-light;
+  color: #000;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: $primary-green;
+    transition: all 0.25s ease;
+  }
+}
+
+.portaltype-imio-smartweb-folder #portal-header #banner,
+.portaltype-imio-smartweb-page #portal-header #banner,
+.portaltype-imio-smartweb-procedure #portal-header #banner {
+  border-radius: 0;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: -1;
+  margin-top: 0;
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+}
+
+/* Messages viewlet */
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary-green;
+  color: #000;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-green;
+  color: #000;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: $primary-green;
+  color: #000;
+}
+
+/* Organization contact */
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+.swiper-banner-image {
+  position: relative;
+}
+
+.swiper-banner-image::before {
+  background: url("../../assets/svg/wave.svg");
+  background-position: top;
+  background-size: cover;
+  bottom: -1px;
+  content: "";
+  height: 120px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50vw);
+  width: 100vw;
+  z-index: 1;
+}
+
+/* Swiper content */
+#content-core .swiper-wrapper .swiper-slide > a .swiper_category {
+  left: initial;
+  position: absolute;
+  right: 0;
+
+  span {
+    border-radius: 0 10px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+#content-core .swiper-slide .swiper_date {
+  margin: 0.4rem 0 0.5rem;
+}
+
+.sectiontext .section-text .body-section a {
+  color: #325ddf;
+}
+
+body:not(.portaltype-imio-smartweb-portalpage) .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: initial;
+}
+
+.to-portal {
+  background: $primary-green;
+  border-radius: 0 0 10px 10px;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb > li,
+.breadcrumb,
+#portal-breadcrumbs a {
+  color: #fff !important;
+}

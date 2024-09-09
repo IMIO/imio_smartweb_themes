@@ -28,7 +28,7 @@
       left: 30%;
       right: 0;
 
-      @media screen and (min-width: 992px) {
+      @media screen and (max-width: 992px) {
         display: none;
       }
     }
@@ -162,7 +162,7 @@
 @media screen and (min-width: 992px) {
   .portaltype-imio-smartweb-portalpage.section-home-page {
     .sectionnews {
-      margin-top: -300px;
+      margin-top: -280px;
     }
   }
 }

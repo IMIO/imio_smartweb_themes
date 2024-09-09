@@ -86,7 +86,7 @@ $toggler-color: $primary;
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{url-encoded-color($toggler-color)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
 
 //bredcrumb
-$breadcrumb-bg: $primary;
+$breadcrumb-bg: rgba(49, 49, 49, 70%);
 $enable-full-width-breacrumb: false !default;
 
 // sitenav
@@ -123,7 +123,7 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 //sub-header
 $subsite-logo-background: $primary;
 $subsite-logo-color: $primary;
-$subsite-navbar-bg: $primary-green;
+$subsite-navbar-bg: #efefef;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
