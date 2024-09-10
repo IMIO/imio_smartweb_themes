@@ -23,7 +23,6 @@ $enable-roboto-webfont: false;
 
 @import "./home/quick";
 @import "./home/actualites";
-@import "./home/cpas";
 @import "./home/events";
 @import "./home/footer";
 @import "./info-trav";
@@ -113,4 +112,10 @@ $enable-roboto-webfont: false;
   .table_title span {
     color: #000 !important;
   }
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
 }
