@@ -15,6 +15,14 @@
       width: 100vw;
     }
   }
+
+  a.table_image .image {
+    transition: all 0.2s;
+  }
+
+  a.table_image:hover .image {
+    padding-bottom: 10px !important;
+  }
 }
 
 #portal-header {

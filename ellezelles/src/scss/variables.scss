@@ -1,11 +1,12 @@
 //*// COLORS
-$primary: #244675;
+$primary: #093a5d;
 $primary-svg: #000312;
 $primary-light: #6bbc59 !default;
 $primary-yellow: #f3cf63;
 $primary-blue: #1b7bbb;
 $primary-green: #6bbc59;
 $primary-red: #b83434;
+$primary-light-blue: #edf0f3;
 
 //*// TYPOGRAPHY
 
@@ -373,7 +374,7 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: #f3f3f3 !default;
+$section-contact-background: $primary-light-blue;
 
 // section-files
 $section-file-background-color: $primary !default;

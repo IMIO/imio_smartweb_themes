@@ -25,7 +25,7 @@
   }
 
   #portal-footer {
-    background: $primary-svg;
+    background: #000312;
 
     #smartweb-footer,
     #smartweb-minisite-footer {
@@ -361,4 +361,12 @@ footer {
 #portal-footer-wrapper li.facebook,
 #portal-footer-wrapper li.twitter {
   display: block !important;
+}
+
+#portal-footer-wrapper #portal-footer.container {
+  background: #000312;
+}
+
+.smartweb_footer {
+  padding: 50px 0;
 }
