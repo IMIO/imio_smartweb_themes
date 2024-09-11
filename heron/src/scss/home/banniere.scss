@@ -1,0 +1,111 @@
+.section-home-page .bloc-banner {
+  background: black;
+  position: absolute;
+  width: 250px;
+  height: 500px;
+  margin-top: -520px;
+  z-index: 0;
+  left: 50%;
+  margin-left: -680px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 80px;
+  align-items: end;
+
+  @media screen and (max-width: 1399px) {
+    margin-left: -40%;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 50px;
+  }
+
+  &::before {
+    background: $primary-svg;
+    border-radius: 0;
+    bottom: 0;
+    content: "";
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .logo-banner {
+    color: transparent;
+    width: 240px;
+    height: 97px;
+    content: "";
+    background: url("../../assets/svg/logo.svg") center center no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: -15px;
+
+    @media screen and (max-width: 1399px) {
+      display: none;
+    }
+  }
+
+  .slogan-banner {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    position: relative;
+    width: 400px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+
+    @media screen and (max-width: 1399px) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 30px;
+      line-height: 40px;
+      width: 300px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 200px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.section-home-page #portal-header #portal-header-top #portal-logo {
+  max-width: 180px;
+  margin-top: 0;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    background: $primary-svg;
+    border-radius: 0;
+    bottom: 0;
+    content: "";
+    right: -10px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 0;
+    margin: -16px 0;
+
+    @media screen and (max-width: 1399px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #portal-header #portal-header-top {
+    padding-left: 50px;
+  }
+}

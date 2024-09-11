@@ -1,0 +1,87 @@
+.bloc-publications {
+  position: relative;
+  margin: 80px 0 0;
+
+  .section-title {
+    font-weight: 350;
+    margin: 0 auto 40px;
+    width: max-content;
+    font-size: 45px;
+
+    &::after {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      background: url("../../assets/svg/trefle-gris.svg");
+      content: "";
+      display: block;
+      height: 144px;
+      position: absolute;
+      width: 144px;
+      margin-left: -72px;
+      z-index: -1;
+    }
+  }
+
+  .swiper-slide {
+    transition: 0.5s;
+
+    a {
+      text-transform: none;
+      text-decoration: none;
+
+      .swiper-image {
+        border-radius: 20px 0 20px 20px;
+      }
+
+      .swiper_title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+        h3 {
+          color: $primary;
+          font-weight: 500 !important;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transition: 0.5s;
+      transform: translateY(10px);
+      background: $primary-gris;
+      border-radius: 40px;
+    }
+  }
+}
+
+.bloc-publications .see_all {
+  justify-content: center;
+  margin: 2rem 0 0;
+  display: flex;
+
+  a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    background: $primary-green;
+    color: #fff;
+    border: solid 1px $primary-green;
+    font-weight: 400;
+    border-radius: 8px;
+
+    &:hover {
+      background: $primary-blue;
+      border: solid 1px $primary-blue;
+      color: #fff;
+      border-radius: 20px;
+    }
+  }
+}

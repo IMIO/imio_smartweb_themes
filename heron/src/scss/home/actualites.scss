@@ -1,0 +1,132 @@
+.sectionnews {
+  margin: 80px 0;
+  padding: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    margin: 3.6rem 0;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .section-title {
+    font-weight: 350;
+    margin: 0 auto 40px;
+    width: max-content;
+    font-size: 45px;
+
+    &::after {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      background: url("../../assets/svg/trefle-gris.svg");
+      content: "";
+      display: block;
+      height: 144px;
+      position: absolute;
+      width: 144px;
+      margin-left: -72px;
+      z-index: -1;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background: transparent;
+      border-radius: 20px;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+        background: $primary-gris;
+        border-radius: 40px;
+      }
+
+      & > a {
+        align-items: center;
+        padding-bottom: 0;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .auth_source_container_title {
+          color: #000;
+          font-size: 12px;
+          margin: 1rem 0 0.5rem;
+          padding: 0 1rem;
+          text-align: left;
+        }
+
+        .swiper_category {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          width: 100%;
+        }
+
+        .swiper_title {
+          margin-top: 0;
+          width: 100%;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $primary-green !important;
+  }
+}
+
+.sectionnews .see_all a {
+  background: $primary-green;
+  color: #fff;
+  border: solid 1px $primary-green;
+  font-weight: 400;
+  border-radius: 8px;
+
+  &:hover {
+    background: $primary-blue;
+    border: solid 1px $primary-blue;
+    color: #fff;
+    border-radius: 20px;
+  }
+}
