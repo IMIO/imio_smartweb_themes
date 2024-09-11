@@ -494,11 +494,13 @@ footer #container-section-noussuivre {
 }
 
 .sectionlinks {
-  background: none;
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-top: 30px;
 }
 
 .sectionlinks h2::before {
-  display: none !important;
+  display: block;
 }
 
 @media screen and (max-width: 992px) {
@@ -599,16 +601,16 @@ footer #container-section-noussuivre {
 
 .sectiontext mark,
 .r-content-text mark {
-  background-color: $primary-red;
+  background-color: $primary-gris;
   border: 0;
   border-radius: 8px;
-  color: #fff;
+  color: #000;
   display: inline-block;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
 
   a {
-    color: #fff;
+    color: #000;
   }
 }
 
