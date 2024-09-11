@@ -43,7 +43,7 @@ body {
 }
 
 .section-home-page #portal-header #portal-header-top {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 #portal-header #portal-header-top #header-links #header-actions .account {
@@ -205,7 +205,7 @@ h1 {
   }
 
   .swiper-banner-image {
-    background-position: bottom;
+    background-position: center;
   }
 
   .swiper-banner-title {
