@@ -450,7 +450,7 @@ footer #container-section-noussuivre {
 .block-menu-element a .card-body {
   background: #fff;
   border-radius: 15px 15px 15px 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
+  //box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
   height: auto;
   margin-bottom: 10px;
   position: relative;
@@ -820,4 +820,15 @@ h3 {
   .card-img-top {
     padding-top: 150%;
   }
+}
+
+.viewlet-below-content-body {
+  display: none !important;
+}
+
+.contact_logo {
+  padding-top: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
 }
