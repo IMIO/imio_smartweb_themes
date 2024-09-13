@@ -326,11 +326,11 @@ footer #container-section-noussuivre {
 }
 
 .sectiontext .section-text .section-title a.collapsed {
-  color: #000 !important;
+  color: #000;
 }
 
 .sectiontext .section-text .body-section a {
-  color: $primary !important;
+  color: $primary;
 }
 
 .sectiontext figure img {
@@ -645,6 +645,21 @@ footer #container-section-noussuivre {
   margin-top: 0;
 }
 
+.sectiontext mark,
+.r-content-text mark {
+  background-color: $primary-red;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  padding: 20px 45px 20px 26px;
+
+  a {
+    color: #fff !important;
+  }
+}
+
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -751,20 +766,5 @@ h3 {
       font-size: 24px;
       font-weight: 700;
     }
-  }
-}
-
-.sectiontext mark,
-.r-content-text mark {
-  background-color: $primary-red;
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
-  display: inline-block;
-  font-weight: 500;
-  padding: 20px 45px 20px 26px;
-
-  a {
-    color: #fff !important;
   }
 }
