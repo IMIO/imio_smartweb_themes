@@ -2,7 +2,7 @@
   .contact-type-organization,
   .contact-type-mission,
   .contact-type-position {
-    background: $primary-green;
+    background: #efefef;
     border-radius: 10px !important;
     margin: 10px;
   }
@@ -12,5 +12,9 @@
   h4 {
     font-family: $font-family-base;
     text-transform: initial;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }

@@ -54,10 +54,12 @@
 
         .swiper_title {
           margin-top: 10px;
+          text-align: center;
 
           h3 {
             font-family: $font-family-base;
             position: relative;
+            text-align: center;
 
             &::after {
               content: "";
@@ -109,4 +111,8 @@
     background-color: $primary-svg;
     color: #fff !important;
   }
+}
+
+body .sectionevents .swiper-pagination-bullet-active {
+  background: $primary-svg !important;
 }

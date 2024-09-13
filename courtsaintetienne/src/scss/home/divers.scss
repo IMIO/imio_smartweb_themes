@@ -179,12 +179,7 @@ footer #container-section-noussuivre {
 .portaltype-imio-smartweb-procedure {
   #portal-header {
     #banner {
-      width: 100vw;
-      left: 50%;
-      position: relative;
-      transform: translateX(-50%);
       border-radius: 0 0 30px 30px;
-      z-index: -1;
     }
   }
 }
@@ -202,25 +197,25 @@ footer #container-section-noussuivre {
 nav#portal-breadcrumbs {
   margin: 0.5rem 0 0 !important;
   border-radius: 10px;
-  background-color: rgba(49, 49, 49, 70%);
+  background-color: transparent;
   padding: 10px;
 
   a,
   li {
-    color: #fff !important;
+    color: #000 !important;
   }
 
   li.breadcrumb-item::before {
-    color: #fff !important;
+    color: #000 !important;
   }
 }
 
 .header-custom #portal-breadcrumbs {
   margin: 0.5rem 0 0 !important;
-  position: absolute;
+  position: initial;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(49, 49, 49, 70%);
+  background-color: transparent;
 
   .breadcrumb {
     margin: 0 !important;
@@ -228,19 +223,19 @@ nav#portal-breadcrumbs {
     .breadcrumb-item {
       li,
       a {
-        color: #fff !important;
+        color: #000 !important;
 
         &:hover {
-          color: $primary-light !important;
+          color: $primary !important;
         }
       }
 
       &.active {
-        color: $primary-light !important;
+        color: $primary !important;
       }
 
       &::before {
-        color: #fff !important;
+        color: #000 !important;
       }
     }
   }
@@ -416,10 +411,26 @@ h6 {
 .breadcrumb > li,
 .breadcrumb,
 #portal-breadcrumbs a {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 //SERCH BUTTON
 .faceted-form input#search_button {
   background: $primary;
+}
+
+//BULLETINS COMMUNAUX
+.subsection-services-communaux-communication-bulletin-communal
+  #main-container
+  .sectionlinks
+  .section-container
+  > div
+  .body-section
+  .row
+  li {
+  padding: 10px;
+}
+
+.row.r-search-filters {
+  align-items: center;
 }

@@ -8,6 +8,18 @@
   transform: translateX(-50%);
   z-index: 0;
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 70% !important;
+    background-color: $primary-svg;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22.75.75 0 0 1 0-1.06L13.94 12 9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#fff"/></svg>');
+  }
+
+  .swiper-button-prev.swiper-button-disabled {
+    right: 60px;
+    left: initial;
+  }
+
   @media screen and (max-width: 992px) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
