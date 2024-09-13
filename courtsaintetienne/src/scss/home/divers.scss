@@ -1,3 +1,7 @@
+#portal-header #portal-header-top #header-links #search-link a {
+  background: $primary-green;
+}
+
 .r-item-img.r-item-img-placeholder {
   background: url("../../assets/svg/placeholder.jpg");
   background-size: cover;
@@ -68,6 +72,15 @@ footer #container-section-noussuivre {
 @media screen and (max-width: 900px) {
   .portaltype-imio-smartweb-portalpage .section-title {
     font-size: 34px !important;
+  }
+
+  #portal-header #portal-header-top a#portal-logo {
+    text-align: center;
+    max-width: 50px;
+  }
+
+  .sectionevents .section-title::after {
+    display: none;
   }
 
   .header-custom #portal-breadcrumbs {
