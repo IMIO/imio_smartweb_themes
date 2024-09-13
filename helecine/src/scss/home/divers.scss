@@ -214,3 +214,90 @@ body .container #portal-column-content .section-contact .contact-type-position {
 #localmessagesviewlet .portalMessage.warning {
   background-color: $primary;
 }
+
+//ALAUNE
+.r-content-figure-img {
+  position: absolute;
+}
+
+body .faceted-column.faceted-top-column #topics,
+body .faceted-column.faceted-top-column select#page-category,
+body .faceted-column.faceted-top-column #search {
+  background: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: #242423;
+}
+
+.a-la-une .swiper-slide a {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr;
+  border-radius: 0 0 50px;
+
+  .swiper_title {
+    align-self: start;
+    background: transparent;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 30px 100px 0;
+    font-size: 6rem;
+
+    h3 {
+      color: $dark;
+      font-family: $font-family-title;
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .a-la-une .swiper-slide a .swiper_title {
+    padding: 10px 30px 0;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.a-la-une h2.section-title {
+  font-weight: 600 !important;
+}
+
+.a-la-une .see_all {
+  display: none;
+}
+
+.sortable-section.sectioncollection.a-la-une {
+  margin: 50px 0;
+
+  .swiper-image {
+    border-radius: 20px !important;
+  }
+
+  h3 {
+    color: initial;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+  }
+
+  .swiper_description {
+    background: transparent;
+    padding: 30px 100px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sortable-section.sectioncollection.a-la-une .swiper-slide a {
+    display: initial;
+
+    .swiper_description {
+      background: transparent;
+      padding: 10px 30px 0;
+    }
+  }
+}
