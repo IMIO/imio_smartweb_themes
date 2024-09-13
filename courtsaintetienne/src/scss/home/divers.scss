@@ -307,10 +307,8 @@ nav#portal-breadcrumbs {
 .portaltype-imio-smartweb-page #portal-header #banner,
 .portaltype-imio-smartweb-procedure #portal-header #banner {
   border-radius: 0;
-  left: 50%;
   position: relative;
-  transform: translateX(-50%);
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   margin-top: 0;
 }
