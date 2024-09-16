@@ -54,10 +54,14 @@
 
           .start_date {
             margin-right: 0;
+            width: 100%;
+            justify-content: right;
           }
 
           .end_date {
             margin-left: 0;
+            width: 100%;
+            justify-content: left;
           }
 
           .end_date .to {
