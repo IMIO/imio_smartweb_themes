@@ -67,22 +67,28 @@
       border-color: white;
 
       .table_image {
-        border: solid 1px #dedede;
         text-decoration: none;
+        background: $primary-gris;
+        color: #000;
         padding: 20px;
-        border-radius: 0;
+        border-radius: 8px;
         transition: all 0.3s ease;
 
+        .item_infos {
+          color: #000;
+          font-size: 10px;
+          padding-top: 10px;
+          text-decoration: none !important;
+        }
+
         &:hover {
-          border-color: $primary-blue;
-          background: $primary-blue;
-          color: #fff;
+          text-decoration: underline;
           transition: all 0.3s ease;
 
           .table_title span,
           .item_infos,
           div {
-            color: #fff !important;
+            color: #000 !important;
           }
         }
 
