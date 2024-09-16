@@ -26,14 +26,20 @@
           }
 
           .table_title {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 400;
             background: #f1f1f1;
             border-radius: 8px;
             color: #000;
             padding: 20px;
-            text-decoration: none;
+            text-decoration: none !important;
             transition: all 0.3s ease;
+          }
+
+          &:hover {
+            .table_title {
+              text-decoration: underline !important;
+            }
           }
         }
       }
