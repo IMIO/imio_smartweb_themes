@@ -80,7 +80,7 @@ footer #container-section-noussuivre {
   }
 
   .sectionevents .section-title::after {
-    display: none;
+    display: none !important;
   }
 
   .header-custom #portal-breadcrumbs {
