@@ -38,8 +38,15 @@ $enable-roboto-webfont: false;
   margin-bottom: 60px;
 }
 
-.section-home-page #portal-header #portal-header-top {
+.section-home-page #portal-header #portal-header-top,
+.section-accueil-1 #portal-header #portal-header-top {
   margin-bottom: 0 !important;
+}
+
+.section-accueil-1 {
+  .breadcrumb {
+    display: none;
+  }
 }
 
 #portal-header #portal-header-top #header-links #header-actions .account {
@@ -731,4 +738,18 @@ h3 {
   div:not(.sectiontext) + .sectiontext h2 {
     margin-top: 1.5rem !important;
   }
+}
+
+.template-summary_view .list-menu-element > a .newsImage,
+.template-summary_view_with_images .list-menu-element > a .newsImage {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.template-summary_view .list-menu-element > a .list-card-body,
+.template-summary_view_with_images .list-menu-element > a .list-card-body {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: calc(100% - 100px);
 }
