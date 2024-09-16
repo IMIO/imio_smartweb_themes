@@ -50,6 +50,15 @@
         .swiper_date {
           font-family: $font-family-base;
           grid-row-start: 2;
+          justify-self: center;
+
+          .end_date .to {
+            margin: 0 0.25em;
+          }
+
+          div {
+            margin: 0 auto;
+          }
         }
 
         .swiper_title {
