@@ -333,20 +333,30 @@ nav#portal-breadcrumbs {
 /* Messages viewlet */
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
-  background-color: $primary-green;
-  color: #000;
+  background-color: $primary;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
-  background-color: $primary-green;
-  color: #000;
+  background-color: $primary-svg;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-  background-color: $primary-green;
-  color: #000;
+  background-color: #d10000;
+  color: #fff;
+}
+
+.portaltype-imio-smartweb-portalpage #messagesviewlet {
+  position: absolute;
+  top: 110px;
+
+  @media screen and (max-width: 992px) {
+    top: 80px;
+    width: 95%;
+  }
 }
 
 /* Organization contact */
