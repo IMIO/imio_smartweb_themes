@@ -1,5 +1,6 @@
 .portaltype-imio-smartweb-page #main-container .sectionlinks {
   background-color: white;
+  padding: 40px;
 
   .section-container {
     .rich_description {
@@ -20,6 +21,14 @@
       .body-section {
         .table_display {
           max-width: 100% !important;
+
+          .table_image {
+            text-decoration: none !important;
+
+            &:hover {
+              text-decoration: underline !important;
+            }
+          }
 
           .image {
             display: none !important;
