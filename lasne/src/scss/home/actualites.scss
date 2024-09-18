@@ -1,3 +1,65 @@
-.sectionnews {
+.sectionnews,
+.sectionevents {
   margin: 6rem 0;
+
+  .swiper-slide .swiper_category {
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+
+  .auth_source_container_title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .swiper_date {
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+
+    .day_date {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper_description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .swiper-slide .swiper_title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth_source_container_title {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: $primary;
+    font-size: 14px;
+    font-weight: initial;
+    text-transform: initial;
+    border-radius: 20px 0;
+    position: absolute;
+  }
+}
+
+.sectionnews::after {
+  top: 0 !important;
+  background: url("../../assets/svg/circles-colors-background.svg");
+  background-size: cover;
+  background-size: 75%;
+  background-position: left;
+  background-repeat: no-repeat;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
