@@ -21,6 +21,7 @@ $enable-roboto-webfont: false;
 
 // ... add your styles here
 
+@import "./home/banner";
 @import "./home/quick";
 @import "./home/actualites";
 @import "./home/events";

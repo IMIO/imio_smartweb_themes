@@ -1,5 +1,5 @@
 #main-container .quick-access {
-  margin: 2rem 0;
+  margin: -100px 0 100px;
   padding: 0;
 
   @include media-breakpoint-down(lg) {
@@ -13,12 +13,16 @@
       max-width: 1200px !important;
 
       li {
+        &:nth-child(2n) {
+          .table_image {
+            .image.d-block {
+              background: $primary-svg;
+            }
+          }
+        }
+
         .table_image {
           .image.d-block {
-            background: #fff !important;
-            border-radius: 100px;
-            width: 120px;
-            height: 80px;
             transition: all 0.3s ease;
             position: relative;
           }
@@ -30,7 +34,7 @@
               transition: all 0.3s ease;
 
               svg {
-                fill: $primary;
+                fill: #fff;
               }
             }
           }
@@ -53,8 +57,8 @@
         li {
           .table_image {
             .image.d-block {
-              width: 70px;
-              height: 70px;
+              width: 100px;
+              height: 100px;
             }
           }
 

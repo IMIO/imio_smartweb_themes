@@ -136,26 +136,26 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
+$banner-heigh: 600px;
 $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
 $banner-content-padding: 2rem 3rem !default;
-$banner-content-background: rgb(256 256 256 / 90%) !default;
+$banner-content-background: transparent;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
-$banner-content-title-color: black !default;
+$banner-content-title-color: #fff;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align: left !default;
 $banner-content-description-font-size: 20px !default;
-$banner-content-description-color: $primary;
+$banner-content-description-color: #fff;
 
 // see_all
 $see-all-padding: 15px 30px;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg: $primary;
 $see-all-color: #fff;
-$see-all-radius: $global-radius !default;
+$see-all-radius: 10px;
 $see-all-border: solid 1px $primary;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px;
@@ -177,14 +177,14 @@ $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
-$quick-access-background: #fff !default;
-$quick-access-border: solid 0 $primary !default;
-$quick-access-border-radius: 100px !default;
+$quick-access-width: 120px;
+$quick-access-height: 120px;
+$quick-access-background: $primary;
+$quick-access-border: solid 20px #fff;
+$quick-access-border-radius: 100px;
 $quick-access-shadow: none !default;
 $quick-access-svg-width: 30px !default;
-$quick-access-svg-color: $primary-blue !default;
+$quick-access-svg-color: #fff;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
 $quick-access-title-font-size: 17px;
 $quick-access-title-color: #000;
