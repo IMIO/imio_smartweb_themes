@@ -329,8 +329,9 @@ footer #container-section-noussuivre {
   color: #000;
 }
 
-.sectiontext .section-text .body-section a {
-  color: $primary;
+.sectiontext .section-text .body-section a,
+.section-contact .contact_informations a {
+  color: $primary-light;
 }
 
 .sectiontext figure img {
