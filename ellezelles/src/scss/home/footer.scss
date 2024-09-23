@@ -141,6 +141,17 @@
   }
 }
 
+@media screen and (max-width: 820px) {
+  .outer-wrapper {
+    margin-bottom: -7px;
+    background-size: 310px;
+
+    &::after {
+      height: 80px;
+    }
+  }
+}
+
 footer {
   .schedule .opening_informations::after {
     content: "";
@@ -369,4 +380,9 @@ footer {
 
 .smartweb_footer {
   padding: 50px 0;
+}
+
+#portal-footer-wrapper {
+  background-color: $primary-svg;
+  color: #fff;
 }

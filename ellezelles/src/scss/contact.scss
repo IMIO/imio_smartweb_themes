@@ -5,3 +5,15 @@
     font-family: $font-family-base;
   }
 }
+
+#portal-column-content .sectioncontact .contact-type-mission,
+#portal-column-content .sectioncontact .contact-type-organization,
+#portal-column-content .sectioncontact .contact-type-position {
+  background: $primary-light;
+  border-radius: none;
+  margin: 5px;
+}
+
+#portal-column-content .section-contact .contact-type-mission::after {
+  border: none !important;
+}

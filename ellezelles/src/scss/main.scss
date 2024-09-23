@@ -119,3 +119,28 @@ $enable-roboto-webfont: false;
   background-size: cover;
   background-position: center;
 }
+
+.container header > h1 {
+  padding: 40px 0 20px;
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  background: #afc33a;
+  border: none;
+}
+
+//MAP
+.pat-leaflet.map.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+  z-index: 8;
+}
+
+@media screen and (max-width: 820px) {
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 70px;
+  }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  background: $primary;
+  border: none;
+}
