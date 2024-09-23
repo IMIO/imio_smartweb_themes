@@ -114,3 +114,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.partenaires ul.row {
+  gap: 10px;
+  justify-content: space-between;
+
+  li.col-md-1 {
+    width: 12%;
+  }
+}

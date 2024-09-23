@@ -1,0 +1,66 @@
+.bulletins .swiper-slide .swiper-image {
+  padding-bottom: 140%;
+  border-radius: 20px;
+}
+
+.sectioncollection.bulletins {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .section-title {
+    margin: 0 0 2rem;
+    color: $primary;
+  }
+
+  .swiper-slide > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .swiper_title {
+      h3 {
+        color: #000 !important;
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .see_all {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0;
+
+    a {
+      background: transparent;
+      border: 0 solid none;
+      border-radius: 20px;
+      color: $primary;
+      display: block;
+      font-size: 18px;
+      font-weight: 200;
+      padding: 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: none;
+      transition: all 0.2s ease;
+      width: max-content;
+
+      &::after {
+        background-color: $primary;
+        bottom: -5px;
+        content: "";
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s ease;
+        width: 25%;
+      }
+
+      &:hover {
+        &::after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
