@@ -723,42 +723,47 @@ h3 {
 
 //NEWSLETTER
 .newsletter-custom {
-  background: transparent;
+  background: $primary;
   text-align: center;
-
-  &::after {
-    content: "";
-    background: $primary;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100vw;
-    z-index: -1;
-  }
   margin: 0 !important;
   padding: 5rem 0;
 
-  .section-title {
-    font-size: 24px !important;
+  h2.section-title {
+    color: #fff !important;
+    font-size: 3.25rem !important;
+    font-weight: 500;
+    text-align: center;
   }
 
   .table_image {
-    display: block;
-    width: max-content;
-    margin: 0 auto;
-    background: #fff;
-    color: $primary;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    border: 1px solid #fff;
     text-decoration: none;
-    margin-top: 2rem;
 
     &:hover {
       background: transparent;
       color: #fff;
+    }
+
+    .table_title {
+      color: #fff;
+    }
+
+    .image.d-block.is-icon.w-100 {
+      align-items: center;
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 100px;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      height: 120px;
+      justify-content: center;
+      margin: 0 auto;
+      width: 120px;
+
+      svg.plone-icon {
+        height: 2em;
+        fill: $primary;
+      }
     }
   }
 

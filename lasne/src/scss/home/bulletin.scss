@@ -1,6 +1,10 @@
-.bulletins .swiper-slide .swiper-image {
-  padding-bottom: 140%;
-  border-radius: 20px;
+.bulletins .swiper-slide {
+  margin-right: 20px !important;
+
+  .swiper-image {
+    padding-bottom: 140%;
+    border-radius: 20px;
+  }
 }
 
 .sectioncollection.bulletins {
@@ -10,6 +14,7 @@
   .section-title {
     margin: 0 0 2rem;
     color: $primary;
+    text-align: center;
   }
 
   .swiper-slide > a {
@@ -54,6 +59,20 @@
         position: absolute;
         transition: all 0.2s ease;
         width: 25%;
+      }
+
+      .swiper_title {
+        text-align: center;
+      }
+
+      .swiper-image {
+        box-shadow:
+          rgba(14, 63, 126, 4%) 1px 1px 1px 1px,
+          rgba(42, 51, 69, 4%) 1px 1px 1px -0.5px,
+          rgba(42, 51, 70, 4%) 1px 3px 3px -1.5px,
+          rgba(42, 51, 70, 4%) 1px 6px 6px -3px,
+          rgba(14, 63, 126, 4%) 1px 12px 12px -6px,
+          rgba(14, 63, 126, 4%) 1px 24px 24px -12px;
       }
 
       &:hover {
