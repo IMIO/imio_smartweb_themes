@@ -1,0 +1,230 @@
+#portal-globalnav {
+  gap: 1px;
+}
+
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+  margin: 0 1px 0 2rem !important;
+}
+
+#portal-globalnav > li.has_subtree > a {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  margin: 0 15px 0 0;
+}
+
+// JE SUIS MENU
+
+.nav_je-suis {
+  &::before {
+    top: 0;
+    bottom: auto;
+    background: $primary-red;
+    content: "";
+    display: block;
+    height: 90px;
+    position: absolute;
+    width: 90px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      background: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+#portal-globalnav > .nav_je-suis.has_subtree > a {
+  width: 90px;
+  text-align: center;
+  z-index: 1;
+  color: #fff !important;
+  position: relative;
+  place-content: center;
+  padding: 24px 0 0;
+  margin: 0;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    margin-top: -50px;
+    background: url("../../assets/svg/icon-top-01.svg") center center no-repeat;
+    content: "";
+  }
+}
+
+// JE TROUVE MENU
+
+.nav_je-trouve {
+  &::before {
+    top: 0;
+    bottom: auto;
+    background: $primary-red;
+    content: "";
+    display: block;
+    height: 90px;
+    position: absolute;
+    width: 90px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      background: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+#portal-globalnav > .nav_je-trouve.has_subtree > a {
+  width: 90px;
+  text-align: center;
+  z-index: 1;
+  color: #fff !important;
+  position: relative;
+  place-content: center;
+  padding: 24px 0 0;
+  margin: 0;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    margin-top: -50px;
+    background: url("../../assets/svg/icon-top-02.svg") center center no-repeat;
+    content: "";
+  }
+}
+
+// HEADER LINKS (mon compte & search)
+// MON COMPTE
+
+#portal-header #portal-header-top #header-links {
+  gap: 1px;
+}
+
+#portal-header #portal-header-top #header-links #header-actions {
+  margin-top: auto;
+}
+
+#header-actions {
+  &::before {
+    top: 0;
+    bottom: auto;
+    background: $primary-red;
+    content: "";
+    display: block;
+    height: 90px;
+    position: absolute;
+    width: 120px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      background: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+#portal-header #portal-header-top #header-links #header-actions .account {
+  text-align: center;
+  z-index: 1;
+  color: #fff !important;
+  position: relative;
+  padding: 24px 15px 0;
+  margin: 0;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+    background: url("../../assets/svg/icon-top-03.svg") center center no-repeat;
+    content: "";
+  }
+
+  span {
+    color: #fff;
+    position: relative;
+  }
+}
+
+// SEARCH
+
+#portal-header #portal-header-top #header-links {
+  gap: 0;
+}
+
+#search-link {
+  &::before {
+    top: 0;
+    bottom: auto;
+    background: $primary;
+    content: "";
+    display: block;
+    height: 90px;
+    position: absolute;
+    width: 50px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      background: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  text-align: center;
+  z-index: 1;
+  color: #fff !important;
+  background: none !important;
+  position: relative;
+  padding: 24px 15px 0;
+  margin: 0;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    top: 15px;
+    left: 50%;
+    margin-left: -10px;
+    background: url("../../assets/svg/icon-top-04.svg") center center no-repeat;
+    content: "";
+  }
+
+  span {
+    color: #fff;
+    position: relative;
+  }
+}

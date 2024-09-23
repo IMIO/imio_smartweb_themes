@@ -1,0 +1,202 @@
+.sectionevents {
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .container {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  &::before {
+    background: $primary-gris;
+    border-radius: 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    @media screen and (max-width: 992px) {
+      background: #f4f4f4;
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    position: relative;
+    font-weight: 600;
+    margin: 0 0 50px;
+    width: max-content;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 40px !important;
+
+    &::after {
+      left: 0;
+      top: 0;
+      bottom: auto;
+      background: $primary-red;
+      content: "";
+      display: block;
+      height: 55px;
+      position: absolute;
+      width: 8px;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+  }
+
+  #body-section-agenda {
+    .row {
+      li {
+        &::marker {
+          display: none !important;
+          content: "" !important;
+        }
+
+        .table_display {
+          text-align: center;
+          position: relative;
+          padding: 60px;
+          background: url("../../assets/svg/souligne-vert.svg") right center;
+          background-repeat: no-repeat;
+          margin: 30px 0;
+
+          .table_image {
+            background: url("../../assets/svg/souligne-bas.svg") center bottom;
+            background-repeat: no-repeat;
+            display: block;
+            padding-bottom: 40px;
+            text-decoration: none;
+
+            .table_category {
+              color: #000;
+              margin: 0 0 20px;
+              padding: 0 100px 0 0;
+              text-transform: uppercase;
+              font-size: 13px;
+              font-weight: 500;
+              position: relative;
+            }
+
+            .table_date {
+              display: flex;
+              background: $primary-red;
+              padding: 10px;
+              border-radius: 8px;
+              width: 150px;
+              position: absolute;
+              margin: 0 !important;
+              top: 0 !important;
+              left: 50%;
+
+              &::after {
+                left: -60px;
+                top: auto;
+                bottom: 0;
+                background: url("../../assets/svg/fleche-agenda.svg");
+                content: "";
+                display: block;
+                height: 35px;
+                position: absolute;
+                width: 53px;
+                transition: all 0.3s ease;
+                opacity: 100%;
+              }
+
+              .start_date {
+                color: #fff;
+                float: left;
+                padding-right: 3px;
+              }
+
+              .end_date {
+                color: #fff;
+              }
+
+              .day_date {
+                color: #fff;
+                text-align: center;
+                margin: 0 auto;
+              }
+            }
+
+            .table_title {
+              color: initial;
+              font-size: 1.25rem;
+              font-weight: 500 !important;
+              text-transform: initial;
+              position: relative;
+              padding-bottom: 80px;
+
+              &::after {
+                left: 50%;
+                margin-left: -80px;
+                bottom: 0;
+                background: url("../../assets/svg/savoir-plus.svg");
+                content: "";
+                display: block;
+                height: 55px;
+                position: absolute;
+                width: 160px;
+                transition: all 0.3s ease;
+                opacity: 100%;
+              }
+
+              &:hover {
+                &::after {
+                  opacity: 30%;
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+
+            .table_description {
+              display: none;
+            }
+          }
+        }
+      }
+
+      li:nth-child(2) .table_display,
+      li:nth-child(4) .table_display {
+        background: none !important;
+      }
+    }
+  }
+}
+
+.sectionevents .see_all a {
+  background-image: url("../../assets/svg/fleche.svg");
+  background-position: calc(100% - 20px) center;
+  background-color: $primary-red;
+  background-repeat: no-repeat;
+  color: #fff;
+  border: solid 1px $primary-red;
+  border-radius: 10px;
+  opacity: 100%;
+  padding-right: 70px;
+
+  &:hover {
+    background-image: url("../../assets/svg/fleche.svg");
+    background-position: calc(100% - 20px) center;
+    background-color: $primary-red;
+    background-repeat: no-repeat;
+    color: #fff;
+    border: solid 1px $primary-red;
+    border-radius: 10px;
+    opacity: 50%;
+  }
+}
