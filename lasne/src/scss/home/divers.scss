@@ -727,12 +727,14 @@ h3 {
   text-align: center;
   margin: 0 !important;
   padding: 5rem 0;
+  border-radius: 20px;
 
   h2.section-title {
     color: #fff !important;
     font-size: 3.25rem !important;
     font-weight: 500;
     text-align: center;
+    padding-bottom: 50px;
   }
 
   .table_image {
@@ -745,6 +747,7 @@ h3 {
 
     .table_title {
       color: #fff;
+      padding-top: 20px;
     }
 
     .image.d-block.is-icon.w-100 {
@@ -755,10 +758,10 @@ h3 {
       box-shadow: none;
       display: flex;
       flex-direction: column;
-      height: 120px;
+      height: 80px;
       justify-content: center;
       margin: 0 auto;
-      width: 120px;
+      width: 80px;
 
       svg.plone-icon {
         height: 2em;
