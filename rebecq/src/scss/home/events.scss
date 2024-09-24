@@ -131,7 +131,7 @@
                 text-align: center;
                 margin: 0 auto;
 
-                &::after {
+                .day::after {
                   content: "/";
                 }
               }
