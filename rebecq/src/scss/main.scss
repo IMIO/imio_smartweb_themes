@@ -305,7 +305,7 @@ footer #container-section-noussuivre {
 
 .sectiontext .section-text .body-section a,
 .section-contact .contact_informations a {
-  color: $primary-light !important;
+  color: $primary-light;
 }
 
 /*#viewlet-above-content-body {
@@ -318,7 +318,7 @@ footer #container-section-noussuivre {
 
 .breadcrumb-item {
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
