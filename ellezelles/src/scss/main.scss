@@ -140,6 +140,38 @@ $enable-roboto-webfont: false;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper {
+    top: 17%;
+  }
+
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-title {
+    font-size: 36px;
+  }
+
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-description
+    p {
+    font-size: 36px;
+  }
+
+  .smartweb_herobanner .bannerSwiper {
+    height: 365px;
+  }
+}
+
 #portal-header #portal-header-top #header-links #search-link a {
   background: $primary;
   border: none;

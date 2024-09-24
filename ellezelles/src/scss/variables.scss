@@ -221,7 +221,7 @@ $a-la-une-item-image-radius: 60px 0 60px 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 1rem;
+$actu-section-padding-top: initial;
 $actu-section-padding-bottom: 1rem;
 $actu-section-margin: 0 !default;
 $actu-title-color: $primary-svg;
@@ -239,7 +239,7 @@ $actu-category-bg-color: $primary;
 $actu-category-text-transform: initial;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: initial !default;
-$actu-category-radius: none;
+$actu-category-radius: 0 0 10px 0;
 $actu-item-title-margin: 0 0 0 0;
 $actu-item-title-padding: 0 1rem;
 $actu-item-title-color: initial !default;
@@ -279,7 +279,7 @@ $event-category-bg-color: $primary;
 $event-category-text-transform: initial;
 $event-category-font-size: 14px;
 $event-category-font-weight: initial !default;
-$event-category-radius: none;
+$event-category-radius: 0 0 10px 0;
 $event-item-title-margin: 0 0 0 0;
 $event-item-title-padding: 0 1rem;
 $event-item-title-color: $primary-svg;

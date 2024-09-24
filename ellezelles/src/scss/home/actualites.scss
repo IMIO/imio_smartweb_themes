@@ -1,12 +1,18 @@
-.sortable-section.sectionnews {
+.sortable-section.sectionnews::after {
   background: url("../../assets/svg/ble-background.svg");
-  background-position: top right;
-  background-size: contain;
+  background-position: 100% 0;
   background-repeat: no-repeat;
+  background-size: 25%;
+  content: "";
+  top: -60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 .sectionnews {
-  margin: 6rem 0;
+  margin: initial;
 
   @media screen and (max-width: 992px) {
     margin: 3.5rem 0;
@@ -14,11 +20,12 @@
 
   .section-container {
     position: relative;
+    padding-top: 90px;
   }
 
   .swiper-wrapper {
     .swiper-slide {
-      background: #fff;
+      background: transparent;
       border-radius: 0;
       transition: 0.5s;
 
@@ -26,7 +33,7 @@
       &:focus {
         transition: 0.5s;
         transform: translateY(10px);
-        background: #fff;
+        background: transparent;
         border-radius: 10px;
       }
 
@@ -85,4 +92,31 @@
   .swiper-button-next {
     display: none;
   }
+}
+
+body.portaltype-imio-smartweb-portalpage h2.section-title {
+  position: relative;
+}
+
+body.portaltype-imio-smartweb-portalpage h2.section-title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #000;
+  margin-left: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+body.portaltype-imio-smartweb-portalpage h2.section-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #000;
+  margin-right: 25%;
+  position: absolute;
+  right: 0;
 }

@@ -135,23 +135,6 @@
   }
 }
 
-@media screen and (max-width: 992px) {
-  #portal-footer-wrapper {
-    padding: 4rem 1rem 1rem !important;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .outer-wrapper {
-    margin-bottom: -7px;
-    background-size: 310px;
-
-    &::after {
-      height: 80px;
-    }
-  }
-}
-
 footer {
   .schedule .opening_informations::after {
     content: "";
@@ -385,4 +368,21 @@ footer {
 #portal-footer-wrapper {
   background-color: $primary-svg;
   color: #fff;
+}
+
+@media screen and (max-width: 820px) {
+  .outer-wrapper {
+    margin-bottom: -7px !important;
+    background-size: 310px !important;
+
+    &::after {
+      height: 80px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #portal-footer-wrapper {
+    padding: 4rem 1rem 1rem !important;
+  }
 }

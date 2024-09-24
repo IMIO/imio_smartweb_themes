@@ -28,3 +28,10 @@
 #portal-header {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 992px) {
+  .sectionlinks.quick-access .body-section li {
+    width: 45% !important;
+    padding-bottom: 20px !important;
+  }
+}
