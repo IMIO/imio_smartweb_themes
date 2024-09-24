@@ -9,3 +9,15 @@
   z-index: -99;
   background: #f0f0f0;
 }
+
+@include media-breakpoint-down(lg) {
+  .sectionnews {
+    padding-top: initial;
+  }
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .sectionnews
+  .section-title {
+  color: #fff;
+}

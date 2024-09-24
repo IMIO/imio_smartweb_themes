@@ -18,12 +18,15 @@
   border-radius: 50px;
   font-size: 14px;
   position: absolute;
-  right: 50%;
   text-transform: uppercase;
   top: -20px;
   transition: 0.5s;
   z-index: 1;
   color: #67b347;
+  left: 0;
+  right: 0;
+  width: 140px;
+  text-align: center;
 }
 
 .sortable-section.sectionlinks.quick-access::after {
@@ -39,6 +42,17 @@
     grid-template-columns: auto auto auto auto;
     display: grid;
     justify-content: stretch;
+  }
+
+  .sortable-section.sectionlinks.quick-access {
+    ul.row {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+      gap: 0 30px;
+
+      li {
+        border: initial;
+      }
+    }
   }
 
   .sectionlinks.quick-access .body-section li {
