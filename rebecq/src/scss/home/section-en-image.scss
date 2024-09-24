@@ -31,10 +31,12 @@
     background-position: calc(100% - 20px) center;
     background-color: $primary-red;
     background-repeat: no-repeat;
-    color: #fff;
+    background-size: 30px;
+    color: #fff !important;
     border: solid 1px $primary-red;
     border-radius: 10px;
     opacity: 100%;
+    padding: 15px 20px;
     padding-right: 70px;
 
     &:hover {
@@ -59,7 +61,7 @@
         padding-bottom: 150%;
       }
 
-      .swiper_title {
+      h3 {
         font-family: Roboto, sans-serif;
         transition: 0.5s;
         font-size: 1.25rem;
