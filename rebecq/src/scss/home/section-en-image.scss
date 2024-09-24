@@ -1,9 +1,77 @@
-.section-en-image {
-  padding-top: 4vw;
-  padding-bottom: 4vw;
+.texte-bulletin {
+  padding: 60px 20px;
 
-  .section-title {
+  h2 {
     position: relative;
-    margin-bottom: 2rem;
+    font-weight: 600;
+    margin: 0 0 50px;
+    width: max-content;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 40px !important;
+
+    &::after {
+      left: 0;
+      top: 0;
+      bottom: auto;
+      background: $primary-red;
+      content: "";
+      display: block;
+      height: 55px;
+      position: absolute;
+      width: 8px;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+  }
+
+  a:last-child {
+    background-image: url("../../assets/svg/fleche.svg");
+    background-position: calc(100% - 20px) center;
+    background-color: $primary-red;
+    background-repeat: no-repeat;
+    color: #fff;
+    border: solid 1px $primary-red;
+    border-radius: 10px;
+    opacity: 100%;
+    padding-right: 70px;
+
+    &:hover {
+      background-image: url("../../assets/svg/fleche.svg");
+      background-position: calc(100% - 20px) center;
+      background-color: $primary-red;
+      background-repeat: no-repeat;
+      color: #fff;
+      border: solid 1px $primary-red;
+      border-radius: 10px;
+      opacity: 50%;
+    }
+  }
+}
+
+.accueil-bulletin {
+  padding: 80px 0;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      .swiper-image {
+        padding-bottom: 150%;
+      }
+
+      .swiper_title {
+        font-family: Roboto, sans-serif;
+        transition: 0.5s;
+        font-size: 1.25rem;
+        font-weight: 400 !important;
+        text-align: left;
+        text-transform: none;
+        color: #000 !important;
+      }
+    }
+  }
+
+  .see_all {
+    display: none;
   }
 }
