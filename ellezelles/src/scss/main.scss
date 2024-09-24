@@ -64,6 +64,10 @@ $enable-roboto-webfont: false;
   background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;
+
+  .section-title {
+    color: $primary-svg;
+  }
 }
 
 //Banner
@@ -140,7 +144,7 @@ $enable-roboto-webfont: false;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .smartweb_herobanner
     .bannerSwiper
     .swiper-slide
