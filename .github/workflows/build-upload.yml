@@ -87,7 +87,7 @@ jobs:
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
           MESSAGE: |
-            A build has been triggered by [![${{ github.actor }}](https://avatars.githubusercontent.com/${{ github.actor }}?size=64)](https://github.com/${{ github.actor }}) for the following themes:
+            A build has been triggered by ${{ github.actor }} [![${{ github.actor }}](https://avatars.githubusercontent.com/${{ github.actor }}?size=32)](https://github.com/${{ github.actor }}) for the following themes:
             ${{ steps.summary.outputs.summary }}
             [Click here to review the changes and eventually deploy to instances]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)
   build-push:
