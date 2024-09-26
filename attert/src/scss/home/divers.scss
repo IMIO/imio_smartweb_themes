@@ -228,3 +228,27 @@ footer h2 {
   text-decoration: underline;
   font-weight: 600;
 }
+
+//SECTION FILES
+.item_infos {
+  color: #fff;
+}
+
+.sortable-section.sectionfiles {
+  margin: 30px 0;
+}
+
+//CONTACTS
+#portal-column-content .section-contact {
+  .contact-type-organization,
+  .contact-type-mission,
+  .contact-type-position {
+    background: #ffeff3;
+  }
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.png");
+  background-size: cover;
+  background-position: center;
+}
