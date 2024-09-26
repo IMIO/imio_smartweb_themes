@@ -204,3 +204,26 @@ footer h2 {
     height: 400px;
   }
 }
+
+.portaltype-imio-smartweb-portalpage .sectiongallery {
+  margin-top: 70px;
+
+  .section-title {
+    margin: 0 auto 5rem;
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-title {
+  text-shadow: #000 1px 0 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary-svg;
+  text-decoration: underline;
+  font-weight: 600;
+}
