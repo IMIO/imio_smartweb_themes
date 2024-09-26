@@ -4,21 +4,27 @@
 
 .sectionevents .swiper-slide {
   .swiper-image {
-    order: 1;
+    order: initial;
   }
 
   .swiper_date {
-    order: 2;
+    order: 1 !important;
     background: $primary-svg;
     border-radius: 50px;
   }
 
   .swiper_category {
-    order: 3;
+    order: 2 !important;
+    padding: 0 1rem !important;
   }
 
   .swiper_title {
-    order: 4;
+    order: 3 !important;
+    padding: 0 1rem !important;
+  }
+
+  .swiper_description {
+    order: 4 !important;
   }
 }
 
