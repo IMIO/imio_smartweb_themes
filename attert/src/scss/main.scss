@@ -55,3 +55,22 @@ $enable-roboto-webfont: false;
   font-size: 16px !important;
   font-weight: 500;
 }
+
+//navbar
+.navbar-toggler {
+  padding: 0 !important;
+  background: $primary-svg !important;
+  height: 46px !important;
+  width: 46px !important;
+  border-radius: 50% !important;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar .container {
+  padding: 0;
+}
