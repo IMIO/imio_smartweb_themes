@@ -71,6 +71,7 @@ $enable-roboto-webfont: false;
   transition: var(--bs-navbar-toggler-transition);
   margin-right: 1rem;
 
+  //navbar burger blanc
   .navbar-toggler-icon {
     filter: invert(1);
   }
