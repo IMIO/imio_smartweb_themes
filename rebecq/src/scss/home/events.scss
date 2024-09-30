@@ -91,6 +91,10 @@
               position: relative;
             }
 
+            .auth_source_container_title {
+              display: none;
+            }
+
             .table_date {
               display: flex;
               background: $primary-red;
@@ -130,6 +134,10 @@
                 color: #fff;
                 text-align: center;
                 margin: 0 auto;
+
+                .from_on {
+                  display: none;
+                }
 
                 .day::after {
                   content: "/";
@@ -181,6 +189,13 @@
       li:nth-child(2) .table_display,
       li:nth-child(4) .table_display {
         background: none !important;
+      }
+
+      @media screen and (max-width: 767px) {
+        li:nth-child(1) .table_display,
+        li:nth-child(3) .table_display {
+          background: none !important;
+        }
       }
     }
   }

@@ -5,8 +5,8 @@
     position: relative;
     font-weight: 600;
     margin: 0 0 50px;
-    width: max-content;
-    font-size: 50px;
+    width: 100%;
+    font-size: 35px;
     text-transform: uppercase;
     color: #000;
     padding-left: 40px !important;
@@ -18,7 +18,7 @@
       background: $primary-red;
       content: "";
       display: block;
-      height: 55px;
+      height: 40px;
       position: absolute;
       width: 8px;
       transition: all 0.3s ease;
