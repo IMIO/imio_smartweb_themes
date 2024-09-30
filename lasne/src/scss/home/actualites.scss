@@ -55,7 +55,12 @@
   }
 }
 
-.sectionnews::after {
+.sectioncollection.bulletins {
+  position: relative;
+}
+
+.sectionnews::after,
+.sectioncollection.bulletins::after {
   content: url("../../assets/svg/circles-colors-background.svg");
   position: absolute;
   top: 0 !important;

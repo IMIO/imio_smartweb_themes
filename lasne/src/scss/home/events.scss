@@ -9,3 +9,13 @@
     transform: translateY(-25%);
   }
 }
+
+.sectionlinks.partenaires {
+  &::after {
+    content: url("../../assets/svg/circles-colors-background.svg");
+    position: absolute;
+    top: 0 !important;
+    right: 0;
+    transform: translateY(-25%);
+  }
+}

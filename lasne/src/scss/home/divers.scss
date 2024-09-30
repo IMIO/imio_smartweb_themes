@@ -430,10 +430,6 @@ footer #container-section-noussuivre {
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
-  }
-
   .navbar .container {
     padding: 0 5px 0 0 !important;
   }
@@ -680,7 +676,7 @@ h3 {
 //navbar
 .navbar-toggler {
   padding: 0 !important;
-  background: #fff !important;
+  background: $primary-svg !important;
   height: 50px !important;
   width: 50px !important;
   border-radius: 50% !important;
