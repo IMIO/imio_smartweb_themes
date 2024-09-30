@@ -815,3 +815,15 @@ input#search_button {
     border-radius: 10px;
   }
 }
+
+//mise en évidence
+body #content-core .sectiontext .section-text .body-section mark a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+//NUMBERS SECTION TEXT
+.sectiontext ol {
+  counter-reset: item;
+  list-style-type: none;
+}

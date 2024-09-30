@@ -84,6 +84,7 @@
 
             span {
               transition: all 0.5s ease;
+              text-decoration: underline;
             }
 
             &:hover {
@@ -153,4 +154,14 @@ footer {
 #main-container .quick-access.partenaires .h2,
 #main-container .quick-access.partenaires h2 {
   text-transform: initial;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer a,
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
+  text-decoration: underline;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer a:hover,
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
+  color: $primary-svg;
 }

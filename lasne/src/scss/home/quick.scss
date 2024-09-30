@@ -117,9 +117,16 @@
 
 .partenaires ul.row {
   gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around !important;
 
   li.col-md-1 {
     width: 12%;
   }
+}
+
+.sectionlinks.quick-access.partenaires .body-section li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
 }
