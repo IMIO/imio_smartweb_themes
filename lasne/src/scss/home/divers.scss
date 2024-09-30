@@ -801,3 +801,10 @@ h3 {
     }
   }
 }
+
+//SECTION NEWSLETTER HOMEPAGE
+.sortable-section.sectionlinks.newsletter-custom {
+  background: url("../../assets/svg/circles-newsletter.svg") no-repeat $primary;
+  background-size: contain;
+  background-position: right;
+}
