@@ -104,22 +104,23 @@
 }
 
 #portal-colophon {
-  background: $primary;
+  background: #fff;
   padding: 1rem;
 
   ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+    color: #000;
 
     li {
-      color: #fff;
+      color: #000;
 
       a,
       span,
       p,
       div {
-        color: #fff;
+        color: #000;
       }
     }
   }
@@ -132,7 +133,7 @@
 
 .section-home-page #portal-footer-wrapper {
   background: $primary;
-  padding: 10rem 0 2rem !important;
+  margin: 5rem 0;
 }
 
 #portal-footer-wrapper {
@@ -155,4 +156,9 @@ footer {
 
 #portal-footer-wrapper {
   margin-top: 2rem;
+}
+
+#main-container .quick-access.partenaires .h2,
+#main-container .quick-access.partenaires h2 {
+  text-transform: initial;
 }

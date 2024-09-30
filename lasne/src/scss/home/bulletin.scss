@@ -10,9 +10,10 @@
 .sectioncollection.bulletins {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin: 5rem 0;
 
   .section-title {
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
     color: $primary;
     text-align: center;
   }
@@ -30,56 +31,48 @@
       }
     }
   }
+}
 
-  .see_all {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 0;
+.sectioncollection.bulletins .see_all {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
 
-    a {
-      background: transparent;
-      border: 0 solid none;
+  a {
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 30px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease;
+    width: max-content;
+
+    &::after {
+      background-color: transparent;
+      bottom: -5px;
+      content: "";
+      height: initial;
+      position: absolute;
+      transition: all 0.2s ease;
+      width: 0%;
+    }
+
+    .swiper_title {
+      text-align: center;
+    }
+
+    &:hover {
+      background: #fff;
+      border: 1px solid $primary;
       border-radius: 20px;
       color: $primary;
-      display: block;
-      font-size: 18px;
-      font-weight: 200;
-      padding: 0;
-      position: relative;
-      text-decoration: none;
-      text-transform: none;
-      transition: all 0.2s ease;
-      width: max-content;
-
-      &::after {
-        background-color: $primary;
-        bottom: -5px;
-        content: "";
-        height: 2px;
-        position: absolute;
-        transition: all 0.2s ease;
-        width: 25%;
-      }
-
-      .swiper_title {
-        text-align: center;
-      }
-
-      .swiper-image {
-        box-shadow:
-          rgba(14, 63, 126, 4%) 1px 1px 1px 1px,
-          rgba(42, 51, 69, 4%) 1px 1px 1px -0.5px,
-          rgba(42, 51, 70, 4%) 1px 3px 3px -1.5px,
-          rgba(42, 51, 70, 4%) 1px 6px 6px -3px,
-          rgba(14, 63, 126, 4%) 1px 12px 12px -6px,
-          rgba(14, 63, 126, 4%) 1px 24px 24px -12px;
-      }
-
-      &:hover {
-        &::after {
-          width: 50%;
-        }
-      }
     }
   }
 }
