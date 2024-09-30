@@ -17,10 +17,6 @@ body {
   }
 }
 
-#portal-header #portal-header-top #header-links #search-link a:hover {
-  background: #f2f2f5;
-}
-
 #portal-header #portal-header-top #portal-logo {
   svg {
     width: 200px;
@@ -802,5 +798,20 @@ h3 {
 .sortable-section.sectionlinks.newsletter-custom {
   background: url("../../assets/svg/circles-newsletter.svg") no-repeat $primary;
   background-size: contain;
-  background-position: right;
+  background-position: right bottom;
+}
+
+input#search_button {
+  background: $primary !important;
+}
+
+//CONTACTS
+#portal-column-content .sectioncontact {
+  .contact-type-organization,
+  .contact-type-position,
+  .contact-type-mission {
+    background: #e7eef1;
+    margin: 5px;
+    border-radius: 10px;
+  }
 }

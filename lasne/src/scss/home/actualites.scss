@@ -67,3 +67,7 @@
   left: 0;
   transform: translateY(-38%);
 }
+
+.sectioncollection.bulletins::after {
+  z-index: -1;
+}
