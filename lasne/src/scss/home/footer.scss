@@ -52,10 +52,6 @@
   }
 }
 
-.section-home-page #portal-footer-wrapper {
-  margin-top: -5rem;
-}
-
 #portal-footer-wrapper #portal-footer h2.section-title {
   margin-bottom: 0.5rem;
 }
@@ -92,7 +88,7 @@
 
             &:hover {
               span {
-                color: $primary !important;
+                color: $primary-svg !important;
                 transition: all 0.5s ease;
               }
             }
@@ -133,7 +129,7 @@
 
 .section-home-page #portal-footer-wrapper {
   background: $primary;
-  margin: 5rem 0;
+  margin: 5rem 0 0;
 }
 
 #portal-footer-wrapper {
@@ -152,10 +148,6 @@ footer {
   .sectiontext ul li::before {
     display: none !important;
   }
-}
-
-#portal-footer-wrapper {
-  margin-top: 2rem;
 }
 
 #main-container .quick-access.partenaires .h2,

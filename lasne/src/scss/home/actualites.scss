@@ -1,6 +1,10 @@
 .sectionnews,
 .sectionevents {
-  margin: 3rem 0;
+  margin: 0;
+
+  .section-title {
+    margin: 0 0 5rem;
+  }
 
   .swiper-slide .swiper_category {
     position: absolute;
