@@ -56,14 +56,9 @@
 }
 
 .sectionnews::after {
-  top: 0 !important;
-  background: url("../../assets/svg/circles-colors-background.svg");
-  background-size: cover;
-  background-size: 75%;
-  background-position: left;
-  background-repeat: no-repeat;
-  content: "";
-  left: 50%;
-  transform: translateX(-50%);
+  content: url("../../assets/svg/circles-colors-background.svg");
   position: absolute;
+  top: 0 !important;
+  left: 0;
+  transform: translateY(-25%);
 }
