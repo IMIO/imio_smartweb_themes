@@ -12,6 +12,8 @@
 #main-container .quick-access {
   margin: -100px 0 100px;
   padding: 0;
+  position: relative;
+  z-index: 1;
 
   @include media-breakpoint-down(lg) {
     margin: 0;

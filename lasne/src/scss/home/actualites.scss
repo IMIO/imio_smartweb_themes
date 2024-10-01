@@ -1,6 +1,7 @@
 .sectionnews,
 .sectionevents {
   margin: 0;
+  position: relative;
 
   .section-title {
     margin: 0 0 5rem;
@@ -66,6 +67,14 @@
   top: 0 !important;
   left: 0;
   transform: translateY(-38%);
+  z-index: -9999;
+}
+
+.sectionnews,
+.sectioncollection.bulletins {
+  position: relative;
+  width: 100%;
+  overflow-x: clip;
 }
 
 .sectioncollection.bulletins::after {
