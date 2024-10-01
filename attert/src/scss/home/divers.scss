@@ -242,6 +242,10 @@ footer h2 {
 
 //CONTACTS
 #portal-column-content .section-contact {
+  background: #ffeff3;
+  gap: 10px;
+  display: flex;
+
   .contact-type-organization,
   .contact-type-mission,
   .contact-type-position {
@@ -253,4 +257,8 @@ footer h2 {
   background: url("../../assets/svg/placeholder.png");
   background-size: cover;
   background-position: center;
+}
+
+.sectioncontact .contact_titles h2 {
+  font-size: 1.5rem;
 }
