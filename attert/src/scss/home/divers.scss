@@ -14,11 +14,13 @@ body.section-home-page .smartweb_herobanner .bannerSwiper {
   height: 900px;
 }
 
-body:not(.userrole-authenticated).section-home-page
-  #portal-header
+body:not(.userrole-authenticated).section-home-page #portal-header {
+  position: relative;
+
   #portal-header-top {
-  position: absolute;
-  width: 100%;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 body.section-home-page #portal-header #portal-header-top::after {
