@@ -251,6 +251,8 @@ footer #container-section-noussuivre {
 }
 
 #portal-footer-wrapper {
+  margin-top: 80px;
+
   .smartweb_footer {
     .text {
       h4 {
@@ -647,8 +649,12 @@ h3 {
 
 #portal-footer-wrapper #portal-footer #smartweb-footer a,
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
-  color: #fff;
+  color: $primary-red;
   transition: all 0.5s ease;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer li {
+  padding-left: 0;
 }
 
 // padding page accueil pour titre
