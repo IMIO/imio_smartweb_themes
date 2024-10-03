@@ -777,7 +777,9 @@ h3 {
 }
 
 #portal-column-content .section-contact .contact-type-organization {
-  border-radius: 30px;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
 
   .contact_logo {
     display: block;
