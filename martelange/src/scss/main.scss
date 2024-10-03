@@ -792,3 +792,33 @@ h3 {
     padding-top: 150%;
   }
 }
+
+.contact_leadimage {
+  border-radius: 15px;
+}
+
+.subsection-office-du-tourisme {
+  .section-title {
+    font-weight: 600;
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: left;
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .swiper-image {
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+
+    h3 {
+      color: #000;
+    }
+  }
+}
