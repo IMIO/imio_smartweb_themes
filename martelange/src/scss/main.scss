@@ -775,3 +775,20 @@ h3 {
 .r-search label input {
   margin: 0 !important;
 }
+
+#portal-column-content .section-contact .contact-type-organization {
+  border-radius: 30px;
+
+  .contact_logo {
+    display: block;
+    padding-top: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+  }
+}
+
+.subsection-services-communaux-communication-bulletin-communal-communalement-votre {
+  .card-img-top {
+    padding-top: 150%;
+  }
+}
