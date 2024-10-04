@@ -290,6 +290,10 @@
     overflow: hidden;
     border-radius: 40px;
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 //titre Martelange
@@ -309,5 +313,9 @@
       text-transform: uppercase;
       font-weight: 700;
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
   }
 }
