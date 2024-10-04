@@ -43,12 +43,6 @@
       border-radius: 50px 0 0;
       transition: 0.5s;
 
-      &:hover,
-      &:focus {
-        transition: 0.5s;
-        transform: translateY(10px);
-      }
-
       & > a {
         align-items: center;
         padding-bottom: 60px;
@@ -66,20 +60,7 @@
         }
 
         .swiper_category {
-          display: block;
-          padding: 0.5rem 1rem;
-          color: #fff;
-          background: $primary-blue;
-          border-radius: 0 0 10px;
-          font-size: 14px;
-          font-weight: initial;
-          text-transform: uppercase;
-          margin: 0;
-
-          span {
-            padding: 0;
-            background: transparent;
-          }
+          display: none;
         }
 
         .swiper_title {
@@ -100,9 +81,13 @@
         }
 
         &:hover {
+          border-radius: 40px 40px 80px;
+          transition: 0.5s;
+
           .swiper_title {
             h3 {
               transition: 0.5s;
+              color: $primary-blue;
             }
           }
         }
