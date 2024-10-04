@@ -571,3 +571,20 @@ input#search_button {
 .r-content > button:hover {
   background: $primary-svg;
 }
+
+@include media-breakpoint-up(lg) {
+  .portaltype-imio-smartweb-portalpage.section-home-page #localmessagesviewlet,
+  .portaltype-imio-smartweb-portalpage.section-home-page #messagesviewlet {
+    top: 125px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .portaltype-imio-smartweb-portalpage.section-home-page #localmessagesviewlet,
+  .portaltype-imio-smartweb-portalpage.section-home-page #messagesviewlet {
+    left: 0;
+    padding: 0 10px;
+  }
+}
