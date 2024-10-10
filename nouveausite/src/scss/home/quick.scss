@@ -94,6 +94,7 @@
 .bloc-app .body-section ul li a .table_title {
   font-size: 14px !important;
   font-weight: 300 !important;
+  margin-top: 0 !important;
   order: 3;
 }
 
@@ -166,6 +167,19 @@
     transform: translateX(-50%);
     top: 0;
     width: 100vw;
+  }
+}
+
+.bloc-app .see_all a {
+  background: $primary-red;
+  border: 1px solid $primary-red;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+
+  &:hover {
+    background: $primary;
+    border: 1px solid $primary;
   }
 }
 
