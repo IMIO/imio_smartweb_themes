@@ -4,10 +4,9 @@
   position: relative;
 
   h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    line-height: 30px;
-    color: $primary-svg;
+    font-size: 24px;
+    line-height: 34px;
+    color: $primary;
     margin: 0;
     font-weight: 600;
   }
@@ -46,11 +45,15 @@
       $primary-light;
     padding: 30px 40px 40px 140px;
     border-radius: 20px;
+    text-decoration: none;
 
     strong {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 30px;
+      color: $primary-red;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
   }
 
@@ -59,11 +62,15 @@
       $primary-light;
     padding: 30px 40px 40px 140px;
     border-radius: 20px;
+    text-decoration: none;
 
     strong {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 30px;
+      color: $primary-red;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
   }
 
@@ -72,11 +79,15 @@
       $primary-light;
     padding: 30px 40px 40px 140px;
     border-radius: 20px;
+    text-decoration: none;
 
     strong {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 30px;
+      color: $primary-red;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
   }
 }
