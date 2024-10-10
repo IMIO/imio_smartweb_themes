@@ -166,6 +166,7 @@ h2 {
 
   .swiper-banner-content {
     font-family: $font-family-title;
+    max-width: 50%;
 
     @media screen and (max-width: 600px) {
       display: none;
@@ -175,12 +176,20 @@ h2 {
   .swiper-banner-title {
     font-weight: 600;
     text-transform: uppercase !important;
+    color: #000;
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 500px !important;
   }
 
   p {
     font-weight: 600;
-    line-height: 85px;
-    max-width: 800px;
+    color: #e30289;
+    font-size: 25px;
+    margin: 0;
+    line-height: 40px;
+    max-width: 540px;
+    margin-top: 10px;
   }
 }
 
