@@ -92,16 +92,16 @@
 }
 
 .bloc-app .body-section ul li a .table_title {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 14px !important;
+  font-weight: 300 !important;
   order: 3;
 }
 
 .bloc-app .body-section ul li a .table_description {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 0;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
   order: 2;
 }
 
