@@ -1,0 +1,119 @@
+.sectionevents {
+  padding-bottom: 0;
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../assets/svg/bg-agenda.svg") left bottom #fff no-repeat;
+
+  .carousel {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-container {
+    position: relative;
+
+    .swiper-pagination-bullet-active {
+      background: $primary-blue !important;
+    }
+  }
+
+  .section-title {
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      border-radius: 50px 0 0;
+      transition: 0.5s;
+
+      & > a {
+        align-items: center;
+        padding-bottom: 60px;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+        transition: 0.5s;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .auth_source_container_title {
+          display: none;
+        }
+
+        .swiper_category {
+          display: none;
+        }
+
+        .swiper_title {
+          margin-top: 0;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          border-radius: 40px 40px 80px;
+          transition: 0.5s;
+
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+              color: $primary-red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .section-container .swiper-pagination-bullet-active {
+    background: $primary-red !important;
+  }
+}
+
+.sectionevents .see_all a {
+  background: $primary-blue;
+  color: #000;
+  border: solid 1px $primary-blue;
+  border-radius: 10px;
+
+  &:hover {
+    background: #000;
+    border: solid 1px #000;
+    color: #fff;
+    border-radius: 10px;
+  }
+}

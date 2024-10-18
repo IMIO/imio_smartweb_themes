@@ -1,0 +1,99 @@
+.espace-citoyen {
+  background: linear-gradient(180deg, #fff 0, #fff 220px, #f2f2f2 221px, #fff);
+  padding-top: 100px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 100vw;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before {
+    background: url("../../assets/svg/bg-espace.svg") top right no-repeat;
+    content: "";
+    display: block;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 0;
+    background: linear-gradient(
+      180deg,
+      #fff 0,
+      #fff 120px,
+      #f2f2f2 121px,
+      #fff
+    );
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .section-title {
+    position: relative;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
+
+  .body-section {
+    .row {
+      max-width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+      transition: 0.5s;
+
+      li {
+        padding: 0 !important;
+      }
+
+      .table_display {
+        height: 100%;
+      }
+
+      .table_image {
+        padding: 1.5rem 1rem;
+        background: #fff;
+        border-radius: 15px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        transition: all 0.25s ease;
+
+        .image {
+          width: auto;
+
+          svg {
+            height: auto;
+            width: 40px;
+            max-height: 40px;
+            opacity: 50%;
+          }
+        }
+
+        &:hover {
+          transition: all 0.25s ease;
+          background: $primary-green;
+
+          .image {
+            svg {
+              opacity: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
