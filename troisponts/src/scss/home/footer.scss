@@ -395,3 +395,7 @@ body.portaltype-imio-smartweb-portalpage .outer-wrapper {
 footer#portal-footer-wrapper {
   margin-top: 50px;
 }
+
+.sectiontext ol > li::before {
+  text-align: left !important;
+}
