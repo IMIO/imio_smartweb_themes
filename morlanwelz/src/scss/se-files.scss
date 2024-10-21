@@ -1,12 +1,23 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles,
 .portaltype-imio-smartweb-portalpage #main-container .sectionfiles {
+  background: transparent;
+
   .table_image {
     background: #f1f1f1;
     display: flow-root;
     border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 20px;
     text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: $primary-green;
+      transition: all 0.25s ease;
+    }
+  }
+
+  .sectionfiles .section-title {
+    color: #000;
   }
 
   .image {
