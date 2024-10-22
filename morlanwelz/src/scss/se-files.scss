@@ -1,7 +1,9 @@
+.sectionfiles {
+  background: transparent !important;
+}
+
 .portaltype-imio-smartweb-page #main-container .sectionfiles,
 .portaltype-imio-smartweb-portalpage #main-container .sectionfiles {
-  background: transparent;
-
   .table_image {
     background: #f1f1f1;
     display: flow-root;
@@ -9,15 +11,16 @@
     padding: 10px 20px;
     text-decoration: none;
     transition: all 0.25s ease;
+    margin-bottom: 0 !important;
 
     &:hover {
-      background: $primary-green;
+      background: $primary-green !important;
       transition: all 0.25s ease;
     }
   }
 
-  .sectionfiles .section-title {
-    color: #000;
+  .section-title {
+    color: #000 !important;
   }
 
   .image {
