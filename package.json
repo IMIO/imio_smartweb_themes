@@ -78,5 +78,6 @@
   },
   "dependencies": {
     "@release-it/conventional-changelog": "^8.0.1"
-  }
+  },
+  "packageManager": "pnpm@8.15.6+sha1.8105075ad0aa306138be128c017e9c41e28ecffa"
 }
