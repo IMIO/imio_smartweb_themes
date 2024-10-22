@@ -395,3 +395,8 @@ footer #container-section-noussuivre {
   background-color: #fff;
   border-radius: 10px;
 }
+
+.sectiontext .section-text .body-section.figure-top .text .h2:first-child,
+.sectiontext .section-text .body-section.figure-top .text h2:first-child {
+  margin-top: 0 !important;
+}
