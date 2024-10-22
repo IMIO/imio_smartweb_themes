@@ -10,12 +10,12 @@
     border-radius: 20px;
     padding: 10px 20px;
     text-decoration: none;
-    transition: all 0.25s ease;
+    transition: all 0.25s ease !important;
     margin-bottom: 0 !important;
 
     &:hover {
       background: $primary-green !important;
-      transition: all 0.25s ease;
+      transition: all 0.25s ease !important;
     }
   }
 
