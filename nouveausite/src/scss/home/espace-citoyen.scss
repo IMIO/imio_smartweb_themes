@@ -5,8 +5,12 @@
   padding: 80px 50px;
   text-align: center;
 
+  .swiper-wrapper {
+    padding-bottom: 90px;
+  }
+
   h2 {
-    font-size: 24px;
+    font-size: 24px !important;
     font-weight: 600;
     line-height: 34px;
     margin-bottom: 20px;
@@ -44,8 +48,32 @@
     border: 1px solid #ddd;
     border-radius: 30px;
     text-align: left;
-    margin: 20px;
+    margin: 20px 0;
     padding: 40px;
     list-style-type: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: $primary-svg;
+    border-radius: 50px;
+    height: 45px;
+    bottom: 0 !important;
+    width: 45px;
+    top: auto;
+  }
+
+  .swiper-button-prev {
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  .swiper-button-next {
+    left: 50%;
+    margin-left: 10px;
+  }
+
+  .swiper-pagination-bullets {
+    display: none !important;
   }
 }
