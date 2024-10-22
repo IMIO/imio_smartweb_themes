@@ -1,5 +1,5 @@
 const path = require("path");
-const { basename } = require('path');
+const { basename } = require("path");
 const WebpackBar = require("webpackbar");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -9,8 +9,8 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
 const { cp } = require("fs");
 const sass = require("sass-embedded");
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BASE_PATH = path.resolve(__dirname, ".");
 
 module.exports = (env, argv) => {
@@ -82,13 +82,13 @@ module.exports = (env, argv) => {
         filename: "dist/css/theme.css",
       }),
       new WebpackBar(),
-    //   new HtmlWebpackPlugin({
-    //     template: THEME_PATH + '/index.html',
-    //     filename: 'index.html',
-    // }),
+      //   new HtmlWebpackPlugin({
+      //     template: THEME_PATH + '/index.html',
+      //     filename: 'index.html',
+      // }),
       new FaviconsWebpackPlugin({
         logo: THEME_PATH + "/icons/logo.png",
-        mode: 'webapp',
+        mode: "webapp",
         cache: false,
         outputPath: THEME_PATH + "/icons",
         inject: false,
@@ -107,7 +107,7 @@ module.exports = (env, argv) => {
             windows: false, // Create Windows 8 tile icons. `boolean` or `{ offset, background }` or an array of sources
             yandex: false, // Create Yandex browser icon. `boolean` or `{ offset, background }` or an array of sources
           },
-        }
+        },
       }),
     ].filter(Boolean),
     module: {
