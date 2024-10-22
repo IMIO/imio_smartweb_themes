@@ -50,7 +50,7 @@
     border-radius: 30px;
     text-align: left;
     margin: 20px 0;
-    padding: 40px;
+    padding: 70px 40px 40px;
     list-style-type: none;
 
     &::before {
@@ -60,7 +60,7 @@
       height: 54px;
       background: url("../../assets/svg/quote.svg") no-repeat;
       left: 60px;
-      top: -40px;
+      top: -20px;
       width: 84px;
     }
   }
@@ -90,11 +90,11 @@
   }
 }
 
-#section-tous-les-temoignages-collaboration-imio {
-  width: 100%;
-  text-align: center;
+#tous-les-temoignages-collaboration-imio {
+  width: 100% !important;
+  text-align: center !important;
 
-  a {
+  #section-tous-les-temoignages-collaboration-imio {
     background: $primary-red;
     border: 1px solid $primary-red;
     text-decoration: none;
