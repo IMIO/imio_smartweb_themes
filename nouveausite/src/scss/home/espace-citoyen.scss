@@ -6,13 +6,13 @@
   text-align: center;
 
   .swiper-wrapper {
-    padding-bottom: 90px;
+    padding-bottom: 70px;
   }
 
   h2 {
-    font-size: 24px !important;
+    font-size: 28px !important;
     font-weight: 600;
-    line-height: 34px;
+    line-height: 38px;
     margin-bottom: 20px;
   }
 
@@ -35,13 +35,14 @@
 
   .swiper-slide {
     .swiper_title h3 {
-      font-size: 24px;
+      font-size: 20px;
       color: #000;
       font-weight: 600;
     }
 
     .swiper_subtitle p {
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 24px;
       color: $primary-svg;
     }
 
@@ -51,6 +52,17 @@
     margin: 20px 0;
     padding: 40px;
     list-style-type: none;
+
+    &::before {
+      content: "";
+      transition: all 0.2s ease;
+      position: absolute;
+      height: 54px;
+      background: url("../../assets/svg/quotesvg") no-repeat;
+      left: 60px;
+      top: -40px;
+      width: 84px;
+    }
   }
 
   .swiper-button-next,
@@ -75,5 +87,28 @@
 
   .swiper-pagination-bullets {
     display: none !important;
+  }
+}
+
+#section-tous-les-temoignages-collaboration-imio {
+  width: 100%;
+  text-align: center;
+
+  a {
+    background: $primary-red;
+    border: 1px solid $primary-red;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 10px 0 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $primary;
+      border: 1px solid $primary;
+      transition: all 0.2s ease;
+    }
   }
 }
