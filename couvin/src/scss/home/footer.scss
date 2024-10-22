@@ -22,7 +22,13 @@ footer div#smartweb-footer {
 }
 
 footer .image.d-block {
-  display: none;
+  display: block;
+
+  svg {
+    fill: #fff;
+    width: 90px;
+    height: 40px;
+  }
 }
 
 footer .smartweb-footer {
@@ -119,5 +125,19 @@ footer ul.row {
 
   img {
     width: 60%;
+  }
+}
+
+.account {
+  padding-left: 1.5rem !important;
+  font-weight: bold;
+
+  span {
+    color: #014769 !important;
+  }
+
+  &:hover,
+  &:focus {
+    color: #023148 !important;
   }
 }
