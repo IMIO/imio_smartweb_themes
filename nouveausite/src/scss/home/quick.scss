@@ -103,7 +103,12 @@
   font-weight: 600 !important;
   margin-top: 10px !important;
   margin-bottom: 0 !important;
+  line-height: 34px;
   order: 2;
+
+  p {
+    margin-bottom: 5px;
+  }
 }
 
 .bloc-intro-noir {
