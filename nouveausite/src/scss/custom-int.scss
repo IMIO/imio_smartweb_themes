@@ -1,0 +1,35 @@
+.bloc-structure {
+  .text {
+    border-left: 4px solid $primary-svg;
+    padding-left: 10px;
+  }
+
+  ul {
+    li {
+      &::before {
+        display: none;
+      }
+
+      h3 {
+        &::before {
+          display: block;
+          left: -10px;
+          position: absolute;
+          top: 15px;
+          width: 20px;
+          height: 2px;
+          background: #000;
+          content: "";
+        }
+      }
+
+      ul {
+        li {
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
