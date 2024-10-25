@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 #smartweb-footer .sectiontext figure,
 #smartweb-minisite-footer .sectiontext figure {
   max-width: 65% !important;
@@ -23,6 +24,7 @@
 
     #smartweb-footer,
     #smartweb-minisite-footer {
+
       a,
       span,
       p,
@@ -62,12 +64,7 @@
   border-radius: 0 !important;
 }
 
-#portal-footer-wrapper
-  #portal-footer
-  .sectionlinks
-  .container
-  .nb-items-batch-1
-  .body-section {
+#portal-footer-wrapper #portal-footer .sectionlinks .container .nb-items-batch-1 .body-section {
   .row {
     li {
       .table_display {
@@ -108,7 +105,7 @@
   ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     margin-bottom: 0;
 
     li {
@@ -167,13 +164,7 @@ footer {
   }
 }
 
-#portal-footer-wrapper
-  #portal-footer
-  #smartweb-minisite-footer
-  .sectionlinks
-  .container
-  .nb-items-batch-1
-  .body-section {
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectionlinks .container .nb-items-batch-1 .body-section {
   .row {
     li {
       &:nth-child(1) {

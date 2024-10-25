@@ -4,7 +4,7 @@
     align-items: center;
 
     @include media-breakpoint-up(lg) {
-      justify-content: end;
+      justify-content: flex-end;
     }
 
     &::before {
@@ -31,7 +31,7 @@
     filter: blur(0);
     animation: anim-mouse-leave forwards 0.4s ease-out;
 
-    & > a {
+    &>a {
       padding-bottom: 2rem;
     }
 
