@@ -7,27 +7,27 @@ $enable-roboto-webfont: false;
 @import "./actualités.scss";
 
 .smartweb_herobanner {
-    z-index: 0;
+  z-index: 0;
 
-    .swiper-banner-image {
-        border-radius: 80px;
-    }
+  .swiper-banner-image {
+    border-radius: 80px;
+  }
 }
 
 #portal-header #portal-header-top #header-links #search-link a {
-    background-color: $primary-svg;
-    border-color: transparent;
-    text-decoration: none;
+  background-color: $primary-svg;
+  border-color: transparent;
+  text-decoration: none;
 
-    &:hover {
-        background-color: darken($primary-svg, 10%);
-    }
+  &:hover {
+    background-color: darken($primary-svg, 10%);
+  }
 }
 
 .account {
-    text-decoration: none;
+  text-decoration: none;
 
-    span {
-        font-weight: 500;
-    }
+  span {
+    font-weight: 500;
+  }
 }
