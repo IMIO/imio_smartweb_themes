@@ -4,7 +4,7 @@ $enable-roboto-webfont: false;
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./quick.scss";
-@import "./actualités.scss";
+@import "./actualités";
 
 .smartweb_herobanner {
   z-index: 0;
