@@ -58,3 +58,21 @@
     }
   }
 }
+
+.portaltype-imio-smartweb-page {
+  .sectionlinks {
+    .table_image {
+      background: red;
+      padding: 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+
+      .table_title span::before {
+        display: none !important;
+      }
+    }
+  }
+}
