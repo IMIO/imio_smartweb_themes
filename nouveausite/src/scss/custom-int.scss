@@ -71,6 +71,7 @@
       justify-content: center;
       gap: 0 !important;
       transition: all 0.2s ease;
+      display: block !important;
 
       &:hover {
         background: $primary !important;
@@ -82,8 +83,4 @@
       }
     }
   }
-}
-
-#documents-telechargeables {
-  display: none !important;
 }
