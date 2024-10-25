@@ -59,20 +59,31 @@
   }
 }
 
-.portaltype-imio-smartweb-page {
+.portaltype-imio-smartweb-page .content-core {
   .sectionlinks {
     .table_image {
-      background: red;
+      background: $primary-svg !important;
       padding: 20px;
       border-radius: 50px;
       text-decoration: none;
-      color: #fff;
+      color: #fff !important;
       text-align: center;
       justify-content: center;
+      gap: 0 !important;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: $primary !important;
+        transition: all 0.2s ease;
+      }
 
       .table_title span::before {
         display: none !important;
       }
     }
   }
+}
+
+#documents-telechargeables {
+  display: none !important;
 }
