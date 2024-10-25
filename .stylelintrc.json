@@ -2,7 +2,6 @@
   "extends": ["stylelint-config-standard-scss"],
   "plugins": ["stylelint-scss"],
   "rules": {
-    "scss/at-import-partial-extension": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "scss/dollar-variable-colon-space-after": null,
     "scss/no-global-function-names": null,
