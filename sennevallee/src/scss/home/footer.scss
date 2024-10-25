@@ -9,7 +9,6 @@
 
     #smartweb-footer,
     #smartweb-minisite-footer {
-
       /* stylelint-disable-next-line rule-empty-line-before */
       a,
       span,
@@ -56,7 +55,8 @@
 }
 
 #portal-colophon {
-  background: url("../../assets/bg-footer.png") right bottom no-repeat $primary-blue-dark !important;
+  background: url("../../assets/bg-footer.png") right bottom no-repeat
+    $primary-blue-dark !important;
   padding: 2rem 350px 2rem 1rem;
 
   ul {

@@ -24,7 +24,6 @@
 
     #smartweb-footer,
     #smartweb-minisite-footer {
-
       a,
       span,
       p,
@@ -64,7 +63,12 @@
   border-radius: 0 !important;
 }
 
-#portal-footer-wrapper #portal-footer .sectionlinks .container .nb-items-batch-1 .body-section {
+#portal-footer-wrapper
+  #portal-footer
+  .sectionlinks
+  .container
+  .nb-items-batch-1
+  .body-section {
   .row {
     li {
       .table_display {
@@ -164,7 +168,13 @@ footer {
   }
 }
 
-#portal-footer-wrapper #portal-footer #smartweb-minisite-footer .sectionlinks .container .nb-items-batch-1 .body-section {
+#portal-footer-wrapper
+  #portal-footer
+  #smartweb-minisite-footer
+  .sectionlinks
+  .container
+  .nb-items-batch-1
+  .body-section {
   .row {
     li {
       &:nth-child(1) {
