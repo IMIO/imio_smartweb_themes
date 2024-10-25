@@ -1,0 +1,17 @@
+.sectionlinks.quick-access {
+    padding-top: 0;
+    margin-top: -100px;
+
+    .table_image {
+
+        /* stylelint-disable-next-line rule-empty-line-before */
+        &:hover,
+        &:focus {
+            .image {
+                background-color: darken($primary, 10%) !important;
+            }
+        }
+
+    }
+
+}

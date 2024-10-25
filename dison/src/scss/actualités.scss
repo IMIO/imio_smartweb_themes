@@ -1,0 +1,24 @@
+.sectionnews {
+    .section-container {
+        text-align: center;
+    }
+
+    .section-title {
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url("../../assets/svg/actu-bird.svg") no-repeat;
+            background-size: contain;
+            width: 94px;
+            height: 75px;
+            display: block;
+            position: absolute;
+            top: -76px;
+            left: -41px;
+            z-index: -1;
+        }
+
+    }
+}

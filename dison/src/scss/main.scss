@@ -1,0 +1,33 @@
+$enable-roboto-webfont: false;
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import "./variables";
+@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "./quick.scss";
+@import "./actualités.scss";
+
+.smartweb_herobanner {
+    z-index: 0;
+
+    .swiper-banner-image {
+        border-radius: 80px;
+    }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+    background-color: $primary-svg;
+    border-color: transparent;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($primary-svg, 10%);
+    }
+}
+
+.account {
+    text-decoration: none;
+
+    span {
+        font-weight: 500;
+    }
+}
