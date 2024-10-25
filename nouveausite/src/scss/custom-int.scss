@@ -28,7 +28,7 @@
       ul {
         li {
           &::before {
-            display: none;
+            display: block;
           }
         }
       }
