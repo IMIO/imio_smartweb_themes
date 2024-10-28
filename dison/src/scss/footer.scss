@@ -1,0 +1,31 @@
+#portal-footer-wrapper {
+  --bs-link-color-rgb: $primary;
+  background: #f7f7f7;
+
+  h2 {
+    color: $text-color;
+    font-size: 20px !important;
+  }
+
+  h3 {
+    color: $text-color;
+    font-size: 16px !important;
+  }
+}
+
+#portal-colophon {
+  background: $primary;
+
+  ul {
+    margin-bottom: 0;
+    display: flex;
+    padding: 5px;
+
+    li,
+    span,
+    p,
+    a {
+      color: #fff;
+    }
+  }
+}

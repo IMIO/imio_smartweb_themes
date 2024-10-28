@@ -1,19 +1,24 @@
 //*// COLORS
 $primary: #005596;
 $primary-svg: #d92037;
+$text-color: #2f2f2f;
 
 //*// TYPOGRAPHY
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap");
 
-$font-family-base: "Roboto", sans-serif !default;
-$font-family-title: "Nunito", sans-serif !default;
+$font-family-base: "Open Sans", sans-serif;
+$font-family-title: "Oswald", sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
 $font-title-weight: 700 !default;
 
+.h3,
+h3 {
+  font-family: $font-family-base !important;
+}
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
@@ -45,7 +50,7 @@ $enable-title-uppercase: false !default;
 $home-section-title-size: 3.25rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
-$home-section-title-align: left !default;
+$home-section-title-align: center;
 $section-padding-top: 0 !default;
 $to-portal-link-color: #282828 !default;
 $img-placeholder: #f2f2f2 !default;
@@ -150,24 +155,25 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding: 0 !default;
+$see-all-padding: 10px 20px;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg: transparent !default;
-$see-all-color: $primary !default;
-$see-all-radius: $global-radius !default;
-$see-all-border: solid 0 $primary !default;
-$see-all-text-transform: none !default;
-$see-all-font-size: 16px !default;
-$see-all-font-weight: 700 !default;
 $see-all-transition: all 0.2s ease !default;
-$see-all-hover-bg: transparent !default;
-$see-all-hover-color: $primary-svg !default;
-$see-all-hover-radius: $global-radius !default;
+$see-all-hover-bg: darken($primary-svg, 20%);
+$see-all-hover-color: #fff;
+$see-all-hover-radius: 10px;
 $see-all-hover-border: solid 0 $primary !default;
-$see-all-justify-content: right !default;
+$see-all-justify-content: center;
 $see-all-underline-color: $primary-svg !default;
 $see-all-underline-width: 25% !default;
 $see-all-hover-underline-width: 50% !default;
+$see-all-bg: $primary-svg;
+$see-all-color: #fff;
+$see-all-radius: 10px;
+$see-all-border: none;
+$see-all-text-transform: initial;
+$see-all-font-size: 16px;
+$see-all-font-weight: 500;
+$see-all-font-family: $font-family-base;
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -202,7 +208,7 @@ $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
 $a-la-une-text-bg: rgb(244, 244, 244) !default;
 $a-la-une-item-image-margin: 0 !default;
-$a-la-une-item-title-color: $primary !default;
+$a-la-une-item-title-color: $text-color;
 $a-la-une-item-title-font-size: $h3-font-size !default;
 $a-la-une-item-title-margin: 0 !default;
 $a-la-une-item-title-padding: 36px 36px 0 !default;
@@ -223,25 +229,25 @@ $actu-title-color: $primary-svg;
 $actu-title-align: center;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
-$actu-image-margin-bottom: 0 !default;
-$actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color: rgb(244, 244, 244) !default;
-$actu-item-bg-radius: $global-radius + 2 !default;
+$actu-image-margin-bottom: 1rem;
+$actu-image-border-radius: 20px 20px 0 0;
+$actu-item-bg-color: transparent;
+$actu-item-bg-radius: 20px 20px 0 0;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
 $actu-category-color: #fff !default;
-$actu-category-bg-color: $primary-svg !default;
+$actu-category-bg-color: $primary-svg;
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px !default;
 $actu-category-font-weight: initial !default;
 $actu-category-radius: $global-radius !default;
 $actu-item-title-margin: 0 0 0 0 !default;
 $actu-item-title-padding: 0 1rem !default;
-$actu-item-title-color: initial !default;
+$actu-item-title-color: $text-color;
 $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size !default;
 $actu-item-title-font-weight: initial !default;
-$actu-item-title-align: left !default;
+$actu-item-title-align: center;
 $actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
 $actu-item-description-color: initial !default;
@@ -249,9 +255,9 @@ $actu-item-description-align: left !default;
 $actu-item-description-font-family: $font-family-base !default;
 $actu-date-margin: 0 0 0.5rem 0 !default;
 $actu-date-padding: 0 1rem !default;
-$actu-date-color: $primary !default;
-$actu-date-font-size: 14px !default;
-$actu-date-align: left !default;
+$actu-date-color: #2f2f2f;
+$actu-date-font-size: 14px;
+$actu-date-align: center;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
@@ -259,36 +265,37 @@ $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;
-$event-title-color: $primary !default;
+$event-title-color: #fff;
 $event-title-align: $home-section-title-align !default;
-$event-title-margin: $home-section-title-margin !default;
+$event-title-margin: 8rem 0 4rem 0;
 $event-title-padding: $home-section-title-padding !default;
-$event-image-margin-bottom: 0 !default;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color: rgb(244, 244, 244) !default;
+$event-image-margin-bottom: 1rem;
+$event-image-border-radius: 20px 20px 0 0;
+$event-item-bg-color: transparent;
 $event-item-bg-radius: $global-radius + 2 !default;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.5rem 1rem !default;
 $event-category-color: #fff !default;
 $event-category-bg-color: $primary-svg !default;
 $event-category-text-transform: uppercase !default;
-$event-category-font-size: 14px !default;
-$event-category-font-weight: initial !default;
-$event-category-radius: $global-radius !default;
+$event-category-font-size: 13px;
+$event-category-font-weight: 600;
+$event-category-radius: 0 20px 0 20px;
 $event-item-title-margin: 0 !default;
 $event-item-title-padding: 0 1rem !default;
-$event-item-title-color: initial !default;
+$event-item-title-color: #fff;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size !default;
 $event-item-title-font-weight: initial !default;
+$event-item-title-align: center;
 $event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
-$event-item-description-color: initial !default;
+$event-item-description-color: #fff;
 $event-item-description-align: left !default;
 $event-item-description-font-family: $font-family-base !default;
 $event-date-margin: 0 0 0.5rem 0 !default;
 $event-date-padding: 0 1rem !default;
-$event-date-color: $primary !default;
+$event-date-color: #fff;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
@@ -316,7 +323,7 @@ $album-category-font-weight: initial !default;
 $album-category-radius: $global-radius !default;
 $album-item-title-margin: 1rem 0 !default;
 $album-item-title-padding: 0 !default;
-$album-item-title-color: initial !default;
+$album-item-title-color: $text-color;
 $album-item-title-text-transform: initial !default;
 $album-item-title-font-size: $h3-font-size !default;
 $album-item-title-font-weight: initial !default;
@@ -401,7 +408,6 @@ $message-error: #ae2609;
 $quick-access-title-font-family: $font-family-title !default;
 
 //SEE ALL
-$see-all-font-family: $font-family-title !default;
 
 :root {
   --bs-card-spacer-x: 1rem;
@@ -415,3 +421,5 @@ $see-all-font-family: $font-family-title !default;
   --bs-breadcrumb-padding-y: 10px !important;
   --bs-breadcrumb-bg: transparent !important;
 }
+
+$footer-color: $text-color;

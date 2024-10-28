@@ -5,6 +5,7 @@ $enable-roboto-webfont: false;
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./quick";
 @import "./actualites";
+@import "./footer";
 
 .smartweb_herobanner {
   z-index: 0;
@@ -30,4 +31,14 @@ $enable-roboto-webfont: false;
   span {
     font-weight: 500;
   }
+}
+
+.see_all {
+  a {
+    background-color: $primary-svg;
+  }
+}
+
+.see_all a::after {
+  display: none !important;
 }
