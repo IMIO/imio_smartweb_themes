@@ -93,6 +93,7 @@
 
   .table_display {
     margin: 0;
+    max-width: 100% !important;
   }
 
   &::after {
@@ -128,4 +129,8 @@
       }
     }
   }
+}
+
+.sectiontext ol > li::before {
+  content: counters(item, ".") " " !important;
 }
