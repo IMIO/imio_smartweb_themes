@@ -739,12 +739,6 @@ footer #container-section-noussuivre {
   z-index: -1;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: $primary-blue;
-}
-
 .subsection-services-communaux-communication-bulletin-communal
   .block-menu-element
   a
@@ -844,4 +838,24 @@ h3 {
 
 .contact_map {
   z-index: -1;
+}
+
+.container.section-container.section-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary-red;
+}
+
+.container.section-container.section-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary;
+  margin: 10px 0 !important;
+}
+
+.container.section-container.section-text h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $primary;
+  margin: 10px 0 !important;
 }
