@@ -130,6 +130,6 @@
   }
 }
 
-.sectiontext ol li::before {
+.row .sectiontext ol li::before {
   content: counters(item, ".") " " !important;
 }
