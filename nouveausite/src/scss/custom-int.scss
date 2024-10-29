@@ -91,6 +91,10 @@
   padding-bottom: 0 !important;
   background: none !important;
 
+  .table_display {
+    margin: 0;
+  }
+
   &::after {
     display: none !important;
   }
@@ -114,6 +118,12 @@
           padding: 0 20px 0 10px !important;
           width: auto !important;
           fill: #fff !important;
+        }
+      }
+
+      .table_title {
+        span {
+          font-size: 15px !important;
         }
       }
     }
