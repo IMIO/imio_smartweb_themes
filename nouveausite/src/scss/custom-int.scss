@@ -86,28 +86,32 @@
 }
 
 // Page section liens
-.portaltype-imio-smartweb-page
-  #main-container
-  .sectionlinks
-  .section-container
-  > div
-  .body-section
-  .row {
-  gap: 0 !important;
+.portaltype-imio-smartweb-page #main-container .sectionlinks {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background: none !important;
 
-  .table_image .image {
-    width: max-content !important;
-    float: left !important;
+  .section-container > div .body-section .row {
+    gap: 0 !important;
 
-    svg {
-      background-repeat: no-repeat !important;
-      background-size: contain !important;
-      border: none !important;
-      height: auto !important;
-      max-width: 120px !important;
-      padding: 0 20px 0 10px !important;
-      width: auto !important;
-      fill: #fff !important;
+    .table_image {
+      text-align: left !important;
+
+      .image {
+        width: max-content !important;
+        float: left !important;
+
+        svg {
+          background-repeat: no-repeat !important;
+          background-size: contain !important;
+          border: none !important;
+          height: 20px !important;
+          max-width: 120px !important;
+          padding: 0 20px 0 10px !important;
+          width: auto !important;
+          fill: #fff !important;
+        }
+      }
     }
   }
 }
