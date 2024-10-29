@@ -88,11 +88,11 @@
 // Page section liens
 .portaltype-imio-smartweb-page #main-container .sectionlinks {
   padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 80px !important;
   background: none !important;
 
   .table_display {
-    margin: 20px auto !important;
+    margin: 0 auto !important;
   }
 
   &::after {
@@ -130,6 +130,6 @@
   }
 }
 
-.sectiontext ol > li::before {
+.sectiontext ol li::before {
   content: counters(item, ".") " " !important;
 }
