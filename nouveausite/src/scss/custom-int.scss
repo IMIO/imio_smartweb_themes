@@ -91,6 +91,10 @@
   padding-bottom: 0 !important;
   background: none !important;
 
+  &::after {
+    display: none !important;
+  }
+
   .section-container > div .body-section .row {
     gap: 0 !important;
 
