@@ -690,16 +690,17 @@ footer #container-section-noussuivre {
 
 .sectiontext mark,
 .r-content-text mark {
-  background-color: $primary-blue;
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  list-style-type: none;
+  margin: 10px 10px 40px !important;
+  padding: 40px 20px 10px;
+  text-align: left;
   display: inline-block;
   font-weight: 500;
-  padding: 20px 45px 20px 26px;
-
   a {
-    color: #fff !important;
+    color: $primary-svg !important;
   }
 }
 
