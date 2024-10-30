@@ -14,8 +14,12 @@
 
       ul {
         li {
-          &::before {
-            display: block;
+          ul {
+            li {
+              &::before {
+                display: block;
+              }
+            }
           }
         }
       }
