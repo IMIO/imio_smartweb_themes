@@ -101,6 +101,20 @@
   }
 
   .see_all {
-    display: block;
+    background: $primary-red;
+    border: 1px solid $primary-red;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 10px auto 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $primary;
+      border: 1px solid $primary;
+      transition: all 0.2s ease;
+    }
   }
 }
