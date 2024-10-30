@@ -1,0 +1,109 @@
+.sectionnews {
+  .section-container {
+    text-align: center;
+  }
+
+  .section-title {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../../assets/svg/actu-bird.svg") no-repeat;
+      background-size: contain;
+      width: 94px;
+      height: 75px;
+      display: block;
+      position: absolute;
+      top: -76px;
+      left: -41px;
+      z-index: -1;
+    }
+  }
+
+  .swiper_date {
+    margin: 5px auto !important;
+  }
+
+  .swiper_title {
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .auth_source_container_title {
+    display: none;
+  }
+}
+
+// Events:
+
+.sectionevents {
+  .section-container {
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #005596;
+      position: absolute;
+      top: 0;
+      bottom: 20px;
+      border-radius: 80px;
+      width: 90vw;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -2;
+
+      @media screen and (max-width: 768px) {
+        width: 100vw;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .section-title {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../../assets/svg/actu-bird-light.svg") no-repeat;
+      background-size: contain;
+      width: 94px;
+      height: 75px;
+      display: block;
+      position: absolute;
+      top: -76px;
+      left: -41px;
+      z-index: -1;
+    }
+  }
+
+  .swiper_date {
+    margin: 5px auto !important;
+  }
+
+  .swiper_title {
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .auth_source_container_title {
+    display: none;
+  }
+
+  .swiper_category {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.sectionevents {
+  --swiper-pagination-bullet-inactive-color: #fff;
+}
