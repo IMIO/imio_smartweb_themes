@@ -149,3 +149,28 @@
     }
   }
 }
+
+// Page Témoignages
+.section-temoignages {
+  .text {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 30px;
+    list-style-type: none;
+    margin: 10px 10px 50px;
+    padding: 60px 40px 30px;
+    text-align: left;
+
+    h3 {
+      color: #000;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    h4 {
+      color: #e30289;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
