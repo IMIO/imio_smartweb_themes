@@ -59,3 +59,33 @@ $enable-roboto-webfont: false;
   background-size: 700px;
   background-position: left 701px;
 }
+
+.subsite-container #subsite-logo a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  gap: 14px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.subsite-container #subsite-logo {
+  border-radius: 5px;
+}
+
+#portal-column-content .section-contact .contact-type-organization {
+  align-content: flex-start;
+  background: #f3f3f3;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1.5rem;
+  word-wrap: anywhere;
+  border-radius: 5px;
+}
+
+#portal-header #portal-header-top #portal-logo {
+  margin-right: 30px;
+}
