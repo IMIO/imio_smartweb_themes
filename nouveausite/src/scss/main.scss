@@ -690,18 +690,19 @@ footer #container-section-noussuivre {
 
 .sectiontext mark,
 .r-content-text mark {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 20px !important;
+  background: $primary-blue;
+  border: 0;
+  border-radius: 8px !important;
   list-style-type: none;
   margin: 10px 10px 40px !important;
-  padding: 30px;
+  padding: 20px 45px 20px 26px;
   text-align: left;
   display: inline-block;
   font-weight: 500;
+  color: #fff;
 
   a {
-    color: $primary-svg !important;
+    color: #fff !important;
   }
 }
 
@@ -849,7 +850,7 @@ footer #container-section-noussuivre {
 }
 
 .portaltype-imio-smartweb-page .container.section-container.section-text h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: $primary;
   margin: 10px 0 !important;
@@ -857,8 +858,7 @@ footer #container-section-noussuivre {
 
 .portaltype-imio-smartweb-page .container.section-container.section-text h4 {
   font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 500;
   color: $primary;
   margin: 10px 0 !important;
 }
