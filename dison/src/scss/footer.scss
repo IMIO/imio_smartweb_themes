@@ -29,3 +29,23 @@
     }
   }
 }
+
+.portaltype-imio-smartweb-portalpage {
+  #portal-footer-wrapper {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      content: "";
+      width: 750px;
+      height: 980px;
+      background: url("../../assets/svg/body-bg-bottom.svg");
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      transform: translateY(-100%);
+      z-index: -9;
+    }
+  }
+}

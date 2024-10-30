@@ -11,7 +11,17 @@ $enable-roboto-webfont: false;
   z-index: 0;
 
   .swiper-banner-image {
-    border-radius: 80px;
+    border-radius: 20px;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .smartweb_herobanner .bannerSwiper {
+    height: 300px;
   }
 }
 
@@ -41,4 +51,11 @@ $enable-roboto-webfont: false;
 
 .see_all a::after {
   display: none !important;
+}
+
+.portaltype-imio-smartweb-portalpage {
+  background-image: url("../../assets/svg/body-bg-top.svg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: left 701px;
 }

@@ -56,6 +56,11 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: -2;
+
+      @media screen and (max-width: 768px) {
+        width: 100vw;
+        border-radius: 20px;
+      }
     }
   }
 
