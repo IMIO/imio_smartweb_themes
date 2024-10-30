@@ -74,6 +74,9 @@
 
 .portaltype-imio-smartweb-page #content-core {
   .sectionlinks {
+    max-width: 800px;
+    margin: 0 auto;
+
     .table_image {
       background: $primary-svg !important;
       padding: 20px;
