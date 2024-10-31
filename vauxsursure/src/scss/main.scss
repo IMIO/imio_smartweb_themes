@@ -694,3 +694,40 @@ h3 {
   color: #36a9e1;
   transition: all 0.5s ease;
 }
+
+//SUP-40246
+.has_subtree .quick-access {
+  padding-top: 1.5rem;
+
+  .quick-access-title {
+    color: #275e71;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+  }
+}
+
+.sectiontext mark,
+.r-content-text mark {
+  background: $primary-svg;
+  border: 0;
+  border-radius: 8px !important;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  list-style-type: none;
+  margin: 10px 10px 40px !important;
+  padding: 20px 45px 20px 26px;
+  text-align: left;
+
+  a {
+    color: #fff !important;
+    text-decoration: underline;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #fff !important;
+  }
+}
