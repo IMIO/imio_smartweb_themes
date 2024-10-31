@@ -227,6 +227,40 @@
       z-index: 1;
       position: absolute;
       transition: all 0.2s ease;
+      max-width: 330px !important;
+      width: 100% !important;
+      height: 132px;
+      display: block;
+      border-radius: 20px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .site-cpas #portal-colophon {
+    background: #002749;
+
+    .colophonWrapper {
+      float: none;
+      padding-right: 0;
+      padding-bottom: 20px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &::after {
+      background: url("../../assets/footer-bas.png");
+      content: "";
+      right: 0;
+      z-index: 1;
+      position: absolute;
+      transition: all 0.2s ease;
       max-width: 421px !important;
       width: 100% !important;
       height: 132px;
