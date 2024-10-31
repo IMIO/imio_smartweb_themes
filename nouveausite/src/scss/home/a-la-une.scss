@@ -101,6 +101,14 @@
   }
 
   .see_all {
+    background: none !important;
+    border: 0 !important;
+
+    &:hover {
+      background: none !important;
+      border: 0 !important;
+    }
+
     a {
       background: $primary-red;
       border: 1px solid $primary-red;
