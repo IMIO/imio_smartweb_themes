@@ -690,19 +690,19 @@ footer #container-section-noussuivre {
 
 .sectiontext mark,
 .r-content-text mark {
-  background: $primary-blue;
-  border: 0;
-  border-radius: 8px !important;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px !important;
   list-style-type: none;
   margin: 10px 10px 40px !important;
-  padding: 20px 45px 20px 26px;
+  padding: 30px;
   text-align: left;
   display: inline-block;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 
   a {
-    color: #fff !important;
+    color: $primary-svg !important;
   }
 }
 
@@ -857,10 +857,12 @@ footer #container-section-noussuivre {
 }
 
 .portaltype-imio-smartweb-page .container.section-container.section-text h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: $primary;
-  margin: 10px 0 !important;
+  color: #e30289 !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 10px 0;
+  text-transform: uppercase;
 }
 
 .portaltype-imio-smartweb-page .container.section-container.section-text a {
