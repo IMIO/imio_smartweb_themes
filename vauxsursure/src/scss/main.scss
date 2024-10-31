@@ -709,12 +709,12 @@ h3 {
 
 .sectiontext mark,
 .r-content-text mark {
-  background: $primary-svg;
+  background: $primary-svg !important;
   border: 0;
   border-radius: 8px !important;
   color: #fff;
-  display: inline-block;
-  font-weight: 500;
+  display: inline-block !important;
+  font-weight: 500 !important;
   list-style-type: none;
   margin: 10px 10px 40px !important;
   padding: 20px 45px 20px 26px;
