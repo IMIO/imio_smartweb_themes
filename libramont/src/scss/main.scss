@@ -134,22 +134,6 @@ h2 {
 }
 
 .bannerSwiper .section-slide {
-  &::after {
-    content: url("../../assets/svg/logo-banner.svg");
-
-    //background: url(../../assets/svg/bg-villers.svg) center 280px no-repeat;
-    left: 25%;
-    max-width: 60%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-25%, -50%);
-    width: 600px;
-
-    @media screen and (max-width: 1400px) {
-      display: none;
-    }
-  }
-
   .swiper-banner-content {
     position: relative;
     left: 50%;
