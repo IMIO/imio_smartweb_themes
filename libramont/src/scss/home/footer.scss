@@ -96,7 +96,7 @@
 
             &:hover {
               span {
-                color: $primary-svg !important;
+                color: $primary-light !important;
                 transition: all 0.5s ease;
               }
             }
@@ -133,15 +133,13 @@
 }
 
 #portal-footer-wrapper {
-  //background: url(../../assets/svg/bg-a-la-une.svg) center top no-repeat $primary;
   padding: 7rem 0 4rem !important;
   padding-top: 100px;
-  background: $primary-svg;
+  background: $primary-dark;
   background-size: 100%;
 }
 
 .section-home-page #portal-footer-wrapper {
-  //background: url(../../assets/svg/bg-footer.svg) center top no-repeat $primary;
   background-size: 100%;
   padding: 7rem 0 4rem !important;
   padding-top: 100px;

@@ -1,11 +1,4 @@
 .sectionnews {
-  margin: 0;
-  left: auto;
-  transform: none;
-  width: 50% !important;
-  margin-top: 100px;
-  padding: 0 10px;
-
   .section-container {
     position: relative;
   }
@@ -29,19 +22,6 @@
 
     .section-title {
       text-align: center;
-    }
-  }
-
-  .see_all a {
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background: $primary-svg;
-    border: 1px solid $primary-svg;
-
-    &:hover {
-      background: $primary;
-      border: 1px solid $primary;
     }
   }
 
