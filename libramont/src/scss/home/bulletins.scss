@@ -1,0 +1,78 @@
+.bulletins .swiper-slide {
+  margin-right: 20px !important;
+
+  .swiper-image {
+    padding-bottom: 140%;
+    border-radius: 20px;
+  }
+}
+
+.sectioncollection.bulletins {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 5rem 0;
+
+  .section-title {
+    margin: 0 0 4rem;
+    color: $primary;
+    text-align: center;
+  }
+
+  .swiper-slide > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .swiper_title {
+      h3 {
+        color: $primary-dark !important;
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+
+.sectioncollection.bulletins .see_all {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
+
+  a {
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 30px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease;
+    width: max-content;
+
+    &::after {
+      background-color: transparent;
+      bottom: -5px;
+      content: "";
+      height: initial;
+      position: absolute;
+      transition: all 0.2s ease;
+      width: 0%;
+    }
+
+    .swiper_title {
+      text-align: center;
+    }
+
+    &:hover {
+      background: #fff;
+      border: 1px solid $primary;
+      border-radius: 20px;
+      color: $primary;
+    }
+  }
+}
