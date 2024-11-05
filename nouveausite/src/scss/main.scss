@@ -189,10 +189,22 @@ h2 {
     }
   }
 
+<<<<<<< Updated upstream
   .swiper-banner-content-wrapper {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+=======
+  .swiper-banner-title {
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #000 !important;
+    font-size: 60px !important;
+    line-height: 70px !important;
+    max-width: 500px !important;
+    // opacity: 0%;
+  }
+>>>>>>> Stashed changes
 
     .swiper-banner-content {
       font-family: $font-family-title;
@@ -973,4 +985,8 @@ footer #container-section-noussuivre {
 
 .sectiontext ol li::before {
   content: counters(item, ".") " " !important;
+}
+
+html.sr .swiper-banner-content * {
+  visibility: hidden;
 }
