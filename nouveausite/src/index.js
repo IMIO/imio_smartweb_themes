@@ -64,7 +64,6 @@ $(document).ready(function () {
   ScrollReveal().reveal(".bloc-app li", {
     delay: 400,
     duration: 1200,
-    reset: true,
     distance: "100%",
     origin: "bottom",
     interval: 100,
