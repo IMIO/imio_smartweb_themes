@@ -12,6 +12,14 @@
   z-index: -1;
 }
 
+.bulletins::before {
+  background: $primary-light;
+  content: "";
+  inset: 40% 0 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .bulletins .swiper-slide {
   margin-right: 20px !important;
 
@@ -29,7 +37,7 @@
   .section-title {
     margin: 0 0 4rem;
     color: $primary;
-    text-align: left;
+    text-align: center;
   }
 
   .swiper-slide > a {
