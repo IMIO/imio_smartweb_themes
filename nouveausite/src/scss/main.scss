@@ -183,6 +183,10 @@ h2 {
     left: 0;
     top: 0;
     width: 464px;
+
+    @media screen and (max-width: 700px) {
+      display: none !important;
+    }
   }
 
   .swiper-banner-content-wrapper {
@@ -224,28 +228,65 @@ h2 {
 
       .swiper-banner-content {
         position: relative;
-        background: red;
+        background: rgba(0, 0, 0, 60%) !important;
         width: 100%;
         max-width: 100% !important;
         padding: 30px;
-        border-radius: 30px;
+        border-radius: 20px;
       }
 
       .swiper-banner-title {
         font-weight: 600 !important;
         text-transform: uppercase !important;
-        color: #000 !important;
-        font-size: 60px !important;
-        line-height: 70px !important;
+        color: #fff !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
         max-width: 500px !important;
       }
 
       p {
         font-weight: 600 !important;
         color: #e30289 !important;
-        font-size: 25px !important;
+        font-size: 18px !important;
         margin: 0 !important;
-        line-height: 40px !important;
+        line-height: 28px !important;
+        max-width: 540px !important;
+        margin-top: 10px !important;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      position: relative;
+      width: 100%;
+      top: auto;
+      transform: translateY(-50%);
+      max-width: 400px;
+      margin: 0 auto;
+
+      .swiper-banner-content {
+        position: relative;
+        background: rgba(0, 0, 0, 60%) !important;
+        width: 100%;
+        max-width: 100% !important;
+        padding: 30px !important;
+        border-radius: 20px;
+      }
+
+      .swiper-banner-title {
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        color: #fff !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
+        max-width: 500px !important;
+      }
+
+      p {
+        font-weight: 600 !important;
+        color: #e30289 !important;
+        font-size: 18px !important;
+        margin: 0 !important;
+        line-height: 28px !important;
         max-width: 540px !important;
         margin-top: 10px !important;
       }
