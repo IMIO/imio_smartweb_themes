@@ -45,12 +45,16 @@
   background: #fff;
   position: relative;
 
+  @media screen and (max-width: 800px) {
+    padding: 0 20px !important;
+  }
+
   &::before {
     content: "";
     transition: all 0.2s ease;
     position: absolute;
     height: 354px;
-    background: url("../../assets/svg/form-bloc-app.svg") center top no-repeat;
+    background: url("../../assets/svg/form-bloc-app.svg") center top no-repeat !important;
     z-index: -10;
     left: 50%;
     transform: translateX(-50%);
@@ -241,6 +245,12 @@
     color: #fff;
     margin-bottom: 20px;
     padding-right: 80px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px !important;
+      padding-right: 0 !important;
+      text-align: center !important;
+    }
   }
 
   p a {
@@ -257,6 +267,10 @@
     transition: all 0.2s ease;
     width: max-content;
     text-decoration: none !important;
+
+    @media screen and (max-width: 990px) {
+      margin: 0 auto !important;
+    }
 
     &:hover {
       background: #fff;
