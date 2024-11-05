@@ -125,11 +125,27 @@
   }
 }
 
-.sectionlinks.quick-access.partenaires .body-section li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0;
+.sectionlinks.quick-access.partenaires {
+  &::after {
+    background: url("../../assets/svg/visu-background-right.svg");
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: 9%;
+    content: "";
+    top: -70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .body-section li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+  }
 }
 
 .sortable-section.sectionlinks.quick-access {

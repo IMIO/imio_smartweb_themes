@@ -1,3 +1,17 @@
+.bulletins::after {
+  background: url("../../assets/svg/visu-background-left.svg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 9%;
+  content: "";
+  top: -70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .bulletins .swiper-slide {
   margin-right: 20px !important;
 
@@ -15,7 +29,7 @@
   .section-title {
     margin: 0 0 4rem;
     color: $primary;
-    text-align: right;
+    text-align: left;
   }
 
   .swiper-slide > a {
