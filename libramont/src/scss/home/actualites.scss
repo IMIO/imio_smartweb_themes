@@ -1,6 +1,30 @@
+.sortable-section.sectionnews::after {
+  background: url("../../assets/svg/visu-background-right.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  content: "";
+  top: -60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .sectionnews {
+  position: relative;
+
   .section-container {
     position: relative;
+  }
+
+  .swiper-slide .swiper_date {
+    width: 100%;
+  }
+
+  .swiper_title {
+    width: 100%;
   }
 
   .container {
@@ -11,7 +35,7 @@
     font-weight: 500;
     text-transform: none;
     position: relative;
-    color: $primary-svg;
+    color: $primary-dark;
     text-align: right;
     margin-bottom: 1rem;
   }

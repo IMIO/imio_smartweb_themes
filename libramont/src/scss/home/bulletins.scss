@@ -15,7 +15,7 @@
   .section-title {
     margin: 0 0 4rem;
     color: $primary;
-    text-align: center;
+    text-align: right;
   }
 
   .swiper-slide > a {
@@ -39,9 +39,9 @@
   margin: 2rem 0 0;
 
   a {
-    background: $primary;
-    border: 1px solid $primary;
-    border-radius: 10px;
+    background: $primary-svg;
+    border: 1px solid $primary-svg;
+    border-radius: 20px;
     color: #fff;
     display: block;
     font-family: Roboto, sans-serif;
@@ -69,10 +69,10 @@
     }
 
     &:hover {
-      background: #fff;
-      border: 1px solid $primary;
+      background: $primary-light;
+      border: 1px solid $primary-svg;
       border-radius: 20px;
-      color: $primary;
+      color: $primary-dark;
     }
   }
 }

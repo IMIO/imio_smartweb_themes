@@ -27,7 +27,7 @@
     font-weight: 500;
     text-transform: none;
     position: relative;
-    color: $primary-svg;
+    color: $primary-dark;
     text-align: left;
     margin-bottom: 1rem;
   }
@@ -51,7 +51,7 @@
         content: "" !important;
       }
       padding: 20px 10px;
-      border-bottom: 1px solid #c1c1c1;
+      border-bottom: 1px solid $primary-svg;
 
       .table_display {
         .table_image {
@@ -66,9 +66,9 @@
             justify-content: flex-end;
 
             span {
-              background: #ddd;
-              border-radius: 5px;
-              padding: 5px;
+              background: $primary-light;
+              border-radius: 10px;
+              padding: 5px 10px;
               font-size: 13px;
             }
           }

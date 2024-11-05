@@ -52,7 +52,7 @@
           }
 
           .table_title {
-            margin: 0;
+            margin: 1rem 0 0;
 
             span {
               line-height: 1;
@@ -69,8 +69,8 @@
         li {
           .table_image {
             .image.d-block {
-              width: 100px;
-              height: 100px;
+              width: 80px;
+              height: 80px;
             }
           }
 
@@ -130,4 +130,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0;
+}
+
+.sortable-section.sectionlinks.quick-access {
+  padding: 1rem 0;
 }

@@ -52,7 +52,7 @@ $to-portal-link-color: $primary-dark;
 $img-placeholder: $primary-light;
 
 //swiper
-$swiper-icon-color: #fff !important;
+$swiper-icon-color: #fff;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
@@ -177,8 +177,8 @@ $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
+$quick-access-width: 80px;
+$quick-access-height: 80px;
 $quick-access-background: $primary-svg;
 $quick-access-border: solid 0 $primary !default;
 $quick-access-border-radius: 100px !default;
