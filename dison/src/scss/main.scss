@@ -89,3 +89,10 @@ $enable-roboto-webfont: false;
 #portal-header #portal-header-top #portal-logo {
   margin-right: 30px;
 }
+
+.portaltype-imio-smartweb-portalpage {
+  #messagesviewlet {
+    position: absolute;
+    top: 81px;
+  }
+}

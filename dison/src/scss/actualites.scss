@@ -1,4 +1,4 @@
-.sectionnews {
+.sectionnews:not(.a-la-une) {
   .section-container {
     text-align: center;
   }
@@ -106,4 +106,18 @@
 
 .sectionevents {
   --swiper-pagination-bullet-inactive-color: #fff;
+}
+
+// la une
+
+.sectionnews.a-la-une {
+  padding-bottom: 7rem !important;
+
+  .swiper-slide .swiper_title h3 {
+    text-align: left !important;
+  }
+
+  .swiper_date {
+    display: none;
+  }
 }
