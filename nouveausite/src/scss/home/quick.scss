@@ -84,17 +84,17 @@
   transition: all 0.5s ease;
 
   @media screen and (max-width: 1400px) {
-    width: calc(33% - 40px);
+    width: calc(33% - 40px) !important;
   }
 
   @media screen and (max-width: 1200px) {
-    width: calc(50% - 40px);
+    width: calc(50% - 40px) !important;
   }
 
   @media screen and (max-width: 800px) {
-    width: calc(100% - 40px);
-    padding: 10px 30px;
-    min-height: 100px;
+    width: calc(100% - 40px) !important;
+    padding: 10px 30px !important;
+    min-height: 100px !important;
   }
 }
 
