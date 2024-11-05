@@ -31,6 +31,11 @@
   max-height: 50px;
   margin: 0 auto;
   order: 1;
+
+  @media screen and (max-width: 800px) {
+    padding-top: 10px !important;
+    height: 50px !important;
+  }
 }
 
 .bloc-app .body-section {
@@ -77,6 +82,26 @@
   min-height: 270px;
   list-style-type: none;
   transition: all 0.5s ease;
+
+  @media screen and (max-width: 1400px) {
+    width: calc(33% - 40px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: calc(50% - 40px);
+  }
+
+  @media screen and (max-width: 800px) {
+    width: calc(100% - 40px);
+    padding: 10px 30px;
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bloc-app .body-section ul li {
+    margin: 10px !important;
+  }
 }
 
 .bloc-app .body-section ul li:hover {
