@@ -85,6 +85,10 @@ h2 {
   height: 50vw;
   max-height: 650px;
   margin-bottom: 130px;
+
+  @media screen and (max-width: 1400px) {
+    height: 500px;
+  }
 }
 
 #header-actions .account {
@@ -154,6 +158,18 @@ h2 {
     width: 1000px;
     height: 1000px;
     top: -350px;
+
+    @media screen and (max-width: 1400px) {
+      border-radius: 0;
+      height: 500px;
+      inset: 0;
+      left: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
   }
 }
 
@@ -169,32 +185,71 @@ h2 {
     width: 464px;
   }
 
-  .swiper-banner-content {
-    font-family: $font-family-title;
-    max-width: 50% !important;
+  .swiper-banner-content-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
-    @media screen and (max-width: 600px) {
-      display: none;
+    .swiper-banner-content {
+      font-family: $font-family-title;
+      max-width: 50% !important;
     }
-  }
 
-  .swiper-banner-title {
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    color: #000 !important;
-    font-size: 60px !important;
-    line-height: 70px !important;
-    max-width: 500px !important;
-  }
+    .swiper-banner-title {
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      color: #000 !important;
+      font-size: 60px !important;
+      line-height: 70px !important;
+      max-width: 500px !important;
+    }
 
-  p {
-    font-weight: 600 !important;
-    color: #e30289 !important;
-    font-size: 25px !important;
-    margin: 0 !important;
-    line-height: 40px !important;
-    max-width: 540px !important;
-    margin-top: 10px !important;
+    p {
+      font-weight: 600 !important;
+      color: #e30289 !important;
+      font-size: 25px !important;
+      margin: 0 !important;
+      line-height: 40px !important;
+      max-width: 540px !important;
+      margin-top: 10px !important;
+    }
+
+    @media screen and (max-width: 1400px) {
+      position: relative;
+      width: 100%;
+      top: auto;
+      transform: translateY(-50%);
+      max-width: 600px;
+      margin: 0 auto;
+
+      .swiper-banner-content {
+        position: relative;
+        background: red;
+        width: 100%;
+        max-width: 100% !important;
+        padding: 30px;
+        border-radius: 30px;
+      }
+
+      .swiper-banner-title {
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        color: #000 !important;
+        font-size: 60px !important;
+        line-height: 70px !important;
+        max-width: 500px !important;
+      }
+
+      p {
+        font-weight: 600 !important;
+        color: #e30289 !important;
+        font-size: 25px !important;
+        margin: 0 !important;
+        line-height: 40px !important;
+        max-width: 540px !important;
+        margin-top: 10px !important;
+      }
+    }
   }
 }
 
