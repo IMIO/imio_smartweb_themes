@@ -179,6 +179,10 @@
   position: relative;
   padding-bottom: 130px;
 
+  @media screen and (max-width: 990px) {
+    display: none !important;
+  }
+
   #body-section-image-atelier {
     figure {
       max-width: 100%;
@@ -197,6 +201,10 @@
     transform: translateX(-50%);
     top: 0;
     width: 100vw;
+
+    @media screen and (max-width: 990px) {
+      display: none !important;
+    }
   }
 }
 
@@ -221,6 +229,12 @@
 .texte-atelier {
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 990px) {
+    width: 100% !important;
+    background: $primary !important;
+    padding-bottom: 40px;
+  }
 
   h3,
   p {
