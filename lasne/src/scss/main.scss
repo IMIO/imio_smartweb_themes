@@ -33,7 +33,19 @@ $enable-roboto-webfont: false;
 @import "./contact";
 @import "./home/divers";
 
-//SUP-39634
-.sectiontext ol li::before {
-  content: counters(item) "." !important;
+.sectiontext {
+  counter-reset: item; // Initialiser le compteur pour .sectiontext
+
+  ol {
+    list-style: none; // Supprimer les puces par défaut
+
+    li {
+      counter-increment: item; // Incrémenter le compteur pour chaque <li>
+
+      &::before {
+        content: counters(item, ".") " " !important; // Afficher le compteur avec des points
+        margin-right: 5px; // Ajouter un espace après le compteur
+      }
+    }
+  }
 }
