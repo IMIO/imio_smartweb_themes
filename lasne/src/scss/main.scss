@@ -35,5 +35,5 @@ $enable-roboto-webfont: false;
 
 //SUP-39634
 .sectiontext ol li::before {
-  content: counters(item, ".") " " !important;
+  content: counters(item) "." !important;
 }
