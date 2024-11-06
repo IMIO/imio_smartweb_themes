@@ -32,3 +32,8 @@ $enable-roboto-webfont: false;
 @import "./se-files";
 @import "./contact";
 @import "./home/divers";
+
+//SUP-39634
+.sectiontext ol li::before {
+  content: counters(item, ".") " " !important;
+}
