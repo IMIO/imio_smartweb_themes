@@ -52,3 +52,43 @@
     }
   }
 }
+
+footer {
+  .fax {
+    display: none;
+  }
+}
+
+.footer-social {
+  .row {
+    justify-content: center;
+
+    li {
+      width: max-content;
+
+      .table_title {
+        display: none;
+      }
+    }
+  }
+
+  .plone-icon {
+    height: 1.6em;
+  }
+}
+
+.section-contact {
+  .youtube {
+    display: none;
+  }
+
+  .facebook {
+    display: none;
+  }
+}
+
+.viewlet-below-content-body {
+  .procedure {
+    display: none;
+  }
+}

@@ -76,14 +76,10 @@ $enable-roboto-webfont: false;
   border-radius: 5px;
 }
 
-#portal-column-content .section-contact .contact-type-organization {
-  align-content: flex-start;
-  background: #f3f3f3;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 1.5rem;
-  word-wrap: anywhere;
-  border-radius: 5px;
+.section-contact {
+  .contact_map {
+    margin-top: 1.5rem;
+  }
 }
 
 #portal-header #portal-header-top #portal-logo {
@@ -95,4 +91,21 @@ $enable-roboto-webfont: false;
     position: absolute;
     top: 81px;
   }
+}
+
+.site-cpas,
+.site-le-tremplin {
+  .account {
+    display: none;
+  }
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  background-repeat: no-repeat;
+  background-size: 100px;
+  display: block;
+  padding-top: 100px;
 }
