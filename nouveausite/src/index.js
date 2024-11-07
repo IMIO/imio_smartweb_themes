@@ -118,5 +118,4 @@ $(document).ready(function () {
     origin: "right",
     interval: 100,
   });
-
 });

@@ -1,19 +1,21 @@
 .custom-imio-map-use {
-    height: 0;
-    padding-bottom: 50.5%;
-    width: 78%;
-    margin: 0 auto;
-    background: url("../../assets/svg/used-map.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid #ced4da;
-    border-radius: .5rem;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+  height: 0;
+  padding-bottom: 50.5%;
+  width: 78%;
+  margin: 0 auto;
+  background: url("../../assets/svg/used-map.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 10%),
+    0 1px 2px 0 rgba(0, 0, 0, 6%);
 }
 
 .sectionhtml.map-use {
-    .html {
-        height: 0;
-        padding-bottom: 50.5%;
-    }
+  .html {
+    height: 0;
+    padding-bottom: 50.5%;
+  }
 }
