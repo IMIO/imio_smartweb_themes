@@ -31,8 +31,16 @@ $(document).ready(function () {
     opacity: 0,
   });
 
-  ScrollReveal().reveal(".sectiontext .text", {
-    delay: 300,
+  ScrollReveal().reveal("#main-container .sectiontext .text", {
+    delay: 100,
+    duration: 1000,
+    distance: "20%",
+    origin: "bottom",
+    interval: 100,
+  });
+
+  ScrollReveal().reveal(".custom-imio-map-use", {
+    delay: 100,
     duration: 1000,
     distance: "20%",
     origin: "bottom",
@@ -40,14 +48,14 @@ $(document).ready(function () {
   });
 
   ScrollReveal().reveal(".figure-left figure", {
-    delay: 300,
+    delay: 200,
     duration: 1000,
     distance: "20%",
     origin: "left",
   });
 
   ScrollReveal().reveal(".figure-right figure", {
-    delay: 300,
+    delay: 200,
     duration: 1000,
     distance: "20%",
     origin: "right",
@@ -62,7 +70,7 @@ $(document).ready(function () {
   // });
 
   ScrollReveal().reveal(".section-title", {
-    delay: 500,
+    delay: 300,
     duration: 1500,
     distance: "20%",
     origin: "bottom",
@@ -70,6 +78,7 @@ $(document).ready(function () {
 
   ScrollReveal().reveal(".blocsx3 a", {
     delay: 300,
+    duration: 1500,
     distance: "100%",
     origin: "bottom",
     interval: 100,
@@ -84,11 +93,30 @@ $(document).ready(function () {
   });
 
   ScrollReveal().reveal(".bloc-temoignages .swiper-slide-active *", {
-    delay: 500,
+    delay: 300,
     duration: 1500,
     distance: "20%",
     origin: "bottom",
     interval: 100,
     opacity: 0,
   });
+
+  ScrollReveal().reveal("#main-container header", {
+    delay: 100,
+    duration: 1000,
+    distance: "20%",
+    origin: "bottom",
+    interval: 100,
+  });
+
+  // Qui sommes-nous
+
+  ScrollReveal().reveal(".reveal-liste li", {
+    delay: 400,
+    duration: 800,
+    distance: "50%",
+    origin: "right",
+    interval: 100,
+  });
+
 });

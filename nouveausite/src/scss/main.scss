@@ -27,6 +27,9 @@ $enable-roboto-webfont: false;
 @import "./se-files";
 @import "./contact";
 @import "./custom-int";
+@import "./map";
+@import "./animations";
+
 
 //.section-home-page {
 //}
@@ -975,8 +978,4 @@ footer #container-section-noussuivre {
 
 .sectiontext ol li::before {
   content: counters(item, ".") " " !important;
-}
-
-html.sr .swiper-banner-content * {
-  visibility: hidden;
 }
