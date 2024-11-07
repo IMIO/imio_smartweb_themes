@@ -339,7 +339,7 @@ footer #container-section-noussuivre {
 .r-add-contact a,
 .r-add-event a,
 .r-add-news a {
-  background: $primary-blue;
+  background: $primary-red;
   border-radius: 8px;
   color: #fff;
   padding: 1rem;
@@ -695,7 +695,7 @@ footer #container-section-noussuivre {
 
 .sectiontext mark,
 .r-content-text mark {
-  background-color: $primary-blue;
+  background-color: $primary-red;
   border: 0;
   border-radius: 8px;
   color: #fff;
@@ -714,7 +714,7 @@ footer #container-section-noussuivre {
   .section-container
   .table_display
   .table_image {
-  background-color: $primary-blue;
+  background-color: $primary-red;
   border: 0;
   border-radius: 8px;
   color: #fff;
@@ -732,7 +732,7 @@ footer #container-section-noussuivre {
 }
 
 .sectionfiles::after {
-  background-color: $primary-blue;
+  background-color: $primary-red;
   border-radius: 8px;
   bottom: 0;
   content: "";
@@ -747,7 +747,7 @@ footer #container-section-noussuivre {
 h3 {
   font-size: 18px;
   font-weight: 400;
-  color: $primary-blue;
+  color: $primary-red;
 }
 
 .subsection-services-communaux-communication-bulletin-communal
@@ -770,7 +770,7 @@ h3 {
 
 #portal-footer-wrapper #portal-footer #smartweb-footer a:hover,
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
-  color: $primary-blue;
+  color: $primary-red;
   transition: all 0.5s ease;
 }
 
@@ -804,7 +804,7 @@ h3 {
 #portal-globalnav-collapse .dropdown .nav-link:hover,
 #subsite-navigation .dropdown .nav-link:focus,
 #subsite-navigation .dropdown .nav-link:hover {
-  color: $primary-blue;
+  color: $primary-red;
 
   .site-cpas .swiper-banner-content-wrapper .swiper-banner-content {
     .swiper-banner-title {
@@ -846,7 +846,7 @@ h3 {
 .r-add-contact a,
 .r-add-event a,
 .r-add-news a {
-  background: $primary-blue;
+  background: $primary-red;
   border-radius: 8px;
   color: #fff;
   padding: 1rem;
@@ -891,4 +891,12 @@ h3 {
     top: auto;
     padding-bottom: 0;
   }
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-position
+  .contact_leadimage {
+  aspect-ratio: 4 / 5;
+  background-position: top;
 }
