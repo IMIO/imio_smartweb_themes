@@ -31,7 +31,7 @@ $(document).ready(function () {
     opacity: 0,
   });
 
-  ScrollReveal().reveal(".text *", {
+  ScrollReveal().reveal(".sectiontext .text", {
     delay: 300,
     duration: 1000,
     distance: "20%",
@@ -39,13 +39,27 @@ $(document).ready(function () {
     interval: 100,
   });
 
-  ScrollReveal().reveal("figure", {
-    delay: 400,
-    duration: 1500,
+  ScrollReveal().reveal(".figure-left figure", {
+    delay: 300,
+    duration: 1000,
     distance: "20%",
-    origin: "bottom",
-    interval: 100,
+    origin: "left",
   });
+
+  ScrollReveal().reveal(".figure-right figure", {
+    delay: 300,
+    duration: 1000,
+    distance: "20%",
+    origin: "right",
+  });
+
+  // ScrollReveal().reveal("figure", {
+  //   delay: 400,
+  //   duration: 1500,
+  //   distance: "20%",
+  //   origin: "bottom",
+  //   interval: 100,
+  // });
 
   ScrollReveal().reveal(".section-title", {
     delay: 500,
