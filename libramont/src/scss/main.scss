@@ -375,7 +375,7 @@ footer #container-section-noussuivre {
 // sub-nav
 
 .subsite-container {
-  background: #ededed;
+  background: $primary-light;
   border-radius: 10px 0;
 
   #subsite-logo {
@@ -763,9 +763,15 @@ footer #container-section-noussuivre {
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 400;
-  color: $primary-svg;
+  font-size: 22px;
+  font-weight: 900;
+  color: $primary-dark;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: $primary-dark;
 }
 
 .subsection-services-communaux-communication-bulletin-communal
@@ -909,5 +915,26 @@ h3 {
   .r-add-news {
     top: auto;
     padding-bottom: 0;
+  }
+}
+
+.template-summary_view .list-menu-element > a:focus,
+.template-summary_view .list-menu-element > a:hover,
+.template-summary_view_with_images .list-menu-element > a:focus,
+.template-summary_view_with_images .list-menu-element > a:hover {
+  background: $primary-light;
+}
+
+.template-summary_view .list-menu-element > a::after,
+.template-summary_view_with_images .list-menu-element > a::after {
+  color: $primary-svg;
+  opacity: 100%;
+}
+
+.sectionfiles .item_infos {
+  color: #fff;
+
+  a {
+    text-decoration: underline #fff;
   }
 }
