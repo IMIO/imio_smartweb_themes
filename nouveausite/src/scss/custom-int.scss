@@ -187,13 +187,13 @@
     border-radius: 30px;
     list-style-type: none;
     margin: 10px 10px 40px !important;
-    padding: 30px 40px !important;
+    padding: 20px 40px 30px !important;
     text-align: left;
   }
 }
 
 // collapsed
-.section-text-collapsed .section-title h2 {
+.section-text-collapsed .section-title {
   margin: 5px !important;
 
   a {
