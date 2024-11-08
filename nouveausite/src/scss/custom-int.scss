@@ -178,3 +178,16 @@
     }
   }
 }
+
+// 6 valeurs
+.bloc-valeurs {
+  text {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    list-style-type: none;
+    margin: 10px 10px 40px !important;
+    padding: 60px 40px 30px;
+    text-align: left;
+  }
+}
