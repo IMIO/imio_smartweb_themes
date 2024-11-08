@@ -1,6 +1,20 @@
 .publications {
+  &::after {
+    background: url("../../assets/svg/visu-background-right.svg");
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 9%;
+    content: "";
+    top: -70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
   h2.section-title {
-    text-align: center;
+    text-align: right;
     padding-bottom: 50px;
     padding-top: 50px;
     font-family: $font-family-title;
@@ -14,13 +28,13 @@
       background-color: $primary-light;
       color: $primary-dark;
       padding: 25px;
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
+      border-radius: 20px;
       text-decoration: none;
       display: block;
       transform: translateY(0);
       overflow: hidden;
       transition: 0.5s;
+      padding-bottom: 80px;
 
       &:hover,
       &:focus {
@@ -64,8 +78,8 @@
   margin: 2rem 0 0;
 
   a {
-    background: $primary;
-    border: 1px solid $primary;
+    background: $primary-svg;
+    border: 1px solid $primary-svg;
     border-radius: 20px;
     color: #fff !important;
     display: block;
