@@ -15,8 +15,12 @@
 .bulletins::before {
   background: $primary-light;
   content: "";
-  inset: 40% 0 0;
+  left: 50% !important;
   position: absolute;
+  top: 500px;
+  transform: translateX(-50vw);
+  width: 100vw !important;
+  bottom: 60px;
   z-index: -1;
 }
 
@@ -33,11 +37,12 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 5rem 0;
+  position: relative;
 
   .section-title {
     margin: 0 0 4rem;
     color: $primary;
-    text-align: center;
+    text-align: right;
   }
 
   .swiper-slide > a {

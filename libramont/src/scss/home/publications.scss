@@ -1,0 +1,94 @@
+.publications {
+  h2.section-title {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: $font-family-title;
+    font-weight: 600 !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+
+    & > a {
+      background-color: $primary-light;
+      color: $primary-dark;
+      padding: 25px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      text-decoration: none;
+      display: block;
+      transform: translateY(0);
+      overflow: hidden;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+      }
+
+      .swiper_date {
+        padding-bottom: 10px;
+
+        //background-color: $primary;
+        span {
+          color: $primary-dark;
+          font-size: 0.9rem;
+        }
+      }
+
+      .swiper_title {
+        padding-bottom: 10px;
+
+        h3 {
+          color: $primary-dark;
+          font-size: 1.3rem;
+          font-family: $font-family-title;
+          font-weight: 500;
+        }
+      }
+
+      .swiper_description {
+        p {
+          color: $primary-dark;
+        }
+      }
+    }
+  }
+}
+
+.publications .see_all {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
+
+  a {
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    color: #fff !important;
+    display: block;
+    font-family: $font-family-title;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease;
+    width: max-content;
+  }
+}
+
+.publications .see_all a:focus,
+.publications .see_all a:hover {
+  background: $primary-light;
+  border: 1px solid $primary;
+  border-radius: 10px;
+  color: $primary-dark !important;
+}
+
+div#body-section-publications-officielles {
+  z-index: 0;
+}
