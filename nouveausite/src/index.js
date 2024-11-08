@@ -118,4 +118,97 @@ $(document).ready(function () {
     origin: "right",
     interval: 100,
   });
+
+  // for custom map
+
+  // const container = $(".map-use .html");
+  // const image = $(".custom-imio-map-use");
+
+  // let isDragging = false;
+  // let startX, startY;
+  // let initialX, initialY;
+
+  // container.on("mousedown", (e) => {
+  //   isDragging = true;
+  //   container.css("cursor", "grabbing");
+
+  //   // Enregistre les positions de départ
+  //   startX = e.clientX;
+  //   startY = e.clientY;
+
+  //   // Enregistre la position initiale de l'image
+  //   const rect = image.getBoundingClientRect();
+  //   initialX = rect.left - container.getBoundingClientRect().left;
+  //   initialY = rect.top - container.getBoundingClientRect().top;
+  // });
+
+  // container.on("mousemove", (e) => {
+  //   if (!isDragging) return;
+
+  //   // Calcule les déplacements
+  //   const deltaX = e.clientX - startX;
+  //   const deltaY = e.clientY - startY;
+
+  //   // Applique les déplacements à l'image
+  //   image.style.left = `${initialX + deltaX}px`;
+  //   image.style.top = `${initialY + deltaY}px`;
+  // });
+
+  // container.on("mouseup", () => {
+  //   isDragging = false;
+  //   container.css("cursor", "grab");
+  // });
+
+  var isDragging = false;
+  var startX, startY;
+  var initialX, initialY;
+
+  $(".map-use .html").on("mousedown", function (e) {
+    isDragging = true;
+    $(this).css("cursor", "grabbing");
+
+    // Enregistre les positions de départ
+    startX = e.clientX;
+    startY = e.clientY;
+
+    // Enregistre la position initiale de l'image
+    var rect = $(".custom-imio-map-use")[0].getBoundingClientRect();
+    var containerRect = $(".map-use .html")[0].getBoundingClientRect();
+    initialX = rect.left - containerRect.left;
+    initialY = rect.top - containerRect.top;
+
+    e.preventDefault(); // Empêche le comportement par défaut du clic
+  });
+
+  $(document).on("mousemove", function (e) {
+    if (!isDragging) return;
+
+    // Calcule les déplacements
+    var deltaX = e.clientX - startX;
+    var deltaY = e.clientY - startY;
+
+    // Applique les déplacements à l'image
+    var newX = initialX + deltaX;
+    var newY = initialY + deltaY;
+
+    // Limites pour éviter que l'image sorte du conteneur
+    var maxLeft = 0;
+    var maxTop = 0;
+    var maxRight =
+      $(".map-use .html").width() - $(".custom-imio-map-use").width();
+    var maxBottom =
+      $(".map-use .html").height() - $(".custom-imio-map-use").height();
+
+    if (newX > maxLeft) newX = maxLeft;
+    // if (newY > maxTop) newY = maxTop;
+    if (newX < maxRight) newX = maxRight;
+    // if (newY < maxBottom) newY = maxBottom;
+
+    $(".custom-imio-map-use").css({ left: newX + "px", top: newY + "px" });
+  });
+
+  $(document).on("mouseup", function () {
+    isDragging = false;
+    $(".map-use .html").css("cursor", "grab");
+  });
 });
