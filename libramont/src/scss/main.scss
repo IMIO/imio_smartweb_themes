@@ -938,3 +938,10 @@ h2 {
     text-decoration: underline #fff;
   }
 }
+
+.faceted-form .faceted-results a.row {
+  background: $primary-light;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
