@@ -187,7 +187,19 @@
     border-radius: 30px;
     list-style-type: none;
     margin: 10px 10px 40px !important;
-    padding: 60px 40px 30px;
+    padding: 30px 40px;
     text-align: left;
   }
+}
+
+// collapsed
+.section-text-collapsed .section-title a {
+  background: #f1f1f1;
+  width: 100%;
+  display: block;
+  padding: 20px 30px;
+  border-radius: 50px;
+  text-transform: none !important;
+  color: #000;
+  text-decoration: none;
 }
