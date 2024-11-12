@@ -1,9 +1,16 @@
 .publications {
+  margin-top: 40px;
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
   &::after {
     background: url("../../assets/svg/visu-background-right.svg");
-    background-position: 0% 0%;
+    background-position: 100% 0%;
     background-repeat: no-repeat;
-    background-size: 9%;
+    background-size: 130px;
     content: "";
     top: -70px;
     bottom: 0;
