@@ -38,3 +38,12 @@ $enable-roboto-webfont: false;
   font-family: Pacifico, cursive !important;
   font-size: 34px !important;
 }
+
+//SUP-40228
+.sectionfiles .section-title {
+  color: $primary !important;
+}
+
+.smartweb-footer .sectionlinks {
+  padding: 5rem 0 !important;
+}
