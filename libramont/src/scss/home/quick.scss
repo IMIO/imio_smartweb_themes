@@ -155,3 +155,9 @@
 .sortable-section.sectionlinks.quick-access {
   padding: 1rem 0;
 }
+
+@media screen and (max-width: 950px) {
+  .partenaires .section-title {
+    text-align: center;
+  }
+}

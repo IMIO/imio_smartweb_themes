@@ -1,8 +1,14 @@
+@media screen and (max-width: 950px) {
+  .bulletins .section-title {
+    text-align: center;
+  }
+}
+
 .bulletins::after {
   background: url("../../assets/svg/visu-background-left.svg");
   background-position: 0% 0%;
   background-repeat: no-repeat;
-  background-size: 9%;
+  background-size: 130px;
   content: "";
   top: -70px;
   bottom: 0;
@@ -42,7 +48,7 @@
   .section-title {
     margin: 0 0 4rem;
     color: $primary;
-    text-align: center;
+    text-align: left;
   }
 
   .swiper-slide > a {

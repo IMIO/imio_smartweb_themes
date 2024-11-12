@@ -955,3 +955,47 @@ h2 {
 #content header .lead.rich_description {
   max-width: initial;
 }
+
+//Footer
+@media screen and (max-width: 950px) {
+  #smartweb-footer .sectiontext figure,
+  #smartweb-minisite-footer .sectiontext figure {
+    margin: 0 auto;
+  }
+
+  .sectioncontact {
+    text-align: center;
+  }
+
+  .sectionlinks {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #portal-footer-wrapper
+    #portal-footer
+    .sectionlinks
+    .container
+    .body-section
+    .row
+    li
+    .table_display
+    .table_image
+    .table_title {
+    padding-left: 0;
+  }
+}
+
+body
+  #portal-footer-wrapper
+  #portal-footer
+  .sectionlinks
+  .container
+  .body-section
+  .row
+  li
+  .table_display
+  .table_image
+  .table_title {
+  padding-left: 10px;
+}
