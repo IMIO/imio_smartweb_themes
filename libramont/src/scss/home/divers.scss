@@ -961,3 +961,13 @@ body
   .table_title {
   padding-left: 10px;
 }
+
+body.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image
+  div {
+  color: #fff !important;
+}
