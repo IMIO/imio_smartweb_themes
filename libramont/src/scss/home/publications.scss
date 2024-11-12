@@ -1,6 +1,8 @@
 @media screen and (max-width: 950px) {
   .publications .section-title {
-    text-align: center;
+    text-align: center !important;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -18,7 +20,7 @@
     background-repeat: no-repeat;
     background-size: 130px;
     content: "";
-    top: -70px;
+    top: -30px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -40,14 +42,14 @@
     & > a {
       background-color: $primary-light;
       color: $primary-dark;
-      padding: 25px;
       border-radius: 20px;
       text-decoration: none;
       display: block;
       transform: translateY(0);
       overflow: hidden;
       transition: 0.5s;
-      padding-bottom: 80px;
+      padding: 25px 25px 80px;
+      max-height: 220px;
 
       &:hover,
       &:focus {
