@@ -124,6 +124,14 @@
                 color: #fff;
                 float: left;
                 padding-right: 3px;
+
+                .day::after {
+                  content: "/";
+                }
+
+                .month {
+                  margin-left: -5px;
+                }
               }
 
               .end_date {
