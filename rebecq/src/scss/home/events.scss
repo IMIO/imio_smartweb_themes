@@ -136,6 +136,14 @@
 
               .end_date {
                 color: #fff;
+
+                .day::after {
+                  content: "/" !important;
+                }
+
+                .month {
+                  margin-left: -5px;
+                }
               }
 
               .day_date {
