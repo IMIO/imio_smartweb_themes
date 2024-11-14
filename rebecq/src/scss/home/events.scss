@@ -126,7 +126,7 @@
                 padding-right: 3px;
 
                 .day::after {
-                  content: "/";
+                  content: "/" !important;
                 }
 
                 .month {
