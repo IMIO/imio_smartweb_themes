@@ -264,6 +264,10 @@ body:not(.site-office-du-tourisme-inforville) {
   color: #fff;
   border-radius: 5px;
   padding-left: 0.7rem;
+
+  a {
+    color: #fff !important;
+  }
 }
 
 .r-list-item {
