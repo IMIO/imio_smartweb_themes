@@ -70,3 +70,15 @@
     }
   }
 }
+
+//SUP-38483
+.sectionfiles .body-section .h2,
+.sectionfiles .body-section h2,
+.sectionfiles .body-section p,
+.sectionfiles .body-section span,
+.sectionfiles .section-title .h2,
+.sectionfiles .section-title h2,
+.sectionfiles .section-title p,
+.sectionfiles .section-title span {
+  color: #000 !important;
+}
