@@ -193,13 +193,13 @@ h2 {
 
   .swiper-banner-content-wrapper {
     position: relative;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
 
     .swiper-banner-content {
       font-family: $font-family-title;
       max-width: 50% !important;
-      padding: 1rem 5rem 180px !important;
+      padding: 1rem 3rem 190px 6rem !important;
       background: url("../../assets/svg/logiciels-libres.svg") bottom left
         no-repeat !important;
     }
