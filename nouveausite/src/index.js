@@ -24,6 +24,15 @@ $(document).ready(function () {
 
   ScrollReveal().reveal(".swiper-banner-content", {
     delay: 500,
+    duration: 1000,
+    distance: "20%",
+    origin: "bottom",
+    interval: 100,
+    opacity: 0,
+  });
+  
+  ScrollReveal().reveal(".swiper-banner-content *", {
+    delay: 500,
     duration: 1500,
     distance: "20%",
     origin: "bottom",
