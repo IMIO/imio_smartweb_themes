@@ -193,13 +193,13 @@ h2 {
 
   .swiper-banner-content-wrapper {
     position: relative;
-    top: 60%;
+    top: 60% !important;
     transform: translateY(-50%);
 
     .swiper-banner-content {
       font-family: $font-family-title;
       max-width: 50% !important;
-      padding: 1rem 3rem 190px 6rem !important;
+      padding: 1rem 3rem 0 !important;
       background: url("../../assets/svg/logiciels-libres.svg") bottom left
         no-repeat !important;
     }
@@ -211,6 +211,7 @@ h2 {
       font-size: 60px !important;
       line-height: 70px !important;
       max-width: 500px !important;
+      padding: 0 0 0 6rem !important;
     }
 
     p {
@@ -221,12 +222,15 @@ h2 {
       line-height: 40px !important;
       max-width: 540px !important;
       margin-top: 10px !important;
+      padding: 0 0 190px 6rem !important;
+      background: url("../../assets/svg/logiciels-libres.svg") bottom left
+        no-repeat !important;
     }
 
     @media screen and (max-width: 1400px) {
       position: relative;
       width: 100%;
-      top: auto;
+      top: auto !important;
       transform: translateY(-50%);
       max-width: 600px;
       margin: 0 auto;
@@ -248,6 +252,7 @@ h2 {
         font-size: 40px !important;
         line-height: 50px !important;
         max-width: 500px !important;
+        padding: 0 !important;
       }
 
       p {
@@ -258,6 +263,8 @@ h2 {
         line-height: 28px !important;
         max-width: 540px !important;
         margin-top: 10px !important;
+        background: none !important;
+        padding: 0 !important;
       }
     }
 
