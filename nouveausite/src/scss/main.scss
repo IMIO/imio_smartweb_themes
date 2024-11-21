@@ -199,9 +199,7 @@ h2 {
     .swiper-banner-content {
       font-family: $font-family-title;
       max-width: 50% !important;
-      padding: 1rem 3rem 0 !important;
-      background: url("../../assets/svg/logiciels-libres.svg") bottom left
-        no-repeat !important;
+      padding: 1rem 0 0 !important;
     }
 
     .swiper-banner-title {
@@ -210,8 +208,10 @@ h2 {
       color: #000 !important;
       font-size: 60px !important;
       line-height: 70px !important;
-      max-width: 500px !important;
+      max-width: 600px !important;
       padding: 0 0 0 6rem !important;
+      text-align: left;
+      display: block;
     }
 
     p {
