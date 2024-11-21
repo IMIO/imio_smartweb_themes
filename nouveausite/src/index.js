@@ -22,7 +22,7 @@ $(document).ready(function () {
     (eventsSwiper.params.speed = 1000), eventsSwiper.update();
   }
 
-  ScrollReveal().reveal(".swiper-banner-content *", {
+  ScrollReveal().reveal(".swiper-banner-content", {
     delay: 500,
     duration: 1500,
     distance: "20%",
