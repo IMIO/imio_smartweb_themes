@@ -208,3 +208,40 @@
     font-size: 20px !important;
   }
 }
+
+.subsection-notre-equipe {
+  .section-text .body-section .text {
+    max-width: 100% !important;
+  }
+
+  .section-text h2 {
+    text-align: center !important;
+    margin-bottom: 40px !important;
+  }
+
+  .section-text h3 {
+    font-size: 1rem !important;
+    margin: 10px 0 !important;
+    padding-top: 20px !important;
+  }
+
+  .sectiontext p {
+    font-size: 14px !important;
+  }
+
+  .sectiontext .section-text .body-section.figure-left figure img {
+    border-radius: 50% !important;
+  }
+
+  @media screen and (max-width: 1400px) {
+    #main-container .col-sm-3 {
+      width: 25% !important;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    #main-container .col-sm-3 {
+      width: 50% !important;
+    }
+  }
+}
