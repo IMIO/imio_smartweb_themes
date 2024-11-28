@@ -61,6 +61,11 @@
 
     .swiper_title {
       background: transparent;
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        margin: 0 0 80px;
+      }
     }
 
     .swiper_title h3 {
@@ -70,6 +75,10 @@
       font-weight: 500 !important;
       text-align: left;
       position: relative;
+
+      @media screen and (max-width: 992px) {
+        padding: 100px 0 10px;
+      }
 
       &::before {
         color: $primary-red;
@@ -83,6 +92,10 @@
         width: auto;
         z-index: 2;
         font-size: 45px;
+
+        @media screen and (max-width: 992px) {
+          left: 0;
+        }
       }
 
       &::after {
@@ -101,6 +114,10 @@
         z-index: 2;
         font-size: 16px;
         transition: all 0.5s ease;
+
+        @media screen and (max-width: 992px) {
+          left: 0;
+        }
       }
 
       &:hover {
