@@ -27,18 +27,5 @@
     position: relative;
     display: inline-block;
     margin-bottom: 3vw;
-
-    &::before {
-      content: "";
-      background: url("../../assets/svg/actu-bird-light.svg") no-repeat;
-      background-size: contain;
-      width: 94px;
-      height: 75px;
-      display: block;
-      position: absolute;
-      top: -76px;
-      left: -41px;
-      z-index: -1;
-    }
   }
 }
