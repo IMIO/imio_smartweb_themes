@@ -20,7 +20,6 @@ $(document).ready(function () {
     eventsSwiper.params.spaceBetween = 30;
     (eventsSwiper.params.speed = 1000), eventsSwiper.update();
   }
-  
 
   // For banner
 
@@ -32,17 +31,17 @@ $(document).ready(function () {
   }
 });
 
-document.addEventListener('scroll', function() {
-  const accountElement = document.querySelector('.btn-demarches');
+document.addEventListener("scroll", function () {
+  const accountElement = document.querySelector(".btn-demarches");
   if (accountElement) {
     if (window.scrollY > 80) {
-      accountElement.classList.add('visible');
-      console.log('Element is visible');
+      accountElement.classList.add("visible");
+      console.log("Element is visible");
     } else {
-      accountElement.classList.remove('visible');
-      console.log('Element is not visible');
+      accountElement.classList.remove("visible");
+      console.log("Element is not visible");
     }
   } else {
-    console.log('Element .btn-demarches not found');
+    console.log("Element .btn-demarches not found");
   }
 });
