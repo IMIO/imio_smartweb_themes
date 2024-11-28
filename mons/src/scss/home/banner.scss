@@ -1,0 +1,201 @@
+.section-home-page {
+  #portal-header {
+    margin: 0 !important;
+  }
+
+  #portal-header #portal-header-top #portal-logo {
+    margin: -10px 0 0;
+    content: url("../../assets/svg/logo-mons.svg") !important;
+  }
+
+  #portal-header #portal-header-top {
+    border-bottom: 1px solid #fff;
+
+    &::after {
+      content: "";
+      background: transparent;
+    }
+  }
+
+  #portal-globalnav > li > a {
+    color: #fff;
+  }
+
+  #portal-globalnav.activated > li > a {
+    color: #fff !important;
+  }
+
+  #portal-globalnav > li.has_subtree > a::after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='8.444' height='5.2'><path d='M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z' fill='%23ffffff'/></svg>");
+  }
+
+  .smartweb_herobanner {
+    border-radius: 0;
+    overflow: hidden;
+    width: 100vw;
+    margin-top: -90px !important;
+    margin-bottom: 0;
+  }
+
+  .smartweb_herobanner .bannerSwiper {
+    height: 50vw;
+    max-height: 700px;
+    min-height: 500px;
+    //margin-bottom: 80px;
+
+    .swiper-slide::after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to bottom, #0a0a0a, transparent);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      margin-left: 0;
+      z-index: 0;
+      opacity: 95%;
+    }
+
+    .swiper-slide .swiper-banner-content-wrapper {
+      position: absolute;
+      top: 40%;
+      transform: none;
+      bottom: auto;
+      max-width: 100%;
+      width: 100%;
+      left: 100px;
+      z-index: 1;
+    }
+  }
+}
+
+.section-slide .swiper-banner-content {
+  background: none !important;
+}
+
+.bannerSwiper .section-slide {
+  .swiper-banner-content {
+    position: relative;
+    left: -13px;
+    max-width: 750px !important;
+    width: 100% !important;
+    border-radius: 0 80px 0 0;
+    font-family: $font-family-title;
+    height: auto;
+    display: grid;
+    align-items: center;
+    padding: 40px 60px !important;
+
+    .swiper-banner-title {
+      font-weight: 600;
+
+      @media screen and (max-width: 800px) {
+        font-size: 28px !important;
+      }
+    }
+
+    .swiper-banner-description {
+      position: relative;
+      width: 100% !important;
+      margin: auto;
+      color: #fff !important;
+      padding-bottom: 30px;
+      line-height: 50px;
+
+      @media screen and (max-width: 800px) {
+        p {
+          margin: 0;
+          color: #fff !important;
+          font-size: 16px !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .swiper-banner-title {
+    line-height: 40px;
+  }
+}
+
+.bloc-int-banner {
+  .cont-bloc {
+    background: red;
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    transition: all 0.3s ease;
+    z-index: 1;
+
+    &:hover {
+      right: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-demarches {
+      background: $primary-red;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      width: 60px;
+      font-weight: 400;
+      font-size: 18px;
+      height: 180px;
+      padding-left: 20px;
+      line-height: 40px;
+      border-radius: 0 20px 20px 0;
+      text-align: center;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+      opacity: 0%; // Opacité initiale à 0%
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $primary;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .btn-demarches.visible {
+      opacity: 100%; // Opacité à 100% lorsque la classe 'visible' est ajoutée
+    }
+  }
+}
+
+.btn-feder {
+  content: "";
+  width: 350px;
+  height: 130px;
+  display: block;
+  background: url("../../assets/svg/img-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  position: absolute;
+  margin-top: -130px;
+  right: 0;
+  border-radius: 20px 0 0;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 130px;
+    display: block;
+    background: url("../../assets/svg/img-banner.png");
+    background-size: contain;
+    background-position: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -130px;
+    right: 0;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,96 @@
+.template-facetednavigation_view.faceted-map {
+  background-color: #f8f8f8;
+
+  input,
+  fieldset {
+    background-color: #fff !important;
+  }
+
+  .eea-preview-items {
+    .faceted-map-item {
+      box-shadow: none !important;
+
+      & > a {
+        display: block;
+        background-color: $primary-light;
+        border-radius: 10px;
+        padding: 1rem;
+
+        .items-content {
+          flex-direction: row-reverse;
+          gap: 20px;
+
+          @media screen and (max-width: 450px) {
+            flex-direction: column !important;
+          }
+
+          @media screen and (min-width: 992px) {
+            &::before {
+              content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' style='fill:%2327606a'/%3E%3Cpath d='M20 19.62a1.92 1.92 0 1 1 .001-3.841A1.92 1.92 0 0 1 20 19.62m0-7.29c-2.97 0-5.37 2.4-5.37 5.37 0 4.03 5.37 9.97 5.37 9.97s5.37-5.94 5.37-9.97c0-2.97-2.4-5.37-5.37-5.37Z' style='fill:%23fff'/%3E%3C/svg%3E");
+              display: block;
+              order: 1;
+              flex: 100%;
+              max-width: 40px;
+            }
+          }
+
+          .geo-item-text {
+            padding: 0;
+
+            .geo-item-title {
+              color: $primary;
+            }
+
+            .geo-item-description {
+              color: $primary;
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $primary-svg;
+
+          .items-content {
+            .geo-item-text {
+              .geo-item-title {
+                color: #000;
+              }
+
+              .geo-item-description {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// filters
+#top---default---widgets {
+  #search_widget {
+    #search_button {
+      font-size: 0;
+      border-left: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: transparent;
+      position: absolute;
+      right: 13px;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #portal-header #portal-header-top #header-links #search-link a {
+    padding-left: 10px;
+  }
+}
+
+.template-facetednavigation_view .faceted-top-widgets .faceted_select,
+.template-facetednavigation_view .faceted-top-widgets input {
+  border-radius: 5px;
+}
