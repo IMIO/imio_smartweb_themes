@@ -1,18 +1,17 @@
 //*// COLORS
-$primary: #005596;
-$primary-svg: #d92037;
-$text-color: #2f2f2f;
+$primary: #3070b6;
+$primary-svg: #e3ecf5;
+$text-color: #1d1e1e;
 
 //*// TYPOGRAPHY
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-$font-family-base: "Open Sans", sans-serif;
-$font-family-title: "Oswald", sans-serif;
-$font-title-color: $primary !default;
+$font-family-base: "Roboto", sans-serif;
+$font-family-title: "Roboto", sans-serif;
+$font-title-color: $text-color;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: #000 !default;
+$font-title-color-dark: $text-color;
 $font-title-weight: 700 !default;
 
 .h3,
@@ -52,7 +51,7 @@ $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: center;
 $section-padding-top: 0 !default;
-$to-portal-link-color: #282828 !default;
+$to-portal-link-color: $text-color;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper
