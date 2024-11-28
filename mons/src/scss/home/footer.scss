@@ -87,7 +87,7 @@
           }
 
           .table_title {
-            padding-left: 30px !important;
+            padding-left: 10px !important;
             font-size: 1rem !important;
 
             span {
@@ -403,8 +403,8 @@ footer {
             margin: 0 auto;
             background: #fff;
             position: absolute;
-            width: 50px;
-            height: 50px;
+            width: 40px !important;
+            height: 40px !important;
             border-radius: 50%;
             display: flex;
             justify-content: center;
