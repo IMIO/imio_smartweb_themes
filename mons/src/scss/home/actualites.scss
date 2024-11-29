@@ -42,7 +42,7 @@
         .swiper-image {
           transition: 0.5s;
           padding-bottom: 450px;
-          border-radius: 20px;
+          border-radius: 20px !important;
 
           &::before {
             top: 0;
@@ -193,4 +193,13 @@
       color: #fff;
     }
   }
+}
+
+.sectionnews .swiper-slide .swiper-image {
+  border-radius: 20px;
+}
+
+.sectionnews .swiper-slide .swiper_title .h3,
+.sectionnews .swiper-slide .swiper_title h3 {
+  text-align: left;
 }
