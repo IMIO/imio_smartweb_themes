@@ -93,9 +93,24 @@
         }
 
         .swiper_category {
+          color: $primary-red;
+          font-size: 16px;
+          margin: 0;
+          padding: 10px 20px;
+          text-align: left;
           position: absolute;
           top: 0;
-          right: 0;
+          background: #fff;
+          border-radius: 20px 0;
+          max-width: 230px;
+
+          span {
+            display: inline-block;
+            text-transform: none;
+            color: $primary-red;
+            padding: 0 !important;
+            margin: 0 !important;
+          }
         }
 
         .swiper_date {
