@@ -900,3 +900,7 @@ h3 {
   aspect-ratio: 4 / 5;
   background-position: top;
 }
+
+.r-list-item-group:hover .r-item-arrow-more {
+  background-color: $primary-red !important;
+}
