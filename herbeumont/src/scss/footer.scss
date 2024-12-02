@@ -1,16 +1,16 @@
 #portal-footer-wrapper {
-  --bs-link-color-rgb: $primary;
+  --bs-link-color-rgb: #fff;
   text-align: left !important;
-  background: #f7f7f7;
+  background: $text-color;
   padding: 3rem 1rem;
 
   h2 {
-    color: $text-color;
+    color: #fff;
     font-size: 20px !important;
   }
 
   h3 {
-    color: $text-color;
+    color: #fff;
     font-size: 16px !important;
   }
 }

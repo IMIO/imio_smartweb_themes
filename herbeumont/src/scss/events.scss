@@ -1,4 +1,4 @@
-.portaltype-imio-smartweb-portalpage.section-home-page .sectionevents {
+.portaltype-imio-smartweb-portalpage.section-index .sectionevents {
   margin: 0;
   width: 50% !important;
   left: auto !important;
@@ -19,7 +19,7 @@
     position: relative;
 
     .swiper-pagination-bullet-active {
-      background: $primary-svg !important;
+      background: $primary !important;
     }
   }
 
@@ -107,7 +107,7 @@
   }
 }
 
-.image-actualites-accueil {
+.image-agenda-accueil {
   figure {
     max-width: 100% !important;
   }
