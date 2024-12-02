@@ -435,5 +435,27 @@ footer {
         }
       }
     }
+
+    li:last-child {
+      width: 100% !important;
+      top: 50px !important;
+      position: absolute !important;
+
+      .table_display {
+        .table_image {
+          .image {
+            background: transparent !important;
+            width: 100% !important;
+            border-radius: 0 !important;
+          }
+
+          .table_title {
+            display: block !important;
+            width: 100% !important;
+            padding: 0 !important;
+          }
+        }
+      }
+    }
   }
 }
