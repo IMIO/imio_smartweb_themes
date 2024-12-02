@@ -5,6 +5,7 @@ $enable-roboto-webfont: false;
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./quick";
 @import "./actualites";
+@import "./events";
 @import "./footer";
 
 .smartweb_herobanner {
@@ -51,13 +52,6 @@ $enable-roboto-webfont: false;
 
 .see_all a::after {
   display: none !important;
-}
-
-.portaltype-imio-smartweb-portalpage {
-  background-image: url("../../assets/svg/body-bg-top.svg");
-  background-repeat: no-repeat;
-  background-size: 700px;
-  background-position: left 701px;
 }
 
 .subsite-container #subsite-logo a {
