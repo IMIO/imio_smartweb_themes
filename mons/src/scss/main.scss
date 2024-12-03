@@ -919,11 +919,12 @@ h3 {
 
 //Sectionlink
 .sectionlinks {
-  background: none !important;
-  padding: 30px 10px !important;
+  background: #fff !important;
+  padding: 0 10px !important;
 
   h3 {
     color: $primary !important;
+    text-align: center;
   }
 
   .swiper-image {
