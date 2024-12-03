@@ -292,6 +292,8 @@ footer #container-section-noussuivre {
 }
 
 #portal-footer-wrapper {
+  margin-top: 40px;
+
   .smartweb_footer {
     .text {
       h4 {
@@ -350,9 +352,10 @@ footer #container-section-noussuivre {
   color: #000 !important;
 }
 
-/*.sectiontext .section-text .body-section a {
-      color: #fff!important;
-  }*/
+.sectiontext .section-text .body-section a {
+  text-decoration: underline;
+}
+
 .sectiontext figure img {
   border-radius: 15px;
 }

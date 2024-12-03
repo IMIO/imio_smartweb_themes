@@ -4,8 +4,8 @@
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   &::after {
     background: $primary-red;
@@ -15,7 +15,7 @@
     left: 0%;
     position: absolute;
     top: 0;
-    width: 97%;
+    width: 94%;
     z-index: -2;
 
     @media screen and (max-width: 1500px) {
@@ -65,7 +65,9 @@
       &:focus {
         transition: 0.5s;
         background: #cd2f29;
-        border-radius: 20px;
+        transition: 0.5s;
+        transform: translateY(10px);
+        border-radius: 20px 20px 60px 60px;
       }
 
       & > a {
@@ -152,10 +154,6 @@
             h3 {
               transition: 0.5s;
             }
-          }
-
-          .swiper-image {
-            opacity: 30%;
           }
         }
       }
