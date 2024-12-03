@@ -87,6 +87,8 @@
     display: grid;
     align-items: center;
     padding: 40px 20px !important;
+    background: transparent !important;
+    margin: 0 auto !important;
 
     @media screen and (max-width: 1400px) {
       max-width: 1140px !important;
