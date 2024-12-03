@@ -905,3 +905,10 @@ h3 {
 .r-list-item-group:hover .r-item-arrow-more {
   background-color: $primary-red !important;
 }
+
+// Fix visio
+.subsection-vie-politique-1-college-communal-1-en-video
+  .block-menu-element
+  > a {
+  height: auto !important;
+}
