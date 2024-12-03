@@ -1,0 +1,39 @@
+.sectionnews {
+  .section-container {
+    text-align: center;
+  }
+
+  .section-title {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../../assets/svg/arbres.svg") no-repeat;
+      background-size: contain;
+      width: 94px;
+      height: 75px;
+      display: block;
+      position: absolute;
+      top: -76px;
+      left: -41px;
+      z-index: -1;
+    }
+  }
+
+  .swiper_date {
+    margin: 5px auto !important;
+  }
+
+  .swiper_title {
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .auth_source_container_title {
+    display: none;
+  }
+}

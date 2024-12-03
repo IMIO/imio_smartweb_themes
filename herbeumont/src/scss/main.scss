@@ -1,85 +1,13 @@
-$enable-roboto-webfont: false;
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
-@import "./quick";
-@import "./actualites";
-@import "./events";
-@import "./footer";
+//@import "../../../base/src/scss/main";
 
-.smartweb_herobanner {
-  z-index: 0;
+//// STYLES
 
-  .swiper-banner-image {
-    border-radius: 20px;
-
-    @media screen and (min-width: 768px) {
-      border-radius: 80px;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .smartweb_herobanner .bannerSwiper {
-    height: 300px;
-  }
-}
-
-#portal-header #portal-header-top #header-links #search-link a {
-  background-color: $primary-svg;
-  border-color: transparent;
-  text-decoration: none;
-
-  &:hover {
-    background-color: darken($primary-svg, 10%);
-  }
-}
-
-.account {
-  text-decoration: none;
-
-  span {
-    font-weight: 500;
-  }
-}
-
-.see_all {
-  a {
-    background-color: $primary-svg;
-  }
-}
-
-.see_all a::after {
-  display: none !important;
-}
-
-.subsite-container #subsite-logo a {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 500;
-  gap: 14px;
-  padding: 0.5rem 1rem;
-  position: relative;
-  text-decoration: none;
-}
-
-.subsite-container #subsite-logo {
-  border-radius: 5px;
-}
-
-#portal-column-content .section-contact .contact-type-organization {
-  align-content: flex-start;
-  background: #f3f3f3;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 1.5rem;
-  word-wrap: anywhere;
-  border-radius: 5px;
-}
-
-#portal-header #portal-header-top #portal-logo {
-  margin-right: 30px;
-}
+// ... add your styles here
+@import "./home/banner";
+@import "./home/quick";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/divers";

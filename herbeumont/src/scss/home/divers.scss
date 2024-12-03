@@ -1,0 +1,278 @@
+#portal-header #portal-header-top {
+  padding: 15px 0;
+}
+
+//search
+#portal-header #portal-header-top #header-links #search-link a {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: $primary;
+  transition: all 0.3s ease;
+}
+
+#portal-header #portal-header-top #header-links #search-link a:hover {
+  background: $text-color;
+
+  &::before {
+    filter: invert(1);
+  }
+}
+
+h1 {
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+//footer
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
+    }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+  #content > header {
+    display: none;
+  }
+}
+
+// bug z-index
+
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
+}
+
+#main-container {
+  .sectionlinks {
+    margin: 4rem 0 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portaltype-imio-smartweb-portalpage .section-title {
+    font-size: 34px !important;
+  }
+}
+
+#portal-breadcrumbs {
+  background: transparent !important;
+
+  .container,
+  .breadcrumb {
+    padding: 5px 0;
+  }
+}
+
+#portal-globalnav > li a:hover {
+  color: $primary;
+}
+
+// footer
+.footer-logo {
+  figure img {
+    width: 250px !important;
+  }
+}
+
+.footer-slogan {
+  .text {
+    max-width: 204px;
+    text-align: center;
+
+    p {
+      font-size: 33px;
+      font-weight: 200;
+    }
+  }
+}
+
+.footer-fb {
+  .table_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    text-decoration: none;
+
+    .image {
+      width: auto;
+
+      svg {
+        height: 25px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.r-filter div[class*="control"] {
+  border-radius: 5px;
+}
+
+// sub-nav
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 15px;
+}
+
+#viewlet-above-content-body {
+  .procedure {
+    display: none;
+  }
+}
+
+// header common
+
+.portaltype-imio-smartweb-page,
+.portaltype-imio-smartweb-folder,
+.portaltype-imio-smartweb-procedure {
+  #portal-header {
+    #banner {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      border-radius: 0 0 30px 30px;
+      z-index: -1;
+    }
+  }
+}
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.block-menu-element a .card-body {
+  background: #fff;
+  border-radius: 15px 15px 15px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 1.2s;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: $primary-svg !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border: none;
+  border-radius: 10px;
+  background: $primary;
+  color: $text-color;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: $primary;
+    transition: all 0.25s ease;
+  }
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+.subsection-journal-communal-morlanwelz-be-info-collection .card-img-top {
+  padding-top: 150%;
+}
+
+.section-contact .contact-type-organization .contact_logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section.figure-top .text .h2:first-child,
+.sectiontext .section-text .body-section.figure-top .text h2:first-child {
+  margin-top: 0 !important;
+}

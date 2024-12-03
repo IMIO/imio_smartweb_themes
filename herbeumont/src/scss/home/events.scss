@@ -1,4 +1,19 @@
-.portaltype-imio-smartweb-portalpage.section-index .sectionevents {
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .sortable-section.sectionevents::after {
+  background: url("../../assets/svg/visu-background-left.svg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 130px;
+  content: "";
+  top: -80px;
+  bottom: 0;
+  left: -90px;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page .sectionevents {
   margin: 0;
   width: 50% !important;
   left: auto !important;
@@ -19,7 +34,7 @@
     position: relative;
 
     .swiper-pagination-bullet-active {
-      background: $primary !important;
+      background: $primary-svg !important;
     }
   }
 
@@ -66,7 +81,7 @@
             justify-content: flex-end;
 
             span {
-              background: $primary-svg;
+              background: $primary;
               border-radius: 10px;
               padding: 5px 10px;
               font-size: 13px;
@@ -107,7 +122,7 @@
   }
 }
 
-.image-agenda-accueil {
+.image-actualites-accueil {
   figure {
     max-width: 100% !important;
   }
