@@ -906,9 +906,14 @@ h3 {
   background-color: $primary-red !important;
 }
 
-// Fix visio
+// Fix visio - video
 .subsection-vie-politique-1-college-communal-1-en-video
   .block-menu-element
   > a {
   height: auto !important;
+}
+
+// Fix visio - mag
+.subsection-mons-mag-fichiers-mons-mag .card-img-top {
+  padding-top: 150% !important;
 }
