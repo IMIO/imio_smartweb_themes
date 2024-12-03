@@ -931,3 +931,30 @@ h3 {
     border-radius: 20px !important;
   }
 }
+
+.portaltype-imio-smartweb-page,
+.portaltype-imio-smartweb-folder,
+.portaltype-imio-smartweb-procedure {
+  #portal-header {
+    display: flex;
+    flex-direction: column;
+
+    #portal-header-top {
+      order: 0;
+    }
+
+    .subsite-container {
+      order: 2;
+    }
+
+    #portal-breadcrumbs {
+      order: 4;
+    }
+
+    #banner {
+      order: 3;
+      position: relative;
+      height: 200px;
+    }
+  }
+}
