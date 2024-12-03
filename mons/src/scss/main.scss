@@ -478,10 +478,6 @@ footer #container-section-noussuivre {
   background: none;
 }
 
-.sectionlinks {
-  background: none;
-}
-
 .sectionlinks h2::before {
   display: none !important;
 }
@@ -919,4 +915,18 @@ h3 {
 // Fix visio - mag
 .subsection-mons-mag-fichiers-mons-mag .card-img-top {
   padding-top: 150% !important;
+}
+
+//Sectionlink
+.sectionlinks {
+  background: none !important;
+  padding: 30px 10px !important;
+
+  h3 {
+    color: $primary !important;
+  }
+
+  .swiper-image {
+    border-radius: 20px !important;
+  }
 }
