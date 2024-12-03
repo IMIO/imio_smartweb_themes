@@ -114,11 +114,6 @@ h1 {
   font-weight: 500 !important;
 }
 
-h2 {
-  font-weight: 500 !important;
-  font-size: 24px;
-}
-
 #header-actions .account {
   text-decoration: none;
   font-weight: 500;
@@ -708,12 +703,6 @@ footer #container-section-noussuivre {
   z-index: -1;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 400;
-  color: $primary-red;
-}
-
 .subsection-services-communaux-communication-bulletin-communal
   .block-menu-element
   a
@@ -921,6 +910,7 @@ h3 {
 #content-core .sectionlinks {
   background: #fff !important;
   padding: 0 10px !important;
+  margin-top: 30px;
 
   h3 {
     color: $primary !important;
@@ -948,6 +938,7 @@ h3 {
     }
 
     #portal-breadcrumbs {
+      position: relative !important;
       order: 4;
     }
 
