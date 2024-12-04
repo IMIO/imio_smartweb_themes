@@ -31,7 +31,7 @@
 
   @media screen and (max-width: 992px) {
     .swiper-wrapper {
-      padding-bottom: 80px;
+      padding-bottom: 180px;
     }
   }
 
@@ -62,21 +62,22 @@
     .swiper_title {
       background: transparent;
       width: 100%;
-
-      @media screen and (max-width: 992px) {
-        margin: 0 0 80px;
-      }
     }
 
     .swiper_description {
       font-size: 16px;
       color: $primary;
       background: #fff !important;
+      position: relative;
 
       p {
-        color: $primary;
+        color: $primary !important;
         text-align: left;
-        padding-left: 40px;
+        padding-left: 45px;
+
+        @media screen and (max-width: 992px) {
+          padding-left: 0;
+        }
       }
 
       &::after {
@@ -85,9 +86,9 @@
         border: solid 1px #cbcbcb;
         font-weight: 400;
         border-radius: 8px;
-        bottom: -80px;
+        bottom: -60px;
         content: "Lire plus";
-        left: 40px;
+        left: 60px;
         padding: 15px 30px;
         position: absolute;
         top: auto;
@@ -97,7 +98,7 @@
         transition: all 0.5s ease;
 
         @media screen and (max-width: 992px) {
-          left: 0 !important;
+          left: 20px !important;
         }
       }
 
