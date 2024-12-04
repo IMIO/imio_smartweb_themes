@@ -3,6 +3,14 @@
   max-width: 65% !important;
 }
 
+#smartweb-footer .sectiontext .section-text .body-section.figure-bottom {
+  align-items: center;
+  display: block !important;
+  flex-direction: column-reverse;
+  padding-left: 10px !important;
+  padding-bottom: 20px !important;
+}
+
 #smartweb-footer .sectiontext figure img,
 #smartweb-minisite-footer .sectiontext figure img {
   max-width: 200px !important;
