@@ -10,11 +10,14 @@ $(document).ready(function () {
   });
 
   // For custom slider
-  var allSwiper = $("div.swiper");
-  for (var i = 0; i < allSwiper.length; i++) {
-    if (allSwiper[i].getAttribute("data-nb-results-by-batch") > 1) {
-      allSwiper[i].swiper.params.spaceBetween = 30;
-      allSwiper[i].swiper.update();
-    }
+  if ($(".sectionnews .swiper").length > 0) {
+    var newsSwiper = $(".sectionnews .swiper")[0].swiper;
+    newsSwiper.params.spaceBetween = 30;
+    (newsSwiper.params.speed = 1000), newsSwiper.update();
+  }
+  if ($(".sectionevents .swiper").length > 0) {
+    var eventsSwiper = $(".sectionevents .swiper")[0].swiper;
+    eventsSwiper.params.spaceBetween = 30;
+    (eventsSwiper.params.speed = 1000), eventsSwiper.update();
   }
 });

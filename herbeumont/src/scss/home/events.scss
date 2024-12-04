@@ -42,7 +42,7 @@
     font-weight: 500;
     text-transform: none;
     position: relative;
-    color: $text-color;
+    color: $primary-dark;
     text-align: left;
     margin-bottom: 1rem;
   }
@@ -81,7 +81,7 @@
             justify-content: flex-end;
 
             span {
-              background: $primary;
+              background: $primary-svg;
               border-radius: 10px;
               padding: 5px 10px;
               font-size: 13px;
@@ -106,7 +106,7 @@
             }
 
             .table_title {
-              color: $text-color;
+              color: $primary-svg;
               padding-left: 7px;
               transition: all 0.3s ease;
               text-decoration: underline;
