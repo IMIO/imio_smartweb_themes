@@ -78,8 +78,8 @@ body {
   transition: all 0.3s ease;
 
   &:hover {
-    background: $primary-red;
-    border: solid 2px $primary-red;
+    background: $primary-red !important;
+    border: solid 2px $primary-red !important;
   }
 }
 
