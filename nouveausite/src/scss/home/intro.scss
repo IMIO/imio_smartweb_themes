@@ -49,13 +49,6 @@
     border: 1px solid #fff;
     transition: all 0.2s ease;
 
-    &:hover {
-      background: url("../../assets/svg/img-bloc-hover.svg") 30px center
-        no-repeat #fff;
-      border: 1px solid #ddd;
-      transition: all 0.2s ease;
-    }
-
     strong {
       color: $primary-red;
       font-size: 18px;
@@ -95,13 +88,6 @@
     text-decoration: none;
     border: 1px solid #fff;
     transition: all 0.2s ease;
-
-    &:hover {
-      background: url("../../assets/svg/img-bloc-hover.svg") 30px center
-        no-repeat #fff;
-      border: 1px solid #ddd;
-      transition: all 0.2s ease;
-    }
 
     strong {
       color: $primary-red;
