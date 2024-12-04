@@ -25,7 +25,7 @@
           .image.d-block {
             transform: translateY(-10px);
             transition: all 0.5s ease;
-            background: $primary-green !important;
+            background: $primary !important;
           }
         }
 
@@ -38,37 +38,37 @@
 
       &:nth-child(1) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary;
         }
       }
 
       &:nth-child(2) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary-svg;
         }
       }
 
       &:nth-child(3) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary-svg;
         }
       }
 
       &:nth-child(4) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary-svg;
         }
       }
 
       &:nth-child(5) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary-svg;
         }
       }
 
       &:nth-child(6) {
         .table_image .image.d-block {
-          background: $primary-light;
+          background: $primary-svg;
         }
       }
     }
