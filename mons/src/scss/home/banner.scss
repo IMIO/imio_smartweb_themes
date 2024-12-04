@@ -1,13 +1,30 @@
-.section-home-page,
-.section-accueil-doudou,
-.section-accueil {
-  #portal-header {
-    margin: 0 !important;
-  }
-
+//modifier pour logo banner sous-site
+.section-home-page {
   #portal-header #portal-header-top #portal-logo {
     margin: -10px 0 0;
     content: url("../../assets/svg/logo-mons.svg") !important;
+  }
+}
+
+.section-accueil-doudou {
+  #portal-header #portal-header-top #portal-logo {
+    margin: -10px 0 0;
+    content: url("../../assets/svg/logo-mons.svg") !important;
+  }
+}
+
+.section-accueil-cpas {
+  #portal-header #portal-header-top #portal-logo {
+    margin: -10px 0 0;
+    content: url("../../assets/svg/logo-mons.svg") !important;
+  }
+}
+
+.section-home-page,
+.section-accueil-doudou,
+.section-accueil-cpas {
+  #portal-header {
+    margin: 0 !important;
   }
 
   #portal-header #portal-header-top {
