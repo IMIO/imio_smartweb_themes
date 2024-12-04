@@ -73,9 +73,14 @@ body {
   a {
   width: 40px;
   height: 40px;
-  background: transparent;
+  background: #000;
   border: solid 2px #fff;
   transition: all 0.3s ease;
+
+  &:hover {
+    background: $primary-red;
+    border: solid 2px $primary-red;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -969,4 +974,32 @@ footer #container-section-noussuivre {
       height: 200px;
     }
   }
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0 !important;
+}
+
+//navbar
+.navbar-toggler {
+  padding: 0 !important;
+  background: #000 !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  transition: var(--bs-navbar-toggler-transition);
+  border: 2px solid #fff;
+
+  &:hover {
+    background: $primary-red !important;
+    border: 2px solid $primary-red;
+  }
+}
+
+.navbar .container {
+  padding: 0;
 }
