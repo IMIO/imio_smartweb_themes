@@ -130,7 +130,7 @@
     a {
       display: grid;
       grid-template-columns: 60% 40%;
-      grid-template-rows: auto 1fr;
+      //grid-template-rows: auto 1fr;
     }
 
     @media screen and (max-width: 992px) {
@@ -140,7 +140,7 @@
 
       a {
         grid-template-columns: 100% !important;
-        grid-template-rows: 1fr !important;
+        //grid-template-rows: 1fr !important;
       }
     }
 
