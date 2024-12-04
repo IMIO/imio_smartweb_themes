@@ -86,7 +86,7 @@ body {
   width: 40px;
   height: 40px;
   background: #000;
-  border: solid 2px #fff;
+  border: solid 2px #fff !important;
   transition: all 0.3s ease;
 
   &:hover {
@@ -113,7 +113,7 @@ body {
   #search-link
   a:hover {
   background: $primary;
-  border: solid 2px $primary;
+  border: solid 2px #fff;
 }
 
 .section-home-page #portal-header #portal-header-top #portal-logo {
