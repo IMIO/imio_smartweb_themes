@@ -988,8 +988,8 @@ footer #container-section-noussuivre {
       order: 3;
       position: relative;
       height: 200px;
-      border-radius: 20px;
-      margin:20px 0;
+      border-radius: 20px !important;
+      margin:20px 0 !important;
     }
   }
 }
