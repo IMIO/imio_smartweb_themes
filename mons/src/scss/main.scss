@@ -981,12 +981,15 @@ footer #container-section-noussuivre {
     #portal-breadcrumbs {
       position: relative !important;
       order: 4;
+      z-index: 0 !important;
     }
 
     #banner {
       order: 3;
       position: relative;
       height: 200px;
+      border-radius: 20px;
+      margin:20px 0;
     }
   }
 }
