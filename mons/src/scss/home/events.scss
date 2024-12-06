@@ -4,8 +4,8 @@
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 
   &::after {
     background: $primary-red;
@@ -15,7 +15,7 @@
     left: 0%;
     position: absolute;
     top: 0;
-    width: 94%;
+    width: 95%;
     z-index: -2;
 
     @media screen and (max-width: 1500px) {
