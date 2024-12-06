@@ -4,6 +4,10 @@
     margin: -10px 0 0;
     content: url("../../assets/svg/logo-mons.svg") !important;
   }
+
+  .smartweb_herobanner {
+    margin-top: -90px !important;
+  }
 }
 
 .section-accueil-doudou {
@@ -11,12 +15,20 @@
     margin: 0;
     content: url("../../assets/svg/DOUDOU_BLANC.png") !important;
   }
+
+  .smartweb_herobanner {
+    margin-top: -75px !important;
+  }
 }
 
 .section-accueil-cpas {
   #portal-header #portal-header-top #portal-logo {
     //content: url("../../assets/svg/logo-mons.svg") !important;
     width: 130px;
+  }
+
+  .smartweb_herobanner {
+    margin-top: -75px !important;
   }
 }
 
@@ -52,7 +64,6 @@
     border-radius: 0;
     overflow: hidden;
     width: 100vw;
-    margin-top: -90px !important;
     margin-bottom: 0;
   }
 
