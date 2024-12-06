@@ -945,7 +945,7 @@ footer #container-section-noussuivre {
 }
 
 //Sectionlink
-.sectionlinks {
+#content-core .sectionlinks {
   background: #fff !important;
   padding: 0 10px !important;
   margin-top: 30px;
@@ -955,7 +955,7 @@ footer #container-section-noussuivre {
     text-align: center;
   }
 
-  .swiper-image {
+  .swiper-image, .image {
     border-radius: 20px !important;
   }
 }
