@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 1003" width="1728" height="1003">
+	<title>bg-alaune-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-883,1521.26,0,862.5,883)">
+			<stop offset=".7" stop-color="#000000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000000" stop-opacity=".08"/>
+		</linearGradient>
+		<image width="1728" height="119" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcyOCIgaGVpZ2h0PSIxMTkiIHZpZXdCb3g9IjAgMCAxNzI4IDExOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNSA2NC44ODc5VjEwMS45ODJDMC41IDEwMS45ODIgODcxIDY1LjUzODEgMTcyOC4zNCAxMDEuMzMyVjE2LjJDMTcyOC4zNCAxNi4yIDE2MjkuNSAxNi45MDcxIDEzMDYuNzUgMTMuMTkxMkM2MTUgNDEuMjkyNCA1MzEgNDAuNjQyMSAwLjUgNjQuODg3OVoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl80MTAxXzU3MCkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl80MTAxXzU3MCIgeDE9IjAuNSIgeTE9IjU3LjU4NjYiIHgyPSIxNzI4LjM0IiB5Mj0iNTcuNTg2NiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMzhBRjg1Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzJGOEI2RSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { opacity: .6;fill: url(#g1) } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m1728 80.4v947.6h-1728v-948c263.4-35.3 555.3-55 862.5-55 308.3 0 601.3 19.8 865.5 55.4z"/>
+	<path fill-rule="evenodd" class="s1" d="m1728 55.4v947.6h-1728v-948c263.4-35.3 555.3-55 862.5-55 308.3 0 601.3 19.8 865.5 55.4z"/>
+	<use id="frame-gembloux" href="#img1" transform="matrix(1,0,0,1,0,-13)"/>
+</svg>

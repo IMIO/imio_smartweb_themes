@@ -1,0 +1,123 @@
+.sectionevents {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .carousel {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-container {
+    position: relative;
+
+    .swiper-pagination-bullet-active {
+      background: $primary-svg !important;
+    }
+  }
+
+  .section-title {
+    font-weight: 600;
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: right;
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      border-radius: 50px 0 0;
+      transition: 0.5s;
+
+      & > a {
+        align-items: center;
+        padding-bottom: 60px;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+        transition: 0.5s;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .auth_source_container_title {
+          display: none;
+        }
+
+        .swiper_category {
+          display: none;
+        }
+
+        .swiper_title {
+          margin-top: 0;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          border-radius: 40px 40px 80px;
+          transition: 0.5s;
+
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+              color: $primary-svg;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .section-container .swiper-pagination-bullet-active {
+    background: $primary-svg !important;
+  }
+}
+
+.sectionevents .see_all a {
+  background: $primary-svg;
+  color: #fff;
+  border: solid 1px $primary-svg;
+  border-radius: 50px;
+
+  &:hover {
+    background: $primary-svg;
+    border: solid 1px $primary-svg;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
