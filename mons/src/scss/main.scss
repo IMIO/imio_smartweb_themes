@@ -952,7 +952,9 @@ footer #container-section-noussuivre {
 
   h3 {
     color: $primary !important;
-    text-align: center;
+    text-align: center !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
   }
 
   .swiper-image, .image {
