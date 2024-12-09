@@ -116,23 +116,23 @@ h1 {
   bottom: 0 !important;
   max-width: 100%;
   width: 100%;
+}
 
-  &::after {
-    content: "";
-    transition: all 0.2s ease;
-    position: absolute;
-    height: 110px;
-    background: url("../../assets/svg/after-banner.svg") center top no-repeat;
-    background-size: cover;
-    z-index: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    width: 100vw;
+.smartweb_herobanner::after {
+  content: "";
+  transition: all 0.2s ease;
+  position: absolute;
+  height: 110px;
+  background: url("../../assets/svg/after-banner.svg") center top no-repeat;
+  background-size: cover;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 100vw;
 
-    @media screen and (max-width: 992px) {
-      display: none !important;
-    }
+  @media screen and (max-width: 992px) {
+    display: none !important;
   }
 }
 
