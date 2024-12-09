@@ -1,4 +1,6 @@
 .bloc_news {
+  background: url("../../assets/svg/actu-bg.svg") 50px bottom #fff no-repeat;
+
   .swiper-slide .swiper-image {
     padding-bottom: 140%;
   }
@@ -19,10 +21,11 @@
   }
 
   .section-title {
-    position: relative;
-    text-align: left;
-    margin-bottom: 2rem;
-    color: #000;
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: center;
+    color: $primary-blue;
+    font-weight: 500;
   }
 
   .swiper-slide {
@@ -62,7 +65,7 @@
 
     a {
       background: $primary-blue;
-      color: #000;
+      color: #fff;
       border: solid 1px $primary-blue;
       border-radius: 10px;
       padding: 1rem 1.5rem 0.9rem;

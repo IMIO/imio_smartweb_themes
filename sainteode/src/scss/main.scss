@@ -36,7 +36,7 @@ $enable-roboto-webfont: false;
 @import "./home/bulletins";
 
 body {
-  background: linear-gradient(180deg, #f2f2f2 0, #fff 500px, #fff);
+  background: linear-gradient(180deg, #f2f2f2 0, #fff 200px, #fff);
 }
 
 #portal-header #portal-header-top {
@@ -271,16 +271,6 @@ footer #container-section-noussuivre {
   font-size: 1rem;
 }
 
-.block-menu-element a .card-body {
-  background: #fff;
-  border-radius: 15px 15px 15px 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
-  height: auto;
-  margin-bottom: 10px;
-  position: relative;
-  transition: 1.2s;
-}
-
 .template-facetednavigation_view.faceted-map
   .eea-preview-items
   .faceted-map-item
@@ -348,31 +338,31 @@ footer #container-section-noussuivre {
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
   background-color: $primary-green;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary-green;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-  background-color: $primary-green;
-  color: #000;
+  background-color: $primary-red;
+  color: #ffff;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   background-color: $primary-green;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
-  background-color: $primary-green;
-  color: #000;
+  background-color: $primary-red;
+  color: #fff;
 }
 
 #portal-column-content
