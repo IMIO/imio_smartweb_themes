@@ -1,0 +1,112 @@
+.smartweb_herobanner {
+  width: 100vw;
+  right: 0;
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    $primary-blue,
+    $primary-blue calc(100% - 50px),
+    #fff calc(100% - 50px),
+    #fff
+  );
+}
+
+.smartweb_herobanner .bannerSwiper {
+  height: 50vw;
+  min-height: 500px;
+  max-height: 500px;
+  width: 50vw;
+  max-width: 900px;
+  right: auto;
+  left: calc(50vw - 100px);
+  //float: right;
+  border-radius: 0 0 80px 80px;
+  margin: unset;
+
+  @media screen and (max-width: 992px) {
+    height: 50vw;
+    max-height: 500px;
+    width: calc(100vw - 60px);
+    max-width: 900px;
+    right: auto;
+    left: 0;
+    //float: right;
+    border-radius: 0 0 80px 80px;
+    margin: unset;
+  }
+}
+
+.smartweb_herobanner .swiper-button-next {
+  top: auto;
+  bottom: 60px;
+  right: 60px;
+}
+
+.smartweb_herobanner .swiper-button-prev {
+  top: auto;
+  bottom: 60px;
+  right: 110px;
+  left: auto;
+}
+
+.swiper-banner-title,
+.swiper-banner-description {
+  display: none;
+}
+
+.swiper-banner-image::after {
+  content: "";
+  background: #0000;
+  position: absolute;
+  inset: 0;
+  opacity: 30%;
+}
+
+.slogan-banner {
+  position: relative;
+  display: block;
+  width: calc(50% - 100px);
+  height: 500px;
+  margin-top: -520px;
+  align-content: center;
+  background: url("../../assets/svg/sainteode.png") left center no-repeat;
+  padding-left: 130px;
+
+  p {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 200;
+    color: #fff;
+
+    b {
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    position: relative;
+    display: block;
+    width: calc(100% - 100px);
+    height: 500px;
+    margin-top: -520px;
+    align-content: center;
+    background: none;
+    padding-left: 0;
+
+    p {
+      font-size: 30px;
+      line-height: 40px;
+      background: rgba(0, 0, 0, 60%);
+      color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-banner-content {
+  display: none;
+}
