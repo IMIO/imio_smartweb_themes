@@ -17,7 +17,7 @@
   }
 
   #portal-footer {
-    background: $primary-svg !important;
+    background: $primary;
 
     #smartweb-footer,
     #smartweb-minisite-footer {
@@ -83,7 +83,7 @@
 
             &:hover {
               span {
-                color: $primary-svg !important;
+                color: $primary-light !important;
                 transition: all 0.5s ease;
               }
             }
@@ -120,7 +120,7 @@
 }
 
 #portal-footer-wrapper {
-  background: $primary-svg;
+  background: $primary;
   padding: 5rem 0 4rem !important;
   margin-top: 100px;
 }
@@ -198,7 +198,6 @@ footer {
 #smartweb-subsite-footer {
   padding: 0 0 40px;
   margin-bottom: 60px;
-  background: linear-gradient(180deg, #276577 0, #1f4854 400px, #1f4854);
 
   .sectiontext .section-text .body-section.figure-left figure img {
     width: 100px;
