@@ -317,7 +317,11 @@ footer #container-section-noussuivre {
   border-radius: 10px;
   background: $primary-light;
   color: #000;
-  transition: all 0.25s ease;
+  display: flow-root;
+  margin-bottom: 0 !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.25s ease !important;
 
   &:hover {
     background: $primary-blue;
