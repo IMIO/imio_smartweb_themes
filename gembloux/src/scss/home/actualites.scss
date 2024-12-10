@@ -22,20 +22,18 @@
     margin: 0 0 30px;
     width: 100%;
     text-align: left;
-    color: #000;
+    color: $primary;
     font-size: 40px;
-    text-transform: uppercase;
+    text-transform: initial;
   }
 
   .swiper-wrapper {
     .swiper-slide {
-      border-radius: 50px 0 0;
       transition: 0.5s;
 
       &:hover,
       &:focus {
         transition: 0.5s;
-        border-radius: 50px 0;
       }
 
       & > a {
@@ -43,7 +41,6 @@
         padding-bottom: 60px;
         background: #fff;
         border-radius: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
         transition: 0.5s;
 
         .swiper-image {
@@ -51,11 +48,11 @@
         }
 
         .auth_source_container_title {
-          color: #000;
+          color: $primary;
           font-size: 12px;
           margin: 1rem 0 0.5rem;
           padding: 0 1rem;
-          text-align: left;
+          text-align: center;
         }
 
         .swiper_date {

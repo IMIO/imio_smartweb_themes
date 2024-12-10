@@ -40,15 +40,12 @@
 
   .swiper-wrapper {
     .swiper-slide {
-      border-radius: 50px 0 0;
       transition: 0.5s;
 
       & > a {
         align-items: center;
         padding-bottom: 60px;
         background: #fff;
-        border-radius: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
         transition: 0.5s;
 
         .swiper-image {

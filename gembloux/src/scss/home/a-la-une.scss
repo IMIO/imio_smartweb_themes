@@ -18,7 +18,6 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: 50% !important;
-    box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
   }
 
   .swiper-button-prev {
@@ -74,25 +73,6 @@
     text-align: right !important;
   }
 
-  &::before {
-    background: url("../../assets/svg/bg-alaune.svg") center 300px no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    bottom: 0;
-    content: "";
-    right: 0;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-
-    @media screen and (max-width: 992px) {
-      background: #f4f4f4;
-      width: 100%;
-      border: 0;
-    }
-  }
-
   .swiper-wrapper {
     padding-bottom: 0;
   }
@@ -119,11 +99,11 @@
 
     .swiper-image {
       margin-bottom: 0;
-      border-radius: 40px 0 0 40px;
+      border-radius: 20px;
       width: 100%;
 
       @media screen and (max-width: 992px) {
-        border-radius: 40px 40px 0 0;
+        border-radius: 20px;
       }
     }
 
@@ -136,8 +116,8 @@
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto 1fr;
-      background: #fff;
-      border-radius: 40px;
+      background: transparent;
+      border-radius: 20px;
       padding: 0 !important;
       position: relative;
 
@@ -145,17 +125,16 @@
         content: "";
         position: absolute;
         height: 100%;
-        border-radius: 40px;
+        border-radius: 20px;
         z-index: -1;
         left: 0;
         top: 0;
         width: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
         transition: 0.5s;
       }
 
       &:hover::before {
-        border-radius: 40px 40px 80px;
+        border-radius: 20px;
         transition: 0.5s;
       }
     }
@@ -196,7 +175,6 @@
   position: relative;
 
   &::before {
-    background: linear-gradient(180deg, #f5f7f7 0, #f5f7f7 400px, #fff);
     border-radius: 0;
     bottom: 0;
     content: "";
@@ -208,7 +186,6 @@
     z-index: -1;
 
     @media screen and (max-width: 992px) {
-      background: linear-gradient(180deg, #f5f7f7 0, #f5f7f7 300px, #fff);
       width: 100%;
     }
   }
@@ -224,12 +201,12 @@
     margin: 0 0 0 -30px;
     width: max-content;
     font-size: 30px;
-    text-transform: uppercase;
+    text-transform: i initial;
     transform: rotate(180deg);
     position: absolute;
     padding: 100px 0 0;
     writing-mode: vertical-rl;
-    color: $primary-svg;
+    color: $primary;
     left: 20px;
 
     @media screen and (max-width: 992px) {
@@ -254,12 +231,12 @@
     }
 
     .table_title {
-      color: $primary-svg;
+      color: $primary;
       text-align: center;
       width: 100%;
       font-weight: 600;
       font-size: 20px;
-      text-transform: uppercase;
+      text-transform: initial;
     }
 
     &:hover {
@@ -277,7 +254,7 @@
     display: none;
   }
 
-  #body-section-video-martelange {
+  #body-section-video-gembloux {
     overflow: hidden;
     border-radius: 40px;
   }

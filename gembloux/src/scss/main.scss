@@ -128,7 +128,7 @@ h1 {
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5px;
+  bottom: 0;
   width: 100vw;
 
   @media screen and (max-width: 992px) {
@@ -777,10 +777,6 @@ h3 {
 }
 
 #portal-column-content .section-contact .contact-type-organization {
-  //background: #fff;
-  //border-radius: 40px;
-  //box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
-
   .contact_logo {
     display: block;
     padding-top: 100px;
