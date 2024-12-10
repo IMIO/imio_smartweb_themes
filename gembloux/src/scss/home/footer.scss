@@ -1,3 +1,8 @@
+body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
+  footer#portal-footer-wrapper {
+  margin-top: 40px;
+}
+
 #smartweb-footer #container-section-logo {
   border-bottom: 1px #fff solid;
   margin-bottom: 50px;

@@ -341,23 +341,17 @@ footer #container-section-noussuivre {
 }
 
 .sectiontext .section-text .section-title a.collapsed {
-  color: #000;
+  color: $primary;
 }
 
 .sectiontext .section-text .body-section a,
 .section-contact .contact_informations a {
-  color: $primary-light;
+  color: $primary;
 }
 
 .sectiontext figure img {
   border-radius: 15px;
 }
-
-/*#viewlet-above-content-body {
-    .procedure{
-        display: none;
-    } 
-}*/
 
 // header common
 
@@ -465,10 +459,6 @@ footer #container-section-noussuivre {
   .faceted-map-item
   > a:hover {
   background-color: #fff;
-}
-
-#portal-column-content .sectioncontact .contact-type-organization {
-  background: none;
 }
 
 .sectionlinks {
@@ -814,7 +804,7 @@ h3 {
     margin: 0 0 30px;
     width: 100%;
     text-align: left;
-    color: #000;
+    color: $primary;
     font-size: 40px;
     text-transform: uppercase;
   }
@@ -826,10 +816,10 @@ h3 {
 
   a {
     text-decoration: none;
-    color: #000;
+    color: $primary;
 
     h3 {
-      color: #000;
+      color: $primary;
     }
   }
 }
