@@ -1,5 +1,5 @@
 .espace-citoyen {
-  background: #fff;
+  background: transparent;
   padding-top: 6vw;
   padding-bottom: 6vw;
   border-radius: 30px;
@@ -11,7 +11,7 @@
     margin: 0 0 0 -30px;
     width: max-content;
     font-size: 30px;
-    text-transform: uppercase;
+    text-transform: initial;
     transform: rotate(180deg);
     position: absolute;
     padding: 100px 0 0;
