@@ -153,7 +153,7 @@
     margin: 0 0 0 -30px;
     width: max-content;
     font-size: 30px;
-    text-transform: uppercase;
+    text-transform: initial;
     transform: rotate(180deg);
     position: absolute;
     padding: 100px 0 0;
@@ -338,4 +338,8 @@
       }
     }
   }
+}
+
+.sortable-section.sectiontext.plan {
+  margin: 80px 0;
 }

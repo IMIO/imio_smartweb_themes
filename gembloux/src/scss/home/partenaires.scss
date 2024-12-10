@@ -51,7 +51,7 @@
     }
   }
 
-  .bloc-partenaires::before {
+  &::before {
     content: "";
     position: absolute;
     background: url("../../assets/svg/visu-background-footer.svg") center top
