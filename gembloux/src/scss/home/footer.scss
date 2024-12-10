@@ -1,4 +1,4 @@
-#smartweb-footer .sectiontext#container-section-logo {
+#smartweb-footer #container-section-logo {
   border-bottom: 1px #fff solid;
   margin-bottom: 50px;
   padding-bottom: 20px;
@@ -143,6 +143,13 @@
 }
 
 footer {
+  .contact_informations li.facebook,
+  li.instagram,
+  li.linkedin,
+  li.youtube {
+    display: none !important;
+  }
+
   .schedule .opening_informations::after {
     content: "";
     width: 9px;

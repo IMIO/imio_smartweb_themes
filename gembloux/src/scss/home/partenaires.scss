@@ -1,0 +1,126 @@
+// .titre-partenaires {
+//   position: relative;
+//   margin-top: -250px;
+
+//   h2 {
+//     font-weight: 700 !important;
+//     font-size: 3.25rem;
+//     line-height: 2rem;
+//     text-transform: none;
+//     position: relative;
+//     color: $primary;
+//   }
+
+//   @media screen and (max-width: 1200px) {
+//     display: none;
+//   }
+// }
+
+.bloc-partenaires {
+  background: transparent;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin: 0;
+  max-width: 100vw;
+  border-radius: 0;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-weight: 700 !important;
+    text-transform: none;
+    position: relative;
+    color: $primary;
+    text-align: center;
+    margin: 20px 0;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+  }
+
+  #container-section-partenaires {
+    max-width: 90vw;
+    background: #fff;
+    border-radius: 60px;
+    padding: 30px 0;
+  }
+
+  #container-section-partenaires .swiper-wrapper {
+    .swiper_title {
+      display: none;
+    }
+
+    .swiper-slide .swiper-image {
+      padding-bottom: 120px;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .body-section {
+    ul {
+      max-width: 1200px !important;
+
+      li {
+        .table_image {
+          .image.d-block {
+            border-radius: 100px;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto !important;
+            transition: all 0.3s ease;
+            position: relative;
+            background-size: contain;
+          }
+
+          &:hover,
+          &:focus {
+            .image.d-block {
+              transform: rotate(20deg);
+              transition: all 0.3s ease;
+            }
+          }
+
+          .table_title {
+            margin: 0;
+            display: none;
+
+            span {
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,14 @@
+.a-la-une .swiper_title {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+
+  h3 {
+    text-align: left;
+    font-size: 20px !important;
+    font-weight: 900;
+  }
+}
+
 .a-la-une {
   left: 50%;
   margin: 20px 0 !important;
@@ -267,12 +278,10 @@
 @media screen and (max-width: 992px) {
   .a-la-une .swiper-slide a::before {
     background: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0%) !important;
   }
 
   .a-la-une::before {
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 10%) !important;
   }
 
   .a-la-une .auth_source_container_title {
@@ -282,7 +291,6 @@
   .a-la-une .swiper-wrapper .swiper-slide > a {
     padding: 0 0 120px !important;
     margin-top: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0%) !important;
   }
 }
 
