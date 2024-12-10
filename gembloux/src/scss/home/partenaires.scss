@@ -16,6 +16,20 @@
 //   }
 // }
 
+.bloc-partenaires::before {
+  content: "";
+  position: absolute;
+  height: 110px;
+  background: url("../../assets/svg/visu-background-footer.svg") center top
+    no-repeat;
+  background-size: cover;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100vw;
+}
+
 .bloc-partenaires {
   background: transparent;
   padding-top: 7rem;

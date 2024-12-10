@@ -37,7 +37,17 @@ $enable-roboto-webfont: false;
 @import "./contact";
 
 body {
-  background: #fff;
+  content: "";
+  position: absolute;
+  height: 800px;
+  background: url("../../assets/svg/visu-background-body.svg") center top
+    no-repeat;
+  background-size: cover;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100vw;
 }
 
 //search
