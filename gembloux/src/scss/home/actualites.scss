@@ -39,8 +39,8 @@
       & > a {
         align-items: center;
         padding-bottom: 60px;
-        background: #fff;
-        border-radius: 40px;
+        background: transparent;
+        border-radius: 20px;
         transition: 0.5s;
 
         .swiper-image {
@@ -94,7 +94,7 @@
         }
 
         &:hover {
-          border-radius: 40px 40px 80px;
+          border-radius: 20px;
           transition: 0.5s;
 
           .swiper_title {

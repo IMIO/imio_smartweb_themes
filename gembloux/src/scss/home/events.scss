@@ -33,7 +33,7 @@
     margin: 0 0 30px;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: $primary;
     font-size: 40px;
     text-transform: initial;
   }
@@ -45,7 +45,7 @@
       & > a {
         align-items: center;
         padding-bottom: 60px;
-        background: #fff;
+        background: transparent;
         transition: 0.5s;
 
         .swiper-image {
@@ -78,7 +78,7 @@
         }
 
         &:hover {
-          border-radius: 40px 40px 80px;
+          border-radius: 20px;
           transition: 0.5s;
 
           .swiper_title {
