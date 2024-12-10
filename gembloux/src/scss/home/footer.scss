@@ -1,6 +1,14 @@
+#smartweb-footer .sectiontext#container-section-logo {
+  border-bottom: 1px #fff solid;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
 #smartweb-footer .sectiontext figure,
 #smartweb-minisite-footer .sectiontext figure {
   max-width: 65% !important;
+  margin: 0 auto;
+  float: initial;
 }
 
 #smartweb-footer .sectiontext figure img,
@@ -103,9 +111,6 @@
     flex-wrap: wrap;
     margin-bottom: 0;
 
-    /*&:nth-last-child(n+1){
-            display: block;
-        }*/
     li {
       color: #fff;
 
@@ -121,7 +126,7 @@
 
 #portal-footer-wrapper {
   background: $primary;
-  padding: 5rem 0 4rem !important;
+  padding: 20px 0 4rem !important;
   margin-top: 100px;
 }
 
