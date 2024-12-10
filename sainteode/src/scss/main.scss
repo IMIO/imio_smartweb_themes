@@ -306,6 +306,12 @@ footer #container-section-noussuivre {
   .sectionfiles
   .section-container
   .table_display
+  .table_image,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
   .table_image {
   border: none;
   border-radius: 10px;
@@ -314,7 +320,8 @@ footer #container-section-noussuivre {
   transition: all 0.25s ease;
 
   &:hover {
-    background: $primary-green;
+    background: $primary-blue;
+    color: #fff;
     transition: all 0.25s ease;
   }
 }
@@ -385,4 +392,10 @@ footer #container-section-noussuivre {
 .sectiontext .section-text .body-section.figure-top .text .h2:first-child,
 .sectiontext .section-text .body-section.figure-top .text h2:first-child {
   margin-top: 0 !important;
+}
+
+.r-search {
+  .label input {
+    margin: 0 !important;
+  }
 }
