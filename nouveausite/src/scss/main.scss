@@ -998,3 +998,77 @@ footer #container-section-noussuivre {
   h3 {
   font-size: 1.1rem !important;
 }
+
+//page contact
+.blc-contact {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.blc-contact1 {
+  border-radius: 20px 0 0 20px;
+  width: 25%;
+
+  @media screen and (max-width: 1000px) {
+    width: 50% !important;
+    border-radius: 0 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+}
+
+.blc-contact2 {
+  border-radius: 0;
+  width: 25%;
+  border-left: 1px solid #ddd;
+
+  @media screen and (max-width: 1000px) {
+    width: 50% !important;
+    border-radius: 0 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100% !important;
+    border-left: 0 !important;
+    margin: 10px 0;
+  }
+}
+
+.blc-contact3 {
+  border-radius: 0;
+  width: 25%;
+  border-left: 1px solid #ddd;
+
+  @media screen and (max-width: 1000px) {
+    width: 50% !important;
+    border-radius: 0 !important;
+    border-left: 0 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+}
+
+.blc-contact4 {
+  border-radius: 0 20px 20px 0;
+  width: 25%;
+  border-left: 1px solid #ddd;
+
+  @media screen and (max-width: 1000px) {
+    width: 50% !important;
+    border-radius: 0 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100% !important;
+    border-left: 0 !important;
+    margin: 10px 0;
+  }
+}
