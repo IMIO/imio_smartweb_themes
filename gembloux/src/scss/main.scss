@@ -36,18 +36,19 @@ $enable-roboto-webfont: false;
 @import "./se-files";
 @import "./contact";
 
-body {
-  content: "";
-  position: absolute;
-  height: 800px;
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .outer-wrapper
+  > .container::after {
   background: url("../../assets/svg/visu-background-body.svg") center top
     no-repeat;
-  background-size: cover;
-  z-index: -1;
+  background-size: contain;
+  top: 0;
+  content: "";
+  height: 90%;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  width: 100vw;
+  position: absolute;
+  width: 90%;
+  z-index: -1;
 }
 
 //search
