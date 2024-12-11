@@ -1,3 +1,12 @@
+.site-doudou,
+.site-cpas {
+  #header-links {
+    .account {
+      display: none !important;
+    }
+  }
+}
+
 //modifier pour logo banner sous-site
 .section-home-page {
   #portal-header #portal-header-top #portal-logo {
@@ -26,7 +35,7 @@
     a {
       position: absolute;
       background: white;
-      z-index: 3;
+      z-index: 1;
       padding: 7px 10px;
       border-radius: 50px;
       right: 65px;
