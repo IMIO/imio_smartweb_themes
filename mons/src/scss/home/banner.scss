@@ -19,6 +19,41 @@
   .smartweb_herobanner {
     margin-top: -75px !important;
   }
+
+  .to-portal {
+    padding: 0 !important;
+
+    a {
+      position: absolute;
+      background: white;
+      z-index: 3;
+      padding: 7px 10px;
+      border-radius: 50px;
+      right: 65px;
+      top: 16px;
+    }
+  }
+
+  #header-links {
+    .account {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    #portal-globalnav-collapse {
+      padding: 10em 2em 0 !important;
+    }
+
+    .to-portal {
+      padding: 0 !important;
+
+      a {
+        right: 0 !important;
+        top: 90px !important;
+      }
+    }
+  }
 }
 
 .section-accueil-cpas {
@@ -33,6 +68,41 @@
 
   .minisite_logo {
     max-width: 150px !important;
+  }
+
+  .to-portal {
+    padding: 0 !important;
+
+    a {
+      position: absolute;
+      background: white;
+      z-index: 3;
+      padding: 7px 10px;
+      border-radius: 50px;
+      right: 65px;
+      top: 16px;
+    }
+  }
+
+  #header-links {
+    .account {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    #portal-globalnav-collapse {
+      padding: 10em 2em 0 !important;
+    }
+
+    .to-portal {
+      padding: 0 !important;
+
+      a {
+        right: 0 !important;
+        top: 90px !important;
+      }
+    }
   }
 }
 
