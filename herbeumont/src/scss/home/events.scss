@@ -1,4 +1,4 @@
-.portaltype-imio-smartweb-portalpage.section-home-page
+.portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::after {
   background: url("../../assets/svg/chateau.svg");
   background-position: 0% 0%;
@@ -13,7 +13,7 @@
   z-index: -1;
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page .sectionevents {
+.portaltype-imio-smartweb-portalpage .sectionevents {
   margin: 0;
   width: 50% !important;
   left: auto !important;
