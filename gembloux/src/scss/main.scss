@@ -38,6 +38,12 @@ $enable-roboto-webfont: false;
 
 body.portaltype-imio-smartweb-portalpage.section-home-page
   .outer-wrapper
+  > .container {
+  position: relative;
+}
+
+body.portaltype-imio-smartweb-portalpage.section-home-page
+  .outer-wrapper
   > .container::after {
   background: url("../../assets/svg/visu-background-body.svg") center top
     no-repeat;
