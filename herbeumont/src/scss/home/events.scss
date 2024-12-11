@@ -13,6 +13,19 @@
   z-index: -1;
 }
 
+.portaltype-imio-smartweb-portalpage.section-index
+  .sortable-section.sectionevents::before {
+  background: $primary-svg;
+  bottom: 0;
+  content: "";
+  right: 50% !important;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50vw);
+  width: 100vw !important;
+  z-index: -2;
+}
+
 .portaltype-imio-smartweb-portalpage .sectionevents {
   margin: 0;
   width: 50% !important;

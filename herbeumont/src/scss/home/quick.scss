@@ -29,6 +29,10 @@
           .table_image {
             .image.d-block {
               background: $primary-svg;
+
+              svg {
+                fill: $primary;
+              }
             }
           }
         }
@@ -44,9 +48,10 @@
             .image.d-block {
               transform: translateY(-5px);
               transition: all 0.3s ease;
+              background: $primary;
 
               svg {
-                fill: $primary;
+                fill: #fff;
               }
             }
           }
