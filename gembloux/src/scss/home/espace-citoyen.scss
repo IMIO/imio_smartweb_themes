@@ -354,7 +354,7 @@
       rgba(0, 0, 0, 6%) 0 0 0 1px;
   }
 
-  .swiper-title h3 {
+  .swiper_title h3 {
     text-align: center;
     text-decoration: none;
     margin-top: 20px;
@@ -362,6 +362,25 @@
     font-weight: 900;
     color: #fff;
   }
+}
+
+body .outer-wrapper .magazine-communal {
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #fff !important;
+  }
+
+  span.swiper-pagination-bullet {
+    background: transparent;
+    border: solid 1px #fff;
+  }
+
+  .see_all {
+    display: none;
+  }
+}
+
+.sortable-section.sectioncollection.magazine-communal {
+  position: relative;
 }
 
 .sortable-section.sectioncollection.magazine-communal::after {
@@ -379,4 +398,31 @@
   transform: translateX(-50vw);
   width: 100vw !important;
   z-index: -2;
+}
+
+.sectionlinks.partenaires.rs {
+  padding-top: 0;
+
+  h2.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  ul.row {
+    text-align: center;
+
+    li {
+      padding: 2rem;
+      color: #fff;
+
+      svg.plone-icon {
+        fill: #fff;
+        height: 40px;
+      }
+    }
+  }
+}
+
+body .container svg.plone-icon {
+  background-color: transparent !important;
 }

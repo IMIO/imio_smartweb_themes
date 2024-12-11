@@ -1,11 +1,11 @@
-.a-la-une .swiper_title {
+.container .a-la-une .swiper_title {
   margin-top: 0 !important;
   padding-top: 0 !important;
 
   h3 {
-    text-align: left;
+    text-align: left !important;
     font-size: 20px !important;
-    font-weight: 900;
+    font-weight: 900 !important;
   }
 }
 
@@ -17,6 +17,10 @@
   padding-top: 0;
   transform: translateX(-50%);
   width: 100vw;
+
+  h2.section-title {
+    margin-left: 680px !important;
+  }
 
   .carousel {
     padding: 10px;
