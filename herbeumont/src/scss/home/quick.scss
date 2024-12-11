@@ -25,14 +25,12 @@
       max-width: 1200px !important;
 
       li {
-        &:nth-child(2n) {
-          .table_image {
-            .image.d-block {
-              background: $primary-svg;
+        .table_image {
+          .image.d-block {
+            background: $primary-svg;
 
-              svg {
-                fill: $primary;
-              }
+            svg {
+              fill: $primary;
             }
           }
         }

@@ -16,13 +16,13 @@
 .portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::before {
   background: $primary-svg;
+  border-radius: 0 20px 20px 0;
   bottom: 0;
   content: "";
-  right: 50% !important;
+  left: 0;
   position: absolute;
   top: 0;
-  transform: translateX(-50vw);
-  width: 100vw !important;
+  width: 95%;
   z-index: -2;
 }
 

@@ -182,10 +182,10 @@ $quick-access-border: solid 0 $primary !default;
 $quick-access-border-radius: 100px !default;
 $quick-access-shadow: none !default;
 $quick-access-svg-width: 30px !default;
-$quick-access-svg-color: #fff;
+$quick-access-svg-color: $primary;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
 $quick-access-title-font-size: 18px !default;
-$quick-access-title-color: $primary !default;
+$quick-access-title-color: $primary-dark;
 $quick-access-title-text-transform: none;
 $quick-access-title-weight: 400;
 

@@ -1,5 +1,4 @@
-.portaltype-imio-smartweb-portalpage.section-home-page
-  .sortable-section.sectionnews::after {
+.portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::after {
   background: url("../../assets/svg/arbres.svg");
   background-position: 100% 0;
   background-repeat: no-repeat;
@@ -13,16 +12,15 @@
   z-index: -1;
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page
-  .sortable-section.sectionnews::before {
+.portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
   background: $primary-svg;
+  border-radius: 0 20px 20px 0;
   bottom: 0;
   content: "";
-  left: 50% !important;
+  right: 0;
   position: absolute;
   top: 0;
-  transform: translateX(-50vw);
-  width: 100vw !important;
+  width: 95%;
   z-index: -2;
 }
 
