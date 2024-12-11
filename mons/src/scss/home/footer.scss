@@ -172,6 +172,10 @@
 }
 
 footer {
+  .informations {
+    color: #fff !important;
+  }
+
   .schedule .opening_informations::after {
     content: "";
     width: 9px;
