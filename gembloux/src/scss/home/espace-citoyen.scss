@@ -365,6 +365,12 @@
 }
 
 body .outer-wrapper .magazine-communal {
+  position: relative;
+
+  a {
+    text-decoration: none;
+  }
+
   span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #fff !important;
   }
@@ -379,10 +385,6 @@ body .outer-wrapper .magazine-communal {
   }
 }
 
-.sortable-section.sectioncollection.magazine-communal {
-  position: relative;
-}
-
 .sortable-section.sectioncollection.magazine-communal::after {
   background: rgb(57, 182, 138);
   background: linear-gradient(
@@ -394,7 +396,7 @@ body .outer-wrapper .magazine-communal {
   content: "";
   left: 200% !important;
   position: absolute;
-  top: 80%;
+  top: 20%;
   transform: translateX(-50vw);
   width: 100vw !important;
   z-index: -2;
@@ -415,6 +417,14 @@ body .outer-wrapper .magazine-communal {
       padding: 2rem;
       color: #fff;
 
+      .table_title {
+        color: #fff;
+
+        a {
+          color: #fff;
+        }
+      }
+
       svg.plone-icon {
         fill: #fff;
         height: 40px;
@@ -425,4 +435,8 @@ body .outer-wrapper .magazine-communal {
 
 body .container svg.plone-icon {
   background-color: transparent !important;
+}
+
+.sortable-section.sectiontext.bouton {
+  text-align: center;
 }
