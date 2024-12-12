@@ -2,24 +2,25 @@
   background: url("../../assets/svg/arbres.svg");
   background-position: 100% 0;
   background-repeat: no-repeat;
-  background-size: 130px;
+  background-size: 208px;
   content: "";
-  top: -70px;
-  bottom: 40px;
-  left: 0;
-  right: 0;
+  left: 25px;
   position: absolute;
+  top: 0;
   z-index: -1;
+  display: block;
+  width: 210px;
+  height: 210px;
 }
 
 .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
   background: $primary-svg;
   border-radius: 0 20px 20px 0;
-  bottom: 0;
+  bottom: 7%;
   content: "";
   left: 0;
   position: absolute;
-  top: 0;
+  top: 35%;
   width: 95%;
   z-index: -2;
 }
