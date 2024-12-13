@@ -15,15 +15,16 @@
 
 .portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::before {
-  background: $primary-svg;
-  border-radius: 0 20px 20px 0;
-  bottom: 0;
   content: "";
-  left: 0;
   position: absolute;
+  bottom: 0;
   top: 0;
-  width: 95%;
-  z-index: -2;
+  transform: translateX(-50vw);
+  width: 100vw !important;
+  border-radius: 0 20px 20px 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .portaltype-imio-smartweb-portalpage .sectionevents {
@@ -79,7 +80,7 @@
         content: "" !important;
       }
       padding: 20px 10px;
-      border-bottom: 1px solid $primary-svg;
+      border-bottom: 1px solid #fff;
 
       .table_display {
         .table_image {
@@ -94,7 +95,7 @@
             justify-content: flex-end;
 
             span {
-              background: $primary-svg;
+              background: $primary-dark;
               border-radius: 10px;
               padding: 5px 10px;
               font-size: 13px;
@@ -119,7 +120,7 @@
             }
 
             .table_title {
-              color: $primary-svg;
+              color: $primary-dark;
               padding-left: 7px;
               transition: all 0.3s ease;
               text-decoration: underline;
