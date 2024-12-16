@@ -1,3 +1,10 @@
+#portal-footer-wrapper {
+  background: url("../../assets/svg/visuel-footer.svg") center top no-repeat
+    $primary;
+  background-size: 100%;
+  padding-top: 120px;
+}
+
 #smartweb-footer .sectiontext figure,
 #smartweb-minisite-footer .sectiontext figure {
   max-width: 65% !important;
