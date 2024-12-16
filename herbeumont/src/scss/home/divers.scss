@@ -460,16 +460,6 @@ footer #container-section-noussuivre {
   font-size: 1rem;
 }
 
-// .block-menu-element a .card-body {
-//   background: #fff;
-//   border-radius: 15px 15px 15px 0;
-//   box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
-//   height: auto;
-//   margin-bottom: 10px;
-//   position: relative;
-//   transition: 1.2s;
-// }
-
 .template-facetednavigation_view.faceted-map
   .eea-preview-items
   .faceted-map-item
@@ -979,4 +969,10 @@ body.portaltype-imio-smartweb-page
   div
   span {
   color: #fff !important;
+}
+
+// Partenaires
+
+.sortable-section.sectionlinks.quick-access.partenaires {
+  margin-top: 40px;
 }

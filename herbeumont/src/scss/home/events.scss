@@ -18,12 +18,14 @@
   content: "";
   background: $primary-svg;
   right: 0;
-  width: 95%;
+  width: calc(100% + 800px) !important;
   height: 55%;
-  bottom: 0;
+  bottom: 4%;
   position: absolute;
-  border-radius: 0 0 0 80px;
+  border-radius: 20px 0 0 20px;
   z-index: -1;
+  left: 0;
+  margin: 20px 0;
 }
 
 .portaltype-imio-smartweb-portalpage .sectionevents {
@@ -143,4 +145,17 @@
 
 div#container-section-visuel-agenda {
   margin-top: 100px;
+}
+
+.sectionevents .see_all a {
+  width: 100%;
+  text-align: center;
+}
+
+div#container-section-visuel-agenda {
+  margin-top: 175px;
+
+  img {
+    max-height: 280px;
+  }
 }
