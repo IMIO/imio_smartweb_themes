@@ -1,15 +1,16 @@
 .portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::after {
   background: url("../../assets/svg/chateau.svg");
-  background-position: 0% 0%;
+  background-position: 100% 0;
   background-repeat: no-repeat;
-  background-size: 130px;
+  background-size: 208px;
   content: "";
-  top: -80px;
-  bottom: 0;
-  left: -90px;
-  right: 0;
+  display: block;
+  height: 210px;
+  right: 25px;
   position: absolute;
+  top: 0;
+  width: 210px;
   z-index: -1;
 }
 

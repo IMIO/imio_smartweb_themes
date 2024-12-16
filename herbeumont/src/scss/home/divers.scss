@@ -602,7 +602,7 @@ footer #container-section-noussuivre {
 }
 
 #portal-globalnav .dropdown .nav-title a {
-  color: $primary-svg;
+  color: $primary;
 }
 
 #portal-header #portal-header-top #portal-globalnav-wrapper {
@@ -685,18 +685,8 @@ footer #container-section-noussuivre {
   background-color: $primary-svg;
   border: 0;
   border-radius: 8px;
-  color: #fff;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
-
-  div,
-  span {
-    color: #fff !important;
-  }
-
-  a {
-    color: #fff !important;
-  }
 }
 
 .sectionfiles::after {
@@ -778,7 +768,7 @@ h2 {
 #portal-globalnav-collapse .dropdown .nav-link:hover,
 #subsite-navigation .dropdown .nav-link:focus,
 #subsite-navigation .dropdown .nav-link:hover {
-  color: $primary-svg;
+  color: $primary;
 
   .site-cpas .swiper-banner-content-wrapper .swiper-banner-content {
     .swiper-banner-title {

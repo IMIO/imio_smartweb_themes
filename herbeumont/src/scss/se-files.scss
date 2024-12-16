@@ -56,13 +56,13 @@
     }
 
     .table_display {
-      border-color: white;
+      border-color: none;
 
       .table_image {
-        border: solid 1px #000;
+        border: solid 1px $primary;
         text-decoration: none;
         padding: 20px;
-        border-radius: 0;
+        border-radius: 20px;
 
         span,
         p,
