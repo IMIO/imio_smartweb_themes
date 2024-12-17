@@ -1,0 +1,122 @@
+// a la une
+.a-la-une {
+  padding-top: 130px;
+  padding-bottom: 30px;
+
+  .section-title {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    padding: 0 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 20px !important;
+    }
+
+    &::before {
+      background: $primary-blue;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 20px;
+      content: "";
+      display: block;
+      height: 400px;
+      right: 0;
+      margin-left: 0;
+      max-width: 1000px;
+      position: absolute;
+      top: -30px;
+      width: 1000px;
+      z-index: -2;
+
+      @media screen and (max-width: 991px) {
+        height: 200px;
+      }
+    }
+  }
+
+  .see_all {
+    display: none;
+  }
+
+  .swiper-slide {
+    .swiper_title {
+      padding: 150px 100px 20px 80px;
+      width: 100%;
+      background: url("../../assets/svg/bg-une.png") top right no-repeat;
+
+      @media screen and (max-width: 991px) {
+        position: relative;
+        left: 0;
+        padding: 80px 20px 60px;
+        background: none;
+      }
+
+      h3 {
+        transition: 0.5s;
+        font-weight: 700;
+        color: #000;
+        font-size: 16px;
+        text-transform: initial;
+        text-align: left;
+      }
+    }
+
+    .swiper_description {
+      padding: 0 100px 20px 80px;
+      width: 100%;
+      background: none;
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .swiper_date {
+      display: none;
+    }
+  }
+
+  .auth_source_container_title {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    margin: 20px 0 0 20px;
+    color: #fff;
+    background: $primary-blue;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: initial;
+    position: absolute;
+    left: calc(60% + 60px);
+    top: 90px;
+
+    @media screen and (max-width: 991px) {
+      position: relative;
+      left: 0;
+      margin-top: -60px;
+    }
+  }
+
+  .swiper-button-prev {
+    margin-top: -40px;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    //display: none;
+    margin-top: 10px;
+    left: 10px;
+    right: auto;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+}

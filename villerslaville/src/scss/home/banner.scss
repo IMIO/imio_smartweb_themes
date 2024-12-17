@@ -1,0 +1,33 @@
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0;
+  background: none !important;
+  text-align: center;
+
+  .swiper-banner-title {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .rich_description {
+    display: none;
+  }
+}

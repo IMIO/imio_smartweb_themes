@@ -1,0 +1,389 @@
+//// VARIABLES
+
+// ... add your variables here
+
+$enable-roboto-webfont: false;
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+//// IMPORTS
+
+// Import barceloneta files from node_modules --load-path=node_modules
+
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
+@import "./variables";
+//@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "../../../base/src/scss/main";
+
+//// STYLES
+
+// ... add your styles here
+@import "./home/banner";
+@import "./home/quick";
+@import "./home/a-la-une";
+@import "./home/espace-citoyen";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
+@import "./home/section-en-image";
+@import "./info-trav";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";
+@import "./home/bulletins";
+
+body {
+  background: linear-gradient(180deg, #f2f2f2 0, #fff 200px, #fff);
+}
+
+#portal-header #portal-header-top {
+  padding: 15px 0;
+}
+
+//search
+#portal-header #portal-header-top #header-links #search-link a {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+#portal-header #portal-header-top #header-links #search-link a:hover {
+  opacity: 50%;
+}
+
+h1 {
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+//footer
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
+    }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+  #content > header {
+    display: none;
+  }
+}
+
+// bug z-index
+
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
+}
+
+footer #container-section-noussuivre {
+  li {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      svg path:nth-child(2) {
+        fill: #3f3f3f !important;
+      }
+    }
+  }
+}
+
+#portal-breadcrumbs {
+  background: transparent !important;
+
+  .container,
+  .breadcrumb {
+    padding: 5px 0;
+  }
+}
+
+#portal-globalnav > li a:hover {
+  color: $primary-svg;
+}
+
+// footer
+.footer-logo {
+  figure img {
+    width: 250px !important;
+  }
+}
+
+.footer-slogan {
+  .text {
+    max-width: 204px;
+    text-align: center;
+
+    p {
+      font-size: 33px;
+      font-weight: 200;
+    }
+  }
+}
+
+.footer-fb {
+  .table_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    text-decoration: none;
+
+    .image {
+      width: auto;
+
+      svg {
+        height: 25px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.r-filter div[class*="control"] {
+  border-radius: 5px;
+}
+
+.procedure a::after {
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+// sub-nav
+
+.subsite-container {
+  background: #ebebeb;
+  z-index: 1;
+
+  #subsite-logo {
+    font-size: 18px;
+    background: #353535;
+
+    a {
+      .subsite-title {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 15px;
+}
+
+#viewlet-above-content-body {
+  .procedure {
+    display: none;
+  }
+}
+
+// header common
+
+.portaltype-imio-smartweb-page,
+.portaltype-imio-smartweb-folder,
+.portaltype-imio-smartweb-procedure {
+  #portal-header {
+    #banner {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      border-radius: 0 0 30px 30px;
+      z-index: -1;
+    }
+  }
+}
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: #a3a3a3 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-blue !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border: none;
+  border-radius: 10px;
+  background: $primary-light;
+  color: #000;
+  display: flow-root;
+  margin-bottom: 0 !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.25s ease !important;
+
+  &:hover {
+    background: $primary-blue;
+    color: #fff;
+    transition: all 0.25s ease;
+  }
+}
+
+.portaltype-imio-smartweb-folder #portal-header #banner,
+.portaltype-imio-smartweb-page #portal-header #banner,
+.portaltype-imio-smartweb-procedure #portal-header #banner {
+  border-radius: 0;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: -1;
+  margin-top: 0;
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+}
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: $primary-red;
+  color: #ffff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background-color: $primary-red;
+  color: #fff;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+.section-contact .contact-type-organization .contact_logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section.figure-top .text .h2:first-child,
+.sectiontext .section-text .body-section.figure-top .text h2:first-child {
+  margin-top: 0 !important;
+}
+
+.r-search {
+  .label input {
+    margin: 0 !important;
+  }
+}
