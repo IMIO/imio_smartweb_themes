@@ -16,17 +16,18 @@
 
 .portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::before {
-  content: "";
   background: $primary-svg;
-  right: 0;
-  width: calc(100% + 800px) !important;
-  height: 55%;
-  bottom: 4%;
-  position: absolute;
   border-radius: 20px 0 0 20px;
-  z-index: -1;
-  left: 0;
+  bottom: 9%;
+  content: "";
+  left: -75%;
   margin: 20px 0;
+  right: 0;
+  right: 50% !important;
+  position: absolute;
+  top: 10%;
+  width: 100vw !important;
+  z-index: -1;
 }
 
 .portaltype-imio-smartweb-portalpage .sectionevents {
@@ -155,6 +156,14 @@ div#container-section-visuel-agenda {
 
 div#container-section-visuel-agenda {
   margin-top: 175px;
+
+  div#container-section-visuel-agenda {
+    margin-top: 166px;
+  }
+
+  figure {
+    margin-top: 0;
+  }
 
   img {
     max-height: 280px;
