@@ -55,6 +55,10 @@ body.portaltype-imio-smartweb-portalpage.section-home-page
   position: absolute;
   width: 90%;
   z-index: -1;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }
 
 //search
