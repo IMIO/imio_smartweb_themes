@@ -75,6 +75,12 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
 
 #portal-footer-wrapper #portal-footer .sectionlinks .container .body-section {
   .row {
+    li.work,
+    li.fax,
+    li.facebook {
+      padding-left: 0 !important;
+    }
+
     li {
       .table_display {
         .table_image {
@@ -87,7 +93,7 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
           }
 
           .table_title {
-            padding-left: 30px !important;
+            padding-left: 0 !important;
             font-size: 1rem !important;
 
             span {
@@ -96,7 +102,7 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
 
             &:hover {
               span {
-                color: $primary-light !important;
+                color: $primary-svg !important;
                 transition: all 0.5s ease;
               }
             }
@@ -190,7 +196,7 @@ footer {
           }
 
           .table_title {
-            padding-left: 30px !important;
+            padding-left: 0;
             font-size: 1rem !important;
             color: #fff !important;
             text-decoration: none !important;
@@ -224,4 +230,25 @@ footer {
   .sectiontext .section-text .section-title a.collapsed {
     color: #fff !important;
   }
+}
+
+#smartweb-subsite-footer .sectionlinks {
+  a.table_image {
+    display: flex;
+
+    .image.d-block.is-icon.w-100 {
+      width: 20px;
+      margin-right: 5px;
+      fill: #fff;
+
+      svg.plone-icon {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+#portal-footer #smartweb-footer a:hover,
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
+  color: $primary-svg !important;
 }

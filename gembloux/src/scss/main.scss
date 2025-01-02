@@ -73,13 +73,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: #f2f2f5;
-}
-
-#portal-header #portal-header-top #portal-logo {
-  svg {
-    width: 200px;
-  }
+  background: $primary-svg;
 }
 
 .header-custom #banner::after {

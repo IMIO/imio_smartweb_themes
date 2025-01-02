@@ -7,6 +7,24 @@
   left: 50%;
   transform: translateX(-50%);
 
+  .swiper_date {
+    width: 100%;
+
+    .day_date {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper_category {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    span {
+      border-radius: 0 0 0 20px;
+    }
+  }
+
   .carousel {
     padding: 5px;
   }
@@ -62,6 +80,7 @@
 
         .swiper_title {
           margin-top: 0;
+          text-align: center;
 
           h3 {
             font-family: $font-family-base;
