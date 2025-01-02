@@ -1,10 +1,11 @@
-.bloc-partenaires {
-  background: transparent;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  margin: 0;
-  max-width: 100vw;
-  border-radius: 0;
+.rs {
+  a {
+    text-decoration: none;
+
+    .table_title {
+      padding-top: 10px;
+    }
+  }
 
   li.col-md-6:first-child {
     border-right: solid 1px #fff;
@@ -18,6 +19,15 @@
   li.col-md-6:nth-child(3) {
     border-right: solid 1px #fff;
   }
+}
+
+.bloc-partenaires {
+  background: transparent;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  max-width: 100vw;
+  border-radius: 0;
 
   .swiper-button-next,
   .swiper-button-prev {

@@ -22,3 +22,23 @@
   background: $primary-light;
   border-radius: 10px;
 }
+
+.subsection-vie-politique-composition-du-conseil-communal,
+.subsection-vie-politique-composition-du-college-communal {
+  #portal-column-content .sectioncontact .contact-type-mission,
+  #portal-column-content .sectioncontact .contact-type-organization,
+  #portal-column-content .sectioncontact .contact-type-position {
+    background: transparent !important;
+
+    .contact_titles h2 {
+      font-size: 1.5rem;
+    }
+
+    li a {
+      .work a {
+        word-wrap: break-word;
+        font-size: 15px;
+      }
+    }
+  }
+}
