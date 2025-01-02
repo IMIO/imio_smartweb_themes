@@ -18,6 +18,10 @@
     ul {
       li {
         list-style: none;
+
+        a {
+          word-wrap: anywhere;
+        }
       }
     }
 
