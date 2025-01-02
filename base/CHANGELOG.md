@@ -1,5 +1,28 @@
 
 
+# [0.2.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.5...v0.2.0) (2025-01-02)
+
+
+### Bug Fixes
+
+* add dour logo [quick] ([7c9036f](https://github.com/IMIO/imio_smartweb_themes/commit/7c9036f7c03bd50184cb511f984846e15cffec94))
+* courtsaintetienne url ([4e3c41b](https://github.com/IMIO/imio_smartweb_themes/commit/4e3c41b332aae5ba9e512020cfee28110cc38d1d))
+
+
+### Features
+
+* arlon base theme [quick] ([de534b1](https://github.com/IMIO/imio_smartweb_themes/commit/de534b13b02006906a7217d71d47ae4c46db9ec5))
+* base theme for dour ([a036471](https://github.com/IMIO/imio_smartweb_themes/commit/a036471c72a45e577ce99dc3f0d05c7a88d8b21f))
+* bump smartweb-base-theme on verlaine ([08793bc](https://github.com/IMIO/imio_smartweb_themes/commit/08793bc0026eb3037d5ed96229adeabe9b3f3fb7))
+* **ci/cd:** fancier notifications ([ff11b8d](https://github.com/IMIO/imio_smartweb_themes/commit/ff11b8daf6533e16b0403cba53ccfde90d9ac9e8))
+* **ci/cd:** fancier notifications [skip ci] ([4f1ad42](https://github.com/IMIO/imio_smartweb_themes/commit/4f1ad422ff3fa7b4e8c963ef5b4c722c117576f9))
+* **ci/cd:** fix avatar size in notification [skip ci] ([50e1ba3](https://github.com/IMIO/imio_smartweb_themes/commit/50e1ba325536e548381cd5a821ab9535a331b92c))
+* mep heron ([29186d8](https://github.com/IMIO/imio_smartweb_themes/commit/29186d81a902b6b37e7b2b81bda13d8665983c07))
+* seneffe base theme ([11b9ff0](https://github.com/IMIO/imio_smartweb_themes/commit/11b9ff08120b03d9fece7bb8c09fdcbe8710cb09))
+* update rixensart url [skip ci] ([144001e](https://github.com/IMIO/imio_smartweb_themes/commit/144001e89d39cc58b864ea981f5513d424144bf5))
+* update verlaine to test ci ([70434ad](https://github.com/IMIO/imio_smartweb_themes/commit/70434adb838f7ed1dbbb1cf8e4d3d3be45fbe56b))
+* waremme base theme ([ab97433](https://github.com/IMIO/imio_smartweb_themes/commit/ab97433a1138c7e21d41ef832d8f8751232cfa62))
+
 ## [0.1.5](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.4...v0.1.5) (2024-08-28)
 
 ## [0.1.4](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.3...v0.1.4) (2024-08-28)
