@@ -8,16 +8,16 @@
   }
 
   li.col-md-6:first-child {
-    border-right: solid 1px #fff;
-    border-bottom: solid 1px #fff;
+    border-right: solid 1px $primary-light;
+    border-bottom: solid 1px $primary-light;
   }
 
   li.col-md-6:nth-child(2) {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px $primary-light;
   }
 
   li.col-md-6:nth-child(3) {
-    border-right: solid 1px #fff;
+    border-right: solid 1px $primary-light;
   }
 }
 

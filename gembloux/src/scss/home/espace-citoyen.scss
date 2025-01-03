@@ -439,4 +439,11 @@ body .container svg.plone-icon {
 
 .sortable-section.sectiontext.bouton {
   text-align: center;
+  align-self: center;
+
+  .text a {
+    background: #fff;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+  }
 }
