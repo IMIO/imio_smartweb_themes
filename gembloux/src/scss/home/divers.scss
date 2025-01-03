@@ -1,0 +1,22 @@
+.template-summary_view .list-menu-element > a:focus,
+.template-summary_view .list-menu-element > a:hover,
+.template-summary_view_with_images .list-menu-element > a:focus,
+.template-summary_view_with_images .list-menu-element > a:hover {
+  background: $primary-light;
+}
+
+.template-summary_view .list-menu-element > a,
+.template-summary_view_with_images .list-menu-element > a {
+  border-bottom: 1px solid $primary-light;
+}
+
+.template-summary_view .list-menu-element > a:after,
+.template-summary_view_with_images .list-menu-element > a:after {
+  color: $primary-svg;
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: $primary-svg;
+  border-color: $primary-svg;
+}

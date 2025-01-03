@@ -73,6 +73,14 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
   border-radius: 0 !important;
 }
 
+#portal-footer-wrapper #portal-footer .section-contact .body-section ul {
+  li.work,
+  li.fax,
+  li.facebook {
+    padding-left: 0 !important;
+  }
+}
+
 #portal-footer-wrapper #portal-footer .sectionlinks .container .body-section {
   .row {
     li.work,
