@@ -358,8 +358,12 @@
     text-decoration: none;
     margin-top: 20px;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
+
+    @media screen and (max-width: 640px) {
+      color: #000;
+    }
   }
 }
 

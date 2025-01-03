@@ -20,3 +20,7 @@
   background-color: $primary-svg;
   border-color: $primary-svg;
 }
+
+#portal-globalnav > li.has_subtree > a::before {
+  background-color: $primary-svg;
+}
