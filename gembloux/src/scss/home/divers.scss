@@ -10,8 +10,8 @@
   border-bottom: 1px solid $primary-light;
 }
 
-.template-summary_view .list-menu-element > a:after,
-.template-summary_view_with_images .list-menu-element > a:after {
+.template-summary_view .list-menu-element > a::after,
+.template-summary_view_with_images .list-menu-element > a::after {
   color: $primary-svg;
 }
 
