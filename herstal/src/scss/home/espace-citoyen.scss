@@ -1,0 +1,112 @@
+.galerie-accueil {
+  padding-top: 100px;
+  position: relative;
+
+  &::after {
+    background: url("../../assets/svg/bg-gal.svg") right top no-repeat;
+    content: "";
+    display: block;
+    height: 410px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .section-title {
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  #body-section-en-images {
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+  }
+}
+
+.bloc-herstal {
+  display: grid;
+  padding-top: 100px;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+  }
+
+  .bloc-slogan {
+    width: 100%;
+    height: 260px;
+    background: url("../../assets/svg/bg-slogan.svg") center center no-repeat;
+    content: "";
+
+    @media screen and (max-width: 1000px) {
+      height: 150px;
+    }
+  }
+
+  .bloc-gazette,
+  .bloc-newsletter {
+    width: 100%;
+    text-align: center;
+    height: 260px;
+    background: $primary-light;
+    align-content: center;
+
+    @media screen and (max-width: 1000px) {
+      height: 180px;
+    }
+
+    .title-bloc {
+      margin: 0 0 10px;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    a {
+      background: $primary-red;
+      color: #fff;
+      border: solid 1px $primary-red;
+      border-radius: 10px;
+      width: max-content;
+      padding: 1rem 1.5rem 0.9rem;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.5s;
+      display: inline-block;
+
+      &:hover {
+        background: #000;
+        border: solid 1px #000;
+        color: #fff;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .bloc-gazette {
+    border-radius: 40px 0 0 40px;
+
+    @media screen and (max-width: 1000px) {
+      border-radius: 40px 40px 0 0;
+    }
+  }
+
+  .bloc-newsletter {
+    border-radius: 0 40px 40px 0;
+
+    @media screen and (max-width: 1000px) {
+      border-radius: 0 0 40px 40px;
+    }
+  }
+}

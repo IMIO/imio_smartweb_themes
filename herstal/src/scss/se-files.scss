@@ -1,0 +1,34 @@
+.sectionfiles {
+  background: transparent !important;
+}
+
+.portaltype-imio-smartweb-page #main-container .sectionfiles,
+.portaltype-imio-smartweb-portalpage #main-container .sectionfiles {
+  .table_image {
+    background: #f1f1f1;
+    display: flow-root;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.25s ease !important;
+    margin-bottom: 0 !important;
+
+    &:hover {
+      background: $primary-green !important;
+      transition: all 0.25s ease !important;
+    }
+  }
+
+  .section-title {
+    color: #000 !important;
+  }
+
+  .image {
+    width: 200px;
+    height: 130px;
+    display: block;
+    border-radius: 10px;
+    float: left;
+    margin-right: 30px;
+  }
+}

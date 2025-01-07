@@ -1,0 +1,120 @@
+.sectionnews {
+  background: url("../../assets/svg/bg-actu.svg") left bottom #fff no-repeat;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 0;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .section-title {
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      border-radius: 50px 0 0;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        border-radius: 50px 0;
+      }
+
+      & > a {
+        align-items: center;
+        padding-bottom: 60px;
+        background: #fff;
+        border-radius: 40px;
+        //box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+        transition: 0.5s;
+
+        .swiper-image {
+          transition: 0.5s;
+          border-radius: 40px 40px 0 0;
+        }
+
+        .auth_source_container_title {
+          color: #000;
+          font-size: 12px;
+          margin: 1rem 0 0.5rem;
+          padding: 0 1rem;
+          text-align: left;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+        }
+
+        .swiper_category {
+          display: none;
+        }
+
+        .auth_source_container_title {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: #000;
+          background: #f1f1f1;
+          border-radius: 0 0 10px;
+          font-size: 14px;
+          font-weight: initial;
+          margin: 0;
+        }
+
+        .swiper_title {
+          margin-top: 0;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          border-radius: 40px 40px 80px;
+          transition: 0.5s;
+
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+              color: $primary-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sectionnews .see_all a {
+  background: $primary-red;
+  color: #fff;
+  border: solid 1px $primary-red;
+  border-radius: 10px;
+
+  &:hover {
+    background: #000;
+    border: solid 1px #000;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
