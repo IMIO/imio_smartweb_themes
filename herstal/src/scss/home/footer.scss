@@ -2,7 +2,7 @@
   text-align: left !important;
   margin-top: 0;
   background: transparent;
-  padding-top: 452px !important;
+  padding: 452px 0 0 !important;
   position: relative;
 
   @media screen and (max-width: 1200px) {
@@ -40,7 +40,7 @@
   }
 
   #portal-footer {
-    background: $primary !important;
+    background: #2b2b2b !important;
     padding: 80px 0;
 
     #smartweb-footer,
@@ -121,7 +121,7 @@
 }
 
 #portal-colophon {
-  background: #fff;
+  background: #000;
   padding: 1rem;
 
   ul {
@@ -133,15 +133,47 @@
             display: block;
         }*/
     li {
-      color: #000;
+      color: #fff;
 
       a,
       span,
       p,
       div {
-        color: #000;
+        color: #fff;
       }
     }
+  }
+}
+
+.section-antennes {
+  background: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 16px !important;
+  font-weight: 400;
+
+  a {
+    color: #fff;
+  }
+
+  .contact_titles {
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .contact_informations {
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 22px !important;
+    font-weight: 500;
   }
 }
 

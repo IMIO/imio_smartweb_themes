@@ -241,16 +241,6 @@ footer #container-section-noussuivre {
   font-size: 1rem;
 }
 
-.block-menu-element a .card-body {
-  background: #fff;
-  border-radius: 15px 15px 15px 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 16%);
-  height: auto;
-  margin-bottom: 10px;
-  position: relative;
-  transition: 1.2s;
-}
-
 .template-facetednavigation_view.faceted-map
   .eea-preview-items
   .faceted-map-item
@@ -297,7 +287,8 @@ footer #container-section-noussuivre {
   transition: all 0.25s ease;
 
   &:hover {
-    background: $primary-green;
+    background: $primary-red;
+    color: #fff;
     transition: all 0.25s ease;
   }
 }
