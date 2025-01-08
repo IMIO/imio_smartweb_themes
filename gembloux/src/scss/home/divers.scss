@@ -32,3 +32,7 @@
 .r-list-item-group:hover .r-item-arrow-more {
   background: $primary-svg;
 }
+
+.faceted-map-item .geo-item-image {
+  display: none;
+}
