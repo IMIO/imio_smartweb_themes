@@ -24,3 +24,11 @@
 #portal-globalnav > li.has_subtree > a::before {
   background-color: $primary-svg;
 }
+
+.template-facetednavigation_view .faceted-top-widgets input#search_button {
+  background: $primary-svg !important;
+}
+
+.r-list-item-group:hover .r-item-arrow-more {
+  background: $primary-svg;
+}

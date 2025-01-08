@@ -61,7 +61,9 @@
         }
 
         .swiper_category {
-          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
         }
 
         .auth_source_container_title {
