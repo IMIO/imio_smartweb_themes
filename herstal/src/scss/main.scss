@@ -352,3 +352,9 @@ footer #container-section-noussuivre {
 .sectiontext .section-text .body-section.figure-top .text h2:first-child {
   margin-top: 0 !important;
 }
+
+@media screen and (min-width: 992px) {
+  .nav_je-suis {
+    margin-left: auto !important;
+  }
+}
