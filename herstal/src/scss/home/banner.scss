@@ -2,13 +2,13 @@
   &::after {
     content: url("../../assets/svg/logo-header.svg");
     background: linear-gradient(-90deg, #0a0a0a, transparent);
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
     top: 50%;
     position: absolute;
     right: 0;
     transform: translate(0, -50%);
-    padding-right: 150px;
+    padding: 0;
     height: 100%;
     display: flex;
     align-items: center;
