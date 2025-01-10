@@ -93,7 +93,7 @@ body:not(.portaltype-imio-smartweb-portalpage.section-home-page)
       .table_display {
         .table_image {
           .image {
-            position: absolute;
+            position: initial;
 
             svg {
               fill: #fff;
@@ -196,7 +196,7 @@ footer {
 
           .image {
             width: 30px;
-            position: absolute;
+            position: initial;
 
             svg {
               fill: #fff !important;
