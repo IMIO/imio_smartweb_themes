@@ -1,17 +1,25 @@
 .bannerSwiper .section-slide {
   &::after {
     content: url("../../assets/svg/logo-header.svg");
+    background: linear-gradient(-90deg, #0a0a0a, transparent);
     width: 300px;
-    max-width: 60%;
+    max-width: 100%;
     top: 50%;
     position: absolute;
-    right: 100px;
+    right: 0;
     transform: translate(0, -50%);
+    padding-right: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 992px) {
       right: auto;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0;
     }
 
     @media screen and (max-width: 430px) {
@@ -46,7 +54,7 @@
 
   @media screen and (max-width: 991px) {
     height: 50vw;
-    max-height: 500px;
+    max-height: 300px;
     width: 100vw;
     max-width: 1100px;
     right: auto;

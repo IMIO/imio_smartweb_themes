@@ -358,3 +358,20 @@ footer #container-section-noussuivre {
     margin-left: auto !important;
   }
 }
+
+.search-bar-filter {
+  label input {
+    display: block;
+    margin: 0 !important;
+  }
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .section-container
+  > div
+  .body-section
+  .row {
+  gap: 0 2% !important;
+}
