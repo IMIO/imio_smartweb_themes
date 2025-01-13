@@ -375,3 +375,39 @@ footer #container-section-noussuivre {
   .row {
   gap: 0 2% !important;
 }
+
+//SUP-41800
+.images-partenaires {
+  background: none !important;
+
+  .section-title {
+    color: #000;
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .swiper-image {
+    padding-bottom: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    background-size: contain;
+    background-blend-mode: multiply;
+  }
+
+  .swiper-slide {
+    a {
+      text-decoration: none !important;
+    }
+
+    h3 {
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      text-transform: none;
+    }
+  }
+}
