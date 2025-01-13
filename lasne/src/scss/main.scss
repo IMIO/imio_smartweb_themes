@@ -36,3 +36,29 @@ $enable-roboto-webfont: false;
 .sectiontext ol li::before {
   content: counters(item, ".") " " !important;
 }
+
+//SUP-41867
+.portaltype-imio-smartweb-portalpage .sortable-section {
+  .section-title {
+    color: #074d6c;
+    margin: 0 0 5rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .swiper_title h3 {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400 !important;
+    text-align: center;
+    text-transform: none;
+  }
+
+  .swiper-image {
+    border-radius: 20px;
+  }
+}
