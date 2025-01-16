@@ -1027,3 +1027,15 @@ footer #container-section-noussuivre {
 #portal-globalnav li ul {
   padding-bottom: 100px !important;
 }
+
+.logo-footer-doudou {
+  .image {
+    width: 200px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .table_title {
+    display: none !important;
+  }
+}
