@@ -717,3 +717,31 @@ footer {
     padding: 0;
   }
 }
+
+// MARK MISE EN EVIDENCE
+
+.sectiontext p mark {
+  background-color: #131210;
+  color: #fff;
+  padding: 15px 35px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin: 20px 0;
+  border: solid 1px #131210;
+
+  &:hover {
+    background: #fff !important;
+
+    a {
+      color: #131210;
+    }
+  }
+
+  a {
+    color: #fff;
+    width: 100%;
+    text-decoration: underline;
+  }
+}
