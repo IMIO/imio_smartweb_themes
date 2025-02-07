@@ -318,3 +318,18 @@ footer {
 #portal-globalnav > li a:hover {
   color: #fff;
 }
+
+//message viewlet
+div#localmessagesviewlet h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 5px 0 0;
+}
+
+.portalMessage.info {
+  padding: 15px !important;
+
+  p {
+    line-height: 130%;
+  }
+}
