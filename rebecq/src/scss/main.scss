@@ -739,3 +739,13 @@ h3 {
     }
   }
 }
+
+//SUP-42595
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a
+  .items-content
+  .geo-item-text {
+  width: 100%;
+}
