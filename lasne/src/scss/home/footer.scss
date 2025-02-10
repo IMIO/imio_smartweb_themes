@@ -79,7 +79,7 @@
           }
 
           .table_title {
-            padding-left: 30px !important;
+            padding-left: 0px !important;
             font-size: 1rem !important;
 
             span {
@@ -98,6 +98,10 @@
       }
     }
   }
+}
+
+#portal-footer-wrapper #portal-footer .contact_informations li.work {
+  padding-left: 0 !important;
 }
 
 #portal-colophon {
