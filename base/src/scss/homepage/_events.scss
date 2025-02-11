@@ -72,6 +72,18 @@
       }
     }
 
+    .auth_source_container_title {
+      margin: $event-category-margin;
+      display: block;
+      padding: $event-category-padding;
+      color: $event-category-color;
+      background: $event-category-bg-color;
+      font-size: $event-category-font-size;
+      font-weight: $event-category-font-weight;
+      text-transform: $event-category-text-transform;
+      border-radius: $event-category-radius;
+    }
+
     .swiper_date {
       padding: $event-date-padding;
       margin: $event-date-margin;

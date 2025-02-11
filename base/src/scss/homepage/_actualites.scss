@@ -72,6 +72,18 @@
       }
     }
 
+    .auth_source_container_title {
+      margin: $actu-category-margin;
+      display: block;
+      padding: $actu-category-padding;
+      color: $actu-category-color;
+      background: $actu-category-bg-color;
+      font-size: $actu-category-font-size;
+      font-weight: $actu-category-font-weight;
+      text-transform: $actu-category-text-transform;
+      border-radius: $actu-category-radius;
+    }
+
     .swiper_date {
       padding: $actu-date-padding;
       margin: $actu-date-margin;
