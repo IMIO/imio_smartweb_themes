@@ -940,29 +940,26 @@ body
   padding-left: 10px;
 }
 
-body.portaltype-imio-smartweb-page
-  #main-container
-  .sectionfiles
-  .section-container
-  .table_display
-  .table_image
-  div {
-  color: #fff !important;
-}
-
-body.portaltype-imio-smartweb-page
-  #main-container
-  .sectionfiles
-  .section-container
-  .table_display
-  .table_image
-  div
-  span {
-  color: #fff !important;
-}
-
 // Partenaires
 
 .sortable-section.sectionlinks.quick-access.partenaires {
   margin-top: 40px;
+}
+
+// se files
+
+.sectionfiles {
+  .display-portrait {
+    .table_image:not(.no-image) {
+      .image {
+        padding-bottom: 21em;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.portaltype-imio-smartweb-portalpage .sectionlinks {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
