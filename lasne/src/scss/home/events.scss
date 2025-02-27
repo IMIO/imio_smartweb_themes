@@ -2,7 +2,7 @@
   padding-top: 8rem;
 
   &::after {
-    content: url('../../assets/svg/circles-colors-background.svg');
+    content: url("../../assets/svg/circles-colors-background.svg");
     position: absolute;
     top: 0 !important;
     right: 0;
@@ -13,7 +13,7 @@
 
 .sectionlinks.partenaires {
   &::after {
-    content: url('../../assets/svg/circles-colors-background.svg');
+    content: url("../../assets/svg/circles-colors-background.svg");
     position: absolute;
     top: 0 !important;
     right: 0;
