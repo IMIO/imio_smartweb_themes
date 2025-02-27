@@ -833,7 +833,7 @@ body #content-core .sectiontext .section-text .body-section mark a {
 }
 
 //PLAUSIBLE
-#modal_root .modal__container .truncate {
+body.template-stats #main-container .truncate {
   white-space: initial;
   overflow: initial;
   text-overflow: initial;
