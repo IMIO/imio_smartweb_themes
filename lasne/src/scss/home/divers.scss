@@ -47,7 +47,7 @@ h1 {
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     height: 2px;
     bottom: -3px;
     position: absolute;
@@ -108,7 +108,7 @@ h1 {
 }
 
 .r-item-img.r-item-img-placeholder {
-  background: url("../../assets/svg/placeholder.jpg");
+  background: url('../../assets/svg/placeholder.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -260,12 +260,12 @@ footer #container-section-noussuivre {
   }
 }
 
-.r-filter div[class*="control"] {
+.r-filter div[class*='control'] {
   border-radius: 5px;
 }
 
 .procedure a::after {
-  content: "\F135";
+  content: '\F135';
   font-family: Bootstrap-icons;
   margin-left: 0.5rem;
   position: relative;
@@ -340,7 +340,7 @@ footer #container-section-noussuivre {
     z-index: -1;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(
@@ -487,7 +487,7 @@ footer #container-section-noussuivre {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100vw;
     left: 50%;
@@ -619,7 +619,7 @@ h3 {
 }
 
 .sectiontext ol > li::before {
-  content: counter(sectioncounter) "." !important;
+  content: counter(sectioncounter) '.' !important;
 }
 
 #portal-footer-wrapper #portal-footer #smartweb-footer a,
@@ -800,7 +800,7 @@ h3 {
 
 //SECTION NEWSLETTER HOMEPAGE
 .sortable-section.sectionlinks.newsletter-custom {
-  background: url("../../assets/svg/circles-newsletter.svg") no-repeat $primary;
+  background: url('../../assets/svg/circles-newsletter.svg') no-repeat $primary;
   background-size: contain;
   background-position: right bottom;
 }
