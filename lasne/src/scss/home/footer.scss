@@ -79,7 +79,7 @@
           }
 
           .table_title {
-            padding-left: 0px !important;
+            padding-left: 0 !important;
             font-size: 1rem !important;
 
             span {
@@ -153,6 +153,10 @@ footer {
   .sectiontext ul li::before {
     display: none !important;
   }
+}
+
+footer #body-section-liens-utiles .table_title {
+  transform: translate(-30px) !important;
 }
 
 #main-container .quick-access.partenaires .h2,
