@@ -881,3 +881,19 @@ h3 {
   aspect-ratio: 4 / 5;
   background-position: top;
 }
+
+.nb-contact-by-line-4 {
+  max-width: 25%;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 33%;
+  }
+
+  @media screen and (max-width: 750px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 500px) {
+    max-width: 100%;
+  }
+}
