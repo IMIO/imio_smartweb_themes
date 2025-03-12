@@ -1,0 +1,15 @@
+.liens-accueil {
+  padding-bottom: 0 !important;
+
+  &::before {
+    background: linear-gradient(to bottom, #fff 150px, #000 150px);
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
+}
