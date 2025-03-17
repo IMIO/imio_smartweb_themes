@@ -136,8 +136,8 @@ h2 {
 
 .bannerSwiper .section-slide {
   .swiper-banner-content {
-    position: relative;
-    right: -13px;
+    position: absolute;
+    right: 0;
     left: auto;
     max-width: 540px !important;
     width: 100% !important;
