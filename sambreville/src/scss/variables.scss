@@ -151,15 +151,15 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: $primary-dark;
 
 // see_all
-$see-all-padding: 0 !default;
+$see-all-padding: 10px 30px;
 $see-all-margin: 2rem 0 0 0 !default;
 $see-all-bg: $primary-svg;
 $see-all-color: $primary-dark;
 $see-all-radius: 10px;
 $see-all-border: solid 0 $primary !default;
 $see-all-text-transform: none !default;
-$see-all-font-size: 20px;
-$see-all-font-weight: 700 !default;
+$see-all-font-size: 18px;
+$see-all-font-weight: 500;
 $see-all-transition: all 0.2s ease !default;
 $see-all-hover-bg: $primary;
 $see-all-hover-color: #fff;
@@ -226,7 +226,7 @@ $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius: 20px 20px 0 0;
-$actu-item-bg-color: rgb(244, 244, 244) !default;
+$actu-item-bg-color: transparent;
 $actu-item-bg-radius: $global-radius + 2 !default;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
@@ -266,7 +266,7 @@ $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
 $event-image-border-radius: $global-radius !default;
-$event-item-bg-color: rgb(244, 244, 244) !default;
+$event-item-bg-color: transparent;
 $event-item-bg-radius: $global-radius + 2 !default;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.5rem 1rem !default;
@@ -358,9 +358,9 @@ $section-text-max-width: 760px !default;
 // Section
 $section-padding-y: 5.31rem;
 $section-padding: (
-  sm: 3rem,
-  md: 4rem,
-  lg: 4.3rem,
+  sm: 1rem,
+  md: 2rem,
+  lg: 2.3rem,
 );
 
 // section-contact
