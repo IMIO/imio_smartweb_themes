@@ -14,7 +14,8 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "../../../base/src/scss/main";
-@import "../quick-access";
+@import "./quick-access";
+@import "./footer";
 
 //// STYLES
 
