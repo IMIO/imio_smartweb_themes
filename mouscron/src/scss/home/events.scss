@@ -1,3 +1,15 @@
+.plone-toolbar-left {
+  .sectionevents {
+    &::before {
+      display: none !important;
+    }
+
+    .section-title {
+      color: #000;
+    }
+  }
+}
+
 .sectionevents {
   background: none;
   padding-top: 450px;

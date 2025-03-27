@@ -178,8 +178,26 @@
     }
   }
 
-  .see_all {
-    display: none;
+  .see_all a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 1rem 1.5rem 0.9rem 1.5rem;
+    background: #e30613;
+    color: #fff;
+    border-radius: 50px;
+    border: solid 1px #e30613;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    font-weight: 400;
+    margin: 0 auto 50px;
+
+    &:hover {
+      background: #000;
+      border: solid 1px #000;
+    }
   }
 }
 
