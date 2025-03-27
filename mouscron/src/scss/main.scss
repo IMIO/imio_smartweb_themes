@@ -37,8 +37,8 @@ $enable-roboto-webfont: false;
 @import "./home/bulletins";
 
 .r-search-container .r-search-highlighter {
-  border-bottom: 2px solid $primary-red;
-  background: $primary-red;
+  border-bottom: 2px solid $primary-red !important;
+  background: $primary-red !important;
 }
 
 .r-search-container .r-search.search-bar-filter input {
