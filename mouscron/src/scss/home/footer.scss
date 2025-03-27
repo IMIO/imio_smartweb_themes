@@ -3,14 +3,7 @@
   margin-top: 60px;
   position: relative;
   padding: 0 !important;
-  background: #fff;
-
-  .sectiontext,
-  .sectionlinks,
-  .sectioncontact {
-    border-top: 3px solid #ddd;
-    padding-top: 60px;
-  }
+  background: url("../../assets/svg/top-footer.svg") no-repeat center top;
 
   #portal-footer {
     padding: 80px 0;
@@ -93,7 +86,7 @@
 }
 
 #portal-colophon {
-  background: #fff;
+  background: url("../../assets/svg/top-footer.svg") no-repeat center top;
   padding: 1rem;
 
   ul {
