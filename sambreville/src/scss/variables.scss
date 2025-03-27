@@ -44,7 +44,7 @@ $container-max-widths: (
 $global-radius: 0 !default;
 $enable-title-uppercase: false !default;
 $home-section-title-size: 3.25rem !default;
-$home-section-title-margin: 0 0 2rem 0 !default;
+$home-section-title-margin: 0 0 4rem 0;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
 $section-padding-top: 0 !default;
@@ -175,7 +175,7 @@ $quick-access-section-full-width: false !default;
 $quick-access-title-color: $primary-dark;
 $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
-$quick-access-title-align: $home-section-title-align !default;
+$quick-access-title-align: center;
 $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 80px;
 $quick-access-height: 80px;

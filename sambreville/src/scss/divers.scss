@@ -52,3 +52,33 @@
 #portal-header #portal-header-top #portal-globalnav-wrapper {
   margin: 0 1rem 0 3rem;
 }
+
+//Subsite
+.subsite-container {
+  background: $primary-svg;
+}
+
+.h2:not(.portaltype-imio-smartweb-portalpage),
+h2:not(.portaltype-imio-smartweb-portalpage) {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.h3:not(.portaltype-imio-smartweb-portalpage),
+h3:not(.portaltype-imio-smartweb-portalpage) {
+  font-size: 1.3rem;
+}
+
+h2.card-title {
+  color: $primary-dark !important;
+  font-weight: 500 !important;
+}
+
+input#search_button {
+  background: $primary-dark;
+}
+
+//Image section texte
+.sectiontext .section-text .body-section figure img {
+  border-radius: 20px;
+}

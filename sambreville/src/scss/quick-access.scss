@@ -1,9 +1,23 @@
 .sectionlinks a.table_image:hover .image.d-block {
   background: $primary !important;
+  transition: 0.3s;
 }
 
 @include media-breakpoint-down(md) {
   .sortable-section.sectionlinks.quick-access ul.row {
     gap: 35px;
   }
+}
+
+.sortable-section.sectionlinks.quick-access .table_image:hover svg {
+  fill: #fff !important;
+}
+
+.sectionlinks {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sectionlinks.quick-access.partenaires {
+  margin-top: 80px;
 }
