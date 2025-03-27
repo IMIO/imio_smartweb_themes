@@ -4,6 +4,8 @@
 
 $enable-roboto-webfont: false;
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
 
 // Import barceloneta files from node_modules --load-path=node_modules
@@ -13,8 +15,354 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
+//@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "../../../base/src/scss/main";
 
 //// STYLES
 
 // ... add your styles here
+@import "./home/banner";
+@import "./home/quick";
+@import "./home/a-la-une";
+@import "./home/espace-citoyen";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/intro";
+@import "./home/footer";
+@import "./home/section-en-image";
+@import "./info-trav";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";
+@import "./home/bulletins";
+
+.mask-menu,
+#portal-globalnav li.show-nav > .has_subtree.dropdown {
+  z-index: 2;
+}
+
+#portal-header #portal-header-top {
+  z-index: 3;
+}
+
+//search
+#portal-header #portal-header-top #header-links #search-link a {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+//footer
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
+    }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+  #content > header {
+    display: none;
+  }
+}
+
+// bug z-index
+
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
+}
+
+#main-container {
+  .sectionlinks {
+    margin: 4rem 0 0;
+  }
+}
+
+footer #container-section-noussuivre {
+  li {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      svg path:nth-child(2) {
+        fill: #3f3f3f !important;
+      }
+    }
+  }
+}
+
+#portal-breadcrumbs {
+  background: transparent !important;
+
+  .container,
+  .breadcrumb {
+    padding: 5px 0;
+  }
+}
+
+#portal-globalnav > li a:hover {
+  color: $primary-svg;
+}
+
+// footer
+.footer-logo {
+  figure img {
+    width: 250px !important;
+  }
+}
+
+.footer-slogan {
+  .text {
+    max-width: 204px;
+    text-align: center;
+
+    p {
+      font-size: 33px;
+      font-weight: 200;
+    }
+  }
+}
+
+.footer-fb {
+  .table_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    text-decoration: none;
+
+    .image {
+      width: auto;
+
+      svg {
+        height: 25px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.r-filter div[class*="control"] {
+  border-radius: 5px;
+}
+
+.procedure a::after {
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+// sub-nav
+
+.subsite-container {
+  background: #f8f8f8;
+  z-index: 1;
+
+  #subsite-logo {
+    font-size: 18px;
+    background: $primary-red;
+
+    a {
+      .subsite-title {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 15px;
+}
+
+#viewlet-above-content-body {
+  .procedure {
+    display: none;
+  }
+}
+
+// header common
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: #a3a3a3 !important;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-red !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border: none;
+  border-radius: 10px;
+  background: $primary-light;
+  color: #fff;
+  display: flow-root;
+  margin-bottom: 0 !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.25s ease !important;
+
+  &:hover {
+    background: $primary-blue;
+    color: #fff;
+    transition: all 0.25s ease;
+  }
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+}
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: $primary-red;
+  color: #ffff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background-color: $primary-green;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background-color: $primary-red;
+  color: #fff;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+.section-contact .contact-type-organization .contact_logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section.figure-top .text .h2:first-child,
+.sectiontext .section-text .body-section.figure-top .text h2:first-child {
+  margin-top: 0 !important;
+}
+
+.r-search {
+  .label input {
+    margin: 0 !important;
+  }
+}

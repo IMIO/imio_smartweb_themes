@@ -1,0 +1,21 @@
+.bloc-intro {
+  text-align: center;
+  padding: 100px 40px 0;
+  z-index: 0;
+
+  p {
+    color: #797979;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+
+  a:last-child {
+    background: url("../../assets/svg/bg-link.svg") left center no-repeat;
+    background-size: contain;
+    padding-left: 40px;
+    height: 30px !important;
+    line-height: 30px !important;
+    display: inline-block;
+  }
+}
