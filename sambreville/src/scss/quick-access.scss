@@ -1,3 +1,9 @@
 .sectionlinks a.table_image:hover .image.d-block {
   background: $primary !important;
 }
+
+@include media-breakpoint-down(md) {
+  .sortable-section.sectionlinks.quick-access ul.row {
+    gap: 35px;
+  }
+}

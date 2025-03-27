@@ -2,6 +2,7 @@ footer#portal-footer-wrapper {
   background: $primary-dark;
   padding: 4rem 0;
   color: #fff;
+  margin-top: 50px;
 
   h2,
   h3,
@@ -9,20 +10,24 @@ footer#portal-footer-wrapper {
     color: #fff;
   }
 
-  div#portal-colophon {
-    padding: 10px 0;
-    background: $primary;
+  .contact_informations_social {
+    display: grid;
+  }
+}
 
-    .colophonWrapper ul {
-      gap: 1rem;
-      justify-content: center;
-      text-align: center;
-      display: flex;
-      margin-bottom: 0;
+div#portal-colophon {
+  padding: 10px 0;
+  background: $primary;
 
-      li a {
-        color: #fff;
-      }
+  .colophonWrapper ul {
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 0;
+
+    li a {
+      color: #fff;
     }
   }
 }

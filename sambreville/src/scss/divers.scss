@@ -1,0 +1,54 @@
+#gdpr-consent-banner > span {
+  padding-right: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 17px;
+  color: $primary-dark;
+}
+
+#gdpr-consent-banner .gdpr-actions input[name="consent"] {
+  background: $primary-dark;
+  border: 2px solid $primary-dark;
+  color: #fff;
+  font-size: 17px;
+
+  &:hover {
+    background: $primary;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions > a {
+  background: $primary-dark;
+  border: 2px solid $primary-dark;
+  color: #fff;
+  font-size: 17px;
+
+  &:hover {
+    background: $primary;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions input[name="refuse"] {
+  background: $primary-dark;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: initial;
+  text-decoration: initial;
+  background-position: #fff;
+  border: 2px solid $primary-dark;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-left: 0.6rem;
+
+  &:hover {
+    background: $primary;
+  }
+}
+
+//MENU
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+  margin: 0 1rem 0 3rem;
+}

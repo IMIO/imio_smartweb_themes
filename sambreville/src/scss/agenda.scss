@@ -23,13 +23,18 @@
     }
   }
 
+  .see_all a {
+    width: 100%;
+  }
+
   .section-title {
-    font-weight: 500;
+    font-weight: 300;
     text-transform: none;
     position: relative;
     color: $primary-dark;
     text-align: left;
     margin-bottom: 1rem;
+    font-size: 64px;
   }
 
   @media screen and (max-width: 950px) {
@@ -71,18 +76,22 @@
               padding: 5px 10px;
               font-size: 16px;
               text-transform: capitalize;
+              color: #fff;
             }
           }
 
           .table_date {
-            font-size: 10px;
+            font-size: 18px;
             transition: all 0.3s ease;
+            color: $primary-dark;
+            font-weight: 100;
           }
 
           .table_title {
-            font-size: 16px;
+            font-size: 28px;
             font-weight: 500;
             transition: all 0.3s ease;
+            color: $primary-dark;
           }
 
           &:hover {
@@ -106,4 +115,8 @@
       display: none !important;
     }
   }
+}
+
+.swiper-slide .swiper_date {
+  font-weight: 100;
 }

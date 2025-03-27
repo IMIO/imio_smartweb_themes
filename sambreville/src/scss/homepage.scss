@@ -1,0 +1,64 @@
+@include media-breakpoint-down(lg) {
+  .smartweb_herobanner .bannerSwiper {
+    height: 275px;
+  }
+
+  .sectiontext.visuel-agenda {
+    display: none;
+  }
+
+  footer .smartweb-footer .container .row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  footer
+    .smartweb-footer
+    .container
+    .row
+    .sortable-section.sectionlinks.quick-access {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  footer .smartweb-footer .container .row .sectionevents .see_all a {
+    background: #fff;
+  }
+
+  footer
+    .smartweb-footer
+    .container
+    .row
+    .sectiontext
+    .section-text
+    .body-section
+    figure {
+    float: initial;
+    margin-right: initial;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  footer .smartweb-footer .container .row .sectionlinks h2 {
+    font-size: calc(1.325rem + 0.9vw) !important;
+    margin-top: 20px;
+  }
+
+  footer .smartweb-footer .container .row .contact_informations_social {
+    display: grid;
+  }
+}
+
+.swiper-slide > a:hover .swiper-image {
+  transition: 0.2s;
+  filter: brightness(0.4);
+}
+
+.section-title {
+  font-weight: 300;
+  font-size: 64px;
+}
