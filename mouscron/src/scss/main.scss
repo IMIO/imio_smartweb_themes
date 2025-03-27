@@ -36,6 +36,15 @@ $enable-roboto-webfont: false;
 @import "./contact";
 @import "./home/bulletins";
 
+.r-search-container .r-search-highlighter {
+  border-bottom: 2px solid $primary-red;
+  background: $primary-red;
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
+}
+
 .mask-menu,
 #portal-globalnav li.show-nav > .has_subtree.dropdown {
   z-index: 2;
