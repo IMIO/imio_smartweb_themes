@@ -308,3 +308,8 @@ footer #container-section-noussuivre {
     }
   }
 }
+
+//GDPR Z-INDEX
+body #gdpr-consent-banner {
+  z-index: 1040 !important;
+}
