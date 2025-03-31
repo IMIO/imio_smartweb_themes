@@ -15,17 +15,13 @@ $enable-roboto-webfont: false;
 @import "./variables";
 @import "../../../base/src/scss/main";
 @import "home/quick";
-@import "home/banner";
-@import "home/actualites";
-@import "home/events";
 @import "home/divers";
 @import "home/footer";
-@import "home/menu";
 @import "home/newsletter";
 
 //// STYLES
 
-// ... add your styles here
+// ... add your styles here.
 
 #portal-footer-wrapper h2 {
   margin-top: 0 !important;
