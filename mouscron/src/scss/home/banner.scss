@@ -228,12 +228,15 @@
     display: inline-block;
     margin-left: 0;
     width: 100%;
+
+    a {
+      font-size: 12px;
+    }
   }
 
   .currentLanguage {
     a {
       text-decoration: underline;
-      font-size: 12px;
     }
   }
 }
