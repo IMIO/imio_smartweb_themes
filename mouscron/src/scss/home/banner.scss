@@ -208,3 +208,32 @@
 .navbar .container {
   padding: 0;
 }
+
+//langues
+#portal-languageselector {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  order: 3;
+  padding: 5px;
+  width: 95px;
+  margin: 0;
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    top: 70px;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .currentLanguage {
+    a {
+      text-decoration: underline;
+      font-size: 12px;
+    }
+  }
+}
