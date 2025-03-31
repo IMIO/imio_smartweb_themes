@@ -322,6 +322,14 @@ footer #container-section-noussuivre {
   }
 }
 
+.section-home-page #messagesviewlet {
+  @media screen and (min-width: 992px) {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+  }
+}
+
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
   background-color: $primary-green;
