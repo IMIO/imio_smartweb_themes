@@ -312,10 +312,12 @@ body.site-tourisme #portal-languageselector {
   padding: 5px;
   width: 95px;
   margin: 0;
+  display: initial !important;
 
   @media screen and (max-width: 900px) {
     position: absolute;
-    top: 70px;
+    top: 25%;
+    right: 85px;
   }
 
   li {
