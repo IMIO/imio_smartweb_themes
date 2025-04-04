@@ -304,7 +304,8 @@ footer #container-section-noussuivre {
 }
 
 //langues
-body.site-tourisme #portal-languageselector {
+body.site-tourisme #portal-languageselector,
+body.site-toerisme #portal-languageselector {
   border: 1px solid $primary-dark;
   background: #fff;
   border-radius: 10px;
@@ -329,6 +330,10 @@ body.site-tourisme #portal-languageselector {
       font-size: 12px;
       text-decoration: none;
     }
+  }
+
+  li.language-en {
+    display: none !important;
   }
 
   .currentLanguage {
