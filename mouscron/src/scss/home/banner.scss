@@ -210,6 +210,10 @@
 }
 
 //langues
+#portal-header #portal-header-top #header-links {
+  gap: 10px;
+}
+
 #portal-languageselector {
   border: 1px solid #ddd;
   background: #fff;
@@ -218,11 +222,6 @@
   padding: 5px;
   width: 95px;
   margin: 0;
-
-  @media screen and (max-width: 900px) {
-    position: absolute;
-    top: 70px;
-  }
 
   li {
     display: inline-block;
