@@ -305,3 +305,36 @@ footer #container-section-noussuivre {
 .r-list-item-group:hover .r-item-arrow-more {
   background-color: $primary-svg !important;
 }
+
+//langues
+body.site-tourisme #portal-languageselector {
+  border: 1px solid $primary-dark;
+  background: #fff;
+  border-radius: 10px;
+  order: 3;
+  padding: 5px;
+  width: 95px;
+  margin: 0;
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    top: 70px;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    width: 100%;
+
+    a {
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+
+  .currentLanguage {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
