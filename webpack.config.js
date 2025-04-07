@@ -1,16 +1,12 @@
 const path = require("path");
-const { basename } = require("path");
 const WebpackBar = require("webpackbar");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const { extendDefaultPlugins } = require("svgo");
-const { cp } = require("fs");
-const sass = require("sass-embedded");
+const fs = require("fs");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BASE_PATH = path.resolve(__dirname, ".");
 
 module.exports = (env, argv) => {
@@ -86,29 +82,33 @@ module.exports = (env, argv) => {
       //     template: THEME_PATH + '/index.html',
       //     filename: 'index.html',
       // }),
-      new FaviconsWebpackPlugin({
-        logo: THEME_PATH + "/icons/logo.png",
-        mode: "webapp",
-        cache: false,
-        outputPath: THEME_PATH + "/icons",
-        inject: false,
-        favicons: {
-          appName: null, // Your application's name. `string`
-          appShortName: null, // Your application's short_name. `string`. Optional. If not set, appName will be used
-          appDescription: null, // Your application's description. `string`
-          developerName: null, // Your (or your developer's) name. `string`
-          developerURL: null, // Your (or your developer's) URL. `string`
-          loadManifestWithCredentials: false,
-          icons: {
-            android: true, // Create Android homescreen icon. `boolean` or `{ offset, background }` or an array of sources
-            appleIcon: true, // Create Apple touch icons. `boolean` or `{ offset, background }` or an array of sources
-            appleStartup: false, // Create Apple startup images. `boolean` or `{ offset, background }` or an array of sources
-            favicons: true, // Create regular favicons. `boolean` or `{ offset, background }` or an array of sources
-            windows: false, // Create Windows 8 tile icons. `boolean` or `{ offset, background }` or an array of sources
-            yandex: false, // Create Yandex browser icon. `boolean` or `{ offset, background }` or an array of sources
-          },
-        },
-      }),
+      ...(fs.existsSync(THEME_PATH + "/icons/logo.png")
+        ? [
+            new FaviconsWebpackPlugin({
+              logo: THEME_PATH + "/icons/logo.png",
+              mode: "webapp",
+              cache: false,
+              outputPath: THEME_PATH + "/icons",
+              inject: false,
+              favicons: {
+                appName: null,
+                appShortName: null,
+                appDescription: null,
+                developerName: null,
+                developerURL: null,
+                loadManifestWithCredentials: false,
+                icons: {
+                  android: true,
+                  appleIcon: true,
+                  appleStartup: false,
+                  favicons: true,
+                  windows: false,
+                  yandex: false,
+                },
+              },
+            }),
+          ]
+        : []),
     ].filter(Boolean),
     module: {
       rules: [
