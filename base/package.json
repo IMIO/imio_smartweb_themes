@@ -41,12 +41,14 @@
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": "angular",
-        "infile": "CHANGELOG.md"
+        "infile": "CHANGELOG.md",
+        "path": "base"
       }
     },
     "git": {
       "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "changelog": "git log --pretty=format:\"* %s (%h)\" $(git describe --tags --abbrev=0)...HEAD -- base/"
     },
     "npm": {
       "publish": true
