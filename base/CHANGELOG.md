@@ -1,5 +1,19 @@
 
 
+## [0.2.1](https://github.com/IMIO/imio_smartweb_themes/compare/v0.2.0...v0.2.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* pin prettier version ([983579a](https://github.com/IMIO/imio_smartweb_themes/commit/983579a66a0c91ebcb794ba5a1c88cd15a17b5d0))
+
+
+### Features
+
+* base theme for musson ([842a377](https://github.com/IMIO/imio_smartweb_themes/commit/842a377ab30329da3576210f5824aa77fd8c80f4))
+* grez doiceau ([2fe8b43](https://github.com/IMIO/imio_smartweb_themes/commit/2fe8b43e62bdd062e46189abcc37b250b03119ff))
+* lasne ([bf45e38](https://github.com/IMIO/imio_smartweb_themes/commit/bf45e38c7a10b30358158b74704197e4638e637d))
+
 # [0.2.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.1.5...v0.2.0) (2025-01-02)
 
 
