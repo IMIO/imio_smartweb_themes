@@ -114,7 +114,9 @@ input#search_button {
 //Section contact
 .section-contact .row {
   margin: 0 !important;
+}
 
+.section-contact {
   .table.table_schedule tbody tr {
     display: grid;
 
@@ -122,4 +124,8 @@ input#search_button {
       font-weight: 900;
     }
   }
+}
+
+.sectioncontact .bi::before {
+  font-size: 35px;
 }
