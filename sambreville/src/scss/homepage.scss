@@ -96,9 +96,9 @@ body::after {
     .section-title::after {
       content: url("../../assets/svg/visu-sambreville.svg");
       position: absolute;
-      top: -20px;
+      top: -70px;
       bottom: 0;
-      left: -100px;
+      left: -50px;
       transform: none;
     }
   }
@@ -107,6 +107,7 @@ body::after {
 .sectionnews .section-title,
 .partenaires .section-title {
   margin: 0 auto 4rem;
+  width: max-content;
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page
