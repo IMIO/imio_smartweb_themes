@@ -96,7 +96,7 @@ input#search_button {
 
 //subsite color
 .subsite-container {
-  background: $primary-svg;
+  background: $primary-svg !important;
 }
 
 .template-summary_view .list-menu-element > a,
@@ -109,4 +109,17 @@ input#search_button {
 .template-summary_view_with_images .list-menu-element > a:focus,
 .template-summary_view_with_images .list-menu-element > a:hover {
   background: $primary-svg;
+}
+
+//Section contact
+.section-contact .row {
+  margin: 0;
+
+  table.table_schedule tbody tr {
+    display: grid;
+
+    &:first-child td:first-child {
+      font-weight: 900;
+    }
+  }
 }

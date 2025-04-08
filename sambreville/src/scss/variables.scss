@@ -123,7 +123,7 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 //sub-header
 $subsite-logo-background: $primary !default;
 $subsite-logo-color: #fff !default;
-$subsite-navbar-bg: #fff !default;
+$subsite-navbar-bg: $primary-svg;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
