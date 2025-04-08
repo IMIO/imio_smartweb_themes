@@ -113,9 +113,9 @@ input#search_button {
 
 //Section contact
 .section-contact .row {
-  margin: 0;
+  margin: 0 !important;
 
-  table.table_schedule tbody tr {
+  .table.table_schedule tbody tr {
     display: grid;
 
     &:first-child td:first-child {
