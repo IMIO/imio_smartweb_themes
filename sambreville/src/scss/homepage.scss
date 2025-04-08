@@ -81,10 +81,12 @@ body::after {
   bottom: 0;
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page
-  .sectionevents
-  .section-title {
-  position: relative;
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .sectionevents .section-title,
+  .sectionnews .section-title,
+  .partenaires .section-title {
+    position: relative;
+  }
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
