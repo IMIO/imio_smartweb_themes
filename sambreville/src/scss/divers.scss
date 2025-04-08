@@ -112,16 +112,17 @@ input#search_button {
 }
 
 //Section contact
-.section-contact .row {
-  margin: 0 !important;
+.section-contact {
+  margin: 0 auto !important;
+  padding: 18px;
 }
 
 .section-contact {
-  .table.table_schedule tbody tr {
-    display: grid;
+  table.table_schedule tbody tr {
+    display: grid !important;
 
     &:first-child td:first-child {
-      font-weight: 900;
+      font-weight: 900 !important;
     }
   }
 }
