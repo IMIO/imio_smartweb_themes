@@ -82,3 +82,31 @@ input#search_button {
 .sectiontext .section-text .body-section figure img {
   border-radius: 20px;
 }
+
+// BUTTON
+input#search_button {
+  background: $primary-svg;
+  color: $primary-dark;
+
+  &:hover {
+    background: $primary;
+    color: #fff;
+  }
+}
+
+//subsite color
+.subsite-container {
+  background: $primary-svg;
+}
+
+.template-summary_view .list-menu-element > a,
+.template-summary_view_with_images .list-menu-element > a {
+  border-bottom: 1px solid $primary-svg;
+}
+
+.template-summary_view .list-menu-element > a:focus,
+.template-summary_view .list-menu-element > a:hover,
+.template-summary_view_with_images .list-menu-element > a:focus,
+.template-summary_view_with_images .list-menu-element > a:hover {
+  background: $primary-svg;
+}

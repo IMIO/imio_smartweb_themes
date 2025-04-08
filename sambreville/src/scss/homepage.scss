@@ -86,6 +86,7 @@ body::after {
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page .section-title::after {
+  content: url("../../assets/svg/visu-sambreville.svg");
   position: absolute;
   top: -20px;
   bottom: 0;
