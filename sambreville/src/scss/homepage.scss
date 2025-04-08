@@ -81,15 +81,35 @@ body::after {
   bottom: 0;
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page .section-title {
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .sectionevents
+  .section-title {
   position: relative;
 }
 
-.portaltype-imio-smartweb-portalpage.section-home-page .section-title::after {
-  content: url("../../assets/svg/visu-sambreville.svg");
-  position: absolute;
-  top: -20px;
-  bottom: 0;
-  left: -100px;
-  transform: none;
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .sectionevents,
+  .sectionnews,
+  .partenaires {
+    .section-title::after {
+      content: url("../../assets/svg/visu-sambreville.svg");
+      position: absolute;
+      top: -20px;
+      bottom: 0;
+      left: -100px;
+      transform: none;
+    }
+  }
+}
+
+.sectionnews .section-title,
+.partenaires .section-title {
+  margin: 0 auto 4rem;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page
+  .sectionevents
+  .section-title::after {
+  top: -60px;
+  left: -45px;
 }
