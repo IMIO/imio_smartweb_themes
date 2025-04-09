@@ -6,6 +6,10 @@
 @include media-breakpoint-down(md) {
   .sortable-section.sectionlinks.quick-access ul.row {
     gap: 35px;
+    grid-gap: 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
   }
 }
 
