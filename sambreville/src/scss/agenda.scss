@@ -27,6 +27,7 @@
     width: 100%;
     text-align: center;
     padding: 20px 30px;
+    border: 1px solid #fff;
   }
 
   .section-title {
@@ -58,7 +59,7 @@
         content: "" !important;
       }
       padding: 20px 10px;
-      border-bottom: 1px solid $primary-svg;
+      border-bottom: 5px solid #fff;
 
       .table_display {
         .table_image {

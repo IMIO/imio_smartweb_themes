@@ -154,3 +154,16 @@ input#search_button {
   background: $primary-svg;
   border-radius: 10px !important;
 }
+
+#portal-column-content .section-contact .contact-type-organization {
+  display: grid;
+  flex-flow: column wrap;
+  padding: 1.5rem;
+  word-wrap: anywhere;
+  margin: 5px;
+}
+
+input#search_button {
+  background: $primary-svg;
+  color: $primary-dark;
+}
