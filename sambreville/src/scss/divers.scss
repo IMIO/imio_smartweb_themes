@@ -58,14 +58,14 @@
   background: $primary-svg;
 }
 
-.h2:not(.portaltype-imio-smartweb-portalpage),
-h2:not(.portaltype-imio-smartweb-portalpage) {
+body:not(.portaltype-imio-smartweb-portalpage) .h2,
+body:not(.portaltype-imio-smartweb-portalpage) h2 {
   font-size: 1.5rem !important;
   font-weight: 500 !important;
 }
 
-.h3:not(.portaltype-imio-smartweb-portalpage),
-h3:not(.portaltype-imio-smartweb-portalpage) {
+body:not(.portaltype-imio-smartweb-portalpage) .h3,
+body:not(.portaltype-imio-smartweb-portalpage) h3 {
   font-size: 1.3rem;
 }
 
@@ -182,10 +182,12 @@ input#search_button {
 
 //Subsite
 .subsite-container {
+  border-radius: 10px;
+
   #subsite-logo {
     border-radius: 10px;
 
-    li.has_subtree.nav-item.inPath {
+    li.nav-item {
       background: #fff;
       padding: 10px;
       border-radius: 10px;

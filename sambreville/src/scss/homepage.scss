@@ -132,3 +132,12 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
     margin: 0 auto;
   }
 }
+
+//img section text and contact
+.sectiontext .section-text .body-section figure img,
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_leadimage {
+  border-radius: 20px;
+}
