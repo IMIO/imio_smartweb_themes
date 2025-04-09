@@ -1,3 +1,10 @@
+@include media-breakpoint-down(lg) {
+  div#portal-colophon .colophonWrapper ul {
+    display: grid;
+    gap: 10px;
+  }
+}
+
 footer#portal-footer-wrapper {
   background: $primary-dark;
   padding: 4rem 0;
