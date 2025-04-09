@@ -113,20 +113,20 @@ input#search_button {
 
 //Section contact
 .sectioncontact {
-  .row {
-    margin: 0;
-  }
-
   .section-contact {
     margin: 0 auto !important;
     padding: 18px;
 
-    .contact_informations {
-      width: 100%;
-    }
+    .row {
+      margin: 0;
 
-    .address {
-      width: 100%;
+      .contact_informations {
+        width: 100%;
+      }
+
+      .address {
+        width: 100%;
+      }
     }
   }
 }
@@ -152,5 +152,5 @@ input#search_button {
 //Contact
 #portal-column-content .section-contact .contact-type-organization {
   background: $primary-svg;
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
