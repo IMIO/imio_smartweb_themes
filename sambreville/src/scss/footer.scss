@@ -1,10 +1,3 @@
-@include media-breakpoint-down(lg) {
-  div#portal-colophon .colophonWrapper ul {
-    display: grid;
-    gap: 10px;
-  }
-}
-
 footer#portal-footer-wrapper {
   background: $primary-dark;
   padding: 4rem 0;
@@ -46,4 +39,11 @@ div#portal-colophon {
 
 .sectiontext .section-text .body-section.figure-left figure {
   max-width: 100%;
+}
+
+@include media-breakpoint-down(lg) {
+  div#portal-colophon .colophonWrapper ul {
+    display: grid;
+    gap: 10px;
+  }
 }
