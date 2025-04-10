@@ -47,3 +47,32 @@ div#portal-colophon {
     gap: 10px;
   }
 }
+
+footer a:hover {
+  font-weight: bolder !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: bolder !important;
+  text-decoration: none !important;
+}
+
+footer ul.contact_informations_social a:hover {
+  color: $primary;
+}
+
+div#portal-colophon .colophonWrapper ul li,
+div#portal-colophon .colophonWrapper ul li a:hover {
+  text-decoration: none;
+}
+
+footer .sectioncontact,
+.sectionlinks,
+.sectiontext {
+  margin-top: 2rem;
+}
+
+footer .sectionlinks div#container-section-liens-utiles {
+  padding: 18px;
+}
