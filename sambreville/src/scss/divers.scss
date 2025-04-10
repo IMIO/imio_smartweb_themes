@@ -232,7 +232,7 @@ input#search_button {
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: $primary;
+    background-color: $primary !important;
     color: #fff;
   }
 }
