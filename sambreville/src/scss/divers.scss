@@ -195,3 +195,14 @@ input#search_button {
     }
   }
 }
+//Menu
+#subsite-navigation > ul > li > a:focus::before,
+#subsite-navigation > ul > li > a:focus-visible::before,
+#subsite-navigation > ul > li > a:hover::before,
+#subsite-navigation > ul > li > a:active::before,
+#subsite-navigation > ul > li.show-nav > a::before {
+  background-color: $primary;
+  bottom: -18px;
+  height: 5px;
+  border-radius: 10px;
+}
