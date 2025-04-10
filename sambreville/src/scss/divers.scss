@@ -200,7 +200,9 @@ input#search_button {
 #subsite-navigation > ul > li > a:focus-visible::before,
 #subsite-navigation > ul > li > a:hover::before,
 #subsite-navigation > ul > li > a:active::before,
-#subsite-navigation > ul > li.show-nav > a::before {
+#subsite-navigation > ul > li.show-nav > a::before,
+#subsite-navigation > ul > li.current > a::before,
+#subsite-navigation > ul > li.inPath > a::before {
   content: "";
   background-color: $primary;
   bottom: -18px;
