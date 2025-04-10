@@ -217,3 +217,33 @@ input#search_button {
     bottom: 0;
   }
 }
+
+//BUTTON
+.r-add-event {
+  padding-bottom: 1.8rem;
+}
+
+.r-content > button,
+.r-add-event a {
+  background: $primary-svg !important;
+  color: $primary-dark;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+  }
+}
+
+.r-content-img {
+  border-radius: 20px;
+}
+
+//HOVER SA
+.portaltype-imio-smartweb-newsview a:hover,
+portaltype-imio-smartweb-eventsview a:hover {
+  color: #000;
+  text-decoration: none;
+}
