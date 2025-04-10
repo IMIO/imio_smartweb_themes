@@ -201,8 +201,13 @@ input#search_button {
 #subsite-navigation > ul > li > a:hover::before,
 #subsite-navigation > ul > li > a:active::before,
 #subsite-navigation > ul > li.show-nav > a::before {
+  content: "";
   background-color: $primary;
   bottom: -18px;
   height: 5px;
   border-radius: 10px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease;
 }
