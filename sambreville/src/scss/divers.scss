@@ -212,4 +212,8 @@ input#search_button {
   position: absolute;
   right: 0;
   transition: all 0.3s ease;
+
+  @include media-breakpoint-down(md) {
+    bottom: 0;
+  }
 }
