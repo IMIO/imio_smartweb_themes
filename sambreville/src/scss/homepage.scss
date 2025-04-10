@@ -144,6 +144,35 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
 
 //BANNER
 .bannerSwiper .section-slide {
+  &::before {
+    content: url("../../assets/svg/voile-banner.svg");
+    width: 100%;
+    max-width: 800px;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 992px) {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+  }
+}
+
+.bannerSwiper .section-slide {
   &::after {
     content: url("../../assets/svg/logo-banner-blc.svg");
     //background: linear-gradient(-90deg, #0a0a0a, transparent);
@@ -151,7 +180,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
     max-width: 500px;
     top: 50%;
     position: absolute;
-    right: 0;
+    right: 200px;
     transform: translate(0, -50%);
     padding: 0;
     height: 100%;
