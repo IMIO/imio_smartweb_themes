@@ -109,3 +109,33 @@ $enable-roboto-webfont: false;
   display: block;
   padding-top: 100px;
 }
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: #005596;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: #d92037;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background: #ffb86a;
+  color: #000;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background: #005596;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background: #ffb86a;
+  color: #000;
+}
