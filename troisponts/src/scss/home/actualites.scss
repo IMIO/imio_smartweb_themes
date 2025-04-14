@@ -1,5 +1,7 @@
 .portaltype-imio-smartweb-portalpage.section-home-page .sectionnews,
 .portaltype-imio-smartweb-portalpage.section-accueil-cpas .sectionnews,
+.portaltype-imio-smartweb-portalpage.section-accueil-epn-bibliotheque
+  .sectionnews,
 .portaltype-imio-smartweb-portalpage.site-accueil-temps-libre .sectionnews {
   margin: 50px 0 60px;
   position: relative;
@@ -131,6 +133,8 @@
 .portaltype-imio-smartweb-portalpage.section-accueil-cpas
   h2.section-title::after,
 .portaltype-imio-smartweb-portalpage.section-home-page h2.section-title::after,
+.portaltype-imio-smartweb-portalpage.section-accueil-epn-bibliotheque
+  h2.section-title::after,
 .portaltype-imio-smartweb-portalpage.site-accueil-temps-libre
   h2.section-title::after {
   position: relative;
@@ -145,6 +149,8 @@
   .portaltype-imio-smartweb-portalpage.section-home-page
     h2.section-title::after,
   .portaltype-imio-smartweb-portalpage.section-accueil-cpas
+    h2.section-title::after,
+  .portaltype-imio-smartweb-portalpage.section-accueil-epn-bibliotheque
     h2.section-title::after,
   .portaltype-imio-smartweb-portalpage.site-accueil-temps-libre
     h2.section-title::after {
