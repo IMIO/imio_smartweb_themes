@@ -615,14 +615,14 @@ footer #container-section-noussuivre {
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
-  background-color: $primary-yellow;
-  color: #000;
+  background-color: #b30000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-  background: $primary-red;
-  color: #fff;
+  background: #ff740a;
+  color: #000;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
@@ -633,8 +633,8 @@ footer #container-section-noussuivre {
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
-  background: $primary-red;
-  color: #fff;
+  background: #ff740a;
+  color: #000;
 }
 
 // logo minisite
