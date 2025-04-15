@@ -247,3 +247,10 @@ portaltype-imio-smartweb-eventsview a:hover {
   color: #000;
   text-decoration: none;
 }
+
+//CONSEIL
+body.subsection-vie-politique-le-conseil-communal
+  .sortable-section.sectioncontact:first-child {
+  background: $primary-svg;
+  border-radius: 10px;
+}

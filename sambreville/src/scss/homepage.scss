@@ -62,6 +62,12 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
   left: -45px;
 }
 
+@include media-breakpoint-down(sm) {
+  .smartweb_herobanner .bannerSwiper {
+    height: 175px;
+  }
+}
+
 @include media-breakpoint-down(lg) {
   .smartweb_herobanner .bannerSwiper {
     height: 275px;
