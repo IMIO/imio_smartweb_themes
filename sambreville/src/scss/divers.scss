@@ -251,6 +251,6 @@ portaltype-imio-smartweb-eventsview a:hover {
 //CONSEIL
 body.subsection-vie-politique-le-conseil-communal-les-conseillers-communaux
   .sortable-section.sectioncontact:first-child {
-  background: $primary-svg;
-  border-radius: 10px;
+  background: $primary-svg !important;
+  border-radius: 10px !important;
 }
