@@ -3,3 +3,9 @@ html.sr .swiper-banner-content *,
 #main-container header {
   visibility: hidden;
 }
+
+#main-container smartweb-news header,
+#main-container smartweb-events header,
+#main-container smartweb-annuaire header {
+  visibility: visible !important;
+}
