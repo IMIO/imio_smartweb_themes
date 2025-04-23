@@ -1,0 +1,70 @@
+.site-fse {
+  #portal-header #portal-header-top::after {
+    background: #fff;
+  }
+
+  #portal-globalnav > li > a {
+    color: #0e65af;
+  }
+
+  #portal-globalnav > li.has_subtree > a::after {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228.444%22%20height%3D%225.2%22%3E%3Cpath%20d%3D%22M.247.254a.831.831%200%200%201%201.2%200l2.78%202.854L7.011.254A.831.831%200%200%201%208.2.264a.882.882%200%200%201%20.01%201.215L4.825%204.946a.835.835%200%200%201-.6.254%201.529%201.529%200%200%201-.6-.254L.247%201.479a.882.882%200%200%201%200-1.226Z%22%20fill%3D%22%230e65af%22%2F%3E%3C%2Fsvg%3E");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: 768px) {
+    #portal-globalnav.activated > li > a {
+      color: #20a3dd !important;
+    }
+  }
+
+  #portal-header #portal-header-top #header-links #search-link a::before {
+    background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%230e65af%22%20d%3D%22M11.08%206.77a4.31%204.31%200%201%200-4.31%204.31%204.32%204.32%200%200%200%204.31-4.31Zm4.92%208A1.24%201.24%200%200%201%2014.77%2016a1.17%201.17%200%200%201-.86-.37l-3.3-3.28a6.77%206.77%200%201%201%201.74-1.74l3.3%203.3a1.25%201.25%200%200%201%20.35.86Z%22%2F%3E%3C%2Fsvg%3E")
+      no-repeat;
+    background-size: 14px;
+  }
+
+  #portal-footer-wrapper #portal-footer {
+    background: #0e65af !important;
+  }
+
+  #portal-colophon {
+    background: #0e65af !important;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #0e65af;
+  }
+
+  a {
+    color: #0e65af;
+  }
+
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 100px;
+  }
+
+  @media (min-width: 992px) {
+    #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+    #subsite-navigation #portal-globalnav > li > .has_subtree {
+      margin-top: 3.5rem;
+    }
+
+    #portal-header #portal-header-top #portal-logo {
+      margin-right: 1rem;
+    }
+  }
+}

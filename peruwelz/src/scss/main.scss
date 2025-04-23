@@ -20,10 +20,10 @@ $enable-roboto-webfont: false;
 // ... add your styles here
 
 @import "./home/quick";
-@import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
+@import "./fse";
 
 .swiper-banner-image::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' data-name='Calque 2' preserveAspectRatio='xMinYMin meet' viewBox='0 0 2547 96.37'%3E%3Cpath d='M1271.83 96.37 2547 96.22v-4C1986.49 18.46 1611.5 5.96 1275.17 0h-3.37C935.49 5.97 560.51 18.46 0 92.22v4l1271.83.15Z' data-name='Calque 1'/%3E%3C/svg%3E");
