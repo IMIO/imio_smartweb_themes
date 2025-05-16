@@ -14,7 +14,22 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "./home";
 
 //// STYLES
 
 // ... add your styles here
+
+.site-oshz,
+.site-cpas {
+  .account {
+    display: none;
+  }
+
+  #portal-languageselector {
+    .language-nl,
+    .language-en {
+      display: none;
+    }
+  }
+}
