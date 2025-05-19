@@ -110,3 +110,34 @@
   position: relative;
   top: 3px;
 }
+
+.sortable-section .section-title a {
+  &[aria-expanded="false"] {
+    position: relative;
+
+    &::after {
+      display: inline-block;
+      content: "\F282";
+      font-family: Bootstrap-icons;
+      font-size: 12px;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    position: relative;
+
+    &::after {
+      display: inline-block;
+      content: "\F282";
+      font-family: Bootstrap-icons;
+      font-size: 12px;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      transform: rotate(-180deg);
+      transition: all 0.2s ease;
+    }
+  }
+}

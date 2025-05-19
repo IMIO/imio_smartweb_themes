@@ -458,22 +458,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
   color: $primary;
 }
 
-.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
-  position: relative;
-  text-decoration: none;
-}
-
-.sortable-section.sectioncontact
-  h2.section-title
-  a[aria-expanded="true"]::after {
-  content: "";
-  background: #f3f3f3;
-  position: absolute;
-  inset: 0.25rem -0.5rem 0;
-  z-index: -1;
-  border-radius: 10px 10px 0 0;
-}
-
 @media screen and (min-width: 768px) {
   .portaltype-imio-smartweb-procedure .sectionlinks,
   .portaltype-imio-smartweb-page .sectionlinks,
@@ -503,10 +487,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 @media screen and (max-width: 767px) {
   #banner {
     height: 150px;
-  }
-
-  .sortable-section.sectioncontact .body-section.show {
-    display: flex !important;
   }
 
   #portal-column-content .sortable-section.sectioncontact .body-section {
