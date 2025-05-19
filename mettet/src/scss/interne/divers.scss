@@ -43,6 +43,22 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   }
 }
 
+body.template-edit {
+  h1 {
+    color: #000 !important;
+  }
+
+  #content-core {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #000 !important;
+    }
+  }
+}
+
 // se files
 
 .sectionfiles {
