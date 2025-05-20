@@ -1,0 +1,114 @@
+.sectionnews {
+  .see_all a {
+    background: $primary-svg;
+  }
+
+  &::after {
+    content: "";
+    background: $primary-blue;
+    left: 0;
+    width: 95vw;
+    height: 63%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0 0 80px;
+    z-index: -1;
+  }
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    width: max-content !important;
+    margin: 0 70px 50px;
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 55px;
+      left: -40px;
+      top: -30px;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 60px;
+      background: url("../../assets/svg/before-title.svg") no-repeat center left;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      & > a {
+        display: block;
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -37px;
+          left: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+          width: 100% !important;
+          text-align: center;
+          color: $primary-svg;
+          margin: 1.5rem 0 0.5rem;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sectionnews::after {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .sectionevents::after {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #portal-footer-wrapper {
+    margin-top: 0;
+  }
+}

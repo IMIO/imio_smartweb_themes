@@ -1,0 +1,109 @@
+.portaltype-imio-smartweb-portalpage
+  .sectionlinks:first-child.quick-access.first {
+  padding: 0;
+
+  .body-section {
+    padding: 0;
+  }
+}
+
+.quick-access {
+  padding: 100px 0;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+
+  .section-title {
+    font-weight: 500;
+    position: absolute;
+    text-align: left;
+    width: 33% !important;
+    margin: 30px 80px 0 !important;
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 0;
+
+    @media screen and (max-width: 991px) {
+      position: relative;
+      margin-bottom: 50px !important;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 55px;
+      left: -40px;
+      top: -30px;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 60px;
+      background: url("../../assets/svg/before-title.svg") no-repeat center left;
+    }
+  }
+
+  svg {
+    max-height: 40px;
+    fill: #fff !important;
+  }
+
+  .body-section {
+    width: 62%;
+    margin-left: 35%;
+
+    @media screen and (max-width: 991px) {
+      width: 100% !important;
+      position: relative;
+      margin-left: 0;
+    }
+
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          transition: all 0.3s ease;
+        }
+
+        .table_title {
+          margin-top: 10px !important;
+
+          span {
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          .image.d-block {
+            background: $primary;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+
+          .table_title {
+            span {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}
