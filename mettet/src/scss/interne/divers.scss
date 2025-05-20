@@ -26,25 +26,6 @@
   }
 }
 
-// color title
-body:not(.portaltype-imio-smartweb-portalpage) {
-  #content-core {
-    h3,
-    h4,
-    h5 {
-      color: #000 !important;
-    }
-  }
-}
-
-#tinymce {
-  h3,
-  h4,
-  h5 {
-    color: #000 !important;
-  }
-}
-
 // se files
 
 .sectionfiles {
@@ -57,6 +38,8 @@ body:not(.portaltype-imio-smartweb-portalpage) {
     border-radius: 15px;
 
     .section-title {
+      color: #000;
+
       h2 {
         font-size: 21px !important;
         margin-bottom: 1.5rem !important;
