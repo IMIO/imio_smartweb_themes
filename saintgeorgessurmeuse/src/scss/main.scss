@@ -346,7 +346,7 @@ footer #container-section-noussuivre {
   .section-container
   .table_display
   .table_image {
-  border-radius: 20px 0;
+  border-radius: 10px 10px 10px 0;
   background: #fff;
   color: $primary;
   transition: all 0.25s ease;
@@ -531,7 +531,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 
 #gdpr-consent-banner .gdpr-actions input[name="consent"] {
   background: $primary-svg;
-  border-radius: 20px 0;
+  border-radius: 10px 10px 10px 0;
   border: 2px solid $primary-svg !important;
 
   &:hover {
@@ -544,7 +544,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   background: $primary;
   border: 2px solid $primary;
   color: #fff;
-  border-radius: 20px 0;
+  border-radius: 10px 10px 10px 0;
 
   &:hover {
     color: $primary;
