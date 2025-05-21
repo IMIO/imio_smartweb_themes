@@ -590,3 +590,46 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
     padding: 1.5rem 2.5rem 1rem 3rem;
   }
 }
+
+@media (min-width: 992px) {
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 3.4rem;
+  }
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
+}
+
+.r-search-highlighter {
+  color: #3f9fa4 !important;
+  border-bottom: 2px solid #3f9fa4 !important;
+}
+
+#portal-footer-wrapper {
+  margin-top: 80px;
+}
+
+.section-home-page #portal-footer-wrapper {
+  margin-top: 0;
+}
+
+.r-add-contact,
+.r-add-event,
+.r-add-news {
+  border-radius: 10px 10px 10px 0;
+}
+
+body .r-content > button {
+  border-radius: 10px 10px 10px 0;
+  border-color: #ddd !important;
+}
+
+.section-contact .contact-type-mission {
+  width: auto !important;
+}
+
+.section-contact .contact-type-mission::after {
+  display: none;
+}
