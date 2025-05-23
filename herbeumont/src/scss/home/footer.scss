@@ -1,8 +1,6 @@
 #portal-footer-wrapper {
-  background: url("../../assets/svg/visuel-footer.svg") center top no-repeat
-    $primary;
-  background-size: 100%;
-  padding-top: 120px;
+  background: url("../../assets/svg/bg-footer.svg") center top no-repeat;
+  padding-top: 160px;
 }
 
 #smartweb-footer .sectiontext figure,
@@ -12,7 +10,7 @@
 
 #smartweb-footer .sectiontext figure img,
 #smartweb-minisite-footer .sectiontext figure img {
-  max-width: 200px !important;
+  //max-width: 200px !important;
   width: 100% !important;
 }
 
@@ -34,7 +32,8 @@
   }
 
   #portal-footer {
-    background: $primary-dark !important;
+    background: #000 !important;
+    padding: 80px 0;
 
     #smartweb-footer,
     #smartweb-minisite-footer {
@@ -136,19 +135,6 @@
       }
     }
   }
-}
-
-#portal-footer-wrapper {
-  padding: 7rem 0 4rem !important;
-  padding-top: 100px;
-  background: $primary-dark;
-  background-size: 100%;
-}
-
-.section-home-page #portal-footer-wrapper {
-  background-size: 100%;
-  padding: 7rem 0 4rem !important;
-  padding-top: 100px;
 }
 
 #portal-footer-wrapper {

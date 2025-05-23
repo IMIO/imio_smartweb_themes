@@ -14,24 +14,22 @@
   z-index: -1;
 }
 
-.portaltype-imio-smartweb-portalpage.section-index
-  .sortable-section.sectionevents::before {
+.portaltype-imio-smartweb-portalpage .sectionevents::before {
   background: $primary-svg;
   border-radius: 20px 0 0 20px;
-  bottom: 9%;
+  bottom: 25px;
   content: "";
-  left: -75%;
-  margin: 20px 0;
-  right: 0;
-  right: 50% !important;
+  margin: 0;
+  right: 0 !important;
   position: absolute;
-  top: 10%;
-  width: 100vw !important;
+  top: 90px;
+  width: 95vw !important;
+  left: 0;
   z-index: -1;
 }
 
 .portaltype-imio-smartweb-portalpage .sectionevents {
-  margin: 0;
+  margin: 60px 0 120px;
   width: 50% !important;
   left: auto !important;
   transform: none !important;
@@ -51,7 +49,7 @@
     position: relative;
 
     .swiper-pagination-bullet-active {
-      background: $primary-svg !important;
+      background: $primary !important;
     }
   }
 
@@ -61,13 +59,13 @@
     position: relative;
     color: $primary-dark;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 80px;
   }
 
   @media screen and (max-width: 950px) {
     margin-top: 60px;
     width: 100% !important;
-    background: #f1f1f1;
+    background: $primary-svg;
     padding: 60px 0;
 
     .section-title {
@@ -98,22 +96,25 @@
             justify-content: flex-end;
 
             span {
-              background: $primary-dark;
+              background: #fff;
               border-radius: 10px;
               padding: 5px 10px;
               font-size: 13px;
+              color: $primary-dark;
             }
           }
 
           .table_date {
-            font-size: 10px;
+            font-size: 14px;
             transition: all 0.3s ease;
+            color: $primary-dark;
           }
 
           .table_title {
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 1.25rem;
+            font-weight: 400 !important;
             transition: all 0.3s ease;
+            color: $primary-dark;
           }
 
           &:hover {
@@ -149,23 +150,40 @@ div#container-section-visuel-agenda {
   margin-top: 100px;
 }
 
-.sectionevents .see_all a {
-  width: 100%;
-  text-align: center;
+.sectionevents .see_all {
+  margin-top: 50px;
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 div#container-section-visuel-agenda {
-  margin-top: 175px;
-
-  div#container-section-visuel-agenda {
-    margin-top: 166px;
-  }
+  margin-top: 190px;
+  height: 470px;
+  padding: 0;
+  position: relative;
 
   figure {
     margin-top: 0;
-  }
+    top: 30px;
+    bottom: 20px;
+    width: auto !important;
+    height: calc(100% - 70px) !important;
+    position: absolute;
+    display: block;
+    max-width: none;
 
-  img {
-    max-height: 280px;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .image-agenda-accueil {
+    display: none;
   }
 }

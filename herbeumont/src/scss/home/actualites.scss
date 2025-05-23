@@ -16,17 +16,18 @@
 .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
   background: $primary-svg;
   border-radius: 0 20px 20px 0;
-  bottom: 7%;
+  bottom: 45px;
   content: "";
   left: 0;
   position: absolute;
-  top: 35%;
+  top: 200px;
   width: 95%;
   z-index: -2;
 }
 
 .sectionnews {
   position: relative;
+  margin: 60px 0;
 
   .section-container {
     position: relative;
