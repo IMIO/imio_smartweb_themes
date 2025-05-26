@@ -21,8 +21,12 @@
     }
   }
 
+  .swiper-image {
+    margin-bottom: 0;
+  }
+
   .swiper_date {
-    margin: 5px auto !important;
+    margin: 20px auto 0 !important;
   }
 
   .swiper_title {
@@ -34,6 +38,17 @@
   }
 
   .auth_source_container_title {
+    background: #d92037;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 0 0 10px;
+  }
+
+  .swiper_category {
     display: none;
   }
 }
