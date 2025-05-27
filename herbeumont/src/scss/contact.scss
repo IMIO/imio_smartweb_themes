@@ -3,7 +3,8 @@
   .contact-type-position,
   .contact-type-mission {
     background: $primary-svg;
-    margin: 5px;
+    margin: 10px;
+    width: auto !important;
     border-radius: 10px;
   }
 
