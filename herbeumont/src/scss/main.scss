@@ -29,3 +29,15 @@ $enable-roboto-webfont: false;
 @import "./se-link";
 @import "./se-files";
 @import "./contact";
+
+.bannerSwiper .section-slide {
+  &::after {
+    content: url("../../assets/svg/logo-banner.svg");
+    width: 600px;
+    max-width: 60%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

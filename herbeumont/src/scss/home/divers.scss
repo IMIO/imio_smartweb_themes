@@ -38,8 +38,9 @@ h1 {
 
 h2 {
   font-family: $font-family-base !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   font-size: 24px;
+  color: $primary-dark;
 }
 
 .smartweb_herobanner .bannerSwiper {
@@ -704,12 +705,6 @@ footer #container-section-noussuivre {
 
 h3 {
   font-size: 22px;
-  font-weight: 900;
-  color: $primary-dark;
-}
-
-h2 {
-  font-size: 20px;
   font-weight: 900;
   color: $primary-dark;
 }

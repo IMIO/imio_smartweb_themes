@@ -3,14 +3,14 @@
   background: url("../../assets/svg/chateau.svg");
   background-position: 100% 0;
   background-repeat: no-repeat;
-  background-size: 208px;
+  background-size: contain;
   content: "";
   display: block;
-  height: 210px;
+  height: 250px;
   right: 25px;
   position: absolute;
   top: 0;
-  width: 210px;
+  width: 280px;
   z-index: -1;
 }
 
