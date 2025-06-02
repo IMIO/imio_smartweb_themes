@@ -73,6 +73,11 @@
       padding: 20px 10px;
       border-bottom: 1px solid #c1c1c1;
 
+      .swiper_category {
+        position: absolute;
+        right: 0;
+      }
+
       .table_display {
         .table_image {
           text-decoration: none;
@@ -91,11 +96,6 @@
               padding: 5px;
               font-size: 13px;
             }
-          }
-
-          .swiper_category {
-            position: absolute;
-            right: 0;
           }
 
           .table_date {
