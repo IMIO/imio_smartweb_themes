@@ -1,5 +1,15 @@
 
 
+# [0.3.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.2.1...v0.3.0) (2025-06-13)
+
+
+### Features
+
+* base theme for berloz and ouffet [quick] ([c7d0e14](https://github.com/IMIO/imio_smartweb_themes/commit/c7d0e14d9ef0bb8216379a80058d7c336e757ebc))
+* base theme for oreye [quick] ([942583d](https://github.com/IMIO/imio_smartweb_themes/commit/942583dc2aa57fb9cc0d8dcdd946e6bb0eb43a56))
+* montdelenclus base theme [quick] ([5f60ba2](https://github.com/IMIO/imio_smartweb_themes/commit/5f60ba27c09eab0bd5a69d7ae517f4cdcd9546bb))
+* waimes and fleurus base theme [quick] ([55587c3](https://github.com/IMIO/imio_smartweb_themes/commit/55587c39ae2660ccf4c8ae9f1c4daa2cd967dd5c))
+
 ## [0.2.1](https://github.com/IMIO/imio_smartweb_themes/compare/v0.2.0...v0.2.1) (2025-04-07)
 
 
