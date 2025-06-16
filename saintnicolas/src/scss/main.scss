@@ -20,16 +20,10 @@ $enable-roboto-webfont: false;
 // ... add your styles here
 
 @import "./home/quick";
-@import "./home/a-la-une";
-@import "./home/projets";
 @import "./home/actualites";
 @import "./home/events";
-@import "./home/annuaire";
-@import "./home/les-sites";
 @import "./home/footer";
-@import "./home/bulletin";
 @import "./home/divers";
-@import "./minisite";
 
 #portal-colophon {
   ul {
