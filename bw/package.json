@@ -18,7 +18,7 @@
     "plone",
     "smartweb"
   ],
-  "version": "1.0.0",
+  "version": "0.0.2",
   "license": "GPL version 2",
   "scripts": {
     "stylelint": "npx stylelint 'src/**/*.{css,less}' 'src/**/*.{css,less}",
@@ -29,8 +29,8 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@plone/plonetheme-barceloneta-base": "3.2.4",
-    "@imiobe/plonetheme-smartweb-base": "0.3.0",
+    "@plone/plonetheme-barceloneta-base": "3.2.0-alpha.5",
+    "@imiobe/plonetheme-smartweb-base": "0.2.1",
     "@popperjs/core": "^2.11.6"
   }
 }
