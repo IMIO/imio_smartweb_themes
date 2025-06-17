@@ -18,7 +18,7 @@
     "plone",
     "smartweb"
   ],
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "GPL version 2",
   "scripts": {
     "stylelint": "npx stylelint 'src/**/*.{css,less}' 'src/**/*.{css,less}",
