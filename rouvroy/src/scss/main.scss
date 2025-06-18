@@ -71,6 +71,10 @@ body {
   display: none !important;
 }
 
+#portal-globalnav > li a:hover {
+  color: #000;
+}
+
 h1 {
   font-family: $font-family-base !important;
   font-weight: 500 !important;
@@ -888,26 +892,26 @@ h3 {
 }
 
 .site-cpas {
-  $primary-blue: #355892 !important;
-  $primary-light: #355892 !important;
+  $primary-blue: #968095 !important;
+  $primary-light: #968095 !important;
 }
 
 .site-ecole-de-musique {
-  $primary-blue: #355892 !important;
-  $primary-light: #355892 !important;
+  $primary-blue: #659ebc !important;
+  $primary-light: #659ebc !important;
 }
 
 .site-pcdr {
-  $primary-blue: #355892 !important;
-  $primary-light: #355892 !important;
+  $primary-blue: #859a4b !important;
+  $primary-light: #859a4b !important;
 }
 
 .site-saule-en-vie {
-  $primary-blue: #355892 !important;
-  $primary-light: #355892 !important;
+  $primary-blue: #c3d2a3 !important;
+  $primary-light: #c3d2a3 !important;
 }
 
 .site-si-torgny {
-  $primary-blue: #355892 !important;
-  $primary-light: #355892 !important;
+  $primary-blue: #ffb700 !important;
+  $primary-light: #ffb700 !important;
 }
