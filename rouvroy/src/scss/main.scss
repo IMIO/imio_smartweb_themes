@@ -52,7 +52,7 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: transparent;
+  background: $primary;
   border: 2px solid $primary;
 }
 
@@ -923,4 +923,8 @@ h3 {
 
 .contact_map {
   z-index: -1;
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
 }

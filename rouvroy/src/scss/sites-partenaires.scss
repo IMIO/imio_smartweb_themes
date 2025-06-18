@@ -1,4 +1,14 @@
 .site-cpas {
+  .r-add-contact a,
+  .r-add-event a,
+  .r-add-news a {
+    background: #876e87 !important;
+  }
+
+  .r-news-list-item-link:hover .r-item-arrow-more {
+    background-color: #876e87 !important;
+  }
+
   .sectionnews .section-title {
     color: #876e87 !important;
   }
@@ -145,6 +155,16 @@
 }
 
 .site-ecole-de-musique {
+  .r-add-contact a,
+  .r-add-event a,
+  .r-add-news a {
+    background: #407d9c !important;
+  }
+
+  .r-news-list-item-link:hover .r-item-arrow-more {
+    background-color: #407d9c !important;
+  }
+
   .sectionnews .section-title {
     color: #407d9c !important;
   }
@@ -291,6 +311,16 @@
 }
 
 .site-pcdr {
+  .r-add-contact a,
+  .r-add-event a,
+  .r-add-news a {
+    background: #697b37 !important;
+  }
+
+  .r-news-list-item-link:hover .r-item-arrow-more {
+    background-color: #697b37 !important;
+  }
+
   .sectionnews .section-title {
     color: #697b37 !important;
   }
@@ -437,6 +467,16 @@
 }
 
 .site-saule-en-vie {
+  .r-add-contact a,
+  .r-add-event a,
+  .r-add-news a {
+    background: #c3d2a3 !important;
+  }
+
+  .r-news-list-item-link:hover .r-item-arrow-more {
+    background-color: #c3d2a3 !important;
+  }
+
   .sectionnews .section-title {
     color: #c3d2a3 !important;
   }
@@ -583,6 +623,16 @@
 }
 
 .site-si-torgny {
+  .r-add-contact a,
+  .r-add-event a,
+  .r-add-news a {
+    background: #ffb700 !important;
+  }
+
+  .r-news-list-item-link:hover .r-item-arrow-more {
+    background-color: #ffb700 !important;
+  }
+
   .sectionnews .section-title {
     color: #ffb700 !important;
   }
