@@ -678,19 +678,19 @@ footer #container-section-noussuivre {
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary-orange;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
   background: $primary-orange;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   background: $primary-orange;
-  color: #000;
+  color: #fff;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
@@ -890,4 +890,9 @@ h3 {
   .contact_leadimage {
   aspect-ratio: 4 / 5;
   background-position: top;
+}
+
+#portal-header #portal-header-top .minisite_logo {
+  max-width: 150px !important;
+  height: auto !important;
 }
