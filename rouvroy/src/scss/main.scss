@@ -30,6 +30,7 @@ $enable-roboto-webfont: false;
 @import "./se-link";
 @import "./se-files";
 @import "./contact";
+@import "./sites-partenaires";
 
 body {
   background: #fff;
@@ -889,29 +890,4 @@ h3 {
   .contact_leadimage {
   aspect-ratio: 4 / 5;
   background-position: top;
-}
-
-.site-cpas {
-  $primary-blue: #968095 !important;
-  $primary-light: #968095 !important;
-}
-
-.site-ecole-de-musique {
-  $primary-blue: #659ebc !important;
-  $primary-light: #659ebc !important;
-}
-
-.site-pcdr {
-  $primary-blue: #859a4b !important;
-  $primary-light: #859a4b !important;
-}
-
-.site-saule-en-vie {
-  $primary-blue: #c3d2a3 !important;
-  $primary-light: #c3d2a3 !important;
-}
-
-.site-si-torgny {
-  $primary-blue: #ffb700 !important;
-  $primary-light: #ffb700 !important;
 }
