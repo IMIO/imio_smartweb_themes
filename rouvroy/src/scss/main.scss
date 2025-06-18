@@ -732,7 +732,7 @@ footer #container-section-noussuivre {
   background-color: $primary-blue;
   border: 0;
   border-radius: 8px;
-  color: #000;
+  color: #fff;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
 
@@ -893,6 +893,6 @@ h3 {
 }
 
 #portal-header #portal-header-top .minisite_logo {
-  max-width: 150px !important;
+  max-width: 10px !important;
   height: auto !important;
 }
