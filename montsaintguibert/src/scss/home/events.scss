@@ -1,16 +1,15 @@
 .portaltype-imio-smartweb-portalpage.section-index
   .sortable-section.sectionevents::after {
-  background: url("../../assets/svg/frame-agenda.svg");
-  background-size: contain; /* ou cover selon l'effet voulu */
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   aspect-ratio: 16 / 9;
+  background: url("../../assets/svg/frame-agenda.svg") no-repeat;
+  background-size: contain;
+  background-position: top center; /* optionnel : ajuste le placement */
   z-index: -1;
   pointer-events: none;
-  background-repeat: no-repeat;
 }
 
 // .portaltype-imio-smartweb-portalpage .sectionevents::before {
