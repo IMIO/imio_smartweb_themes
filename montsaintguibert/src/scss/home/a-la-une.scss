@@ -6,3 +6,41 @@
 .sortable-section.sectionnews.a-la-une .see_all {
   display: none;
 }
+
+.a-la-une {
+  position: relative;
+}
+
+.a-la-une::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: url("../../assets/svg/frame-une.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (min-width: 992px) {
+  .a-la-une .swiper-slide > a {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+.a-la-une .swiper-slide {
+  .swiper_date {
+    text-align: left;
+  }
+
+  .swiper_title h3 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

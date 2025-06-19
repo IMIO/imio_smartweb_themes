@@ -1,14 +1,14 @@
 .en-un-clic-titre {
-  padding-top: 1rem;
+  padding: 20px 0 0 150px;
 
   @include media-breakpoint-up(md) {
-    padding-top: 4rem;
+    padding-top: 0;
   }
 
   .body-section {
     h2 {
       font-size: calc(1.325rem + 2.5vw);
-      text-transform: uppercase;
+      text-transform: initial;
 
       @include media-breakpoint-up(xxl) {
         font-size: 3.7rem;
