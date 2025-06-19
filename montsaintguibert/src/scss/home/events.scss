@@ -1,32 +1,32 @@
-// .portaltype-imio-smartweb-portalpage.section-index
-//   .sortable-section.sectionevents::after {
-//   background: url("../../assets/svg/chateau.svg");
-//   background-position: 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   content: "";
-//   display: block;
-//   height: 250px;
-//   right: 25px;
-//   position: absolute;
-//   top: 0;
-//   width: 280px;
-//   z-index: -1;
-// }
-
-.portaltype-imio-smartweb-portalpage .sectionevents::before {
-  background: $primary-svg;
-  border-radius: 20px 0 0 20px;
-  bottom: 25px;
+.portaltype-imio-smartweb-portalpage.section-index
+  .sortable-section.sectionevents::after {
+  background: url("../../assets/svg/frame-agenda.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
   content: "";
-  margin: 0;
-  right: 0 !important;
+  display: block;
+  height: 250px;
+  right: 25px;
   position: absolute;
-  top: 90px;
-  width: 95vw !important;
-  left: 0;
+  top: 0;
+  width: 280px;
   z-index: -1;
 }
+
+// .portaltype-imio-smartweb-portalpage .sectionevents::before {
+//   background: $primary-svg;
+//   border-radius: 20px 0 0 20px;
+//   bottom: 25px;
+//   content: "";
+//   margin: 0;
+//   right: 0 !important;
+//   position: absolute;
+//   top: 90px;
+//   width: 95vw !important;
+//   left: 0;
+//   z-index: -1;
+// }
 
 .portaltype-imio-smartweb-portalpage .sectionevents {
   margin: 60px 0 120px;
@@ -156,6 +156,11 @@ div#container-section-visuel-agenda {
   a {
     width: 100%;
     text-align: center;
+    background: $light-red;
+
+    &:hover {
+      background: $red;
+    }
   }
 }
 

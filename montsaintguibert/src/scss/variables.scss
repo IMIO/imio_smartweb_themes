@@ -1,8 +1,14 @@
 //*// COLORS
-$primary: #3070b6;
-$green: #216442;
+$primary: #2c2e35;
+$dark-green: #216442;
 $primary-dark: #2c2e35;
 $primary-svg: #d3e0d9;
+$light-blue: #e3f1f7;
+$light-red: #fdedef;
+$light-green: #d9efe7;
+$green: #7fcbae;
+$blue: #2897c4;
+$red: #eb5e50;
 
 //*// TYPOGRAPHY
 
@@ -219,7 +225,7 @@ $actu-section-full-width: true !default;
 $actu-section-padding-top: 1rem;
 $actu-section-padding-bottom: 1rem;
 $actu-section-margin: 0 !default;
-$actu-title-color: $primary;
+$actu-title-color: $primary-dark;
 $actu-title-align: center;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
@@ -252,7 +258,7 @@ $actu-date-padding: 0 1rem;
 $actu-date-color: $primary-dark;
 $actu-date-font-size: 12px;
 $actu-date-align: center !default;
-$actu-see-all-justify-content: $see-all-justify-content !default;
+$actu-see-all-justify-content: right;
 
 // Event
 $event-section-full-width: true !default;

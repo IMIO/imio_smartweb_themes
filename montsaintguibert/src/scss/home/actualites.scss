@@ -1,29 +1,29 @@
-// .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::after {
-//   background: url("../../assets/svg/arbres.svg");
-//   background-position: 100% 0;
-//   background-repeat: no-repeat;
-//   background-size: 208px;
-//   content: "";
-//   left: 25px;
-//   position: absolute;
-//   top: 0;
-//   z-index: -1;
-//   display: block;
-//   width: 210px;
-//   height: 210px;
-// }
-
-.portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
-  background: $primary-svg;
-  border-radius: 0 20px 20px 0;
-  bottom: 45px;
+.portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::after {
+  background: url("../../assets/svg/frame-actu.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 208px;
   content: "";
-  left: 0;
+  left: 25px;
   position: absolute;
-  top: 200px;
-  width: 95%;
-  z-index: -2;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 210px;
+  height: 210px;
 }
+
+// .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
+//   background: $primary-svg;
+//   border-radius: 0 20px 20px 0;
+//   bottom: 45px;
+//   content: "";
+//   left: 0;
+//   position: absolute;
+//   top: 200px;
+//   width: 95%;
+//   z-index: -2;
+// }
 
 .sectionnews {
   position: relative;
@@ -147,5 +147,13 @@
 
   @media screen and (max-width: 950px) {
     display: none;
+  }
+}
+
+.sectionnews .see_all a {
+  background: $light-blue;
+
+  &:hover {
+    background: $blue;
   }
 }
