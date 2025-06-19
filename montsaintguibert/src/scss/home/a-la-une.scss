@@ -36,11 +36,18 @@
 .a-la-une .swiper-slide {
   .swiper_date {
     text-align: left;
+    margin: 0;
+    padding: 0 0 0 10rem;
   }
 
-  .swiper_title h3 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 700;
+  .swiper_title {
+    margin: 0;
+    padding: 0 0 0 10rem;
+
+    h3 {
+      text-align: left;
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
 }
