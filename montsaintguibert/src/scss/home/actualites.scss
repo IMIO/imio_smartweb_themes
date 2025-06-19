@@ -1,16 +1,14 @@
 .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::after {
   background: url("../../assets/svg/frame-actu.svg");
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  background-size: 208px;
+  background-size: contain; /* ou cover selon l'effet voulu */
+  z-index: -1;
   content: "";
-  left: 25px;
+  display: block;
   position: absolute;
   top: 0;
-  z-index: -1;
-  display: block;
-  width: 210px;
-  height: 210px;
+  left: 0;
+  width: 100vw; /* 100% de la largeur de la fenêtre */
+  height: 100vh; /* 100% de la hauteur de la fenêtre */
 }
 
 // .portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::before {
