@@ -137,6 +137,7 @@
 
 .sectionnews .see_all a {
   background: $light-blue;
+  color: $primary-dark;
 
   &:hover {
     background: $blue;
@@ -146,12 +147,12 @@
 .sortable-section.sectionnews::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: url("../../assets/svg/frame-actu.svg") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: top center;
   z-index: -1;
   pointer-events: none;
