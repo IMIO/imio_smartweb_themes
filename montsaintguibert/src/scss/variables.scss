@@ -202,8 +202,8 @@ $quick-access-full-bg-border: solid 1px $primary-svg;
 $quick-access-full-bg-shadow: none !default;
 
 // A la une
-$a-la-une-title-color: #fff !default;
-$a-la-une-title-align: $home-section-title-align !default;
+$a-la-une-title-color: $primary-dark;
+$a-la-une-title-align: left;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
 $a-la-une-text-bg: transparent;

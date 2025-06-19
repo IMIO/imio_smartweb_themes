@@ -1,3 +1,8 @@
-.portaltype-imio-smartweb-portalpage .sortable-section.sectionnews::after {
+.portaltype-imio-smartweb-portalpage
+  .sortable-section.sectionnews.a-la-une::after {
+  display: none;
+}
+
+.sortable-section.sectionnews.a-la-une .see_all {
   display: none;
 }
