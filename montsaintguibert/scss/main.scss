@@ -4,6 +4,8 @@
 
 $enable-roboto-webfont: false;
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 //// IMPORTS
 
 // Import barceloneta files from node_modules --load-path=node_modules
@@ -18,3 +20,12 @@ $enable-roboto-webfont: false;
 //// STYLES
 
 // ... add your styles here
+
+@import "./home/quick";
+@import "./home/actualites";
+@import "./home/divers";
+@import "./home/events";
+@import "./home/footer";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";

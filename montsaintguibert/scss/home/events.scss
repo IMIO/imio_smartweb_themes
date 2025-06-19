@@ -1,0 +1,189 @@
+// .portaltype-imio-smartweb-portalpage.section-index
+//   .sortable-section.sectionevents::after {
+//   background: url("../../assets/svg/chateau.svg");
+//   background-position: 100% 0;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   content: "";
+//   display: block;
+//   height: 250px;
+//   right: 25px;
+//   position: absolute;
+//   top: 0;
+//   width: 280px;
+//   z-index: -1;
+// }
+
+.portaltype-imio-smartweb-portalpage .sectionevents::before {
+  background: $primary-svg;
+  border-radius: 20px 0 0 20px;
+  bottom: 25px;
+  content: "";
+  margin: 0;
+  right: 0 !important;
+  position: absolute;
+  top: 90px;
+  width: 95vw !important;
+  left: 0;
+  z-index: -1;
+}
+
+.portaltype-imio-smartweb-portalpage .sectionevents {
+  margin: 60px 0 120px;
+  width: 50% !important;
+  left: auto !important;
+  transform: none !important;
+  padding: 0 10px;
+  margin-top: 100px;
+
+  .start_date {
+    float: left;
+    padding-right: 3px;
+  }
+
+  .container {
+    padding: 0 40px !important;
+  }
+
+  .section-container {
+    position: relative;
+
+    .swiper-pagination-bullet-active {
+      background: $primary !important;
+    }
+  }
+
+  .section-title {
+    font-weight: 500;
+    text-transform: none;
+    position: relative;
+    color: $primary-dark;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 950px) {
+    margin-top: 60px;
+    width: 100% !important;
+    background: $primary-svg;
+    padding: 60px 0;
+
+    .section-title {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin: 0;
+
+    li {
+      &::marker {
+        content: "" !important;
+      }
+      padding: 20px 10px;
+      border-bottom: 1px solid #fff;
+
+      .table_display {
+        .table_image {
+          text-decoration: none;
+          width: 100%;
+          position: relative;
+          display: block;
+
+          .table_category {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+
+            span {
+              background: #fff;
+              border-radius: 10px;
+              padding: 5px 10px;
+              font-size: 13px;
+              color: $primary-dark;
+            }
+          }
+
+          .table_date {
+            font-size: 14px;
+            transition: all 0.3s ease;
+            color: $primary-dark;
+          }
+
+          .table_title {
+            font-size: 1.25rem;
+            font-weight: 400 !important;
+            transition: all 0.3s ease;
+            color: $primary-dark;
+          }
+
+          &:hover {
+            .table_date {
+              padding-left: 7px;
+              transition: all 0.3s ease;
+            }
+
+            .table_title {
+              color: $primary-dark;
+              padding-left: 7px;
+              transition: all 0.3s ease;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    li::marker {
+      display: none !important;
+    }
+  }
+}
+
+.image-actualites-accueil {
+  figure {
+    max-width: 100% !important;
+  }
+}
+
+div#container-section-visuel-agenda {
+  margin-top: 100px;
+}
+
+.sectionevents .see_all {
+  margin-top: 50px;
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+div#container-section-visuel-agenda {
+  margin-top: 190px;
+  height: 470px;
+  padding: 0;
+  position: relative;
+
+  figure {
+    margin-top: 0;
+    top: 30px;
+    bottom: 20px;
+    width: auto !important;
+    height: calc(100% - 70px) !important;
+    position: absolute;
+    display: block;
+    max-width: none;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .image-agenda-accueil {
+    display: none;
+  }
+}

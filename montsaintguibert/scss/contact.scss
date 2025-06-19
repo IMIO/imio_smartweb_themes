@@ -1,0 +1,25 @@
+#portal-column-content .sectioncontact {
+  .contact-type-organization,
+  .contact-type-position,
+  .contact-type-mission {
+    background: $primary-svg;
+    margin: 10px;
+    width: auto !important;
+    border-radius: 10px;
+  }
+
+  .contact_description {
+    word-break: break-word;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: $font-family-base;
+    color: $primary-dark !important;
+  }
+}
+
+#portal-column-content .section-contact .contact-type-mission::after {
+  border: none;
+}
