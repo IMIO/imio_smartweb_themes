@@ -1,0 +1,211 @@
+.slogan-container {
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem 0;
+  }
+  position: relative;
+
+  //   &::after {
+  //     content: "";
+  //     background: #f3f3f3;
+  //     width: 100vw;
+  //     position: absolute;
+  //     height: 35%;
+  //     bottom: 0;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     z-index: -1;
+  //     animation: slogan-bg 2.7s 1;
+  //   }
+}
+
+.bla-container {
+  flex: 73%;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    animation: bla-container 2.7s 1;
+  }
+  transition: ease;
+
+  //869
+  .letter {
+    display: inline-block;
+    mask-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+    }
+
+    &.b {
+      position: relative;
+      background: url("../../assets/svg/b2-img.jpg") no-repeat center / cover;
+      background-position: 1% center;
+      mask-image: url("../../assets/svg/b-svg.svg");
+      width: 37.2792%; // = 281px
+      margin-right: 2%;
+
+      // height 348px
+
+      &::before {
+        padding-bottom: 81.84%; // 100 / 281 * 348
+      }
+    }
+
+    &.l {
+      position: relative;
+      background: url("../../assets/svg/l2-img.jpg") no-repeat center / cover;
+      background-position: 1% center;
+      mask-image: url("../../assets/svg/l-svg.svg");
+      width: 26.7945%;
+      margin-right: 2%;
+      animation: letterl 2.7s 1;
+
+      &::before {
+        padding-bottom: 114.106%;
+      }
+    }
+
+    &.a {
+      position: relative;
+      background: url("../../assets/svg/a2-img.jpg") no-repeat center / cover;
+      background-position: 7% center;
+      mask-image: url("../../assets/svg/a-svg.svg");
+      width: 30.3635%;
+      animation: lettera 2.7s 1;
+
+      &::before {
+        padding-bottom: 101.754%;
+      }
+    }
+  }
+
+  //   .mascotte {
+  //     position: absolute;
+  //     background: url("../../assets/svg/mascotte.svg") no-repeat center / cover;
+  //     width: 12.888%; //112px height = 137px
+  //     z-index: 1;
+  //     right: 31.185%; // 271px
+  //     animation: mascotte 2.7s 1;
+  //     transition: linear;
+
+  //     &::before {
+  //       content: "";
+  //       display: inline-block;
+  //       width: 1px;
+  //       padding-bottom: 122.321%;
+  //     }
+  //   }
+}
+
+.letter-container {
+  position: relative;
+}
+
+.vid-container {
+  background: url("../../assets/svg/logo-banner.svg") no-repeat center / cover;
+  flex: 26%;
+  background-size: contain;
+}
+
+// .slogan {
+//   width: 88%;
+//   background: url("../../assets/svg/slogan.svg") no-repeat center;
+//   margin-left: auto;
+//   position: relative;
+//   margin-top: 10%;
+
+//   &::before {
+//     content: "";
+//     display: inline-block;
+//     width: 1px;
+//     padding-bottom: 28.461%; // 100 / 260 * 74
+//   }
+// }
+
+// .feder-logo {
+//   padding-bottom: 40%;
+//   background: url("../../assets/svg/logo_feder_wallonie.png");
+//   background-repeat: no-repeat;
+//   background-position: right bottom;
+//   background-size: 87%;
+//   display: block;
+// }
+
+// .vid {
+//   width: 70%;
+//   background: url("../../assets/svg/banner-vid.jpg");
+//   margin-left: auto;
+//   position: relative;
+//   filter: brightness(68%);
+//   padding-bottom: 40%;
+//   margin-top: -7%;
+//   border-radius: 15px;
+
+//   &::after {
+//     content: "";
+//     width: 29%;
+//     height: 51%;
+//     background: url("../../assets/svg/play-vid.svg") no-repeat center / cover;
+//     display: block;
+//     position: absolute;
+//     left: 50%;
+//     z-index: 1;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+
+//   &::before {
+//     content: "";
+//     display: inline-block;
+//     position: absolute;
+//     z-index: 1;
+//     inset: 0;
+//     background: rgba(0, 0, 0, 15%);
+//     border-radius: 15px;
+//   }
+// }
+
+.en-un-clic-titre,
+.un-clic {
+  animation: clic-container 2.7s 1;
+}
+
+.en-un-clic-titre {
+  z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+  .slogan-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .vid {
+    display: none;
+  }
+
+  .vid-container {
+    flex: 26% 1;
+    max-width: 330px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .slogan {
+    width: 100%;
+  }
+
+  //   .feder-logo {
+  //     padding-bottom: 40%;
+  //     background: url("../../assets/svg/logo_feder_wallonie.png");
+  //     background-repeat: no-repeat;
+  //     background-position: right center;
+  //     background-size: 100%;
+  //   }
+}

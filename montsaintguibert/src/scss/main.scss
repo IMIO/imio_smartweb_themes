@@ -20,7 +20,7 @@ $enable-roboto-webfont: false;
 //// STYLES
 
 // ... add your styles here
-
+@import "./home/banner";
 @import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/bulletins";
