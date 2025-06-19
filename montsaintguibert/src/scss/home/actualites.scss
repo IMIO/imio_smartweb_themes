@@ -144,7 +144,7 @@
   }
 }
 
-.sortable-section.sectionnews::after {
+.sortable-section.sectionnews.actuframe::after {
   content: "";
   position: absolute;
   bottom: 0;
