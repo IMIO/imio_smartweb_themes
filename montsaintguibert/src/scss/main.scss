@@ -22,8 +22,10 @@ $enable-roboto-webfont: false;
 // ... add your styles here
 
 @import "./home/quick";
+@import "./home/a-la-une";
 @import "./home/actualites";
 @import "./home/divers";
+@import "./home/un-clic";
 @import "./home/events";
 @import "./home/footer";
 @import "./se-link";
