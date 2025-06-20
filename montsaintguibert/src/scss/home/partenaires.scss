@@ -1,3 +1,7 @@
+.partenaires {
+  position: relative;
+}
+
 .partenaires::after {
   content: "";
   position: absolute;
@@ -10,31 +14,4 @@
   background-position: top center;
   z-index: -1;
   pointer-events: none;
-}
-
-@media (min-width: 992px) {
-  .a-la-une .swiper-slide > a {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr;
-  }
-}
-
-.a-la-une .swiper-slide {
-  .swiper_date {
-    text-align: left;
-    margin: 0;
-    padding: 0 0 0 10rem;
-  }
-
-  .swiper_title {
-    margin: 0;
-    padding: 0 0 0 10rem;
-
-    h3 {
-      text-align: left;
-      font-size: 24px;
-      font-weight: 700;
-    }
-  }
 }
