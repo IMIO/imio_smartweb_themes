@@ -182,9 +182,9 @@ div#container-section-visuel-agenda {
 .sortable-section.sectionevents::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  top: 0;
+  left: -75%;
+  width: 100vw;
   aspect-ratio: 16 / 9;
   background: url("../../assets/svg/frame-agenda.svg") no-repeat;
   background-size: 100% 100%;

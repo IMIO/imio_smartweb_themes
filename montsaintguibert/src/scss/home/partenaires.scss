@@ -1,19 +1,11 @@
-.sortable-section.sectionnews.a-la-une .see_all {
-  display: none;
-}
-
-.a-la-une {
-  position: relative;
-}
-
-.a-la-une::after {
+.partenaires::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: url("../../assets/svg/frame-une.svg") no-repeat;
+  background: url("../../assets/svg/frame-partenaires.svg") no-repeat;
   background-size: 100% 100%;
   background-position: top center;
   z-index: -1;
