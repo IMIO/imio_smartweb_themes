@@ -1,5 +1,5 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles {
-  background-color: #fff;
+  background-color: $light-yellow;
   border-radius: 0;
   font-weight: bold;
   margin-top: 1vw;
@@ -59,11 +59,11 @@
       border-color: none;
 
       .table_image {
-        border: solid 1px $primary-svg;
+        border: solid 1px $light-yellow;
         text-decoration: none;
         padding: 20px;
         border-radius: 20px;
-        background-color: $primary-svg;
+        background-color: $light-yellow;
 
         span,
         p,
