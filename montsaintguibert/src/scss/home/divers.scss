@@ -7,7 +7,7 @@ body {
   width: 50px;
   height: 50px;
   border: 0;
-  background: $primary;
+  background: $primary-dark;
   transition: all 0.3s ease;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: $primary;
+  background: $orange;
 }
 
 #portal-header #portal-header-top #portal-logo {
@@ -143,7 +143,7 @@ h2 {
 
     &::before {
       position: absolute;
-      background: rgb(101 91 140 / 95%);
+      background: $primary-svg;
       left: 0%;
       max-width: 700px !important;
       width: 100% !important;
@@ -317,7 +317,7 @@ footer #container-section-noussuivre {
   transition: all 0.5s ease;
 
   &:hover {
-    background: #000;
+    background: $primary-dark;
     transition: all 0.5s ease;
   }
 }
@@ -351,7 +351,7 @@ footer #container-section-noussuivre {
 }
 
 .sectiontext .section-text .section-title a.collapsed {
-  color: #000 !important;
+  color: $primary-dark !important;
 }
 
 /*.sectiontext .section-text .body-section a {
@@ -391,19 +391,19 @@ footer #container-section-noussuivre {
 
     .breadcrumb-item {
       a {
-        color: #2f294e !important;
+        color: $primary-dark !important;
 
         &:hover {
-          color: #2f294e !important;
+          color: $primary-dark !important;
         }
       }
 
       &.active {
-        color: #2f294e !important ;
+        color: $primary-dark !important ;
       }
 
       &::before {
-        color: #2f294e !important;
+        color: $primary-dark !important;
       }
     }
   }
@@ -437,10 +437,10 @@ footer #container-section-noussuivre {
 
       .breadcrumb-item {
         a {
-          color: #2f294e !important;
+          color: $primary-darke !important;
 
           &:hover {
-            color: #2f294e !important;
+            color: $primary-dark !important;
           }
         }
 
@@ -541,11 +541,11 @@ footer #container-section-noussuivre {
       background: #fff;
       padding: 1rem 3rem;
       border-radius: 8px;
-      color: #000;
+      color: $primary-dark;
       transition: all 0.5s ease;
 
       &:hover {
-        background: #133641 !important;
+        background: $dark-green !important;
         color: #fff !important;
         transition: all 0.5s ease;
       }
@@ -588,17 +588,17 @@ footer #container-section-noussuivre {
 #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover,
 #portal-breadcrumbs .breadcrumb .breadcrumb-item.active,
 #portal-breadcrumbs .breadcrumb .breadcrumb-item::before {
-  color: #000 !important;
+  color: $primary-dark !important;
 }
 
 #portal-breadcrumbs .breadcrumb .breadcrumb-item a,
 #portal-breadcrumbs .breadcrumb .breadcrumb-item a:hover,
 #portal-breadcrumbs .breadcrumb .breadcrumb-item::before {
-  color: #000 !important;
+  color: $primary-dark !important;
 }
 
 #portal-breadcrumbs .breadcrumb .breadcrumb-item.active {
-  color: #000 !important;
+  color: $primary-dark !important;
   text-decoration: underline;
 }
 
@@ -650,7 +650,7 @@ footer #container-section-noussuivre {
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
   background: $primary-svg;
-  color: #000;
+  color: $primary-dark;
 }
 
 // logo minisite
@@ -684,15 +684,21 @@ footer #container-section-noussuivre {
   .table_display
   .table_image {
   background-color: $primary-svg;
-  border: 0;
+  border: 1px solid $primary-svg;
   border-radius: 8px;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
+
+  &::after {
+    background: #fff !important;
+    border: 1px solid #d2e0d9 !important;
+  }
 }
 
 .sectionfiles::after {
   background-color: $primary-svg;
   border-radius: 8px;
+  border: 1px solid $primary-svg;
   bottom: 0;
   content: "";
   left: 50%;
@@ -816,7 +822,7 @@ h3 {
   line-height: 28px !important;
 
   &:hover {
-    background: #000;
+    background: $primary-dark;
     transition: all 0.5s ease;
   }
 }
@@ -957,4 +963,12 @@ body
 .portaltype-imio-smartweb-portalpage .sectionlinks {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+input#search_button {
+  background: $primary-dark;
+}
+
+#portal-globalnav > li a:hover {
+  color: initial;
 }
