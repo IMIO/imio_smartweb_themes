@@ -6,9 +6,9 @@ body {
 #portal-header #portal-header-top #header-links #search-link a {
   width: 50px;
   height: 50px;
-  border: 0;
   background: $primary-dark;
   transition: all 0.3s ease;
+  border: 1px solid $primary-dark;
 }
 
 @media screen and (max-width: 992px) {
@@ -18,7 +18,8 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: $orange;
+  background: #fff;
+  border: 1px solid $orange;
 }
 
 #portal-header #portal-header-top #portal-logo {
@@ -309,7 +310,7 @@ footer #container-section-noussuivre {
 .r-add-contact a,
 .r-add-event a,
 .r-add-news a {
-  background: $primary-svg;
+  background: $primary-dark;
   border-radius: 8px;
   color: #fff;
   padding: 1rem;
@@ -317,8 +318,9 @@ footer #container-section-noussuivre {
   transition: all 0.5s ease;
 
   &:hover {
-    background: $primary-dark;
+    background: $orange;
     transition: all 0.5s ease;
+    color: $primary-dark;
   }
 }
 
@@ -971,4 +973,18 @@ input#search_button {
 
 #portal-globalnav > li a:hover {
   color: initial;
+}
+
+.vid {
+  display: none;
+}
+
+#header-links div#header-actions {
+  background: $primary-dark;
+  padding: 15px 30px;
+  border-radius: 20px;
+
+  a {
+    color: $orange;
+  }
 }
