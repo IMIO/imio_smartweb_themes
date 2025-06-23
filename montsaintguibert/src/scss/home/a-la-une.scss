@@ -4,6 +4,15 @@
 
 .sortable-section.sectionnews.a-la-une.a-la-une {
   position: relative;
+
+  .swiper-description {
+    text-align: left;
+    padding: 0 0 0 130px;
+  }
+
+  .swiper_date {
+    display: none;
+  }
 }
 
 .sortable-section.sectionnews.a-la-une.a-la-une::after {
@@ -44,5 +53,14 @@
       font-size: 24px;
       font-weight: 700;
     }
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .a-la-une .swiper-slide .swiper_title,
+  .a-la-une .swiper-slide .swiper_date,
+  .a-la-une .swiper-slide .swiper-description {
+    padding: 0.1rem;
   }
 }

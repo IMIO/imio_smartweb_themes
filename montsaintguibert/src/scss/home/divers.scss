@@ -186,6 +186,16 @@ h3 {
 }
 
 // Account hover underline effect
+div#header-actions {
+  padding: 13px 20px;
+  background: $primary-dark;
+  border-radius: 20px;
+
+  a span {
+    color: $orange;
+  }
+}
+
 #header-actions .account {
   text-decoration: none;
   font-weight: 500;
@@ -390,4 +400,8 @@ footer {
   #portal-footer-wrapper .footer-slogan .text p {
     font-size: 28px !important;
   }
+}
+
+.annuaire-day-open {
+  color: $dark-green;
 }
