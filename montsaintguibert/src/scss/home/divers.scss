@@ -56,7 +56,7 @@ body {
 
     .breadcrumb {
       margin: 0 !important;
-      background-color: #f2f2f5 !important;
+      background-color: transparent;
       padding: 15px 30px !important;
 
       .breadcrumb-item {
@@ -331,7 +331,7 @@ footer {
   .breadcrumb {
     font-size: 13px;
     margin: 0 !important;
-    background-color: #fff !important;
+    background-color: transparent;
     padding: 12px 0 !important;
 
     .breadcrumb-item {

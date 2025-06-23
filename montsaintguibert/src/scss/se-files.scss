@@ -59,10 +59,11 @@
       border-color: none;
 
       .table_image {
-        border: solid 1px $primary;
+        border: solid 1px $primary-svg;
         text-decoration: none;
         padding: 20px;
         border-radius: 20px;
+        background-color: $primary-svg;
 
         span,
         p,

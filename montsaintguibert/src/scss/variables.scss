@@ -85,7 +85,7 @@ $header-links-account-border: solid 0 $primary-dark;
 $header-links-account-bg: transparent !default;
 $header-links-account-hover-border: solid 0 $primary-dark;
 $header-links-account-hover-bg: transparent !default;
-$header-links-account-hover-color: $primary-dark;
+$header-links-account-hover-color: $orange;
 $header-search-icon-color: $orange;
 $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 $toggler-color: $orange;
@@ -129,7 +129,7 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 //sub-header
 $subsite-logo-background: $primary;
 $subsite-logo-color: #fff;
-$subsite-navbar-bg: #fff !default;
+$subsite-navbar-bg: $primary-svg;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
@@ -347,10 +347,10 @@ $newsletter-text-color: #fff !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
-$mark-color: #5c5c5c !default;
+$mark-background-color: $light-blue;
+$mark-color: $primary-dark;
 $mark-padding-sec: 20px 45px 20px 26px !default;
-$mark-border: solid 2px $primary !default;
+$mark-border: solid 1px $blue;
 $mark-radius: $global-radius !default;
 $mark-weight: 500 !default;
 $list-style-color: $primary !default;
