@@ -10,6 +10,7 @@ $green: #7fcbae;
 $blue: #2897c4;
 $red: #eb5e50;
 $orange: #fdc75f;
+$light-yellow: #fff2db;
 
 //*// TYPOGRAPHY
 
@@ -128,8 +129,8 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
 //sub-header
 $subsite-logo-background: $primary;
-$subsite-logo-color: #fff;
-$subsite-navbar-bg: $primary-svg;
+$subsite-logo-color: $orange;
+$subsite-navbar-bg: $light-yellow;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;

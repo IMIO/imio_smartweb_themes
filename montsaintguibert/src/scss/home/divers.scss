@@ -407,3 +407,7 @@ footer {
 .annuaire-day-open {
   color: $dark-green;
 }
+
+body.template-block_view #content-core::after {
+  background: transparent;
+}
