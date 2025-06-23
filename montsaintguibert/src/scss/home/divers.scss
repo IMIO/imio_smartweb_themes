@@ -1,7 +1,3 @@
-body {
-  background: #fff;
-}
-
 // Search link styles
 #portal-header #portal-header-top #header-links #search-link a {
   width: 50px;
@@ -196,8 +192,9 @@ div#header-actions {
   background: $primary-dark;
   border-radius: 20px;
 
+  a,
   a span {
-    color: $orange;
+    color: $orange !important;
   }
 }
 
