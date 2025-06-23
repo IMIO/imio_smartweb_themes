@@ -139,6 +139,7 @@
 .sectionnews .see_all a {
   background: $light-blue;
   color: $primary-dark;
+  border: none;
 
   &:hover {
     background: $blue;

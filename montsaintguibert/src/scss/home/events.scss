@@ -50,7 +50,7 @@
   @media screen and (max-width: 950px) {
     margin-top: 60px;
     width: 100% !important;
-    background: $primary-svg;
+    background: $light-red;
     padding: 60px 0;
 
     .section-title {
@@ -66,7 +66,7 @@
         content: "" !important;
       }
       padding: 20px 10px;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid $light-red;
 
       .table_display {
         .table_image {
@@ -143,6 +143,7 @@ div#container-section-visuel-agenda {
     text-align: center;
     background: $light-red;
     color: $primary-dark;
+    border: none;
 
     &:hover {
       background: $red;
@@ -191,4 +192,10 @@ div#container-section-visuel-agenda {
   background-position: top center;
   z-index: -1;
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .sortable-section.sectiontext.col-sm-6 {
+    display: none;
+  }
 }

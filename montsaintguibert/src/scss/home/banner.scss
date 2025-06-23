@@ -5,6 +5,10 @@
   background-position: right top;
 }
 
+div#portal-header {
+  border-bottom: 1px solid $dark-green;
+}
+
 .slogan-container {
   margin: 0 auto;
   display: flex;
