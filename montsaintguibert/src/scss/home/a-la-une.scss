@@ -5,9 +5,13 @@
 .sortable-section.sectionnews.a-la-une.a-la-une {
   position: relative;
 
-  .swiper-description {
+  .swiper_description {
     text-align: left;
     padding: 0 0 0 130px;
+
+    p {
+      text-align: left;
+    }
   }
 
   .swiper_date {

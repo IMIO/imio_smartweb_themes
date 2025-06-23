@@ -9,6 +9,11 @@ body {
   background: $primary-dark;
   border: 1px solid $primary-dark;
   transition: all 0.3s ease;
+  color: $orange;
+
+  span {
+    color: $orange;
+  }
 
   &:hover {
     background: #fff;
