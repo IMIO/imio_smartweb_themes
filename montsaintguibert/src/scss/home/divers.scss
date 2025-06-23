@@ -19,7 +19,7 @@ body {
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
   background: #fff;
-  border: 1px solid $orange;
+  border: 1px solid $primary-dark;
 }
 
 #portal-header #portal-header-top #portal-logo {
@@ -984,7 +984,7 @@ input#search_button {
   padding: 15px 30px;
   border-radius: 20px;
 
-  a {
-    color: $orange;
+  a span {
+    color: $orange !important;
   }
 }

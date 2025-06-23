@@ -2,11 +2,11 @@
   display: none;
 }
 
-.a-la-une {
+.sortable-section.sectionnews.a-la-une.a-la-une {
   position: relative;
 }
 
-.a-la-une::after {
+.sortable-section.sectionnews.a-la-une.a-la-une::after {
   content: "";
   position: absolute;
   top: 0;
