@@ -9,6 +9,7 @@
 
   span {
     color: $orange;
+    font-size: 14px !important;
   }
 
   &:hover {
@@ -21,6 +22,10 @@
   #portal-header #portal-header-top #header-links #search-link a {
     padding-left: 0 !important;
   }
+}
+
+#portal-header #portal-header-top #header-links {
+  gap: 15px;
 }
 
 // Portal logo
@@ -188,7 +193,7 @@ h3 {
 
 // Account hover underline effect
 div#header-actions {
-  padding: 13px 20px;
+  padding: 13px 15px;
   background: $primary-dark;
   border-radius: 20px;
 
