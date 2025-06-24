@@ -56,15 +56,18 @@ body {
   border: 2px solid $primary;
 }
 
-#portal-header #portal-header-top #portal-logo {
-  margin-top: 0;
-  max-width: 200px;
-  width: 100%;
-  height: 70px;
+#portal-header #portal-header-top {
+  padding: 0.1rem 0;
 
-  svg {
-    width: 220px;
-    height: auto;
+  #portal-logo {
+    margin-top: 0;
+    max-width: 200px;
+    width: 100%;
+
+    svg {
+      width: 220px;
+      height: auto;
+    }
   }
 }
 
@@ -383,11 +386,11 @@ footer #container-section-noussuivre {
 
   #subsite-logo {
     font-size: 18px;
-    background: $primary-svg;
+    background: $primary-blue;
     border-radius: 10px 0;
 
     a {
-      color: #000;
+      color: #fff;
     }
   }
 }
@@ -764,11 +767,8 @@ h3 {
   font-weight: 600;
 }
 
-.subsection-services-communaux-communication-bulletin-communal
-  .block-menu-element
-  a
-  .card-img-top {
-  padding-top: 135%;
+.subsection-flash-communal .block-menu-element a .card-img-top {
+  padding-top: 100%;
   background-position: top;
 }
 
@@ -784,7 +784,7 @@ h3 {
 
 #portal-footer-wrapper #portal-footer #smartweb-footer a:hover,
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
-  color: $primary-blue;
+  text-decoration: underline;
   transition: all 0.5s ease;
 }
 
@@ -918,7 +918,19 @@ h3 {
   .table_display
   .table_image
   span {
-  color: #fff !important;
+  color: $primary-blue !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  background-color: #fff;
+  border: 1px solid $primary-blue;
+  color: $primary-blue;
+  padding: 10px 45px 10px 26px;
 }
 
 .contact_map {
@@ -927,4 +939,9 @@ h3 {
 
 .r-search-container .r-search.search-bar-filter input {
   margin: 0;
+}
+
+.r-add-event,
+.r-add-news {
+  display: none !important;
 }
