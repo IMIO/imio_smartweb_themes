@@ -25,7 +25,7 @@
 }
 
 #portal-header #portal-header-top #header-links {
-  gap: 15px;
+  gap: 10px;
 }
 
 // Portal logo
@@ -207,6 +207,7 @@ div#header-actions {
   text-decoration: none;
   font-weight: 500;
   position: relative;
+  font-size: 14px;
 
   &::before {
     content: "";
@@ -415,4 +416,10 @@ footer {
 
 body.template-block_view #content-core::after {
   background: transparent;
+}
+
+@media (min-width: 1400px) {
+  #portal-globalnav {
+    gap: 32px;
+  }
 }
