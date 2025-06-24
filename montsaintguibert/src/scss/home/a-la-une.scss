@@ -58,10 +58,10 @@
 
 /* Mobiles */
 @media (max-width: 768px) {
-  .a-la-une .swiper-slide {
+  .a-la-une.a-la-une .swiper-slide {
     .swiper_title,
     .swiper_date,
-    .swiper-description {
+    .swiper_description {
       padding: 0.1rem !important;
     }
   }
