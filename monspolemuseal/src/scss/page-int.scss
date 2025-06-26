@@ -1,3 +1,44 @@
+.blc-newsletter {
+  text-align: center;
+  width: 100%;
+  background: #fbe8ef;
+  padding: 80px 0 40px;
+  border-radius: 50px;
+  margin: 100px 0;
+
+  .title-bloc {
+    font-size: 40px !important;
+    line-height: 40px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 700 !important;
+  }
+
+  .see_all {
+    background: #f6bdd1;
+    border: 0 solid transparent;
+    border-radius: 90px;
+    color: #000;
+    display: block;
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 30px;
+    position: relative;
+    margin: 40px auto;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.5s ease;
+    width: max-content;
+
+    &:hover {
+      background: #000 !important;
+      color: #fff !important;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
 .swiper {
   z-index: 0;
 }
@@ -101,6 +142,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-abattoirs;
+
+    .see_all {
+      background: $primary-color-abattoirs;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-artotheque {
@@ -129,6 +179,15 @@
       a {
         color: $primary-titre-artotheque;
       }
+    }
+  }
+
+  .blc-newsletter {
+    background: $primary-color-light-artotheque;
+
+    .see_all {
+      background: $primary-color-artotheque;
+      color: #fff;
     }
   }
 }
@@ -161,6 +220,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-cap;
+
+    .see_all {
+      background: $primary-color-cap;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-magasin-de-papier {
@@ -186,6 +254,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-magasin-de-papier;
+
+    .see_all {
+      background: $primary-color-magasin-de-papier;
+      color: #000;
+    }
+  }
 }
 
 .subsection-maison-van-gogh {
@@ -209,6 +286,15 @@
       a {
         color: $primary-titre-maison-van-gogh;
       }
+    }
+  }
+
+  .blc-newsletter {
+    background: $primary-color-light-magasin-van-gogh;
+
+    .see_all {
+      background: $primary-color-magasin-van-gogh;
+      color: #000;
     }
   }
 }
@@ -241,6 +327,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-mons-memorial-museum;
+
+    .see_all {
+      background: $primary-color-mons-memorial-museum;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-musee-du-doudou {
@@ -271,6 +366,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-musee-du-doudou;
+
+    .see_all {
+      background: $primary-color-musee-du-doudou;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-salle-saint-georges {
@@ -296,6 +400,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-salle-saint-georges;
+
+    .see_all {
+      background: $primary-color-salle-saint-georges;
+      color: #000;
+    }
+  }
 }
 
 .subsection-silexs {
@@ -319,6 +432,15 @@
       a {
         color: $primary-titre-silexs;
       }
+    }
+  }
+
+  .blc-newsletter {
+    background: $primary-color-light-silexs;
+
+    .see_all {
+      background: $primary-color-silexs;
+      color: #000;
     }
   }
 }
@@ -351,6 +473,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-beffroi;
+
+    .see_all {
+      background: $primary-color-beffroi;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-tresor-de-sainte-waudru {
@@ -381,6 +512,15 @@
       }
     }
   }
+
+  .blc-newsletter {
+    background: $primary-color-light-tresor-de-sainte-waudru;
+
+    .see_all {
+      background: $primary-color-tresor-de-sainte-waudru;
+      color: #fff;
+    }
+  }
 }
 
 .subsection-musee-francois-duesberg {
@@ -409,6 +549,15 @@
       a {
         color: $primary-titre-musee-francois-duesberg;
       }
+    }
+  }
+
+  .blc-newsletter {
+    background: $primary-color-light-musee-francois-duesberg;
+
+    .see_all {
+      background: $primary-color-musee-francois-duesberg;
+      color: #fff;
     }
   }
 }
