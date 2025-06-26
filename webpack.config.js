@@ -197,7 +197,7 @@ module.exports = (env, argv) => {
         new CssMinimizerPlugin(),
         new TerserPlugin({
           parallel: true,
-        })
+        }),
       ],
     },
     devServer: {
