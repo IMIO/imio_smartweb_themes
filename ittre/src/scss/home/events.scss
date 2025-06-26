@@ -153,3 +153,42 @@
   transform: translateY(10px);
   transition: 0.5s;
 }
+
+.auth_source_container_title {
+  background: initial !important;
+}
+
+div#body-section-publications-horodatees ul li {
+  list-style: none;
+  text-align: center;
+
+  > div:first-of-type {
+    background-color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #181818;
+    display: block;
+    overflow: hidden;
+    padding: 25px;
+    text-decoration: none;
+    transform: translateY(0);
+    transition: 0.5s;
+  }
+
+  .table_date {
+    padding-bottom: 10px;
+    color: $primary;
+  }
+
+  a {
+    color: $primary;
+  }
+
+  .table_title {
+    padding-bottom: 10px;
+    color: $grey-dark;
+    font-family: Oswald;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
