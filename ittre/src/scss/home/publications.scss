@@ -97,6 +97,11 @@ div#body-section-publications-horodatees ul li {
   list-style: none;
   text-align: center;
 
+  .table_display:hover {
+    transform: translateY(10px) !important;
+    transition: 0.5s !important;
+  }
+
   > div:first-of-type {
     background-color: #fff;
     border-bottom-left-radius: 25px;
@@ -117,7 +122,7 @@ div#body-section-publications-horodatees ul li {
 
   a {
     color: $dark;
-    text-decoration: none;
+    text-decoration: none !important;
 
     & > :hover,
     :focus {
@@ -128,7 +133,7 @@ div#body-section-publications-horodatees ul li {
 
   .table_title {
     padding-bottom: 10px;
-    color: $grey-dark;
+    color: $grey-dark !important;
     font-family: Oswald;
     font-size: 1.3rem;
     font-weight: 500;
