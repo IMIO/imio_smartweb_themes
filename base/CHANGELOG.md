@@ -1,5 +1,22 @@
 
 
+## [0.3.1](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.0...v0.3.1) (2025-07-01)
+
+
+### Bug Fixes
+
+* **bw:** temporarily downgrade base theme version ([d9f245f](https://github.com/IMIO/imio_smartweb_themes/commit/d9f245ff321878069e0059a8b77094820bae79bd))
+
+
+### Features
+
+* base theme for anderlues [quick] ([77cbadd](https://github.com/IMIO/imio_smartweb_themes/commit/77cbaddededdfde76d1be5fdedc60081754285f7))
+* base theme for anthisnes [quick] ([48c0941](https://github.com/IMIO/imio_smartweb_themes/commit/48c0941d31817b4f19b78b3fe7a1d44c32f47f04))
+* base theme for orpjauche [quick] ([85d637a](https://github.com/IMIO/imio_smartweb_themes/commit/85d637a9e96616d6d47ab636b3aeb284f442c7ae))
+* **montsaintguibert:** mep url [skip ci] ([4711cee](https://github.com/IMIO/imio_smartweb_themes/commit/4711ceef2bc797c9abc33d10ce2bf70282050a82))
+* **smartweb:** fernelmont [quick] ([05ee95b](https://github.com/IMIO/imio_smartweb_themes/commit/05ee95b6887b4cf99d05d525e788b62e8cf77345))
+* **smartweb:** jurbise [quick] ([9778251](https://github.com/IMIO/imio_smartweb_themes/commit/977825177397f5e3bbe30e2a69a9bec5a59398d8))
+
 # [0.3.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.2.1...v0.3.0) (2025-06-13)
 
 
