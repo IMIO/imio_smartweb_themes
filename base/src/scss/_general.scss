@@ -17,6 +17,9 @@
 // affichage horraire
 .section-contact .table_schedule {
   display: none;
+  tr {
+    vertical-align: top;
+  }
 }
 
 .schedule .opening_informations::after {

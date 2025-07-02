@@ -4,13 +4,13 @@
   padding-bottom: $event-section-padding-bottom;
   margin: $event-section-margin;
 
-  @if $actu-section-full-width {
+  @if $event-section-full-width {
     width: 100vw;
     max-width: 100vw;
   }
 
   @include media-breakpoint-up(lg) {
-    @if $actu-section-full-width {
+    @if $event-section-full-width {
       left: 50%;
       transform: translateX(-50%);
     }
