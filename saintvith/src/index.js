@@ -11,14 +11,19 @@ $(document).ready(function () {
 
   // For custom slider
   if ($(".sectionnews .swiper").length > 0) {
-    var newsSwiper = $(".sectionnews .swiper")[0].swiper;
-    newsSwiper.params.spaceBetween = 30;
-    (newsSwiper.params.speed = 1000), newsSwiper.update();
+    // Update all swipers in sectionnews
+    $(".sectionnews .swiper").each(function() {
+      var newsSwiper = this.swiper;
+      newsSwiper.params.spaceBetween = 25;
+      newsSwiper.update();
+    });
   }
   if ($(".sectionevents .swiper").length > 0) {
-    var eventsSwiper = $(".sectionevents .swiper")[0].swiper;
-    eventsSwiper.params.spaceBetween = 30;
-    (eventsSwiper.params.speed = 1000), eventsSwiper.update();
+    $(".sectionevents .swiper").each(function() {
+      var eventsSwiper = this.swiper;
+      eventsSwiper.params.spaceBetween = 30;
+      eventsSwiper.update();
+    });
   }
 
   // For banner

@@ -1,6 +1,6 @@
 //*// COLORS
-$primary: #222831 !default;
-$primary-svg: #235789 !default;
+$primary: #313131;
+$primary-svg: #B0C4DE !default;
 
 //*// TYPOGRAPHY
 
@@ -39,9 +39,9 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
 );
-$global-radius: 0 !default;
+$global-radius: 10px;
 $enable-title-uppercase: false !default;
-$home-section-title-size: 3.25rem !default;
+$home-section-title-size: 2.5rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
@@ -59,7 +59,7 @@ $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/20
 $swiper-background-size: 50% !default;
 $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
-$swipper-bullet-color: $primary-svg !default;
+$swipper-bullet-color: $primary;
 
 //*// HEADER
 $main-logo-max-width: 115px !default;
@@ -149,21 +149,21 @@ $banner-content-description-font-size: 18px !default;
 $banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding: 0 !default;
+$see-all-padding: 1rem;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg: transparent !default;
+$see-all-bg: $primary-svg;
 $see-all-color: $primary !default;
-$see-all-radius: $global-radius !default;
+$see-all-radius: 100px !default;
 $see-all-border: solid 0 $primary !default;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
 $see-all-font-weight: 700 !default;
 $see-all-transition: all 0.2s ease !default;
-$see-all-hover-bg: transparent !default;
-$see-all-hover-color: $primary-svg !default;
-$see-all-hover-radius: $global-radius !default;
+$see-all-hover-bg: lighten($primary-svg, 10%) !default;
+$see-all-hover-color: $primary;
+$see-all-hover-radius: 1OOpx;
 $see-all-hover-border: solid 0 $primary !default;
-$see-all-justify-content: right !default;
+$see-all-justify-content: center ;
 $see-all-underline-color: $primary-svg !default;
 $see-all-underline-width: 25% !default;
 $see-all-hover-underline-width: 50% !default;
@@ -175,10 +175,10 @@ $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
+$quick-access-width: 40px;
+$quick-access-height: 40px;
 $quick-access-background: #fff !default;
-$quick-access-border: solid 1px $primary !default;
+$quick-access-border: solid 0px $primary;
 $quick-access-border-radius: 100px !default;
 $quick-access-shadow: none !default;
 $quick-access-svg-width: 40px !default;
@@ -228,7 +228,7 @@ $actu-item-bg-color: rgb(244, 244, 244) !default;
 $actu-item-bg-radius: $global-radius + 2 !default;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
-$actu-category-color: #fff !default;
+$actu-category-color: $primary;
 $actu-category-bg-color: $primary-svg !default;
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px !default;
@@ -254,7 +254,7 @@ $actu-date-align: left !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
-$event-section-full-width: true !default;
+$event-section-full-width: true!default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;

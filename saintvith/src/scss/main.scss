@@ -33,3 +33,7 @@ $enable-roboto-webfont: false;
     }
   }
 }
+
+.see_all a::after {
+	display: none;
+}
