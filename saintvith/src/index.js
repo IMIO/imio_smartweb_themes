@@ -12,14 +12,14 @@ $(document).ready(function () {
   // For custom slider
   if ($(".sectionnews .swiper").length > 0) {
     // Update all swipers in sectionnews
-    $(".sectionnews .swiper").each(function() {
+    $(".sectionnews .swiper").each(function () {
       var newsSwiper = this.swiper;
       newsSwiper.params.spaceBetween = 25;
       newsSwiper.update();
     });
   }
   if ($(".sectionevents .swiper").length > 0) {
-    $(".sectionevents .swiper").each(function() {
+    $(".sectionevents .swiper").each(function () {
       var eventsSwiper = this.swiper;
       eventsSwiper.params.spaceBetween = 30;
       eventsSwiper.update();

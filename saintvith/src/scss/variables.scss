@@ -1,6 +1,6 @@
 //*// COLORS
 $primary: #313131;
-$primary-svg: #B0C4DE !default;
+$primary-svg: #b0c4de !default;
 
 //*// TYPOGRAPHY
 
@@ -163,7 +163,7 @@ $see-all-hover-bg: lighten($primary-svg, 10%) !default;
 $see-all-hover-color: $primary;
 $see-all-hover-radius: 1OOpx;
 $see-all-hover-border: solid 0 $primary !default;
-$see-all-justify-content: center ;
+$see-all-justify-content: center;
 $see-all-underline-color: $primary-svg !default;
 $see-all-underline-width: 25% !default;
 $see-all-hover-underline-width: 50% !default;
@@ -254,7 +254,7 @@ $actu-date-align: left !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
-$event-section-full-width: true!default;
+$event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;
