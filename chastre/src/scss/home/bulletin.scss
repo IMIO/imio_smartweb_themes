@@ -1,6 +1,7 @@
 .bien-vivre-a-chastre .swiper-slide .swiper-image {
   padding-bottom: 140%;
   border: $light-blue solid 1px;
+  border-radius: 10px;
 }
 
 .sectioncollection.bien-vivre-a-chastre {
@@ -62,5 +63,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sectioncollection.bien-vivre-a-chastre .section-title {
+    text-align: center;
   }
 }
