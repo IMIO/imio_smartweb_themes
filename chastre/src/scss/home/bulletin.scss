@@ -33,34 +33,25 @@
     margin: 2rem 0 0;
 
     a {
-      background: transparent;
-      border: 0 solid #1b4f95;
+      background: $primary;
+      border: 1px solid $primary;
       border-radius: 10px;
-      color: #222831;
+      color: #fff;
       display: block;
       font-size: 18px;
       font-weight: 200;
-      padding: 0;
+      padding: 10px 30px;
       position: relative;
       text-decoration: none;
       text-transform: none;
       transition: all 0.2s ease;
       width: max-content;
 
-      &::after {
-        background-color: #235789;
-        bottom: -5px;
-        content: "";
-        height: 2px;
-        position: absolute;
-        transition: all 0.2s ease;
-        width: 25%;
-      }
-
       &:hover {
-        &::after {
-          width: 50%;
-        }
+        background: transparent;
+        border: 1px solid $primary;
+        border-radius: 10px;
+        color: $dark;
       }
     }
   }
