@@ -15,10 +15,9 @@ $enable-roboto-webfont: false;
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./home";
+@import "./footer";
 
 //// STYLES
-
-// ... add your styles here
 
 .site-oshz,
 .site-cpas {
@@ -36,4 +35,10 @@ $enable-roboto-webfont: false;
 
 .see_all a::after {
   display: none;
+}
+
+.portaltype-imio-smartweb-portalpage {
+  .section-title {
+    margin-bottom: 2rem;
+  }
 }

@@ -1,0 +1,21 @@
+#portal-footer-wrapper {
+  padding-top: 50px;
+  text-align: left;
+}
+
+#portal-colophon {
+  background-color: #313131;
+  color: #fff !important;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0 25px;
+  }
+
+  a {
+    color: #fff;
+  }
+}

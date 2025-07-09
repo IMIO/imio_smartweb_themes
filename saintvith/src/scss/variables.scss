@@ -50,14 +50,14 @@ $to-portal-link-color: #282828 !default;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper
-$swiper-icon-color: $primary-svg !default;
+$swiper-icon-color: #fff;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
 $swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-background-size: 50% !default;
-$swiper-background-color: #fff !default;
+$swiper-background-color: $primary-svg;
 $swiper-raduis: 50px !default;
 $swipper-bullet-color: $primary;
 
@@ -215,17 +215,17 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 3rem;
+$actu-section-padding-bottom: 3rem;
 $actu-section-margin: 0 !default;
 $actu-title-color: $primary !default;
 $actu-title-align: $home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
-$actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color: rgb(244, 244, 244) !default;
-$actu-item-bg-radius: $global-radius + 2 !default;
+$actu-image-border-radius: 10px 10px 0 0;
+$actu-item-bg-color: #fff;
+$actu-item-bg-radius: $global-radius !default;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
 $actu-category-color: $primary;
@@ -233,7 +233,7 @@ $actu-category-bg-color: $primary-svg !default;
 $actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px !default;
 $actu-category-font-weight: initial !default;
-$actu-category-radius: $global-radius !default;
+$actu-category-radius: 0 5px 5px 0px;
 $actu-item-title-margin: 0 0 0 0 !default;
 $actu-item-title-padding: 0 1rem !default;
 $actu-item-title-color: initial !default;
@@ -255,16 +255,16 @@ $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
 $event-section-full-width: true !default;
-$event-section-padding-top: 2rem !default;
-$event-section-padding-bottom: 2rem !default;
+$event-section-padding-top: 3rem;
+$event-section-padding-bottom: 3rem;
 $event-section-margin: 0 !default;
 $event-title-color: $primary !default;
 $event-title-align: $home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color: rgb(244, 244, 244) !default;
+$event-image-border-radius: 10px 10px 0 0;
+$event-item-bg-color: #fff;
 $event-item-bg-radius: $global-radius + 2 !default;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.5rem 1rem !default;
@@ -294,15 +294,15 @@ $event-see-all-justify-content: $see-all-justify-content !default;
 // Album
 $album-section-full-width: true !default;
 $album-section-bg: #edeae5 !default;
-$album-section-padding-top: 2rem !default;
-$album-section-padding-bottom: 2rem !default;
+$album-section-padding-top: 3rem;
+$album-section-padding-bottom: 3rem;
 $album-section-margin: 0 !default;
 $album-title-color: $primary !default;
 $album-title-align: $home-section-title-align !default;
 $album-title-margin: $home-section-title-margin !default;
 $album-title-padding: $home-section-title-padding !default;
 $album-image-margin-bottom: 0.7rem !default;
-$album-image-border-radius: $global-radius !default;
+$album-image-border-radius: 10px 10px 0 0;
 $album-item-bg-color: rgb(244, 244, 244) !default;
 $album-item-bg-radius: $global-radius + 2 !default;
 $album-category-margin: 0 0 0.3rem 0 !default;
@@ -333,6 +333,9 @@ $newsletter-padding-bottom: 2rem !default;
 $newsletter-margin: 3rem 0 !default;
 $newsletter-text-color: #fff !default;
 
+// footer
+
+$footer-bg: #313131;
 /////////////// interne ///////////////
 
 //*// SECTION TEXTE
