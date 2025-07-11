@@ -373,9 +373,9 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary !default;
+$section-file-background-color: $primary-svg;
 $enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$enable-light-color-section-files: false;
 
 // section-link
 $section-link-background-color: #f8f8f8;

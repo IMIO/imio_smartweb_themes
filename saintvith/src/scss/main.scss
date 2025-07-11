@@ -15,6 +15,7 @@ $enable-roboto-webfont: false;
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./home";
+@import "./subsite";
 @import "./footer";
 
 //// STYLES
@@ -89,4 +90,12 @@ $enable-roboto-webfont: false;
       height: 24px;
     }
   }
+}
+
+.sectionfiles .section-title {
+  color: $primary;
+}
+
+.sectionfiles::after {
+  border-radius: 10px;
 }
