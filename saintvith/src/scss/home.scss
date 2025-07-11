@@ -79,6 +79,16 @@
         height: 100%;
         flex-direction: column;
         justify-content: center;
+
+        .image {
+          transition: all 0.1s ease-in-out;
+        }
+
+        &:hover {
+          .image {
+            transform: scale(1.05);
+          }
+        }
       }
     }
   }

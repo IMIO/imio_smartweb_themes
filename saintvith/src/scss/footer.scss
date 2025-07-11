@@ -1,6 +1,19 @@
 #portal-footer-wrapper {
   padding-top: 50px;
   text-align: left;
+  color: #fff;
+
+  ul,
+  p,
+  li,
+  a,
+  span {
+    color: #fff !important;
+  }
+
+  svg {
+    fill: #fff !important;
+  }
 }
 
 #portal-colophon {
