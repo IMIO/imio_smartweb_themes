@@ -28,6 +28,17 @@
     width: 9px;
     fill: #fff;
   }
+
+  .sectionlink {
+    .table_image {
+      display: flex;
+      gap: 10px;
+
+      .image {
+        width: auto;
+      }
+    }
+  }
 }
 
 #portal-colophon {
