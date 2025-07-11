@@ -99,3 +99,20 @@ $enable-roboto-webfont: false;
 .sectionfiles::after {
   border-radius: 10px;
 }
+
+@media (min-width: 1200px) {
+  #portal-globalnav {
+    gap: 20px;
+  }
+}
+
+.sectionpostit {
+  .section-container {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  .swiper-slide {
+    padding: 10px;
+  }
+}
