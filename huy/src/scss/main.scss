@@ -15,10 +15,11 @@ $enable-roboto-webfont: false;
 @import "./variables";
 @import "../../../base/src/scss/main";
 
-.sectioncontact {
-  .contact_logo {
-    width: 100px;
-    height: 100px;
-    background-size: contain !important;
-  }
+#portal-column-content
+  .section-contact
+  .contact-type-position
+  .contact_leadimage,
+#portal-column-content .section-contact .contact-type-position .contact_logo {
+  width: 100px;
+  height: 100px;
 }
