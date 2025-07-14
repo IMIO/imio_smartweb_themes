@@ -30,10 +30,6 @@ footer .smartweb-footer {
     margin-top: 0;
   }
 
-  .container > .row {
-    padding: 5rem 0;
-  }
-
   .sectiontext,
   .sectioncontact,
   .sectionlinks {
@@ -101,6 +97,7 @@ footer ul.row {
 
 #portal-footer-wrapper #portal-footer.container {
   background: $primary !important;
+  padding: 50px 0;
 }
 
 #portal-footer-wrapper {
