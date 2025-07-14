@@ -1,5 +1,22 @@
 
 
+## [0.3.2](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.1...v0.3.2) (2025-07-14)
+
+
+### Bug Fixes
+
+* lint (again) [skip ci] ([604917e](https://github.com/IMIO/imio_smartweb_themes/commit/604917edf38182950a32bc71589589e86bd66059))
+* lint for ci [skip ci] ([7f8dfdb](https://github.com/IMIO/imio_smartweb_themes/commit/7f8dfdb9911386ef60ae2d1ee83f50edde1cc864))
+* remove file committed by mistake [skip ci] ([d381acc](https://github.com/IMIO/imio_smartweb_themes/commit/d381acc670e61135d14e5730b19e8d9d1b00668d))
+
+
+### Features
+
+* base theme for sommeleuze [quick] ([d108908](https://github.com/IMIO/imio_smartweb_themes/commit/d108908a4128ecd17be66abcc41af75601cd86a2))
+* base theme for sommeleuze [quick] ([e88c2b7](https://github.com/IMIO/imio_smartweb_themes/commit/e88c2b70ab6fa4ce437d995de99400136f20d65a))
+* base theme for sommeleuze [quick] ([42ac4c7](https://github.com/IMIO/imio_smartweb_themes/commit/42ac4c7c307a6dfe1d697c415d89a8b497a5482c))
+* base theme for sommeleuze [quick] ([56bc442](https://github.com/IMIO/imio_smartweb_themes/commit/56bc4421ac975e4c1d5f60a41203e174d66bfae1))
+
 ## [0.3.1](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.0...v0.3.1) (2025-07-01)
 
 
