@@ -670,12 +670,13 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 }
 //tinymce
 #tinymce .mark,
-#tinymce mark {
+#tinymce mark,
+.r-result .r-content-text mark {
   background-color: $primary;
   border: 0 solid $primary;
   border-radius: 15px;
   color: #fff;
   display: inline-block;
   font-weight: 500;
-  padding: 20px 45px 20px 26px;
+  padding: 20px 25px;
 }
