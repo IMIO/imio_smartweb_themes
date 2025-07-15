@@ -28,6 +28,7 @@ $enable-roboto-webfont: false;
 @import "./home/footer";
 @import "./home/rs";
 @import "./home/divers";
+@import "./home/espace-citoyen";
 
 body {
   letter-spacing: 0.5px;
@@ -313,13 +314,6 @@ body#visual-portal-wrapper {
   .dropdown
   .nav-link:hover {
   color: $secondary !important;
-}
-
-//@imiobe/plonetheme-smartweb-base": "0.3.1
-.portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
-  @include media-breakpoint-up(lg) {
-    height: 700px;
-  }
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page h2.section-title {

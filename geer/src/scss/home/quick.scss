@@ -43,6 +43,7 @@
             height: 120px;
             transition: all 0.3s ease;
             position: relative;
+            border: 3px solid #fff;
           }
 
           &:hover,
@@ -58,6 +59,7 @@
 
             span {
               line-height: 1;
+              color: #fff;
             }
           }
         }
@@ -79,6 +81,7 @@
 
           a .table_title span {
             font-size: 14px;
+            color: #fff;
           }
         }
       }
