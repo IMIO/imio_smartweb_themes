@@ -125,18 +125,18 @@ $banner-content-description-color: $secondary;
 // see_all
 $see-all-padding: 0.6rem 2rem;
 $see-all-margin: 5rem 0 0 0;
-$see-all-bg: transparent;
-$see-all-color: $secondary;
-$see-all-radius: none;
-$see-all-border: solid 0 $secondary;
+$see-all-bg: $primary;
+$see-all-color: #fff;
+$see-all-radius: 20px;
+$see-all-border: solid 1px $primary;
 $see-all-text-transform: none;
 $see-all-font-size: 16px;
 $see-all-transition: all 0.2s ease;
 $see-all-hover-bg: transparent;
-$see-all-hover-color: $secondary;
-$see-all-hover-radius: none;
-$see-all-hover-border: solid 0 $secondary;
-$see-all-justify-content: right;
+$see-all-hover-color: #000;
+$see-all-hover-radius: 20px;
+$see-all-hover-border: solid 1 $primary;
+$see-all-justify-content: center;
 
 // Quick access
 $quick-access-section-full-width: true;
