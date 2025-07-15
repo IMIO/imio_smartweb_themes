@@ -10,13 +10,13 @@ $enable-roboto-webfont: false;
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
-// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
-
 @import "./variables";
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "../../../base/src/scss/main";
 @import "./home";
 @import "./subsite";
 @import "./footer";
+@import "./file-link";
 
 //// STYLES
 
@@ -92,14 +92,6 @@ $enable-roboto-webfont: false;
   }
 }
 
-.sectionfiles .section-title {
-  color: $primary;
-}
-
-.sectionfiles::after {
-  border-radius: 10px;
-}
-
 @media (min-width: 1200px) {
   #portal-globalnav {
     gap: 20px;
@@ -130,48 +122,5 @@ $enable-roboto-webfont: false;
 @media screen and (min-width: 450px) {
   body.faceted-map .faceted-map-text .items-content .geo-item-image {
     margin-left: initial;
-  }
-}
-
-#content-core {
-  .sectionfiles {
-    margin-bottom: 2rem;
-
-    .table_display {
-      background: #ffffff78;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  }
-}
-
-///
-.sectionselections {
-  li {
-    list-style: none;
-  }
-
-  .table_image {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-decoration: none;
-
-    .image {
-      padding-bottom: 56%;
-      transition: all 0.1s ease-in-out;
-    }
-
-    &:hover {
-      .image {
-        transform: scale(1.03);
-      }
-    }
-
-    .table_title {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      text-decoration: none;
-    }
   }
 }

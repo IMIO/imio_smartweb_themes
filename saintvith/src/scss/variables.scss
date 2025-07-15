@@ -378,7 +378,7 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: false;
 
 // section-link
-$section-link-background-color: #f8f8f8;
+$section-link-background-color: $primary-svg;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
