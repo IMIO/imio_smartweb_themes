@@ -144,3 +144,34 @@ $enable-roboto-webfont: false;
     }
   }
 }
+
+///
+.sectionselections {
+  li {
+    list-style: none;
+  }
+
+  .table_image {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none;
+
+    .image {
+      padding-bottom: 56%;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover {
+      .image {
+        transform: scale(1.03);
+      }
+    }
+
+    .table_title {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+    }
+  }
+}
