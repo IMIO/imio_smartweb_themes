@@ -1,6 +1,6 @@
 @media screen and (max-width: 950px) {
   .bulletins .section-title {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 
@@ -103,4 +103,16 @@
   max-width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .bulletins h2.section-title::after {
+    content: "";
+    background: no-repeat url("../../assets/svg/circles-title.svg");
+    height: 10px;
+    position: absolute;
+    left: 37%;
+    top: 50%;
+    width: 55px;
+  }
 }
