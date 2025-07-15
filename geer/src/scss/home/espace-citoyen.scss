@@ -1,5 +1,5 @@
 .portaltype-imio-smartweb-portalpage.section-home-page {
-  .espace-citoyen .text h2::after {
+  .section-text .text h2::after {
     content: "";
     background: no-repeat url("../../assets/svg/circles-title.svg");
     height: 10px;
@@ -7,6 +7,12 @@
     left: 37%;
     top: 50%;
     width: 55px;
+  }
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .section-text .text {
+    max-width: initial;
   }
 }
 

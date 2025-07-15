@@ -75,16 +75,6 @@
     transition: all 0.2s ease;
     width: max-content;
 
-    &::after {
-      background-color: transparent;
-      bottom: -5px;
-      content: "";
-      height: initial;
-      position: absolute;
-      transition: all 0.2s ease;
-      width: 0%;
-    }
-
     .swiper_title {
       text-align: center;
     }
@@ -107,15 +97,12 @@
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
   .bulletins h2.section-title::after,
-  .portaltype-imio-smartweb-portalpage.section-home-page
-    .sectiontext
-    .text
-    h2::after {
+  .sectiontext .text h2::after {
     content: "";
     background: no-repeat url("../../assets/svg/circles-title.svg");
     height: 10px;
     position: absolute;
-    left: 37%;
+    left: 40%;
     top: 50%;
     width: 55px;
   }
