@@ -315,28 +315,7 @@ body#visual-portal-wrapper {
   color: $secondary !important;
 }
 
-//BANNER
-.portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
-  left: 0;
-  position: relative;
-  width: 50vw;
-  border-radius: 50%;
-  transform: translate(-35%, -40%);
-}
-
-.portaltype-imio-smartweb-portalpage.section-home-page
-  .smartweb_herobanner
-  .bannerSwiper {
-  height: 1000px;
-  border-radius: 500px;
-  width: 1000px;
-
-  @include media-breakpoint-down(lg) {
-    height: 100vw;
-    width: 100vw;
-  }
-}
-
+//@imiobe/plonetheme-smartweb-base": "0.3.1
 .portaltype-imio-smartweb-portalpage.section-home-page div#portal-header {
   @include media-breakpoint-up(lg) {
     height: 700px;
@@ -349,28 +328,6 @@ body .sectionlinks.quick-access .section-container .row {
     gap: 10px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-  }
-}
-
-@include media-breakpoint-down(lg) {
-  .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
-    transform: translate(-40%, 0);
-    margin-top: -35%;
-  }
-
-  .sectionlinks.quick-access .body-section {
-    padding: 0 !important;
-  }
-
-  #body-section-quick-access ul {
-    grid-gap: 10px;
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
-  }
-
-  .quick-access {
-    margin-top: -50px;
   }
 }
 
@@ -449,4 +406,60 @@ button.focus:hover {
 
 body .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.header-custom #banner::after {
+  display: none !important;
+}
+
+.smartweb_herobanner .bannerSwiper {
+  height: 50vw;
+  max-height: 500px;
+}
+
+.smartweb_herobanner {
+  border-radius: 100px 100px 0 0;
+  overflow: hidden;
+  width: calc(100vw - 100px);
+}
+
+@media screen and (max-width: 575px) {
+  .smartweb_herobanner {
+    width: calc(100vw - 40px);
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: absolute;
+  top: auto;
+  transform: none;
+  bottom: 0 !important;
+  max-width: 100%;
+  width: 100%;
+}
+
+.bannerSwiper .section-slide {
+  .swiper-banner-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 80px 0 0;
+    font-family: $font-family-title;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .swiper-banner-title {
+    font-style: italic;
+  }
+
+  .swiper-banner-description .rich_description {
+    font-weight: 600;
+  }
 }
