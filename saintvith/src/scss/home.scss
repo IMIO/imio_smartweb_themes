@@ -151,3 +151,18 @@
     }
   }
 }
+
+// language selector
+
+#portal-languageselector {
+  display: none;
+}
+
+.site-tourismus,
+.site-tourisme,
+.site-toerisme,
+.site-tourism {
+  #portal-languageselector {
+    display: block;
+  }
+}
