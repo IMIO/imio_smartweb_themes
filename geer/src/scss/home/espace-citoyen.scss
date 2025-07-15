@@ -1,3 +1,15 @@
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .espace-citoyen .text h2::after {
+    content: "";
+    background: no-repeat url("../../assets/svg/circles-title.svg");
+    height: 10px;
+    position: absolute;
+    left: 37%;
+    top: 50%;
+    width: 55px;
+  }
+}
+
 .espace-citoyen {
   position: relative;
 

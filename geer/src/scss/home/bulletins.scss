@@ -106,7 +106,11 @@
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
-  .bulletins h2.section-title::after {
+  .bulletins h2.section-title::after,
+  .portaltype-imio-smartweb-portalpage.section-home-page
+    .sectiontext
+    .text
+    h2::after {
     content: "";
     background: no-repeat url("../../assets/svg/circles-title.svg");
     height: 10px;
