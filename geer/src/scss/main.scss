@@ -143,6 +143,8 @@ body#visual-portal-wrapper {
 
 @media screen and (min-width: 1200px) {
   .a-la-une,
+  .partenaires,
+  .bulletins,
   .sectionnews,
   .sectionevents,
   .albumhome,
@@ -323,6 +325,7 @@ body#visual-portal-wrapper {
 
 .portaltype-imio-smartweb-portalpage.section-home-page {
   .partenaires h2.section-title::after,
+  .bulletins h2.section-title::after,
   .sectionnews h2.section-title::after,
   .sectionevents h2.section-title::after,
   .a-la-une h2.section-title::after {
@@ -330,7 +333,7 @@ body#visual-portal-wrapper {
     background: no-repeat url("../../assets/svg/circles-title.svg");
     height: 10px;
     position: absolute;
-    right: 35%;
+    right: 38%;
     top: 50%;
     width: 55px;
   }
@@ -340,6 +343,7 @@ body#visual-portal-wrapper {
   .portaltype-imio-smartweb-portalpage.section-home-page {
     .partenaires h2.section-title::after,
     .sectionnews h2.section-title::after,
+    .bulletins h2.section-title::after,
     .sectionevents h2.section-title::after,
     .a-la-une h2.section-title::after {
       position: initial;
