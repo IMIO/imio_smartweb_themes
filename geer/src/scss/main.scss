@@ -322,15 +322,6 @@ body#visual-portal-wrapper {
   }
 }
 
-body .sectionlinks.quick-access .section-container .row {
-  @include media-breakpoint-up(lg) {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
-}
-
 .portaltype-imio-smartweb-portalpage.section-home-page h2.section-title {
   position: relative;
 }
