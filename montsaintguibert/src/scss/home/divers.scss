@@ -460,22 +460,5 @@ body.template-block_view #content-core::after {
 
   #subsite-navigation {
     padding: initial;
-
-    ul {
-      max-height: 200px;
-      overflow-y: auto;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 20px;
-        background: linear-gradient(to bottom, $light-red, $red);
-        pointer-events: none;
-      }
-    }
   }
 }
