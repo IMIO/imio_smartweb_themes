@@ -429,15 +429,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
   margin-left: 0;
 }
 
-.portaltype-imio-smartweb-page #content .sectionlinks::after,
-.portaltype-imio-smartweb-procedure #content .sectionlinks::after {
-  content: "";
-  background: #f3f3f3;
-  inset: 0 0.75rem;
-  position: absolute;
-  z-index: -1;
-}
-
 .portaltype-imio-smartweb-procedure #content .sectionlinks .table_display,
 .portaltype-imio-smartweb-procedure #content .sectionlinks li.col-md-12,
 .portaltype-imio-smartweb-page #content .sectionlinks .table_display,

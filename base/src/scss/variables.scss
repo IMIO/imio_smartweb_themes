@@ -375,9 +375,9 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: #f8f8f8;
-$enable-full-width-section-link: true;
-$enable-light-color-section-link: false;
+$section-link-background-color: #f8f8f8 !default;
+$enable-full-width-section-link: true !default;
+$enable-light-color-section-link: false !default;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.2rem;
