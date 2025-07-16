@@ -426,6 +426,26 @@ body.template-block_view #content-core::after {
 
 @media (min-width: 1200px) {
   #subsite-navigation > ul {
-    gap: 30px;
+    gap: 20px;
   }
+}
+
+#subsite-navigation > ul li.nav-item {
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+#subsite-navigation {
+  padding: initial;
+}
+
+@media screen and (min-width: 1200px) {
+  .subsite-container {
+    gap: 25px;
+  }
+}
+
+#subsite-navigation > ul > li > a {
+  text-transform: initial;
 }
