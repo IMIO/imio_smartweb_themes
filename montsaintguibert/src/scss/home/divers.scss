@@ -423,3 +423,9 @@ body.template-block_view #content-core::after {
     gap: 32px;
   }
 }
+
+@media (min-width: 1200px) {
+  #subsite-navigation > ul {
+    gap: 30px;
+  }
+}
