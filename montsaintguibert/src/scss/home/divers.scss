@@ -462,3 +462,20 @@ body.template-block_view #content-core::after {
     padding: initial;
   }
 }
+
+// section files
+
+.sectionfiles h2,
+.sectionfiles ul li a,
+.sectionfiles ul li a div.table_title span {
+  color: $primary;
+}
+
+.sectionfiles {
+  margin: 40px 0;
+  padding: 30px 20px 10px;
+
+  ul li {
+    margin: 1rem 0;
+  }
+}
