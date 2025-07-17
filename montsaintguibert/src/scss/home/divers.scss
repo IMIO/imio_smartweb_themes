@@ -468,7 +468,7 @@ body.template-block_view #content-core::after {
 .sectionfiles h2,
 .sectionfiles ul li a,
 .sectionfiles ul li a div.table_title span {
-  color: $primary;
+  color: $primary !important;
 }
 
 .sectionfiles {
