@@ -128,3 +128,38 @@ $enable-roboto-webfont: false;
 .contact-type-organization {
   border-radius: 10px;
 }
+
+@media screen and (max-width: 992px) {
+  #header-links #search-link {
+    margin: 0 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content
+    .swiper-banner-title {
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+
+  .frontend #content ul {
+    padding-left: 2rem !important;
+  }
+
+  #subsite-navigation .quick-access {
+    padding-top: 1.5rem;
+  }
+
+  #subsite-navigation .quick-access .quick-access-title {
+    color: #38567d !important;
+    font-weight: 700;
+    padding: 0;
+  }
+}
