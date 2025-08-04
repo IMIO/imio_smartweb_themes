@@ -1,0 +1,121 @@
+#main-container .partenaires {
+  top: 0 !important;
+  padding: 0;
+  margin: 0 !important;
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    width: max-content !important;
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 0;
+    margin: 0 auto 50px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      left: -50px;
+      top: 50%;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 70px;
+      background: #000;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      left: calc(100% + 50px);
+      top: 50%;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 70px;
+      background: #000;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .section-title {
+      font-size: 22px !important;
+
+      &::before {
+        left: -30px;
+        width: 30px;
+      }
+
+      &::after {
+        left: calc(100% + 30px);
+        width: 30px;
+      }
+    }
+  }
+
+  svg {
+    max-height: 40px;
+    fill: #fff !important;
+  }
+
+  .body-section {
+    max-width: 85%;
+    margin: 0 auto;
+
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          top: 0;
+          transition: all 0.3s ease;
+        }
+
+        .table_title {
+          margin-top: 10px !important;
+
+          span {
+            color: #000;
+          }
+        }
+
+        &:hover {
+          .image.d-block {
+            background: $primary-red;
+            top: -10px;
+            transition: all 0.3s ease;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+
+          .table_title {
+            span {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}

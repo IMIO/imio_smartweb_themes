@@ -1,0 +1,130 @@
+.sectionnews {
+  margin-top: 40px;
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    width: max-content !important;
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 0;
+    margin: 0 auto 50px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      left: -50px;
+      top: 50%;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 70px;
+      background: #000;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      left: calc(100% + 50px);
+      top: 50%;
+      position: absolute;
+      bottom: 25%;
+      transform: translate(-50%, 50%);
+      width: 70px;
+      background: #000;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .section-title {
+      font-size: 22px !important;
+
+      &::before {
+        left: -30px;
+        width: 30px;
+      }
+
+      &::after {
+        left: calc(100% + 30px);
+        width: 30px;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      & > a {
+        display: block;
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -37px;
+          left: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+          width: 100% !important;
+          text-align: center;
+          color: $primary;
+          margin: 1.5rem 0 0.5rem;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+          width: 100%;
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sectionnews::after {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .sectionevents::after {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #portal-footer-wrapper {
+    margin-top: 0;
+  }
+}
