@@ -359,16 +359,19 @@ footer #container-section-noussuivre {
   }
 }
 
-.sectiontext .section-text .section-title a {
-  text-decoration: none;
-  background-color: $primary-green;
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: 500;
-  padding: 20px 45px 20px 26px;
-  width: 100% !important;
-  display: block !important;
+.sectiontext .section-text,
+.sectiongallery .section-gallery {
+  .section-title a {
+    text-decoration: none;
+    background-color: $primary-green;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 45px 20px 26px;
+    width: 100% !important;
+    display: block !important;
+  }
 }
 
 //.sectiontext .section-text .section-title a.collapsed {
