@@ -12,9 +12,9 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import "./variables";
-@import "./footer";
-@import "../../../base/src/scss/main";
+@import './variables';
+@import './footer';
+@import '../../../base/src/scss/main';
 
 #portal-column-content
   .section-contact
