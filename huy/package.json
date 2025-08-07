@@ -1,6 +1,6 @@
 {
   "name": "@imiobe/plonetheme-smartweb-huy",
-  "description": "iA.Smartweb base theme for huy",
+  "description": "iA.Smartweb Huy theme for Plone",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -9,11 +9,6 @@
     {
       "name": "Thomas Lambert (iMio)",
       "email": "thomas.lambert@imio.be",
-      "url": "https://imio.be"
-    },
-    {
-      "name": "Antoine Duchêne (iMio)",
-      "email": "adu@imio.be",
       "url": "https://imio.be"
     }
   ],
@@ -35,7 +30,7 @@
   },
   "devDependencies": {
     "@plone/plonetheme-barceloneta-base": "3.2.4",
-    "@imiobe/plonetheme-smartweb-base": "0.3.1",
+    "@imiobe/plonetheme-smartweb-base": "0.3.2",
     "@popperjs/core": "^2.11.6"
   }
 }

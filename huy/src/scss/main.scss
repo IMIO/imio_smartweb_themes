@@ -4,19 +4,12 @@
 
 $enable-roboto-webfont: false;
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
 //// IMPORTS
 
 // Import barceloneta files from node_modules --load-path=node_modules
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
-// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
-
 @import "./variables";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "../../../base/src/scss/main";
-
-//// STYLES
-
-// ... add your styles here

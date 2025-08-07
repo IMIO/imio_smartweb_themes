@@ -10,11 +10,28 @@ $(document).ready(function () {
   });
 
   // For custom slider
-  var allSwiper = $("div.swiper");
-  for (var i = 0; i < allSwiper.length; i++) {
-    if (allSwiper[i].getAttribute("data-nb-results-by-batch") > 1) {
-      allSwiper[i].swiper.params.spaceBetween = 30;
-      allSwiper[i].swiper.update();
-    }
+  if ($(".sectionnews .swiper").length > 0) {
+    // Update all swipers in sectionnews
+    $(".sectionnews .swiper").each(function () {
+      var newsSwiper = this.swiper;
+      newsSwiper.params.spaceBetween = 25;
+      newsSwiper.update();
+    });
+  }
+  if ($(".sectionevents .swiper").length > 0) {
+    $(".sectionevents .swiper").each(function () {
+      var eventsSwiper = this.swiper;
+      eventsSwiper.params.spaceBetween = 30;
+      eventsSwiper.update();
+    });
+  }
+
+  // For banner
+
+  let checkBanner = document.querySelector("#portal-header #banner");
+  let headerCustom = document.getElementById("portal-header");
+
+  if (checkBanner != null) {
+    headerCustom.classList.add("header-custom");
   }
 });

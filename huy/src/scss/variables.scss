@@ -1,10 +1,6 @@
 //*// COLORS
-$primary: #2e2e2e;
-$primary-svg: #fff4cb;
-$primary-yellow: #fecb1e;
-$primary-red: #e70033;
-$primary-blue: #005193;
-$primary-grey: #f2f2f2;
+$primary: #222831 !default;
+$primary-svg: #235789 !default;
 
 //*// TYPOGRAPHY
 
@@ -13,9 +9,9 @@ $primary-grey: #f2f2f2;
 
 $font-family-base: "Roboto", sans-serif !default;
 $font-family-title: "Nunito", sans-serif !default;
-$font-title-color: $primary;
+$font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: $primary;
+$font-title-color-dark: #000 !default;
 $font-title-weight: 700 !default;
 
 // $font-size-base affects the font size of the body text
@@ -43,52 +39,52 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
 );
-$global-radius: 20px;
+$global-radius: 0 !default;
 $enable-title-uppercase: false !default;
 $home-section-title-size: 3.25rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
-$home-section-title-align: center;
+$home-section-title-align: left !default;
 $section-padding-top: 0 !default;
-$to-portal-link-color: $primary;
+$to-portal-link-color: #282828 !default;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper
-$swiper-icon-color: $primary;
+$swiper-icon-color: $primary-svg !default;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
 $swiper-prev-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="#{url-encoded-color($swiper-icon-color)}"/></svg>') !default;
 $swiper-background-size: 50% !default;
-$swiper-background-color: $primary-svg;
+$swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
-$swipper-bullet-color: $primary-svg;
+$swipper-bullet-color: $primary-svg !default;
 
 //*// HEADER
-$main-logo-max-width: 165px;
+$main-logo-max-width: 115px !default;
 $header-top-padding: 1rem 0 !default;
-$header-top-background: #fff;
+$header-top-background: #fff !default;
 $header-center-nav: false !default;
 $header-nav-margin: 0 1rem 0 1rem !default;
-$header-nav-link-color: $primary;
+$header-nav-link-color: $primary !default;
 $header-nav-link-font-size: 16px !default;
 $header-nav-link-font-family: $font-family-base !default;
 $header-links-color: $primary !default;
 $header-links-account-margin: 0 !default;
-$header-links-account-padding: 20px;
-$header-links-account-border: solid 1 $primary-yellow;
-$header-links-account-bg: $primary-yellow;
-$header-links-account-hover-border: solid 1 $primary-yellow;
-$header-links-account-hover-bg: $primary-svg;
-$header-links-account-hover-color: $primary;
-$header-search-icon-color: $primary;
+$header-links-account-padding: 0 !default;
+$header-links-account-border: solid 0 #000 !default;
+$header-links-account-bg: transparent !default;
+$header-links-account-hover-border: solid 0 #000 !default;
+$header-links-account-hover-bg: transparent !default;
+$header-links-account-hover-color: #000 !default;
+$header-search-icon-color: #000 !default;
 $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
-$toggler-color: $primary;
+$toggler-color: #000 !default;
 $header-toggler-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !default;
 $header-toggler-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !default;
 //bredcrumb
-$breadcrumb-bg: transparent;
+$breadcrumb-bg: #fff !default;
 $enable-full-width-breacrumb: false !default;
 
 // sitenav
@@ -97,41 +93,41 @@ $nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-title-font-family: $font-family-base !default;
 $nav-link-color: $primary !default;
 $nav-link-open-color: $primary !default;
-$nav-link-active-color: $primary-blue;
+$nav-link-active-color: $primary-svg !default;
 $nav-link-font-size: initial !default;
 $nav-link-font-weight: 500 !default;
-$nav-link-drop-color: $primary-yellow;
+$nav-link-drop-color: $primary !default;
 $nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($nav-link-drop-color)}"/></svg>') !default;
-$nav-link-drop-color-mobile: $primary;
+$nav-link-drop-color-mobile: #000 !default;
 $nav-link-drop-mobile: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="%23000" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-first-level-gap: 30px !default;
 $nav-first-level-uppercase: false !default;
-$nav-quick-link-color: $primary;
+$nav-quick-link-color: $primary-svg !default;
 $nav-quick-link-size: 18px !default;
 $nav-quick-link-weight: bold !default;
 $nav-quick-link-padding: 0 !default;
 $nav-sub-link-font-size: $nav-link-font-size !default;
 $nav-sub-link-font-weight: $nav-link-font-weight !default;
 $nav-overlay-radius: $global-radius !default;
-$nav-overlay-title-color: $primary;
-$nav-overlay-title-font-size: 22px !default;
+$nav-overlay-title-color: $primary !default;
+$nav-overlay-title-font-size: 24px !default;
 $nav-overlay-title-font-weight: bold !default;
 $nav-overlay-next-color-hover: $primary !default;
-$nav-overlay-next-icon-color: $primary;
+$nav-overlay-next-icon-color: #000;
 $nav-overlay-next-icon-hover-color: $primary;
 $nav-overlay-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 
 //sub-header
-$subsite-logo-background: $primary-blue;
-$subsite-logo-color: #fff;
-$subsite-navbar-bg: #fff;
+$subsite-logo-background: $primary !default;
+$subsite-logo-color: #fff !default;
+$subsite-navbar-bg: #fff !default;
 
 //sub-sitenav
 $sub-navbar-padding: 1rem 0 !default;
-$sub-nav-link-color: $primary;
-$sub-nav-link-open-color: $primary;
-$sub-nav-link-drop-color: $primary;
+$sub-nav-link-color: #000 !default;
+$sub-nav-link-open-color: #000 !default;
+$sub-nav-link-drop-color: #000 !default;
 $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($sub-nav-link-drop-color)}"/></svg>') !default;
 
 //*// SECTION HOMEPAGE
@@ -146,31 +142,31 @@ $banner-content-padding: 1rem !default;
 $banner-content-background: rgb(256 256 256 / 50%) !default;
 $banner-content-is-vertical-center: true !default;
 $banner-content-title-font-size: 50px !default;
-$banner-content-title-color: $primary;
+$banner-content-title-color: black !default;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align: left !default;
 $banner-content-description-font-size: 18px !default;
-$banner-content-description-color: $primary;
+$banner-content-description-color: black !default;
 
 // see_all
-$see-all-padding: 1rem 2rem;
+$see-all-padding: 0 !default;
 $see-all-margin: 2rem 0 0 0 !default;
-$see-all-bg: $primary-svg;
-$see-all-color: $primary;
-$see-all-radius: $global-radius;
-$see-all-border: solid 1 $primary-yellow;
+$see-all-bg: transparent !default;
+$see-all-color: $primary !default;
+$see-all-radius: $global-radius !default;
+$see-all-border: solid 0 $primary !default;
 $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
 $see-all-font-weight: 700 !default;
 $see-all-transition: all 0.2s ease !default;
-$see-all-hover-bg: $primary-yellow;
-$see-all-hover-color: $primary;
+$see-all-hover-bg: transparent !default;
+$see-all-hover-color: $primary-svg !default;
 $see-all-hover-radius: $global-radius !default;
-$see-all-hover-border: solid 1 $primary-yellow;
-$see-all-justify-content: center;
+$see-all-hover-border: solid 0 $primary !default;
+$see-all-justify-content: right !default;
 $see-all-underline-color: $primary-svg !default;
-$see-all-underline-width: none;
-$see-all-hover-underline-width: none;
+$see-all-underline-width: 25% !default;
+$see-all-hover-underline-width: 50% !default;
 
 // Quick access
 $quick-access-section-full-width: false !default;
@@ -181,12 +177,12 @@ $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
 $quick-access-width: 100px !default;
 $quick-access-height: 100px !default;
-$quick-access-background: $primary-svg;
-$quick-access-border: solid 1px $primary-yellow;
+$quick-access-background: #fff !default;
+$quick-access-border: solid 1px $primary !default;
 $quick-access-border-radius: 100px !default;
 $quick-access-shadow: none !default;
-$quick-access-svg-width: 35px;
-$quick-access-svg-color: $primary;
+$quick-access-svg-width: 40px !default;
+$quick-access-svg-color: $primary !default;
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
 $quick-access-title-font-size: 18px !default;
 $quick-access-title-color: $primary !default;
@@ -194,8 +190,8 @@ $quick-access-title-text-transform: initial !default;
 $quick-access-title-weight: 400 !default;
 
 $quick-access-enable-full-bg: false !default;
-$quick-access-full-bg-color: none;
-$quick-access-full-bg-border: none;
+$quick-access-full-bg-color: $primary !default;
+$quick-access-full-bg-border: solid 1px green !default;
 $quick-access-full-bg-shadow: none !default;
 
 // A la une
@@ -232,9 +228,9 @@ $actu-item-bg-color: rgb(244, 244, 244) !default;
 $actu-item-bg-radius: $global-radius + 2 !default;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
-$actu-category-color: $primary;
-$actu-category-bg-color: $primary-yellow;
-$actu-category-text-transform: lowercase;
+$actu-category-color: #fff !default;
+$actu-category-bg-color: $primary-svg !default;
+$actu-category-text-transform: uppercase !default;
 $actu-category-font-size: 14px !default;
 $actu-category-font-weight: initial !default;
 $actu-category-radius: $global-radius !default;
@@ -272,9 +268,9 @@ $event-item-bg-color: rgb(244, 244, 244) !default;
 $event-item-bg-radius: $global-radius + 2 !default;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.5rem 1rem !default;
-$event-category-color: $primary;
-$event-category-bg-color: $primary-yellow;
-$event-category-text-transform: lowercase;
+$event-category-color: #fff !default;
+$event-category-bg-color: $primary-svg !default;
+$event-category-text-transform: uppercase !default;
 $event-category-font-size: 14px !default;
 $event-category-font-weight: initial !default;
 $event-category-radius: $global-radius !default;
@@ -396,9 +392,9 @@ $list-group-item-padding-x: 0;
 
 // Message Viewlets
 
-$message-info: $primary-blue;
-$message-warning: $primary;
-$message-error: $primary-red;
+$message-info: #27789c;
+$message-warning: #c06d01;
+$message-error: #ae2609;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;
