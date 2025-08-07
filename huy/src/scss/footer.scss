@@ -1,8 +1,3 @@
-// #portal-footer-wrapper {
-//   background: url("../../assets/svg/bg-footer.svg") center top no-repeat;
-//   padding-top: 160px;
-// }
-
 #smartweb-footer .sectiontext figure,
 #smartweb-minisite-footer .sectiontext figure {
   max-width: 65% !important;
@@ -10,7 +5,6 @@
 
 #smartweb-footer .sectiontext figure img,
 #smartweb-minisite-footer .sectiontext figure img {
-  //max-width: 200px !important;
   width: 100% !important;
 }
 
@@ -32,7 +26,7 @@
   }
 
   #portal-footer {
-    background: $primary-dark !important;
+    background: $primary !important;
     padding: 10px 0;
 
     #smartweb-footer,
@@ -116,7 +110,7 @@
 }
 
 #portal-colophon {
-  background: $dark-green;
+  background: $primary;
   padding: 1rem;
 
   ul {
