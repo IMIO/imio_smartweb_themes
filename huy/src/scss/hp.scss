@@ -13,3 +13,21 @@
 .display-carre .swiper-slide .swiper-image {
   padding-bottom: 100%;
 }
+
+@media (min-width: 991.99px) {
+  #main-container .quick-access {
+    margin: -7.3rem 0 10rem;
+    padding: 0;
+  }
+
+  .quick-access.partenaires {
+    margin: initial;
+  }
+}
+
+.quick-access .body-section ul li .table_image:focus .image.d-block,
+.quick-access .body-section ul li .table_image:hover .image.d-block {
+  background: $primary-yellow important;
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+}
