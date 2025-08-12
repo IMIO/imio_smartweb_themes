@@ -1,3 +1,15 @@
 .sortable-section.sectionnews {
   background: $primary-blue;
 }
+
+//Album
+.albumhome .swiper-slide .swiper_title {
+  margin: initial;
+  padding: 0.8rem !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+display-carre .swiper-slide .swiper-image {
+  padding-bottom: 100%;
+}
