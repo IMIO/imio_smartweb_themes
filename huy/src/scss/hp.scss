@@ -16,7 +16,7 @@
 
 @media (min-width: 991.99px) {
   #main-container .quick-access {
-    margin: -7.3rem 0 10rem;
+    margin: -5.5rem 0 1rem;
     padding: 0;
   }
 
@@ -27,7 +27,31 @@
 
 .quick-access .body-section ul li .table_image:focus .image.d-block,
 .quick-access .body-section ul li .table_image:hover .image.d-block {
-  background: $primary-yellow important;
+  background: $primary-yellow !important;
   transform: translateY(-10px);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+#portal-column-content .section-contact .contact-type-organization,
+#portal-column-content .section-contact .contact-type-mission,
+#portal-column-content .section-contact .contact-type-person {
+  border-radius: 20px;
+  background-color: $primary-svg;
+}
+
+#portal-column-content .section-contact .contact_map {
+  margin-top: 20px;
+
+  .map {
+    border-radius: 20px;
+  }
+}
+
+.portal-header #portal-header-top {
+  border-bottom: 1px solid $primary;
 }
