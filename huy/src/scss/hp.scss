@@ -86,5 +86,21 @@ footer#portal-footer-wrapper {
     p a {
       color: #fff;
     }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.colophonWrapper ul {
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: #fff;
+
+  li a {
+    color: #fff;
   }
 }
