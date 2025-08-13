@@ -1,0 +1,22 @@
+.sectiontext h2 {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem !important;
+}
+
+.portaltype-imio-smartweb-page .sectionfiles .table_image,
+.portaltype-imio-smartweb-procedure .sectionfiles .table_image,
+.portaltype-imio-smartweb-procedure .sectionfiles .table_image .item_infos,
+.portaltype-imio-smartweb-page .sectionfiles .table_image .item_infos {
+  color: #fff;
+}
+
+.sortable-section.sectioncontact {
+  margin: 2rem 0;
+}
+
+.sectionfiles::after {
+  border-radius: 20px;
+}
