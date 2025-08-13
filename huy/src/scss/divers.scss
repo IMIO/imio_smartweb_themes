@@ -20,3 +20,26 @@ h2 {
 .sectionfiles::after {
   border-radius: 20px;
 }
+
+//Annuaire
+.annuaire-day-open {
+  color: $primary-blue;
+}
+
+.contactCard a {
+  text-decoration: underline;
+}
+
+.swiper-wrapper {
+  padding-bottom: 80px;
+
+  .swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    background-color: $primary-svg;
+
+    .swiper-pagination-bullet-active {
+      background: $primary-yellow !important;
+    }
+  }
+}

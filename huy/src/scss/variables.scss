@@ -46,7 +46,7 @@ $global-radius: 20px;
 $enable-title-uppercase: false !default;
 $home-section-title-size: 3.25rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
-$home-section-title-padding: 0 !default;
+$home-section-title-padding: 0 0 2rem 0;
 $home-section-title-align: center;
 $section-padding-top: 0 !default;
 $to-portal-link-color: $primary;
@@ -62,7 +62,7 @@ $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/20
 $swiper-background-size: 50% !default;
 $swiper-background-color: $primary-svg;
 $swiper-radius: 50px !default;
-$swipper-bullet-color: $primary-svg;
+$swiper-bullet-color: $primary-yellow;
 
 //*// HEADER
 $main-logo-max-width: 145px;
@@ -218,8 +218,8 @@ $a-la-une-item-image-radius: $global-radius;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 4rem;
+$actu-section-padding-bottom: 4rem;
 $actu-section-margin: 0 !default;
 $actu-title-color: #fff;
 $actu-title-align: $home-section-title-align !default;

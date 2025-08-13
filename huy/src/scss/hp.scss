@@ -25,7 +25,7 @@
   }
 }
 
-.quick-access .body-section ul li .table_image:focus .image.d-block {
+.quick-access .body-section ul li .table_image .image.d-block {
   transition: all 0.5s ease-in-out;
 }
 
@@ -93,14 +93,22 @@ footer#portal-footer-wrapper {
   }
 }
 
-.colophonWrapper ul {
-  gap: 1rem;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  color: #fff;
+.div#portal-colophon {
+  background-color: $primary;
 
-  li a {
-    color: #fff;
+  .colophonWrapper {
+    background-color: $primary;
+
+    ul {
+      gap: 1rem;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      color: #fff;
+
+      li a {
+        color: #fff;
+      }
+    }
   }
 }
