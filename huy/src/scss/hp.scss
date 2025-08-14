@@ -121,15 +121,16 @@ body.portaltype-imio-smartweb-portalpage .smartweb_herobanner {
 body.portaltype-imio-smartweb-portalpage .smartweb_herobanner::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%); /* centrer horizontalement */
 
   width: 40%; /* largeur en pourcentage → s'adapte */
   aspect-ratio: 3 / 1; /* ratio largeur/hauteur d'origine du SVG */
 
-  background: url("../../assets/svg/visu-alaune.svg") no-repeat center;
+  background: url("../../assets/svg/visu-banner.svg") no-repeat center;
   background-size: contain;
 
   pointer-events: none;
+  z-index: 1;
 }
