@@ -117,20 +117,16 @@ body.portaltype-imio-smartweb-portalpage .smartweb_herobanner {
   position: relative;
 }
 
-/* Pseudo-élément avec SVG responsive */
+/* Avec SVG responsive */
 body.portaltype-imio-smartweb-portalpage .smartweb_herobanner::after {
   content: "";
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%); /* centrer horizontalement */
-
-  width: 40%; /* largeur en pourcentage → s'adapte */
-  aspect-ratio: 3 / 1; /* ratio largeur/hauteur d'origine du SVG */
-
-  background: url("../../assets/svg/visu-banner.svg") no-repeat center;
+  background: url("../../assets/svg/visu-banner.svg") no-repeat left bottom;
   background-size: contain;
-
-  pointer-events: none;
+  aspect-ratio: 3 / 1;
+  bottom: -45px;
   z-index: 1;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
 }
