@@ -1,0 +1,24 @@
+.sectiontimestampedpublications {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f1f1f1;
+
+  .section-container {
+    background-color: #f1f1f1;
+  }
+}
+
+.publication_attached_file {
+  background-color: #e5e5e5;
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 5px;
+  color: #4d4d4d;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: darken(#f1f1f1, 5%);
+  }
+}
