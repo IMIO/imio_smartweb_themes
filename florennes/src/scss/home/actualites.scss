@@ -1,0 +1,129 @@
+.sectionnews {
+  margin: 6rem 0 0;
+  padding-bottom: 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 247, 247, 0%) 0,
+    rgba(245, 247, 247, 50%) 300px,
+    rgba(245, 247, 247, 100%) 700px
+  );
+
+  @media screen and (max-width: 992px) {
+    margin: 3.6rem 0;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .section-title {
+    font-weight: 600;
+    margin: 0 0 0 -30px;
+    width: max-content;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: absolute;
+    padding: 100px 0 0;
+    writing-mode: vertical-rl;
+    left: 20px;
+
+    @media screen and (max-width: 992px) {
+      transform: rotate(0deg);
+      position: initial;
+      padding: 0;
+      writing-mode: initial;
+      margin: 0 auto 30px;
+      background: none;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      border-radius: 50px 0 0;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        transition: 0.5s;
+        transform: translateY(10px);
+        border-radius: 50px 0;
+      }
+
+      & > a {
+        align-items: center;
+        padding-bottom: 20px;
+
+        .swiper-image {
+          transition: 0.5s;
+        }
+
+        .auth_source_container_title {
+          color: #000;
+          font-size: 12px;
+          margin: 1rem 0 0.5rem;
+          padding: 0 1rem;
+          text-align: left;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          display: none;
+        }
+
+        .swiper_title {
+          margin-top: 20px;
+
+          h3 {
+            font-family: $font-family-base;
+            transition: 0.5s;
+          }
+        }
+
+        .swiper_description {
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper_title {
+            h3 {
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $primary-light !important;
+  }
+}
+
+.sectionnews .see_all a {
+  background: $primary-yellow;
+  color: $primary;
+  border: solid 1px $primary-yellow;
+  border-radius: 50px;
+
+  &:hover {
+    background: $primary;
+    border: solid 1px $primary;
+    color: #fff;
+    border-radius: 50px;
+  }
+}
