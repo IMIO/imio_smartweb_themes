@@ -67,11 +67,19 @@
         }
 
         .auth_source_container_title {
-          color: #000;
-          font-size: 12px;
-          margin: 1rem 0 0.5rem;
-          padding: 0 1rem;
           text-align: left;
+          background: #df1148;
+          border-radius: 0 0 10px 10px;
+          color: #fff;
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 0.5rem 1rem;
+          margin: 0;
+        }
+
+        .swiper_category {
+          display: none !important;
         }
 
         .swiper_date {
