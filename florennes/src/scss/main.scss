@@ -643,18 +643,26 @@ h3 {
 
 // padding page accueil pour titre
 
-.section-home-page .container-lg,
-.section-home-page .container-md,
-.section-home-page .container-sm,
-.section-home-page .container {
+.sectionnews .container-lg,
+.sectionnews .container-md,
+.sectionnews .container-sm,
+.sectionnews .container,
+.sectionevents .container-lg,
+.sectionevents .container-md,
+.sectionevents .container-sm,
+.sectionevents .container {
   padding: 0 40px;
 }
 
 @media screen and (max-width: 1700px) {
-  .section-home-page .container-lg,
-  .section-home-page .container-md,
-  .section-home-page .container-sm,
-  .section-home-page .container {
+  .sectionnews .container-lg,
+  .sectionnews .container-md,
+  .sectionnews .container-sm,
+  .sectionnews .container,
+  .sectionevents .container-lg,
+  .sectionevents .container-md,
+  .sectionevents .container-sm,
+  .sectionevents .container {
     padding: 0 40px;
   }
 
@@ -671,14 +679,18 @@ h3 {
 }
 
 @media screen and (max-width: 992px) {
-  .section-home-page .container-lg,
-  .section-home-page .container-md,
-  .section-home-page .container-sm,
-  .section-home-page .container {
+  .sectionnews .container-lg,
+  .sectionnews .container-md,
+  .sectionnews .container-sm,
+  .sectionnews .container,
+  .sectionevents .container-lg,
+  .sectionevents .container-md,
+  .sectionevents .container-sm,
+  .sectionevents .container {
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
-}
+
 
 //navbar
 .navbar-toggler {
