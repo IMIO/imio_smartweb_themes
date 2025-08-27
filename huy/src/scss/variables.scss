@@ -22,10 +22,10 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.5 !default;
-$h4-font-size: $font-size-base * 1.25 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: $font-size-base * 1;
 $h6-font-size: $font-size-base !default;
 
 // Include Roboto as webfont
@@ -267,7 +267,7 @@ $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
 $event-image-border-radius: 20px 20px 0 0;
-$event-item-bg-color: $primary-svg;
+$event-item-bg-color: transparent;
 $event-item-bg-radius: $global-radius;
 $event-category-margin: 0.5rem 0 0.5rem;
 $event-category-padding: 0.5rem 1rem !default;
