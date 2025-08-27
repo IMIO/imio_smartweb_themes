@@ -1,0 +1,73 @@
+.espace-citoyen {
+  padding-top: 0;
+  padding-bottom: 4vw;
+  margin-bottom: 4vw;
+  margin-top: 0;
+
+  max-width: 100vw;
+  position: relative;
+  width: 100vw;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .body-section {
+    .row {
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 15px;
+      background: $primary-svg;
+
+      li {
+        padding: 0 !important;
+      }
+
+      .table_display {
+        height: 100%;
+      }
+
+      .table_image {
+        padding: 1.5rem 1rem;
+        background: #f6f6f6;
+        border-radius: 15px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        transition: all 0.25s ease;
+
+        .image {
+          width: auto;
+
+          svg {
+            height: auto;
+            width: 40px;
+            max-height: 40px;
+            opacity: 50%;
+          }
+        }
+
+        &:hover {
+          transition: all 0.25s ease;
+          background: $primary-yellow;
+
+          .image {
+            svg {
+              opacity: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
