@@ -200,7 +200,7 @@ body.portaltype-imio-smartweb-portalpage .smartweb_herobanner::after {
     margin-top: 2rem;
 
     &:hover {
-      background: #fff;
+      background: #fff !important;
       color: $primary;
     }
   }
