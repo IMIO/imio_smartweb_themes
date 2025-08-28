@@ -138,10 +138,11 @@ body.portaltype-imio-smartweb-portalpage .a-la-une::after {
   aspect-ratio: 3 / 1;
   bottom: -45px;
   z-index: 1;
-  right: 0;
+  right: -6vw;
   pointer-events: none;
   position: absolute;
-  width: 100vw;
+  width: 50vw;
+  height: auto;
 }
 
 body.portaltype-imio-smartweb-portalpage .albumhome::after {
