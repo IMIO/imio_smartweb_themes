@@ -1,0 +1,31 @@
+.sectiontimestampedpublications {
+  .row {
+    gap: 10px;
+
+    li {
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      list-style: none;
+      flex: 1 1 calc(50% - 10px);
+
+      &::marker {
+        display: none !important;
+      }
+
+      .table_image {
+        text-decoration: none;
+      }
+
+      .table_date {
+        font-size: 12px;
+      }
+
+      .table_title {
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
