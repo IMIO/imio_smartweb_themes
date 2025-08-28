@@ -137,7 +137,7 @@ body.portaltype-imio-smartweb-portalpage .a-la-une::after {
   background-size: contain;
   aspect-ratio: 3 / 1;
   bottom: -45px;
-  z-index: 1;
+  z-index: 0;
   right: -6vw;
   pointer-events: none;
   position: absolute;
@@ -151,7 +151,7 @@ body.portaltype-imio-smartweb-portalpage .albumhome::after {
   background-size: contain;
   aspect-ratio: 3 / 1;
   bottom: -45px;
-  z-index: 1;
+  z-index: 0;
   left: 0;
   pointer-events: none;
   position: absolute;
