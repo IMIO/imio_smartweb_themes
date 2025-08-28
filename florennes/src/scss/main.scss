@@ -15,7 +15,8 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "../../../base/src/scss/main";
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 //// STYLES
 
@@ -31,7 +32,6 @@ $enable-roboto-webfont: false;
 @import "./info-trav";
 @import "./se-link";
 @import "./se-files";
-@import "./se-publications";
 @import "./contact";
 
 body {
