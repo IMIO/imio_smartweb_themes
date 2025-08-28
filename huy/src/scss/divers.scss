@@ -47,3 +47,31 @@ h2 {
 .sectionevents .swiper-slide > a:hover {
   background: $primary-svg;
 }
+
+//FOOTER
+.colophonWrapper {
+  padding: 0.5rem 1rem;
+
+  ul {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0;
+
+    li {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  background: $primary-yellow;
+}
+
+#portal-globalnav > li.has_subtree > a::before {
+  background-color: $primary-yellow;
+  bottom: -15px;
+}
