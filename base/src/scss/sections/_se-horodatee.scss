@@ -1,24 +1,38 @@
+$row-gap-tamp: 10px;
+
 .sectiontimestampedpublications {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #f1f1f1;
+  .row {
+    gap: $row-gap-tamp;
 
-  .section-container {
-    background-color: #f1f1f1;
-  }
-}
+    @for $i from 1 through 12 {
+      .col-md-#{$i} {
+        flex: 0 0 calc((100% * #{$i} / 12) - #{$row-gap-tamp} / 2);
+      }
+    }
 
-.publication_attached_file {
-  background-color: #e5e5e5;
-  display: inline-block;
-  padding: 0.3rem;
-  border-radius: 5px;
-  color: #4d4d4d;
-  margin-right: 5px;
+    li {
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      list-style: none;
 
-  &:hover {
-    background-color: darken(#f1f1f1, 5%);
+      &::marker {
+        display: none !important;
+      }
+
+      .table_image {
+        text-decoration: none;
+      }
+
+      .table_date {
+        font-size: 12px;
+      }
+
+      .table_title {
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+    }
   }
 }
