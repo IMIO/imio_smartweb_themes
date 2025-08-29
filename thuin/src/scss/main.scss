@@ -91,7 +91,7 @@ h1 {
   .swiper-banner-content {
     margin: 0;
     max-width: 100%;
-    padding: 1rem 3rem 1rem 4rem;
+    padding: 1rem 5rem 1rem 4rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -107,6 +107,7 @@ h1 {
     text-align: right;
 
     @media screen and (max-width: 991px) {
+      padding: 1rem 3rem 1rem 4rem;
       height: 350px;
     }
 

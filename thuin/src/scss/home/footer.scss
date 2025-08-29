@@ -38,6 +38,22 @@
       height: 200px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #portal-footer-wrapper .row li {
+      list-style-type: none;
+      padding-left: 0;
+      justify-items: center;
+    }
+
+    #body-section-logo {
+      justify-items: center;
+    }
+
+    .contact_informations_social {
+      justify-self: center;
+    }
+  }
 }
 
 .smartweb-footer {
