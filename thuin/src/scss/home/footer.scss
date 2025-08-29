@@ -40,7 +40,11 @@
   }
 
   @media screen and (max-width: 600px) {
-    #portal-footer-wrapper .row li {
+    .container {
+      text-align: center;
+    }
+
+    .row li {
       list-style-type: none;
       padding-left: 0;
       justify-items: center;
