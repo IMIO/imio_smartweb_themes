@@ -102,3 +102,9 @@ body #portal-column-content .section-contact .contact-type-position {
     color: #fff;
   }
 }
+
+//Liens
+.sectiontext .section-text .body-section a {
+  color: $primary-blue;
+  text-decoration: underline;
+}
