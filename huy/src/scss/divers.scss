@@ -49,6 +49,10 @@ h2 {
 }
 
 //FOOTER
+#portal-footer-wrapper {
+  background-color: $primary;
+}
+
 div#portal-colophon {
   background: $primary;
 }
@@ -78,4 +82,23 @@ div#portal-colophon {
 #portal-globalnav > li.has_subtree > a::before {
   background-color: $primary-yellow;
   bottom: -15px;
+}
+
+//Contact Personnes
+body #portal-column-content .section-contact .contact-type-position {
+  background-color: transparent;
+
+  .contact_leadimage {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+//files
+.sortable-section.sectionfiles {
+  margin: 10px 0;
+  padding: 15px;
+
+  h2 a {
+    color: #fff;
+  }
 }

@@ -73,6 +73,7 @@
 
 footer#portal-footer-wrapper {
   padding: 5rem 0;
+  margin-top: 30px;
 
   .sectiontext,
   .section-contact {
@@ -132,17 +133,19 @@ body.portaltype-imio-smartweb-portalpage .smartweb_herobanner::after {
 }
 
 body.portaltype-imio-smartweb-portalpage .a-la-une::after {
-  content: "";
-  background: url("../../assets/svg/visu-alaune.svg") no-repeat right bottom;
-  background-size: contain;
   aspect-ratio: 3 / 1;
-  bottom: -45px;
-  z-index: 0;
-  right: -6vw;
+  background: url("../../assets/svg/visu-alaune.svg") no-repeat right bottom;
+  background-size: initial;
+  bottom: -70px;
+  content: "";
+  height: 250px;
   pointer-events: none;
   position: absolute;
-  width: 50vw;
-  height: auto;
+  right: 0;
+  width: 92vw;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 body.portaltype-imio-smartweb-portalpage .albumhome::after {
@@ -225,6 +228,7 @@ body.portaltype-imio-smartweb-portalpage .albumhome::after {
     border: 1px solid #fff;
     text-decoration: none;
     margin-top: 2rem;
+    transition: all 0.2s ease;
 
     &:hover {
       background: #fff !important;
@@ -302,6 +306,35 @@ body.portaltype-imio-smartweb-portalpage .albumhome::after {
 
     .table_title span {
       color: #fff;
+    }
+  }
+}
+
+.albumhome .see_all {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
+
+  a {
+    background: $primary-svg;
+    border: 1px solid $primary-yellow;
+    border-radius: 20px;
+    color: $primary;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease;
+    width: max-content;
+
+    &:hover {
+      background: $primary-yellow;
+      border: 1 solid $primary-yellow;
+      border-radius: 20px;
+      color: $primary;
     }
   }
 }
