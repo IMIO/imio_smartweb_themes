@@ -51,25 +51,29 @@ h2 {
 //FOOTER
 #portal-footer-wrapper {
   background-color: $primary;
+
+  .sectiontext .section-text .body-section figure img {
+    max-width: 140px;
+  }
 }
 
-div#portal-colophon {
-  background: $primary;
-}
+body div#portal-colophon {
+  background: $primary !important;
 
-.colophonWrapper {
-  padding: 0.5rem 1rem !important;
+  .colophonWrapper {
+    padding: 0.5rem 1rem !important;
 
-  ul {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 0;
+    ul {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 0;
 
-    li {
-      color: #fff;
-
-      a {
+      li {
         color: #fff;
+
+        a {
+          color: #fff;
+        }
       }
     }
   }
