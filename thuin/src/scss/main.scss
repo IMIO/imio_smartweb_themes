@@ -368,6 +368,8 @@ footer #container-section-noussuivre {
   color: $primary;
   transition: all 0.25s ease;
   border: 1px solid $primary;
+  padding: 20px;
+  text-decoration: none;
 
   &:hover {
     background: $primary;
