@@ -776,3 +776,8 @@ h3 {
     }
   }
 }
+
+//OL Number
+.outer-wrapper .sectiontext ol > li::before {
+  content: counters(item, ".") " " !important;
+}
