@@ -1,0 +1,297 @@
+.bloc-annuaire {
+  background: url("../../assets/svg/map-seneffe.svg") no-repeat left center !important;
+
+  @media screen and (max-width: 1200px) {
+    background: none !important;
+    padding-top: 0;
+  }
+
+  .section-title {
+    font-weight: 500;
+    text-align: center;
+    color: $primary-blue !important;
+    padding-left: 0;
+    position: relative;
+    margin: 0 auto !important;
+    width: max-content;
+
+    // Responsive pour le titre
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      right: 0;
+      bottom: -15px;
+      position: absolute;
+      width: 60%;
+      background: $primary-green;
+
+      @media screen and (max-width: 768px) {
+        height: 2px;
+        bottom: -10px;
+      }
+    }
+  }
+
+  .body-section {
+    width: 540px !important;
+    height: 420px !important;
+    margin-left: 45% !important;
+    margin-top: 50px !important;
+
+    @media screen and (max-width: 1200px) {
+      width: 100% !important;
+      height: auto !important;
+      margin-left: 0 !important;
+      margin-top: 30px !important;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px !important;
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 0 10px;
+    }
+
+    li {
+      width: 175px !important;
+      height: 175px !important;
+      margin: 10px 10px 0 0;
+      border-radius: 20px;
+      align-content: center;
+      border: 1px solid $primary-blue;
+
+      // Responsive pour les éléments li - 3 colonnes à partir de 900px
+      @media screen and (max-width: 900px) {
+        flex: 0 0 calc(33.333% - 10px);
+        max-width: 175px;
+      }
+
+      // 2 colonnes à partir de 600px
+      @media screen and (max-width: 600px) {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 150px;
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 15px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 130px !important;
+        height: 130px !important;
+        flex: 0 0 calc(50% - 5px);
+        max-width: 130px;
+        border-radius: 10px;
+      }
+
+      // Le 6ème li n'a pas de border
+      &:nth-child(6) {
+        border: none;
+
+        a .table_title {
+          position: relative;
+          text-align: center;
+
+          // Flèche uniquement pour le 6ème li
+          &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: url("../../assets/svg/arrow-right.svg") center center
+              no-repeat;
+            background-size: contain;
+            margin: 5px auto 0;
+            transition: transform 0.3s ease;
+
+            @media screen and (max-width: 480px) {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+
+        // Survol spécifique du 6ème li
+        &:hover {
+          background: transparent !important;
+
+          a .table_title {
+            &::after {
+              transform: translateX(10px);
+
+              @media screen and (max-width: 480px) {
+                transform: translateX(8px);
+              }
+            }
+          }
+        }
+      }
+
+      a .table_title span {
+        color: $primary-blue !important;
+
+        @media screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+
+      a .image.d-block {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: none !important;
+
+        @media screen and (max-width: 600px) {
+          width: 60px;
+          height: 60px;
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .table_image svg {
+        max-height: 50px !important;
+        width: 50px !important;
+        transition: all 0.3s ease;
+        fill: $primary-blue !important;
+
+        @media screen and (max-width: 600px) {
+          max-height: 40px !important;
+          width: 40px !important;
+        }
+
+        @media screen and (max-width: 480px) {
+          max-height: 35px !important;
+          width: 35px !important;
+        }
+      }
+
+      // Survol pour tous les autres li (1-5)
+      &:not(:nth-child(6)):hover {
+        background: $primary-blue !important;
+
+        a .table_title span {
+          color: #fff !important;
+        }
+
+        .table_image svg {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.bloc-liens {
+  padding-top: 0;
+
+  .section-title {
+    font-weight: 500;
+    text-align: left;
+    color: $primary-blue !important;
+    padding-left: 0;
+    position: relative;
+    width: max-content;
+    margin-bottom: 50px;
+
+    // Responsive pour le titre
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      right: 0;
+      bottom: -15px;
+      position: absolute;
+      width: 60%;
+      background: $primary-green;
+
+      @media screen and (max-width: 768px) {
+        height: 2px;
+        bottom: -10px;
+      }
+    }
+  }
+
+  li {
+    width: 16.66% !important;
+
+    @media screen and (max-width: 1200px) {
+      width: 20% !important;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 25% !important;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 33.33% !important;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 50% !important;
+    }
+  }
+
+  .table_image {
+    .image {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 10%) !important;
+      border-radius: 20px !important;
+      height: 190px !important;
+      margin-bottom: 20px !important;
+
+      // Responsive pour les images
+      @media screen and (max-width: 768px) {
+        height: 150px !important;
+        border-radius: 15px !important;
+        margin-bottom: 15px !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 8%) !important;
+      }
+
+      @media screen and (max-width: 480px) {
+        height: 120px !important;
+        border-radius: 10px !important;
+        margin-bottom: 10px !important;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 6%) !important;
+      }
+    }
+
+    .table_title {
+      display: none;
+    }
+  }
+}

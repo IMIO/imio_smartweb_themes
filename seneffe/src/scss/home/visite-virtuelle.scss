@@ -1,0 +1,105 @@
+.visite-virtuelle-lien {
+  width: 380px;
+  height: 230px;
+  position: absolute;
+  top: 220px;
+  right: 100px;
+  padding: 0 !important;
+
+  // Responsive mobile
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    height: auto;
+    right: auto;
+    margin: 20px 0;
+    padding: 0 20px !important;
+    top: 150px;
+  }
+
+  .container {
+    padding: 0 !important;
+  }
+
+  .cont-lien {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 380px;
+    height: 230px;
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    background-color: $primary-blue;
+    border-radius: 20px;
+
+    // Responsive mobile
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 200px;
+      max-width: 400px;
+      margin: 0 auto !important;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 180px;
+      border-radius: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/svg/img-visite.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      opacity: 100%;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+
+      @media screen and (max-width: 576px) {
+        border-radius: 15px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0%;
+      }
+    }
+
+    .lien {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      width: 100%;
+      padding: 110px 20px 0;
+      background: url("../../assets/svg/icon-visite.svg");
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-position: top;
+      z-index: 2;
+
+      // Responsive mobile
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        padding: 90px 15px 0;
+        background-size: 80px;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 14px;
+        padding: 70px 10px 0;
+        background-size: 60px;
+      }
+    }
+  }
+}

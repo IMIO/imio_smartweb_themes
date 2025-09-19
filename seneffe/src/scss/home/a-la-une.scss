@@ -1,0 +1,183 @@
+.a-la-une {
+  padding-top: 0 !important;
+  margin-top: 20px !important;
+  padding-bottom: 0 !important;
+
+  &::after {
+    display: none;
+  }
+
+  .section-title {
+    font-weight: 500;
+    text-align: left;
+    color: $primary-blue !important;
+    padding-left: 0;
+    margin: 0 0 50px;
+    position: relative;
+    width: max-content;
+
+    // Responsive pour le titre
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin: 0 0 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      right: 0;
+      bottom: -15px;
+      position: absolute;
+      width: 60%;
+      background: $primary-green;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 130px;
+
+    @media screen and (max-width: 992px) {
+      padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 60px;
+    }
+  }
+
+  .swiper-wrapper .swiper-slide > a {
+    display: grid !important;
+    background: #fff !important;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    &:hover {
+      transform: translateY(0) !important;
+      transition: 0.5s;
+    }
+  }
+
+  .swiper-slide .swiper-image {
+    margin-bottom: 0;
+    border-radius: 80px 0 0;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 40px 0 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      border-radius: 20px 0 0;
+    }
+  }
+
+  .swiper_title {
+    position: absolute !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    left: 50% !important;
+    bottom: -50px !important;
+    background: #fff !important;
+    border-radius: 20px !important;
+    padding: 50px 40px 85px !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 10%) !important;
+    transform: translateX(-50%) !important;
+
+    // Responsive pour le bloc de contenu
+    @media screen and (max-width: 992px) {
+      max-width: 400px !important;
+      padding: 40px 30px 70px !important;
+      bottom: -40px !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      bottom: auto !important;
+      border-radius: 15px !important;
+      position: relative !important;
+      margin-top: 0;
+      top: 0;
+      padding: 0;
+      width: 100% !important;
+      max-width: 100%;
+      box-shadow: none !important;
+    }
+
+    h3 {
+      color: $primary-blue !important;
+      text-align: left !important;
+      padding-bottom: 20px !important;
+      border-bottom: 3px solid $primary-green !important;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        padding-bottom: 15px !important;
+        border-bottom-width: 2px !important;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 16px;
+        padding-bottom: 10px !important;
+      }
+
+      &::after {
+        content: "Lire la suite";
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+        font-size: 20px;
+        font-weight: 200;
+        color: $primary-blue;
+        padding-right: 40px;
+        background: url("../../assets/svg/arrow-right.svg") no-repeat right
+          center;
+        transition: all 0.25s ease;
+
+        @media screen and (max-width: 768px) {
+          bottom: -35px;
+          font-size: 16px;
+          padding-right: 30px;
+          background-size: 16px;
+        }
+
+        @media screen and (max-width: 480px) {
+          bottom: -30px;
+          font-size: 14px;
+          padding-right: 25px;
+          background-size: 14px;
+        }
+      }
+    }
+
+    &:hover {
+      h3 {
+        &::after {
+          padding-right: 50px;
+          transition: all 0.25s ease;
+
+          @media screen and (max-width: 768px) {
+            padding-right: 35px;
+          }
+
+          @media screen and (max-width: 480px) {
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .auth_source_container_title,
+  .swiper_date,
+  .see_all,
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
