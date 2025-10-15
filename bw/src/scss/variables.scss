@@ -160,7 +160,7 @@ $see-all-text-transform: none !default;
 $see-all-font-size: 16px !default;
 $see-all-font-weight: 400;
 $see-all-transition: all 0.2s ease !default;
-$see-all-hover-bg: #f5f5f5;
+$see-all-hover-bg: #f3f3f3;
 $see-all-hover-color: $primary-svg !default;
 $see-all-hover-radius: 15px;
 $see-all-hover-border: solid 1px $primary-svg;
@@ -338,7 +338,7 @@ $newsletter-text-color: #fff !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f5f5f5 !default;
+$mark-background-color: #f3f3f3 !default;
 $mark-color: #5c5c5c !default;
 $mark-padding-sec: 20px 45px 20px 26px !default;
 $mark-border: solid 2px $primary !default;
@@ -368,7 +368,7 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: #f5f5f5;
+$section-contact-background: #f3f3f3;
 
 // section-files
 $section-file-background-color: $primary !default;
@@ -376,7 +376,7 @@ $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: #f5f5f5;
+$section-link-background-color: #f3f3f3;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
