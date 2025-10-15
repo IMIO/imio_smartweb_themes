@@ -147,3 +147,35 @@ a#portal-logo {
   padding-bottom: 140%;
   margin-bottom: 20px;
 }
+
+// RECHERCHE
+@media (max-width: 991.98px) {
+  #portal-header #portal-header-top #header-links #search-link a {
+    direction: rtl;
+    width: 130px;
+    text-align: center;
+    padding-right: 10px;
+    transition: 0.2s;
+  }
+
+  div#search-link a .sr-only {
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: initial;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  #search-link a:hover::before {
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+
+  #search-link a:hover {
+    background: #000;
+  }
+
+  #search-link a:hover span.sr-only {
+    color: #fff !important;
+  }
+}
