@@ -34,7 +34,7 @@ $enable-roboto-webfont: false;
 @import "./slide-th";
 
 body {
-  background: blue;
+  background: linear-gradient(180deg, #ccc 0, #fff 500px, #f9f9f9);
 }
 
 // Banner after formes
