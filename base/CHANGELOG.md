@@ -1,5 +1,7 @@
 
 
+## [0.3.5](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.4...v0.3.5) (2025-10-22)
+
 ## [0.3.4](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.2...v0.3.4) (2025-10-22)
 
 
