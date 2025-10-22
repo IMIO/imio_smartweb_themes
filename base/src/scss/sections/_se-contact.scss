@@ -88,6 +88,14 @@
       .portrait {
         aspect-ratio: $section-contact-portrait-ration;
       }
+
+      .display-portrait {
+        aspect-ratio: $section-contact-portrait-ration;
+      }
+
+      .display-carre {
+        aspect-ratio: 1;
+      }
     }
 
     .contact-type-mission {
