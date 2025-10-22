@@ -2,8 +2,13 @@
   padding-top: 0 !important;
   margin-top: 20px !important;
   padding-bottom: 0 !important;
-  background: url("../../assets/svg/bg-alaune.svg") no-repeat right center;
+  background: url("../../assets/svg/bg-alaune.svg") no-repeat 75% center;
+  background-size: contain;
   transition: all 0.25s ease;
+
+  @media screen and (max-width: 992px) {
+    background: none;
+  }
 
   &::after {
     display: none;
@@ -55,7 +60,7 @@
 
   .swiper-wrapper .swiper-slide > a {
     display: grid !important;
-    background: #fff !important;
+    background: none !important;
   }
 
   .swiper-wrapper .swiper-slide {
