@@ -2,6 +2,8 @@
   padding-top: 0 !important;
   margin-top: 20px !important;
   padding-bottom: 0 !important;
+  background: url("../../assets/svg/bg-alaune.svg") no-repeat right center;
+  transition: all 0.25s ease;
 
   &::after {
     display: none;
@@ -179,5 +181,12 @@
   .swiper-button-prev,
   .swiper-button-next {
     display: none !important;
+  }
+
+  .swiper_date {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 10px 0;
   }
 }
