@@ -1,30 +1,19 @@
 .sectionnews {
   margin-top: 0;
-  padding-top: 180px;
+  padding-top: 80px;
+  margin-top: 80px;
 
   &::after {
     content: "";
-    background:
-      url("../../assets/svg/logo-actu.svg") left center no-repeat,
-      linear-gradient(
-        180deg,
-        #fff 0,
-        #fff 110px,
-        $primary-blue 110px,
-        $primary-blue 100%
-      );
+    background: url("../../assets/svg/logo-actu.svg") left center no-repeat
+      $primary-blue;
     left: 0;
     width: 100vw;
     height: 100%;
     bottom: 0;
     position: absolute;
     z-index: -1;
-    background-size:
-      contain,
-      100% 100%;
-    background-position:
-      left center,
-      top left;
+    background-size: 40% 80%;
   }
 
   .section-title {
