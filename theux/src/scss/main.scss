@@ -29,6 +29,32 @@ $enable-roboto-webfont: false;
 @import "./home/banner";
 @import "./home/partenaires";
 
+.portaltype-imio-smartweb-page {
+  .sectionlinks {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  .section-gallery {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  #portal-column-content .sectioncontact {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .sectiontext {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .row > .sectiontext:first-child {
+    margin-top: 0;
+  }
+}
+
 .section-home-page #messagesviewlet {
   position: absolute;
   top: 110px;
