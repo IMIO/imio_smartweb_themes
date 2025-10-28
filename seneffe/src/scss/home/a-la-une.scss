@@ -5,6 +5,7 @@
   background: url("../../assets/svg/bg-alaune.svg") no-repeat 75% center;
   background-size: contain;
   transition: all 0.25s ease;
+  background-position: calc(50% + 450px) !important;
 
   @media screen and (max-width: 992px) {
     background: none;
