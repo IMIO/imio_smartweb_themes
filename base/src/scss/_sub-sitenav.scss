@@ -1,4 +1,11 @@
 // sub header
+html:has(body.is-in-subsite) {
+  overflow-x: hidden;
+}
+
+body.is-in-subsite {
+  overflow-x: hidden;
+}
 
 .subsite-container {
   display: flex;
