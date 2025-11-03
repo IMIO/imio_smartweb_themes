@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@plone/plonetheme-barceloneta-base": "3.2.4",
-    "@imiobe/plonetheme-smartweb-base": "0.3.3",
+    "@imiobe/plonetheme-smartweb-base": "0.3.5",
     "@popperjs/core": "^2.11.6"
   }
 }

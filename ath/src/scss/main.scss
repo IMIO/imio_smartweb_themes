@@ -32,6 +32,17 @@ $enable-roboto-webfont: false;
 @import "./se-files";
 @import "./contact";
 
+.sectiontext ol > li {
+  display: list-item;
+  list-style-type: decimal;
+  padding-left: 0;
+
+  &::before {
+    content: none;
+    display: none;
+  }
+}
+
 #portal-header {
   margin: 0;
 }

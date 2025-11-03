@@ -1,5 +1,18 @@
 
 
+## [0.3.6](https://github.com/IMIO/imio_smartweb_themes/compare/v1.0.1...v0.3.6) (2025-10-30)
+
+## [0.3.5](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.4...v0.3.5) (2025-10-22)
+
+## [0.3.4](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.2...v0.3.4) (2025-10-22)
+
+
+### Features
+
+* base theme for gracehollogne [quick] ([b76b848](https://github.com/IMIO/imio_smartweb_themes/commit/b76b84863390d762c6a4a57d43d235dbdbbfd063))
+* base theme for hamois [quick] ([adcc29c](https://github.com/IMIO/imio_smartweb_themes/commit/adcc29c2595068f3d6f309c03822573984d873e3))
+* base theme for libin [quick] ([e813e87](https://github.com/IMIO/imio_smartweb_themes/commit/e813e87ab70da9b26f393c3515574079ebaebdb9))
+
 ## [0.3.2](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.1...v0.3.2) (2025-07-14)
 
 
