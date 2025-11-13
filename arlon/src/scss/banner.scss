@@ -1,0 +1,116 @@
+// sub header
+html:has(body.section-home-page) {
+  overflow-x: hidden;
+}
+
+.smartweb_herobanner {
+  width: 100%;
+
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+
+  .section-slide {
+    padding-bottom: 0;
+
+    &::before {
+      content: "Bienvune à";
+      font-weight: 300;
+      margin-left: 11%;
+      font-size: 7.9vw;
+      font-size: clamp(1rem, 7.9vw, 48px);
+
+      @media screen and (min-width: 992px) {
+        margin-left: 23.5%;
+      }
+    }
+
+    &::after {
+      content: "Authentique & attractive";
+      display: block;
+      font-weight: 300;
+      margin-left: auto;
+      font-size: 7.9vw;
+      font-size: clamp(1rem, 7.9vw, 48px);
+      max-width: 51.4vw;
+
+      @media screen and (min-width: 992px) {
+        max-width: 330px;
+        margin-right: 154px;
+      }
+    }
+
+    .swiper-banner-image {
+      position: relative !important;
+      mask-image: url("../../assets/svg/logo.svg");
+      mask-size: cover;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      // padding-bottom: 24%;
+      // top: 50% !important;
+      // transform: translateY(-50%);
+      aspect-ratio: 4.2;
+    }
+  }
+}
+
+.section-home-page {
+  position: relative;
+  background-color: #f5f4ea;
+}
+
+.section-home-page.userrole-anonymous {
+  position: relative;
+  background-color: #f5f4ea;
+
+  #portal-header {
+    margin-bottom: 0;
+  }
+
+  #content-header {
+    position: relative;
+  }
+
+  #portal-header #portal-header-top::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 74%;
+    max-width: 900px;
+    aspect-ratio: 1;
+    background-color: #fce1ce;
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    transform: translate(-123%, -9%);
+    left: 50%;
+
+    @media screen and (min-width: 992px) {
+      transform: translate(-123%, -25%);
+    }
+  }
+
+  &::after {
+    content: "";
+    background: url("../../assets/svg/triangle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 74%;
+    max-width: 760px;
+    aspect-ratio: 1.1;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    transform: translate(29%, 29%);
+    left: 50%;
+
+    @media screen and (min-width: 992px) {
+      transform: translate(25%, 29%);
+    }
+  }
+}

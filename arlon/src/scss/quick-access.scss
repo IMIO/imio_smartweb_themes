@@ -1,0 +1,49 @@
+.quick-access {
+  position: relative;
+
+  .section-container {
+    padding: 0 !important;
+
+    & > div {
+      box-shadow: 0 9px 45px rgba(3, 7, 18, 16%);
+      border-radius: 50px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0;
+
+      @media screen and (min-width: 992px) {
+        display: flex;
+      }
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin: 0;
+      max-width: 280px;
+      padding-left: 30px;
+    }
+
+    .row {
+      //   display: grid;
+      //   grid-template-columns: repeat(6, 1fr);
+      //   padding: 0 30px;
+      //   margin-bottom: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto; /* permet le scroll horizontal */
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      scroll-snap-type: x mandatory; /* optionnel : snap au scroll */
+
+      li {
+        width: auto;
+        padding: 0;
+        flex: 0 0 auto; /* empêche les éléments de rétrécir */
+        scroll-snap-align: start; /* optionnel : effet snap */
+      }
+    }
+  }
+}

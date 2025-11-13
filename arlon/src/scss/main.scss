@@ -14,7 +14,5 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "../../../base/src/scss/main";
-
-//// STYLES
-
-// ... add your styles here
+@import "./banner";
+@import "./quick-access";

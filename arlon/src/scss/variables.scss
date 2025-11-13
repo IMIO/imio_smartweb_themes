@@ -134,7 +134,7 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
+$banner-heigh: auto;
 $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
@@ -169,28 +169,28 @@ $see-all-underline-width: 25% !default;
 $see-all-hover-underline-width: 50% !default;
 
 // Quick access
-$quick-access-section-full-width: false !default;
+$quick-access-section-full-width: true;
 $quick-access-title-color: $primary !default;
 $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
+$quick-access-width: auto;
+$quick-access-height: 50px;
 $quick-access-background: #fff !default;
-$quick-access-border: solid 1px $primary !default;
+$quick-access-border: solid 0px $primary;
 $quick-access-border-radius: 100px !default;
 $quick-access-shadow: none !default;
 $quick-access-svg-width: 40px !default;
 $quick-access-svg-color: $primary !default;
-$quick-access-item-title-margin: 1rem 0 0 0 !default;
-$quick-access-title-font-size: 18px !default;
+$quick-access-item-title-margin: 0 0 0 0;
+$quick-access-title-font-size: 16x;
 $quick-access-title-color: $primary !default;
 $quick-access-title-text-transform: initial !default;
 $quick-access-title-weight: 400 !default;
 
-$quick-access-enable-full-bg: false !default;
-$quick-access-full-bg-color: $primary !default;
+$quick-access-enable-full-bg: true;
+$quick-access-full-bg-color: #f5f4ea;
 $quick-access-full-bg-border: solid 1px green !default;
 $quick-access-full-bg-shadow: none !default;
 
