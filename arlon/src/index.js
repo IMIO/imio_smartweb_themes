@@ -29,4 +29,22 @@ $(document).ready(function () {
   if (checkBanner != null) {
     headerCustom.classList.add("header-custom");
   }
+
+  //scroll
+
+  const swiperImages = document.querySelectorAll(".swiper-image");
+
+  window.addEventListener("scroll", () => {
+    swiperImages.forEach((img) => {
+      const rect = img.getBoundingClientRect();
+      const progress = Math.min(
+        Math.max(1 - rect.top / window.innerHeight, 0),
+        1
+      );
+      const translate = -70 * progress; // monte jusqu’à -10px
+      const rotate = 30 * progress; // tourne jusqu’à 10deg
+      img.style.setProperty("--triangle-translate", `${translate}px`);
+      img.style.setProperty("--triangle-rotate", `${rotate}deg`);
+    });
+  });
 });

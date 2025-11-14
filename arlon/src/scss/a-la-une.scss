@@ -1,0 +1,98 @@
+.a-la-une {
+  padding-top: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../../assets/svg/rond-carre.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 140px;
+    aspect-ratio: 1.1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translate(-35%, calc(-50% + var(--triangle-translate)))
+      rotate(var(--triangle-rotate));
+    transition: transform 0.1s linear;
+  }
+
+  .swiper-slide {
+    .swiper-image {
+      max-width: 520px;
+      padding-bottom: 0 !important;
+      height: auto;
+      aspect-ratio: 1;
+      transform: rotate(-7deg);
+      background-size: 89%;
+      background-repeat: no-repeat;
+
+      /* valeurs par défaut */
+      --triangle-translate: 0px;
+      --triangle-rotate: 0deg;
+
+      &::before {
+        content: "";
+        background: url("../../assets/svg/triangle-une.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 70px;
+        max-width: 72px;
+        aspect-ratio: 1.1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        transform: translate(-35%, calc(-50% + var(--triangle-translate)))
+          rotate(var(--triangle-rotate));
+        transition: transform 0.1s linear;
+      }
+    }
+
+    .swiper_title {
+      &::before {
+        content: "à la une";
+        text-transform: uppercase;
+        font-size: 13px;
+        background-color: #fff;
+        font-family: $font-family-title;
+        padding: 7px 10px 3px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin-top: 20px;
+      }
+    }
+
+    .swiper_description p {
+      font-size: 1rem;
+      color: #757890;
+
+      &::after {
+        content: "En savoir plus";
+        font-size: 16px;
+        font-family: $font-family-title;
+        margin-top: 20px;
+        display: block;
+        color: #40435d;
+        border-bottom: #40435d 2px solid;
+        width: max-content;
+      }
+    }
+
+    .swiper_title {
+      align-self: end;
+    }
+  }
+}
+
+.a-la-une .swiper-slide > a {
+  grid-template-columns: 43% 50%;
+  justify-content: center;
+  grid-template-rows: inherit;
+}

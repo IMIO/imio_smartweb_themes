@@ -1,18 +1,16 @@
 //*// COLORS
-$primary: #222831 !default;
+$primary: #40435d;
 $primary-svg: #235789 !default;
 
 //*// TYPOGRAPHY
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
-
-$font-family-base: "Roboto", sans-serif !default;
-$font-family-title: "Nunito", sans-serif !default;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+$font-family-base: "Open Sans", sans-serif;
+$font-family-title: "Josefin Sans", sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: #000 !default;
-$font-title-weight: 700 !default;
+$font-title-color-dark: #40435d;
+$font-title-weight: 500;
 
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
@@ -199,7 +197,7 @@ $a-la-une-title-color: $font-title-color !default;
 $a-la-une-title-align: $home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
-$a-la-une-text-bg: rgb(244, 244, 244) !default;
+$a-la-une-text-bg: transparent;
 $a-la-une-item-image-margin: 0 !default;
 $a-la-une-item-title-color: $primary !default;
 $a-la-une-item-title-font-size: $h3-font-size !default;
