@@ -110,9 +110,12 @@
 
   .body-section {
     ul {
-      max-width: 1200px !important;
+      max-width: 100% !important;
+      justify-content: space-between;
 
       li {
+        width: auto;
+
         .table_image {
           .image.d-block {
             border-radius: 100px;
