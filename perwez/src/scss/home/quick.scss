@@ -1,0 +1,455 @@
+.portaltype-imio-smartweb-portalpage
+  .sectionlinks:first-child.quick-access.first {
+  padding: 0;
+
+  .body-section {
+    padding: 0;
+  }
+}
+
+#main-container .first {
+  width: 100vw;
+  top: -0 !important;
+  margin-top: 0 !important;
+  padding: 100px 0 0;
+
+  &::after {
+    background: $primary-gris;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 100vw !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 30px;
+  }
+
+  svg {
+    max-height: 50px !important;
+    width: 50px;
+    fill: #fff !important;
+    margin-top: -40px;
+  }
+
+  .body-section {
+    max-width: 85%;
+    margin: 0 auto;
+
+    li {
+      .table_image {
+        .image.d-block {
+          position: relative;
+          top: 0;
+          transition: all 0.3s ease;
+          width: 112px;
+          height: 130px;
+          border-radius: 0;
+          background: url("../../assets/svg/bg-quick.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .table_title {
+          margin-top: 10px !important;
+
+          span {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+
+        &:hover {
+          .image.d-block {
+            top: -10px;
+            transition: all 0.3s ease;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+
+          .table_title {
+            span {
+              //color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.second {
+  margin: 0 !important;
+  padding-top: 50px !important;
+
+  &::after {
+    content: "";
+    background: $primary-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-size:
+      contain,
+      100% 100%;
+    background-position:
+      left center,
+      top left;
+  }
+
+  .section-title {
+    font-weight: 500;
+    text-align: left;
+    color: #fff !important ;
+    padding-left: 0;
+    margin: 0 0 50px;
+    position: relative;
+    width: max-content;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      right: 0;
+      bottom: -15px;
+      position: absolute;
+      width: 60%;
+      background: $primary-green;
+    }
+  }
+
+  li {
+    width: 12.5% !important;
+    padding-bottom: 20px !important;
+
+    @media screen and (max-width: 1400px) {
+      width: 25% !important;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 33.3% !important;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 50% !important;
+    }
+
+    .table_image {
+      .table_title span {
+        color: #fff !important;
+        text-transform: uppercase;
+        font-size: 14px !important;
+        font-weight: 600;
+      }
+
+      svg {
+        max-height: 50px !important;
+        width: 50px !important;
+        transition: all 0.3s ease;
+        fill: #fff !important;
+      }
+
+      &:hover svg {
+        margin-top: -10px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.bulletin-co {
+  position: relative;
+  padding: 120px;
+  height: 800px;
+  place-content: center;
+
+  &::after {
+    background: url("../../assets/svg/bg_bull.svg") top right no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .swiper-slide .swiper-image {
+    padding-bottom: 100%;
+    width: 300px;
+    justify-self: center;
+    border-radius: 30px;
+  }
+
+  h3 {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 40px;
+    color: #fff;
+  }
+
+  .see_all a {
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 15px 30px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: solid 3px #000;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    justify-self: center;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+      border-radius: 20px;
+      border: solid 3px #e0b25c;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    position: relative;
+    padding: 80px;
+    height: auto;
+    place-content: center;
+    width: 100vw !important;
+    background: $primary-gris;
+    display: block;
+
+    &::after {
+      display: none;
+    }
+
+    .swiper-slide .swiper-image {
+      padding-bottom: 70%;
+      width: 300px;
+      justify-self: center;
+      border-radius: 30px;
+    }
+  }
+}
+
+.espace-ci {
+  align-self: center;
+
+  .table_title {
+    align-content: center;
+
+    span {
+      color: #fff !important;
+      font-size: 14px;
+    }
+  }
+
+  ul.row li:nth-last-child(-n + 3) {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+    margin-top: 50px;
+  }
+
+  // Responsive - sur mobile, retour en largeur complète
+  @media screen and (max-width: 768px) {
+    ul.row li:nth-last-child(-n + 3) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .table_image {
+    align-items: left;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    display: flex;
+    gap: 0;
+    height: 100%;
+    justify-content: left;
+    margin-left: 0;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      border: 3px solid #fff;
+    }
+
+    .image {
+      width: auto;
+
+      svg {
+        fill: #fff;
+        height: auto;
+        margin: 0 20px;
+        max-height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  // Styles spécifiques pour les 3 derniers li
+  ul.row li:nth-last-child(-n + 3) .table_image {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+
+    .image {
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        margin: 0;
+        max-height: 40px;
+        width: 40px;
+      }
+    }
+
+    .table_title {
+      width: 100%;
+      text-align: center;
+
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  // Responsive pour mobile
+  @media screen and (max-width: 768px) {
+    ul.row li:nth-last-child(-n + 3) .table_image {
+      flex-direction: row;
+      align-items: left;
+      text-align: left;
+      padding: 1rem;
+
+      .image {
+        width: auto;
+        margin-bottom: 0;
+
+        svg {
+          margin: 0 20px;
+          max-height: 30px;
+          width: 30px;
+        }
+      }
+
+      .table_title {
+        width: auto;
+        text-align: left;
+
+        span {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    margin: 0 auto 50px;
+    width: max-content !important;
+    color: #fff !important;
+    padding-left: 0;
+    line-height: 2rem !important;
+    display: block;
+  }
+
+  @media screen and (max-width: 1000px) {
+    position: relative;
+    padding: 80px;
+    height: auto;
+    place-content: center;
+    width: 100vw !important;
+    background: $primary-gris !important;
+    display: block;
+
+    &::after {
+      display: none;
+    }
+
+    .swiper-slide .swiper-image {
+      padding-bottom: 70%;
+      width: 300px;
+      justify-self: center;
+      border-radius: 30px;
+    }
+  }
+}
+
+.bloc-liens {
+  padding: 120px 0;
+
+  .table_image {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .table_title {
+    span {
+      color: #000 !important;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .section-title {
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    margin: 0 auto 50px;
+    width: max-content !important;
+    color: #000;
+    padding-left: 0;
+    line-height: 2rem !important;
+    display: block;
+  }
+}
