@@ -141,79 +141,66 @@ h1 {
   .swiper-slide
   .swiper-banner-content-wrapper {
   position: absolute;
-  top: auto;
-  transform: none;
-  bottom: 0 !important;
-  max-width: 100%;
-  width: 100%;
+  transform: initial;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  top: initial;
+  align-items: center;
+  text-align: -webkit-right;
+  height: initial;
+  padding-right: 0;
+  padding-left: 60px;
 }
 
 .bannerSwiper .section-slide {
   .swiper-banner-content {
+    margin: 0;
+    max-width: 100%;
+    padding: 10px 3rem 200px 4rem;
     position: absolute;
-    right: 0;
     bottom: 0;
-    left: auto;
-    max-width: 450px !important;
-    width: 100% !important;
+    right: 0;
     border-radius: 0;
-    font-family: $font-family-title;
-    height: auto;
-    display: grid;
-    align-items: center;
-    text-align: left;
-    justify-self: left;
+    height: 600px;
+    align-content: center;
+    width: 600px;
     background: linear-gradient(
-      to right,
-      rgba(54, 87, 140, 90%),
-      rgba(54, 87, 140, 90%)
-    ) !important;
-    padding: 40px 60px !important;
+      90deg,
+      rgba(0, 0, 0, 0%) 0,
+      rgba(0, 0, 0, 50%) 300px,
+      rgba(0, 0, 0, 100%) 700px
+    );
+    text-align: right;
 
-    @media screen and (max-width: 800px) {
-      height: auto;
-      position: absolute;
-      left: auto;
-      right: 0;
-      bottom: 0;
-      transform: translate(0%, 0%);
-      max-width: 800px !important;
-      width: 100%;
-      border-radius: 0;
-      padding: 20px 30px !important;
-    }
-
-    .swiper-banner-title {
+    span.swiper-banner-title {
       color: #fff !important;
-
-      @media screen and (max-width: 800px) {
-        font-size: 28px !important;
-      }
+      font-size: 30px;
     }
 
-    .swiper-banner-description {
-      position: relative;
-      width: 100% !important;
-      margin: auto;
+    p.rich_description {
       color: #fff !important;
-
-      @media screen and (max-width: 800px) {
-        p {
-          margin: 0;
-          color: #fff !important;
-          font-size: 14px !important;
-        }
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      display: none;
+      font-weight: 600;
+      line-height: 40px;
+      text-transform: uppercase;
+      font-size: 45px;
     }
   }
 
   .swiper-banner-title {
     line-height: 40px;
   }
+}
+
+.smartweb_herobanner .swiper-button-next {
+  top: 50%;
+  right: 3rem;
+}
+
+.smartweb_herobanner .swiper-button-prev {
+  top: 50%;
+  left: calc(100vw - 9rem);
 }
 
 .r-item-img.r-item-img-placeholder {
