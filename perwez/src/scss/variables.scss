@@ -146,15 +146,15 @@ $banner-heigh: 500px !default;
 $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
-$banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
+$banner-content-padding: 2rem 3rem !default;
+$banner-content-background: rgb(256 256 256 / 90%) !default;
 $banner-content-is-vertical-center: true !default;
-$banner-content-title-font-size: 35px !default;
-$banner-content-title-color: $primary-light !default;
-$banner-content-title-text-transform: none !default;
+$banner-content-title-font-size: 20px !default;
+$banner-content-title-color: black !default;
+$banner-content-title-text-transform: initial !default;
 $banner-content-text-align: left !default;
-$banner-content-description-font-size: 20px !default;
-$banner-content-description-color: #fff !default;
+$banner-content-description-font-size: 40px !default;
+$banner-content-description-color: #000;
 
 // see_all
 $see-all-padding: 15px 30px;
