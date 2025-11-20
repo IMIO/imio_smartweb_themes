@@ -431,6 +431,11 @@
   .table_image {
     text-decoration: none;
     text-align: center;
+
+    .image {
+      background-size: 80%;
+      background-repeat: no-repeat;
+    }
   }
 
   .table_title {
