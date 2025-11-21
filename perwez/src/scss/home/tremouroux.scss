@@ -18,6 +18,8 @@
 .site-residence-tremouroux {
   .sectionnews {
     background: url("../../assets/svg/bg_actu-tremouroux.svg") no-repeat;
+    background-position: top !important;
+    background-size: 100vw !important;
   }
 }
 
@@ -33,6 +35,34 @@
       background: #fff;
       padding-top: 100px;
     }
+  }
+
+  .sortable-section.sectionselections.bloc-liens.hp {
+    position: relative;
+    padding: 60px 0;
+
+    .swiper_title h3 {
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none !important;
+    }
+
+    .swiper-image {
+      border-radius: 20px 0 20px 20px;
+    }
+  }
+
+  .sortable-section.sectionselections.bloc-liens.hp::after {
+    background: $primary-gris;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
   }
 
   #portal-globalnav > li.has_subtree > a::before {
