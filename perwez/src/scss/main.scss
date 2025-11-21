@@ -41,6 +41,10 @@ body {
   margin-bottom: 0 !important;
 }
 
+#portal-globalnav .quick-access .quick-access-title {
+  color: $primary;
+}
+
 //search
 #portal-header #portal-header-top #header-links #search-link a {
   width: 50px;
@@ -648,7 +652,7 @@ footer #container-section-noussuivre {
 }
 
 #portal-header #portal-header-top #portal-globalnav-wrapper {
-  margin: 0 2rem;
+  margin: 0 1.9rem;
 }
 
 @media screen and (min-width: 992px) {
