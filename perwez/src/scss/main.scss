@@ -56,8 +56,8 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: $primary;
-  border: 2px solid $primary;
+  background: #fff;
+  border: 2px solid #fff;
 }
 
 #portal-header #portal-header-top {
@@ -165,18 +165,18 @@ h1 {
     border-radius: 0;
     height: 600px;
     align-content: center;
-    width: 600px;
+    width: 600px !important;
     background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0%) 0,
-      rgba(0, 0, 0, 50%) 300px,
+      rgba(0, 0, 0, 50%) 220px,
       rgba(0, 0, 0, 100%) 700px
-    );
-    text-align: right;
+    ) !important;
+    text-align: right !important;
 
     span.swiper-banner-title {
       color: #fff !important;
-      font-size: 30px;
+      font-size: 30px !important;
     }
 
     p.rich_description {
@@ -184,7 +184,7 @@ h1 {
       font-weight: 600;
       line-height: 40px;
       text-transform: uppercase;
-      font-size: 45px;
+      font-size: 45px !important;
     }
   }
 

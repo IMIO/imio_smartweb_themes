@@ -1,0 +1,59 @@
+.site-residence-tremouroux {
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+  }
+}
+
+.site-residence-tremouroux .sectionevents {
+  background: url("../../assets/svg/bg-event-tremouroux.svg") no-repeat;
+  background-size: 100vw;
+  background-position: top;
+  padding-top: 30px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 1000px) {
+    background: #fff;
+    padding-top: 100px;
+  }
+
+  #portal-globalnav > li.has_subtree > a::before {
+    background-color: $primary-pink;
+  }
+
+  #portal-globalnav > li.has_subtree > a::after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='8.444' height='5.2'><path d='M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z' fill='#ff5ca8'/></svg>");
+    content: "";
+    display: block;
+    height: 6px;
+    width: 9px;
+  }
+
+  #portal-header #portal-header-top #header-links #search-link a {
+    background: $primary-pink;
+    border: 2px solid $primary-pink;
+    height: 50px;
+    transition: all 0.3s ease;
+    width: 50px;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $primary-pink;
+    }
+  }
+}
+
+.site-residence-tremouroux #portal-colophon {
+  background: $primary-pink;
+  padding: 1rem;
+}
