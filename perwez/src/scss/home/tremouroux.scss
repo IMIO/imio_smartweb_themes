@@ -15,16 +15,18 @@
   }
 }
 
-.site-residence-tremouroux .sectionevents {
-  background: url("../../assets/svg/bg-event-tremouroux.svg") no-repeat;
-  background-size: 100vw;
-  background-position: top;
-  padding-top: 30px;
-  padding-bottom: 100px;
+.site-residence-tremouroux {
+  .sectionevents {
+    background: url("../../assets/svg/bg-event-tremouroux.svg") no-repeat;
+    background-size: 100vw;
+    background-position: top;
+    padding-top: 30px;
+    padding-bottom: 100px;
 
-  @media screen and (max-width: 1000px) {
-    background: #fff;
-    padding-top: 100px;
+    @media screen and (max-width: 1000px) {
+      background: #fff;
+      padding-top: 100px;
+    }
   }
 
   #portal-globalnav > li.has_subtree > a::before {
