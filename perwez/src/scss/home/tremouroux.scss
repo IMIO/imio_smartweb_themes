@@ -91,6 +91,13 @@
   }
 }
 
+.site-residence-tremouroux {
+  #portal-globalnav > li.has_subtree > a:focus,
+  #portal-globalnav > li.has_subtree > a:hover {
+    color: #ff99c9;
+  }
+}
+
 .site-residence-tremouroux #portal-colophon {
   background: $primary-pink;
   padding: 1rem;
