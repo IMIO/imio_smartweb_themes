@@ -949,3 +949,31 @@ h3 {
 .portaltype-imio-smartweb-page #main-container .sectionfiles .section-title {
   padding: 10px 0 !important;
 }
+
+.container .sectionfiles a,
+.container .sectionfiles p,
+.container .sectionfiles li,
+.container .sectionfiles h2,
+.container .sectionfiles span {
+  color: #000;
+  text-decoration-line: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 3px;
+  transition:
+    text-decoration-color 0.25s ease,
+    text-underline-offset 0.25s ease;
+}
+
+.sectionfiles a:hover div span,
+.sectionfiles a:focus-visible div span,
+.sectionfiles a:hover div,
+.sectionfiles a:focus-visible div {
+  color: #000;
+  text-decoration-color: #000;
+  text-underline-offset: 5px;
+}
+
+.sectionfiles::after {
+  background-color: $primary-orange;
+  border-radius: 20px;
+}
