@@ -728,9 +728,9 @@ footer #container-section-noussuivre {
   .section-container
   .table_display
   .table_image {
-  background-color: $primary-blue;
+  background-color: $primary-orange;
   border: 0;
-  border-radius: 8px;
+  border-radius: 20px;
   color: #fff;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
@@ -746,8 +746,8 @@ footer #container-section-noussuivre {
 }
 
 .sectionfiles::after {
-  background-color: $primary-blue;
-  border-radius: 8px;
+  background-color: $primary-orange;
+  border-radius: 20px;
   bottom: 0;
   content: "";
   left: 50%;
