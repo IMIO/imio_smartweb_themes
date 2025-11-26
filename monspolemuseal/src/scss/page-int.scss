@@ -523,6 +523,45 @@
   }
 }
 
+.subsection-tresor-de-sainte-waudru {
+  .subsite-container {
+    background: $primary-color-hotel-ville;
+
+    #subsite-navigation > ul > li > a,
+    #subsite-navigation.activated > ul > li > a {
+      filter: invert(1);
+    }
+
+    #subsite-logo {
+      background: $primary-color-light-hotel-ville;
+      color: $primary-titre-hotel-ville;
+    }
+  }
+
+  #portal-breadcrumbs {
+    background: $primary-color-light-hotel-ville;
+    color: $primary-titre-hotel-ville;
+
+    .breadcrumb {
+      background: $primary-color-light-hotel-ville;
+      color: $primary-titre-hotel-ville;
+
+      a {
+        color: $primary-titre-hotel-ville;
+      }
+    }
+  }
+
+  .blc-newsletter {
+    background: $primary-color-light-hotel-ville;
+
+    .see_all {
+      background: $primary-color-hotel-ville;
+      color: #fff;
+    }
+  }
+}
+
 .subsection-musee-francois-duesberg {
   .subsite-container {
     background: $primary-color-musee-francois-duesberg;
