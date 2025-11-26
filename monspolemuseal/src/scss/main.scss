@@ -550,14 +550,30 @@ footer #container-section-noussuivre {
   color: #fff;
 }
 
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.messagesviewlet-type {
+  color: #fff;
+}
+
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary-yellow;
   color: #000;
 }
 
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.messagesviewlet-type {
+  color: #000;
+}
+
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
+  background: $primary-green;
+  color: #000;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.wmessagesviewlet-type {
   background: $primary-green;
   color: #000;
 }
