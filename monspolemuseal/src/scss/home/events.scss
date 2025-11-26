@@ -183,6 +183,13 @@
         }
       }
 
+      .hotel-de-ville {
+        .auth_source_container_title {
+          background: $primary-color-hotel-ville;
+          color: $primary-titre-hotel-ville;
+        }
+      }
+
       .musee-francois-duesberg {
         .auth_source_container_title {
           background: $primary-color-musee-francois-duesberg;
@@ -823,6 +830,54 @@
 
         &:hover {
           border: 50px solid $primary-color-tresor-de-sainte-waudru;
+        }
+      }
+    }
+  }
+}
+
+.subsection-hotel-de-ville {
+  .sectionevents {
+    #container-section-agenda {
+      background: $primary-color-hotel-ville;
+    }
+
+    &::before {
+      background: $primary-color-hotel-ville;
+    }
+
+    .section-title {
+      color: $primary-titre-hotel-ville;
+    }
+
+    .swiper-wrapper {
+      .swiper-slide {
+        & > a {
+          .swiper_date {
+            color: $primary-titre-hotel-ville;
+          }
+
+          .swiper_title {
+            h3 {
+              color: $primary-titre-hotel-ville;
+            }
+          }
+
+          .swiper_description {
+            p {
+              color: $primary-titre-hotel-ville;
+            }
+          }
+        }
+      }
+    }
+
+    .see_all {
+      a {
+        border: 50px solid $primary-color-hotel-ville;
+
+        &:hover {
+          border: 50px solid $primary-color-hotel-ville;
         }
       }
     }
