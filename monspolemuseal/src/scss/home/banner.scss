@@ -111,6 +111,21 @@
   @media screen and (max-width: 700px) {
     display: none;
   }
+
+.smartweb_herobanner::after {
+    border-radius: 0 0 0 50px;
+    top: 0;
+    content: "";
+    display: block;
+    height: 130px;
+    right: 0;
+    left: auto;
+    position: absolute;
+    width: 354px;
+    background: url("../../assets/bg-footer") no-repeat #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 .swiper-banner-content-wrapper {
