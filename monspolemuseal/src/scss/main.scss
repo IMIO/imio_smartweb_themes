@@ -550,8 +550,8 @@ footer #container-section-noussuivre {
   color: #fff;
 }
 
-#messagesviewlet .portalMessage.info,
-#localmessagesviewlet .portalMessage.messagesviewlet-type {
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   color: #fff;
 }
 
@@ -561,8 +561,8 @@ footer #container-section-noussuivre {
   color: #000;
 }
 
-#messagesviewlet .portalMessage.error,
-#localmessagesviewlet .portalMessage.messagesviewlet-type {
+#messagesviewlet .portalMessage.error .messagesviewlet-type {
+#localmessagesviewlet .portalMessage.error .messagesviewlet-type {
   color: #000;
 }
 
@@ -572,8 +572,8 @@ footer #container-section-noussuivre {
   color: #000;
 }
 
-#messagesviewlet .portalMessage.warning,
-#localmessagesviewlet .portalMessage.wmessagesviewlet-type {
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
   background: $primary-green;
   color: #000;
 }
