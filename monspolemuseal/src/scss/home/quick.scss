@@ -5,13 +5,6 @@
   margin: 0;
   padding-right: 80px;
 
-  @media (min-width: 768px) {
-    .col-md-3 {
-      flex: 0 0 auto;
-      width: 20%;
-    }
-  }
-
   h2 {
     font-weight: 700 !important;
     font-size: 3.25rem;
@@ -70,6 +63,12 @@
 
   @include media-breakpoint-down(lg) {
     margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .col-md-3 {
+      width: 20% !important;
+    }
   }
 }
 
