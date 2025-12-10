@@ -358,6 +358,12 @@ footer #container-section-noussuivre {
   }
 }
 
+.r-add-contact a svg,
+.r-add-event a svg,
+.r-add-news a svg {
+  fill: #fff;
+}
+
 .r-filter div[class*="control"] {
   border-radius: 5px;
 }
@@ -935,11 +941,6 @@ h3 {
 
 .r-search-container .r-search.search-bar-filter input {
   margin: 0;
-}
-
-.r-add-event,
-.r-add-news {
-  display: none !important;
 }
 
 .sectionfiles li {
