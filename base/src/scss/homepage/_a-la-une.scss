@@ -8,6 +8,16 @@
   .container {
     padding-right: 0;
     padding-left: 0;
+
+    &.display-carre {
+      .swiper-image {
+        padding-bottom: 100%;
+
+        @include media-breakpoint-up(lg) {
+          padding-bottom: 100%;
+        }
+      }
+    }
   }
 
   .section-title {
