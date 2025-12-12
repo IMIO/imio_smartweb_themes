@@ -1,0 +1,165 @@
+.a-la-une {
+  background: url("../../assets/svg/bg-alaune.svg") no-repeat left top;
+  margin-top: 100px;
+  padding-top: 0;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 0 !important;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+    height: 15px;
+    width: 15px;
+  }
+
+  .section-container {
+    position: relative;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin: 3rem 0 0;
+  }
+
+  &::before {
+    border-radius: 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    z-index: -900;
+    top: 0;
+    width: 50%;
+    background: url("../../assets/svg/bg-alaune.svg") no-repeat top right;
+    mix-blend-mode: multiply;
+
+    @media screen and (max-width: 992px) {
+      background: #fff;
+      width: 100%;
+      border: 0;
+    }
+  }
+
+  &::after {
+    border-radius: 0;
+    content: "";
+    right: 0;
+    position: absolute;
+    z-index: -900;
+    bottom: -167px;
+    width: 255px;
+    height: 430px;
+    background: url("../../assets/svg/after-alaune.svg") no-repeat top right;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+
+  .see_all {
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper-slide {
+    padding-bottom: 130px;
+
+    .swiper_title {
+      grid-row: 2 !important;
+      position: relative;
+
+      h3 {
+        margin-bottom: 20px;
+        padding: 130px 20px 0 45px;
+        font-weight: 400 !important;
+        background: url("../../assets/svg/titre-alaune.svg") no-repeat 45px 20px;
+      }
+
+      &::after {
+        background: $primary-red;
+        color: #fff;
+        border: solid 1px $primary-red;
+        border-radius: 8px;
+        bottom: -60px;
+        content: "Lire la suite";
+        text-transform: uppercase;
+        left: 0;
+        padding: 15px 30px;
+        position: absolute;
+        top: auto;
+        width: auto;
+        z-index: 2;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.5s ease;
+        margin-left: 60px;
+      }
+
+      &:hover::after {
+        background: $primary-blue;
+        border-color: $primary-blue;
+      }
+    }
+
+    .swiper-image {
+      margin-bottom: 0;
+      border-radius: 50px 0 50px 50px;
+      width: 100%;
+    }
+
+    .swiper_description {
+      font-size: 16px;
+    }
+
+    .swiper_date {
+      display: none;
+    }
+
+    a {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto 1fr;
+    }
+
+    @media screen and (max-width: 992px) {
+      .swiper_title {
+        grid-row: 3 !important;
+      }
+
+      a {
+        grid-template-columns: 100% !important;
+        grid-template-rows: 1fr !important;
+      }
+
+      .swiper_description {
+        font-size: 16px;
+      }
+
+      .swiper_date {
+        margin: 20px 0 0;
+        grid-row: 2 !important;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $primary-light !important;
+  }
+}
