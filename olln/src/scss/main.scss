@@ -396,17 +396,23 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   text-decoration: none;
 }
 
+.sectiontext .section-text .body-section mark a:hover {
+  text-decoration: none !important;
+}
+
 .sectiontext .section-text .body-section mark a::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
-  width: 50%;
+  right: 0;
+  width: 100%;
   height: 2px;
   background: #fff;
   transition: width 0.3s ease;
+  margin: 0 auto;
 }
 
 .sectiontext .section-text .body-section mark a:hover::after {
-  width: 100%;
+  width: 70%;
 }
