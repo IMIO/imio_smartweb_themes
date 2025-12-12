@@ -125,8 +125,13 @@
 
 #portal-footer-wrapper {
   background: $primary-gris;
-  padding: 100px 0 2rem !important;
+  padding: 80px 0 2rem !important;
   position: relative;
+  margin-top: 100px;
+}
+
+.section-home-page #portal-footer-wrapper {
+  margin-top: 0 !important;
 }
 
 #portal-footer-wrapper {
