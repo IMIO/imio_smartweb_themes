@@ -388,3 +388,25 @@ body:not(.portaltype-imio-smartweb-portalpage) {
     justify-content: flex-end;
   }
 }
+
+// Link mark styles in section text
+.sectiontext .section-text .body-section mark a {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sectiontext .section-text .body-section mark a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.sectiontext .section-text .body-section mark a:hover::after {
+  width: 100%;
+}
