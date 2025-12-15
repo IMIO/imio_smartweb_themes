@@ -64,11 +64,28 @@ footer {
   }
 }
 
-.subsite-container #subsite-logo {
-  background: #fd3c88;
-  display: inline-block;
-  font-size: 24px;
-  text-transform: uppercase;
+#subsite-navigation:not(.activated) > ul {
+  gap: 25px;
+
+  li.has_subtree a.nav-link {
+    background: #fff;
+    padding: 5px !important;
+    border: #fd3c88 solid 1px;
+    border-radius: 25px;
+  }
+}
+
+.subsite-container {
+  background-color: #fd3c88;
+  border-radius: 0 20px 0 0;
+  gap: 20px;
+
+  #subsite-logo {
+    background: #ffebf2;
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
 }
 
 .r-add-contact a,
