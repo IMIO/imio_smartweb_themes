@@ -72,7 +72,19 @@ footer {
     padding: 5px 15px;
     border: #fd3c88 solid 1px;
     border-radius: 25px;
+
+    &:hover {
+      background: #ffebf2;
+      border: #fff 1px solid;
+      text-decoration: none;
+    }
   }
+}
+
+#subsite-navigation > ul > li > a:focus::before,
+#subsite-navigation > ul > li > a:hover::before {
+  background-color: #fd3c88;
+  bottom: -5px;
 }
 
 .subsite-container {
