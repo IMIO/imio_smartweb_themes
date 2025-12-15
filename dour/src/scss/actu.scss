@@ -1,0 +1,41 @@
+.section-home-page .sectionnews {
+  background-color: #ecebe3;
+  margin-top: 0;
+
+  @media screen and (min-width: 992px) {
+    margin-top: 5rem;
+  }
+
+  @media screen and (min-width: 1091px) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 7rem;
+  }
+}
+
+.sectionnews,
+.sectionevents {
+  .swiper-slide {
+    a {
+      overflow: hidden;
+
+      .swiper-image {
+        transition: all 0.1s linear;
+      }
+
+      &:hover {
+        .swiper-image {
+          scale: 1.02;
+        }
+
+        .swiper_title {
+          h3 {
+            color: #2eadc3;
+          }
+        }
+      }
+    }
+  }
+}

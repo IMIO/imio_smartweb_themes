@@ -14,7 +14,9 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "../../../base/src/scss/main";
+@import "banner";
+@import "actu";
 
-//// STYLES
-
-// ... add your styles here
+.sectionnews .see_all a::after {
+  display: none;
+}
