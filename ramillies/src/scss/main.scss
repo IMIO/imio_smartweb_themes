@@ -64,10 +64,10 @@ footer {
   }
 }
 
-#subsite-navigation:first-of-type > ul {
+#subsite-navigation > ul {
   gap: 25px;
 
-  li.has_subtree a.nav-link {
+  > li.has_subtree > a.nav-link {
     background: #fff;
     padding: 5px !important;
     border: #fd3c88 solid 1px;
