@@ -65,11 +65,11 @@ footer {
 }
 
 #subsite-navigation > ul {
-  gap: 25px;
+  gap: 20px;
 
-  > li.has_subtree > a.nav-link {
+  > li > a.nav-link {
     background: #fff;
-    padding: 5px !important;
+    padding: 5px 15px;
     border: #fd3c88 solid 1px;
     border-radius: 25px;
   }
