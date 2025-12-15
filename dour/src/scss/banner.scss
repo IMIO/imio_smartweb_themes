@@ -171,7 +171,7 @@ html:has(body.section-home-page) {
 
 // quick
 
-.quick-access {
+.sectionlinks.quick-access {
   padding-top: 40px;
 
   div[class^="nb-items-batch-"] {
@@ -185,6 +185,7 @@ html:has(body.section-home-page) {
 
     ul.row {
       gap: 25px 0;
+      max-width: 903px;
 
       @media screen and (max-width: 767px) {
         display: grid;

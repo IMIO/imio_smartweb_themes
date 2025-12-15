@@ -2,6 +2,9 @@
 $primary: #2c2e35;
 $primary-svg: #00b1ce;
 
+$footer-bg: #228096;
+$footer-color: #fff;
+
 //*// TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -65,7 +68,7 @@ $main-logo-max-width: 115px !default;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: #fff !default;
 $header-center-nav: false !default;
-$header-nav-margin: 0 1rem 0 1rem !default;
+$header-nav-margin: 0 1rem 0 3rem;
 $header-nav-link-color: $primary !default;
 $header-nav-link-font-size: 16px !default;
 $header-nav-link-font-family: $font-family-base !default;
@@ -292,6 +295,11 @@ $event-date-padding: 0 1rem !default;
 $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
+
+// footer
+
+$colofon-bg: #228096;
+$colofon-color: #fff !default;
 
 // Album
 $album-section-full-width: true !default;

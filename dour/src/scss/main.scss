@@ -16,6 +16,7 @@ $enable-roboto-webfont: false;
 @import "../../../base/src/scss/main";
 @import "banner";
 @import "actu";
+@import "footer";
 
 .sectionnews .see_all a::after {
   display: none;
