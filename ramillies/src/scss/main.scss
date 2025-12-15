@@ -64,7 +64,7 @@ footer {
   }
 }
 
-#subsite-navigation:not(.activated) > ul {
+#subsite-navigation:first-of-type > ul {
   gap: 25px;
 
   li.has_subtree a.nav-link {
@@ -76,12 +76,12 @@ footer {
 }
 
 .subsite-container {
-  background-color: #fd3c88;
+  background-color: #ffebf2;
   border-radius: 0 20px 0 0;
   gap: 20px;
 
   #subsite-logo {
-    background: #ffebf2;
+    background: #fd3c88;
     display: inline-block;
     font-size: 24px;
     text-transform: uppercase;
