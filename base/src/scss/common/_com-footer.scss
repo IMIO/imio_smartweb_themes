@@ -1,6 +1,31 @@
 #portal-colophon {
+  background-color: $colofon-bg;
+  padding: 15px 0;
+
   li {
+    color: $colofon-color;
+
+    a {
+      color: $colofon-color;
+
+      &:hover,
+      &:focus {
+        color: lighten($colofon-color, 20%) !important;
+      }
+    }
+
     list-style: none;
+  }
+
+  .colophonWrapper {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
   }
 }
 
