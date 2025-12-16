@@ -1,5 +1,12 @@
 
 
+## [0.3.7](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.6...v0.3.7) (2025-12-16)
+
+
+### Features
+
+* base theme for liege [quick] ([98d87e9](https://github.com/IMIO/imio_smartweb_themes/commit/98d87e9902b2b11aeb8725a964bfc0d64a364724))
+
 ## [0.3.6](https://github.com/IMIO/imio_smartweb_themes/compare/v1.0.1...v0.3.6) (2025-10-30)
 
 ## [0.3.5](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.4...v0.3.5) (2025-10-22)
