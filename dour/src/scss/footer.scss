@@ -1,6 +1,7 @@
 #portal-footer-wrapper {
   position: relative;
   background-color: transparent !important;
+  text-align: left;
 
   h1,
   .h1,
@@ -20,6 +21,10 @@
   svg {
     color: #fff !important;
     fill: #fff !important;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   &::before {

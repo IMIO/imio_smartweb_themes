@@ -58,8 +58,12 @@ html:has(body.section-home-page) {
     position: relative;
   }
 
-  #portal-header #portal-header-top::after {
-    display: none;
+  #portal-header #portal-header-top {
+    // background-color: #fff;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
