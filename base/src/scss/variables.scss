@@ -375,13 +375,13 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary !default;
-$enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$section-file-background-color: #f8f8f8 !default;
+$enable-full-width-section-files: false !default;
+$enable-light-color-section-files: false !default;
 
 // section-link
 $section-link-background-color: #f8f8f8 !default;
-$enable-full-width-section-link: true !default;
+$enable-full-width-section-link: false !default;
 $enable-light-color-section-link: false !default;
 
 // section-list-block-img

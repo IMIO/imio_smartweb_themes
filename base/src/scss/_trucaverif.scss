@@ -443,13 +443,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 }
 
 @media screen and (min-width: 768px) {
-  .portaltype-imio-smartweb-procedure .sectionlinks,
-  .portaltype-imio-smartweb-page .sectionlinks,
-  .portaltype-imio-smartweb-procedure .sectionfiles,
-  .portaltype-imio-smartweb-page .sectionfiles {
-    background: transparent;
-  }
-
   .portaltype-imio-smartweb-procedure .sectionlinks::after,
   .portaltype-imio-smartweb-page .sectionlinks::after,
   .portaltype-imio-smartweb-procedure .sectionfiles::after,

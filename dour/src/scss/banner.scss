@@ -3,7 +3,7 @@ html:has(body.section-home-page) {
   overflow-x: hidden;
 }
 
-.smartweb_herobanner {
+.section-home-page .smartweb_herobanner {
   max-width: 90%;
   left: inherit;
   transform: inherit;
@@ -175,7 +175,7 @@ html:has(body.section-home-page) {
 
 // quick
 
-.sectionlinks.quick-access {
+.sectionlinks.quick-access-home {
   padding-top: 40px;
 
   div[class^="nb-items-batch-"] {
