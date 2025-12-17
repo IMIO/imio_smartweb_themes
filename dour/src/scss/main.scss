@@ -18,7 +18,11 @@ $enable-roboto-webfont: false;
 @import "actu";
 @import "footer";
 @import "partenaires";
+@import "demarches";
 
-.sectionnews .see_all a::after {
-  display: none;
+.sectionnews,
+.sectionevents {
+  .see_all a::after {
+    display: none;
+  }
 }

@@ -1,0 +1,23 @@
+.portaltype-collection.template-facetednavigation_view.faceted-block-view {
+  #block-menu {
+    .list-card-title {
+      margin: 0;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    a.row {
+      background: #00b1ce08;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: solid 1px #00b1ce1a;
+
+      &:hover,
+      &:focus {
+        background: #00b1ce12;
+      }
+    }
+  }
+}
