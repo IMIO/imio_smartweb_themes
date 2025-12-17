@@ -380,14 +380,14 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary !default;
-$enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$section-file-background-color: #fff;
+$enable-full-width-section-files: false;
+$enable-light-color-section-files: false;
 
 // section-link
-$section-link-background-color: #f8f8f8 !default;
-$enable-full-width-section-link: true !default;
-$enable-light-color-section-link: false !default;
+$section-link-background-color: #fff;
+$enable-full-width-section-link: false;
+$enable-light-color-section-link: false;
 
 // section-list-block-img
 $section-list-block-img-card-title: 1.2rem;

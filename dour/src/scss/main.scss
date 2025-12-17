@@ -19,10 +19,15 @@ $enable-roboto-webfont: false;
 @import "footer";
 @import "partenaires";
 @import "demarches";
+@import "fileslinks";
 
 .sectionnews,
 .sectionevents {
   .see_all a::after {
     display: none;
   }
+}
+
+.card-img-top.no-image {
+  background-color: #2280961a;
 }
