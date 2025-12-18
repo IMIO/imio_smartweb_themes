@@ -181,6 +181,11 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
 body.section-home-page .bannerSwiper .section-slide {
   &::after {
     content: url("../../assets/svg/logo-banner-blc.svg");
+  }
+}
+
+body .bannerSwiper .section-slide {
+  &::after {
     //background: linear-gradient(-90deg, #0a0a0a, transparent);
     width: 100%;
     max-width: 500px;
