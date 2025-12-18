@@ -178,7 +178,7 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
   }
 }
 
-.bannerSwiper .section-slide {
+body.section-home-page .bannerSwiper .section-slide {
   &::after {
     content: url("../../assets/svg/logo-banner-blc.svg");
     //background: linear-gradient(-90deg, #0a0a0a, transparent);
@@ -205,6 +205,12 @@ body.portaltype-imio-smartweb-portalpage.section-home-page::after {
     @media screen and (max-width: 430px) {
       display: none;
     }
+  }
+}
+
+body.section-accueil-cpas .bannerSwiper .section-slide {
+  &::after {
+    content: url("../../assets/svg/cpas-logo-banner-blc.svg");
   }
 }
 
