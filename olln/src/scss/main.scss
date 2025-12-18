@@ -417,3 +417,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 .sectiontext .section-text .body-section mark a:hover::after {
   width: 70%;
 }
+
+.r-search-container .r-search-highlighter {
+  color: $primary;
+}
