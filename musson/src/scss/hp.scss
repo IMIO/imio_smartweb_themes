@@ -1,0 +1,40 @@
+li.nav-item > a.state-published.nav-link:hover:focus {
+  text-decoration: underline;
+}
+
+div.has_subtree ul li.has_subtree a.state-published.nav-link::after {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+div.has_subtree ul li.has_subtree a.state-published.nav-link:hover::after {
+  right: 10px !important;
+  transform: translateX(-20px);
+}
+
+body {
+  background-image: url("../../assets/svg/star-background.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.sectionevents {
+  position: relative; /* nécessaire pour que ::after se positionne par rapport à la section */
+  // width: 100%;
+  // height: 200px; /* hauteur au choix */
+  overflow: hidden; /* pour que les coins arrondis ne débordent pas */
+}
+
+.sectionevents::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%; /* largeur du background */
+  height: 100%; /* occupe toute la hauteur de la section */
+  background-color: $primary; /* couleur du background */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1; /* derrière le contenu */
+}

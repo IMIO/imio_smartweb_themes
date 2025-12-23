@@ -12,48 +12,15 @@
   margin-top: -3.5rem !important;
   padding-bottom: 30px;
 
-  &::after {
-    background: $primary;
-    border-radius: 0 0 0 60px;
-    bottom: 0 0 0 40px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    margin-left: 30px;
-    top: 2rem;
-    width: calc(100vw - 30px);
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-
   @media screen and (max-width: 991px) {
     width: 100vw !important;
     top: 0 !important;
     margin-top: -3.5rem !important;
     padding-bottom: 30px;
-
-    &::after {
-      background: $primary;
-      border-radius: 0;
-      bottom: 0 0 0 40px;
-      content: "";
-      height: 100%;
-      position: absolute;
-      left: 50%;
-      margin-left: 0;
-      top: 2rem;
-      width: 100vw;
-      transform: translateX(-50%);
-      z-index: -1;
-    }
   }
+}
 
-  svg {
-    max-height: 40px;
-    fill: #fff !important;
-  }
-
+#main-container .sectionlinks.quick-access {
   .body-section {
     max-width: 85%;
     margin: 0 auto;
@@ -71,10 +38,6 @@
 
         .table_title {
           margin-top: 10px !important;
-
-          span {
-            color: #fff;
-          }
         }
 
         &:hover {
@@ -86,12 +49,6 @@
 
           svg {
             fill: #fff !important;
-          }
-
-          .table_title {
-            span {
-              color: #fff;
-            }
           }
         }
       }
@@ -111,4 +68,18 @@
       }
     }
   }
+}
+
+/* 1 sur 2 – éléments impairs */
+ul.row > li:nth-child(odd) .image.d-block {
+  background-color: $primary !important;
+}
+
+/* 1 sur 2 – éléments pairs */
+ul.row > li:nth-child(even) .image.d-block {
+  background-color: $primary-svg !important;
+}
+
+.sectionlinks.quick-access .body-section li a .image.d-block svg {
+  fill: #fff;
 }

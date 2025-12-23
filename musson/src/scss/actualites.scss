@@ -1,0 +1,38 @@
+.swiper_title,
+.swiper_date {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.auth_source_container_title {
+  position: absolute;
+  top: 205px;
+}
+
+.swiper-slide > a {
+  gap: 10px;
+}
+
+body .sectionnews .see_all a {
+  padding: 10px 20px !important;
+  border-radius: 20px !important;
+  background-color: $primary !important;
+  color: #fff;
+  border: solid 1px $primary;
+
+  &::after {
+    display: none !important;
+  }
+
+  &:hover {
+    background-color: #fff !important;
+    color: #000;
+    border: solid 1px $primary;
+  }
+}
+
+span.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+}

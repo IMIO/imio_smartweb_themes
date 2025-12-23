@@ -12,10 +12,13 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./variables";
+@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 @import "./banner";
+@import "./actualites";
+@import "./agenda";
 @import "./quick";
+@import "./hp";
 @import "./section-en-images";
 
 //// STYLES

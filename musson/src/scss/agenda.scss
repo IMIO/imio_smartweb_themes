@@ -1,0 +1,22 @@
+body .sectionevents {
+  margin: 50px 0;
+  padding: 50px 0;
+
+  .see_all a {
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    background-color: #fff !important;
+    color: #000;
+    border: solid 1px #fff;
+
+    &::after {
+      display: none !important;
+    }
+
+    &:hover {
+      background-color: $primary !important;
+      color: #fff;
+      border: solid 1px #fff;
+    }
+  }
+}
