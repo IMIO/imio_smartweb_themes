@@ -16,7 +16,7 @@ body {
   background-image: url("../../assets/svg/star-background.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: contain;
+  background-size: 50% auto;
 }
 
 .sectionevents {
@@ -37,4 +37,30 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: -1; /* derrière le contenu */
+}
+
+footer#portal-footer-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  span,
+  a,
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+  }
+}
+
+#portal-globalnav.activated > li > a,
+#portal-globalnav-wrapper
+  #portal-globalnav-collapse
+  #portal-globalnav
+  > li.show-nav.has_subtree
+  > a {
+  color: #000 !important;
+}
+
+.mask-menu {
+  top: 78px;
 }
