@@ -64,3 +64,57 @@ footer#portal-footer-wrapper {
 .mask-menu {
   top: 78px;
 }
+
+//Galerie HP
+
+.galerie-accueil,
+.portaltype-imio-smartweb-portalpage .sectiongallery {
+  .section-title {
+    font-weight: 350;
+    margin: 0 0 40px;
+    width: max-content;
+    font-size: 45px;
+    justify-self: center;
+  }
+
+  margin: 120px 0 100px;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0 10px !important;
+
+  img {
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .section_gallery_item {
+    &::after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: $primary;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      margin-left: 0;
+      z-index: 0;
+      opacity: 0%;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 80%;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    border-radius: 0;
+    margin: 5px 0 100px;
+  }
+}
