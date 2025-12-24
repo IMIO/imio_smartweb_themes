@@ -17,6 +17,24 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50% auto;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%; /* max 50% de la largeur */
+  height: 100%; /* hauteur de la page */
+
+  background-image: url("../../assets/svg/star-background-footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50% auto;
+  pointer-events: none; /* n’interfère pas avec les clics */
+  z-index: -1; /* derrière le contenu */
 }
 
 .sectionevents {
