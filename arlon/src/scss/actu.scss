@@ -1,0 +1,48 @@
+.sectionnews {
+  .body-section .row {
+    gap: 20px;
+    display: flex;
+
+    li {
+      list-style: none;
+      background-color: #a4d7de;
+      flex: 1 1 calc(50% - 20px);
+      padding: 0;
+
+      .table_image {
+        display: grid;
+        grid-template-columns: 173px 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px 30px;
+        align-items: start;
+        justify-content: center;
+        text-decoration: none;
+        padding: 1rem 2rem;
+
+        .image {
+          aspect-ratio: 1;
+          max-width: 173px;
+          border-radius: 100%;
+          grid-row: 1 / 3;
+        }
+
+        .table_date {
+          grid-column: 2;
+          grid-row: 1;
+          align-self: end;
+        }
+
+        .table_title {
+          grid-column: 2;
+          grid-row: 2;
+        }
+      }
+    }
+  }
+}
+
+//events
+
+.sectionevents {
+  background-color: #40435d;
+}
