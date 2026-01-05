@@ -18,3 +18,43 @@
     }
   }
 }
+
+// annuaire
+
+.sectionlinks.home-annuaire {
+  position: relative;
+  background-color: #ecebe3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #ecebe3;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .row li {
+    text-align: center;
+
+    .table_image {
+      border: solid 2px $primary-svg;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+      aspect-ratio: 1;
+      background: #fff;
+      text-decoration: none;
+      color: #2c2e35;
+      font-family: $font-family-title;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
