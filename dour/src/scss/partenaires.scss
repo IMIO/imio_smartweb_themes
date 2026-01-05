@@ -37,8 +37,13 @@
     transform: translateX(-50%);
   }
 
+  .row {
+    gap: 10px 0;
+  }
+
   .row li {
     text-align: center;
+    max-width: 200px;
 
     .table_image {
       border: solid 2px $primary-svg;
