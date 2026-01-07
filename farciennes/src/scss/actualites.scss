@@ -1,0 +1,64 @@
+.swiper_title,
+.swiper_date {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.auth_source_container_title {
+  position: absolute;
+  top: 205px;
+}
+
+.swiper-slide > a {
+  gap: 10px;
+}
+
+body .sectionnews .see_all a {
+  padding: 10px 25px !important;
+  border-radius: 20px;
+  background-color: $primary-svg;
+  color: #fff;
+  border: solid 1px $primary-svg;
+
+  &::after {
+    display: none !important;
+  }
+
+  &:hover {
+    background-color: #fff !important;
+    color: #000;
+    border: solid 1px $primary-svg;
+  }
+}
+
+span.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+}
+
+.sectionnews {
+  position: relative; /* nécessaire pour que ::after se positionne par rapport à la section */
+  // width: 100%;
+  // height: 200px; /* hauteur au choix */
+  overflow: visible; /* OBLIGATOIRE */
+
+  div.swiper-wrapper p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.sectionnews::after {
+  content: "";
+  position: absolute; /* attaché verticalement au parent */
+  top: 70px; /* position verticale depuis le parent */
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  height: 150%;
+  background: url("../../assets/svg/frame-actus.svg") top / 100% no-repeat !important;
+  z-index: -1;
+}

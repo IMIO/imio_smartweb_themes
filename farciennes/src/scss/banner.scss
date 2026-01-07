@@ -1,0 +1,85 @@
+.smartweb_herobanner .bannerSwiper {
+  height: 50vw;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 991px) {
+  .smartweb_herobanner {
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 0;
+    margin-left: 0;
+  }
+
+  .smartweb_herobanner .bannerSwiper {
+    height: 50vw;
+    max-height: 350px;
+    min-height: 350px;
+  }
+}
+
+.smartweb_herobanner .swiper-button-next {
+  bottom: 60px;
+  left: 110px;
+}
+
+.smartweb_herobanner .swiper-button-prev {
+  bottom: 60px;
+  right: auto;
+  left: 60px;
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: absolute;
+  transform: initial;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  top: initial;
+  align-items: center;
+  text-align: -webkit-right;
+  height: initial;
+  padding-right: 0;
+  padding-left: 60px;
+
+  .swiper-banner-content {
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem 5rem 1rem 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    height: 500px;
+    align-content: center;
+    width: 600px;
+    background: linear-gradient(
+      90deg,
+      rgba(18, 40, 82, 0%) 0,
+      $primary-dark 200px
+    );
+    text-align: right;
+
+    @media screen and (max-width: 991px) {
+      padding: 1rem 3rem 1rem 4rem;
+      height: 350px;
+    }
+
+    span.swiper-banner-title,
+    p.rich_description {
+      color: #fff !important;
+    }
+  }
+}
+
+.swiper-banner-image::after {
+  content: "";
+  background: #0000;
+  position: absolute;
+  inset: 0;
+  opacity: 30%;
+}

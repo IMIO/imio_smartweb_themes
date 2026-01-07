@@ -1,0 +1,64 @@
+body .sectionevents {
+  // margin: 50px 0;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+
+  div.swiper-wrapper {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .see_all a {
+    padding: 10px 25px !important;
+    border-radius: 20px !important;
+    color: #fff;
+    border: solid 1px $primary-svg;
+
+    &::after {
+      display: none !important;
+    }
+
+    &:hover {
+      background-color: $primary !important;
+      color: #fff;
+      border: solid 1px #fff;
+    }
+  }
+}
+
+.sectionevents::before {
+  // content: "";
+  // position: absolute;
+  // inset: 0;
+  // width: 100%;
+  // height: 100%;
+  // background: url("../../assets/svg/frame-agenda.svg") top / 90% 85% no-repeat;
+  // z-index: -1; /* derrière le contenu */
+  // top: 0;
+  // margin: 0 auto;
+  // border-radius: 30px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw; /* 80% de la largeur de l’écran */
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.sectionevents::after {
+  content: "";
+  position: absolute; /* attaché verticalement au parent */
+  top: 65%;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  height: 120%;
+  background: url("../../assets/svg/frame-restez.svg") center / cover no-repeat;
+  z-index: -99 !important;
+}

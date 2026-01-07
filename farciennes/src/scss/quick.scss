@@ -1,0 +1,85 @@
+.portaltype-imio-smartweb-portalpage .sectionlinks.quick-access.first {
+  padding: 0;
+
+  .body-section {
+    padding: 0;
+  }
+}
+
+#main-container .sectionlinks.quick-access.first {
+  width: calc(100vw - 30px) !important;
+  top: 0 !important;
+  margin-top: -3.5rem !important;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 991px) {
+    width: 100vw !important;
+    top: 0 !important;
+    margin-top: -3.5rem !important;
+    padding-bottom: 30px;
+  }
+}
+
+#main-container .sectionlinks.quick-access {
+  .body-section {
+    max-width: 85%;
+    margin: 0 auto;
+
+    li {
+      .table_image {
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          top: 0;
+          transition: all 0.3s ease;
+        }
+
+        .table_title {
+          margin-top: 10px !important;
+        }
+
+        &:hover {
+          .image.d-block {
+            background: $primary;
+            top: -10px;
+            transition: all 0.3s ease;
+          }
+
+          svg {
+            fill: #fff !important;
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+// /* 1 sur 2 – éléments impairs */
+// ul.row > li:nth-child(odd) .image.d-block {
+//   background-color: $primary !important;
+// }
+
+// /* 1 sur 2 – éléments pairs */
+// ul.row > li:nth-child(even) .image.d-block {
+//   background-color: $primary-svg !important;
+// }
+
+.sectionlinks.quick-access .body-section li a .image.d-block svg {
+  fill: $primary;
+}
