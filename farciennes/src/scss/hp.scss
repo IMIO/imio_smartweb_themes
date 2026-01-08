@@ -128,7 +128,7 @@ footer#portal-footer-wrapper {
   text-align: center;
 
   mark {
-    border: solid 1px $primary-svg;
+    border: solid 1px $primary;
     background-color: $primary-svg;
     border-radius: 20px;
     color: #fff;
@@ -160,6 +160,8 @@ footer#portal-footer-wrapper {
 }
 
 .sectionlinks.quick-access.rs {
+  padding-top: 0;
+
   li {
     padding: 10px;
   }
@@ -167,6 +169,7 @@ footer#portal-footer-wrapper {
   .section-title {
     width: 100%;
     color: #fff;
+    margin-bottom: 0;
   }
 
   a {
