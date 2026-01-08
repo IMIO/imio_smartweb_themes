@@ -117,7 +117,7 @@ footer#portal-footer-wrapper {
   }
 }
 
-.section-accueil .sectiontext.bouton {
+.section-home-page .sectiontext.bouton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,6 +166,7 @@ footer#portal-footer-wrapper {
 
   .section-title {
     width: 100%;
+    color: #fff;
   }
 
   a {
@@ -211,6 +212,25 @@ footer#portal-footer-wrapper {
 }
 
 .sectionnews .swiper-slide {
+  .swiper_category {
+    top: 0;
+    right: 0;
+    position: absolute;
+
+    span {
+      border-radius: 0 0 0 20px;
+    }
+  }
+
+  .auth_source_container_title {
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0 0 20px !important;
+  }
+}
+
+.sectionevents .swiper-slide {
   .swiper_category {
     top: 0;
     right: 0;
