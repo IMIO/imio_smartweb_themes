@@ -343,8 +343,8 @@ $font-size-texte: $font-size-base !default;
 $mark-background-color: $primary-svg;
 $mark-color: #fff;
 $mark-padding-sec: 10px 25px;
-$mark-border: solid 2px $primary !default;
-$mark-radius: $global-radius !default;
+$mark-border: solid 1px $primary-svg;
+$mark-radius: 20px;
 $mark-weight: 500 !default;
 $list-style-color: $primary !default;
 $list-style-custom: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($list-style-color)}"/></svg>') !default;
@@ -373,7 +373,7 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary !default;
+$section-file-background-color: $primary;
 $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 

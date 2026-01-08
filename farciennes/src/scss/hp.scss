@@ -251,3 +251,34 @@ footer#portal-footer-wrapper {
     border-radius: 0 0 20px !important;
   }
 }
+
+.text mark a {
+  color: #fff !important;
+  text-decoration: underline;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.sortable-section.sectionfiles {
+  margin-bottom: 25px;
+  padding: 25px 20px;
+  border-radius: 20px;
+
+  a {
+    text-decoration: underline #fff 1px;
+  }
+
+  a:hover {
+    text-decoration: underline #fff 5px;
+  }
+
+  .item_infos {
+    color: #fff;
+  }
+
+  &::after {
+    background: $primary;
+  }
+}
