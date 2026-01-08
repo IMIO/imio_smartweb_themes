@@ -57,11 +57,11 @@
 
   .row {
     @include media-breakpoint-down(lg) {
-      gap: 10px;
+      gap: 20px;
       grid-gap: 0;
       display: grid;
       grid-auto-rows: 1fr;
-      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+      grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
 
       li {
         width: auto !important;

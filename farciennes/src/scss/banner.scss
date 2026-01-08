@@ -83,3 +83,21 @@
   inset: 0;
   opacity: 30%;
 }
+
+.smartweb_herobanner {
+  position: relative;
+}
+
+.smartweb_herobanner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1728 / 87; /* proportions du SVG */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1728 87'%3E%3Cpath d='M865.377 87C523.184 87 0 61 0 61V0C0 0 619.611 29 864 29C1108.39 29 1728 0 1728 0V61C1728 61 1207.57 87 865.377 87Z' fill='%23CB273F'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom center;
+  pointer-events: none;
+}
