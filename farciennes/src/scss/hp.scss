@@ -252,12 +252,18 @@ footer#portal-footer-wrapper {
   }
 }
 
-.text mark a {
-  color: #fff !important;
-  text-decoration: underline;
+.text mark {
+  > br {
+    display: none;
+  }
 
-  &:hover {
-    font-weight: bold;
+  a {
+    color: #fff !important;
+    text-decoration: underline;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 }
 

@@ -373,7 +373,7 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary;
+$section-file-background-color: transparent;
 $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
@@ -395,9 +395,9 @@ $list-group-item-padding-x: 0;
 
 // Message Viewlets
 
-$message-info: #27789c;
-$message-warning: #c06d01;
-$message-error: #ae2609;
+$message-info: $primary;
+$message-warning: $primary-svg;
+$message-error: $primary-svg;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;
