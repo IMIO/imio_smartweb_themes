@@ -216,3 +216,12 @@ div.sectionfiles {
 .sectiontext ul li a {
   word-break: break-all;
 }
+
+body.section-home-page div#messagesviewlet {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  margin: 0 auto;
+  width: 90%;
+  right: 0;
+}
