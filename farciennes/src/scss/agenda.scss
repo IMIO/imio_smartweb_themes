@@ -61,4 +61,17 @@ body .sectionevents {
   height: 120%;
   background: url("../../assets/svg/frame-restez.svg") center / cover no-repeat;
   z-index: -99 !important;
+
+  @media (max-width: 768px) {
+    .element {
+      height: 60vh; /* hauteur adaptée écran mobile */
+    }
+  }
+}
+
+#main-container .sectionlinks.quick-access .row {
+  @media (max-width: 768px) {
+    gap: 20px !important;
+    grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
+  }
 }
