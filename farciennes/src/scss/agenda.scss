@@ -51,20 +51,44 @@ body .sectionevents {
   z-index: -1;
 }
 
-.sectionevents::after {
-  content: "";
-  position: absolute; /* attaché verticalement au parent */
-  top: 65%;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  height: 120%;
-  background: url("../../assets/svg/frame-restez.svg") center / cover no-repeat;
-  z-index: -99 !important;
+// .sectionevents::after {
+//   content: "";
+//   position: absolute; /* attaché verticalement au parent */
+//   top: 65%;
+//   left: 50%;
+//   width: 100vw;
+//   transform: translateX(-50%);
+//   height: 120%;
+//   background: url("../../assets/svg/frame-restez.svg") center / cover no-repeat;
+//   z-index: -99 !important;
+
+//   @media (max-width: 768px) {
+//     .element {
+//       height: 60vh; /* hauteur adaptée écran mobile */
+//     }
+//   }
+// }
+
+.sectionevents {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 100vw;
+    height: 120%;
+    transform: translateX(-50%);
+    background: url("../../assets/svg/frame-restez.svg") center / cover
+      no-repeat;
+    z-index: -1;
+  }
 
   @media (max-width: 768px) {
-    .element {
-      height: 60vh; /* hauteur adaptée écran mobile */
+    &::after {
+      height: 60vh;
+      top: 50%;
     }
   }
 }
