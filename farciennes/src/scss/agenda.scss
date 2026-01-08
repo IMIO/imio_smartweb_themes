@@ -82,7 +82,7 @@ body .sectionevents {
     transform: translateX(-50%);
     background: url("../../assets/svg/frame-restez.svg") center / cover
       no-repeat;
-    z-index: -1;
+    z-index: -2;
   }
 
   @media (max-width: 768px) {
