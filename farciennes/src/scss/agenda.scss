@@ -97,13 +97,13 @@ body .sectionevents {
   }
 }
 
-#main-container {
-  .sectionlinks.quick-access {
-    .row {
-      @media (max-width: 768px) {
-        gap: 20px !important;
-        grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
-      }
-    }
-  }
-}
+// #main-container {
+//   .sectionlinks.quick-access {
+//     .row {
+//       @media (max-width: 768px) {
+//         gap: 20px !important;
+//         grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
+//       }
+//     }
+//   }
+// }
