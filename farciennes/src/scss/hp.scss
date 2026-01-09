@@ -360,3 +360,31 @@ body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
     max-width: 100px;
   }
 }
+
+.sectiontext .section-text .body-section a {
+  color: #45677c;
+  font-weight: 500;
+  text-decoration: underline #fff 1px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline #fff 3px;
+  }
+}
+
+#portal-globalnav li.show-nav > .has_subtree.dropdown {
+  box-shadow:
+    0 10px 13px -7px #000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0%);
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+  font-weight: 500;
+  text-decoration: underline $primary 1px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline $primary-dark 3px;
+  }
+}
