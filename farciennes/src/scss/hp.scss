@@ -304,6 +304,10 @@ div#portal-colophon {
     margin: 0;
     padding: 15px 0;
 
+    li {
+      color: #fff;
+    }
+
     li a {
       color: #fff;
       text-decoration: #fff underline 1px;
@@ -313,12 +317,13 @@ div#portal-colophon {
 
 .publications {
   margin-top: 60px;
+  padding-bottom: 10rem;
 }
 
-body.col-content #portal-column-content {
+body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
+  #portal-column-content {
   background-image: url("../../assets/svg/visu-footer.svg");
   background-repeat: no-repeat;
-  background-position: bottom 0 center;
-  background-size: calc(100% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
-  z-index: -2;
+  background-position: bottom -3px center;
+  background-size: calc(50% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
 }
