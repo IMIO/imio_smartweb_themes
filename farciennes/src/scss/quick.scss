@@ -55,30 +55,17 @@
     }
   }
 
-  .row {
-    // @include media-breakpoint-down(lg) {
-    //   gap: 20px;
-    //   grid-gap: 0;
-    //   display: grid;
-    //   grid-auto-rows: 1fr;
-    //   grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
-
-    //   li {
-    //     width: auto !important;
-    //   }
-    // }
-    @media (max-width: 991.98px) {
-      #main-container .sectionlinks.quick-access .row {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-      }
+  @media (max-width: 991.98px) {
+    #main-container .sectionlinks.quick-access .row {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
     }
+  }
 
-    @media (max-width: 480px) {
-      #main-container .sectionlinks.quick-access .row {
-        grid-template-columns: 1fr;
-      }
+  @media (max-width: 480px) {
+    #main-container .sectionlinks.quick-access .row {
+      grid-template-columns: 1fr;
     }
   }
 }
