@@ -49,6 +49,10 @@ body .sectionevents {
   background-color: #fff;
   border-radius: 30px;
   z-index: -1;
+  background-image: url("../../assets/svg/visu-agenda.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 50px; /* collé en bas, 50px depuis la gauche */
+  background-size: calc(15% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
 }
 
 // .sectionevents::after {
@@ -83,10 +87,6 @@ body .sectionevents {
     background: url("../../assets/svg/frame-restez.svg") center / cover
       no-repeat;
     z-index: -2;
-    background-image: url("../../assets/svg/visu-agenda.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 0 left 50px; /* collé en bas, 50px depuis la gauche */
-    background-size: calc(15% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
   }
 
   @media (max-width: 768px) {
