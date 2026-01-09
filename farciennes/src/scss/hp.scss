@@ -304,6 +304,12 @@ div#portal-colophon {
     margin: 0;
     padding: 15px 0;
 
+    @media (max-width: 768px) {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr; // 1 colonne → éléments empilés
+    }
+
     li {
       color: #fff;
     }
@@ -326,4 +332,19 @@ body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
   background-repeat: no-repeat;
   background-position: bottom -3px center;
   background-size: calc(50% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
+}
+
+.mask-menu {
+  background-color: transparent;
+}
+
+.smartweb_herobanner {
+  margin-top: -30px;
+}
+
+#portal-header #portal-header-top #portal-logo {
+  @media (max-width: 768px) {
+    margin-top: 0;
+    max-width: 100px;
+  }
 }
