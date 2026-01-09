@@ -54,19 +54,19 @@
       }
     }
   }
+}
 
-  @media (max-width: 991.98px) {
-    #main-container .sectionlinks.quick-access .row {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(2, minmax(120px, 1fr));
-    }
+@media (max-width: 991.98px) {
+  #main-container .sectionlinks.quick-access .row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
+}
 
-  @media (max-width: 480px) {
-    #main-container .sectionlinks.quick-access .row {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 480px) {
+  #main-container .sectionlinks.quick-access .row {
+    grid-template-columns: 1fr;
   }
 }
 

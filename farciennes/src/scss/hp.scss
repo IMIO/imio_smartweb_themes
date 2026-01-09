@@ -291,6 +291,18 @@ footer#portal-footer-wrapper {
 
 footer#portal-footer-wrapper {
   background: $primary-dark;
+
+  .sectiontext .section-text .body-section figure img {
+    max-width: 170px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .contact_informations_social {
+    
+    li {
+      margin: 0 auto;
+    }
 }
 
 div#portal-colophon {
