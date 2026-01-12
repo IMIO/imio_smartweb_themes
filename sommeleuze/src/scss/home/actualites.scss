@@ -1,0 +1,124 @@
+.sectionnews {
+  .see_all a {
+    background: $primary-svg;
+    border-color: $primary-svg;
+  }
+
+  &::after {
+    content: "";
+    background: url("../../assets/svg/bg-actu.png") repeat-x top center
+      $primary-light;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .section-title {
+    font-weight: 700;
+    position: relative;
+    text-align: left;
+    font-family: Alexandria, sans-serif;
+    width: max-content !important;
+    margin: 0 0 50px;
+    text-transform: none;
+    color: $primary;
+    padding-left: 0;
+    font-size: 60px !important ;
+    letter-spacing: -3px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 20px;
+      right: -25px;
+      bottom: 15px;
+      position: absolute;
+      width: 20px;
+      background: $primary-svg;
+      border-radius: 50px;
+
+      @media screen and (max-width: 992px) {
+        width: 10px;
+        height: 10px;
+        bottom: 10px;
+        right: -15px;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      & > a {
+        display: block;
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -37px;
+          left: 0;
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+          width: 100% !important;
+          text-align: center;
+          color: $primary;
+          margin: 1.5rem 0 0.5rem;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sectionnews::after {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .sectionevents::after {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #portal-footer-wrapper {
+    margin-top: 0;
+  }
+}
