@@ -252,17 +252,18 @@ footer#portal-footer-wrapper {
   }
 }
 
-.text mark {
+.section-text .text mark {
   > br {
     display: none;
   }
 
   a {
     color: #fff !important;
-    text-decoration: underline;
+    text-decoration: underline #fff 1px;
 
     &:hover {
       font-weight: bold;
+      text-decoration: underline #fff 3px;
     }
   }
 }
@@ -387,4 +388,33 @@ body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
   &:hover {
     text-decoration: underline $primary-dark 3px;
   }
+}
+
+@media (min-width: 992px) {
+  #portal-globalnav > li:last-child {
+    margin-left: auto;
+  }
+}
+
+//farciennes bouge
+.subsection-services-administratifs-farciennes-bouge .newsImage.card-img-top {
+  padding-bottom: 85%;
+}
+
+.see_all a {
+  font-family: $font-family-base !important;
+}
+
+.swiper_title h3 {
+  font-family: $font-family-base !important;
+}
+
+.contact_informations {
+  a:hover {
+    text-decoration: underline 3px;
+  }
+}
+
+.sortable-section.sectionfiles a {
+  text-underline-offset: 4px;
 }

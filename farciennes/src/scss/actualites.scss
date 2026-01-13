@@ -51,7 +51,7 @@ span.swiper-pagination-bullet {
   }
 }
 
-.sectionnews::after {
+body.section-home-page .sectionnews.principal::after {
   content: "";
   position: absolute; /* attaché verticalement au parent */
   top: 70px; /* position verticale depuis le parent */
@@ -61,4 +61,9 @@ span.swiper-pagination-bullet {
   height: 150%;
   background: url("../../assets/svg/frame-actus.svg") top / 100% no-repeat !important;
   z-index: -1;
+}
+
+body.section-home-page .sectionnews.principal .swiper_date span,
+body.section-home-page .sectionnews.principal .swiper_title h3 {
+  color: #fff;
 }
