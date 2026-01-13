@@ -72,4 +72,18 @@ body.section-home-page .sectionnews.principal .swiper_title h3 {
   left: initial;
   transform: initial;
   width: 50%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  h2,
+  h3,
+  a,
+  div {
+    color: #fff;
+  }
+
+  .swiper-slide {
+    align-items: center;
+    justify-content: center;
+  }
 }

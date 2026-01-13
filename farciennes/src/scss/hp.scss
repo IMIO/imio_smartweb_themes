@@ -339,9 +339,13 @@ div#portal-colophon {
   }
 }
 
-.publications {
-  margin-top: 60px;
-  padding-bottom: 10rem;
+.quick-access.publications {
+  margin-top: 0;
+  padding-bottom: 11rem;
+
+  li {
+    margin-bottom: 20px;
+  }
 }
 
 body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
