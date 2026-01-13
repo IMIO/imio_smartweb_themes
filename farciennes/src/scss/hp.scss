@@ -431,4 +431,21 @@ body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
 #portal-header #portal-header-top #header-links #search-link a {
   border: 1px solid $primary-dark;
   background-color: $primary-light;
+
+  &:hover {
+    background-color: transparent !important;
+    border: 1px solid $primary-dark;
+  }
+}
+
+div#header-actions a.account {
+  background: $primary-light !important;
+  padding: 10px 20px !important;
+  border-radius: 20px !important;
+  border: solid 1px $primary-dark !important;
+
+  &:hover {
+    background-color: transparent !important;
+    border: solid 1px $primary-dark !important;
+  }
 }

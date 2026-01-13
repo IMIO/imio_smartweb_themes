@@ -75,11 +75,19 @@ body.section-home-page .sectionnews.principal .swiper_title h3 {
   margin-top: 0;
   margin-bottom: 1rem;
 
-  h2,
-  h3,
+  .swiper-slide .swiper_title h2,
+  .swiper-slide .swiper_title h3,
   a,
   div {
     color: #fff;
+  }
+
+  .swiper-slide .swiper_date {
+    color: #fff;
+
+    span {
+      color: #fff;
+    }
   }
 
   .swiper-slide {

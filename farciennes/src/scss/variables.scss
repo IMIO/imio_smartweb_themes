@@ -233,7 +233,7 @@ $actu-item-bg-radius: 20px 0 20px 20px;
 $actu-category-margin: 0 0 0.5rem 0 !default;
 $actu-category-padding: 0.5rem 1rem !default;
 $actu-category-color: #fff;
-$actu-category-bg-color: $primary;
+$actu-category-bg-color: $primary-svg;
 $actu-category-text-transform: initial;
 $actu-category-font-size: 14px;
 $actu-category-font-weight: bold;
@@ -273,7 +273,7 @@ $event-item-bg-radius: 20px 0 20px 20px;
 $event-category-margin: 0 0 0.5rem 0 !default;
 $event-category-padding: 0.5rem 1rem !default;
 $event-category-color: #fff;
-$event-category-bg-color: $primary;
+$event-category-bg-color: $primary-svg;
 $event-category-text-transform: initial;
 $event-category-font-size: 14px;
 $event-category-font-weight: initial !default;
@@ -401,10 +401,10 @@ $message-warning: $primary-svg;
 $message-error: $primary-svg;
 
 //QUICK ACCESS
-$quick-access-title-font-family: $font-family-title !default;
+$quick-access-title-font-family: $font-family-base;
 
 //SEE ALL
-$see-all-font-family: $font-family-title !default;
+$see-all-font-family: $font-family-base;
 
 :root {
   --bs-card-spacer-x: 1rem;

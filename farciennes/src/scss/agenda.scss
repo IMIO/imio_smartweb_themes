@@ -44,7 +44,7 @@ body .sectionevents {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vw; /* 80% de la largeur de l’écran */
+  width: 93vw; /* 80% de la largeur de l’écran */
   height: 100%;
   background-color: #fff;
   border-radius: 30px;
@@ -52,7 +52,7 @@ body .sectionevents {
   background-image: url("../../assets/svg/visu-agenda.svg");
   background-repeat: no-repeat;
   background-position: bottom 0 left 50px; /* collé en bas, 50px depuis la gauche */
-  background-size: calc(25% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
+  background-size: calc(27% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
 }
 
 // .sectionevents::after {
