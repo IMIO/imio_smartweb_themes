@@ -252,6 +252,11 @@ footer#portal-footer-wrapper {
   }
 }
 
+.section-home-page .section-text .text mark a {
+  text-decoration: none !important;
+  border-color: $primary-svg;
+}
+
 .section-text .text mark {
   > br {
     display: none;
@@ -417,4 +422,9 @@ body.col-content.portaltype-imio-smartweb-portalpage.section-home-page
 
 .sortable-section.sectionfiles a {
   text-underline-offset: 4px;
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  border: 1px solid $primary-dark;
+  background-color: $primary-light;
 }

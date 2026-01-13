@@ -38,6 +38,11 @@
 
         .table_title {
           margin-top: 10px !important;
+          font-family: $font-family-base;
+
+          span {
+            font-family: $font-family-base;
+          }
         }
 
         &:hover {
