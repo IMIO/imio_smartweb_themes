@@ -75,10 +75,15 @@ body.section-home-page .sectionnews.principal .swiper_title h3 {
   margin-top: 0;
   margin-bottom: 1rem;
 
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
   .swiper-slide .swiper_title h2,
   .swiper-slide .swiper_title h3,
   a,
-  div {
+  div,
+  .section-title {
     color: #fff;
   }
 
@@ -93,5 +98,15 @@ body.section-home-page .sectionnews.principal .swiper_title h3 {
   .swiper-slide {
     align-items: center;
     justify-content: center;
+  }
+
+  @media (min-width: 992px) {
+    div#body-section-publications-officielles {
+      max-width: 380px;
+
+      .swiper-wrapper {
+        padding-bottom: 50px;
+      }
+    }
   }
 }
