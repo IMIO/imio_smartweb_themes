@@ -95,14 +95,19 @@ footer#portal-footer-wrapper {
 .sectioncollection.bc {
   z-index: 99;
 
+  @media (min-width: 992px) {
+    padding-top: 5rem;
+  }
+
   a {
-    text-decoration: underline #fff 1px;
+    text-decoration: underline #000 1px;
 
     .swiper_title {
       padding: 20px 0;
 
       h3 {
-        text-decoration-color: #fff;
+        text-decoration-color: #000;
+        color: #000;
       }
     }
   }
@@ -447,5 +452,11 @@ div#header-actions a.account {
   &:hover {
     background-color: transparent !important;
     border: solid 1px $primary-dark !important;
+  }
+}
+
+@media (max-width: 7768px) {
+  #main-container .sectionlinks.quick-access .row {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 }
