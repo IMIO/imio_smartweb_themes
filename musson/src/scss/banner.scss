@@ -83,3 +83,14 @@
   inset: 0;
   opacity: 30%;
 }
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-description
+  p {
+  font-weight: lighter;
+  text-transform: uppercase;
+}

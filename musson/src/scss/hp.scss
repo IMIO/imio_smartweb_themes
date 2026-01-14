@@ -34,7 +34,7 @@ body::after {
   background-position: bottom left;
   background-size: 50% auto;
   pointer-events: none; /* n’interfère pas avec les clics */
-  z-index: -1; /* derrière le contenu */
+  z-index: -2; /* derrière le contenu */
 }
 
 .sectionevents {

@@ -6,9 +6,10 @@ $primary-svg: #35a0bd;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 $font-family-base: "Roboto", sans-serif !default;
-$font-family-title: "Nunito", sans-serif !default;
+$font-family-title: "Quicksand", sans-serif;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -145,8 +146,8 @@ $banner-content-title-font-size: 50px !default;
 $banner-content-title-color: black !default;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align: left !default;
-$banner-content-description-font-size: 18px !default;
-$banner-content-description-color: black !default;
+$banner-content-description-font-size: 63px;
+$banner-content-description-color: #fff !default;
 
 // see_all
 $see-all-padding: 0 !default;
