@@ -462,13 +462,17 @@ div#header-actions a.account {
 }
 
 //recherche
-.r-search-container .r-search-highlighter {
-  background: $primary-light;
-  border-bottom: 0 solid $primary-light;
+.r-search-container #content-header .r-search-highlighter {
+  background: $primary-search !important;
+  border-bottom: 0 solid $primary-search !important;
   font-weight: 700;
-  padding: 3px 2px 3px 10px;
-  border-radius: 10px 0 0 10px;
-  margin-right: 0;
+  padding: 3px 0 3px 10px !important;
+  border-radius: 10px 0 0 10px !important;
+  margin-right: 0 !important;
+  color: #000 !important;
+}
+
+.r-search-container #content-header li.r-search-item a span {
   color: #000;
 }
 
