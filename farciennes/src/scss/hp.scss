@@ -479,3 +479,19 @@ div#header-actions a.account {
 input#search_button {
   background-color: $primary-dark;
 }
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: #000;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-svg;
+}
+
+.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+  position: absolute;
+  top: 120px;
+  width: 95%;
+}
