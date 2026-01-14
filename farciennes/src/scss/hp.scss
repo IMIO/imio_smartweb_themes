@@ -96,7 +96,7 @@ footer#portal-footer-wrapper {
   z-index: 99;
 
   @media (min-width: 992px) {
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
 
   a {
@@ -459,4 +459,19 @@ div#header-actions a.account {
   #main-container .sectionlinks.quick-access .row {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
+}
+
+//recherche
+.r-search-container .r-search-highlighter {
+  background: $primary-light;
+  border-bottom: 0 solid $primary-light;
+  font-weight: 700;
+  padding: 3px 2px 3px 10px;
+  border-radius: 10px 0 0 10px;
+  margin-right: 0;
+  color: #000;
+}
+
+input#search_button {
+  background: $primary-dark;
 }
