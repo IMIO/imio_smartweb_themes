@@ -455,7 +455,7 @@ div#header-actions a.account {
   }
 }
 
-@media (max-width: 7768px) {
+@media (max-width: 768px) {
   #main-container .sectionlinks.quick-access .row {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
@@ -494,4 +494,17 @@ input#search_button {
   position: absolute;
   top: 120px;
   width: 95%;
+}
+
+@media (max-width: 7768px) {
+  .sectionfiles::after {
+    left: 0;
+    width: 100%;
+    transform: initial;
+  }
+}
+
+#portal-column-content .section-contact {
+  background: $primary-light;
+  border-radius: 10px;
 }
