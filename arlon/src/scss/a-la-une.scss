@@ -1,10 +1,11 @@
-.a-la-une {
+.a-la-une.home-dossiers {
   padding-top: 0;
+  padding-bottom: 0;
   position: relative;
 
   &::after {
-    content: "";
-    background: url("../../assets/svg/rond-carre.svg");
+    content: '';
+    background: url('../../assets/svg/rond-carre.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
@@ -13,20 +14,26 @@
     position: absolute;
     top: 50%;
     right: 0;
-
-    transform: translate(-35%, calc(-50% + var(--triangle-translate)))
+    z-index: -1;
+    transform: translate(-35%, calc(-50% - var(--triangle-translate)))
       rotate(var(--triangle-rotate));
     transition: transform 0.1s linear;
   }
 
+  .swiper-pagination {
+    display: none;
+  }
+
   .swiper-slide {
+    padding: 30px;
+
     .swiper-image {
       max-width: 520px;
       padding-bottom: 0 !important;
       height: auto;
       aspect-ratio: 1;
       transform: rotate(-7deg);
-      background-size: 89%;
+      background-size: cover;
       background-repeat: no-repeat;
 
       /* valeurs par défaut */
@@ -34,8 +41,8 @@
       --triangle-rotate: 0deg;
 
       &::before {
-        content: "";
-        background: url("../../assets/svg/triangle-une.svg");
+        content: '';
+        background: url('../../assets/svg/triangle-une.svg');
         background-size: contain;
         background-repeat: no-repeat;
         display: block;
@@ -54,7 +61,7 @@
 
     .swiper_title {
       &::before {
-        content: "à la une";
+        content: 'à la une';
         text-transform: uppercase;
         font-size: 13px;
         background-color: #fff;
@@ -74,7 +81,7 @@
       color: #757890;
 
       &::after {
-        content: "En savoir plus";
+        content: 'En savoir plus';
         font-size: 16px;
         font-family: $font-family-title;
         margin-top: 20px;

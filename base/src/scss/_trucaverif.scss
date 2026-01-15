@@ -84,7 +84,7 @@ div#formfield-form-widgets-basic_cookies {
       font-size: 20px;
 
       &::after {
-        content: "";
+        content: '';
         width: 9px;
         height: 6px;
         display: block;
@@ -275,7 +275,7 @@ div#viewlet-below-content-body .procedure {
 }
 
 .citoyennete-1 div#container-section-citoyennete::after {
-  content: "";
+  content: '';
   position: absolute;
   background: rgba(0, 0, 0, 20%);
   inset: 0;
@@ -496,7 +496,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 
 #content .sortable-section.sectionlinks.reseaux-sociaux::after {
   background: $primary;
-  content: "";
+  content: '';
   position: absolute;
   width: 100vw;
   top: 0;
@@ -507,7 +507,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 }
 
 .portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100vw;
   top: 0;
@@ -628,7 +628,7 @@ a.prev-nav::before {
   margin-right: 0.5rem;
   top: 0;
   position: relative;
-  content: "〈";
+  content: '〈';
   font-size: 0.9rem;
   margin-left: -0.5rem;
 }
@@ -721,7 +721,7 @@ a.prev-nav::before {
 
   .en-un-clic-titre::after {
     background: #f3f3f3;
-    content: "";
+    content: '';
     width: 100vw;
     z-index: -2;
     position: absolute;

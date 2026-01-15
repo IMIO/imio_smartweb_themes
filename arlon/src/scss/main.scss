@@ -12,13 +12,131 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import "./variables";
-@import "../../../base/src/scss/main";
-@import "./banner";
-@import "./quick-access";
-@import "./a-la-une";
-@import "actu";
+@import './variables';
+@import '../../../base/src/scss/main';
+@import './banner';
+@import './quick-access';
+@import './a-la-une';
+@import 'actu';
+@import 'footer';
+@import 'citoyen';
+@import 'broctie';
+@import './common/se-link-file';
 
 .see_all a::after {
   display: none;
+}
+
+.sectionevents .see_all a {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+
+  &:hover,
+  &:focus {
+    background: $primary;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+}
+
+.home-partenaires {
+  padding: 4vw 0;
+  background-color: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100vw;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50vw);
+  }
+
+  .row {
+    gap: 0 40px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  li {
+    width: 100%;
+    max-width: 225px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .table_image {
+    text-decoration: none;
+  }
+
+  .image.d-block {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .table_title {
+    text-align: center;
+
+    span {
+      font-weight: bold;
+      font-family: $font-family-title;
+    }
+  }
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  background-color: $green;
+}
+
+#portal-header #portal-header-top #header-links {
+  font-size: 18px;
+  font-family: $font-family-title;
+}
+
+.contact-type-position {
+  background-color: #f1f1f1;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: solid 2px transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border-bottom: solid 2px $green;
+  }
+}
+
+.sectiontext .section-text .body-section .text {
+  padding-bottom: 2vw;
+}
+
+.subsite-container {
+  font-family: $font-family-title;
+  font-weight: 500;
+}
+
+.is-in-subsite {
+  #banner {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 767px) {
+    #banner {
+      height: 150px;
+    }
+  }
 }

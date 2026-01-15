@@ -16,7 +16,7 @@
 
           .r-card-date-last {
             &::before {
-              content: "-";
+              content: '-';
               margin-right: 10px;
             }
           }
@@ -50,7 +50,7 @@
   align-items: center;
 
   &::before {
-    content: "";
+    content: '';
     width: 9px;
     height: 6px;
     display: block;

@@ -40,7 +40,7 @@ mark {
       padding-left: 1rem;
 
       &::before {
-        content: counters(item, ".") " ";
+        content: counters(item, '.') ' ';
         counter-increment: item;
         display: inline-block;
         width: 2em;

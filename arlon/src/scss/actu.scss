@@ -1,4 +1,6 @@
 .sectionnews {
+  background-color: #fff;
+
   .body-section .row {
     gap: 20px;
     display: flex;
@@ -12,12 +14,37 @@
       .table_image {
         display: grid;
         grid-template-columns: 173px 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         gap: 10px 30px;
         align-items: start;
         justify-content: center;
         text-decoration: none;
         padding: 1rem 2rem;
+        font-family: $font-family-title;
+        overflow: hidden;
+
+        &::after {
+          content: 'Lire la suite';
+          background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_2' data-name='Calque 2' xmlns='http://www.w3.org/2000/svg' width='10' height='9.2' viewBox='0 0 5.2 8.45'%3E%3Cpath d='M.26,8.2c-.33-.32-.34-.84-.03-1.17,0,0,.02-.02.03-.03l2.85-2.78L.26,1.44c-.33-.32-.33-.85,0-1.18,0,0,0,0,.01-.01.34-.33.87-.33,1.22-.01l3.47,3.39c.16.16.25.37.25.6-.04.22-.13.42-.25.6l-3.47,3.38c-.34.33-.88.33-1.23,0h0Z'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right center;
+          padding-right: 15px;
+          display: inline-block;
+          // grid-column: 2;
+          grid-row: 2;
+          align-self: end;
+          transform: translateY(40px);
+          transition: 0.3s ease-out;
+          opacity: 0%;
+        }
+
+        &:hover,
+        &:focus {
+          &::after {
+            transform: translateY(0);
+            opacity: 100%;
+          }
+        }
 
         .image {
           aspect-ratio: 1;
@@ -39,10 +66,97 @@
       }
     }
   }
+
+  .see_all {
+    a {
+      background: $primary;
+      color: #fff;
+    }
+  }
 }
 
 //events
 
 .sectionevents {
   background-color: #40435d;
+
+  .swiper-slide {
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      transform: translateY(10px);
+    }
+  }
+
+  .swiper-slide .swiper-image {
+    aspect-ratio: 1.7;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide > a {
+    grid-auto-rows: inherit;
+    background-color: #fff;
+
+    &::after {
+      content: 'Lire la suite';
+      display: block;
+      padding-left: 1rem;
+      margin-bottom: 25px;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_2' data-name='Calque 2' xmlns='http://www.w3.org/2000/svg' width='10' height='9.2' viewBox='0 0 5.2 8.45'%3E%3Cpath d='M.26,8.2c-.33-.32-.34-.84-.03-1.17,0,0,.02-.02.03-.03l2.85-2.78L.26,1.44c-.33-.32-.33-.85,0-1.18,0,0,0,0,.01-.01.34-.33.87-.33,1.22-.01l3.47,3.39c.16.16.25.37.25.6-.04.22-.13.42-.25.6l-3.47,3.38c-.34.33-.88.33-1.23,0h0Z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 15px;
+    }
+  }
+
+  .swiper_category {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .section-container {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 350px;
+      aspect-ratio: 1;
+      position: absolute;
+      border-radius: 50%;
+      background: #df7e62;
+      z-index: -1;
+      left: -10%;
+      top: -2%;
+    }
+
+    &::after {
+      content: '';
+      width: 450px;
+      aspect-ratio: 1.5;
+      position: absolute;
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_2' data-name='Calque 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 422.13 504.93'%3E%3Cg id='Calque_2-2' data-name='Calque 2'%3E%3Cpath d='M422.13,0l-30.31,504.93L0,278.71,422.13,0Z' style='fill: %23a4d7de;'/%3E%3C/g%3E%3C/svg%3E");
+      z-index: -1;
+      right: -19%;
+      bottom: -2%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #fff !important;
+  }
+}
+
+.is-in-minisite {
+  .sectionnews {
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+  }
 }

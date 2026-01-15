@@ -32,7 +32,7 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto; /* permet le scroll horizontal */
-      gap: 1rem;
+      gap: 0 3vw;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -43,6 +43,15 @@
         padding: 0;
         flex: 0 0 auto; /* empêche les éléments de rétrécir */
         scroll-snap-align: start; /* optionnel : effet snap */
+
+        .table_image {
+          transition: 0.2s ease-out;
+
+          &:hover,
+          &:focus {
+            transform: translateY(-5px);
+          }
+        }
       }
     }
   }
