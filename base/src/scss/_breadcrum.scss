@@ -31,12 +31,12 @@
       &::before {
         padding-right: 0.25rem;
         padding-left: 0.25rem;
-        content: '>';
+        content: ">";
         float: right;
       }
 
       &:last-child::before {
-        content: '';
+        content: "";
       }
     }
   }

@@ -24,7 +24,7 @@
 }
 
 .schedule .opening_informations::after {
-  content: '';
+  content: "";
   width: 9px;
   height: 6px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="black" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
@@ -104,7 +104,7 @@
 }
 
 .procedure a::after {
-  content: '\F135';
+  content: "\F135";
   font-family: Bootstrap-icons;
   margin-left: 0.5rem;
   position: relative;
@@ -112,12 +112,12 @@
 }
 
 .sortable-section .section-title a {
-  &[aria-expanded='false'] {
+  &[aria-expanded="false"] {
     position: relative;
 
     &::after {
       display: inline-block;
-      content: '\F282';
+      content: "\F282";
       font-family: Bootstrap-icons;
       font-size: 12px;
       margin-left: 0.5rem;
@@ -126,12 +126,12 @@
     }
   }
 
-  &[aria-expanded='true'] {
+  &[aria-expanded="true"] {
     position: relative;
 
     &::after {
       display: inline-block;
-      content: '\F282';
+      content: "\F282";
       font-family: Bootstrap-icons;
       font-size: 12px;
       margin-left: 0.5rem;

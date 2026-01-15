@@ -27,13 +27,13 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
 body:not(.is-in-minisite) #portal-colophon {
   &::before {
-    content: url(' ../../assets/svg/logo-footer.svg ');
+    content: url(" ../../assets/svg/logo-footer.svg ");
     display: block;
     max-width: 1296px;
     margin-left: auto;

@@ -24,7 +24,7 @@
         overflow: hidden;
 
         &::after {
-          content: 'Lire la suite';
+          content: "Lire la suite";
           background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_2' data-name='Calque 2' xmlns='http://www.w3.org/2000/svg' width='10' height='9.2' viewBox='0 0 5.2 8.45'%3E%3Cpath d='M.26,8.2c-.33-.32-.34-.84-.03-1.17,0,0,.02-.02.03-.03l2.85-2.78L.26,1.44c-.33-.32-.33-.85,0-1.18,0,0,0,0,.01-.01.34-.33.87-.33,1.22-.01l3.47,3.39c.16.16.25.37.25.6-.04.22-.13.42-.25.6l-3.47,3.38c-.34.33-.88.33-1.23,0h0Z'/%3E%3C/svg%3E");
           background-repeat: no-repeat;
           background-position: right center;
@@ -102,7 +102,7 @@
     background-color: #fff;
 
     &::after {
-      content: 'Lire la suite';
+      content: "Lire la suite";
       display: block;
       padding-left: 1rem;
       margin-bottom: 25px;
@@ -123,7 +123,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       width: 350px;
       aspect-ratio: 1;
       position: absolute;
@@ -135,7 +135,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 450px;
       aspect-ratio: 1.5;
       position: absolute;

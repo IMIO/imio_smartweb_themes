@@ -3,9 +3,9 @@
 }
 
 .sortable-section.sectionnews::after {
-  background: url('../../assets/svg/round-blue.svg');
+  background: url("../../assets/svg/round-blue.svg");
   top: -150px;
-  content: '';
+  content: "";
   display: block;
   height: 998px;
   background-repeat: no-repeat;
@@ -22,9 +22,9 @@ body.portaltype-imio-smartweb-portalpage .outer-wrapper {
 }
 
 body.portaltype-imio-smartweb-portalpage .outer-wrapper::after {
-  background: url('../../assets/svg/round-green.svg');
+  background: url("../../assets/svg/round-green.svg");
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 800px;
   background-repeat: no-repeat;

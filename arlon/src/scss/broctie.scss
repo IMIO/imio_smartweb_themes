@@ -5,7 +5,7 @@
   font-family: $font-family-title;
 
   &::after {
-    content: '';
+    content: "";
     background: #fff;
     width: 100vw;
     bottom: 0;
@@ -70,7 +70,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -86,7 +86,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -112,7 +112,7 @@
     }
 
     &::before {
-      content: url('../../assets/svg/broctie.svg');
+      content: url("../../assets/svg/broctie.svg");
       max-width: 53px;
       display: block;
       margin-bottom: 1.5rem;
@@ -125,7 +125,7 @@
       color: #40435d;
 
       &::after {
-        content: 'Voir tout'
+        content: "Voir tout"
           url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg id='Group_697' data-name='Group 697' transform='translate(-484 -2992)'%3E%3Ccircle id='Ellipse_70' data-name='Ellipse 70' cx='20' cy='20' r='20' transform='translate(484 2992)' fill='%2381b19a'/%3E%3Cg id='Group_696' data-name='Group 696' transform='translate(394.5 3001.5)'%3E%3Cline id='Line_8' data-name='Line 8' x2='4' y2='4' transform='translate(107.5 6.5)' fill='none' stroke='%2340435d' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='Line_9' data-name='Line 9' y1='4' x2='4' transform='translate(107.5 10.5)' fill='none' stroke='%2340435d' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
         display: flex;
         align-items: center;

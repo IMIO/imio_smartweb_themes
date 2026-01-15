@@ -1,94 +1,94 @@
 //// VARIABLES
-$roboto-base-path: '@theme/assets/fonts/';
+$roboto-base-path: "@theme/assets/fonts/";
 
-@import './variables';
+@import "./variables";
 
 // Plone Barceloneta Styling & components
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 // Plone colors
 
-@import '@plone/plonetheme-barceloneta-base/scss/variables.colors.plone';
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
 
 // Plone specific default variables & properties
 
-@import '@plone/plonetheme-barceloneta-base/scss/variables.properties';
-@import '@plone/plonetheme-barceloneta-base/scss/variables.barceloneta';
-@import '@plone/plonetheme-barceloneta-base/scss/base';
-@import '@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone';
-@import '@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone';
+@import "@plone/plonetheme-barceloneta-base/scss/variables.properties";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.barceloneta";
+@import "@plone/plonetheme-barceloneta-base/scss/base";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone";
 
 // Plone components
 
-@import '@plone/plonetheme-barceloneta-base/scss/cards';
-@import '@plone/plonetheme-barceloneta-base/scss/scaffolding';
+@import "@plone/plonetheme-barceloneta-base/scss/cards";
+@import "@plone/plonetheme-barceloneta-base/scss/scaffolding";
 
 // // style.scss
 
-@import '@plone/plonetheme-barceloneta-base/scss/icons';
-@import '@plone/plonetheme-barceloneta-base/scss/header';
+@import "@plone/plonetheme-barceloneta-base/scss/icons";
+@import "@plone/plonetheme-barceloneta-base/scss/header";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/sitenav";
 
-@import '@plone/plonetheme-barceloneta-base/scss/breadcrumbs';
-@import '@plone/plonetheme-barceloneta-base/scss/content';
-@import '@plone/plonetheme-barceloneta-base/scss/comments';
-@import '@plone/plonetheme-barceloneta-base/scss/portlets';
-@import '@plone/plonetheme-barceloneta-base/scss/footer';
-@import '@plone/plonetheme-barceloneta-base/scss/print';
-@import '@plone/plonetheme-barceloneta-base/scss/roboto-webfont';
+@import "@plone/plonetheme-barceloneta-base/scss/breadcrumbs";
+@import "@plone/plonetheme-barceloneta-base/scss/content";
+@import "@plone/plonetheme-barceloneta-base/scss/comments";
+@import "@plone/plonetheme-barceloneta-base/scss/portlets";
+@import "@plone/plonetheme-barceloneta-base/scss/footer";
+@import "@plone/plonetheme-barceloneta-base/scss/print";
+@import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
 
 ///// Common
 
-@import './common/com-cookies';
-@import './common/com-edition';
-@import './common/com-faceted';
-@import './common/messviewlet';
-@import './common/com-react';
-@import './common/com-footer';
+@import "./common/com-cookies";
+@import "./common/com-edition";
+@import "./common/com-faceted";
+@import "./common/messviewlet";
+@import "./common/com-react";
+@import "./common/com-footer";
 
 ///// List
 
-@import './common/folder-view';
+@import "./common/folder-view";
 
 ///// Base
 
-@import './mixin';
-@import './general';
-@import './fonts';
-@import './sitenav';
-@import './sub-sitenav';
-@import './header';
-@import './edition';
-@import './print';
-@import './swiper';
-@import './trucaverif';
+@import "./mixin";
+@import "./general";
+@import "./fonts";
+@import "./sitenav";
+@import "./sub-sitenav";
+@import "./header";
+@import "./edition";
+@import "./print";
+@import "./swiper";
+@import "./trucaverif";
 
 //// Sections
 
-@import './sections/se-textes';
-@import './sections/se-contact';
-@import './sections/se-file';
-@import './sections/se-gallery';
-@import './sections/se-link';
-@import './sections/se-linked-content';
-@import './sections/se-plan';
-@import './sections/se-plan-geo';
-@import './sections/se-postit';
-@import './sections/se-map';
-@import './sections/se-horodatee';
+@import "./sections/se-textes";
+@import "./sections/se-contact";
+@import "./sections/se-file";
+@import "./sections/se-gallery";
+@import "./sections/se-link";
+@import "./sections/se-linked-content";
+@import "./sections/se-plan";
+@import "./sections/se-plan-geo";
+@import "./sections/se-postit";
+@import "./sections/se-map";
+@import "./sections/se-horodatee";
 // Home page
 
-@import './homepage/general-home';
-@import './homepage/banner';
-@import './homepage/quick-access';
-@import './homepage/a-la-une';
-@import './homepage/actualites';
-@import './homepage/events';
-@import './homepage/album';
-@import './homepage/newsletter';
+@import "./homepage/general-home";
+@import "./homepage/banner";
+@import "./homepage/quick-access";
+@import "./homepage/a-la-une";
+@import "./homepage/actualites";
+@import "./homepage/events";
+@import "./homepage/album";
+@import "./homepage/newsletter";
 
 #faceted-map-container {
   z-index: 0;

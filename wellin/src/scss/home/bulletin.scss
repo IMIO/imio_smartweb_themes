@@ -7,7 +7,7 @@
 }
 
 #container-section-bulletins-communaux::after {
-  content: '';
+  content: "";
   background: $primary-svg;
   width: 100vw;
   position: absolute;
@@ -25,7 +25,7 @@
       place-items: unset;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         background: rgba(0, 0, 0, 55%);
         bottom: 0;

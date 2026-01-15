@@ -68,7 +68,7 @@
       align-items: center;
 
       &::before {
-        content: '';
+        content: "";
         width: 16px;
         height: 16px;
         display: inline-block;
@@ -142,7 +142,7 @@
     opacity: 55%;
 
     &::before {
-      content: 'x';
+      content: "x";
       width: 16px;
       height: 16px;
       display: inline-block;
@@ -194,7 +194,7 @@
   position: relative;
 
   &::after {
-    content: '\F220';
+    content: "\F220";
     font-family: bootstrap-icons !important;
     text-align: center;
     position: absolute;

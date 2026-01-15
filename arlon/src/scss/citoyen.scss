@@ -17,7 +17,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     background: #df7e62;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,8 +34,8 @@
   }
 
   &::after {
-    content: '';
-    background: url('../../assets/svg/triangle-une.svg');
+    content: "";
+    background: url("../../assets/svg/triangle-une.svg");
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
@@ -60,7 +60,7 @@
   align-items: center;
 
   &::before {
-    content: '';
+    content: "";
     background: #fff;
     width: 100vw;
     top: -4vw;
@@ -73,7 +73,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     background: #fff;
     width: 100vw;
     bottom: -4vw;
@@ -120,7 +120,7 @@
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         transition: 0.2s ease;
         display: block;
         position: absolute;

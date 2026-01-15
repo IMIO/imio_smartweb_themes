@@ -18,7 +18,7 @@ body:not(.section-home-page) {
           font-size: 24px;
 
           &::before {
-            content: '';
+            content: "";
             background: url("data:image/svg+xml,%3Csvg id='link' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath id='Path_751' data-name='Path 751' d='M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0Zm0,46.4A22.4,22.4,0,1,1,46.4,24,22.4,22.4,0,0,1,24,46.4Zm0,0'/%3E%3Cpath id='Path_752' data-name='Path 752' d='M145.279,126.465a3.971,3.971,0,0,0-2.828,1.171l-4.526,4.526a4.005,4.005,0,0,0-.508,5.034l-.115.115a4.005,4.005,0,0,0-5.034.508l-4.526,4.526A4,4,0,0,0,133.4,148l4.526-4.526a4.005,4.005,0,0,0,.508-5.034l.115-.115a4.005,4.005,0,0,0,5.034-.508l4.526-4.526a4,4,0,0,0-2.829-6.828Zm-8.485,15.879-4.525,4.525a2.458,2.458,0,0,1-3.394,0,2.4,2.4,0,0,1,0-3.394l4.525-4.525a2.372,2.372,0,0,1,2.724-.462l-1.592,1.593a.8.8,0,1,0,1.131,1.131l1.593-1.593A2.4,2.4,0,0,1,136.794,142.344Zm10.182-10.182-4.525,4.525a2.4,2.4,0,0,1-2.725.462l1.593-1.593a.8.8,0,0,0-1.131-1.131l-1.593,1.593a2.4,2.4,0,0,1,.462-2.725l4.525-4.525a2.4,2.4,0,1,1,3.394,3.394Zm0,0' transform='translate(-113.926 -113.818)'/%3E%3C/svg%3E");
             width: 25px;
             height: 25px;
@@ -66,7 +66,7 @@ body:not(.section-home-page) {
                   gap: 10px;
 
                   &::before {
-                    content: '';
+                    content: "";
                     display: block;
                     width: 10px;
                     height: 11px;
@@ -165,7 +165,7 @@ body:not(.section-home-page) {
             white-space: nowrap;
 
             &::after {
-              content: '';
+              content: "";
               display: block;
               background-image: url("data:image/svg+xml,%3Csvg id='download' xmlns='http://www.w3.org/2000/svg' width='9.795' height='14.692' viewBox='0 0 9.795 14.692'%3E%3Cg id='Group_570' data-name='Group 570' transform='translate(0)'%3E%3Cg id='Group_569' data-name='Group 569' transform='translate(0)'%3E%3Cpath id='Path_749' data-name='Path 749' d='M89.8,12.064h0c.014.014.029.028.045.04l.022.016.026.019.027.016.025.015.028.013L90,12.2l.027.01.029.01.028.007.03.007.032,0,.027,0a.616.616,0,0,0,.121,0l.027,0,.032,0,.03-.007.028-.007.029-.01.027-.01.026-.012.028-.013.025-.015.027-.016.026-.019.022-.016c.015-.013.03-.026.045-.04h0l4.285-4.285a.612.612,0,0,0-.866-.866l-3.24,3.24V.612a.612.612,0,0,0-1.224,0v9.541l-3.24-3.24a.612.612,0,0,0-.866.866Z' transform='translate(-85.334)' fill='%23fff'/%3E%3Cpath id='Path_750' data-name='Path 750' d='M94.517,469.333h-8.57a.612.612,0,0,0,0,1.224h8.571a.612.612,0,1,0,0-1.224Z' transform='translate(-85.334 -455.865)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
               background-position: center;
@@ -252,9 +252,9 @@ body:not(.section-home-page) {
   }
 
   // Sectionfiles sans classe col-sm-*
-  #main-container .sectionfiles:not([class*='col-sm-']) {
+  #main-container .sectionfiles:not([class*="col-sm-"]) {
     &::before {
-      content: '';
+      content: "";
       width: 100vw;
       top: 0;
       bottom: 0;

@@ -147,7 +147,7 @@ body.is-in-subsite {
         &:hover,
         &:focus {
           &::before {
-            content: '';
+            content: "";
             height: 2px;
             position: absolute;
             left: 0;
@@ -186,7 +186,7 @@ body.is-in-subsite {
 
       &.dropdown {
         .has_subtree .nav-link {
-          &[aria-haspopup='true'] {
+          &[aria-haspopup="true"] {
             &::after {
               content: $nav-overlay-next-icon;
               right: 0;
@@ -286,7 +286,7 @@ body.is-in-subsite {
 }
 
 #subsite-navigation > ul > .has_subtree.nav-item > .nav-link::after {
-  content: '';
+  content: "";
   width: 9px;
   height: 6px;
   display: block;
@@ -424,7 +424,7 @@ body.is-in-subsite {
     }
   }
 
-  .navbar-toggler[aria-expanded='true'] + #portal-globalnav-collapse {
+  .navbar-toggler[aria-expanded="true"] + #portal-globalnav-collapse {
     left: 0;
   }
 

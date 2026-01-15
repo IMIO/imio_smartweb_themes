@@ -42,8 +42,8 @@
     margin-top: 1.5rem;
 
     & > a,
-    input[name='consent'],
-    input[name='refuse'] {
+    input[name="consent"],
+    input[name="refuse"] {
       background: #1863dc;
       color: #fff;
       border: 2px solid #1863dc;
@@ -70,7 +70,7 @@
     text-align: center;
   }
 
-  #gdpr-consent-banner .gdpr-actions input[name='refuse'] {
+  #gdpr-consent-banner .gdpr-actions input[name="refuse"] {
     margin-left: 0;
     text-align: center;
   }

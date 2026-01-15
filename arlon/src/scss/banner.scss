@@ -21,7 +21,7 @@ html:has(body.section-home-page) {
     padding-bottom: 0;
 
     &::before {
-      content: 'Bienvenue à';
+      content: "Bienvenue à";
       color: #40435d;
       font-weight: 300;
       margin-left: 11%;
@@ -34,7 +34,7 @@ html:has(body.section-home-page) {
     }
 
     &::after {
-      content: 'Authentique & attractive';
+      content: "Authentique & attractive";
       color: #40435d;
       display: block;
       font-weight: 300;
@@ -51,7 +51,7 @@ html:has(body.section-home-page) {
 
     .swiper-banner-image {
       position: relative !important;
-      mask-image: url('../../assets/svg/logo.svg');
+      mask-image: url("../../assets/svg/logo.svg");
       mask-size: cover;
       mask-repeat: no-repeat;
       mask-position: center;
@@ -81,7 +81,7 @@ html:has(body.section-home-page) {
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 74%;
     max-width: 900px;
@@ -100,8 +100,8 @@ html:has(body.section-home-page) {
   }
 
   &::after {
-    content: '';
-    background: url('../../assets/svg/triangle.svg');
+    content: "";
+    background: url("../../assets/svg/triangle.svg");
     background-size: contain;
     background-repeat: no-repeat;
     display: block;

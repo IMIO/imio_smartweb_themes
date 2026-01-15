@@ -121,7 +121,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 30px;
       height: 30px;
       border: 1px solid #fff;
@@ -161,24 +161,24 @@
       }
     }
 
-    &[href$='.pdf'] {
+    &[href$=".pdf"] {
       .section_files_image {
         // background: url(../svg/pdf-file-icon.svg) no-repeat center $primary;
       }
     }
 
-    &[href$='.jpg'],
-    &[href$='.jpeg'],
-    &[href$='.png'],
-    &[href$='.svg'] {
+    &[href$=".jpg"],
+    &[href$=".jpeg"],
+    &[href$=".png"],
+    &[href$=".svg"] {
       .section_files_image {
         // background: url(../svg/image-file-icon.svg) no-repeat center $primary;
       }
     }
 
-    &[href$='.mp4'],
-    &[href$='.webm'],
-    &[href$='.avi'] {
+    &[href$=".mp4"],
+    &[href$=".webm"],
+    &[href$=".avi"] {
       .section_files_image {
         // background: url(../svg/video-file-icon.svg) no-repeat center $primary;
       }

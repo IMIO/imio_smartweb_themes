@@ -829,7 +829,7 @@ $primary-competences-svg: #e6740a;
     color: #fff !important;
 
     &::after {
-      content: '➔';
+      content: "➔";
       font-family: fontello;
       margin-left: 0.5rem;
     }
@@ -1221,7 +1221,7 @@ $primary-competences-svg: #e6740a;
       place-items: unset;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         background: rgba(0, 0, 0, 55%);
         bottom: 0;

@@ -12,16 +12,16 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import './variables';
-@import '../../../base/src/scss/main';
-@import './banner';
-@import './quick-access';
-@import './a-la-une';
-@import 'actu';
-@import 'footer';
-@import 'citoyen';
-@import 'broctie';
-@import './common/se-link-file';
+@import "./variables";
+@import "../../../base/src/scss/main";
+@import "./banner";
+@import "./quick-access";
+@import "./a-la-une";
+@import "actu";
+@import "footer";
+@import "citoyen";
+@import "broctie";
+@import "./common/se-link-file";
 
 .see_all a::after {
   display: none;
@@ -46,7 +46,7 @@ $enable-roboto-webfont: false;
   background-color: #fff;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     background: #fff;
     width: 100vw;
