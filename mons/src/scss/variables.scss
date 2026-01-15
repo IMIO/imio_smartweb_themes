@@ -11,10 +11,10 @@ $primary-dark: #ee3831 !default;
 
 //*// TYPOGRAPHY
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
 
-$font-family-base: "Jost", sans-serif !default;
-$font-family-title: "Jost", sans-serif !default;
+$font-family-base: 'Jost', sans-serif !default;
+$font-family-title: 'Jost', sans-serif !default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -36,7 +36,7 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23" + str-slice("#{$color}", 2, -1);
+  @return '%23' + str-slice('#{$color}', 2, -1);
 }
 $container-max-widths: (
   sm: 100%,
@@ -68,6 +68,7 @@ $swiper-raduis: 50px !default;
 $swipper-bullet-color: $primary-svg !default;
 
 //*// HEADER
+$header-sticky-bg-color: #000;
 $main-logo-max-width: 140px !default;
 $header-top-padding: 1rem 0 !default;
 $header-top-background: #fff !default;

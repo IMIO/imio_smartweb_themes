@@ -11,7 +11,7 @@
     background: $primary-red;
     border-radius: 0 20px 20px 0;
     bottom: 0;
-    content: "";
+    content: '';
     left: 0%;
     position: absolute;
     top: 0;
@@ -27,11 +27,11 @@
   &::before {
     top: -201px;
     left: 0;
-    background: url("../../assets/svg/city.png");
+    background: url('../../assets/svg/city.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
+    content: '';
     display: block;
     height: 201px;
     position: absolute;
