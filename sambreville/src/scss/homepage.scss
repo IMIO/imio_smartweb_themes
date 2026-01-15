@@ -215,7 +215,20 @@ body .bannerSwiper .section-slide {
 
 body.section-accueil-cpas .bannerSwiper .section-slide {
   &::after {
-    content: url("../../assets/svg/cpas-logo-banner-blc.svg");
+    background-image: url("../../assets/svg/cpas-logo-banner-blc.svg");
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    max-width: 30%;
+    max-height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
   }
 }
 

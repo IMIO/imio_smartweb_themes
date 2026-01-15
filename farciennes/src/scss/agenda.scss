@@ -44,11 +44,15 @@ body .sectionevents {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vw; /* 80% de la largeur de l’écran */
+  width: 93vw; /* 80% de la largeur de l’écran */
   height: 100%;
   background-color: #fff;
   border-radius: 30px;
   z-index: -1;
+  background-image: url("../../assets/svg/visu-agenda.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 50px; /* collé en bas, 50px depuis la gauche */
+  background-size: calc(27% - 100px) auto; /* largeur = 100% du bloc moins 50px de chaque côté */
 }
 
 // .sectionevents::after {
@@ -70,7 +74,7 @@ body .sectionevents {
 // }
 
 .sectionevents {
-  position: relative;
+  position: relative; /* pour que background reste relatif au bloc */
 
   &::after {
     content: "";
@@ -78,7 +82,7 @@ body .sectionevents {
     top: 65%;
     left: 50%;
     width: 100vw;
-    height: 120%;
+    height: 130%;
     transform: translateX(-50%);
     background: url("../../assets/svg/frame-restez.svg") center / cover
       no-repeat;
@@ -93,13 +97,13 @@ body .sectionevents {
   }
 }
 
-#main-container {
-  .sectionlinks.quick-access {
-    .row {
-      @media (max-width: 768px) {
-        gap: 20px !important;
-        grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
-      }
-    }
-  }
-}
+// #main-container {
+//   .sectionlinks.quick-access {
+//     .row {
+//       @media (max-width: 768px) {
+//         gap: 20px !important;
+//         grid-template-columns: repeat(auto-fit, minmax(56px, 160px));
+//       }
+//     }
+//   }
+// }
