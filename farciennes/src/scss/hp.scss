@@ -166,6 +166,7 @@ footer#portal-footer-wrapper {
 
 .sectionlinks.quick-access.rs {
   padding-top: 0;
+  align-content: center;
 
   li {
     padding: 10px;
@@ -507,4 +508,11 @@ input#search_button {
 #portal-column-content .section-contact {
   background: $primary-light;
   border-radius: 10px;
+}
+
+.portaltype-imio-smartweb-portalpage
+  #portal-footer-wrapper
+  .sectionlinks
+  h2.section-title {
+  font-size: 2rem;
 }
