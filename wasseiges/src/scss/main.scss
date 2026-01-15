@@ -12,20 +12,20 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import "./variables";
-@import "../../../base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main';
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./home/quick";
-@import "./home/actualites";
-@import "./home/events";
-@import "./home/annuaire";
-@import "./home/menu";
-@import "./home/divers";
-@import "./home/footer";
+@import './home/quick';
+@import './home/actualites';
+@import './home/events';
+@import './home/annuaire';
+@import './home/menu';
+@import './home/divers';
+@import './home/footer';
 
 .portaltype-imio-smartweb-portalpage {
   .outer-wrapper {

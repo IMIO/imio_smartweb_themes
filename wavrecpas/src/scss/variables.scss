@@ -4,30 +4,30 @@ $secondary: #9c3;
 
 //*// TYPOGRAPHY
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 $font-family-base:
-  "Montserrat",
+  'Montserrat',
   system-ui,
   -apple-system,
-  "Segoe UI",
-  "Helvetica Neue",
-  "Noto Sans",
-  "Liberation Sans",
+  'Segoe UI',
+  'Helvetica Neue',
+  'Noto Sans',
+  'Liberation Sans',
   arial,
   sans-serif,
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol",
-  "Noto Color Emoji" !default;
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji' !default;
 $font-family-title:
-  "Josefin Sans",
+  'Josefin Sans',
   system-ui,
   -apple-system,
-  "Segoe UI" !default;
+  'Segoe UI' !default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #000 !default;
@@ -49,7 +49,7 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23" + str-slice("#{$color}", 2, -1);
+  @return '%23' + str-slice('#{$color}', 2, -1);
 }
 
 $global-radius: 0;

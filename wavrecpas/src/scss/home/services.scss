@@ -6,14 +6,14 @@
     transform: translateX(-50vw);
     left: 50% !important;
     background: #f6f6f6;
-    content: "";
+    content: '';
     width: 100vw !important;
     z-index: -2;
   }
 
   &::after {
-    background: url("../../assets/svg/demi-logo-wavre-cpas.svg");
-    content: "";
+    background: url('../../assets/svg/demi-logo-wavre-cpas.svg');
+    content: '';
     display: block;
     height: 700px;
     position: absolute;
@@ -169,10 +169,10 @@
       color: #fff;
       display: block;
       font-family:
-        "Josefin Sans",
+        'Josefin Sans',
         system-ui,
         -apple-system,
-        "Segoe UI";
+        'Segoe UI';
       font-size: 16px;
       padding: 1rem 2rem;
       text-decoration: none;

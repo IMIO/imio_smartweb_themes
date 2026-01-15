@@ -9,11 +9,11 @@ $colorlightblue: #72a5d4;
 
 //*// TYPOGRAPHY
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
-$font-family-base: "Roboto", sans-serif !default;
-$font-family-title: "Nunito", sans-serif !default;
+$font-family-base: 'Roboto', sans-serif !default;
+$font-family-title: 'Nunito', sans-serif !default;
 $font-title-color: $colordark;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: $colordark;
@@ -35,7 +35,7 @@ $h6-font-size: $font-size-base !default;
 //*// GLOBAL
 
 @function url-encoded-color($color) {
-  @return "%23" + str-slice("#{$color}", 2, -1);
+  @return '%23' + str-slice('#{$color}', 2, -1);
 }
 $container-max-widths: (
   sm: 100%,

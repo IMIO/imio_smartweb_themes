@@ -4,7 +4,7 @@
 
 $enable-roboto-webfont: false;
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
 
 //// IMPORTS
 
@@ -14,25 +14,25 @@ $enable-roboto-webfont: false;
 
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
-@import "./variables";
-@import "../../../base/src/scss/main";
+@import './variables';
+@import '../../../base/src/scss/main';
 
 //// STYLES
 
 // ... add your styles here
 
-@import "./home/quick";
-@import "./home/a-la-une";
-@import "./home/espace-citoyen";
-@import "./home/actualites";
-@import "./home/cpas";
-@import "./home/events";
-@import "./home/footer";
-@import "./home/section-en-image";
-@import "./info-trav";
-@import "./se-link";
-@import "./se-files";
-@import "./contact";
+@import './home/quick';
+@import './home/a-la-une';
+@import './home/espace-citoyen';
+@import './home/actualites';
+@import './home/cpas';
+@import './home/events';
+@import './home/footer';
+@import './home/section-en-image';
+@import './info-trav';
+@import './se-link';
+@import './se-files';
+@import './contact';
 
 body {
   background: #fff;
@@ -90,7 +90,7 @@ h2 {
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     height: 2px;
     bottom: -3px;
     position: absolute;
@@ -160,7 +160,7 @@ h2 {
 }
 
 .r-item-img.r-item-img-placeholder {
-  background: url("../../assets/svg/placeholder.jpg");
+  background: url('../../assets/svg/placeholder.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -313,12 +313,12 @@ footer #container-section-noussuivre {
   }
 }
 
-.r-filter div[class*="control"] {
+.r-filter div[class*='control'] {
   border-radius: 5px;
 }
 
 .procedure a::after {
-  content: "\F135";
+  content: '\F135';
   font-family: Bootstrap-icons;
   margin-left: 0.5rem;
   position: relative;
@@ -406,7 +406,7 @@ footer #container-section-noussuivre {
     z-index: -1;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(
@@ -491,7 +491,7 @@ footer #container-section-noussuivre {
 
 @media screen and (max-width: 992px) {
   .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+    background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e') !important;
   }
 
   .navbar .container {
@@ -520,7 +520,7 @@ footer #container-section-noussuivre {
       left: 0%;
       top: 70px;
       bottom: 0;
-      content: "";
+      content: '';
       display: block;
       height: 13px;
       position: absolute;
@@ -562,7 +562,7 @@ footer #container-section-noussuivre {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100vw;
     left: 50%;
@@ -706,7 +706,7 @@ footer #container-section-noussuivre {
   background-color: $primary-blue;
   border-radius: 8px;
   bottom: 0;
-  content: "";
+  content: '';
   left: 50%;
   position: absolute;
   top: 0;
@@ -730,7 +730,7 @@ h3 {
 }
 
 .sectiontext ol > li::before {
-  content: counter(sectioncounter) "." !important;
+  content: counter(sectioncounter) '.' !important;
 }
 
 #portal-footer-wrapper #portal-footer #smartweb-footer a,
