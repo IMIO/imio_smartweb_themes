@@ -57,7 +57,7 @@
           margin-left: 0;
           position: relative;
           width: max-content;
-          margin-top: -128px;
+          margin-top: -38px !important;
           left: 0;
           background: rgba(0, 0, 0, 70%);
         }
@@ -66,14 +66,13 @@
           margin-left: 0;
           position: relative;
           width: max-content;
-          margin-top: -128px;
+          margin-top: -38px !important;
           left: 0;
           background: rgba(0, 0, 0, 70%);
         }
 
         .swiper_date {
           font-family: $font-family-base;
-          grid-row-start: 2;
           width: 100% !important;
           text-align: center;
           color: $primary;
