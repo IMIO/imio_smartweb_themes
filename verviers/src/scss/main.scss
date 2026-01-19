@@ -26,7 +26,7 @@ $enable-roboto-webfont: false;
 @import "./contact";
 @import "./home/bulletins";
 
-.section-accueil {
+.section-home-page {
   background: url("../../assets/svg/bg-hp.svg") no-repeat -90px 900px;
 
   @media screen and (max-width: 1000px) {
@@ -304,12 +304,12 @@ footer #container-section-noussuivre {
 // sub-nav
 
 .subsite-container {
-  background: #f1f1f1;
+  background: #f8f8f8;
   border-radius: 10px;
 
   #subsite-logo {
     font-size: 18px;
-    background: $primary;
+    background: $primary-light-blue;
     border-radius: 10px 0 0 10px;
 
     a {
@@ -413,6 +413,10 @@ footer #container-section-noussuivre {
 
 .sectiontext mark {
   margin: 10px 0;
+
+  a {
+    color: #fff;
+  }
 }
 
 .section-home-page #messagesviewlet {

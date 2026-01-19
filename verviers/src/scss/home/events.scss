@@ -88,6 +88,11 @@
           margin-top: -38px !important;
           left: 0;
           background: rgba(0, 0, 0, 70%) !important;
+
+          span {
+            color: #fff;
+            background: none;
+          }
         }
 
         .auth_source_container_title {
