@@ -1,0 +1,119 @@
+.sectionnews {
+  .see_all a {
+    background: $primary-svg;
+    border-color: $primary-svg;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ea5153 !important;
+  }
+
+  .see_all a {
+    background: #ea5153;
+    border-color: #ea5153;
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+
+  .section-title {
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 50px;
+    z-index: 0;
+    width: max-content;
+    color: $primary-blue;
+    padding-left: 80px;
+    background: url("../../assets/svg/before-actu.svg") no-repeat center left;
+    background-size: contain;
+
+    @media screen and (max-width: 992px) {
+      padding-left: 60px;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+
+      & > a {
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -128px;
+          left: 0;
+          background: rgba(0, 0, 0, 70%);
+        }
+
+        .auth_source_container_title {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -128px;
+          left: 0;
+          background: rgba(0, 0, 0, 70%);
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+          width: 100% !important;
+          text-align: center;
+          color: $primary;
+          margin: 1.5rem 0 0.5rem;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sectionnews::after {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .sectionevents::after {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #portal-footer-wrapper {
+    margin-top: 0;
+  }
+}

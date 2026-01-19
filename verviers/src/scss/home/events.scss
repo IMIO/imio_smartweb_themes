@@ -1,0 +1,142 @@
+.sectionevents {
+  .swiper-pagination-bullet-active {
+    background: #61c3d9 !important;
+  }
+
+  .see_all a {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: $primary-svg;
+    background: url("../../assets/svg/bg-agenda.svg") no-repeat bottom right
+      $primary-light-blue;
+    right: 0;
+    width: 100vw;
+    height: 450px;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    height: 300px;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 0;
+    background: url("../../assets/svg/after-banner.svg") no-repeat center right;
+    background-size: contain;
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    left: auto;
+    margin: 0;
+    z-index: 2;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .section-title {
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 50px;
+    z-index: 0;
+    width: max-content;
+    color: $primary-blue;
+    padding-left: 80px;
+    background: url("../../assets/svg/before-event.svg") no-repeat center left;
+    background-size: contain;
+
+    @media screen and (max-width: 992px) {
+      padding-left: 60px;
+    }
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      transition: all 0.25s ease;
+
+      & > a {
+        display: block;
+        align-items: center;
+
+        .swiper-image {
+          padding-bottom: 55%;
+          transition: all 0.25s ease;
+          margin-bottom: 0;
+        }
+
+        .swiper_category {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -128px;
+          left: 0;
+          background: rgba(0, 0, 0, 70%);
+        }
+
+        .auth_source_container_title {
+          margin-left: 0;
+          position: relative;
+          width: max-content;
+          margin-top: -128px;
+          left: 0;
+          background: rgba(0, 0, 0, 70%);
+        }
+
+        .swiper_date {
+          font-family: $font-family-base;
+          grid-row-start: 2;
+          text-align: center;
+          margin: 1.5rem auto 0.5rem;
+          justify-content: center;
+          color: #fff;
+        }
+
+        .swiper_title {
+          margin-top: 10px;
+          text-align: center;
+          width: 100%;
+
+          h3 {
+            font-family: $font-family-base;
+          }
+        }
+
+        .swiper_description {
+          display: none;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .swiper-image {
+            mask-size: 99%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(10px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
