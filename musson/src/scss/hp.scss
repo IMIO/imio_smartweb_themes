@@ -178,10 +178,23 @@ div#portal-colophon {
   background: #ecf6f9;
 }
 
+.sectionnews .swiper-wrapper .swiper-slide,
+.sectionevents .swiper-wrapper .swiper-slide {
+  transition: 0.5s;
+}
+
 .sectionnews .swiper-wrapper .swiper-slide:hover,
 .sectionnews .swiper-wrapper .swiper-slide:focus,
 .sectionevents .swiper-wrapper .swiper-slide:hover,
 .sectionevents .swiper-wrapper .swiper-slide:focus {
   transform: translateY(10px);
   transition: 0.5s;
+}
+
+footer h2.section-title {
+  font-size: 2rem !important;
+}
+
+header#content-header {
+  background: #fff;
 }
