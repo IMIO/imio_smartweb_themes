@@ -177,3 +177,11 @@ div#portal-colophon {
 #portal-column-content .section-contact .contact-type-organization {
   background: #ecf6f9;
 }
+
+.sectionnews .swiper-wrapper .swiper-slide:hover,
+.sectionnews .swiper-wrapper .swiper-slide:focus,
+.sectionevents .swiper-wrapper .swiper-slide:hover,
+.sectionevents .swiper-wrapper .swiper-slide:focus {
+  transform: translateY(10px);
+  transition: 0.5s;
+}
