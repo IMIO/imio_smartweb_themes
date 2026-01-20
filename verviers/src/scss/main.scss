@@ -380,7 +380,7 @@ footer #container-section-noussuivre {
 }
 
 .swiper-pagination-bullet-active {
-  background: #000;
+  background: #000 !important;
 }
 
 .contact_map {
@@ -403,6 +403,7 @@ footer #container-section-noussuivre {
     background: $primary;
     transition: all 0.25s ease;
     color: #fff;
+
     div,
     span {
       color: #fff;
