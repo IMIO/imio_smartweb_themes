@@ -198,3 +198,12 @@ footer h2.section-title {
 header#content-header {
   background: #fff;
 }
+
+.sectiontext .section-text .body-section a {
+  text-decoration: underline;
+}
+
+.sectiontext .section-text .body-section a:hover,
+.sectiontext .section-text .body-section a:focus {
+  text-decoration: underline 2px #000;
+}
