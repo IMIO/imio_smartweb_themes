@@ -88,11 +88,11 @@ footer#portal-footer-wrapper {
 .galerie-accueil,
 .portaltype-imio-smartweb-portalpage .sectiongallery {
   .section-title {
-    font-weight: 350;
     margin: 0 0 40px;
     width: max-content;
     font-size: 45px;
     justify-self: center;
+    font-weight: 700;
   }
 
   margin: 120px 0 100px;
@@ -135,4 +135,45 @@ footer#portal-footer-wrapper {
     border-radius: 0;
     margin: 5px 0 100px;
   }
+}
+
+.sectionfiles {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
+  .item_infos {
+    color: #fff;
+  }
+}
+
+.colophonWrapper ul {
+  display: flex;
+  color: #fff;
+
+  li,
+  li a,
+  p,
+  h2,
+  h3,
+  a {
+    color: #fff;
+  }
+}
+
+div#portal-colophon {
+  background: #000;
+  color: #fff !important;
+}
+
+.subsite-container {
+  align-items: center;
+  background: #ecf6f9;
+  flex-direction: row;
+  gap: 40px;
+  border: #2e4972 solid 1px;
+}
+
+#portal-column-content .section-contact .contact-type-organization {
+  background: #ecf6f9;
 }
