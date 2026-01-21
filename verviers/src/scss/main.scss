@@ -672,3 +672,22 @@ body .r-content > button {
 .r-item-arrow-more {
   background: $primary-svg;
 }
+
+#subsite-navigation > ul > li > a::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+.sectiontext ol li {
+  padding-left: 42px;
+}
+
+.list-card-title {
+  font-size: 25px;
+}
