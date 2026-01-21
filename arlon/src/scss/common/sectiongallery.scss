@@ -1,0 +1,22 @@
+.sectiongallery {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #f5f5f5;
+    width: 100vw;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50vw);
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+}

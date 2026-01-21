@@ -22,6 +22,7 @@ $enable-roboto-webfont: false;
 @import "citoyen";
 @import "broctie";
 @import "./common/se-link-file";
+@import "./common/sectiongallery";
 
 .see_all a::after {
   display: none;
@@ -139,4 +140,14 @@ $enable-roboto-webfont: false;
       height: 150px;
     }
   }
+}
+
+.template-facetednavigation_view .faceted-top-widgets input#search_button {
+  background: $primary !important;
+}
+
+.subsection-service-communaux-communication-publications.template-facetednavigation_view
+  .card-img-top {
+  aspect-ratio: 0.7;
+  padding-top: initial;
 }

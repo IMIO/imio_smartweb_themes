@@ -33,7 +33,7 @@ $(document).ready(function () {
   //scroll
 
   const animatedElements = document.querySelectorAll(
-    ".swiper-image, .home-citoyen-image-container, .a-la-une",
+    ".swiper-image, .home-citoyen-image-container, .a-la-une"
   );
 
   window.addEventListener("scroll", () => {
@@ -41,7 +41,7 @@ $(document).ready(function () {
       const rect = img.getBoundingClientRect();
       const progress = Math.min(
         Math.max(1 - rect.top / window.innerHeight, 0),
-        1,
+        1
       );
       const translate = -70 * progress; // monte jusqu’à -10px
       const rotate = 30 * progress; // tourne jusqu’à 10deg
@@ -49,4 +49,28 @@ $(document).ready(function () {
       img.style.setProperty("--triangle-rotate", `${rotate}deg`);
     });
   });
+
+  // // custom a la une wrapper
+
+  // // Sélectionne tous les grids
+  // const grids = document.querySelectorAll(
+  //   ".a-la-une.home-dossiers .swiper-slide > a"
+  // );
+
+  // grids.forEach((grid) => {
+  //   // Sélectionne tous les divs sauf le premier (l'image)
+  //   const divs = Array.from(grid.children).slice(1);
+
+  //   if (divs.length === 0) return; // rien à faire s'il n'y a pas de divs de texte
+
+  //   // Crée le conteneur
+  //   const wrapper = document.createElement("div");
+  //   wrapper.classList.add("content");
+
+  //   // Déplace les divs dans le conteneur
+  //   divs.forEach((div) => wrapper.appendChild(div));
+
+  //   // Ajoute le conteneur dans le grid
+  //   grid.appendChild(wrapper);
+  // });
 });

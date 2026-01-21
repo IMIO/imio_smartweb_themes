@@ -3,6 +3,18 @@
   padding-bottom: 0;
   position: relative;
 
+  .swiper-slide > a {
+    background: transparent;
+  }
+
+  .see_all {
+    display: none;
+  }
+
+  .auth_source_container_title {
+    display: none;
+  }
+
   &::after {
     content: "";
     background: url("../../assets/svg/rond-carre.svg");
@@ -59,6 +71,10 @@
       }
     }
 
+    .swiper_category {
+      display: none;
+    }
+
     .swiper_title {
       &::before {
         content: "à la une";
@@ -95,11 +111,49 @@
     .swiper_title {
       align-self: end;
     }
+
+    .swiper_date {
+      align-self: end;
+      grid-column: 2;
+      grid-row: 1;
+      transform: translate(131px, -78px);
+      background: #fff;
+      border-radius: 50px;
+      font-weight: 500;
+    }
   }
 }
 
-.a-la-une .swiper-slide > a {
+.sectionevents.a-la-une .swiper-slide > a {
   grid-template-columns: 43% 50%;
   justify-content: center;
   grid-template-rows: inherit;
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .sectionevents.a-la-une .swiper-slide > a {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sectionevents.a-la-une .swiper-slide .swiper_description {
+    padding: 0 36px 36px;
+    margin: 0;
+    background: transparent;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .a-la-une .swiper-slide .swiper_title {
+    align-self: start;
+    padding: 36px 36px 0;
+    margin: 0;
+    background: transparent;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }

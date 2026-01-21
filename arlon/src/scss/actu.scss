@@ -77,7 +77,7 @@
 
 //events
 
-.sectionevents {
+.sectionevents:not(.a-la-une.home-dossiers) {
   background-color: #40435d;
 
   .swiper-slide {
