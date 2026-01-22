@@ -121,7 +121,7 @@ h1 {
   left: auto;
   margin: 0;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 430px) {
     background: none;
   }
 
@@ -139,7 +139,7 @@ h1 {
     height: 100%;
     align-content: center;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
 
@@ -505,7 +505,7 @@ body .sectiontext .section-text .body-section a {
 
 #portal-header #portal-header-top #portal-logo {
   max-width: 150px;
-  margin-right: 25px;
+  padding: 20px;
 }
 
 .tox-edit-area #tinymce p {
