@@ -33,7 +33,7 @@ $(document).ready(function () {
   //scroll
 
   const animatedElements = document.querySelectorAll(
-    ".swiper-image, .home-citoyen-image-container, .a-la-une"
+    ".swiper-image, .home-citoyen-image-container, .a-la-une",
   );
 
   window.addEventListener("scroll", () => {
@@ -41,7 +41,7 @@ $(document).ready(function () {
       const rect = img.getBoundingClientRect();
       const progress = Math.min(
         Math.max(1 - rect.top / window.innerHeight, 0),
-        1
+        1,
       );
       const translate = -70 * progress; // monte jusqu’à -10px
       const rotate = 30 * progress; // tourne jusqu’à 10deg
