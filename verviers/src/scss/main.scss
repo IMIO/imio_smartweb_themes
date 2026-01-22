@@ -69,7 +69,8 @@ h1 {
     z-index: 2;
 
     @media screen and (max-width: 767px) {
-      display: none;
+      bottom: calc(-100% + 190px);
+      max-width: 100px;
     }
   }
 }
@@ -503,8 +504,7 @@ body .sectiontext .section-text .body-section a {
 }
 
 #portal-header #portal-header-top #portal-logo {
-  max-width: 90px;
-  padding: 10px 0;
+  max-width: 150px;
   margin-right: 25px;
 }
 
@@ -571,10 +571,10 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 }
 
 #gdpr-consent-banner .gdpr-actions input[name="consent"] {
-  background: $primary-svg !important;
+  background: $primary-light-blue !important;
   border-radius: 10px 10px 10px 0;
   color: #fff !important;
-  border: 2px solid $primary-svg !important;
+  border: 2px solid $primary-light-blue !important;
 
   &:hover {
     background: $primary !important;

@@ -47,7 +47,7 @@
     z-index: 2;
 
     @media screen and (max-width: 767px) {
-      display: none;
+      max-width: 100px;
     }
   }
 
