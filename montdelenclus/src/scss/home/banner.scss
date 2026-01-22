@@ -1,0 +1,28 @@
+.smartweb_herobanner {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    aspect-ratio: 6;
+    background: url("../../assets/svg/wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @media screen and (min-width: 500px) {
+      aspect-ratio: 10.8;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .bannerSwiper {
+      max-height: 500px;
+      aspect-ratio: 2;
+      height: auto;
+    }
+  }
+}

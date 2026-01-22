@@ -14,10 +14,9 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "../../../base/src/scss/main";
-
-//// STYLES
-
-// ... add your styles here
+@import "./home/quickacess";
+@import "./home/banner";
+@import "./home/actu-events";
 
 #portal-footer-wrapper * {
   color: #fff !important;

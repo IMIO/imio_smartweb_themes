@@ -1,0 +1,38 @@
+.sectionnews {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 100%) 0%,
+      rgba(241, 241, 241, 100%) 100%
+    );
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    aspect-ratio: 17;
+    background: url("../../assets/svg/wave-actu.svg") no-repeat;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50vw);
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .swiper_category {
+    position: absolute;
+    right: 0;
+  }
+}
