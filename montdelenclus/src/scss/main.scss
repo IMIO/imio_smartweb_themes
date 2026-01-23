@@ -18,6 +18,11 @@ $enable-roboto-webfont: false;
 @import "./home/actu-events";
 @import "./home/quickacess";
 @import "./home/footer";
+@import "./info-trav";
+@import "./home/partenaires";
+@import "./se-link";
+@import "./se-files";
+@import "./contact";
 
 #portal-footer-wrapper * {
   color: #fff !important;
@@ -53,4 +58,370 @@ $enable-roboto-webfont: false;
   cursor: pointer;
   height: 15px;
   width: 15px;
+}
+
+// sub-nav
+
+.subsite-container {
+  background: #f1f1f1;
+  border-radius: 10px;
+
+  #subsite-logo {
+    font-size: 18px;
+    background: $primary;
+    border-radius: 10px 0 0 10px;
+
+    a {
+      .subsite-title {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 20px 20px 20px 0;
+}
+
+#viewlet-above-content-body {
+  .procedure {
+    display: none;
+  }
+}
+
+// header common
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  border-radius: 10px 10px 10px 0;
+  background: #fff;
+  color: $primary;
+  transition: all 0.25s ease;
+  border: 1px solid $primary;
+
+  &:hover {
+    background: $primary;
+    transition: all 0.25s ease;
+    color: #fff;
+    // border: 1px solid $primary;
+    div,
+    span {
+      color: #fff;
+    }
+  }
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+}
+
+.section-home-page #messagesviewlet {
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 90px;
+}
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  .smartweb_herobanner
+    .bannerSwiper
+    .swiper-slide
+    .swiper-banner-content-wrapper
+    .swiper-banner-content {
+    background: $primary;
+    border-radius: 50px 0;
+    bottom: 0;
+    margin: 0;
+    max-width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 2rem;
+    position: relative;
+    width: max-content;
+
+    .swiper-banner-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .swiper-banner-description p {
+      color: #000;
+      font-size: 15px;
+      margin: 0;
+      line-height: initial;
+      padding-right: 10px;
+    }
+  }
+}
+
+body .r-content > button {
+  background: #fff;
+  border: $primary solid 1px;
+  border-radius: 20px 0;
+  padding: 10px 20px;
+}
+
+body .sectiontext .section-text .body-section a {
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: 0.2s;
+
+  &:hover {
+    text-decoration: underline solid $primary-blue;
+  }
+}
+
+#portal-header #portal-header-top #portal-logo {
+  max-width: 150px;
+  margin-right: 25px;
+}
+
+.tox-edit-area #tinymce p {
+  background-color: #000;
+}
+//FILTRES Catégories
+@media screen and (min-width: 901px) {
+  .more-filter-container.collapse:not(.show) {
+    display: initial !important;
+  }
+}
+
+body smartweb-annuaire .more-filter-container.collapse:not(.show) {
+  display: none !important;
+}
+
+#portal-globalnav .quick-access .quick-access-title {
+  color: $primary-svg !important;
+}
+
+#portal-header #portal-header-top #portal-logo {
+  margin-right: 0;
+}
+
+#portal-header #portal-header-top #header-links #search-link a {
+  padding-left: 0;
+  background: $primary;
+  border: 0;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  margin: 0;
+  padding: 15px 0;
+  transition: 0.3s;
+  border-radius: 20px 0;
+
+  a,
+  span,
+  a span {
+    color: $primary;
+    font-weight: 500;
+  }
+
+  &:hover {
+    a,
+    span {
+      color: $primary-svg;
+    }
+  }
+}
+//Message
+.section-home-page #messagesviewlet {
+  top: 120px;
+}
+
+.section-home-page {
+  #localmessagesviewlet .portalMessage,
+  #messagesviewlet .portalMessage {
+    border-radius: 10px;
+    max-width: 1150px;
+    padding: 1rem;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions input[name="consent"] {
+  background: $primary-svg;
+  border-radius: 10px 10px 10px 0;
+  border: 2px solid $primary-svg !important;
+
+  &:hover {
+    color: $primary-svg;
+    background: #fff;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions > a {
+  background: $primary;
+  border: 2px solid $primary;
+  color: #fff;
+  border-radius: 10px 10px 10px 0;
+
+  &:hover {
+    color: $primary;
+    background: #fff;
+  }
+}
+
+.r-add-contact,
+.r-add-event,
+.r-add-news {
+  padding: 1rem;
+  background: $primary;
+  border-radius: 20px 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+.r-add-event {
+  top: 0;
+  margin-top: 1rem !important;
+  bottom: initial;
+}
+
+@media screen and (max-width: 991px) {
+  .section-home-page #messagesviewlet {
+    top: 10px;
+    position: relative;
+    padding: 1.5rem 2.5rem 1rem 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 3.4rem;
+  }
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
+}
+
+.r-search-highlighter {
+  color: #3f9fa4 !important;
+  border-bottom: 2px solid #3f9fa4 !important;
+}
+
+#portal-footer-wrapper {
+  margin-top: 80px;
+}
+
+.section-home-page #portal-footer-wrapper {
+  margin-top: 0;
+}
+
+.r-add-contact,
+.r-add-event,
+.r-add-news {
+  border-radius: 10px 10px 10px 0;
+}
+
+body .r-content > button {
+  border-radius: 10px 10px 10px 0;
+  border-color: #ddd !important;
+}
+
+.section-contact .contact-type-mission {
+  width: auto !important;
+}
+
+.section-contact .contact-type-mission::after {
+  display: none;
+}
+
+.subsection-bulletin-communal-1 .card-img-top {
+  padding-top: 150%;
 }
