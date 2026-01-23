@@ -102,3 +102,10 @@
 .sectionfiles .nb-items-batch-1 {
   width: 100%;
 }
+
+.portaltype-imio-smartweb-portalpage .sectionfiles .table_image {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
