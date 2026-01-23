@@ -207,3 +207,20 @@ header#content-header {
 .sectiontext .section-text .body-section a:focus {
   text-decoration: underline 2px #000;
 }
+
+.section-contact .table_schedule tr td:first-child {
+  gap: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+.r-add-contact a,
+.r-add-event a,
+.r-add-news a {
+  color: #000;
+  padding: 10px 20px;
+  background: $primary-svg;
+  border-radius: 10px;
+  border: solid 1px $primary;
+}
