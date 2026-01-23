@@ -1,7 +1,15 @@
 .sectionnews {
   position: relative;
+  background:
+    url("../../assets/svg/wave-actu.svg") no-repeat center bottom,
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 100%) 0%,
+      rgba(241, 241, 241, 100%) 100%
+    );
+  background-size: contain;
 
-  &::before {
+  /*&::before {
     content: "";
     position: absolute;
     display: block;
@@ -29,7 +37,7 @@
     transform: translateX(-50vw);
     background-position: bottom;
     background-size: contain;
-  }
+  }*/
 
   .swiper_category {
     position: absolute;

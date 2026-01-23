@@ -93,7 +93,7 @@
 
     //font-family:$font-family-roboto;
     text-transform: uppercase;
-    color: $primary !important;
+    color: $primary;
     margin: 0 0 2rem;
   }
 }
@@ -107,4 +107,38 @@
 .sectionlinks.quick-access .body-section ul {
   margin-left: auto;
   margin-right: auto;
+}
+
+.partenaires {
+  position: relative;
+  margin: 80px 0 !important;
+
+  .body-section {
+    width: 62%;
+    margin-left: 35%;
+
+    @media screen and (max-width: 991px) {
+      width: 100% !important;
+      position: relative;
+      margin-left: 0;
+    }
+  }
+
+  .section-title {
+    color: #2c2e35 !important;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 30px 80px 0 0 !important;
+    padding-left: 0;
+    position: absolute;
+    text-align: left;
+    text-transform: none !important;
+
+    @media screen and (max-width: 991px) {
+      position: relative !important;
+      margin: 0 0 30px !important;
+      padding-left: 10px !important;
+    }
+  }
 }

@@ -14,10 +14,43 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "../../../base/src/scss/main";
-@import "./home/quickacess";
 @import "./home/banner";
 @import "./home/actu-events";
+@import "./home/quickacess";
+@import "./home/footer";
 
 #portal-footer-wrapper * {
   color: #fff !important;
+}
+
+#gdpr-consent-banner .gdpr-actions input[name="consent"] {
+  background: $primary-svg !important;
+  border-radius: 10px 10px 10px 0;
+  color: #fff !important;
+  border: 2px solid $primary-svg !important;
+
+  &:hover {
+    background: $primary !important;
+    border: 2px solid $primary !important;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions > a,
+#gdpr-consent-banner .gdpr-actions input[name="refuse"] {
+  background: $primary-svg;
+  border: 2px solid $primary-svg;
+  color: #fff;
+  border-radius: 10px 10px 10px 0;
+
+  &:hover {
+    background: $primary !important;
+    border: 2px solid $primary !important;
+    color: #fff !important;
+  }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
 }
