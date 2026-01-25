@@ -278,3 +278,7 @@ footer#portal-footer-wrapper {
   top: 120px;
   width: 95%;
 }
+
+body.template-block_view #content-core::after {
+  background-color: transparent;
+}
