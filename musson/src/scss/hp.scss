@@ -145,6 +145,17 @@ footer#portal-footer-wrapper {
   .item_infos {
     color: #fff;
   }
+
+  .table_image {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+
+    &:hover {
+      text-decoration-thickness: 2px;
+    }
+  }
 }
 
 .colophonWrapper ul {
@@ -217,10 +228,53 @@ header#content-header {
 
 .r-add-contact a,
 .r-add-event a,
-.r-add-news a {
+.r-add-news a,
+#portal-header #portal-header-top #header-links .account {
   color: #000;
   padding: 10px 20px;
   background: $primary-svg;
   border-radius: 10px;
   border: solid 1px $primary;
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    border: solid 1px $primary;
+  }
+}
+
+#portal-column-content .section-contact .contact-type-organization,
+#portal-column-content .section-contact .contact-type-position {
+  background: #fff;
+  border: 1px solid $primary;
+  border-radius: 10px;
+}
+
+.portaltype-imio-smartweb-page .sectionfiles::after,
+.portaltype-imio-smartweb-procedure .sectionfiles::after {
+  border-radius: 10px;
+}
+
+footer#portal-footer-wrapper {
+  background: #000;
+}
+
+.portaltype-imio-smartweb-page .sectionfiles::after {
+  border-radius: 10px;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: #000;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary;
+}
+
+.portaltype-imio-smartweb-portalpage div#messagesviewlet {
+  position: absolute;
+  top: 120px;
+  width: 95%;
 }
