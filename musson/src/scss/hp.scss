@@ -137,7 +137,7 @@ footer#portal-footer-wrapper {
   }
 }
 
-.sectionfiles {
+.outer-wrapper .sortable-section.sectionfiles {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -151,6 +151,7 @@ footer#portal-footer-wrapper {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
+    padding: 15px 10px;
 
     &:hover {
       text-decoration-thickness: 2px;
@@ -238,7 +239,7 @@ header#content-header {
 
   &:hover,
   &:focus {
-    background: #fff;
+    background: #fff !important;
     border: solid 1px $primary;
   }
 }
