@@ -88,7 +88,7 @@
       }
 
       h3 {
-        margin-top: 20px;
+        margin-top: 45px;
       }
     }
 
@@ -116,10 +116,9 @@
       align-self: end;
       grid-column: 2;
       grid-row: 1;
-      transform: translate(131px, -78px);
-      background: #fff;
-      border-radius: 50px;
       font-weight: 500;
+      transform: translateY(-188%);
+      margin-left: 1.3rem;
     }
   }
 }
