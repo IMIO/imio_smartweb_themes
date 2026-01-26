@@ -701,12 +701,5 @@ body .r-content > button {
 }
 
 #subsite-navigation > ul > .current > a::before {
-  background-color: $primary-svg;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transition: all 0.3s ease;
+  background-color: $primary-svg !important;
 }
