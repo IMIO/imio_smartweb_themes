@@ -1,5 +1,5 @@
 {
-  "name": "@imiobe/plonetheme-smartweb-[theme_id]",
+  "name": "@imiobe/plonetheme-smartweb-test",
   "description": "iA.Smartweb base theme for Plone",
   "private": false,
   "publishConfig": {
@@ -18,7 +18,7 @@
     "plone",
     "smartweb"
   ],
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "GPL version 2",
   "scripts": {
     "stylelint": "npx stylelint 'src/**/*.{css,less}' 'src/**/*.{css,less}",
@@ -29,7 +29,7 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@imiobe/plonetheme-smartweb-base": "0.3.1",
+    "@imiobe/plonetheme-smartweb-base": "0.3.7",
     "@popperjs/core": "^2.11.6"
   }
 }

@@ -23,6 +23,7 @@
   "version": "1.0.1",
   "license": "GPL version 2",
   "scripts": {
+    "create-theme": "node scripts/create-theme.js",
     "stylelint": "npx stylelint './**/*.{css,scss,sass}'",
     "stylelint:fix": "npx stylelint './**/*.{css,scss,sass}' --fix",
     "prettier": "npx prettier --check './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
