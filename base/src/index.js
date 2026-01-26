@@ -32,7 +32,7 @@ $(document).ready(function () {
   //   // Définir la hauteur du header une seule fois
   //   document.documentElement.style.setProperty(
   //     "--header-height",
-  //     headerHeight + "px"
+  //     headerHeight + "px",
   //   );
 
   //   // Fonction pour mettre à jour uniquement la position et la largeur
@@ -43,11 +43,11 @@ $(document).ready(function () {
   //       const parentLeft = parentRect.left;
   //       document.documentElement.style.setProperty(
   //         "--header-width",
-  //         parentWidth + "px"
+  //         parentWidth + "px",
   //       );
   //       document.documentElement.style.setProperty(
   //         "--header-left",
-  //         parentLeft + "px"
+  //         parentLeft + "px",
   //       );
   //     }
   //   }
@@ -112,7 +112,7 @@ $(document).ready(function () {
   //         header.classList.remove(
   //           "sticky-on-top",
   //           "sticky-demi-active",
-  //           "sticky-hidden"
+  //           "sticky-hidden",
   //         );
   //         document.body.classList.remove("has-sticky-header");
   //       }
@@ -138,14 +138,14 @@ $(document).ready(function () {
   //         "sticky",
   //         "sticky-on-top",
   //         "sticky-demi-active",
-  //         "sticky-hidden"
+  //         "sticky-hidden",
   //       );
   //     }
 
   //     const newHeight = header.offsetHeight;
   //     document.documentElement.style.setProperty(
   //       "--header-height",
-  //       newHeight + "px"
+  //       newHeight + "px",
   //     );
 
   //     // Restaurer les classes
