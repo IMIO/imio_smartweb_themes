@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
+const readline = require("readline");
 const { fetchSiteUrl } = require("./fetch-site-url");
 
 // Couleurs pour le terminal
@@ -260,12 +261,54 @@ async function createTheme() {
     );
   }
 
-  // 6. Message final
+  // 6. Git add et commit
+  info("Ajout au Git et création du commit...");
+  try {
+    execSync(`git add ${themeName}`, {
+      cwd: rootDir,
+      stdio: "inherit",
+    });
+
+    // Demander le numéro de ticket
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+    });
+
+    const ticketNumber = await new Promise((resolve) => {
+      rl.question("\n📋 Numéro de ticket: ", (answer) => {
+        rl.close();
+        resolve(answer.trim());
+      });
+    });
+
+    // Construire le message de commit
+    let commitMessage = "Init theme for " + themeName;
+    if (ticketNumber) {
+      commitMessage = `[${ticketNumber}] ${commitMessage}`;
+    }
+
+    execSync(`git commit -m "${commitMessage}"`, {
+      cwd: rootDir,
+      stdio: "inherit",
+    });
+    success(`Commit créé: "${commitMessage}"`);
+  } catch (err) {
+    warning(
+      "Erreur lors du commit Git. Vous pouvez le faire manuellement: git add " +
+        themeName +
+        ' && git commit -m "Init theme for ' +
+        themeName +
+        '"',
+    );
+  }
+
+  // 7. Message final
   log("\n" + "=".repeat(60), "green");
   success(`Thème "${themeName}" créé avec succès!`);
   log("=".repeat(60) + "\n", "green");
 
-  log("📝 GOGOGOGOGOGO:", "bright");
+  log("🚀 Thème commité plus qu'a push:", "bright");
 }
 
 // Lancer la fonction principale
