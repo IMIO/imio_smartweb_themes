@@ -308,7 +308,7 @@ async function createTheme() {
   success(`Thème "${themeName}" créé avec succès!`);
   log("=".repeat(60) + "\n", "green");
 
-  log("🚀 Thème commité plus qu'a push:", "bright");
+  log("🚀 Thème commité plus qu'à push:", "bright");
 }
 
 // Lancer la fonction principale
