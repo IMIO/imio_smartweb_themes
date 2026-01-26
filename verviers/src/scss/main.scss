@@ -691,3 +691,22 @@ body .r-content > button {
 .list-card-title {
   font-size: 25px;
 }
+
+.sectioncontact .contact_description {
+  margin-top: 1rem;
+}
+
+#subsite-navigation.activated > ul > li > a {
+  color: #000 !important;
+}
+
+#subsite-navigation > ul > .current > a::before {
+  background-color: $primary-svg;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease;
+}
