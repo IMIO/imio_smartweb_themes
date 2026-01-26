@@ -1,4 +1,5 @@
 const axios = require("axios");
+require("dotenv").config();
 
 /**
  * Récupère l'URL d'un site depuis l'infradoc
@@ -6,6 +7,7 @@ const axios = require("axios");
  * @returns {Promise<{url: string|null, error: string|null}>} - L'URL du site et le type d'erreur
  */
 async function fetchSiteUrl(themeName) {
+  const infradocApiUrl = process.env.INFRADOC_API_URL;
   const query = `
     query {
       instances(type: "smartweb") {
@@ -20,7 +22,7 @@ async function fetchSiteUrl(themeName) {
 
   try {
     const response = await axios({
-      url: "https://infradoc.imio.be/api",
+      url: infradocApiUrl,
       method: "POST",
       headers: {
         "Content-Type": "application/json",

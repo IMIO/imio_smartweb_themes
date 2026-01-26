@@ -4,3 +4,4 @@ node_modules/
 !base/*.zip
 .DS_Store
 pnpm-lock.yaml
+.env
