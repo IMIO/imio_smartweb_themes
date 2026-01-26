@@ -1,5 +1,5 @@
 {
-  "name": "@imiobe/plonetheme-smartweb-[theme_id]]",
+  "name": "@imiobe/plonetheme-smartweb-[theme_id]",
   "description": "iA.Smartweb base theme for Plone",
   "private": false,
   "publishConfig": {
@@ -10,14 +10,9 @@
       "name": "Thomas Lambert (iMio)",
       "email": "thomas.lambert@imio.be",
       "url": "https://imio.be"
-    },
-    {
-      "name": "Antoine Duchêne (iMio)",
-      "email": "adu@imio.be",
-      "url": "https://imio.be"
     }
   ],
-  "homepage": "https://",
+  "homepage": "",
   "keywords": [
     "imio",
     "plone",
