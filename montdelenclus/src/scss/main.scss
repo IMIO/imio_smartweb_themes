@@ -291,7 +291,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 
 #portal-header #portal-header-top #header-links #search-link a {
   padding-left: 0;
-  background: $primary;
+  background: $primary-svg;
   border: 0;
 }
 
@@ -356,11 +356,11 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 .r-add-event,
 .r-add-news {
   padding: 1rem;
-  background: $primary;
+  background: #f1f1f1;
   border-radius: 20px 0;
 
   a {
-    color: #fff;
+    color: #000;
   }
 }
 
