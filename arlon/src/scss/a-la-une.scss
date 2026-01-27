@@ -2,6 +2,7 @@
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
+  width: auto;
 
   .swiper-slide > a {
     background: transparent;
@@ -13,6 +14,19 @@
 
   .auth_source_container_title {
     display: none;
+  }
+
+  &::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    height: 142px;
+    z-index: -1;
+    width: 100vw;
+    transform: translateX(-50%);
   }
 
   &::after {
@@ -27,7 +41,7 @@
     top: 50%;
     right: 0;
     z-index: -1;
-    transform: translate(-35%, calc(-50% - var(--triangle-translate)))
+    transform: translate(-35%, calc(50% - var(--triangle-translate)))
       rotate(var(--triangle-rotate));
     transition: transform 0.1s linear;
   }
