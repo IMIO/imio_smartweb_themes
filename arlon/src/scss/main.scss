@@ -106,6 +106,11 @@ $enable-roboto-webfont: false;
   background-color: #f1f1f1;
 }
 
+#portal-column-content .section-contact .contact-type-position {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
 .sectiontext .section-text .body-section a {
   color: $primary;
   font-weight: 700;

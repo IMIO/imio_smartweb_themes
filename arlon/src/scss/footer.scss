@@ -4,6 +4,14 @@
   background-color: $primary;
   text-align: left;
 
+  .row {
+    gap: 20px 0;
+  }
+
+  .container.section-container.section-text {
+    padding-left: 0.8rem;
+  }
+
   h2,
   h3,
   p,

@@ -133,6 +133,11 @@
       font-weight: 500;
       transform: translateY(-188%);
       margin-left: 1.3rem;
+
+      @media screen and (max-width: 992px) {
+        transform: translateY(299%);
+        margin-left: 0;
+      }
     }
   }
 }
