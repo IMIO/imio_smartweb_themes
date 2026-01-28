@@ -607,3 +607,13 @@ body .r-content > button {
 .section-contact .contact-type-mission::after {
   display: none;
 }
+
+#messagesviewlet {
+  position: absolute;
+  top: 145px;
+  width: 95%;
+  left: 0;
+  right: 0;
+  align-items: center;
+  margin: 0 auto;
+}

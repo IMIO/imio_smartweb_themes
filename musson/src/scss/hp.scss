@@ -182,8 +182,8 @@ div#portal-colophon {
   align-items: center;
   background: #ecf6f9;
   flex-direction: row;
-  gap: 40px;
-  border: #2e4972 solid 1px;
+  gap: 30px;
+  border: none;
 }
 
 #portal-column-content .section-contact .contact-type-organization {
@@ -231,16 +231,17 @@ header#content-header {
 .r-add-event a,
 .r-add-news a,
 #portal-header #portal-header-top #header-links .account {
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
-  background: $primary-light !important;
+  background: $primary !important;
   border-radius: 10px;
   border: solid 1px $primary;
 
   &:hover,
   &:focus {
-    background: #fff !important;
+    background: $primary-light !important;
     border: solid 1px $primary;
+    color: #000;
   }
 }
 
@@ -282,4 +283,16 @@ footer#portal-footer-wrapper {
 
 body.template-block_view #content-core::after {
   background-color: transparent;
+}
+
+.multicontact {
+  gap: 20px;
+}
+
+div#subsite-navigation {
+  padding: 0;
+}
+
+.multicontact {
+  gap: 10px;
 }
