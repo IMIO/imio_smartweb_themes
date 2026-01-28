@@ -231,9 +231,16 @@ header#content-header {
 #portal-header #portal-header-top #header-links span {
   color: #fff !important;
 
-  &:hover:focus {
+  &:hover,
+  &:focus,
+  &:active {
     color: #000 !important;
   }
+}
+
+#portal-header #portal-header-top #header-links a:hover:focus,
+#portal-header #portal-header-top #header-links span:hover:focus {
+  color: #000 !important;
 }
 
 .r-add-contact a,
@@ -247,7 +254,8 @@ header#content-header {
   border: solid 1px $primary;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background: $primary-light !important;
     border: 1px solid $primary;
     color: #000 !important;
