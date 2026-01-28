@@ -231,7 +231,7 @@ header#content-header {
 .r-add-event a,
 .r-add-news a,
 #portal-header #portal-header-top #header-links .account {
-  color: #fff;
+  color: #fff !important;
   padding: 10px 20px;
   background: $primary !important;
   border-radius: 10px;
@@ -241,7 +241,7 @@ header#content-header {
   &:focus {
     background: $primary-light !important;
     border: 1px solid $primary;
-    color: #000;
+    color: #000 !important;
   }
 }
 
