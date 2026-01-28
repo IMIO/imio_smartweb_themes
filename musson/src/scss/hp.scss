@@ -240,7 +240,7 @@ header#content-header {
   &:hover,
   &:focus {
     background: $primary-light !important;
-    border: solid 1px $primary;
+    border: 1px solid $primary;
     color: #000;
   }
 }
