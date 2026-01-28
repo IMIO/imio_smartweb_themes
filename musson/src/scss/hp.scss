@@ -227,6 +227,15 @@ header#content-header {
   padding-right: 10px;
 }
 
+#portal-header #portal-header-top #header-links a,
+#portal-header #portal-header-top #header-links span {
+  color: #fff !important;
+
+  &:hover:focus {
+    color: #000 !important;
+  }
+}
+
 .r-add-contact a,
 .r-add-event a,
 .r-add-news a,
