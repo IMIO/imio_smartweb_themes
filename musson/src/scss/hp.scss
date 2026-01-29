@@ -179,11 +179,14 @@ div#portal-colophon {
 }
 
 .subsite-container {
-  align-items: center;
-  background: #ecf6f9;
-  flex-direction: row;
-  gap: 30px;
-  border: none;
+  // align-items: center;
+  // background: #ecf6f9;
+  // flex-direction: row;
+  // gap: 30px;
+  // border: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 #portal-column-content .section-contact .contact-type-organization {
