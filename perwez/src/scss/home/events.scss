@@ -63,52 +63,52 @@
           border-radius: 20px 0 20px 20px;
         }
 
-        .table_date {
-          padding: 0 1.5rem;
-          margin-bottom: 0.5;
-          text-align: center;
+        // .table_date {
+        //   padding: 0 1.5rem;
+        //   margin-bottom: 0.5;
+        //   text-align: center;
 
-          span {
-            font-size: 16px;
-          }
-        }
+        //   span {
+        //     font-size: 16px;
+        //   }
+        // }
 
-        .start_date {
-          float: left;
-          padding-right: 3px;
+        // .start_date {
+        //   float: left;
+        //   padding-right: 3px;
 
-          .day::after {
-            content: "/" !important;
-          }
+        //   .day::after {
+        //     content: "/" !important;
+        //   }
 
-          .month {
-            margin-left: -5px;
-          }
-        }
+        //   .month {
+        //     margin-left: -5px;
+        //   }
+        // }
 
-        .end_date {
-          .day::after {
-            content: "/" !important;
-          }
+        // .end_date {
+        //   .day::after {
+        //     content: "/" !important;
+        //   }
 
-          .month {
-            margin-left: -5px;
-          }
-        }
+        //   .month {
+        //     margin-left: -5px;
+        //   }
+        // }
 
-        .day_date {
-          .from_on {
-            display: none;
-          }
+        // .day_date {
+        //   .from_on {
+        //     display: none;
+        //   }
 
-          .day::after {
-            content: "/";
-          }
+        //   .day::after {
+        //     content: "/";
+        //   }
 
-          .month {
-            margin-left: -5px;
-          }
-        }
+        //   .month {
+        //     margin-left: -5px;
+        //   }
+        // }
 
         .table_category {
           top: 0;
