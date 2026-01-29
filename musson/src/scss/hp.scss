@@ -229,7 +229,7 @@ header#content-header {
 
 #portal-header #portal-header-top #header-links a,
 #portal-header #portal-header-top #header-links span {
-  color: #fff !important;
+  color: #fff;
 
   &:hover,
   &:focus,
@@ -239,7 +239,7 @@ header#content-header {
 }
 
 #portal-header #portal-header-top #header-links a:hover:focus,
-#portal-header #portal-header-top #header-links span:hover:focus {
+#portal-header #portal-header-top #header-links a:hover:focus span {
   color: #000 !important;
 }
 
@@ -259,6 +259,10 @@ header#content-header {
     background: $primary-light !important;
     border: 1px solid $primary;
     color: #000 !important;
+
+    svg {
+      fill: #fff;
+    }
   }
 }
 
