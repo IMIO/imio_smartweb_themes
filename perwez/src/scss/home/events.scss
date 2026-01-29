@@ -151,3 +151,19 @@
     }
   }
 }
+
+#body-section-agenda {
+  .table_date {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espace entre début et fin */
+    white-space: nowrap;
+  }
+
+  .start_date,
+  .end_date {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* espace entre Du / jour / mois */
+  }
+}
