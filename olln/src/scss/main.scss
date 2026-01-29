@@ -421,3 +421,20 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 .r-search-container .r-search-highlighter {
   color: $primary;
 }
+
+//ACCESSIBILITES
+//focus
+a:focus {
+  outline: 3px solid #007bff; /* bleu vif */
+  outline-offset: 2px; /* léger décalage pour la visibilité */
+}
+
+/* Option moderne avec focus-visible */
+a:focus-visible {
+  outline: 3px dashed #007bff; /* couleur différente pour la distinction */
+  outline-offset: 3px;
+}
+
+a.show-on-focus.skip-before-footer {
+  color: #000;
+}
