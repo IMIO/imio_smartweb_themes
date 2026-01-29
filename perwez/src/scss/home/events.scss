@@ -152,18 +152,19 @@
   }
 }
 
-#body-section-agenda {
-  .table_date {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* espace entre début et fin */
-    white-space: nowrap;
-  }
+.sectionevents .swiper-wrapper .swiper-slide > a .swiper_date {
+  grid-row-start: 2;
+  justify-content: center;
+  margin: 1.5rem auto 0.5rem;
+  text-align: center;
+}
 
-  .start_date,
-  .end_date {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* espace entre Du / jour / mois */
-  }
+.sectionevents .swiper-slide .swiper_date {
+  margin: 1rem 0 0.5rem;
+  padding: 0 20px;
+}
+
+.sectionevents .swiper-slide .swiper_date div,
+.sectionevents .swiper_date {
+  display: flex;
 }
