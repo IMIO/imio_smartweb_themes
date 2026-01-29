@@ -184,9 +184,9 @@ div#portal-colophon {
   // flex-direction: row;
   // gap: 30px;
   // border: none;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // position: relative;
 }
 
 #portal-column-content .section-contact .contact-type-organization {
@@ -319,4 +319,9 @@ div#subsite-navigation {
 
 .multicontact {
   gap: 10px;
+}
+
+.sortable-section.sectioncontact {
+  margin: 0 auto;
+  max-width: 95%;
 }
