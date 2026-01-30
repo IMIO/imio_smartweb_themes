@@ -42,24 +42,37 @@
 
 // style back button
 
-.r-content > button {
-  background: transparent;
-  margin: 1rem 0;
-  border: 0;
-  display: flex;
-  align-items: center;
+.r-back-button {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  background-color: $react-arrow-btn-bg;
+  color: $react-arrow-btn-color;
+  margin: 10px 0;
+  font-size: 23px;
+  border: none;
 
   &::before {
-    content: "";
-    width: 9px;
-    height: 6px;
-    display: block;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="%23000"/></svg>');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 0.4rem;
-    transform: rotate(90deg);
+    display: none;
+  }
+}
+
+.r-back-button:hover {
+  background: $react-arrow-btn-hv-bg;
+  outline: 2px solid $grey-bg;
+}
+
+body .r-item-arrow-more {
+  background-color: $react-arrow-btn-next-bg;
+  color: $react-arrow-btn-color;
+}
+
+.r-list-item-group {
+  &:hover {
+    .r-item-arrow-more {
+      outline: solid 2px #ebebeb;
+      background-color: #ebebeb;
+    }
   }
 }
 

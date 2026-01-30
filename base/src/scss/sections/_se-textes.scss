@@ -31,40 +31,15 @@ mark {
     margin-bottom: $section-text-h3-margin-bottom;
   }
 
+  ul,
   ol {
-    list-style-type: none;
-    counter-reset: item;
-
-    & > li {
-      display: table;
-      padding-left: 1rem;
-
-      &::before {
-        content: counters(item, ".") " ";
-        counter-increment: item;
-        display: inline-block;
-        width: 2em;
-        text-align: right;
-        position: relative;
-        left: -2.5em;
-        margin-right: -2em;
-      }
-    }
+    padding-left: 1rem;
   }
 
-  ul li {
+  ul li,
+  ol li {
     position: relative;
-    display: table;
-    padding-left: 1rem;
     margin: 0.25rem 0;
-    list-style: none;
-
-    &::before {
-      position: absolute;
-      top: -2px;
-      left: 0;
-      content: $list-style-custom;
-    }
   }
 
   .section-text {

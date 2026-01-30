@@ -1,0 +1,34 @@
+.to-portal {
+  position: relative;
+  text-align: center;
+  padding: 0;
+}
+
+.to-portal a {
+  background: $to-portal-link-bg;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  color: $to-portal-link-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1;
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.to-portal a:hover,
+.to-portal a:focus {
+  background: $to-portal-link-hv-bg;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  color: $to-portal-link-hv-color;
+}
+
+.portal-link-arrow {
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+}

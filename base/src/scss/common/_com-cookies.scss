@@ -44,9 +44,9 @@
     & > a,
     input[name="consent"],
     input[name="refuse"] {
-      background: #1863dc;
-      color: #fff;
-      border: 2px solid #1863dc;
+      background: $cookie-banner-bg;
+      color: $cookie-banner-color;
+      border: $cookie-banner-border;
       padding: 1rem 2rem;
       font-size: 13px;
       cursor: pointer;
@@ -56,9 +56,10 @@
 
       &:hover,
       &:focus {
-        background: #ededed;
-        color: #1863dc;
+        background: $cookie-banner-hv-bg;
+        color: $cookie-banner-hv-color;
         outline: none;
+        border: $cookie-banner-hv-border;
       }
     }
   }
