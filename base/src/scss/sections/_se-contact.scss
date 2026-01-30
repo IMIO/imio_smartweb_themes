@@ -264,3 +264,13 @@
     height: auto !important;
   }
 }
+
+// common
+
+.contact_titles h2 {
+  word-break: break-word;
+}
+
+.contact_map {
+  z-index: 0;
+}

@@ -1,6 +1,8 @@
 //*// COLORS
 $primary: #222831 !default;
 $primary-svg: #235789 !default;
+$grey-bg: #ebebeb !default;
+$black-color: #1f1f1f !default;
 
 //*// TYPOGRAPHY
 
@@ -11,7 +13,7 @@ $font-family-base: "Roboto", sans-serif !default;
 $font-family-title: "Nunito", sans-serif !default;
 $font-title-color: $primary !default;
 $font-title-color-light: #fff !default;
-$font-title-color-dark: #000 !default;
+$font-title-color-dark: $black-color !default;
 $font-title-weight: 700 !default;
 
 // $font-size-base affects the font size of the body text
@@ -46,7 +48,6 @@ $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
 $section-padding-top: 0 !default;
-$to-portal-link-color: #282828 !default;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper
@@ -397,15 +398,42 @@ $list-group-item-padding-x: 0;
 
 // Message Viewlets
 
-$message-info: #27789c;
-$message-warning: #c06d01;
-$message-error: #ae2609;
+$message-info-bg: $primary;
+$message-info-color: #fff;
+
+$message-warning-bg: oklch(82.8% 0.189 84.429deg);
+$message-warning-color: $black-color;
+
+$message-error-bg: oklch(50.5% 0.213 27.518deg);
+$message-error-color: #fff;
 
 //QUICK ACCESS
 $quick-access-title-font-family: $font-family-title !default;
 
 //SEE ALL
 $see-all-font-family: $font-family-title !default;
+
+// Portal Link
+$to-portal-link-bg: #f1f1f1 !default;
+$to-portal-link-color: #282828 !default;
+$to-portal-link-hv-bg: #000 !default;
+$to-portal-link-hv-color: #fff !default;
+
+//  React back btn
+$react-arrow-btn-bg: $grey-bg !default;
+$react-arrow-btn-next-bg: transparent !default;
+$react-arrow-btn-color: $black-color !default;
+$react-arrow-btn-hv-bg: transparent !default;
+$react-arrow-btn-hv-color: $black-color !default;
+$react-arrow-btn-hv-radius: 5px !default;
+
+// Cookie banner
+$cookie-banner-bg: #1863dc !default;
+$cookie-banner-hv-bg: transparent !default;
+$cookie-banner-border: 2px solid #1863dc;
+$cookie-banner-hv-border: 2px solid #1863dc;
+$cookie-banner-color: #fff !default;
+$cookie-banner-hv-color: #1863dc !default;
 
 :root {
   --bs-card-spacer-x: 1rem;
