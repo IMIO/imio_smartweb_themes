@@ -325,3 +325,22 @@ div#subsite-navigation {
   margin: 0 auto;
   max-width: 95%;
 }
+
+@media (max-width: 768px) {
+  /* smartphones et petites tablettes */
+  .colophonWrapper ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430.99px) {
+  #main-container .sectionlinks.quick-access .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 éléments par ligne */
+    gap: 10px;
+    grid-auto-rows: 1fr;
+    justify-items: center; /* centre les éléments dans leur colonne */
+  }
+}
