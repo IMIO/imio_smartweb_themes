@@ -77,7 +77,7 @@ $enable-roboto-webfont: false;
   .swiper-banner-content
   .swiper-banner-title {
   color: #2b2b2b;
-  font-size: 40px;
+  font-size: 2.5em;
   text-transform: none;
 }
 
@@ -102,7 +102,7 @@ $enable-roboto-webfont: false;
     .swiper-banner-content-wrapper
     .swiper-banner-content
     .swiper-banner-title {
-    font-size: 31px;
+    font-size: 1.9375em;
   }
 }
 
@@ -124,7 +124,7 @@ div:not(.sectiontext) + .sectiontext h2 {
     border-radius: 5px;
 
     .subsite-title {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
@@ -142,7 +142,7 @@ div:not(.sectiontext) + .sectiontext h2 {
 
   .subsite-container #subsite-logo {
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 5px;
   }
 
@@ -179,7 +179,7 @@ div:not(.sectiontext) + .sectiontext h2 {
     & > ul > li.nav-item {
       > a {
         font-weight: 500 !important;
-        font-size: 14px !important;
+        font-size: 0.875rem !important;
         background: #f5f5f5;
         padding: 5px;
         border-radius: 3px;
@@ -201,7 +201,7 @@ div:not(.sectiontext) + .sectiontext h2 {
       margin-bottom: 0;
 
       li {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
   }
@@ -314,7 +314,7 @@ body:not(.site-office-du-tourisme-inforville) {
 
   .list-card-title {
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
   }
 }
@@ -339,7 +339,7 @@ body:not(.site-office-du-tourisme-inforville) {
       content: "\F30A";
       display: block;
       font-family: bootstrap-icons;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
@@ -424,17 +424,22 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 //ACCESSIBILITES
 //focus
-a:focus {
-  outline: 3px solid #007bff; /* bleu vif */
-  outline-offset: 2px; /* léger décalage pour la visibilité */
+
+.nav-link:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(50, 90, 166, 25%);
+  outline: 3px dashed red;
 }
 
 /* Option moderne avec focus-visible */
 a:focus-visible {
-  outline: 3px dashed #007bff; /* couleur différente pour la distinction */
+  outline: 3px dashed red; /* couleur différente pour la distinction */
   outline-offset: 3px;
 }
 
 a.show-on-focus.skip-before-footer {
   color: #000;
+}
+
+html #portal-footer-wrapper #portal-footer .show-on-focus.skip-before-footer {
+  color: #000 !important;
 }

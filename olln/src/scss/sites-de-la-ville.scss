@@ -1,7 +1,7 @@
 .sites-ville {
   .section-title {
     max-width: 240px;
-    font-size: 42px;
+    font-size: 2.625rem;
   }
 
   .row {
@@ -18,14 +18,13 @@
       flex-direction: column;
       align-items: center;
       padding: 6px 0;
-      outline: solid $primary 0;
       transition: all 0.2s ease;
       text-decoration: none;
 
       .table_title {
         span {
           font-weight: bold;
-          font-size: 14px;
+          font-size: 0.875rem;
           color: #fff;
           text-transform: uppercase;
         }
@@ -51,7 +50,6 @@
     li:nth-child(2) {
       .table_image {
         background: $yellow;
-        outline: solid $yellow 0;
 
         .table_title {
           span {
@@ -72,7 +70,6 @@
     li:nth-child(3) {
       .table_image {
         background: $primary-light;
-        outline: solid $primary-light 0;
 
         .table_title {
           span {
@@ -99,7 +96,6 @@
     li:nth-child(5) {
       .table_image {
         background: $yellow;
-        outline: solid $yellow 0;
 
         .table_title {
           span {
