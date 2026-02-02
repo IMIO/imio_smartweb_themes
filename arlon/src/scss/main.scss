@@ -156,3 +156,26 @@ $enable-roboto-webfont: false;
   aspect-ratio: 0.7;
   padding-top: initial;
 }
+
+html .r-list-item-group:hover .r-item-arrow-more {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.44 10'%3E%3Cg data-name='Calque 2'%3E%3Cg data-name='Calque 1'%3E%3Cpath d='M1 5h18.44' data-name='Ligne 7' style='fill:none;stroke:%23000;stroke-linecap:round;stroke-width:2px'/%3E%3Cpath d='m14.83 1 4.61 4' data-name='Ligne 8' style='fill:none;stroke:%23000;stroke-linecap:round;stroke-width:2px'/%3E%3Cpath d='m14.83 9 4.61-4' data-name='Ligne 9' style='fill:none;stroke:%23000;stroke-linecap:round;stroke-width:2px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    #81b19a;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  .smartweb_herobanner .bannerSwiper {
+    height: auto;
+  }
+}
+
+.r-add-contact,
+.r-add-news,
+.r-add-event {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: $green;
+  font-weight: 500;
+}
