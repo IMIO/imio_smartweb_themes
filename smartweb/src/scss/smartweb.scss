@@ -145,6 +145,57 @@ body {
   top: -100vh !important;
 }
 
+.r-add-contact,
+.r-add-news,
+.r-add-event {
+  overflow: hidden;
+  border-radius: 15px;
+  border: solid 1px #000;
+  background: #000;
+  border-bottom-left-radius: 0;
+  padding: 10px;
+  fill: #fff;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 1.1rem;
+    width: max-content;
+  }
+
+  a {
+    z-index: 1;
+    color: #fff;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 0.4s ease;
+    z-index: 0;
+    mix-blend-mode: difference;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #000;
+
+    a {
+      color: #000;
+    }
+
+    &::after {
+      width: 103%;
+    }
+  }
+}
+
 //// Notes
 
 // j'ai ajouté une div mask-menu dans le index.html du theme: bon ou pas ?
