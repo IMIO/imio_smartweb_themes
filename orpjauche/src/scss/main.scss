@@ -63,7 +63,7 @@ $enable-roboto-webfont: false;
 // sub-nav
 
 .subsite-container {
-  background: #f1f1f1;
+  background: #cfdcd7;
   border-radius: 10px;
 
   #subsite-logo {
@@ -363,7 +363,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 .r-add-event,
 .r-add-news {
   padding: 1rem;
-  background: #f1f1f1;
+  background: #cfdcd7;
   border-radius: 20px 0;
 
   a {
@@ -432,6 +432,6 @@ body .r-content > button {
   padding-top: 150%;
 }
 
-.r-item-arrow-more {
-  background: $primary !important;
+.r-item-arrow-more:hover {
+  background-color: $primary !important;
 }
