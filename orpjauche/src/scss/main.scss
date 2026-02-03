@@ -276,6 +276,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   @media screen and (max-width: 992px) {
     background: none;
     padding: 0;
+    transition: 0.3s;
   }
 
   a {
