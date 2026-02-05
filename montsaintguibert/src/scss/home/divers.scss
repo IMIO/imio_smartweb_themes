@@ -483,3 +483,7 @@ body.template-block_view #content-core::after {
     margin: 1rem 0;
   }
 }
+
+input#search_button {
+  background: $primary;
+}
