@@ -158,4 +158,8 @@
   background-position: top center;
   z-index: -1;
   pointer-events: none;
+  display: block;
+  mask-image: linear-gradient(to right, black 0%, black 65%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }
