@@ -475,6 +475,10 @@ body.template-block_view #content-core::after {
   margin: 40px 0;
   padding: 30px 20px 10px;
 
+  .table_title span {
+    color: #000;
+  }
+
   ul li {
     margin: 1rem 0;
   }
