@@ -728,12 +728,8 @@ footer #container-section-noussuivre {
   }
 }
 
-.portaltype-imio-smartweb-page
-  #main-container
-  .sectionfiles
-  .section-container
-  .table_display
-  .table_image {
+// .portaltype-imio-smartweb-page
+#main-container .sectionfiles .section-container .table_display .table_image {
   background-color: $primary-orange;
   border: 0;
   border-radius: 20px;
@@ -899,21 +895,21 @@ h3 {
   height: auto !important;
 }
 
-.portaltype-imio-smartweb-page
-  #main-container
+// .portaltype-imio-smartweb-page
+#main-container
   .sectionfiles
   .section-container
   .table_display
   .table_image
   a,
-.portaltype-imio-smartweb-page
+// .portaltype-imio-smartweb-page
   #main-container
   .sectionfiles
   .section-container
   .table_display
   .table_image
   div,
-.portaltype-imio-smartweb-page
+// .portaltype-imio-smartweb-page
   #main-container
   .sectionfiles
   .section-container
@@ -923,12 +919,8 @@ h3 {
   color: $primary-blue !important;
 }
 
-.portaltype-imio-smartweb-page
-  #main-container
-  .sectionfiles
-  .section-container
-  .table_display
-  .table_image {
+// .portaltype-imio-smartweb-page
+#main-container .sectionfiles .section-container .table_display .table_image {
   background-color: #fff;
   border: 1px solid $primary-blue;
   color: $primary-blue;
@@ -947,7 +939,8 @@ h3 {
   margin: 1.25rem 0 0;
 }
 
-.portaltype-imio-smartweb-page #main-container .sectionfiles .section-title {
+// .portaltype-imio-smartweb-page
+#main-container .sectionfiles .section-title {
   padding: 10px 0 !important;
 }
 
