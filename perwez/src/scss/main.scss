@@ -748,7 +748,7 @@ footer #container-section-noussuivre {
 }
 
 .sectionfiles::after {
-  background-color: $primary-orange;
+  background-color: transparent;
   border-radius: 20px;
   bottom: 0;
   content: "";
@@ -968,6 +968,6 @@ h3 {
 }
 
 .sectionfiles::after {
-  background-color: $primary-orange;
+  background-color: transparent;
   border-radius: 20px;
 }
