@@ -38,7 +38,7 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
 );
-$global-radius: 0 !default;
+$global-radius: 20px 20px 20px 0 !default;
 $enable-title-uppercase: false !default;
 $home-section-title-size: 2.2rem;
 $home-section-title-margin: 0 0 2rem 0 !default;
@@ -341,8 +341,8 @@ $newsletter-text-color: #fff !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
-$mark-color: #5c5c5c !default;
+$mark-background-color: $primary !default;
+$mark-color: #fff !default;
 $mark-padding-sec: 20px 45px 20px 26px !default;
 $mark-border: solid 2px $primary !default;
 $mark-radius: $global-radius !default;

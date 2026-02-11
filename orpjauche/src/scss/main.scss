@@ -151,19 +151,19 @@ $enable-roboto-webfont: false;
   .table_display
   .table_image {
   border-radius: 10px 10px 10px 0;
-  background: #fff;
-  color: $primary;
+  background: $primary;
+  color: #fff;
   transition: all 0.25s ease;
   border: 1px solid $primary;
 
   &:hover {
-    background: $primary;
+    background: #fff;
     transition: all 0.25s ease;
-    color: #fff;
+    color: $primary;
     // border: 1px solid $primary;
     div,
     span {
-      color: #fff;
+      color: $primary;
     }
   }
 }
@@ -435,4 +435,39 @@ body .r-content > button {
 
 .r-news-list-item-link:hover .r-item-arrow-more {
   background-color: $primary !important;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 300px;
+  padding-top: 50%;
+  display: block;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 2rem;
+
+  &::after {
+    background: $primary;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 60px;
+    margin: -6px 0 0 -30px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 20px;
+  }
 }
