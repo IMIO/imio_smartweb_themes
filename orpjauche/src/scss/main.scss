@@ -175,6 +175,10 @@ $enable-roboto-webfont: false;
 
 .sectiontext mark {
   margin: 10px 0;
+
+  a {
+    color: #fff !important;
+  }
 }
 
 .section-home-page #messagesviewlet {

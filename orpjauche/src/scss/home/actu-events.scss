@@ -2,6 +2,23 @@
   .section-title {
     font-weight: 500;
     text-transform: uppercase;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+
+    &::after {
+      background: $primary;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
   }
 
   position: relative;
@@ -49,6 +66,23 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #000;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+
+    &::after {
+      background: $primary;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
   }
 
   .swiper_category {
