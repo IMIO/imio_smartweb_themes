@@ -152,18 +152,23 @@ $enable-roboto-webfont: false;
   .table_image {
   border-radius: 10px 10px 10px 0;
   background: $primary;
-  color: #fff;
+  color: #fff !important;
   transition: all 0.25s ease;
   border: 1px solid $primary;
+
+  div,
+  span {
+    color: #fff !important;
+  }
 
   &:hover {
     background: #fff;
     transition: all 0.25s ease;
-    color: $primary;
+    color: $primary !important;
     // border: 1px solid $primary;
     div,
     span {
-      color: $primary;
+      color: $primary !important;
     }
   }
 }
