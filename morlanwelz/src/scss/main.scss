@@ -400,3 +400,12 @@ footer #container-section-noussuivre {
 .sectiontext .section-text .body-section.figure-top .text h2:first-child {
   margin-top: 0 !important;
 }
+
+body.section-home-page #messagesviewlet .portalMessage {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  max-height: calc(1.4em * 4);
+}
