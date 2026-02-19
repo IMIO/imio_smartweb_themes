@@ -1,5 +1,19 @@
 
 
+## [0.3.8](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.7...v0.3.8) (2026-02-19)
+
+
+### Bug Fixes
+
+* add unstashed files for sommeleuze ([4cb5190](https://github.com/IMIO/imio_smartweb_themes/commit/4cb51903eb404baeb67a8b609b043337ea4cf033))
+
+
+### Features
+
+* base theme for assesse ([b625815](https://github.com/IMIO/imio_smartweb_themes/commit/b62581507b2d1a118e1bfc8576e980c8688e25e8))
+* base theme for chaumontgistoux ([cb5348e](https://github.com/IMIO/imio_smartweb_themes/commit/cb5348e3b52edb4278d290e110b1bb0f8652922a))
+* base theme for clavier ([c0d4551](https://github.com/IMIO/imio_smartweb_themes/commit/c0d4551b51a455f2c401fd6e34ed6c3e8969c942))
+
 ## [0.3.7](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.6...v0.3.7) (2025-12-16)
 
 
