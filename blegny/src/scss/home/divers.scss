@@ -9,12 +9,30 @@
 .sortable-section.sectionevents h2.section-title::after,
 .sortable-section.sectionnews h2.section-title::after {
   background: $secondary;
-  inset: 69px 0 0;
   content: "";
   margin: 0 auto;
-  position: absolute;
   padding-bottom: 5px;
+  position: absolute;
   width: 12%;
+  max-height: 10px;
+  bottom: 0 !important;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-md .navbar-toggler {
+    display: block !important;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portaltype-imio-smartweb-portalpage #content-core .row {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
 }
 
 .sortable-section.sectionevents h2.section-title,

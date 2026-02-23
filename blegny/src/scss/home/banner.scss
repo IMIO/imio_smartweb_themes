@@ -11,3 +11,15 @@
 //     transform: translateY(-50%);
 
 //   }
+
+@media (max-width: 767px) {
+  .smartweb_herobanner .bannerSwiper {
+    height: 180px;
+
+    .swiper-banner-image {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  }
+}
