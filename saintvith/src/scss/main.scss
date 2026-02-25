@@ -20,20 +20,6 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 
-.site-oshz,
-.site-cpas {
-  .account {
-    display: none;
-  }
-
-  #portal-languageselector {
-    .language-nl,
-    .language-en {
-      display: none;
-    }
-  }
-}
-
 .see_all a::after {
   display: none;
 }
