@@ -1,3 +1,10 @@
+## [0.3.9](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.8...v0.3.9) (2026-02-25)
+
+* Fix release changeslog (42cacdbc)
+* SUP-49316: replace px to rem in all theme (9c934435)
+* SUP-49316: replace px to rem base variables (18fc8dd8)
+* sprint fix (c245a4b7)
+
 ## [0.3.8](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.7...v0.3.8) (2026-02-19)
 
 ### Bug Fixes
