@@ -53,7 +53,7 @@ body {
 }
 
 #portal-header #portal-header-top #header-links #search-link a:hover {
-  background: #f2f2f5;
+  background: $primary-red;
 }
 
 .header-custom #banner::after {
@@ -707,4 +707,8 @@ span.swiper-banner-link a {
 
 #portal-column-content .section-contact .contact-type-mission::after {
   border: 1px solid #fff;
+}
+
+.contact_leadimage {
+  background-repeat: no-repeat;
 }
