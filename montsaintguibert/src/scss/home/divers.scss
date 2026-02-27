@@ -495,4 +495,12 @@ input#search_button {
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
   background-color: $primary;
+
+  div p {
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
 }
