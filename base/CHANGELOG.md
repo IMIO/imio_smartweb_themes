@@ -1,3 +1,8 @@
+## [0.3.10](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.9...v0.3.10) (2026-03-02)
+
+* Delete useless css for page description (ea4c56bd)
+* Update all preprod with base 0.3.9 (61bc30ef)
+
 ## [0.3.9](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.8...v0.3.9) (2026-02-25)
 
 * Fix release changeslog (42cacdbc)
