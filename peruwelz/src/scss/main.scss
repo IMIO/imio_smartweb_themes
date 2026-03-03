@@ -108,3 +108,17 @@ footer #container-section-noussuivre {
     font-size: 34px !important;
   }
 }
+
+.sectionfiles a {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(#fff, #fff);
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.sectionfiles a:hover {
+  background-size: 100% 2px;
+}
