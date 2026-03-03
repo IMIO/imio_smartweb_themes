@@ -1,6 +1,7 @@
 //*// COLORS
 
-$primary: #287fa4;
+$primary-old: #287fa4;
+$primary: #257598;
 $primary-svg: #005c42;
 $dark: #3f3f3f;
 
@@ -87,7 +88,7 @@ $toggler-color: #fff;
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{url-encoded-color($toggler-color)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
 
 //bredcrumb
-$breadcrumb-bg: #d6d6d6 !default;
+$breadcrumb-bg: #f2f2f2;
 $enable-full-width-breacrumb: false !default;
 
 // sitenav
@@ -339,7 +340,7 @@ $newsletter-text-color: #fff !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
+$mark-background-color: #f2f2f2 !default;
 $mark-color: #5c5c5c !default;
 $mark-padding: 20px 45px 20px 26px !default;
 $mark-border: solid 2px $primary !default;
@@ -369,10 +370,10 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: #f3f3f3 !default;
+$section-contact-background: #f2f2f2 !default;
 
 // section-files
-$section-file-background-color: $primary-svg;
+$section-file-background-color: $primary;
 $enable-full-width-section-files: false;
 $enable-light-color-section-files: false;
 
