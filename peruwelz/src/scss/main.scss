@@ -112,13 +112,17 @@ footer #container-section-noussuivre {
 .sectionfiles a {
   color: #fff;
   text-decoration: none;
-  background-image: linear-gradient(#fff, #fff);
-  background-size: 0% 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 15% 2px; /* visible par défaut */
   background-position: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 0.3s ease;
+  transition: background-size 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .sectionfiles a:hover {
-  background-size: 100% 2px;
+  background-size: 40% 2px; /* largeur max au hover */
 }
