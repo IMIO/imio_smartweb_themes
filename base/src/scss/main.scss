@@ -91,6 +91,10 @@ $roboto-base-path: "@theme/assets/fonts/";
 @import "./homepage/album";
 @import "./homepage/newsletter";
 
+.r-search-item-category {
+  display: none !important;
+}
+
 #faceted-map-container {
   z-index: 0;
 }
