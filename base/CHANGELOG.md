@@ -1,3 +1,9 @@
+## [0.3.11](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.10...v0.3.11) (2026-03-10)
+
+* Temporary disable cat for search (2bc15660)
+* base theme css for search improvement (b4536297)
+* Fix se-file bg-color and title color (cca8ac61)
+
 ## [0.3.10](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.9...v0.3.10) (2026-03-02)
 
 * Delete useless css for page description (ea4c56bd)
