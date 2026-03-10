@@ -52,6 +52,8 @@ module.exports = (env, argv) => {
                       "**/*.zip",
                       "**/src",
                       "**/node_modules",
+                      "**/CHANGELOG.md",
+                      "**/update-changelog.js",
                     ],
                   },
                 },

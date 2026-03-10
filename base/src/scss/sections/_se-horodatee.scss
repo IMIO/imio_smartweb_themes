@@ -1,8 +1,16 @@
 $row-gap-tamp: 10px;
 
 .sectiontimestampedpublications {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+
   .row {
     gap: $row-gap-tamp;
+    margin-bottom: 0;
 
     @for $i from 1 through 12 {
       .col-md-#{$i} {
@@ -33,6 +41,31 @@ $row-gap-tamp: 10px;
         font-size: 1.125rem;
         padding-bottom: 20px;
       }
+    }
+  }
+
+  .table_display {
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 10px;
+    list-style: none;
+
+    &::marker {
+      display: none !important;
+    }
+
+    .table_image {
+      text-decoration: none;
+    }
+
+    .table_date {
+      font-size: 0.75rem;
+    }
+
+    .table_title {
+      font-weight: 700;
+      font-size: 1.125rem;
+      padding-bottom: 20px;
     }
   }
 }

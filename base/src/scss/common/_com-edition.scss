@@ -44,3 +44,96 @@ figcaption {
   margin: 1rem auto;
   padding: 0.2rem;
 }
+
+/* Reset propre */
+.folder-factories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(216px, 2fr));
+  gap: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Chaque item */
+.folder-factories li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* On cache le radio natif */
+.folder-factories input[type="radio"] {
+  position: absolute;
+  opacity: 0%;
+}
+
+/* Hover */
+.folder-factories li:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 6%);
+  transform: translateY(-2px);
+}
+
+/* Icône */
+.folder-factories label img {
+  display: none;
+}
+
+/* Titre */
+.folder-factories label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.folder-factories label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Description */
+.folder-factories .discreet {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Etat sélectionné */
+.folder-factories input[type="radio"]:checked + li {
+  border: 2px solid #2563eb;
+  background: #f0f7ff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 15%);
+}
+
+/* Petit indicateur sélection */
+.folder-factories input[type="radio"]:checked + label::after {
+  content: "✓";
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
