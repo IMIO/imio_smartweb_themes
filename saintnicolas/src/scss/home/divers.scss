@@ -37,3 +37,15 @@ h2.card-title {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.sectionfiles h2,
+.sectionfiles a,
+.sectionfiles div {
+  color: #fff;
+}
+
+.sectionfiles .table_image:hover,
+.sectionfiles .table_image:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
