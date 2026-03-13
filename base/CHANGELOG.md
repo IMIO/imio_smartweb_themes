@@ -1,3 +1,7 @@
+## [0.3.12](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.11...v0.3.12) (2026-03-13)
+
+* Fix react add button width (47313338)
+
 ## [0.3.11](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.10...v0.3.11) (2026-03-10)
 
 * Temporary disable cat for search (2bc15660)
