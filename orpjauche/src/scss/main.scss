@@ -286,7 +286,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   transition: 0.3s;
 
   &:hover {
-    background: #2e4f45;
+    background: #2e4f45 !important;
     transition: 0.3s;
   }
 
