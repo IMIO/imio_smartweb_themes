@@ -339,10 +339,6 @@ footer {
   margin-top: 0 !important;
 }
 
-.sectiontext ol > li::before {
-  content: counter(sectioncounter) "." !important;
-}
-
 .container .row #portal-column-content {
   padding-top: 20px !important;
 }

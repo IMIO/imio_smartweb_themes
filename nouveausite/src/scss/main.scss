@@ -869,10 +869,6 @@ footer #container-section-noussuivre {
   background-position: top;
 }
 
-.sectiontext ol > li::before {
-  content: counter(sectioncounter) "." !important;
-}
-
 #portal-footer-wrapper #portal-footer #smartweb-footer a,
 #portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
   color: #fff;
