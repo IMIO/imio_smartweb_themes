@@ -273,6 +273,10 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   margin: 0 2.5rem !important;
 }
 
+.navbar-nav {
+  justify-content: center;
+}
+
 #portal-header #portal-header-top #header-links #search-link {
   padding-left: 120px;
   background: #3f6c5d;
