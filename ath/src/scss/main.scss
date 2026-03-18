@@ -748,30 +748,50 @@ body.template-block_view_with_images .block-menu-element a .card-body {
 #localmessagesviewlet .portalMessage.info {
   background-color: $primary-light;
   color: #000;
+
+  a {
+    color: #000;
+  }
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary-reddark;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
   background-color: $primary-reddark;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   background: $primary-light;
   color: #000;
+
+  a {
+    color: #000;
+  }
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
   background: $primary-reddark;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 // logo minisite
