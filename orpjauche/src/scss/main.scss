@@ -101,7 +101,7 @@ $enable-roboto-webfont: false;
 
 .breadcrumb-item {
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
