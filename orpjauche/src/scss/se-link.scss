@@ -82,32 +82,3 @@
     }
   }
 }
-
-.portaltype-imio-smartweb-page
-  #main-container
-  .sectionfiles
-  .section-container
-  .table_display
-  .table_image {
-  border-radius: 10px 10px 10px 0 !important;
-  border: 1px solid $primary;
-  background: #fff;
-  transition: all 0.25s ease;
-  color: $primary !important;
-  // border: 1px solid $primary;
-  div,
-  span {
-    color: $primary !important;
-  }
-
-  &:hover {
-    background: $primary;
-    color: #fff !important;
-    transition: all 0.25s ease;
-    // border: 1px solid $primary;
-    div,
-    span {
-      color: #fff !important;
-    }
-  }
-}
