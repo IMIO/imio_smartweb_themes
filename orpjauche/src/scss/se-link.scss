@@ -89,7 +89,7 @@
   .section-container
   .table_display
   .table_image {
-  border-radius: 10px 10px 10px 0;
+  border-radius: 10px 10px 10px 0 !important;
   border: 1px solid $primary;
   background: #fff;
   transition: all 0.25s ease;
