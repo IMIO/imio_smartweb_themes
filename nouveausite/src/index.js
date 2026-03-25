@@ -31,13 +31,16 @@ $(document).ready(function () {
     opacity: 0,
   });
 
-  ScrollReveal().reveal("#main-container .sectiontext .text", {
-    delay: 100,
-    duration: 1000,
-    distance: "20%",
-    origin: "bottom",
-    interval: 100,
-  });
+  ScrollReveal().reveal(
+    "#main-container .sectiontext .body-section:not(.collapse) .text",
+    {
+      delay: 100,
+      duration: 1000,
+      distance: "20%",
+      origin: "bottom",
+      interval: 100,
+    },
+  );
 
   ScrollReveal().reveal(".custom-imio-map-use", {
     delay: 100,
