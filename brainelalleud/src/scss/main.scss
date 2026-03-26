@@ -2,3 +2,10 @@ $enable-roboto-webfont: false;
 
 @import "./variables";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "./nav";
+@import "./homepage";
+@import "./animation";
+@import "./home/a-la-une";
+@import "./home/actu";
+@import "./home/event";
+@import "./home/un-clic";

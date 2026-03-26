@@ -1,0 +1,92 @@
+#portal-globalnav-collapse > ul > li > a,
+#subsite-navigation > ul > li > a {
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#header-links {
+  #header-actions {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    .account {
+      text-decoration: none;
+      height: 46px;
+      border: 1px solid #c1c1c1;
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      padding: 0 1rem;
+      font-weight: 500;
+      position: relative;
+      overflow: hidden;
+      width: max-content;
+      color: #000 !important;
+      transition: color 0.2s ease;
+
+      &::after {
+        content: "";
+        background: $primary;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        z-index: -1;
+        left: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::after {
+          width: 106%;
+        }
+
+        span {
+          color: #fff !important;
+        }
+      }
+
+      span {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #000 !important;
+
+        @include media-breakpoint-down(xl) {
+          font-size: 14px;
+        }
+
+        &::before {
+          content: url("../../assets/svg/mascotte.svg");
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+#portal-globalnav > li.has_subtree > a::before {
+  width: 0;
+  opacity: 1000%;
+  background-color: $yellow;
+}
+
+#portal-globalnav-collapse > ul > li > a:focus::before,
+#portal-globalnav-collapse > ul > li > a:hover::before,
+#subsite-navigation > ul > li > a:focus::before,
+#subsite-navigation > ul > li > a:hover::before {
+  width: 100%;
+}
+
+#portal-globalnav li.show-nav > .has_subtree.dropdown {
+  z-index: 1;
+  opacity: 100%;
+  visibility: visible;
+  border-radius: 10px;
+}
