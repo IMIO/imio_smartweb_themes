@@ -986,10 +986,6 @@ footer #container-section-noussuivre {
   text-decoration: underline;
 }
 
-.sectiontext ol li::before {
-  content: counters(item, ".") " " !important;
-}
-
 .subsection-nos-organes-de-gestion
   .container.section-container.section-text
   .h3,
