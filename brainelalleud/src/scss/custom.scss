@@ -1,0 +1,1315 @@
+.r-add-event {
+  top: 25px;
+}
+
+.r-search-item-category {
+  display: none !important;
+}
+
+.r-add-contact a,
+.r-add-event a,
+.r-add-news a {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding: 0;
+}
+
+.r-add-contact,
+.r-add-event,
+.r-add-news {
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  right: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .r-add-contact,
+  .r-add-event,
+  .r-add-news {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.r-add-contact a:focus,
+.r-add-contact a:hover,
+.r-add-event a:focus,
+.r-add-event a:hover,
+.r-add-news a:focus,
+.r-add-news a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#smartweb-footer .section-contact table.table_schedule {
+  color: #fff !important;
+}
+
+.show-on-focus {
+  display: inline-block;
+  position: absolute !important;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow:
+    0 0 2.9px rgba(0, 0, 0, 2.8%),
+    0 0 8.1px rgba(0, 0, 0, 4%),
+    0 0 19.6px rgba(0, 0, 0, 5.2%),
+    0 0 65px rgba(0, 0, 0, 8%);
+  font-weight: 500;
+}
+
+.show-on-focus:not(:focus) {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.show-on-focus:focus {
+  background-color: #fff;
+  padding: 1rem;
+  z-index: 999;
+}
+
+.show-on-focus:hover {
+  text-decoration: underline;
+}
+
+.faceted-block-view-with-images .block-menu-element a .card-body {
+  padding: 11px;
+}
+
+#smartweb-minisite-footer {
+  background: rgba(0, 0, 0, 90%);
+  padding-bottom: 3rem;
+}
+
+.is-in-minisite footer {
+  margin-top: 3rem;
+}
+
+#smartweb-minisite-footer h2 {
+  color: #fff !important;
+}
+
+#smartweb-minisite-footer h3 {
+  color: #fff !important;
+}
+
+#smartweb-minisite-footer a {
+  color: #fff !important;
+}
+
+#smartweb-minisite-footer span {
+  color: #fff !important;
+}
+
+#smartweb-minisite-footer p {
+  color: #fff !important;
+}
+
+#faceted-map-container {
+  z-index: 0;
+}
+
+.leaflet-top.leaflet-left {
+  z-index: inherit !important;
+}
+
+.sectiontext ul li span {
+  font-size: 1.125rem !important;
+}
+
+.portaltype-collection .button-map-content {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  body.faceted-map #main-container #content #center-content-area {
+    display: grid;
+  }
+
+  body.faceted-map
+    #main-container
+    #content
+    #center-content-area
+    #faceted-results {
+    margin-right: 1rem;
+  }
+
+  body.faceted-map
+    #main-container
+    #content
+    #center-content-area
+    #faceted-results {
+    height: 50rem;
+    overflow-y: scroll;
+  }
+
+  div#faceted-map-container {
+    height: 50rem !important;
+  }
+}
+
+body.faceted-map #main-container #content #center-content-area {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+body.faceted-map
+  #main-container
+  #content
+  #center-content-area
+  #faceted-results {
+  display: block !important;
+  grid-column: 1;
+  opacity: 100% !important;
+}
+
+.faceted-map-text.faceted-map-item {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
+  margin: 1rem;
+  padding: 1rem 1rem 1rem 1.75rem;
+}
+
+.geo-item-description {
+  color: #444;
+}
+
+.contact_leadimage.portrait {
+  padding-top: 120%;
+  background-position: top;
+}
+
+.portaltype-imio-smartweb-page
+  #portal-column-content
+  .sortable-section:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.contact_description {
+  margin-top: 0.5rem;
+}
+
+.contact_description strong {
+  font-weight: 500;
+}
+
+#portal-footer-wrapper .colophon {
+  padding: 0;
+}
+
+.colophonWrapper li:last-child {
+  width: 100%;
+}
+
+#portal-footer-wrapper .sectiontext .section-text .body-section figure img {
+  border-radius: 0;
+}
+
+.see_all {
+  float: right;
+}
+
+.section-home-page-bla .kiosque .see_all a {
+  border: none;
+  background: none;
+  border-radius: 0;
+}
+
+.see_all a {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: solid 1px #000;
+  background: #000;
+  border-bottom-left-radius: 0;
+}
+
+.contactText .phones,
+.r-item-contact .phones,
+.contactText .mails,
+.r-item-contact .mails {
+  display: flex;
+  flex-direction: column;
+}
+
+.r-result .topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.25rem;
+  margin-top: 0.15rem;
+}
+
+.r-result .topics span {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.r-content-date > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: #606060;
+}
+
+.r-card-date-last::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
+
+.r-content mark {
+  padding: 0;
+  background-color: white;
+}
+
+.mce-content-body ol li::before {
+  display: none;
+}
+
+.mce-content-body ol li {
+  list-style: inherit;
+  display: list-item;
+  counter-increment: unset;
+}
+
+.sectiontext ol {
+  counter-reset: section;
+}
+
+.sectiontext ol > li {
+  counter-increment: section;
+}
+
+.sectiontext ol > li::before {
+  content: counter(section) ".";
+  font-weight: normal;
+  left: -0.5rem;
+  width: 1rem;
+  text-align: right;
+  top: 0;
+}
+
+.sectiontext ol > li > ol li {
+  counter-reset: subsection;
+}
+
+.sectiontext ol > li > ol > li::before {
+  content: counter(section, decimal) "." counter(subsection, decimal) ".";
+  counter-increment: subsection;
+  font-weight: normal;
+  left: -1rem;
+  width: 1.5rem;
+  text-align: right;
+  top: 0;
+}
+
+.userrole-authenticated #content-core .pat-structure .navbar.ui-offset-parent {
+  z-index: 1 !important;
+}
+
+.section-monbla-image1 {
+  border-radius: 21px 21px 21px 0;
+}
+
+.portaltype-collection h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#subsite-navigation > ul > li.show-nav > .has_subtree.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+#subsite-navigation li.has_subtree .has_subtree ul {
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .template-manage-viewlets .managedViewlets .viewletmanager #portal-header {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #portal-globalnav-wrapper {
+    padding: 0 !important;
+  }
+}
+
+.portaltype-link.userrole-authenticated img.figure-img {
+  max-width: 10rem;
+}
+
+#portal-logo .cls-1 {
+  stroke: none;
+  fill: #0090d2;
+}
+
+/* select 2 */
+.faceted-multiselect-widget .select2-container .select2-choice {
+  border-radius: 0;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-color: #ccc;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+  background-position: 0 0.4rem !important;
+}
+
+.faceted-multiselect-widget .select2-container .select2-choice abbr {
+  top: 0.8rem;
+}
+
+/* page d'accueil */
+#body-section-annuaire ul li::before {
+  left: -2px;
+}
+
+/* map */
+span.r-map-popup-title {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.leaflet-popup-content p {
+  margin: 0 !important;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.sectionfiles li:first-child {
+  margin-top: 1.25rem;
+}
+
+div#top-area.faceted-area .widget-fieldset legend {
+  display: none;
+}
+
+.kssattr-fieldset-icons .plone-icon {
+  height: auto;
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.kssattr-fieldset-icons span.option {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.kssattr-fieldset-icons span.option:hover {
+  background: #f9f9f9;
+}
+
+.kssattr-fieldset-icons .form-check-input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  border-radius: 0 !important;
+  margin: 0;
+  height: 100%;
+  background: transparent;
+  background-image: none !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.kssattr-fieldset-icons .form-check-input:hover {
+  border: 1px solid #333;
+}
+
+.kssattr-fieldset-icons .form-check-input:checked:hover {
+  border: 1px solid #008fd2;
+}
+
+/* select 2 */
+
+/*
+div#top-area.faceted-area {
+    z-index: 1;
+    position: relative;
+}
+.faceted-select2-widget .select2-container {
+    width: 100%;
+}
+.faceted-select2-widget label.select-field {
+    height: 2.5rem;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+    color: gray;
+}
+.faceted-select2-widget button.btn {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.faceted-select2-widget .input-prepend {
+    position: absolute;
+    top: 0;
+    width:100%;
+}
+.faceted-select2-widget .select2-container-multi .select2-choices{
+    background: transparent;
+    min-height: 2.5rem !important;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+.faceted-select2-widget .select2-container-multi.init-select2-done .select2-choices li,
+.faceted-select2-widget .select2-container-multi.select2-container-active .select2-choices li{
+    background:white;
+    border: 0px solid transparent;
+    min-height: 2rem;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    max-width:85%;
+}
+.faceted-select2-widget .select2-container-multi li.select2-search-field:first-child {
+    background: transparent;
+}
+.faceted-select2-widget .select2-container-multi.select2-dropdown-open li.select2-search-field:first-child {
+    background: white;
+}
+#content-core .faceted-select2-widget .select2-search-choice-close {
+    top: auto;
+}
+*/
+
+@media screen and (min-width: 576px) {
+  .sectioncontact.col-sm-3 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .sectioncontact.col-sm-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
+  }
+}
+
+.block-menu-element .newsImage.no-image {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* nouveautés */
+.userrole-anonymous.portaltype-imio-smartweb-procedure .category,
+.userrole-anonymous.portaltype-imio-smartweb-page .category {
+  display: none;
+}
+
+#portal-header #portal-logo.minisite_logo {
+  padding: 0.5rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1.5rem;
+}
+
+.block-menu-element .card-body .card-text {
+  max-height: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.block-menu-element .card-body .card-text::after {
+  content: "";
+  background: linear-gradient(275deg, white, transparent);
+  top: 1.5rem;
+  position: absolute;
+  height: 1.5rem;
+  right: 0;
+  width: 50%;
+}
+
+.faceted-block-view-with-images .block-menu-element a .card-body {
+  border-radius: 0 0 15px;
+}
+
+.userrole-anonymous .pat-sortable .sortable-section {
+  border: 0 solid transparent !important;
+}
+
+.faceted-form {
+  padding: 0;
+}
+
+.sortable-section.sectionvideo {
+  padding-bottom: 1.5rem;
+}
+
+.sortable-section.sectionvideo #container-section-video {
+  padding: 0;
+}
+
+#portal-footer-wrapper {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+#content header .lead.rich_description {
+  max-width: 1024px;
+}
+
+.procedure a {
+  background: #ffbb1c;
+  padding: 0.75rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+div#viewlet-below-content-body .procedure {
+  margin-bottom: 1rem;
+}
+
+#portal-footer-wrapper li.facebook,
+#portal-footer-wrapper li.twitter {
+  width: 2.5rem;
+  display: inline-block;
+}
+
+#portal-footer-wrapper .twitter a {
+  display: block;
+  width: 29px;
+  height: 29px;
+  font-size: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 50 50" enable-background="new 0 0 34.56 34.35" xml:space="preserve"><path d="M44.8812 14.2068C44.9116 14.6517 44.9116 15.0965 44.9116 15.5454C44.9116 29.2242 34.5927 45 15.7242 45V44.9918C10.1503 45 4.69226 43.3888 0 40.3509C0.810481 40.4493 1.62503 40.4985 2.4416 40.5005C7.06074 40.5046 11.5478 38.9406 15.1818 36.0605C10.7922 35.9765 6.94292 33.0882 5.59821 28.8716C7.13589 29.1709 8.72029 29.1094 10.2295 28.6933C5.44384 27.7175 2.00081 23.4743 2.00081 18.5464C2.00081 18.5013 2.00081 18.4583 2.00081 18.4152C3.42677 19.2167 5.02336 19.6615 6.65651 19.7107C2.1491 16.6708 0.759699 10.6196 3.48162 5.88847C8.68982 12.3558 16.3742 16.2875 24.6232 16.7036C23.7965 13.1081 24.9259 9.34045 27.5909 6.81296C31.7225 2.89361 38.2206 3.0945 42.1044 7.26188C44.4018 6.80476 46.6037 5.95406 48.6187 4.74874C47.8529 7.14504 46.2503 9.18056 44.1093 10.474C46.1426 10.2321 48.1292 9.68278 50 8.84438C48.6228 10.9271 46.8881 12.7412 44.8812 14.2068Z" fill="white"></path><title></title></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+
+#portal-footer-wrapper .twitter a:hover {
+  opacity: 70%;
+}
+
+.sectionsendinblue input#form-widgets-email {
+  max-width: 24rem;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.sectioncollection.kiosque .swiper-wrapper {
+  padding-top: 1rem;
+}
+
+.sectioncollection.kiosque a .swiper-image {
+  transition: all 0.25s ease;
+}
+
+.sectioncollection.kiosque a:hover .swiper-image {
+  transform: rotate(-1deg) translateY(-10px);
+}
+
+@media screen and (max-width: 443px) {
+  .r-result-filter .r-filter {
+    max-width: 100%;
+  }
+
+  .portaltype-imio-smartweb-portalpage
+    #content-core
+    .reseaux-sociaux
+    .section-container
+    .body-section
+    ul {
+    justify-content: space-between;
+  }
+
+  .reseaux-sociaux .section-container .body-section ul li {
+    padding: 0;
+  }
+}
+
+.a-la-une .swiper-slide .swiper_description p {
+  color: #676767;
+  font-size: 1.25rem;
+  max-width: 90%;
+  padding-top: 1rem;
+}
+
+.template-block_view_with_images #content-core,
+.template-block_view #content-core,
+.template-summary_view #content-core,
+.template-summary_view_with_images #content-core {
+  padding-bottom: 3rem;
+}
+
+body.template-block_view_with_images .block-menu-element a .card-body {
+  border-radius: 0 0 15px;
+}
+
+.block-menu-element a .card-body,
+body.template-block_view_with_images .block-menu-element a .card-body {
+  width: auto;
+}
+
+div#faceted-results {
+  padding-bottom: 1.5rem;
+}
+
+.list-menu-element {
+  margin-bottom: 1rem;
+}
+
+.list-menu-element a.row {
+  text-decoration: none;
+}
+
+.newsletterhomepage .body-section {
+  margin-top: 0;
+}
+
+.reseaux-sociaux {
+  padding-top: 1rem;
+}
+
+.reseaux-sociaux .section-container .rich_description {
+  margin: 0 0 1rem;
+}
+
+.faceted-block-view-with-images h2.card-title {
+  font-size: 1rem;
+}
+
+/* vue actus */
+.portaltype-imio-smartweb-eventsview li,
+.portaltype-imio-smartweb-newsview li {
+  list-style-position: inside;
+}
+
+#portal-footer-wrapper #body-section-administration-communale li.website {
+  display: none;
+}
+
+.search-news .r-search-img,
+.search-events .r-search-img {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+/* https://bla.preprod.imio.be/ma-commune/services-communaux/citoyennete/demarches/carte-d-identite-electronique-12-ans#section-prix-et-delai-de-livraison */
+.text table {
+  border: 0;
+}
+
+.text table tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.plone-modal-close {
+  opacity: 70%;
+  text-decoration: none;
+  font-size: 1.75rem;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
+  .category {
+  display: none;
+}
+
+#portal-footer-wrapper {
+  padding: 0 !important;
+}
+
+#portal-footer-wrapper li {
+  margin-bottom: 0.25rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portal-footer-wrapper .contact_address span {
+  display: block;
+}
+
+#portal-footer-wrapper #portal-footer.container {
+  max-width: 100% !important;
+  background: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div#smartweb-footer {
+  background: rgba(0, 0, 0, 90%);
+}
+
+div#smartweb-subsite-footer {
+  background: #007db8;
+}
+
+#smartweb-subsite-footer .section-contact .body-section .h2,
+#smartweb-subsite-footer .section-contact .body-section .h3,
+#smartweb-subsite-footer .section-contact .body-section a,
+#smartweb-subsite-footer .section-contact .body-section h2,
+#smartweb-subsite-footer .section-contact .body-section h3,
+#smartweb-subsite-footer .sectiontext {
+  color: #fff;
+}
+
+/* section fichier */
+.portaltype-imio-smartweb-page #content .sectionfiles ul.row,
+.portaltype-imio-smartweb-procedure #content .sectionfiles ul.row {
+  margin-left: 0;
+}
+
+.portaltype-imio-smartweb-procedure .sectionfiles::after,
+.portaltype-imio-smartweb-page .sectionfiles::after {
+  width: 100%;
+  transform: translateX(0);
+  left: 0;
+}
+
+.portaltype-imio-smartweb-procedure .sectionfiles .table_display,
+.portaltype-imio-smartweb-procedure .sectionfiles li.col-md-12,
+.portaltype-imio-smartweb-page .sectionfiles .table_display,
+.portaltype-imio-smartweb-page .sectionfiles li.col-md-12 {
+  max-width: 760px;
+  margin: 0.5rem auto;
+  padding-left: 0;
+}
+
+.portaltype-imio-smartweb-procedure .sectionfiles .table_image,
+.portaltype-imio-smartweb-page .sectionfiles .table_image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portaltype-imio-smartweb-procedure .sectionlinks .table_title,
+.portaltype-imio-smartweb-page .sectionlinks .table_title,
+.portaltype-imio-smartweb-procedure .sectionfiles .table_title,
+.portaltype-imio-smartweb-page .sectionfiles .table_title {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.portaltype-imio-smartweb-procedure
+  .sectionfiles
+  a.table_image
+  .table_title
+  span::before,
+.portaltype-imio-smartweb-page
+  .sectionfiles
+  a.table_image
+  .table_title
+  span::before {
+  content: "\e80e";
+  font-family: fontello;
+  margin-right: 0.5rem;
+}
+
+.portaltype-imio-smartweb-procedure
+  #content
+  .sectionlinks
+  a.table_image
+  .table_title
+  span::before,
+.portaltype-imio-smartweb-page
+  #content
+  .sectionlinks
+  a.table_image
+  .table_title
+  span::before {
+  content: "\e806";
+  font-family: fontello;
+  margin-right: 0.5rem;
+}
+
+/* section links */
+.portaltype-imio-smartweb-page #content .sectionlinks ul.row,
+.portaltype-imio-smartweb-procedure #content .sectionlinks ul.row {
+  margin-left: 0;
+}
+
+.portaltype-imio-smartweb-page #content .sectionlinks::after,
+.portaltype-imio-smartweb-procedure #content .sectionlinks::after {
+  content: "";
+  background: #f3f3f3;
+  left: 0.75rem;
+  right: 0.75rem;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.portaltype-imio-smartweb-procedure #content .sectionlinks .table_display,
+.portaltype-imio-smartweb-procedure #content .sectionlinks li.col-md-12,
+.portaltype-imio-smartweb-page #content .sectionlinks .table_display,
+.portaltype-imio-smartweb-page #content .sectionlinks li.col-md-12 {
+  max-width: 760px;
+  margin: 0.5rem auto;
+}
+
+.portaltype-imio-smartweb-procedure #content .sectionlinks a.table_image,
+.portaltype-imio-smartweb-page #content .sectionlinks a.table_image {
+  color: #007db8;
+}
+
+.subsection-demarches-infos-pratiques
+  .list-menu-element
+  .newsImage.card-img-left {
+  margin-left: 1rem;
+}
+
+.sortable-section.sectioncontact h2.section-title a[aria-expanded="true"] {
+  position: relative;
+  text-decoration: none;
+}
+
+.sortable-section.sectioncontact
+  h2.section-title
+  a[aria-expanded="true"]::after {
+  content: "";
+  background: #f3f3f3;
+  position: absolute;
+  left: -0.5rem;
+  right: -0.5rem;
+  bottom: 0;
+  top: 0.25rem;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sortable-section.sectioncontact .body-section.show {
+    display: flex !important;
+  }
+
+  .portaltype-imio-smartweb-procedure .sectionlinks,
+  .portaltype-imio-smartweb-page .sectionlinks,
+  .portaltype-imio-smartweb-procedure .sectionfiles,
+  .portaltype-imio-smartweb-page .sectionfiles {
+    background: transparent;
+  }
+
+  .portaltype-imio-smartweb-procedure .sectionlinks::after,
+  .portaltype-imio-smartweb-page .sectionlinks::after,
+  .portaltype-imio-smartweb-procedure .sectionfiles::after,
+  .portaltype-imio-smartweb-page .sectionfiles::after {
+    width: auto;
+    left: 0.75rem;
+    right: 0.75rem;
+  }
+
+  /* supprimer #container-section-bla-en-images > div */
+  #container-section-bla-en-images > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    height: 150px;
+  }
+
+  .sortable-section.sectioncontact .body-section.show {
+    display: flex !important;
+  }
+
+  #portal-column-content .sortable-section.sectioncontact .body-section {
+    flex-wrap: nowrap !important;
+  }
+
+  .gdpr-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gdpr-consent-banner .gdpr-actions > a {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #gdpr-consent-banner .gdpr-actions input[name="refuse"] {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.subsection-demarches-infos-pratiques .list-menu-element .list-card-title.h2,
+.subsection-demarches-infos-pratiques .list-menu-element h2.list-card-title {
+  font-size: 1.25rem;
+}
+
+#content .sortable-section.sectionlinks.reseaux-sociaux::after {
+  background: #008fd2;
+  content: "";
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50vw);
+  z-index: -1;
+}
+
+.sectionlinks.section-link-bla-en-images {
+  background: #fff;
+}
+
+.sectionlinks.albumhome {
+  background: #fff;
+}
+
+.portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50vw);
+  z-index: -1;
+  background: #f8f8f8;
+}
+
+/* newsletter */
+#body-section-newsletter label.form-label,
+.newsletterhomepage .form-text {
+  visibility: hidden;
+  height: 0;
+}
+
+#body-section-newsletter form#form {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+#formfield-form-widgets-email {
+  width: 100%;
+}
+
+#body-section-newsletter form#form .formControls {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.sectiontext .section-text .body-section figure img {
+  max-width: 100%;
+}
+
+.smartweb-footer div#body-section-administration-communale {
+  max-width: 100%;
+}
+
+.smartweb-footer .sectionlinks {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#portal-footer-wrapper .smartweb-footer #body-section-liens-utiles a .image {
+  width: 0 !important;
+}
+
+#portal-footer-wrapper .smartweb-footer .sectionlinks .section-container {
+  gap: 0;
+  padding-bottom: 0 !important;
+}
+
+#portal-footer-wrapper .sectionlinks h2.section-title {
+  color: white;
+}
+
+#portal-footer-wrapper .smartweb-footer .sectiontext.feder {
+  padding-top: 0 !important;
+}
+
+/*@media screen and (max-width: 767.98px){
+    #portal-footer-wrapper .smartweb-footer .container .row .container {
+        padding: 1rem;
+    }
+}*/
+.colophonWrapper {
+  padding: 0.5rem 1rem 0;
+}
+
+.colophonWrapper ul {
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.colophonWrapper li {
+  margin-right: 0;
+}
+
+div#body-section-annuaire svg path {
+  fill: #ffb81c;
+  stroke: #ffb81c;
+}
+
+.template-sitemap ul {
+  padding-left: 2rem;
+}
+
+.contact_subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-portrait .contact_logo {
+  padding-top: 120%;
+  width: 100%;
+  background-position: top;
+}
+
+.section-container.section-text mark {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1215px) {
+  .portaltype-imio-smartweb-portalpage
+    div#container-section-temps-dattente-aux-guichets {
+    margin-top: -12rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div#container-section-temps-dattente-aux-guichets {
+    width: 40%;
+    flex-direction: row !important;
+  }
+}
+
+div#container-section-temps-dattente-aux-guichets {
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  /* z-index: -1; */
+  position: relative;
+  flex-direction: column;
+}
+
+div#container-section-temps-dattente-aux-guichets h2 {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.fragment_esirius {
+  border: 4px solid #c3f000;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.fragment_esirius.closed {
+  border: 4px solid #ffbb1c;
+  font-weight: 500;
+}
+
+.fragment_esirius span.value {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.kiosque .swiper_description {
+  text-align: center;
+}
+
+#content-core .sortable-section .collapse:not(.show) {
+  display: none;
+}
+
+/* la hauter du banner est encore à définir */
+#body-section-formulaires-de-contact .table_image .image,
+#body-section-formulaires-de-contact .table_image .table_title {
+  width: auto !important;
+  display: inline-block !important;
+}
+
+#body-section-formulaires-de-contact .table_image .image .plone-icon {
+  height: 2em;
+}
+
+/* fin nouveautés */
+
+/* retour sur mobile */
+a.prev-nav::before {
+  margin-right: 0.5rem;
+  position: relative;
+  content: "〈";
+  font-size: 0.9rem;
+  margin-left: -0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  #subsite-navigation > ul > li.show-nav > .has_subtree.dropdown {
+    margin-top: 1rem;
+    display: table;
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  #subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {
+    top: 0;
+    width: 100% !important;
+  }
+
+  .subsite-container #subsite-logo {
+    width: 100%;
+  }
+
+  .subsite-container #subsite-logo a {
+    padding-left: 0.6rem;
+    box-sizing: border-box;
+  }
+
+  #subsite-navigation > ul > li:first-child {
+    margin-left: 0.5rem;
+  }
+
+  #subsite-navigation > ul > li {
+    margin-right: 0.75rem;
+  }
+
+  #portal-globalnav-collapse > ul > li > a,
+  #subsite-navigation > ul > li > a {
+    padding: 1rem 0;
+  }
+
+  .portaltype-imio-smartweb-portalpage #content-core .row {
+    justify-content: center;
+  }
+
+  .sectionlinks.sites-de-la-ville .section-container {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+  }
+
+  .sectionnews.actu .section-container .see_all {
+    position: initial;
+    float: right;
+    margin-bottom: 1.5rem;
+  }
+
+  .annuaire-plan .body-section figure {
+    margin-top: 0 !important;
+  }
+
+  .a-la-une .swiper_description {
+    padding: 0 1rem;
+  }
+
+  .pat-sortable .sortable-section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-slide a {
+    text-decoration: none;
+  }
+
+  .sites-de-la-ville .section-title.h2,
+  .sites-de-la-ville h2.section-title {
+    font-size: 2.5rem;
+  }
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: #d51a24;
+}
+
+.r-content-figure-img {
+  position: absolute;
+}
+
+/* Newsletter */
+.sortable-section.sectionlinks.reseaux-sociaux {
+  padding: 4rem 0;
+  margin: 4rem 0;
+  border: 0 !important;
+}
+
+.faceted-summary-view-with-images #block-menu .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.faceted-summary-view-with-images #block-menu .row .newsImage {
+  aspect-ratio: 1;
+  max-width: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faceted-summary-view-with-images #block-menu .row .list-card-body {
+  width: auto;
+  flex: 1;
+}
+
+.contact_leadimage.portrait {
+  padding-top: 120% !important;
+}
+
+.img-portrait .contact_leadimage {
+  background-position: top;
+  padding-top: 120%;
+}

@@ -820,8 +820,7 @@ $border-grey: #d3d3d3;
 }
 
 // Citoy
-.citoyennete-1,
-.citoyennete-2 {
+.citoyennete-1 {
   margin-top: 3rem;
 }
 
@@ -925,18 +924,21 @@ div#body-section-albums-photos a h3 {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 993px) {
   .citoyennete-2 div#body-section-texte-citoyennete {
     width: 106%;
     left: -21%;
     margin-top: 26%;
     height: 25rem;
+    padding: 5rem !important;
     position: absolute;
   }
+}
 
+@media screen and (min-width: 993px) {
   div#body-section-liens-citoyennete {
-    width: 36.4%;
-    margin-left: 2rem;
+    width: 36.4% !important;
+    margin-left: 2rem !important;
   }
 }
 
@@ -986,8 +988,8 @@ div#body-section-albums-photos a h3 {
 .citoyennete-2 div#body-section-texte-citoyennete {
   background: #378ed1;
   overflow: hidden;
-  padding: 5rem;
   color: white;
+  z-index: 1;
 }
 
 .section-liens-citoyennete.sectionlinks {
@@ -1289,4 +1291,69 @@ div#body-section-albums-photos a h3 {
 
 .see_all a::after {
   height: auto !important;
+}
+
+.albumhome {
+  .swiper-slide > a {
+    background: transparent;
+    font-weight: bold;
+    text-align: center;
+
+    .swiper_title {
+      width: 100%;
+      text-align: center;
+
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.kiosque {
+  .section-title {
+    @media screen and (max-width: 1200px) {
+      font-size: calc(1.325rem + 2.5vw) !important;
+    }
+  }
+}
+
+#container-section-les-sites-de-la-ville .nb-items-batch-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portal-logo .cls-1 {
+  stroke: none;
+  fill: #0090d2;
+}
+
+// citoyennete
+
+#content-core .citoyennete-1 {
+  z-index: 0;
+  position: relative;
+}
+
+.citoyennete-1 div#container-section-citoyennete::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 20%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.sortable-section.sectionlinks.section-liens-citoyennete .body-section {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  #content-core .citoyennete-2 {
+    margin-top: 0 !important;
+  }
 }

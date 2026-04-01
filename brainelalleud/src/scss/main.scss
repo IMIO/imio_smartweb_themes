@@ -9,3 +9,51 @@ $enable-roboto-webfont: false;
 @import "./home/actu";
 @import "./home/event";
 @import "./home/un-clic";
+@import "./footer";
+@import "./custom";
+@import "./breadcrumbs";
+
+@media screen and (max-width: 1200px) {
+  .h2,
+  h2 {
+    font-size: calc(1.325rem + 2.5vw);
+  }
+}
+
+div#container-section-temps-dattente-aux-guichets {
+  margin-bottom: 2rem;
+}
+
+.sectiontext .section-text .body-section figure img {
+  border-radius: 20px 20px 20px 0;
+}
+
+li::marker {
+  color: $yellow;
+}
+
+@media screen and (min-width: 576px) {
+  .sectioncontact.col-sm-4 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .sectioncontact.col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.3% !important;
+  }
+}
+
+#portal-column-content .section-contact .contact-type-organization::after {
+  background: #f3f3f3;
+  content: "";
+  inset: 1rem;
+  position: absolute;
+  z-index: -1;
+}
+
+#portal-column-content .section-contact .contact-type-organization {
+  background: transparent;
+}
