@@ -29,3 +29,12 @@ $enable-roboto-webfont: false;
 .sectionfiles h2.section-title {
   color: #fff;
 }
+
+#portaltype-imio-smartweb-portalpage #localmessagesviewlet,
+#messagesviewlet {
+  position: absolute;
+  top: 90px;
+  margin: 0 auto;
+  width: 95%;
+  align-items: center;
+}
