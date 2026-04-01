@@ -575,29 +575,6 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
   background-position: top;
 }
 
-@media screen and (min-width: 1215px) {
-  div#container-section-temps-dattente-aux-guichets {
-    margin-top: -12rem !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div#container-section-temps-dattente-aux-guichets {
-    width: 40%;
-    flex-direction: row !important;
-  }
-}
-
-div#container-section-temps-dattente-aux-guichets {
-  margin: 0;
-  display: flex;
-  align-items: center;
-
-  /* z-index: -1; */
-  position: relative;
-  flex-direction: column;
-}
-
 #content-core .sortable-section .collapse:not(.show) {
   display: none;
 }
