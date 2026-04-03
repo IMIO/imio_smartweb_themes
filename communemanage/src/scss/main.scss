@@ -379,39 +379,39 @@ $enable-roboto-webfont: false;
 }
 
 .sectionfiles .section-title a {
-  color: $primary;
+  color: $primary !important;
 }
 
 .sectionfiles .item_infos {
-  color: $primary;
+  color: $primary !important;
 }
 
 #messagesviewlet .portalMessage.info,
 #localmessagesviewlet .portalMessage.info {
   background-color: $primary;
-  color: #fff;
+  color: #fff !important;
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary;
-  color: #fff;
+  color: #fff !important;
 }
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
   background-color: $primary;
-  color: #fff;
+  color: #fff !important;
 }
 
 #messagesviewlet .portalMessage.info .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   background-color: $primary;
-  color: #fff;
+  color: #fff !important;
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
   background-color: $primary;
-  color: #fff;
+  color: #fff !important;
 }
