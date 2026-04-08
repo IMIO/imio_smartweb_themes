@@ -491,3 +491,20 @@ input#search_button {
     color: #fff;
   }
 }
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary;
+
+  div p {
+    color: #fff;
+
+    a {
+      color: #fff !important;
+    }
+  }
+
+  span {
+    color: #fff;
+  }
+}
