@@ -306,22 +306,6 @@ footer #container-section-noussuivre {
   }
 }
 
-.r-add-contact a,
-.r-add-event a,
-.r-add-news a {
-  background: $primary-svg;
-  border-radius: 8px;
-  color: #fff;
-  padding: 1rem;
-  text-decoration: none;
-  transition: all 0.5s ease;
-
-  &:hover {
-    background: #000;
-    transition: all 0.5s ease;
-  }
-}
-
 .r-filter div[class*="control"] {
   border-radius: 5px;
 }
@@ -823,56 +807,6 @@ h2 {
 
   @media screen and (max-width: 1400px) {
     margin: 80px 0;
-  }
-}
-
-.r-add-contact a,
-.r-add-event a,
-.r-add-news a {
-  background: $primary-svg;
-  border-radius: 8px;
-  color: #fff;
-  padding: 1rem;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  font-size: 14px !important;
-  line-height: 28px !important;
-
-  &:hover {
-    background: #000;
-    transition: all 0.5s ease;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .r-add-contact,
-  .r-add-event {
-    bottom: 0;
-    padding-bottom: 1rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 20px;
-    padding-right: 13px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .r-add-news {
-    bottom: 0;
-    padding-bottom: 1rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .r-add-news {
-    top: auto;
-    padding-bottom: 0;
   }
 }
 

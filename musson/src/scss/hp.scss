@@ -246,29 +246,6 @@ header#content-header {
   color: #000 !important;
 }
 
-.r-add-contact a,
-.r-add-event a,
-.r-add-news a,
-#portal-header #portal-header-top #header-links .account {
-  color: #fff !important;
-  padding: 10px 20px;
-  background: $primary !important;
-  border-radius: 10px;
-  border: solid 1px $primary;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background: $primary-light !important;
-    border: 1px solid $primary;
-    color: #000 !important;
-
-    svg {
-      fill: #fff;
-    }
-  }
-}
-
 #portal-column-content .section-contact .contact-type-organization,
 #portal-column-content .section-contact .contact-type-position {
   background: #fff;

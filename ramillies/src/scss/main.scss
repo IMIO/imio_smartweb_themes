@@ -104,18 +104,6 @@ footer {
   }
 }
 
-.r-add-contact a,
-.r-add-event a,
-.r-add-news a {
-  background: #25beae;
-  color: #000;
-  padding: 0.9rem;
-
-  &:hover {
-    background: #2bdbc9;
-  }
-}
-
 .see_all a::after {
   display: none;
 }

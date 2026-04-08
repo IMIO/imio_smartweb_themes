@@ -218,25 +218,6 @@ input#search_button {
   }
 }
 
-//BUTTON
-.r-add-event {
-  padding-bottom: 1.8rem;
-}
-
-.r-content > button,
-.r-add-event a {
-  background: $primary-svg !important;
-  color: $primary-dark;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: $primary !important;
-    color: #fff;
-  }
-}
-
 .r-content-img {
   border-radius: 20px;
 }

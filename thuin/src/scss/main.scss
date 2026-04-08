@@ -542,12 +542,6 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   }
 }
 
-.r-add-event {
-  top: 0;
-  margin-top: 1rem !important;
-  bottom: initial;
-}
-
 @media screen and (max-width: 991px) {
   .section-home-page #messagesviewlet {
     top: 10px;
@@ -578,12 +572,6 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 
 .section-home-page #portal-footer-wrapper {
   margin-top: 0;
-}
-
-.r-add-contact,
-.r-add-event,
-.r-add-news {
-  border-radius: 10px 10px 10px 0;
 }
 
 body .r-content > button {
