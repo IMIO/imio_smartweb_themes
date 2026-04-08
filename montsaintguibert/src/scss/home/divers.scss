@@ -479,7 +479,7 @@ input#search_button {
 #localmessagesviewlet .portalMessage.warning {
   background-color: $primary;
 
-  div p {
+  p {
     color: #fff;
 
     a {
@@ -492,11 +492,11 @@ input#search_button {
   }
 }
 
-#messagesviewlet .portalMessage.info,
-#localmessagesviewlet .portalMessage.info {
+#messagesviewlet .portalMessage,
+#localmessagesviewlet .portalMessage {
   background-color: $primary;
 
-  div p {
+  p {
     color: #fff;
 
     a {
