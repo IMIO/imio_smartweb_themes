@@ -326,8 +326,14 @@ body:not(.site-office-du-tourisme-inforville) {
   line-height: 1.4;
 }
 
+#banner {
+  border-radius: 5px;
+}
+
 .sectiontext .section-text .body-section a {
   background: #dae9f1;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 
 .sectionfiles {
@@ -390,6 +396,11 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   }
 }
 
+.sectiontext .mark,
+.sectiontext mark {
+  border-radius: 5px;
+}
+
 // Link mark styles in section text
 .sectiontext .section-text .body-section mark a {
   background: transparent;
@@ -443,4 +454,20 @@ a.show-on-focus.skip-before-footer {
 
 html #portal-footer-wrapper #portal-footer .show-on-focus.skip-before-footer {
   color: #000 !important;
+}
+
+.contact-type-organization {
+  border-radius: 10px;
+
+  .schedule {
+    margin-bottom: 1rem;
+  }
+}
+
+.multicontact {
+  gap: 20px;
+}
+
+.contact_map map {
+  border-radius: 10px;
 }
