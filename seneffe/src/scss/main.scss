@@ -263,7 +263,7 @@ footer #container-section-noussuivre {
 }
 
 .sectiontext .section-text .body-section a {
-  color: $primary;
+  color: $primary-svg;
 }
 
 #viewlet-above-content-body {
@@ -593,4 +593,8 @@ body .r-content > button {
   right: 0;
   align-items: center;
   margin: 0 auto;
+}
+
+#portal-column-content .section-contact ul li a {
+  color: $primary-blue !important;
 }
