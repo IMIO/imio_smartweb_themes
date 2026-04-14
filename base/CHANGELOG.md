@@ -1,3 +1,10 @@
+## [0.3.13](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.12...v0.3.13) (2026-04-14)
+
+* Improve top-widget search button (1c175a96)
+* Delete BLA rest (1f29620f)
+* Delete custom ol:before (bba6936f)
+* Update all theme with base 3.0.12 (844a24ff)
+
 ## [0.3.12](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.11...v0.3.12) (2026-03-13)
 
 * Fix react add button width (47313338)
