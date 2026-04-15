@@ -27,7 +27,7 @@
       mix-blend-mode: multiply;
     }
 
-    .figure-affiche {
+    .figure-section_text {
       &::before {
         content: "";
         transition: all 0.2s ease;
@@ -77,7 +77,7 @@
   width: 30%;
 
   .section-text {
-    .figure-affiche {
+    .figure-section_text {
       position: absolute;
       top: 270px;
 
