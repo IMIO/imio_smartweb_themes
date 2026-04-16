@@ -696,6 +696,6 @@ body.template-block_view_with_images .block-menu-element a .card-body {
   display: none;
 }
 
-#portal-globalnav .dropdown .nav-title a:after {
+#portal-globalnav .dropdown .nav-title a::after {
   display: none !important;
 }
