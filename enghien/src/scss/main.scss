@@ -653,3 +653,49 @@ body.template-block_view_with_images .block-menu-element a .card-body {
   background-color: $primary-orange;
   color: #000;
 }
+
+// Custom
+//langues
+#portal-header #portal-header-top #header-links {
+  gap: 10px;
+}
+
+#portal-languageselector {
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 10px;
+  order: 3;
+  padding: 5px;
+  width: 95px;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    width: 100%;
+
+    a {
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+
+  .currentLanguage {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+#portal-header #portal-header-top #header-links {
+  gap: 15px;
+}
+
+.site-cpas .account,
+.site-ocmw .account {
+  display: none;
+}
+
+#portal-globalnav .dropdown .nav-title a:after {
+  display: none !important;
+}
