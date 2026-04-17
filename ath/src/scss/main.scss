@@ -878,8 +878,7 @@ p mark a {
 
 #localmessagesviewlet .portalMessage .close-button::after,
 #messagesviewlet .portalMessage .close-button::after {
-  content: "";
-  height: 25px;
+  color: #000 !important;
 }
 
 #localmessagesviewlet .portalMessage .messagesviewlet-type::after,
