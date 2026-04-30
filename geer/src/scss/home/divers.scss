@@ -36,7 +36,12 @@ div#subsite-logo img {
 }
 
 .sortable-section.sectionfiles {
+  background: $secondary;
   margin-bottom: 1rem;
+
+  .section-title {
+    color: #fff;
+  }
 
   &::after {
     border-radius: 50px;
