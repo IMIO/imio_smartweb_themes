@@ -163,12 +163,20 @@ $enable-roboto-webfont: false;
 #localmessagesviewlet .portalMessage.info {
   background-color: $primary;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #messagesviewlet .portalMessage.error,
 #localmessagesviewlet .portalMessage.error {
   background-color: $primary;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #messagesviewlet .portalMessage.warning,
@@ -181,12 +189,20 @@ $enable-roboto-webfont: false;
 #localmessagesviewlet .portalMessage.info .messagesviewlet-type {
   background-color: $primary;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #messagesviewlet .portalMessage.warning .messagesviewlet-type,
 #localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
   background-color: $primary;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #portal-column-content
