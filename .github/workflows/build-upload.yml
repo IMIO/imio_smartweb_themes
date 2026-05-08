@@ -16,10 +16,10 @@ jobs:
     runs-on: gha-runners-smartweb
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
       - name: Cache nodes modules
         id: cache-nodes-modules
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830  # v4
         with:
           path: |
             node_modules
@@ -40,10 +40,10 @@ jobs:
       environment: ${{ steps.get-build-push-environment.outputs.environment }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
       - name: Get changed directories names
         id: changed-directories
-        uses: tj-actions/changed-files@v44.5.6
+        uses: tj-actions/changed-files@6b2903bdce6310cfbddd87c418f253cf29b2dec9  # v44.5.6
         with:
           dir_names: "true"
           dir_names_exclude_current_dir: "true"
@@ -56,8 +56,10 @@ jobs:
             basev2/**
       - name: Set output
         id: set-output
+        env:
+          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files }}
         run: |
-          changed_dirs=$(printf "%s" "${{ steps.changed-directories.outputs.all_changed_files }}" | jq -R -s -c 'split(" ")')
+          changed_dirs=$(printf "%s" "$ALL_CHANGED" | jq -R -s -c 'split(" ")')
           echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
       - name: Get build push environment
         id: get-build-push-environment
@@ -71,9 +73,11 @@ jobs:
           fi
       - name: Summary
         id: summary
+        env:
+          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files }}
         run: |
-          for dir in ${{ steps.changed-directories.outputs.all_changed_files }}; do
-            vhost=$(jq -r '.homepage' $dir/package.json | cut -c 9-)
+          for dir in $ALL_CHANGED; do
+            vhost=$(jq -r '.homepage' "$dir/package.json" | cut -c 9-)
             echo "Theme in directory $dir will be uploaded to $vhost" >> summary.txt
           done
           cat summary.txt
@@ -100,10 +104,10 @@ jobs:
         directory: ${{ fromJson(needs.get-changed-directories.outputs.changed-directories) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
       - name: Cache nodes modules
         id: cache-nodes-modules
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830  # v4
         with:
           path: |
             node_modules
