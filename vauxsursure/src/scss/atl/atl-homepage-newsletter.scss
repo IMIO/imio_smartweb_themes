@@ -27,15 +27,21 @@
       color: #fff;
       font-size: clamp(2rem, 4vw, 3.5rem);
       font-weight: 800;
-      width: auto;
+      width: max-content;
       text-align: center;
       margin: 0 auto 1rem;
 
       &::before {
-        bottom: auto !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        left: -28px !important;
+        background: #ff3131 !important;
+        background-image: none !important;
+        border-radius: 50% !important;
+        bottom: 10px !important;
+        content: "" !important;
+        font-size: 0 !important;
+        height: 20px !important;
+        left: -30px !important;
+        position: absolute !important;
+        width: 20px !important;
       }
     }
 
@@ -44,7 +50,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0;
+      gap: 20px;
 
       p.lead.rich_description {
         color: #fff;
@@ -58,15 +64,16 @@
         justify-content: center;
         margin-top: 0;
         position: relative;
+        flex-direction: column;
 
         &::before {
           content: "";
           display: block;
-          position: absolute;
+          position: relative;
           width: 160px;
           height: 80px;
-          top: -80px;
-          right: calc(50% - 220px);
+          top: initial;
+          right: calc(50% - 190px);
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 160 100'%3E%3Cpath d='M0 0C0 27.574 124.49 0 149.5 33.536C174.5 67.073 119.36 91.294 119.36 91.294M125.46 76.362C125.46 76.362 123.74 83.615 119.36 91.294C119.36 91.294 131.45 93 141.3 93' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
           background-repeat: no-repeat;
           background-size: contain;

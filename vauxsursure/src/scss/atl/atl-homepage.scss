@@ -107,6 +107,7 @@
   // A LA UNE
   .sortable-section[data-id="a-la-une"] {
     position: relative;
+    z-index: 0;
 
     &::before {
       content: "";
@@ -125,12 +126,12 @@
   #container-section-a-la-une {
     padding: 4rem 2rem;
     position: relative;
-    overflow: visible; // retiré overflow:hidden pour afficher les points décoratifs
+    overflow: visible;
     z-index: 1;
     margin-bottom: 30px;
 
     .swiper.carousel {
-      overflow: hidden; // overflow:hidden déplacé sur le swiper uniquement
+      overflow: visible;
     }
 
     .nb-items-batch-1 {
@@ -189,6 +190,22 @@
       border-radius: 4px;
       transform: rotate(-3deg);
       box-shadow: 0 8px 32px rgba(38, 94, 112, 18%);
+      position: relative; // nécessaire pour le ::after
+
+      // Carré décoratif vert — coin inférieur gauche de l'image
+      &::after {
+        content: "";
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background-color: $primary-atl-darkgreen;
+        border-radius: 2px;
+        transform: rotate(5.72deg);
+        bottom: -10px;
+        left: -10px;
+        z-index: 2;
+        pointer-events: none;
+      }
     }
 
     .swiper_title {
@@ -276,6 +293,10 @@
       .swiper-image {
         min-height: 220px;
         transform: rotate(2deg);
+
+        &::after {
+          display: none;
+        }
       }
 
       .swiper_title h3 {
