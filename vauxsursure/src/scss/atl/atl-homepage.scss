@@ -78,6 +78,24 @@
         }
       }
     }
+
+    // Responsive — annule le margin et le border-radius
+    @media (max-width: 991px) {
+      margin-left: 0;
+
+      li.nav-item {
+        a.nav-link {
+          border-radius: 0;
+        }
+
+        &.inPath,
+        &.current {
+          a.nav-link {
+            border-radius: 0;
+          }
+        }
+      }
+    }
   }
 }
 

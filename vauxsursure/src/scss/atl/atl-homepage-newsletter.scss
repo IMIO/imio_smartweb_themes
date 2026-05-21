@@ -1,0 +1,83 @@
+.site-go-vss #main-container {
+  // NEWSLETTER
+  .sortable-section[data-id="newsletter"] {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background-color: $primary-atl-darkgreen;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+
+  #container-section-newsletter {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 4.3rem 2rem;
+
+    .section-title {
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 800;
+    }
+
+    .body-section {
+      position: relative;
+
+      p,
+      .table_title span {
+        color: #fff;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 100px;
+        right: calc(50% - 180px);
+        top: -10px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 160 100'%3E%3Cpath d='M0 0C0 27.574 124.49 0 149.5 33.536C174.5 67.073 119.36 91.294 119.36 91.294M125.46 76.362C125.46 76.362 123.74 83.615 119.36 91.294C119.36 91.294 131.45 93 141.3 93' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+
+    .see_all,
+    .table_image {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+
+      a {
+        display: inline-block;
+        padding: 0.85rem 2.5rem;
+        background-color: lighten($primary-atl-darkgreen, 8%);
+        color: #fff;
+        border: 1.5px solid #fff;
+        border-radius: 50rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #fff;
+          color: $primary-atl-darkgreen;
+        }
+      }
+    }
+  }
+  // fin newsletter
+}
