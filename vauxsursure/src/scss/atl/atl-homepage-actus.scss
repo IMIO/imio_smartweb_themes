@@ -1,6 +1,8 @@
-.site-go-vss {
-  #portal-header {
-    .sectionnews .see_all {
+.site-go-vss #main-container {
+  .sectionnews,
+  .sectionevents {
+    .see_all {
+      display: flex;
       justify-content: center;
 
       a {
@@ -10,10 +12,12 @@
         padding: 10px 20px;
         border-radius: 25px;
         transition: all 0.2s ease;
+        text-decoration: none;
 
         &:hover {
           background: transparent;
           color: #000;
+          border-color: #000;
         }
 
         &::after {

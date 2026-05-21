@@ -370,6 +370,7 @@
   .section-title {
     position: relative;
     font-family: $font-family-title-atl;
+    text-transform: inherit;
 
     &::before {
       content: "" !important;
@@ -379,13 +380,11 @@
       border-radius: 50% !important;
       background: $primary-atl-red !important;
       background-image: none !important;
-      bottom: 0 !important;
+      bottom: 10px !important;
       left: -30px !important;
       font-size: 0 !important;
     }
-  }
 
-  .sectionnews .section-title {
     &::after {
       display: none !important;
       content: none !important;
