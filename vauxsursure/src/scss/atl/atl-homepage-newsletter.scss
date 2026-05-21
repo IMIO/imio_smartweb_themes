@@ -23,16 +23,14 @@
     text-align: center;
     padding: 4.3rem 2rem;
 
-    // Titre — on réinitialise le width:max-content du site principal
     .section-title {
       color: #fff;
       font-size: clamp(2rem, 4vw, 3.5rem);
       font-weight: 800;
-      width: auto; // annule le width: max-content hérité
+      width: auto;
       text-align: center;
       margin: 0 auto 1rem;
 
-      // Pastille alignée verticalement sur le texte
       &::before {
         bottom: auto !important;
         top: 50% !important;
@@ -54,24 +52,27 @@
         margin-bottom: 0;
       }
 
-      // Flèche dans le flux entre texte et bouton
-      &::before {
-        content: "";
-        display: block;
-        width: 160px;
-        height: 80px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 160 100'%3E%3Cpath d='M0 0C0 27.574 124.49 0 149.5 33.536C174.5 67.073 119.36 91.294 119.36 91.294M125.46 76.362C125.46 76.362 123.74 83.615 119.36 91.294C119.36 91.294 131.45 93 141.3 93' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-size: contain;
-        pointer-events: none;
-        align-self: center;
-        margin-right: -120px; // décale la flèche vers le bouton
-      }
-
+      // Flèche sur .html — s'insère après le <p> et avant le bouton
       .html {
         display: flex;
         justify-content: center;
         margin-top: 0;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 160px;
+          height: 80px;
+          top: -80px;
+          right: calc(50% - 220px);
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 160 100'%3E%3Cpath d='M0 0C0 27.574 124.49 0 149.5 33.536C174.5 67.073 119.36 91.294 119.36 91.294M125.46 76.362C125.46 76.362 123.74 83.615 119.36 91.294C119.36 91.294 131.45 93 141.3 93' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-size: contain;
+          pointer-events: none;
+          z-index: 1;
+        }
       }
 
       a.table_image {

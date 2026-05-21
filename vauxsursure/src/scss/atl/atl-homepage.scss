@@ -100,8 +100,11 @@
 }
 
 .site-go-vss #main-container {
-  // A LA UNE
+  .see_all a {
+    font-weight: 400;
+  }
 
+  // A LA UNE
   .sortable-section[data-id="a-la-une"] {
     position: relative;
 
@@ -231,7 +234,7 @@
 
     .see_all {
       position: absolute;
-      bottom: 0;
+      bottom: 40px;
       left: 0;
       width: calc(50% - 1.5rem);
       z-index: 10;
@@ -307,10 +310,17 @@
       height: 160px;
       border-radius: 50%;
       background: $primary-atl-red;
-      bottom: 0;
-      left: -150px;
+      bottom: -80px;
+      left: calc(-80px);
       z-index: 3;
       pointer-events: none;
+
+      @media (max-width: 767px) {
+        width: 120px;
+        height: 120px;
+        bottom: -60px;
+        left: -60px;
+      }
     }
   }
 
@@ -323,6 +333,7 @@
     .body-section {
       position: relative;
       z-index: 2;
+      will-change: transform; // correction WebKit
 
       ul {
         position: relative;
@@ -344,6 +355,7 @@
         background-repeat: no-repeat;
         background-position: top;
         background-size: 100% 100%;
+        margin-bottom: -1px; // correction WebKit gap sub-pixel
       }
 
       // Fond vert uni sous la vague
@@ -354,7 +366,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        top: 0;
+        top: calc(-86px + 1px); // correction WebKit gap sub-pixel
         z-index: 1;
         box-sizing: border-box;
         background-color: #265e70;
@@ -367,6 +379,10 @@
           height: 110px;
           top: -110px;
         }
+
+        &::after {
+          top: calc(-110px + 1px); // correction WebKit
+        }
       }
     }
 
@@ -375,6 +391,10 @@
         &::before {
           height: 130px;
           top: -130px;
+        }
+
+        &::after {
+          top: calc(-130px + 1px); // correction WebKit
         }
       }
     }
@@ -388,6 +408,7 @@
         .table_title span {
           color: #fff;
           font-family: $font-family-title-atl;
+          text-transform: initial;
         }
       }
     }
@@ -428,7 +449,7 @@
     background: #1a4653;
 
     #portal-footer {
-      background: #1a4653;
+      background: #1a4653 !important;
     }
   }
 
