@@ -1,6 +1,10 @@
 .site-go-vss {
   #portal-header {
     margin-bottom: 0;
+
+    #portal-header-top {
+      padding: 0;
+    }
   }
 
   .to-portal {
@@ -30,6 +34,7 @@
       justify-content: center;
       padding: 0.4rem 1rem;
       gap: 0.25rem;
+      background: transparent;
 
       &:hover {
         color: #fff;
@@ -283,22 +288,24 @@
         z-index: 2;
       }
 
+      // Vague SVG exacte — se pose sur le fond beige
       &::before {
         content: "";
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        height: 110px;
-        top: -80px;
+        height: 123px;
+        top: -123px;
         z-index: 2;
         pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath fill='%23fef4ee' d='M0,0 C300,80 600,110 900,60 C1200,10 1350,70 1440,40 V0 H0 Z'%3E%3C/path%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='1728' height='123' viewBox='0 0 1728 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 71.8349C64.8 71.8349 16.8 45.4954 0 41.5046V123H1728V26.3394C1588 94.1835 1321.6 74.421 1220 62.2569C1140 52.6789 926.4 0 767.2 0C574.4 0 304.8 71.8349 164.8 71.8349Z' fill='%23265E70'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: top;
         background-size: 100% 100%;
       }
 
+      // Fond vert uni sous la vague
       &::after {
         content: "";
         position: absolute;
@@ -306,14 +313,10 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        top: -80px;
+        top: 0;
         z-index: 1;
         box-sizing: border-box;
-        background-color: $primary-atl-darkgreen;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'%3E%3Cpath fill='%23265e70' d='M0,90 C300,30 600,20 900,110 C1200,200 1350,110 1440,80 V320 H0 Z'%3E%3C/path%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 100% 110px;
+        background-color: #265e70;
       }
     }
 
@@ -323,12 +326,7 @@
       .body-section {
         &::before {
           height: 150px;
-          top: -110px;
-        }
-
-        &::after {
-          background-size: 100% 150px;
-          top: -110px;
+          top: -150px;
         }
       }
     }
@@ -339,12 +337,7 @@
       .body-section {
         &::before {
           height: 180px;
-          top: -140px;
-        }
-
-        &::after {
-          background-size: 100% 180px;
-          top: -140px;
+          top: -180px;
         }
       }
     }
