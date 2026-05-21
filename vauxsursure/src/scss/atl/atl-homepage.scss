@@ -321,7 +321,7 @@
       margin-bottom: -1px;
     }
 
-    // Grande pastille rouge
+    // Grande pastille rouge — toujours à moitié hors écran à gauche
     &::after {
       content: "";
       position: absolute;
@@ -330,7 +330,8 @@
       border-radius: 50%;
       background: $primary-atl-red;
       bottom: -80px;
-      left: -80px;
+      left: 0;
+      margin-left: -80px; // exactement -50% de la largeur du cercle
       z-index: 3;
       pointer-events: none;
 
@@ -338,7 +339,7 @@
         width: 120px;
         height: 120px;
         bottom: -60px;
-        left: -60px;
+        margin-left: -60px;
       }
     }
   }
@@ -367,26 +368,10 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        top: calc(-86px + 1px);
+        top: -1px;
         z-index: 1;
         box-sizing: border-box;
         background-color: #265e70;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .body-section {
-        &::after {
-          top: calc(-110px + 1px);
-        }
-      }
-    }
-
-    @media (min-width: 1440px) {
-      .body-section {
-        &::after {
-          top: calc(-130px + 1px);
-        }
       }
     }
 
