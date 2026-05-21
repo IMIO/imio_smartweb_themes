@@ -1,6 +1,6 @@
 .site-go-vss #main-container {
   // NEWSLETTER
-  .sortable-section[data-id="newsletter"] {
+  .sortable-section.newsletter-atl {
     position: relative;
 
     &::before {
@@ -17,7 +17,7 @@
     }
   }
 
-  #container-section-newsletter {
+  #container-section-sabonner-a-la-newsletter-des-plaines-et-des-stages {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -32,13 +32,13 @@
     .body-section {
       position: relative;
 
-      p,
-      .table_title span {
+      p.lead.rich_description {
         color: #fff;
         font-size: 1rem;
         margin-bottom: 2rem;
       }
 
+      // Flèche décorative
       &::after {
         content: "";
         position: absolute;
@@ -52,16 +52,19 @@
         pointer-events: none;
         z-index: 1;
       }
-    }
 
-    .see_all,
-    .table_image {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
+      // Wrapper du bouton
+      .html {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
 
-      a {
-        display: inline-block;
+      // Le lien devient le bouton
+      a.table_image {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: 0.85rem 2.5rem;
         background-color: lighten($primary-atl-darkgreen, 8%);
         color: #fff;
@@ -75,6 +78,17 @@
         &:hover {
           background-color: #fff;
           color: $primary-atl-darkgreen;
+        }
+
+        &:focus-visible {
+          outline: 3px solid #fff;
+          outline-offset: 3px;
+        }
+
+        .table_title span {
+          color: inherit;
+          font-size: 0.95rem;
+          font-weight: 500;
         }
       }
     }
