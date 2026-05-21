@@ -1,3 +1,25 @@
+@keyframes float-red {
+  0%,
+  100% {
+    transform: rotate(4.24deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(4.24deg) translateY(-4px);
+  }
+}
+
+@keyframes float-green {
+  0%,
+  100% {
+    transform: rotate(5.72deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(5.72deg) translateY(-4px);
+  }
+}
+
 .site-go-vss {
   .outer-wrapper {
     overflow: hidden;
@@ -200,6 +222,7 @@
         left: -10px; // à cheval sur le bord gauche
         z-index: 2;
         pointer-events: none;
+        animation: float-red 3s ease-in-out infinite;
       }
 
       // Carré décoratif vert — coin inférieur gauche de l'image
@@ -215,6 +238,8 @@
         left: -10px;
         z-index: 2;
         pointer-events: none;
+        animation: float-green 3s ease-in-out infinite;
+        animation-delay: 0.8s;
       }
     }
 
