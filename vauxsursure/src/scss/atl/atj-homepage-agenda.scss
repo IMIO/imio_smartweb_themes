@@ -2,6 +2,9 @@
   // STAGES ET PLAINES
   .sortable-section[data-id="stages-et-plaines-1"] {
     position: relative;
+    overflow: visible;
+    margin-top: -86px;
+    padding-top: 86px;
 
     &::before {
       content: "";
@@ -14,15 +17,10 @@
       z-index: 0;
       pointer-events: none;
       background-color: #fffaf6;
-      background-image: url("data:image/svg+xml,%3Csvg width='1728' height='86' viewBox='0 0 1728 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 70.0515C64.8 70.0515 16.8 44.3659 0 40.4742V86H1728V25.6855C1588 91.8453 1321.6 72.5734 1220 60.7113C1140 51.371 926.4 0 767.2 0C574.4 0 304.8 70.0515 164.8 70.0515Z' fill='%23FDEEE5'/%3E%3C/svg%3E"),
-        linear-gradient(180deg, #fdeee5 0%, #fffaf6 100%);
-      background-repeat: no-repeat, no-repeat;
-      background-position:
-        top center,
-        top center;
-      background-size:
-        100% 86px,
-        100% 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='1728' height='86' viewBox='0 0 1728 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 70.0515C64.8 70.0515 16.8 44.3659 0 40.4742V86H1728V25.6855C1588 91.8453 1321.6 72.5734 1220 60.7113C1140 51.371 926.4 0 767.2 0C574.4 0 304.8 70.0515 164.8 70.0515Z' fill='%23FDEEE5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100% 86px;
     }
   }
 
@@ -39,8 +37,8 @@
       position: absolute;
       width: 260px;
       height: 260px;
-      right: -130px;
-      top: -120px;
+      right: -150px;
+      top: -180px;
       background: $primary-atl-darkgreen;
       border-radius: 10px;
       transform: rotate(5.72deg);

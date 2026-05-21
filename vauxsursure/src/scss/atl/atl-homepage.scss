@@ -125,12 +125,12 @@
   #container-section-a-la-une {
     padding: 4rem 2rem;
     position: relative;
-    overflow: hidden;
+    overflow: visible; // retiré overflow:hidden pour afficher les points décoratifs
     z-index: 1;
     margin-bottom: 30px;
 
     .swiper.carousel {
-      overflow: initial;
+      overflow: hidden; // overflow:hidden déplacé sur le swiper uniquement
     }
 
     .nb-items-batch-1 {
@@ -329,9 +329,9 @@
       height: 160px;
       border-radius: 50%;
       background: $primary-atl-red;
-      bottom: -80px;
+      bottom: 0;
       left: 0;
-      margin-left: -80px; // exactement -50% de la largeur du cercle
+      margin-left: -150px;
       z-index: 3;
       pointer-events: none;
 
