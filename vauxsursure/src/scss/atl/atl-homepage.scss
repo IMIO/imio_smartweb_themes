@@ -1,0 +1,197 @@
+.site-go-vss {
+  // A LA UNE
+  #container-section-a-la-une {
+    background: $primary-atl-degrade-alaune;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Lien = layout 2 colonnes */
+  #container-section-a-la-une .swiper-slide a.swiper_link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "titre  image"
+      "desc   image";
+    align-items: center;
+    gap: 1.5rem 3rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Image inclinée à droite */
+  #container-section-a-la-une .swiper-image {
+    grid-area: image;
+    min-height: 360px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    transform: rotate(3deg);
+    box-shadow: 0 8px 32px rgba(38, 94, 112, 18%); /* darkgreen teinté */
+  }
+
+  /* Titre grande typo */
+  #container-section-a-la-une .swiper_title {
+    grid-area: titre;
+    align-self: end;
+  }
+
+  #container-section-a-la-une .swiper_title h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
+    color: $primary-atl-darkgreen;
+  }
+
+  /* Dernière ligne du titre en rouge ATL */
+  #container-section-a-la-une .swiper_title h3 .accent {
+    color: $primary-atl-red;
+  }
+
+  /* Description */
+  #container-section-a-la-une .swiper_description {
+    grid-area: desc;
+    align-self: start;
+  }
+
+  #container-section-a-la-une .swiper_description p {
+    font-size: 0.95rem;
+    color: $primary-atl-darkgreen;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 38ch;
+  }
+
+  /* Point décoratif rouge — haut droite de l'image */
+  #container-section-a-la-une::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: $primary-atl-red;
+    top: 20%;
+    right: 43%;
+  }
+
+  /* Point décoratif bleu/vert foncé — bas droite */
+  #container-section-a-la-une::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: $primary-atl-darkgreen;
+    bottom: 10%;
+    right: 45%;
+  }
+
+  /* Swiper : hauteur auto */
+  #container-section-a-la-une .swiper-slide {
+    height: auto !important;
+  }
+
+  /* Cacher nav superflue en mode hero */
+  #container-section-a-la-une .swiper-button-prev,
+  #container-section-a-la-une .swiper-button-next,
+  #container-section-a-la-une .swiper-pagination {
+    display: none;
+  }
+
+  /* Bouton "Voir tous" stylisé */
+  #container-section-a-la-une .see_all a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.75rem;
+    background-color: $primary-atl-red; /* primary-atl-red */
+    color: #fff;
+    border-radius: 50rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  #container-section-a-la-une .see_all a:hover {
+    background-color: $primary-atl-darkgreen; /* primary-atl-darkgreen au hover */
+  }
+
+  /* Responsive mobile */
+  @media (max-width: 767px) {
+    #container-section-a-la-une .swiper-slide a.swiper_link {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "image"
+        "titre"
+        "desc";
+    }
+
+    #container-section-a-la-une .swiper-image {
+      min-height: 220px;
+      transform: rotate(2deg);
+    }
+
+    #container-section-a-la-une .swiper_title h3 {
+      font-size: 2rem;
+    }
+
+    #container-section-a-la-une::before,
+    #container-section-a-la-une::after {
+      display: none; /* points masqués sur mobile pour éviter le débordement */
+    }
+  }
+
+  //QUICK ACCESS
+  // QUICK ACCESS
+  .quick-access.atl-qa {
+    margin: inherit;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 70px;
+
+    .body-section {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 100px);
+        top: -20px;
+        z-index: -1;
+        box-sizing: border-box;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'%3E%3Cpath fill='%23265e70' d='M0,90 C300,30 600,20 900,110 C1200,200 1350,110 1440,80 V320 H0 Z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 60px;
+
+        @media (min-width: 768px) {
+          background-size: 100% 110px;
+        }
+
+        @media (min-width: 1440px) {
+          background-size: 100% 150px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 120px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-bottom: 160px;
+    }
+
+    ul {
+      li .table_image .image.d-block {
+        background: $primary-atl-lightgreen !important;
+      }
+    }
+  }
+  //fin
+}
