@@ -68,7 +68,7 @@
 
         &.inPath,
         &.current {
-          a.nav-link {
+          > a.nav-link {
             background-color: #e8f1f4;
             color: $primary-atl-darkgreen;
             border-radius: 25px;
@@ -81,7 +81,7 @@
         li.nav-item {
           a.nav-link {
             border-radius: 0 !important;
-            padding: 8px 16px;
+            padding: 10px 15px;
           }
         }
       }
@@ -471,5 +471,57 @@
     background-color: $primary-atl-lightblue !important;
     padding: 13px 30px !important;
     border-radius: 25px;
+  }
+}
+
+.site-go-vss {
+  .outer-wrapper {
+    //Vue Agenda
+    .no-map .r-list-item-group .r-list-item .r-item-text {
+      .no-map .r-list-item-group .r-list-item .r-item-text {
+        grid-template-columns: 1fr;
+
+        .r-item-date {
+          grid-column-start: 1;
+          grid-row-start: 1;
+          justify-self: initial;
+        }
+      }
+    }
+
+    //Vue faceted form
+    .faceted-form .block-menu-element a .card-body {
+      border-radius: 15px;
+      box-shadow: none;
+    }
+
+    .envent-content.r-content {
+      .r-content-title-cat {
+        color: #000;
+        font-size: 14px;
+        margin-right: 5px;
+        background: $primary-atl-lightblue;
+        padding: 5px 10px;
+        border-radius: 25px;
+        margin-left: -10px;
+        margin-top: 10px;
+        top: 10px;
+        display: block;
+        width: max-content;
+      }
+
+      .news-info-title {
+        color: #000;
+      }
+
+      .r-content-news-info .r-content-news-info-container > div {
+        break-inside: avoid;
+        margin: initial;
+        padding: 10px;
+        background: $pr;
+        border-radius: 25px;
+        font-weight: 700;
+      }
+    }
   }
 }
