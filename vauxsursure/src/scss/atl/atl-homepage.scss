@@ -68,6 +68,16 @@
         }
       }
     }
+
+    // Sous-menu — annule le border-radius du parent
+    .has_subtree .dropdown ul {
+      li.nav-item {
+        a.nav-link {
+          border-radius: 0 !important;
+          padding: 8px 16px;
+        }
+      }
+    }
   }
 }
 
@@ -279,8 +289,8 @@
       height: 160px;
       border-radius: 50%;
       background: $primary-atl-red;
-      bottom: -80px;
-      left: -96px;
+      bottom: 0;
+      left: -150px;
       z-index: 3;
       pointer-events: none;
     }
