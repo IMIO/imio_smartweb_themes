@@ -3,8 +3,8 @@
   .sortable-section[data-id="stages-et-plaines-1"] {
     position: relative;
     overflow: visible;
-    margin-top: -86px;
-    padding-top: 86px;
+    // margin-top: -86px;
+    // padding-top: 86px;
 
     // SVG vague uniquement — sans fond
     &::before {
@@ -27,7 +27,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: 85px;
       left: 50%;
       transform: translateX(-50%);
       width: 100vw;
@@ -49,8 +49,8 @@
       content: "";
       display: block;
       position: absolute;
-      width: 260px;
-      height: 260px;
+      width: 200px;
+      height: 200px;
       right: -150px;
       top: -180px;
       background: $primary-atl-darkgreen;
