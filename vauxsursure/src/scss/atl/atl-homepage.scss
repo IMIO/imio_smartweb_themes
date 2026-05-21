@@ -95,6 +95,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin-bottom: 30px;
 
     .swiper.carousel {
       overflow: initial;
@@ -143,6 +144,8 @@
       text-decoration: none;
       color: inherit;
       padding-bottom: 0;
+      position: relative;
+      z-index: 1;
     }
 
     .swiper-image {
@@ -201,7 +204,8 @@
       bottom: 0;
       left: 0;
       width: calc(50% - 1.5rem);
-      z-index: 2;
+      z-index: 10;
+      pointer-events: auto;
 
       a {
         display: inline-block;
@@ -213,6 +217,9 @@
         font-size: 0.9rem;
         text-decoration: none;
         transition: background-color 0.2s ease;
+        position: relative;
+        z-index: 10;
+        pointer-events: auto;
 
         &:hover {
           background-color: $primary-atl-darkgreen;
@@ -270,9 +277,8 @@
       height: 160px;
       border-radius: 50%;
       background: $primary-atl-red;
-      // À cheval entre le vert et le blanc — centré sur le bas du bloc
-      bottom: -80px; // moitié de la hauteur = à cheval
-      left: -96px; // 60% caché à gauche (160px * 0.6 = 96px)
+      bottom: -80px;
+      left: -96px;
       z-index: 3;
       pointer-events: none;
     }
@@ -300,11 +306,11 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        height: 123px;
-        top: -123px;
+        height: 86px;
+        top: -86px;
         z-index: 2;
         pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg width='1728' height='123' viewBox='0 0 1728 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 71.8349C64.8 71.8349 16.8 45.4954 0 41.5046V123H1728V26.3394C1588 94.1835 1321.6 74.421 1220 62.2569C1140 52.6789 926.4 0 767.2 0C574.4 0 304.8 71.8349 164.8 71.8349Z' fill='%23265E70'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='1728' height='86' viewBox='0 0 1728 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 71.8349C64.8 71.8349 16.8 45.4954 0 41.5046V86H1728V26.3394C1588 94.1835 1321.6 74.421 1220 62.2569C1140 52.6789 926.4 0 767.2 0C574.4 0 304.8 71.8349 164.8 71.8349Z' fill='%23265E70'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: top;
         background-size: 100% 100%;
@@ -326,23 +332,19 @@
     }
 
     @media (min-width: 768px) {
-      padding-bottom: 120px;
-
       .body-section {
         &::before {
-          height: 150px;
-          top: -150px;
+          height: 110px;
+          top: -110px;
         }
       }
     }
 
     @media (min-width: 1440px) {
-      padding-bottom: 160px;
-
       .body-section {
         &::before {
-          height: 180px;
-          top: -180px;
+          height: 130px;
+          top: -130px;
         }
       }
     }
