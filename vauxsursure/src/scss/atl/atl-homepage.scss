@@ -170,6 +170,7 @@
         line-height: 1.15;
         margin: 0;
         color: #000;
+        font-family: $font-family-title-atl;
 
         .accent {
           color: $primary-atl-red;
@@ -358,6 +359,7 @@
 
         .table_title span {
           color: #fff;
+          font-family: $font-family-title-atl;
         }
       }
     }
@@ -367,6 +369,7 @@
   // SECTION TITLES
   .section-title {
     position: relative;
+    font-family: $font-family-title-atl;
 
     &::before {
       content: "" !important;
