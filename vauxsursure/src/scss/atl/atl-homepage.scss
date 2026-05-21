@@ -28,6 +28,10 @@
       overflow: initial;
     }
 
+    .nb-items-batch-1 {
+      position: relative;
+    }
+
     .swiper-slide a.swiper_link {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -39,6 +43,7 @@
       gap: 1.5rem 3rem;
       text-decoration: none;
       color: inherit;
+      padding-bottom: 3.5rem;
     }
 
     .swiper-image {
@@ -116,16 +121,18 @@
     }
 
     .see_all {
-      position: relative;
+      position: absolute;
+      left: 0;
+      bottom: 0;
       z-index: 2;
 
       a {
         display: inline-block;
-        margin-top: 1.5rem;
+        margin-top: 0;
         padding: 0.75rem 1.75rem;
         background-color: $primary-atl-red;
         color: #fff;
-        border-radius: 50rem;
+        border-radius: 25px;
         font-weight: 600;
         font-size: 0.9rem;
         text-decoration: none;
@@ -147,6 +154,7 @@
           "image"
           "titre"
           "desc";
+        padding-bottom: 4.5rem;
       }
 
       .swiper-image {
@@ -156,6 +164,12 @@
 
       .swiper_title h3 {
         font-size: 2rem;
+      }
+
+      .see_all {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       &::before,
@@ -174,6 +188,12 @@
 
     .body-section {
       position: relative;
+      z-index: 2;
+
+      ul {
+        position: relative;
+        z-index: 2;
+      }
 
       &::after {
         content: "";
@@ -182,20 +202,23 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        top: -20px;
-        z-index: -1;
+        top: -80px;
+        z-index: 1;
         box-sizing: border-box;
+        background-color: $primary-atl-darkgreen;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'%3E%3Cpath fill='%23265e70' d='M0,90 C300,30 600,20 900,110 C1200,200 1350,110 1440,80 V320 H0 Z'%3E%3C/path%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: 100% 60px;
+        background-position: top;
+        background-size: 100% 110px;
 
         @media (min-width: 768px) {
-          background-size: 100% 110px;
+          background-size: 100% 150px;
+          top: -110px;
         }
 
         @media (min-width: 1440px) {
-          background-size: 100% 150px;
+          background-size: 100% 180px;
+          top: -140px;
         }
       }
     }
