@@ -1,0 +1,25 @@
+.site-go-vss {
+  #portal-header {
+    .sectionnews .see_all {
+      justify-content: center;
+
+      a {
+        background: $primary-atl-red;
+        border: 1px solid $primary-atl-red;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: transparent;
+          color: #000;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
