@@ -303,6 +303,25 @@
     position: relative;
     overflow: visible;
 
+    // Vague SVG — sur la section parente non clippée
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 86px;
+      top: -86px;
+      z-index: 2;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='1728' height='86' viewBox='0 0 1728 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 71.8349C64.8 71.8349 16.8 45.4954 0 41.5046V86H1728V26.3394C1588 94.1835 1321.6 74.421 1220 62.2569C1140 52.6789 926.4 0 767.2 0C574.4 0 304.8 71.8349 164.8 71.8349Z' fill='%23265E70'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 100%;
+      margin-bottom: -1px;
+    }
+
+    // Grande pastille rouge
     &::after {
       content: "";
       position: absolute;
@@ -311,7 +330,7 @@
       border-radius: 50%;
       background: $primary-atl-red;
       bottom: -80px;
-      left: calc(-80px);
+      left: -80px;
       z-index: 3;
       pointer-events: none;
 
@@ -333,29 +352,11 @@
     .body-section {
       position: relative;
       z-index: 2;
-      will-change: transform; // correction WebKit
+      will-change: transform;
 
       ul {
         position: relative;
         z-index: 2;
-      }
-
-      // Vague SVG exacte
-      &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: 86px;
-        top: -86px;
-        z-index: 2;
-        pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg width='1728' height='86' viewBox='0 0 1728 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164.8 71.8349C64.8 71.8349 16.8 45.4954 0 41.5046V86H1728V26.3394C1588 94.1835 1321.6 74.421 1220 62.2569C1140 52.6789 926.4 0 767.2 0C574.4 0 304.8 71.8349 164.8 71.8349Z' fill='%23265E70'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 100% 100%;
-        margin-bottom: -1px; // correction WebKit gap sub-pixel
       }
 
       // Fond vert uni sous la vague
@@ -366,7 +367,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        top: calc(-86px + 1px); // correction WebKit gap sub-pixel
+        top: calc(-86px + 1px);
         z-index: 1;
         box-sizing: border-box;
         background-color: #265e70;
@@ -375,26 +376,16 @@
 
     @media (min-width: 768px) {
       .body-section {
-        &::before {
-          height: 110px;
-          top: -110px;
-        }
-
         &::after {
-          top: calc(-110px + 1px); // correction WebKit
+          top: calc(-110px + 1px);
         }
       }
     }
 
     @media (min-width: 1440px) {
       .body-section {
-        &::before {
-          height: 130px;
-          top: -130px;
-        }
-
         &::after {
-          top: calc(-130px + 1px); // correction WebKit
+          top: calc(-130px + 1px);
         }
       }
     }
