@@ -1,7 +1,12 @@
 .site-go-vss {
   // A LA UNE
-  #container-section-a-la-une {
+
+  // Background pleine largeur sur la section parente (pas contrainte de largeur)
+  .sortable-section[data-id="a-la-une"] {
     background: $primary-atl-degrade-alaune;
+  }
+
+  #container-section-a-la-une {
     padding: 4rem 2rem;
     position: relative;
     overflow: hidden;
@@ -30,7 +35,7 @@
     background-size: cover;
     border-radius: 4px;
     transform: rotate(3deg);
-    box-shadow: 0 8px 32px rgba(38, 94, 112, 18%); /* darkgreen teinté */
+    box-shadow: 0 8px 32px rgba(38, 94, 112, 18%);
   }
 
   /* Titre grande typo */
@@ -107,7 +112,7 @@
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.75rem 1.75rem;
-    background-color: $primary-atl-red; /* primary-atl-red */
+    background-color: $primary-atl-red;
     color: #fff;
     border-radius: 50rem;
     font-weight: 600;
@@ -117,7 +122,7 @@
   }
 
   #container-section-a-la-une .see_all a:hover {
-    background-color: $primary-atl-darkgreen; /* primary-atl-darkgreen au hover */
+    background-color: $primary-atl-darkgreen;
   }
 
   /* Responsive mobile */
@@ -141,11 +146,10 @@
 
     #container-section-a-la-une::before,
     #container-section-a-la-une::after {
-      display: none; /* points masqués sur mobile pour éviter le débordement */
+      display: none;
     }
   }
 
-  //QUICK ACCESS
   // QUICK ACCESS
   .quick-access.atl-qa {
     margin: inherit;
@@ -193,5 +197,5 @@
       }
     }
   }
-  //fin
+  // fin
 }
