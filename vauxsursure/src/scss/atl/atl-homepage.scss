@@ -88,7 +88,7 @@
           &:hover {
             background-color: #e8f1f4;
             color: $primary-atl-darkgreen;
-            border: $primary-atl-darkgreen;
+            border: $primary-atl-darkgreen 2px solid;
           }
         }
 
@@ -561,11 +561,15 @@
   }
 }
 
-.site-go-vss.portaltype-imio-smartweb-page {
+.site-go-vss.portaltype-imio-smartweb-page,
+.site-go-vss.portaltype-imio-smartweb-portalpage {
   .outer-wrapper {
     .sortable-section.sectioncontact {
-      background: $primary-atl-lightblue;
-      border-radius: 25px;
+      .contact-type-organization,
+      .contact-type-position {
+        background: #e8f1f4;
+        border-radius: 25px;
+      }
     }
 
     h1.page-title {
