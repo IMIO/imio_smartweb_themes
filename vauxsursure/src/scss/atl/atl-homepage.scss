@@ -79,12 +79,16 @@
       li.nav-item {
         a.nav-link {
           border-radius: 25px;
-          transition: background-color 0.2s ease;
+          transition:
+            border 1ms ease,
+            background-color 0.2s ease;
           padding: 10px 20px;
+          border: 2px transparent solid;
 
           &:hover {
             background-color: #e8f1f4;
             color: $primary-atl-darkgreen;
+            border: $primary-atl-darkgreen;
           }
         }
 
@@ -503,14 +507,18 @@
   .outer-wrapper {
     //Vue Agenda
     .no-map .r-list-item-group .r-list-item .r-item-text {
-      .no-map .r-list-item-group .r-list-item .r-item-text {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr; // une seule colonne = chaque span sur sa ligne
 
-        .r-item-date {
-          grid-column-start: 1;
-          grid-row-start: 1;
-          justify-self: initial;
-        }
+      .r-item-date {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: start; // aligné à gauche (remplace "initial")
+      }
+
+      .r-item-title {
+        grid-column-start: 1;
+        grid-row-start: 2; // ← à ajouter : force la 2e ligne
+        justify-self: start;
       }
     }
 
@@ -539,7 +547,9 @@
         color: #000;
       }
 
-      .r-content-news-info .r-content-news-info-container > div {
+      .r-content-news-info
+        .r-content-news-info-container
+        .r-content-news-info-schedul {
         break-inside: avoid;
         margin: initial;
         padding: 10px;
@@ -547,6 +557,19 @@
         border-radius: 25px;
         font-weight: 700;
       }
+    }
+  }
+}
+
+.site-go-vss.portaltype-imio-smartweb-page {
+  .outer-wrapper {
+    .sortable-section.sectioncontact {
+      background: $primary-atl-lightblue;
+      border-radius: 25px;
+    }
+
+    h1.page-title {
+      margin-top: 1.5rem;
     }
   }
 }

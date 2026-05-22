@@ -5,7 +5,7 @@
   }
 
   50% {
-    transform: translateX(-50%) translateY(6px);
+    transform: translateX(-50%) translateY(10px);
   }
 }
 
@@ -26,11 +26,25 @@
       z-index: 0;
       pointer-events: none;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -20px;
+      width: 178px;
+      height: 207px;
+      background-color: #ff3131;
+      border-radius: 10px;
+      transform: rotate(4.2377deg);
+      z-index: 2;
+      pointer-events: none;
+    }
   }
 
   #container-section-sabonner-a-la-newsletter-des-plaines-et-des-stages {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     text-align: center;
     padding: 4.3rem 2rem;
 
@@ -69,7 +83,6 @@
         margin-bottom: 0;
       }
 
-      // Flèche sur .html — s'insère après le <p> et avant le bouton
       .html {
         display: flex;
         justify-content: center;
