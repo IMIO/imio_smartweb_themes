@@ -241,7 +241,8 @@ li.quick-access span.quick-access-title {
 }
 
 //MARKER liste à puces
-ul > li::marker {
+
+.section-text ul > li::marker {
   content: "✓ ";
   color: $primary; /* --bs-primary de votre thème */
   font-size: 0.75em;
