@@ -239,3 +239,10 @@ body.subsection-vie-politique-le-conseil-communal-les-conseillers-communaux
 li.quick-access span.quick-access-title {
   color: $primary-dark !important;
 }
+
+//MARKER liste à puces
+ul > li::marker {
+  content: "✓ ";
+  color: $primary; /* --bs-primary de votre thème */
+  font-size: 0.75em;
+}
