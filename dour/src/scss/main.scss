@@ -48,3 +48,19 @@ $enable-roboto-webfont: false;
     top: 50%;
   }
 }
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-eventsview,
+.portaltype-imio-smartweb-newsview {
+  #portal-header #portal-header-top #portal-logo {
+    max-width: 80px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+  }
+
+  #content > header {
+    display: none;
+  }
+}
