@@ -32,16 +32,50 @@
     box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
   }
 
-  // Badge catégorie — bordure blanche (non couverte par les variables de base)
-  .swiper_category span,
-  .auth_source_container_title {
-    border: 2px solid #fff;
-    display: inline-block;
-    text-align: center;
+  // Image circulaire — div avec background-image inline
+  .swiper-image {
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
+  // Badge catégorie — centré, bordure blanche
   .swiper_category {
+    display: flex;
+    justify-content: center;
+
+    span {
+      border: 2px solid #fff;
+    }
+  }
+
+  .auth_source_container_title {
+    display: block;
     text-align: center;
+    border: 2px solid #fff;
+  }
+
+  // Date — centré
+  .swiper_date {
+    text-align: center;
+    width: 100%;
+  }
+
+  // Titre article — centré
+  .swiper_title {
+    text-align: center;
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  // Description — centré
+  .swiper_description {
+    text-align: center;
+    width: 100%;
   }
 
   // Bouton "Voir toutes les actualités" — couleurs propres à cette section
