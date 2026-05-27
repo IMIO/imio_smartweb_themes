@@ -144,11 +144,15 @@
       text-decoration: none;
       transition:
         background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
         outline-offset 0.1s ease;
 
       &:hover {
         background-color: $blue-cta-hover;
         color: #fff;
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgb(0 106 185 / 40%);
       }
 
       &:focus-visible {
@@ -167,23 +171,39 @@
 // ============================================================
 
 .smartweb_herobanner {
-  // Image — coin arrondi bas-droit caractéristique (Figma : 231px)
+  // Image — coin arrondi bas-droit (Figma : 231px)
   .swiper-banner-image {
     border-bottom-right-radius: 231px;
     background-size: cover;
     background-position: center;
   }
 
-  // Wrapper — flex pour coller le panneau à droite
-  .swiper-banner-content-wrapper {
+  // Wrapper — recouvre tout le slide, panneau collé à droite
+  // Spécificité 0,4,0 requise pour écraser le centrage vertical du base theme
+  // (position:relative + top:50% + translateY(-50%))
+  .bannerSwiper .swiper-slide .swiper-banner-content-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: none;
     display: flex;
+    align-items: stretch;
     justify-content: flex-end;
-    max-width: 100%;
-    padding-right: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
   }
 
-  // Panneau — capsule arrondie côté gauche, bord droit sans radius (Figma)
-  .swiper-banner-content {
+  // Panneau — pleine hauteur, capsule gauche, contenu centré verticalement
+  // Spécificité 0,4,0 pour écraser width/max-width du base theme (460px)
+  .bannerSwiper .swiper-slide .swiper-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 300px 0 0 300px;
   }
 
@@ -194,7 +214,7 @@
     font-weight: 700;
   }
 
-  // Description — espacement avec le titre
+  // Description
   .swiper-banner-description p {
     font-size: $banner-content-description-font-size;
   }
@@ -516,13 +536,18 @@
       border-radius: $event-see-all-btn-radius !important;
       font-size: 20px;
       font-weight: 700;
-      transition: background-color 0.2s ease !important;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
 
       &:hover {
         background-color: $event-see-all-btn-bg-hover !important;
         border-color: $event-see-all-btn-bg-hover !important;
         color: $event-see-all-btn-color !important;
         border-radius: $event-see-all-btn-radius !important;
+        transform: translateY(-4px) !important;
+        box-shadow: 0 10px 24px rgb(0 106 185 / 40%) !important;
       }
 
       &:focus-visible {
@@ -639,13 +664,18 @@
       border-radius: $actu-see-all-btn-radius !important;
       font-size: 20px;
       font-weight: 700;
-      transition: background-color 0.2s ease !important;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
 
       &:hover {
         background-color: $actu-see-all-btn-bg-hover !important;
         border-color: $actu-see-all-btn-bg-hover !important;
         color: $actu-see-all-btn-color !important;
         border-radius: $actu-see-all-btn-radius !important;
+        transform: translateY(-4px) !important;
+        box-shadow: 0 10px 24px rgb(0 106 185 / 40%) !important;
       }
 
       &:focus-visible {
