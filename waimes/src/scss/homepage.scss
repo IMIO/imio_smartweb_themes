@@ -1,0 +1,67 @@
+// ============================================================
+// SECTION ACTUALITÉS — synchronisation Figma (node 180:14)
+// Les variables $actu-* sont définies dans variables.scss
+// Ce fichier ne contient que ce qui ne peut pas être géré par le système de variables
+// ============================================================
+
+.sectionnews {
+  // Fond de section (variable $actu-section-bg définie dans variables.scss)
+  background-color: $actu-section-bg;
+
+  // Titre — décoration barre verticale gauche (Line 1 Figma : 4×34px)
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 4px;
+      height: 34px;
+      background-color: $primary-dark;
+      border-radius: 2px;
+    }
+  }
+
+  // Carte — ombre légère (non couverte par les variables de base)
+  .swiper-slide > a {
+    padding: 1.5rem;
+    box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  }
+
+  // Badge catégorie — bordure blanche (non couverte par les variables de base)
+  .swiper_category span,
+  .auth_source_container_title {
+    border: 2px solid #fff;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .swiper_category {
+    text-align: center;
+  }
+
+  // Bouton "Voir toutes les actualités" — couleurs propres à cette section
+  .see_all {
+    a,
+    button {
+      background-color: $actu-see-all-btn-bg !important;
+      color: $actu-see-all-btn-color !important;
+      border-color: $actu-see-all-btn-bg !important;
+      border-radius: $actu-see-all-btn-radius !important;
+      font-size: 20px;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        background-color: $actu-see-all-btn-bg-hover !important;
+        border-color: $actu-see-all-btn-bg-hover !important;
+        color: $actu-see-all-btn-color !important;
+        border-radius: $actu-see-all-btn-radius !important;
+      }
+    }
+  }
+}

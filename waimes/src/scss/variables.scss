@@ -2,6 +2,10 @@
 $primary: #b80f28;
 $primary-svg: #f5e9e7;
 $primary-dark: #221e20;
+$blue-cta: #006ab9;         // bleu CTA boutons (Figma)
+$blue-cta-hover: #005a9e;   // bleu CTA hover
+$blue-light: #e3ecf4;       // fond section bleu-gris clair (Figma)
+$green-light: #f7faf1;      // fond badge catégorie crème (Figma)
 
 //*// TYPOGRAPHY
 
@@ -217,43 +221,48 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 3rem;
+$actu-section-padding-bottom: 3rem;
 $actu-section-margin: 0 !default;
+$actu-section-bg: $blue-light;                   // fond bleu-gris clair (Figma)
 $actu-title-color: $primary-dark;
 $actu-title-align: center;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
-$actu-image-border-radius: 20px 20px 0 0;
-$actu-item-bg-color: transparent;
-$actu-item-bg-radius: $global-radius + 2 !default;
-$actu-category-margin: 0 0 0.5rem 0 !default;
-$actu-category-padding: 0.5rem 1rem !default;
-$actu-category-color: #fff !default;
-$actu-category-bg-color: $primary;
-$actu-category-text-transform: uppercase !default;
+$actu-image-border-radius: 50%;                  // cercle parfait (Figma)
+$actu-item-bg-color: #fff;                       // carte blanche (Figma)
+$actu-item-bg-radius: 50px;                      // grand radius (Figma)
+$actu-category-margin: 0.75rem 0 0.5rem !default;
+$actu-category-padding: 0.3rem 1rem !default;
+$actu-category-color: $primary-dark;             // texte sombre (Figma)
+$actu-category-bg-color: $green-light;          // fond crème (Figma)
+$actu-category-text-transform: none;             // pas d'uppercase (Figma)
 $actu-category-font-size: 16px;
 $actu-category-font-weight: initial !default;
-$actu-category-radius: 0 0 10px 0;
+$actu-category-radius: 20px;                     // radius capsule (Figma)
 $actu-item-title-margin: 0 0 0 0 !default;
 $actu-item-title-padding: 0 1rem !default;
 $actu-item-title-color: $primary-dark;
 $actu-item-title-text-transform: initial !default;
-$actu-item-title-font-size: 22px;
-$actu-item-title-font-weight: 500;
-$actu-item-title-align: left !default;
+$actu-item-title-font-size: 24px;               // 24px (Figma)
+$actu-item-title-font-weight: 700;              // bold (Figma)
+$actu-item-title-align: center;                 // centré (Figma)
 $actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
 $actu-item-description-color: $primary-dark;
-$actu-item-description-align: left !default;
+$actu-item-description-align: center;           // centré (Figma)
 $actu-item-description-font-family: $font-family-base !default;
-$actu-date-margin: 1rem 0 1rem 0;
+$actu-date-margin: 0.75rem 0 0.5rem;
 $actu-date-padding: 0 1rem !default;
 $actu-date-color: $primary-dark;
-$actu-date-font-size: 18px;
-$actu-date-align: left !default;
+$actu-date-font-size: 17px;                     // 17px (Figma)
+$actu-date-align: center;                       // centré (Figma)
 $actu-see-all-justify-content: center;
+$actu-see-all-btn-bg: $blue-cta;                // bleu bouton (Figma)
+$actu-see-all-btn-bg-hover: $blue-cta-hover;    // bleu bouton hover
+$actu-see-all-btn-color: #fff;                  // texte blanc (Figma)
+$actu-see-all-btn-radius: 50px;                 // capsule (Figma)
 
 // Event
 $event-section-full-width: true !default;
