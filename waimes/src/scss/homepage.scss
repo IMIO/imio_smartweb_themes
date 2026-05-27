@@ -1,4 +1,167 @@
 // ============================================================
+// HEADER — synchronisation Figma
+// Sélecteur : #portal-header-top
+// ============================================================
+
+// Navbar — fond transparent (override Bootstrap .bg-primary)
+#portal-globalnav-wrapper {
+  background-color: transparent !important;
+}
+
+// Liens premier niveau — focus-visible clavier
+#portal-globalnav > li > a {
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 3px solid $blue-cta;
+    outline-offset: 4px;
+  }
+}
+
+// Lien courant / en chemin — accentuation bleue
+#portal-globalnav > li.inPath > a {
+  color: $blue-cta;
+}
+
+// "Mon compte" — border-radius capsule (non couvert par variable)
+#header-links .account {
+  border-radius: 50px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  &:focus-visible {
+    background-color: $blue-cta;
+    color: #fff;
+    outline: 3px solid $primary-dark;
+    outline-offset: 4px;
+  }
+}
+
+// Loupe recherche — hover + focus-visible
+#search-link a {
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: $blue-cta;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $blue-cta;
+    outline-offset: 4px;
+    border-color: $blue-cta;
+  }
+}
+
+// ============================================================
+// SECTION BC (Bulletins communaux) — synchronisation Figma (node 56:32)
+// Sélecteur : .sectioncollection.bc
+// ============================================================
+
+.sectioncollection.bc {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  // Titre — barre verticale gauche (idem autres sections)
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 4px;
+      height: 34px;
+      background-color: $primary-dark;
+      border-radius: 2px;
+    }
+  }
+
+  // Lien carte — hover lift + focus-visible outline
+  .swiper_link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      .swiper-image {
+        box-shadow: 16px 16px 36px -5px rgb(0 0 0 / 30%);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid $blue-cta;
+      outline-offset: 6px;
+      border-radius: 20px;
+    }
+  }
+
+  // Image — portrait arrondi + ombre (Figma : 283×395, radius 20px)
+  .swiper-image {
+    aspect-ratio: 283 / 395;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 11px 11px 30px -5px rgb(0 0 0 / 20%);
+    transition: box-shadow 0.2s ease;
+  }
+
+  // Titre sous l'image
+  .swiper_title {
+    text-align: center;
+    margin-top: 1rem;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: $primary-dark;
+      text-align: center;
+    }
+  }
+
+  // Bouton "Voir tous les bulletins" — bleu capsule
+  .see_all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    a {
+      background-color: $blue-cta;
+      color: #fff;
+      border-radius: 50px;
+      padding: 0.75rem 3rem;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      transition:
+        background-color 0.2s ease,
+        outline-offset 0.1s ease;
+
+      &:hover {
+        background-color: $blue-cta-hover;
+        color: #fff;
+      }
+
+      &:focus-visible {
+        background-color: $blue-cta-hover;
+        color: #fff;
+        outline: 3px solid $primary-dark;
+        outline-offset: 4px;
+      }
+    }
+  }
+}
+
+// ============================================================
 // BANNER — synchronisation Figma (node 0:26)
 // Variables $banner-* définies dans variables.scss
 // ============================================================
@@ -58,11 +221,17 @@
   a {
     color: #fff;
     text-decoration: underline;
+    transition: opacity 0.2s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: #fff;
       opacity: 80%;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+      border-radius: 2px;
     }
   }
 
@@ -84,10 +253,16 @@
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    transition: opacity 0.2s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       opacity: 80%;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+      border-radius: 2px;
     }
   }
 
@@ -134,9 +309,29 @@
   }
 
   // Cercle et label couverts par les variables $quick-access-* globales
-  // Seul résidu : border supprimée (variable ne le couvre pas)
   .image.d-block {
     border: none;
+  }
+}
+
+// Hover / focus partagés Quick Access + Partenaires
+.sectionlinks.quick-access {
+  a.table_image {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+
+      .image.d-block {
+        box-shadow: 0 8px 24px rgb(0 106 185 / 30%);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid $blue-cta;
+      outline-offset: 6px;
+      border-radius: 8px;
+    }
   }
 }
 
@@ -190,10 +385,16 @@
     text-decoration: none;
     transition: background-color 0.2s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $blue-bg-light;
       color: $primary-dark;
+    }
+
+    &:focus-visible {
+      background-color: $blue-bg-light;
+      color: $primary-dark;
+      outline: 3px solid #fff;
+      outline-offset: 4px;
     }
   }
 }
@@ -222,10 +423,24 @@
     }
   }
 
-  // Carte — ombre légère
+  // Carte — ombre légère + hover lift + focus-visible outline
   .swiper-slide > a {
     padding: 1.5rem;
     box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 32px rgb(0 0 0 / 15%);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $blue-cta;
+      outline-offset: 4px;
+      border-radius: 50px;
+    }
   }
 
   // Image circulaire — div background-image
@@ -264,12 +479,10 @@
     font-size: 18px;
     color: #fff;
 
-    // Tous les enfants héritent du blanc
     * {
       color: #fff;
     }
 
-    // Supprimer l'affichage flex interne du base pour ne pas casser le badge
     .start_date,
     .end_date,
     .day_date {
@@ -303,13 +516,22 @@
       border-radius: $event-see-all-btn-radius !important;
       font-size: 20px;
       font-weight: 700;
+      transition: background-color 0.2s ease !important;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $event-see-all-btn-bg-hover !important;
         border-color: $event-see-all-btn-bg-hover !important;
         color: $event-see-all-btn-color !important;
         border-radius: $event-see-all-btn-radius !important;
+      }
+
+      &:focus-visible {
+        background-color: $event-see-all-btn-bg-hover !important;
+        border-color: $event-see-all-btn-bg-hover !important;
+        color: $event-see-all-btn-color !important;
+        border-radius: $event-see-all-btn-radius !important;
+        outline: 3px solid $primary-dark !important;
+        outline-offset: 4px !important;
       }
     }
   }
@@ -318,11 +540,9 @@
 // ============================================================
 // SECTION ACTUALITÉS — synchronisation Figma (node 180:14)
 // Les variables $actu-* sont définies dans variables.scss
-// Ce fichier ne contient que ce qui ne peut pas être géré par le système de variables
 // ============================================================
 
 .sectionnews {
-  // Fond de section (variable $actu-section-bg définie dans variables.scss)
   background-color: $actu-section-bg;
 
   // Titre — décoration barre verticale gauche (Line 1 Figma : 4×34px)
@@ -343,10 +563,24 @@
     }
   }
 
-  // Carte — ombre légère (non couverte par les variables de base)
+  // Carte — ombre légère + hover lift + focus-visible outline
   .swiper-slide > a {
     padding: 1.5rem;
     box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 32px rgb(0 0 0 / 15%);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $blue-cta;
+      outline-offset: 4px;
+      border-radius: 50px;
+    }
   }
 
   // Image circulaire — div avec background-image inline
@@ -395,7 +629,7 @@
     width: 100%;
   }
 
-  // Bouton "Voir toutes les actualités" — couleurs propres à cette section
+  // Bouton "Voir toutes les actualités"
   .see_all {
     a,
     button {
@@ -405,13 +639,22 @@
       border-radius: $actu-see-all-btn-radius !important;
       font-size: 20px;
       font-weight: 700;
+      transition: background-color 0.2s ease !important;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $actu-see-all-btn-bg-hover !important;
         border-color: $actu-see-all-btn-bg-hover !important;
         color: $actu-see-all-btn-color !important;
         border-radius: $actu-see-all-btn-radius !important;
+      }
+
+      &:focus-visible {
+        background-color: $actu-see-all-btn-bg-hover !important;
+        border-color: $actu-see-all-btn-bg-hover !important;
+        color: $actu-see-all-btn-color !important;
+        border-radius: $actu-see-all-btn-radius !important;
+        outline: 3px solid $primary-dark !important;
+        outline-offset: 4px !important;
       }
     }
   }
