@@ -7,6 +7,7 @@ $blue-cta-hover: #005a9e; // bleu CTA hover
 $blue-light: #e3ecf4; // fond section bleu-gris clair — Actualités (Figma)
 $blue-bg-light: #f3f9fb; // fond carte événements (Figma)
 $green-light: #f7faf1; // fond badge catégorie crème — Actualités (Figma)
+$banner-brown: rgb(123 105 89 / 95%); // panneau slogan Banner (Figma)
 
 //*// TYPOGRAPHY
 
@@ -141,19 +142,19 @@ $sub-nav-link-drop: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
-$banner-content-width: max-content !default;
-$banner-content-max-width: 100% !default;
+$banner-heigh: 600px; // hauteur (Figma)
+$banner-content-width: 460px; // largeur panneau (Figma)
+$banner-content-max-width: 460px;
 $banner-content-margin: 0 !default;
-$banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
+$banner-content-padding: 3rem 5rem 3rem 4rem; // padding panneau (Figma)
+$banner-content-background: $banner-brown; // brun chaud semi-transparent (Figma)
 $banner-content-is-vertical-center: true !default;
-$banner-content-title-font-size: 50px !default;
-$banner-content-title-color: $primary-dark;
-$banner-content-title-text-transform: initial !default;
-$banner-content-text-align: left !default;
-$banner-content-description-font-size: 18px !default;
-$banner-content-description-color: $primary-dark;
+$banner-content-title-font-size: 35px; // 35px (Figma)
+$banner-content-title-color: #fff; // blanc (Figma)
+$banner-content-title-text-transform: none;
+$banner-content-text-align: center; // centré (Figma)
+$banner-content-description-font-size: 25px; // 25px (Figma)
+$banner-content-description-color: #fff; // blanc (Figma)
 
 // see_all
 $see-all-padding: 10px 30px;
@@ -182,19 +183,19 @@ $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: center;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 80px;
-$quick-access-height: 80px;
-$quick-access-background: $primary-svg;
-$quick-access-border: solid 0px $primary;
+$quick-access-width: 90px; // 90px (Figma)
+$quick-access-height: 90px; // 90px (Figma)
+$quick-access-background: $blue-cta; // bleu (Figma)
+$quick-access-border: solid 0 $primary !default;
 $quick-access-border-radius: 100px !default;
 $quick-access-shadow: none !default;
-$quick-access-svg-width: 35px;
-$quick-access-svg-color: $primary-dark;
+$quick-access-svg-width: 40px; // 40px (Figma)
+$quick-access-svg-color: #fff; // icône blanche (Figma)
 $quick-access-item-title-margin: 1rem 0 0 0 !default;
 $quick-access-title-font-size: 18px !default;
 $quick-access-title-color: $primary-dark;
 $quick-access-title-text-transform: initial !default;
-$quick-access-title-weight: 400 !default;
+$quick-access-title-weight: 700; // bold (Figma)
 
 $quick-access-enable-full-bg: false !default;
 $quick-access-full-bg-color: $primary !default;
@@ -422,6 +423,10 @@ $see-all-font-family: $font-family-base;
   --bs-card-spacer-x: 1rem;
   --bs-card-spacer-y: 1rem;
 }
+
+// footer
+$colofon-bg: $blue-cta; // fond colophon bleu (Figma)
+$colofon-color: #fff;
 
 // bootstrap
 .breadcrumb {

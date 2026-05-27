@@ -1,4 +1,204 @@
 // ============================================================
+// BANNER — synchronisation Figma (node 0:26)
+// Variables $banner-* définies dans variables.scss
+// ============================================================
+
+.smartweb_herobanner {
+  // Image — coin arrondi bas-droit caractéristique (Figma : 231px)
+  .swiper-banner-image {
+    border-bottom-right-radius: 231px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  // Wrapper — flex pour coller le panneau à droite
+  .swiper-banner-content-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  // Panneau — capsule arrondie côté gauche, bord droit sans radius (Figma)
+  .swiper-banner-content {
+    border-radius: 300px 0 0 300px;
+  }
+
+  // Titre — display block + espacement bas
+  .swiper-banner-title {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  // Description — espacement avec le titre
+  .swiper-banner-description p {
+    font-size: $banner-content-description-font-size;
+  }
+}
+
+// ============================================================
+// FOOTER — synchronisation Figma (node 23:12)
+// ============================================================
+
+#portal-footer-wrapper {
+  background-color: $blue-cta;
+
+  // Titres de colonnes (Contact, Liens utiles)
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  // Tous les liens blancs
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      opacity: 80%;
+    }
+  }
+
+  // Texte courant — 14px blanc
+  p,
+  li,
+  address {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+
+// Colophon (liens légaux + copyright) — $colofon-bg défini dans variables.scss
+#portal-colophon {
+  padding: 1.5rem 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      opacity: 80%;
+    }
+  }
+
+  p,
+  li {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+// ============================================================
+// SECTION PARTENAIRES — synchronisation Figma (node 56:34)
+// Sélecteur : .sectionlinks.quick-access.partenaires
+// ============================================================
+
+.sectionlinks.quick-access.partenaires {
+  // Fond bleu clair pleine largeur
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $blue-bg-light;
+  padding: 3rem 0;
+
+  // Titre — barre verticale gauche (idem autres sections)
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 4px;
+      height: 34px;
+      background-color: $primary-dark;
+      border-radius: 2px;
+    }
+  }
+
+  // Cercle et label couverts par les variables $quick-access-* globales
+  // Seul résidu : border supprimée (variable ne le couvre pas)
+  .image.d-block {
+    border: none;
+  }
+}
+
+// ============================================================
+// SECTION QUESTIONS — synchronisation Figma (node 180:16)
+// Sélecteur : .sectionhtml.waimes-bouton
+// ============================================================
+
+.sectionhtml.waimes-bouton {
+  // Fond bleu pleine largeur
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $blue-cta;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  // Titre blanc centré
+  .section-title {
+    color: #fff;
+    font-size: 2.375rem; // 38px (Figma)
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    // Pas de barre verticale sur cette section
+    &::before {
+      display: none;
+    }
+  }
+
+  // Centrage du bouton
+  .html {
+    display: flex;
+    justify-content: center;
+  }
+
+  // Bouton blanc, texte $primary-dark, capsule
+  .html .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    color: $primary-dark;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 3rem;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $blue-bg-light;
+      color: $primary-dark;
+    }
+  }
+}
+
+// ============================================================
 // SECTION AGENDA — synchronisation Figma (node 180:15)
 // Variables $event-* définies dans variables.scss
 // ============================================================
