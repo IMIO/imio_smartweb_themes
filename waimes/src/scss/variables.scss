@@ -4,8 +4,9 @@ $primary-svg: #f5e9e7;
 $primary-dark: #221e20;
 $blue-cta: #006ab9; // bleu CTA boutons (Figma)
 $blue-cta-hover: #005a9e; // bleu CTA hover
-$blue-light: #e3ecf4; // fond section bleu-gris clair (Figma)
-$green-light: #f7faf1; // fond badge catégorie crème (Figma)
+$blue-light: #e3ecf4; // fond section bleu-gris clair — Actualités (Figma)
+$blue-bg-light: #f3f9fb; // fond carte événements (Figma)
+$green-light: #f7faf1; // fond badge catégorie crème — Actualités (Figma)
 
 //*// TYPOGRAPHY
 
@@ -266,41 +267,45 @@ $actu-see-all-btn-radius: 50px; // capsule (Figma)
 
 // Event
 $event-section-full-width: true !default;
-$event-section-padding-top: 2rem !default;
-$event-section-padding-bottom: 2rem !default;
+$event-section-padding-top: 3rem;
+$event-section-padding-bottom: 3rem;
 $event-section-margin: 0 !default;
 $event-title-color: $primary-dark;
-$event-title-align: left;
+$event-title-align: center; // centré (Figma)
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color: transparent;
-$event-item-bg-radius: $global-radius + 2 !default;
-$event-category-margin: 0 0 0.5rem 0 !default;
-$event-category-padding: 0.5rem 1rem !default;
-$event-category-color: #fff;
-$event-category-bg-color: $primary;
-$event-category-text-transform: uppercase !default;
+$event-image-border-radius: 50%; // cercle parfait (Figma)
+$event-item-bg-color: $blue-bg-light; // fond carte (Figma)
+$event-item-bg-radius: 50px; // grand radius (Figma)
+$event-category-margin: 0.75rem 0 0.5rem !default;
+$event-category-padding: 0.3rem 1rem !default;
+$event-category-color: $primary-dark; // texte sombre (Figma)
+$event-category-bg-color: #fff; // fond blanc badge catégorie (Figma)
+$event-category-text-transform: none; // pas d'uppercase (Figma)
 $event-category-font-size: 16px;
 $event-category-font-weight: initial !default;
-$event-category-radius: 10px;
+$event-category-radius: 20px; // radius capsule (Figma)
 $event-item-title-margin: 0 !default;
 $event-item-title-padding: 0 1rem !default;
 $event-item-title-color: $primary-dark;
 $event-item-title-text-transform: initial !default;
-$event-item-title-font-size: 22px;
-$event-item-title-font-weight: 500;
+$event-item-title-font-size: 24px; // 24px (Figma)
+$event-item-title-font-weight: 700; // bold (Figma)
 $event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: $primary-dark;
-$event-item-description-align: left;
+$event-item-description-align: center; // centré (Figma)
 $event-item-description-font-family: $font-family-base !default;
-$event-date-margin: 0 0 0.5rem 0 !default;
-$event-date-padding: 0 1rem !default;
-$event-date-color: $primary-dark;
+$event-date-margin: 0.5rem auto; // centré horizontalement
+$event-date-padding: 0.3rem 1.5rem; // badge pill (Figma)
+$event-date-color: #fff; // texte blanc sur fond bleu (Figma)
 $event-date-font-size: 18px;
 $event-see-all-justify-content: center;
+$event-see-all-btn-bg: $blue-cta; // bleu bouton (Figma)
+$event-see-all-btn-bg-hover: $blue-cta-hover;
+$event-see-all-btn-color: #fff;
+$event-see-all-btn-radius: 50px;
 
 // Album
 $album-section-full-width: true !default;

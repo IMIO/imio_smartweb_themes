@@ -1,4 +1,121 @@
 // ============================================================
+// SECTION AGENDA — synchronisation Figma (node 180:15)
+// Variables $event-* définies dans variables.scss
+// ============================================================
+
+.sectionevents {
+  // Titre — même décoration barre verticale que Actualités
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 4px;
+      height: 34px;
+      background-color: $primary-dark;
+      border-radius: 2px;
+    }
+  }
+
+  // Carte — ombre légère
+  .swiper-slide > a {
+    padding: 1.5rem;
+    box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  }
+
+  // Image circulaire — div background-image
+  .swiper-image {
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  // Badge catégorie — blanc, bordure $blue-bg-light, centré
+  .swiper_category {
+    display: flex;
+    justify-content: center;
+
+    span {
+      border: 2px solid $blue-bg-light;
+    }
+  }
+
+  .auth_source_container_title {
+    display: block;
+    text-align: center;
+    border: 2px solid $blue-bg-light;
+  }
+
+  // Date — badge bleu pill (Figma)
+  .swiper_date {
+    display: flex;
+    justify-content: center;
+    background-color: $blue-cta;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0.5rem auto;
+    padding: 0.3rem 1.5rem;
+    font-size: 18px;
+    color: #fff;
+
+    // Tous les enfants héritent du blanc
+    * {
+      color: #fff;
+    }
+
+    // Supprimer l'affichage flex interne du base pour ne pas casser le badge
+    .start_date,
+    .end_date,
+    .day_date {
+      display: inline;
+    }
+  }
+
+  // Titre article — centré
+  .swiper_title {
+    text-align: center;
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  // Description — centrée
+  .swiper_description {
+    text-align: center;
+    width: 100%;
+  }
+
+  // Bouton "Voir tous les événements"
+  .see_all {
+    a,
+    button {
+      background-color: $event-see-all-btn-bg !important;
+      color: $event-see-all-btn-color !important;
+      border-color: $event-see-all-btn-bg !important;
+      border-radius: $event-see-all-btn-radius !important;
+      font-size: 20px;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        background-color: $event-see-all-btn-bg-hover !important;
+        border-color: $event-see-all-btn-bg-hover !important;
+        color: $event-see-all-btn-color !important;
+        border-radius: $event-see-all-btn-radius !important;
+      }
+    }
+  }
+}
+
+// ============================================================
 // SECTION ACTUALITÉS — synchronisation Figma (node 180:14)
 // Les variables $actu-* sont définies dans variables.scss
 // Ce fichier ne contient que ce qui ne peut pas être géré par le système de variables
