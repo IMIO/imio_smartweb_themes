@@ -6,18 +6,18 @@
       justify-content: center;
 
       a {
-        background: $primary-atl-red;
+        background-color: $primary-atl-red;
         border: 1px solid $primary-atl-red;
         color: #fff;
         padding: 10px 20px;
         border-radius: 25px;
-        transition: all 0.2s ease;
+        transition: background-color 0.2s ease;
         text-decoration: none;
 
         &:hover {
-          background: transparent;
-          color: #000;
-          border-color: #000;
+          background-color: $primary-atl-darkgreen;
+          border-color: $primary-atl-darkgreen;
+          color: #fff;
         }
 
         &::after {

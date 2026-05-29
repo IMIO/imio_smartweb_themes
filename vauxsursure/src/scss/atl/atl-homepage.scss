@@ -1,22 +1,38 @@
 @keyframes float-red {
   0%,
   100% {
-    transform: rotate(4.24deg) translateY(0);
+    transform: rotate(4.24deg) translateY(0) scale(1);
+  }
+
+  25% {
+    transform: rotate(-6deg) translateY(-8px) scale(1.12);
   }
 
   50% {
-    transform: rotate(4.24deg) translateY(-4px);
+    transform: rotate(4.24deg) translateY(-14px) scale(1);
+  }
+
+  75% {
+    transform: rotate(12deg) translateY(-8px) scale(1.12);
   }
 }
 
 @keyframes float-green {
   0%,
   100% {
-    transform: rotate(5.72deg) translateY(0);
+    transform: rotate(5.72deg) translateY(0) scale(1);
+  }
+
+  25% {
+    transform: rotate(14deg) translateY(8px) scale(1.1);
   }
 
   50% {
-    transform: rotate(5.72deg) translateY(-4px);
+    transform: rotate(5.72deg) translateY(14px) scale(1);
+  }
+
+  75% {
+    transform: rotate(-4deg) translateY(8px) scale(1.1);
   }
 }
 
@@ -139,7 +155,8 @@
   }
 
   // A LA UNE
-  .sortable-section[data-id="a-la-une"] {
+  .sortable-section[data-id="a-la-une"],
+  .sortable-section[data-id="copy_of_a-la-une"] {
     position: relative;
     z-index: 0;
 
@@ -157,7 +174,8 @@
     }
   }
 
-  #container-section-a-la-une {
+  #container-section-a-la-une,
+  #container-section-copy_of_a-la-une {
     padding: 4rem 2rem;
     position: relative;
     overflow: visible;
@@ -200,6 +218,26 @@
       padding-bottom: 0;
       position: relative;
       z-index: 1;
+      border-radius: 8px;
+
+      // Survol / focus clavier — effet visuel cohérent
+      &:hover,
+      &:focus-visible {
+        .swiper-image {
+          transform: rotate(-3deg) translateY(-6px) scale(1.02);
+          box-shadow: 0 16px 44px rgba(38, 94, 112, 28%);
+        }
+
+        .swiper_title h3 {
+          color: $primary-atl-red;
+        }
+      }
+
+      // Indicateur de focus visible au clavier (WCAG 2.4.7 / 2.4.11)
+      &:focus-visible {
+        outline: 3px solid $primary-atl-red;
+        outline-offset: 6px;
+      }
     }
 
     .swiper-image {
@@ -212,6 +250,9 @@
       transform: rotate(-3deg);
       box-shadow: 0 8px 32px rgba(38, 94, 112, 18%);
       position: relative; // nécessaire pour le ::after
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 
       // Carré rouge arrondi — coin supérieur gauche
       &::before {
@@ -226,7 +267,7 @@
         left: -10px; // à cheval sur le bord gauche
         z-index: 2;
         pointer-events: none;
-        animation: float-red 3s ease-in-out infinite;
+        animation: float-red 2.4s ease-in-out infinite;
       }
 
       // Carré décoratif vert — coin inférieur gauche de l'image
@@ -242,8 +283,8 @@
         left: -10px;
         z-index: 2;
         pointer-events: none;
-        animation: float-green 3s ease-in-out infinite;
-        animation-delay: 0.8s;
+        animation: float-green 2.4s ease-in-out infinite;
+        animation-delay: 0.6s;
       }
     }
 
@@ -317,9 +358,30 @@
     }
   }
 
+  /* Accessibilité — respect de prefers-reduced-motion (WCAG 2.2.2 / 2.3.3) */
+  @media (prefers-reduced-motion: reduce) {
+    #container-section-a-la-une,
+    #container-section-copy_of_a-la-une {
+      .swiper-image {
+        transition: none;
+
+        &::before,
+        &::after {
+          animation: none;
+        }
+      }
+
+      .swiper-slide a.swiper_link:hover .swiper-image,
+      .swiper-slide a.swiper_link:focus-visible .swiper-image {
+        transform: rotate(-3deg); // pas de mouvement, on garde l'inclinaison de base
+      }
+    }
+  }
+
   /* Responsive mobile */
   @media (max-width: 767px) {
-    #container-section-a-la-une {
+    #container-section-a-la-une,
+    #container-section-copy_of_a-la-une {
       .swiper-slide a.swiper_link {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -493,6 +555,37 @@
 
   #portal-colophon {
     background: #1a4653;
+
+    // Accessibilité WCAG — états des liens du colophon
+    .colophonWrapper a {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 40%);
+      text-underline-offset: 3px;
+      border-radius: 3px;
+      transition:
+        color 0.2s ease,
+        text-decoration-color 0.2s ease,
+        background-color 0.2s ease;
+
+      // Survol souris : soulignement plein (pas seulement la couleur — 1.4.1)
+      &:hover {
+        color: #fff;
+        text-decoration-color: #fff;
+      }
+
+      // Focus clavier (Tab) : indicateur visible et contrasté — 2.4.7 / 2.4.11
+      &:focus-visible {
+        outline: 3px solid $primary-atl-red;
+        outline-offset: 3px;
+        text-decoration-color: #fff;
+      }
+
+      // Repli pour navigateurs sans :focus-visible
+      &:focus {
+        text-decoration-color: #fff;
+      }
+    }
   }
 
   //Breadcrumbs
@@ -575,5 +668,98 @@
     h1.page-title {
       margin-top: 1.5rem;
     }
+  }
+}
+
+// ============================================================
+// FOOTER ATL — soulignement animé des éléments cliquables
+// ============================================================
+.site-go-vss {
+  // Lien e-mail de la section Contact
+  #container-section-contact .text a {
+    color: $primary-atl-darkgreen;
+    font-weight: 500;
+    text-decoration: none;
+    // Soulignement permanent fin, dessiné via un dégradé pour pouvoir l'animer
+    background-image: linear-gradient(currentcolor, currentcolor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
+    transition:
+      background-size 0.3s ease,
+      color 0.2s ease;
+
+    &:hover {
+      color: $primary-atl-red;
+      background-size: 100% 2px; // le trait s'épaissit au survol
+    }
+
+    &:focus-visible {
+      color: $primary-atl-red;
+      outline: 2px solid $primary-atl-red;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  // Liens utiles (icône + titre)
+  #container-section-liens-utiles {
+    .table_image {
+      text-decoration: none;
+
+      // Le soulignement se déploie de gauche à droite
+      .table_title span {
+        background-image: linear-gradient(currentcolor, currentcolor);
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: 0 1px;
+        transition:
+          background-size 0.3s ease,
+          color 0.2s ease;
+      }
+
+      .image svg {
+        transition:
+          transform 0.2s ease,
+          fill 0.2s ease;
+      }
+
+      &:hover,
+      &:focus-visible {
+        .table_title span {
+          color: $primary-atl-red;
+          background-size: 100% 1px;
+        }
+
+        .image svg {
+          fill: $primary-atl-red;
+          transform: translateY(-2px);
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid $primary-atl-red;
+        outline-offset: 3px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+// Menu principal ATL — retire le trait de soulignement (::before) sous les entrées
+.site-go-vss {
+  #portal-globalnav > li.has_subtree > a::before {
+    display: none;
+  }
+}
+
+// Pages contact ATL
+.site-go-vss {
+  .milicontact {
+    gap: 20px;
+  }
+
+  .contact-type-organization {
+    background: #e8f1f4;
   }
 }
