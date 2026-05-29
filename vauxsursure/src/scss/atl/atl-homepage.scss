@@ -156,7 +156,7 @@
 
   // A LA UNE
   .sortable-section[data-id="a-la-une"],
-  .sortable-section[data-id="copy_of_a-la-une"] {
+  .sortable-section[data-id="vss-a-la-une"] {
     position: relative;
     z-index: 0;
 
@@ -176,7 +176,7 @@
   }
 
   #container-section-a-la-une,
-  #container-section-copy_of_a-la-une {
+  #container-section-vss-a-la-une {
     padding: 4rem 2rem;
     position: relative;
     overflow: visible;
@@ -362,7 +362,7 @@
   /* Accessibilité — respect de prefers-reduced-motion (WCAG 2.2.2 / 2.3.3) */
   @media (prefers-reduced-motion: reduce) {
     #container-section-a-la-une,
-    #container-section-copy_of_a-la-une {
+    #container-section-vss-a-la-une {
       .swiper-image {
         transition: none;
 
@@ -384,7 +384,7 @@
   /* Responsive mobile */
   @media (max-width: 767px) {
     #container-section-a-la-une,
-    #container-section-copy_of_a-la-une {
+    #container-section-vss-a-la-une {
       .swiper-slide a.swiper_link {
         grid-template-columns: 1fr;
         grid-template-areas:
