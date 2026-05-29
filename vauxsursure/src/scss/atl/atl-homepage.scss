@@ -373,7 +373,9 @@
 
       .swiper-slide a.swiper_link:hover .swiper-image,
       .swiper-slide a.swiper_link:focus-visible .swiper-image {
-        transform: rotate(-3deg); // pas de mouvement, on garde l'inclinaison de base
+        transform: rotate(
+          -3deg
+        ); // pas de mouvement, on garde l'inclinaison de base
       }
     }
   }
