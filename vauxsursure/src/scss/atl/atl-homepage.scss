@@ -320,6 +320,39 @@
       }
     }
 
+    // Dernier slide : transforme l'affordance "voir tout" héritée de
+    // home/a-la-une.scss (lien souligné) en bouton rond rouge "→".
+    .swiper-slide:last-child .swiper_description::after {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      margin-top: 1rem;
+      padding-bottom: 0; // annule le padding hérité
+      border-radius: 50%;
+      background-color: $primary-atl-red;
+      background-image: none; // annule le soulignement hérité
+      color: #fff;
+      font-size: 24px;
+      line-height: 1;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 15%);
+      transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .swiper-slide:last-child a:hover .swiper_description::after,
+    .swiper-slide:last-child a:focus .swiper_description::after {
+      background-color: $primary-atl-darkgreen;
+      transform: translateX(4px);
+    }
+
+    .swiper-slide:last-child a:focus-visible .swiper_description::after {
+      outline: 2px solid $primary-atl-red;
+      outline-offset: 2px;
+    }
+
     .swiper-slide {
       height: auto !important;
     }
