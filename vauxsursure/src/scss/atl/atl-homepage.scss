@@ -758,11 +758,19 @@
 
 // Pages contact ATL
 .site-go-vss {
-  .milicontact {
+  .multicontact {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
-  .contact-type-organization {
+  // Surclasse la règle de base #portal-column-content .section-contact .contact-type-organization
+  #portal-column-content .section-contact .contact-type-organization {
     background: #e8f1f4;
   }
+}
+
+// Format des images — ratio 3/4
+body.section-brochures.site-go-vss .block-menu-element > a .newsImage {
+  aspect-ratio: 3 / 4;
 }
