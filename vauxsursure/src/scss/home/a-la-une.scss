@@ -65,6 +65,37 @@
     .swiper_description {
       font-size: 16px;
     }
+
+    // Dernier bloc : repère visuel "cliquable" aux couleurs du see_all.
+    // La carte entière reste le lien accessible (<a class="swiper_link"> + title),
+    // ce pseudo-élément ne sert qu'à signaler l'affordance de clic.
+    &:last-child {
+      .swiper_description::after {
+        content: "→";
+        display: inline-block;
+        width: max-content;
+        margin-top: 1rem;
+        padding-bottom: 4px;
+        color: $see-all-color;
+        font-family: $see-all-font-family;
+        font-size: $see-all-font-size;
+        font-weight: $see-all-font-weight;
+        line-height: 1.2;
+        background-image: linear-gradient(
+          $see-all-underline-color,
+          $see-all-underline-color
+        );
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: $see-all-underline-width 2px;
+        transition: background-size 0.2s ease;
+      }
+
+      a:hover .swiper_description::after,
+      a:focus .swiper_description::after {
+        background-size: $see-all-hover-underline-width 2px;
+      }
+    }
   }
 
   .swiper-button-prev {
