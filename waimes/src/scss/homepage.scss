@@ -204,7 +204,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 300px 0 0 300px;
+    border-radius: 0 0 300px 300px;
+
+    // Logo-slogan — sous le titre et la description (Figma node 11:262)
+    // Marque blanche ajourée : le « W » en négatif laisse voir le fond brun
+    &::after {
+      content: "";
+      display: block;
+      width: 246px;
+      max-width: 60%;
+      aspect-ratio: 246 / 215;
+      margin-top: 2rem;
+      background: url("../../assets/svg/logo-slogan.svg") center / contain
+        no-repeat;
+    }
   }
 
   // Titre — display block + espacement bas
@@ -332,6 +345,24 @@
   .image.d-block {
     border: none;
   }
+}
+
+// Quick-access — à cheval sur le bas du hero banner (Figma : ronds straddle banner bottom)
+// Uniquement sur la page d'accueil (.section-home-page) et seulement le 1er quick-access :
+// :not(.partenaires) exclut la section Partenaires, le combinateur ~ annule l'overlap
+// sur tout quick-access précédé d'un autre (→ il ne reste que le premier).
+.section-home-page .sectionlinks.quick-access:not(.partenaires) {
+  margin-top: -153px; // banner = 600px ; pas besoin de z-index (image banner en z-index:-1)
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 0; // overlap désactivé quand le layout s'empile
+  }
+}
+
+.section-home-page
+  .sectionlinks.quick-access:not(.partenaires)
+  ~ .sectionlinks.quick-access:not(.partenaires) {
+  margin-top: 0;
 }
 
 // Hover / focus partagés Quick Access + Partenaires
