@@ -335,9 +335,73 @@ div#localmessagesviewlet h2 {
 }
 
 //Slogan Banner
-span.swiper-banner-link {
+.swiper-banner-link {
+  display: inline-flex;
+
   a {
-    color: #fff;
+    // Apparence
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.6em 1.4em;
+    border-radius: 50rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff; // contrast ratio > 4.5:1 sur fond sombre
     font-size: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4;
+    cursor: pointer;
+
+    // Transition douce
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      outline-offset 0.15s ease,
+      box-shadow 0.2s ease;
+
+    // ── Hover ──
+    &:hover {
+      background-color: #fff;
+      color: $primary-svg; // #265E70 — contrast > 7:1 sur blanc ✓
+      text-decoration: none;
+    }
+
+    // ── Focus clavier (WCAG 2.4.11) ──
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 35%);
+      background-color: #fff;
+      color: $primary-svg;
+      text-decoration: none;
+    }
+
+    // Supprime le focus souris (ne masque pas le focus clavier)
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    // ── Active ──
+    &:active {
+      background-color: rgba(255, 255, 255, 85%);
+      color: $primary-svg;
+      transform: scale(0.97);
+    }
+
+    // ── Visited — reste lisible sur fond sombre ──
+    &:visited {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 70%);
+    }
   }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content {
+  border-radius: 15px;
 }
