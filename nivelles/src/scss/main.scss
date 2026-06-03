@@ -256,8 +256,10 @@ footer {
 
 .portalMessage.error {
   background: #a71800;
+  color: #fff;
 
-  h2 {
+  h2,
+  span {
     color: #fff !important;
   }
 }
@@ -292,7 +294,11 @@ footer {
 
 #messagesviewlet .portalMessage.warning,
 #localmessagesviewlet .portalMessage.warning {
-  background-color: #d14600 !important;
+  color: #fff !important;
+
+  span {
+    color: #fff !important;
+  }
 }
 
 .is-in-minisite {
@@ -335,65 +341,71 @@ div#localmessagesviewlet h2 {
 }
 
 //Slogan Banner
-.swiper-banner-link {
-  display: inline-flex;
+.swiper-banner-content-wrapper.container {
+  .swiper-banner-description {
+    padding: 10px 0 15px;
+  }
 
-  a {
-    // Apparence
+  .swiper-banner-link {
     display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    padding: 0.6em 1.4em;
-    border-radius: 50rem;
-    border: 2px solid #fff;
-    background-color: transparent;
-    color: #fff; // contrast ratio > 4.5:1 sur fond sombre
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 1.4;
-    cursor: pointer;
 
-    // Transition douce
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease,
-      outline-offset 0.15s ease,
-      box-shadow 0.2s ease;
-
-    // ── Hover ──
-    &:hover {
-      background-color: #fff;
-      color: $primary-svg; // #265E70 — contrast > 7:1 sur blanc ✓
+    a {
+      // Apparence
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      padding: 0.6em 1.4em;
+      border-radius: 50rem;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff; // contrast ratio > 4.5:1 sur fond sombre
+      font-size: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
+      font-weight: 600;
       text-decoration: none;
-    }
+      line-height: 1.4;
+      cursor: pointer;
 
-    // ── Focus clavier (WCAG 2.4.11) ──
-    &:focus-visible {
-      outline: 3px solid #fff;
-      outline-offset: 4px;
-      box-shadow: 0 0 0 6px rgba(255, 255, 255, 35%);
-      background-color: #fff;
-      color: $primary-svg;
-      text-decoration: none;
-    }
+      // Transition douce
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        outline-offset 0.15s ease,
+        box-shadow 0.2s ease;
 
-    // Supprime le focus souris (ne masque pas le focus clavier)
-    &:focus:not(:focus-visible) {
-      outline: none;
-    }
+      // ── Hover ──
+      &:hover {
+        background-color: #fff;
+        color: $primary-svg; // #265E70 — contrast > 7:1 sur blanc ✓
+        text-decoration: none;
+      }
 
-    // ── Active ──
-    &:active {
-      background-color: rgba(255, 255, 255, 85%);
-      color: $primary-svg;
-      transform: scale(0.97);
-    }
+      // ── Focus clavier (WCAG 2.4.11) ──
+      &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 4px;
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 35%);
+        background-color: #fff;
+        color: $primary-svg;
+        text-decoration: none;
+      }
 
-    // ── Visited — reste lisible sur fond sombre ──
-    &:visited {
-      color: #fff;
-      border-color: rgba(255, 255, 255, 70%);
+      // Supprime le focus souris (ne masque pas le focus clavier)
+      &:focus:not(:focus-visible) {
+        outline: none;
+      }
+
+      // ── Active ──
+      &:active {
+        background-color: rgba(255, 255, 255, 85%);
+        color: $primary-svg;
+        transform: scale(0.97);
+      }
+
+      // ── Visited — reste lisible sur fond sombre ──
+      &:visited {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 70%);
+      }
     }
   }
 }
