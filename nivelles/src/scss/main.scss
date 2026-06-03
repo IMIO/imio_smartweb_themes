@@ -415,6 +415,11 @@ div#messagesviewlet p a {
   font-weight: bold;
 }
 
+#localmessagesviewlet .portalMessage.warning,
+#messagesviewlet .portalMessage.warning {
+  background-color: #212529;
+}
+
 .smartweb_herobanner
   .bannerSwiper
   .swiper-slide
