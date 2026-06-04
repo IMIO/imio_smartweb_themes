@@ -32,7 +32,7 @@
       content: "";
       display: block;
       background: url("../../assets/svg/logo-liege.svg") no-repeat center /
-        contain;
+        contain !important;
       width: calc(100% - 60px);
       height: 90px;
       margin-left: auto;
