@@ -341,3 +341,9 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   position: relative;
   overflow: hidden;
 }
+
+.subsection-vie-politique-conseil-communal-composition {
+  .card-img-top {
+    padding-top: 120%;
+  }
+}

@@ -32,7 +32,12 @@
   }
 }
 
-#content-core .sectioncontact .contact-type-organization {
+#content-core .sectioncontact.col-sm-3,
+#content-core .sectioncontact.col-sm-4,
+#content-core .sectioncontact.col-sm-6,
+#content-core .sectioncontact.col-sm-8,
+#content-core .sectioncontact.col-sm-9,
+#content-core .sectioncontact.col-sm-12 {
   background:
     url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
     linear-gradient(to bottom, #f3f3f3, #fff) !important;
