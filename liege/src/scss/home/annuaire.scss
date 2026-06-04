@@ -1,0 +1,41 @@
+.sectioncontact .multicontact {
+  gap: 20px;
+
+  .contact-type-position {
+    background:
+      url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
+      linear-gradient(to bottom, #f3f3f3, #fff);
+    padding-top: 20px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 20px;
+  }
+
+  .body-section {
+    padding-top: 25px !important;
+  }
+
+  .contact_logo {
+    display: none;
+  }
+
+  .contact_leadimage {
+    margin-top: 0 !important;
+    aspect-ratio: 4/5 !important;
+  }
+
+  a {
+    color: $primary-red;
+
+    &:hover {
+      color: $primary-svg;
+    }
+  }
+}
+
+#content-core .sectioncontact .contact-type-organization {
+  background:
+    url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
+    linear-gradient(to bottom, #f3f3f3, #fff) !important;
+  border-radius: 20px 20px 0 0 !important;
+  margin-bottom: 20px !important;
+}

@@ -1,24 +1,17 @@
 .portaltype-imio-smartweb-page #main-container .sectionfiles {
-  background-color: #fff;
   border-radius: 0;
   font-weight: bold;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  padding: 0 !important;
-
-  &::after {
-    display: none !important;
-  }
+  padding: 0 0 40px !important;
+  margin: 40px 0;
+  background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
 
   .section-title {
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 0;
-    width: auto;
-    color: #000;
     padding: 0 !important;
+    margin-bottom: 20px;
+
+    &::before {
+      display: none !important;
+    }
 
     a {
       text-decoration: none;
@@ -29,10 +22,13 @@
     }
   }
 
+  .row {
+    width: 100%;
+  }
+
   .section-container {
-    background-color: #fff;
     border-radius: 0;
-    display: flex;
+    //display: flex;
 
     @media screen and (min-width: 800px) {
       padding: 0 50px;
@@ -74,4 +70,56 @@
       }
     }
   }
+}
+
+.sectionfiles li {
+  margin: 0;
+  padding: 0;
+}
+
+.sectionfiles .table_display {
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image {
+  background-color: $primary-red;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $primary-svg;
+    transition: 0.5s;
+  }
+
+  div,
+  span {
+    color: #fff !important;
+  }
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.sectionfiles::after {
+  background-color: $primary-svg;
+  border-radius: 8px;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50vw);
+  width: 100vw;
+  z-index: -1;
 }

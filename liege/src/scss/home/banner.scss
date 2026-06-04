@@ -1,0 +1,203 @@
+// ─── Logo sr-only (bandeau blanc) ─────────────────────────────────────────────
+.section-accueil #portal-logo .sr-only {
+  position: absolute;
+  height: 140px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: unset;
+  border: 0;
+  color: #fff;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  top: 110px;
+
+  &::before {
+    display: none;
+  }
+
+  span {
+    font-size: 0;
+    width: 100%;
+    max-width: 450px;
+
+    &::before {
+      content: "";
+      display: block;
+      background: url("../../assets/svg/logo-liege.svg") no-repeat center /
+        contain;
+      width: calc(100% - 60px);
+      height: 90px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 990px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    height: 100px;
+  }
+}
+
+// ─── Hero banner ──────────────────────────────────────────────────────────────
+.smartweb_herobanner {
+  margin: 140px 0 0;
+  width: calc(100vw - 40px);
+  border-radius: 250px 0 0 250px;
+  overflow: hidden;
+  left: calc(50% + 20px);
+
+  .bannerSwiper {
+    height: 350px;
+  }
+
+  @media (max-width: 768px) {
+    width: calc(100vw - 20px);
+    left: calc(50% + 10px);
+    margin: 120px 0 0;
+
+    .bannerSwiper {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: calc(100vw - 10px);
+    left: calc(50% + 5px);
+    margin: 100px 0 0;
+
+    .bannerSwiper {
+      height: 150px;
+    }
+  }
+}
+
+.swiper-banner-content {
+  display: none !important;
+}
+
+// ─── Barre de recherche ───────────────────────────────────────────────────────
+.search-banner {
+  margin-top: -50px;
+  z-index: 1;
+  text-align: center;
+
+  .html a {
+    display: inline-block;
+    background: #fff url("../../assets/svg/search.svg") no-repeat right 20px
+      center;
+    border: 3px solid $primary-svg;
+    padding: 15px 50px 15px 15px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #8d8d8d;
+    width: calc(100% - 60px);
+    max-width: 850px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+}
+
+// ─── Bouton recherche header ──────────────────────────────────────────────────
+#portal-header #portal-header-top #header-links {
+  gap: 10px;
+
+  #search-link a {
+    width: 50px;
+    height: 50px;
+    background: $primary-svg;
+    border: 2px solid $primary-svg;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 992px) {
+      padding-left: 0 !important;
+    }
+
+    &:hover {
+      background: $primary-red;
+      border: 2px solid $primary-red;
+    }
+  }
+}
+
+// ─── Bouton compte header ─────────────────────────────────────────────────────
+#header-actions {
+  a.account {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #7a2361 !important;
+    border-radius: 50px;
+    padding: 14px 24px !important;
+    text-decoration: none;
+    box-sizing: border-box;
+    height: 50px;
+    transition: background-color 0.2s ease;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("../../assets/svg/perso-compte.svg") no-repeat center /
+        contain;
+      flex-shrink: 0;
+    }
+
+    span {
+      color: #fff !important;
+      font-size: 14px !important;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        background-color: $primary-red !important;
+      }
+    }
+  }
+}
+
+#portal-globalnav-wrapper {
+  .nav-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px !important;
+      background-color: $primary-svg;
+      transition: width 0.3s ease !important;
+    }
+
+    &:hover::before,
+    &.active::before {
+      width: 100%;
+      transition: width 0.3s ease !important;
+    }
+  }
+}

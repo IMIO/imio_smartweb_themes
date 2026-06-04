@@ -1,0 +1,343 @@
+.header-custom {
+  #banner {
+    border-radius: 0 350px 350px 0 !important;
+  }
+
+  #portal-breadcrumbs {
+    margin: 0 !important;
+    position: absolute;
+    z-index: 0;
+
+    .breadcrumb {
+      margin: 10px 0 0 10px !important;
+      background-color: $primary-svg !important;
+      padding: 15px 30px !important;
+      border-radius: 50px;
+
+      .breadcrumb-item {
+        a {
+          color: #fff !important;
+          text-decoration: none !important;
+
+          &:hover {
+            text-decoration: underline !important ;
+            color: #fff !important;
+          }
+        }
+
+        &.active {
+          color: #fff !important ;
+        }
+
+        &::before {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+#portal-breadcrumbs {
+  margin: 0 !important;
+  z-index: 0;
+  max-width: max-content;
+
+  .breadcrumb {
+    margin: 10px 0 0 10px !important;
+    background-color: $primary-svg !important;
+    padding: 15px 30px !important;
+    border-radius: 50px;
+
+    .breadcrumb-item {
+      a {
+        color: #fff !important;
+        text-decoration: none !important;
+
+        &:hover {
+          text-decoration: underline !important ;
+          color: #fff !important;
+        }
+      }
+
+      &.active {
+        color: #fff !important ;
+        text-decoration: underline !important ;
+        cursor: default;
+      }
+
+      &::before {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+// sub-nav
+.subsite-container {
+  background: linear-gradient(to right, #f3f3f3, #fff);
+  border-radius: 10px 0 0;
+
+  #subsite-logo {
+    font-size: 16px;
+    background: $primary-red;
+    border-radius: 0;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  #subsite-navigation > ul > li > a {
+    text-transform: none;
+  }
+}
+
+.contact_leadimage {
+  border-radius: 15px;
+}
+
+.rich_description {
+  color: $primary-svg;
+}
+
+.list-menu-element {
+  a {
+    text-decoration: none;
+
+    .list-card-body {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom
+        #fff;
+
+      .list-card-title {
+        text-decoration: underline;
+        color: $primary-red;
+      }
+
+      .list-card-text {
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      .list-card-body {
+        .list-card-title {
+          color: $primary-svg;
+        }
+      }
+    }
+  }
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 30px;
+
+  @media (max-width: 991px) {
+    font-size: 25px !important;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px !important;
+  }
+
+  // Barre magenta
+  &::before {
+    content: "";
+    width: 19px;
+    height: 2em;
+    background-color: #e8005a;
+    flex-shrink: 0;
+  }
+}
+
+header .rich_description {
+  font-size: 18px !important;
+
+  @media (max-width: 767px) {
+    font-size: 15px !important;
+  }
+}
+
+body:not(.portaltype-imio-smartweb-portalpage) {
+  #portal-column-content {
+    // ─── Décoration bg droite ───────────────────────────────────────────────────
+    &::before {
+      content: "";
+      position: absolute;
+      top: 300px;
+      right: 0;
+      width: 109px;
+      height: 377px;
+      background: url("../../assets/svg/bg-01.svg") no-repeat center top;
+      background-size: contain;
+      z-index: -1;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  #portal-footer-wrapper {
+    position: relative;
+    overflow: visible;
+
+    // ─── Décoration bg gauche ───────────────────────────────────────────────────
+    &::before {
+      content: "";
+      position: absolute;
+      top: -150px;
+      left: 0;
+      width: 109px;
+      height: 377px;
+      background: url("../../assets/svg/bg-02.svg") no-repeat center top;
+      background-size: contain;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section a {
+  color: #df006e;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary-svg;
+  }
+}
+
+.sectiontext mark,
+.r-content-text mark {
+  background-color: $primary-svg;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  padding: 20px 45px 20px 26px;
+
+  a {
+    color: #fff !important;
+
+    &:hover {
+      color: $primary-red;
+    }
+  }
+}
+
+.r-news-list-item-link {
+  .r-item-title {
+    color: $primary-svg;
+  }
+
+  .r-item-arrow-more {
+    background: $primary-red;
+    border-radius: 50px;
+    margin: 20px;
+
+    .bi-arrow-right-short {
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+
+  .r-item-img {
+    border-radius: 15px;
+  }
+
+  &:hover {
+    .r-item-arrow-more {
+      background: $primary-svg !important;
+      border-color: $primary-svg !important;
+    }
+  }
+}
+
+.r-list-item-group {
+  border-radius: 15px !important;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.r-content-text a {
+  color: $primary-red;
+
+  &:hover {
+    color: $primary-svg;
+  }
+}
+
+.r-back-button {
+  background: $primary-red;
+  border-radius: 50px;
+
+  &:hover {
+    background: $primary-svg;
+  }
+
+  .bi-arrow-left-short {
+    &::before {
+      color: #fff;
+    }
+  }
+}
+
+.r-content-img {
+  border-radius: 15px;
+}
+
+.r-item-read-more {
+  margin-top: unset !important;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.r-item-categorie {
+  display: none;
+}
+
+.r-item-date {
+  color: #fff;
+  background: $primary-svg;
+  max-width: max-content;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.r-item-text {
+  grid-template-columns: 1fr !important;
+}
+
+.r-content-news-info a {
+  color: $primary-red !important;
+
+  &:hover {
+    color: $primary-svg !important;
+  }
+}
+
+.block-menu-element > a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #cbcbcb;
+  box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
+  transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+  position: relative;
+  overflow: hidden;
+}

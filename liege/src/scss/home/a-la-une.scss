@@ -1,155 +1,218 @@
 .a-la-une {
+  position: relative;
   background-size: 100%;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
-  margin: 3rem 0;
-  max-width: 100vw;
-  width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 80px;
+  margin: 0;
 
-  @media screen and (max-width: 992px) {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-    margin: 3rem 0 0;
-  }
-
+  // ─── Décoration bg droite ───────────────────────────────────────────────────
   &::before {
-    display: none;
-  }
-
-  .swiper-wrapper {
-    padding-bottom: 0;
-  }
-
-  @media screen and (max-width: 992px) {
-    .swiper-wrapper {
-      padding-bottom: 80px;
-    }
-  }
-
-  .swiper-pagination {
-    display: none;
-  }
-
-  .section-title {
-    font-weight: 300;
-    text-transform: none;
-    margin: 0 0 0 -90px;
-    width: max-content;
-    font-size: 3rem;
-    transform: rotate(180deg);
+    content: "";
     position: absolute;
-    padding: 100px 0 0;
-    writing-mode: vertical-rl;
+    top: -80px;
+    right: 0;
+    width: 109px;
+    height: 377px;
+    background: url("../../assets/svg/bg-01.svg") no-repeat center top;
+    background-size: contain;
+    z-index: -1;
 
-    @media screen and (max-width: 992px) {
-      transform: rotate(0deg);
-      position: initial;
-      padding: 0;
-      writing-mode: initial;
-      margin: 0 auto 30px;
-      background: none;
+    @include media-breakpoint-down(lg) {
+      width: 68px;
+      height: 236px;
+      top: -29px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 45px;
+      height: 157px;
+      top: -19px;
+    }
+
+    @media (max-width: 350px) {
+      display: none;
     }
   }
 
-  .swiper-slide {
-    .swiper_title h3 {
-      margin-bottom: 20px;
-      font-weight: 300 !important;
+  // ─── Titre de section ───────────────────────────────────────────────────────
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: left;
+    color: $primary;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+
+    @media (max-width: 991px) {
+      font-size: 35px !important;
     }
 
-    a {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto 1fr;
+    @media (max-width: 767px) {
+      font-size: 25px !important;
     }
 
-    @media screen and (max-width: 992px) {
-      .swiper_title h3 {
-        padding: 0 1rem;
-      }
-
-      a {
-        grid-template-columns: 100% !important;
-        grid-template-rows: 1fr !important;
-      }
+    // Barre magenta
+    &::before {
+      content: "";
+      width: 19px;
+      height: 1.6em;
+      background-color: #e8005a;
+      flex-shrink: 0;
     }
 
-    .swiper_description {
-      font-size: 16px;
+    // Trait décoratif
+    &::after {
+      content: "";
+      flex: 1;
+      max-width: 200px;
+      height: 130px;
+      background: url("../../assets/svg/stroke-alaune.svg") no-repeat right 50px;
+      margin-top: 30px;
+      z-index: -1;
 
-      p {
-        color: #fff;
+      @media (max-width: 991px) {
+        height: 2px;
+        position: absolute;
+        top: 50%; // ← 50% au lieu de 0
+        transform: translateX(-50vw) translateY(-50%); // ← ajout du translateY
+        left: calc(50% - 15px);
+        width: 100vw;
+        max-width: 100vw;
+        flex: none;
+        margin-top: 0;
+        background: url("../../assets/svg/stroke-h.svg") no-repeat left center !important;
       }
+    }
+  }
+
+  // ─── Swiper ─────────────────────────────────────────────────────────────────
+  .swiper-button-next {
+    right: calc(40% + 15px);
+
+    @media (max-width: 991px) {
+      right: 20px;
     }
   }
 
   .swiper-button-next,
   .swiper-button-prev {
     top: 50% !important;
-    box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
-  }
+    transform: translateY(-50%) !important;
 
-  .swiper-button-prev {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    left: 50%;
-    margin-left: 36px;
-    top: auto !important;
-    bottom: 0;
-  }
-
-  .swiper-button-next {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    left: 50%;
-    margin-left: 96px;
-    top: auto !important;
-    bottom: 0;
-  }
-
-  @media screen and (max-width: 992px) {
-    .swiper-button-prev {
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 50%;
-      left: 0;
-      margin-left: 20px;
-      top: auto !important;
-      bottom: 0;
+    @media (max-width: 991px) {
+      top: 35% !important;
     }
 
+    @media (max-width: 500px) {
+      top: 25% !important;
+    }
+  }
+
+  .swiper-image {
+    border-radius: 15px !important;
+  }
+
+  // ─── Éléments cachés ────────────────────────────────────────────────────────
+  .swiper_date,
+  .swiper-pagination,
+  .see_all {
+    display: none;
+  }
+
+  // ─── Titre slide ────────────────────────────────────────────────────────────
+  .swiper_title {
+    background: none !important;
+
+    h3 {
+      font-size: 24px !important;
+      padding-top: 20px !important;
+      padding-left: 40px !important;
+
+      @media (max-width: 991px) {
+        padding-left: 0 !important;
+      }
+    }
+  }
+
+  // ─── Description slide ──────────────────────────────────────────────────────
+  .swiper_description {
+    text-align: left !important;
+    font-weight: 300;
+    font-size: 16px !important;
+    padding-top: 10px !important;
+    padding-left: 75px !important;
+
+    @media (max-width: 991px) {
+      padding-left: 0 !important;
+    }
+  }
+
+  // ─── Lien slide ─────────────────────────────────────────────────────────────
+  .swiper_link {
+    > div:last-child {
+      position: relative;
+      padding-bottom: 70px;
+      background: url("../../assets/svg/stroke-h.svg") repeat-x center
+        calc(100% - 25px) !important;
+
+      // Bouton "Lire la suite"
+      &::after {
+        content: "Lire la suite";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $primary-red;
+        border-radius: 50px;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin-left: auto;
+        width: fit-content;
+        transition: background-color 0.3s ease;
+
+        @media (max-width: 991px) {
+          right: 50px;
+        }
+      }
+
+      &:hover::after {
+        background-color: $primary-svg !important;
+      }
+
+      @media (max-width: 991px) {
+        width: 100% !important;
+        background: url("../../assets/svg/stroke-h.svg") no-repeat right
+          calc(100% - 25px) !important;
+      }
+    }
+  }
+
+  // ─── Responsive global ──────────────────────────────────────────────────────
+  @media (max-width: 991px) {
+    padding: 40px !important;
+    //background: url("../../assets/svg/stroke-h.svg") no-repeat right calc(100% - 75px) !important;
+  }
+
+  @media (max-width: 767px) {
+    .swiper-button-prev,
     .swiper-button-next {
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M10 17.75a.74.74 0 0 1-.53-.22a.75.75 0 0 1 0-1.06L13.94 12L9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z" fill="%23000000"/></svg>');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 50%;
-      left: 0;
-      margin-left: 80px;
-      top: auto !important;
-      bottom: 0;
+      display: block !important;
     }
   }
+}
 
-  @media screen and (max-width: 767px) {
-    .swiper-button-prev {
-      display: block;
-    }
+.sectionselections,
+.sectioncollection {
+  width: 100vw;
+  max-width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
 
-    .swiper-button-next {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    .swiper-slide .swiper-image {
-      border-radius: 30px 0;
-    }
+  .swiper_description {
+    max-height: max-content;
   }
 }
