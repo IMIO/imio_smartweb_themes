@@ -196,6 +196,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
       height: 377px;
       background: url("../../assets/svg/bg-02.svg") no-repeat center top;
       background-size: contain;
+      display: none;
 
       @include media-breakpoint-down(lg) {
         display: none;
