@@ -348,3 +348,8 @@ body:not(.portaltype-imio-smartweb-portalpage) {
     padding-top: 120%;
   }
 }
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+  max-width: 760px;
+}
