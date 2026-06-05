@@ -196,6 +196,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
       height: 377px;
       background: url("../../assets/svg/bg-02.svg") no-repeat center top;
       background-size: contain;
+      display: none;
 
       @include media-breakpoint-down(lg) {
         display: none;
@@ -340,4 +341,10 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
   position: relative;
   overflow: hidden;
+}
+
+.subsection-vie-politique-conseil-communal-composition {
+  .card-img-top {
+    padding-top: 120%;
+  }
 }
