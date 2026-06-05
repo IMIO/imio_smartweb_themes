@@ -205,8 +205,10 @@
   }
 }
 
-.sectionselections,
-.sectioncollection {
+.section-index .sectionselections,
+.section-index .sectioncollection,
+.section-accueil .sectionselections,
+.section-accueil .sectioncollection {
   width: 100vw;
   max-width: 100vw;
   left: 50%;
