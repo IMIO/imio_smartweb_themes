@@ -78,7 +78,7 @@
       flex-shrink: 0;
       width: 4px;
       height: 34px;
-      background-color: $primary-dark;
+      background-color: $primary-brown;
       border-radius: 2px;
     }
   }
@@ -336,7 +336,7 @@
       flex-shrink: 0;
       width: 4px;
       height: 34px;
-      background-color: $primary-dark;
+      background-color: $primary-brown;
       border-radius: 2px;
     }
   }
@@ -469,7 +469,7 @@
       flex-shrink: 0;
       width: 4px;
       height: 34px;
-      background-color: $primary-dark;
+      background-color: $primary-brown;
       border-radius: 2px;
     }
   }
@@ -614,7 +614,7 @@
       flex-shrink: 0;
       width: 4px;
       height: 34px;
-      background-color: $primary-dark;
+      background-color: $primary-brown;
       border-radius: 2px;
     }
   }
@@ -719,4 +719,14 @@
       }
     }
   }
+}
+
+.swiper-slide .swiper_category {
+  margin: -1.25rem 0 0.5rem;
+  width: 100%;
+}
+
+#portal-footer-wrapper {
+  padding-top: 80px;
+  text-align: left;
 }
