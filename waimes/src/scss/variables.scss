@@ -385,15 +385,15 @@ $section-contact-sub-title-size: $font-size-lg;
 $section-contact-title-color: $primary-dark;
 $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
-$section-contact-background: $primary-svg;
+$section-contact-background: $blue-light;
 
 // section-files
-$section-file-background-color: $primary-svg;
+$section-file-background-color: $blue-light;
 $enable-full-width-section-files: true !default;
 $enable-light-color-section-files: true !default;
 
 // section-link
-$section-link-background-color: $primary-svg;
+$section-link-background-color: transparent;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 

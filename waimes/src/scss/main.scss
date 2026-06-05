@@ -23,3 +23,7 @@ $enable-roboto-webfont: false;
 #portal-footer-wrapper * {
   color: #fff !important;
 }
+
+#portal-globalnav .quick-access .quick-access-title {
+  color: $primary;
+}
