@@ -44,29 +44,29 @@
 
   .breadcrumb {
     margin: 10px 0 0 10px !important;
-    background-color: none !important;
+    background-color: #fff !important;
     padding: 0 !important;
     border-radius: 50px;
 
     .breadcrumb-item {
       a {
-        color: #000 !important;
+        color: #757575 !important;
         text-decoration: none !important;
 
         &:hover {
           text-decoration: underline !important ;
-          color: #000 !important;
+          color: #757575 !important;
         }
       }
 
       &.active {
-        color: #000 !important ;
+        color: #757575 !important ;
         text-decoration: underline !important ;
         cursor: default;
       }
 
       &::before {
-        color: #000 !important;
+        color: #757575 !important;
       }
     }
   }
