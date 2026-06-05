@@ -44,8 +44,8 @@
 
   .breadcrumb {
     margin: 10px 0 0 10px !important;
-    background-color: #f3f3f3 !important;
-    padding: 15px 30px !important;
+    background-color: none !important;
+    padding: 0 !important;
     border-radius: 50px;
 
     .breadcrumb-item {
@@ -66,7 +66,7 @@
       }
 
       &::before {
-        color: $primary-red !important;
+        color: #000 !important;
       }
     }
   }
