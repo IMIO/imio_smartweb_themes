@@ -730,3 +730,23 @@
   padding-top: 80px;
   text-align: left;
 }
+
+#portal-globalnav .quick-access .quick-access-title {
+  color: $primary;
+}
+
+#portal-column-content .section-contact .contact-type-organization {
+  background: $blue-bg-light;
+  border-radius: 20px;
+}
+
+.subsite-container {
+  background: $blue-bg-light;
+  border-radius: 0 20px 20px;
+}
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
