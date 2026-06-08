@@ -240,7 +240,7 @@
   // lg < 992px : première réduction (::after déjà masqué à ce niveau)
   @include media-breakpoint-down(lg) {
     .bannerSwiper {
-      height: 450px;
+      height: 400px;
     }
 
     .swiper-banner-image {
@@ -248,8 +248,8 @@
     }
 
     .bannerSwiper .swiper-slide .swiper-banner-content {
-      max-width: 380px;
-      padding: 2.5rem 3.5rem 2.5rem 3rem;
+      max-width: 340px;
+      padding: 1.5rem 2rem 1.5rem 1.5rem;
       border-radius: 0 0 220px 220px;
     }
 
@@ -265,7 +265,7 @@
   // md < 768px : panneau réduit, fonts plus petites
   @include media-breakpoint-down(md) {
     .bannerSwiper {
-      height: 380px;
+      height: 300px;
     }
 
     .swiper-banner-image {
@@ -273,8 +273,8 @@
     }
 
     .bannerSwiper .swiper-slide .swiper-banner-content {
-      max-width: 280px;
-      padding: 2rem 2.5rem;
+      max-width: 260px;
+      padding: 1rem 1.5rem;
       border-radius: 0 0 150px 150px;
     }
 
@@ -290,7 +290,7 @@
   // sm < 576px : panneau en % pour coller à la largeur de l'écran
   @include media-breakpoint-down(sm) {
     .bannerSwiper {
-      height: 320px;
+      height: 240px;
     }
 
     .swiper-banner-image {
@@ -300,7 +300,7 @@
     .bannerSwiper .swiper-slide .swiper-banner-content {
       width: 48%;
       max-width: 48%;
-      padding: 1.5rem 1.5rem 1.5rem 1rem;
+      padding: 0.75rem 1rem;
       border-radius: 0 0 100px 100px;
     }
 
