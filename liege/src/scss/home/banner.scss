@@ -216,16 +216,22 @@
 
 .sticky-demi-active {
   .sr-only {
-    height: 0 !important;
+    max-height: 0;
     opacity: 0%;
-    transition: width 0.3s ease !important;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
   }
 }
 
 .sticky-is-top {
   .sr-only {
-    height: 140px !important;
+    max-height: 140px;
     opacity: 100%;
-    transition: width 0.3s ease !important;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
   }
 }
