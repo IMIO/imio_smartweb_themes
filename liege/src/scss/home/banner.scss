@@ -1,3 +1,7 @@
+#portal-header-top {
+  padding: 20px 0 !important;
+}
+
 // ─── Logo sr-only (bandeau blanc) ─────────────────────────────────────────────
 .section-accueil #portal-logo .sr-only,
 .section-index #portal-logo .sr-only {
@@ -219,7 +223,7 @@
   grid-template-rows: 1fr;
   opacity: 100%;
   transition:
-    grid-template-rows 0.4s ease,
+    grid-template-rows 0.3s ease,
     opacity 0.3s ease;
 
   > * {
@@ -232,8 +236,8 @@
     grid-template-rows: 0fr;
     opacity: 0%;
     transition:
-      grid-template-rows 0.2s ease,
-      opacity 0.15s ease;
+      grid-template-rows 0.3s ease,
+      opacity 0.3s ease;
   }
 }
 
