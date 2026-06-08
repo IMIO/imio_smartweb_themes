@@ -218,7 +218,7 @@
   .sr-only {
     display: grid;
     grid-template-rows: 0fr;
-    opacity: 0;
+    opacity: 0%;
     transition:
       grid-template-rows 0.4s ease,
       opacity 0.3s ease;
@@ -233,7 +233,7 @@
   .sr-only {
     display: grid;
     grid-template-rows: 1fr;
-    opacity: 1;
+    opacity: 100%;
     transition:
       grid-template-rows 0.4s ease,
       opacity 0.4s ease 0.1s;
