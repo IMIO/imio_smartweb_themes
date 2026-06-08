@@ -2,6 +2,12 @@
   padding: 20px 0 !important;
 }
 
+.sticky-demi-active {
+  &::after {
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 10%);
+  }
+}
+
 // ─── Logo sr-only (bandeau blanc) ─────────────────────────────────────────────
 .section-accueil #portal-logo .sr-only,
 .section-index #portal-logo .sr-only {
