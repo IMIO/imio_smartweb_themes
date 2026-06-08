@@ -22,11 +22,20 @@ $(document).ready(function () {
   }
 
   // For banner
-
   let checkBanner = document.querySelector("#portal-header #banner");
   let headerCustom = document.getElementById("portal-header");
 
   if (checkBanner != null) {
     headerCustom.classList.add("header-custom");
+  }
+
+  // Sticky nav scroll
+  const nav = document.getElementById("portal-header");
+  if (nav) {
+    window.addEventListener("scroll", () => {
+      const atTop = window.scrollY === 0;
+      nav.classList.toggle("sticky-is-top", atTop);
+      nav.classList.toggle("sticky-demi-active", !atTop);
+    });
   }
 });
