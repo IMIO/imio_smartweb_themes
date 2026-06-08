@@ -4,7 +4,11 @@
   }
 
   .header-links {
-    display: none;
+    display: none !important;
+  }
+
+  .to-portal a {
+    padding: 4px 10px !important;
   }
 
   // ─── Décorations bg gauche/droite ────────────────────────────────────────────
