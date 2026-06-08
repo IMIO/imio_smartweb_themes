@@ -93,7 +93,7 @@
 // ─── Barre de recherche ───────────────────────────────────────────────────────
 .search-banner {
   margin-top: -50px;
-  z-index: 1;
+  z-index: 0;
   text-align: center;
 
   .html a {
@@ -200,5 +200,32 @@
       width: 100%;
       transition: width 0.3s ease !important;
     }
+  }
+}
+
+#portal-globalnav li > .has_subtree {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 16%);
+}
+
+#portal-globalnav .quick-access .quick-access-title {
+  padding: 20px 0 5px !important;
+  margin-top: 20px !important;
+  display: block;
+  background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
+}
+
+.sticky-demi-active {
+  .sr-only {
+    height: 0 !important;
+    opacity: 0%;
+    transition: width 0.3s ease !important;
+  }
+}
+
+.sticky-is-top {
+  .sr-only {
+    height: 140px !important;
+    opacity: 100%;
+    transition: width 0.3s ease !important;
   }
 }
