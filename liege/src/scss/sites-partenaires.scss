@@ -11,6 +11,18 @@
     padding: 4px 10px !important;
   }
 
+  .smartweb_herobanner {
+    margin: 155px 0 0;
+
+    @media (max-width: 768px) {
+      margin: 135px 0 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 115px 0 0;
+    }
+  }
+
   // ─── Décorations bg gauche/droite ────────────────────────────────────────────
   body:not(.portaltype-imio-smartweb-portalpage) {
     #portal-column-content::before,
