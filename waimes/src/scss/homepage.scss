@@ -217,6 +217,10 @@
       margin-top: 2rem;
       background: url("../../assets/svg/logo-slogan.svg") center / contain
         no-repeat;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
     }
   }
 
@@ -230,6 +234,84 @@
   // Description
   .swiper-banner-description p {
     font-size: $banner-content-description-font-size;
+  }
+
+  // ── Responsive banner ──────────────────────────────────────────────
+  // lg < 992px : première réduction (::after déjà masqué à ce niveau)
+  @include media-breakpoint-down(lg) {
+    .bannerSwiper {
+      height: 450px;
+    }
+
+    .swiper-banner-image {
+      border-bottom-right-radius: 150px;
+    }
+
+    .bannerSwiper .swiper-slide .swiper-banner-content {
+      max-width: 380px;
+      padding: 2.5rem 3.5rem 2.5rem 3rem;
+      border-radius: 0 0 220px 220px;
+    }
+
+    .swiper-banner-title {
+      font-size: 28px;
+    }
+
+    .swiper-banner-description p {
+      font-size: 20px;
+    }
+  }
+
+  // md < 768px : panneau réduit, fonts plus petites
+  @include media-breakpoint-down(md) {
+    .bannerSwiper {
+      height: 380px;
+    }
+
+    .swiper-banner-image {
+      border-bottom-right-radius: 80px;
+    }
+
+    .bannerSwiper .swiper-slide .swiper-banner-content {
+      max-width: 280px;
+      padding: 2rem 2.5rem;
+      border-radius: 0 0 150px 150px;
+    }
+
+    .swiper-banner-title {
+      font-size: 22px;
+    }
+
+    .swiper-banner-description p {
+      font-size: 16px;
+    }
+  }
+
+  // sm < 576px : panneau en % pour coller à la largeur de l'écran
+  @include media-breakpoint-down(sm) {
+    .bannerSwiper {
+      height: 320px;
+    }
+
+    .swiper-banner-image {
+      border-bottom-right-radius: 50px;
+    }
+
+    .bannerSwiper .swiper-slide .swiper-banner-content {
+      width: 48%;
+      max-width: 48%;
+      padding: 1.5rem 1.5rem 1.5rem 1rem;
+      border-radius: 0 0 100px 100px;
+    }
+
+    .swiper-banner-title {
+      font-size: 18px;
+      margin-bottom: 0.5rem;
+    }
+
+    .swiper-banner-description p {
+      font-size: 13px;
+    }
   }
 }
 
@@ -344,6 +426,20 @@
   // Cercle et label couverts par les variables $quick-access-* globales
   .image.d-block {
     border: none;
+  }
+}
+
+// Quick-access — 2 items par ligne en dessous de md (< 768px)
+.sectionlinks.quick-access .body-section {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    @include media-breakpoint-down(md) {
+      width: 50%;
+    }
   }
 }
 
