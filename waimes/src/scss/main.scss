@@ -20,9 +20,12 @@ $enable-roboto-webfont: false;
 
 // ... add your styles here
 
+.outer-wrapper {
+  margin-bottom: 50px;
+}
+
 #portal-footer-wrapper * {
   color: #fff !important;
-  margin-top: 50px;
 }
 
 #portal-globalnav .quick-access .quick-access-title {
