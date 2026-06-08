@@ -9,7 +9,7 @@
   clip: unset;
   border: 0;
   color: #fff;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -232,8 +232,8 @@
     grid-template-rows: 0fr;
     opacity: 0%;
     transition:
-      grid-template-rows 0.4s ease,
-      opacity 0.3s ease;
+      grid-template-rows 0.2s ease,
+      opacity 0.15s ease;
   }
 }
 
