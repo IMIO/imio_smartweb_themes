@@ -22,6 +22,7 @@ $(document).ready(function () {
   }
 
   // For banner
+
   let checkBanner = document.querySelector("#portal-header #banner");
   let headerCustom = document.getElementById("portal-header");
 
