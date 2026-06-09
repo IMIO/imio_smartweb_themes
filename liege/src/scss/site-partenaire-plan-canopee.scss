@@ -233,7 +233,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    background-color: $primary-red;
+    background-color: $primary-red !important;
   }
 
   .swiper-slide:hover {
@@ -281,7 +281,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-      background-color: $primary-svg;
+      background-color: $primary-svg !important;
     }
 
     .swiper-slide:hover {
@@ -350,11 +350,6 @@
   }
 
   #portal-globalnav.activated > li > a {
-    color: var(--primary-svg) !important;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
     color: var(--primary-svg) !important;
   }
 }
