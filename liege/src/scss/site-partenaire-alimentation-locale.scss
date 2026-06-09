@@ -32,6 +32,7 @@
   // ─── Couleurs ───────────────────────────────────────────────────────────────
   --primary-svg: #2a8362;
   --primary-red: #e75f0d;
+  --primary-light: #f2fffa;
 
   // ─── Logo bandeau ────────────────────────────────────────────────────────────
   #portal-logo .sr-only span::before {
@@ -294,7 +295,7 @@
     }
   }
   // ─── Autres ───────────────────────────────────────────────────────
-  .sectionfiles {
+  .portaltype-imio-smartweb-page #main-container .sectionfiles {
     .table_image {
       background-color: var(--primary-svg) !important;
 
@@ -308,7 +309,7 @@
     }
   }
 
-  .sectionlinks {
+  .portaltype-imio-smartweb-page #main-container .sectionlinks {
     .table_image {
       background-color: var(--primary-svg) !important;
 
@@ -385,6 +386,24 @@
       div,
       h2 {
         color: #fff !important;
+      }
+    }
+  }
+
+  .body-section {
+    li {
+      .table_image {
+        background: #fff;
+      }
+
+      &:hover {
+        .table_image {
+          background-color: var(--primary-light) !important;
+        }
+
+        .table_title span {
+          color: #fff;
+        }
       }
     }
   }
