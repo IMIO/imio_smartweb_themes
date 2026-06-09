@@ -32,7 +32,7 @@
   // ─── Couleurs ───────────────────────────────────────────────────────────────
   --primary-svg: #2a8362;
   --primary-red: #e75f0d;
-  --primary-light: #f2fffa;
+  --primary-light: #bfeddc;
 
   // ─── Logo bandeau ────────────────────────────────────────────────────────────
   #portal-logo .sr-only span::before {
@@ -406,5 +406,9 @@
         }
       }
     }
+  }
+
+  .sectionlinks.quick-access .body-section li a .table_title span {
+    color: var(--primary-svg) !important;
   }
 }
