@@ -21,20 +21,17 @@ $enable-roboto-webfont: false;
 @import "./home/banner";
 @import "./home/quick";
 @import "./home/a-la-une";
-//@import "./home/espace-citoyen";
 @import "./home/actualites";
-//@import "./home/cpas";
 @import "./home/events";
 @import "./home/annuaire";
 @import "./home/cookie";
 @import "./home/footer";
 @import "./home/page-int";
-//@import "./info-trav";
 @import "./se-link";
 @import "./se-files";
-//@import "./contact";
 @import "./site-partenaire-cpas";
 @import "./site-partenaire-plan-canopee";
+@import "./site-partenaire-alimentation-locale";
 
 body {
   background: #fff;
