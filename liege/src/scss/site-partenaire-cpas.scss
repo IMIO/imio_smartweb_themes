@@ -25,11 +25,9 @@
   }
 
   // ─── Décorations bg gauche/droite ────────────────────────────────────────────
-  body:not(.portaltype-imio-smartweb-portalpage) {
-    #portal-column-content::before,
-    #portal-footer-wrapper::before {
-      display: none !important;
-    }
+  #portal-column-content::before,
+  #portal-footer-wrapper::before {
+    display: none !important;
   }
 
   // ─── Couleurs ───────────────────────────────────────────────────────────────
