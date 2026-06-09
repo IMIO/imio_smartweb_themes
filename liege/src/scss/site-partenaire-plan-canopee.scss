@@ -1,0 +1,166 @@
+.site-cpas,
+.template-folder_contents {
+  #portal-breadcrumbs {
+    margin-top: 1.8rem !important;
+  }
+
+  #header-actions {
+    display: none !important;
+  }
+
+  .to-portal a {
+    padding: 4px 10px !important;
+  }
+
+  .smartweb_herobanner {
+    margin: 155px 0 0;
+
+    @media (max-width: 768px) {
+      margin: 135px 0 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 115px 0 0;
+    }
+  }
+
+  // ─── Décorations bg gauche/droite ────────────────────────────────────────────
+  #portal-column-content::before,
+  #portal-footer-wrapper::before {
+    display: none !important;
+  }
+
+  // ─── Couleurs ───────────────────────────────────────────────────────────────
+  --primary-svg: #007c3c;
+  --primary-red: #75b843;
+
+  // ─── Logo bandeau ────────────────────────────────────────────────────────────
+  #portal-logo .sr-only span::before {
+    background-image: url("../../assets/svg/logo-plan-canopee.svg") !important;
+  }
+
+  // ─── Bouton recherche ────────────────────────────────────────────────────────
+  #portal-header #portal-header-top #header-links #search-link a {
+    background-color: var(--primary-svg);
+    border-color: var(--primary-svg);
+
+    &:hover {
+      background-color: var(--primary-red);
+      border-color: var(--primary-red);
+    }
+  }
+
+  // ─── Bouton compte ───────────────────────────────────────────────────────────
+  #header-actions a.account {
+    background-color: var(--primary-svg) !important;
+
+    &:hover {
+      background-color: var(--primary-red) !important;
+    }
+  }
+
+  // ─── Underline nav ───────────────────────────────────────────────────────────
+  #portal-globalnav-wrapper .nav-link::before {
+    background-color: var(--primary-svg);
+  }
+}
+
+.site-cpas-minisite {
+  // ─── Breadcrumb avec banner ──────────────────────────────────────────────────
+  &.header-custom #portal-breadcrumbs .breadcrumb {
+    background-color: var(--primary-svg) !important;
+  }
+
+  // ─── Sub-nav ─────────────────────────────────────────────────────────────────
+  .subsite-container #subsite-logo {
+    background: var(--primary-red);
+  }
+
+  // ─── Description riche ───────────────────────────────────────────────────────
+  .rich_description {
+    color: var(--primary-svg);
+  }
+
+  // ─── Liste liens ─────────────────────────────────────────────────────────────
+  .list-menu-element a {
+    .list-card-body .list-card-title {
+      color: var(--primary-red);
+    }
+
+    &:hover .list-card-body .list-card-title {
+      color: var(--primary-svg);
+    }
+  }
+
+  // ─── Barre décorative h1 ─────────────────────────────────────────────────────
+  header h1::before {
+    background-color: var(--primary-red);
+  }
+
+  // ─── Liens texte ─────────────────────────────────────────────────────────────
+  .sectiontext .section-text .body-section a {
+    color: var(--primary-red);
+
+    &:hover {
+      color: var(--primary-svg);
+    }
+  }
+
+  // ─── Mark / mise en avant ────────────────────────────────────────────────────
+  .sectiontext mark,
+  .r-content-text mark {
+    background-color: var(--primary-svg);
+
+    a:hover {
+      color: var(--primary-red);
+    }
+  }
+
+  // ─── News liste ──────────────────────────────────────────────────────────────
+  .r-news-list-item-link {
+    .r-item-title {
+      color: var(--primary-svg);
+    }
+
+    .r-item-arrow-more {
+      background: var(--primary-red);
+    }
+
+    &:hover .r-item-arrow-more {
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
+    }
+  }
+
+  // ─── Liens contenu riche ─────────────────────────────────────────────────────
+  .r-content-text a {
+    color: var(--primary-red);
+
+    &:hover {
+      color: var(--primary-svg);
+    }
+  }
+
+  // ─── Bouton retour ───────────────────────────────────────────────────────────
+  .r-back-button {
+    background: var(--primary-red);
+
+    &:hover {
+      background: var(--primary-svg);
+    }
+  }
+
+  // ─── Date news ───────────────────────────────────────────────────────────────
+  .r-item-date {
+    background: var(--primary-svg);
+  }
+
+  // ─── Liens news détail ───────────────────────────────────────────────────────
+  .r-content-news-info a {
+    color: var(--primary-red) !important;
+
+    &:hover {
+      color: var(--primary-svg) !important;
+    }
+  }
+}
