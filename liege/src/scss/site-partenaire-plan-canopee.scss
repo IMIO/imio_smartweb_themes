@@ -348,4 +348,8 @@
   #portal-globalnav .dropdown .nav-link:hover {
     color: var(--primary-svg) !important;
   }
+
+  #portal-globalnav.activated > li > a {
+    color: var(--primary-svg) !important;
+  }
 }
