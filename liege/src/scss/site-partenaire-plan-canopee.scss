@@ -352,4 +352,9 @@
   #portal-globalnav.activated > li > a {
     color: var(--primary-svg) !important;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--primary-svg) !important;
+  }
 }
