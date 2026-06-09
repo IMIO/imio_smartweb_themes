@@ -97,10 +97,10 @@
 
   // ─── Liens texte ─────────────────────────────────────────────────────────────
   .sectiontext .section-text .body-section a {
-    color: var(--primary-red);
+    color: var(--primary-svg);
 
     &:hover {
-      color: var(--primary-svg);
+      color: var(--primary-red);
     }
   }
 
@@ -167,7 +167,7 @@
     .html a {
       background: #fff url("../../assets/svg/search-vert.svg") no-repeat right
         20px center;
-      border: var(--primary-svg) !important;
+      border: 3px solid var(--primary-svg) !important;
     }
   }
   // ─── cookie ───────────────────────────────────────────────────────
@@ -317,5 +317,18 @@
         background-color: $primary-svg;
       }
     }
+  }
+
+  #portal-globalnav > li.has_subtree > a::after {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($primary-red-plan)}"/></svg>');
+  }
+
+  #portal-globalnav > li > a {
+    color: var(--primary-svg);
+  }
+
+  #portal-globalnav .dropdown .nav-link:focus,
+  #portal-globalnav .dropdown .nav-link:hover {
+    color: var(--primary-svg);
   }
 }
