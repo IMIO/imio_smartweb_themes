@@ -32,7 +32,7 @@
 
   // ─── Couleurs ───────────────────────────────────────────────────────────────
   --primary-svg: #2a8362;
-  --primary-red: #e75f0d;
+  --primary-red: #d64000;
 
   // ─── Logo bandeau ────────────────────────────────────────────────────────────
   #portal-logo .sr-only span::before {
@@ -363,6 +363,16 @@
     .image {
       &:hover {
         background: var(--primary-red) !important;
+      }
+    }
+  }
+
+  .sectioncontact {
+    a {
+      color: var(--primary-red) !important;
+
+      &:hover {
+        color: var(--primary-svg) !important;
       }
     }
   }

@@ -366,4 +366,14 @@
       }
     }
   }
+
+  .sectioncontact {
+    a {
+      color: var(--primary-red) !important;
+
+      &:hover {
+        color: var(--primary-svg) !important;
+      }
+    }
+  }
 }
