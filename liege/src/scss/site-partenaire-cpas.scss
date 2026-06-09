@@ -163,4 +163,42 @@
       color: var(--primary-svg) !important;
     }
   }
+
+  // ─── Variable ───────────────────────────────────────────────────────
+  $font-title-color: $primary;
+  $header-nav-link-color: $primary-svg;
+  $header-links-color: $primary-svg;
+  $nav-link-color: $primary;
+  $nav-link-open-color: $primary-svg;
+  $nav-link-active-color: $primary-svg;
+  $nav-link-drop-color: $primary-red;
+  $nav-quick-link-color: $primary-red;
+  $nav-overlay-title-color: $primary-red;
+  $nav-overlay-next-color-hover: $primary-svg;
+  $nav-overlay-next-icon-hover-color: $primary;
+  $subsite-logo-background: $primary;
+  $see-all-bg: $primary-red;
+  $see-all-border: solid 1px $primary-red;
+  $see-all-hover-bg: $primary-svg;
+  $see-all-hover-border: solid 1px $primary-svg;
+  $quick-access-title-color: $primary-red;
+  $quick-access-svg-color: $primary-svg;
+  $quick-access-full-bg-color: $primary;
+  $a-la-une-title-color: $font-title-color;
+  $a-la-une-item-title-color: $primary;
+  $actu-title-color: $primary-svg;
+  $actu-category-bg-color: $primary-svg;
+  $actu-date-color: $primary-svg;
+  $event-title-color: $primary-red;
+  $event-date-color: $primary-svg;
+  $album-title-color: $primary;
+  $album-date-color: $primary;
+  $newsletter-bg-color: $primary-svg;
+  $mark-border: solid 2px $primary;
+  $list-style-color: $primary;
+  $section-text-link-color: $primary-red;
+  $section-contact-title-color: $primary;
+  $swiper-background-color: $primary-red;
+  $swipper-bullet-color: $primary-red;
+  $banner-content-title-color: $primary-light;
 }
