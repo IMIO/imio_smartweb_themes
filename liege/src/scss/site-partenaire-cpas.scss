@@ -63,9 +63,7 @@
   #portal-globalnav-wrapper .nav-link::before {
     background-color: var(--primary-svg);
   }
-}
 
-.site-cpas-minisite {
   // ─── Breadcrumb avec banner ──────────────────────────────────────────────────
   &.header-custom #portal-breadcrumbs .breadcrumb {
     background-color: var(--primary-svg) !important;
