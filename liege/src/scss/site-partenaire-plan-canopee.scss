@@ -331,4 +331,21 @@
   #portal-globalnav > li.has_subtree > a:hover {
     color: var(--primary-svg) !important;
   }
+
+  #portal-globalnav > li a:hover {
+    color: var(--primary-svg) !important;
+  }
+
+  #portal-globalnav-wrapper
+    #portal-globalnav-collapse
+    #portal-globalnav
+    > li.show-nav.has_subtree
+    > a {
+    color: var(--primary-svg) !important;
+  }
+
+  #portal-globalnav .dropdown .nav-link:focus,
+  #portal-globalnav .dropdown .nav-link:hover {
+    color: var(--primary-svg) !important;
+  }
 }
