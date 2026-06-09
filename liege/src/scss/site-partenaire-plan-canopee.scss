@@ -233,7 +233,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    background-color: $primary-red !important;
+    background-color: var(--primary-red) !important;
   }
 
   .swiper-slide:hover {
@@ -281,7 +281,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-      background-color: $primary-svg !important;
+      background-color: var(--primary-red) !important;
     }
 
     .swiper-slide:hover {
