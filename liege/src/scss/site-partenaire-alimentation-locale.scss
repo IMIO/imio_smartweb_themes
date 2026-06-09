@@ -32,7 +32,7 @@
 
   // ─── Couleurs ───────────────────────────────────────────────────────────────
   --primary-svg: #2a8362;
-  --primary-red: #d64000;
+  --primary-red: #e75f0d;
 
   // ─── Logo bandeau ────────────────────────────────────────────────────────────
   #portal-logo .sr-only span::before {
@@ -132,10 +132,10 @@
 
   // ─── Liens contenu riche ─────────────────────────────────────────────────────
   .r-content-text a {
-    color: var(--primary-red);
+    color: var(--primary-svg);
 
     &:hover {
-      color: var(--primary-svg);
+      color: var(--primary-red);
     }
   }
 
@@ -155,10 +155,10 @@
 
   // ─── Liens news détail ───────────────────────────────────────────────────────
   .r-content-news-info a {
-    color: var(--primary-red) !important;
+    color: var(--primary-svg) !important;
 
     &:hover {
-      color: var(--primary-svg) !important;
+      color: var(--primary-red) !important;
     }
   }
 
@@ -297,30 +297,30 @@
   // ─── Autres ───────────────────────────────────────────────────────
   .sectionfiles {
     .table_image {
-      background-color: var(--primary-red) !important;
+      background-color: var(--primary-svg) !important;
 
       &:hover {
-        background-color: var(--primary-svg) !important;
+        background-color: var(--primary-red) !important;
       }
     }
 
     &::after {
-      background-color: var(--primary-svg) !important;
+      background-color: var(--primary-red) !important;
     }
   }
 
   .sectionlinks {
     .table_image {
-      background-color: var(--primary-red) !important;
+      background-color: var(--primary-svg) !important;
 
       &:hover {
-        background-color: var(--primary-svg) !important;
+        background-color: var(--primary-red) !important;
       }
     }
   }
 
   #portal-globalnav > li.has_subtree > a::after {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($primary-red-plan)}"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8.444" height="5.2"><path d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z" fill="#{url-encoded-color($primary-red-alim)}"/></svg>');
   }
 
   #portal-globalnav > li > a {
