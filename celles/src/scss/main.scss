@@ -433,6 +433,11 @@ $enable-roboto-webfont: false;
   #messagesviewlet {
     position: absolute;
     top: 160px;
+
+    .portalMessage a {
+      color: #fff !important;
+      font-weight: bold !important;
+    }
   }
 }
 
