@@ -240,18 +240,4 @@ footer {
       }
     }
   }
-
-  footer {
-    h2::after {
-      background-color: $primary-red;
-    }
-  }
-
-  .rs-footer {
-    .image {
-      &:hover {
-        background: $primary-red;
-      }
-    }
-  }
 }
