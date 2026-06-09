@@ -327,8 +327,8 @@
     color: var(--primary-svg);
   }
 
-  #portal-globalnav .dropdown .nav-link:focus,
-  #portal-globalnav .dropdown .nav-link:hover {
-    color: var(--primary-svg);
+  #portal-globalnav > li.has_subtree > a:focus,
+  #portal-globalnav > li.has_subtree > a:hover {
+    color: var(--primary-svg) !important;
   }
 }
