@@ -376,4 +376,17 @@
       }
     }
   }
+
+  #portal-footer {
+    #smartweb-footer,
+    #smartweb-minisite-footer {
+      a,
+      span,
+      p,
+      div,
+      h2 {
+        color: #fff !important;
+      }
+    }
+  }
 }
