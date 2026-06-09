@@ -175,12 +175,12 @@
     input[name="consent"],
     input[name="refuse"],
     a {
-      background: $primary-svg;
-      border-color: $primary-svg;
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
 
       &:hover {
-        background: $primary-red;
-        border-color: $primary-red;
+        background: var(--primary-red) !important;
+        border-color: var(--primary-red) !important;
       }
     }
   }
@@ -190,17 +190,17 @@
     color: $primary;
 
     &::before {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
     }
   }
 
   .swiper_link > div:last-child {
     &::after {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
     }
 
     &:hover::after {
-      background-color: $primary-svg;
+      background-color: var(--primary-svg) !important;
     }
   }
 
@@ -209,7 +209,7 @@
     color: $primary;
 
     &::before {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
     }
   }
 
@@ -218,16 +218,16 @@
   }
 
   .swiper_date {
-    background: $primary-svg;
+    background: var(--primary-svg) !important;
   }
 
   .see_all a {
-    background: $primary-red;
-    border-color: $primary-red;
+    background: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
 
     &:hover {
-      background: $primary-svg;
-      border-color: $primary-svg;
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
     }
   }
 
@@ -242,7 +242,7 @@
     }
 
     .swiper_title h3 {
-      color: $primary-red;
+      color: var(--primary-red) !important;
     }
   }
 
@@ -261,7 +261,7 @@
       color: $primary;
 
       &::before {
-        background-color: $primary-svg;
+        background-color: var(--primary-svg) !important;
       }
     }
 
@@ -270,12 +270,12 @@
     }
 
     .see_all a {
-      background: $primary-svg;
-      border-color: $primary-svg;
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
 
       &:hover {
-        background: $primary-red;
-        border-color: $primary-red;
+        background: var(--primary-red) !important;
+        border-color: var(--primary-red) !important;
       }
     }
 
@@ -290,31 +290,31 @@
       }
 
       .swiper_title h3 {
-        color: $primary-red;
+        color: var(--primary-red) !important;
       }
     }
   }
   // ─── Autres ───────────────────────────────────────────────────────
   .sectionfiles {
     .table_image {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
 
       &:hover {
-        background-color: $primary-svg;
+        background-color: var(--primary-svg) !important;
       }
     }
 
     &::after {
-      background-color: $primary-svg;
+      background-color: var(--primary-svg) !important;
     }
   }
 
   .sectionlinks {
     .table_image {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
 
       &:hover {
-        background-color: $primary-svg;
+        background-color: var(--primary-svg) !important;
       }
     }
   }
@@ -355,14 +355,14 @@
 
   footer {
     h2::after {
-      background-color: $primary-red;
+      background-color: var(--primary-red) !important;
     }
   }
 
   .rs-footer {
     .image {
       &:hover {
-        background: $primary-red;
+        background: var(--primary-red) !important;
       }
     }
   }
