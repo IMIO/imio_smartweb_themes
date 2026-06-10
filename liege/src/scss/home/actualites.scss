@@ -5,12 +5,13 @@
   padding-top: 100px;
   padding-bottom: 100px;
   margin: 0;
+  overflow-x: hidden;
 
   // ─── Décoration bg gauche ───────────────────────────────────────────────────
   &::before {
     content: "";
     position: absolute;
-    top: -45px;
+    top: 0;
     left: 0;
     width: 109px;
     height: 377px;
@@ -20,13 +21,13 @@
     @include media-breakpoint-down(lg) {
       width: 68px;
       height: 236px;
-      top: -29px;
+      top: 0;
     }
 
     @include media-breakpoint-down(sm) {
       width: 45px;
       height: 157px;
-      top: -19px;
+      top: 0;
     }
 
     @media (max-width: 350px) {

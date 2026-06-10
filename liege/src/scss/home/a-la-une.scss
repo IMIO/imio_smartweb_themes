@@ -3,12 +3,13 @@
   background-size: 100%;
   padding-top: 80px;
   margin: 0;
+  overflow-x: hidden;
 
   // ─── Décoration bg droite ───────────────────────────────────────────────────
   &::before {
     content: "";
     position: absolute;
-    top: -80px;
+    top: 0;
     right: 0;
     width: 109px;
     height: 377px;
@@ -19,13 +20,13 @@
     @include media-breakpoint-down(lg) {
       width: 68px;
       height: 236px;
-      top: -29px;
+      top: 0;
     }
 
     @include media-breakpoint-down(sm) {
       width: 45px;
       height: 157px;
-      top: -19px;
+      top: 0;
     }
 
     @media (max-width: 350px) {
