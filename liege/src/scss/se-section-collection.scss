@@ -1,0 +1,194 @@
+#main-container .sectioncollection .see_all {
+  justify-content: right;
+  position: relative;
+  overflow: visible;
+
+  a {
+    border-color: $primary-red;
+    position: relative;
+    display: block;
+    width: max-content;
+    padding: 15px 30px;
+    background: #df006e;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-weight: 400;
+
+    &:hover {
+      background: $primary-svg !important;
+      border-color: $primary-svg !important;
+    }
+  }
+}
+
+#main-container .sectioncollection .display-portrait .table_display {
+  padding: 5px;
+}
+
+#main-container .sectioncollection .display-portrait li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+#main-container .sectioncollection .display-portrait .table_display {
+  .table_image {
+    text-decoration: none;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #cbcbcb;
+    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
+    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    position: relative;
+    display: block !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+
+    .image {
+      display: block;
+      height: 120%;
+      min-height: 400px !important;
+      width: auto !important;
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
+      background: #fff !important;
+      transition: 0.5s;
+    }
+
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .table_title {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) 10px;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .table_description {
+    font-size: 16px;
+    padding: 0 var(--bs-card-spacer-x) 10px;
+    color: $primary-red !important;
+  }
+}
+
+#main-container .sectioncollection .display-carre .table_display {
+  padding: 5px;
+}
+
+#main-container .sectioncollection .display-carre li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+#main-container .sectioncollection .display-carre .table_display {
+  .table_image {
+    text-decoration: none;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #cbcbcb;
+    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
+    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    position: relative;
+    display: block !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+
+    .image {
+      display: block;
+      height: 120%;
+      min-height: 240px !important;
+      width: auto !important;
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
+      background: #fff !important;
+      transition: 0.5s;
+    }
+
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .table_title {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) 10px;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .table_description {
+    font-size: 16px;
+    padding: 0 var(--bs-card-spacer-x) 10px;
+    color: $primary-red !important;
+  }
+}
+
+#main-container .sectioncollection .display-paysage .table_display {
+  padding: 5px;
+}
+
+#main-container .sectioncollection .display-paysage li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+#main-container .sectioncollection .display-paysage .table_display {
+  .table_image {
+    text-decoration: none;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #cbcbcb;
+    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
+    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    position: relative;
+    display: block !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+
+    .image {
+      display: block;
+      height: 120%;
+      min-height: 170px !important;
+      width: auto !important;
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
+      background: #fff !important;
+      transition: 0.5s;
+    }
+
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .table_title {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) 10px;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .table_description {
+    font-size: 16px;
+    padding: 0 var(--bs-card-spacer-x) 10px;
+    color: $primary-red !important;
+  }
+}
