@@ -55,7 +55,7 @@
     .image {
       display: block;
       height: 120%;
-      min-height: 400px !important;
+      min-height: 380px !important;
       width: auto !important;
       margin: 0;
     }
@@ -64,6 +64,10 @@
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff !important;
       transition: 0.5s;
+
+      .image {
+        transform: scale(1);
+      }
     }
 
     a {
@@ -134,6 +138,10 @@
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff !important;
       transition: 0.5s;
+
+      .image {
+        transform: scale(1);
+      }
     }
 
     a {
@@ -190,6 +198,10 @@
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff !important;
       transition: 0.5s;
+
+      .image {
+        transform: scale(1);
+      }
     }
 
     a {
