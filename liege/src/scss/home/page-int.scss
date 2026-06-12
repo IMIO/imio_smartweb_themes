@@ -367,3 +367,19 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 #main-container .sectionhtml {
   margin-bottom: 80px;
 }
+
+.procedure a {
+  background: $primary-svg;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    background: $primary-red;
+  }
+}
