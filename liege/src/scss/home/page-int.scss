@@ -378,8 +378,14 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   font-weight: 700;
   position: relative;
   text-decoration: none;
+  transition: 0.5s;
 
   &:hover {
     background: $primary-red;
+    transition: 0.5s;
   }
+}
+
+.sectiontext .section-text .body-section.figure-left figure img {
+  border-radius: 15px;
 }
