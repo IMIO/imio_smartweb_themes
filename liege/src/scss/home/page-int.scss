@@ -389,3 +389,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 .sectiontext .section-text .body-section.figure-left figure img {
   border-radius: 15px;
 }
+
+#main-container .contact_map {
+  z-index: 0;
+}
