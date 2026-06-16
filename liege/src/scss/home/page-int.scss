@@ -406,12 +406,8 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   border-radius: 15px !important;
 }
 
-.sectiontext
-  .section-text
-  .body-section.figure-bottom
-  .sectiontext
-  .section-text
-  .body-section.figure-top {
+.sectiontext .section-text .body-section.figure-bottom,
+.sectiontext .section-text .body-section.figure-top {
   align-items: normal !important;
   display: flex;
   flex-direction: column-reverse;
