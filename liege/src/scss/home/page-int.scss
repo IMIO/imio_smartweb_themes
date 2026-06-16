@@ -393,3 +393,12 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 #main-container .contact_map {
   z-index: 0;
 }
+
+.sectiontext .section-text .body-section .text {
+  margin: 0 !important;
+}
+
+.sectiontext .section-text .body-section figure img {
+  display: block;
+  border-radius: 15px !important;
+}

@@ -1,4 +1,5 @@
-.portaltype-imio-smartweb-page #main-container .sectionfiles {
+.portaltype-imio-smartweb-page #main-container .sectionfiles,
+.portaltype-imio-smartweb-procedure #main-container .sectionfiles {
   border-radius: 0;
   font-weight: bold;
   padding: 0 0 40px !important;
@@ -83,6 +84,12 @@
 }
 
 .portaltype-imio-smartweb-page
+  #main-container
+  .sectionfiles
+  .section-container
+  .table_display
+  .table_image,
+.portaltype-imio-smartweb-procedure
   #main-container
   .sectionfiles
   .section-container

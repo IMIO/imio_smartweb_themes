@@ -1,4 +1,5 @@
-.portaltype-imio-smartweb-page #main-container .sectionlinks {
+.portaltype-imio-smartweb-page #main-container .sectionlinks,
+.portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   background-color: #fff;
 
   .section-container {
@@ -60,7 +61,8 @@
   }
 }
 
-.portaltype-imio-smartweb-page #main-container .sectionlinks {
+.portaltype-imio-smartweb-page #main-container .sectionlinks,
+.portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   border-radius: 0;
   font-weight: bold;
   padding: 0 0 40px !important;
@@ -157,6 +159,12 @@
   .sectionlinks
   .section-container
   .table_display
+  .table_image,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionlinks
+  .section-container
+  .table_display
   .table_image {
   background-color: $primary-red;
   border: 0;
@@ -182,7 +190,8 @@
 }
 
 // Cas sans ul.row — quand .table_display est directement dans .body-section
-.portaltype-imio-smartweb-page
+.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container,
+.portaltype-imio-smartweb-procedure
   #main-container
   .sectionlinks
   .section-container {
@@ -222,7 +231,8 @@
   }
 }
 
-.portaltype-imio-smartweb-page #main-container .display-portrait {
+.portaltype-imio-smartweb-page #main-container .display-portrait,
+.portaltype-imio-smartweb-procedure #main-container .display-portrait {
   a {
     text-decoration: none;
     display: block;
@@ -252,7 +262,8 @@
   }
 }
 
-.portaltype-imio-smartweb-page #main-container .display-paysage {
+.portaltype-imio-smartweb-page #main-container .display-paysage,
+.portaltype-imio-smartweb-procedure #main-container .display-paysage {
   a {
     text-decoration: none;
     display: block;
@@ -277,7 +288,8 @@
   }
 }
 
-.portaltype-imio-smartweb-page #main-container .display-carre {
+.portaltype-imio-smartweb-page #main-container .display-carre,
+.portaltype-imio-smartweb-procedure #main-container .display-carre {
   a {
     text-decoration: none;
     display: block;
@@ -312,11 +324,21 @@
   #main-container
   .sectionlinks
   .display-portrait
+  .table_display,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionlinks
+  .display-portrait
   .table_display {
   padding: 5px;
 }
 
 .portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .display-portrait
+  .table_display,
+.portaltype-imio-smartweb-procedure
   #main-container
   .sectionlinks
   .display-portrait
@@ -370,11 +392,21 @@
   #main-container
   .sectionlinks
   .display-paysage
+  .table_display,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionlinks
+  .display-paysage
   .table_display {
   padding: 5px;
 }
 
 .portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .display-paysage
+  .table_display,
+.portaltype-imio-smartweb-procedure
   #main-container
   .sectionlinks
   .display-paysage
@@ -428,11 +460,21 @@
   #main-container
   .sectionlinks
   .display-carre
+  .table_display,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionlinks
+  .display-carre
   .table_display {
   padding: 5px;
 }
 
 .portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .display-carre
+  .table_display,
+.portaltype-imio-smartweb-procedure
   #main-container
   .sectionlinks
   .display-carre
