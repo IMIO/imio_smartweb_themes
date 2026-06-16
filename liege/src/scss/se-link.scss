@@ -154,83 +154,6 @@
   padding: 0;
 }
 
-.portaltype-imio-smartweb-page
-  #main-container
-  .sectionlinks
-  .section-container
-  .table_display
-  .table_image,
-.portaltype-imio-smartweb-procedure
-  #main-container
-  .sectionlinks
-  .section-container
-  .table_display
-  .table_image {
-  background-color: $primary-red;
-  border: 0;
-  border-radius: 25px;
-  color: #fff;
-  font-weight: 500;
-  padding: 10px 20px;
-  transition: 0.5s;
-
-  &:hover {
-    background-color: $primary-svg;
-    transition: 0.5s;
-  }
-
-  div,
-  span {
-    color: #fff !important;
-  }
-
-  a {
-    color: #fff !important;
-  }
-}
-
-// Cas sans ul.row — quand .table_display est directement dans .body-section
-.portaltype-imio-smartweb-page #main-container .sectionlinks .section-container,
-.portaltype-imio-smartweb-procedure
-  #main-container
-  .sectionlinks
-  .section-container {
-  .body-section > .table_display {
-    margin: 0 0 0.5rem;
-    padding: 0;
-
-    .table_image {
-      display: flex;
-      width: 100%;
-      background-color: $primary-red;
-      border: 0;
-      border-radius: 25px;
-      color: #fff;
-      font-weight: 500;
-      padding: 10px 20px;
-      transition: 0.5s;
-
-      .image {
-        display: none;
-      }
-
-      &:hover {
-        background-color: $primary-svg;
-        transition: 0.5s;
-      }
-
-      div,
-      span {
-        color: #fff !important;
-      }
-
-      a {
-        color: #fff !important;
-      }
-    }
-  }
-}
-
 .portaltype-imio-smartweb-page #main-container .display-portrait,
 .portaltype-imio-smartweb-procedure #main-container .display-portrait {
   a {
@@ -521,5 +444,37 @@
     margin-top: 0;
     font-size: 18px;
     font-weight: 600;
+  }
+}
+
+// Sans image → fond rose
+.portaltype-imio-smartweb-page #main-container .sectionlinks,
+.portaltype-imio-smartweb-procedure #main-container .sectionlinks {
+  .table_display .table_image.no-image {
+    background-color: $primary-red !important;
+    border: 0 !important;
+    border-radius: 25px !important;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 !important;
+    transition: 0.5s;
+
+    .image {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $primary-svg !important;
+    }
+
+    .table_title span {
+      font-size: 16px;
+    }
+
+    div,
+    span,
+    a {
+      color: #fff !important;
+    }
   }
 }

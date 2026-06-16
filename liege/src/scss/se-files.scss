@@ -130,3 +130,10 @@
   width: 100vw;
   z-index: -1;
 }
+
+.portaltype-imio-smartweb-page #main-container .sectionfiles,
+.portaltype-imio-smartweb-procedure #main-container .sectionfiles {
+  ul.row li {
+    padding: 5px !important;
+  }
+}
