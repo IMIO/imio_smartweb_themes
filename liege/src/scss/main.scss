@@ -457,3 +457,8 @@ h3 {
 .show-hide-banner {
   float: right;
 }
+
+.navbar-dark .navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(70%) saturate(800%)
+    hue-rotate(280deg) brightness(90%);
+}

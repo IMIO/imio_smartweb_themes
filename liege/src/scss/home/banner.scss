@@ -12,7 +12,7 @@
 .section-accueil #portal-logo .sr-only,
 .section-index #portal-logo .sr-only {
   position: absolute;
-  height: 140px;
+  height: 90px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
@@ -65,7 +65,7 @@
 
 // ─── Hero banner ──────────────────────────────────────────────────────────────
 .smartweb_herobanner {
-  margin: 140px 0 0;
+  margin: 110px 0 0;
   width: calc(100vw - 40px);
   border-radius: 250px 0 0 250px;
   overflow: hidden;
@@ -102,7 +102,7 @@
 
 // ─── Barre de recherche ───────────────────────────────────────────────────────
 .search-banner {
-  margin-top: -50px;
+  margin: -50px 0 20px !important;
   z-index: 0;
   text-align: center;
 
