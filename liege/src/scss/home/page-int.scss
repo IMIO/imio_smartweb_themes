@@ -105,18 +105,21 @@
     text-decoration: none;
 
     .list-card-body {
-      padding-bottom: 20px;
+      //padding-bottom: 20px;
       margin-bottom: 20px;
-      background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom
-        #fff;
+      //background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
 
       .list-card-title {
         text-decoration: underline;
         color: $primary-red;
+        font-size: 16px;
+        margin-bottom: 0;
       }
 
       .list-card-text {
         text-decoration: none;
+        font-size: 14px;
+        margin-top: 5px;
       }
     }
 
