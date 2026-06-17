@@ -20,6 +20,8 @@
     .table_image:not(.no-image) {
       .image.d-block.is-image.w-100 {
         aspect-ratio: 1.67;
+        background-size: auto;
+        background-repeat: no-repeat;
         margin-bottom: 10px;
       }
     }

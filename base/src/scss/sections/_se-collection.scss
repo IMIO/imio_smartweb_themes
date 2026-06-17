@@ -1,0 +1,37 @@
+.sectioncollection {
+  background: $section-link-background-color;
+  position: relative;
+
+  .display-paysage {
+    .table_image:not(.no-image) {
+      .image.d-block.is-image.w-100 {
+        aspect-ratio: 1.67;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .display-portrait {
+    .table_image:not(.no-image) {
+      .image.d-block.is-image.w-100 {
+        aspect-ratio: 0.7;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .display-carre {
+    .table_image:not(.no-image) {
+      .image.d-block.is-image.w-100 {
+        aspect-ratio: 1;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+}
