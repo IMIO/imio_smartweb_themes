@@ -1,3 +1,8 @@
+## [0.3.14](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.13...v0.3.14) (2026-06-17)
+
+* Improve table-view image ratio (5e8cd0a4)
+* Table view scss (06954a87)
+
 ## [0.3.13](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.12...v0.3.13) (2026-04-14)
 
 * Improve top-widget search button (1c175a96)
