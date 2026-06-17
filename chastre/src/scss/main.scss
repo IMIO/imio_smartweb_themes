@@ -233,7 +233,7 @@ body.section-home-page div#messagesviewlet {
 
   .figure-left {
     figure {
-      max-width: 50%;
+      max-width: 50% !important;
       margin: 25px auto;
     }
   }
@@ -245,5 +245,13 @@ body.section-home-page div#messagesviewlet {
 
   #portal-footer-wrapper #portal-footer .plone-icon path {
     fill: #fff;
+  }
+
+  #portal-colophon ul li,
+  #portal-colophon ul li a,
+  #portal-colophon ul li div,
+  #portal-colophon ul li p,
+  #portal-colophon ul li span {
+    text-align: center;
   }
 }
