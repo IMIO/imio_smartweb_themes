@@ -231,7 +231,7 @@ body.section-home-page div#messagesviewlet {
     text-align: center;
   }
 
-  section.figure-left {
+  .figure-left {
     figure {
       max-width: 50%;
       margin: 25px auto;
@@ -240,6 +240,7 @@ body.section-home-page div#messagesviewlet {
 
   #portal-footer-wrapper #portal-footer .sectionlinks .table_image .image {
     max-width: auto;
+    margin: 0 auto;
   }
 }
 
