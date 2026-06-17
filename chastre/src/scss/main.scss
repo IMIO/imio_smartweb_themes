@@ -225,3 +225,24 @@ body.section-home-page div#messagesviewlet {
   width: 90%;
   right: 0;
 }
+
+@media (max-width: 768px) {
+  #portal-footer-wrapper #portal-footer #smartweb-footer div.container {
+    text-align: center;
+  }
+
+  section.figure-left {
+    figure {
+      max-width: 50%;
+      margin: 25px auto;
+    }
+  }
+
+  #portal-footer-wrapper #portal-footer .sectionlinks .table_image .image {
+    max-width: auto;
+  }
+}
+
+path {
+  fill: #fff;
+}
