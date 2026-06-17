@@ -279,14 +279,6 @@
     overflow: hidden !important;
     padding: 0 !important;
 
-    .image {
-      display: block;
-      height: 120%;
-      min-height: 20px !important;
-      width: 100% !important;
-      margin: 0;
-    }
-
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff !important;
@@ -347,14 +339,6 @@
     overflow: hidden !important;
     padding: 0 !important;
 
-    .image {
-      display: block;
-      height: 120%;
-      min-height: 20px !important;
-      width: 100% !important;
-      margin: 0;
-    }
-
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff !important;
@@ -414,14 +398,6 @@
     display: block !important;
     overflow: hidden !important;
     padding: 0 !important;
-
-    .image {
-      display: block;
-      height: 120%;
-      min-height: 240px !important;
-      width: 100% !important;
-      margin: 0;
-    }
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
