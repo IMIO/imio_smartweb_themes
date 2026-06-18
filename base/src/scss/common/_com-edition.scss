@@ -137,3 +137,15 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
+
+.faceted-results .display-portrait .card-img-top {
+  aspect-ratio: 0.7;
+}
+
+.faceted-results .display-carre .card-img-top {
+  aspect-ratio: 1;
+}
+
+.faceted-results .display-paysage .card-img-top {
+  aspect-ratio: 1.67;
+}
