@@ -1,3 +1,7 @@
+## [0.3.15](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.14...v0.3.15) (2026-06-18)
+
+* Fix img ratio for faceted (9831f605)
+
 ## [0.3.14](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.13...v0.3.14) (2026-06-17)
 
 * Improve table-view image ratio (5e8cd0a4)
