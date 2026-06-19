@@ -1,3 +1,24 @@
+.display-portrait {
+  .swiper-image,
+  .is-image {
+    aspect-ratio: $portrait-image-aspect-ratio;
+  }
+}
+
+.display-carre {
+  .swiper-image,
+  .is-image {
+    aspect-ratio: $carre-image-aspect-ratio;
+  }
+}
+
+.display-paysage {
+  .swiper-image,
+  .is-image {
+    aspect-ratio: $paysage-image-aspect-ratio;
+  }
+}
+
 .frontend ul {
   padding-left: 0;
 }

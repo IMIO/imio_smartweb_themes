@@ -4,6 +4,12 @@ $primary-svg: #235789 !default;
 $grey-bg: #ebebeb !default;
 $black-color: #1f1f1f !default;
 
+// IMG ratio
+
+$paysage-image-aspect-ratio: 1.67 !default;
+$portrait-image-aspect-ratio: 0.7 !default;
+$carre-image-aspect-ratio: 1 !default;
+
 //*// TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
