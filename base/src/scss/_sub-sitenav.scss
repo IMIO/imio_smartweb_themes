@@ -91,6 +91,10 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
 #subsite-navigation {
   // --- Layout de base ---
 
+  .sub-nav-scroll-btn {
+    display: none;
+  }
+
   &.activated {
     &::after {
       content: "";
@@ -192,6 +196,23 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
       &::before {
         @include nav-underline($sub-nav-link-unedrline-color);
       }
+    }
+
+    &.has_subtree > a::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 6px;
+      margin-left: 0.3rem;
+      flex-shrink: 0;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1" stroke="#{url-encoded-color($sub-nav-link-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+        center / contain no-repeat;
+      transition: transform 0.2s ease;
+    }
+
+    &.has_subtree.show-nav > a::after,
+    &.has_subtree.inPath > a::after {
+      transform: rotate(180deg);
     }
   }
 
@@ -458,6 +479,81 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
   @include media-breakpoint-down(md) {
     position: relative; // contexte de positionnement pour tous les panneaux
 
+    // Boutons scroll horizontal (injectés par JS)
+    @keyframes sub-nav-scroll-hint {
+      0%,
+      100% {
+        background-position: center center;
+      }
+
+      50% {
+        background-position: calc(50% + 3px) center;
+      }
+    }
+
+    @keyframes sub-nav-scroll-hint-left {
+      0%,
+      100% {
+        background-position: center center;
+      }
+
+      50% {
+        background-position: calc(50% - 3px) center;
+      }
+    }
+
+    .sub-nav-scroll-btn {
+      display: block;
+      position: absolute;
+      backdrop-filter: blur(10px);
+      top: 5px;
+      bottom: 0;
+      width: 37px;
+      background-color: #ffffff6b;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      z-index: 2;
+      opacity: 100%;
+      transition: opacity 0.3s ease;
+
+      &.is-hidden {
+        opacity: 0%;
+        pointer-events: none;
+        display: none;
+      }
+
+      &--right {
+        border-radius: 3px 0 0;
+        right: -12px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10"><polyline points="1,1 5,5 1,9" stroke="#{url-encoded-color($sub-nav-scroll-arrow-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        background-size: 6px 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: sub-nav-scroll-hint 1.8s ease-in-out infinite;
+        }
+      }
+
+      &--left {
+        left: -12px;
+        border-radius: 0 3px 0 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10"><polyline points="5,1 1,5 5,9" stroke="#{url-encoded-color($sub-nav-scroll-arrow-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        background-size: 6px 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: sub-nav-scroll-hint-left 1.8s ease-in-out infinite;
+        }
+      }
+    }
+
+    &.activated .sub-nav-scroll-btn {
+      display: none;
+    }
+
     .close-nav {
       &:not(:focus) {
         // Annule les propriétés layout du mixin visually-hidden
@@ -486,6 +582,25 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
       flex-wrap: nowrap;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+
+      // Firefox
+      scrollbar-width: thin;
+      scrollbar-color: $sub-nav-scrollbar-thumb-color
+        $sub-nav-scrollbar-track-color;
+
+      // WebKit (Chrome, Safari, Edge, iOS Safari)
+      &::-webkit-scrollbar {
+        height: $sub-nav-scrollbar-height;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $sub-nav-scrollbar-track-color;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $sub-nav-scrollbar-thumb-color;
+        border-radius: calc($sub-nav-scrollbar-height / 2);
+      }
     }
 
     // Les li depth-1 ne sont plus positionnés : leurs panneaux

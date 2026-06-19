@@ -210,8 +210,12 @@ $(document).ready(function () {
           if (item.classList.contains("nav-item-depth-1")) {
             if (item.classList.contains(SHOW_CLASS)) {
               positionDepth1Panel(item);
+              nav.classList.add("activated");
             } else {
               resetDepth1Panel(item);
+              if (!nav.querySelector(`.nav-item-depth-1.${SHOW_CLASS}`)) {
+                nav.classList.remove("activated");
+              }
             }
             return;
           }
@@ -267,6 +271,57 @@ $(document).ready(function () {
     } else {
       init();
     }
+  })();
+
+  // Boutons scroll subsite-navigation (mobile)
+  (function () {
+    const MOBILE_BP = 768;
+    const SCROLL_AMOUNT = 150;
+
+    const nav = document.getElementById("subsite-navigation");
+    if (!nav) return;
+    const ul = nav.querySelector(":scope > ul");
+    if (!ul) return;
+
+    const btnRight = document.createElement("button");
+    btnRight.className = "sub-nav-scroll-btn sub-nav-scroll-btn--right is-hidden";
+    btnRight.type = "button";
+    btnRight.setAttribute("aria-label", "Défiler la navigation vers la droite");
+    btnRight.setAttribute("aria-hidden", "true");
+    nav.appendChild(btnRight);
+
+    const btnLeft = document.createElement("button");
+    btnLeft.className = "sub-nav-scroll-btn sub-nav-scroll-btn--left is-hidden";
+    btnLeft.type = "button";
+    btnLeft.setAttribute("aria-label", "Défiler la navigation vers la gauche");
+    btnLeft.setAttribute("aria-hidden", "true");
+    nav.appendChild(btnLeft);
+
+    const updateVisibility = () => {
+      if (window.innerWidth >= MOBILE_BP) {
+        btnRight.classList.add("is-hidden");
+        btnLeft.classList.add("is-hidden");
+        return;
+      }
+      const overflows = ul.scrollWidth > ul.clientWidth;
+      const atEnd = ul.scrollLeft + ul.clientWidth >= ul.scrollWidth - 2;
+      const atStart = ul.scrollLeft <= 2;
+      btnRight.classList.toggle("is-hidden", atEnd || !overflows);
+      btnLeft.classList.toggle("is-hidden", atStart || !overflows);
+    };
+
+    btnRight.addEventListener("click", () => {
+      ul.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+    });
+
+    btnLeft.addEventListener("click", () => {
+      ul.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
+    });
+
+    ul.addEventListener("scroll", updateVisibility, { passive: true });
+    window.addEventListener("resize", updateVisibility, { passive: true });
+
+    updateVisibility();
   })();
 });
 
