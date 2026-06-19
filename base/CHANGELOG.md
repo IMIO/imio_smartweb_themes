@@ -1,3 +1,7 @@
+## [0.3.16](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.15...v0.3.16) (2026-06-19)
+
+* Defiend global aspect ratio (0d7931b7)
+
 ## [0.3.15](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.14...v0.3.15) (2026-06-18)
 
 * Fix img ratio for faceted (9831f605)
