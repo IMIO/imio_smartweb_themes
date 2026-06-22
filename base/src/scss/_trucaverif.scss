@@ -580,52 +580,7 @@ body#visual-portal-wrapper.userrole-anonymous.portaltype-imio-smartweb-procedure
 
 /* fin nouveautés */
 
-/* retour sur mobile */
-a.prev-nav::before {
-  margin-right: 0.5rem;
-  top: 0;
-  position: relative;
-  content: "〈";
-  font-size: 0.9rem;
-  margin-left: -0.5rem;
-}
-
 @media screen and (max-width: 992px) {
-  #subsite-navigation > ul > li.show-nav > .has_subtree.dropdown {
-    margin-top: 1rem;
-    display: table;
-    width: 100% !important;
-    left: 0 !important;
-  }
-
-  #subsite-navigation > ul li > .has_subtree.dropdown .has_subtree.dropdown {
-    top: 0;
-    width: 100% !important;
-  }
-
-  .subsite-container #subsite-logo {
-    width: 100%;
-
-    a {
-      padding-left: 0.6rem;
-      box-sizing: border-box;
-    }
-  }
-
-  #subsite-navigation > ul > li:first-child {
-    margin-left: 0.5rem;
-  }
-
-  #subsite-navigation > ul > li {
-    margin-right: 0.75rem;
-  }
-
-  #portal-globalnav-collapse > ul > li > a,
-  #subsite-navigation > ul > li > a {
-    padding: 1rem 0;
-  }
-
-  /* page d'accueil */
   #content-core .sortable-section.citoyennete-1,
   #content-core .sortable-section.citoyennete-2,
   .sortable-section.sectionlinks.section-annuaire.col-sm-6,

@@ -1,57 +1,58 @@
 // *// BREADCRUMBS //* //
 #portal-breadcrumbs {
-  position: relative;
+  // position: relative;
   margin-bottom: 0;
-  background-color: $breadcrumb-bg;
+  font-size: $breadcrumbs-font-size;
+  // background-color: $breadcrumb-bg;
 
-  @if $enable-full-width-breacrumb {
-    &::after {
-      @include full-width;
+  // @if $enable-full-width-breacrumb {
+  //   &::after {
+  //     @include full-width;
 
-      background: $breadcrumb-bg;
-    }
-  }
+  //     background: $breadcrumb-bg;
+  //   }
+  // }
 
-  .container {
-    padding: 0;
-  }
+  // .container {
+  //   padding: 0;
+  // }
 
-  .breadcrumb {
-    background-color: transparent;
+  // .breadcrumb {
+  //   background-color: transparent;
 
-    .breadcrumb-item {
-      & + .breadcrumb-item {
-        padding-left: 0;
-      }
+  //   .breadcrumb-item {
+  //     & + .breadcrumb-item {
+  //       padding-left: 0;
+  //     }
 
-      a {
-        text-decoration: none;
-      }
+  //     a {
+  //       text-decoration: none;
+  //     }
 
-      &::before {
-        padding-right: 0.25rem;
-        padding-left: 0.25rem;
-        content: ">";
-        float: right;
-      }
+  //     &::before {
+  //       padding-right: 0.25rem;
+  //       padding-left: 0.25rem;
+  //       content: ">";
+  //       float: right;
+  //     }
 
-      &:last-child::before {
-        content: "";
-      }
-    }
-  }
+  //     &:last-child::before {
+  //       content: "";
+  //     }
+  //   }
+  // }
 }
 
-.section-home-page {
-  #plone-breadcrumb {
-    display: none;
-  }
-}
+// .section-home-page {
+//   #plone-breadcrumb {
+//     display: none;
+//   }
+// }
 
-// cacher le breadcrumb à la racine du site
-.section-home-page-bla nav#portal-breadcrumbs,
-.portaltype-imio-smartweb-portalpage #portal-breadcrumbs {
-  display: none;
-}
+// // cacher le breadcrumb à la racine du site
+// .section-home-page-bla nav#portal-breadcrumbs,
+// .portaltype-imio-smartweb-portalpage #portal-breadcrumbs {
+//   display: none;
+// }
 
 // --- //
