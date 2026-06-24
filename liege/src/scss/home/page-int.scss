@@ -92,6 +92,12 @@
   }
 }
 
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: $primary-svg;
+  text-decoration: underline;
+}
+
 .contact_leadimage {
   border-radius: 15px;
 }
