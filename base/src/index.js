@@ -284,7 +284,8 @@ $(document).ready(function () {
     if (!ul) return;
 
     const btnRight = document.createElement("button");
-    btnRight.className = "sub-nav-scroll-btn sub-nav-scroll-btn--right is-hidden";
+    btnRight.className =
+      "sub-nav-scroll-btn sub-nav-scroll-btn--right is-hidden";
     btnRight.type = "button";
     btnRight.setAttribute("aria-label", "Défiler la navigation vers la droite");
     btnRight.setAttribute("aria-hidden", "true");
