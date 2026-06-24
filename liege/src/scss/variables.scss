@@ -130,19 +130,19 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
 //sub-header
 $subsite-container-padding: 0 !default;
-$subsite-navbar-bg: $primary-red !default;
-$subsite-logo-background: rgba(#fff, 0.3) !default;
+$subsite-navbar-bg: linear-gradient(to right, #f3f3f3, #fff);
+$subsite-logo-background: $primary-red !default;
 $subsite-logo-padding: 0.3em 0.5rem !default;
 $subsite-logo-margin: 1rem 0 0 0 !default;
-$subsite-logo-radius: 10px !default;
+$subsite-logo-radius: 25px !default;
 $subsite-logo-color: $font-title-color-light !default;
 
 //sub-sitenav
 $subsite-container-background: transparent !default;
-$sub-nav-link-color: $font-title-color-light !default;
+$sub-nav-link-color: $font-title-color-dark !default;
 $sub-nav-link-open-color: current !default;
-$sub-nav-link-active-color: $font-title-color-light !default;
-$sub-nav-link-unedrline-color: $font-title-color-light !default;
+$sub-nav-link-active-color: $font-title-color-dark !default;
+$sub-nav-link-unedrline-color: $font-title-color-dark !default;
 //*// SECTION HOMEPAGE
 
 // banner
