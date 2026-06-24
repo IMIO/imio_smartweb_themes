@@ -18,7 +18,8 @@ $(document).ready(function () {
   if ($(".sectionevents .swiper").length > 0) {
     var eventsSwiper = $(".sectionevents .swiper")[0].swiper;
     eventsSwiper.params.spaceBetween = 40;
-    (eventsSwiper.params.speed = 1000), eventsSwiper.update();
+    eventsSwiper.params.speed = 1000;
+    eventsSwiper.update();
   }
 
   // For banner
