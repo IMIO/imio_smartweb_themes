@@ -437,6 +437,20 @@
     }
   }
 
+  .quick-access {
+    li {
+      .table_image {
+        background-color: #fff !important;
+      }
+
+      &:hover {
+        .table_image {
+          background-color: var(--primary-light) !important;
+        }
+      }
+    }
+  }
+
   .sectionlinks.quick-access .body-section li a .table_title span {
     color: var(--primary-svg) !important;
   }
