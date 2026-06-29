@@ -112,7 +112,8 @@
 }
 
 .nb-items-batch-5 {
-  > .row {
+  .row {
+    // sans >, pour descendre dans les enfants
     padding-left: 0;
     list-style: none;
 
