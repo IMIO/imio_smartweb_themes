@@ -114,6 +114,18 @@
     }
   }
 
+  .sectiontext mark,
+  .r-content-text mark {
+    a {
+      color: var(--primary-svg) !important;
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--primary-red) !important;
+      }
+    }
+  }
+
   // ─── News liste ──────────────────────────────────────────────────────────────
   .r-news-list-item-link {
     .r-item-title {
@@ -257,6 +269,10 @@
 
   // ─── Actualités ───────────────────────────────────────────────────────
   .bloc-actu {
+    &::before {
+      display: none;
+    }
+
     .section-title {
       color: $primary;
 
@@ -286,7 +302,7 @@
 
     .swiper-slide:hover {
       .swiper-image {
-        background-color: rgba($primary-svg, 0.7);
+        background-color: rgba(--$primary-svg, 0.7);
       }
 
       .swiper_title h3 {
@@ -295,7 +311,12 @@
     }
   }
   // ─── Autres ───────────────────────────────────────────────────────
-  .portaltype-imio-smartweb-page #main-container .sectionfiles {
+  .portaltype-imio-smartweb-page
+    #main-container
+    .sectionfiles
+    .portaltype-imio-smartweb-procedure
+    #main-container
+    .sectionfiles {
     .table_image {
       background-color: var(--primary-svg) !important;
 
@@ -396,9 +417,17 @@
         background: #fff;
       }
 
+      .table_image {
+        background-color: var(--primary-svg) !important;
+      }
+
+      .table_title span {
+        color: #fff;
+      }
+
       &:hover {
         .table_image {
-          background-color: var(--primary-light) !important;
+          background-color: var(--primary-red) !important;
         }
 
         .table_title span {

@@ -237,7 +237,7 @@
 
   .swiper-slide:hover {
     .swiper-image {
-      background-color: rgba($primary-svg, 0.7);
+      background-color: rgba(--$primary-svg, 0.7);
     }
 
     .swiper_title h3 {
@@ -256,6 +256,10 @@
 
   // ─── Actualités ───────────────────────────────────────────────────────
   .bloc-actu {
+    &::before {
+      display: none;
+    }
+
     .section-title {
       color: $primary;
 
@@ -285,7 +289,7 @@
 
     .swiper-slide:hover {
       .swiper-image {
-        background-color: rgba($primary-svg, 0.7);
+        background-color: rgba(--$primary-svg, 0.7);
       }
 
       .swiper_title h3 {
