@@ -110,3 +110,15 @@
     }
   }
 }
+
+.nb-items-batch-5 {
+  > .row {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+}
