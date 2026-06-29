@@ -250,7 +250,7 @@
 
   .swiper-slide:hover {
     .swiper-image {
-      background-color: rgba($primary-svg, 0.7);
+      background-color: color-mix(in srgb, var(--primary-svg) 70%, transparent);
     }
 
     .swiper_title h3 {
