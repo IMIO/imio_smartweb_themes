@@ -2,9 +2,9 @@
 .portaltype-imio-smartweb-procedure #main-container .sectionfiles {
   border-radius: 0;
   font-weight: bold;
-  padding: 0 0 40px !important;
+  padding: 0;
   margin: 40px 0;
-  background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
+  background: #fff;
 
   .section-title {
     padding: 0 !important;
@@ -95,12 +95,16 @@
   .section-container
   .table_display
   .table_image {
-  background-color: $primary-red;
+  background-color: #df006e;
+  background-image: url("../../assets/svg/icon-telecharger.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 24px 24px;
   border: 0;
   border-radius: 25px;
   color: #fff;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 10px 50px 10px 20px;
   transition: 0.5s;
 
   &:hover {

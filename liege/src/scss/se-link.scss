@@ -65,9 +65,9 @@
 .portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   border-radius: 0;
   font-weight: bold;
-  padding: 0 0 40px !important;
-  margin: 40px 0 !important;
-  background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
+  padding: 0 !important;
+  margin: 30px 0 !important;
+  background: #fff;
 
   .section-title {
     padding: 0 !important;
@@ -427,12 +427,16 @@
 .portaltype-imio-smartweb-page #main-container .sectionlinks,
 .portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   .table_display .table_image.no-image {
-    background-color: $primary-red !important;
-    border: 0 !important;
-    border-radius: 25px !important;
+    background-color: #df006e;
+    background-image: url("../../assets/svg/icon-ouvrir.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    border: 0;
+    border-radius: 25px;
     color: #fff;
     font-weight: 500;
-    padding: 0 !important;
+    padding: 0 50px 0 0 !important ;
     transition: 0.5s;
 
     .image {
@@ -441,6 +445,10 @@
 
     &:hover {
       background-color: $primary-svg !important;
+      background-image: url("../../assets/svg/icon-ouvrir.svg") !important;
+      background-repeat: no-repeat !important;
+      background-position: right 15px center !important;
+      background-size: 24px 24px !important;
     }
 
     .table_title span {

@@ -226,19 +226,20 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 .sectiontext mark,
 .r-content-text mark {
-  background-color: $primary-svg;
+  background-color: #f1f1f1;
   border: 0;
-  border-radius: 8px;
-  color: #fff;
+  border-radius: 15px;
+  color: #000;
   display: inline-block;
   font-weight: 500;
   padding: 20px 45px 20px 26px;
 
   a {
-    color: #fff !important;
+    color: $primary-red !important;
+    text-decoration: underline;
 
     &:hover {
-      color: $primary-red;
+      color: $primary-svg !important;
     }
   }
 }
@@ -370,7 +371,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 }
 
 #main-container .sectiontext {
-  margin: 60px 0;
+  margin: 30px 0;
 }
 
 #main-container .sectionhtml {

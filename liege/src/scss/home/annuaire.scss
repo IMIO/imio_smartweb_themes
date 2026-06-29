@@ -2,9 +2,10 @@
   gap: 20px;
 
   .body-section {
-    background:
-      url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
-      linear-gradient(to bottom, #f3f3f3, #fff) !important;
+    //background:
+    //url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
+    //linear-gradient(to bottom, #f3f3f3, #fff) !important;
+    background: linear-gradient(to bottom, #f3f3f3, #fff) !important;
     padding-top: 20px;
     border-radius: 20px 20px 0 0;
     margin-bottom: 20px;
@@ -38,9 +39,7 @@
 #content-core .sectioncontact.col-sm-8,
 #content-core .sectioncontact.col-sm-9,
 #content-core .sectioncontact.col-sm-12 {
-  background:
-    url("../../assets/svg/stroke-h.svg") repeat-x center bottom,
-    linear-gradient(to bottom, #f3f3f3, #fff) !important;
+  background: linear-gradient(to bottom, #f3f3f3, #fff) !important;
   border-radius: 20px 20px 0 0 !important;
   margin-bottom: 20px !important;
 
