@@ -302,7 +302,7 @@
 
     .swiper-slide:hover {
       .swiper-image {
-        background-color: rgba(--$primary-svg, 0.7);
+        background-color: rgba($primary-svg, 0.7);
       }
 
       .swiper_title h3 {
