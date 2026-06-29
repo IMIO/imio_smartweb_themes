@@ -169,4 +169,77 @@
   #portal-globalnav .dropdown .nav-link:hover {
     color: var(--primary-svg) !important;
   }
+
+  .sectionfiles,
+  .sectionlinks {
+    .table_image {
+      background-color: var(--primary-svg) !important;
+
+      &:hover {
+        background-color: var(--primary-red) !important;
+      }
+    }
+  }
+
+  .quick-access {
+    li {
+      .table_image {
+        background-color: #fff !important;
+      }
+
+      &:hover {
+        .table_image {
+          background-color: var(--primary-light) !important;
+        }
+      }
+    }
+  }
+
+  .sectionlinks.quick-access .body-section li a .table_title span {
+    color: var(--primary-svg) !important;
+  }
+
+  // ─── Actualités ───────────────────────────────────────────────────────
+  .bloc-actu {
+    &::before {
+      display: none;
+    }
+
+    .section-title {
+      color: $primary;
+
+      &::before {
+        background-color: var(--primary-svg) !important;
+      }
+    }
+
+    .swiper-image {
+      border: 1px solid $primary-gris;
+    }
+
+    .see_all a {
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
+
+      &:hover {
+        background: var(--primary-red) !important;
+        border-color: var(--primary-red) !important;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: var(--primary-red) !important;
+    }
+
+    .swiper-slide:hover {
+      .swiper-image {
+        background-color: rgba(0, 0, 0, 70%);
+      }
+
+      .swiper_title h3 {
+        color: var(--primary-red) !important;
+      }
+    }
+  }
 }
