@@ -414,10 +414,8 @@
   .sectionfiles {
     .table_image {
       background-color: var(--primary-svg) !important;
-    }
 
-    &:hover {
-      .table_image {
+      &:hover {
         background-color: var(--primary-red) !important;
       }
     }
