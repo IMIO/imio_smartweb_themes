@@ -2,6 +2,7 @@
   .swiper-image,
   .is-image {
     aspect-ratio: $portrait-image-aspect-ratio;
+    padding-bottom: 0;
   }
 }
 
@@ -9,6 +10,7 @@
   .swiper-image,
   .is-image {
     aspect-ratio: $carre-image-aspect-ratio;
+    padding-bottom: 0;
   }
 }
 
@@ -16,6 +18,7 @@
   .swiper-image,
   .is-image {
     aspect-ratio: $paysage-image-aspect-ratio;
+    padding-bottom: 0;
   }
 }
 
