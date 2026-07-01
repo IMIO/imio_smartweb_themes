@@ -261,7 +261,7 @@ body.section-home-page div#messagesviewlet {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1.25rem !important;
   background-color: $primary !important;
   color: #fff !important;
   font-weight: 500;
@@ -279,8 +279,8 @@ body.section-home-page div#messagesviewlet {
 
   &:hover,
   &:focus {
-    background-color: $dark;
-    border-color: $dark;
+    background-color: $dark !important;
+    border-color: $dark !important;
     color: #fff !important;
     text-decoration: none;
   }
