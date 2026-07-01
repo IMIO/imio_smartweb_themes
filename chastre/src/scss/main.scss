@@ -256,32 +256,37 @@ body.section-home-page div#messagesviewlet {
   }
 }
 
+// SUP-29388
 #header-actions .account {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1.25rem;
-  background-color: $primary;
-  color: $light-blue;
+  background-color: $primary !important;
+  color: #fff !important;
   font-weight: 500;
   font-size: 0.9375rem;
   text-decoration: none;
   border-radius: 50rem;
-  border: 1px solid $primary;
+  border: 1px solid $primary !important;
   transition:
     background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+
+  span {
+    color: #fff !important;
+  }
 
   &:hover,
   &:focus {
     background-color: $dark;
     border-color: $dark;
-    color: $light-blue;
+    color: #fff !important;
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 3px solid $primary;
+    outline: 3px solid $primary !important;
     outline-offset: 2px;
   }
 }
