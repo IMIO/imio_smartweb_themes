@@ -296,3 +296,14 @@ body.portaltype-imio-smartweb-portalpage.section-page-portail
 #portal-header #portal-header-top #portal-logo img {
   height: auto !important;
 }
+
+//logo section contact
+.sectionlinks .nb-items-batch-1 .image.is-image {
+  width: 100%;
+  max-width: 260px; /* taille max du logo, à ajuster */
+  aspect-ratio: 3 / 2; /* ratio réel largeur/hauteur de l'image, à ajuster */
+  background-size: contain; /* évite le crop/déformation du "cover" hérité */
+  background-repeat: no-repeat;
+  background-position: left center; /* image collée à gauche dans son cadre */
+  margin: 0; /* plus de centrage automatique */
+}
