@@ -290,3 +290,13 @@ body.section-home-page div#messagesviewlet {
     outline-offset: 2px;
   }
 }
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: #fff;
+}
+
+#content-header #subsite-navigation .nav-item-depth-1 > a,
+#content-header #subsite-navigation.activated .nav-item-depth-1 > a {
+  color: #fff !important;
+}
