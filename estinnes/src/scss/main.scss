@@ -158,3 +158,18 @@ footer #container-section-noussuivre {
   background-color: #f7f7f7;
   border-radius: 5px;
 }
+
+.sectionfiles {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: $primary;
+}
+
+#subsite-navigation .nav-item-depth-1 > a {
+  align-items: center;
+  color: #fff;
+}
