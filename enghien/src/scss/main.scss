@@ -270,11 +270,10 @@ footer #container-section-noussuivre {
 
 .subsite-container #subsite-logo {
   font-size: 18px;
-  background: $primary-orange;
   border-radius: 0;
 
   a {
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -715,4 +714,14 @@ body.template-block_view_with_images .block-menu-element a .card-body {
 
 .site-ecolemarcq #portal-globalnav > li > a:hover {
   color: #fff;
+}
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: #fff;
+}
+
+#content-header #subsite-navigation .nav-item-depth-1 > a,
+#content-header #subsite-navigation.activated .nav-item-depth-1 > a {
+  color: #fff !important;
 }
