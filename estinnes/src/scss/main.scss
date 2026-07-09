@@ -169,7 +169,7 @@ footer #container-section-noussuivre {
   background: $primary;
 }
 
-#subsite-navigation .nav-item-depth-1 > a {
-  align-items: center;
-  color: #fff;
+#content-header #subsite-navigation .nav-item-depth-1 > a,
+#content-header #subsite-navigation.activated .nav-item-depth-1 > a {
+  color: #fff !important;
 }
