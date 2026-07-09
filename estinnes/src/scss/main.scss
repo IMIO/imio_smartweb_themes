@@ -173,3 +173,20 @@ footer #container-section-noussuivre {
 #content-header #subsite-navigation.activated .nav-item-depth-1 > a {
   color: #fff !important;
 }
+
+.sectionfiles ul li .table_display a {
+  color: #000;
+  font-weight: 500;
+  transition: color var(--om-default-transition-duration)
+    var(--om-default-transition-timing-function);
+
+  &:hover {
+    color: var(--bs-link-hover-color);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+    border-radius: var(--om-radius-md);
+  }
+}
