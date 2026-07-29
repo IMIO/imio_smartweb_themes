@@ -13,8 +13,8 @@ $enable-roboto-webfont: false;
 // @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 @import "./variables";
-// @import "../../../base/src/scss/main";
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "../../../base/src/scss/main";
+//@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
 
 //// STYLES
 
@@ -462,4 +462,26 @@ h3 {
 .navbar-dark .navbar-toggler-icon {
   filter: brightness(0) saturate(100%) invert(15%) sepia(70%) saturate(800%)
     hue-rotate(280deg) brightness(90%);
+}
+
+.sectiontext .h2,
+.sectiontext h2 {
+  margin-bottom: 1rem;
+  margin-top: 0 !important;
+}
+
+@media (min-width: 768px) {
+  div:not(.sectiontext) + .sectiontext .h2,
+  div:not(.sectiontext) + .sectiontext h2 {
+    margin-top: 0 !important;
+  }
+}
+
+.sectionselections li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#main-container .sectiontext {
+  margin: 0 0 30px;
 }
