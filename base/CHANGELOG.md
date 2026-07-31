@@ -1,3 +1,16 @@
+## [0.3.17](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.16...v0.3.17) (2026-07-31)
+
+* fix ol ul padding (d8d5d948)
+* exclude padding ratio to preverve aspect ratio (c83bb8ab)
+* Prettier all fix (f29261fc)
+* Delete webkit (ec217566)
+* tempary add sub-menu js to liegd (28819dbd)
+* Merge branch 'sub-menu' (90044bd2)
+* improve sub menu (c99457e9)
+* up submenu higlight (3127a916)
+* Fix color (162e7d77)
+* Improve sub-menu style (653870ef)
+
 ## [0.3.16](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.15...v0.3.16) (2026-06-19)
 
 * Defiend global aspect ratio (0d7931b7)
