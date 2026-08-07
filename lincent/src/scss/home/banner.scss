@@ -124,3 +124,7 @@
     }
   }
 }
+
+#portal-globalnav li.show-nav > .has_subtree.dropdown {
+  border-radius: 0 !important;
+}

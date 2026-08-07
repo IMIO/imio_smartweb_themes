@@ -275,16 +275,6 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   display: none;
 }
 
-.r-item-date {
-  color: #fff;
-  background: $primary-svg;
-  max-width: max-content;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  border-radius: 50px;
-  padding: 5px 10px;
-}
-
 .r-item-text {
   grid-template-columns: 1fr !important;
 }
