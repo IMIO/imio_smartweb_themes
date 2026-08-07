@@ -203,7 +203,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 .r-news-list-item-link {
   .r-item-title {
-    color: $primary-svg;
+    color: #000;
   }
 
   .r-item-arrow-more {
@@ -273,6 +273,10 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 .r-item-categorie {
   display: none;
+}
+
+.r-item-date {
+  margin-top: 20px;
 }
 
 .r-item-text {
