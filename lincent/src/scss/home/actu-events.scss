@@ -1,0 +1,206 @@
+.sectionnews {
+  padding-bottom: 80px !important;
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+
+    &::after {
+      background: $primary-svg;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
+  }
+
+  position: relative;
+  background: url("../../assets/svg/bg-actu.svg") center center no-repeat;
+  background-size: calc(100% - 40px) auto;
+
+  .swiper-slide {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 10%);
+    border-radius: 20px 60px 20px 20px;
+    padding-bottom: 30px;
+
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.sectionevents {
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+
+    @media (max-width: 991px) {
+      color: #fff !important;
+    }
+
+    &::after {
+      background: $primary-svg;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
+  }
+
+  position: relative;
+  background: url("../../assets/svg/ble.svg") 40px bottom no-repeat $primary;
+  border-bottom: 20px solid $primary-svg;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 350px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../../assets/svg/sun.png") right top no-repeat #fff;
+    z-index: -1;
+  }
+
+  .swiper_category {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .swiper-slide {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 10%);
+    border-radius: 20px 60px 20px 20px;
+    padding-bottom: 30px;
+
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .see_all a {
+    background: #fff;
+    color: $primary;
+    border: solid 0 #fff;
+  }
+}
+
+.informes {
+  .section-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.home-partenaires {
+  position: relative;
+  overflow: visible; // important, sinon le pseudo-élément sera coupé
+  background: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 500px;
+    top: 0;
+    right: calc(-1 * ((100vw - 100%) / 2) + 30px);
+    background: url("../../assets/svg/bat.png") right top no-repeat;
+    z-index: -1;
+  }
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+
+    &::after {
+      background: $primary-svg;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 60px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 20px;
+    }
+  }
+
+  .d-block {
+    aspect-ratio: 1.67;
+    margin-bottom: 10px;
+    background-size: calc(100% - 30px) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .table_title {
+    text-align: center;
+  }
+}
