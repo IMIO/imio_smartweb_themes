@@ -11,26 +11,34 @@
 // HERO / BANNER
 // The base .swiper-banner-content always renders a background box behind the
 // text (we set $banner-content-background: transparent in variables.scss).
-// Here we put the dark gradient on the full-bleed .swiper-banner-color layer
-// instead, and add the drop-shadow that lets white text sit on the photo.
+// The real markup (checked live) has no .swiper-banner-color overlay layer —
+// only .swiper-banner-image (the photo) — so the dark gradient is painted as
+// a generated ::after box on top of it instead.
 // NB: if a content editor picks a custom overlay colour in Plone for a given
-// banner slide, that inline style will win over this default — expected.
+// banner slide, that inline style is on a different element and won't
+// conflict with this ::after.
 // ---------------------------------------------------------------------------
 .smartweb_herobanner {
-  .swiper-banner-color {
-    background: linear-gradient(
-        90deg,
-        rgba(10, 8, 22, 90%) 0%,
-        rgba(10, 8, 22, 80%) 0%,
-        rgba(10, 8, 22, 42%) 44%,
-        rgba(10, 8, 22, 12%) 55%
-      ),
-      linear-gradient(0deg, rgba(10, 8, 22, 55%) 0%, rgba(10, 8, 22, 0%) 36%);
+  .swiper-banner-image {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+          90deg,
+          rgba(10, 8, 22, 90%) 0%,
+          rgba(10, 8, 22, 80%) 0%,
+          rgba(10, 8, 22, 42%) 44%,
+          rgba(10, 8, 22, 12%) 55%
+        ),
+        linear-gradient(0deg, rgba(10, 8, 22, 55%) 0%, rgba(10, 8, 22, 0%) 36%);
+    }
   }
 
   .swiper-banner-title,
   .swiper-banner-description p {
     text-shadow: 0 2px 24px rgba(0, 0, 0, 35%);
+    text-transform: uppercase;
   }
 
   .swiper-banner-title {
@@ -46,10 +54,68 @@
 }
 
 // ---------------------------------------------------------------------------
+// SECTION TITLES — uppercase on every homepage section heading
+// (confirmed live: .section-title renders with text-transform: none by
+// default; $enable-title-uppercase is left false since it would also affect
+// non-homepage content headings, which must stay mixed-case).
+// ---------------------------------------------------------------------------
+.section-title {
+  text-transform: uppercase;
+}
+
+// Icon + underline in front of each section title, homepage only (per Figma:
+// the "Heading 2" component wraps a small colored cross/sparkle icon + the
+// title text + a coloured bottom border — none of which exist on
+// .section-title by default). Scoped to .portaltype-imio-smartweb-portalpage
+// (the homepage body class) since .section-title is reused by section types
+// that also appear on internal pages, which must NOT get this treatment.
+// The icon uses mask + background-color: currentColor so it automatically
+// matches each section's title colour (navy, or red for Actualités, or white
+// for Sites Partenaires) with no per-section overrides needed.
+.portaltype-imio-smartweb-portalpage .section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0.6rem;
+  border-bottom: 4px solid currentcolor;
+
+  // Vendor-prefixed via autoprefixer (postcss.config.js) at build time —
+  // stylelint's property-no-vendor-prefix rule forbids writing it by hand.
+  &::before {
+    content: "";
+    display: inline-block;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    background-color: currentcolor;
+    mask: url("../../assets/svg/croix-titre.svg") no-repeat center / contain;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// À LA UNE — navy left border on the white text panel (no border variable
+// exists on this component; $a-la-une-text-bg only sets the background).
+// ---------------------------------------------------------------------------
+.a-la-une .swiper-slide {
+  .swiper_title,
+  .swiper_description {
+    border-left: 5px solid $primary;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // HEADER — "Mon compte" pill (no border-radius variable exists for it)
 // ---------------------------------------------------------------------------
 #header-links .account {
   border-radius: $pill-radius;
+  transition: background-color 0.2s ease;
+
+  // On a navy background, a navy focus outline would be invisible — use
+  // white instead.
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
 }
 
 // Active/current top-level nav item gets a permanent underline, not just on
@@ -74,36 +140,64 @@
 }
 
 // ---------------------------------------------------------------------------
-// QUICK ACCESS ("Accès rapides") — white rounded card wrapping each item.
-// The base component only styles the circle + label, not a card around them.
+// QUICK ACCESS ("Accès rapides") — white rounded card wrapping each item,
+// straddling the bottom edge of the hero banner (per Figma).
+// The base component only styles the circle + label, not a card around them,
+// and never overlaps the banner on its own.
 // ---------------------------------------------------------------------------
-.sectionlinks.quick-access .body-section li a {
-  display: block;
-  padding: 22px 12px;
-  background: #fff;
-  border: 1px solid $card-border-color;
-  border-radius: $card-radius;
-  box-shadow: $card-shadow;
+.sectionlinks.quick-access {
+  position: relative;
+  z-index: 1;
+  margin-top: -75px;
+
+  .body-section li a {
+    display: block;
+    padding: 22px 12px;
+    background: #fff;
+    border: 1px solid $card-border-color;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      border-color: $accent;
+      box-shadow: 0 10px 28px rgba(20, 18, 30, 12%);
+      transform: translateY(-3px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
 // SITES PARTENAIRES — full-bleed navy band with white pill links.
-// Content slug convention: .sectionlinks.sites-de-la-ville (see _trucaverif.scss)
+// Real Walhain content slug: .sectionlinks.partenaires (confirmed on
+// walhain.preprod.imio.be — NOT the generic "sites-de-la-ville" slug used by
+// other communes in _trucaverif.scss).
 // ---------------------------------------------------------------------------
-.portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville::after {
-  background: linear-gradient(165deg, $primary 0%, #353c80 100%);
-}
+.sectionlinks.partenaires {
+  position: relative;
+  background: transparent;
 
-.sectionlinks.sites-de-la-ville {
+  &::after {
+    @include full-width;
+
+    background: linear-gradient(165deg, $primary 0%, #353c80 100%);
+  }
+
   .section-title {
     color: #fff;
   }
 
-  // Two possible list markups depending on the "Liens" display mode chosen
-  // in Plone (icon+label "quick-access" style vs. thumbnail "section_files"
-  // style) — styled defensively so either renders as a white pill link.
-  .body-section li a,
-  .section_files_link {
+  // Real markup (checked live): li > .table_display > a.table_image, with
+  // .image.d-block.is-icon.w-100 (svg icon) + .table_title span (label).
+  .body-section li a.table_image {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -112,9 +206,20 @@
     border-left: 4px solid $primary;
     border-radius: $pill-radius;
     text-decoration: none;
+    transition: background-color 0.2s ease;
 
-    .table_title span,
-    .section_files_text {
+    &:hover {
+      background: #eef0fb;
+    }
+
+    // On the navy section background, but the pill itself is white — a navy
+    // outline reads clearly against both.
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+
+    .table_title span {
       color: $primary;
       font-family: $font-family-title;
       font-weight: 700;
@@ -126,25 +231,40 @@
       background: transparent;
       border: 0;
       box-shadow: none;
+
+      svg {
+        fill: $primary;
+      }
     }
   }
 }
 
 // ---------------------------------------------------------------------------
-// NOUS SUIVRE (social links) — light background, white item cards.
-// Content slug convention: .sectionlinks.reseaux-sociaux (see _trucaverif.scss)
+// NOUS SUIVRE (social links) + BULLETIN COMMUNAL (newsletter card) — light
+// background spanning both. Confirmed live: these are two side-by-side
+// Bootstrap columns in the SAME .row (.col-sm-9 + .col-sm-3), not stacked —
+// so the full-bleed background is applied to each column independently;
+// since they share height and sit flush against each other, the two
+// full-width layers line up with no seam.
 // ---------------------------------------------------------------------------
-#content .sortable-section.sectionlinks.reseaux-sociaux::after {
-  background: $surface-alt-2;
+.sectionlinks.nous-suivre,
+.sectioncollection.bulletin-communal {
+  position: relative;
+  background: transparent;
+
+  &::after {
+    @include full-width;
+
+    background: $surface-alt-2;
+  }
 }
 
-.sectionlinks.reseaux-sociaux {
+.sectionlinks.nous-suivre {
   .section-title {
     color: $primary;
   }
 
-  .body-section li a,
-  .section_files_link {
+  .body-section li a.table_image {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -154,12 +274,28 @@
     border-radius: 12px;
     box-shadow: 0 3px 6px rgba(20, 18, 30, 5%);
     text-decoration: none;
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
 
-    .table_title span,
-    .section_files_text {
+    &:hover {
+      box-shadow: 0 8px 20px rgba(20, 18, 30, 10%);
+      transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+
+    .table_title span {
       color: $dark;
       font-family: $font-family-base;
       font-weight: 600;
+    }
+
+    .image.d-block svg {
+      fill: $primary;
     }
   }
 }
@@ -168,11 +304,115 @@
 // ACTUALITÉS / AGENDA cards — border + shadow (radius/colours come from
 // variables.scss; the base theme never defines a border or a card shadow).
 // ---------------------------------------------------------------------------
+// ACTUALITÉS — light full-bleed background behind the section (confirmed
+// missing: neither the base theme nor variables.scss set one; only the
+// individual card background is variable-driven).
+.sectionnews {
+  position: relative;
+
+  &::after {
+    @include full-width;
+
+    background: $surface-alt;
+  }
+}
+
 .sectionnews .swiper-slide > a,
 .sectionevents .swiper-slide > a {
   overflow: hidden;
   border: 1px solid $card-border-color;
   box-shadow: $card-shadow;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    border-color: $primary;
+    box-shadow: 0 10px 28px rgba(20, 18, 30, 12%);
+    transform: translateY(-3px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// DECORATIVE ILLUSTRATIONS (Figma assets provided separately, added to
+// walhain/assets/svg/). Purely decorative (aria-hidden via CSS generated
+// content, which is never exposed to assistive tech) — hidden below tablet
+// width so they don't crowd the mobile layout.
+// ---------------------------------------------------------------------------
+
+// Château — matches Figma node 107:19 (300×223), hanging off the bottom-right
+// corner of the Agenda section, into the Sites Partenaires band below it.
+.sectionevents {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    width: clamp(140px, 16vw, 306px);
+    aspect-ratio: 300 / 223;
+    background: url("../../assets/svg/chateau.svg") no-repeat center / contain;
+    z-index: 2;
+    pointer-events: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  // Arbres — small companion accent to the left of the château.
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    right: clamp(120px, 14vw, 260px);
+    bottom: -20px;
+    width: clamp(40px, 4.5vw, 79px);
+    aspect-ratio: 79 / 73;
+    background: url("../../assets/svg/arbres.svg") no-repeat center / contain;
+    z-index: 2;
+    pointer-events: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}
+
+// Frise footer — matches Figma node 55:481 (1100×152), sitting across the
+// full width of the "Nous suivre" + "Bulletin communal" row, right where it
+// meets the dark footer. These are two side-by-side Bootstrap columns
+// (.col-sm-9 + .col-sm-3), so the frise is anchored to their shared parent
+// .row via :has() rather than to either column individually.
+#content-core .row:has(> .sectionlinks.nous-suivre) {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1100 / 152;
+    background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
+      100% 100%;
+    z-index: 0;
+    pointer-events: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -186,9 +426,24 @@
 
   a {
     color: $footer-color;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 80%;
+    }
+
+    // White outline reads clearly against the dark footer background.
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
   }
 
-  .section-title {
+  // Confirmed live: each footer column title is an <h2 class="informations|
+  // adresse|liens-utiles">, not .section-title — target the tag directly.
+  h2 {
     display: inline-block;
     width: auto;
     padding-bottom: 0.75rem;
