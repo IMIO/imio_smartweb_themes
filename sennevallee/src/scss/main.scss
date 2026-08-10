@@ -264,18 +264,6 @@ footer #container-section-noussuivre {
 .subsite-container {
   background: $primary-light;
   border-radius: 0;
-
-  #subsite-logo {
-    font-size: 18px;
-    background: $primary-blue;
-    border-radius: 0;
-
-    a {
-      .subsite-title {
-        color: #fff !important;
-      }
-    }
-  }
 }
 
 .contact_leadimage {

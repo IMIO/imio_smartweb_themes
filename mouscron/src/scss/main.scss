@@ -206,17 +206,6 @@ footer #container-section-noussuivre {
 .subsite-container {
   background: #f8f8f8;
   z-index: 1;
-
-  #subsite-logo {
-    font-size: 18px;
-    background: $primary-red;
-
-    a {
-      .subsite-title {
-        color: #fff !important;
-      }
-    }
-  }
 }
 
 .contact_leadimage {

@@ -183,17 +183,6 @@ input#search_button {
 //Subsite
 .subsite-container {
   border-radius: 10px;
-
-  #subsite-logo {
-    border-radius: 10px;
-
-    li.nav-item {
-      background: #fff;
-      padding: 10px;
-      border-radius: 10px;
-      border: solid 2px $primary;
-    }
-  }
 }
 //Menu
 #subsite-navigation > ul > li > a:focus::before,

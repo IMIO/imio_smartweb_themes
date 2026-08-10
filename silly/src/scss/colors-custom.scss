@@ -34,9 +34,8 @@ $litterature: #b0024c;
   }
 
   #subsite-logo {
-    background: $loisirs;
-
     a {
+      background: $loisirs;
       color: #fff;
     }
   }
@@ -78,9 +77,8 @@ $litterature: #b0024c;
   }
 
   #subsite-logo {
-    background: #4f7a96;
-
     a {
+      background: #4f7a96;
       color: #fff;
     }
   }
@@ -178,9 +176,8 @@ $litterature: #b0024c;
   }
 
   #subsite-logo {
-    background: rgba(255, 255, 255, 20%);
-
     a {
+      background: rgba(255, 255, 255, 20%);
       color: #000;
     }
   }
@@ -217,9 +214,8 @@ $litterature: #b0024c;
   }
 
   #subsite-logo {
-    background: rgba(255, 255, 255, 20%);
-
     a {
+      background: rgba(255, 255, 255, 20%);
       color: #fff;
     }
   }
@@ -227,19 +223,6 @@ $litterature: #b0024c;
   .breadcrumb-item {
     a {
       color: $litterature;
-    }
-  }
-}
-
-// common
-.subsite-container {
-  #subsite-logo {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-
-    a {
-      padding: 0.9rem 1.2rem;
     }
   }
 }
