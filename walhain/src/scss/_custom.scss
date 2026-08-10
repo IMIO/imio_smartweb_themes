@@ -2,8 +2,7 @@
 // Bespoke overrides for the Figma "Walhain" homepage redesign that the base
 // theme's SCSS variable API (variables.scss) can't reach on its own.
 // Figma: https://www.figma.com/design/7KvIWKwhugPWUFtz2H4Pzm (node 8:2)
-//
-// Imported from main.scss AFTER @imiobe/plonetheme-smartweb-base, so these
+// Imported from main.scss after the base theme import, so these
 // rules win the cascade by source order without needing extra specificity —
 // except where the base rule carries an #id/ancestor that outweighs ours;
 // those cases repeat the base selector verbatim (see comments below).
