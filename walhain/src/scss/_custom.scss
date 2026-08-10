@@ -1,0 +1,201 @@
+// _custom.scss
+// Bespoke overrides for the Figma "Walhain" homepage redesign that the base
+// theme's SCSS variable API (variables.scss) can't reach on its own.
+// Figma: https://www.figma.com/design/7KvIWKwhugPWUFtz2H4Pzm (node 8:2)
+//
+// Imported from main.scss AFTER @imiobe/plonetheme-smartweb-base, so these
+// rules win the cascade by source order without needing extra specificity —
+// except where the base rule carries an #id/ancestor that outweighs ours;
+// those cases repeat the base selector verbatim (see comments below).
+
+// ---------------------------------------------------------------------------
+// HERO / BANNER
+// The base .swiper-banner-content always renders a background box behind the
+// text (we set $banner-content-background: transparent in variables.scss).
+// Here we put the dark gradient on the full-bleed .swiper-banner-color layer
+// instead, and add the drop-shadow that lets white text sit on the photo.
+// NB: if a content editor picks a custom overlay colour in Plone for a given
+// banner slide, that inline style will win over this default — expected.
+// ---------------------------------------------------------------------------
+.smartweb_herobanner {
+  .swiper-banner-color {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(10, 8, 22, 90%) 0%,
+        rgba(10, 8, 22, 80%) 0%,
+        rgba(10, 8, 22, 42%) 44%,
+        rgba(10, 8, 22, 12%) 55%
+      ),
+      linear-gradient(0deg, rgba(10, 8, 22, 55%) 0%, rgba(10, 8, 22, 0%) 36%);
+  }
+
+  .swiper-banner-title,
+  .swiper-banner-description p {
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 35%);
+  }
+
+  .swiper-banner-title {
+    font-family: $font-family-title;
+    font-weight: 900;
+  }
+
+  .swiper-banner-description p {
+    font-family: $font-family-title;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// HEADER — "Mon compte" pill (no border-radius variable exists for it)
+// ---------------------------------------------------------------------------
+#header-links .account {
+  border-radius: $pill-radius;
+}
+
+// Active/current top-level nav item gets a permanent underline, not just on
+// hover (base theme only styles :hover/:focus). Plone core doesn't expose a
+// single stable "current page" class across templates, so this targets the
+// common ones defensively — verify visually once content is live.
+#portal-globalnav > li.current > a,
+#portal-globalnav > li.selected > a,
+#portal-globalnav > li.currentPath > a {
+  color: $accent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: $accent;
+    opacity: 100%;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// QUICK ACCESS ("Accès rapides") — white rounded card wrapping each item.
+// The base component only styles the circle + label, not a card around them.
+// ---------------------------------------------------------------------------
+.sectionlinks.quick-access .body-section li a {
+  display: block;
+  padding: 22px 12px;
+  background: #fff;
+  border: 1px solid $card-border-color;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+}
+
+// ---------------------------------------------------------------------------
+// SITES PARTENAIRES — full-bleed navy band with white pill links.
+// Content slug convention: .sectionlinks.sites-de-la-ville (see _trucaverif.scss)
+// ---------------------------------------------------------------------------
+.portaltype-imio-smartweb-portalpage .sectionlinks.sites-de-la-ville::after {
+  background: linear-gradient(165deg, $primary 0%, #353c80 100%);
+}
+
+.sectionlinks.sites-de-la-ville {
+  .section-title {
+    color: #fff;
+  }
+
+  // Two possible list markups depending on the "Liens" display mode chosen
+  // in Plone (icon+label "quick-access" style vs. thumbnail "section_files"
+  // style) — styled defensively so either renders as a white pill link.
+  .body-section li a,
+  .section_files_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.6rem 1.5rem;
+    background: #fff;
+    border-left: 4px solid $primary;
+    border-radius: $pill-radius;
+    text-decoration: none;
+
+    .table_title span,
+    .section_files_text {
+      color: $primary;
+      font-family: $font-family-title;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .image.d-block {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// NOUS SUIVRE (social links) — light background, white item cards.
+// Content slug convention: .sectionlinks.reseaux-sociaux (see _trucaverif.scss)
+// ---------------------------------------------------------------------------
+#content .sortable-section.sectionlinks.reseaux-sociaux::after {
+  background: $surface-alt-2;
+}
+
+.sectionlinks.reseaux-sociaux {
+  .section-title {
+    color: $primary;
+  }
+
+  .body-section li a,
+  .section_files_link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid $surface-alt;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(20, 18, 30, 5%);
+    text-decoration: none;
+
+    .table_title span,
+    .section_files_text {
+      color: $dark;
+      font-family: $font-family-base;
+      font-weight: 600;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// ACTUALITÉS / AGENDA cards — border + shadow (radius/colours come from
+// variables.scss; the base theme never defines a border or a card shadow).
+// ---------------------------------------------------------------------------
+.sectionnews .swiper-slide > a,
+.sectionevents .swiper-slide > a {
+  overflow: hidden;
+  border: 1px solid $card-border-color;
+  box-shadow: $card-shadow;
+}
+
+// ---------------------------------------------------------------------------
+// FOOTER — dark theme + red column-heading underline.
+// #portal-footer-wrapper's default bg (Bootstrap grey #212529) isn't driven
+// by any theme variable, so it's hardcoded here to match Figma.
+// ---------------------------------------------------------------------------
+#portal-footer-wrapper {
+  background: $footer-bg;
+  color: $footer-color;
+
+  a {
+    color: $footer-color;
+  }
+
+  .section-title {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid $footer-heading-border-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
