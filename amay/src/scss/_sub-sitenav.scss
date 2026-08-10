@@ -7,63 +7,6 @@ body.is-in-subsite {
   overflow-x: hidden;
 }
 
-.subsite-container {
-  position: relative;
-  z-index: 1;
-  padding: $subsite-container-padding;
-  background: $subsite-container-background;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: $subsite-navbar-bg;
-    z-index: -1;
-  }
-
-  @media screen and (min-width: 1200px) {
-    // flex-direction: row;
-    // align-items: center;
-    gap: 40px;
-  }
-
-  #subsite-logo {
-    font-size: 1.25rem;
-    display: inline-block;
-    margin: $subsite-logo-margin;
-
-    a {
-      background: $subsite-logo-background;
-      border-radius: $subsite-logo-radius;
-      text-decoration: none;
-      color: $subsite-logo-color;
-      font-weight: 500;
-      padding: $subsite-logo-padding;
-      position: relative;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      transition: background 0.15s ease;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        background: rgba($subsite-logo-background, 0.7);
-      }
-
-      svg,
-      img {
-        max-width: 80px;
-        max-height: 80px;
-      }
-    }
-  }
-}
-
 // =============================================================================
 // SUBSITE NAVIGATION
 // =============================================================================
