@@ -259,10 +259,10 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 //sub-header
 $subsite-container-padding: 0 !default;
 $subsite-navbar-bg: #f3f3f3 !default;
-$subsite-logo-background: $primary !default;
+$subsite-logo-background: $primary-color-light;
 $subsite-logo-padding: 0.3em 0.5rem !default;
-$subsite-logo-margin: 1rem 0 0 0 !default;
-$subsite-logo-radius: 10px !default;
+$subsite-logo-margin: 0 0 0 0 !default;
+$subsite-logo-radius: 0;
 $subsite-logo-color: $font-title-color-light !default;
 
 //sub-sitenav
