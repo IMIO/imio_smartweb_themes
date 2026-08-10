@@ -92,14 +92,126 @@
   }
 }
 
+// The footer's "Liens utiles" column heading (confirmed live) reuses the
+// same .section-title class as the homepage sections above, so it would
+// otherwise wrongly inherit the icon too — the Figma footer has no icon on
+// its column headings. (The border/padding/display additions above are
+// already overridden by #portal-footer-wrapper h2's higher-specificity ID
+// selector further down, so only the icon needs cancelling here.)
+#portal-footer-wrapper .section-title::before {
+  content: none;
+}
+
 // ---------------------------------------------------------------------------
-// À LA UNE — navy left border on the white text panel (no border variable
-// exists on this component; $a-la-une-text-bg only sets the background).
+// À LA UNE — card radius/shadow, overlapping text panel, navy left border.
+// Per Figma (node 8:91-94): the card itself is rounded+shadowed (missing
+// entirely from the base component, which only styles the inner grid cells),
+// and the white text panel overlaps the image by ~11% of the card width
+// rather than sitting in a clean non-overlapping 60/40 split.
 // ---------------------------------------------------------------------------
 .a-la-une .swiper-slide {
+  > a {
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+  }
+
   .swiper_title,
   .swiper_description {
     border-left: 5px solid $primary;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .swiper_title,
+    .swiper_description {
+      position: relative;
+      z-index: 1;
+      margin-left: -11%;
+    }
+  }
+
+  // When the editor leaves the description empty (confirmed live: an empty
+  // <p></p> still renders), drop its reserved grid row instead of leaving a
+  // padded empty box that pushes the title away from vertical center.
+  > a:has(.swiper_description > p:empty) {
+    .swiper_description {
+      display: none;
+    }
+
+    .swiper_title {
+      align-self: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+// Confirmed live: unlike .sectionnews/.sectionevents, the base theme never
+// applies @include see-all-style to .a-la-une's "Voir tous les articles"
+// link — it renders with the browser's default link styling instead of the
+// red/uppercase see-all treatment used everywhere else.
+.a-la-une .see_all {
+  justify-content: $see-all-justify-content;
+
+  @include see-all-style;
+}
+
+// ---------------------------------------------------------------------------
+// BULLETIN COMMUNAL — Figma node 167:5 shows one static red "Walh'infos"
+// card ("DERNIER NUMÉRO" / "WALH'INFOS" / "N°30 — Septembre 2025"). The real
+// content type (confirmed live) is a 5-item PDF carousel with actual cover
+// thumbnails and raw filenames as titles (e.g.
+// "walhinfos-30-septembre-2025-web.pdf") — there's no "WALH'INFOS"/"N°30"
+// text to bind to, so the exact mockup can't be reproduced from CSS alone.
+// This applies the same card language (red gradient, radius, shadow, bold
+// white type) to the real per-item cards instead, and fixes "Voir tous les
+// Bulletins", which — like .a-la-une — never got @include see-all-style.
+// ---------------------------------------------------------------------------
+.bulletin-communal {
+  .swiper-slide > a {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(165deg, #d62828 0%, #a81c1c 100%);
+    box-shadow: 0 18px 42px rgba(150, 20, 20, 34%);
+    transition: box-shadow 0.2s ease;
+
+    .swiper-image {
+      margin-bottom: 0;
+    }
+
+    .swiper_title {
+      padding: 0.75rem 1rem 1rem;
+
+      h3 {
+        overflow: hidden;
+        margin: 0;
+        color: #fff;
+        font-family: $font-family-title;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 22px 48px rgba(150, 20, 20, 42%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+  }
+
+  .see_all {
+    justify-content: $see-all-justify-content;
+
+    @include see-all-style;
   }
 }
 
@@ -264,6 +376,13 @@
     color: $primary;
   }
 
+  // Confirmed live: <li class="col-md-6"> wraps onto a new row with no
+  // vertical gap at all — cards touch edge-to-edge instead of breathing like
+  // the ~11px gutter in Figma (node 8:260 onward).
+  .body-section li {
+    margin-bottom: 12px;
+  }
+
   .body-section li a.table_image {
     display: flex;
     align-items: center;
@@ -273,6 +392,7 @@
     border: 1px solid $surface-alt;
     border-radius: 12px;
     box-shadow: 0 3px 6px rgba(20, 18, 30, 5%);
+    text-align: left;
     text-decoration: none;
     transition:
       box-shadow 0.2s ease,
@@ -286,6 +406,10 @@
     &:focus-visible {
       outline: 2px solid $primary;
       outline-offset: 2px;
+    }
+
+    .table_title {
+      text-align: left;
     }
 
     .table_title span {
@@ -348,8 +472,14 @@
 
 // Château — matches Figma node 107:19 (300×223), hanging off the bottom-right
 // corner of the Agenda section, into the Sites Partenaires band below it.
+// Arbres — companion accent on the opposite (left) side, at the same level.
+// .sectionevents needs its own stacking context (z-index, not just
+// position:relative) — .sectionlinks.partenaires comes right after it in the
+// DOM, and without it its own navy ::after background paints on top of these
+// pseudo-elements instead of behind them.
 .sectionevents {
   position: relative;
+  z-index: 3;
 
   &::after {
     content: "";
@@ -360,7 +490,6 @@
     width: clamp(140px, 16vw, 306px);
     aspect-ratio: 300 / 223;
     background: url("../../assets/svg/chateau.svg") no-repeat center / contain;
-    z-index: 2;
     pointer-events: none;
 
     @include media-breakpoint-up(md) {
@@ -368,17 +497,15 @@
     }
   }
 
-  // Arbres — small companion accent to the left of the château.
   &::before {
     content: "";
     display: none;
     position: absolute;
-    right: clamp(120px, 14vw, 260px);
+    left: 0;
     bottom: -20px;
     width: clamp(40px, 4.5vw, 79px);
     aspect-ratio: 79 / 73;
     background: url("../../assets/svg/arbres.svg") no-repeat center / contain;
-    z-index: 2;
     pointer-events: none;
 
     @include media-breakpoint-up(md) {
@@ -392,26 +519,26 @@
 // meets the dark footer. These are two side-by-side Bootstrap columns
 // (.col-sm-9 + .col-sm-3), so the frise is anchored to their shared parent
 // .row via :has() rather than to either column individually.
+// Visible at every breakpoint (unlike the château/arbres above, which are
+// hidden on mobile). Height is capped with clamp() instead of scaling via
+// aspect-ratio off a 100%-wide box — the latter grew huge on wide desktop
+// containers since height followed container width 1:1 with no ceiling.
+// background-size: contain keeps the illustration's own proportions instead
+// of stretching it to fill the box.
 #content-core .row:has(> .sectionlinks.nous-suivre) {
   position: relative;
 
   &::before {
     content: "";
-    display: none;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    aspect-ratio: 1100 / 152;
+    height: clamp(50px, 10vw, 140px);
     background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
-      100% 100%;
+      contain;
     z-index: 0;
     pointer-events: none;
-
-    @include media-breakpoint-up(md) {
-      display: block;
-    }
   }
 }
 
@@ -450,5 +577,31 @@
     border-bottom: 2px solid $footer-heading-border-color;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+}
+
+// Figma shows a small logo — not a full 25% column — with Contact/Adresse/
+// Liens utiles sharing the rest of the width. Confirmed live: the logo sits
+// in its own .col-sm-3, the same width as the 3 text columns, leaving it
+// oversized and squeezing the text into the remaining 75%.
+.smartweb-footer .row {
+  @include media-breakpoint-up(sm) {
+    > .sectiontext.col-sm-3 {
+      flex: 0 0 auto;
+      width: 180px;
+      max-width: 180px;
+    }
+
+    > .sectioncontact.col-sm-3,
+    > .sectionlinks.col-sm-3 {
+      flex: 1 1 0;
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  .sectiontext img {
+    max-width: 100%;
+    height: auto;
   }
 }
