@@ -103,31 +103,26 @@
 }
 
 // ---------------------------------------------------------------------------
-// À LA UNE — card radius/shadow, overlapping text panel, navy left border.
-// Per Figma (node 8:91-94): the card itself is rounded+shadowed (missing
-// entirely from the base component, which only styles the inner grid cells),
-// and the white text panel overlaps the image by ~11% of the card width
-// rather than sitting in a clean non-overlapping 60/40 split.
+// À LA UNE — card radius/shadow, even 50/50 image/text split, navy left
+// border. The base component defaults to a 60/40 grid split; overridden to
+// a clean 50/50 (image and text panel each take half the card, no overlap).
+// The card itself is also rounded+shadowed, which the base component never
+// applies — it only styles the inner grid cells, not the outer card.
 // ---------------------------------------------------------------------------
 .a-la-une .swiper-slide {
   > a {
     border-radius: $card-radius;
     box-shadow: $card-shadow;
     overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 50% 50%;
+    }
   }
 
   .swiper_title,
   .swiper_description {
     border-left: 5px solid $primary;
-  }
-
-  @include media-breakpoint-up(lg) {
-    .swiper_title,
-    .swiper_description {
-      position: relative;
-      z-index: 1;
-      margin-left: -11%;
-    }
   }
 
   // When the editor leaves the description empty (confirmed live: an empty
@@ -170,6 +165,19 @@
 // Bulletins", which — like .a-la-une — never got @include see-all-style.
 // ---------------------------------------------------------------------------
 .bulletin-communal {
+  // Confirmed live: unlike .nous-suivre (which sits next to it in the same
+  // row), this section has no .section-title at all — so its carousel starts
+  // right at the top of the column instead of lining up with the icon cards
+  // below "Nous suivre"'s heading. Push it down by the heading's own box
+  // height (font-size × line-height + padding-bottom + border + margin),
+  // computed from the same tokens the heading uses so it stays in sync if
+  // those change. Only applies once the two columns sit side by side.
+  @include media-breakpoint-up(sm) {
+    .container.section-container {
+      margin-top: calc(#{$home-section-title-size} * 1.2 + 0.6rem + 4px + 2rem);
+    }
+  }
+
   .swiper-slide > a {
     display: block;
     overflow: hidden;
@@ -422,6 +430,10 @@
       fill: $primary;
     }
   }
+}
+
+.nous-suivre .w-100 {
+  width: initial;
 }
 
 // ---------------------------------------------------------------------------
