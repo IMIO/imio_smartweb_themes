@@ -108,6 +108,16 @@
   content: none;
 }
 
+// This Figma redesign is specific to the main Walhain site's own homepage.
+// Plone tags every page rendered inside a subsite (e.g. an "Office du
+// Tourisme" microsite sharing this same theme) with body.is-in-subsite —
+// any subsite homepage reusing the same section types (a-la-une, actu,
+// event…) must NOT get this icon. Higher specificity than the rule above
+// (body.is-in-subsite adds a tag+class) wins regardless of source order.
+body.is-in-subsite .section-title::before {
+  content: none;
+}
+
 // ---------------------------------------------------------------------------
 // À LA UNE — decorative sparkle mask (Figma node 50:337, "Mask Group"), a
 // flat #f7f6f3 shape sitting behind the section, peeking out of the left
@@ -115,15 +125,24 @@
 // that doesn't translate to an absolute px value outside Figma, so this
 // approximates it responsively (same rough proportions/position) rather
 // than reproducing exact px — the base theme has no equivalent element.
+// Restricted to the main site (excludes body.is-in-subsite, Plone's marker
+// for pages inside a microsite like "Office du Tourisme" that shares this
+// theme) — this illustration is specific to Walhain's own homepage.
 // ---------------------------------------------------------------------------
-.a-la-une {
+body:not(.is-in-subsite) .a-la-une {
   position: relative;
 
+  // Flush with the section's own top edge, and with the true screen edge on
+  // the left — .a-la-une is a centred, width-limited container, so a plain
+  // "left: 0" only reached the container's own edge, not the viewport's.
+  // "left: calc(50% - 50vw)" breaks out to the real left edge regardless of
+  // container width, same math as the @include full-width mixin used
+  // elsewhere but without forcing width: 100vw.
   &::before {
     content: "";
     position: absolute;
-    top: -40px;
-    left: 0;
+    top: 0;
+    left: calc(50% - 50vw);
     z-index: -1;
     width: clamp(260px, 30vw, 568px);
     aspect-ratio: 568 / 533;
@@ -219,6 +238,7 @@
 
     .swiper-image {
       margin-bottom: 0;
+      padding-bottom: 140%;
     }
 
     .swiper_title {
@@ -304,6 +324,20 @@
   // the two than assumed. -180px, confirmed live, is what actually overlaps.
   margin-top: -180px;
 
+  // Confirmed on a real mobile viewport: cards had barely any breathing room
+  // between them, and below md there's no explicit column class at all so
+  // each card takes the full row width — two per row (icon-above-label, so
+  // labels wrap cleanly) uses the space better and matches how tight the
+  // full-width single column felt.
+  .body-section li {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
   .body-section li a {
     display: block;
     padding: 22px 12px;
@@ -358,9 +392,15 @@
   // (label). Per Figma (node 8:200-206): a fixed-width ~189px chip, centred
   // content, 10px corner radius (NOT a full pill), a thin border all round
   // plus a thicker 4px left edge, and a 22px icon.
+  // Stays one per row on mobile — unlike quick-access, these are wide
+  // horizontal pills with longer labels ("Office du Tourisme"), so halving
+  // their width wouldn't leave room for the text. Confirmed on a real mobile
+  // viewport: with no explicit column class below md, the pills stacked
+  // completely flush against each other; margin-bottom fixes that.
   .body-section li {
     display: flex;
     justify-content: center;
+    margin-bottom: 12px;
   }
 
   .body-section li a.table_image {
@@ -571,7 +611,10 @@
 // position:relative) — .sectionlinks.partenaires comes right after it in the
 // DOM, and without it its own navy ::after background paints on top of these
 // pseudo-elements instead of behind them.
-.sectionevents {
+// Restricted to the main site (excludes body.is-in-subsite — see the
+// à-la-une sparkle mask above for why): these two illustrations, and the
+// stacking fix that exists only because of them, are Walhain-specific.
+body:not(.is-in-subsite) .sectionevents {
   position: relative;
   z-index: 3;
 
@@ -626,7 +669,9 @@
 // containers since height followed container width 1:1 with no ceiling.
 // background-size: contain keeps the illustration's own proportions instead
 // of stretching it to fill the box.
-#content-core .row:has(> .sectionlinks.nous-suivre) {
+// Restricted to the main site (excludes body.is-in-subsite — see the
+// à-la-une sparkle mask above for why).
+body:not(.is-in-subsite) #content-core .row:has(> .sectionlinks.nous-suivre) {
   position: relative;
 
   &::before {
