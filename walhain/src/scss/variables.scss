@@ -218,7 +218,10 @@ $quick-access-full-bg-border: solid 1px green !default;
 $quick-access-full-bg-shadow: none !default;
 
 // A la une
-$a-la-une-title-color: $font-title-color !default;
+// Homepage section titles are black/dark, not navy — the only exception is
+// Sites Partenaires, which sits on a navy background and stays white
+// (set directly in _custom.scss, not through this variable system).
+$a-la-une-title-color: $dark !default;
 $a-la-une-title-align: $home-section-title-align !default;
 $a-la-une-title-margin: $home-section-title-margin !default;
 $a-la-une-title-padding: $home-section-title-padding !default;
@@ -241,7 +244,7 @@ $actu-section-full-width: true !default;
 $actu-section-padding-top: 2rem !default;
 $actu-section-padding-bottom: 2rem !default;
 $actu-section-margin: 0 !default;
-$actu-title-color: $accent !default;
+$actu-title-color: $dark !default;
 $actu-title-align: $home-section-title-align !default;
 $actu-title-margin: $home-section-title-margin !default;
 $actu-title-padding: $home-section-title-padding !default;
@@ -281,7 +284,7 @@ $event-section-full-width: true !default;
 $event-section-padding-top: 2rem !default;
 $event-section-padding-bottom: 2rem !default;
 $event-section-margin: 0 !default;
-$event-title-color: $primary !default;
+$event-title-color: $dark !default;
 $event-title-align: $home-section-title-align !default;
 $event-title-margin: $home-section-title-margin !default;
 $event-title-padding: $home-section-title-padding !default;

@@ -73,7 +73,13 @@
 // matches each section's title colour (navy, or red for Actualités, or white
 // for Sites Partenaires) with no per-section overrides needed.
 .portaltype-imio-smartweb-portalpage .section-title {
-  display: inline-flex;
+  // display: flex (not inline-flex) — the heading must stay a block-level
+  // box so its margin-bottom (2rem, from $home-section-title-margin) still
+  // pushes the next section down normally. An inline-level box's vertical
+  // margin isn't reliably respected next to a following block sibling,
+  // which would let sections crowd right up against the title.
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.6rem;
@@ -100,6 +106,31 @@
 // selector further down, so only the icon needs cancelling here.)
 #portal-footer-wrapper .section-title::before {
   content: none;
+}
+
+// ---------------------------------------------------------------------------
+// À LA UNE — decorative sparkle mask (Figma node 50:337, "Mask Group"), a
+// flat #f7f6f3 shape sitting behind the section, peeking out of the left
+// page margin. Figma anchors it via a relative-to-frame percentage offset
+// that doesn't translate to an absolute px value outside Figma, so this
+// approximates it responsively (same rough proportions/position) rather
+// than reproducing exact px — the base theme has no equivalent element.
+// ---------------------------------------------------------------------------
+.a-la-une {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: -1;
+    width: clamp(260px, 30vw, 568px);
+    aspect-ratio: 568 / 533;
+    background-color: $surface-alt;
+    mask: url("../../assets/svg/mask-a-la-une.svg") no-repeat center / contain;
+    pointer-events: none;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -429,7 +460,7 @@
 
 .sectionlinks.nous-suivre {
   .section-title {
-    color: $primary;
+    color: $dark;
   }
 
   // Confirmed live: <li class="col-md-6"> wraps onto a new row with no
@@ -614,12 +645,15 @@
 
 // ---------------------------------------------------------------------------
 // FOOTER — dark theme + red column-heading underline.
-// #portal-footer-wrapper's default bg (Bootstrap grey #212529) isn't driven
-// by any theme variable, so it's hardcoded here to match Figma.
+// #portal-footer-wrapper's default bg (Bootstrap grey #212529) and
+// text-align: center aren't driven by any theme variable — they come from a
+// core CSS bundle outside base/src that can't be edited — so they're
+// overridden here to match Figma (left-aligned, dark background).
 // ---------------------------------------------------------------------------
 #portal-footer-wrapper {
   background: $footer-bg;
   color: $footer-color;
+  text-align: left;
 
   a {
     color: $footer-color;
