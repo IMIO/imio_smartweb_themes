@@ -268,7 +268,10 @@
 .sectionlinks.quick-access {
   position: relative;
   z-index: 1;
-  margin-top: -75px;
+  // -75px (the theoretical card-height-based estimate) didn't actually reach
+  // the banner in Chrome devtools — there's more real vertical space between
+  // the two than assumed. -180px, confirmed live, is what actually overlaps.
+  margin-top: -180px;
 
   .body-section li a {
     display: block;
@@ -305,10 +308,14 @@
   position: relative;
   background: transparent;
 
+  // Flat $primary instead of a gradient — the château/arbres illustrations
+  // hanging into this section are flat-filled SVGs, and a two-tone gradient
+  // background made their single fixed colour visibly mismatch one end or
+  // the other. A solid, shared colour keeps everything consistent.
   &::after {
     @include full-width;
 
-    background: linear-gradient(165deg, $primary 0%, #353c80 100%);
+    background: $primary;
   }
 
   .section-title {
@@ -337,16 +344,37 @@
     border-left-width: 4px;
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    transition:
+      background-color 0.2s ease,
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
 
-    &:hover {
-      background: #eef0fb;
+    // Colour-invert on hover/focus (navy fill, white text/icon) — a strong,
+    // on-brand change (only navy/white, the section's own palette) rather
+    // than a subtle tint, so it reads clearly even at a glance. Shared by
+    // :hover and :focus so a mouse click gets the same visible feedback as
+    // keyboard focus, not just keyboard users.
+    &:hover,
+    &:focus {
+      background: $primary;
+      box-shadow: 0 8px 20px rgba(20, 18, 30, 20%);
+      transform: translateY(-2px);
+
+      .table_title span {
+        color: #fff;
+      }
+
+      .image.d-block svg {
+        fill: #fff;
+      }
     }
 
-    // On the navy section background, but the pill itself is white — a navy
-    // outline reads clearly against both.
+    // On top of the hover/focus fill, keyboard focus additionally gets a
+    // white ring — contrast vs. both the now-navy pill and the section's
+    // navy gradient behind it is 7.96:1, well past the 3:1 WCAG 1.4.11
+    // minimum for non-text UI indicators (WCAG 2.4.7/2.4.11).
     &:focus-visible {
-      outline: 2px solid $primary;
+      outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
@@ -357,6 +385,7 @@
       letter-spacing: 0.5px;
       text-align: center;
       text-transform: uppercase;
+      transition: color 0.2s ease;
     }
 
     .image.d-block {
@@ -372,6 +401,7 @@
         width: 100%;
         height: 100%;
         fill: $primary;
+        transition: fill 0.2s ease;
       }
     }
   }
@@ -500,9 +530,12 @@
 // width so they don't crowd the mobile layout.
 // ---------------------------------------------------------------------------
 
-// Château — matches Figma node 107:19 (300×223), hanging off the bottom-right
+// Château — matches Figma node 107:19 (300×223), hanging off the bottom-LEFT
 // corner of the Agenda section, into the Sites Partenaires band below it.
-// Arbres — companion accent on the opposite (left) side, at the same level.
+// Arbres — companion accent on the opposite (right) side, at the same level.
+// Swapped from the Figma's original right/left placement because "Voir tous
+// les événements" is right-aligned in this same section and the much larger
+// château was covering it there; the small arbres overlaps it far less.
 // .sectionevents needs its own stacking context (z-index, not just
 // position:relative) — .sectionlinks.partenaires comes right after it in the
 // DOM, and without it its own navy ::after background paints on top of these
@@ -511,15 +544,21 @@
   position: relative;
   z-index: 3;
 
+  // Both SVGs ship with their own fixed fill (#373f85 / #3e4694) that never
+  // quite matched $primary or each other — used as mask + background-color
+  // instead of a plain background-image so they're guaranteed the exact
+  // same colour as the Sites Partenaires band and stay in sync if $primary
+  // ever changes.
   &::after {
     content: "";
     display: none;
     position: absolute;
-    right: 0;
-    bottom: -60px;
+    left: -16px;
+    bottom: -100px;
     width: clamp(140px, 16vw, 306px);
     aspect-ratio: 300 / 223;
-    background: url("../../assets/svg/chateau.svg") no-repeat center / contain;
+    background-color: $primary;
+    mask: url("../../assets/svg/chateau.svg") no-repeat center / contain;
     pointer-events: none;
 
     @include media-breakpoint-up(md) {
@@ -531,11 +570,12 @@
     content: "";
     display: none;
     position: absolute;
-    left: 0;
-    bottom: -20px;
+    right: 10px;
+    bottom: -1px;
     width: clamp(40px, 4.5vw, 79px);
     aspect-ratio: 79 / 73;
-    background: url("../../assets/svg/arbres.svg") no-repeat center / contain;
+    background-color: $primary;
+    mask: url("../../assets/svg/arbres.svg") no-repeat center / contain;
     pointer-events: none;
 
     @include media-breakpoint-up(md) {
@@ -598,15 +638,35 @@
     }
   }
 
-  // Confirmed live: each footer column title is an <h2 class="informations|
-  // adresse|liens-utiles">, not .section-title — target the tag directly.
+  // Confirmed live: the 3 column headings each inherit a DIFFERENT, wrong
+  // size/colour from elsewhere — h2.informations/h2.address pick up the
+  // shared "Contact" section component's rule (navy, 20px), while
+  // h2.section-title ("Liens utiles") picks up the homepage section-title
+  // size (52px!). None of them are white or 16px like Figma. This ID-scoped
+  // rule outranks both (neither has an #id) and makes all three consistent.
   h2 {
     display: inline-block;
     width: auto;
+    margin: 0 0 14px;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid $footer-heading-border-color;
+    color: $footer-color;
+    font-family: $font-family-title;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  // Figma's line-to-line rhythm is ~14px between consecutive lines; the base
+  // theme only gives these 4px (#portal-footer-wrapper li{margin-bottom:
+  // 0.25rem} in _trucaverif.scss) and the address lines (plain <span>s) get
+  // none at all.
+  .contact_informations_genral li,
+  .contact_informations_social li,
+  .contact_address span,
+  .sectionlinks .body-section li {
+    margin-bottom: 14px;
   }
 }
 
