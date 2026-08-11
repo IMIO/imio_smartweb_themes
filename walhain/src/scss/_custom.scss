@@ -553,8 +553,8 @@
     content: "";
     display: none;
     position: absolute;
-    left: -16px;
-    bottom: -100px;
+    left: 0px;
+    bottom: -7px;
     width: clamp(140px, 16vw, 306px);
     aspect-ratio: 300 / 223;
     background-color: $primary;
