@@ -316,15 +316,26 @@
   }
 
   // Real markup (checked live): li > .table_display > a.table_image, with
-  // .image.d-block.is-icon.w-100 (svg icon) + .table_title span (label).
+  // .image.d-block.is-icon.w-100 (a plone-icon svg) + .table_title span
+  // (label). Per Figma (node 8:200-206): a fixed-width ~189px chip, centred
+  // content, 10px corner radius (NOT a full pill), a thin border all round
+  // plus a thicker 4px left edge, and a 22px icon.
+  .body-section li {
+    display: flex;
+    justify-content: center;
+  }
+
   .body-section li a.table_image {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    padding: 0.6rem 1.5rem;
+    justify-content: center;
+    gap: 10px;
+    min-width: 189px;
+    padding: 0.75rem 1.25rem;
     background: #fff;
-    border-left: 4px solid $primary;
-    border-radius: $pill-radius;
+    border: 1px solid $primary;
+    border-left-width: 4px;
+    border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.2s ease;
 
@@ -344,15 +355,22 @@
       font-family: $font-family-title;
       font-weight: 700;
       letter-spacing: 0.5px;
+      text-align: center;
       text-transform: uppercase;
     }
 
     .image.d-block {
+      display: flex;
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
       background: transparent;
       border: 0;
       box-shadow: none;
 
       svg {
+        width: 100%;
+        height: 100%;
         fill: $primary;
       }
     }
