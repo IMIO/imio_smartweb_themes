@@ -55,7 +55,7 @@ $container-max-widths: (
 );
 $global-radius: 0 !default;
 $enable-title-uppercase: false !default;
-$home-section-title-size: 3.25rem !default;
+$home-section-title-size: 2.5rem !default;
 $home-section-title-margin: 0 0 2rem 0 !default;
 $home-section-title-padding: 0 !default;
 $home-section-title-align: left !default;
@@ -440,6 +440,16 @@ $quick-access-title-font-family: $font-family-title !default;
 
 //SEE ALL
 $see-all-font-family: $font-family-title !default;
+
+// Cookie banner — the default blue (#1863dc) doesn't match the theme.
+// $cookie-banner-border/$cookie-banner-hv-border are missing !default in the
+// base theme's own variables.scss, so they can't be reliably overridden
+// here (base's unconditional assignment would always win regardless of load
+// order) — those two are fixed directly in _custom.scss instead.
+$cookie-banner-bg: $primary !default;
+$cookie-banner-hv-bg: transparent !default;
+$cookie-banner-color: #fff !default;
+$cookie-banner-hv-color: $primary !default;
 
 :root {
   --bs-card-spacer-x: 1rem;

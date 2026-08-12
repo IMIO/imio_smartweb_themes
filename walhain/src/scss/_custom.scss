@@ -119,40 +119,6 @@ body.is-in-subsite .section-title::before {
 }
 
 // ---------------------------------------------------------------------------
-// À LA UNE — decorative sparkle mask (Figma node 50:337, "Mask Group"), a
-// flat #f7f6f3 shape sitting behind the section, peeking out of the left
-// page margin. Figma anchors it via a relative-to-frame percentage offset
-// that doesn't translate to an absolute px value outside Figma, so this
-// approximates it responsively (same rough proportions/position) rather
-// than reproducing exact px — the base theme has no equivalent element.
-// Restricted to the main site (excludes body.is-in-subsite, Plone's marker
-// for pages inside a microsite like "Office du Tourisme" that shares this
-// theme) — this illustration is specific to Walhain's own homepage.
-// ---------------------------------------------------------------------------
-body:not(.is-in-subsite) .a-la-une {
-  position: relative;
-
-  // Flush with the section's own top edge, and with the true screen edge on
-  // the left — .a-la-une is a centred, width-limited container, so a plain
-  // "left: 0" only reached the container's own edge, not the viewport's.
-  // "left: calc(50% - 50vw)" breaks out to the real left edge regardless of
-  // container width, same math as the @include full-width mixin used
-  // elsewhere but without forcing width: 100vw.
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(50% - 50vw);
-    z-index: -1;
-    width: clamp(260px, 30vw, 568px);
-    aspect-ratio: 568 / 533;
-    background-color: $surface-alt;
-    mask: url("../../assets/svg/mask-a-la-une.svg") no-repeat center / contain;
-    pointer-events: none;
-  }
-}
-
-// ---------------------------------------------------------------------------
 // À LA UNE — card radius/shadow, even 50/50 image/text split, navy left
 // border. The base component defaults to a 60/40 grid split; overridden to
 // a clean 50/50 (image and text panel each take half the card, no overlap).
@@ -628,7 +594,7 @@ body:not(.is-in-subsite) .sectionevents {
     display: none;
     position: absolute;
     left: 0;
-    bottom: -7px;
+    bottom: -10px;
     width: clamp(140px, 16vw, 306px);
     aspect-ratio: 300 / 223;
     background-color: $primary;
@@ -658,36 +624,6 @@ body:not(.is-in-subsite) .sectionevents {
   }
 }
 
-// Frise footer — matches Figma node 55:481 (1100×152), sitting across the
-// full width of the "Nous suivre" + "Bulletin communal" row, right where it
-// meets the dark footer. These are two side-by-side Bootstrap columns
-// (.col-sm-9 + .col-sm-3), so the frise is anchored to their shared parent
-// .row via :has() rather than to either column individually.
-// Visible at every breakpoint (unlike the château/arbres above, which are
-// hidden on mobile). Height is capped with clamp() instead of scaling via
-// aspect-ratio off a 100%-wide box — the latter grew huge on wide desktop
-// containers since height followed container width 1:1 with no ceiling.
-// background-size: contain keeps the illustration's own proportions instead
-// of stretching it to fill the box.
-// Restricted to the main site (excludes body.is-in-subsite — see the
-// à-la-une sparkle mask above for why).
-body:not(.is-in-subsite) #content-core .row:has(> .sectionlinks.nous-suivre) {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: clamp(50px, 10vw, 140px);
-    background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
-      contain;
-    z-index: 0;
-    pointer-events: none;
-  }
-}
-
 // ---------------------------------------------------------------------------
 // FOOTER — dark theme + red column-heading underline.
 // #portal-footer-wrapper's default bg (Bootstrap grey #212529) and
@@ -695,6 +631,35 @@ body:not(.is-in-subsite) #content-core .row:has(> .sectionlinks.nous-suivre) {
 // core CSS bundle outside base/src that can't be edited — so they're
 // overridden here to match Figma (left-aligned, dark background).
 // ---------------------------------------------------------------------------
+// Frise footer — matches Figma node 55:481 (1100×152). Anchored to the
+// footer itself (bottom: 100% puts its own bottom edge exactly at the
+// footer's top edge) rather than to whatever section happens to sit above
+// it — attaching it to the last content row before the footer was fragile
+// (depends on that row's own height/padding lining up exactly) and
+// conceptually wrong: this illustration belongs to the footer, not to
+// "Nous suivre"/"Bulletin communal". Visible at every breakpoint.
+// Height is capped with clamp() instead of scaling via aspect-ratio off a
+// 100%-wide box — the latter grew huge on wide desktop containers since
+// height followed container width 1:1 with no ceiling. background-size:
+// contain keeps the illustration's own proportions instead of stretching it.
+// Restricted to the main site (excludes body.is-in-subsite — see the
+// à-la-une sparkle mask further up for why).
+body:not(.is-in-subsite) #portal-footer-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    height: clamp(50px, 10vw, 140px);
+    background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
+      contain;
+    pointer-events: none;
+  }
+}
+
 #portal-footer-wrapper {
   background: $footer-bg;
   color: $footer-color;
@@ -773,4 +738,54 @@ body:not(.is-in-subsite) #content-core .row:has(> .sectionlinks.nous-suivre) {
     max-width: 100%;
     height: auto;
   }
+}
+
+// More breathing room above the footer content, on every page (not just the
+// homepage). This margin sits inside #portal-footer-wrapper, so it pushes
+// the footer's own content (logo, columns) down without moving the
+// wrapper's outer edge — the frise illustration above stays flush exactly
+// where the previous section ends, and this just adds dark space below it.
+#portal-footer-wrapper #portal-footer.container {
+  margin: 96px 0 0;
+}
+
+// ---------------------------------------------------------------------------
+// COOKIE CONSENT BANNER — theme colours instead of the default blue
+// (#1863dc), with accessible hover/focus.
+// $cookie-banner-bg/-hv-bg/-color/-hv-color are overridden in variables.scss
+// (they have !default there, same mechanism as everywhere else in this
+// theme). $cookie-banner-border/-hv-border can't be overridden that way —
+// the base theme's own variables.scss is missing !default on those two
+// specifically, so its unconditional assignment always wins regardless of
+// load order. The selector below is repeated verbatim from
+// base/_com-cookies.scss so this wins by matching specificity + later
+// source order, same pattern used for #portal-footer-wrapper h2 elsewhere
+// in this file.
+// ---------------------------------------------------------------------------
+#gdpr-consent-banner .gdpr-actions {
+  & > a,
+  input[name="consent"],
+  input[name="refuse"] {
+    border: 2px solid $primary;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $primary;
+    }
+
+    // The base rule's `outline: none` on :hover/:focus relies on the
+    // background/text colour swap alone to show focus, which isn't a
+    // reliable enough indicator on its own — add an explicit ring for
+    // keyboard users. Navy vs both the banner's white background and the
+    // button's own navy hover-fill is 7.96:1, well past the WCAG 1.4.11
+    // 3:1 minimum for non-text UI indicators.
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+  }
+}
+
+.sortable-section.sectioncollection.a-la-une {
+  margin-bottom: 40px;
 }
