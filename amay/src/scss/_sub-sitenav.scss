@@ -1,0 +1,593 @@
+// sub header
+html:has(body.is-in-subsite) {
+  overflow-x: hidden;
+}
+
+body.is-in-subsite {
+  overflow-x: hidden;
+}
+
+// =============================================================================
+// SUBSITE NAVIGATION
+// =============================================================================
+
+@mixin nav-underline($color) {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background-color: $color;
+  transition: all 0.3s ease;
+}
+
+// ============================================================
+// Variables de largeur — modifier ici uniquement
+// ============================================================
+$nav-dropdown-width: 33%; // largeur max de chaque panneau
+$nav-dropdown-min-width: 220px; // largeur min pour les petits écrans
+
+$nav-dropdown-min-width: 220px;
+$nav-dropdown-max-depth: 4; // adapter si besoin
+
+#subsite-navigation {
+  // --- Layout de base ---
+
+  .sub-nav-scroll-btn {
+    display: none;
+  }
+
+  &.activated {
+    &::after {
+      content: "";
+      background: #00000047;
+      width: 100vw;
+      position: absolute;
+      left: 50%;
+      height: 100vh;
+      transform: translateX(-50%);
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  .nav-title {
+    font-weight: 500;
+  }
+
+  .index_html {
+    display: none;
+  }
+
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  // --- Liens (tous niveaux) ---
+  li a {
+    position: relative;
+    display: block;
+    padding: 0.65rem 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }
+
+  // --- Inputs & labels cachés ---
+  input.opener {
+    display: none;
+  }
+
+  label[for] {
+    @include visually-hidden;
+  }
+
+  // --- Bouton fermer ---
+  .close-nav {
+    position: absolute;
+    z-index: 99;
+    top: 13px;
+    right: 1.5em;
+    border-bottom: none !important;
+
+    &:not(:focus) {
+      @include visually-hidden;
+    }
+
+    .close-nav-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' aria-hidden='true'%3E%3Cpath fill='%23888' d='M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z'/%3E%3C%2Fsvg%3E");
+    }
+  }
+
+  // =========================================
+  // DEPTH-1 — items de la barre
+  // =========================================
+  .nav-item-depth-1 {
+    position: relative;
+
+    & > a {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      color: $sub-nav-link-color;
+
+      &:hover,
+      &:focus {
+        color: $sub-nav-link-active-color;
+
+        &::before {
+          @include nav-underline($sub-nav-link-unedrline-color);
+        }
+      }
+    }
+
+    &.inPath > a {
+      color: $sub-nav-link-active-color;
+
+      &::before {
+        @include nav-underline($sub-nav-link-unedrline-color);
+      }
+    }
+
+    &.has_subtree > a::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 6px;
+      margin-left: 0.3rem;
+      flex-shrink: 0;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1" stroke="#{url-encoded-color($sub-nav-link-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+        center / contain no-repeat;
+      transition: transform 0.2s ease;
+    }
+
+    &.has_subtree.show-nav > a::after,
+    &.has_subtree.inPath > a::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &.activated .nav-item-depth-1 > a {
+    @include media-breakpoint-up(md) {
+      color: $sub-nav-link-open-color !important;
+    }
+  }
+
+  // =========================================
+  // DROPDOWN DEPTH-1
+  // Seul cas avec position sous la barre + ombre complète
+  // =========================================
+  .nav-dropdown-depth-1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    max-width: 40vw;
+    min-width: $nav-dropdown-min-width;
+    opacity: 0%;
+    visibility: hidden;
+    background: #fff;
+    padding: 1em;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+    // box-shadow:
+    //   0 2px 4px rgb(0 0 0 / 8%),
+    //   0 4px 12px rgb(0 0 0 / 10%),
+    //   0 8px 24px rgb(0 0 0 / 12%),
+    //   0 24px 48px rgb(0 0 0 / 16%);
+
+    .nav-link[aria-haspopup="true"] {
+      display: block;
+      padding-right: 2em;
+      position: relative;
+
+      &::after {
+        content: $nav-overlay-next-icon;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover::after,
+      &:focus::after {
+        content: $nav-overlay-next-icon-hover;
+      }
+    }
+  }
+
+  // =========================================
+  // DROPDOWNS DEPTH-2 à DEPTH-N
+  // Positionnés latéralement par le JS
+  // Générés via une boucle @for
+  // =========================================
+  @for $d from 2 through $nav-dropdown-max-depth {
+    .nav-dropdown-depth-#{$d} {
+      position: absolute;
+      top: 0; // aligné sous la barre via le panneau parent — left injecté par JS
+      width: max-content;
+      max-width: 33vw;
+      min-width: $nav-dropdown-min-width;
+      overflow-y: auto;
+      opacity: 0%;
+      visibility: hidden;
+      background: #fff;
+      padding: 1em;
+      border-radius: 0 0 5px 5px;
+      border-left: 1px solid #8f8f8f;
+      box-shadow:
+        0 2px 4px rgb(0 0 0 / 8%),
+        0 4px 12px rgb(0 0 0 / 10%),
+        0 8px 24px rgb(0 0 0 / 12%),
+        0 24px 48px rgb(0 0 0 / 16%);
+      z-index: 10 + $d; // chaque niveau au-dessus du précédent
+    }
+
+    .nav-item-depth-#{$d}.show-nav > .nav-dropdown-depth-#{$d} {
+      opacity: 100%;
+      visibility: visible;
+
+      a {
+        pointer-events: initial !important;
+      }
+    }
+
+    // Flèche sur les liens avec sous-niveau (sauf dernier niveau)
+    @if $d < $nav-dropdown-max-depth {
+      .nav-dropdown-depth-#{$d} .nav-link[aria-haspopup="true"] {
+        display: block;
+        padding-right: 2em;
+        position: relative;
+
+        &::after {
+          content: $nav-overlay-next-icon;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:hover::after,
+        &:focus::after {
+          content: $nav-overlay-next-icon-hover;
+        }
+      }
+    }
+  }
+
+  // =========================================
+  // STYLES COMMUNS à tous les dropdowns
+  // =========================================
+  [class*="nav-dropdown-depth-"] {
+    a {
+      pointer-events: none;
+      border-radius: 4px;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+
+      &:hover {
+        text-decoration: underline;
+        background-color: rgba(#000, 0.04);
+        text-decoration-thickness: 1px;
+      }
+    }
+
+    .nav-title {
+      padding: 0 !important;
+
+      a {
+        color: $nav-overlay-title-color;
+        font-size: 16px;
+        font-weight: $nav-overlay-title-font-weight;
+        font-family: $nav-title-font-family;
+        pointer-events: initial;
+      }
+    }
+
+    .nav-link {
+      display: block;
+      color: #000;
+      text-overflow: ellipsis;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+
+      .state-private {
+        color: #c4183c;
+      }
+    }
+
+    li.show-nav > a.nav-link {
+      color: $primary;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      background-color: rgba(#000, 0.04);
+      border-radius: 4px;
+    }
+
+    & > span {
+      color: $primary;
+    }
+  }
+
+  // activation depth-1 (hors boucle car logique différente)
+  .nav-item-depth-1.show-nav > .nav-dropdown-depth-1 {
+    opacity: 100%;
+    visibility: visible;
+
+    a {
+      pointer-events: initial !important;
+    }
+  }
+
+  // Quand un panneau a un enfant ouvert, on lève son overflow
+  // pour que le panneau enfant ne soit pas rogné
+  // + overlay gris pour indiquer visuellement que le focus est sur le panneau enfant
+  @for $d from 1 through $nav-dropdown-max-depth - 1 {
+    .nav-dropdown-depth-#{$d}.has-open-child {
+      overflow: visible !important;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(#000, 0.05);
+        border-radius: inherit;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+  }
+
+  // =========================================
+  // SOUS-MENUS (ul) — tous niveaux
+  // =========================================
+  @for $d from 1 through $nav-dropdown-max-depth {
+    .nav-submenu-depth-#{$d} {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+    }
+  }
+
+  // =========================================
+  // BOUTON RETOUR
+  // =========================================
+  .prev-nav {
+    display: flex !important;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.8rem;
+    color: #888;
+    padding: 0.2rem 0;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    text-decoration: none !important;
+    pointer-events: initial;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      background-color: #888;
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'/%3E%3C/svg%3E");
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      margin-right: 0;
+      transition:
+        background-color 0.15s ease,
+        transform 0.15s ease;
+    }
+
+    &:hover {
+      color: $primary;
+
+      &::before {
+        background-color: $primary;
+        transform: translateX(-2px);
+      }
+    }
+  }
+
+  // =========================================
+  // DIVERS
+  // =========================================
+  .quick-access ul {
+    position: relative !important;
+    width: auto !important;
+    padding: 0 !important;
+  }
+
+  // =========================================
+  // MOBILE
+  // =========================================
+  @include media-breakpoint-down(md) {
+    position: relative; // contexte de positionnement pour tous les panneaux
+
+    // Boutons scroll horizontal (injectés par JS)
+    @keyframes sub-nav-scroll-hint {
+      0%,
+      100% {
+        background-position: center center;
+      }
+
+      50% {
+        background-position: calc(50% + 3px) center;
+      }
+    }
+
+    @keyframes sub-nav-scroll-hint-left {
+      0%,
+      100% {
+        background-position: center center;
+      }
+
+      50% {
+        background-position: calc(50% - 3px) center;
+      }
+    }
+
+    .sub-nav-scroll-btn {
+      display: block;
+      position: absolute;
+      backdrop-filter: blur(10px);
+      top: 5px;
+      bottom: 0;
+      width: 37px;
+      background-color: #ffffff6b;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      z-index: 2;
+      opacity: 100%;
+      transition: opacity 0.3s ease;
+
+      &.is-hidden {
+        opacity: 0%;
+        pointer-events: none;
+        display: none;
+      }
+
+      &--right {
+        border-radius: 3px 0 0;
+        right: -12px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10"><polyline points="1,1 5,5 1,9" stroke="#{url-encoded-color($sub-nav-scroll-arrow-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        background-size: 6px 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: sub-nav-scroll-hint 1.8s ease-in-out infinite;
+        }
+      }
+
+      &--left {
+        left: -12px;
+        border-radius: 0 3px 0 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10"><polyline points="5,1 1,5 5,9" stroke="#{url-encoded-color($sub-nav-scroll-arrow-color)}" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        background-size: 6px 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: sub-nav-scroll-hint-left 1.8s ease-in-out infinite;
+        }
+      }
+    }
+
+    &.activated .sub-nav-scroll-btn {
+      display: none;
+    }
+
+    .close-nav {
+      &:not(:focus) {
+        // Annule les propriétés layout du mixin visually-hidden
+        width: auto !important;
+        height: auto !important;
+        padding: 0.5rem !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        clip: auto !important;
+        white-space: normal !important;
+
+        // Annule le position: absolute !important du mixin (nested &:not(caption))
+        &:not(caption) {
+          position: absolute !important;
+        }
+
+        // Annule le overflow: hidden sur les enfants du mixin
+        * {
+          overflow: visible !important;
+        }
+      }
+    }
+
+    & > ul {
+      width: auto;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      // Firefox
+      scrollbar-width: thin;
+      scrollbar-color: $sub-nav-scrollbar-thumb-color
+        $sub-nav-scrollbar-track-color;
+
+      // WebKit (Chrome, Safari, Edge, iOS Safari)
+      &::-webkit-scrollbar {
+        height: $sub-nav-scrollbar-height;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $sub-nav-scrollbar-track-color;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $sub-nav-scrollbar-thumb-color;
+        border-radius: calc($sub-nav-scrollbar-height / 2);
+      }
+    }
+
+    // Les li depth-1 ne sont plus positionnés : leurs panneaux
+    // s'échappent vers #subsite-navigation comme contexte commun
+    .nav-item-depth-1 {
+      flex-shrink: 0;
+      position: static;
+      margin-right: 0.75rem;
+
+      &:first-child {
+        margin-left: 0.5rem;
+      }
+
+      & > a {
+        padding: 1rem 0;
+      }
+    }
+
+    // Panneau depth-1 : pleine largeur sous la barre de nav
+    .nav-dropdown-depth-1 {
+      top: 100% !important;
+      left: 0 !important;
+      right: 0 !important;
+      transform: none !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      border-radius: 0 !important;
+    }
+
+    // Panneaux depth-2+ : overlay pleine largeur par-dessus le panneau parent
+    @for $d from 2 through $nav-dropdown-max-depth {
+      .nav-dropdown-depth-#{$d} {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: none !important;
+        min-height: 100%;
+        border-left: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        z-index: $d * 10 !important;
+      }
+    }
+  }
+}

@@ -120,14 +120,6 @@ div:not(.sectiontext) + .sectiontext h2 {
   li {
     list-style-type: none !important;
   }
-
-  #subsite-logo {
-    border-radius: 5px;
-
-    .subsite-title {
-      font-size: 1.25rem;
-    }
-  }
 }
 
 @media screen and (min-width: 1200px) {

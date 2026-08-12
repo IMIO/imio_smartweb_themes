@@ -48,11 +48,6 @@ $enable-roboto-webfont: false;
   background: $primary-svg;
 }
 
-.subsite-container #subsite-logo {
-  font-size: 20px;
-  text-transform: initial;
-}
-
 .subsite-container {
   background: #eef4fa;
 }
@@ -86,12 +81,6 @@ h6 {
 .subsite-container {
   background: #eef4fa;
   border-radius: 10px;
-
-  #subsite-logo {
-    font-size: 20px;
-    text-transform: none;
-    border-radius: 10px 0 0 10px;
-  }
 }
 
 //CPAS

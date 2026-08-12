@@ -496,19 +496,21 @@ footer #container-section-noussuivre {
   gap: 20px;
 
   #subsite-logo {
-    font-size: 18px;
-    border-radius: 0;
-    background: #f8f8f8 !important;
-
     a {
-      background: url("../../assets/svg/cible_titre.svg") no-repeat 10px center;
-      padding-right: 0;
-
       .subsite-title {
         color: $primary-red !important;
-        padding: 0 20px 0 10px;
-        border-right: 1px solid #959595;
-        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &::before {
+          content: "";
+          background: url("../../assets/svg/cible_titre.svg") no-repeat;
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+        }
       }
     }
   }
@@ -885,23 +887,6 @@ footer #container-section-noussuivre {
 
       @media screen and (max-width: 992px) {
         gap: 0;
-
-        #subsite-logo {
-          background: #2b2e34 !important;
-
-          a {
-            background: none;
-            display: block;
-            text-align: center;
-
-            .subsite-title {
-              border-right: 0 solid #959595;
-              color: #fff !important;
-              font-size: 16px;
-              padding: 0 20px 0 10px;
-            }
-          }
-        }
       }
     }
 

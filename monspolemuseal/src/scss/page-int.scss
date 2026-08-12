@@ -49,6 +49,20 @@
   }
 }
 
+.subsite-container::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(0);
+  background: #f3f3f3;
+  z-index: -1;
+  border-top-right-radius: 60px;
+}
+
 .portaltype-imio-smartweb-page,
 .portaltype-imio-smartweb-portalpage,
 .portaltype-imio-smartweb-folder,
@@ -58,7 +72,9 @@
   }
 
   .subsite-container {
-    background: $primary-color;
+    &::after {
+      background: $primary-color;
+    }
     color: $primary-titre;
     border-radius: 0 60px 0 0 !important;
 
@@ -75,12 +91,13 @@
     }
 
     #subsite-logo {
-      font-size: 18px;
-      background: $primary-color-light;
       color: $primary-titre;
       border-radius: 0;
-      min-height: 90px !important;
       align-content: center;
+
+      a {
+        padding: 0.5em 1rem;
+      }
 
       a img,
       a svg {
@@ -116,7 +133,9 @@
 
 .subsection-anciens-abattoirs {
   .subsite-container {
-    background: $primary-color-abattoirs;
+    &::after {
+      background: $primary-color-abattoirs;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -124,8 +143,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-abattoirs;
-      color: $primary-titre-abattoirs;
+      a {
+        background: $primary-color-light-abattoirs;
+        color: $primary-titre-abattoirs;
+      }
     }
   }
 
@@ -155,7 +176,9 @@
 
 .subsection-artotheque {
   .subsite-container {
-    background: $primary-color-artotheque;
+    &::after {
+      background: $primary-color-artotheque;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -163,8 +186,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-artotheque;
-      color: $primary-titre-artotheque;
+      a {
+        background: $primary-color-light-artotheque;
+        color: $primary-titre-artotheque;
+      }
     }
   }
 
@@ -194,7 +219,9 @@
 
 .subsection-cap {
   .subsite-container {
-    background: $primary-color-cap;
+    &::after {
+      background: $primary-color-cap;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -202,8 +229,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-cap;
-      color: $primary-titre-cap;
+      a {
+        background: $primary-color-light-cap;
+        color: $primary-titre-cap;
+      }
     }
   }
 
@@ -233,11 +262,15 @@
 
 .subsection-magasin-de-papier {
   .subsite-container {
-    background: $primary-color-magasin-de-papier;
+    &::after {
+      background: $primary-color-magasin-de-papier;
+    }
 
     #subsite-logo {
-      background: $primary-color-light-magasin-de-papier;
-      color: $primary-titre-magasin-de-papier;
+      a {
+        background: $primary-color-light-magasin-de-papier;
+        color: $primary-titre-magasin-de-papier;
+      }
     }
   }
 
@@ -267,11 +300,15 @@
 
 .subsection-maison-van-gogh {
   .subsite-container {
-    background: $primary-color-maison-van-gogh;
+    &::after {
+      background: $primary-color-maison-van-gogh;
+    }
 
     #subsite-logo {
-      background: $primary-color-light-maison-van-gogh;
-      color: $primary-titre-maison-van-gogh;
+      a {
+        background: $primary-color-light-maison-van-gogh;
+        color: $primary-titre-maison-van-gogh;
+      }
     }
   }
 
@@ -301,7 +338,9 @@
 
 .subsection-mons-memorial-museum {
   .subsite-container {
-    background: $primary-color-mons-memorial-museum;
+    &::after {
+      background: $primary-color-mons-memorial-museum;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -309,8 +348,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-mons-memorial-museum;
-      color: $primary-titre-mons-memorial-museum;
+      a {
+        background: $primary-color-light-mons-memorial-museum;
+        color: $primary-titre-mons-memorial-museum;
+      }
     }
   }
 
@@ -340,7 +381,9 @@
 
 .subsection-musee-du-doudou {
   .subsite-container {
-    background: $primary-color-musee-du-doudou;
+    &::after {
+      background: $primary-color-musee-du-doudou;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -348,8 +391,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-musee-du-doudou;
-      color: $primary-titre-musee-du-doudou;
+      a {
+        background: $primary-color-light-musee-du-doudou;
+        color: $primary-titre-musee-du-doudou;
+      }
     }
   }
 
@@ -379,11 +424,15 @@
 
 .subsection-salle-saint-georges {
   .subsite-container {
-    background: $primary-color-salle-saint-georges;
+    &::after {
+      background: $primary-color-salle-saint-georges;
+    }
 
     #subsite-logo {
-      background: $primary-color-light-salle-saint-georges;
-      color: $primary-titre-salle-saint-georges;
+      a {
+        background: $primary-color-light-salle-saint-georges;
+        color: $primary-titre-salle-saint-georges;
+      }
     }
   }
 
@@ -413,11 +462,15 @@
 
 .subsection-silexs {
   .subsite-container {
-    background: $primary-color-silexs;
+    &::after {
+      background: $primary-color-silexs;
+    }
 
     #subsite-logo {
-      background: $primary-color-light-silexs;
-      color: $primary-titre-silexs;
+      a {
+        background: $primary-color-light-silexs;
+        color: $primary-titre-silexs;
+      }
     }
   }
 
@@ -447,7 +500,9 @@
 
 .subsection-beffroi {
   .subsite-container {
-    background: $primary-color-beffroi;
+    &::after {
+      background: $primary-color-beffroi;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -455,8 +510,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-beffroi;
-      color: $primary-titre-beffroi;
+      a {
+        background: $primary-color-light-beffroi;
+        color: $primary-titre-beffroi;
+      }
     }
   }
 
@@ -486,7 +543,9 @@
 
 .subsection-tresor-de-sainte-waudru {
   .subsite-container {
-    background: $primary-color-tresor-de-sainte-waudru;
+    &::after {
+      background: $primary-color-tresor-de-sainte-waudru;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -494,8 +553,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-tresor-de-sainte-waudru;
-      color: $primary-titre-tresor-de-sainte-waudru;
+      a {
+        background: $primary-color-light-tresor-de-sainte-waudru;
+        color: $primary-titre-tresor-de-sainte-waudru;
+      }
     }
   }
 
@@ -525,7 +586,9 @@
 
 .subsection-hotel-de-ville {
   .subsite-container {
-    background: $primary-color-hotel-ville;
+    &::after {
+      background: $primary-color-hotel-ville;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -533,8 +596,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-hotel-ville;
-      color: $primary-titre-hotel-ville;
+      a {
+        background: $primary-color-light-hotel-ville;
+        color: $primary-titre-hotel-ville;
+      }
     }
   }
 
@@ -564,7 +629,9 @@
 
 .subsection-musee-francois-duesberg {
   .subsite-container {
-    background: $primary-color-musee-francois-duesberg;
+    &::after {
+      background: $primary-color-musee-francois-duesberg;
+    }
 
     #subsite-navigation > ul > li > a,
     #subsite-navigation.activated > ul > li > a {
@@ -572,8 +639,10 @@
     }
 
     #subsite-logo {
-      background: $primary-color-light-musee-francois-duesberg;
-      color: $primary-titre-musee-francois-duesberg;
+      a {
+        background: $primary-color-light-musee-francois-duesberg;
+        color: $primary-titre-musee-francois-duesberg;
+      }
     }
   }
 

@@ -128,13 +128,8 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
 //sub-header
 $subsite-container-padding: 0 !default;
-$subsite-navbar-bg: linear-gradient(
-  95deg,
-  #1f3d2c 0%,
-  #2c5a3f 60%,
-  #355d3f 100%
-) !default;
-$subsite-logo-background: rgba(#fff, 0.1) !default;
+$subsite-navbar-bg: #f3f3f3 !default;
+$subsite-logo-background: $primary !default;
 $subsite-logo-padding: 0.3em 0.5rem !default;
 $subsite-logo-margin: 1rem 0 0 0 !default;
 $subsite-logo-radius: 10px !default;
@@ -142,10 +137,10 @@ $subsite-logo-color: $font-title-color-light !default;
 
 //sub-sitenav
 $subsite-container-background: transparent !default;
-$sub-nav-link-color: $font-title-color-light !default;
+$sub-nav-link-color: $font-title-color-dark !default;
 $sub-nav-link-open-color: current !default;
-$sub-nav-link-active-color: $font-title-color-light !default;
-$sub-nav-link-unedrline-color: $font-title-color-light !default;
+$sub-nav-link-active-color: $font-title-color-dark !default;
+$sub-nav-link-unedrline-color: $font-title-color-dark !default;
 $sub-nav-scrollbar-height: 4px !default;
 $sub-nav-scrollbar-thumb-color: rgba(#fff, 0.5) !default;
 $sub-nav-scrollbar-track-color: rgba(#fff, 0.15) !default;

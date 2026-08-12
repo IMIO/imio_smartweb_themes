@@ -65,18 +65,6 @@ $enable-roboto-webfont: false;
 .subsite-container {
   background: #f1f1f1;
   border-radius: 10px;
-
-  #subsite-logo {
-    font-size: 18px;
-    background: $primary;
-    border-radius: 10px 0 0 10px;
-
-    a {
-      .subsite-title {
-        color: #fff !important;
-      }
-    }
-  }
 }
 
 .contact_leadimage {
