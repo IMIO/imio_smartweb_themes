@@ -1,3 +1,9 @@
+## [1.0.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.17...v1.0.0) (2026-08-12)
+
+* Fix messviewlet z-index (7b0c2eda)
+* color (4c8d3b79)
+* Update new sub-menu on all theme (7036beb8)
+
 ## [0.3.17](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.16...v0.3.17) (2026-07-31)
 
 * fix ol ul padding (d8d5d948)
