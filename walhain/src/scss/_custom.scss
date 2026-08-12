@@ -53,6 +53,31 @@
   }
 }
 
+// Decorative sparkle mask (Figma node 50:337, "Mask Group") — a flat
+// #f7f6f3 shape peeking out of the left page margin, its top edge flush
+// with the banner's own bottom edge (top: 100%). Figma positions it via a
+// relative-to-frame percentage offset that doesn't translate to an absolute
+// px value outside Figma, so this approximates the same rough proportions
+// rather than reproducing exact px. Restricted to the main site (excludes
+// body.is-in-subsite, Plone's marker for pages inside a microsite like
+// "Office du Tourisme" that shares this theme).
+body:not(.is-in-subsite) .smartweb_herobanner {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 50vw);
+    z-index: -1;
+    width: clamp(260px, 30vw, 568px);
+    aspect-ratio: 568 / 533;
+    background-color: $surface-alt;
+    mask: url("../../assets/svg/mask-a-la-une.svg") no-repeat center / contain;
+    pointer-events: none;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // SECTION TITLES — uppercase on every homepage section heading
 // (confirmed live: .section-title renders with text-transform: none by
@@ -116,6 +141,14 @@
 // (body.is-in-subsite adds a tag+class) wins regardless of source order.
 body.is-in-subsite .section-title::before {
   content: none;
+}
+
+// Confirmed live: .a-la-une also carries the generic .sectioncollection
+// class, which gets background: $section-link-background-color (#f8f8f8)
+// from base/_se-collection.scss — a grey band behind the whole section that
+// has nothing to do with the sparkle mask and isn't in the Figma design.
+.a-la-une {
+  background: transparent;
 }
 
 // ---------------------------------------------------------------------------
