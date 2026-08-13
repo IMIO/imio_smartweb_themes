@@ -623,10 +623,12 @@ body.is-in-subsite .section-title::before {
 }
 
 // ---------------------------------------------------------------------------
-// DECORATIVE ILLUSTRATIONS (Figma assets provided separately, added to
-// walhain/assets/svg/). Purely decorative (aria-hidden via CSS generated
-// content, which is never exposed to assistive tech) — hidden below tablet
-// width so they don't crowd the mobile layout.
+// CHÂTEAU / ARBRES — decorative illustrations (Figma assets provided
+// separately, added to walhain/assets/svg/). Purely decorative (aria-hidden
+// via CSS generated content, never exposed to assistive tech) — hidden
+// below tablet width so they don't crowd the mobile layout. The croix-titre
+// icon, à-la-une sparkle mask and footer frise are the same kind of asset
+// but live closer to the sections they decorate, further up/down this file.
 // ---------------------------------------------------------------------------
 
 // Château — matches Figma node 107:19 (300×223), hanging off the bottom-LEFT
@@ -869,7 +871,12 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
 
 // Header search button: no :hover/:focus of any kind in the base theme —
 // just a static grey (#c1c1c1) circle border, no feedback at all.
-#header-links #search-link a {
+// Confirmed live: the base border rule is
+// "#portal-header #portal-header-top #header-links #search-link a" — 4 ID
+// selectors. My first attempt at "#header-links #search-link a" (2 IDs) had
+// lower specificity, so it never won despite loading later — specificity
+// beats source order. Matching the same selector chain here.
+#portal-header #portal-header-top #header-links #search-link a {
   transition: border-color 0.2s ease;
 
   &:hover {
@@ -923,5 +930,137 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
 
   &:hover {
     color: $accent;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// FILES SECTION ("Documents", on any content page — e.g.
+// /commune/.../boites-jaunes) — confirmed live: this theme has
+// $enable-light-color-section-files: true (white text on a navy
+// background), but base/_se-file.scss's selector for that is
+// ".section-title h2" (expects the title nested inside a wrapper) while the
+// real markup is a flat "<h2 class='section-title'>" — the selector never
+// matches, so the title falls back to the generic navy h2 colour: navy text
+// on navy background, ~1:1 contrast. Same story for the file size
+// (.item_infos, e.g. "64.9 KB") — nothing in base targets it at all, so it
+// inherits the surrounding link's navy colour with the same result. Only
+// the filename itself (.table_title span) happened to match a working
+// selector and was already white. This affects every "Documents"/file list
+// on the site, not just this one page.
+// base/_se-file.scss's own white-forcing rule only lists h2/span/p, not a —
+// on this page every link's text sits inside a nested span (already fixed
+// above), but any plain-text link directly inside a rich-text description
+// in this same navy section elsewhere on the site would hit the identical
+// navy-on-navy bug. Covered pre-emptively rather than waiting to find it.
+// ---------------------------------------------------------------------------
+.sectionfiles {
+  .section-title,
+  .table_title span,
+  .item_infos,
+  .body-section a,
+  .section-title a {
+    color: #fff;
+  }
+
+  // No hover/focus of any kind existed on these file links either.
+  a.table_image {
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 8%);
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// SUBSITE LOGO ("Collège communal", "Vie politique" microsites, etc.) —
+// confirmed live: on hover/focus the opaque navy background drops to
+// rgba(65,73,153,0.7) — the white title text over that 70%-alpha navy
+// (blended with the page behind it) works out to ~3.75:1, below the 4.5:1
+// WCAG AA minimum for normal text (default state, fully opaque, is 7.96:1).
+// There was also no focus indicator of any kind. This comes from a CSS
+// bundle outside base/src (imio.smartweb.core's own compiled CSS), hence
+// !important. The badge itself is small and everything around it is
+// transparent (page background, not navy) — outline needs to read against
+// that light surround, not the badge's own navy fill (same check that
+// caught the "Mon compte" mistake earlier).
+// ---------------------------------------------------------------------------
+.subsite-container #subsite-logo a {
+  &:hover,
+  &:focus {
+    background: #353c80 !important;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// BREADCRUMB — confirmed live: no :hover/:focus at all (base/_breadcrum.scss
+// is almost entirely commented out). Default colour is already fine
+// ($primary on white, 7.96:1); this only adds feedback that was missing.
+// ---------------------------------------------------------------------------
+#portal-breadcrumbs a {
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $accent;
+    text-decoration-color: $accent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// MAIN NAV DROPDOWN ITEMS ("Ma commune", "Vivre à Walhain"…) and .prev-nav
+// (the "Retour" back-arrow inside mobile/subsite dropdown panels) —
+// confirmed live: both already change colour on :hover/:focus (base
+// _sitenav.scss), but neither has a keyboard focus-visible indicator.
+// .has_subtree > a sits in the white header bar (outline vs white = 5.58:1
+// with $accent, its own hover colour); .prev-nav sits inside the dropdown
+// panel's white background (navy, 7.96:1, its own hover colour too).
+// ---------------------------------------------------------------------------
+#portal-globalnav > li.has_subtree > a:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
+}
+
+.prev-nav:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+// ---------------------------------------------------------------------------
+// COLOPHON (bottom legal bar: "Mentions légales", "Déclaration
+// d'accessibilité"…) — confirmed via the loaded stylesheet rules (not by
+// simulating :focus, which is unreliable in this environment when the
+// document itself isn't focused): the existing hover/focus colour change
+// is two very-similar near-blacks (rgba(0,0,0,.82) → rgba(51,51,51,.82)) —
+// both pass contrast (13.6:1 / 7.1:1) but the shift itself is too subtle to
+// register, same issue as "Mon compte" earlier. No explicit focus-visible
+// outline exists either — only whatever the browser's own default renders.
+// ---------------------------------------------------------------------------
+#portal-colophon li a {
+  transition: color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
   }
 }
