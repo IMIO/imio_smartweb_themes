@@ -163,6 +163,22 @@ body.is-in-subsite .section-title::before {
     border-radius: $card-radius;
     box-shadow: $card-shadow;
     overflow: hidden;
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
+
+    // Confirmed live: this card had no :hover/:focus at all — every other
+    // card on the site (quick-access, actu, event, nous-suivre, bulletin
+    // communal) lifts with a deeper shadow on hover; this one didn't.
+    &:hover {
+      box-shadow: 0 14px 32px rgba(20, 18, 30, 15%);
+      transform: translateY(-3px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
 
     @include media-breakpoint-up(lg) {
       grid-template-columns: 50% 50%;
@@ -282,7 +298,14 @@ body.is-in-subsite .section-title::before {
 // ---------------------------------------------------------------------------
 #header-links .account {
   border-radius: $pill-radius;
-  transition: background-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 10px rgba(198, 42, 42, 35%);
+  }
 
   // outline draws OUTSIDE the button's box, not over its own navy fill —
   // with outline-offset it sits against the header's white background, so a
@@ -874,5 +897,31 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
   &:focus-visible {
     outline: 2px solid $accent;
     outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// FACETED SEARCH RESULTS (e.g. /je-trouve/... listings) — confirmed live on
+// an internal page: result links (a.row, e.g. "Achat de concessions dans
+// les cimetières communaux") and the native <select> facet filters
+// ("Thématiques", "Catégories") both compute outline-style: none on focus —
+// no visible keyboard-focus indicator at all. Comes from a CSS bundle
+// outside base/src (the faceted-navigation package's own core CSS, not
+// this theme), so !important is used since that rule's own specificity is
+// unknown from here.
+// ---------------------------------------------------------------------------
+#block-menu a.row:focus-visible,
+.faceted_select:focus-visible {
+  outline: 2px solid $primary !important;
+  outline-offset: 2px;
+}
+
+// These result links also had no colour/decoration change on hover beyond
+// the browser-default underline that was already there.
+#block-menu a.row {
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $accent;
   }
 }

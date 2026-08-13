@@ -688,10 +688,10 @@ body.portaltype-imio-smartweb-portalpage:not(.is-in-minisite) {
 
 // message viewlet
 
-#messagesviewlet .portalMessage.warning,
-#localmessagesviewlet .portalMessage.warning {
-  background-color: #485768 !important;
-}
+// #messagesviewlet .portalMessage.warning,
+// #localmessagesviewlet .portalMessage.warning {
+//   background-color: #485768 !important;
+// }
 
 #localmessagesviewlet .portalMessage.info,
 #messagesviewlet .portalMessage.info {
@@ -699,7 +699,7 @@ body.portaltype-imio-smartweb-portalpage:not(.is-in-minisite) {
 
   span,
   p {
-    color: #485768;
+    color: #000;
   }
 }
 
