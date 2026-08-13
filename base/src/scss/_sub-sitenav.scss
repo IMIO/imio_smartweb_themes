@@ -210,8 +210,7 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
       transition: transform 0.2s ease;
     }
 
-    &.has_subtree.show-nav > a::after,
-    &.has_subtree.inPath > a::after {
+    &.has_subtree.show-nav > a::after {
       transform: rotate(180deg);
     }
   }
