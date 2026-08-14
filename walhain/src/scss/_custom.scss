@@ -51,6 +51,20 @@
     font-weight: 500;
     letter-spacing: 1px;
   }
+
+  // Confirmed live (375px): the banner keeps its desktop height (600px,
+  // $banner-heigh) unconditionally — on a phone that's ~74% of the whole
+  // viewport for a title + one-line slogan whose content box (both lines of
+  // text + padding) only measures ~230px, vertically centered. Shrinking to
+  // 420px still leaves ~95px of clear space above/below that content, so
+  // the title/description keep their own font-size (68px/32px, unchanged)
+  // and are never squeezed, wrapped further, or clipped — only the excess
+  // empty photo area shrinks.
+  @include media-breakpoint-down(sm) {
+    .bannerSwiper {
+      height: 420px;
+    }
+  }
 }
 
 // Decorative sparkle mask (Figma node 50:337, "Mask Group") — a flat
@@ -59,9 +73,10 @@
 // relative-to-frame percentage offset that doesn't translate to an absolute
 // px value outside Figma, so this approximates the same rough proportions
 // rather than reproducing exact px. Restricted to the main site (excludes
-// body.is-in-subsite, Plone's marker for pages inside a microsite like
-// "Office du Tourisme" that shares this theme).
-body:not(.is-in-subsite) .smartweb_herobanner {
+// body.is-in-minisite — confirmed live on walhain.preprod.imio.be/cpas —
+// and body.is-in-subsite, e.g. "Collège communal": Plone's two different
+// markers for pages inside a microsite/subsite sharing this theme).
+body:not(.is-in-subsite, .is-in-minisite) .smartweb_herobanner {
   position: relative;
 
   &::before {
@@ -134,12 +149,15 @@ body:not(.is-in-subsite) .smartweb_herobanner {
 }
 
 // This Figma redesign is specific to the main Walhain site's own homepage.
-// Plone tags every page rendered inside a subsite (e.g. an "Office du
-// Tourisme" microsite sharing this same theme) with body.is-in-subsite —
-// any subsite homepage reusing the same section types (a-la-une, actu,
-// event…) must NOT get this icon. Higher specificity than the rule above
-// (body.is-in-subsite adds a tag+class) wins regardless of source order.
-body.is-in-subsite .section-title::before {
+// Plone tags every page rendered inside a microsite (e.g. "CPAS",
+// "Office du Tourisme" — confirmed live via body.is-in-minisite on
+// walhain.preprod.imio.be/cpas) or subsite (e.g. "Collège communal") with
+// body.is-in-minisite / body.is-in-subsite respectively — either kind of
+// homepage reusing the same section types (a-la-une, actu, event…) must NOT
+// get this icon. Higher specificity than the rule above (an extra tag+class)
+// wins regardless of source order.
+body.is-in-subsite .section-title::before,
+body.is-in-minisite .section-title::before {
   content: none;
 }
 
@@ -641,10 +659,11 @@ body.is-in-subsite .section-title::before {
 // position:relative) — .sectionlinks.partenaires comes right after it in the
 // DOM, and without it its own navy ::after background paints on top of these
 // pseudo-elements instead of behind them.
-// Restricted to the main site (excludes body.is-in-subsite — see the
-// à-la-une sparkle mask above for why): these two illustrations, and the
-// stacking fix that exists only because of them, are Walhain-specific.
-body:not(.is-in-subsite) .sectionevents {
+// Restricted to the main site (excludes body.is-in-subsite/is-in-minisite —
+// see the à-la-une sparkle mask above for why): these two illustrations,
+// and the stacking fix that exists only because of them, are
+// Walhain-specific.
+body:not(.is-in-subsite, .is-in-minisite) .sectionevents {
   position: relative;
   z-index: 3;
 
@@ -695,27 +714,32 @@ body:not(.is-in-subsite) .sectionevents {
 // core CSS bundle outside base/src that can't be edited — so they're
 // overridden here to match Figma (left-aligned, dark background).
 // ---------------------------------------------------------------------------
-// Frise footer — matches Figma node 55:481 (1100×152). Anchored to the
-// footer itself (bottom: 100% puts its own bottom edge exactly at the
-// footer's top edge) rather than to whatever section happens to sit above
-// it — attaching it to the last content row before the footer was fragile
-// (depends on that row's own height/padding lining up exactly) and
-// conceptually wrong: this illustration belongs to the footer, not to
-// "Nous suivre"/"Bulletin communal". Visible at every breakpoint.
-// Height is capped with clamp() instead of scaling via aspect-ratio off a
-// 100%-wide box — the latter grew huge on wide desktop containers since
-// height followed container width 1:1 with no ceiling. background-size:
-// contain keeps the illustration's own proportions instead of stretching it.
-// Restricted to the main site (excludes body.is-in-subsite — see the
-// à-la-une sparkle mask further up for why).
-body:not(.is-in-subsite) #portal-footer-wrapper {
+// Frise footer — matches Figma node 55:481 (1100×152), sitting flush at the
+// boundary right before the footer. Previously attached to
+// #portal-footer-wrapper itself via bottom: 100% (its own bottom edge at
+// the footer's top edge) — confirmed live that this is invisible:
+// #portal-footer-wrapper has overflow: hidden (_trucaverif.scss), which
+// clips anything positioned outside its own box, including a child
+// pseudo-element placed above it. Anchored instead to the last content row
+// before the footer (no overflow:hidden there) with bottom: 0, so it stays
+// inside that row's own bounds regardless of the row's total height.
+// Visible at every breakpoint. Height is capped with clamp() instead of
+// scaling via aspect-ratio off a 100%-wide box — the latter grew huge on
+// wide desktop containers since height followed container width 1:1 with
+// no ceiling. background-size: contain keeps the illustration's own
+// proportions instead of stretching it. Restricted to the main site
+// (excludes body.is-in-subsite/is-in-minisite — see the à-la-une sparkle
+// mask further up for why).
+body:not(.is-in-subsite, .is-in-minisite)
+  #content-core
+  .row:has(> .sectionlinks.nous-suivre) {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     height: clamp(50px, 10vw, 140px);
     background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
@@ -798,8 +822,22 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
     }
   }
 
+  // Confirmed live: the logo's <figure> also inherits base's rich-text
+  // "figure-left" rule (.sectiontext .section-text .body-section.figure-left
+  // figure in _se-textes.scss), meant for images floated inside a paragraph
+  // — it caps the figure at 45% of its container (from md up) and floats
+  // it, so the logo rendered at ~70px instead of filling its 180px column.
+  // Match/exceed that selector's specificity to reset float/45% here.
+  .sectiontext .section-text .body-section.figure-left figure {
+    display: block;
+    float: none;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
   .sectiontext img {
     max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -1022,6 +1060,32 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
   }
 }
 
+// Confirmed live (375px, 5-level-deep page): each crumb wraps onto its own
+// line ("Accueil / Ma commune / Administration communale / Ressources
+// humaines / L'administration recrute / [current page]"), taking up to 6
+// lines before any real content appears. The immediate parent levels are
+// already repeated right below as the page's own title/subtitle, so nothing
+// is lost by keeping only "Accueil" (a one-tap way back to the homepage)
+// and the current page on a single line — with a "…" marker standing in
+// for the hidden levels so it doesn't read as a 2-level site.
+@include media-breakpoint-down(sm) {
+  #portal-breadcrumbs .breadcrumb {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #portal-breadcrumbs .breadcrumb-item {
+    &:not(:first-child, :last-child) {
+      display: none;
+    }
+
+    &:first-child:has(~ .breadcrumb-item:nth-child(3))::after {
+      content: "…";
+      margin: 0 0.35rem;
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // MAIN NAV DROPDOWN ITEMS ("Ma commune", "Vivre à Walhain"…) and .prev-nav
 // (the "Retour" back-arrow inside mobile/subsite dropdown panels) —
@@ -1063,6 +1127,16 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
     outline: 2px solid $primary;
     outline-offset: 2px;
   }
+}
+
+// Confirmed live (375px): the row is centred as a whole (base's
+// .colophonWrapper ul { justify-content: center }), but the last item
+// ("Site réalisé en collaboration avec IMIO…") is long enough to wrap onto
+// 2 lines and take the full row width on its own — its text stays
+// left-aligned (default) within that full-width box, so it hugs the left
+// edge instead of reading as centred like the pills above it.
+#portal-colophon li {
+  text-align: center;
 }
 
 // ---------------------------------------------------------------------------
