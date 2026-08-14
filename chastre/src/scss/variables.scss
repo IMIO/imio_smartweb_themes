@@ -122,7 +122,7 @@ $subsite-logo-background: $primary !default;
 $subsite-logo-padding: 0.3em 0.5rem !default;
 $subsite-logo-margin: 1rem 0 0 0 !default;
 $subsite-logo-radius: 10px !default;
-$subsite-logo-color: $font-title-color-light !default;
+$subsite-logo-color: $font-title-color-dark !default;
 
 //sub-sitenav
 $subsite-container-background: transparent !default;
@@ -374,9 +374,9 @@ $section-contact-p-margin: 1rem 0;
 $section-contact-portrait-ration: calc(4 / 5);
 
 // section-files
-$section-file-background-color: $primary !default;
+$section-file-background-color: $primary !important;
 $enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$enable-light-color-section-files: true !important;
 
 // section-link
 $section-link-background-color: #f8f8f8 !default;
