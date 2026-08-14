@@ -307,12 +307,10 @@ body.section-home-page div#messagesviewlet {
 }
 
 .sortable-section.sectionfiles h2 {
-  a {
-    color: #fff;
-  }
-  color: #fff;
-
+  a,
   span {
-    color: #fff;
+    color: #fff !important;
   }
+
+  color: #fff !important;
 }
