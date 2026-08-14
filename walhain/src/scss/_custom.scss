@@ -730,10 +730,18 @@ body:not(.is-in-subsite, .is-in-minisite) .sectionevents {
 // proportions instead of stretching it. Restricted to the main site
 // (excludes body.is-in-subsite/is-in-minisite — see the à-la-une sparkle
 // mask further up for why).
+// Confirmed live: being absolutely positioned, the frise ignored the row's
+// own content and simply overlaid its bottom ~128px — since "Bulletin
+// communal" (col-sm-3, stretched to match "Nous suivre"'s height) fills
+// that full height, its carousel image was covered. padding-bottom reserves
+// the same height as empty space so real content stops short of it; the
+// frise (still bottom: 0, unaffected by padding) fills exactly that gap —
+// still flush against the footer, no longer on top of the content above it.
 body:not(.is-in-subsite, .is-in-minisite)
   #content-core
   .row:has(> .sectionlinks.nous-suivre) {
   position: relative;
+  padding-bottom: clamp(50px, 10vw, 140px);
 
   &::before {
     content: "";
@@ -842,13 +850,33 @@ body:not(.is-in-subsite, .is-in-minisite)
   }
 }
 
-// More breathing room above the footer content, on every page (not just the
+// Breathing room above the footer content, on every page (not just the
 // homepage). This margin sits inside #portal-footer-wrapper, so it pushes
 // the footer's own content (logo, columns) down without moving the
 // wrapper's outer edge — the frise illustration above stays flush exactly
 // where the previous section ends, and this just adds dark space below it.
 #portal-footer-wrapper #portal-footer.container {
   margin: 96px 0 0;
+}
+
+// Confirmed live: the above only adds space INSIDE the dark footer, before
+// the logo/columns — the footer's own dark background still starts with a
+// hard 0px gap right where the last section ends, which is what actually
+// reads as "too close" (the boundary itself, not the content further
+// inside it). Give the wrapper a real top margin so the page's own (light)
+// background shows a gap before the dark footer begins.
+#portal-footer-wrapper {
+  margin-top: 64px;
+}
+
+// ...except on the homepage: the frise-footer illustration (further above)
+// is deliberately anchored flush against this exact boundary (bottom: 0 of
+// the last content row, right before the footer) so it reads as "glued" to
+// the footer background — an outer margin here would reopen a light gap
+// between the frise and the footer, undoing that fix.
+body:has(#content-core .row > .sectionlinks.nous-suivre)
+  #portal-footer-wrapper {
+  margin-top: 0;
 }
 
 // ---------------------------------------------------------------------------
@@ -1060,32 +1088,6 @@ body:not(.is-in-subsite, .is-in-minisite)
   }
 }
 
-// Confirmed live (375px, 5-level-deep page): each crumb wraps onto its own
-// line ("Accueil / Ma commune / Administration communale / Ressources
-// humaines / L'administration recrute / [current page]"), taking up to 6
-// lines before any real content appears. The immediate parent levels are
-// already repeated right below as the page's own title/subtitle, so nothing
-// is lost by keeping only "Accueil" (a one-tap way back to the homepage)
-// and the current page on a single line — with a "…" marker standing in
-// for the hidden levels so it doesn't read as a 2-level site.
-@include media-breakpoint-down(sm) {
-  #portal-breadcrumbs .breadcrumb {
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  #portal-breadcrumbs .breadcrumb-item {
-    &:not(:first-child, :last-child) {
-      display: none;
-    }
-
-    &:first-child:has(~ .breadcrumb-item:nth-child(3))::after {
-      content: "…";
-      margin: 0 0.35rem;
-    }
-  }
-}
-
 // ---------------------------------------------------------------------------
 // MAIN NAV DROPDOWN ITEMS ("Ma commune", "Vivre à Walhain"…) and .prev-nav
 // (the "Retour" back-arrow inside mobile/subsite dropdown panels) —
@@ -1173,4 +1175,30 @@ body:not(.is-in-subsite, .is-in-minisite)
 .list-card-title {
   font-size: 1.125rem;
   font-weight: 600;
+}
+
+// ---------------------------------------------------------------------------
+// "EFFECTUER CETTE DÉMARCHE EN LIGNE" button (.procedure a, base
+// _trucaverif.scss) — confirmed live on a Procedure page (e.g. /acte-de-
+// divorce, both above and below the content body): plain navy ($primary)
+// fill, white text, no :hover/:focus feedback at all. Sits directly on the
+// white content column on every instance checked, so a navy focus-visible
+// outline (7.96:1) reads clearly against that surround — same reasoning as
+// the "Mon compte" pill and subsite logo fixes above.
+// ---------------------------------------------------------------------------
+.procedure a {
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background: #353c80;
+    box-shadow: 0 4px 10px rgba(65, 73, 153, 35%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
 }
