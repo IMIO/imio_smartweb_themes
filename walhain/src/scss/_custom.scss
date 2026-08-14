@@ -1064,3 +1064,39 @@ body:not(.is-in-subsite) #portal-footer-wrapper {
     outline-offset: 2px;
   }
 }
+
+// ---------------------------------------------------------------------------
+// CONTACT LINKS (phone/email/"Itinéraire" — the "Contact"/"Adresse" section
+// component used all over the site: boites-jaunes, enquêtes publiques,
+// indicateur-expert, the footer, etc.) — confirmed live via the loaded
+// stylesheet rules: .contact_informations a and .itinerary a only ever get
+// "display: block", no :hover/:focus anywhere. Default colour is already
+// fine ($primary on white); this generalises the same feedback used
+// elsewhere to every page carrying this component, not just one instance.
+// ---------------------------------------------------------------------------
+.contact_informations a,
+.itinerary a {
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $accent;
+    text-decoration-color: $accent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// SEARCH/LISTING RESULT TITLES (.list-card-title — e.g. /je-trouve/...) —
+// confirmed live: 1.5625rem (25px) at font-weight 700 from a CSS bundle
+// outside base/src. Too large/heavy for a dense results list; the hover
+// colour-change fix on #block-menu a.row above already covers the missing
+// hover feedback — this only tones the type down.
+// ---------------------------------------------------------------------------
+.list-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
