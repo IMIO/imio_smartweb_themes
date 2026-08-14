@@ -532,6 +532,12 @@ body.is-in-minisite .section-title::before {
 // since they share height and sit flush against each other, the two
 // full-width layers line up with no seam.
 // ---------------------------------------------------------------------------
+// Shared with the frise-footer fix further below: that reserves
+// $footer-frise-height of empty space at the bottom of the row (for the
+// frise illustration, so it doesn't overlap this section's own content).
+// Declared here since this is its first use in source order.
+$footer-frise-height: clamp(50px, 10vw, 140px);
+
 .sectionlinks.nous-suivre,
 .sectioncollection.bulletin-communal {
   position: relative;
@@ -540,6 +546,12 @@ body.is-in-minisite .section-title::before {
   &::after {
     @include full-width;
 
+    // Confirmed live: full-width's bottom: 0 stops at this column's own
+    // (unpadded) bottom edge — once the frise-footer fix below reserves
+    // extra empty space after it for the illustration, that gap showed the
+    // page's plain background instead of continuing grey all the way to
+    // the footer. Extend past the column's own edge by that same height.
+    bottom: calc(-1 * #{$footer-frise-height});
     background: $surface-alt-2;
   }
 }
@@ -737,11 +749,13 @@ body:not(.is-in-subsite, .is-in-minisite) .sectionevents {
 // the same height as empty space so real content stops short of it; the
 // frise (still bottom: 0, unaffected by padding) fills exactly that gap —
 // still flush against the footer, no longer on top of the content above it.
+// ($footer-frise-height is declared earlier, alongside the "Nous suivre"/
+// "Bulletin communal" grey background that also needs to reach it.)
 body:not(.is-in-subsite, .is-in-minisite)
   #content-core
   .row:has(> .sectionlinks.nous-suivre) {
   position: relative;
-  padding-bottom: clamp(50px, 10vw, 140px);
+  padding-bottom: $footer-frise-height;
 
   &::before {
     content: "";
@@ -749,7 +763,7 @@ body:not(.is-in-subsite, .is-in-minisite)
     right: 0;
     bottom: 0;
     left: 0;
-    height: clamp(50px, 10vw, 140px);
+    height: $footer-frise-height;
     background: url("../../assets/svg/frise-footer.svg") no-repeat bottom center /
       contain;
     pointer-events: none;
@@ -1197,6 +1211,57 @@ body:has(#content-core .row > .sectionlinks.nous-suivre)
     box-shadow: 0 4px 10px rgba(65, 73, 153, 35%);
   }
 
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// "RETOUR À LA LISTE" back button (.r-back-button — actualités/agenda/
+// annuaire detail views). The fill/hover-fill colours are fixed via
+// $react-arrow-btn-bg/-color/-hv-bg in variables.scss (base's own
+// $grey-bg-on-white fill was confirmed live at ~1.2:1, well under WCAG
+// 1.4.11's 3:1 for a UI component's own boundary). Two things aren't
+// reachable that way:
+// 1. Its hover outline is hardcoded to $grey-bg directly in base (no
+//    dedicated variable) — with the new navy hover fill, a light-grey
+//    outline barely reads; switched to white here instead.
+// 2. Its <i class="bi bi-arrow-left-short"> renders with an empty
+//    ::before content — the external bootstrap-icons bundle this button
+//    relies on (outside base/src, not editable here) only ships the
+//    shared .bi::before base styles, not this specific glyph's codepoint,
+//    so the arrow itself never appeared at all. Replaced with a
+//    self-contained CSS-drawn chevron so it no longer depends on that
+//    external bundle being complete. base also has no :focus-visible at
+//    all (only :hover) — added one here.
+// ---------------------------------------------------------------------------
+.r-back-button {
+  i {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-top: 2.5px solid currentcolor;
+      border-right: 2.5px solid currentcolor;
+      transform: translate(-50%, -50%) rotate(225deg);
+    }
+  }
+
+  &:hover {
+    outline-color: #fff;
+  }
+
+  // Sits on the white content background — navy outline reads clearly
+  // there (7.96:1), same reasoning as every other button fix above.
   &:focus-visible {
     outline: 2px solid $primary;
     outline-offset: 2px;

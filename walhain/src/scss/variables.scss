@@ -453,6 +453,16 @@ $cookie-banner-hv-bg: transparent !default;
 $cookie-banner-color: #fff !default;
 $cookie-banner-hv-color: $primary !default;
 
+// "Retour à la liste" back button (actualités/agenda/annuaire detail
+// views) — confirmed live: the default $grey-bg (#ebebeb) fill on the
+// white content background is only ~1.2:1 (WCAG 1.4.11 needs 3:1). The
+// hover state's own outline colour isn't behind a variable in base (it's
+// hardcoded to $grey-bg directly) and the icon itself needs a markup-level
+// fix, not a variable — both are handled in _custom.scss instead.
+$react-arrow-btn-bg: $primary !default;
+$react-arrow-btn-color: #fff !default;
+$react-arrow-btn-hv-bg: #353c80 !default;
+
 :root {
   --bs-card-spacer-x: 1rem;
   --bs-card-spacer-y: 1rem;
