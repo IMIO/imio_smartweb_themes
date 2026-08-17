@@ -109,8 +109,12 @@
   .r-content-text mark {
     background-color: var(--primary-svg);
 
+    a {
+      color: #fff !important;
+    }
+
     a:hover {
-      color: var(--primary-red);
+      color: var(--primary-red) !important;
     }
   }
 
