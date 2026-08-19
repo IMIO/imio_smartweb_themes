@@ -94,11 +94,11 @@
     border: 1px solid $primary-gris;
 
     @media (max-width: 1200px) {
-      padding-bottom: 400px;
+      padding-bottom: 0;
     }
 
     @media (max-width: 991px) {
-      padding-bottom: 350px;
+      padding-bottom: 0;
     }
   }
 
