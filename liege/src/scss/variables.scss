@@ -372,11 +372,11 @@ $section-text-link-hover-decoration: solid 1px $primary-red !default;
 $section-text-max-width: 760px !default;
 
 // Section
-$section-padding-y: 3rem;
+$section-padding-y: 2.5rem !default;
 $section-padding: (
-  sm: 3rem,
-  md: 3rem,
-  lg: 3rem,
+  sm: 2.5rem !default,
+  md: 2.5rem !default,
+  lg: 2.5rem !default,
 );
 
 // section-contact
