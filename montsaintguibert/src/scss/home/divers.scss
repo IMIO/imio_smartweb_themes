@@ -407,42 +407,9 @@ body.template-block_view #content-core::after {
   }
 }
 
-@media (min-width: 1200px) {
-  #subsite-navigation > ul {
-    gap: 12px;
-  }
-}
-
-#subsite-navigation > ul li.nav-item {
-  padding: 10px;
-  background: #fff;
-  border-radius: 20px;
-}
-
-#subsite-navigation {
-  padding: initial;
-}
-
 @media screen and (min-width: 1200px) {
   .subsite-container {
     gap: 25px;
-  }
-}
-
-#subsite-navigation > ul > li > a {
-  text-transform: initial;
-}
-
-@media screen and (max-width: 1199px) {
-  #subsite-navigation > ul > li > a {
-    padding: 10px;
-    background: $orange;
-    border-radius: 20px;
-    margin-top: 10px;
-  }
-
-  #subsite-navigation {
-    padding: initial;
   }
 }
 
