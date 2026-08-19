@@ -527,13 +527,6 @@ footer #container-section-noussuivre {
   margin: 0 2rem;
 }
 
-@media screen and (min-width: 992px) {
-  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
-  #subsite-navigation #portal-globalnav > li > .has_subtree {
-    margin-top: 3.5rem;
-  }
-}
-
 @media screen and (max-width: 992px) {
   #body-section-en-un-clic li {
     width: 100% !important;
@@ -697,23 +690,6 @@ h3 {
   }
 }
 
-#portal-globalnav-collapse .dropdown .nav-link:focus,
-#portal-globalnav-collapse .dropdown .nav-link:hover,
-#subsite-navigation .dropdown .nav-link:focus,
-#subsite-navigation .dropdown .nav-link:hover {
-  color: $primary-blue;
-
-  .site-cpas .swiper-banner-content-wrapper .swiper-banner-content {
-    .swiper-banner-title {
-      display: none;
-    }
-
-    .swiper-banner-description p {
-      font-size: 24px;
-      font-weight: 700;
-    }
-  }
-}
 //BANNER LINK
 span.swiper-banner-link a {
   color: #fff;

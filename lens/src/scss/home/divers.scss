@@ -43,11 +43,6 @@ div.swiper-image::before {
   margin: 1rem 0;
 }
 
-#subsite-navigation > ul > li > a:focus::before,
-#subsite-navigation > ul > li > a:hover::before {
-  background-color: $primary;
-}
-
 #portal-globalnav-wrapper
   #portal-globalnav-collapse
   #portal-globalnav

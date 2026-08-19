@@ -43,10 +43,6 @@ div#subsite-logo img {
   }
 }
 
-#subsite-navigation > ul li.show-nav > .has_subtree.dropdown {
-  margin-top: 2rem;
-}
-
 .subsite-container {
   background: transparent;
   padding: 1rem 0;
@@ -591,14 +587,4 @@ input#search_button {
 
 .sectionfiles h2.section-title {
   color: #fff;
-}
-
-.subsite-container #subsite-logo a:focus,
-.subsite-container #subsite-logo a:hover {
-  background: $primary;
-}
-
-#content-header #subsite-navigation .nav-item-depth-1 > a,
-#content-header #subsite-navigation.activated .nav-item-depth-1 > a {
-  color: #fff !important;
 }

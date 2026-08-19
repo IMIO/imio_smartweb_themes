@@ -118,25 +118,6 @@
     }
   }
 
-  #subsite-navigation .nav-item {
-    background: #f1f1f1;
-    border: 1px $primary-svg solid;
-    border-radius: 50px;
-    padding: 5px 10px;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    & > a {
-      padding: 0.5rem;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
   .section-home-page #portal-footer-wrapper {
     padding: 5rem 0 2rem !important;
   }

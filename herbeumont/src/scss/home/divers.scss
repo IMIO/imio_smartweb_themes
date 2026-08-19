@@ -734,26 +734,6 @@ h3 {
   }
 }
 
-#portal-globalnav-collapse .dropdown .nav-link:focus,
-#portal-globalnav-collapse .dropdown .nav-link:hover,
-#subsite-navigation .dropdown .nav-link:focus,
-#subsite-navigation .dropdown .nav-link:hover {
-  color: $primary;
-
-  .site-cpas .swiper-banner-content-wrapper .swiper-banner-content {
-    .swiper-banner-title {
-      display: none;
-    }
-
-    .swiper-banner-description p {
-      font-size: 24px;
-      font-weight: 700;
-      color: #fff !important;
-      line-height: 34px;
-    }
-  }
-}
-
 .template-block_view #content-core,
 .template-block_view_with_images #content-core,
 .template-summary_view #content-core,
