@@ -381,7 +381,7 @@ $section-padding: (
   sm: 3rem,
   md: 4rem,
   lg: 4.3rem,
-);
+) !default;
 
 // section-contact
 $section-contact-title-size: $h2-font-size;
