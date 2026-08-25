@@ -190,7 +190,7 @@
   padding: 120px;
   height: 800px;
   place-content: center;
-
+  background-color: transparent;
   &::after {
     background: url("../../assets/svg/bg_bull.svg") top right no-repeat;
     background-size: cover;
