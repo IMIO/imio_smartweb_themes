@@ -1267,3 +1267,14 @@ body:has(#content-core .row > .sectionlinks.nous-suivre)
     outline-offset: 2px;
   }
 }
+
+body .r-item-arrow-more {
+  background-color: $primary;
+  color: #fff;
+}
+
+.r-list-item-group:hover .r-item-arrow-more {
+  outline: solid 2px #ebebeb;
+  color: $primary;
+  background-color: transparent;
+}
