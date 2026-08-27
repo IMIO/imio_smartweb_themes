@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/IMIO/imio_smartweb_themes/compare/v1.0.0...v1.0.1) (2026-08-27)
+
+* Isolate sub-menu base js (b6c86b3e)
+* Add missing default in variables (e6d78c9e)
+* Fix sub-menu colors (3ead1483)
+* Fix sub-menu colors (29048dcb)
+* Fix chevron rotation for submenu (c1cecaa5)
+
 ## [1.0.0](https://github.com/IMIO/imio_smartweb_themes/compare/v0.3.17...v1.0.0) (2026-08-12)
 
 * Fix messviewlet z-index (7b0c2eda)
