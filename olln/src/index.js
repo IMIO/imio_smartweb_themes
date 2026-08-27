@@ -1,4 +1,5 @@
 import "./scss/main.scss";
+import "@imiobe/plonetheme-smartweb-base/src/js/nav-submenu";
 import "./js/tween-max";
 
 $(document).ready(function () {

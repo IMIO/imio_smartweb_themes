@@ -1,4 +1,5 @@
 import "./scss/main.scss";
+import "@imiobe/plonetheme-smartweb-base/src/js/nav-submenu";
 $(document).ready(function () {
   console.log("kamoulox");
   $("#portal-globalnav-collapse").on("show.bs.collapse", function () {

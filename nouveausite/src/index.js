@@ -1,4 +1,5 @@
 import "./scss/main.scss";
+import "@imiobe/plonetheme-smartweb-base/src/js/nav-submenu";
 // import "https://unpkg.com/scrollreveal";
 $(document).ready(function () {
   $("#portal-globalnav-collapse").on("show.bs.collapse", function () {

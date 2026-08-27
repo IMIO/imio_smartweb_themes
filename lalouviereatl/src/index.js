@@ -1,5 +1,6 @@
 import "./tween-max";
 import "./scss/main.scss";
+import "@imiobe/plonetheme-smartweb-base/src/js/nav-submenu";
 import Rellax from "./rellax.min.js";
 import lottie from "lottie-web";
 import { DotLottie } from "@lottiefiles/dotlottie-web";
