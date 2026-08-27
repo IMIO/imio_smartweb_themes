@@ -502,19 +502,38 @@ $nav-dropdown-max-depth: 4; // adapter si besoin
     }
 
     .sub-nav-scroll-btn {
+      cursor: pointer;
       display: block;
       position: absolute;
-      backdrop-filter: blur(10px);
+      // backdrop-filter: blur(10px);
       top: 5px;
       bottom: 0;
       width: 37px;
-      background-color: #ffffff6b;
+      // background-color: #ffffff6b;
       border: none;
       padding: 0;
-      cursor: pointer;
       z-index: 2;
       opacity: 100%;
       transition: opacity 0.3s ease;
+      background: rgba(159, 159, 159, 20%);
+      backdrop-filter: blur(20px) saturate(180%);
+      box-shadow: 0 calc(4 / 1440 * min(100vw, 1440px))
+        calc(20 / 1440 * min(100vw, 1440px)) #29282a14;
+
+      // &::before {
+      //   content: "";
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   top: 0;
+      //   position: absolute;
+      //   height: auto;
+      //   background: rgba(255, 255, 255, 20%);
+      //   backdrop-filter: blur(20px) saturate(180%);
+      //   box-shadow: 0 calc(4 / 1440 * min(100vw, 1440px))
+      //     calc(20 / 1440 * min(100vw, 1440px)) #29282a14;
+      //   opacity: 100%;
+      // }
 
       &.is-hidden {
         opacity: 0%;
