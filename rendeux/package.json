@@ -29,7 +29,7 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@imiobe/plonetheme-smartweb-base": "1.0.0",
+    "@imiobe/plonetheme-smartweb-base": "1.0.1",
     "@popperjs/core": "^2.11.6"
   }
 }
