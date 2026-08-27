@@ -43,7 +43,7 @@
     },
     "git": {
       "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}",
+      "tagName": "base-v${version}",
       "changelog": "git log --pretty=format:\"* %s (%h)\" $(git describe --tags --abbrev=0)...HEAD -- ."
     },
     "npm": {
