@@ -314,6 +314,15 @@ body.is-in-minisite .section-title::before {
 // ---------------------------------------------------------------------------
 // HEADER — "Mon compte" pill (no border-radius variable exists for it)
 // ---------------------------------------------------------------------------
+
+@media screen and (max-width: 992px) {
+  #header-action .account {
+    border-radius: $pill-radius;
+    background-color: $primary;
+    color: #fff;
+  }
+}
+
 #header-links .account {
   border-radius: $pill-radius;
   transition:
@@ -1277,4 +1286,11 @@ body .r-item-arrow-more {
   outline: solid 2px #ebebeb;
   color: $primary;
   background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .a-la-une .swiper-slide .swiper_description,
+  .a-la-une .swiper-slide .swiper_title {
+    padding: 0 1rem;
+  }
 }
