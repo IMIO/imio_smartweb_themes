@@ -238,6 +238,7 @@
     div {
       width: 100%;
       position: relative;
+      background-size: cover;
 
       .swiper_link {
         color: #fff !important;
@@ -285,7 +286,8 @@
         );
         z-index: 0;
 
-        h3 {
+        h3,
+        span {
           font-size: 16px;
           font-weight: 400;
           background: #000 !important;
