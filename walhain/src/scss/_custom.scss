@@ -76,7 +76,11 @@
 // body.is-in-minisite — confirmed live on walhain.preprod.imio.be/cpas —
 // and body.is-in-subsite, e.g. "Collège communal": Plone's two different
 // markers for pages inside a microsite/subsite sharing this theme).
-body:not(.is-in-subsite, .is-in-minisite) .smartweb_herobanner {
+body.portaltype-imio-smartweb-portalpage.section-home-pag:not(
+    .is-in-subsite,
+    .is-in-minisite
+  )
+  .smartweb_herobanner {
   position: relative;
 
   &::before {
@@ -1293,4 +1297,8 @@ body .r-item-arrow-more {
   .a-la-une .swiper-slide .swiper_title {
     padding: 0 1rem;
   }
+}
+
+.partenaires ul.row {
+  margin-top: 2rem !important;
 }
