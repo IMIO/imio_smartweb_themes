@@ -1,0 +1,339 @@
+#portal-header-top {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50vw;
+    width: 50px;
+    height: 380px;
+    background: url("../../assets/svg/before-after.svg") no-repeat center top;
+    background-size: contain;
+    z-index: 999;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
+
+#portal-header-top {
+  padding: 20px 0 !important;
+}
+
+.sticky-demi-active {
+  &::after {
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 10%);
+  }
+}
+
+// ─── Logo sr-only (bandeau blanc) ─────────────────────────────────────────────
+.section-accueil #portal-logo .sr-only,
+.section-index #portal-logo .sr-only {
+  position: absolute;
+  height: 90px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: unset;
+  border: 0;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 100%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  top: 110px;
+
+  &::before {
+    display: none;
+  }
+
+  span {
+    font-size: 0;
+    width: 100%;
+    max-width: 450px;
+
+    &::before {
+      content: "";
+      display: block;
+      background: url("../../assets/svg/logo-boverie.svg") no-repeat center /
+        contain !important;
+      width: calc(100% - 60px);
+      height: 90px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 990px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    height: 100px;
+  }
+}
+
+// ─── Hero banner ──────────────────────────────────────────────────────────────
+.smartweb_herobanner {
+  margin: 110px 0 0;
+  overflow: hidden;
+
+  .bannerSwiper {
+    height: 65vh;
+  }
+
+  @media (max-width: 1200px) {
+    .bannerSwiper {
+      height: 50vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bannerSwiper {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bannerSwiper {
+      height: 350px;
+    }
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  padding: 0 0 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: auto !important;
+  height: 300px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0%) 0%,
+    rgba(0, 0, 0, 100%) 100%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100vw;
+  align-content: flex-end;
+
+  .swiper-banner-content {
+    background: none;
+    border-radius: 0 0 0 20px;
+    display: block;
+    float: right;
+    justify-self: right;
+    padding: 30px 150px 30px 40px;
+    bottom: 0;
+    top: auto;
+
+    @media (max-width: 991px) {
+      justify-self: center;
+      padding: 30px 30px 80px !important;
+    }
+
+    .swiper-banner-title {
+      display: none;
+    }
+
+    .swiper-banner-link a {
+      background: #000 !important;
+      color: #fff !important;
+      border: 2px solid #fff !important;
+      border-radius: 50px;
+      padding: 10px 22px;
+      text-decoration: none;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $primary-red !important;
+        border-color: $primary-red !important;
+        color: #fff !important;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+// ─── Barre de recherche ───────────────────────────────────────────────────────
+.search-banner {
+  margin: -50px 0 20px !important;
+  z-index: 0;
+  text-align: center;
+
+  .html a {
+    display: inline-block;
+    background: #fff url("../../assets/svg/search.svg") no-repeat right 20px
+      center;
+    border: 3px solid $primary-svg;
+    padding: 15px 50px 15px 15px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #8d8d8d;
+    width: calc(100% - 60px);
+    max-width: 850px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+}
+
+// ─── Bouton recherche header ──────────────────────────────────────────────────
+#portal-header #portal-header-top #header-links {
+  gap: 10px;
+
+  #search-link a {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid $primary;
+    transition: all 0.3s ease;
+
+    &::before {
+      filter: invert(1);
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-left: 0 !important;
+    }
+
+    &:hover {
+      background: $primary-red;
+      border: 2px solid $primary-red;
+
+      &::before {
+        filter: invert(0);
+      }
+    }
+  }
+}
+
+// ─── Bouton compte header ─────────────────────────────────────────────────────
+#header-actions {
+  a.account {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: $primary-red !important;
+    border: 2px solid $primary-red;
+    border-radius: 50px;
+    padding: 14px 24px !important;
+    text-decoration: none;
+    box-sizing: border-box;
+    height: 50px;
+    transition: background-color 0.2s ease;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("../../assets/svg/perso-compte.svg") no-repeat center /
+        contain;
+      flex-shrink: 0;
+    }
+
+    span {
+      color: #fff !important;
+      font-size: 14px !important;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        background-color: $primary !important;
+        border: 2px solid $primary;
+      }
+    }
+  }
+}
+
+#portal-globalnav-wrapper {
+  .nav-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px !important;
+      background-color: $primary;
+      transition: width 0.3s ease !important;
+    }
+
+    &:hover::before,
+    &.active::before {
+      width: 100%;
+      transition: width 0.3s ease !important;
+    }
+  }
+}
+
+#portal-globalnav li > .has_subtree {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 16%);
+}
+
+#portal-globalnav .quick-access .quick-access-title {
+  padding: 20px 0 5px !important;
+  margin-top: 20px !important;
+  display: block;
+  background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
+}
+
+.sr-only {
+  display: grid;
+  grid-template-rows: 1fr;
+  opacity: 100%;
+  transition:
+    grid-template-rows 0.3s ease,
+    opacity 0.3s ease;
+
+  > * {
+    overflow: hidden;
+  }
+}
+
+.sticky-demi-active {
+  .sr-only {
+    grid-template-rows: 0fr;
+    opacity: 0%;
+    transition:
+      grid-template-rows 0.3s ease,
+      opacity 0.3s ease;
+  }
+}
+
+.sticky-is-top {
+  .sr-only {
+    grid-template-rows: 1fr;
+    opacity: 100%;
+    transition:
+      grid-template-rows 0.4s ease,
+      opacity 0.4s ease 0.1s;
+  }
+}

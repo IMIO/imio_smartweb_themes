@@ -1,0 +1,47 @@
+// ─── Bandeau cookies ──────────────────────────────────────────────────────────
+#gdpr-consent-banner {
+  // "Tout accepter" — plein
+  input[name="consent"] {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid $primary !important;
+    border-radius: 50px;
+    padding: 10px 22px;
+
+    &:hover {
+      background: $primary-red !important;
+      border-color: $primary-red !important;
+      color: #fff !important;
+    }
+  }
+
+  // "Tout refuser" — outline
+  input[name="refuse"] {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid $primary !important;
+    border-radius: 50px;
+    padding: 10px 22px;
+
+    &:hover {
+      background: $primary-red !important;
+      border-color: $primary-red !important;
+      color: #fff !important;
+    }
+  }
+
+  // "En savoir plus"
+  a {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid $primary !important;
+    border-radius: 50px;
+    padding: 10px 22px;
+
+    &:hover {
+      background: $primary-red !important;
+      border-color: $primary-red !important;
+      color: #fff !important;
+    }
+  }
+}

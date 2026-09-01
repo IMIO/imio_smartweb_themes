@@ -1,0 +1,277 @@
+.sectionevents {
+  position: relative;
+  //background: #fff url("../../assets/svg/bg-agenda.svg") no-repeat center top;
+  background-size: 100%;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  margin: 0;
+  overflow-x: hidden;
+
+  // ─── Décoration bg gauche ───────────────────────────────────────────────────
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 109px;
+    height: 377px;
+    //background: url("../../assets/svg/bg-03.svg") no-repeat center top;
+    background-size: contain;
+
+    @include media-breakpoint-down(lg) {
+      width: 68px;
+      height: 236px;
+      top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 45px;
+      height: 157px;
+      top: 0;
+    }
+
+    @media (max-width: 350px) {
+      display: none;
+    }
+  }
+
+  // ─── Titre de section ───────────────────────────────────────────────────────
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: left;
+    color: $primary;
+    margin: 0;
+    position: absolute;
+    left: auto;
+    z-index: 0;
+    transform-origin: right center;
+
+    @media (max-width: 991px) {
+      font-size: 35px !important;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 25px !important;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // ─── Swiper ─────────────────────────────────────────────────────────────────
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+
+  .swiper-image {
+    //border-radius: 15px !important;
+    transition: 0.5s;
+  }
+
+  .swiper_title {
+    padding: 1rem !important;
+
+    h3 {
+      font-size: 26px !important;
+    }
+  }
+
+  .swiper_date {
+    border-radius: 50px;
+    font-weight: 200 !important;
+  }
+
+  // ─── Éléments cachés ────────────────────────────────────────────────────────
+  .swiper-pagination {
+    display: none;
+  }
+
+  // ─── Voir toutes les actualités ─────────────────────────────────────────────
+  .see_all {
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+
+    a {
+      background: #fff !important;
+      color: #000 !important;
+      border: 2px solid #000 !important;
+      border-radius: 50px;
+      padding: 10px 22px;
+      text-decoration: none;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $primary-red !important;
+        border-color: $primary-red !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  // ─── Hover slide ────────────────────────────────────────────────────────────
+  @media (min-width: 992px) {
+    .swiper-slide {
+      transition: transform 0.5s ease;
+
+      .swiper-image {
+        background-color: transparent;
+        background-blend-mode: multiply;
+        transition:
+          background-color 0.5s ease,
+          transform 0.5s ease;
+      }
+
+      &:hover {
+        //transform: translateY(10px);
+
+        .swiper-image {
+          background-color: rgba($primary, 0.2);
+        }
+
+        .swiper_title {
+          h3 {
+            //color: $primary-red;
+          }
+        }
+      }
+    }
+  }
+
+  // ─── Responsive global ──────────────────────────────────────────────────────
+  @media (max-width: 991px) {
+    padding: 40px !important;
+  }
+
+  @media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block !important;
+    }
+  }
+}
+
+.event-agenda {
+  .container {
+    max-width: 1000px;
+
+    @media (max-width: 1400px) {
+      max-width: 800px;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 600px;
+      padding-top: 200px;
+    }
+
+    @media (max-width: 767px) {
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: block !important;
+      }
+
+      .swiper-image {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // ─── Titre de section ───────────────────────────────────────────────────────
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: $primary;
+    margin: 0;
+    position: absolute;
+    left: 40px;
+    transform-origin: left center;
+    padding: 0;
+    font-size: 150px;
+    line-height: 130px;
+    max-width: 240px;
+    font-weight: 700 !important;
+    line-break: anywhere;
+    top: 100px;
+    //margin-left: -165px;
+    z-index: -10;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 380px;
+      background: url("../../assets/svg/before-after.svg") no-repeat center top;
+      background-size: contain;
+      z-index: 999;
+      left: -40px;
+      bottom: -370px;
+
+      @media (max-width: 991px) {
+        //display: none;
+        left: -38px;
+        bottom: -378px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $primary;
+      margin: 0 auto;
+      position: absolute;
+      left: auto;
+      transform-origin: center center;
+      padding: 0;
+      font-size: 80px !important;
+      line-height: 65px;
+      max-width: 130px;
+      font-weight: 700 !important;
+      line-break: anywhere;
+      top: 0;
+      z-index: -10;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 25px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .swiper_link {
+    .swiper_title {
+      padding: 1rem !important;
+
+      h3 {
+        padding-bottom: 40px;
+        background: url("../../assets/svg/arrow-agenda.svg") no-repeat left
+          bottom;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &:hover {
+      .swiper_title {
+        h3 {
+          background: url("../../assets/svg/arrow-agenda.svg") no-repeat 10px
+            bottom;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+}

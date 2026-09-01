@@ -1,4 +1,484 @@
+//// VARIABLES
+
+// ... add your variables here
+
 $enable-roboto-webfont: false;
 
+//// IMPORTS
+
+// Import barceloneta files from node_modules --load-path=node_modules
+
+// @import "@plone/plonetheme-barceloneta-base/scss/barceloneta";
+
+// @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
 @import "./variables";
-@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "../../../base/src/scss/main";
+//@import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+
+//// STYLES
+
+// ... add your styles here
+@import "./home/banner";
+@import "./home/quick";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/a-la-une";
+@import "./home/annuaire";
+@import "./home/cookie";
+@import "./home/footer";
+@import "./home/page-int";
+@import "./home/partenaires";
+@import "./se-link";
+@import "./se-files";
+@import "./se-section-collection";
+
+body {
+  background: #fff;
+}
+
+#portal-globalnav > li a:hover {
+  color: #000;
+}
+
+h1 {
+  font-family: $font-family-base !important;
+  font-weight: 500 !important;
+}
+
+h2 {
+  font-weight: 500 !important;
+  font-size: 24px;
+}
+
+//footer
+footer {
+  #container-section-noussuivre {
+    .table_title {
+      display: none;
+    }
+
+    ul.row {
+      flex-flow: row wrap;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+}
+
+.portaltype-imio-smartweb-directoryview,
+.portaltype-imio-smartweb-newsview,
+.portaltype-imio-smartweb-eventsview {
+  #content > header {
+    display: none;
+  }
+}
+
+// bug z-index
+
+.pagination {
+  .page-item.active {
+    z-index: 0;
+  }
+}
+
+footer #container-section-noussuivre {
+  li {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      svg path:nth-child(2) {
+        fill: #3f3f3f !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portaltype-imio-smartweb-portalpage .section-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+#portal-breadcrumbs {
+  background: transparent !important;
+
+  .container,
+  .breadcrumb {
+    padding-left: 0;
+  }
+}
+
+.portaltype-imio-smartweb-portalpage {
+  background-size: cover;
+}
+
+// footer
+.footer-logo {
+  figure img {
+    width: 100% !important;
+  }
+}
+
+.footer-slogan {
+  .text {
+    max-width: 204px;
+    text-align: center;
+
+    p {
+      font-size: 33px;
+      font-weight: 200;
+    }
+  }
+}
+
+.footer-fb {
+  .table_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    text-decoration: none;
+
+    .image {
+      width: auto;
+
+      svg {
+        height: 25px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+#portal-footer-wrapper {
+  .smartweb_footer {
+    .text {
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.r-add-contact a,
+.r-add-event a,
+.r-add-news a {
+  background: $primary-svg;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: #000;
+    transition: all 0.5s ease;
+  }
+}
+
+.r-filter div[class*="control"] {
+  border-radius: 5px;
+}
+
+.procedure a::after {
+  content: "\F135";
+  font-family: Bootstrap-icons;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+.sectiontext .section-text .section-title a {
+  text-decoration: none;
+  color: $primary-red !important;
+}
+
+.sectiontext .section-text .section-title a.collapsed {
+  color: $primary-red !important;
+}
+
+// header common
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-column-content .sectioncontact .contact-type-organization {
+  background: none;
+}
+
+.sectionlinks {
+  background: none;
+}
+
+.sectionlinks h2::before {
+  display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+  }
+
+  .navbar .container {
+    padding: 0 5px 0 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bloc-newsletter {
+    margin: 4.5rem 0;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
+}
+
+#portal-globalnav .dropdown .nav-title a {
+  color: $primary;
+}
+
+#portal-header #portal-header-top #portal-globalnav-wrapper {
+  margin: 0 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #body-section-en-un-clic li {
+    width: 100% !important;
+  }
+}
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary-svg;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary-svg;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background: $primary-svg;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background: $primary-svg;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background: $primary-red;
+  color: #fff;
+}
+
+// logo minisite
+#portal-header #portal-header-top .minisite_logo {
+  max-width: 100px !important;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer h2 {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subsection-flash-communal .block-menu-element a .card-img-top {
+  padding-top: 100%;
+  background-position: top;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer a,
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+#portal-footer-wrapper #portal-footer #smartweb-footer a:hover,
+#portal-footer-wrapper #portal-footer #smartweb-minisite-footer a:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+//navbar
+.navbar-toggler {
+  padding: 0 !important;
+  background: #fff !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar .container {
+  padding: 0 !important;
+}
+
+.portaltype-imio-smartweb-portalpage.section-home-page {
+  #messagesviewlet {
+    position: absolute;
+    top: 100px;
+  }
+}
+
+.r-add-contact a,
+.r-add-event a,
+.r-add-news a {
+  background: $primary-svg;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-size: 14px !important;
+  line-height: 28px !important;
+
+  &:hover {
+    background: #000;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .r-add-contact,
+  .r-add-event {
+    bottom: 0;
+    padding-bottom: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-right: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .r-add-news {
+    bottom: 0;
+    padding-bottom: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .r-add-news {
+    top: auto;
+    padding-bottom: 0;
+  }
+}
+
+#portal-header #portal-header-top .minisite_logo {
+  max-width: 120px !important;
+  height: auto !important;
+}
+
+.contact_map {
+  z-index: -1;
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
+}
+
+.r-add-event,
+.r-add-news {
+  display: none !important;
+}
+
+.show-hide-banner {
+  float: right;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(70%) saturate(800%)
+    hue-rotate(280deg) brightness(90%);
+}
+
+.sectiontext .h2,
+.sectiontext h2 {
+  margin-bottom: 1rem;
+  margin-top: 0 !important;
+}
+
+@media (min-width: 768px) {
+  div:not(.sectiontext) + .sectiontext .h2,
+  div:not(.sectiontext) + .sectiontext h2 {
+    margin-top: 0 !important;
+  }
+}
+
+.sectionselections li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sectiontext .section-text .body-section.figure-top figure {
+  margin-top: 0;
+}
+
+.nope-int {
+  display: none !important;
+}

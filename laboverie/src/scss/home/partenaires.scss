@@ -1,0 +1,64 @@
+.home-partenaires {
+  position: relative;
+
+  .display-carre .swiper-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    padding: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50vw;
+    width: 50px;
+    height: 380px;
+    background: url("../../assets/svg/before-after.svg") no-repeat center top;
+    background-size: contain;
+    z-index: 999;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+
+  .swiper_title {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    opacity: 100%;
+    border: 5px solid #fff !important;
+    margin: 0 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 0;
+    background: #fff !important;
+    opacity: 100%;
+    border: 2px solid #000 !important;
+  }
+
+  .section-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+}

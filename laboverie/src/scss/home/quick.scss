@@ -1,0 +1,67 @@
+.quick-access {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  max-width: 900px;
+  margin: auto;
+  overflow-x: hidden;
+
+  // ─── Titre de section ───────────────────────────────────────────────────────
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+  }
+
+  // ─── Liste des accès ────────────────────────────────────────────────────────
+  .body-section {
+    li {
+      .table_image {
+        padding: 20px;
+        background: #fff;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        .image.d-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          position: relative;
+          transition: all 0.3s ease;
+        }
+
+        svg {
+          max-height: 60px;
+        }
+      }
+
+      &:hover {
+        .table_image {
+          background-color: $primary-light;
+          border-radius: 20px;
+          padding: 20px;
+        }
+
+        .table_title span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // ─── Responsive ─────────────────────────────────────────────────────────────
+  .row {
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      grid-gap: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(56px, 150px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}
