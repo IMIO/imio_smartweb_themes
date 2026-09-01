@@ -76,7 +76,7 @@
 // body.is-in-minisite — confirmed live on walhain.preprod.imio.be/cpas —
 // and body.is-in-subsite, e.g. "Collège communal": Plone's two different
 // markers for pages inside a microsite/subsite sharing this theme).
-body.portaltype-imio-smartweb-portalpage.section-home-pag:not(
+body.portaltype-imio-smartweb-portalpage.section-home-page:not(
     .is-in-subsite,
     .is-in-minisite
   )
