@@ -1,3 +1,31 @@
 import "./scss/main.scss";
-
 import "@imiobe/plonetheme-smartweb-base/src/js/nav-submenu";
+$(document).ready(function () {
+  $("#portal-globalnav-collapse").on("show.bs.collapse", function () {
+    document.body.classList.add("open-nav-overflow");
+    document.documentElement.classList.add("open-nav-overflow");
+  });
+  $("#portal-globalnav-collapse").on("hidden.bs.collapse", function () {
+    document.body.classList.remove("open-nav-overflow");
+    document.documentElement.classList.remove("open-nav-overflow");
+  });
+
+  // For banner
+
+  let checkBanner = document.querySelector("#portal-header #banner");
+  let headerCustom = document.getElementById("portal-header");
+
+  if (checkBanner != null) {
+    headerCustom.classList.add("header-custom");
+  }
+
+  // Sticky nav scroll
+  const nav = document.getElementById("portal-header");
+  if (nav) {
+    window.addEventListener("scroll", () => {
+      const atTop = window.scrollY === 0;
+      nav.classList.toggle("sticky-is-top", atTop);
+      nav.classList.toggle("sticky-demi-active", !atTop);
+    });
+  }
+});
