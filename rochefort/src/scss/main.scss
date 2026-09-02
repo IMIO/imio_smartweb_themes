@@ -182,3 +182,8 @@ body::after {
 body #subsite-navigation > ul > .has_subtree.nav-item > .nav-link::after {
   background-image: url("../../assets/svg/chevron.svg");
 }
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: #fff;
+}
