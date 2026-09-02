@@ -159,15 +159,10 @@ body::after {
   transition: 0.5s;
 }
 
-.subsite-container #subsite-logo {
-  background: $color-darkgrey;
-}
-
 .subsite-container {
-  background: $primary;
-
   #subsite-logo a {
-    color: $primary;
+    color: #000;
+    text-transform: uppercase;
   }
 }
 
