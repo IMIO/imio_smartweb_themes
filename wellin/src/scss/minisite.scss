@@ -1310,10 +1310,6 @@ $primary-competences-svg: #e6740a;
   display: none;
 }
 
-.is-in-minisite .sectiontext .section-text ul {
-  list-style-type: none;
-}
-
 .is-in-minisite .sectiontext .section-text ul li::before {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="%23004f8c"/></svg>') !important;
+  content: initial !important;
 }
