@@ -1,0 +1,351 @@
+#portal-breadcrumbs {
+  margin: 0 !important;
+  z-index: 0;
+  max-width: max-content;
+
+  .breadcrumb {
+    margin: 20px 0 20px 10px !important;
+    background-color: #fff !important;
+    padding: 0 !important;
+    border-radius: 50px;
+
+    .breadcrumb-item {
+      a {
+        color: #757575 !important;
+        text-decoration: none !important;
+
+        &:hover {
+          text-decoration: underline !important ;
+          color: #757575 !important;
+        }
+      }
+
+      &.active {
+        color: #757575 !important ;
+        text-decoration: underline !important ;
+        cursor: default;
+      }
+
+      &::before {
+        color: #757575 !important;
+      }
+    }
+  }
+}
+
+// sub-nav
+.subsite-container {
+  background: linear-gradient(to right, #f3f3f3, #fff);
+  border-radius: 10px 0 0;
+
+  #subsite-logo {
+    font-size: 16px;
+    border-radius: 0;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  #subsite-navigation > ul > li > a {
+    text-transform: none;
+  }
+}
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: $primary-black-blue;
+  text-decoration: underline;
+}
+
+.contact_leadimage {
+  border-radius: 15px;
+}
+
+.list-menu-element {
+  a {
+    text-decoration: none;
+
+    .list-card-body {
+      //padding-bottom: 20px;
+      margin-bottom: 20px;
+      //background: url("../../assets/svg/stroke-h.svg") repeat-x center bottom #fff;
+
+      .list-card-title {
+        text-decoration: underline;
+        color: $primary-svg;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+      .list-card-text {
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+
+    &:hover {
+      .list-card-body {
+        .list-card-title {
+          color: $primary-svg;
+        }
+      }
+    }
+  }
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 30px;
+
+  @media (max-width: 991px) {
+    font-size: 25px !important;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px !important;
+  }
+}
+
+header .rich_description {
+  font-size: 18px !important;
+
+  @media (max-width: 767px) {
+    font-size: 15px !important;
+  }
+}
+
+body:not(.portaltype-imio-smartweb-portalpage) {
+  #portal-column-content {
+    // ─── Décoration bg droite ───────────────────────────────────────────────────
+    &::before {
+      content: "";
+      position: absolute;
+      top: 300px;
+      right: 0;
+      width: 109px;
+      height: 377px;
+      //background: url("../../assets/svg/bg-01.svg") no-repeat center top;
+      background-size: contain;
+      z-index: -1;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  #portal-footer-wrapper {
+    position: relative;
+    overflow: visible;
+
+    // ─── Décoration bg gauche ───────────────────────────────────────────────────
+    &::before {
+      content: "";
+      position: absolute;
+      top: -150px;
+      left: 0;
+      width: 109px;
+      height: 377px;
+      //background: url("../../assets/svg/bg-02.svg") no-repeat center top;
+      background-size: contain;
+      display: none;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary-svg;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.sectiontext mark,
+.r-content-text mark {
+  background-color: #f1f1f1;
+  border: 0;
+  border-radius: 15px;
+  color: #000;
+  display: inline-block;
+  font-weight: 500;
+  padding: 20px 45px 20px 26px;
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+
+    &:hover {
+      color: #000 !important;
+    }
+  }
+}
+
+.r-news-list-item-link {
+  .r-item-title {
+    color: #000;
+  }
+
+  .r-item-arrow-more {
+    background: $primary-light-orange;
+    border-radius: 50px;
+    margin: 20px;
+
+    .bi-arrow-right-short {
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+
+  .r-item-img {
+    border-radius: 15px;
+  }
+
+  &:hover {
+    .r-item-arrow-more {
+      background: $primary-svg !important;
+      border-color: $primary-svg !important;
+    }
+  }
+}
+
+.r-list-item-group {
+  border-radius: 15px !important;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.r-content-text a {
+  color: $primary-svg;
+
+  &:hover {
+    color: $primary-svg;
+  }
+}
+
+.r-back-button {
+  background: $primary-svg;
+  border-radius: 50px;
+
+  &:hover {
+    background: $primary-svg;
+  }
+
+  .bi-arrow-left-short {
+    &::before {
+      color: #fff;
+    }
+  }
+}
+
+.r-content-img {
+  border-radius: 15px;
+}
+
+.r-item-read-more {
+  margin-top: unset !important;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.r-item-categorie {
+  display: none;
+}
+
+.r-item-date {
+  margin-top: 20px;
+}
+
+.r-item-text {
+  grid-template-columns: 1fr !important;
+}
+
+.r-content-news-info a {
+  color: $primary-svg !important;
+
+  &:hover {
+    color: $primary-svg !important;
+  }
+}
+
+.block-menu-element > a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #cbcbcb;
+  box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
+  transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.subsection-vie-politique-conseil-communal-composition {
+  .card-img-top {
+    padding-top: 120%;
+  }
+}
+
+.sectiontext .section-text .body-section figure figcaption {
+  display: block;
+  max-width: 760px;
+}
+
+.sectiontext .section-text .body-section .text {
+  margin: 0 auto;
+  max-width: 760px;
+  width: 100%;
+}
+
+#main-container .sectiontext {
+  margin: 30px 0;
+}
+
+#main-container .sectionhtml {
+  margin-bottom: 80px;
+}
+
+.procedure a {
+  background: $primary-svg;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    background: $primary-svg;
+    transition: 0.5s;
+  }
+}
+
+.sectiontext .section-text .body-section.figure-left figure img {
+  border-radius: 15px;
+}
+
+#main-container .contact_map {
+  z-index: 0;
+}
+
+.sectiontext .section-text .body-section figure img {
+  display: block;
+  border-radius: 15px !important;
+}

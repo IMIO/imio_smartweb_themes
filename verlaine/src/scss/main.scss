@@ -15,7 +15,421 @@ $enable-roboto-webfont: false;
 @import "./variables";
 // @import "../../../base/src/scss/main";
 @import "@imiobe/plonetheme-smartweb-base/src/scss/main";
+@import "./home/banner";
+@import "./home/actu-events";
+@import "./home/quickacess";
+@import "./home/footer";
+@import "./info-trav";
+@import "./home/page-int";
+@import "./se-link";
+@import "./se-files";
+@import "./se-section-collection";
+@import "./contact";
+@import "./home/bull-inf";
 
-//// STYLES
+#portal-footer-wrapper * {
+  color: #fff !important;
+}
 
-// ... add your styles here
+#gdpr-consent-banner .gdpr-actions input[name="consent"] {
+  background: #fff;
+  border-radius: 25px;
+  border: 2px solid #000 !important;
+  color: #000 !important;
+
+  &:hover {
+    color: #fff !important;
+    background: $primary-black-blue;
+    border: 2px solid $primary-black-blue !important;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions > a,
+#gdpr-consent-banner .gdpr-actions input[name="refuse"] {
+  background: #fff;
+  border-radius: 25px;
+  border: 2px solid #000 !important;
+  color: #000 !important;
+
+  &:hover {
+    color: #fff !important;
+    background: $primary-black-blue;
+    border: 2px solid $primary-black-blue !important;
+  }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+// sub-nav
+
+.subsite-container {
+  background: #f1f1f1;
+  border-radius: 20px 20px 0 0;
+
+  #subsite-logo {
+    font-size: 18px;
+    background: $primary-black-blue;
+    border-radius: 20px 20px 0 0;
+
+    a {
+      .subsite-title {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .pat-navigationmarker {
+    background: #f1f1f1;
+  }
+}
+
+.contact_leadimage {
+  border-radius: 10px;
+}
+
+.sectiontext .section-text .body-section a {
+  color: $primary;
+}
+
+.sectiontext figure img {
+  border-radius: 20px 20px 20px 0;
+}
+
+#viewlet-above-content-body {
+  .procedure {
+    display: none;
+  }
+}
+
+// header common
+
+.breadcrumb-item {
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.block-menu-element a .card-title.h2,
+.block-menu-element a h2.card-title {
+  font-size: 1rem;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a {
+  background: none;
+}
+
+.template-facetednavigation_view.faceted-map
+  .eea-preview-items
+  .faceted-map-item
+  > a:hover {
+  background-color: #fff;
+}
+
+#portal-header #portal-header-top #header-links .account {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+  background: $primary !important;
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-green !important;
+}
+
+.contact_map {
+  z-index: 0 !important;
+}
+
+.sectiontext mark {
+  margin: 10px 0;
+
+  a {
+    color: #000 !important;
+  }
+}
+
+.section-home-page #messagesviewlet {
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 90px;
+}
+
+#messagesviewlet .portalMessage.info,
+#localmessagesviewlet .portalMessage.info {
+  background-color: $primary;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+#messagesviewlet .portalMessage.error,
+#localmessagesviewlet .portalMessage.error {
+  background-color: $primary;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+#messagesviewlet .portalMessage.warning,
+#localmessagesviewlet .portalMessage.warning {
+  background-color: $primary;
+  color: #fff;
+}
+
+#messagesviewlet .portalMessage.info .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.info .messagesviewlet-type {
+  background-color: $primary;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+#messagesviewlet .portalMessage.warning .messagesviewlet-type,
+#localmessagesviewlet .portalMessage.warning .messagesviewlet-type {
+  background-color: $primary;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 200px;
+}
+
+body .sectiontext .section-text .body-section a {
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: 0.2s;
+
+  &:hover {
+    text-decoration: underline solid $primary;
+  }
+}
+
+.tox-edit-area #tinymce p {
+  background-color: #000;
+}
+//FILTRES Catégories
+@media screen and (min-width: 901px) {
+  .more-filter-container.collapse:not(.show) {
+    display: initial !important;
+  }
+}
+
+body smartweb-annuaire .more-filter-container.collapse:not(.show) {
+  display: none !important;
+}
+
+#portal-globalnav .quick-access .quick-access-title {
+  color: $primary !important;
+}
+
+#portal-header #portal-header-top #portal-logo {
+  margin-right: 0;
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+#portal-header #portal-header-top #header-links #search-link {
+  border: 0;
+  position: relative;
+  border-radius: 50px;
+  transition: 0.3s;
+
+  a {
+    padding-left: 0;
+    background: $primary-light-orange;
+    transition: 0.3s;
+    color: #fff !important;
+    border: 2px solid $primary-light-orange !important;
+  }
+
+  &:hover {
+    a {
+      color: #fff !important;
+      background: #000;
+      border: 2px solid #000 !important;
+      transition: 0.3s;
+    }
+    transition: 0.3s;
+  }
+}
+
+#portal-header #portal-header-top #header-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#portal-header #portal-header-top #header-links .account,
+#portal-header .account {
+  position: relative;
+  margin: 0;
+  padding: 10px 25px;
+  display: inline-flex;
+  align-items: center;
+
+  a,
+  span,
+  a span {
+    position: relative;
+    z-index: 1;
+    color: #000;
+    font-weight: 500;
+  }
+
+  &:hover {
+    a,
+    span,
+    a span {
+      color: #fff;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: 0.3s;
+    z-index: 0;
+    background: #fff;
+    border-radius: 25px;
+    border: 2px solid #000 !important;
+    color: #000 !important;
+  }
+
+  &:hover::before {
+    color: #fff !important;
+    background: $primary-black-blue;
+    border: 2px solid $primary-black-blue !important;
+  }
+}
+//Message
+.section-home-page #messagesviewlet {
+  top: 120px;
+}
+
+.section-home-page {
+  #localmessagesviewlet .portalMessage,
+  #messagesviewlet .portalMessage {
+    border-radius: 10px;
+    max-width: 1150px;
+    padding: 1rem;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions input[name="consent"] {
+  background: #fff;
+  border-radius: 25px;
+  border: 2px solid #000 !important;
+  color: #000 !important;
+
+  &:hover {
+    color: #fff !important;
+    background: $primary-black-blue;
+    border: 2px solid $primary-black-blue !important;
+  }
+}
+
+#gdpr-consent-banner .gdpr-actions > a {
+  background: #fff;
+  border-radius: 25px;
+  border: 2px solid #000 !important;
+  color: #000 !important;
+
+  &:hover {
+    color: #fff !important;
+    background: $primary-black-blue;
+    border: 2px solid $primary-black-blue !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-home-page #messagesviewlet {
+    top: 10px;
+    position: relative;
+    padding: 1.5rem 2.5rem 1rem 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 3.4rem;
+  }
+}
+
+.r-search-container .r-search.search-bar-filter input {
+  margin: 0;
+}
+
+.r-search-highlighter {
+  color: #3f9fa4 !important;
+  border-bottom: 2px solid #3f9fa4 !important;
+}
+
+#portal-footer-wrapper {
+  margin-top: 80px;
+}
+
+.section-home-page #portal-footer-wrapper {
+  margin-top: 0;
+}
+
+.section-contact .contact-type-mission {
+  width: auto !important;
+}
+
+.section-contact .contact-type-mission::after {
+  display: none;
+}
+
+.subsection-bulletin-communal-1 .card-img-top {
+  padding-top: 150%;
+}
+
+.r-news-list-item-link:hover .r-item-arrow-more {
+  background-color: $primary !important;
+}
+
+#portal-column-content
+  .section-contact
+  .contact-type-organization
+  .contact_logo {
+  max-width: 300px;
+  padding-top: 50%;
+  display: block;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}

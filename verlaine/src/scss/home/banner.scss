@@ -1,0 +1,141 @@
+.smartweb_herobanner {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    height: 611px;
+    background: url("../../assets/svg/after-banner.png") center top no-repeat;
+    z-index: 1;
+    left: 0;
+    bottom: -80px;
+    width: 466px;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+}
+
+// ─── Hero banner ──────────────────────────────────────────────────────────────
+.smartweb_herobanner {
+  @media (max-width: 768px) {
+    .bannerSwiper {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bannerSwiper {
+      height: 350px;
+    }
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  padding: 0;
+  width: max-content;
+
+  .swiper-banner-content {
+    justify-self: right;
+    background: rgba(0, 0, 0, 70%);
+    border-radius: 0 0 0 20px;
+    padding: 30px 150px 30px 40px;
+    display: block;
+
+    .swiper-banner-title {
+      color: #fff;
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    .swiper-banner-link {
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          color: $primary-svg;
+          transition: ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.smartweb_herobanner {
+  .swiper-button-next {
+    top: 60px;
+    right: 30px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .swiper-button-prev {
+    top: 60px;
+    left: auto;
+    right: 80px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper
+  .swiper-banner-content
+  .swiper-banner-description
+  p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#portal-globalnav-wrapper,
+#portal-globalnav > li.has_subtree {
+  .nav-link {
+    position: relative;
+
+    &:hover {
+      color: $primary !important;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px !important;
+      background-color: $primary-svg;
+      transition: width 0.3s ease !important;
+    }
+
+    &:hover::before,
+    &.active::before {
+      width: 100%;
+      transition: width 0.3s ease !important;
+    }
+  }
+}
+
+#portal-globalnav li.show-nav > .has_subtree.dropdown {
+  border-radius: 0 !important;
+}

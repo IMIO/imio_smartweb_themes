@@ -1,0 +1,196 @@
+.sectionnews {
+  padding-bottom: 80px !important;
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 3rem;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    &::after {
+      background: url("../../assets/svg/soulign-titre.svg") center top no-repeat;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin-top: 15px;
+      border-radius: 20px;
+    }
+  }
+
+  position: relative;
+
+  .swiper-slide {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 10%);
+    border-radius: 20px 60px 20px 20px;
+    padding-bottom: 30px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .see_all a {
+    background: #fff;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff !important;
+      background: $primary-black-blue;
+      border: 2px solid $primary-black-blue !important;
+      transition: 0.3s;
+    }
+  }
+}
+
+.sectionevents {
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 3rem;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    &::after {
+      background: url("../../assets/svg/soulign-titre.svg") center top no-repeat;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin-top: 15px;
+      border-radius: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    height: 611px;
+    background: url("../../assets/svg/after-agenda.png") center top no-repeat;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 348px;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #fff 0,
+    #fff 300px,
+    #f1f1f1 300px,
+    #fff 100%
+  );
+  padding-bottom: 80px;
+
+  .swiper_category {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .swiper-slide {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 10%);
+    border-radius: 20px 60px 20px 20px;
+    padding-bottom: 30px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .see_all a {
+    background: #fff;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff !important;
+      background: $primary-black-blue;
+      border: 2px solid $primary-black-blue !important;
+      transition: 0.3s;
+    }
+  }
+}
+
+.informes {
+  .section-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    width: 100%;
+  }
+}
