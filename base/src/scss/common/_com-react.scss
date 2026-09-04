@@ -96,3 +96,18 @@ body .r-item-arrow-more {
 .r-search-highlighter {
   border-bottom: 2px solid $primary !important;
 }
+
+.portaltype-imio-smartweb-eventsview.menu-sticky-on-top,
+.portaltype-imio-smartweb-directoryview.menu-sticky-on-top {
+  .r-map.annuaire-map {
+    top: 0 !important;
+  }
+
+  .r-result-filter-container {
+    top: initial !important;
+  }
+
+  header#content-header {
+    position: relative !important;
+  }
+}

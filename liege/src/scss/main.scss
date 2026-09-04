@@ -485,3 +485,18 @@ h3 {
 .sectiontext .section-text .body-section.figure-top figure {
   margin-top: 0;
 }
+
+.portaltype-imio-smartweb-eventsview.menu-sticky-on-top,
+.portaltype-imio-smartweb-directoryview.menu-sticky-on-top {
+  .r-map.annuaire-map {
+    top: 0 !important;
+  }
+
+  .r-result-filter-container {
+    top: initial !important;
+  }
+
+  header#content-header {
+    position: relative !important;
+  }
+}
