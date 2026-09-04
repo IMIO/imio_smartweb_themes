@@ -73,7 +73,7 @@
 
       .list-card-title {
         text-decoration: underline;
-        color: $primary-svg;
+        color: $primary-black-blue;
         font-size: 16px;
         margin-bottom: 0;
       }
@@ -88,7 +88,7 @@
     &:hover {
       .list-card-body {
         .list-card-title {
-          color: $primary-svg;
+          color: $primary-black-blue;
         }
       }
     }
