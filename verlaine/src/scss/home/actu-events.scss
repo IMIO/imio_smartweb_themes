@@ -1,6 +1,10 @@
 .sectionnews {
   padding-bottom: 80px !important;
 
+  .swiper_category {
+    left: 0 !important;
+  }
+
   .section-title {
     font-weight: 500;
     position: relative;
@@ -130,8 +134,7 @@
   padding-bottom: 80px;
 
   .swiper_category {
-    position: absolute !important;
-    right: 0 !important;
+    left: 0 !important;
   }
 
   .swiper-slide {
