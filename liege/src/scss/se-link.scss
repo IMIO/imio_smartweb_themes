@@ -1,7 +1,8 @@
 .portaltype-imio-smartweb-page #main-container .sectionlinks,
 .portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   background-color: #fff;
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 
   .section-container {
     .rich_description {
