@@ -54,7 +54,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transition: 0.5s;
 
       .image {
@@ -120,7 +120,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transform: scale(1.03);
       transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
 
@@ -179,7 +179,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transition: 0.5s;
 
       .image {
