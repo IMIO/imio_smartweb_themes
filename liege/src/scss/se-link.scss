@@ -1,6 +1,8 @@
 .portaltype-imio-smartweb-page #main-container .sectionlinks,
 .portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 
   .section-container {
     .rich_description {
@@ -438,7 +440,7 @@
     }
 
     &:hover {
-      background-color: $primary-svg !important;
+      background-color: $primary-svg;
       background-image: url("../../assets/svg/icon-ouvrir.svg") !important;
       background-repeat: no-repeat !important;
       background-position: right 15px center !important;
@@ -455,4 +457,12 @@
       color: #fff !important;
     }
   }
+}
+
+.portaltype-imio-smartweb-page #main-container .sectionlinks .table_display,
+.portaltype-imio-smartweb-procedure
+  #main-container
+  .sectionlinks
+  .table_display {
+  padding: 5px;
 }
