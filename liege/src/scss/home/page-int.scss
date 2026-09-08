@@ -205,12 +205,12 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 }
 
 .sectiontext .section-text .body-section a {
-  color: $primary-red;
+  color: $primary-red !important;
   font-weight: 500;
   text-decoration: underline;
 
   &:hover {
-    color: $primary-svg;
+    color: $primary-svg !important;
   }
 }
 
