@@ -485,3 +485,13 @@ footer #container-section-noussuivre {
     position: relative !important;
   }
 }
+
+.sectiontext .section-text .body-section a {
+  color: $primary-red;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary-svg;
+  }
+}
