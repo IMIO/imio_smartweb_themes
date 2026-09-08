@@ -133,15 +133,6 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 30px;
-
-  @media (max-width: 991px) {
-    font-size: 25px !important;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 20px !important;
-  }
 
   // Barre magenta
   &::before {
