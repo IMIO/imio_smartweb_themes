@@ -137,7 +137,11 @@
 
 .portaltype-imio-smartweb-page #main-container .sectionfiles,
 .portaltype-imio-smartweb-procedure #main-container .sectionfiles {
-  ul.row li {
-    padding: 5px !important;
+  ul.row {
+    margin-bottom: 0;
+
+    li {
+      padding: 5px !important;
+    }
   }
 }

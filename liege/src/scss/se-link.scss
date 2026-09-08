@@ -458,3 +458,14 @@
     }
   }
 }
+
+.portaltype-imio-smartweb-page
+  #main-container
+  .sectionlinks
+  .section-container
+  > div
+  .body-section
+  .row
+  li {
+  padding: 5px;
+}
