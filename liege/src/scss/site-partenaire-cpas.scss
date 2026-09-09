@@ -181,6 +181,10 @@
       background-color: var(--primary-svg) !important;
       color: #fff !important;
 
+      div {
+        color: #fff !important;
+      }
+
       &:hover {
         background-color: var(--primary-red) !important;
       }
