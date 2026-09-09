@@ -15,13 +15,13 @@ div.swiper-image::before {
   background-color: $primary !important;
 }
 
-.sectionfiles::after {
-  background: #f3f3f3;
-}
-
 .sectionfiles {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 20px 0;
   h2 {
     color: $primary !important;
+    font-size: 1.5rem;
   }
 
   a {
@@ -30,6 +30,10 @@ div.swiper-image::before {
 
   span {
     color: #000 !important;
+  }
+
+  ul li {
+    margin: 0.5rem 0;
   }
 }
 
@@ -46,4 +50,17 @@ div#smartweb-minisite-footer {
 
 .list-card-body h2.list-card-title {
   font-size: 1.5rem;
+}
+
+#portal-column-content .section-contact .contact-type-organization {
+  background: $secondary;
+  border-radius: 10px;
+}
+
+footer a.opening_informations {
+  color: #fff;
+}
+
+footer .schedule .opening_informations:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="8.444" height="5.2"><path fill="#fff" d="M.247.254a.831.831 0 0 1 1.2 0l2.78 2.854L7.011.254A.831.831 0 0 1 8.2.264a.882.882 0 0 1 .01 1.215L4.825 4.946a.835.835 0 0 1-.6.254 1.529 1.529 0 0 1-.6-.254L.247 1.479a.882.882 0 0 1 0-1.226Z"/></svg>');
 }
