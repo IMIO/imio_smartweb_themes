@@ -107,6 +107,7 @@
   .sectiontext mark,
   .r-content-text mark {
     background-color: var(--primary-svg);
+    color: #fff !important;
 
     a {
       color: #fff !important;
@@ -178,6 +179,7 @@
   .sectionlinks {
     .table_image {
       background-color: var(--primary-svg) !important;
+      color: #fff !important;
 
       &:hover {
         background-color: var(--primary-red) !important;
