@@ -44,6 +44,7 @@ body {
   background: url("../../assets/svg/placeholder.jpg");
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 #portal-globalnav > li a:hover {
