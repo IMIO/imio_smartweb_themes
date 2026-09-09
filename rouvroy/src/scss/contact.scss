@@ -1,6 +1,13 @@
 #portal-column-content .sectioncontact {
   .contact-type-organization {
     background: #fff;
+
+    .contact_logo {
+      width: 146px;
+      height: 61px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   h2,
