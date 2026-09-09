@@ -277,7 +277,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transition: 0.5s;
     }
 
@@ -337,7 +337,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transition: 0.5s;
     }
 
@@ -397,7 +397,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
-      background: #fff !important;
+      background: #fff;
       transition: 0.5s;
     }
 
@@ -440,7 +440,7 @@
     }
 
     &:hover {
-      background-color: $primary-svg !important;
+      background-color: $primary-svg;
       background-image: url("../../assets/svg/icon-ouvrir.svg") !important;
       background-repeat: no-repeat !important;
       background-position: right 15px center !important;
@@ -464,5 +464,5 @@
   #main-container
   .sectionlinks
   .table_display {
-  padding: 5px;
+  padding: 0;
 }
