@@ -392,11 +392,15 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 .contact_titles .h2,
 .contact_titles h2 {
   word-break: break-word;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .contact_subtitle {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.contact_informations .informations {
+  font-size: 1rem;
 }
