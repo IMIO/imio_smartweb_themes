@@ -1,6 +1,4 @@
-#portal-header-top {
-  position: relative;
-
+body {
   &::before {
     content: "";
     position: absolute;
@@ -17,6 +15,9 @@
       display: none;
     }
   }
+}
+#portal-header-top {
+  position: relative;
 }
 
 #portal-header-top {
