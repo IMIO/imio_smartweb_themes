@@ -323,8 +323,7 @@
 }
 
 .sticky-demi-active {
-  .sr-only,
-  .sticky-is-top::before {
+  .sr-only {
     grid-template-rows: 0fr;
     opacity: 0%;
     transition:
@@ -334,8 +333,7 @@
 }
 
 .sticky-is-top {
-  .sr-only,
-  .sticky-is-top::before {
+  .sr-only {
     grid-template-rows: 1fr;
     opacity: 100%;
     transition:
