@@ -218,6 +218,8 @@
       padding-top: 20px !important;
       padding-left: 0 !important;
       padding-right: 120px;
+      hyphens: auto;
+      overflow-wrap: break-word;
 
       @media (max-width: 1200px) {
         padding-left: 0 !important;
