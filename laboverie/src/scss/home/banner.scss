@@ -31,7 +31,11 @@
 
 // ─── Logo sr-only (bandeau blanc) ─────────────────────────────────────────────
 .section-accueil #portal-logo .sr-only,
-.section-index #portal-logo .sr-only {
+.section-index #portal-logo .sr-only,
+.site-fr #portal-logo .sr-only,
+.site-nl #portal-logo .sr-only,
+.site-en #portal-logo .sr-only,
+.site-de #portal-logo .sr-only {
   position: absolute;
   height: 90px;
   margin: -1px;
