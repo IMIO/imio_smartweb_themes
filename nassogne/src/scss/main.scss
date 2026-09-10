@@ -364,3 +364,14 @@ footer {
 #portal-column-content .sectionlinks {
   margin: 60px 0 0 !important;
 }
+
+#portal-languageselector-dropdown .btn.dropdown-toggle {
+  color: #fff;
+  margin-left: 0.6rem;
+}
+
+#portal-languageselector li a {
+  &:hover {
+    background-color: rgba(256, 256, 256, 10%);
+  }
+}

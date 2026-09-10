@@ -32,6 +32,10 @@ $enable-roboto-webfont: false;
 @import "./se-link";
 @import "./contact";
 
+#portal-languageselector-dropdown .btn.dropdown-toggle {
+  color: $primary-dark;
+}
+
 a {
   color: $primary-dark;
 }

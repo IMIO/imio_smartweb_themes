@@ -714,3 +714,13 @@ body.template-block_view_with_images .block-menu-element a .card-body {
 .subsite-container #subsite-logo a:hover {
   background: $primary;
 }
+
+#portal-languageselector-dropdown .btn.dropdown-toggle {
+  color: #fff;
+}
+
+#portal-languageselector li a {
+  &:hover {
+    background-color: rgba(256, 256, 256, 10%);
+  }
+}

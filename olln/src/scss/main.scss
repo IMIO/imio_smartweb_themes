@@ -38,6 +38,14 @@ $enable-roboto-webfont: false;
 @import "./section";
 @import "./cpas";
 
+#portal-languageselector-dropdown .btn.dropdown-toggle {
+  color: #fff;
+}
+
+#portal-languageselector li a {
+  color: #000 !important;
+}
+
 .portaltype-imio-smartweb-portalpage.section-home-page {
   #portal-header {
     margin-bottom: 0;
