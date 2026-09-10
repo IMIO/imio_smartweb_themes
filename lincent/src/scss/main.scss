@@ -422,3 +422,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   background-position: center;
   margin-bottom: 30px;
 }
+
+#portal-header .account span {
+  z-index: 0;
+}
