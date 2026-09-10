@@ -161,6 +161,7 @@
     @media (max-width: 991px) {
       width: calc(90vw - 60px) !important;
       border: 10px solid #fff !important;
+      height: auto;
     }
 
     @media (max-width: 768px) {
@@ -216,7 +217,7 @@
       font-size: 35px !important;
       padding-top: 20px !important;
       padding-left: 0 !important;
-      padding-right: 180px;
+      padding-right: 120px;
 
       @media (max-width: 1200px) {
         padding-left: 0 !important;
