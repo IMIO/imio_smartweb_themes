@@ -309,3 +309,9 @@
     }
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: $primary;
+  border: 2px solid #fff !important;
+}
