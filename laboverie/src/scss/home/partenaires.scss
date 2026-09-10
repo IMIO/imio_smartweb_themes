@@ -113,4 +113,27 @@
       }
     }
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    opacity: 100%;
+    border: 5px solid #fff !important;
+    margin: 0 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 0;
+    background: #fff !important;
+    opacity: 100%;
+    border: 2px solid #000 !important;
+  }
 }
