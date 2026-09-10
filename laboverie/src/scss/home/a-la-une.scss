@@ -32,8 +32,9 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: auto !important;
-    bottom: 20px !important;
+    //bottom: 20px !important;
     background-color: $primary;
+    border: 2px solid #fff !important;
   }
 
   // ─── Décoration bg droite ───────────────────────────────────────────────────
@@ -177,7 +178,7 @@
   .swiper_date {
     grid-column: 2;
     grid-row: 1;
-    margin-top: 40% !important;
+    margin-top: 20% !important;
     font-size: 24px !important;
     color: #000 !important;
     font-weight: 200 !important;
@@ -198,7 +199,7 @@
     grid-column: 2;
     grid-row: 1;
     background: none !important;
-    margin-top: 40% !important;
+    margin-top: 20% !important;
 
     @media (max-width: 1200px) {
       margin-top: 90px !important;
@@ -211,10 +212,10 @@
     }
 
     h3 {
-      font-size: 40px !important;
+      font-size: 35px !important;
       padding-top: 20px !important;
       padding-left: 0 !important;
-      padding-right: 100px;
+      padding-right: 180px;
 
       @media (max-width: 1200px) {
         padding-left: 0 !important;
