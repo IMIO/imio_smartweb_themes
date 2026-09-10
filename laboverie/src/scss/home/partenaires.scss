@@ -82,13 +82,21 @@
     text-decoration: none;
     transform: translateX(-50%);
     transition: all 0.5s ease;
-    width: 90%;
+    width: 95%;
     z-index: 1;
     text-align: center;
+
+    &:hover {
+      background: $primary-red !important;
+      border-color: $primary-red !important;
+      color: #fff !important;
+    }
 
     h3 {
       color: #fff;
       margin: 0;
+      font-weight: 400;
+      font-size: 16px;
     }
   }
 
