@@ -36,8 +36,8 @@ $(document).ready(function () {
     "#main-container .sectiontext .body-section:not(.collapse) .text",
     {
       delay: 100,
-      duration: 1000,
-      distance: "20%",
+      duration: 800,
+      distance: "10%",
       origin: "bottom",
       interval: 100,
     },
