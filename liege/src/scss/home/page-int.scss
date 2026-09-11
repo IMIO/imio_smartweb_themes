@@ -3,39 +3,6 @@
     border-radius: 0 350px 350px 0 !important;
     margin-top: 40px;
   }
-
-  #portal-breadcrumbs {
-    margin: 0 !important;
-    position: absolute;
-    z-index: 0;
-
-    .breadcrumb {
-      margin: 10px 0 0 10px !important;
-      background-color: $primary-svg;
-      padding: 15px 30px !important;
-      border-radius: 50px;
-
-      .breadcrumb-item {
-        a {
-          color: #fff !important;
-          text-decoration: none !important;
-
-          &:hover {
-            text-decoration: underline !important ;
-            color: #fff !important;
-          }
-        }
-
-        &.active {
-          color: #fff !important ;
-        }
-
-        &::before {
-          color: #fff !important;
-        }
-      }
-    }
-  }
 }
 
 #portal-breadcrumbs {
