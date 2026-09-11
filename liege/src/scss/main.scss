@@ -516,3 +516,12 @@ footer #container-section-noussuivre {
 .portaltype-imio-smartweb-portalpage #messagesviewlet {
   position: absolute !important;
 }
+
+.sectiontext.col-sm-12 {
+  .section-title {
+    display: block;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
