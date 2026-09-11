@@ -511,3 +511,21 @@ h3 {
   border-radius: 0 !important;
   display: block;
 }
+
+.r-content-news-info-action .r-content-booking a {
+  background: $primary-red;
+  color: #fff !important;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+
+  &:hover {
+    background: $primary;
+  }
+}
