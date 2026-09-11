@@ -37,6 +37,13 @@ body {
   background: #fff;
 }
 
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1 !important;
+}
+
 #portal-globalnav > li a:hover {
   color: #000;
 }
