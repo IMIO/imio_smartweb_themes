@@ -46,13 +46,16 @@
     margin: 0;
     position: relative;
     z-index: 0;
+    margin-bottom: 0;
 
     @media (max-width: 991px) {
       font-size: 35px !important;
+      margin-bottom: 30px;
     }
 
     @media (max-width: 767px) {
       font-size: 25px !important;
+      margin-bottom: 20px;
     }
 
     // Barre magenta
