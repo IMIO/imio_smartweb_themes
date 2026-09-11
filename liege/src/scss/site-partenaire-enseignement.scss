@@ -72,6 +72,14 @@
   // ─── Sub-nav ─────────────────────────────────────────────────────────────────
   .subsite-container #subsite-logo {
     background: var(--primary-red);
+
+    a {
+      background: var(--primary-red);
+
+      &:hover {
+        background: var(--primary-svg);
+      }
+    }
   }
 
   // ─── Description riche ───────────────────────────────────────────────────────
