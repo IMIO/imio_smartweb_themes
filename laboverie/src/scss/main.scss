@@ -532,11 +532,11 @@ h3 {
 
 .news-info-title {
   font-size: 24px;
-  color: $primary;
+  color: $primary !important;
 }
 
 .r-actu-wrapper .r-list-item-group {
   background: #fff;
-  border-radius: 0;
+  border-radius: 0 !important;
   border: 1px solid #d1d1d1;
 }
