@@ -21,7 +21,7 @@ $enable-roboto-webfont: false;
 //// STYLES
 
 // ... add your styles here
-
+@import "./home/header-home";
 @import "./home/quick";
 @import "./home/a-la-une";
 @import "./home/espace-citoyen";
@@ -39,10 +39,10 @@ h1 {
   font-weight: bold !important;
 }
 
-.smartweb_herobanner .bannerSwiper {
-  height: 50vw;
-  max-height: 500px;
-}
+// .smartweb_herobanner .bannerSwiper {
+//   height: 50vw;
+//   max-height: 500px;
+// }
 
 .bannerSwiper .section-slide {
   &::after {
@@ -91,11 +91,6 @@ h1 {
   background: url("../../assets/svg/placeholder.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.swiper-banner-image {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 }
 
 //footer
@@ -235,7 +230,7 @@ footer #container-section-noussuivre {
 // sub-nav
 
 .sectiontext .section-text .body-section a {
-  color: #2fa8b3;
+  color: $primary;
 }
 
 .sectiontext figure img {

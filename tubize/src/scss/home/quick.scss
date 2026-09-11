@@ -21,21 +21,16 @@
           background-size: contain;
           position: relative;
           transition: all 0.3s ease;
-
-          &::after {
-            content: "";
-            position: absolute;
-            inset: 0 0 8px;
-            z-index: -1;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 16%) !important;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-          }
         }
 
         &:hover {
           .image.d-block {
             transform: translateY(-10px);
+            background-color: $primary;
+
+            svg {
+              fill: #fff;
+            }
           }
         }
       }
@@ -79,4 +74,8 @@
 //PARTENAIRES
 .sortable-section.sectionlinks.home-partenaires {
   z-index: 0;
+}
+
+.sectionlinks.quick-access .body-section li a .image.d-block {
+  border: solid 0 #247da3;
 }

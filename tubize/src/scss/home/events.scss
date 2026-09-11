@@ -53,6 +53,20 @@
         }
 
         &:hover {
+          .swiper_title {
+            h3 {
+              color: $primary;
+            }
+          }
+
+          .swiper_description {
+            p {
+              color: #fff;
+            }
+          }
+        }
+
+        &:hover {
           .swiper-image {
             mask-size: 99%;
           }

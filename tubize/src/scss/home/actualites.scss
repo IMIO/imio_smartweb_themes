@@ -59,7 +59,7 @@
 
           .swiper_title {
             h3 {
-              color: $primary-svg;
+              color: $primary;
             }
           }
 
@@ -77,6 +77,6 @@
 .sectionnews {
   &::before {
     content: "";
-    background: #009eb0;
+    background: $primary;
   }
 }

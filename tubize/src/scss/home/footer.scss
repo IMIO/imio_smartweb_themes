@@ -1,5 +1,7 @@
 #portal-footer-wrapper {
-  text-align: left !important;
+  @media screen and (min-width: 575px) {
+    text-align: left !important;
+  }
   background: transparent;
   margin-top: 5rem;
 
@@ -31,8 +33,9 @@
 
         figure {
           img {
-            width: 150px;
+            width: 260px;
             max-width: 100%;
+            border-radius: 0;
           }
         }
       }
@@ -78,5 +81,11 @@ footer {
     margin-left: 0.4rem;
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+.logo-footer {
+  img {
+    margin-top: 2.5rem;
   }
 }
