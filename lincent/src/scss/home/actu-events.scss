@@ -155,6 +155,25 @@
   }
 }
 
+.a-la-une {
+  padding-bottom: 0 !important;
+
+  .swiper-slide {
+    padding-bottom: 0 !important;
+  }
+
+  .swiper_date {
+    display: none;
+  }
+
+  .swiper_title h3 {
+    color: initial;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+  }
+}
+
 .home-partenaires {
   position: relative;
   overflow: visible; // important, sinon le pseudo-élément sera coupé
