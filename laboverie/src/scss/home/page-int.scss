@@ -176,19 +176,20 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 
 .sectiontext mark,
 .r-content-text mark {
-  background-color: #f1f1f1;
+  background-color: $primary-red;
   border: 0;
-  color: #000;
+  color: #fff;
   display: inline-block;
   font-weight: 500;
-  padding: 20px 45px 20px 26px;
+  padding: 20px 30px;
+  border-radius: 50px;
 
   a {
-    color: $primary-red !important;
+    color: #fff !important;
     text-decoration: underline;
 
     &:hover {
-      color: $primary-svg !important;
+      color: #fff !important;
     }
   }
 }
