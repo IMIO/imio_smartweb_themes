@@ -56,7 +56,7 @@
   }
 
   .section-title {
-    font-size: 48px;
+    font-size: 40px;
     text-transform: uppercase;
     color: $primary;
     font-weight: 700 !important;
@@ -69,7 +69,12 @@
   margin-bottom: 60px;
 
   .section-title {
-    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
   }
 
   .swiper_title {
