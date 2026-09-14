@@ -141,7 +141,11 @@
     margin-bottom: 0;
 
     li {
-      padding: 5px !important;
+      padding-right: 5px !important;
+
+      &.col-md-12 {
+        padding-right: 0 !important;
+      }
     }
   }
 }

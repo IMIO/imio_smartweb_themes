@@ -1,0 +1,47 @@
+@media screen and (min-width: 760px) {
+  .sectionfiles.col-sm-12.container-se-text,
+  .sectionlinks.col-sm-12.container-se-text,
+  .sectionselections.col-sm-12.container-se-text,
+  .sectionvideo.col-sm-12.container-se-text,
+  .sectiongallery.col-sm-12.container-se-text,
+  .sectionhtml.col-sm-12.container-se-text {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    .section-container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .sectionlinks.container-se-text li.col-md-12 .table_display {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+#viewlet-above-content-body,
+#viewlet-below-content-body {
+  .procedure {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sectiontext.col-sm-12 {
+  .section-title {
+    display: block;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sectiontext.col-sm-8 .section-text .body-section .text {
+  margin-left: 0;
+}
+
+.sectiontext.col-sm-8 .section-text .body-section.figure-bottom {
+  align-items: flex-start;
+}
