@@ -1,6 +1,8 @@
 #portal-column-content .sectioncontact {
   .contact-type-organization {
-    background: $primary-light;
+    background: #f8f8f8;
+    // border: solid 2px $primary-svg;
+    border-radius: 10px;
   }
 
   h2,

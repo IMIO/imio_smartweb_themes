@@ -1,9 +1,12 @@
 //*// COLORS
 
-$primary: #23555f;
-$primary-svg: #009eb0;
-$primary-light: #dcedf0;
+// $primary: #23555f;
+// $primary-svg: #009eb0;
+// $primary-light: #dcedf0;
 
+$primary: #247da3;
+$primary-svg: #98d5ea;
+$primary-light: #98d5ea;
 //*// TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;700&display=swap");
@@ -15,6 +18,7 @@ $font-title-color: #333;
 $font-title-color-light: #fff !default;
 $font-title-color-dark: #333;
 $font-title-weight: 300;
+$cookie-banner-bg: $primary;
 
 // $font-size-base affects the font size of the body text
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
@@ -52,7 +56,7 @@ $to-portal-link-color: #282828 !default;
 $img-placeholder: #f2f2f2 !default;
 
 //swiper
-$swiper-icon-color: $primary-svg !default;
+$swiper-icon-color: $primary;
 $swiper-button-height: 45px !default;
 $swiper-button-width: 45px !default;
 $swiper-button-top: 26% !default;
@@ -61,14 +65,14 @@ $swiper-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/20
 $swiper-background-size: 50% !default;
 $swiper-background-color: #fff !default;
 $swiper-raduis: 50px !default;
-$swipper-bullet-color: $primary-svg !default;
+$swipper-bullet-color: $primary;
 
 //*// HEADER
-$main-logo-max-width: 82px;
-$header-top-padding: 0.7rem 0 0.7rem 0;
+$main-logo-max-width: 140px;
+$header-top-padding: 1rem 0 1rem 0;
 $header-top-background: $primary;
 $header-center-nav: false !default;
-$header-nav-margin: 0 1rem 0 1rem !default;
+$header-nav-margin: 0 1rem 0 2rem;
 $header-nav-link-color: #fff;
 $header-nav-link-font-size: 16px;
 $header-nav-link-font-family: $font-family-base;
@@ -104,7 +108,7 @@ $nav-link-drop-color-mobile: #030720 !default;
 $nav-link-drop-mobile: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="%23000" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 $nav-first-level-gap: 30px !default;
 $nav-first-level-uppercase: false;
-$nav-quick-link-color: $primary-svg;
+$nav-quick-link-color: $primary;
 $nav-quick-link-size: 18px !default;
 $nav-quick-link-weight: bold !default;
 $nav-quick-link-padding: 0 !default;
@@ -114,11 +118,11 @@ $nav-overlay-radius: $global-radius !default;
 $nav-overlay-title-color: $primary !default;
 $nav-overlay-title-font-size: 24px !default;
 $nav-overlay-title-font-weight: bold !default;
-$nav-overlay-next-color-hover: $primary-svg;
-$nav-overlay-next-icon-color: #030720;
+$nav-overlay-next-color-hover: $primary;
+$nav-overlay-next-icon-color: $primary;
 $nav-overlay-next-icon-hover-color: $primary-svg;
 $nav-overlay-next-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
-$nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-hover-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
+$nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6" height="9"><path fill="#{url-encoded-color($nav-overlay-next-icon-color)}" d="M0.256056 8.20064C0.175109 8.12308 0.110695 8.02993 0.0666899 7.92682C0.0226851 7.82371 -3.21599e-08 7.71275 -3.70604e-08 7.60064C-4.19609e-08 7.48853 0.0226851 7.37758 0.0666899 7.27447C0.110695 7.17135 0.175109 7.07821 0.256056 7.00064L3.11006 4.22064L0.256055 1.43664C0.177451 1.35858 0.11525 1.26558 0.0731093 1.16312C0.030969 1.06067 0.00974056 0.950818 0.0106723 0.840037C0.011604 0.729257 0.034677 0.619781 0.0785346 0.518048C0.122392 0.416314 0.186149 0.324378 0.266055 0.247643C0.428692 0.0905508 0.64545 0.00192103 0.871559 6.00434e-05C1.09767 -0.00180095 1.31586 0.0832488 1.48106 0.237643L4.94806 3.62264C5.02845 3.70052 5.09236 3.79377 5.13599 3.89685C5.17963 3.99992 5.20209 4.11071 5.20206 4.22264C5.16148 4.43857 5.07485 4.64321 4.94806 4.82264L1.48106 8.20064C1.31659 8.35962 1.0968 8.44849 0.868056 8.44849C0.639315 8.44849 0.41952 8.35962 0.255056 8.20064L0.256056 8.20064Z" /></svg>') !default;
 
 //sub-header
 $subsite-container-padding: 0 !default;
@@ -145,7 +149,7 @@ $sub-nav-scroll-arrow-color: #000 !default;
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
+$banner-heigh: 690px;
 $banner-content-width: max-content !default;
 $banner-content-max-width: 100% !default;
 $banner-content-margin: 0 !default;
@@ -186,14 +190,13 @@ $quick-access-title-margin: 0;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
 $quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 90px;
+$quick-access-width: 96px;
 $quick-access-height: 96px;
-$quick-access-background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 96.28'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %2324565f; %7D %3C/style%3E%3C/defs%3E%3Cg id='UI-frame-icon-2'%3E%3Cpath class='cls-1' d='m45.08,95.29l-6.56-5.85-.21-.19H15c-3.81,0-7.38-1.48-10.08-4.17-2.69-2.69-4.17-6.27-4.17-10.08V.75h88.5v74.25c0,3.81-1.48,7.38-4.17,10.08-2.69,2.69-6.27,4.17-10.08,4.17h-22.84l-.21.18-6.87,5.86Z'/%3E%3Cpath class='cls-2' d='m1.5,1.5v73.5c0,3.61,1.4,7,3.95,9.55s5.94,3.95,9.55,3.95h23.59l6.5,5.79,6.79-5.79h23.11c3.61,0,7-1.4,9.55-3.95s3.95-5.94,3.95-9.55V1.5H1.5M0,0h90v75c0,8.28-6.72,15-15,15h-22.56l-7.37,6.28-7.05-6.28H15c-8.28,0-15-6.72-15-15V0Z'/%3E%3C/g%3E%3C/svg%3E");
-$quick-access-border: solid 0 $primary;
-$quick-access-border-radius: 0;
+$quick-access-background: $primary-svg;
+$quick-access-border-radius: 500px;
 $quick-access-shadow: none !default;
 $quick-access-svg-width: 45px;
-$quick-access-svg-color: $primary;
+$quick-access-svg-color: #1a5d7a;
 $quick-access-item-title-margin: 1rem 0;
 $quick-access-title-font-size: 15px;
 $quick-access-title-color: #333;
