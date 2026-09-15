@@ -1,3 +1,8 @@
+## [1.0.2](https://github.com/IMIO/imio_smartweb_themes/compare/base-v1.0.1...v1.0.2) (2026-09-15)
+
+* Remove sticky header in Reaxt view if main menu is sticky (fef35402)
+* chore(base): use base-v${version} tag scheme to avoid collision with root package tags (9b0b79a2)
+
 ## [1.0.1](https://github.com/IMIO/imio_smartweb_themes/compare/v1.0.0...v1.0.1) (2026-08-27)
 
 * Isolate sub-menu base js (b6c86b3e)
