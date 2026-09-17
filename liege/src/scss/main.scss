@@ -526,3 +526,9 @@ footer #container-section-noussuivre {
     margin-right: auto;
   }
 }
+
+.subsite-container #subsite-logo a:focus,
+.subsite-container #subsite-logo a:hover {
+  background: $primary-svg;
+  text-decoration: none;
+}

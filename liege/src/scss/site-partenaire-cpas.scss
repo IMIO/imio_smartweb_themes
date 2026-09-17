@@ -37,6 +37,7 @@
   // ─── Couleurs ───────────────────────────────────────────────────────────────
   --primary-svg: #80275b;
   --primary-red: #df006e;
+  --primary-light: #ffecf5;
 
   // ─── Logo bandeau ────────────────────────────────────────────────────────────
   #portal-logo .sr-only span::before {
@@ -127,7 +128,7 @@
     }
 
     a:hover {
-      color: var(--primary-red) !important;
+      color: var(--primary-light) !important;
     }
   }
 

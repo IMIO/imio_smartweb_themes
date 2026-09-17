@@ -217,11 +217,12 @@ body:not(.portaltype-imio-smartweb-portalpage) {
 }
 
 .r-list-item-group {
-  border-radius: 15px !important;
+  border-radius: 5px !important;
   background: #fff;
   border: 1px solid #d1d1d1;
   margin: 30px auto;
   max-width: 900px;
+  z-index: -1;
 }
 
 .r-content-text a {
