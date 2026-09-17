@@ -222,7 +222,7 @@ body:not(.portaltype-imio-smartweb-portalpage) {
   border: 1px solid #d1d1d1;
   margin: 30px auto;
   max-width: 900px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .r-content-text a {
