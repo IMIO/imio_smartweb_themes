@@ -23,6 +23,11 @@
     }
   }
 
+  .a-la-une::before,
+  .sectionevents::before {
+    display: none !important;
+  }
+
   // ─── Décorations bg gauche/droite ────────────────────────────────────────────
   #portal-column-content::before,
   #portal-footer-wrapper::before {
