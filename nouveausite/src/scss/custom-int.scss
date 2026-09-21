@@ -209,7 +209,8 @@
   }
 }
 
-.subsection-notre-equipe {
+.subsection-notre-equipe,
+.subsection-page-test {
   .section-text .body-section .text {
     max-width: 100% !important;
   }
@@ -236,6 +237,40 @@
     figure
     img {
     border-radius: 50% !important;
+  }
+
+  .row.multicontact.nb-contact-by-line-4 {
+    gap: 40px;
+  }
+
+  .sectioncontact {
+    .body-section {
+      display: flex;
+      gap: 20px;
+      padding: 0 !important;
+      align-items: center;
+    }
+
+    .contact_logo {
+      display: none !important;
+    }
+
+    .contact_leadimage.display-carre {
+      max-width: 140px;
+    }
+
+    .contact_titles {
+      max-width: 130px;
+      font-size: 1.25rem !important;
+
+      .contact_subtitle {
+        font-size: 14px !important;
+      }
+    }
+
+    .contact_leadimage {
+      border-radius: 50% !important;
+    }
   }
 
   @media screen and (max-width: 1400px) {
