@@ -37,9 +37,9 @@ The goal of this repository is to:
 
 ### Build & Development
 
-- **`pnpm build --theme=<theme-name>`** - Compile un thème en mode production
-- **`pnpm build:dev --theme=<theme-name>`** - Compile un thème en mode développement
-- **`pnpm watch --theme=<theme-name>`** - Lance le serveur de développement avec hot-reload
+- **`pnpm build --env theme=<theme-name>`** - Compile un thème en mode production
+- **`pnpm build:dev --env theme=<theme-name>`** - Compile un thème en mode développement
+- **`pnpm watch --env theme=<theme-name>`** - Lance le serveur de développement avec hot-reload
 
 ### Release
 

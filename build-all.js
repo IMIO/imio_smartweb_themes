@@ -134,14 +134,14 @@ const sites = [
 
 // let sitesbuild = "";
 // sites.forEach(element => {
-//     sitesbuild = sitesbuild + "pnpm --theme="+element+ " build" + " && "
+//     sitesbuild = sitesbuild + "pnpm build --env theme="+element + " && "
 // })
 // console.log(sitesbuild);
 
 const execSync = require("child_process").execSync;
 
 sites.forEach((site) => {
-  let cmd = `pnpm --theme=${site} build`;
+  let cmd = `pnpm build --env theme=${site}`;
   let options = { stdio: "inherit" };
   execSync(cmd, options);
 });

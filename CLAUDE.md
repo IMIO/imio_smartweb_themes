@@ -18,9 +18,9 @@ pnpm prettier              # Check code formatting (JS, JSON, CSS, SCSS)
 pnpm prettier:fix          # Auto-format code
 
 # Build a single theme (produces dist/ and theme.zip)
-pnpm build --theme=<theme-name>        # Production build
-pnpm build:dev --theme=<theme-name>    # Development build with source maps
-pnpm watch --theme=<theme-name>        # Dev server on port 3000 (proxies Plone on 8080)
+pnpm build --env theme=<theme-name>        # Production build
+pnpm build:dev --env theme=<theme-name>    # Development build with source maps
+pnpm watch --env theme=<theme-name>        # Dev server on port 3000 (proxies Plone on 8080)
 
 # Build all themes
 node build-all.js
@@ -39,7 +39,7 @@ imio_smartweb_themes/
 ├── base/              # Shared base theme (published as @imiobe/plonetheme-smartweb-base)
 ├── smartweb/          # Extended theme variant with fragments
 ├── scripts/           # Theme creation helpers
-├── webpack.config.js  # Webpack config (entry/output resolved via --theme flag)
+├── webpack.config.js  # Webpack config (entry/output resolved via --env theme=<name>)
 ├── postcss.config.js  # Autoprefixer only
 ├── .stylelintrc.json  # Stylelint config
 └── {municipality}/    # 155+ individual municipality themes
@@ -102,7 +102,7 @@ base/src/scss/
 
 ### Build System
 
-Webpack 5 resolves the theme path from the `--theme` env flag. Outputs:
+Webpack 5 resolves the theme path from the `--env theme=<name>` flag, forwarded to webpack-cli verbatim via `pnpm <script> --env theme=<name>` (no `--` separator — pnpm passes all tokens after the script name straight through, and webpack-cli treats a literal `--` as "stop parsing flags, rest are entries"). Outputs:
 - `dist/css/theme.css` + `dist/js/theme.js`
 - Auto-generated favicons from `icons/logo.png`
 - `theme.zip` (FileManagerPlugin) for Plone deployment
@@ -125,5 +125,5 @@ Each theme ships a `manifest.cfg` (bundle paths) and `rules.xml` (Diazo XSLT rul
 
 After changes:
 1. Run `pnpm stylelint` and `pnpm prettier` — both should exit 0
-2. Run `pnpm build --theme=<any-theme>` — should produce `dist/` and `theme.zip`
+2. Run `pnpm build --env theme=<any-theme>` — should produce `dist/` and `theme.zip`
 3. For base theme changes, test against at least one municipality theme build

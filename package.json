@@ -30,9 +30,9 @@
     "prettier:fix": "npx prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
     "dry-release": "release-it --dry-run",
     "release": "release-it",
-    "build": "webpack --mode=production --progress --stats --env theme=$npm_config_theme",
-    "build:dev": "webpack --mode=development --progress --stats --env theme=$npm_config_theme",
-    "watch": "webpack serve --mode=development --env theme=$npm_config_theme --progress",
+    "build": "webpack --mode=production --progress --stats",
+    "build:dev": "webpack --mode=development --progress --stats",
+    "watch": "webpack serve --mode=development --progress",
     "start": "concurrently --names \"PLONE,WEBPACK\" -c \"bgBlue.bold,bgMagenta.bold\" \"../../../bin/instance fg\" \"npm:watch\""
   },
   "devDependencies": {
