@@ -18,7 +18,26 @@ $enable-roboto-webfont: false;
 @import "./home";
 @import "./quickacess";
 @import "./a-la-une";
+@import "./footer";
+@import "./se-files";
+@import "./se-link";
 
 //// STYLES
 
 // ... add your styles here
+#portal-column-content .sectioncontact {
+  .contact-type-organization,
+  .body-section.contact-type-position,
+  .body-section.contact-type-mission {
+    background: #f1f1f1;
+    border-radius: 20px 20px 20px 0 !important;
+    margin: 10px;
+    width: auto !important;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: $font-family-base;
+  }
+}
