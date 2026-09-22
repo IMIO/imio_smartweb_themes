@@ -99,4 +99,21 @@
     width: 100vw;
     z-index: -1;
   }
+
+  .section-container {
+    position: relative;
+  }
+
+  .swiper_category {
+    position: absolute;
+    top: 0;
+  }
+
+  .swiper_date {
+    margin-top: 2rem;
+  }
+
+  .see_all {
+    margin-bottom: 2rem;
+  }
 }
