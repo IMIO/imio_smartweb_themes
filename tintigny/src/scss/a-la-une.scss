@@ -1,0 +1,17 @@
+.a-la-une {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 2.6;
+    background: url("../../assets/svg/a-snake.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
+}
