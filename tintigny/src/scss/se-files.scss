@@ -47,7 +47,7 @@
         border: solid 1px $primary;
         text-decoration: none;
         padding: 20px;
-        border-radius: 0;
+        border-radius: 5px;
 
         span,
         p,
@@ -55,6 +55,10 @@
         div {
           color: $primary;
           font-weight: 400;
+        }
+
+        &:hover {
+          background-color: #fff;
         }
       }
     }
