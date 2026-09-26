@@ -41,3 +41,10 @@ $enable-roboto-webfont: false;
     font-family: $font-family-base;
   }
 }
+
+.r-item-img.r-item-img-placeholder {
+  background: url("../../assets/svg/placeholder.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1 !important;
+}
