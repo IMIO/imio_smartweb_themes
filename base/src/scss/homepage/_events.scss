@@ -89,6 +89,7 @@
       margin: $event-date-margin;
       color: $event-date-color;
       font-size: $event-date-font-size;
+      text-align: $event-date-align;
     }
 
     .swiper_title {
@@ -100,6 +101,7 @@
         font-size: $event-item-title-font-size;
         font-weight: $event-item-title-font-weight;
         text-transform: $event-item-title-text-transform;
+        text-align: $event-item-title-align;
       }
     }
 

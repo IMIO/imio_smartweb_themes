@@ -247,17 +247,17 @@ $actu-item-title-color: #fff;
 $actu-item-title-text-transform: initial !default;
 $actu-item-title-font-size: $h3-font-size !default;
 $actu-item-title-font-weight: initial !default;
-$actu-item-title-align: left !default;
+$actu-item-title-align: center;
 $actu-item-description-margin: 0 0 0.5rem 0 !default;
 $actu-item-description-padding: 0 1rem !default;
 $actu-item-description-color: initial !default;
-$actu-item-description-align: left !default;
+$actu-item-description-align: center;
 $actu-item-description-font-family: $font-family-base !default;
 $actu-date-margin: 1rem 0 0.5rem 0 !default;
 $actu-date-padding: 0 1rem !default;
 $actu-date-color: #fff !default;
 $actu-date-font-size: 14px !default;
-$actu-date-align: left !default;
+$actu-date-align: center;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
@@ -287,15 +287,17 @@ $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size !default;
 $event-item-title-font-weight: initial !default;
+$event-item-title-align: center;
 $event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
-$event-item-description-align: left !default;
+$event-item-description-align: center;
 $event-item-description-font-family: $font-family-base !default;
 $event-date-margin: 0 0 0.5rem 0 !default;
 $event-date-padding: 0 1rem !default;
 $event-date-color: $primary !default;
 $event-date-font-size: 14px !default;
+$event-date-align: center;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
 // Album
@@ -421,3 +423,10 @@ $see-all-font-family: $font-family-title !default;
   --bs-breadcrumb-padding-y: 10px !important;
   --bs-breadcrumb-bg: transparent !important;
 }
+
+$cookie-banner-bg: $primary;
+$cookie-banner-color: #fff;
+$cookie-banner-border: $primary;
+$cookie-banner-hv-bg: #fff;
+$cookie-banner-hv-color: $primary;
+$cookie-banner-hv-border: $primary;

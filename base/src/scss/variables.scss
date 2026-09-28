@@ -297,6 +297,7 @@ $event-item-title-color: initial !default;
 $event-item-title-text-transform: initial !default;
 $event-item-title-font-size: $h3-font-size !default;
 $event-item-title-font-weight: initial !default;
+$event-item-title-align: left !default;
 $event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
@@ -306,6 +307,7 @@ $event-date-margin: 0 0 0.5rem 0 !default;
 $event-date-padding: 0 1rem !default;
 $event-date-color: $primary !default;
 $event-date-font-size: 0.875rem !default;
+$event-date-align: left !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
 // footer
@@ -446,8 +448,8 @@ $react-arrow-btn-hv-radius: 5px !default;
 // Cookie banner
 $cookie-banner-bg: #1863dc !default;
 $cookie-banner-hv-bg: transparent !default;
-$cookie-banner-border: 2px solid #1863dc;
-$cookie-banner-hv-border: 2px solid #1863dc;
+$cookie-banner-border: 2px solid #1863dc !default;
+$cookie-banner-hv-border: 2px solid #1863dc !default;
 $cookie-banner-color: #fff !default;
 $cookie-banner-hv-color: #1863dc !default;
 

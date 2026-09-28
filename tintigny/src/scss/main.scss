@@ -48,3 +48,15 @@ $enable-roboto-webfont: false;
   background-position: center;
   z-index: -1 !important;
 }
+
+.swiper-slide .swiper_title {
+  width: 100%;
+}
+
+.swiper-slide .swiper_date {
+  width: 100%;
+}
+
+.sectionnews .swiper-pagination-bullet-active {
+  background: #fff !important;
+}
