@@ -79,6 +79,7 @@
 .avis-enquetes {
   padding: 80px 40px;
   position: relative;
+  background: transparent;
 
   &::after {
     background: $primary-svg;
