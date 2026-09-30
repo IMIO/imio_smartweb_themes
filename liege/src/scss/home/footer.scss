@@ -242,3 +242,22 @@ footer {
     }
   }
 }
+
+.contact-html {
+  h2 {
+    margin-top: 40px;
+  }
+
+  .listing {
+    width: auto !important;
+
+    tbody {
+      tr {
+        td {
+          background: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
