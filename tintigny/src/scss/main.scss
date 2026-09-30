@@ -60,3 +60,34 @@ $enable-roboto-webfont: false;
 .sectionnews .swiper-pagination-bullet-active {
   background: #fff !important;
 }
+
+#search-link {
+  a {
+    width: 36px;
+    height: 36px;
+    background: $primary;
+  }
+}
+
+.sectionevents .swiper_date {
+  display: flex;
+  justify-content: center;
+}
+
+.sectiontext .section-text .body-section a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* épaisseur du trait */
+  text-underline-offset: 0.24em; /* espace entre texte et trait */
+  text-decoration-color: currentcolor; /* ou une couleur plus légère */
+  text-decoration-skip-ink: auto; /* le trait s'interrompt sous p, g, y… */
+
+  &:hover {
+    text-decoration-thickness: 3px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 2px;
+  }
+}

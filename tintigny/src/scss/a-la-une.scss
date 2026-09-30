@@ -3,15 +3,17 @@
 
   &::after {
     content: "";
-    position: absolute;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    aspect-ratio: 2.6;
     background: url("../../assets/svg/a-snake.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    right: 0;
     transform: translateX(-50%);
     width: 100vw;
     z-index: -1;
+    top: 0;
+    background-size: contain;
   }
 }

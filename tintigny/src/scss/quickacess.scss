@@ -22,7 +22,7 @@
               transform: translateY(-5px);
               transition: all 0.3s ease;
               background: $primary-svg !important;
-              border: 1px solid $primary;
+              border: 1px solid $primary-svg !important;
 
               svg {
                 fill: #fff;
