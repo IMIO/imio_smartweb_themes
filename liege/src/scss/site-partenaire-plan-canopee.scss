@@ -149,10 +149,10 @@
 
   // ─── Liens contenu riche ─────────────────────────────────────────────────────
   .r-content-text a {
-    color: var(--primary-red);
+    color: var(--primary-svg);
 
     &:hover {
-      color: var(--primary-svg);
+      color: var(--primary-red);
     }
   }
 
@@ -213,11 +213,11 @@
 
   .swiper_link > div:last-child {
     &::after {
-      background-color: var(--primary-red) !important;
+      background-color: var(--primary-svg) !important;
     }
 
     &:hover::after {
-      background-color: var(--primary-svg) !important;
+      background-color: var(--primary-red) !important;
     }
   }
 
