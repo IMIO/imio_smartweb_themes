@@ -75,13 +75,13 @@
 
   // ─── Sub-nav ─────────────────────────────────────────────────────────────────
   .subsite-container #subsite-logo {
-    background: var(--primary-red);
+    background: var(--primary-svg);
 
     a {
-      background: var(--primary-red);
+      background: var(--primary-svg);
 
       &:hover {
-        background: var(--primary-svg);
+        background: var(--primary-red);
       }
     }
   }
@@ -94,11 +94,11 @@
   // ─── Liste liens ─────────────────────────────────────────────────────────────
   .list-menu-element a {
     .list-card-body .list-card-title {
-      color: var(--primary-red);
+      color: var(--primary-svg);
     }
 
     &:hover .list-card-body .list-card-title {
-      color: var(--primary-svg);
+      color: var(--primary-red);
     }
   }
 
@@ -158,10 +158,10 @@
 
   // ─── Bouton retour ───────────────────────────────────────────────────────────
   .r-back-button {
-    background: var(--primary-red);
+    background: var(--primary-svg);
 
     &:hover {
-      background: var(--primary-svg);
+      background: var(--primary-red);
     }
   }
 
@@ -172,10 +172,10 @@
 
   // ─── Liens news détail ───────────────────────────────────────────────────────
   .r-content-news-info a {
-    color: var(--primary-red) !important;
+    color: var(--primary-svg) !important;
 
     &:hover {
-      color: var(--primary-svg) !important;
+      color: var(--primary-red) !important;
     }
   }
 
@@ -239,12 +239,12 @@
   }
 
   .see_all a {
-    background: var(--primary-red) !important;
-    border-color: var(--primary-red) !important;
+    background: var(--primary-svg) !important;
+    border-color: var(--primary-svg) !important;
 
     &:hover {
-      background: var(--primary-svg) !important;
-      border-color: var(--primary-svg) !important;
+      background: var(--primary-red) !important;
+      border-color: var(--primary-red) !important;
     }
   }
 
@@ -318,24 +318,24 @@
   // ─── Autres ───────────────────────────────────────────────────────
   .sectionfiles {
     .table_image {
-      background-color: var(--primary-red) !important;
+      background-color: var(--primary-svg) !important;
 
       &:hover {
-        background-color: var(--primary-svg) !important;
+        background-color: var(--primary-red) !important;
       }
     }
 
     &::after {
-      background-color: var(--primary-svg) !important;
+      background-color: var(--primary-red) !important;
     }
   }
 
   .sectionlinks {
     .table_image {
-      background-color: var(--primary-red) !important;
+      background-color: var(--primary-svg) !important;
 
       &:hover {
-        background-color: var(--primary-svg) !important;
+        background-color: var(--primary-red) !important;
       }
     }
   }
@@ -394,10 +394,10 @@
 
   .sectioncontact {
     a {
-      color: var(--primary-red) !important;
+      color: var(--primary-svg) !important;
 
       &:hover {
-        color: var(--primary-svg) !important;
+        color: var(--primary-red) !important;
       }
     }
   }
