@@ -532,3 +532,23 @@ footer #container-section-noussuivre {
   background: $primary-svg;
   text-decoration: none;
 }
+
+.smartweb_footer .contact-html {
+  h2 {
+    margin-top: 40px !important;
+  }
+
+  .listing {
+    width: auto !important;
+
+    tbody {
+      tr {
+        td {
+          background: none;
+          color: #fff;
+          border-bottom: 1px solid #3d3d3d;
+        }
+      }
+    }
+  }
+}
