@@ -527,12 +527,6 @@ body .sectiontext .section-text .body-section a {
 .tox-edit-area #tinymce p {
   background-color: #000;
 }
-//FILTRES Catégories
-@media screen and (min-width: 901px) {
-  .more-filter-container.collapse:not(.show) {
-    display: initial !important;
-  }
-}
 
 body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   display: none !important;
