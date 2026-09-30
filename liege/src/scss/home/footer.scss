@@ -245,7 +245,7 @@ footer {
 
 .contact-html {
   h2 {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
 
   .listing {
@@ -256,6 +256,7 @@ footer {
         td {
           background: none;
           color: #fff;
+          border-bottom: 1px solid #3d3d3d;
         }
       }
     }
