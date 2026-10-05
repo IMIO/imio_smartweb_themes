@@ -565,3 +565,19 @@ h3 {
     margin-right: auto;
   }
 }
+
+.swiper-pagination {
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: block !important;
+}
+
+.contact-type-organization {
+  .address,
+  .schedule {
+    margin-bottom: 1rem;
+  }
+}
