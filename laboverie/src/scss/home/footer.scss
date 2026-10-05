@@ -86,7 +86,7 @@
       }
 
       .sectiontext figure img {
-        max-width: 100%;
+        max-width: 400px;
         border-radius: 0 !important;
       }
     }
@@ -204,7 +204,7 @@ footer {
   padding: 0;
   width: 100%;
   display: block;
-  height: 200px;
+  height: 120px;
 
   @media (max-width: 1400px) {
     margin: 0 auto;

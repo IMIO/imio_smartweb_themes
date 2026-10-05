@@ -575,9 +575,64 @@ h3 {
   display: block !important;
 }
 
+.oeuvre {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
 .contact-type-organization {
   .address,
   .schedule {
     margin-bottom: 1rem;
+  }
+}
+
+.site-nl {
+  .a-la-une {
+    .swiper_link {
+      > div:last-child {
+        &::after {
+          content: "Ontdekken" !important;
+        }
+      }
+    }
+  }
+}
+
+.site-de {
+  .a-la-une {
+    .swiper_link {
+      > div:last-child {
+        &::after {
+          content: "Entdecken" !important;
+        }
+      }
+    }
+  }
+}
+
+.site-fr {
+  .a-la-une {
+    .swiper_link {
+      > div:last-child {
+        &::after {
+          content: "Découvrir" !important;
+        }
+      }
+    }
+  }
+}
+
+.site-en {
+  .a-la-une {
+    .swiper_link {
+      > div:last-child {
+        &::after {
+          content: "Explore" !important;
+        }
+      }
+    }
   }
 }
