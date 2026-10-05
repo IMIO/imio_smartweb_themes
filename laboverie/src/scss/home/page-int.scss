@@ -89,7 +89,7 @@
 }
 
 .rich_description {
-  color: $primary-svg;
+  color: $primary;
 }
 
 .list-menu-element {
@@ -118,7 +118,7 @@
     &:hover {
       .list-card-body {
         .list-card-title {
-          color: $primary-svg;
+          color: $primary;
         }
       }
     }
