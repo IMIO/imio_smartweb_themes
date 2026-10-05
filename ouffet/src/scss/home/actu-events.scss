@@ -1,0 +1,124 @@
+.sectionnews {
+  padding-bottom: 80px !important;
+  margin-bottom: 0;
+
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: $primary-brun;
+    width: 100%;
+
+    &::after {
+      background: $primary;
+      content: "";
+      display: block;
+      width: 60px;
+      height: 8px;
+      margin: 20px auto 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-radius: 20px;
+    }
+  }
+
+  position: relative;
+
+  .swiper_category {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .swiper-slide {
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.sectionevents {
+  .section-title {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: $primary-brun;
+    width: 100%;
+
+    &::after {
+      background: $primary;
+      content: "";
+      display: block;
+      width: 60px;
+      height: 8px;
+      margin: 20px auto 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-radius: 20px;
+    }
+  }
+
+  .swiper_category {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .swiper-slide {
+    a {
+      h3 {
+        transition: all 0.3s ease;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.informes {
+  .section-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    width: 100%;
+  }
+}

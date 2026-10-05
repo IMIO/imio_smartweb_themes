@@ -1,0 +1,69 @@
+.smartweb_herobanner .bannerSwiper {
+  height: 550px;
+}
+
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  padding: 0;
+  width: max-content;
+
+  .swiper-banner-content {
+    justify-self: right;
+    background: rgba(256, 256, 256, 80%);
+    border-radius: 0 0 0 20px;
+    padding: 30px 150px 30px 40px;
+    display: block;
+
+    .swiper-banner-title {
+      color: $primary-brun;
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    .swiper-banner-link {
+      a {
+        color: $primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          transition: ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.smartweb_herobanner {
+  width: calc(100vw - 50px);
+  margin-left: -25px;
+  border-radius: 0 0 120px;
+  overflow: hidden;
+
+  .swiper-button-next {
+    top: 60px;
+    right: 30px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .swiper-button-prev {
+    top: 60px;
+    left: auto;
+    right: 80px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
