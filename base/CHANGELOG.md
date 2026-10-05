@@ -1,3 +1,8 @@
+## [1.0.3](https://github.com/IMIO/imio_smartweb_themes/compare/base-v1.0.2...v1.0.3) (2026-10-05)
+
+* Fix subsite logo hover color (5c432a25)
+* Pinned base theme 1.0.2 (d15c859d)
+
 ## [1.0.2](https://github.com/IMIO/imio_smartweb_themes/compare/base-v1.0.1...v1.0.2) (2026-09-15)
 
 * Remove sticky header in Reaxt view if main menu is sticky (fef35402)
