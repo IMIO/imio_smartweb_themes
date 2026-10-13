@@ -28,10 +28,15 @@
       li {
         .table_image {
           .image.d-block {
+            background: #f8f8f8 !important;
             border-radius: 100px;
             margin-bottom: 20px !important;
             transition: all 0.5s ease;
             position: relative;
+
+            svg {
+              fill: #dedede !important;
+            }
 
             &::after {
               background: url("../../assets/svg/btn-plus.svg") top right
@@ -70,86 +75,6 @@
           .table_title {
             span {
               line-height: 1;
-            }
-          }
-        }
-
-        &:nth-child(1) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(3) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(4) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(5) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(6) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(7) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
-            }
-          }
-        }
-
-        &:nth-child(8) {
-          .table_image .image.d-block {
-            background: #f8f8f8;
-
-            svg {
-              fill: #dedede;
             }
           }
         }
