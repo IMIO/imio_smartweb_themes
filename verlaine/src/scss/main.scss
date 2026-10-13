@@ -433,3 +433,12 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
   background-position: center;
   margin-bottom: 30px;
 }
+
+.r-list-item-group {
+  background: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 15px !important;
+  margin: 30px auto;
+  max-width: 900px;
+  overflow: hidden;
+}
