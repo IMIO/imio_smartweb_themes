@@ -1045,3 +1045,7 @@ footer #container-section-noussuivre {
 .margin-tp {
   margin-top: 60px;
 }
+
+.block-menu-element > a .card-body .card-text::after {
+  display: none !important;
+}

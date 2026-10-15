@@ -22,6 +22,11 @@ $(document).ready(function () {
     eventsSwiper.params.spaceBetween = 30;
     (eventsSwiper.params.speed = 1000), eventsSwiper.update();
   }
+  if ($(".bloc-temoignages .swiper").length > 0) {
+    var temoignagesSwiper = $(".bloc-temoignages .swiper")[0].swiper;
+    temoignagesSwiper.params.spaceBetween = 0;
+    (temoignagesSwiper.params.speed = 1000), temoignagesSwiper.update();
+  }
 
   ScrollReveal().reveal(".swiper-banner-content *", {
     delay: 500,
