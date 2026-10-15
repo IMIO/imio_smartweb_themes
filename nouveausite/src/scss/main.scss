@@ -1063,3 +1063,9 @@ footer #container-section-noussuivre {
 .colophonWrapper ul li:nth-child(5) {
   display: none;
 }
+
+@media screen and (max-width: 774px) {
+  .r-item-arrow-more {
+    display: none !important;
+  }
+}
