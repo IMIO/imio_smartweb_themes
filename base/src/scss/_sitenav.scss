@@ -46,7 +46,10 @@
   li {
     ul {
       left: 0;
-      transition: ease-out 2.75s;
+
+      @include media-breakpoint-up(lg) {
+        transition: opacity 2.75s ease-out;
+      }
     }
 
     a {
@@ -388,7 +391,7 @@
     height: 100vh;
     transition:
       right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64),
-      opacity 5s ease,
+      opacity 0.5s ease,
       0.5s visibility ease;
   }
 }
@@ -423,7 +426,14 @@
     height: 100vh;
     padding: 6em 2em 0;
     background: #fff;
-    transition: all 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64);
+    transition: left 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64);
+
+    // Neutralise l'animation de hauteur du collapse Bootstrap :
+    // seul le glissement horizontal doit être animé.
+    &.collapsing {
+      height: 100vh !important;
+      overflow: visible;
+    }
 
     #portal-globalnav {
       & > li > a {
@@ -475,7 +485,7 @@
       height: 100vh;
       transition:
         right 0.5s cubic-bezier(0.54, 0.01, 0.68, 0.64),
-        opacity 5s ease,
+        opacity 0.5s ease,
         0.5s visibility ease;
     }
 
