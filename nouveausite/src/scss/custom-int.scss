@@ -87,7 +87,7 @@
       justify-content: center;
       gap: 0 !important;
       transition: all 0.2s ease;
-      display: block !important;
+      display: flex !important;
 
       &:hover {
         background: $primary !important;
@@ -253,7 +253,7 @@
     }
 
     .contact_leadimage.display-carre {
-      max-width: 140px;
+      max-width: 120px;
     }
 
     .contact_titles {

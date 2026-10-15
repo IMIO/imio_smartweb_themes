@@ -1050,7 +1050,7 @@ footer #container-section-noussuivre {
   display: none !important;
 }
 
-.r-search-result {
+.r-search-result > {
   .r-search-header {
     display: none !important;
   }
@@ -1058,4 +1058,8 @@ footer #container-section-noussuivre {
 
 .search-select-filter {
   display: none !important;
+}
+
+.colophonWrapper ul li:nth-child(5) {
+  display: none;
 }
