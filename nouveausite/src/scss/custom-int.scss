@@ -97,6 +97,10 @@
       .table_title span::before {
         display: none !important;
       }
+
+      .w-100 {
+        width: initial !important;
+      }
     }
   }
 }
