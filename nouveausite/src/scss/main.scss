@@ -1049,3 +1049,13 @@ footer #container-section-noussuivre {
 .block-menu-element > a .card-body .card-text::after {
   display: none !important;
 }
+
+.r-search-result {
+  .r-search-header {
+    display: none !important;
+  }
+}
+
+.search-select-filter {
+  display: none !important;
+}
