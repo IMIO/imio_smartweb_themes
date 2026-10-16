@@ -19,27 +19,32 @@
   }
 }
 
+.section-home-page {
+  #portal-footer-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: -350px;
+      width: 100%;
+      max-width: 340px;
+      height: 350px;
+      background: url("../../assets/svg/bg-top-footer.png") no-repeat bottom
+        left;
+      background-size: contain;
+      pointer-events: none;
+      z-index: 0;
+    }
+  }
+}
+
 #portal-footer-wrapper {
   position: relative;
   padding: 80px 0 !important;
   background: $primary;
   overflow: unset;
   text-align: left !important;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: -350px;
-    width: 100%;
-    max-width: 340px;
-    height: 350px;
-    background: url("../../assets/svg/bg-top-footer.png") no-repeat bottom left;
-    background-size: contain;
-    pointer-events: none;
-    z-index: 0;
-  }
 
   .row li {
     flex-direction: row;
