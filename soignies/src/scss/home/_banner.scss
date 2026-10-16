@@ -1,0 +1,25 @@
+@include media-breakpoint-up(lg) {
+  .smartweb_herobanner .bannerSwiper {
+    width: calc(100% - 94px);
+    margin-left: 0;
+    border-radius: 0 280px 280px 0;
+    overflow: hidden;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: auto;
+      bottom: 48px;
+      right: auto;
+      width: 60px;
+      height: 60px;
+    }
+
+    .swiper-button-prev {
+      left: 50px;
+    }
+
+    .swiper-button-next {
+      left: 122px;
+    }
+  }
+}

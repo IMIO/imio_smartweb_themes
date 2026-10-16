@@ -31,7 +31,7 @@ Un thème ne déclare que les variables qui **diffèrent** de ces valeurs par d�
 | `$font-title-color-light` | `#fff` |
 | `$font-title-color-dark` | `$black-color` |
 | `$font-title-weight` | `700` |
-| `$font-size-base` | `1rem !default; // Assumes the browser default, typically `16px`` |
+| `$font-size-base` | `1rem` |
 | `$font-size-sm` | `$font-size-base * 0.875` |
 | `$font-size-lg` | `$font-size-base * 1.25` |
 | `$h1-font-size` | `$font-size-base * 2.5` |

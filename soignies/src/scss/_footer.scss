@@ -1,0 +1,15 @@
+#portal-footer-wrapper {
+  background: $slate-dark;
+  color: #fff;
+
+  .section-title,
+  a,
+  span {
+    color: #fff;
+  }
+
+  .section-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+}

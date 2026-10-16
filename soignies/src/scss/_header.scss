@@ -1,0 +1,16 @@
+#portal-header {
+  margin-bottom: 0;
+
+  #portal-header-top #header-links #search-link a {
+    width: 37px;
+    height: 37px;
+    border: 0;
+    background: $primary-svg;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $primary;
+    }
+  }
+}

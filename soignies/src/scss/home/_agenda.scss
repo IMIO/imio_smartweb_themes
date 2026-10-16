@@ -1,0 +1,8 @@
+// Bandeau ardoise qui démarre à mi-hauteur des cartes
+.sectionevents {
+  background: linear-gradient(to bottom, #fff 0, #fff 232px, $slate-dark 232px);
+
+  .swiper-slide > a {
+    box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+  }
+}

@@ -1,0 +1,21 @@
+// Barre rose à gauche des titres de section
+.sortable-section .section-title {
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 74px;
+    border-radius: 5px;
+    background: $primary-svg;
+  }
+}
+
+.quick-access .section-title {
+  display: none;
+}

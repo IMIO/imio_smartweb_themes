@@ -1,0 +1,10 @@
+// $container-max-widths n'a pas de !default dans la base : non surchargeable par variable.
+@include media-breakpoint-up(xxl) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+body {
+  overflow-x: clip;
+}

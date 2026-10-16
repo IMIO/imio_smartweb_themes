@@ -1,0 +1,38 @@
+// Illustration décorative (monde et pictos)
+@include media-breakpoint-up(xl) {
+  // En bas de la section Actualités, collée au bord droit
+  .sectionnews::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -355px;
+    z-index: -1;
+    width: 477px;
+    height: 499px;
+    background: url("../../assets/svg/decor-world.png") center / contain no-repeat;
+    pointer-events: none;
+  }
+
+  // Partenaires : grille décalée à droite, illustration retournée collée au bord gauche et au pied de page
+  .sectionlinks.partenaires {
+    position: relative;
+    padding-bottom: 194px;
+
+    .nb-items-batch-4 {
+      padding-left: 354px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 50vw);
+      bottom: 0;
+      z-index: -1;
+      width: 472px;
+      height: 494px;
+      background: url("../../assets/svg/decor-world.png") center / contain no-repeat;
+      transform: scale(-1, -1);
+      pointer-events: none;
+    }
+  }
+}
