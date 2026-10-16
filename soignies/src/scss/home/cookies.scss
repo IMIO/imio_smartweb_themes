@@ -1,0 +1,17 @@
+.gdpr-actions input[type="submit"],
+.gdpr-actions a.pat-plone-modal {
+  background-color: $primary-rose !important;
+  border: 1px solid $primary-rose !important;
+  border-radius: 50px;
+  color: #fff !important;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.gdpr-actions input[type="submit"]:hover,
+.gdpr-actions a.pat-plone-modal:hover {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: #fff !important;
+}

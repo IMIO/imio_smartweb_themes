@@ -1,0 +1,132 @@
+.espace-citoyen-bloc {
+  background: none !important;
+  position: relative;
+  z-index: 2; // passe par-dessus le bloc sombre précédent
+  margin-top: -100px;
+  margin-bottom: 40px;
+
+  .section-container {
+    position: relative; // ancre le petit onglet "ESPACE CITOYEN" positionné en absolute
+    margin: 0 auto;
+  }
+
+  .section-title {
+    position: absolute;
+    top: -61px;
+    right: 100px;
+    z-index: 1;
+    margin: 0;
+    padding: 20px 34px;
+    background: $primary-svg;
+    border-radius: 12px 12px 0 0; // coins arrondis en bas seulement
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .body-section {
+    background: $primary-rose;
+    border-radius: 999px; // pilule
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 15%);
+    overflow: hidden;
+  }
+
+  ul.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li.col-md-3 {
+    flex: 1 1 0;
+    min-width: 0;
+    position: relative;
+    padding: 0;
+
+    // Séparateur vertical entre les items (pas sur le premier)
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 22%;
+      bottom: 22%;
+      width: 1px;
+      background: rgba(255, 255, 255, 35%);
+    }
+  }
+
+  .table_display {
+    height: 100%;
+  }
+
+  a.table_image {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    padding: 28px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $primary-dark-rose;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .image.is-icon {
+    flex: 0 0 auto;
+    width: 26px;
+    height: auto;
+
+    .plone-icon {
+      width: 100%;
+      height: auto;
+      fill: #fff;
+    }
+  }
+}
+
+// Empilement vertical en dessous d'un certain seuil
+@media (max-width: 767px) {
+  .espace-citoyen-bloc {
+    margin-top: -80px;
+
+    .section-title {
+      top: -59px;
+      right: 50px;
+      padding: 20px 25px;
+      font-size: 16px;
+    }
+
+    .body-section {
+      border-radius: 24px;
+    }
+
+    ul.row {
+      flex-direction: column;
+    }
+
+    li.col-md-3:not(:first-child)::before {
+      left: 10%;
+      right: 10%;
+      top: 0;
+      bottom: auto;
+      width: auto;
+      height: 1px;
+    }
+
+    a.table_image {
+      padding: 14px 20px;
+    }
+  }
+}

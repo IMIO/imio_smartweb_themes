@@ -1,0 +1,119 @@
+.bulletins-communaux-bloc {
+  background: none;
+
+  .section-title {
+    font-weight: 500;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 2rem;
+    color: $primary-svg;
+    position: relative;
+
+    &::after {
+      background: $primary-rose;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 74px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 30px;
+
+      &::after {
+        height: 50px;
+        width: 13px;
+        margin-top: -13px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 10%);
+    border-radius: 20px 60px 20px 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding-bottom: 40px;
+
+    &:hover,
+    &:focus {
+      transition: all 0.3s ease;
+      transform: translateY(10px);
+    }
+
+    a {
+      text-decoration: none;
+
+      h3 {
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        padding: 0 20px;
+        font-weight: 400;
+        color: #000;
+        font-size: 20px;
+      }
+
+      .swiper-image {
+        transition: all 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        h3 {
+          color: $primary !important;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+
+        .swiper-image {
+          opacity: 70%;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .swiper_description {
+    display: none;
+  }
+
+  .see_all {
+    justify-content: center !important;
+    display: flex;
+
+    a {
+      position: relative;
+      display: block;
+      width: max-content;
+      padding: 10px 20px;
+      background: #e6007e;
+      color: #fff;
+      border-radius: 50px;
+      border: solid 0 #374657;
+      text-decoration: none;
+      text-transform: none;
+      font-size: 16px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+
+      &:hover,
+      .sectionevents .see_all a:focus {
+        background: #bd0168;
+        color: #fff;
+        border-radius: 50px;
+        border: solid 0 #374657;
+      }
+    }
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,116 @@
+#main-container .quick-access {
+  padding: 0;
+
+  .body-section {
+    ul {
+      justify-content: space-evenly;
+
+      li {
+        width: max-content !important;
+
+        .table_image {
+          .image.d-block {
+            position: relative;
+            margin-bottom: 0;
+            transition: all 0.3s ease;
+            background: url("../../assets/svg/quick-a.svg");
+            width: 150px;
+            height: 150px;
+            border: none;
+            z-index: -1;
+
+            svg {
+              fill: #fff;
+            }
+          }
+
+          &:hover,
+          &:focus {
+            .image.d-block {
+              transform: translateY(-5px);
+              background: url("../../assets/svg/quick-b.svg");
+
+              svg {
+                fill: #fff;
+              }
+            }
+          }
+
+          .table_title {
+            margin: 0;
+            max-width: 150px;
+            text-align: center;
+            margin-top: -25px;
+            z-index: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include media-breakpoint-down(lg) {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.sectionlinks.quick-access .body-section ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partenaires {
+  width: 55%;
+  left: 45%;
+  margin: 80px 0;
+
+  @media (max-width: 1000px) {
+    max-width: 1000px;
+    width: 100%;
+    left: 0;
+    margin-bottom: 350px;
+    padding: 0;
+  }
+
+  .section-title {
+    font-weight: 500;
+    text-align: left;
+    padding-left: 30px;
+    color: $primary-svg !important;
+    position: relative;
+    width: max-content !important;
+    margin: 0 auto 2rem !important;
+
+    &::after {
+      background: $primary-rose;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 74px;
+      margin: -6px 0 0 -30px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 30px;
+
+      &::after {
+        height: 50px;
+        width: 13px;
+        margin-top: -13px;
+      }
+    }
+  }
+}

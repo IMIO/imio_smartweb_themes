@@ -1,0 +1,72 @@
+.smartweb_herobanner {
+  position: relative;
+  width: calc(100vw - 80px);
+  margin-left: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 500px 500px 0;
+
+  &::after {
+    background: url("../../assets/svg/after-banner.svg");
+    background-size: contain;
+    content: "";
+    height: 500px;
+    width: 357px;
+    right: -50px;
+    bottom: -6px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .bannerSwiper {
+    height: 500px;
+    border-radius: 0 400px 400px 0;
+  }
+
+  .swiper-banner-content-wrapper {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    top: auto;
+    bottom: 40px;
+    left: 50px;
+  }
+
+  .swiper-button-next {
+    top: auto;
+    bottom: 40px;
+    left: 100px;
+  }
+}
+
+#portal-globalnav > li > a:hover {
+  color: $primary-rose;
+}
+
+.account {
+  display: none;
+}
+
+#search-link a {
+  width: 50px;
+  height: 50px;
+  background: $primary-rose;
+  border: 2px solid $primary-rose;
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 992px) {
+    padding-left: 0 !important;
+  }
+
+  &:hover {
+    background: $primary-dark-rose;
+    border: 2px solid $primary-dark-rose;
+  }
+}
+
+#portal-globalnav {
+  flex-direction: row;
+  justify-content: flex-end;
+}

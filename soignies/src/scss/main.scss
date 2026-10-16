@@ -19,3 +19,29 @@ $enable-roboto-webfont: false;
 //// STYLES
 
 // ... add your styles here
+@import "./home/banner";
+@import "./home/cookies";
+@import "./home/quick-access";
+@import "./home/actu";
+@import "./home/events";
+@import "./home/espace-citoyen";
+@import "./home/bulletins-communaux-bloc";
+@import "./home/footer";
+@import "./se-files";
+@import "./se-link";
+@import "./se-section-collection";
+
+a,
+mark a,
+.sectiontext .section-text .body-section a {
+  color: $primary-dark-rose;
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.contact_leadimage {
+  border-radius: 10px 50px 10px 10px;
+}
