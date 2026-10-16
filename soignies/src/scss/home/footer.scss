@@ -10,7 +10,8 @@
 }
 
 .portaltype-imio-smartweb-page,
-.portaltype-imio-smartweb-procedure {
+.portaltype-imio-smartweb-procedure,
+.portaltype-imio-smartweb-folder {
   #portal-footer-wrapper {
     &::after {
       display: none;
