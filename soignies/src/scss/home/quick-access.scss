@@ -81,6 +81,14 @@
     padding: 0;
   }
 
+  @media (min-width: 1300px) {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    margin-bottom: 150px;
+    padding: 0;
+  }
+
   .section-title {
     font-weight: 500;
     text-align: left;

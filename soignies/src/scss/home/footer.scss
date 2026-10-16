@@ -19,7 +19,8 @@
   }
 }
 
-.section-home-page {
+.section-home-page,
+.section-accueil {
   #portal-footer-wrapper {
     &::after {
       content: "";
