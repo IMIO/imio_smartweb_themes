@@ -155,10 +155,11 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
 - `pnpm prettier` et `pnpm stylelint` doivent passer **sans modifier un seul fichier de thème**. Sinon, l'outil concerné est épinglé et documenté.
 - pnpm reste en v8 pour ne pas toucher au CI.
 
-### [ ] Étape 2 — Squelette de `base2`
+### [x] Étape 2 — Squelette de `base2`
 - `package.json`, `manifest.cfg`, `rules.xml` et `index.html` (même structure que la V1, règles mortes retirées), `src/index.js`, arborescence SCSS.
 - Bootstrap 5.3.8 et Barceloneta 4.1.0 importés sélectivement ; `.sr-only` fourni.
 - Le build produit `dist/` et `theme.zip`.
+- **Résultat** : `theme.css` de 236 Ko minifié (Bootstrap 5.3.8 complet et styles Plone de Barceloneta 4.1.0, sans en-tête, navigation, fil d'Ariane ni pied de page Barceloneta). Le zip exclut bien `src/`, `docs/` et `package.json`. Plone sert `++theme++base2/…` depuis le disque sans activation.
 
 ### [ ] Étape 3 — Outillage de test
 - `scripts/base2/check.mjs` (substitution, captures, axe, titres, focus, cibles).

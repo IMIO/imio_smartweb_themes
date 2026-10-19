@@ -1,0 +1,18 @@
+// Bootstrap 5.3 (through Barceloneta's base) and the Barceloneta partials
+// that style Plone itself: toolbar, forms, control panels, portlets...
+// Barceloneta's header, navigation, breadcrumbs and footer are not imported:
+// SmartWeb renders its own.
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.dark.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.properties";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.barceloneta";
+@import "@plone/plonetheme-barceloneta-base/scss/base";
+@import "@plone/plonetheme-barceloneta-base/scss/root_variables";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.portlets.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/mixins/mixin.font.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/cards";
+@import "@plone/plonetheme-barceloneta-base/scss/icons";
+@import "@plone/plonetheme-barceloneta-base/scss/content";
+@import "@plone/plonetheme-barceloneta-base/scss/comments";
+@import "@plone/plonetheme-barceloneta-base/scss/portlets";
+@import "@plone/plonetheme-barceloneta-base/scss/print";

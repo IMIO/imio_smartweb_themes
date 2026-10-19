@@ -1,0 +1,16 @@
+// SmartWeb base theme V2: entry point.
+// A municipality theme overrides any !default variable *before* importing
+// this file (see docs/variables.md):
+//   @import "./variables";
+//   @import "@imiobe/plonetheme-smartweb-base2/src/scss/main";
+
+// Settings may use Bootstrap's functions. Every setting is !default, so the
+// values a theme declared before this file win.
+@import "bootstrap/scss/functions";
+@import "./settings/index";
+
+// Bootstrap 5.3 and the Plone styles kept from Barceloneta.
+@import "./vendor/barceloneta";
+
+// SmartWeb layers.
+@import "./base/index";

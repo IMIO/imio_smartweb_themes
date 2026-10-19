@@ -1,0 +1,12 @@
+// Hidden on screen, still read by assistive technologies.
+// SmartWeb markup (core templates and React views) uses the Bootstrap 4 name
+// .sr-only, which Bootstrap 5 dropped in favour of .visually-hidden.
+.sr-only,
+.hiddenStructure,
+.crud-form .header-select {
+  @include visually-hidden;
+}
+
+.sr-only-focusable:not(:focus, :focus-within) {
+  @include visually-hidden;
+}

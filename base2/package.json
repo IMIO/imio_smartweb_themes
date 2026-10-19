@@ -1,0 +1,36 @@
+{
+  "name": "@imiobe/plonetheme-smartweb-base2",
+  "description": "iA.Smartweb base theme V2 for Plone: neutral, accessible starting point for municipality themes",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "Thomas Lambert (iMio)",
+      "email": "thomas.lambert@imio.be",
+      "url": "https://imio.be"
+    }
+  ],
+  "homepage": "https://",
+  "keywords": [
+    "imio",
+    "plone",
+    "smartweb"
+  ],
+  "version": "0.1.0",
+  "license": "GPL version 2",
+  "files": [
+    "src",
+    "assets",
+    "icons",
+    "index.html",
+    "manifest.cfg",
+    "preview.png",
+    "rules.xml"
+  ],
+  "dependencies": {
+    "@plone/plonetheme-barceloneta-base": "4.1.0",
+    "bootstrap": "5.3.8"
+  }
+}

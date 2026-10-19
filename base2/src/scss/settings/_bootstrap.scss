@@ -1,0 +1,7 @@
+// Bootstrap and Barceloneta options. Only what differs from their defaults.
+
+// No dark color mode: it doubles the custom properties for nothing.
+$enable-dark-mode: false !default;
+
+// Fonts are self-hosted by the municipality theme when needed (no Roboto).
+$enable-roboto-webfont: false !default;
