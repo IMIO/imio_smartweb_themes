@@ -9,6 +9,7 @@ on:
       - "template/**"
       - "base/**"
       - "basev2/**"
+      - "base2/**"
       - "/*"
 
 jobs:
@@ -54,6 +55,7 @@ jobs:
             template/**
             base/**
             basev2/**
+            base2/**
       - name: Set output
         id: set-output
         env:

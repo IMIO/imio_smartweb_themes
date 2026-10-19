@@ -50,6 +50,7 @@ module.exports = (env, argv) => {
                       "**/package.json",
                       "**/*.zip",
                       "**/src",
+                      "**/docs",
                       "**/node_modules",
                       "**/CHANGELOG.md",
                       "**/update-changelog.js",
