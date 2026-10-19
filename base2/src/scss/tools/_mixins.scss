@@ -35,6 +35,22 @@
   );
 }
 
+// Zone sur fond sombre : texte, titres, liens et focus inversés. Les
+// composants qui lisent les propriétés Bootstrap (--bs-*) et --sw-* suivent.
+@mixin sw-dark-context($bg, $color, $heading, $link) {
+  --bs-body-color: #{$color};
+  --bs-heading-color: #{$heading};
+  --bs-link-color-rgb: #{to-rgb($link)};
+  --bs-link-hover-color-rgb: #{to-rgb($link)};
+  --bs-border-color: #{rgba($white, 0.2)};
+  --bs-secondary-color: #{$color};
+  --sw-focus-color: #{$white};
+  --sw-focus-contrast: #{$black};
+
+  background-color: $bg;
+  color: $color;
+}
+
 // Police auto-hébergée (woff2) déclarée par un thème communal :
 //   @include sw-font-face("Ma Police", "@theme/assets/fonts/ma-police", 400);
 @mixin sw-font-face($family, $path, $weight: 400, $style: normal) {

@@ -239,8 +239,14 @@ Chaque section est vérifiée dans toutes ses variantes d'affichage.
   - Galerie (survol, focus au-dessus des images voisines), Plan (hauteur, crédits lisibles), Vidéo (message de consentement aux cookies), HTML (texte riche), Contenu externe (iframes fluides), Post-it (titre vide masqué).
   - Sélections, Collection, Publications horodatées, Actualités, Événements, Liens et Fichiers passent par le composant carte de l'étape 7. Sélections, Collection, Publications, HTML et Contenu externe n'existent pas sur le site local : à vérifier sur un vrai site.
 
-### [ ] Étape 9 — Pied de page et colophon
+### [x] Étape 9 — Pied de page et colophon
 - Sections du pied de page en colonnes, contraste, lien d'évitement, colophon.
+- **Résultat** :
+  - Pied de page sombre (`$footer-*`) grâce au mixin `sw-dark-context`, qui inverse les propriétés `--bs-*` et `--sw-*` (texte, titres, liens, focus). Il servira aussi aux sections sombres.
+  - Sections du pied de page en simples listes, sans cartes ; fiche contact sans fond.
+  - Colophon en ligne de liens séparée par un filet, avec des cibles ≥ 24 px. Colonnes vides du thème masquées.
+  - Contrastes contrôlés à la compilation (texte, liens, colophon).
+  - **À corriger dans le Diazo de base2, une fois l'activation possible** : le colophon est rendu hors du `<footer>`, à la fin du `body` (règle `after` héritée de la V1), donc hors de tout repère.
 
 ### [ ] Étape 10 — Vues hors sections
 - Vues de dossier, recherche à facettes (« Je trouve »).

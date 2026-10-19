@@ -80,6 +80,18 @@ $hero-nav-color: $primary !default;
 // Bannière des pages intérieures (#banner)
 $banner-height: clamp(8rem, 18vw, 14rem) !default;
 
+//*// Pied de page (sections de l'objet « Pied de page ») et colophon
+
+$footer-bg: $gray-900 !default;
+$footer-color: $gray-200 !default;
+$footer-heading-color: $white !default;
+$footer-link-color: $white !default;
+$footer-border-color: rgba($white, 0.2) !default;
+$footer-padding-y: clamp(2.5rem, 2rem + 2vw, 4rem) !default;
+$footer-title-font-size: $h5-font-size !default;
+$colophon-color: $gray-300 !default;
+$colophon-font-size: 0.875rem !default;
+
 //*// Fil d'Ariane (variables Bootstrap)
 
 $breadcrumb-font-size: 0.875rem !default;

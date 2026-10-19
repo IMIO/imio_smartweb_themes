@@ -10,7 +10,10 @@
     row-gap: 0.25rem;
   }
 
+  // Cibles d'au moins 24 px de haut (WCAG 2.5.8)
   .breadcrumb-item a {
+    display: inline-block;
+    padding-block: 0.25rem;
     color: var(--bs-body-color);
   }
 }

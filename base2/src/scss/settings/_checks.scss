@@ -31,4 +31,9 @@ $-checks: (
     sw-contrast($hero-title-color, $hero-content-bg, 3, "titre du bandeau"),
   "bandeau : flèches":
     sw-contrast($hero-nav-color, $hero-nav-bg, 3, "flèches du bandeau"),
+  "pied de page : texte":
+    sw-contrast($footer-color, $footer-bg, 4.5, "texte du pied de page"),
+  "pied de page : liens":
+    sw-contrast($footer-link-color, $footer-bg, 4.5, "liens du pied de page"),
+  "colophon": sw-contrast($colophon-color, $footer-bg, 4.5, "colophon"),
 );

@@ -1,0 +1,122 @@
+// Pied de page : sections de l'objet « Pied de page » (Liens, Contact, Texte)
+// dans footer#portal-footer-wrapper, puis le colophon (mentions légales,
+// accessibilité, cookies…). Le Diazo actuel place le colophon après le
+// footer, à la fin du body : même habillage pour qu'ils ne fassent qu'un.
+
+#portal-footer-wrapper,
+#portal-colophon {
+  @include sw-dark-context(
+    $footer-bg,
+    $footer-color,
+    $footer-heading-color,
+    $footer-link-color
+  );
+}
+
+#smartweb-footer {
+  padding-block: $footer-padding-y;
+
+  > .container {
+    padding-inline: 0;
+
+    > .row {
+      row-gap: 2rem;
+    }
+  }
+
+  // Section en erreur : enveloppe vide
+  .row > div:empty {
+    display: none;
+  }
+
+  .section-container.container {
+    max-width: none;
+    padding-inline: 0;
+  }
+
+  .section-title {
+    margin-bottom: 1rem;
+    color: $footer-heading-color;
+    font-size: $footer-title-font-size;
+  }
+
+  // Liens : simple liste, pas de cartes
+  .body-section > ul.row {
+    display: block;
+  }
+
+  .body-section li {
+    margin-bottom: 0.5rem;
+  }
+
+  .table_image,
+  .swiper_link {
+    display: inline-flex;
+    min-height: 24px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $footer-link-color;
+
+    > * {
+      padding: 0;
+    }
+
+    &:has(> .image.is-icon) {
+      padding: 0;
+    }
+  }
+
+  .table_image .image:not(.is-icon, .is-image),
+  .table_image .image.is-image {
+    display: none !important; // le core pose .d-block (!important)
+  }
+
+  .table_title {
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  // Contact : sans fond de fiche
+  .section-contact .body-section {
+    padding: 0;
+    background: none;
+  }
+
+  .section-contact
+    :is(.informations, .address h2, .address h3, .schedule-title) {
+    color: $footer-heading-color;
+  }
+}
+
+// Colonnes vides du thème (portlets, signature) quand Plone n'y met rien
+#portal-footer > .doormat:not(:has(*)),
+#portal-footer > .colophon:not(:has(.col-12 > *)) {
+  display: none;
+}
+
+#portal-colophon {
+  border-top: 1px solid $footer-border-color;
+  color: $colophon-color;
+  font-size: $colophon-font-size;
+
+  @include sw-container-padding;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin: 0;
+    padding-block: 1rem;
+    list-style: none;
+  }
+
+  // Cibles d'au moins 24 px de haut (WCAG 2.5.8)
+  a {
+    display: inline-block;
+    padding-block: 0.25rem;
+  }
+}
