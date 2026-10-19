@@ -1,0 +1,28 @@
+// Contrôles de contraste à la compilation, une fois toutes les variables
+// connues (celles du thème, de SmartWeb et de Bootstrap). Aucune sortie CSS.
+// Seuils WCAG 2.1 AA : 4,5:1 pour le texte, 3:1 pour les grands titres et les
+// composants d'interface.
+
+$-checks: (
+  "texte courant": sw-contrast($body-color, $body-bg, 4.5, "texte courant"),
+  "texte atténué":
+    sw-contrast($body-secondary-color, $body-bg, 4.5, "texte atténué"),
+  "texte atténué, fond alterné":
+    sw-contrast(
+      $body-secondary-color,
+      $surface-alt,
+      4.5,
+      "texte atténué sur fond alterné"
+    ),
+  "titres": sw-contrast($headings-color, $body-bg, 3, "titres"),
+  "liens": sw-contrast($link-color, $body-bg, 4.5, "liens"),
+  "liens, fond alterné":
+    sw-contrast($link-color, $surface-alt, 4.5, "liens sur fond alterné"),
+  "liens survolés":
+    sw-contrast($link-hover-color, $body-bg, 4.5, "liens survolés"),
+  "texte sur accent":
+    sw-contrast(sw-on($primary), $primary, 4.5, "texte sur la couleur d'accent"),
+  "focus": sw-contrast($focus-color, $body-bg, 3, "anneau de focus"),
+  "bordure des champs":
+    sw-contrast($input-border-color, $body-bg, 3, "bordure des champs"),
+);

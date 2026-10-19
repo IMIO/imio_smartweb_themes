@@ -1,0 +1,11 @@
+// Propriétés personnalisées lues par les composants SmartWeb.
+// Bootstrap expose déjà les couleurs de texte, de lien et de titre
+// (--bs-body-color, --bs-link-color-rgb, --bs-heading-color…) : une zone sur
+// fond sombre redéfinit ces propriétés-là et celles-ci, et tout son contenu
+// suit (voir utilities/_contexts.scss).
+:root {
+  --sw-focus-color: #{$focus-color};
+  --sw-focus-contrast: #{$focus-contrast-color};
+  --sw-surface-alt: #{$surface-alt};
+  --bs-heading-color: #{$headings-color};
+}

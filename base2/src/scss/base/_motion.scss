@@ -1,0 +1,12 @@
+// Préférence « réduire les animations » : elle l'emporte sur tout, y compris
+// les styles en ligne posés par JavaScript (carrousels), d'où !important.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

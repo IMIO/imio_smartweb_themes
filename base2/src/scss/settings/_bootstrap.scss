@@ -1,7 +1,18 @@
-// Bootstrap and Barceloneta options. Only what differs from their defaults.
+// Options Bootstrap et Barceloneta : uniquement ce qui diffère de leurs valeurs
+// par défaut, et les correspondances avec les jetons SmartWeb.
 
-// No dark color mode: it doubles the custom properties for nothing.
+// Pas de mode sombre : il double les propriétés personnalisées pour rien.
 $enable-dark-mode: false !default;
 
-// Fonts are self-hosted by the municipality theme when needed (no Roboto).
+// Les polices sont auto-hébergées par le thème communal si besoin (pas de
+// Roboto Barceloneta).
 $enable-roboto-webfont: false !default;
+
+// Fond « tertiaire » de Bootstrap = fond alterné SmartWeb.
+$body-tertiary-bg: $surface-alt !default;
+
+// Champs de formulaire : bordure assez contrastée pour être repérée (≥ 3:1,
+// WCAG 1.4.11) et bordure d'accent au focus.
+$input-border-color: $gray-500 !default;
+$input-focus-border-color: $primary !default;
+$form-check-input-border: 1px solid $gray-500 !default;

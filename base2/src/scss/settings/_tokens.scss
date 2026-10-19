@@ -1,0 +1,84 @@
+// Jetons de conception : les premières valeurs qu'un thème communal modifie.
+// Tout est en !default et ne produit aucune CSS. Les noms de Bootstrap sont
+// repris quand Bootstrap connaît la notion : ses composants suivent alors le
+// thème sans autre réglage.
+
+//*// Couleurs
+
+// Gris neutres, légèrement bleutés. À partir de $gray-600, ils restent
+// lisibles en petit texte sur fond blanc (≥ 4,5:1).
+$white: #fff !default;
+$gray-100: #f5f6f8 !default;
+$gray-200: #e8ebef !default;
+$gray-300: #d4d9e0 !default;
+$gray-400: #b3bbc6 !default;
+$gray-500: #8a94a3 !default;
+$gray-600: #5f6b7a !default;
+$gray-700: #464f5c !default;
+$gray-800: #2e3540 !default;
+$gray-900: #1b2028 !default;
+$black: #000 !default;
+
+// Couleur d'accent : liens, boutons, focus, navigation active. Un texte blanc
+// posé dessus doit rester lisible (contrôlé à la compilation).
+$primary: #1f5c99 !default;
+
+// Couleur secondaire : étiquettes, catégories, détails décoratifs.
+$secondary: $gray-600 !default;
+
+// Fonds et textes
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+$body-secondary-color: $gray-600 !default; // texte atténué (dates, métadonnées)
+$headings-color: $gray-900 !default;
+$surface-alt: $gray-100 !default; // fond des zones alternées et des encadrés
+$border-color: $gray-300 !default;
+
+// Focus : anneau dans la couleur d'accent, séparé de l'élément par un liseré
+// de la couleur de contraste. Il reste visible sur fond clair comme sombre.
+$focus-color: $primary !default;
+$focus-contrast-color: $white !default;
+$focus-outline-width: 3px !default;
+$focus-outline-offset: 2px !default;
+
+//*// Typographie
+
+// Police système : aucun téléchargement ni appel à un service tiers.
+// Pour une police de commune, l'auto-héberger dans le thème (mixin
+// sw-font-face) et la déclarer ici.
+$font-family-sans-serif:
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  roboto,
+  "Helvetica Neue",
+  "Noto Sans",
+  "Liberation Sans",
+  arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$headings-font-family: null !default; // null : même police que le texte
+
+$font-size-base: 1rem !default;
+$line-height-base: 1.6 !default;
+$headings-font-weight: 700 !default;
+$headings-line-height: 1.2 !default;
+$lead-font-weight: 400 !default;
+
+// Échelle des titres : un écart net entre chaque niveau. Bootstrap les réduit
+// sur petit écran (RFS).
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.125 !default;
+$h6-font-size: $font-size-base !default;
+
+//*// Formes
+
+$border-radius: 0.5rem !default;
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.75rem !default;

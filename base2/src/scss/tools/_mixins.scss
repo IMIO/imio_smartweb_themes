@@ -1,0 +1,19 @@
+// Anneau de focus SmartWeb (voir base/_focus.scss). Les propriétés
+// personnalisées permettent à une zone sur fond sombre d'inverser les couleurs.
+@mixin sw-focus-ring() {
+  outline: $focus-outline-width solid var(--sw-focus-color);
+  outline-offset: $focus-outline-offset;
+  box-shadow: 0 0 0 $focus-outline-offset var(--sw-focus-contrast);
+}
+
+// Police auto-hébergée (woff2) déclarée par un thème communal :
+//   @include sw-font-face("Ma Police", "@theme/assets/fonts/ma-police", 400);
+@mixin sw-font-face($family, $path, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("#{$path}.woff2") format("woff2");
+  }
+}

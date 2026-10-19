@@ -161,16 +161,29 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
 - Le build produit `dist/` et `theme.zip`.
 - **Résultat** : `theme.css` de 236 Ko minifié (Bootstrap 5.3.8 complet et styles Plone de Barceloneta 4.1.0, sans en-tête, navigation, fil d'Ariane ni pied de page Barceloneta). Le zip exclut bien `src/`, `docs/` et `package.json`. Plone sert `++theme++base2/…` depuis le disque sans activation.
 
-### [ ] Étape 3 — Outillage de test
+### [x] Étape 3 — Outillage de test
 - `scripts/base2/check.mjs` (substitution, captures, axe, titres, focus, cibles).
 - Contrôle statique des contrastes adapté de `a11y-check.js` (branche `skill-integration`).
 - Rapport de référence sur la V1.
+- **Résultat** :
+  - `node scripts/base2/check.mjs [--pages=…] [--widths=…] [--auth] [--focus] [--gdpr]` contrôle 11 pages publiques et 3 pages connectées. Il produit les captures (pleine page et bandes de 1000 px), les violations axe, le plan des titres, les cibles < 24 px et le parcours clavier. Il masque le bandeau cookies, sauf avec `--gdpr`.
+  - Référence V1 : `node scripts/base2/check.mjs --dist=/tmp/snap-after/base/dist --auth --focus`.
+  - Le contrôle statique des contrastes se fait dans Sass (`settings/_checks.scss`) plutôt que dans un script séparé : l'intégrateur voit l'avertissement dès qu'il compile.
 
-### [ ] Étape 4 — Fondations
+### [x] Étape 4 — Fondations
 - Jetons : couleurs (accent, neutres, surfaces, états), typographie (pile système, échelle fluide h1–h6 bien distincte), espacements, rayons, ombres, transitions.
 - Pont vers les variables Bootstrap et propriétés `--sw-*`.
 - Styles de base : liens, focus, sélection, mouvement réduit.
 - Texte riche (`.text`, descriptions, corps TinyMCE) : titres, listes, tableaux, citations, figures, `mark`, mesure de ligne lisible.
+- **Résultat** :
+  - Accent `#1f5c99` (6,9:1 sur blanc), gris légèrement bleutés, police système, interlignage 1,6, échelle de titres 2,5 / 2 / 1,5 / 1,25 / 1,125 / 1 rem.
+  - Anneau de focus à double couleur partout, y compris sur les composants Bootstrap.
+  - Liens soulignés, plus épais au survol.
+  - `.sr-only` fourni ; un lien `.sr-only` réapparaît quand il reçoit le focus.
+  - Mouvement réduit respecté.
+  - Texte riche (titres, listes, citation, bloc `mark` en encadré, tableaux), appliqué aussi dans l'éditeur TinyMCE.
+  - `sw-contrast()` avertit à la compilation pour 10 paires texte/fond ; les avertissements restent visibles même quand `base2` est chargé comme dépendance.
+  - La mesure de ligne du texte est reportée à l'étape 8 (section Texte).
 
 ### [ ] Étape 5 — En-tête et navigation
 - Logo, liens d'en-tête, recherche (offcanvas), sélecteur de langue, variantes collantes (`menu-sticky*`).

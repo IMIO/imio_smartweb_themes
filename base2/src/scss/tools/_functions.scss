@@ -1,0 +1,46 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:string";
+
+// Couleur opaque en notation #rrggbb (messages lisibles pour l'intégrateur).
+@function sw-hex($color) {
+  @if color.alpha($color) < 1 {
+    @return $color;
+  }
+
+  $digits: "0123456789abcdef";
+  $hex: "#";
+
+  @each $channel in ("red", "green", "blue") {
+    $value: math.round(color.channel($color, $channel, $space: rgb));
+    $high: math.floor(math.div($value, 16));
+    $low: $value - $high * 16;
+    $pair: string.slice($digits, $high + 1, $high + 1);
+    $pair: $pair + string.slice($digits, $low + 1, $low + 1);
+    $hex: $hex + $pair;
+  }
+
+  @return string.unquote($hex);
+}
+
+// Vérifie un contraste WCAG à la compilation et renvoie la couleur de texte.
+// Un échec produit un avertissement (pas une erreur) : le thème compile, mais
+// l'intégrateur voit quelle paire corriger.
+//   color: sw-contrast($link-color, $body-bg, 4.5, "liens");
+@function sw-contrast($foreground, $background, $minimum: 4.5, $label: "") {
+  $ratio: contrast-ratio($background, $foreground);
+
+  @if $ratio < $minimum {
+    $shown: math.div(math.round($ratio * 100), 100);
+
+    @warn "Contraste insuffisant (#{$label}) : #{sw-hex($foreground)} sur #{sw-hex($background)} = #{$shown}:1, minimum #{$minimum}:1 (WCAG 2.1 AA).";
+  }
+
+  @return $foreground;
+}
+
+// Couleur de texte lisible sur un fond : foncé ou blanc selon le meilleur
+// contraste (fonction color-contrast de Bootstrap, seuil $min-contrast-ratio).
+@function sw-on($background) {
+  @return color-contrast($background, $gray-900, $white);
+}

@@ -1,0 +1,36 @@
+// Compléments à Bootstrap (reboot et RFS fixent déjà tailles et marges).
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  // Lignes équilibrées, et jamais de débordement sur mobile (mots longs).
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+p,
+li,
+dd,
+blockquote {
+  text-wrap: pretty;
+}
+
+// Bootstrap passe .lead en graisse 300, trop fine avec la police système.
+.lead {
+  font-weight: $lead-font-weight;
+}
+
+// Le petit texte ne descend pas sous 14 px.
+small,
+.small {
+  font-size: max(#{$small-font-size}, 0.875rem);
+}

@@ -1,0 +1,29 @@
+// Un seul indicateur de focus pour tout le site : anneau dans la couleur
+// d'accent, séparé de l'élément par un liseré de la couleur de contraste.
+// Sur fond clair, l'anneau se voit ; sur fond sombre, c'est le liseré
+// (WCAG 2.4.7 et 1.4.11).
+:focus-visible {
+  @include sw-focus-ring;
+}
+
+// Composants Bootstrap qui remplacent l'outline par une ombre colorée
+// (spécificité plus forte que :focus-visible seul).
+.btn,
+.btn-close,
+.form-control,
+.form-select,
+.form-check-input,
+.nav-link,
+.page-link,
+.dropdown-item,
+.accordion-button,
+.list-group-item-action {
+  &:focus-visible {
+    @include sw-focus-ring;
+  }
+}
+
+// Repli : sur un clic de souris, pas d'anneau sur les boutons et les liens.
+:focus:not(:focus-visible) {
+  outline: 0;
+}

@@ -4,13 +4,18 @@
 //   @import "./variables";
 //   @import "@imiobe/plonetheme-smartweb-base2/src/scss/main";
 
-// Settings may use Bootstrap's functions. Every setting is !default, so the
-// values a theme declared before this file win.
+// Settings may use Bootstrap's functions and ours. Every setting is !default,
+// so the values a theme declared before this file win.
 @import "bootstrap/scss/functions";
+@import "./tools/functions";
 @import "./settings/index";
 
 // Bootstrap 5.3 and the Plone styles kept from Barceloneta.
 @import "./vendor/barceloneta";
+
+// Mixins rely on Bootstrap's; checks need every variable resolved.
+@import "./tools/mixins";
+@import "./settings/checks";
 
 // SmartWeb layers.
 @import "./base/index";

@@ -1,0 +1,20 @@
+// Médias fluides : jamais plus larges que leur conteneur.
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 0 $spacer;
+}
+
+figcaption {
+  margin-top: $spacer * 0.5;
+  color: var(--bs-secondary-color);
+  font-size: $small-font-size;
+}
