@@ -1,0 +1,126 @@
+// Section Texte (contents/sections/text/view.pt) :
+//   div.section-container.section-text[.section-text-collapsed]
+//   > [h2.section-title] + div.body-section.figure-{left|right|top|bottom}
+//     .figure-{section_text|section_text_container|section_text_viewport}
+//     [.no-image] > figure (img + figcaption) + div.text
+// Le texte suit la colonne « Standard » du core (760 px), centrée. L'image
+// prend la taille choisie : colonne, conteneur ou fenêtre.
+
+$-gap: 2rem;
+
+.section-text {
+  .body-section {
+    max-width: $text-max-width;
+    margin-inline: auto;
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: $border-radius;
+    }
+  }
+
+  // Image au-dessus ou au-dessous du texte
+  .figure-top,
+  .figure-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: $-gap;
+  }
+
+  .figure-bottom figure {
+    order: 1;
+  }
+
+  // Taille « Conteneur » : l'image (et le texte s'il est à côté) prend
+  // toute la largeur de la page.
+  .figure-section_text_container {
+    max-width: none;
+
+    &:is(.figure-top, .figure-bottom) .text {
+      width: 100%;
+      max-width: $text-max-width;
+      margin-inline: auto;
+    }
+  }
+
+  // Taille « Fenêtre » : l'image va d'un bord à l'autre de l'écran.
+  .figure-section_text_viewport {
+    max-width: none;
+
+    figure {
+      @include sw-full-bleed;
+
+      img {
+        border-radius: 0;
+      }
+    }
+
+    figcaption {
+      @include sw-container-padding;
+    }
+
+    .text {
+      width: 100%;
+      max-width: $text-max-width;
+      margin-inline: auto;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    // Image à gauche ou à droite, taille « Standard » : flottante, le texte
+    // l'habille.
+    .figure-section_text {
+      &.figure-left figure {
+        float: left;
+        max-width: 45%;
+        margin: 0.25rem $-gap 1rem 0;
+      }
+
+      &.figure-right figure {
+        float: right;
+        max-width: 45%;
+        margin: 0.25rem 0 1rem $-gap;
+      }
+
+      &:is(.figure-left, .figure-right)::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    // Taille « Conteneur » ou « Fenêtre » : image et texte côte à côte.
+    :is(.figure-section_text_container, .figure-section_text_viewport) {
+      &:is(.figure-left, .figure-right) {
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+        gap: $-gap;
+        align-items: start;
+
+        figure {
+          width: auto;
+          margin-inline: 0;
+        }
+      }
+
+      &.figure-right {
+        grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+
+        figure {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
+// Titre (affiché seulement si la section est repliable) : même colonne.
+.sectiontext .section-title {
+  max-width: $text-max-width;
+  margin-inline: auto;
+}

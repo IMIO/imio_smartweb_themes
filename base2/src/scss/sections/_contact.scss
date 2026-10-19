@@ -1,0 +1,221 @@
+// Section Contact (contents/sections/contact/macros.pt) : une fiche par
+// contact de l'annuaire, avec les blocs choisis dans la section (logo, image,
+// titres, informations, adresse, itinéraire, horaire, plan, description,
+// galerie). Plusieurs contacts : grille du core (.row.multicontact).
+//   div.row.nb-contact-by-line-N > div.col.body-section.contact-type-…
+//   > .contact_titles (h2 + .contact_subtitle) + .contact_informations
+//   (h2|h3.informations + ul.contact_informations_genral
+//   + ul.contact_informations_social) + .address (.contact_address
+//   + .itinerary) + .schedule (h2|h3.schedule-title + a.opening_informations
+//   + table.table_schedule) + .contact_map + .contact_description
+//   + .contact_gallery
+// Les intitulés « Contact », « Adresse », « Horaire » sont des h2 (h3 si le
+// nom du contact est affiché) : ils sont stylés en petits intitulés.
+
+.section-contact {
+  // Fiches séparées par un espace (grille .multicontact du core ou ligne
+  // flexible), sans les gouttières Bootstrap.
+  > .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+
+    gap: 1.5rem;
+  }
+
+  .body-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: 1.5rem 2rem;
+    align-content: start;
+    padding: $contact-padding;
+    border-radius: $border-radius-lg;
+    background-color: $contact-bg;
+  }
+
+  // Blocs qui occupent toute la largeur de la fiche
+  :is(
+      .contact_logo,
+      .contact_leadimage,
+      .contact_titles,
+      .contact_map,
+      .contact_description,
+      .contact_gallery
+    ) {
+    grid-column: 1 / -1;
+  }
+
+  .contact_logo {
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact_leadimage {
+    border-radius: $border-radius;
+    aspect-ratio: #{$item-ratio-paysage};
+
+    &.display-portrait {
+      max-width: 20rem;
+      aspect-ratio: #{$item-ratio-portrait};
+    }
+
+    &.display-carre {
+      max-width: 20rem;
+      aspect-ratio: #{$item-ratio-carre};
+    }
+  }
+
+  // Bloc sans image ni logo : rien à montrer
+  .contact_placeholder {
+    display: none;
+  }
+
+  .contact_titles h2 {
+    margin-bottom: 0.25rem;
+    font-size: $h3-font-size;
+  }
+
+  .contact_subtitle {
+    color: $body-secondary-color;
+  }
+
+  :is(.informations, .address h2, .address h3, .schedule-title) {
+    margin-bottom: 0.75rem;
+    color: $contact-label-color;
+    font-size: 1rem;
+    font-weight: $headings-font-weight;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  // Téléphones et courriels : icône en tête de ligne (avant le libellé)
+  .contact_informations_genral li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.5rem;
+    align-items: center;
+    min-height: 32px;
+
+    &:has(> a[href^="tel:"])::before,
+    &:has(> a[href^="mailto:"])::before {
+      @include sw-icon($icon-phone, 1.125rem);
+
+      color: $contact-icon-color;
+    }
+
+    &:has(> a[href^="mailto:"])::before {
+      mask-image: $icon-mail;
+    }
+
+    a {
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .contact_address {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      display: block;
+    }
+  }
+
+  .itinerary a {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+
+    &::before {
+      @include sw-icon($icon-map-pin, 1.125rem);
+    }
+  }
+
+  // Réseaux sociaux : boutons d'icône (icônes Bootstrap Icons du core)
+  .contact_informations_social {
+    margin-top: 0.75rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+
+      &:hover {
+        background-color: rgba($primary, 0.1);
+      }
+    }
+
+    // Site web : lien en clair
+    .website a {
+      gap: 0.5rem;
+      justify-content: flex-start;
+      border-radius: 0;
+      font-size: 1rem;
+      overflow-wrap: anywhere;
+
+      &::before {
+        @include sw-icon($icon-globe, 1.125rem);
+      }
+    }
+  }
+
+  // Horaire : l'horaire du jour ouvre le tableau de la semaine (JS du core,
+  // aria-expanded ajouté par base2).
+  .opening_informations {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 600;
+
+    &::before {
+      @include sw-icon($icon-clock, 1.125rem);
+    }
+
+    &::after {
+      @include sw-icon($icon-chevron-down, 1rem);
+
+      transition: transform 0.2s ease;
+    }
+
+    &[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .table_schedule {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 0.9375rem;
+
+    td {
+      padding: 0.25rem 1rem 0.25rem 0;
+      vertical-align: top;
+    }
+
+    td:first-child {
+      font-weight: 600;
+    }
+  }
+
+  .contact_gallery .flexbin {
+    margin-inline: -2.5px;
+  }
+}

@@ -1,0 +1,40 @@
+// Sections HTML, Contenu externe et Post-it.
+
+//*// HTML : contenu libre saisi par l'éditeur
+
+.section-html .html {
+  @include sw-rich-text;
+
+  iframe {
+    width: 100%;
+    border: 0;
+  }
+}
+
+//*// Contenu externe : iframe, formulaires et widgets de services tiers
+// (Elloha, Cognito, Idelux, IN BW, ODWB…)
+
+.section-external-content {
+  > img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: $border-radius;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 30rem;
+    border: 0;
+  }
+
+  .unknow_service {
+    color: $body-secondary-color;
+  }
+}
+
+//*// Post-it : cartes sans lien ni image (titre facultatif)
+
+.sectionpostit .swiper_title h3:empty {
+  display: none;
+}

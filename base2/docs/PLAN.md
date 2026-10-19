@@ -227,12 +227,17 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
   - Lien « Voir tout » : bouton centré avec flèche.
   - Mesures sur l'accueil : 1 `h1`, plus de problème de focus sur les cartes. La seule violation axe restante vient du marqueur Leaflet (core).
 
-### [ ] Étape 8 — Sections une par une
+### [x] Étape 8 — Sections une par une
 - Texte, Liens, Fichiers, Contact, Galerie, Plan, Vidéo, Post-it : présentes sur la page d'accueil de test.
 - Sélections, Collection, Publications horodatées, HTML, Contenu externe : à ajouter sur le site de test.
 - Actualités, Événements.
 
 Chaque section est vérifiée dans toutes ses variantes d'affichage.
+- **Résultat** :
+  - Texte : colonne « Standard » de 760 px centrée. Image au-dessus ou dessous, à la taille colonne, conteneur ou fenêtre ; à gauche ou à droite, flottante (le texte l'habille) ou côte à côte en taille conteneur. Les 6 combinaisons sont vérifiées (`scenarios.mjs text-variants`).
+  - Contact : fiche sur fond alterné, avec informations, adresse et horaire en colonnes et des icônes en tête de ligne (téléphone, courriel, itinéraire, site web, horaire). Les intitulés « Contact », « Adresse », « Horaire » restent des `h2`/`h3` du core, stylés en petits intitulés. L'horaire du jour devient un bouton (`aria-expanded`, `aria-controls`, barre d'espace) grâce à `src/js/contact.js`. Vérifié en injectant le balisage du core, car les contacts locaux sont vides (annuaire externe).
+  - Galerie (survol, focus au-dessus des images voisines), Plan (hauteur, crédits lisibles), Vidéo (message de consentement aux cookies), HTML (texte riche), Contenu externe (iframes fluides), Post-it (titre vide masqué).
+  - Sélections, Collection, Publications horodatées, Actualités, Événements, Liens et Fichiers passent par le composant carte de l'étape 7. Sélections, Collection, Publications, HTML et Contenu externe n'existent pas sur le site local : à vérifier sur un vrai site.
 
 ### [ ] Étape 9 — Pied de page et colophon
 - Sections du pied de page en colonnes, contraste, lien d'évitement, colophon.

@@ -132,6 +132,128 @@ const SCENARIOS = {
     await SCENARIOS.hero(page, shot, log);
   },
 
+  // Variantes de la section Texte (classes du core) : la section locale est
+  // dupliquée côté navigateur avec chaque combinaison position / taille.
+  async "text-variants"(page, shot, log) {
+    const variants = await page.evaluate(() => {
+      const src = document.querySelector(".sortable-section.sectiontext");
+      const combos = [
+        ["figure-left", "figure-section_text"],
+        ["figure-right", "figure-section_text"],
+        ["figure-left", "figure-section_text_container"],
+        ["figure-top", "figure-section_text_container"],
+        ["figure-bottom", "figure-section_text_viewport"],
+      ];
+      const done = [];
+      let after = src;
+      for (const [pos, size] of combos) {
+        const clone = src.cloneNode(true);
+        const body = clone.querySelector(".body-section");
+        body.className = `body-section ${pos} ${size}`;
+        const label = document.createElement("p");
+        label.className = "h4";
+        label.textContent = `Variante : ${pos} / ${size}`;
+        clone.prepend(label);
+        after.after(clone);
+        after = clone;
+        done.push(`${pos} ${size}`);
+      }
+      src.scrollIntoView();
+      return done;
+    });
+    log("variantes ajoutées", { variants });
+    const box = await page.evaluate(() => {
+      const all = document.querySelectorAll(".sortable-section.sectiontext");
+      const first = all[0].getBoundingClientRect();
+      const last = all[all.length - 1].getBoundingClientRect();
+      return { y: first.top + scrollY, height: last.bottom - first.top };
+    });
+    const width = page.viewportSize().width;
+    for (let y = box.y, i = 1; y < box.y + box.height; y += 1000, i++) {
+      await page.screenshot({
+        path: `${shot.dir}/text-variants-${width}-${i}.png`,
+        fullPage: true,
+        clip: {
+          x: 0,
+          y,
+          width,
+          height: Math.min(1000, box.y + box.height - y),
+        },
+      });
+    }
+  },
+
+  async "text-variants-mobile"(page, shot, log) {
+    await SCENARIOS["text-variants"](page, shot, log);
+  },
+
+  // Section Contact : vide sur le site local (annuaire externe). Une fiche
+  // reprenant le balisage du core (contact/macros.pt) est injectée.
+  async contact(page, shot, log) {
+    await page.evaluate(() => {
+      const section = document.querySelector(
+        ".sortable-section.sectioncontact",
+      );
+      section.innerHTML = `<a id="section-demo-contact"></a>
+<div class="container section-container section-contact" id="container-section-demo-contact">
+  <div class="row nb-contact-by-line-1">
+    <div class="col body-section contact-type-organization" id="body-section-demo-contact">
+      <div class="contact_titles"><h2>Administration communale</h2><div class="contact_subtitle">Service Population - État civil</div></div>
+      <div class="contact_informations">
+        <h3 class="informations">Contact</h3>
+        <ul class="contact_informations_genral">
+          <li class="work">Accueil <a href="tel:+3267347311">067 34 73 11</a></li>
+          <li class="work"><a href="mailto:population@commune.be">population@commune.be</a></li>
+        </ul>
+        <ul class="contact_informations_social">
+          <li class="facebook"><a href="https://facebook.com" title="Facebook" target="_blank"><i class="bi bi-facebook"></i><span class="sr-only">https://facebook.com/commune</span></a></li>
+          <li class="website"><a href="https://www.commune.be" title="Site web" target="_blank"><span>https://www.commune.be</span></a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <div class="contact_address"><h3 class="address">Adresse</h3><span class="street">Place Verte 32</span><span class="entity">7060 Soignies</span><span class="country">Belgique</span></div>
+        <div class="itinerary"><a href="https://www.google.com/maps" target="_blank">Itinéraire</a></div>
+      </div>
+      <div class="schedule">
+        <h3 class="schedule-title">Horaire</h3>
+        <div><a class="opening_informations" href="#">Ouvert aujourd'hui de 8h30 à 12h</a>
+          <table class="table_schedule">
+            <tr><td>Lundi</td><td>8h30 - 12h00</td></tr><tr><td>Mardi</td><td>8h30 - 12h00 / 13h30 - 16h00</td></tr>
+            <tr><td>Mercredi</td><td>8h30 - 12h00</td></tr><tr><td>Jeudi</td><td>8h30 - 12h00</td></tr><tr><td>Vendredi</td><td>8h30 - 12h00</td></tr>
+          </table></div>
+      </div>
+      <div class="contact_description">Le service est fermé les jours fériés.</div>
+    </div>
+  </div>
+</div>`;
+      // Comportement du core (view.js) : bascule du tableau
+      section
+        .querySelector(".opening_informations")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          e.currentTarget.parentElement
+            .querySelector(".table_schedule")
+            .classList.toggle("table_schedule--active");
+        });
+      section.scrollIntoView();
+    });
+    await page.waitForTimeout(200);
+    const shotSection = async (label) => {
+      const el = await page.$(".sortable-section.sectioncontact");
+      await el.screenshot({
+        path: `${shot.dir}/contact-${page.viewportSize().width}-${label}.png`,
+      });
+    };
+    await shotSection("ferme");
+    await page.click(".opening_informations");
+    await page.waitForTimeout(100);
+    await shotSection("horaire-ouvert");
+  },
+
+  async "contact-mobile"(page, shot, log) {
+    await SCENARIOS.contact(page, shot, log);
+  },
+
   async "skip-links"(page, shot, log) {
     await page.keyboard.press("Tab");
     await page.waitForTimeout(100);
@@ -148,6 +270,10 @@ const WIDTHS = {
   search: 1280,
   "skip-links": 1280,
   hero: 1280,
+  contact: 1280,
+  "contact-mobile": 390,
+  "text-variants": 1280,
+  "text-variants-mobile": 390,
   "hero-mobile": 390,
 };
 
@@ -183,6 +309,7 @@ async function main() {
       page.screenshot({
         path: path.join(opts.out, `${name}-${++step}-${label}.png`),
       });
+    shot.dir = opts.out;
     const log = (label, data) =>
       journal.push({ scenario: name, label, ...data });
     try {

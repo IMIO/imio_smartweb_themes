@@ -1,0 +1,73 @@
+// Sections Galerie, Plan et Vidéo.
+
+//*// Galerie : mosaïque flexbin (plone.gallery) et visionneuse Spotlight
+
+.section-gallery {
+  .flexbin {
+    margin-inline: -2.5px; // aligne les bords sur le contenu (marges flexbin)
+  }
+
+  .section_gallery_item {
+    overflow: hidden;
+    background-color: $item-image-bg;
+
+    img {
+      transition: filter 0.2s ease;
+    }
+
+    &:hover img {
+      filter: brightness(85%);
+    }
+
+    // L'anneau de focus passe devant l'image voisine.
+    &:focus-visible {
+      z-index: 1;
+      outline-offset: -#{$focus-outline-width};
+    }
+  }
+}
+
+//*// Plan (Leaflet)
+
+.section-map .map,
+.contact_map .map {
+  min-height: 20rem;
+  border-radius: $border-radius;
+}
+
+// Crédits OpenStreetMap lisibles
+.leaflet-control-attribution {
+  color: $body-color;
+}
+
+//*// Vidéo (iframe 16/9, ou message de consentement aux cookies)
+
+.section-video {
+  .body-section {
+    overflow: hidden;
+    border-radius: $border-radius;
+    background-color: $gray-900;
+  }
+
+  iframe {
+    border: 0;
+  }
+
+  // Message affiché à la place de la vidéo tant que les cookies ne sont pas
+  // acceptés (filtre RGPD hors core)
+  .gdpr-iframe-message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: $surface-alt;
+    color: $body-color;
+    text-align: center;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}
