@@ -1,0 +1,72 @@
+// Page, sections et éléments de section (cartes).
+
+//*// Page
+
+// Espace entre l'en-tête (bandeau, fil d'Ariane) et le titre de la page
+$page-padding-top: clamp(1.5rem, 1rem + 2vw, 3rem) !default;
+// Espace sous le titre et la description de la page
+$page-header-margin-bottom: clamp(1.5rem, 1rem + 2vw, 3rem) !default;
+// Espace avant le pied de page
+$page-padding-bottom: clamp(3rem, 2rem + 4vw, 6rem) !default;
+$page-description-font-size: 1.25rem !default;
+// Page d'accueil (PortalPage) : le titre est masqué, le logo porte le h1.
+// À true, le titre s'affiche et le h1 du logo est retiré : un seul h1.
+$portalpage-show-title: false !default;
+
+// Colonne de texte : largeur « Standard » des sections Texte et de l'option
+// « Aligner sur le texte » du core (760 px).
+$text-max-width: 760px !default;
+
+//*// Sections
+
+// Espace entre deux sections, fluide selon la largeur de l'écran
+$section-spacing: clamp(2.5rem, 1.5rem + 3vw, 4.5rem) !default;
+// Entre deux sections Texte qui se suivent : elles se lisent comme un article
+$section-spacing-text: 1.5rem !default;
+$section-title-font-size: $h2-font-size !default;
+$section-title-color: $headings-color !default;
+$section-title-margin-bottom: 1.5rem !default;
+// Alignement des titres de section : start, center
+$section-title-align: start !default;
+$section-description-max-width: 70ch !default;
+// Section avec image de fond (option Manager) : voile sous le contenu
+$section-background-overlay: rgba($white, 0.92) !default;
+
+//*// Éléments de section (cartes des affichages tableau et carrousel)
+
+$item-gap: 1.5rem !default;
+// Largeur minimale d'une carte : la grille garde le nombre de colonnes choisi
+// dans la section tant que les cartes ne deviennent pas plus étroites.
+$item-min-width: 15rem !default;
+$item-icon-min-width: 9rem !default;
+$item-bg: $body-bg !default;
+$item-border-color: $border-color !default;
+$item-border-radius: $border-radius !default;
+$item-hover-border-color: $primary !default;
+$item-padding-x: 1.25rem !default;
+$item-padding-y: 1rem !default;
+$item-title-color: $headings-color !default;
+$item-title-font-size: 1.125rem !default;
+$item-title-font-weight: $headings-font-weight !default;
+$item-category-color: $primary !default;
+$item-meta-color: $body-secondary-color !default;
+$item-description-lines: 4 !default;
+$item-icon-size: 2.5rem !default;
+$item-icon-color: $primary !default;
+// Proportions des images selon l'orientation choisie dans la section
+$item-ratio-paysage: 5 / 3 !default;
+$item-ratio-portrait: 3 / 4 !default;
+$item-ratio-carre: 1 / 1 !default;
+$item-image-bg: $gray-200 !default;
+
+// Flèches des sections en carrousel
+$carousel-nav-size: 44px !default;
+$carousel-nav-bg: $body-bg !default;
+$carousel-nav-color: $primary !default;
+
+//*// Lien « Voir tout » des sections Actualités, Événements, Collection
+
+$see-all-justify: center !default;
+$see-all-color: $primary !default;
+$see-all-hover-bg: $primary !default;
+$see-all-hover-color: $white !default;

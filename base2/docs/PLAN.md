@@ -211,12 +211,21 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
   - Testé en injectant côté navigateur le balisage du core (`scenarios.mjs hero`) : les diapositives locales n'ont pas de texte.
   - La bannière des pages intérieures (`#banner`) passe en pleine largeur (non testée : absente du site local).
 
-### [ ] Étape 7 — Système de sections
+### [x] Étape 7 — Système de sections
 - Rythme vertical unique (`--sw-section-space`, fluide) : première et dernière section, sections Texte consécutives (rythme d'article), colonnes `col-sm-*`, alignement « texte », fonds (`with-background`).
 - Neutralisation des sections vides (`:has()`), double gouttière supprimée, DOM d'édition pris en charge.
 - Titre, description et variante repliable de section.
 - Composant carte unique (tableau et carrousel) : ratios d'image, grille `nb-items-batch-N`, catégorie, date, titre de même taille quelle que soit la balise, carte entièrement cliquable avec focus visible, état sans image.
 - Lien « Voir tout » (bouton centré par défaut, comme sur la majorité des sites), flèches et puces de carrousel.
+- **Résultat** :
+  - Un seul espace entre sections (`$section-spacing`, fluide de 40 à 72 px), resserré entre deux sections Texte ; enveloppes vides masquées (sauf pour l'éditeur) ; double gouttière supprimée, les contenus s'alignent sur le titre de page.
+  - Page d'accueil : un seul `h1` (titre masqué, `h1` du logo conservé ; `$portalpage-show-title` inverse le choix).
+  - Titre de section, description, variante repliable (bouton avec chevron et état `aria-expanded`). Section avec image de fond : voile sous le contenu, pleine largeur.
+  - Carte unique (`components/_items.scss`, variables `$item-*`) pour les affichages tableau et carrousel : image aux proportions paysage, portrait ou carré ; catégorie, date (« Le 14/11 »), titre de même taille qu'il soit `h3` ou `span` ; description limitée à 4 lignes ; survol par bordure et soulignement ; carte entièrement focalisable. Tuiles pour les liens à icône ; icône de document pour les fichiers.
+  - Grille « N colonnes tant que la carte reste ≥ 15 rem » à la place des `col-md-1`/`col-md-2` du core. Un élément seul garde la largeur d'une colonne.
+  - Carrousels : flèches en bas à droite sur la ligne des puces, de la place pour l'anneau de focus, rien de réservé quand tout tient sur un écran.
+  - Lien « Voir tout » : bouton centré avec flèche.
+  - Mesures sur l'accueil : 1 `h1`, plus de problème de focus sur les cartes. La seule violation axe restante vient du marqueur Leaflet (core).
 
 ### [ ] Étape 8 — Sections une par une
 - Texte, Liens, Fichiers, Contact, Galerie, Plan, Vidéo, Post-it : présentes sur la page d'accueil de test.

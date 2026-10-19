@@ -1,0 +1,48 @@
+// Structure de la page : zone principale, titre et description.
+// Diazo : .container > main#main-container.row > section#portal-column-content
+//   > article#content > header (h1, description) + #content-core > .row
+//   > .sortable-section… (sections).
+
+#main-container {
+  padding-block: $page-padding-top $page-padding-bottom;
+}
+
+#content > header {
+  margin-bottom: $page-header-margin-bottom;
+
+  .page-title {
+    margin-bottom: 0;
+  }
+
+  .lead.rich_description {
+    max-width: $section-description-max-width;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: $page-description-font-size;
+  }
+}
+
+// Option de page « Aligner le titre avec le texte » (classe posée par le
+// core) : même colonne que le texte.
+.text-align-container {
+  max-width: $text-max-width;
+  margin-inline: auto;
+}
+
+:root {
+  --text-max: #{$text-max-width};
+}
+
+// Page d'accueil (PortalPage) : un seul h1, soit le titre masqué du logo,
+// soit le titre de la page.
+.portaltype-imio-smartweb-portalpage {
+  @if $portalpage-show-title {
+    #portal-logo h1 {
+      display: none;
+    }
+  } @else {
+    #content > header {
+      display: none;
+    }
+  }
+}

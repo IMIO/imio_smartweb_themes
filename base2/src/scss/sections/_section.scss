@@ -1,0 +1,111 @@
+// Système commun à toutes les sections.
+// Enveloppe (core, pages/views.py) : div.sortable-section.{type}.{css_class}
+//   .{col-sm-N}[.container-se-text][.with-background]
+//   > a#section-{id} + div.container.section-container > … h2.section-title
+// Chez un éditeur, les sections sont dans un span.pat-sortable.row en plus.
+
+:root {
+  --sw-section-spacing: #{$section-spacing};
+}
+
+// Rythme vertical : un seul espace entre deux sections, quel que soit leur
+// type ; plus serré entre deux sections Texte qui se suivent.
+.sortable-section {
+  margin-bottom: var(--sw-section-spacing);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.sectiontext:has(+ .sectiontext) {
+    margin-bottom: $section-spacing-text;
+  }
+
+  // Le conteneur imbriqué du core doublait la gouttière : le contenu
+  // s'aligne sur le titre de la page.
+  > .section-container.container {
+    max-width: none;
+    padding-inline: 0;
+  }
+
+  // Section en erreur ou sans contenu pour le visiteur : enveloppe vide.
+  &:not(:has(.section-container, .header-section)) {
+    display: none;
+  }
+}
+
+// Le core réduit l'espace sous les sections « alignées sur le texte » : même
+// rythme que les autres.
+.sortable-section.container-se-text {
+  margin-bottom: var(--sw-section-spacing);
+}
+
+//*// Titre et description
+
+.section-title {
+  margin-bottom: $section-title-margin-bottom;
+  color: $section-title-color;
+  font-size: $section-title-font-size;
+  text-align: $section-title-align;
+}
+
+.section-container > .lead.rich_description,
+.section-container > div > .lead.rich_description {
+  max-width: $section-description-max-width;
+  margin-top: -0.5rem;
+  margin-bottom: $section-title-margin-bottom;
+  font-size: 1.125rem;
+}
+
+// Section repliable : le titre devient un bouton (lien role="button" du core)
+.section-title > a[data-bs-toggle="collapse"] {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding-block: 0.75rem;
+  border-bottom: 1px solid $border-color;
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    @include sw-icon($icon-chevron-down, 1.5rem);
+
+    transition: transform 0.2s ease;
+  }
+
+  &[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
+//*// Section avec image de fond (option Manager)
+
+.sortable-section.with-background {
+  padding-block: var(--sw-section-spacing);
+  background-position: center;
+  background-size: cover;
+
+  > .section-container {
+    padding: 1.5rem;
+    border-radius: $border-radius-lg;
+    background-color: $section-background-overlay;
+  }
+
+  // Pleine largeur pour une section qui occupe toute la ligne
+  &.col-sm-12 {
+    width: 100vw;
+    max-width: none;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: max(
+      #{$grid-gutter-width * 0.5},
+      calc((100vw - var(--sw-container-max)) / 2 + #{$grid-gutter-width * 0.5})
+    );
+  }
+}

@@ -41,3 +41,60 @@
 .swiper-pagination-bullet-active {
   background-color: $primary;
 }
+
+// Sections en carrousel : flèches en bas à droite, sur la ligne des puces
+// (le core réserve 50 px sous les cartes), et cartes à la même hauteur. Une
+// marge intérieure laisse la place à l'anneau de focus des cartes situées au
+// bord (Swiper masque ce qui dépasse).
+$-focus-room: $focus-outline-width + $focus-outline-offset + 1px;
+
+.body-section.swiper {
+  @include sw-carousel-arrows(
+    $carousel-nav-size,
+    $carousel-nav-bg,
+    $carousel-nav-color
+  );
+
+  margin-inline: -$-focus-room;
+  padding: $-focus-room;
+
+  .swiper-wrapper {
+    padding-bottom: calc(#{$carousel-nav-size} + 1rem);
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  // Puces centrées dans l'espace laissé à gauche des flèches
+  .swiper-pagination {
+    right: calc(#{$-focus-room} + #{$carousel-nav-size} * 2 + 1rem);
+    bottom: calc(#{$-focus-room} + #{$carousel-nav-size} * 0.5);
+    left: $-focus-room;
+    width: auto;
+    transform: translateY(50%);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: auto;
+    bottom: $-focus-room;
+    margin-top: 0;
+    border: 1px solid $border-color;
+    box-shadow: none;
+  }
+
+  .swiper-button-next {
+    right: $-focus-room;
+  }
+
+  .swiper-button-prev {
+    right: calc(#{$-focus-room} + #{$carousel-nav-size} + 0.5rem);
+    left: auto;
+  }
+
+  // Tout tient sur un écran : ni flèches ni puces, pas de place à réserver.
+  &:has(.swiper-button-lock) .swiper-wrapper {
+    padding-bottom: 0;
+  }
+}
