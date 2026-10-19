@@ -29,13 +29,24 @@
         "except": ["first-nested"],
         "ignore": ["after-comment"]
       }
-    ]
+    ],
+    "color-function-alias-notation": null,
+    "property-no-deprecated": null,
+    "declaration-property-value-keyword-no-deprecated": null
   },
   "customSyntax": "postcss-html",
   "overrides": [
     {
       "files": ["**/*.scss"],
       "customSyntax": "postcss-scss"
+    },
+    {
+      "files": ["base2/**/*.scss"],
+      "rules": {
+        "color-function-alias-notation": "without-alpha",
+        "property-no-deprecated": true,
+        "declaration-property-value-keyword-no-deprecated": true
+      }
     }
   ]
 }

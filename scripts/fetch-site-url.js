@@ -1,5 +1,5 @@
 const axios = require("axios");
-require("dotenv").config();
+require("dotenv").config({ quiet: true });
 
 /**
  * Récupère l'URL d'un site depuis l'infradoc

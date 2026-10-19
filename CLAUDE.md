@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Package Manager
 
-Use **pnpm** exclusively (workspace monorepo, pnpm v8.15.6+, Node 18+).
+Use **pnpm** exclusively (workspace monorepo, pnpm v8.15.6+, Node 20.19+).
+
+Toolchain upgrades must not change any file inside an existing theme folder: CI rebuilds and redeploys every theme folder that changes. That is why Prettier stays pinned at 3.3.3 (3.4+ reformats ~114 theme `index.js` files) and why the Stylelint 17 rules that flag legacy code are only enabled for `base2/`.
 
 ## Common Commands
 
@@ -22,8 +24,10 @@ pnpm build --env theme=<theme-name>        # Production build
 pnpm build:dev --env theme=<theme-name>    # Development build with source maps
 pnpm watch --env theme=<theme-name>        # Dev server on port 3000 (proxies Plone on 8080)
 
-# Build all themes
-node build-all.js
+# Compile every theme into /tmp (theme folders untouched) and compare two runs,
+# e.g. before/after a dependency upgrade
+node scripts/css-snapshot.js build /tmp/snap-before
+node scripts/css-snapshot.js diff /tmp/snap-before /tmp/snap-after [--details]
 
 # Create a new theme from the template
 pnpm create-theme <theme-name>

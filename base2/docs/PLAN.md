@@ -127,11 +127,28 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
 
 ## 4. Étapes
 
-### [ ] Étape 0 — Plan et garde-fous
+### [x] Étape 0 — Plan et garde-fous
 - Ce document.
 - Exclure `base2/**` du CI et `docs/` du `theme.zip`.
 
-### [ ] Étape 1 — Mise à jour de la chaîne d'outils, sans régression
+### [x] Étape 1 — Mise à jour de la chaîne d'outils, sans régression
+
+**Résultat (19/10/2026).** Plafond retenu : versions compatibles Node 20.19. La version de `sass-embedded` déjà résolue par le CI exige Node 20.19, ce qui donne une bonne indication sur les runners.
+- **Mis à jour** : webpack 5.112, webpack-cli 7, sass-loader 16 (API Sass moderne, compilateur partagé), css-loader 7, style-loader 4, css-minimizer 8 (cssnano 7), filemanager 9, babel-loader 10, Sass 1.105.2, PostCSS 8.5.31, Autoprefixer 10.6.1, Stylelint 17 (+ configs), release-it 20, concurrently 9, dotenv 18.
+- **Diff sur 168 thèmes** (hors `six_smartweb`, qui échouait déjà avant) : CSS équivalente.
+  - Autoprefixer : `:-moz-placeholder-shown` devient `:-moz-placeholder` dans des règles préfixées ignorées par les navigateurs actuels.
+  - cssnano : `grey` → `gray`, `0ms` → `0s`, hexadécimal en minuscules, une couleur arrondie à 62,4 % au lieu de 62 %.
+  - JS : seuls les identifiants de modules changent.
+- **Gardé tel quel** :
+  - Prettier 3.3.3 : la 3.4+ reformate 114 `index.js` de thèmes, et le CI les redéploierait.
+  - webpack-dev-server 5 : la v6 supprime l'option `bypass` du proxy utilisée par `pnpm watch`, et exige Node 22.15.
+  - Babel 7, sass-loader 16, filemanager 9, postcss-html 1, release-it 20 : leurs versions suivantes exigent Node 22.
+- **Ajustements** :
+  - SVGO 4 conserverait les `viewBox` des icônes SVG ; `removeViewBox` est réactivé pour garder le rendu des thèmes existants.
+  - Correction de la faute `overwite` → `overwrite` (refusée par filemanager 9, ignorée en silence par la v8).
+  - Les trois nouvelles règles Stylelint 17 ne sont actives que pour `base2/`.
+- **À vérifier par Thomas** : `pnpm watch` (je ne lance pas de serveur de dev) et la version de Node des runners CI.
+- **Note** : en local, le pnpm Homebrew est la version 12 ; il refuse `pnpm --theme=x build` (syntaxe du CI), alors que `pnpm build --env theme=x` fonctionne.
 - Script `scripts/css-snapshot.js` : compile la CSS et le JS de chaque thème dans `/tmp`, sans écrire dans les dossiers de thème (pas de favicons, pas de zip).
 - Instantané « avant » des ~169 thèmes. Mise à jour des dépendances racine (Sass, PostCSS, Autoprefixer, webpack et ses loaders et plugins, Babel, Stylelint, Prettier…), puis adaptation de `webpack.config.js` (API Sass moderne, avertissements des dépendances tiers masqués).
 - Instantané « après » et diff : la CSS non minifiée doit être identique, ou chaque différence expliquée.

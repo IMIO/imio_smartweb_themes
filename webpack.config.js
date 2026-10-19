@@ -43,7 +43,7 @@ module.exports = (env, argv) => {
                   options: {
                     flat: false,
                     preserveTimestamps: true,
-                    overwite: true,
+                    overwrite: true,
                   },
                   globOptions: {
                     ignore: [
@@ -146,6 +146,16 @@ module.exports = (env, argv) => {
               options: {
                 sourceMap: mode === "development",
                 implementation: require("sass-embedded"),
+                // One long-running compiler shared by all files (fastest API).
+                api: "modern-compiler",
+                sassOptions: {
+                  // No deprecation warnings from Bootstrap, Barceloneta or the
+                  // base packages: they are not ours to fix.
+                  quietDeps: true,
+                  // Themes are built on Bootstrap 5's @import architecture on
+                  // purpose (variables declared before importing the base).
+                  silenceDeprecations: ["import"],
+                },
               },
             },
           ],
@@ -195,7 +205,20 @@ module.exports = (env, argv) => {
     optimization: {
       usedExports: true,
       minimizer: [
-        new CssMinimizerPlugin(),
+        new CssMinimizerPlugin({
+          minimizerOptions: {
+            preset: [
+              "default",
+              {
+                // SVGO 4 keeps viewBox by default; SVGO 3 removed it when it
+                // matched width/height. Keep the old output so existing themes
+                // render their SVG icons exactly as before. Icons written
+                // without width/height keep their viewBox either way.
+                svgo: { plugins: ["preset-default", "removeViewBox"] },
+              },
+            ],
+          },
+        }),
         new TerserPlugin({
           parallel: true,
         }),
