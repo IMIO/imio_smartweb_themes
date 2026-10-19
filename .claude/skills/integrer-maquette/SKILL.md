@@ -61,6 +61,17 @@ Par où commencer : couleurs (`$primary`, `$primary-svg`, `$grey-bg`, `$black-co
 3. `pnpm stylelint` et `pnpm prettier` : exit 0.
 4. Comparaison visuelle : ouvrir le site local (`mcp__t3-code__preview_*`) et le comparer au `get_screenshot` de Figma, section par section. Vérifier aussi mobile et l'état au survol et au focus.
 
+#### Comparer par mesure, pas à l'œil
+
+Une comparaison visuelle seule laisse passer des écarts de 20 à 60 px (retour d'utilisateur sur Soignies : « tout n'est pas bon »). Comparer en plus des **coordonnées** :
+
+1. Prendre dans `get_metadata` les `x`, `y`, `width`, `height` des repères de la maquette (haut des titres, des cartes, des boutons, des bandes de fond, hauteur du header et de la bannière).
+2. Mesurer les mêmes éléments sur le site avec `preview_evaluate` (`getBoundingClientRect().top + scrollY`), fenêtre fixée à la largeur de la maquette.
+3. Régler d'abord par **variables d'espacement** (`$*-section-padding-*`, `$*-title-margin`, `$home-section-title-margin`, `$header-top-padding`), puis par SCSS custom pour le reste. Corriger les écarts de plus de quelques pixels.
+4. Pour examiner la capture de la maquette en détail, la découper avec `sips -c <hauteur> <largeur> --cropOffset <y> <x> in.jpg --out out.jpg` (un offset à `0 0` centre le découpage : utiliser `1`).
+
+Écarts fréquents à vérifier dans cet ordre : hauteur du header, position verticale du premier bloc, marge titre → cartes, hauteur des cartes, espace entre sections, ombres des cartes, taille et couleur des pastilles de pagination, position des flèches du slider, alignement du menu, chevrons du menu.
+
 #### Servir le thème en direct
 
 - **Vérifier quel thème le serveur de dev compile.** `pnpm watch` sans `--env theme=<theme>` compile `base`. Contrôle : `curl -s -o /dev/null -w '%{http_code}' localhost:3000/++theme++<theme>/dist/js/theme.js` doit répondre 200 ET le CSS ne doit pas être celui de la base. En cas de doute, lancer son propre serveur sans toucher à celui de l'utilisateur : `npx webpack serve --mode=development --env theme=<theme> --port 3001`.

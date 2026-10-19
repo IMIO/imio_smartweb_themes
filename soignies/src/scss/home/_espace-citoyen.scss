@@ -4,9 +4,14 @@
   left: 50%;
   transform: translateX(-50%);
   max-width: 100vw;
-  margin-top: -1px;
+  margin: -1px 0 61px;
   padding-bottom: 60px;
-  background: linear-gradient(to bottom, $slate-dark 0, $slate-dark calc(100% - 59px), #fff calc(100% - 59px));
+  background: linear-gradient(
+    to bottom,
+    $slate-dark 0,
+    $slate-dark calc(100% - 59px),
+    #fff calc(100% - 59px)
+  );
 
   .nb-items-batch-4 {
     position: relative;

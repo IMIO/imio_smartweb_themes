@@ -23,3 +23,19 @@
     }
   }
 }
+
+// Illustration à droite du bandeau
+@include media-breakpoint-up(xl) {
+  .smartweb_herobanner::after {
+    content: "";
+    position: absolute;
+    right: 44px;
+    bottom: -8px;
+    z-index: 3;
+    width: 357px;
+    height: 500px;
+    background: url("../../assets/svg/banner-illustration.svg") center / contain
+      no-repeat;
+    pointer-events: none;
+  }
+}

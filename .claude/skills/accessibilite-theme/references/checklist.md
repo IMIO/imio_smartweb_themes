@@ -28,6 +28,12 @@ Référentiel WCAG 2.1 AA. Les numéros renvoient aux critères de succès.
 - [ ] Police de titre : vérifier que la graisse choisie existe vraiment dans l'import Google Fonts (sinon synthèse floue).
 - [ ] Texte justifié, `letter-spacing` négatif et `font-weight` < 400 sur petit texte : à éviter.
 
+## Composants de navigation (slider, pagination)
+
+- [ ] Pastilles de pagination inactives ≥ **3:1** contre leur fond (1.4.11). Les maquettes dessinent souvent un gris très clair (`#f1f1f1` sur blanc = 1.1:1), qui rend la pagination invisible : proposer un gris plus foncé (`#949494` ≈ 3:1) et le dire au graphiste.
+- [ ] Flèches du slider : icône ≥ 3:1 contre le disque, disque ≥ 3:1 contre l'image ou le fond, taille ≥ 44 px au tactile.
+- [ ] L'état désactivé (première ou dernière diapositive) reste identifiable sans la seule opacité.
+
 ## Effets et mouvement
 
 - [ ] Animations et `@keyframes` dans `@media (prefers-reduced-motion: no-preference)` (2.3.3, 2.2.2).

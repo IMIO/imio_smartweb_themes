@@ -5,11 +5,12 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: -355px;
+    bottom: -190px;
     z-index: -1;
     width: 477px;
     height: 499px;
-    background: url("../../assets/svg/decor-world.png") center / contain no-repeat;
+    background: url("../../assets/svg/decor-world.png") center / contain
+      no-repeat;
     pointer-events: none;
   }
 
@@ -30,7 +31,8 @@
       z-index: -1;
       width: 472px;
       height: 494px;
-      background: url("../../assets/svg/decor-world.png") center / contain no-repeat;
+      background: url("../../assets/svg/decor-world.png") center / contain
+        no-repeat;
       transform: scale(-1, -1);
       pointer-events: none;
     }

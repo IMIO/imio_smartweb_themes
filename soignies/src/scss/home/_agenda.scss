@@ -1,8 +1,25 @@
-// Bandeau ardoise qui démarre à mi-hauteur des cartes
+// Cartes : ombre légère (actualités, agenda)
+.sectionnews,
 .sectionevents {
-  background: linear-gradient(to bottom, #fff 0, #fff 232px, $slate-dark 232px);
-
   .swiper-slide > a {
     box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
   }
+
+  .swiper-pagination {
+    margin-top: 22px;
+  }
+
+  // Pastilles de pagination
+  --swiper-pagination-bullet-size: 15px;
+  --swiper-pagination-bullet-horizontal-gap: 14px;
+  --swiper-pagination-bullet-inactive-color: #949494;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: #{$primary-svg};
+}
+
+// Bandeau ardoise qui démarre à mi-hauteur des cartes
+.sectionevents {
+  background: linear-gradient(to bottom, #fff 0, #fff 190px, $slate-dark 190px);
+
+  --swiper-pagination-bullet-inactive-color: #fff;
 }

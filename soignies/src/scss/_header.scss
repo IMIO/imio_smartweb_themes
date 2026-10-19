@@ -1,6 +1,10 @@
 #portal-header {
   margin-bottom: 0;
 
+  #portal-header-top {
+    min-height: 133px;
+  }
+
   #portal-header-top #header-links #search-link a {
     width: 37px;
     height: 37px;
@@ -11,6 +15,23 @@
     &:hover,
     &:focus-visible {
       background: $primary;
+    }
+  }
+}
+
+// Menu aligné à droite, juste avant la recherche
+@include media-breakpoint-up(lg) {
+  #portal-header #portal-header-top {
+    #portal-globalnav-wrapper {
+      margin-left: auto;
+
+      #portal-globalnav {
+        justify-content: flex-end;
+      }
+    }
+
+    #header-links {
+      margin-left: 0;
     }
   }
 }

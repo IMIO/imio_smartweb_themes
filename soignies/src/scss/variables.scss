@@ -17,7 +17,7 @@ $font-title-weight: 500;
 
 $global-radius: 10px;
 $home-section-title-size: 3.125rem;
-$home-section-title-margin: 0 0 3rem 0;
+$home-section-title-margin: 0 0 2.4rem 0;
 
 //swiper
 $swiper-icon-color: #fff;
@@ -25,6 +25,7 @@ $swiper-button-width: 60px;
 $swiper-button-height: 60px;
 $swiper-background-color: $primary-svg;
 $swipper-bullet-color: $primary-svg;
+$swiper-button-top: 90px;
 
 //*// HEADER
 $main-logo-max-width: 165px;
@@ -35,6 +36,7 @@ $header-search-icon-color: #fff;
 // sitenav
 $nav-link-font-size: 1.125rem;
 $nav-link-font-weight: 500;
+$nav-link-drop-color: $primary-svg;
 
 //*// SECTION HOMEPAGE
 
@@ -58,6 +60,7 @@ $see-all-underline-width: 0;
 $see-all-hover-underline-width: 0;
 
 // Quick access
+$quick-access-container-padding: 2.9rem 0 0;
 $quick-access-title-color: $black-color;
 $quick-access-title-font-family: "Roboto", sans-serif;
 $quick-access-title-font-size: 1rem;
@@ -71,6 +74,8 @@ $quick-access-svg-width: 48px;
 $quick-access-svg-color: #fff;
 
 // Actu
+$actu-section-padding-top: 0;
+$actu-section-padding-bottom: 10.3rem;
 $actu-title-color: $primary;
 $actu-image-border-radius: 10px 50px 0 0;
 $actu-item-bg-color: #fff;
@@ -82,6 +87,7 @@ $actu-category-text-transform: none;
 $actu-category-radius: 0 0 10px 0;
 $actu-category-font-size: 0.875rem;
 $actu-item-title-padding: 0 1.8rem;
+$actu-item-title-margin: 0 0 3.1rem 0;
 $actu-item-title-color: $black-color;
 $actu-item-title-font-size: 1.375rem;
 $actu-item-title-font-weight: 700;
@@ -91,6 +97,8 @@ $actu-date-color: $primary-svg;
 $actu-date-font-size: 0.75rem;
 
 // Event
+$event-section-padding-top: 0;
+$event-section-padding-bottom: 1.4rem;
 $event-image-border-radius: 10px 50px 0 0;
 $event-item-bg-color: #fff;
 $event-item-bg-radius: 10px 50px 10px 10px;
@@ -101,6 +109,7 @@ $event-category-text-transform: none;
 $event-category-radius: 0 0 10px 0;
 $event-category-font-size: 0.875rem;
 $event-item-title-padding: 0 1.8rem;
+$event-item-title-margin: 0 0 3.1rem 0;
 $event-item-title-color: $black-color;
 $event-item-title-font-size: 1.375rem;
 $event-item-title-font-weight: 700;
