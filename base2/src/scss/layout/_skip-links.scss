@@ -1,0 +1,10 @@
+// Liens d'évitement (« Passer au contenu », « Passer au pied de page »,
+// « Aller à la navigation »). Le core les masque et les fait apparaître au
+// focus (.show-on-focus) ; ils passent ici au-dessus de tout, barre d'outils
+// Plone comprise.
+.show-on-focus:focus {
+  position: fixed !important; // le core impose absolute !important
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: $zindex-toast + 10;
+}

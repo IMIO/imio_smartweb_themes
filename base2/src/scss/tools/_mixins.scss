@@ -6,6 +6,35 @@
   box-shadow: 0 0 0 $focus-outline-offset var(--sw-focus-contrast);
 }
 
+// Icône en masque, à poser sur un ::before / ::after : elle prend la couleur
+// du texte (currentcolor).
+@mixin sw-icon($icon, $size: 1em) {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: $size;
+  height: $size;
+  background-color: currentcolor;
+  mask: $icon center / contain no-repeat;
+}
+
+// Élément qui sort de son conteneur pour occuper toute la largeur de la
+// fenêtre (le core pose déjà overflow-x: hidden sur body).
+@mixin sw-full-bleed() {
+  margin-inline: calc(50% - 50vw);
+}
+
+// Marges intérieures qui alignent le contenu d'un bloc pleine largeur sur le
+// conteneur de la page.
+@mixin sw-container-padding() {
+  $gutter: $grid-gutter-width * 0.5;
+
+  padding-inline: max(
+    #{$gutter},
+    calc((100vw - var(--sw-container-max)) / 2 + #{$gutter})
+  );
+}
+
 // Police auto-hébergée (woff2) déclarée par un thème communal :
 //   @include sw-font-face("Ma Police", "@theme/assets/fonts/ma-police", 400);
 @mixin sw-font-face($family, $path, $weight: 400, $style: normal) {

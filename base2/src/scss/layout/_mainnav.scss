@@ -1,0 +1,205 @@
+// Navigation principale (styles communs dans _nav.scss).
+// Ordinateur : entrées sur une ligne, panneaux pleine largeur sous l'en-tête.
+// Mobile et tablette : bouton menu, menu en feuille sous l'en-tête,
+// sous-menus en accordéon.
+
+$-items: (
+  link: $mainnav-link-color,
+  link-hover: $mainnav-link-hover-color,
+  active: $mainnav-link-active-color,
+  font-size: $mainnav-link-font-size,
+  font-weight: $mainnav-link-font-weight,
+  text-transform: $mainnav-link-text-transform,
+  panel-color: $mainnav-panel-color,
+  panel-link: $mainnav-panel-link-color,
+  panel-link-hover: $mainnav-panel-link-hover-color,
+  panel-title: $mainnav-panel-title-color,
+  panel-title-size: $mainnav-panel-title-font-size,
+);
+
+#portal-globalnav-wrapper {
+  // Le panneau se positionne par rapport à la ligne d'en-tête.
+  position: static;
+  flex: 1 1 auto;
+  padding: 0;
+
+  // Le core pose .bg-primary et .navbar-dark : menu sur fond d'en-tête.
+  background-color: transparent;
+
+  --bs-navbar-color: #{$mainnav-link-color};
+  --bs-navbar-hover-color: #{$mainnav-link-hover-color};
+  --bs-navbar-active-color: #{$mainnav-link-active-color};
+
+  > .container {
+    justify-content: flex-end;
+  }
+}
+
+#portal-globalnav {
+  @include sw-nav-items($-items);
+
+  // La page d'accueil a déjà le logo.
+  .nav_index_html {
+    display: none;
+  }
+}
+
+//*// Ordinateur
+
+@include media-breakpoint-up($mainnav-breakpoint) {
+  #portal-globalnav-wrapper {
+    order: 1;
+  }
+
+  #header-links {
+    order: 2;
+  }
+
+  #portal-globalnav {
+    flex-wrap: wrap;
+    justify-content: $mainnav-justify;
+
+    @include sw-nav-panels(
+      (
+        panel-bg: $mainnav-panel-bg,
+        panel-shadow: $mainnav-panel-shadow,
+        column-width: $mainnav-panel-column-width,
+      )
+    );
+
+    > li > a {
+      padding-inline: $mainnav-link-padding-x;
+    }
+  }
+
+  // Voile sur la page quand un panneau est ouvert
+  @if $mainnav-mask-bg {
+    .mask-menu.in {
+      position: fixed;
+      inset: 0;
+      z-index: $zindex-dropdown - 1;
+      background-color: $mainnav-mask-bg;
+    }
+  }
+}
+
+//*// Mobile et tablette
+
+@include media-breakpoint-down($mainnav-breakpoint) {
+  #portal-globalnav-wrapper {
+    flex: 0 0 auto;
+    order: 2;
+
+    // Bootstrap déplie la barre dès md (navbar-expand-md, imposé par le
+    // core) avec des display !important : ils sont annulés jusqu'à
+    // $mainnav-breakpoint, là où le core replace aussi « Mon compte ».
+    .navbar-toggler {
+      display: inline-flex !important;
+    }
+
+    .navbar-collapse:not(.show, .collapsing) {
+      display: none !important;
+    }
+
+    .navbar-collapse:is(.show, .collapsing) {
+      display: block !important;
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+    }
+  }
+
+  #header-links {
+    order: 1;
+    margin-inline-start: auto;
+  }
+
+  .navbar-toggler {
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: $header-color;
+
+    &::before {
+      @include sw-icon($icon-menu, 1.75rem);
+    }
+
+    &[aria-expanded="true"]::before {
+      mask-image: $icon-close;
+    }
+
+    &:hover {
+      background-color: $surface-alt;
+    }
+  }
+
+  .navbar-toggler-icon {
+    display: none;
+  }
+
+  // Feuille pleine largeur sous la ligne d'en-tête ; la page ne défile plus
+  // derrière.
+  #portal-globalnav-collapse {
+    position: absolute;
+    top: 100%;
+    inset-inline: calc(50% - 50vw);
+    z-index: $zindex-dropdown;
+    max-height: calc(100dvh - #{$header-min-height});
+    overflow-y: auto;
+    padding-block: 0.5rem 2rem;
+    background-color: $mainnav-panel-bg;
+    box-shadow: $mainnav-panel-shadow;
+
+    @include sw-container-padding;
+  }
+
+  html:has(#portal-globalnav-collapse.show) {
+    overflow: hidden;
+  }
+
+  #portal-globalnav {
+    li {
+      border-bottom: 1px solid $border-color;
+    }
+
+    li li:last-child {
+      border-bottom: 0;
+    }
+
+    > li > a,
+    .nav-submenu a {
+      justify-content: space-between;
+      padding-block: 0.75rem;
+    }
+
+    li.has_subtree > a::after {
+      margin-inline-start: 1rem;
+    }
+
+    // Accordéon : le sous-menu s'ouvre sous son entrée, en retrait.
+    .has_subtree.dropdown {
+      padding: 0 0 0.75rem 1rem;
+    }
+
+    .prev-nav,
+    > li .has_subtree .close-nav {
+      display: none;
+    }
+
+    .nav-title {
+      padding-block: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  // « Mon compte », déplacé dans le menu par le core sous 992 px
+  #portal-globalnav-collapse #header-actions a {
+    justify-content: center;
+    width: 100%;
+  }
+}

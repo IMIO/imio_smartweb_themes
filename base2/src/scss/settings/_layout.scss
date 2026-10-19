@@ -1,0 +1,69 @@
+// En-tête, navigation principale et fil d'Ariane.
+
+//*// En-tête
+
+$header-bg: $body-bg !default;
+$header-color: $body-color !default;
+$header-min-height: 4.5rem !default;
+$header-padding-y: 0.75rem !default;
+// Filet sous la ligne logo + menu (null : aucun)
+$header-border-color: $border-color !default;
+$header-logo-max-height: 3.5rem !default;
+$header-logo-max-height-mobile: 2.75rem !default;
+$header-logo-max-width: 14rem !default;
+
+// Liens d'action de l'en-tête (« Mon compte »…) et bouton de recherche
+$header-action-color: $primary !default;
+$header-action-hover-bg: $primary !default;
+$header-action-hover-color: $white !default;
+$header-search-color: $header-color !default;
+$header-search-hover-bg: $surface-alt !default;
+
+//*// Navigation principale
+
+// Largeur à partir de laquelle le menu est déplié sur une ligne. En dessous :
+// bouton menu et sous-menus en accordéon.
+$mainnav-breakpoint: lg !default;
+// Position des entrées dans la ligne : flex-start, center, flex-end
+$mainnav-justify: flex-end !default;
+$mainnav-link-color: $header-color !default;
+$mainnav-link-hover-color: $primary !default;
+// Rubrique ouverte et rubrique de la page en cours
+$mainnav-link-active-color: $primary !default;
+$mainnav-link-font-size: 1rem !default;
+$mainnav-link-font-weight: 600 !default;
+$mainnav-link-padding-x: 0.75rem !default;
+$mainnav-link-text-transform: none !default;
+
+// Panneau déroulant (ordinateur) et menu mobile
+$mainnav-panel-bg: $body-bg !default;
+$mainnav-panel-color: $body-color !default;
+$mainnav-panel-title-color: $headings-color !default;
+$mainnav-panel-title-font-size: $h4-font-size !default;
+$mainnav-panel-link-color: $body-color !default;
+$mainnav-panel-link-hover-color: $primary !default;
+$mainnav-panel-shadow: 0 1.5rem 2rem -1rem rgba($black, 0.25) !default;
+$mainnav-panel-column-width: 15rem !default;
+// Voile posé sur la page quand un panneau est ouvert (null : aucun)
+$mainnav-mask-bg: rgba($black, 0.35) !default;
+
+//*// Sous-site (barre sous l'en-tête : logo, titre et navigation propres)
+
+$subnav-bg: $surface-alt !default;
+$subnav-title-color: $headings-color !default;
+$subnav-logo-max-height: 2.5rem !default;
+$subnav-link-color: $body-color !default;
+$subnav-link-hover-color: $primary !default;
+$subnav-link-active-color: $primary !default;
+$subnav-link-font-weight: 600 !default;
+
+//*// Fil d'Ariane (variables Bootstrap)
+
+$breadcrumb-font-size: 0.875rem !default;
+$breadcrumb-padding-y: 0.75rem !default;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-margin-bottom: 0 !default;
+$breadcrumb-bg: transparent !default;
+$breadcrumb-divider: "›" !default;
+$breadcrumb-divider-color: $gray-600 !default;
+$breadcrumb-active-color: $body-secondary-color !default;

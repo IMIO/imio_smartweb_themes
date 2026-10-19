@@ -1,0 +1,171 @@
+// En-tête : logo, navigation principale, liens d'action et recherche.
+// Le Diazo place tout l'en-tête du core (y compris bandeau, fil d'Ariane et
+// sous-site) dans header#content-header > .container.
+
+// Pas de z-index ici : il enfermerait le panneau de recherche (offcanvas)
+// sous son propre voile, que Bootstrap ajoute à la fin du body.
+#content-header {
+  background-color: $header-bg;
+  color: $header-color;
+
+  // Conteneurs imbriqués (fil d'Ariane, navigation…) : une seule gouttière.
+  .container .container {
+    max-width: none;
+    padding-inline: 0;
+  }
+}
+
+#portal-header-top {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  min-height: $header-min-height;
+  padding-block: $header-padding-y;
+
+  // Filet pleine largeur sous la ligne logo + menu.
+  @if $header-border-color {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      inset-inline: calc(50% - 50vw);
+      border-bottom: 1px solid $header-border-color;
+      pointer-events: none;
+    }
+  }
+
+  // Menu collant (option du site) : fond plein sur toute la largeur.
+  &:is(.sticky, .sticky-on-top, .sticky-demi-active) {
+    z-index: $zindex-fixed;
+    background-color: $header-bg;
+    box-shadow:
+      0 0 0 100vmax $header-bg,
+      0 0.5rem 1rem -0.5rem rgba($black, 0.2);
+    clip-path: inset(0 -100vmax -2rem);
+  }
+}
+
+//*// Logo
+
+#portal-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+
+  img {
+    width: auto;
+    max-width: $header-logo-max-width;
+    max-height: $header-logo-max-height-mobile;
+
+    @include media-breakpoint-up($mainnav-breakpoint) {
+      max-height: $header-logo-max-height;
+    }
+  }
+}
+
+// Nom du mini-site, à côté du logo
+.minisite_title {
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+//*// Liens d'action et recherche
+
+#header-links {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.375rem 1rem;
+    border: 1px solid currentcolor;
+    border-radius: $border-radius;
+    color: $header-action-color;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $header-action-hover-bg;
+      background-color: $header-action-hover-bg;
+      color: $header-action-hover-color;
+    }
+
+    // Lien vers un autre site, ouvert dans un nouvel onglet
+    &[target="_blank"]::after {
+      @include sw-icon($icon-external, 1em);
+    }
+  }
+
+  // Icône de l'action (image de fond posée en ligne par le core) : le core
+  // impose background-size: cover à tous les éléments.
+  span[style*="background-image"] {
+    padding-inline-start: 1.75rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.25rem;
+  }
+}
+
+#search-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $header-search-color;
+
+  &::before {
+    @include sw-icon($icon-search, 1.5rem);
+  }
+
+  &:hover {
+    background-color: $header-search-hover-bg;
+  }
+}
+
+// Sélecteur de langue (sites multilingues)
+#portal-languageselector-dropdown {
+  .btn {
+    min-height: 44px;
+    color: $header-color;
+    font-weight: 600;
+  }
+
+  .dropdown-menu {
+    min-width: auto;
+  }
+}
+
+//*// Panneau de recherche (offcanvas Bootstrap, contenu React)
+
+#offcanvasSearch {
+  .offcanvas-header {
+    justify-content: flex-end;
+  }
+
+  .btn-close {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    opacity: 100%;
+    background-size: 1.25rem;
+  }
+}

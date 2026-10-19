@@ -1,0 +1,227 @@
+@use "sass:map";
+
+// Styles communs à la navigation principale et à celle d'un sous-site, qui
+// partagent le même balisage (imio.smartweb.core, viewlets/navigation.py).
+// Le JS du core ouvre une entrée au clic sur son lien (classe .show-nav sur
+// le li) et pose l'attribut inert sur les panneaux fermés ; le JS de base2
+// ajoute Échap, aria-expanded, aria-current et le clavier sur « Retour ».
+
+// Entrées, chevrons, panneaux (titre, sous-menu, Retour, Fermer).
+// $c : link, link-hover, active, font-size, font-weight, text-transform,
+// panel-color, panel-link, panel-link-hover, panel-title, panel-title-size.
+@mixin sw-nav-items($c) {
+  // Le repli CSS du core (case à cocher + étiquette) est inutile avec le JS,
+  // et la case prend le focus clavier.
+  .opener,
+  .opener + label {
+    display: none;
+  }
+
+  a {
+    color: map.get($c, panel-link);
+    text-decoration: none;
+
+    &:hover {
+      color: map.get($c, panel-link-hover);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  > li > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    color: map.get($c, link);
+    font-size: map.get($c, font-size);
+    font-weight: map.get($c, font-weight);
+    text-transform: map.get($c, text-transform);
+
+    &:hover {
+      color: map.get($c, link-hover);
+    }
+  }
+
+  // Entrée ouverte, entrée de la page en cours (pat-navigationmarker)
+  > li:is(.show-nav, .inPath, .current) > a {
+    color: map.get($c, active);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.4em;
+  }
+
+  li.has_subtree > a::after {
+    @include sw-icon($icon-chevron-down, 1em);
+
+    margin-inline-start: 0.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  li.has_subtree.show-nav > a::after {
+    transform: rotate(180deg);
+  }
+
+  // Panneaux fermés : retirés de l'affichage et de l'arbre d'accessibilité.
+  .has_subtree.dropdown {
+    display: none;
+    color: map.get($c, panel-color);
+  }
+
+  li.show-nav > .has_subtree.dropdown {
+    display: block;
+  }
+
+  .nav-title {
+    display: block;
+    color: map.get($c, panel-title);
+    font-size: map.get($c, panel-title-size);
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+
+    a {
+      display: inline-flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: inherit;
+
+      &::after {
+        @include sw-icon($icon-arrow-right, 1em);
+      }
+    }
+  }
+
+  .nav-submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.5rem 0;
+    }
+  }
+
+  // Bloc « Accès rapide » ajouté par le core dans certains sous-menus
+  .quick-access-title {
+    display: block;
+    margin-top: 1rem;
+    font-weight: $headings-font-weight;
+  }
+
+  .quick-access ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  // « Retour » : lien sans href, rendu activable au clavier par le JS.
+  .prev-nav {
+    display: inline-flex;
+    gap: 0.25rem;
+    align-items: center;
+    min-height: 44px;
+    margin-bottom: 0.5rem;
+    color: map.get($c, panel-link);
+    font-weight: 600;
+    cursor: pointer;
+
+    &::before {
+      @include sw-icon($icon-chevron-left, 1.25em);
+    }
+  }
+
+  // « Fermer » : même spécificité que la règle du core qui le réinitialise.
+  > li .has_subtree .close-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    color: map.get($c, panel-color);
+
+    &::before {
+      @include sw-icon($icon-close, 1.5rem);
+    }
+
+    &:hover {
+      background-color: $surface-alt;
+    }
+  }
+
+  .close-nav-icon {
+    display: none;
+  }
+}
+
+// Panneaux pleine largeur sous la barre de navigation ; les niveaux plus
+// profonds recouvrent le panneau du niveau 1 (bouton « Retour »). Le panneau
+// se positionne par rapport au premier ancêtre en position relative.
+// $c : panel-bg, panel-shadow, column-width.
+@mixin sw-nav-panels($c) {
+  $grid-areas: "back close" "title close" "menu menu";
+
+  > li.show-nav > .has_subtree.dropdown {
+    position: absolute;
+    top: 100%;
+    inset-inline: calc(50% - 50vw);
+    z-index: $zindex-dropdown;
+    display: grid;
+    grid-template-areas: $grid-areas;
+    grid-template-columns: 1fr auto;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding-block: 1.5rem 2.5rem;
+    background-color: map.get($c, panel-bg);
+    box-shadow: map.get($c, panel-shadow);
+
+    @include sw-container-padding;
+  }
+
+  .nav-submenu li.show-nav > .has_subtree.dropdown {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-areas: $grid-areas;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr;
+    overflow-y: auto;
+    padding-block: 1.5rem 2.5rem;
+    background-color: map.get($c, panel-bg);
+
+    @include sw-container-padding;
+  }
+
+  .prev-nav {
+    grid-area: back;
+    justify-self: start;
+  }
+
+  // Au premier niveau, « Retour » ne mène nulle part : seul « Fermer » reste.
+  > li > .has_subtree > .prev-nav {
+    display: none;
+  }
+
+  .close-nav {
+    grid-area: close;
+  }
+
+  .nav-title {
+    grid-area: title;
+    margin-bottom: 1rem;
+  }
+
+  .nav-submenu {
+    display: grid;
+    grid-area: menu;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(map.get($c, column-width), 1fr)
+    );
+    gap: 0 2rem;
+    align-content: start;
+  }
+}

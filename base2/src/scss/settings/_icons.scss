@@ -1,0 +1,15 @@
+// Icônes d'interface, utilisées en masque (mixin sw-icon) : elles prennent la
+// couleur du texte, y compris au survol et sur fond sombre. SVG sans
+// width/height pour que le viewBox survive à la minification.
+// Seul le canal alpha compte : le trait est noir.
+
+$sw-svg-start: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>";
+
+$icon-chevron-down: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M6 9l6 6 6-6'/></svg>") !default;
+$icon-chevron-right: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M9 6l6 6-6 6'/></svg>") !default;
+$icon-chevron-left: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M15 6l-6 6 6 6'/></svg>") !default;
+$icon-arrow-right: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M5 12h14M13 6l6 6-6 6'/></svg>") !default;
+$icon-menu: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M4 6h16M4 12h16M4 18h16'/></svg>") !default;
+$icon-close: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M6 6l12 12M18 6L6 18'/></svg>") !default;
+$icon-search: url("data:image/svg+xml;utf8,#{$sw-svg-start}<circle cx='11' cy='11' r='7'/><path d='M20 20l-3.5-3.5'/></svg>") !default;
+$icon-external: url("data:image/svg+xml;utf8,#{$sw-svg-start}<path d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/></svg>") !default;

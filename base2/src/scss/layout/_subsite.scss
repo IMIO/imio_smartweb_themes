@@ -1,0 +1,93 @@
+// Sous-site : barre sous l'en-tête avec le logo ou le titre du sous-site et
+// sa navigation (même balisage que la navigation principale, voir _nav.scss).
+// Non testé sur le site local (aucun sous-site) : à valider.
+
+.subsite-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  align-items: center;
+  padding-block: 0.5rem;
+  background-color: $subnav-bg;
+
+  // Fond pleine largeur sans déborder du conteneur.
+  box-shadow: 0 0 0 100vmax $subnav-bg;
+  clip-path: inset(0 -100vmax);
+
+  // Rendu vide hors sous-site
+  &:not(:has(*)) {
+    display: none;
+  }
+}
+
+#subsite-logo a {
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 44px;
+  color: $subnav-title-color;
+  font-weight: $headings-font-weight;
+  text-decoration: none;
+
+  img {
+    width: auto;
+    max-height: $subnav-logo-max-height;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#subsite-navigation {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  > ul {
+    display: flex;
+    gap: 0 0.25rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    list-style: none;
+    scroll-snap-type: x proximity;
+
+    @include sw-nav-items(
+      (
+        link: $subnav-link-color,
+        link-hover: $subnav-link-hover-color,
+        active: $subnav-link-active-color,
+        font-size: 1rem,
+        font-weight: $subnav-link-font-weight,
+        text-transform: none,
+        panel-color: $mainnav-panel-color,
+        panel-link: $mainnav-panel-link-color,
+        panel-link-hover: $mainnav-panel-link-hover-color,
+        panel-title: $mainnav-panel-title-color,
+        panel-title-size: $mainnav-panel-title-font-size,
+      )
+    );
+    @include sw-nav-panels(
+      (
+        panel-bg: $mainnav-panel-bg,
+        panel-shadow: $mainnav-panel-shadow,
+        column-width: $mainnav-panel-column-width,
+      )
+    );
+
+    > li {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+
+      > a {
+        padding-inline: 0.75rem;
+        white-space: nowrap;
+      }
+    }
+
+    .nav_index_html {
+      display: none;
+    }
+  }
+}

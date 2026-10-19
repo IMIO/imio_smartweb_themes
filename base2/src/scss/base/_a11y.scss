@@ -1,21 +1,18 @@
 // Masqué à l'écran, toujours lu par les technologies d'assistance.
 // Le balisage SmartWeb (templates du core, vues React) utilise le nom
 // Bootstrap 4 .sr-only, que Bootstrap 5 a remplacé par .visually-hidden.
-.sr-only,
-.hiddenStructure,
+// Un élément focalisable ne doit jamais recevoir le focus en restant
+// invisible (WCAG 2.4.7) : il réapparaît le temps du focus. C'est le cas des
+// liens .sr-only.seo du pied de page.
+.sr-only:not(:focus, :focus-within),
+.sr-only-focusable:not(:focus, :focus-within),
+.hiddenStructure:not(:focus, :focus-within),
 .crud-form .header-select {
   @include visually-hidden;
 }
 
-// Un élément focalisable ne doit jamais recevoir le focus en restant
-// invisible (WCAG 2.4.7) : il réapparaît le temps du focus. C'est le cas des
-// liens .sr-only.seo du pied de page.
-.sr-only-focusable:not(:focus, :focus-within),
-.sr-only:is(a, button):not(:focus) {
-  @include visually-hidden;
-}
-
-.sr-only:is(a, button):focus {
+// Écrase aussi la règle .sr-only que le core insère dans le pied de page.
+:is(.sr-only, .hiddenStructure):is(:focus, :focus-within) {
   position: static;
   display: inline-block;
   width: auto;

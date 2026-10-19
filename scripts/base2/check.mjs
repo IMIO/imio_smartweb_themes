@@ -25,14 +25,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
-import { fileURLToPath } from "node:url";
 import { chromium } from "playwright-core";
+import { DEFAULTS, ROOT, newThemedContext } from "./lib.mjs";
 
 const require = createRequire(import.meta.url);
-const ROOT = path.resolve(
-  path.dirname(fileURLToPath(import.meta.url)),
-  "../..",
-);
 const AXE_PATH = require.resolve("axe-core/axe.min.js");
 
 const PAGES = {
@@ -55,27 +51,14 @@ const AUTH_PAGES = {
 };
 const TILE = 1000;
 const AXE_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"];
-const MIME = {
-  ".css": "text/css",
-  ".js": "application/javascript",
-  ".woff2": "font/woff2",
-  ".woff": "font/woff",
-  ".svg": "image/svg+xml",
-  ".png": "image/png",
-  ".jpg": "image/jpeg",
-  ".webp": "image/webp",
-};
 
 function parseArgs(argv) {
   const opts = {
-    dist: path.join(ROOT, "base2/dist"),
-    active: "base",
-    site: "http://localhost:8080/Plone",
+    ...DEFAULTS,
     widths: [390, 768, 1024, 1280],
     pages: null,
     auth: false,
     focus: false,
-    gdpr: false,
     shots: true,
     out: null,
   };
@@ -96,44 +79,6 @@ function parseArgs(argv) {
   const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
   opts.out ||= path.join("/tmp/base2-checks", stamp);
   return opts;
-}
-
-// Sert le dist/ du thème testé à la place de celui du thème actif.
-async function substituteTheme(context, opts) {
-  const marker = `/++theme++${opts.active}/dist/`;
-  await context.route(
-    (url) => url.pathname.includes(marker),
-    async (route) => {
-      const url = new URL(route.request().url());
-      const rel = decodeURIComponent(url.pathname.split(marker)[1]);
-      const file = path.join(opts.dist, rel);
-      if (!file.startsWith(opts.dist) || !fs.existsSync(file)) {
-        return route.fulfill({ status: 404, body: "" });
-      }
-      return route.fulfill({
-        status: 200,
-        contentType: MIME[path.extname(file)] || "application/octet-stream",
-        body: fs.readFileSync(file),
-      });
-    },
-  );
-  // Le hash SRI calculé par Plone ne correspond pas au fichier substitué.
-  await context.route(
-    (url) => url.href.startsWith(opts.site),
-    async (route) => {
-      if (route.request().resourceType() !== "document")
-        return route.fallback();
-      const response = await route.fetch({ maxRedirects: 0 });
-      const type = response.headers()["content-type"] || "";
-      if (!type.includes("text/html")) return route.fulfill({ response });
-      const html = (await response.text()).replace(/<script\b[^>]*>/g, (tag) =>
-        tag.includes("++theme++")
-          ? tag.replace(/\sintegrity="[^"]*"/, "")
-          : tag,
-      );
-      return route.fulfill({ response, body: html });
-    },
-  );
 }
 
 // Plan des titres tel que l'exposent les technologies d'assistance.
@@ -257,31 +202,7 @@ async function checkFocus(page, max = 40) {
 }
 
 async function checkPage(browser, opts, name, url, width, auth) {
-  const context = await browser.newContext({
-    viewport: { width, height: 900 },
-    // Plone ne réclame jamais d'authentification sur une page publique :
-    // l'en-tête est envoyé d'emblée.
-    extraHTTPHeaders: auth
-      ? {
-          Authorization: `Basic ${Buffer.from("admin:admin").toString("base64")}`,
-        }
-      : {},
-    locale: "fr-BE",
-    // Sans défilement doux, l'élément focalisé est déjà à l'écran quand on le
-    // mesure.
-    reducedMotion: "reduce",
-  });
-  await substituteTheme(context, opts);
-  if (!opts.gdpr) {
-    // Le bandeau cookies couvre le bas de chaque page et prend le focus.
-    await context.addInitScript(() => {
-      document.addEventListener("DOMContentLoaded", () => {
-        const style = document.createElement("style");
-        style.textContent = "#gdpr-consent-banner{display:none!important}";
-        document.head.append(style);
-      });
-    });
-  }
+  const context = await newThemedContext(browser, opts, { width, auth });
   const page = await context.newPage();
   const errors = [];
   page.on("pageerror", (e) => errors.push(e.message));

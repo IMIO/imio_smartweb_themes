@@ -1,0 +1,16 @@
+// Fil d'Ariane (composant Bootstrap, réglé par ses variables).
+
+#portal-breadcrumbs {
+  // Seulement « Accueil » : rien à montrer.
+  &:not(:has(.breadcrumb-item + .breadcrumb-item)) {
+    display: none;
+  }
+
+  .breadcrumb {
+    row-gap: 0.25rem;
+  }
+
+  .breadcrumb-item a {
+    color: var(--bs-body-color);
+  }
+}

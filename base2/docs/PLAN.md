@@ -185,11 +185,18 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
   - `sw-contrast()` avertit à la compilation pour 10 paires texte/fond ; les avertissements restent visibles même quand `base2` est chargé comme dépendance.
   - La mesure de ligne du texte est reportée à l'étape 8 (section Texte).
 
-### [ ] Étape 5 — En-tête et navigation
+### [x] Étape 5 — En-tête et navigation
 - Logo, liens d'en-tête, recherche (offcanvas), sélecteur de langue, variantes collantes (`menu-sticky*`).
 - Menu principal : panneau pleine largeur et navigation en profondeur (retour/fermer), sans JS de positionnement. Menu mobile jusqu'à 991 px pour corriger l'écart 768/992.
 - Navigation de sous-site, fil d'Ariane, mini-site.
 - JS d'amélioration progressive : fermeture par Échap, `aria-expanded`, correction de `aria-controls`, gestion du focus.
+- **Résultat** :
+  - Ordinateur (≥ 992 px) : logo, menu et actions sur une ligne ; panneau pleine largeur (titre de rubrique, grille de liens, Fermer), voile sur la page. Les niveaux suivants recouvrent le panneau, avec un bouton « Retour ».
+  - Mobile et tablette : bouton menu (icône en croix une fois ouvert), feuille pleine largeur, sous-menus en accordéon, page bloquée derrière, « Mon compte » en bas. Corrige l'écart 768/992 du core.
+  - JS (`src/js/navigation.js`) : Échap ferme le niveau ouvert puis le menu mobile et rend le focus, `aria-expanded`, `aria-current`, `aria-controls` corrigé, « Retour » utilisable au clavier. Vérifié par `scripts/base2/scenarios.mjs`.
+  - Les cases à cocher du core sont masquées (elles prenaient le focus), ce qui supprime les violations `aria-required-children` et `target-size`. Il ne reste plus aucune violation de contraste dans l'en-tête.
+  - Fil d'Ariane masqué quand il ne contient que « Accueil ». Liens `.sr-only` visibles au focus. Liens d'évitement au-dessus de la barre d'outils.
+  - **Non testable sur le site local** (aucun contenu) : navigation de sous-site, mini-site, sélecteur de langue, options de menu collant, niveaux de menu ≥ 3. Les styles sont écrits (mixins partagés dans `layout/_nav.scss`) ; il faudra les valider sur un site qui les utilise.
 
 ### [ ] Étape 6 — Bandeau d'accueil (hero) et bannière
 - Diapositives image, vidéo ou couleur ; voile garantissant le contraste du texte ; hauteur minimale plutôt que fixe (zoom 200 %, reflow).

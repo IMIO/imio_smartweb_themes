@@ -2,10 +2,21 @@
 // Bootstrap expose déjà les couleurs de texte, de lien et de titre
 // (--bs-body-color, --bs-link-color-rgb, --bs-heading-color…) : une zone sur
 // fond sombre redéfinit ces propriétés-là et celles-ci, et tout son contenu
-// suit (voir utilities/_contexts.scss).
+// suit.
 :root {
   --sw-focus-color: #{$focus-color};
   --sw-focus-contrast: #{$focus-contrast-color};
   --sw-surface-alt: #{$surface-alt};
+  --sw-container-max: 100vw;
   --bs-heading-color: #{$headings-color};
+}
+
+// Largeur du conteneur Bootstrap à chaque palier, pour aligner le contenu des
+// blocs pleine largeur (mixin sw-container-padding).
+@each $breakpoint, $width in $container-max-widths {
+  @include media-breakpoint-up($breakpoint) {
+    :root {
+      --sw-container-max: #{$width};
+    }
+  }
 }
