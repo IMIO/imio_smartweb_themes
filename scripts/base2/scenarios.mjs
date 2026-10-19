@@ -103,6 +103,35 @@ const SCENARIOS = {
     await shot("ouverte");
   },
 
+  // Les diapositives du site local n'ont pas de texte : le balisage du core
+  // (slide/view.pt) est ajouté côté navigateur pour voir l'encadré.
+  async hero(page, shot, log) {
+    await page.evaluate(() => {
+      const slide = document.querySelector(
+        ".smartweb_herobanner .section-slide",
+      );
+      slide.insertAdjacentHTML(
+        "beforeend",
+        `<div class="swiper-banner-content-wrapper container"><div class="swiper-banner-content">
+          <span class="swiper-banner-title">Bienvenue sur le site de la commune</span>
+          <div class="swiper-banner-description"><p class="lead rich_description">Démarches, actualités, agenda : tout ce qu'il faut savoir sur la vie communale.</p></div>
+          <span class="swiper-banner-link"><a href="#">Découvrir la commune</a></span>
+        </div></div>`,
+      );
+    });
+    await page.waitForTimeout(200);
+    log("bandeau", {
+      height: await page.evaluate(
+        () => document.querySelector(".smartweb_herobanner").offsetHeight,
+      ),
+    });
+    await shot("bandeau-avec-texte");
+  },
+
+  async "hero-mobile"(page, shot, log) {
+    await SCENARIOS.hero(page, shot, log);
+  },
+
   async "skip-links"(page, shot, log) {
     await page.keyboard.press("Tab");
     await page.waitForTimeout(100);
@@ -118,6 +147,8 @@ const WIDTHS = {
   "nav-mobile": 390,
   search: 1280,
   "skip-links": 1280,
+  hero: 1280,
+  "hero-mobile": 390,
 };
 
 async function main() {

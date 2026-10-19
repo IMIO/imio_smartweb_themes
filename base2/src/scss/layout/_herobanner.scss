@@ -1,0 +1,173 @@
+// Bandeau d'accueil : diapositives (image, vidéo ou couleur) de l'objet
+// « Bandeau d'en-tête », affiché sur la racine du site.
+// Ordinateur : texte dans un encadré posé sur l'image ; la hauteur est un
+// minimum, l'encadré peut l'agrandir (zoom 200 %), il n'est jamais rogné.
+// Petit écran : image au format 16/9, texte en dessous.
+
+$-arrows-gap: 0.5rem;
+
+.smartweb_herobanner {
+  @include sw-full-bleed;
+  @include sw-carousel-arrows($hero-nav-size, $hero-nav-bg, $hero-nav-color);
+
+  // Pas de puces dans le bandeau : pas de place à réserver dessous (core).
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+
+  // Toutes les diapositives à la hauteur de la plus haute.
+  .swiper-slide {
+    height: auto;
+  }
+
+  .section-slide {
+    position: relative;
+    display: grid;
+    align-items: $hero-content-align;
+    justify-items: $hero-content-justify;
+    min-height: $hero-min-height;
+    background-color: $hero-bg;
+  }
+
+  // Calques de fond : image, vidéo et teinte de couleur
+  :is(.swiper-banner-image, .swiper-banner-video, .swiper-banner-color) {
+    position: absolute;
+    inset: 0;
+  }
+
+  .section-slide .swiper-banner-image {
+    height: auto;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-banner-video {
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .swiper-banner-content-wrapper {
+    position: relative;
+    display: grid;
+    justify-items: $hero-content-justify;
+    padding-block: 2rem calc(2rem + #{$hero-nav-size});
+  }
+
+  .swiper-banner-content {
+    max-width: $hero-content-max-width;
+    padding: $hero-content-padding;
+    border-radius: $border-radius-lg;
+    background-color: $hero-content-bg;
+    color: $hero-content-color;
+  }
+
+  .swiper-banner-title {
+    display: block;
+    color: $hero-title-color;
+    font-family: $headings-font-family;
+    font-size: $hero-title-font-size;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    text-wrap: balance;
+  }
+
+  .swiper-banner-description {
+    margin-top: 0.75rem;
+
+    .lead {
+      margin-bottom: 0;
+      font-size: 1.125rem;
+    }
+  }
+
+  .swiper-banner-link {
+    display: block;
+    margin-top: 1.25rem;
+
+    a {
+      @include button-variant($primary, $primary);
+
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.5rem 1.25rem;
+      border: $btn-border-width solid var(--bs-btn-border-color);
+      border-radius: $btn-border-radius;
+      background-color: var(--bs-btn-bg);
+      color: var(--bs-btn-color);
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        border-color: var(--bs-btn-hover-border-color);
+        background-color: var(--bs-btn-hover-bg);
+        color: var(--bs-btn-hover-color);
+      }
+    }
+  }
+
+  // Flèches regroupées en bas à droite, alignées sur le conteneur.
+  @include media-breakpoint-up(md) {
+    $edge: max(1rem, calc((100vw - var(--sw-container-max)) / 2 + 0.75rem));
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: auto;
+      bottom: 1.5rem;
+      margin-top: 0;
+    }
+
+    .swiper-button-next {
+      right: $edge;
+    }
+
+    .swiper-button-prev {
+      right: calc(#{$edge} + #{$hero-nav-size} + #{$-arrows-gap});
+      left: auto;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .section-slide {
+      grid-template-rows: auto 1fr;
+      align-items: stretch;
+      justify-items: stretch;
+      min-height: 0;
+    }
+
+    :is(.swiper-banner-image, .swiper-banner-video) {
+      position: relative;
+      inset: auto;
+      grid-row: 1;
+      aspect-ratio: 16 / 9;
+    }
+
+    .swiper-banner-content-wrapper {
+      grid-row: 2;
+      padding: 0;
+    }
+
+    .swiper-banner-content {
+      max-width: none;
+      border-radius: 0;
+    }
+
+    // Au milieu de l'image
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: calc(100vw * 9 / 32);
+    }
+  }
+}
+
+// Bannière des pages intérieures (image de fond posée en ligne par le core)
+#banner {
+  @include sw-full-bleed;
+
+  height: $banner-height;
+}

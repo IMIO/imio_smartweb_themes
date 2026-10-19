@@ -57,6 +57,29 @@ $subnav-link-hover-color: $primary !default;
 $subnav-link-active-color: $primary !default;
 $subnav-link-font-weight: 600 !default;
 
+//*// Bandeau d'accueil (diapositives de l'objet « Bandeau d'en-tête »)
+
+// Hauteur minimale : le bandeau grandit si le texte l'exige (zoom, mobile).
+$hero-min-height: clamp(18rem, 40vw, 32rem) !default;
+$hero-bg: $gray-200 !default; // diapositive sans image
+// Encadré du texte : opaque, pour un contraste garanti sur toute photo.
+$hero-content-bg: $body-bg !default;
+$hero-content-color: $body-color !default;
+$hero-content-max-width: 36rem !default;
+$hero-content-padding: 1.5rem 1.75rem !default;
+// Position de l'encadré : start, center ou end
+$hero-content-justify: start !default;
+$hero-content-align: end !default;
+$hero-title-color: $headings-color !default;
+$hero-title-font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem) !default;
+// Flèches du carrousel
+$hero-nav-size: 48px !default;
+$hero-nav-bg: $white !default;
+$hero-nav-color: $primary !default;
+
+// Bannière des pages intérieures (#banner)
+$banner-height: clamp(8rem, 18vw, 14rem) !default;
+
 //*// Fil d'Ariane (variables Bootstrap)
 
 $breadcrumb-font-size: 0.875rem !default;

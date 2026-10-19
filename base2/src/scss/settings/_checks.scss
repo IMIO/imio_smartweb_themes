@@ -25,4 +25,10 @@ $-checks: (
   "focus": sw-contrast($focus-color, $body-bg, 3, "anneau de focus"),
   "bordure des champs":
     sw-contrast($input-border-color, $body-bg, 3, "bordure des champs"),
+  "bandeau : texte":
+    sw-contrast($hero-content-color, $hero-content-bg, 4.5, "texte du bandeau"),
+  "bandeau : titre":
+    sw-contrast($hero-title-color, $hero-content-bg, 3, "titre du bandeau"),
+  "bandeau : flèches":
+    sw-contrast($hero-nav-color, $hero-nav-bg, 3, "flèches du bandeau"),
 );

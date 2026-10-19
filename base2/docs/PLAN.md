@@ -198,9 +198,18 @@ Le même contrôle sur la V1 sert de référence : on distingue ainsi les défau
   - Fil d'Ariane masqué quand il ne contient que « Accueil ». Liens `.sr-only` visibles au focus. Liens d'évitement au-dessus de la barre d'outils.
   - **Non testable sur le site local** (aucun contenu) : navigation de sous-site, mini-site, sélecteur de langue, options de menu collant, niveaux de menu ≥ 3. Les styles sont écrits (mixins partagés dans `layout/_nav.scss`) ; il faudra les valider sur un site qui les utilise.
 
-### [ ] Étape 6 — Bandeau d'accueil (hero) et bannière
+### [x] Étape 6 — Bandeau d'accueil (hero) et bannière
 - Diapositives image, vidéo ou couleur ; voile garantissant le contraste du texte ; hauteur minimale plutôt que fixe (zoom 200 %, reflow).
 - Contrôles du carrousel accessibles (≥ 44 px, focus visible).
+- **Résultat** :
+  - Bandeau pleine largeur.
+  - Sur ordinateur, texte dans un encadré opaque aligné sur le conteneur (contraste garanti sur toute photo) ; hauteur minimale fluide que le contenu peut agrandir.
+  - Sur petit écran, image 16/9 au-dessus et texte dessous.
+  - Flèches rondes de 48 px à chevrons en masque, groupées en bas à droite (au milieu de l'image sur mobile).
+  - Lien de diapositive en bouton.
+  - Composant `components/_carousel.scss` partagé avec les sections en carrousel.
+  - Testé en injectant côté navigateur le balisage du core (`scenarios.mjs hero`) : les diapositives locales n'ont pas de texte.
+  - La bannière des pages intérieures (`#banner`) passe en pleine largeur (non testée : absente du site local).
 
 ### [ ] Étape 7 — Système de sections
 - Rythme vertical unique (`--sw-section-space`, fluide) : première et dernière section, sections Texte consécutives (rythme d'article), colonnes `col-sm-*`, alignement « texte », fonds (`with-background`).

@@ -8,8 +8,8 @@
   background-color: $header-bg;
   color: $header-color;
 
-  // Conteneurs imbriqués (fil d'Ariane, navigation…) : une seule gouttière.
-  .container .container {
+  // Conteneurs imbriqués dans celui de l'en-tête : une seule gouttière.
+  :is(#portal-breadcrumbs, #portal-globalnav-wrapper) > .container {
     max-width: none;
     padding-inline: 0;
   }

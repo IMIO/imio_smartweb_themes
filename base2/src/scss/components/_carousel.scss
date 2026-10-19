@@ -1,0 +1,43 @@
+// Carrousels Swiper (bandeau d'accueil, sections en carrousel). Le core les
+// configure (smartweb-swiperconfig) ; le module a11y de Swiper donne aux
+// flèches role="button", tabindex et un libellé traduit.
+
+// Flèches : boutons ronds avec chevron en masque (au lieu de la police
+// d'icônes de Swiper).
+@mixin sw-carousel-arrows($size, $bg, $color) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: $size;
+    height: $size;
+    margin-top: calc(#{$size} / -2);
+    border-radius: 50%;
+    background-color: $bg;
+    box-shadow: 0 0.25rem 0.75rem rgba($black, 0.2);
+    color: $color;
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 50%;
+      background-color: currentcolor;
+      font-size: 0;
+      mask: $icon-chevron-right center / contain no-repeat;
+    }
+  }
+
+  .swiper-button-prev::after {
+    mask-image: $icon-chevron-left;
+  }
+}
+
+// Puces : simples indicateurs (le core ne les rend pas cliquables).
+.swiper-pagination-bullet {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: $gray-500;
+  opacity: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary;
+}
