@@ -139,3 +139,19 @@ $enable-roboto-webfont: false;
   background: #ffb86a;
   color: #000;
 }
+
+.sectionfiles {
+  border-radius: 20px;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+
+  h2.section-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .item_infos {
+    color: #fff;
+  }
+}
