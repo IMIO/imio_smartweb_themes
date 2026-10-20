@@ -286,9 +286,17 @@ Chaque section est vérifiée dans toutes ses variantes d'affichage.
     - `svg aria-labelledby="title"` des messages (Plone).
   - **Faux positifs** : les cibles « 4×26 » des champs `react-select` (la vraie cible est la boîte du contrôle, 44 px) et le lien en ligne de la 404 (exception « en ligne » de 2.5.8).
 
-### [ ] Étape 11 — Classes admin (champ « classe CSS » des sections)
+### [x] Étape 11 — Classes admin (champ « classe CSS » des sections)
 - Classes V1 encore utilisées (`quick-access`, `partenaires`, `espace-citoyen-bloc`…) et utilitaires génériques (fonds, centrage…).
 - Liste à valider avec Thomas ; documentation dans `docs/classes-admin.md`.
+- **Résultat** (`sections/_admin.scss`, **liste à valider avec Thomas**) :
+  - Inventaire : dans la base V1, `quick-access`, `a-la-une` et `albumhome`. Dans les thèmes, `quick-access` (115), `a-la-une` (81), `espace-citoyen` (52), `section-en-image` (44), `bloc-newsletter` (29), `site-cpas` (25), `partenaires` (22)… Hors base, ce sont des maquettes propres à chaque thème, recopiées d'un thème à l'autre.
+  - Utilitaires composables : `fond-alterne`, `fond-accent`, `fond-sombre`, `pleine-largeur`, `encadre`, `titre-centre`, `titre-masque`, `espace-reduit`, `sans-espace`. Le fond est porté par `.section-container`, aligné sur la colonne de contenu ; seule `pleine-largeur` le pose sur l'enveloppe.
+  - Fonds sombres : `sw-dark-context` pour le texte, les titres, les liens, le focus et les puces ; les cartes reviennent aux couleurs du site (nouveau mixin `sw-light-context`). Contrastes contrôlés à la compilation.
+  - Noms V1 repris : `quick-access` (tuiles centrées de largeur fixe), `a-la-une` (première carte sur deux colonnes, titres plus grands), `partenaires` (logos entiers et carrés).
+  - Table des classes V1 non reprises et de leur équivalent dans `docs/classes-admin.md`.
+  - Scénario `admin-classes` (et `-mobile`) : les classes sont posées dans le DOM des sections de l'accueil, avec une capture par section.
+  - Le champ « Classe CSS » existe aussi sur le pied de page et la bannière d'accueil : aucune classe n'y est proposée pour l'instant.
 
 ### [ ] Étape 12 — Mode connecté
 - Barre d'outils, édition des sections, formulaires, contenu des dossiers, panneaux de configuration : rien de cassé.

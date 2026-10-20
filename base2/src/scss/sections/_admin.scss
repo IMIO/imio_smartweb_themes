@@ -1,0 +1,201 @@
+// Classes admin : saisies par un Manager dans le champ « Classe CSS » d'une
+// section, rendues sur l'enveloppe div.sortable-section.{type}.{classe}.
+// Elles se combinent (ex. « fond-alterne pleine-largeur titre-centre »).
+// Liste et exemples : docs/classes-admin.md.
+
+$-bands: (
+  "fond-alterne": (
+    $band-alt-bg,
+    null,
+  ),
+  "fond-accent": (
+    $band-accent-bg,
+    $band-accent-color,
+  ),
+  "fond-sombre": (
+    $band-dark-bg,
+    $band-dark-color,
+  ),
+);
+
+//*// Fonds : bloc coloré aligné sur la colonne de contenu ; avec
+// « pleine-largeur », bande d'un bord à l'autre de l'écran.
+
+@mixin -band($bg, $color) {
+  @if $color {
+    @include sw-dark-context($bg, $color, $color, $color);
+  } @else {
+    background-color: $bg;
+  }
+}
+
+@each $name, $colors in $-bands {
+  $bg: nth($colors, 1);
+  $color: nth($colors, 2);
+
+  // Le fond est porté par le bloc de contenu : l'enveloppe déborde de la
+  // colonne (gouttières Bootstrap).
+  .sortable-section.#{$name}:not(.pleine-largeur) > .section-container {
+    @include -band($bg, $color);
+
+    padding: $box-padding;
+  }
+
+  .sortable-section.#{$name}.pleine-largeur {
+    @include -band($bg, $color);
+
+    padding-block: $band-padding-y;
+  }
+}
+
+// Cartes posées sur un fond sombre : elles gardent les couleurs du site.
+.sortable-section:is(.fond-accent, .fond-sombre)
+  :is(
+    .table_image,
+    .swiper_link,
+    .sectionpostit .swiper-slide,
+    .section-contact .body-section
+  ) {
+  @include sw-light-context;
+}
+
+// Titre et puces du carrousel : couleur du texte de la zone
+.sortable-section:is(.fond-accent, .fond-sombre) {
+  .section-title,
+  .lead.rich_description {
+    color: inherit;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: currentcolor;
+    opacity: 50%;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 100%;
+  }
+}
+
+// Lien « Voir tout » sur fond sombre : contour et texte clairs
+.sortable-section:is(.fond-accent, .fond-sombre) .see_all a {
+  color: inherit;
+
+  &:hover {
+    border-color: currentcolor;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+//*// Pleine largeur : la bande va d'un bord à l'autre de l'écran, le contenu
+// reste aligné sur la page.
+
+.sortable-section.pleine-largeur {
+  @include sw-full-bleed;
+  @include sw-container-padding;
+
+  width: 100vw;
+  max-width: none;
+}
+
+//*// Encadré : bloc arrondi (avec ou sans fond)
+
+.sortable-section.encadre > .section-container {
+  padding: $box-padding;
+  border-radius: $box-radius;
+}
+
+.sortable-section.encadre:not(.fond-alterne, .fond-accent, .fond-sombre)
+  > .section-container {
+  border: 1px solid $border-color;
+}
+
+// Encadré dans une bande pleine largeur : le bloc garde le fond de la page.
+.sortable-section.encadre.pleine-largeur > .section-container {
+  @include sw-light-context;
+
+  background-color: $body-bg;
+}
+
+//*// Titre
+
+.sortable-section.titre-centre {
+  .section-title,
+  .lead.rich_description {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .see_all {
+    justify-content: center;
+  }
+}
+
+// Titre masqué à l'écran mais lu par les lecteurs d'écran : la hiérarchie
+// des titres reste complète.
+.sortable-section.titre-masque .section-title {
+  @include visually-hidden;
+}
+
+//*// Espacement après la section
+
+.sortable-section.espace-reduit {
+  margin-bottom: calc(var(--sw-section-spacing) / 2);
+}
+
+.sortable-section.sans-espace {
+  margin-bottom: 0;
+}
+
+//*// Accès rapide (classe V1 « quick-access ») : tuiles d'icônes centrées
+
+.sectionlinks.quick-access {
+  .section-title {
+    text-align: center;
+  }
+
+  .body-section > ul.row {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        min(100%, #{$quick-access-tile-width}),
+        #{$quick-access-tile-width}
+      )
+    );
+    justify-content: center;
+  }
+}
+
+//*// À la une (classe V1 « a-la-une ») : la première carte occupe deux
+// colonnes, titres plus grands.
+
+.sortable-section.a-la-une {
+  :is(.table_title, .swiper_title, .swiper_title h3) {
+    font-size: $featured-title-font-size;
+  }
+
+  @include media-breakpoint-up(md) {
+    .body-section > ul.row > li:first-child {
+      grid-column: span 2;
+    }
+  }
+}
+
+//*// Partenaires : logos entiers sur fond blanc, carrés
+
+.sortable-section.partenaires {
+  :is(.table_image .image.is-image, .swiper-image) {
+    aspect-ratio: 1;
+    margin: 0;
+    border-bottom: 1px solid $border-color;
+    background-color: $white;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: $partner-logo-padding;
+  }
+
+  :is(.table_image, .swiper_link) {
+    text-align: center;
+  }
+}

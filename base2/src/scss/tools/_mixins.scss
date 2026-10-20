@@ -51,6 +51,19 @@
   color: $color;
 }
 
+// Retour aux couleurs claires du site, pour une carte posée dans une zone
+// sombre. L'anneau de focus (dessiné hors de la carte) reste celui de la zone.
+@mixin sw-light-context() {
+  --bs-body-color: #{$body-color};
+  --bs-heading-color: #{$headings-color};
+  --bs-link-color-rgb: #{to-rgb($link-color)};
+  --bs-link-hover-color-rgb: #{to-rgb($link-hover-color)};
+  --bs-border-color: #{$border-color};
+  --bs-secondary-color: #{$body-secondary-color};
+
+  color: $body-color;
+}
+
 // Police auto-hébergée (woff2) déclarée par un thème communal :
 //   @include sw-font-face("Ma Police", "@theme/assets/fonts/ma-police", 400);
 @mixin sw-font-face($family, $path, $weight: 400, $style: normal) {

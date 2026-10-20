@@ -83,3 +83,17 @@ $contact-icon-color: $primary !default;
 $folder-list-title-font-size: 1.25rem !default;
 $folder-list-border-color: $border-color !default;
 $folder-list-icon-color: $primary !default;
+
+//*// Classes admin (champ « Classe CSS » des sections, docs/classes-admin.md)
+
+$band-padding-y: $section-spacing !default; // fond-* : marge intérieure
+$box-padding: clamp(1.25rem, 0.75rem + 2vw, 2.5rem) !default; // encadre
+$box-radius: $border-radius-lg !default;
+$band-alt-bg: $surface-alt !default; // fond-alterne
+$band-accent-bg: $primary !default; // fond-accent
+$band-accent-color: $white !default;
+$band-dark-bg: $gray-900 !default; // fond-sombre
+$band-dark-color: $white !default;
+$quick-access-tile-width: 10rem !default;
+$featured-title-font-size: 1.375rem !default; // a-la-une
+$partner-logo-padding: 1rem !default; // partenaires

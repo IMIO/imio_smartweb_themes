@@ -187,6 +187,48 @@ const SCENARIOS = {
     await SCENARIOS["text-variants"](page, shot, log);
   },
 
+  // Classes admin (sections/_admin.scss) posées sur les sections de
+  // l'accueil, comme le ferait un Manager. Une capture par section.
+  async "admin-classes"(page, shot, log) {
+    const applied = await page.evaluate(() => {
+      const plan = [
+        [".sectionlinks.quick-access", "fond-alterne pleine-largeur"],
+        [".sectionnews", "a-la-une fond-sombre pleine-largeur titre-centre"],
+        [".sectionevents", "fond-accent encadre"],
+        [".sectionlinks.partenaires", "encadre titre-centre espace-reduit"],
+        [".sectionfiles", "titre-masque"],
+      ];
+      return plan.map(([sel, classes]) => {
+        const el = document.querySelector(`.sortable-section${sel}`);
+        if (!el) return `${sel} : absente`;
+        el.classList.add(...classes.split(" "));
+        el.dataset.swShot = "1";
+        return `${sel} + ${classes}`;
+      });
+    });
+    log("classes ajoutées", { applied });
+    const width = page.viewportSize().width;
+    // Capture découpée (pas d'elementHandle.screenshot : les carrousels ne
+    // sont jamais « stables »).
+    const boxes = await page.evaluate(() =>
+      [...document.querySelectorAll("[data-sw-shot]")].map((el) => {
+        const r = el.getBoundingClientRect();
+        return { y: r.top + scrollY, height: r.height };
+      }),
+    );
+    for (const [i, box] of boxes.entries()) {
+      await page.screenshot({
+        path: `${shot.dir}/admin-classes-${width}-${i + 1}.png`,
+        fullPage: true,
+        clip: { x: 0, y: box.y - 16, width, height: box.height + 32 },
+      });
+    }
+  },
+
+  async "admin-classes-mobile"(page, shot, log) {
+    await SCENARIOS["admin-classes"](page, shot, log);
+  },
+
   // Section Contact : vide sur le site local (annuaire externe). Une fiche
   // reprenant le balisage du core (contact/macros.pt) est injectée.
   async contact(page, shot, log) {
@@ -275,6 +317,8 @@ const WIDTHS = {
   "text-variants": 1280,
   "text-variants-mobile": 390,
   "hero-mobile": 390,
+  "admin-classes": 1280,
+  "admin-classes-mobile": 390,
 };
 
 async function main() {
