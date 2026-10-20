@@ -1,0 +1,24 @@
+// Procédure (viewlet imio.smartweb.procedure, au-dessus et au-dessous du
+// contenu) : div.procedure > a[target=_blank] vers l'e-guichet.
+// Bouton principal ; l'icône signale l'ouverture dans un nouvel onglet.
+
+div.procedure {
+  margin-block: 1.5rem;
+
+  > a {
+    // stylelint-disable-next-line scss/at-extend-no-missing-placeholder -- balisage du core sans classe Bootstrap
+    @extend .btn;
+    // stylelint-disable-next-line scss/at-extend-no-missing-placeholder -- balisage du core sans classe Bootstrap
+    @extend .btn-primary;
+
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 600;
+
+    &[target="_blank"]::after {
+      @include sw-icon($icon-external, 1.125em);
+    }
+  }
+}

@@ -102,3 +102,10 @@ $breadcrumb-bg: transparent !default;
 $breadcrumb-divider: "›" !default;
 $breadcrumb-divider-color: $gray-600 !default;
 $breadcrumb-active-color: $body-secondary-color !default;
+
+//*// Bandeau cookies (collective.gdpr / core)
+
+$gdpr-bg: $body-bg !default;
+$gdpr-color: $body-color !default;
+$gdpr-button-bg: $primary !default;
+$gdpr-button-color: $white !default;

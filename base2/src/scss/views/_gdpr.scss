@@ -1,0 +1,102 @@
+// Bandeau cookies (core, smartweb-view-compiled.css) :
+//   div#gdpr-consent-banner > span (texte) + form > div.gdpr-actions
+//   > input[name=consent] + a.pat-plone-modal + input[name=refuse]
+// Le core fixe la position en bas d'écran, des boutons en 13 px et retire le
+// focus (outline: none). Accepter et refuser ont le même poids visuel ;
+// « En savoir plus » est secondaire. Le préfixe body passe devant le core.
+
+// Hauteur du bandeau tenue à jour par js/gdpr.js : réservée sous la page et
+// en bas de la zone de défilement, pour que le focus ne passe pas dessous.
+html {
+  scroll-padding-bottom: var(--sw-gdpr-height, 0);
+}
+
+body {
+  padding-bottom: var(--sw-gdpr-height, 0);
+}
+
+body #gdpr-consent-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem
+    max(
+      #{$grid-gutter-width * 0.5},
+      calc((100vw - var(--sw-container-max)) / 2 + #{$grid-gutter-width * 0.5})
+    );
+  border-radius: 0;
+  background: $gdpr-bg;
+  color: $gdpr-color;
+  font-size: 1rem;
+  text-align: start;
+
+  > span {
+    flex: 1 1 24rem;
+    max-width: 40rem;
+    padding: 0;
+  }
+
+  > form {
+    display: block;
+  }
+
+  .gdpr-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0;
+    line-height: 1.25;
+
+    // [name] / [href] : même spécificité que les sélecteurs du core
+    > :is(input[name], a[href]) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      margin: 0;
+      padding: 0.5rem 1.25rem;
+      border: 2px solid $gdpr-button-bg;
+      border-radius: $border-radius;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+
+      &,
+      &:focus {
+        background: $gdpr-button-bg;
+        color: $gdpr-button-color;
+      }
+
+      &:hover {
+        background: $gdpr-button-color;
+        color: $gdpr-button-bg;
+      }
+
+      &:focus-visible {
+        @include sw-focus-ring;
+      }
+    }
+
+    > a[href] {
+      &,
+      &:focus,
+      &:hover {
+        background: transparent;
+        color: $gdpr-button-bg;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      > :is(input[name], a[href]) {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

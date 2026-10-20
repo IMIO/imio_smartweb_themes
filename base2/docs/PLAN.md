@@ -248,11 +248,43 @@ Chaque section est vérifiée dans toutes ses variantes d'affichage.
   - Contrastes contrôlés à la compilation (texte, liens, colophon).
   - **À corriger dans le Diazo de base2, une fois l'activation possible** : le colophon est rendu hors du `<footer>`, à la fin du `body` (règle `after` héritée de la V1), donc hors de tout repère.
 
-### [ ] Étape 10 — Vues hors sections
+### [x] Étape 10 — Vues hors sections
 - Vues de dossier, recherche à facettes (« Je trouve »).
 - Vues React (actualités, agenda, annuaire, recherche), en neutralisant leurs fuites globales.
 - `@@search`, procédures (bouton e-guichet), formulaires et connexion, messages, bandeau RGPD, 404.
 - Impression et CSS de contenu TinyMCE.
+- **Résultat** (partiels `views/` ; contrôle à 390 et 1280 px, focus compris) :
+  - **Dossier** : la vue « Liste » devient une liste à filets avec chevron, et ses titres `h2` prennent la taille d'un titre de carte. La vue « Blocs » réutilise la carte de l'étape 7 (non présente en local, à vérifier sur un vrai site).
+  - **Facettes** : widgets en grille, légende utilisée comme intitulé, listes déroulantes et liens de 44 px. Aucune violation.
+  - **React** :
+    - `z-index` de l'en-tête : le masque blanc de 312 px du filtre collant le recouvrait (bogue aussi présent en V1) ;
+    - liens de carte passés en `display: block` (l'anneau de focus ne se dessinait pas sur mobile) ;
+    - anneau porté par la « pilule » de recherche (la CSS React le retire) ;
+    - cibles de 44 px pour le bouton de recherche et pour « plus de filtres ».
+  - **Bannière d'accueil** : le core l'affiche sur toutes les vues de la racine (plan du site, recherche, contact…). Elle est masquée sur `.portaltype-plone-site` ; l'accueil, page par défaut `portalpage`, la garde.
+  - **Plan du site** : premier niveau en colonnes, niveaux suivants en retrait. On passe de plus de 200 cibles trop petites à 0.
+  - **Messages** : de l'air sous la bannière, icône alignée.
+  - **Formulaires hors z3c.form** (mail_password_form…) : les champs nus prennent l'apparence Bootstrap (`@extend`, avec une exception Stylelint justifiée), et leur largeur est limitée à la colonne de texte.
+  - **Bandeau cookies** :
+    - Les boutons « Accepter » et « Refuser » ont le même poids, « En savoir plus » est secondaire.
+    - Le texte passe à 16 px, les cibles à 44 px, et le focus est restauré (le core posait `outline: none`).
+    - Les contrastes sont contrôlés à la compilation (`$gdpr-*`).
+    - `js/gdpr.js` expose la hauteur du bandeau (`--sw-gdpr-height`), réservée sous la page et dans `scroll-padding-bottom` : le focus ne passe plus sous le bandeau (WCAG 2.4.11).
+  - **Procédure** : le lien e-guichet devient un bouton principal, avec une icône « nouvel onglet ». Aucune procédure en local, à vérifier sur un vrai site.
+  - **Impression** (`base/_print.scss`) :
+    - seuls le logo et le contenu sont imprimés : navigation, bandeaux, pied de page et commandes de carrousel sont masqués ;
+    - les cadres d'image vides ne sont pas imprimés, et les cartes ne sont pas coupées entre deux pages ;
+    - l'adresse des liens du texte est imprimée.
+  - **TinyMCE** : déjà couvert à l'étape 4 (`.mce-content-body` reçoit les règles du texte riche).
+  - **Contrôle** : `check.mjs` attend désormais que l'élément focalisé soit immobile avant de le mesurer (le carrousel Swiper fait défiler la diapositive focalisée).
+  - **Restes, tous côté core (étape 14)** :
+    - React : champs `react-select` sans étiquette, `.r-list-item-link` vides (sans nom ; leur centre est sous le lien « adresse », d'où un « focus masqué » qui est un faux positif), `.more-filter-btn` sans nom ;
+    - marqueur Leaflet (`aria-command-name`) ;
+    - bandeau cookies : `aria-label` différent du texte visible (WCAG 2.5.3) ;
+    - page Accessibilité : `#content` vide et sans `h1` ;
+    - bannière affichée sur les vues de la racine (proposer `hide_herobanner`) ;
+    - `svg aria-labelledby="title"` des messages (Plone).
+  - **Faux positifs** : les cibles « 4×26 » des champs `react-select` (la vraie cible est la boîte du contrôle, 44 px) et le lien en ligne de la 404 (exception « en ligne » de 2.5.8).
 
 ### [ ] Étape 11 — Classes admin (champ « classe CSS » des sections)
 - Classes V1 encore utilisées (`quick-access`, `partenaires`, `espace-citoyen-bloc`…) et utilitaires génériques (fonds, centrage…).

@@ -148,11 +148,26 @@ function smallTargets() {
   return out;
 }
 
+// Attend que l'élément focalisé ne bouge plus : un carrousel peut faire
+// défiler la diapositive qui reçoit le focus (Swiper, module a11y).
+async function waitFocusSettled(page, tries = 8) {
+  let last = "";
+  for (let i = 0; i < tries; i++) {
+    const rect = await page.evaluate(() =>
+      JSON.stringify(document.activeElement?.getBoundingClientRect()),
+    );
+    if (rect === last) return;
+    last = rect;
+    await page.waitForTimeout(80);
+  }
+}
+
 async function checkFocus(page, max = 40) {
   const issues = [];
   await page.evaluate(() => document.activeElement?.blur());
   for (let i = 0; i < max; i++) {
     await page.keyboard.press("Tab");
+    await waitFocusSettled(page);
     const info = await page.evaluate(() => {
       const el = document.activeElement;
       if (!el || el === document.body) return null;

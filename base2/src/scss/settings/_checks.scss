@@ -36,4 +36,15 @@ $-checks: (
   "pied de page : liens":
     sw-contrast($footer-link-color, $footer-bg, 4.5, "liens du pied de page"),
   "colophon": sw-contrast($colophon-color, $footer-bg, 4.5, "colophon"),
+  "cookies : texte":
+    sw-contrast($gdpr-color, $gdpr-bg, 4.5, "texte du bandeau cookies"),
+  "cookies : boutons":
+    sw-contrast(
+      $gdpr-button-color,
+      $gdpr-button-bg,
+      4.5,
+      "boutons du bandeau cookies"
+    ),
+  "cookies : lien":
+    sw-contrast($gdpr-button-bg, $gdpr-bg, 4.5, "lien du bandeau cookies"),
 );

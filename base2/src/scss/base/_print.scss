@@ -1,0 +1,83 @@
+// Impression : le logo et le contenu, en noir sur blanc, sans navigation, bandeaux
+// ni commandes de carrousel ; l'adresse des liens du contenu est imprimée.
+
+@media print {
+  #portal-globalnav-wrapper,
+  #portal-globalnav-collapse,
+  #header-actions,
+  #header-links,
+  #search-container,
+  .navbar-toggler,
+  #portal-breadcrumbs,
+  #portal-footer-wrapper,
+  #portal-colophon,
+  #gdpr-consent-banner,
+  #plone-analytics,
+  .skip-links,
+  .smartweb_herobanner,
+  :is(.swiper-button-prev, .swiper-button-next, .swiper-pagination),
+  .see_all,
+  .r-result-filter-container {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    padding: 0 !important;
+  }
+
+  // Barceloneta masque l'en-tête : on garde le logo, identité du site.
+  #content-header,
+  #portal-header,
+  #portal-header-top,
+  #portal-logo {
+    visibility: visible !important;
+  }
+
+  #content-header {
+    display: block !important;
+    position: static !important;
+    margin-bottom: 1.5rem;
+    border: 0;
+  }
+
+  // Images de fond : non imprimées par défaut, elles laisseraient un cadre vide
+  :is(.table_image .image.is-image, .swiper-image, .newsImage) {
+    display: none !important;
+  }
+
+  :is(.table_image, .swiper_link):has(> :is(.image.is-image, .swiper-image)) {
+    padding-top: $item-padding-y;
+  }
+
+  // Pas d'ombres ni de fonds de couleur qui consomment de l'encre
+  .table_image,
+  .swiper_link,
+  .block-menu-element > a {
+    border-color: #999 !important;
+    box-shadow: none !important;
+  }
+
+  // Les cartes ne sont pas coupées entre deux pages
+  :is(.table_display, .swiper-slide, .list-menu-element, .block-menu-element) {
+    break-inside: avoid;
+  }
+
+  :is(h1, h2, h3, h4) {
+    break-after: avoid;
+  }
+
+  // Adresse des liens du texte (pas des cartes ni des boutons)
+  #content-core
+    :is(.text, .rich_description, .documentDescription)
+    a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.875em;
+    word-break: break-all;
+  }
+}

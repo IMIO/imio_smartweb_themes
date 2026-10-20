@@ -1,0 +1,92 @@
+// Recherche à facettes (eea.facetednavigation), ex. « Je trouve » :
+//   #faceted-form > .row > #top-area … .faceted-widget > fieldset.widget-fieldset
+//   > legend + form > label + (input | select.faceted_select)
+// La légende du groupe sert d'intitulé visible ; l'étiquette, qui la répète,
+// reste pour les lecteurs d'écran.
+
+#faceted-form {
+  .faceted-default-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 1.25rem 1.5rem;
+    align-items: end;
+  }
+
+  .faceted-widget,
+  .widget-fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  // Recherche libre : toute la largeur
+  .faceted-text-widget {
+    grid-column: 1 / -1;
+  }
+
+  legend {
+    float: none;
+    width: auto;
+    margin-bottom: 0.375rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  :is(label.text-field, label.select-field) {
+    @include visually-hidden;
+  }
+
+  .faceted-text-search {
+    display: flex;
+    gap: 0.5rem;
+
+    .form-control,
+    .btn {
+      min-height: 44px;
+    }
+  }
+
+  // Listes déroulantes sans classe Bootstrap : même allure que .form-select
+  select.faceted_select {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: $form-select-padding-y $form-select-indicator-padding
+      $form-select-padding-y $form-select-padding-x;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    background: $input-bg escape-svg($form-select-indicator)
+      $form-select-bg-position / $form-select-bg-size no-repeat;
+    color: $input-color;
+    font-size: $input-font-size;
+    appearance: none;
+  }
+
+  // Filtres en cours et « Tout supprimer »
+  .faceted-criteria {
+    dt {
+      font-weight: 600;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+    }
+  }
+
+  .faceted-sections-buttons a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+#faceted-results {
+  margin-top: 2rem;
+}
+
+.table_faceted_no_results {
+  color: $body-secondary-color !important; // le style du produit est en ligne
+}

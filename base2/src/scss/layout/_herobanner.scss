@@ -171,3 +171,10 @@ $-arrows-gap: 0.5rem;
 
   height: $banner-height;
 }
+
+// Le core affiche le bandeau sur toutes les vues de la racine (plan du site,
+// recherche, accessibilité, contact…). L'accueil est la page par défaut
+// (portaltype-imio-smartweb-portalpage) : sur la racine elle-même, on le masque.
+.portaltype-plone-site .smartweb_herobanner {
+  display: none;
+}

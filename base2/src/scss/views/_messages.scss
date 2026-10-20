@@ -1,0 +1,25 @@
+// Messages de statut Plone (statusmessages, messagesviewlet) :
+//   aside#global_statusmessage > div.portalMessage.alert.alert-{type}
+//   > svg.statusmessage-icon + strong + texte
+// Alertes Bootstrap (couleurs contrôlées par Barceloneta), avec de l'air
+// au-dessus et l'icône alignée sur la première ligne.
+
+#global_statusmessage .portalMessage {
+  margin-top: 1.5rem;
+}
+
+.portalMessage.alert {
+  display: flex;
+  gap: 0.25rem;
+  align-items: baseline;
+
+  > strong {
+    flex: 0 0 auto;
+  }
+
+  .statusmessage-icon {
+    flex: 0 0 auto;
+    align-self: center;
+    margin: 0 0.5rem 0 0 !important; // le core pose .mb-1.me-2 (!important)
+  }
+}

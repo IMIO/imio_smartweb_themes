@@ -1,0 +1,35 @@
+// Plan du site (@@sitemap) :
+//   ul#portal-sitemap.navTreeLevel0 > li.navTreeItem > a > span
+//   + ul.navTree.navTreeLevel2 > li…
+// Premier niveau en colonnes, niveaux suivants en retrait avec un filet ;
+// chaque lien fait au moins 24 px de haut (WCAG 2.5.8).
+
+#portal-sitemap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  gap: 2rem $grid-gutter-width;
+  margin: 2rem 0 0;
+  padding: 0;
+
+  ul {
+    margin: 0.25rem 0 0;
+    padding-inline-start: 0.875rem;
+    border-inline-start: 1px solid $border-color;
+  }
+
+  li {
+    margin: 0;
+    list-style: none;
+  }
+
+  a {
+    display: inline-block;
+    padding-block: 0.25rem;
+  }
+
+  > li > a {
+    color: $headings-color;
+    font-size: 1.125rem;
+    font-weight: $headings-font-weight;
+  }
+}

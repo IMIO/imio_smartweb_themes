@@ -1,0 +1,40 @@
+// Formulaires Plone hors z3c.form (mail_password_form…) : champs nus dans
+// div.field, sans classe Bootstrap. On leur donne l'apparence des champs
+// Bootstrap ; les champs React et ceux qui ont déjà une classe ne sont pas
+// concernés.
+
+$-text-inputs: "text", "email", "password", "search", "tel", "url", "number";
+
+@each $type in $-text-inputs {
+  .field > input[type="#{$type}"]:not([class]) {
+    // stylelint-disable-next-line scss/at-extend-no-missing-placeholder -- balisage du core sans classe Bootstrap
+    @extend .form-control;
+  }
+}
+
+.field > textarea:not([class]) {
+  // stylelint-disable-next-line scss/at-extend-no-missing-placeholder -- balisage du core sans classe Bootstrap
+  @extend .form-control;
+}
+
+.field > select:not([class]) {
+  // stylelint-disable-next-line scss/at-extend-no-missing-placeholder -- balisage du core sans classe Bootstrap
+  @extend .form-select;
+}
+
+#content form .field {
+  max-width: $text-max-width;
+}
+
+#content form > fieldset > legend {
+  margin-bottom: 1rem;
+  font-size: $h3-font-size;
+  font-weight: $headings-font-weight;
+}
+
+#content .formControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1.5rem;
+}

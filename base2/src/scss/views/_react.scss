@@ -1,0 +1,37 @@
+// Vues React du core (annuaire, agenda, actualités, recherche). Leur CSS est
+// ajoutée au montage du widget, après celle du thème, et fuit sur toute la
+// page : quelques corrections ciblées.
+
+// L'annuaire et l'agenda rendent l'en-tête collant et collent leur filtre
+// juste dessous (top calculé en JS). Le filtre (z-index 1) pose un masque
+// blanc de 312 px au-dessus de lui pour cacher les résultats qui défilent :
+// sans z-index, ce masque recouvrait l'en-tête.
+body header#content-header {
+  z-index: 2;
+}
+
+// Cibles trop petites dans les filtres React (WCAG 2.5.8) : bouton de la
+// recherche (20 px de large) et bouton « plus de filtres » de l'agenda.
+.search-bar-filter form button[type="submit"] {
+  min-width: 44px;
+}
+
+.react-filters-container .more-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+// Lien de carte (actualités, agenda, annuaire) : un <a> en ligne autour de
+// blocs, dont l'anneau de focus ne se dessinait pas sur petit écran.
+.r-list-item-group > a {
+  display: block;
+}
+
+// Recherche des filtres (actualités…) : la CSS React retire l'anneau du
+// champ ; il est porté par la « pilule » qui l'entoure.
+.r-filter-search:has(input:focus-visible) {
+  @include sw-focus-ring;
+}
