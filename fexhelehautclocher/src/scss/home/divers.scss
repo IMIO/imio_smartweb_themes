@@ -473,6 +473,7 @@ body .sectionlinks.quick-access .section-container .row {
   .portaltype-imio-smartweb-portalpage.section-home-page .smartweb_herobanner {
     transform: translate(-40%, 0);
     margin-top: -35%;
+    z-index: 0 !important;
   }
 
   .sectionlinks.quick-access .body-section {
