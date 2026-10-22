@@ -426,7 +426,19 @@ body#visual-portal-wrapper {
   width: 50vw;
   border-radius: 50%;
   transform: translate(-35%, -40%);
-  z-index: 1;
+  z-index: 0 !important;
+}
+
+.smartweb_herobanner .swiper-button-next {
+  top: 50%;
+  margin-top: -80px;
+}
+
+.smartweb_herobanner .swiper-button-prev {
+  top: 50%;
+  right: 60px;
+  left: auto;
+  margin-top: -80px;
 }
 
 .portaltype-imio-smartweb-portalpage.section-home-page
