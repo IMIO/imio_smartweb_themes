@@ -16,16 +16,14 @@ body {
 }
 
 body #gdpr-consent-banner {
+  @include sw-container-padding;
+
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 2rem;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem
-    max(
-      #{$grid-gutter-width * 0.5},
-      calc((100vw - var(--sw-container-max)) / 2 + #{$grid-gutter-width * 0.5})
-    );
+  padding-block: 1.5rem;
   border-radius: 0;
   background: $gdpr-bg;
   color: $gdpr-color;

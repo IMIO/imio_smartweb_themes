@@ -30,7 +30,7 @@
       content: "";
       position: absolute;
       bottom: 0;
-      inset-inline: calc(50% - 50vw);
+      inset-inline: calc(50% - var(--sw-page-width) / 2);
       border-bottom: 1px solid $header-border-color;
       pointer-events: none;
     }

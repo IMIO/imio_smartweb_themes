@@ -100,12 +100,10 @@
 
   // Pleine largeur pour une section qui occupe toute la ligne
   &.col-sm-12 {
-    width: 100vw;
+    @include sw-full-bleed;
+    @include sw-container-padding;
+
+    width: var(--sw-page-width);
     max-width: none;
-    margin-inline: calc(50% - 50vw);
-    padding-inline: max(
-      #{$grid-gutter-width * 0.5},
-      calc((100vw - var(--sw-container-max)) / 2 + #{$grid-gutter-width * 0.5})
-    );
   }
 }

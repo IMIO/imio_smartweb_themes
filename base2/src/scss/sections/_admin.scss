@@ -94,7 +94,7 @@ $-bands: (
   @include sw-full-bleed;
   @include sw-container-padding;
 
-  width: 100vw;
+  width: var(--sw-page-width);
   max-width: none;
 }
 

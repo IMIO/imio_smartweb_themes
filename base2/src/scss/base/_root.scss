@@ -7,8 +7,26 @@
   --sw-focus-color: #{$focus-color};
   --sw-focus-contrast: #{$focus-contrast-color};
   --sw-surface-alt: #{$surface-alt};
+  --sw-page-width: 100vw;
   --sw-container-max: 100vw;
   --bs-heading-color: #{$headings-color};
+}
+
+// Largeur réellement disponible pour la page : la barre d'outils Plone
+// (mode connecté) décale le body vers la droite. Les blocs pleine largeur
+// s'appuient sur cette valeur plutôt que sur 100vw.
+body:is(.plone-toolbar-left, .plone-toolbar-top) {
+  --sw-page-width: calc(100vw - var(--plone-toolbar-width-collapsed, 60px));
+}
+
+@include media-breakpoint-up(md) {
+  body.plone-toolbar-top {
+    --sw-page-width: 100vw;
+  }
+
+  body.plone-toolbar-left-expanded {
+    --sw-page-width: calc(100vw - var(--plone-toolbar-width, 220px));
+  }
 }
 
 // Largeur du conteneur Bootstrap à chaque palier, pour aligner le contenu des

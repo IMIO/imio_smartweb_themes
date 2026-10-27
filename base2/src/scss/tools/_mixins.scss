@@ -21,7 +21,7 @@
 // Élément qui sort de son conteneur pour occuper toute la largeur de la
 // fenêtre (le core pose déjà overflow-x: hidden sur body).
 @mixin sw-full-bleed() {
-  margin-inline: calc(50% - 50vw);
+  margin-inline: calc(50% - var(--sw-page-width) / 2);
 }
 
 // Marges intérieures qui alignent le contenu d'un bloc pleine largeur sur le
@@ -31,7 +31,7 @@
 
   padding-inline: max(
     #{$gutter},
-    calc((100vw - var(--sw-container-max)) / 2 + #{$gutter})
+    calc((var(--sw-page-width) - var(--sw-container-max)) / 2 + #{$gutter})
   );
 }
 

@@ -113,7 +113,10 @@ $-arrows-gap: 0.5rem;
 
   // Flèches regroupées en bas à droite, alignées sur le conteneur.
   @include media-breakpoint-up(md) {
-    $edge: max(1rem, calc((100vw - var(--sw-container-max)) / 2 + 0.75rem));
+    $edge: max(
+      1rem,
+      calc((var(--sw-page-width) - var(--sw-container-max)) / 2 + 0.75rem)
+    );
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -160,7 +163,7 @@ $-arrows-gap: 0.5rem;
     // Au milieu de l'image
     .swiper-button-prev,
     .swiper-button-next {
-      top: calc(100vw * 9 / 32);
+      top: calc(var(--sw-page-width) * 9 / 32);
     }
   }
 }
