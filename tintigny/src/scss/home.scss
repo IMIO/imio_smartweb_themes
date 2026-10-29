@@ -179,21 +179,28 @@
 }
 
 // title
+.portaltype-imio-smartweb-portalpage {
+  .sectionnews,
+  .sectionevents,
+  .sectiongallery,
+  .quick-access {
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
 
-.sectionnews,
-.sectionevents {
-  .section-title {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-
-    &::after {
-      content: "";
-      width: 18px;
-      height: 18px;
-      background-color: $primary-svg;
-      display: block;
-      border-radius: 50px;
+      &::after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color: $primary-svg;
+        display: block;
+        border-radius: 50px;
+      }
     }
   }
+}
+
+.sectiongallery h2.section-title {
+  font-family: $font-family-title;
 }
