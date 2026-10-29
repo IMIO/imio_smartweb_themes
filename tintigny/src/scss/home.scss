@@ -201,6 +201,9 @@
   }
 }
 
-.sectiongallery h2.section-title {
-  font-family: $font-family-title;
+.sectiongallery,
+.quick-access {
+  h2.section-title {
+    font-family: $font-family-title;
+  }
 }
