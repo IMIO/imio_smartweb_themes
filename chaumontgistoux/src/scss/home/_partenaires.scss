@@ -1,0 +1,58 @@
+// Bloc « Partenaires » : cartes blanches horizontales, icône sur fond rose.
+
+.sectionlinks.partenaires {
+  li {
+    margin-bottom: 2rem;
+  }
+
+  .table_display > a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.875rem;
+    background: $white;
+    border: 1px solid $cg-border-light;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &::after {
+      content: "↗";
+      margin-left: auto;
+      color: $black-color;
+    }
+
+    &:hover,
+    &:focus {
+      background: $primary;
+
+      .table_title span,
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+
+  .image.is-icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background: $cg-rose;
+    border-radius: 4px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: $primary-svg;
+    }
+  }
+
+  .table_title span {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+}

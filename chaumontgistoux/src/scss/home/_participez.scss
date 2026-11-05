@@ -1,0 +1,57 @@
+// Bloc « Participez » (classe espace-citoyen-bloc) : fond vert, cartes sombres.
+
+.sectionlinks.espace-citoyen-bloc {
+  background: $primary;
+  box-shadow: 0 0 0 100vmax $primary;
+  clip-path: inset(0 -100vmax);
+
+  .section-title,
+  .table_title span {
+    color: #fff;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  .table_display,
+  .table_display > a {
+    height: 100%;
+  }
+
+  .table_display > a {
+    display: block;
+    padding: 1.875rem;
+    background: $cg-vert-carte;
+    border: 1px solid $cg-white-10;
+    border-radius: 6px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: $cg-corail;
+    }
+  }
+
+  .image.is-icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: $cg-corail;
+    border-radius: 4px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+  }
+
+  .table_title span {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+}

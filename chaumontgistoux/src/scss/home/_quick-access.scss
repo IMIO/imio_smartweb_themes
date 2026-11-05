@@ -1,0 +1,22 @@
+// Tuiles avec un filet bas, en alternance corail / vert.
+
+.sectionlinks.quick-access {
+  .section-title {
+    color: $font-title-color;
+  }
+
+  li {
+    a .image.d-block {
+      border-bottom: 5px solid $cg-corail;
+    }
+
+    &:nth-child(even) a .image.d-block {
+      background: $cg-vert-pale;
+      border-bottom-color: $primary;
+
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+}

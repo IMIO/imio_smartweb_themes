@@ -1,0 +1,24 @@
+// Fonds de section et cartes : pas de variable de fond pour l'à la une
+// et l'agenda, ni de bordure de carte pour les actus et événements.
+
+.a-la-une,
+.sectionevents {
+  background: $grey-bg;
+  box-shadow: 0 0 0 100vmax $grey-bg;
+  clip-path: inset(0 -100vmax);
+}
+
+.a-la-une .swiper-slide > a {
+  @include media-breakpoint-up(lg) {
+    border: 1px solid $cg-border;
+    border-radius: $global-radius;
+    background: $white;
+  }
+}
+
+.sectionnews,
+.sectionevents {
+  .swiper-slide > a {
+    border: 1px solid $cg-border;
+  }
+}
