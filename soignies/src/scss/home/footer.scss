@@ -286,3 +286,11 @@ footer {
     }
   }
 }
+
+.template-edit {
+  #portal-footer-wrapper {
+    &::after {
+      display: none !important;
+    }
+  }
+}
