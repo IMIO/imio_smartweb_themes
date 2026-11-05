@@ -287,7 +287,8 @@ footer {
   }
 }
 
-.template-edit {
+.template-edit,
+.template-folder_contents {
   #portal-footer-wrapper {
     &::after {
       display: none !important;
