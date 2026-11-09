@@ -109,6 +109,7 @@
           align-items: center;
           border: 1px solid #c1c1c1;
           border-radius: 50px;
+          background: $header-search-background;
 
           &::before {
             content: "";

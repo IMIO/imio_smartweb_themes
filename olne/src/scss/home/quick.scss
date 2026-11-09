@@ -1,0 +1,22 @@
+// La maquette entoure chaque pastille d'accès d'un grand cercle blanc : pas de
+// variable pour ce conteneur, on l'ajoute sur le <a> existant.
+.sectionlinks.quick-access .body-section li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 50%;
+  background: $olne-access-circle-bg;
+}
+
+.sectionlinks.quick-access {
+  background: #f9faec;
+
+  .section-title {
+    display: block;
+  }
+}
