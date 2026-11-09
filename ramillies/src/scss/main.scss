@@ -73,19 +73,55 @@ footer {
     padding: 5px 15px;
     border: #fd3c88 solid 1px;
     border-radius: 25px;
+    transition: box-shadow 0.15s ease;
 
-    &:hover {
-      background: #ffebf2;
-      border: #fff 1px solid;
+    &:hover,
+    &:focus {
+      background: #fff;
+      border-color: #fd3c88;
+      box-shadow: 0 0 0 1px #fd3c88; // contour épaissi sans décaler la mise en page
       text-decoration: none;
     }
+
+    &:focus-visible {
+      outline: 3px solid #000; // focus clavier visible (WCAG 2.4.7)
+      outline-offset: 3px;
+    }
+  }
+
+  // Page courante : même contour épaissi
+  > .nav-item-depth-1.inPath > a.nav-link {
+    box-shadow: 0 0 0 1px #fd3c88;
+  }
+
+  // La barre de soulignement de base (bottom: 10px, calée pour un padding de
+  // 1rem) tombait sur le texte avec le padding réduit de la pastille :
+  // on la supprime, le contour la remplace.
+  > .nav-item-depth-1 > a.nav-link::before {
+    content: none;
   }
 }
 
-#subsite-navigation > ul > li > a:focus::before,
-#subsite-navigation > ul > li > a:hover::before {
-  background-color: #fd3c88;
-  bottom: -5px;
+// Titre du sous-site : pas de soulignement, double contour au survol/focus.
+// Gras (700) à 20px = « gros texte » WCAG (>= 18,66px gras) : 3:1 requis,
+// le blanc sur #fd3c88 fait 3,4:1.
+body .subsite-container #subsite-logo a {
+  font-weight: 700;
+  transition: box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus {
+    background: #fd3c88; // annule l'assombrissement de base
+    text-decoration: none;
+    box-shadow:
+      0 0 0 2px #fff,
+      0 0 0 4px #fd3c88;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 6px;
+  }
 }
 
 .sortable-section.sectionfiles {
@@ -165,4 +201,289 @@ footer {
 
 div#subsite-navigation {
   padding: 10px 0;
+}
+
+// =============================================================================
+// Menu principal : barre translucide englobant menu, « Mon compte » et recherche
+// (lisibilité sur la page d'accueil, fond blanc/vert + pastilles décoratives)
+// Texte #171b1a sur la barre : >= 8,6:1 même sur le pire fond (voile du menu).
+// =============================================================================
+@media (min-width: 992px) {
+  #portal-header-top {
+    --bar-bg: rgba(232, 245, 241, 0.88);
+
+    // Une seule barre translucide derrière logo, menu, « Mon compte » et recherche
+    // (pseudo-élément : pas d'overflow, les sous-menus restent positionnés comme avant).
+    // Le logo, sombre, reste ainsi lisible aussi quand le voile du menu est affiché.
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 16px 0; // = padding vertical de #portal-header-top
+      z-index: -1;
+      background: var(--bar-bg);
+      border-radius: 999px;
+    }
+
+    #portal-logo {
+      flex-shrink: 0; // ne s'écrase plus quand le menu est large
+      margin-left: 0.75rem;
+    }
+
+    #portal-globalnav-wrapper,
+    #header-links {
+      align-self: stretch;
+      min-height: 60px;
+    }
+
+    #portal-globalnav-wrapper {
+      margin: 0 !important;
+      align-items: center;
+    }
+
+    #portal-globalnav {
+      align-items: center;
+      gap: 0.75rem;
+      padding-left: 0.75rem;
+
+      li a {
+        hyphens: none; // plus de « com-mune »
+      }
+
+      > li > a.nav-link {
+        &:hover,
+        &:focus {
+          color: #171b1a; // le teal de base (#25beae) ne fait que 2:1 sur la barre
+        }
+
+        // Trait de survol de base (bottom: 0) : décalé sous le texte, en foncé
+        &::before {
+          bottom: -6px;
+          background-color: #171b1a;
+        }
+
+        &:focus-visible {
+          outline: 3px solid #000; // focus clavier visible (WCAG 2.4.7)
+          outline-offset: 4px;
+          border-radius: 6px;
+        }
+      }
+
+      // Entrée dont le sous-menu est ouvert : l'état est montré par le trait
+      > li.show-nav > a.nav-link::before {
+        opacity: 1;
+      }
+    }
+
+    // base force le teal en !important sur l'entrée ouverte (illisible sur la
+    // barre translucide au-dessus du voile) : on garde le texte foncé.
+    #portal-globalnav-wrapper
+      #portal-globalnav-collapse
+      #portal-globalnav
+      > li.show-nav.has_subtree
+      > a.nav-link {
+      color: #171b1a !important;
+    }
+
+    #header-links {
+      margin-left: 0;
+      padding: 0 0.5rem 0 0.25rem;
+    }
+  }
+
+  // « Mon compte » et loupe : pastilles à contour, mêmes états que les autres
+  // pastilles du thème (contour épaissi au survol, focus noir). Le préfixe
+  // #portal-header est nécessaire : base définit ces styles avec 4 ids.
+  #portal-header #portal-header-top #header-links {
+    gap: 0.4rem; // base : 26px, ce qui élargit la barre et fait passer le menu sur 2 lignes
+
+    a.account {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 0.7rem;
+      border: 1px solid #171b1a;
+      border-radius: 999px;
+      background: transparent;
+      font-weight: 500;
+      text-decoration: none; // plus de soulignement permanent
+      white-space: nowrap;
+      transition:
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+
+      &:hover,
+      &:focus {
+        border: 1px solid #171b1a; // base met la bordure à 0 au survol
+        background: #fff;
+        box-shadow: 0 0 0 1px #171b1a; // contour épaissi sans décaler la mise en page
+        text-decoration: none;
+      }
+    }
+
+    #search-link a {
+      border-color: #171b1a; // la bordure grise (#c1c1c1) disparaissait sur la barre
+      transition:
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+
+      &:hover,
+      &:focus {
+        background: #fff;
+        box-shadow: 0 0 0 1px #171b1a;
+      }
+    }
+
+    a.account:focus-visible,
+    #search-link a:focus-visible {
+      outline: 3px solid #000; // focus clavier visible (WCAG 2.4.7)
+      outline-offset: 4px;
+      border-radius: 999px;
+    }
+  }
+}
+
+// Au-dessus de 1400px il y a la place : les libellés du menu restent sur une ligne
+// et on retrouve des espaces plus larges.
+@media (min-width: 1400px) {
+  #portal-header-top #portal-globalnav {
+    gap: 1.25rem;
+    padding-left: 1.25rem;
+
+    li a {
+      white-space: nowrap;
+    }
+  }
+}
+
+// Les carrousels de l'accueil (z-index: 1) passaient devant le voile du menu
+// (.mask-menu, z-index: 1, plus tôt dans le DOM) : on les repasse sous le voile.
+#content .body-section.swiper.carousel {
+  z-index: 0;
+}
+
+// Accueil : tuiles de liens (« En un clic », « Nous suivre », « Partenaires »).
+// Avant : seul l'anneau par défaut du navigateur (1 px, orange chez certains = 1,06:1
+// sur le turquoise) et un survol imperceptible. Noir sur turquoise : 8,3:1.
+#body-section-en-un-clic,
+#body-section-home-link,
+#body-section-partenaires {
+  a.table_image {
+    border-radius: 12px;
+    transition: box-shadow 0.15s ease;
+  }
+
+  // Le contour de survol collait au texte : on ajoute de l'air autour (8px 12px),
+  // compensé par une marge négative pour ne rien décaler dans la mise en page.
+  a.table_image:not(.no-image) {
+    padding: 8px 12px;
+    margin: -8px -12px;
+  }
+
+  a.table_image {
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 2px #171b1a; // contour sans décaler la mise en page
+    }
+
+    &:focus-visible {
+      outline: 3px solid #000; // focus clavier visible (WCAG 2.4.7, 1.4.11)
+      outline-offset: 3px;
+    }
+  }
+}
+
+// Partenaires : le lien reste en display: inline (pas de flex comme ailleurs), le
+// contour n'apparaissait alors qu'aux quatre coins.
+#body-section-partenaires a.table_image {
+  display: block;
+}
+
+// « Focus magazine » : la pastille rose est le <li>, le lien n'en couvre que le centre.
+// On étend le lien à toute la pastille et on donne le survol / focus à la pastille.
+#body-section-home-link .row li:nth-child(3) {
+  position: relative;
+  transition: box-shadow 0.15s ease;
+
+  a.table_image {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: none; // la pastille porte le contour, pas le lien
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px #fd3c88; // rose sur blanc : 3,4:1
+  }
+
+  @supports selector(:has(a)) {
+    &:has(a:focus-visible) {
+      outline: 3px solid #000;
+      outline-offset: 3px;
+    }
+
+    a.table_image:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+// Vignettes Actualités et Agenda : effet au survol / focus.
+// L'image grossit dans son propre cadre (pseudo-élément + overflow: hidden) : un zoom
+// sur la vignette entière débordait sur la date et le texte en dessous.
+.sectionnews,
+.sectionevents {
+  a.swiper_link {
+    .swiper-image {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: inherit; // reprend l'image de fond posée en style inline
+        transition: transform 0.4s ease;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .swiper-image::before {
+        transform: scale(1.05);
+      }
+
+      h3 {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+    }
+
+    &:focus-visible {
+      outline: 4px solid #000; // à l'intérieur : le carrousel coupe ce qui dépasse
+      outline-offset: -4px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sectionnews a.swiper_link .swiper-image::before,
+  .sectionevents a.swiper_link .swiper-image::before {
+    transition: none;
+  }
+
+  .sectionnews a.swiper_link:hover .swiper-image::before,
+  .sectionnews a.swiper_link:focus .swiper-image::before,
+  .sectionevents a.swiper_link:hover .swiper-image::before,
+  .sectionevents a.swiper_link:focus .swiper-image::before {
+    transform: none;
+  }
 }
