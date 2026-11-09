@@ -210,7 +210,7 @@ div#subsite-navigation {
 // =============================================================================
 @media (min-width: 992px) {
   #portal-header-top {
-    --bar-bg: rgba(232, 245, 241, 0.88);
+    --bar-bg: rgba(232, 245, 241, 88%);
 
     // Une seule barre translucide derrière logo, menu, « Mon compte » et recherche
     // (pseudo-élément : pas d'overflow, les sous-menus restent positionnés comme avant).
@@ -270,7 +270,7 @@ div#subsite-navigation {
 
       // Entrée dont le sous-menu est ouvert : l'état est montré par le trait
       > li.show-nav > a.nav-link::before {
-        opacity: 1;
+        opacity: 100%;
       }
     }
 
@@ -380,7 +380,6 @@ div#subsite-navigation {
   }
 
   a.table_image {
-
     &:hover,
     &:focus {
       box-shadow: 0 0 0 2px #171b1a; // contour sans décaler la mise en page
