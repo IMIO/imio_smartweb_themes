@@ -1,0 +1,54 @@
+// Liens des blocs texte : même rendu partout (page d'accueil et tableaux compris).
+// Constat avant correction :
+// - la couleur du lien (#171b1a) est quasi celle du texte (#212529, 1,13:1) : seul le
+//   soulignement distingue le lien (WCAG 1.4.1) ;
+// - ce soulignement, posé par @@custom.css (réglage du site, hors thème), est turquoise
+//   #25beae : 2,3:1 sur blanc, et identique au survol (aucun retour visuel) ;
+// - le focus clavier est le contour par défaut du navigateur (1 px), alors que le reste
+//   du thème utilise 3 px noir (WCAG 2.4.7).
+// Le sélecteur commence par #content pour l'emporter sur @@custom.css.
+
+$text-link-underline: #14857a !default; // 4,5:1 sur blanc
+$text-link-focus: #000 !default;
+
+$text-scope: "#content .sectiontext .section-text .body-section";
+
+#{$text-scope} a[href] {
+  color: $section-text-link-color; // #171b1a sur blanc : 17,4:1
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: $text-link-underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  overflow-wrap: break-word; // longues adresses e-mail ou URL
+
+  &:hover {
+    text-decoration-color: currentcolor; // le survol se voit
+    text-decoration-thickness: 3px;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $text-link-focus;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+// Lien dans l'en-tête sombre d'un tableau (voir _tables.scss) : on reprend la couleur
+// du texte de l'en-tête, sinon #171b1a sur #171b1a le rendrait invisible.
+// Le contour de focus passe en blanc : un contour noir ne se verrait pas sur ce fond.
+#{$text-scope} table.listing thead a[href],
+#{$text-scope} table.listing tr:first-child > th a[href],
+#{$text-scope}
+  table.listing:not(:has(thead))
+  tbody
+  > tr:first-child:has(> td > strong:only-child)
+  > td
+  a[href] {
+  color: $table-head-color;
+  text-decoration-color: $table-head-color;
+
+  &:focus-visible {
+    outline-color: $table-head-color;
+  }
+}

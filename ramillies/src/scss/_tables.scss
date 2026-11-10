@@ -1,0 +1,102 @@
+// Tableaux de contenu (table.listing dans un bloc texte) : style uniquement,
+// valable quels que soient le nombre de colonnes et leurs intitulés.
+// Bureau : en-tête contrasté, lignes alternées.
+// Mobile : le tableau défile horizontalement dans son cadre (il n'écrase plus
+// ses colonnes et ne déborde plus de la page).
+// Le HTML de l'éditeur n'a souvent pas de <th> : une 1re ligne composée
+// uniquement de <strong> joue l'en-tête. Un vrai <thead>/<th> est aussi géré.
+
+$table-border-color: #dee2e6 !default;
+$table-head-bg: $primary !default; // #171b1a
+$table-head-color: #fff !default; // #fff sur #171b1a : contraste 17,4:1
+$table-stripe-bg: rgba($primary, 0.04) !default;
+$table-focus-color: $primary !default;
+
+$table: ".sectiontext table.listing";
+
+@mixin table-head {
+  background: $table-head-bg;
+  color: $table-head-color;
+  font-weight: 600;
+}
+
+#{$table} {
+  width: 100% !important; // surcharge le style inline posé par l'éditeur
+  height: auto !important;
+  border-collapse: collapse;
+
+  caption {
+    padding: 0 0 0.75rem;
+    font-weight: 600;
+    text-align: left;
+    caption-side: top;
+  }
+
+  th,
+  td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid $table-border-color;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  tr {
+    height: auto !important; // l'éditeur fige la hauteur de certaines lignes
+  }
+
+  tbody tr:nth-child(even) {
+    background: $table-stripe-bg;
+  }
+}
+
+// En-tête : <thead>, 1re ligne de <th>, ou 1re ligne de <strong> sans <thead>
+#{$table} thead th,
+#{$table} tr:first-child > th,
+#{$table}:not(:has(thead))
+  tbody
+  > tr:first-child:has(> td > strong:only-child)
+  > td {
+  @include table-head;
+}
+
+@include media-breakpoint-down(md) {
+  #{$table} {
+    display: block; // le tableau devient son propre cadre de défilement
+    max-width: 100%;
+    overflow-x: auto;
+
+    colgroup {
+      display: none; // les largeurs en % de l'éditeur écrasent les colonnes
+    }
+
+    th,
+    td {
+      padding: 0.5rem 0.75rem;
+    }
+
+    // Cadre atteignable au clavier : repère visible quand il a le focus
+    &:focus-visible {
+      outline: 2px solid $table-focus-color;
+      outline-offset: 2px;
+    }
+  }
+}
+
+// Smartphone : jusqu'à 4 colonnes, on compacte (texte, marges, césure) pour que
+// le tableau tienne sans défiler. Au-delà, des mots coupés partout se lisent
+// moins bien que le défilement : on garde alors le rendu ci-dessus.
+@include media-breakpoint-down(sm) {
+  #{$table}:not(:has(tr > :nth-child(5))) {
+    th,
+    td {
+      padding: 0.5rem 0.4rem;
+      font-size: 0.875rem;
+      hyphens: auto; // lang="fr" posé sur <html>
+    }
+  }
+}
