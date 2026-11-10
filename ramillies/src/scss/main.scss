@@ -23,6 +23,7 @@ $enable-roboto-webfont: false;
 @import "./menu-mobile-panel";
 @import "./menu-mobile-back";
 @import "./menu-mobile-account";
+@import "./home-quick-mobile";
 
 //// STYLES
 
@@ -344,6 +345,27 @@ div#subsite-navigation {
       outline-offset: 4px;
       border-radius: 999px;
     }
+  }
+}
+
+// =============================================================================
+// En-tête en mobile et tablette (menu burger) : filet de séparation avec le
+// contenu, et moins d'espace entre l'en-tête et le grand visuel de l'accueil.
+// =============================================================================
+@media screen and (max-width: 992px) {
+  // Filet gris clair sur toute la largeur de l'écran. Il est porté par le
+  // pseudo-élément pleine largeur existant (base : 100vw, z-index -1) : la hauteur de
+  // l'en-tête ne change pas (78 px) et le panneau du menu ouvert le recouvre.
+  #portal-header #portal-header-top::after {
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+
+// Sections empilées (sous col-sm-6) : le visuel de l'accueil démarre plus près de
+// l'en-tête (base : 48 px de padding haut en plus des 50 px de marges).
+@media screen and (max-width: 575.98px) {
+  .banner-logo {
+    padding-top: 2rem;
   }
 }
 

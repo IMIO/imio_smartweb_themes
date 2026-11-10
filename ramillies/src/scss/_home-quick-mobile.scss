@@ -1,0 +1,51 @@
+// Accueil en une colonne : flèche du titre « En un clic » et espace sous le visuel.
+// Problèmes (home/quick.scss) :
+// - la flèche, posée à right: -110px d'un titre centré dans un conteneur de 280 px,
+//   sort de l'écran sous 500 px de large et est rognée par le overflow: hidden de la
+//   section ;
+// - entre le visuel et le titre s'empilent : 50 px de padding du carrousel (réservés
+//   à une pagination masquée), 48 px de padding bas de la section, 30 px de marge
+//   basse, puis 48 px de padding haut de la section suivante.
+// Deux correctifs :
+// 1. la flèche garde sa place d'origine quand l'écran est assez large, sinon son bord
+//    droit reste à $home-quick-arrow-margin du bord de l'écran ; sur petit écran elle
+//    est réduite et placée sous le titre, pour ne pas en recouvrir la fin ;
+// 2. l'espace sous le visuel est réduit (padding du carrousel supprimé, marge basse
+//    supprimée, padding bas de la section ramené à $home-banner-gap).
+// Prérequis : .quick-access .container .section-title::after (flèche), .banner-logo
+// .swiper-wrapper (carrousel dont la pagination est masquée), sections empilées sous
+// le breakpoint col-sm-6. À importer après home/quick et après base.
+// À adapter : les variables ci-dessous, selon la taille de la flèche et du titre.
+
+// En dessous de col-sm-6 (576 px), les sections sont empilées
+$home-quick-single-column: 575.98px !default;
+// En dessous de cette largeur, la flèche ne tient plus à côté du titre : elle est réduite
+$home-quick-arrow-small: 419.98px !default;
+$home-quick-arrow-scale: 0.6 !default;
+$home-quick-arrow-margin: 16px !default;
+$home-banner-gap: 1rem !default;
+
+@media screen and (max-width: $home-quick-single-column) {
+  // 1. flèche entièrement visible
+  .quick-access .container .section-title::after {
+    right: max(-110px, calc(50% - 50vw + #{$home-quick-arrow-margin}));
+  }
+
+  // 2. moins d'espace entre le visuel et le titre
+  .banner-logo {
+    margin-bottom: 0;
+    padding-bottom: $home-banner-gap;
+
+    .swiper-wrapper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $home-quick-arrow-small) {
+  // 1. (suite) flèche réduite, sous la fin du titre
+  .quick-access .container .section-title::after {
+    transform: translateY(100%) scale($home-quick-arrow-scale);
+    transform-origin: top right;
+  }
+}
