@@ -348,24 +348,55 @@ div#subsite-navigation {
   }
 }
 
-// =============================================================================
-// En-tête en mobile et tablette (menu burger) : filet de séparation avec le
-// contenu, et moins d'espace entre l'en-tête et le grand visuel de l'accueil.
-// =============================================================================
+// En-tête mobile et tablette : filet de séparation, porté par le pseudo-élément pleine
+// largeur existant (la hauteur de l'en-tête ne change pas).
 @media screen and (max-width: 992px) {
-  // Filet gris clair sur toute la largeur de l'écran. Il est porté par le
-  // pseudo-élément pleine largeur existant (base : 100vw, z-index -1) : la hauteur de
-  // l'en-tête ne change pas (78 px) et le panneau du menu ouvert le recouvre.
   #portal-header #portal-header-top::after {
     border-bottom: 1px solid #dcdcdc;
   }
 }
 
-// Sections empilées (sous col-sm-6) : le visuel de l'accueil démarre plus près de
-// l'en-tête (base : 48 px de padding haut en plus des 50 px de marges).
+// Sections empilées (sous col-sm-6)
 @media screen and (max-width: 575.98px) {
+  // Visuel de l'accueil plus près de l'en-tête
   .banner-logo {
     padding-top: 2rem;
+  }
+
+  // Titres de l'accueil : même taille, centrés (le vw évite que « Partenaires » déborde)
+  .portaltype-imio-smartweb-portalpage
+    :is(
+      .quick-access,
+      .sectionnews,
+      .sectionevents,
+      .site-partenaires,
+      .sectionvideo,
+      .a-la-une,
+      .albumhome
+    )
+    .section-title {
+    font-size: min(2.5rem, 10.7vw);
+    text-align: center;
+  }
+
+  // Boutons « Voir tout » centrés
+  .sectionnews .see_all,
+  .sectionevents .see_all {
+    justify-content: center;
+  }
+
+  // Pied de page : blocs espacés, colophon centré avec une marge latérale
+  #smartweb-footer .container > .row {
+    row-gap: 1.5rem;
+  }
+
+  #portal-colophon .colophonWrapper ul {
+    padding: 0 1rem 1rem;
+    gap: 0.5rem 1rem;
+  }
+
+  #portal-colophon li {
+    text-align: center;
   }
 }
 
