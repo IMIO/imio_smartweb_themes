@@ -1,0 +1,48 @@
+// Menu mobile : bouton « Retour » des sous-menus.
+// Problème : « Retour » est un simple texte gris sans icône, alors que les entrées
+// du menu ont une chevron « suivant » à droite.
+// Ici : « Retour » reprend le style des entrées (noir, graisse 500) et une chevron
+// « retour » à gauche : la même que « suivant », retournée, avec le même état au
+// survol et au focus. La chevron est centrée verticalement sur le texte, comme
+// dans les entrées.
+// Prérequis (structure de base) : .prev-nav (avec un <span> pour le texte) dans
+// #portal-globalnav-collapse ; variables $nav-overlay-next-icon et
+// $nav-overlay-next-icon-hover (définies dans base). À importer après base.
+// Fichier autonome : se copie seul dans un autre thème.
+// Limite (HTML, pas CSS) : dans base, .prev-nav est un <a> sans href ni tabindex,
+// donc il n'est pas atteignable au clavier. Le style de focus visible ci-dessous
+// ne servira qu'une fois le gabarit corrigé (<button> ou tabindex="0").
+
+// Même breakpoint que base (_sitenav.scss)
+@media screen and (max-width: 992px) {
+  #portal-globalnav-collapse .prev-nav {
+    display: flex !important; // base impose display: block !important
+    align-items: center; // chevron centrée sur le texte
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+
+    // en flex, le <span> devient un bloc et hérite d'un padding qui doublerait la hauteur
+    span {
+      padding: 0;
+    }
+
+    &::before {
+      content: $nav-overlay-next-icon;
+      display: block;
+      margin-right: 0.75rem;
+      transform: scaleX(-1); // chevron « suivant » retournée
+    }
+
+    &:hover::before,
+    &:focus::before {
+      content: $nav-overlay-next-icon-hover;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #000;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+  }
+}

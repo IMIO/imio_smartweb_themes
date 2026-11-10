@@ -1,0 +1,62 @@
+// Menu mobile ouvert : barre d'en-tête et panneaux de sous-menu.
+// Problème : le panneau du menu (base : position fixed, z-index 98) recouvre tout
+// l'écran ; seul le bouton du menu (z-index 99) reste visible. Le logo et la loupe
+// disparaissent, et dans un sous-menu le lien « Retour » et la croix du panneau
+// passent sous la loupe et sous le bouton du menu.
+// Quatre correctifs liés :
+// 1. le logo et la loupe sont remontés au niveau du bouton (z-index 99) ;
+// 2. le hamburger devient une croix quand le menu est ouvert (base : même icône
+//    ouverte et fermée), avec le même tracé que le hamburger ;
+// 3. dans un sous-menu (tous niveaux), le contenu démarre sous la barre d'en-tête
+//    et la croix du panneau, qui doublait celle du bouton, est retirée : la croix
+//    du bouton ferme tout le menu ;
+// 4. la page ne bouge plus à l'ouverture et à la fermeture du menu : base bloque
+//    le défilement avec overflow: hidden, ce qui supprime la barre de défilement
+//    (≈ 15 px sur les navigateurs de bureau) et élargit la page ; on réserve donc
+//    sa place pendant le blocage.
+// Ils vont ensemble (2 et 3 : une seule croix ; 1 et 3 : la barre reste visible et
+// le contenu démarre dessous) : à copier d'un bloc.
+// Prérequis (structure de base) : .open-nav-overflow sur <html> menu ouvert,
+// #portal-logo, #header-links, #portal-globalnav-collapse .has_subtree.dropdown,
+// .close-nav, button[aria-expanded] > .navbar-toggler-icon. À importer après base.
+// Le point 4 est sans effet sur les barres de défilement flottantes (mobiles) et
+// sur les navigateurs sans scrollbar-gutter (le décalage y reste, sans autre effet).
+// À adapter : $menu-mobile-header-height (hauteur de la barre d'en-tête) et, si
+// besoin, $menu-toggler-icon-open (icône de la croix).
+
+$menu-toggler-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3E%3C/svg%3E") !default;
+
+// Hauteur de la barre d'en-tête (#portal-header-top) en mobile. Ici : 16 px de
+// padding + loupe de 46 px + 16 px, soit la hauteur de base, indépendante de la
+// largeur d'écran. À mesurer et ajuster si l'en-tête d'un thème a une autre hauteur.
+$menu-mobile-header-height: 78px !default;
+
+// Même breakpoint que base (_sitenav.scss)
+@media screen and (max-width: 992px) {
+  // 1. logo et loupe au-dessus du panneau (seulement menu ouvert)
+  .open-nav-overflow #portal-logo,
+  .open-nav-overflow #header-links {
+    position: relative;
+    z-index: 99;
+  }
+
+  // 2. hamburger -> croix
+  #portal-globalnav-wrapper button[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: $menu-toggler-icon-open;
+  }
+
+  // 3. sous-menus (tous niveaux) : contenu sous la barre, une seule croix
+  #portal-globalnav-collapse .has_subtree.dropdown {
+    padding-top: $menu-mobile-header-height;
+
+    .close-nav {
+      display: none;
+    }
+  }
+
+  // 4. pas de décalage de la page quand le défilement est bloqué (<html> seul :
+  // la classe est aussi sur <body>, ce qui réserverait la place deux fois)
+  html.open-nav-overflow {
+    scrollbar-gutter: stable;
+  }
+}
