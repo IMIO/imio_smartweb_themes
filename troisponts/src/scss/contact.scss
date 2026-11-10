@@ -7,6 +7,13 @@
     border-radius: 10px;
   }
 
+  // Bootstrap impose width:100% aux enfants de .row ; avec margin:5px la fiche
+  // déborde de sa cellule de grille et touche sa voisine (SUP-55380)
+  .contact-type-position,
+  .contact-type-mission {
+    width: auto;
+  }
+
   h2,
   h3,
   h4 {

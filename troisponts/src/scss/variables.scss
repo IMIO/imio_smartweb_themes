@@ -4,6 +4,7 @@ $primary-svg: #afc33a;
 $primary-light: #eef4fa;
 $primary-yellow: #f3cf63;
 $primary-dark: #26383f;
+$primary-accessible: #006a9c; // liens sur fond bleu clair (contraste WCAG AA)
 
 //*// TYPOGRAPHY
 
@@ -123,7 +124,7 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
 //sub-header
 $subsite-container-padding: 0 !default;
-$subsite-navbar-bg: #f3f3f3 !default;
+$subsite-navbar-bg: $primary-light !default;
 $subsite-logo-background: $primary !default;
 $subsite-logo-padding: 0.3em 0.5rem !default;
 $subsite-logo-margin: 1rem 0 0 0 !default;

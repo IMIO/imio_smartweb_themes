@@ -81,6 +81,7 @@ h6 {
 .subsite-container {
   background: #eef4fa;
   border-radius: 10px;
+  margin-top: 16px;
 }
 
 //CPAS
@@ -93,4 +94,75 @@ h6 {
   background: url("../../assets/svg/placeholder.jpg");
   background-size: cover;
   background-position: center;
+}
+
+// Accessibilité (SUP-55380)
+// Liens sur fond bleu clair (4,20:1 -> 5,35:1)
+// Survol / focus : texte foncé + soulignement épaissi (la couleur native ne changeait quasiment pas)
+// Limité au contenu : le pied de page a ses propres couleurs (fond sombre)
+#portal-breadcrumbs a,
+#portal-column-content .contact-type-organization a,
+#portal-column-content .contact-type-mission a {
+  color: $primary-accessible;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-dark;
+    text-decoration-thickness: 2px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-dark;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+// Pied de page (fond sombre) : liens identifiables sans dépendre de la couleur
+#smartweb-footer a:not(.show-on-focus):not(.sr-only) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(#fff, 0.55);
+  text-underline-offset: 3px;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+// Sous-menu : entrée survolée, focalisée ou ouverte (4,27:1 -> 5,44:1)
+#subsite-navigation [class*="nav-dropdown-depth-"] {
+  .nav-link:hover,
+  .nav-link:focus,
+  li.show-nav > a.nav-link {
+    color: $primary-accessible;
+  }
+}
+
+// Burger : focus clavier visible
+.navbar-toggler:focus-visible {
+  outline: 2px solid $primary-dark !important;
+  outline-offset: 2px;
+}
+
+// Lien « Retour » du sous-menu : #888 sur blanc (3,54:1 -> 5,49:1)
+#subsite-navigation .prev-nav {
+  color: #5f6b70;
+}
+
+// Sous-menu : focus clavier visible (Bootstrap retire l'outline sur .nav-link:focus-visible)
+#subsite-navigation {
+  .nav-item-depth-1 > a:focus-visible,
+  [class*="nav-dropdown-depth-"] .nav-link:focus-visible,
+  .prev-nav:focus-visible {
+    outline: 2px solid $primary-dark;
+    outline-offset: -2px;
+  }
 }
