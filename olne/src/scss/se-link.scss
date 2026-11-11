@@ -107,7 +107,7 @@
           no-repeat right 15px center / 24px 24px;
         border: 0;
         border-radius: 25px;
-        color: #fff;
+        color: $primary;
         font-weight: 500;
         text-decoration: none;
         transition: box-shadow 0.5s;
@@ -120,7 +120,7 @@
         div,
         span,
         a {
-          color: #fff;
+          color: $primary;
         }
 
         .table_title span {

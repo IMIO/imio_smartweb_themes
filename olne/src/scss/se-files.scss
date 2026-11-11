@@ -101,23 +101,23 @@
   background-size: 24px 24px;
   border: 0;
   border-radius: 25px;
-  color: #fff;
+  color: $primary;
   font-weight: 500;
   padding: 10px 50px 10px 20px;
   transition: 0.5s;
 
   &:hover {
-    background-color: $primary;
+    background-color: $primary-svg;
     transition: 0.5s;
   }
 
   div,
   span {
-    color: #fff !important;
+    color: $primary !important;
   }
 
   a {
-    color: #fff !important;
+    color: $primary !important;
   }
 }
 
