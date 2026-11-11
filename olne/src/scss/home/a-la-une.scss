@@ -1,0 +1,58 @@
+// La maquette compose un collage de plusieurs photos rondes et de pastilles
+// décoratives autour du texte : impossible à reproduire avec une seule image
+// de contenu. On garde l'esprit (photo ronde + pastilles d'accent) avec une
+// mise en page centrée à une colonne plutôt que la grille image/texte 60-40.
+.a-la-une .swiper-slide {
+  & > a {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .swiper-image {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto 2rem;
+
+    @include media-breakpoint-up(lg) {
+      grid-row: auto;
+      padding-bottom: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: $olne-green;
+      z-index: 1;
+    }
+
+    &::before {
+      width: 48px;
+      height: 48px;
+      top: -16px;
+      right: -16px;
+    }
+
+    &::after {
+      width: 28px;
+      height: 28px;
+      bottom: 10%;
+      left: -14px;
+    }
+  }
+
+  .swiper_title,
+  .swiper_description {
+    @include media-breakpoint-up(lg) {
+      grid-column: auto;
+      grid-row: auto;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+}

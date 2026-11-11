@@ -1,0 +1,6 @@
+// Le fond vert clair du footer couvre tout le bloc (contact, liens utiles,
+// mentions légales), pas seulement la barre de bas de page du colophon : la
+// base n'a pas de variable pour ce conteneur englobant.
+#portal-footer-wrapper {
+  background-color: $colofon-bg;
+}

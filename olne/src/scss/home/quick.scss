@@ -1,0 +1,41 @@
+// La maquette entoure chaque pastille d'accès d'un grand cercle blanc : pas de
+// variable pour ce conteneur, on l'ajoute sur le <a> existant. Le cercle était
+// fixé à 240px, ce qui déborde de la colonne Bootstrap entre les breakpoints
+// (les pastilles se touchent alors) : on le rend fluide (aspect-ratio au lieu
+// d'une hauteur fixe) et on force 2 colonnes par ligne sous le breakpoint
+// "md" pour avoir 2 pastilles côte à côte sur smartphone.
+.sectionlinks.quick-access .body-section li {
+  @include media-breakpoint-down(md) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background: $olne-access-circle-bg;
+
+    &:hover {
+      .image {
+        background: transparent;
+        border: 2px solid $primary-svg;
+      }
+    }
+  }
+}
+
+.sectionlinks.quick-access {
+  background: #f9faec;
+
+  .section-title {
+    display: block;
+  }
+}

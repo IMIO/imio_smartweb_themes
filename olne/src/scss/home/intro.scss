@@ -1,0 +1,116 @@
+.intro {
+  text-align: center;
+  position: relative;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+
+  @media (min-width: 1100px) {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 38vw;
+      max-width: 580px;
+      background: url("../../assets/svg/round1.jpg") center / cover no-repeat;
+      border: 20px solid #fff;
+      border-radius: 999px;
+      aspect-ratio: 1/1;
+      position: absolute;
+      top: -118px;
+      left: -30%;
+      z-index: 0;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 18vw;
+      max-width: 310px;
+      background: url("../../assets/svg/round2.jpg") center / cover no-repeat;
+      border: 20px solid #fff;
+      border-radius: 999px;
+      aspect-ratio: 1/1;
+      position: absolute;
+      bottom: 2px;
+      left: 1%;
+      z-index: 0;
+    }
+
+    .section-container {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 18vw;
+        max-width: 300px;
+        background: url("../../assets/svg/round3.jpg") center / cover no-repeat;
+        border: 20px solid #fff;
+        border-radius: 999px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: -25%;
+        right: -3%;
+        z-index: 0;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 30vw;
+        max-width: 550px;
+        background: url("../../assets/svg/round4.jpg") center / cover no-repeat;
+        border-radius: 999px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        bottom: -23%;
+        right: -24%;
+        z-index: -1;
+      }
+    }
+  }
+
+  h2 {
+    position: relative;
+    text-align: center;
+    font-family: Newsreader;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 100% */
+    letter-spacing: -1.28px;
+    z-index: 1;
+  }
+
+  .text {
+    position: relative;
+    max-width: 540px !important;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+    a {
+      padding: 15px 28px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 999px;
+      background: var(--marque-noir-olne, #231f20);
+      color: #fff !important;
+      position: relative;
+      margin-top: 8rem;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 170px;
+        height: 85px;
+        background: url("../../assets/svg/logo-pbvm.png") center / contain
+          no-repeat;
+        position: absolute;
+        top: -117px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

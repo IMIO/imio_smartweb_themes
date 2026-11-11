@@ -19,7 +19,98 @@ $enable-roboto-webfont: false;
 //// STYLES
 
 // ... add your styles here
+@import "./home/intro";
+@import "./home/quick";
+@import "./home/a-la-une";
+@import "./home/actualites";
+@import "./home/events";
+@import "./home/footer";
 
-#portal-footer-wrapper * {
-  color: #fff !important;
+.smartweb_herobanner
+  .bannerSwiper
+  .swiper-slide
+  .swiper-banner-content-wrapper {
+  top: 40px;
+  transform: inherit;
+  width: max-content;
+  margin: 0;
+  right: 40px;
+  position: absolute;
+  background: rgba(0, 0, 0, 50%);
+  border-radius: 50px;
+  padding-right: 180px;
+}
+
+.swiper-banner-content {
+  display: flex;
+  flex-direction: column;
+
+  .swiper-banner-title {
+    font-family: $font-family-title;
+    line-height: 1;
+  }
+
+  .swiper-banner-link {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.smartweb_herobanner {
+  .swiper-button-prev {
+    right: 137px !important;
+    top: 86px !important;
+    left: inherit;
+  }
+
+  .swiper-button-next {
+    right: 80px !important;
+    top: 86px !important;
+    left: inherit;
+  }
+}
+
+.smartweb_herobanner .bannerSwiper {
+  height: 62.8vw;
+  max-height: 500px;
+}
+
+.section-home-page {
+  #portal-header {
+    margin-bottom: 0 !important;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+html:has(> body.section-home-page) {
+  overflow-x: hidden;
+}
+
+#smartweb-footer {
+  h2 {
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .contact_informations_social {
+    .facebook {
+      display: none;
+    }
+  }
+}
+
+#portal-colophon {
+  background: $primary-svg;
+}
+
+#portal-footer-wrapper {
+  padding: 4vw 0;
+  text-align: left;
 }
