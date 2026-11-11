@@ -25,6 +25,8 @@ $enable-roboto-webfont: false;
 @import "./home/actualites";
 @import "./home/events";
 @import "./home/footer";
+@import "./se-files";
+@import "./se-link";
 
 .smartweb_herobanner
   .bannerSwiper
@@ -113,4 +115,25 @@ html:has(> body.section-home-page) {
 #portal-footer-wrapper {
   padding: 4vw 0;
   text-align: left;
+}
+
+.sectiontext .section-text .body-section a {
+  color: #4d5f0b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#smartweb-subsite-footer .section-contact .body-section .h2,
+#smartweb-subsite-footer .section-contact .body-section .h3,
+#smartweb-subsite-footer .section-contact .body-section a,
+#smartweb-subsite-footer .section-contact .body-section h2,
+#smartweb-subsite-footer .section-contact .body-section h3,
+#smartweb-subsite-footer .sectiontext,
+#smartweb-subsite-footer h2,
+#smartweb-subsite-footer h3 {
+  color: $primary;
+}
+
+#portal-footer-wrapper {
+  color: $primary;
 }
