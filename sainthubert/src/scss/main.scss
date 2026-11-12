@@ -528,6 +528,7 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 
 #portal-footer-wrapper {
   margin-top: 80px;
+  padding: 120px 0 !important;
 }
 
 .section-home-page #portal-footer-wrapper {
@@ -553,4 +554,11 @@ body .r-content > button {
 
 .swiper-banner-content {
   display: none;
+}
+
+@media (min-width: 992px) {
+  #portal-globalnav-wrapper #portal-globalnav > li > .has_subtree,
+  #subsite-navigation #portal-globalnav > li > .has_subtree {
+    margin-top: 4rem;
+  }
 }
