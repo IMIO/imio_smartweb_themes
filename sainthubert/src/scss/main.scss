@@ -395,13 +395,6 @@ mark a {
   }
 }
 
-body .r-content > button {
-  background: #fff;
-  border: $primary solid 1px;
-  border-radius: 20px 0;
-  padding: 10px 20px;
-}
-
 body .sectiontext .section-text .body-section a {
   text-decoration: underline;
   text-underline-position: under;
@@ -533,11 +526,6 @@ body smartweb-annuaire .more-filter-container.collapse:not(.show) {
 
 .section-home-page #portal-footer-wrapper {
   margin-top: 0;
-}
-
-body .r-content > button {
-  border-radius: 10px 10px 10px 0;
-  border-color: #ddd !important;
 }
 
 .section-contact .contact-type-mission {
