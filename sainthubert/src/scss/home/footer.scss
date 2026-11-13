@@ -186,3 +186,10 @@ footer {
 #portal-footer-wrapper li.twitter {
   display: block !important;
 }
+
+#portal-footer-wrapper,
+.section-home-page #portal-footer-wrapper {
+  background-size: 100%;
+  padding: 6rem 1rem !important;
+  padding-top: 100px;
+}
