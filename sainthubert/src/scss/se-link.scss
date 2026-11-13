@@ -1,3 +1,6 @@
+// Même vitesse pour toutes les transitions des sections de liens
+$sectionlinks-transition: 0.3s ease;
+
 .portaltype-imio-smartweb-page #main-container .sectionlinks,
 .portaltype-imio-smartweb-procedure #main-container .sectionlinks {
   background-color: #fff;
@@ -20,6 +23,7 @@
       }
 
       .body-section {
+        // Plusieurs éléments : ul.row > li > .table_display
         .row {
           flex-direction: row;
           list-style-type: none;
@@ -29,33 +33,35 @@
           li {
             padding: 0;
           }
+        }
 
-          .table_image {
-            display: flex;
-            width: 100%;
-            gap: 20px;
+        // Commun aux deux cas : 1 élément (.body-section > .table_display)
+        // ou plusieurs (.row > li > .table_display)
+        .table_image {
+          display: flex;
+          width: 100%;
+          gap: 20px;
 
-            .image {
+          .image {
+            width: auto;
+
+            svg {
+              max-width: 120px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              border: solid 1px rgb(165, 169, 172);
+              border-radius: 5px;
               width: auto;
-
-              svg {
-                max-width: 120px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                border: solid 1px rgb(165, 169, 172);
-                border-radius: 5px;
-                width: auto;
-                height: auto;
-                padding: 1rem;
-              }
+              height: auto;
+              padding: 1rem;
             }
+          }
 
-            .table_title {
-              span {
-                display: flex;
-                align-items: first baseline;
-                gap: 10px;
-              }
+          .table_title {
+            span {
+              display: flex;
+              align-items: first baseline;
+              gap: 10px;
             }
           }
         }
@@ -130,7 +136,10 @@
           border: solid 1px #fff !important;
           border-radius: 25px !important;
           background: #fff !important;
-          margin: 10px 0;
+          float: left;
+          height: 30px;
+          width: 30px;
+          margin: 15px 20px 0;
         }
 
         span,
@@ -164,8 +173,7 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     overflow: hidden;
 
@@ -177,11 +185,6 @@
     .swiper_title {
       padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
       margin-top: 0;
-    }
-
-    &:hover,
-    &:focus {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px;
     }
   }
 }
@@ -195,19 +198,13 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     overflow: hidden;
 
     .swiper_title {
       padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
       margin-top: 0;
-    }
-
-    &:hover,
-    &:focus {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px;
     }
   }
 }
@@ -221,19 +218,13 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     overflow: hidden;
 
     .swiper_title {
       padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
       margin-top: 0;
-    }
-
-    &:hover,
-    &:focus {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px;
     }
   }
 }
@@ -269,17 +260,14 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     display: block !important;
     overflow: hidden !important;
     padding: 0 !important;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff;
-      transition: 0.5s;
     }
 
     div,
@@ -329,17 +317,14 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     display: block !important;
     overflow: hidden !important;
     padding: 0 !important;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff;
-      transition: 0.5s;
     }
 
     div,
@@ -389,17 +374,14 @@
     background: #fff;
     border-radius: 15px;
     border: 1px solid #cbcbcb;
-    box-shadow: rgba(0, 0, 0, 0%) 0 1px 4px;
-    transition: 0.6s cubic-bezier(0.7, 0, 0, 1);
+    transition: $sectionlinks-transition;
     position: relative;
     display: block !important;
     overflow: hidden !important;
     padding: 0 !important;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 20%) 0 2px 7px !important;
       background: #fff;
-      transition: 0.5s;
     }
 
     div,
@@ -434,7 +416,7 @@
     color: #fff;
     font-weight: 500;
     padding: 0 50px 0 0 !important ;
-    transition: 0.5s;
+    transition: $sectionlinks-transition;
 
     .image {
       display: none;
@@ -466,4 +448,63 @@
   .sectionlinks
   .table_display {
   padding: 0;
+}
+
+// Avec icône (.image.is-icon) → icône à gauche, titre à droite, centrés verticalement
+// Vaut pour tous les affichages (portrait, paysage, carré), avec 1 ou plusieurs éléments
+.portaltype-imio-smartweb-page #main-container .sectionlinks,
+.portaltype-imio-smartweb-procedure #main-container .sectionlinks {
+  .table_display .table_image:has(.image.is-icon) {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    border-radius: 25px;
+
+    .image.is-icon {
+      flex: 0 0 auto;
+      width: auto !important; // écrase .w-100 de Bootstrap
+      padding: 0;
+      margin-left: var(--bs-card-spacer-x);
+
+      svg {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 0; // sinon le padding 1rem écrase les 24px (box-sizing: border-box)
+        width: 24px;
+        height: 24px;
+        fill: $primary-svg; // écrase l'attribut fill="#000" envoyé par Plone
+        // Pas de pastille blanche autour de l'icône (héritée des anciennes règles)
+        background: none !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        transition: $sectionlinks-transition;
+      }
+    }
+
+    .table_title {
+      flex: 1 1 auto;
+      padding-left: 0; // l'écart icône–texte est géré par le gap
+
+      span {
+        transition: $sectionlinks-transition;
+      }
+    }
+
+    // Survol / focus clavier → fond et contour $primary-svg, texte et icône en blanc
+    &:hover,
+    &:focus-visible {
+      background: $primary-svg !important;
+      border-color: $primary-svg !important;
+
+      .table_title,
+      .table_title span {
+        color: #fff !important;
+      }
+
+      .image.is-icon svg {
+        fill: #fff;
+      }
+    }
+  }
 }
