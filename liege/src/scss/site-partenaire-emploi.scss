@@ -18,9 +18,23 @@
     }
   }
 
+  .titre-emploi {
+    margin-top: 30px !important;
+  }
+
   .bloc-contenu-lies {
     .section-title {
       font-size: calc(1.275rem + 0.3vw);
+    }
+
+    .table_display {
+      a {
+        color: var(--primary-red);
+
+        &:hover {
+          color: var(--primary-svg);
+        }
+      }
     }
   }
 
