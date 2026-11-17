@@ -1,0 +1,285 @@
+.site-emploi {
+  #portal-breadcrumbs {
+    margin-top: 50px !important;
+  }
+
+  .sectionhtml {
+    margin-bottom: 0 !important;
+  }
+
+  .bloc-offre {
+    .image {
+      border-radius: 15px;
+    }
+
+    .table_title {
+      text-align: center;
+      font-size: 20px !important;
+    }
+  }
+
+  .bloc-contenu-lies {
+    .section-title {
+      font-size: calc(1.275rem + 0.3vw);
+    }
+  }
+
+  #header-actions {
+    display: none !important;
+  }
+
+  .to-portal a {
+    padding: 4px 10px !important;
+  }
+
+  .smartweb_herobanner {
+    margin: 110px 0 0;
+
+    @media (max-width: 768px) {
+      margin: 135px 0 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 115px 0 0;
+    }
+  }
+
+  .a-la-une::before,
+  .sectionevents::before {
+    display: none !important;
+  }
+
+  // ─── Décorations bg gauche/droite ────────────────────────────────────────────
+  #portal-column-content::before,
+  #portal-footer-wrapper::before {
+    display: none !important;
+  }
+
+  // ─── Couleurs ───────────────────────────────────────────────────────────────
+  --primary-svg: #80275b;
+  --primary-red: #df006e;
+  --primary-light: #ffecf5;
+
+  // ─── Logo bandeau ────────────────────────────────────────────────────────────
+  #portal-logo .sr-only span::before {
+    background-image: url("../../assets/svg/logo-enseignement-communal.svg") !important;
+  }
+
+  // ─── Bouton recherche ────────────────────────────────────────────────────────
+  #portal-header #portal-header-top #header-links #search-link a {
+    background-color: var(--primary-svg);
+    border-color: var(--primary-svg);
+
+    &:hover {
+      background-color: var(--primary-red);
+      border-color: var(--primary-red);
+    }
+  }
+
+  // ─── Bouton compte ───────────────────────────────────────────────────────────
+  #header-actions a.account {
+    background-color: var(--primary-svg) !important;
+
+    &:hover {
+      background-color: var(--primary-red) !important;
+    }
+  }
+
+  // ─── Underline nav ───────────────────────────────────────────────────────────
+  #portal-globalnav-wrapper .nav-link::before {
+    background-color: var(--primary-svg);
+  }
+
+  // ─── Breadcrumb avec banner ──────────────────────────────────────────────────
+  &.header-custom #portal-breadcrumbs .breadcrumb {
+    background-color: #fff !important;
+  }
+
+  // ─── Sub-nav ─────────────────────────────────────────────────────────────────
+  .subsite-container #subsite-logo {
+    background: var(--primary-red);
+
+    a {
+      background: var(--primary-red);
+
+      &:hover {
+        background: var(--primary-svg);
+      }
+    }
+  }
+
+  // ─── Description riche ───────────────────────────────────────────────────────
+  .rich_description {
+    color: var(--primary-svg);
+  }
+
+  // ─── Liste liens ─────────────────────────────────────────────────────────────
+  .list-menu-element a {
+    .list-card-body .list-card-title {
+      color: var(--primary-red);
+    }
+
+    &:hover .list-card-body .list-card-title {
+      color: var(--primary-svg);
+    }
+  }
+
+  // ─── Barre décorative h1 ─────────────────────────────────────────────────────
+  header h1::before {
+    background-color: var(--primary-red);
+  }
+
+  // ─── Liens texte ─────────────────────────────────────────────────────────────
+  .sectiontext .section-text .body-section a {
+    color: var(--primary-red);
+
+    &:hover {
+      color: var(--primary-svg);
+    }
+  }
+
+  // ─── Mark / mise en avant ────────────────────────────────────────────────────
+  .sectiontext mark,
+  .r-content-text mark {
+    background-color: var(--primary-svg);
+    color: #fff !important;
+
+    a {
+      color: #fff !important;
+    }
+
+    a:hover {
+      color: var(--primary-red) !important;
+    }
+  }
+
+  // ─── News liste ──────────────────────────────────────────────────────────────
+  .r-news-list-item-link {
+    .r-item-title {
+      color: var(--primary-svg);
+    }
+
+    .r-item-arrow-more {
+      background: var(--primary-red);
+    }
+
+    &:hover .r-item-arrow-more {
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
+    }
+  }
+
+  // ─── Liens contenu riche ─────────────────────────────────────────────────────
+  .r-content-text a {
+    color: var(--primary-svg);
+
+    &:hover {
+      color: var(--primary-red);
+    }
+  }
+
+  // ─── Bouton retour ───────────────────────────────────────────────────────────
+  .r-back-button {
+    background: var(--primary-red);
+
+    &:hover {
+      background: var(--primary-svg);
+    }
+  }
+
+  // ─── Date news ───────────────────────────────────────────────────────────────
+  .r-item-date {
+    background: var(--primary-svg);
+  }
+
+  // ─── Liens news détail ───────────────────────────────────────────────────────
+  .r-content-news-info a {
+    color: var(--primary-svg) !important;
+
+    &:hover {
+      color: var(--primary-red) !important;
+    }
+  }
+
+  #portal-globalnav > li > a {
+    color: var(--primary-svg) !important;
+  }
+
+  #portal-globalnav .dropdown .nav-link:focus,
+  #portal-globalnav .dropdown .nav-link:hover {
+    color: var(--primary-svg) !important;
+  }
+
+  .sectionfiles,
+  .sectionlinks {
+    .table_image {
+      background-color: var(--primary-svg) !important;
+
+      &:hover {
+        background-color: var(--primary-red) !important;
+      }
+    }
+  }
+
+  .quick-access {
+    li {
+      .table_image {
+        background-color: #fff !important;
+      }
+
+      &:hover {
+        .table_image {
+          background-color: var(--primary-light) !important;
+        }
+      }
+    }
+  }
+
+  .sectionlinks.quick-access .body-section li a .table_title span {
+    color: var(--primary-svg) !important;
+  }
+
+  // ─── Actualités ───────────────────────────────────────────────────────
+  .bloc-actu {
+    &::before {
+      display: none;
+    }
+
+    .section-title {
+      color: $primary;
+
+      &::before {
+        background-color: var(--primary-svg) !important;
+      }
+    }
+
+    .swiper-image {
+      border: 1px solid $primary-gris;
+    }
+
+    .see_all a {
+      background: var(--primary-svg) !important;
+      border-color: var(--primary-svg) !important;
+
+      &:hover {
+        background: var(--primary-red) !important;
+        border-color: var(--primary-red) !important;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: var(--primary-red) !important;
+    }
+
+    .swiper-slide:hover {
+      .swiper-image {
+        background-color: rgba(0, 0, 0, 70%);
+      }
+
+      .swiper_title h3 {
+        color: var(--primary-red) !important;
+      }
+    }
+  }
+}
