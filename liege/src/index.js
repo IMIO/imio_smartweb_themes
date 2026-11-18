@@ -142,7 +142,7 @@ $(document).ready(function () {
     opacity: 0,
   });
 
-    ScrollReveal().reveal(".offre-emploi .swiper", {
+  ScrollReveal().reveal(".offre-emploi .swiper", {
     delay: 300,
     duration: 1000,
     distance: "15%",
