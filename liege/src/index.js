@@ -23,6 +23,12 @@ $(document).ready(function () {
     eventsSwiper.params.speed = 1000;
     eventsSwiper.update();
   }
+  if ($(".sectioncollection .swiper").length > 0) {
+    var eventsSwiper = $(".sectioncollection .swiper")[0].swiper;
+    eventsSwiper.params.spaceBetween = 40;
+    eventsSwiper.params.speed = 1000;
+    eventsSwiper.update();
+  }
 
   // For banner
 
