@@ -1,3 +1,6 @@
+// Pin vert du thème (même tracé que assets/svg/bg-quick.svg)
+$quick-pin-green: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="314" height="436" viewBox="0 0 314 436"><path d="M157 0.268433C70.2985 0.268433 0 71.5961 0 159.567C0 253.581 157 435.268 157 435.268C157 435.268 314 260.615 314 159.567C313.902 71.5961 243.701 0.268433 157 0.268433Z" fill="#{url-encoded-color($primary-green)}"/></svg>');
+
 .portaltype-imio-smartweb-portalpage
   .sectionlinks:first-child.quick-access.first {
   padding: 0;
@@ -28,7 +31,6 @@
   }
 
   .body-section {
-    max-width: 85%;
     margin: 0 auto;
 
     li {
@@ -76,17 +78,43 @@
     }
   }
 
+  // 7 pins sur une ligne en desktop, puis 4 / 3 / 2 colonnes centrées
   .row {
-    @include media-breakpoint-down(lg) {
-      gap: 10px;
-      grid-gap: 0;
-      display: grid;
-      grid-auto-rows: 1fr;
-      grid-template-columns: repeat(auto-fit, minmax(56px, 195px));
+    margin: 0;
+    row-gap: 1.5rem;
 
-      li {
-        width: auto !important;
+    li {
+      flex: 0 0 50%;
+      padding: 0 4px;
+
+      @media screen and (min-width: 480px) {
+        flex-basis: 33.3333%;
       }
+
+      @media screen and (min-width: 768px) {
+        flex-basis: 25%;
+      }
+
+      @media screen and (min-width: 992px) {
+        flex-basis: calc(100% / 7);
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+// Pin « Boucle du Hainaut » (ciblé par son titre, pas par sa position) :
+// vert du thème, picto bleu
+#main-container
+  .first
+  .body-section
+  li
+  .table_image[title="Boucle du Hainaut"] {
+  .image.d-block {
+    background-image: $quick-pin-green;
+
+    svg {
+      fill: $primary-blue-dark !important;
     }
   }
 }
