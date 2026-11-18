@@ -591,3 +591,10 @@ body .r-content > button {
 .r-add-news {
   display: none !important;
 }
+
+// Un SVG (ex. « Boucle du Hainaut ») embarque <style>.st0 { fill: #fff }</style>
+// qui s'applique à toute la page : les formes .st0 des autres icônes deviennent
+// blanches. On les fait hériter du fill défini sur le <svg> par le thème.
+svg.plone-icon .st0 {
+  fill: inherit;
+}
