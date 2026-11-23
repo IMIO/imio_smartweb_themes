@@ -12,12 +12,11 @@ pnpm release:base --dry-run  # montre ce qui serait fait, sans rien modifier
 git push
 ```
 
-`pnpm release:base` (sur `main`, dépôt propre) :
+`pnpm release:base` (sur `main`, dépôt propre) ne touche qu'à `base/` :
 
 1. monte la version de `base/package.json` ;
 2. ajoute l'entrée dans `base/CHANGELOG.md` (commits de `base/` depuis le dernier tag `base-v*`) ;
-3. épingle la nouvelle version dans tous les thèmes qui utilisaient la précédente ;
-4. crée le commit `chore(base): release x.y.z`.
+3. crée le commit `chore(base): release x.y.z`.
 
 Au `git push`, le workflow `release-base.yml` voit que `base/package.json` a changé. Si
 la version n'existe pas encore sur npm, il :
@@ -28,8 +27,21 @@ la version n'existe pas encore sur npm, il :
 Si la version est déjà publiée, il ne fait rien. On peut le relancer à la main depuis
 l'onglet Actions (« Run workflow »), par exemple après un échec.
 
-Les builds des thèmes déclenchés par le même push utilisent la base du dépôt (lien du
-workspace pnpm), pas celle de npm : ils ne dépendent pas de la publication.
+#### Épingler la nouvelle version dans les thèmes
+
+Commande séparée, à lancer quand tu veux faire passer les thèmes sur la nouvelle base :
+
+```bash
+pnpm pinned-theme            # version de base/package.json
+pnpm pinned-theme 1.0.4      # version explicite
+pnpm pinned-theme --dry-run  # liste ce qui changerait
+git push                     # déclenche le build des thèmes modifiés
+```
+
+Elle met à jour les thèmes épinglés sur une version exacte de la même version
+majeure et crée le commit `chore: pin base x.y.z in themes`. Les thèmes en
+`workspace:*` et ceux restés sur une autre version majeure (ex. `0.3.x`) ne sont pas
+touchés ; `--all` inclut ces derniers.
 
 #### Configuration (une seule fois)
 

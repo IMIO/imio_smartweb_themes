@@ -27,7 +27,9 @@ let current = { title: "Général", vars: [] };
 sections.push(current);
 
 for (const line of fs.readFileSync(source, "utf8").split("\n")) {
-  const heading = line.match(/^\/\/\*?\/{0,3}\s*([A-Za-zÀ-ÿ0-9][^@$]*?)\s*\/*$/);
+  const heading = line.match(
+    /^\/\/\*?\/{0,3}\s*([A-Za-zÀ-ÿ0-9][^@$]*?)\s*\/*$/,
+  );
   if (heading && !line.includes("{")) {
     current = { title: heading[1], vars: [] };
     sections.push(current);
@@ -69,4 +71,6 @@ for (const section of sections) {
 
 fs.mkdirSync(path.dirname(target), { recursive: true });
 fs.writeFileSync(target, `${out.join("\n")}\n`);
-console.log(`${total} variables, ${sections.filter((s) => s.vars.length).length} sections → ${path.relative(root, target)}`);
+console.log(
+  `${total} variables, ${sections.filter((s) => s.vars.length).length} sections → ${path.relative(root, target)}`,
+);
