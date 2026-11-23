@@ -10,6 +10,18 @@ on:
       - "base/**"
       - "basev2/**"
       - "/*"
+  # Lancement manuel (onglet Actions → « Run workflow ») : build et push de thèmes
+  # choisis, ou de tous, sans devoir modifier leurs fichiers.
+  workflow_dispatch:
+    inputs:
+      themes:
+        description: "Thèmes à builder et pousser : « all » ou des noms séparés par des espaces (ex. « liege ans »)"
+        required: true
+        default: "all"
+      quick:
+        description: "Mode quick (environnement build-push-quick, comme « [quick] » dans un message de commit)"
+        type: boolean
+        default: false
 
 jobs:
   lint:
@@ -42,6 +54,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
       - name: Get changed directories names
+        if: github.event_name == 'push'
         id: changed-directories
         uses: tj-actions/changed-files@6b2903bdce6310cfbddd87c418f253cf29b2dec9  # v44.5.6
         with:
@@ -54,10 +67,44 @@ jobs:
             template/**
             base/**
             basev2/**
+      - name: List themes to build (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        id: dispatch-directories
+        env:
+          THEMES: ${{ inputs.themes }}
+        run: |
+          # Un thème = un dossier de premier niveau avec package.json et manifest.cfg,
+          # hors base, basev2 et gabarits.
+          is_theme() {
+            case "$1" in base|basev2|template|"[template]") return 1 ;; esac
+            [[ "$1" =~ ^[A-Za-z0-9_-]+$ ]] && [ -f "$1/package.json" ] && [ -f "$1/manifest.cfg" ]
+          }
+          selected=()
+          if [ "$(echo "$THEMES" | xargs)" = "all" ]; then
+            for dir in */; do
+              dir=${dir%/}
+              if is_theme "$dir"; then selected+=("$dir"); fi
+            done
+          else
+            for dir in $THEMES; do
+              if is_theme "$dir"; then
+                selected+=("$dir")
+              else
+                echo "::error::« $dir » n'est pas un thème de ce dépôt."
+                exit 1
+              fi
+            done
+          fi
+          if [ ${#selected[@]} -eq 0 ]; then
+            echo "::error::Aucun thème sélectionné."
+            exit 1
+          fi
+          echo "${#selected[@]} thème(s) : ${selected[*]}"
+          echo "all_changed_files=${selected[*]}" >> "$GITHUB_OUTPUT"
       - name: Set output
         id: set-output
         env:
-          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files }}
+          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files || steps.dispatch-directories.outputs.all_changed_files }}
         run: |
           changed_dirs=$(printf "%s" "$ALL_CHANGED" | jq -R -s -c 'split(" ")')
           echo "changed-directories=$changed_dirs" >> "$GITHUB_OUTPUT"
@@ -65,8 +112,9 @@ jobs:
         id: get-build-push-environment
         env:
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          QUICK: ${{ inputs.quick }}
         run: |
-          if [[ "$COMMIT_MESSAGE" == *"[quick]"* ]]; then
+          if [[ "$COMMIT_MESSAGE" == *"[quick]"* || "$QUICK" == "true" ]]; then
             echo "environment=build-push-quick" >> "$GITHUB_OUTPUT"
           else
             echo "environment=build-push" >> "$GITHUB_OUTPUT"
@@ -74,7 +122,7 @@ jobs:
       - name: Summary
         id: summary
         env:
-          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files }}
+          ALL_CHANGED: ${{ steps.changed-directories.outputs.all_changed_files || steps.dispatch-directories.outputs.all_changed_files }}
         run: |
           for dir in $ALL_CHANGED; do
             vhost=$(jq -r '.homepage' "$dir/package.json" | cut -c 9-)
