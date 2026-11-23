@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/IMIO/imio_smartweb_themes/compare/base-v1.0.3...base-v1.0.4) (2026-11-23)
+
+* Improve base release workflow (ad117d70)
+* SUP-57726: Improve mobile menu display and transition (fc38bfc6)
+* Prevent sectiontext ul padding collapsing (1f1ded85)
+* [quick] fix (d98a8eb8)
+
 ## [1.0.3](https://github.com/IMIO/imio_smartweb_themes/compare/base-v1.0.2...v1.0.3) (2026-10-05)
 
 * Fix subsite logo hover color (5c432a25)
