@@ -1,0 +1,115 @@
+// Bannière d'accueil — maquette Figma Beauvechain (node 23:34)
+// Photo arrondie (36px) à 24px des bords, flèches rondes blanches en bas à droite.
+
+// Pas de marge sous le header quand il contient la bannière :
+// c'est la section suivante qui fixe l'espacement (48px dans la maquette).
+#portal-header:has(.smartweb_herobanner) {
+  margin-bottom: 0;
+}
+
+.smartweb_herobanner {
+  // 100vw inclut la barre de défilement : --scrollbar-width est posé par index.js
+  width: calc(100vw - var(--scrollbar-width, 0px));
+  padding: 0 24px;
+
+  @include media-breakpoint-down(md) {
+    padding: 0 12px; // gouttière du site (alignée sur les accès rapides)
+  }
+
+  .bannerSwiper {
+    border-radius: 36px;
+
+    @include media-breakpoint-down(md) {
+      border-radius: 20px;
+    }
+
+    .swiper-slide .swiper-banner-content-wrapper {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      width: auto;
+      max-width: calc(100% - 96px - 140px); // laisse la place aux flèches
+      padding: 0;
+
+      @include media-breakpoint-down(md) {
+        bottom: 16px;
+        left: 16px;
+        max-width: calc(100% - 32px);
+      }
+
+      .swiper-banner-content {
+        border-radius: 20px;
+
+        .swiper-banner-title {
+          display: block;
+          font-family: $font-family-header;
+          font-weight: 800;
+          line-height: 1.15;
+          letter-spacing: -0.02em;
+
+          @include media-breakpoint-down(md) {
+            font-size: 22px;
+          }
+        }
+
+        .swiper-banner-description p {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+
+  // Flèches : cercles blancs 50px, Lucide arrow-left/right navy (17,3:1)
+  // Survol : fond navy, flèche blanche (17,3:1).
+  // L'icône est un masque sur ::after : sa couleur suit background-color.
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: auto;
+    bottom: 48px;
+    left: auto;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border-radius: 25px;
+    background: #fff;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 22px;
+      background: $beauvechain-navy;
+      mask: center / 22px 22px no-repeat;
+    }
+
+    &:hover {
+      background: $beauvechain-navy;
+
+      &::after {
+        background: #fff;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+      box-shadow: 0 0 0 6px $beauvechain-navy;
+    }
+  }
+
+  .swiper-button-next {
+    right: 56px;
+
+    &::after {
+      mask-image: url("../../assets/svg/lucide-arrow-right.svg");
+    }
+  }
+
+  .swiper-button-prev {
+    right: 120px; // 56 + 50 + 14px d'écart
+
+    &::after {
+      mask-image: url("../../assets/svg/lucide-arrow-left.svg");
+    }
+  }
+}

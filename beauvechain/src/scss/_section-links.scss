@@ -1,0 +1,275 @@
+// Sections de liens des pages (hors accès rapides et pied de page)
+// Déclinaison de l'univers de la maquette Beauvechain, selon le contenu :
+//   - lien à image (grille ou carrousel) : carte grise, image arrondie en retrait
+//     (comme l'Agenda), la carte monte au survol ;
+//   - lien à icône : carte des accès rapides (mixin bv-icon-link-card) ;
+//   - lien sans image : ligne grise arrondie avec rond flèche à droite.
+// Le nombre de colonnes reste celui choisi dans Plone (nb d'éléments par lot).
+
+#portal-column-content .sectionlinks:not(.quick-access) {
+  // Titre de section : style commun des pages intérieures (_page.scss)
+
+  ul.row {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+
+    padding-left: 0;
+
+    > li {
+      list-style: none;
+    }
+  }
+
+  .table_display {
+    height: 100%;
+  }
+
+  // ——— Lien à image (grille) ———
+  a.table_image:has(> .image.is-image) {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 14px;
+    padding: 12px 12px 20px;
+    border-radius: 24px;
+    background: #f3f5f9;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+
+    .image.is-image {
+      margin: 0;
+      border-radius: 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .display-carre a.table_image .image.is-image {
+    aspect-ratio: 1;
+  }
+
+  // ——— Lien à image (carrousel) ———
+  .body-section.swiper {
+    // 12px de marge en haut : la carte survolée monte sans être coupée
+    margin-top: -12px;
+    padding-top: 12px;
+
+    .swiper-wrapper {
+      padding-bottom: 0;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-slide > a.swiper_link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 14px;
+    padding: 12px 12px 20px;
+    border-radius: 24px;
+    background: #f3f5f9;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+
+    .swiper-image {
+      width: 100%;
+      margin: 0;
+      border-radius: 16px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper_title h3 {
+      margin: 0;
+    }
+  }
+
+  // Titre commun aux cartes à image (grille et carrousel)
+  a.table_image:has(> .image.is-image) .table_title,
+  a.swiper_link .swiper_title {
+    margin: 0;
+    padding: 0 8px;
+
+    span,
+    h3 {
+      color: $beauvechain-ink; // 16,5:1 sur #f3f5f9
+      font-family: $font-family-header;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.3;
+      text-decoration: none;
+    }
+  }
+
+  // Survol des cartes à image : la carte monte, le titre se souligne en jaune
+  a.table_image:has(> .image.is-image),
+  .swiper-slide > a.swiper_link {
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-10px);
+
+      @media (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
+
+      span,
+      h3 {
+        text-decoration: underline;
+        text-decoration-color: $beauvechain-yellow;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  // ——— Lien à icône : carte des accès rapides ———
+  a.table_image:has(> .image.is-icon) {
+    @include bv-icon-link-card;
+  }
+
+  // En liste (1 élément par rangée), la carte haute serait vide : version
+  // horizontale (pastille à gauche, titre à côté, flèche centrée à droite)
+  .nb-items-batch-1 a.table_image:has(> .image.is-icon) {
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 14px 64px 14px 14px;
+    border-radius: 22px;
+
+    // Flèche centrée verticalement au repos (le décalage de 10px des grandes
+    // cartes la faisait paraître trop basse) ; petit élan oblique au survol
+    &::after {
+      top: 50%;
+      margin-top: -10px;
+      transform: none;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      transform: translate(3px, -3px);
+    }
+  }
+
+  // ——— Lien sans image : ligne comme les fichiers, flèche oblique dans un
+  // rond blanc (navy au survol, la flèche glisse en oblique) ———
+  a.table_image.no-image {
+    @include bv-row-link(
+      url("../../assets/svg/lucide-arrow-up-right.svg"),
+      translate(2px, -2px)
+    );
+
+    height: 100%;
+
+    .image.d-block {
+      display: none;
+    }
+
+    .table_title {
+      margin: 0;
+
+      span {
+        color: $beauvechain-ink; // 16,5:1 sur #f3f5f9
+        font-family: $font-family-header;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+      }
+    }
+
+    // Souligné jaune au survol (comme les fichiers)
+    &:hover .table_title span,
+    &:focus-visible .table_title span {
+      text-decoration: underline;
+      text-decoration-color: $beauvechain-yellow;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+
+  // ——— Contrôles des carrousels (comme l'accueil) ———
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 40%;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    border-radius: 26px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(0 23 72 / 18%);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 22px;
+      background: $beauvechain-navy;
+      mask: center / 22px 22px no-repeat;
+    }
+
+    &:hover {
+      background: $beauvechain-navy;
+
+      &::after {
+        background: #fff;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+
+    &::after {
+      mask-image: url("../../assets/svg/lucide-arrow-left.svg");
+    }
+  }
+
+  .swiper-button-next {
+    right: 20px;
+
+    &::after {
+      mask-image: url("../../assets/svg/lucide-arrow-right.svg");
+    }
+  }
+
+  .swiper-pagination {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      margin: 0 !important;
+      background: rgb(0 23 72 / 50%); // 3,4:1 sur blanc
+      opacity: 100%;
+    }
+
+    // La base force la couleur active en !important pour tous les carrousels
+    .swiper-pagination-bullet-active {
+      background: $beauvechain-navy !important;
+    }
+  }
+}

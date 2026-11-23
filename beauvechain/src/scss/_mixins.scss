@@ -1,0 +1,251 @@
+// Mixins partagés du thème Beauvechain (univers de la maquette Figma)
+
+// Titre de section à barre jaune (Plus Jakarta Sans 800)
+@mixin bv-section-title(
+  $font-size: 32px,
+  $bar-height: 30px,
+  $color: $beauvechain-ink,
+  $gap: 16px
+) {
+  display: flex;
+  align-items: flex-start;
+  gap: $gap;
+  color: $color;
+  font-family: $font-family-header;
+  font-size: $font-size;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+
+  // Barre centrée sur la première ligne (titre sur plusieurs lignes en mobile)
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 6px;
+    height: $bar-height;
+    margin-top: calc((1.2em - #{$bar-height}) / 2);
+    border-radius: 3px;
+    background: $beauvechain-yellow;
+  }
+}
+
+// Grand titre de la maquette (Actualités, Agenda — node 23:110) :
+// 52px, barre jaune 6×50px ; 36px en mobile. (Le titre des pages en est une
+// version un peu plus petite : voir _page.scss.)
+@mixin bv-home-title {
+  @include bv-section-title(52px, 50px, $beauvechain-ink, 18px);
+
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+
+    &::before {
+      height: 36px;
+      margin-top: calc((1.2em - 36px) / 2);
+    }
+  }
+}
+
+// Carte « lien à icône » (accès rapides de la maquette, node 23:45) :
+// carte gris clair, icône Plone dans une pastille blanche, flèche oblique ;
+// au survol : carte navy, pastille jaune, texte blanc, la flèche file en oblique.
+// À inclure sur le <a class="table_image"> qui contient .image.is-icon.
+@mixin bv-icon-link-card {
+  position: relative;
+  display: flex;
+  height: 100%;
+  min-height: 184px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px 24px 26px;
+  border-radius: 28px;
+  background: #f3f5f9;
+  text-align: left;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+
+  @include media-breakpoint-down(lg) {
+    min-height: 150px;
+    padding: 18px 18px 20px;
+    gap: 20px;
+  }
+
+  .image.d-block {
+    display: flex;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    border-radius: 28px;
+    background: #fff;
+    transition: background-color 0.15s ease;
+
+    svg {
+      width: 26px;
+      height: 26px;
+      fill: $beauvechain-navy;
+    }
+  }
+
+  .table_title {
+    margin: 0;
+
+    span {
+      display: block;
+      color: $beauvechain-ink; // 16,5:1 sur #f3f5f9
+      font-family: $font-family-header;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.3;
+      text-decoration: none;
+      transition: color 0.15s ease;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Flèche Lucide arrow-up-right (masque : couleur via background-color)
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    background: $beauvechain-grey; // 5,4:1 sur #f3f5f9
+    mask: url("../../assets/svg/lucide-arrow-up-right.svg") center / 20px 20px
+      no-repeat;
+    // Au repos : décalée de 10px vers le bas et la gauche ;
+    // au survol, elle remonte en oblique jusqu'à sa position de la maquette.
+    transform: translate(-10px, 10px);
+    transition:
+      transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+      background-color 0.15s ease;
+
+    @include media-breakpoint-down(lg) {
+      top: 18px;
+      right: 18px;
+    }
+
+    // Moins de mouvement demandé : flèche fixe à sa place, seule la couleur change
+    @media (prefers-reduced-motion: reduce) {
+      transform: none !important;
+      transition: background-color 0.15s ease;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: $beauvechain-navy;
+
+    .image.d-block {
+      background: $beauvechain-yellow;
+    }
+
+    .table_title span {
+      color: #fff; // 17,3:1
+    }
+
+    &::after {
+      background: $beauvechain-yellow; // 10,5:1
+      transform: translate(0, 0);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $beauvechain-navy;
+    outline-offset: 3px;
+  }
+}
+
+// Ligne de lien / fichier : bloc gris clair arrondi, contenu à gauche,
+// rond blanc à droite portant une icône Lucide (masque) ; au survol, le rond
+// passe en navy, l'icône en blanc et se décale ($nudge).
+// $icon : url() de l'icône du rond ; le rond est le ::after du lien.
+@mixin bv-row-link($icon, $nudge: translateX(3px)) {
+  position: relative;
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 72px 16px 22px; // place pour le rond (40px) à droite
+  border-radius: 18px;
+  background: #f3f5f9;
+  color: $beauvechain-ink;
+  text-align: left;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+
+  // Rond blanc
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 20px;
+    background: #fff;
+    transition: background-color 0.15s ease;
+  }
+
+  // Icône dans le rond
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 27px;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background: $beauvechain-navy; // 17,3:1 sur blanc
+    mask: $icon center / 18px 18px no-repeat;
+    transition:
+      transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+      background-color 0.15s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: #e9edf4;
+
+    &::before {
+      background: $beauvechain-navy;
+    }
+
+    &::after {
+      background: #fff;
+      transform: $nudge;
+
+      @media (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $beauvechain-navy;
+    outline-offset: 3px;
+  }
+}
+
+// Largeur d'un .container (centré, gouttière comprise), pour les éléments
+// pleine largeur qui doivent s'aligner sur le contenu (pied de page, titres)
+@mixin bv-container-width {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+  padding-left: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+
+  @each $breakpoint, $width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $width;
+    }
+  }
+}

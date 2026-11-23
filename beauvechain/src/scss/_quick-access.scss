@@ -1,0 +1,64 @@
+// Accès rapides — maquette Figma Beauvechain (node 23:45)
+// Cartes arrondies (28px) gris clair ; au survol : navy, pastille jaune, texte blanc.
+// Les icônes viennent de l'interface Plone : seules leur taille et leur couleur sont réglées
+// (via les variables $quick-access-*). 4, 5 ou 6 liens : une ligne en desktop, 2 colonnes sinon.
+
+// Espace au-dessus : uniquement les 48px de $quick-access-container-padding (maquette),
+// sans la marge haute générique des sections de liens.
+.sectionlinks.quick-access {
+  padding-top: 0;
+
+  // Pas de marge basse si la section suivante porte son propre espace
+  // (Actualités : 120px, Agenda : 130px). Sinon (ex. dernière section avant
+  // le pied de page), on garde la marge générique.
+  &:has(+ .sectionnews, + .sectionevents) {
+    padding-bottom: 0;
+  }
+
+  .body-section {
+    @include media-breakpoint-down(md) {
+      padding-top: 24px;
+    }
+  }
+}
+
+.sectionlinks.quick-access .body-section {
+  ul.row {
+    display: grid;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    // Desktop : autant de colonnes égales que de liens, sur une seule ligne
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: none;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-auto-flow: column;
+    }
+
+    @include media-breakpoint-down(lg) {
+      gap: 12px;
+
+      // Nombre impair : le dernier lien prend toute la largeur
+      > li:last-child:nth-child(odd) {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  li {
+    width: auto;
+    max-width: none;
+    padding: 0;
+
+    .table_display {
+      height: 100%;
+    }
+
+    // Carte partagée avec les liens à icône des pages intérieures (_mixins.scss)
+    a.table_image {
+      @include bv-icon-link-card;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+// Pages intérieures — éléments de la page elle-même
+
+// Titre de la page : style des grands titres de l'accueil, un peu plus petit
+// (46px, barre jaune 44px comme « Vos démarches » ; 32px en mobile).
+// Ciblé par sa position (en-tête de #content) et non par .page-title : seules
+// les pages « Page » portent cette classe ; dossiers, collections… ont un
+// simple <h1>.
+// Vues Actualités / Agenda / Annuaire exclues : leur titre est géré par
+// smartweb-webcomponents (en développement), on garde le rendu de base.
+body:not(
+    .portaltype-imio-smartweb-newsview,
+    .portaltype-imio-smartweb-eventsview,
+    .portaltype-imio-smartweb-directoryview
+  )
+  #content
+  > header
+  h1 {
+  @include bv-section-title(46px, 44px, $beauvechain-ink, 18px);
+
+  margin: 0 0 16px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+
+    &::before {
+      height: 32px;
+      margin-top: calc((1.2em - 32px) / 2);
+    }
+  }
+}
+
+// Titres des sections de la page (texte, liens, fichiers, galerie, plan…) :
+// sans barre jaune, plus petits, en gras. Les grandes sections de l'accueil
+// (Actualités, Agenda, Vos démarches) gardent leur grand titre à barre.
+#portal-column-content
+  .sortable-section:not(.sectionnews, .sectionevents, .quick-access)
+  .section-title {
+  display: block;
+  margin: 0 0 24px;
+  color: $beauvechain-ink; // 18:1 sur blanc
+  font-family: $font-family-header;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+
+  // Pas de barre (la base des fichiers prévoit un ::before)
+  &::before {
+    display: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 18px;
+    font-size: 21px;
+  }
+}
+
+// Liens des sections texte : soulignés en noir (encre), le souligné passe en
+// jaune au survol. (Les ancres vides des sections n'ont pas de href.)
+#portal-column-content .sectiontext .body-section .text a[href] {
+  color: $beauvechain-ink; // 18:1 sur blanc
+  text-decoration: underline;
+  text-decoration-color: $beauvechain-ink;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    // Seule la couleur change (le raccourci text-decoration réinitialisait
+    // l'épaisseur à « auto », plus fine que 2px)
+    text-decoration-color: $beauvechain-yellow;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $beauvechain-navy;
+    outline-offset: 2px;
+  }
+}
+
+// Encadré « mark » (jaune, arrondi : variables $mark-* dans variables.scss).
+// Liens : soulignés de la couleur du texte ; au survol, seul le souligné
+// passe en blanc (le jaune serait invisible sur le fond jaune).
+// Sélecteur plus spécifique que la règle des liens ci-dessus.
+#portal-column-content .sectiontext .body-section .text mark a[href] {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    // Seule la couleur change (le raccourci text-decoration réinitialisait
+    // l'épaisseur à « auto », plus fine que 2px)
+    text-decoration-color: #fff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $beauvechain-navy;
+    outline-offset: 2px;
+  }
+}
+
+// Chaque section de contenu forme son propre contexte d'empilement : les
+// z-index internes (Swiper : 1, flèches : 10…) restent dans la section et
+// passent sous le voile du menu principal (.mask-menu, z-index 1). La base
+// obtenait cet effet par un transform sur les sections pleine largeur.
+#portal-column-content .sortable-section {
+  isolation: isolate;
+}

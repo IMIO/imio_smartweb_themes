@@ -18,9 +18,26 @@ $(document).ready(function () {
   }
   if ($(".sectionevents .swiper").length > 0) {
     var eventsSwiper = $(".sectionevents .swiper")[0].swiper;
-    eventsSwiper.params.spaceBetween = 30;
+    eventsSwiper.params.spaceBetween = 24; // écart entre cartes de la maquette
     (eventsSwiper.params.speed = 1000), eventsSwiper.update();
   }
+  // Carrousels des sections de liens : même écart (24px) que leurs grilles
+  $(".sectionlinks .swiper").each(function () {
+    if (this.swiper) {
+      this.swiper.params.spaceBetween = 24;
+      this.swiper.update();
+    }
+  });
+
+  // Largeur de la barre de défilement (utilisée par la bannière pleine largeur)
+  function setScrollbarWidth() {
+    document.documentElement.style.setProperty(
+      "--scrollbar-width",
+      window.innerWidth - document.documentElement.clientWidth + "px",
+    );
+  }
+  setScrollbarWidth();
+  window.addEventListener("resize", setScrollbarWidth);
 
   // For banner
 

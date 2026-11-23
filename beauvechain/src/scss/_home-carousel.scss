@@ -1,0 +1,267 @@
+// Sections carrousel de l'accueil (Actualités, Agenda) — parties communes
+// maquette Figma Beauvechain (nodes 23:108 et 23:173) :
+// pleine largeur, titre à barre jaune + bouton pilule à droite, carrousel
+// avec marge pour le survol des cartes, flèches rondes, pastilles.
+// Le spécifique à chaque section est dans _news.scss et _events.scss.
+
+.sectionnews,
+.sectionevents {
+  // Pleine largeur sans débordement : 100vw inclut la barre de défilement
+  // (--scrollbar-width est posé par index.js). Centrage par marges négatives,
+  // valable à toutes les largeurs (la base ne translate qu'à partir de lg).
+  --section-width: calc(100vw - var(--scrollbar-width, 0px));
+
+  left: auto;
+  width: var(--section-width);
+  max-width: none;
+  margin-right: calc((100% - var(--section-width)) / 2);
+  margin-left: calc((100% - var(--section-width)) / 2);
+  overflow: hidden;
+  transform: none;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+
+  // Titre + bouton sur une ligne, carrousel en dessous
+  .section-container > [class*="nb-items-batch"] {
+    display: grid;
+    grid-template-areas:
+      "title all"
+      "body body";
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    row-gap: 48px;
+    column-gap: 24px;
+
+    @include media-breakpoint-down(md) {
+      grid-template-areas:
+        "title"
+        "body"
+        "all";
+      grid-template-columns: 1fr;
+      row-gap: 28px;
+    }
+  }
+
+  // Grand titre à barre jaune (mixin bv-home-title)
+  .section-title {
+    @include bv-home-title;
+
+    grid-area: title;
+  }
+
+  // Bouton « voir tout » : pilule navy, flèche jaune
+  .see_all {
+    grid-area: all;
+    margin: 0;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 20px 15px 26px;
+      border: 0;
+      border-radius: 999px;
+      background: $beauvechain-navy;
+      color: #fff; // 17,3:1
+      font-family: $font-family-header;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+
+      &::after {
+        content: "";
+        position: static;
+        width: 18px;
+        height: 18px;
+        background: $beauvechain-yellow; // 10,5:1
+        mask: url("../../assets/svg/lucide-arrow-right.svg") center / 18px 18px
+          no-repeat;
+        opacity: 100%;
+        transform: none;
+        transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      // Survol : jaune, texte et flèche navy ; la flèche avance
+      &:hover,
+      &:focus-visible {
+        border-radius: 999px; // la base remet le rayon à 0 au survol
+        background: $beauvechain-yellow;
+        color: $beauvechain-navy; // 10,5:1
+
+        &::after {
+          width: 18px;
+          background: $beauvechain-navy;
+          transform: translateX(4px);
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid $beauvechain-navy;
+        outline-offset: 3px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        &::after {
+          transition: none;
+          transform: none !important;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      justify-self: center;
+    }
+  }
+
+  // Carrousel : 24px de marge intérieure (la carte survolée monte sans être
+  // coupée) et place pour les pastilles sous les cartes (48px + 14px)
+  .body-section.swiper {
+    grid-area: body;
+    margin: -24px -24px 0;
+    padding: 24px 24px 62px;
+
+    // smartweb.core ajoute 50px sous les diapos : l'espace est déjà géré ci-dessus
+    .swiper-wrapper {
+      padding-bottom: 0;
+    }
+  }
+
+  .swiper-slide {
+    & > a {
+      position: relative;
+      row-gap: 12px;
+      overflow: hidden;
+      // Pas d'ombre : le carrousel la coupait net sur ses bords
+      transition: transform 0.25s ease;
+
+      @media (prefers-reduced-motion: reduce) {
+        transition: none;
+      }
+
+      &:hover,
+      &:focus-visible {
+        // La carte monte de 10px
+        transform: translateY(-10px);
+
+        @media (prefers-reduced-motion: reduce) {
+          transform: none;
+        }
+
+        h3 {
+          text-decoration: underline;
+          text-decoration-color: $beauvechain-yellow;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 4px;
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid $beauvechain-navy;
+        outline-offset: 3px;
+      }
+    }
+
+    .swiper-image {
+      aspect-ratio: auto;
+    }
+
+    // Catégorie (si le client l'affiche) : pastille jaune.
+    // Typo sur l'élément qui porte le texte en 12px (em calculé sur 12px).
+    .swiper_category span,
+    .auth_source_container_title {
+      font-family: $font-family-header;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+    }
+
+    // Date : icône calendrier Lucide
+    .swiper_date {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-family: $font-family-header;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        background: $beauvechain-grey;
+        mask: url("../../assets/svg/lucide-calendar.svg") center / 16px 16px
+          no-repeat;
+      }
+    }
+
+    .swiper_title h3 {
+      margin: 0;
+      font-family: $font-family-header;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  // Flèches du carrousel : cercles blancs ombrés, navy au survol.
+  // Position verticale et latérale : propres à chaque section.
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    border-radius: 26px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(0 23 72 / 18%);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 22px;
+      background: $beauvechain-navy;
+      mask: center / 22px 22px no-repeat;
+    }
+
+    &:hover {
+      background: $beauvechain-navy;
+
+      &::after {
+        background: #fff;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+  }
+
+  .swiper-button-prev::after {
+    mask-image: url("../../assets/svg/lucide-arrow-left.svg");
+  }
+
+  .swiper-button-next::after {
+    mask-image: url("../../assets/svg/lucide-arrow-right.svg");
+  }
+
+  // Pastilles : 14px, espacées de 10px (couleurs propres à chaque section)
+  .swiper-pagination {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      margin: 0 !important;
+      opacity: 100%;
+    }
+  }
+}

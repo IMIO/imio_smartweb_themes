@@ -1,0 +1,70 @@
+// Sections de fichiers des pages
+// Une ligne grise arrondie par fichier : titre, taille, rond « télécharger »
+// à droite.
+// Fond de section, pleine largeur et texte clair de la base désactivés via
+// les variables $section-file-* / $enable-*-section-files.
+
+#portal-column-content .sectionfiles {
+  // Titre de section : style commun des pages intérieures (_page.scss)
+
+  // .body-section : plus spécifique que la règle de base des pages
+  // (.portaltype-… #content .sectionfiles ul.row { margin-left: 0 }) qui décalait la liste
+  .body-section ul.row {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 16px;
+
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    padding-left: 0;
+
+    > li {
+      margin: var(--bs-gutter-y) 0 0;
+      list-style: none;
+    }
+  }
+
+  .table_display {
+    height: 100%;
+  }
+
+  a.table_image {
+    @include bv-row-link(
+      url("../../assets/svg/lucide-download.svg"),
+      translateY(2px)
+    );
+
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+
+    .table_title {
+      margin: 0;
+
+      span {
+        color: $beauvechain-ink; // 16,5:1 sur #f3f5f9
+        font-family: $font-family-header;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+      }
+    }
+
+    // Taille du fichier (invisible dans la base : même couleur que le fond)
+    .item_infos {
+      color: $beauvechain-grey; // 5,4:1 sur #f3f5f9
+      font-family: $font-family-header;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    &:hover .table_title span,
+    &:focus-visible .table_title span {
+      text-decoration: underline;
+      text-decoration-color: $beauvechain-yellow;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+}
