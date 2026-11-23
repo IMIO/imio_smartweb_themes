@@ -17,7 +17,12 @@
       "url": "https://imio.be"
     }
   ],
-  "homepage": "https://",
+  "homepage": "https://github.com/IMIO/imio_smartweb_themes/tree/main/base",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IMIO/imio_smartweb_themes.git",
+    "directory": "base"
+  },
   "keywords": [
     "imio",
     "plone",
@@ -30,28 +35,11 @@
     "stylelint:fix": "npx stylelint 'src/**/*.{css,less}' --fix",
     "prettier": "npx prettier --single-quote --check 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
     "prettier:fix": "npx prettier --single-quote --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass}'",
-    "dry-release": "release-it --dry-run",
-    "release": "release-it"
+    "dry-release": "node ../scripts/release-base.js --dry-run",
+    "release": "node ../scripts/release-base.js"
   },
   "devDependencies": {
     "@plone/plonetheme-barceloneta-base": "3.2.4",
     "@popperjs/core": "^2.11.6"
-  },
-  "release-it": {
-    "hooks": {
-      "before:git:release": "node update-changelog.js ${version} && git add CHANGELOG.md"
-    },
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "base-v${version}",
-      "changelog": "git log --pretty=format:\"* %s (%h)\" $(git describe --tags --abbrev=0)...HEAD -- ."
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true,
-      "releaseNotes": "git log --pretty=format:'* %s (%h)' $(git describe --tags --abbrev=0)...HEAD -- ."
-    }
   }
 }

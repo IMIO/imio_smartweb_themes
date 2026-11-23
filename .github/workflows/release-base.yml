@@ -1,0 +1,84 @@
+# Publie @imiobe/plonetheme-smartweb-base sur npm quand sa version change sur main.
+#
+# Déclencheur : un push sur main qui modifie base/package.json (en pratique le
+# commit créé par `pnpm release:base`). Si la version de base/package.json
+# n'existe pas encore sur npm, le workflow :
+#   1. publie le paquet sur npm (Trusted Publishing : ni jeton ni OTP) ;
+#   2. crée le tag base-v<version> et la release GitHub avec les commits de base/.
+# Si la version est déjà publiée, il ne fait rien (relance sans risque).
+#
+# Prérequis (une fois, sur npmjs.com) : paquet → Settings → Trusted Publisher →
+# GitHub Actions : organisation IMIO, dépôt imio_smartweb_themes,
+# workflow release-base.yml. Voir release-base.doc.md.
+name: Release base theme
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "base/package.json"
+  workflow_dispatch:
+
+concurrency:
+  group: release-base
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Trusted Publishing npm ne fonctionne qu'avec les runners hébergés par GitHub.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # tag + release GitHub
+      id-token: write # jeton OIDC pour npm (Trusted Publishing + provenance)
+    defaults:
+      run:
+        working-directory: base
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0 # historique et tags pour les notes de release
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+
+      # Trusted Publishing demande npm >= 11.5.1
+      - name: Update npm
+        run: npm install -g npm@latest
+
+      - name: Read version
+        id: version
+        run: |
+          name=$(node -p "require('./package.json').name")
+          version=$(node -p "require('./package.json').version")
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          if npm view "$name@$version" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::$name@$version est déjà sur npm, rien à publier."
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to npm
+        if: steps.version.outputs.published == 'false'
+        run: npm publish --provenance --access public
+
+      - name: Create tag and GitHub release
+        if: steps.version.outputs.published == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          tag="base-v$VERSION"
+          prev=$(git describe --tags --abbrev=0 --match 'base-v*' 2>/dev/null || true)
+          range=${prev:+$prev..}HEAD
+          notes=$(git log --pretty=format:'* %s (%h)' "$range" -- . | grep -v 'chore(base): release' || true)
+          gh release create "$tag" \
+            --target "$GITHUB_SHA" \
+            --title "Base $VERSION" \
+            --notes "${notes:-Aucun changement listé.}"
