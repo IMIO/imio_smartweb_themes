@@ -1,0 +1,263 @@
+// =============================================================================
+// MENU MOBILE (bouton burger, < lg)
+// =============================================================================
+// Tout le menu mobile est ici : panneau principal, sous-menus, bouton « Retour »,
+// bouton burger / croix et barre d'en-tête au-dessus du panneau.
+// Variables : $menu-* et $header-toggler-icon-* dans variables.scss.
+
+// Structure (HTML de base) : button.navbar-toggler[aria-expanded] suivi de
+// #portal-globalnav-collapse (collapse Bootstrap) ; .open-nav-overflow sur <html>
+// et <body> menu ouvert (index.js) ; li.show-nav > .has_subtree.dropdown pour un
+// sous-menu ouvert ; .prev-nav (« Retour ») et .close-nav dans chaque sous-menu.
+
+// Fluidité : les panneaux glissent avec transform (composité par le GPU) et non
+// plus avec left / right (recalcul de la mise en page à chaque image).
+// Panneau ouvert : transform: none, et non translateX(0). Un transform, même
+// nul, fait de l'élément le repère des descendants en position: fixed ; les
+// sous-menus seraient alors placés dans le panneau parent (qui défile) au lieu
+// de l'écran. Pour la même raison, pas de will-change: transform.
+
+// Durée : Bootstrap lit la durée de la première transition du collapse pour
+// savoir quand masquer le menu ; transform doit donc rester en premier.
+
+@include media-breakpoint-down(lg) {
+  // ---------------------------------------------------------------------------
+  // Défilement de la page bloqué menu ouvert, sans décalage : on réserve la
+  // place de la barre de défilement (<html> seul : la classe est aussi sur
+  // <body>, la place serait réservée deux fois).
+  // ---------------------------------------------------------------------------
+  .open-nav-overflow {
+    overflow: hidden;
+  }
+
+  html.open-nav-overflow {
+    scrollbar-gutter: stable;
+  }
+
+  // ---------------------------------------------------------------------------
+  // En-tête : bouton burger, logo et loupe au-dessus du panneau
+  // ---------------------------------------------------------------------------
+  #portal-globalnav-wrapper {
+    margin: 0 !important;
+  }
+
+  .navbar-expand-md .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar-toggler {
+    z-index: 99;
+  }
+
+  // Le panneau (z-index 98) couvre l'écran : logo et loupe restent visibles,
+  // pendant l'ouverture, menu ouvert et pendant la fermeture (.collapsing).
+  // Basé sur l'état du collapse Bootstrap et non sur .open-nav-overflow :
+  // marche même si theme.js ne s'exécute pas (ex. hash SRI périmé en local).
+  // Règle séparée de la suivante : un navigateur sans :has() l'ignore seule.
+  #portal-header-top:has(
+      #portal-globalnav-collapse.show,
+      #portal-globalnav-collapse.collapsing
+    )
+    :is(#portal-logo, #header-links) {
+    position: relative;
+    z-index: 99;
+  }
+
+  .open-nav-overflow #portal-logo,
+  .open-nav-overflow #header-links {
+    position: relative;
+    z-index: 99;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Panneau principal
+  // ---------------------------------------------------------------------------
+  #portal-globalnav-collapse {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh; // hauteur visible réelle (barres du navigateur mobile)
+    padding: 6em 2em 0;
+    background: #fff;
+    transform: translateX(100%);
+    transition: transform $menu-mobile-duration $menu-mobile-easing;
+
+    // Fermé : gardé en display: block (base Bootstrap : none) pour pouvoir
+    // glisser, mais masqué aux lecteurs d'écran et au clavier.
+    &.collapse:not(.show) {
+      display: block;
+      visibility: hidden;
+    }
+
+    // Neutralise l'animation de hauteur du collapse Bootstrap :
+    // seul le glissement horizontal doit être animé.
+    &.collapsing {
+      height: 100vh !important;
+      height: 100dvh !important;
+      overflow: visible;
+    }
+
+    #portal-globalnav > li > a {
+      padding: 1rem 0 !important;
+      color: #000 !important;
+    }
+
+    #portal-globalnav > li > .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+
+    // chevron « suivant » des entrées de premier niveau
+    #portal-globalnav > li.has_subtree > a::after {
+      content: $nav-link-drop-mobile;
+      width: auto;
+      height: auto;
+      margin-left: 0;
+      background: none;
+    }
+  }
+
+  .navbar-toggler[aria-expanded="true"] + #portal-globalnav-collapse {
+    transform: none;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Sous-menus (tous niveaux) : plein écran, glissent depuis la droite.
+  // Une seule croix (celle du bouton burger) : celle du panneau est retirée.
+  // Le contenu démarre sous la barre d'en-tête.
+  // ---------------------------------------------------------------------------
+  #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none; // base (≥ md) : 85vh
+    padding-top: $menu-mobile-header-height;
+    overflow: hidden auto;
+    overscroll-behavior: contain; // le défilement ne passe pas à la page
+    background: #fff;
+    box-shadow:
+      0 0 6.5px rgb(0 0 0 / 4.7%),
+      0 0 16.9px rgb(0 0 0 / 6.7%),
+      0 0 33.8px rgb(0 0 0 / 8.3%),
+      0 0 64.5px rgb(0 0 0 / 10.3%),
+      0 0 139px rgb(0 0 0 / 15%);
+    opacity: 100%; // base : fondu ; ici seul le glissement est animé
+    transform: translateX(100%);
+    visibility: hidden;
+    // visibility suit la durée : reste visible pendant le glissement de sortie,
+    // devient visible dès le début de l'entrée.
+    transition:
+      transform $menu-mobile-duration $menu-mobile-easing,
+      visibility $menu-mobile-duration;
+
+    .close-nav {
+      display: none;
+    }
+  }
+
+  #portal-globalnav-wrapper .navbar-nav li.show-nav > .has_subtree.dropdown {
+    transform: none;
+    visibility: visible;
+  }
+
+  // sous-menu ouvert dans un sous-menu : au-dessus de son parent
+  #portal-globalnav-wrapper
+    .navbar-nav
+    li.show-nav
+    > .has_subtree
+    .show-nav
+    > .dropdown {
+    z-index: 99;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Bouton « Retour » : style des entrées (noir, graisse 500) et chevron
+  // « suivant » retournée à gauche, avec le même état au survol et au focus.
+  // Limite (HTML) : .prev-nav est un <a> sans href ni tabindex, donc pas
+  // atteignable au clavier ; le focus visible servira une fois le gabarit corrigé.
+  // ---------------------------------------------------------------------------
+  .prev-nav {
+    display: block !important;
+  }
+
+  #portal-globalnav-collapse .prev-nav {
+    display: flex !important;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+
+    // en flex, le <span> devient un bloc et hériterait d'un padding qui
+    // doublerait la hauteur
+    span {
+      padding: 0;
+    }
+
+    &::before {
+      content: $nav-overlay-next-icon;
+      display: block;
+      margin-right: 0.75rem;
+      transform: scaleX(-1);
+    }
+
+    &:hover::before,
+    &:focus::before {
+      content: $nav-overlay-next-icon-hover;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #000;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .prev-nav {
+    display: none !important;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Bouton burger : hamburger fermé, croix ouvert
+// -----------------------------------------------------------------------------
+#portal-globalnav-wrapper {
+  button[aria-expanded="false"] .navbar-toggler-icon {
+    background-image: $header-toggler-icon-close;
+  }
+
+  button[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: $menu-toggler-icon-open;
+  }
+}
+
+// pas de contour au clic, mais un contour visible au clavier
+.navbar-toggler:focus {
+  border: 0;
+  outline: 0 !important;
+  background: transparent;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus-visible {
+  outline: 3px solid #000 !important;
+  outline-offset: 3px;
+}
+
+// Mouvement réduit demandé par le système : pas de glissement.
+@media (prefers-reduced-motion: reduce) {
+  #portal-globalnav-collapse,
+  #portal-globalnav-wrapper .navbar-nav li .has_subtree.dropdown {
+    transition-duration: 0.01ms !important;
+  }
+}

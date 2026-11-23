@@ -90,6 +90,22 @@ $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/
 $toggler-color: #000 !default;
 $header-toggler-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !default;
 $header-toggler-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !default;
+// Menu mobile (_menu-mobile.scss)
+// Croix du bouton menu ouvert. Beaucoup de thèmes redéclarent
+// $header-toggler-icon-open avec le hamburger (même icône ouverte et fermée) :
+// dans ce cas on affiche la croix, sinon l'icône choisie par le thème.
+$menu-toggler-icon-cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3E%3C/svg%3E") !default;
+$menu-toggler-icon-open: if(
+  $header-toggler-icon-open == $header-toggler-icon-close,
+  $menu-toggler-icon-cross,
+  $header-toggler-icon-open
+) !default;
+// Hauteur de la barre d'en-tête (#portal-header-top) en mobile : 16 px de
+// padding + loupe de 46 px + 16 px. À ajuster si l'en-tête d'un thème diffère.
+$menu-mobile-header-height: 78px !default;
+// Glissement des panneaux : courbe « ease-out » (démarre vite, freine à la fin).
+$menu-mobile-duration: 0.6s !default;
+$menu-mobile-easing: cubic-bezier(0.26, 0.97, 0.71, 0.97) !default;
 //bredcrumb
 $breadcrumb-bg: #fff !default;
 $enable-full-width-breacrumb: false !default;
