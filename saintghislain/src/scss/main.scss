@@ -39,7 +39,7 @@ $enable-roboto-webfont: false;
 
 // Focus clavier du bouton du menu mobile : blanc sur le bandeau bleu (menu fermé).
 // !important : la base impose « outline: 3px solid #000 !important ».
-#portal-globalnav-wrapper .navbar-toggler[aria-expanded='false']:focus-visible {
+#portal-globalnav-wrapper .navbar-toggler[aria-expanded="false"]:focus-visible {
   outline-color: #fff !important;
 }
 
