@@ -37,6 +37,26 @@ $enable-roboto-webfont: false;
   }
 }
 
+// Focus clavier du bouton du menu mobile : blanc sur le bandeau bleu (menu fermé).
+// !important : la base impose « outline: 3px solid #000 !important ».
+#portal-globalnav-wrapper .navbar-toggler[aria-expanded='false']:focus-visible {
+  outline-color: #fff !important;
+}
+
+// Menu mobile déployé : le panneau est blanc, le logo et la loupe (blancs) y
+// disparaissaient. On les passe en bleu foncé tant que le menu est ouvert.
+.open-nav-overflow {
+  #portal-logo .cls-1 {
+    fill: $primary;
+  }
+
+  // Aussi long que le sélecteur de la base, pour passer devant sans !important.
+  #portal-header #portal-header-top #header-links #search-link a::before {
+    background: $primary;
+    mask: $header-search-icon center / 14px no-repeat;
+  }
+}
+
 footer a,
 #portal-colophon a {
   text-decoration: none !important;
