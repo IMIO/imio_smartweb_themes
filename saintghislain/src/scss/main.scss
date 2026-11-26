@@ -27,11 +27,12 @@ $enable-roboto-webfont: false;
 @import "./home/annuaire";
 @import "./home/footer";
 @import "./home/divers";
+@import "./se-files";
 
 .sectionfiles {
   .section-title {
     a {
-      color: #fff !important;
+      color: $primary !important;
     }
   }
 }

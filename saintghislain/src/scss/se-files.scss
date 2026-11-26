@@ -1,0 +1,109 @@
+// Liens vers fichiers : un seul rendu pour page, portail, démarche, actualité, événement.
+// Deux DOM, ciblés explicitement :
+//   A. rendu serveur (page, portail, démarche) : .sectionfiles .table_display.File > a.table_image
+//   B. composant web (actualité, événement)    : .r-content-files .r-content-file-link
+// « body » devant B : la feuille du composant est injectée plus tard, ça remplace un !important.
+
+$file-border: #e6e6e6;
+$file-bg: #e4edf6; // repos : 7,5:1 avec le libellé, démarque le bloc de la page
+$file-active-bg: #d3e2f1; // survol / focus : 6,7:1 avec le libellé
+$file-active-border: #6f7b88; // 3,3:1 sur la teinte de survol
+$file-meta: #4a5a6a; // taille du fichier : 6,0:1 sur le repos, 5,4:1 au survol
+$file-shadow: 0 2px 8px rgba($primary, 18%);
+$file-icon: 21px;
+
+// ① Bloc : le lien lui-même, cliquable partout, 44 px minimum.
+.sectionfiles .table_display.File > a.table_image,
+body .r-content-files .r-content-file-link {
+  display: flex;
+  flex-wrap: nowrap; // base : wrap
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 12px 16px;
+  background: $file-bg;
+  border: 1px solid $file-border;
+  border-radius: 6px;
+  color: $primary;
+  text-decoration: none;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
+
+  // ② Un seul design pour :hover, :focus et :focus-visible (fond + contour + ombre).
+  &:is(:hover, :focus) {
+    background: $file-active-bg;
+    border-color: $file-active-border;
+    box-shadow: $file-shadow;
+  }
+
+  // Focus clavier : anneau bleu + blanc (visible aussi sur fond foncé),
+  // outline transparent pour le mode contraste forcé.
+  &:focus-visible {
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+    box-shadow:
+      0 0 0 3px $primary,
+      0 0 0 6px #fff,
+      $file-shadow;
+  }
+
+  .table_title,
+  .table_title span,
+  .r-content-file-title {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    color: inherit;
+  }
+
+  .item_infos,
+  .r-content-file-title-size {
+    flex: none;
+    color: $file-meta; // blanc dans l'ancien rendu des pages
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 100%; // 0,5 dans le composant web
+  }
+}
+
+// Icône à droite. A : dessinée en ::after (absente du DOM). B : SVG existant, recoloré.
+.sectionfiles .table_display.File > a.table_image::after {
+  content: '';
+  flex: none;
+  width: $file-icon;
+  height: $file-icon;
+  margin-left: auto;
+  background: $primary;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="square"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>')
+    center / contain no-repeat;
+}
+
+body .r-content-files .r-content-file-icon {
+  margin-left: auto;
+  color: $primary;
+
+  svg {
+    width: $file-icon;
+    height: $file-icon;
+    stroke: currentcolor; // le SVG impose #8899a4 (~3:1)
+  }
+}
+
+// ③ Espacement régulier entre blocs, y compris la variante en div plat (Ordonnances).
+.sectionfiles li {
+  margin: 0; // base : 1.25rem 0
+  padding-inline: 0; // gouttière bootstrap : aligne les blocs sur le titre, gagne 24 px en mobile
+}
+
+.sectionfiles .table_display.File,
+body .r-content-files .r-content-file {
+  margin: 0 0 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sectionfiles .table_display.File > a.table_image,
+  body .r-content-files .r-content-file-link {
+    transition: none;
+  }
+}
