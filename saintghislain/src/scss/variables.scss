@@ -78,10 +78,13 @@ $header-links-account-hover-border: solid 0 #000 !default;
 $header-links-account-hover-bg: transparent !default;
 $header-links-account-hover-color: #000 !default;
 $header-search-icon-color: #fff;
-// Bouton du menu mobile : blanc sur le bandeau bleu (menu fermé), croix bleu foncé sur le
-// panneau blanc (menu ouvert). Le nom « close » désigne le menu fermé, « open » le menu ouvert.
+// Menu mobile (base : _menu-mobile.scss). Hamburger blanc sur le bandeau bleu (menu
+// fermé) ; ouvert, la base affiche la croix quand « open » est identique à « close »,
+// ici en bleu foncé sur le panneau blanc.
 $header-toggler-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{url-encoded-color(#fff)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-$header-toggler-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{url-encoded-color($primary)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m7 7 16 16m0-16L7 23'/%3E%3C/svg%3E");
+$header-toggler-icon-open: $header-toggler-icon-close;
+$menu-toggler-icon-cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{url-encoded-color($primary)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3E%3C/svg%3E");
+$menu-mobile-header-height: 104px; // 16 px + logo 72 px + 16 px
 $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
 
 //bredcrumb

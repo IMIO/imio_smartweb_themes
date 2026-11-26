@@ -43,17 +43,23 @@ $enable-roboto-webfont: false;
   outline-color: #fff !important;
 }
 
-// Menu mobile déployé : le panneau est blanc, le logo et la loupe (blancs) y
-// disparaissaient. On les passe en bleu foncé tant que le menu est ouvert.
-.open-nav-overflow {
-  #portal-logo .cls-1 {
-    fill: $primary;
-  }
+// Menu mobile déployé : la base laisse le logo et la loupe au-dessus du panneau blanc
+// (_menu-mobile.scss), mais ils sont blancs et y disparaissaient. On les passe en bleu
+// foncé tant que le panneau est ouvert ou en mouvement, avec le même test que la base.
+@include media-breakpoint-down(lg) {
+  #portal-header-top:has(
+      #portal-globalnav-collapse.show,
+      #portal-globalnav-collapse.collapsing
+    ) {
+    #portal-logo .cls-1 {
+      fill: $primary;
+    }
 
-  // Aussi long que le sélecteur de la base, pour passer devant sans !important.
-  #portal-header #portal-header-top #header-links #search-link a::before {
-    background: $primary;
-    mask: $header-search-icon center / 14px no-repeat;
+    // plus d'identifiants que la base (#portal-header … #search-link a::before)
+    #header-links #search-link a::before {
+      background: $primary;
+      mask: $header-search-icon center / 14px no-repeat;
+    }
   }
 }
 
