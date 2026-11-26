@@ -18,4 +18,19 @@ $enable-roboto-webfont: false;
 
 //// STYLES
 
-// ... add your styles here
+@import "./mixins";
+@import "./header";
+@import "./subsite";
+@import "./cookies";
+@import "./banner";
+@import "./quick-access";
+@import "./demarches";
+@import "./section-links";
+@import "./section-files";
+@import "./section-contact";
+@import "./images";
+@import "./page";
+@import "./home-carousel";
+@import "./news";
+@import "./events";
+@import "./footer";

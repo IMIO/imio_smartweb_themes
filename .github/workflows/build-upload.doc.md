@@ -2,6 +2,7 @@
 ```mermaid
 graph TD
     A[Push to main branch] -->|triggers| B[Lint]
+    M[Run workflow manuel : themes = all ou liste] -->|triggers| B
     B --> |needs| C[Get Changed Directories]
     C --> |needs| D[Build-Push]
 
@@ -97,3 +98,16 @@ graph TD
    - **Upload themes**: Uploads the compiled themes.
    - **Get vhost**: Retrieves virtual host information.
    - **Purge cache**: Purges the cache to ensure that changes are taken into account.
+### Lancement manuel
+
+Pour builder et pousser des thèmes sans modifier leurs fichiers (ex. après
+`pnpm pinned-theme`, si d'autres commits ont suivi) : onglet **Actions** →
+**Build and upload themes** → **Run workflow**.
+
+- **themes** : `all` pour tous les thèmes (dossiers avec `package.json` et
+  `manifest.cfg`, hors `base`, `basev2` et gabarits), ou des noms séparés par des
+  espaces (`liege ans`). Un nom inconnu arrête le workflow.
+- **quick** : coché, utilise l'environnement `build-push-quick`, comme `[quick]`
+  dans un message de commit.
+
+Le lint et la validation de l'environnement de déploiement se font comme pour un push.

@@ -1,4 +1,11 @@
 //*// COLORS
+// Palette maquette Figma Beauvechain
+$beauvechain-navy: #001748 !default; // titres — 17,3:1 sur blanc
+$beauvechain-ink: #0b1530 !default; // texte navigation — 18:1 sur blanc
+$beauvechain-yellow: #f5c400 !default; // fond bouton recherche (icône encre : 11:1)
+$beauvechain-gold: #a37f00 !default; // jaune assombri pour pictos sur blanc — 3,75:1 (WCAG 1.4.11)
+$beauvechain-grey: #5b6478 !default; // 5,9:1 sur blanc
+
 $primary: #222831 !default;
 $primary-svg: #235789 !default;
 
@@ -6,6 +13,9 @@ $primary-svg: #235789 !default;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap");
+
+$font-family-header: "Plus Jakarta Sans", sans-serif !default;
 
 $font-family-base: "Roboto", sans-serif !default;
 $font-family-title: "Nunito", sans-serif !default;
@@ -62,14 +72,14 @@ $swiper-raduis: 50px !default;
 $swipper-bullet-color: $primary-svg !default;
 
 //*// HEADER
-$main-logo-max-width: 115px !default;
-$header-top-padding: 1rem 0 !default;
+$main-logo-max-width: 201px !default;
+$header-top-padding: 38px 0 !default;
 $header-top-background: #fff !default;
 $header-center-nav: false !default;
-$header-nav-margin: 0 1rem 0 1rem !default;
-$header-nav-link-color: $primary !default;
-$header-nav-link-font-size: 16px !default;
-$header-nav-link-font-family: $font-family-base !default;
+$header-nav-margin: 0 30px 0 1rem !default;
+$header-nav-link-color: $beauvechain-ink !default;
+$header-nav-link-font-size: 18px !default;
+$header-nav-link-font-family: $font-family-header !default;
 $header-links-color: $primary !default;
 $header-links-account-margin: 0 !default;
 $header-links-account-padding: 0 !default;
@@ -78,9 +88,9 @@ $header-links-account-bg: transparent !default;
 $header-links-account-hover-border: solid 0 #000 !default;
 $header-links-account-hover-bg: transparent !default;
 $header-links-account-hover-color: #000 !default;
-$header-search-icon-color: #000 !default;
+$header-search-icon-color: $beauvechain-ink !default;
 $header-search-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="16" height="16"><path fill="#{url-encoded-color($header-search-icon-color)}" d="M11.08,6.77a4.31,4.31,0,1,0-4.31,4.31h0A4.32,4.32,0,0,0,11.08,6.77Zm4.92,8A1.24,1.24,0,0,1,14.77,16a1.17,1.17,0,0,1-.86-.37l-3.3-3.28a6.77,6.77,0,1,1,1.74-1.74l3.3,3.3A1.25,1.25,0,0,1,16,14.77Z"/></svg>') !default;
-$toggler-color: white !default;
+$toggler-color: "rgb(11,21,48)" !default; // encre, visible sur fond blanc
 $header-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$toggler-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !default;
 
 //bredcrumb
@@ -93,7 +103,7 @@ $nav-mask-background: rgb(15 11 11 / 76%) !default;
 $nav-title-font-family: $font-family-base !default;
 $nav-link-color: $primary !default;
 $nav-link-open-color: $primary !default;
-$nav-link-active-color: $primary-svg !default;
+$nav-link-active-color: $beauvechain-ink !default;
 $nav-link-font-size: initial !default;
 $nav-link-font-weight: 500 !default;
 $nav-link-drop-color: $primary !default;
@@ -120,42 +130,42 @@ $nav-overlay-next-icon-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
 //sub-header
 $subsite-container-padding: 0 !default;
-$subsite-navbar-bg: #f3f3f3 !default;
-$subsite-logo-background: $primary !default;
-$subsite-logo-padding: 0.3em 0.5rem !default;
+$subsite-navbar-bg: #f3f5f9 !default; // gris-bleu des cartes de la maquette
+$subsite-logo-background: $beauvechain-navy !default;
+$subsite-logo-padding: 8px 18px !default;
 $subsite-logo-margin: 1rem 0 0 0 !default;
-$subsite-logo-radius: 10px !default;
-$subsite-logo-color: $font-title-color-light !default;
+$subsite-logo-radius: 999px !default;
+$subsite-logo-color: #fff !default; // 17,3:1 sur navy
 
 //sub-sitenav
 $subsite-container-background: transparent !default;
-$sub-nav-link-color: $font-title-color-dark !default;
-$sub-nav-link-open-color: current !default;
-$sub-nav-link-active-color: $font-title-color-dark !default;
-$sub-nav-link-unedrline-color: $font-title-color-dark !default;
+$sub-nav-link-color: $beauvechain-ink !default; // 16,5:1 sur #f3f5f9
+$sub-nav-link-open-color: $beauvechain-ink !default;
+$sub-nav-link-active-color: $beauvechain-ink !default;
+$sub-nav-link-unedrline-color: $beauvechain-yellow !default; // souligné jaune (comme le menu)
 $sub-nav-scrollbar-height: 4px !default;
-$sub-nav-scrollbar-thumb-color: rgba(#000, 0.5) !default;
+$sub-nav-scrollbar-thumb-color: rgba($beauvechain-navy, 0.5) !default;
 $sub-nav-scrollbar-track-color: rgba(#fff, 0.15) !default;
-$sub-nav-scroll-indicator-color: #355d3f !default;
-$sub-nav-scroll-arrow-color: #000 !default;
+$sub-nav-scroll-indicator-color: $beauvechain-navy !default;
+$sub-nav-scroll-arrow-color: $beauvechain-navy !default;
 
 //*// SECTION HOMEPAGE
 
 // banner
 $banner-enable-full-width: true !default;
-$banner-heigh: 500px !default;
+$banner-heigh: clamp(360px, 37vw, 640px) !default; // 640px à 1728px (maquette)
 $banner-content-width: max-content !default;
-$banner-content-max-width: 100% !default;
+$banner-content-max-width: min(560px, 100%) !default;
 $banner-content-margin: 0 !default;
-$banner-content-padding: 1rem !default;
-$banner-content-background: rgb(256 256 256 / 50%) !default;
-$banner-content-is-vertical-center: true !default;
-$banner-content-title-font-size: 50px !default;
-$banner-content-title-color: black !default;
+$banner-content-padding: 20px 24px !default;
+$banner-content-background: #fff !default; // fond opaque : contraste garanti quelle que soit la photo
+$banner-content-is-vertical-center: false !default;
+$banner-content-title-font-size: 28px !default;
+$banner-content-title-color: $beauvechain-navy !default;
 $banner-content-title-text-transform: initial !default;
 $banner-content-text-align: left !default;
-$banner-content-description-font-size: 18px !default;
-$banner-content-description-color: black !default;
+$banner-content-description-font-size: 16px !default;
+$banner-content-description-color: $beauvechain-ink !default;
 
 // see_all
 $see-all-padding: 0 !default;
@@ -179,24 +189,24 @@ $see-all-hover-underline-width: 50% !default;
 
 // Quick access
 $quick-access-section-full-width: false !default;
-$quick-access-title-color: $primary !default;
+$quick-access-title-color: $beauvechain-ink !default;
 $quick-access-title-margin: $home-section-title-margin !default;
 $quick-access-title-padding: $home-section-title-padding !default;
 $quick-access-title-align: $home-section-title-align !default;
-$quick-access-container-padding: 1rem 0 !default;
-$quick-access-width: 100px !default;
-$quick-access-height: 100px !default;
+$quick-access-container-padding: 48px 0 0 !default;
+$quick-access-width: 56px !default;
+$quick-access-height: 56px !default;
 $quick-access-background: #fff !default;
-$quick-access-border: solid 1px $primary !default;
-$quick-access-border-radius: 100px !default;
+$quick-access-border: 0 !default;
+$quick-access-border-radius: 28px !default;
 $quick-access-shadow: none !default;
-$quick-access-svg-width: 40px !default;
-$quick-access-svg-color: $primary !default;
-$quick-access-item-title-margin: 1rem 0 0 0 !default;
+$quick-access-svg-width: 26px !default;
+$quick-access-svg-color: $beauvechain-navy !default;
+$quick-access-item-title-margin: 0 !default;
 $quick-access-title-font-size: 18px !default;
-$quick-access-title-color: $primary !default;
+$quick-access-title-color: $beauvechain-ink !default;
 $quick-access-title-text-transform: initial !default;
-$quick-access-title-weight: 400 !default;
+$quick-access-title-weight: 700 !default;
 
 $quick-access-enable-full-bg: false !default;
 $quick-access-full-bg-color: $primary !default;
@@ -224,79 +234,79 @@ $a-la-une-item-image-radius: 0 !default;
 
 // Actu
 $actu-section-full-width: true !default;
-$actu-section-padding-top: 2rem !default;
-$actu-section-padding-bottom: 2rem !default;
+$actu-section-padding-top: 120px !default;
+$actu-section-padding-bottom: 110px !default;
 $actu-section-margin: 0 !default;
-$actu-title-color: $primary !default;
+$actu-title-color: $beauvechain-ink !default;
 $actu-title-align: $home-section-title-align !default;
-$actu-title-margin: $home-section-title-margin !default;
+$actu-title-margin: 0 !default;
 $actu-title-padding: $home-section-title-padding !default;
 $actu-image-margin-bottom: 0 !default;
 $actu-image-border-radius: $global-radius !default;
-$actu-item-bg-color: rgb(244, 244, 244) !default;
-$actu-item-bg-radius: $global-radius + 2 !default;
-$actu-category-margin: 0 0 0.5rem 0 !default;
-$actu-category-padding: 0.5rem 1rem !default;
-$actu-category-color: #fff !default;
-$actu-category-bg-color: $primary-svg !default;
+$actu-item-bg-color: #fff !default;
+$actu-item-bg-radius: 24px !default;
+$actu-category-margin: 0 !default;
+$actu-category-padding: 6px 12px !default;
+$actu-category-color: $beauvechain-navy !default; // 10,5:1 sur jaune
+$actu-category-bg-color: $beauvechain-yellow !default;
 $actu-category-text-transform: uppercase !default;
-$actu-category-font-size: 14px !default;
-$actu-category-font-weight: initial !default;
-$actu-category-radius: $global-radius !default;
+$actu-category-font-size: 12px !default;
+$actu-category-font-weight: 700 !default;
+$actu-category-radius: 999px !default;
 $actu-item-title-margin: 0 0 0 0 !default;
-$actu-item-title-padding: 0 1rem !default;
-$actu-item-title-color: initial !default;
+$actu-item-title-padding: 0 !default;
+$actu-item-title-color: $beauvechain-ink !default;
 $actu-item-title-text-transform: initial !default;
-$actu-item-title-font-size: $h3-font-size !default;
-$actu-item-title-font-weight: initial !default;
+$actu-item-title-font-size: 21px !default;
+$actu-item-title-font-weight: 700 !default;
 $actu-item-title-align: left !default;
-$actu-item-description-margin: 0 0 0.5rem 0 !default;
-$actu-item-description-padding: 0 1rem !default;
-$actu-item-description-color: initial !default;
+$actu-item-description-margin: 0 !default;
+$actu-item-description-padding: 0 !default;
+$actu-item-description-color: $beauvechain-grey !default; // 5,9:1
 $actu-item-description-align: left !default;
-$actu-item-description-font-family: $font-family-base !default;
-$actu-date-margin: 0 0 0.5rem 0 !default;
-$actu-date-padding: 0 1rem !default;
-$actu-date-color: $primary !default;
+$actu-item-description-font-family: $font-family-header !default;
+$actu-date-margin: 0 !default;
+$actu-date-padding: 0 !default;
+$actu-date-color: $beauvechain-grey !default; // 5,9:1
 $actu-date-font-size: 14px !default;
 $actu-date-align: left !default;
 $actu-see-all-justify-content: $see-all-justify-content !default;
 
 // Event
 $event-section-full-width: true !default;
-$event-section-padding-top: 2rem !default;
-$event-section-padding-bottom: 2rem !default;
+$event-section-padding-top: 130px !default;
+$event-section-padding-bottom: 110px !default;
 $event-section-margin: 0 !default;
-$event-title-color: $primary !default;
+$event-title-color: $beauvechain-ink !default;
 $event-title-align: $home-section-title-align !default;
-$event-title-margin: $home-section-title-margin !default;
+$event-title-margin: 0 !default;
 $event-title-padding: $home-section-title-padding !default;
 $event-image-margin-bottom: 0 !default;
-$event-image-border-radius: $global-radius !default;
-$event-item-bg-color: rgb(244, 244, 244) !default;
-$event-item-bg-radius: $global-radius + 2 !default;
-$event-category-margin: 0 0 0.5rem 0 !default;
-$event-category-padding: 0.5rem 1rem !default;
-$event-category-color: #fff !default;
-$event-category-bg-color: $primary-svg !default;
+$event-image-border-radius: 20px !default;
+$event-item-bg-color: #f3f5f9 !default;
+$event-item-bg-radius: 28px !default;
+$event-category-margin: 0 !default;
+$event-category-padding: 6px 12px !default;
+$event-category-color: $beauvechain-navy !default; // 10,5:1 sur jaune
+$event-category-bg-color: $beauvechain-yellow !default;
 $event-category-text-transform: uppercase !default;
-$event-category-font-size: 14px !default;
-$event-category-font-weight: initial !default;
-$event-category-radius: $global-radius !default;
+$event-category-font-size: 12px !default;
+$event-category-font-weight: 700 !default;
+$event-category-radius: 999px !default;
 $event-item-title-margin: 0 !default;
-$event-item-title-padding: 0 1rem !default;
-$event-item-title-color: initial !default;
+$event-item-title-padding: 0 !default;
+$event-item-title-color: $beauvechain-ink !default; // 16,5:1 sur #f3f5f9
 $event-item-title-text-transform: initial !default;
-$event-item-title-font-size: $h3-font-size !default;
-$event-item-title-font-weight: initial !default;
+$event-item-title-font-size: 21px !default;
+$event-item-title-font-weight: 700 !default;
 $event-item-description-margin: 0 0 0.5rem 0 !default;
 $event-item-description-padding: 0 1rem !default;
 $event-item-description-color: initial !default;
 $event-item-description-align: left !default;
 $event-item-description-font-family: $font-family-base !default;
-$event-date-margin: 0 0 0.5rem 0 !default;
-$event-date-padding: 0 1rem !default;
-$event-date-color: $primary !default;
+$event-date-margin: 0 !default;
+$event-date-padding: 0 !default;
+$event-date-color: $beauvechain-grey !default; // 5,4:1 sur #f3f5f9
 $event-date-font-size: 14px !default;
 $event-see-all-justify-content: $see-all-justify-content !default;
 
@@ -346,11 +356,11 @@ $newsletter-text-color: #fff !default;
 
 //*// SECTION TEXTE
 $font-size-texte: $font-size-base !default;
-$mark-background-color: #f3f3f3 !default;
-$mark-color: #5c5c5c !default;
-$mark-padding-sec: 20px 45px 20px 26px !default;
-$mark-border: solid 2px $primary !default;
-$mark-radius: $global-radius !default;
+$mark-background-color: $beauvechain-yellow !default; // encadré « mark » jaune
+$mark-color: $beauvechain-ink !default; // 11:1 sur jaune
+$mark-padding-sec: 22px 28px !default;
+$mark-border: 0 !default;
+$mark-radius: 20px !default;
 $mark-weight: 500 !default;
 $list-style-color: $primary !default;
 $list-style-custom: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.082" height="7.337"><path d="M4 2.55 1.71.29A1 1 0 0 0 .29 1.71l1.55 1.54L.29 4.8a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L4 4a1 1 0 0 0 0-1.45Z" fill="#{url-encoded-color($list-style-color)}"/></svg>') !default;
@@ -379,12 +389,12 @@ $section-contact-portrait-ration: calc(4 / 5);
 $section-contact-background: #f3f3f3 !default;
 
 // section-files
-$section-file-background-color: $primary !default;
-$enable-full-width-section-files: true !default;
-$enable-light-color-section-files: true !default;
+$section-file-background-color: transparent !default;
+$enable-full-width-section-files: false !default;
+$enable-light-color-section-files: false !default;
 
 // section-link
-$section-link-background-color: #f8f8f8;
+$section-link-background-color: transparent;
 $enable-full-width-section-link: true;
 $enable-light-color-section-link: false;
 
@@ -406,10 +416,23 @@ $message-warning: #c06d01;
 $message-error: #ae2609;
 
 //QUICK ACCESS
-$quick-access-title-font-family: $font-family-title !default;
+$quick-access-title-font-family: $font-family-header !default;
 
 //SEE ALL
 $see-all-font-family: $font-family-title !default;
+
+// Footer — barre des liens légaux (#portal-colophon) sur fond blanc
+$colofon-bg: #fff !default;
+$colofon-color: $beauvechain-grey !default; // 5,9:1 sur blanc
+
+// Cookie banner — boutons assortis à « Mon compte »
+// Repos : encre sur jaune (11:1) — survol : blanc sur navy (17,3:1)
+$cookie-banner-bg: $beauvechain-yellow !default;
+$cookie-banner-color: $beauvechain-ink !default;
+$cookie-banner-border: 2px solid $beauvechain-yellow !default;
+$cookie-banner-hv-bg: $beauvechain-navy !default;
+$cookie-banner-hv-color: #fff !default;
+$cookie-banner-hv-border: 2px solid $beauvechain-navy !default;
 
 :root {
   --bs-card-spacer-x: 1rem;

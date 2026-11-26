@@ -23,6 +23,11 @@ $(document).ready(function () {
     eventsSwiper.params.speed = 1000;
     eventsSwiper.update();
   }
+  if ($(".offre-emploi .swiper").length > 0) {
+    var eventsSwiper = $(".offre-emploi .swiper")[0].swiper;
+    eventsSwiper.params.spaceBetween = 40;
+    eventsSwiper.update();
+  }
 
   // For banner
 
@@ -133,6 +138,24 @@ $(document).ready(function () {
     duration: 700,
     distance: "5%",
     origin: "left",
+    interval: 10,
+    opacity: 0,
+  });
+
+  ScrollReveal().reveal(".offre-emploi .swiper", {
+    delay: 300,
+    duration: 1000,
+    distance: "15%",
+    origin: "bottom",
+    interval: 10,
+    opacity: 0,
+  });
+
+  ScrollReveal().reveal(".offre-emploi .section-title", {
+    delay: 200,
+    duration: 700,
+    distance: "5%",
+    origin: "right",
     interval: 10,
     opacity: 0,
   });

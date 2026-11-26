@@ -15,28 +15,32 @@ const repoUrl = "https://github.com/IMIO/imio_smartweb_themes";
 // Previous tag (before new one is created)
 let prevTag;
 try {
-  prevTag = execSync("git describe --tags --abbrev=0", {
+  prevTag = execSync("git describe --tags --abbrev=0 --match 'base-v*'", {
     encoding: "utf8",
   }).trim();
 } catch (e) {
   prevTag = null;
 }
 
-// Commits touching current directory (base/) since previous tag
+// Commits touching current directory (base/) since previous tag,
+// without the release commits themselves
 let commits = "";
 try {
   const range = prevTag ? `${prevTag}...HEAD` : "HEAD";
   commits = execSync(`git log --pretty=format:"* %s (%h)" ${range} -- .`, {
     encoding: "utf8",
-  }).trim();
+  })
+    .split("\n")
+    .filter((line) => line && !/^\* chore(\(base\))?: release /.test(line))
+    .join("\n");
 } catch (e) {
   // no commits
 }
 
 // Build new CHANGELOG entry
 const compareUrl = prevTag
-  ? `${repoUrl}/compare/${prevTag}...v${version}`
-  : `${repoUrl}/releases/tag/v${version}`;
+  ? `${repoUrl}/compare/${prevTag}...base-v${version}`
+  : `${repoUrl}/releases/tag/base-v${version}`;
 
 const newEntry = commits
   ? `## [${version}](${compareUrl}) (${date})\n\n${commits}`

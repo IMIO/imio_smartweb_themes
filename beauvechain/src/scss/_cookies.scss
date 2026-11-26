@@ -1,0 +1,29 @@
+// Bannière cookies : boutons au gabarit de « Mon compte »
+// (couleurs via les variables $cookie-banner-* dans variables.scss)
+
+#gdpr-consent-banner .gdpr-actions {
+  & > a,
+  input[name="consent"],
+  input[name="refuse"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    padding: 0 24px;
+    border-radius: 26px;
+    font-family: $font-family-header;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+
+    // La base supprime le contour au focus : on le rétablit au clavier
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+  }
+}

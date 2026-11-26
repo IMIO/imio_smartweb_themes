@@ -1,0 +1,119 @@
+// Agenda — maquette Figma Beauvechain (node 23:173)
+// Spécifique à cette section : fond blanc, cartes gris clair à image en retrait,
+// catégorie dans le corps de la carte, ligne date + bouton rond flèche,
+// pastilles navy. Parties communes avec les Actualités : _home-carousel.scss.
+// Couleurs et tailles de texte des cartes : variables $event-* dans variables.scss.
+
+.sectionevents {
+  background: #fff;
+
+  .swiper-slide {
+    & > a {
+      // Colonne flex (au lieu de la grille de base) : la date peut être poussée
+      // en bas de la carte, alignée sur le bouton rond, quelle que soit la
+      // longueur du titre des cartes voisines.
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // 12px autour de l'image ; corps de carte : 16px sur les côtés, 10px dessous
+      padding: 12px 12px 22px;
+    }
+
+    .swiper-image {
+      height: 220px;
+      // 10px + 12px d'écart de grille = 22px entre l'image et le corps (maquette)
+      margin-bottom: 10px;
+
+      @include media-breakpoint-down(md) {
+        height: 190px;
+      }
+    }
+
+    // Ordre de la maquette : catégorie, titre, puis date (date avant titre dans le HTML)
+    .swiper_category,
+    .auth_source_container_title {
+      max-width: calc(100% - 32px);
+      margin-left: 16px;
+    }
+
+    .swiper_title {
+      order: 1;
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    // Date sur la même ligne que le bouton rond (40px) : on lui laisse la place
+    .swiper_date {
+      order: 2;
+      width: 100%;
+      min-height: 40px;
+      margin-top: auto;
+      padding: 0 64px 0 16px;
+      flex-wrap: wrap;
+    }
+
+    // Bouton rond blanc avec flèche, en bas à droite de la carte :
+    // ::after = le cercle, ::before = la flèche (masque, couleur via background)
+    & > a::after,
+    & > a::before {
+      content: "";
+      position: absolute;
+      right: 28px; // 12px de carte + 16px de corps
+      bottom: 22px;
+      width: 40px;
+      height: 40px;
+      transition: background-color 0.15s ease;
+    }
+
+    & > a::after {
+      border-radius: 20px;
+      background: #fff;
+    }
+
+    & > a::before {
+      z-index: 1;
+      background: $beauvechain-navy; // 17,3:1 sur blanc
+      mask: url("../../assets/svg/lucide-arrow-right.svg") center / 18px 18px
+        no-repeat;
+    }
+
+    // Survol de la carte : cercle navy, flèche blanche
+    & > a:hover,
+    & > a:focus-visible {
+      &::after {
+        background: $beauvechain-navy;
+      }
+
+      &::before {
+        background: #fff;
+      }
+    }
+  }
+
+  // Flèches à 32px du bord des cartes, centrées sur l'image
+  // (24px de marge + 12px de carte + 110px - 26px)
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 120px;
+  }
+
+  .swiper-button-prev {
+    left: 56px;
+  }
+
+  .swiper-button-next {
+    right: 56px;
+  }
+
+  // Pastilles : navy pour l'active, navy 50 % sinon (3,4:1 sur blanc)
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background: rgb(0 23 72 / 50%);
+    }
+
+    // La base force la couleur active en !important pour tous les carrousels
+    .swiper-pagination-bullet-active {
+      background: $beauvechain-navy !important;
+    }
+  }
+}

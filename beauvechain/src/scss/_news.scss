@@ -1,0 +1,135 @@
+// Actualités — maquette Figma Beauvechain (node 23:108)
+// Spécifique à cette section : fond blanc puis navy (coupure à 40 %) avec halo,
+// cartes blanches, catégorie sur l'image, pastilles claires sur navy.
+// Parties communes avec l'Agenda : _home-carousel.scss.
+// Couleurs et tailles de texte des cartes : variables $actu-* dans variables.scss.
+
+.sectionnews {
+  background: radial-gradient(
+      600px 380px at -92px calc(100% - 20px),
+      rgb(46 82 168 / 55%) 0%,
+      rgb(46 82 168 / 25%) 50%,
+      rgb(46 82 168 / 0%) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #fff 0%,
+      #fff 40%,
+      $beauvechain-navy 40%,
+      $beauvechain-navy 100%
+    );
+  // Sans no-repeat, la répétition du halo laisse un trait en haut de la section
+  background-repeat: no-repeat;
+
+  // Mobile : le bouton passe sous le carrousel, sur le fond navy → version jaune
+  .see_all {
+    @include media-breakpoint-down(md) {
+      a {
+        background: $beauvechain-yellow;
+        color: $beauvechain-navy; // 10,5:1
+
+        &::after {
+          background: $beauvechain-navy;
+        }
+
+        &:hover,
+        &:focus-visible {
+          background: #fff;
+        }
+
+        &:focus-visible {
+          outline-color: #fff;
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    & > a {
+      padding-bottom: 28px;
+    }
+
+    .swiper-image {
+      // Les cartes ont une largeur et une position au demi-pixel : au survol
+      // (translateY), le bord de l'image est adouci et le fond blanc de la carte
+      // apparaît en trait fin. L'image déborde de 1px de chaque côté, la carte
+      // (overflow: hidden) coupe le surplus.
+      width: calc(100% + 2px);
+      height: 230px;
+      margin-right: -1px;
+      margin-left: -1px;
+
+      @include media-breakpoint-down(md) {
+        height: 200px;
+      }
+    }
+
+    // Catégorie : posée en bas à gauche de l'image
+    .swiper_category,
+    .auth_source_container_title {
+      position: absolute;
+      top: 210px; // 230px d'image - 20px
+      left: 20px;
+      max-width: calc(100% - 40px);
+      transform: translateY(-100%);
+
+      @include media-breakpoint-down(md) {
+        top: 180px;
+      }
+    }
+
+    .swiper_date,
+    .swiper_title,
+    .swiper_description {
+      width: 100%;
+      padding-right: 28px;
+      padding-left: 28px;
+    }
+
+    .swiper_date {
+      margin-top: 12px;
+    }
+
+    .swiper_description {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.55;
+
+      p {
+        margin: 0;
+      }
+
+      // Pas de description : on ne garde pas d'espace vide
+      &:has(> p:empty:only-child) {
+        display: none;
+      }
+    }
+  }
+
+  // Flèches débordant de 20px sur les cartes, centrées sur l'image
+  // (24px de marge + 115px - 26px)
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 113px;
+  }
+
+  .swiper-button-prev {
+    left: 44px;
+  }
+
+  .swiper-button-next {
+    right: 44px;
+  }
+
+  // Pastilles : jaune pour l'active, blanc 35 % sinon (3,1:1 sur navy)
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background: rgb(255 255 255 / 35%);
+    }
+
+    // La base force la couleur active en !important pour tous les carrousels
+    .swiper-pagination-bullet-active {
+      background: $beauvechain-yellow !important;
+    }
+  }
+}

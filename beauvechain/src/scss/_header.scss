@@ -1,0 +1,185 @@
+// Header — maquette Figma Beauvechain (node 23:3)
+// Logo 201×48, menu Plus Jakarta Sans 18/600, chevrons Lucide, recherche ronde jaune 52px.
+
+#portal-header #portal-header-top {
+  @include media-breakpoint-up(lg) {
+    #portal-globalnav {
+      justify-content: flex-end;
+    }
+
+    #header-links {
+      gap: 12px;
+    }
+  }
+
+  #portal-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  #portal-globalnav > li > a {
+    font-weight: 600;
+    line-height: normal;
+
+    // Souligné jaune au survol, pour tous les éléments du premier niveau
+    @include media-breakpoint-up(lg) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        left: 0;
+        height: 2px;
+        background-color: $beauvechain-yellow;
+        opacity: 0%;
+        transition: opacity 0.15s ease;
+      }
+
+      &:hover,
+      &:focus {
+        color: $beauvechain-ink;
+
+        &::before {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+
+  // Chevron Lucide jaune #f5c400 (1,64:1 sur blanc — dérogation WCAG 1.4.11 validée, fidèle à la maquette)
+  #portal-globalnav > li.has_subtree > a {
+    @include media-breakpoint-up(lg) {
+      &::after {
+        width: 18px;
+        height: 18px;
+        margin-left: 6px;
+        background-image: url("../../assets/svg/lucide-chevron-down.svg");
+        background-size: 18px 18px;
+      }
+
+      &::before {
+        bottom: -6px;
+        background-color: $beauvechain-yellow;
+      }
+    }
+  }
+
+  // Sous-menu (ex. « Je suis ») : souligné jaune au survol, desktop uniquement
+  @include media-breakpoint-up(lg) {
+    #portal-globalnav .dropdown ul .nav-link {
+      text-decoration: underline transparent;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+      transition: text-decoration-color 0.15s ease;
+
+      &:hover,
+      &:focus {
+        text-decoration-color: $beauvechain-yellow;
+      }
+    }
+  }
+
+  #portal-globalnav > li > a:focus-visible,
+  #header-links a:focus-visible {
+    outline: 2px solid $beauvechain-ink;
+    outline-offset: 4px;
+  }
+
+  #header-links {
+    #search-link a {
+      width: 52px;
+      height: 52px;
+      border: 0;
+      border-radius: 26px;
+      background-color: $beauvechain-yellow;
+
+      // Loupe Lucide en masque : la couleur suit background-color,
+      // donc pas de second fichier à charger au survol.
+      &::before {
+        width: 22px;
+        height: 22px;
+        background: $beauvechain-ink;
+        mask: url("../../assets/svg/lucide-search.svg") center / 22px 22px
+          no-repeat;
+      }
+
+      // Survol : fond navy, loupe blanche (17,3:1)
+      &:hover,
+      &:focus-visible {
+        background-color: $beauvechain-navy;
+
+        &::before {
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  // « Mon compte » : bouton jaune assorti au bouton de recherche (hors maquette)
+  // Texte encre sur jaune : 11:1 — survol blanc sur navy : 17,3:1
+  // Ciblé via #header-actions : sur mobile, la base déplace ce bloc dans le menu burger
+  #header-actions .account {
+    display: inline-flex;
+    align-items: center;
+    height: 52px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 26px;
+    background-color: $beauvechain-yellow;
+    color: $beauvechain-ink;
+    font-family: $font-family-header;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease;
+
+    // Le libellé est dans un <span> que la base colore : on le fait suivre le bouton
+    span {
+      color: inherit !important;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border: 0;
+      background-color: $beauvechain-navy;
+      color: #fff !important;
+    }
+  }
+}
+
+// Bouton burger (mobile) : même gabarit que la recherche, fond navy, icône Lucide blanche (17,3:1)
+@include media-breakpoint-down(lg) {
+  #portal-header #portal-globalnav-wrapper .navbar-toggler {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border: 0;
+    border-radius: 26px;
+    background-color: $beauvechain-navy;
+
+    // La base remet le fond à transparent au focus : on le conserve
+    &:focus {
+      background-color: $beauvechain-navy;
+    }
+
+    // La base supprime le contour de focus : on le rétablit au clavier
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy !important;
+      outline-offset: 4px;
+    }
+
+    .navbar-toggler-icon {
+      width: 22px;
+      height: 22px;
+      background: #fff;
+      mask: url("../../assets/svg/lucide-menu.svg") center / 22px 22px no-repeat;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+// Vos démarches — maquette Figma Beauvechain (node 23:250)
+// Variante sombre des accès rapides : fond navy pleine largeur avec halo,
+// titre blanc, cartes translucides à icône jaune ; au survol, carte jaune.
+// Ciblage : deuxième section « accès rapides » de la page (même classes
+// .sectionlinks.quick-access que la première), sans dépendre d'une classe
+// saisie dans l'interface. La mise en grille 4/5/6 liens vient de _quick-access.scss.
+
+.sectionlinks.quick-access ~ .sectionlinks.quick-access {
+  // Pleine largeur sans débordement (--scrollbar-width posé par index.js)
+  --section-width: calc(100vw - var(--scrollbar-width, 0px));
+
+  width: var(--section-width);
+  max-width: none;
+  margin-right: calc((100% - var(--section-width)) / 2);
+  margin-left: calc((100% - var(--section-width)) / 2);
+  padding-top: 100px;
+  padding-bottom: 110px;
+  overflow: hidden;
+  background: radial-gradient(
+      500px 320px at calc(100% - 61px) 36px,
+      rgb(46 82 168 / 50%) 0%,
+      rgb(46 82 168 / 22%) 50%,
+      rgb(46 82 168 / 0%) 100%
+    ),
+    $beauvechain-navy;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+
+  // Section pleine largeur : le conteneur retrouve sa gouttière
+  // (la base la met à 0 pour les accès rapides), alignée sur les autres sections
+  .container {
+    @include media-breakpoint-up(lg) {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+  }
+
+  // Titre blanc à barre jaune
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 44px;
+    color: #fff; // 17,3:1
+    font-family: $font-family-header;
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 6px;
+      height: 44px;
+      border-radius: 3px;
+      background: $beauvechain-yellow;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 28px;
+      font-size: 32px;
+
+      &::before {
+        height: 32px;
+      }
+    }
+  }
+
+  .body-section {
+    padding: 0;
+
+    ul.row {
+      @include media-breakpoint-up(lg) {
+        gap: 24px;
+      }
+    }
+
+    li a.table_image {
+      min-height: 0;
+      // Titres alignés en haut, 40px sous l'icône (et non poussés en bas de la carte)
+      justify-content: flex-start;
+      gap: 40px;
+      padding: 30px 28px 28px;
+      border: 1.5px solid rgb(255 255 255 / 14%);
+      border-radius: 24px;
+      background: rgb(255 255 255 / 6%);
+      transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+
+      @include media-breakpoint-down(lg) {
+        gap: 28px;
+        padding: 22px 20px 20px;
+      }
+
+      // Icône Plone seule (sans pastille), en jaune : 10,5:1 sur navy
+      .image.d-block {
+        width: auto;
+        height: auto;
+        align-items: flex-start; // la base centre l'icône
+        border-radius: 0;
+        background: transparent;
+
+        svg {
+          width: 36px;
+          height: 36px;
+          fill: $beauvechain-yellow;
+          transition: fill 0.15s ease;
+        }
+      }
+
+      .table_title span {
+        color: #fff;
+        font-size: 21px;
+        line-height: 1.25;
+        letter-spacing: -0.005em;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 17px;
+        }
+      }
+
+      // Flèche blanche (même animation que les accès rapides)
+      &::after {
+        top: 30px;
+        right: 28px;
+        width: 22px;
+        height: 22px;
+        background: #fff;
+        mask-size: 22px 22px;
+
+        @include media-breakpoint-down(lg) {
+          top: 22px;
+          right: 20px;
+        }
+      }
+
+      // Survol : carte jaune, icône, texte et flèche navy (10,5:1)
+      &:hover,
+      &:focus-visible {
+        border-color: $beauvechain-yellow;
+        background: $beauvechain-yellow;
+
+        .image.d-block {
+          background: transparent;
+
+          svg {
+            fill: $beauvechain-navy;
+          }
+        }
+
+        .table_title span {
+          color: $beauvechain-navy;
+        }
+
+        &::after {
+          background: $beauvechain-navy;
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+      }
+    }
+  }
+}

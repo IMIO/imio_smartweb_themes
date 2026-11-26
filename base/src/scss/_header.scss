@@ -124,12 +124,6 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-  .navbar-expand-md .navbar-toggler {
-    display: block !important;
-  }
-}
-
 // MASK
 
 .mask-menu {

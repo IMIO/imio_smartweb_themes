@@ -1,0 +1,50 @@
+// Images des pages intérieures : coins arrondis, comme dans la maquette
+// (bannière d'accueil 36px, cartes 16-20px). Les images des cartes (liens,
+// actualités, agenda, contacts) sont arrondies dans leurs propres fichiers ;
+// les tuiles de cartes (Leaflet) ne sont pas concernées.
+
+// Bandeau de page / sous-site (#banner dans le header)
+#portal-header #banner {
+  overflow: hidden;
+  border-radius: 24px;
+
+  @include media-breakpoint-down(md) {
+    border-radius: 16px;
+  }
+}
+
+#portal-column-content {
+  // Images des sections texte et du texte riche (TinyMCE)
+  .sectiontext figure img,
+  .sectiontext .text img,
+  #content-core figure img,
+  #content-core .text img,
+  .documentDescription img {
+    border-radius: 20px;
+  }
+
+  // Galerie : vignettes arrondies, léger zoom de l'image au survol
+  .sectiongallery .section_gallery_item {
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+
+    img {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img,
+    &:focus-visible img {
+      transform: scale(1.04);
+
+      @media (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+  }
+}

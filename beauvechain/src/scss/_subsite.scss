@@ -1,0 +1,77 @@
+// Navigation de sous-site (barre sous le header des pages d'un sous-site)
+// Couleurs via les variables $subsite-* / $sub-nav-* (variables.scss) :
+// fond gris-bleu des cartes, titre en pastille navy, liens encre soulignés
+// de jaune. Ici : typographie de la maquette et survol de la pastille.
+
+.subsite-container {
+  #subsite-logo a {
+    font-family: $font-family-header;
+    font-size: 17px;
+    font-weight: 700;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease;
+
+    // Survol : pastille jaune, texte navy (comme les boutons) — 10,5:1
+    &:hover,
+    &:focus-visible {
+      background: $beauvechain-yellow;
+      color: $beauvechain-navy;
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $beauvechain-navy;
+      outline-offset: 3px;
+    }
+  }
+}
+
+#subsite-navigation {
+  font-family: $font-family-header;
+
+  // Liens de la barre. Ciblés par la structure (> ul > li > a) et non par
+  // .nav-item-depth-1 : cette instance de Plone n'écrit pas ces classes dans
+  // le HTML, et les styles de base qui en dépendent ne s'appliquent pas.
+  > ul > li > a {
+    position: relative;
+    color: $beauvechain-ink; // 16,5:1 sur #f3f5f9
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 1rem;
+      bottom: 8px;
+      left: 1rem;
+      height: 2px;
+      border-radius: 1px;
+      background: $beauvechain-yellow;
+      opacity: 0%;
+      transition: opacity 0.15s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $beauvechain-ink;
+
+      &::before {
+        opacity: 100%;
+      }
+    }
+  }
+
+  // Page courante : souligné jaune permanent
+  > ul > li.inPath > a::before {
+    opacity: 100%;
+  }
+
+  .nav-dropdown-depth-1 {
+    border-radius: 0 0 16px 16px;
+  }
+
+  li a:focus-visible {
+    outline: 2px solid $beauvechain-navy;
+    outline-offset: -2px;
+  }
+}
